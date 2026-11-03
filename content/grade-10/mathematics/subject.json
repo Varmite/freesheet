@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "grade": 10,
+  "id": "mathematics",
+  "name": "Mathematics",
+  "description": "Algebra, functions, trigonometry, geometry, probability and statistics for Grade 10.",
+  "topics": [ { "id": "exponents", "title": "Exponents", "term": 1 } ],
+  "exams": [ { "id": "sample-test", "title": "Sample Test: Exponents", "durationMinutes": 30, "totalMarks": 14 } ]
+}

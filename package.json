@@ -1,0 +1,60 @@
+{
+  "name": "freesheet",
+  "productName": "FreeSheet",
+  "version": "1.0.0",
+  "description": "Offline CAPS study notes, practice questions and exams for Grades 8-12 (English).",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "validate": "node scripts/validate-content.js",
+    "test": "node scripts/validate-content.js && node scripts/test-marking.js",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "za.freesheet.app",
+    "productName": "FreeSheet",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "content",
+        "to": "content"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.education"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Education"
+    }
+  },
+  "dependencies": {
+    "katex": "^0.16.47"
+  },
+  "devDependencies": {
+    "electron": "^45.2.1",
+    "electron-builder": "^26.18.0"
+  }
+}
