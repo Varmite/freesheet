@@ -74,6 +74,10 @@
     if (r.justMet) celebrateStreak(r.current);
   }
   function celebrateStreak(n) {
+    setTimeout(() => {
+      Buddy.react('celebrate');
+      Buddy.say(n === 1 ? `You started a **streak**! Come back tomorrow to keep it going.` : `**${n}-day streak!** Today's goal is done. Keep it going!`, { priority: 'user', mood: 'happy' });
+    }, 1300);
     setTimeout(() => Sound.play('streak'), 450); // after the answer's own chime
     const t = document.createElement('div');
     t.className = 'streak-toast';
@@ -357,6 +361,7 @@
     pendingNavSound = null;
     if (navSound) Sound.play(navSound);
     scheduleWarmUp();
+    buddyOnPage();
   }
 
   // ---------- Transition warm-up
@@ -377,7 +382,7 @@
   async function rehearseTransitions() {
     if (warmedUp || !Motion.enabled()) return;
     const card = state.tab === 'study' && state.views.study.name === 'home' && main.querySelector('.grid .card[data-subject]');
-    if (!card || document.querySelector('.modal-back')) return; // tried again after the next page change
+    if (!card || document.querySelector('.modal-back, .buddy-setup-back')) return; // tried again after the next page change
     // Wait for the page to be at rest and the pointer to be off anything with a
     // hover effect (the frozen copy can't show one).
     if (!Motion.quiet() || main.querySelector('.card:hover, .row:hover, .btn:hover, .continue:hover, .link:hover, .seg:hover')) { scheduleWarmUp(); return; }
@@ -631,6 +636,7 @@
   const reader = { audio: null, url: null, index: -1, paused: false, follow: null };
 
   function stopReader() {
+    Buddy.listen(false);
     if (reader.follow) reader.follow.stop();
     reader.follow = null;
     if (reader.audio) { reader.audio.onended = null; reader.audio.pause(); reader.audio.removeAttribute('src'); }
@@ -708,6 +714,12 @@
       drawSections();
       Motion.reveal(article.querySelector(`[data-i="${shown - 1}"]`));
       Motion.reveal(more.firstElementChild, 80);
+      if (shown === total && reader.index < 0) {
+        tell(`notesdone:${key}`, `That's all the notes for **${topic.title}**! Ready to test yourself?`, {
+          mood: 'happy',
+          actions: [{ id: 'q', label: 'Start the questions', primary: true, run: () => { const b = more.querySelector('#to-questions'); if (b) b.click(); } }],
+        });
+      }
     }
 
     function scrollToSection(i) {
@@ -722,6 +734,7 @@
       stopBtn.hidden = !active;
       status.textContent = active ? `Reading section ${reader.index + 1} of ${total}` : '';
       article.querySelectorAll('.note-section').forEach((el) => el.classList.toggle('speaking', Number(el.dataset.i) === reader.index));
+      Buddy.listen(active && !reader.paused); // the buddy closes its eyes and sways along
     }
 
     async function play(i) {
@@ -769,6 +782,20 @@
 
     drawSections();
     drawControls();
+    // Arrived from a hint or the buddy's "show me in the notes": open that section and flash it.
+    if (v.focus != null) {
+      const f = Math.max(0, Math.min(total - 1, Number(v.focus) || 0));
+      delete v.focus;
+      if (f + 1 > shown) reveal(f + 1);
+      setTimeout(() => {
+        const el = article.querySelector(`[data-i="${f}"]`);
+        if (!el) return;
+        el.scrollIntoView({ behavior: Motion.enabled() ? 'smooth' : 'auto', block: 'start' });
+        el.classList.remove('focus-flash');
+        void el.offsetWidth;
+        el.classList.add('focus-flash');
+      }, 350);
+    }
     api.listAudio(grade(), v.subjectId, topic.id).then((ids) => {
       if (!body.isConnected) return;
       audioIds = new Set(ids);
@@ -781,7 +808,7 @@
     tp.notesRead = true;
     // Drop answers to questions that no longer exist (content updated).
     const qids = new Set(topic.questions.map((q) => q.id));
-    for (const field of ['responses', 'checked', 'selfMarks']) {
+    for (const field of ['responses', 'checked', 'selfMarks', 'hints']) {
       for (const id of Object.keys(tp[field] || {})) if (!qids.has(id)) delete tp[field][id];
     }
     body.innerHTML = `<div class="score-bar" id="score-bar"></div><div class="q-list" id="q-list"></div>
@@ -799,6 +826,38 @@
         if (tp.best == null || pct(sc.score, sc.max) > pct(tp.best, tp.bestMax)) { tp.best = sc.score; tp.bestMax = sc.max; }
       }
     }
+
+    // The buddy's view of this worksheet.
+    function firstWrongCard() { return list.querySelector('.q-card.is-wrong, .q-card.is-partial'); }
+    function showCard(card) {
+      if (!card) return;
+      card.scrollIntoView({ behavior: Motion.enabled() ? 'smooth' : 'auto', block: 'center' });
+      setTimeout(() => Motion.verdict(card), 350);
+    }
+    function buddyBatch() {
+      const right = list.querySelectorAll('.q-card.is-correct').length;
+      const wrong = list.querySelectorAll('.q-card.is-wrong, .q-card.is-partial').length;
+      if (!right && !wrong) return;
+      Buddy.react(!wrong ? 'celebrate' : right >= wrong ? 'correct' : 'wrong');
+      Buddy.say(!wrong ? `All ${right} right! Brilliant.` : `${right} right and ${wrong} to look at again.`, {
+        priority: 'tip',
+        actions: wrong ? [{ id: 'w', label: 'Show me the first one', primary: true, run: () => showCard(firstWrongCard()) }] : [],
+      });
+    }
+    function buddyTopicDone(p, lvl) {
+      Buddy.react(p >= 50 ? 'celebrate' : 'wrong');
+      const wrongQ = topic.questions.find((q) => tp.checked[q.id] && !K.mark(q, tp.responses[q.id], tp.selfMarks[q.id]).correct);
+      const sec = wrongQ ? Hints.relatedSection(wrongQ, topic) : null;
+      if (p >= 80) Buddy.say(`**${p}%**: outstanding! That's level ${lvl.level}.`, { priority: 'user', mood: 'happy' });
+      else if (p >= 50) Buddy.say(`**${p}%**: good work! Let's look at the ones you missed.`, {
+        priority: 'user', mood: 'happy', actions: [{ id: 'w', label: 'Show me the first one', primary: true, run: () => showCard(firstWrongCard()) }],
+      });
+      else Buddy.say(`**${p}%**. This topic is a tricky one. Going over the notes again will help.`, {
+        priority: 'user', mood: 'sad',
+        actions: [{ id: 'n', label: sec != null ? 'Show me what to read' : 'Back to the notes', primary: true, run: () => (sec != null ? showInNotes(sec) : showInNotes(0)) }],
+      });
+    }
+    buddyWorksheet = { firstWrongCard, showCard };
 
     let wasComplete = topicScore(topic, tp).complete;
     function updateSummary() {
@@ -821,9 +880,10 @@
         if (justDone) {
           Motion.pop(end.firstElementChild);
           setTimeout(() => Sound.play(p >= 50 ? 'complete' : 'finishSoft'), 380);
+          setTimeout(() => buddyTopicDone(p, lvl), 450);
         }
         end.querySelector('#retry').addEventListener('click', () => {
-          tp.responses = {}; tp.checked = {}; tp.selfMarks = {}; tp.recorded = false;
+          tp.responses = {}; tp.checked = {}; tp.selfMarks = {}; tp.hints = {}; tp.recorded = false;
           save(); render(); scrollTop();
         });
         end.querySelector('#re-notes').addEventListener('click', () => { state.views.study.mode = 'notes'; render(); scrollTop(); });
@@ -855,6 +915,7 @@
           });
           recordStreak('question', answeredNow);
           recordIfComplete(); save(); updateSummary();
+          setTimeout(buddyBatch, 500);
         });
       }
     }
@@ -875,11 +936,26 @@
           Motion.reveal(el.querySelector('.q-feedback'));
           Motion.verdict(el);
           answerSound(el);
+          buddyAnswer(el, q, topic);
           recordIfComplete(); save(); updateSummary();
         },
         onSelfMark: (n) => {
           tp.selfMarks[q.id] = n;
           recordIfComplete(); save(); updateSummary();
+        },
+        // Hints: practice only (exams never pass this).
+        hint: {
+          list: Hints.forQuestion(q, topic),
+          level: (tp.hints && tp.hints[q.id]) || 0,
+          onUse: (level) => {
+            tp.hints = tp.hints || {};
+            tp.hints[q.id] = level;
+            save();
+            Sound.play('hint');
+            Buddy.react('hint');
+            if (level === 1) tell('hint-howto', pickOne(BUDDY_HINT_LINES), { priority: 'reaction', mood: 'think' });
+          },
+          onShowNotes: (sec) => showInNotes(sec),
         },
       };
       const el = Q.mount(q, ctx);
@@ -1383,6 +1459,10 @@
     const ts = P().settings.textSize || 'normal';
     const anim = P().settings.animations !== false;
     const snd = P().settings.sounds !== false;
+    const bud = P().settings.buddy;
+    const budOn = !!bud && bud.on !== false;
+    const budQuiet = !!(bud && bud.quiet);
+    const lookLabel = (list, id) => (list.find((x) => x.id === id) || {}).label || '';
     main.innerHTML = `<div class="page page-settings">
       <button class="link back-link" id="settings-back">‹ Back</button>
       <h1>Settings</h1>
@@ -1403,6 +1483,23 @@
           <button class="seg ${snd ? '' : 'active'}" data-snd="0">Off</button>
         </div><span class="muted small">Soft sounds for taps, page changes and answers.</span></div>
       </div>
+      <h2>Study buddy</h2>
+      <div class="settings">
+        <div class="setting"><span>Your buddy</span>${bud
+          ? `<div class="buddy-card"><div class="buddy-mini">${Buddy.svg(bud, 'static')}</div><div><strong>${esc(bud.name)}</strong>` +
+            `<div class="muted small">${esc(lookLabel(Buddy.KINDS, bud.kind))} · ${esc(lookLabel(Buddy.COLOURS, bud.color))}` +
+            `${bud.accessory && bud.accessory !== 'none' ? ' · ' + esc(lookLabel(Buddy.ACCESSORIES, bud.accessory)) : ''}</div></div>` +
+            `<button class="btn" id="buddy-change">Change look and name</button></div>`
+          : `<button class="btn" id="buddy-change">Set up your buddy</button>`}</div>
+        <div class="setting"><span>Buddy</span><div class="segmented small">
+          <button class="seg ${budOn ? 'active' : ''}" data-bud="1">On</button>
+          <button class="seg ${budOn ? '' : 'active'}" data-bud="0">Off</button>
+        </div><span class="muted small">Hints on practice questions work either way.</span></div>
+        <div class="setting"><span>Tips</span><div class="segmented small">
+          <button class="seg ${budQuiet ? '' : 'active'}" data-bquiet="0">As I go</button>
+          <button class="seg ${budQuiet ? 'active' : ''}" data-bquiet="1">Only when I ask</button>
+        </div></div>
+      </div>
       <h2>Your data</h2>
       <div class="settings">
         <div class="setting"><span>Progress</span><div class="btn-row">
@@ -1421,6 +1518,24 @@
       Sound.play('toggleOn'); // only heard when turning sound on: a preview of it
       Motion.selectSegment(b);
       save();
+    }));
+    main.querySelector('#buddy-change').addEventListener('click', () => setupBuddy(!P().settings.buddy));
+    main.querySelectorAll('[data-bud]').forEach((b) => b.addEventListener('click', async () => {
+      const on = b.dataset.bud === '1';
+      Sound.play(on ? 'toggleOn' : 'toggleOff');
+      Motion.selectSegment(b);
+      if (!P().settings.buddy) { if (on && !(await setupBuddy(true))) render(); return; }
+      Object.assign(P().settings.buddy, { on, min: false });
+      save();
+      applyBuddy();
+    }));
+    main.querySelectorAll('[data-bquiet]').forEach((b) => b.addEventListener('click', () => {
+      Sound.play('select');
+      Motion.selectSegment(b);
+      if (!P().settings.buddy) return;
+      P().settings.buddy.quiet = b.dataset.bquiet === '1';
+      save();
+      applyBuddy();
     }));
     main.querySelectorAll('[data-size]').forEach((b) => b.addEventListener('click', () => {
       Sound.size(['small', 'normal', 'large', 'xlarge'].indexOf(b.dataset.size));
@@ -1445,15 +1560,20 @@
       if (!r || !r.ok) { if (r && r.error) toast(r.error); return; }
       if (!(await dialog({ title: 'Replace your progress?', body: '<p>Importing replaces all progress on this computer with the progress in the file.</p>', ok: 'Import', danger: true }))) return;
       stopExam();
+      // Keep this computer's buddy if the file doesn't have one.
+      if (P().settings.buddy && !(r.data.settings && r.data.settings.buddy)) {
+        r.data.settings = r.data.settings || {};
+        r.data.settings.buddy = P().settings.buddy;
+      }
       state.progress = r.data;
-      applyTextSize(); applyMotion(); applySound(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
+      applyTextSize(); applyMotion(); applySound(); applyBuddy(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
     });
     main.querySelector('#open-folder').addEventListener('click', () => api.openDataFolder());
     main.querySelector('#reset').addEventListener('click', async () => {
       if (!(await dialog({ title: 'Reset all progress?', body: '<p>This deletes all notes read, practice answers and exam results for every grade. This cannot be undone. Consider exporting first.</p>', ok: 'Reset everything', danger: true }))) return;
       stopExam();
       const settings = P().settings;
-      state.progress = { version: 1, settings: { grade: settings.grade, textSize: settings.textSize, animations: settings.animations, sounds: settings.sounds }, topics: {}, exams: {}, examDrafts: {} };
+      state.progress = { version: 1, settings: { grade: settings.grade, textSize: settings.textSize, animations: settings.animations, sounds: settings.sounds, buddy: settings.buddy }, topics: {}, exams: {}, examDrafts: {} };
       await flush(); toast('Progress reset.'); render();
     });
     api.progressLocation().then((loc) => {
@@ -1470,6 +1590,310 @@
     scrollTop();
   }
   function leaveSettings() { setTab(state.returnTab || 'study'); }
+
+  // ---------------------------------------------------------------- study buddy
+  //
+  // The buddy is drawn and animated in js/buddy.js; what it says and offers is
+  // decided here, from where you are and how you're doing. It is never shown while an
+  // exam is being written or marked, and hints are never offered in exams.
+
+  const pickOne = (a) => a[Math.floor(Math.random() * a.length)];
+  const BUDDY_PRAISE = ["Yes! That's it.", 'Spot on!', 'Nailed it!', "Lekker, that's right!", 'Correct. Nice thinking!', 'Sharp!', "That's the one!"];
+  // After a wrong answer: offering the notes section when there is one, else the explanation on the card.
+  const BUDDY_ENCOURAGE_NOTES = ["Close one! Want to see where it's explained?", "No stress. Let's look at it together in the notes.", "Not quite, but that's how we learn. I can show you the part of the notes that explains it."];
+  const BUDDY_ENCOURAGE = ["Not quite, but that's how we learn. Have a look at the explanation.", 'Mistakes help your brain grow. Read through the explanation, then try the next one.', "No stress. The explanation shows how it's done."];
+  const BUDDY_PARTIAL = ['Nearly there! Check the ones marked with a cross.', 'Some right, some not. Look at the corrections.'];
+  const BUDDY_HINT_LINES = ['Here\'s a clue! Each time you ask, the hints get a bit stronger.', 'Thinking cap on! Ask again if you need a bigger clue.'];
+  const buddyTold = new Set(); // things already said this session
+  let buddyRun = 0;            // correct answers in a row
+  let buddyPageKey = '';
+  let buddyAway = false;       // stepped out for an exam
+  let buddyWorksheet = null;   // the open practice worksheet's helpers
+
+  function buddyPrefs() { return P().settings.buddy || null; }
+
+  function applyBuddy() {
+    const b = buddyPrefs();
+    Buddy.configure({
+      look: b || Buddy.randomLook(),
+      on: !!b && b.on !== false,
+      quiet: !!(b && b.quiet),
+      min: !!(b && b.min),
+      hooks: {
+        menu: buddyMenu,
+        onPrefs: (prefs) => { if (P().settings.buddy) { Object.assign(P().settings.buddy, prefs); save(); } },
+        onAction: (id) => { if (id === '_look') setupBuddy(false); },
+      },
+    });
+  }
+
+  // "Meet your study buddy" (first time) or "Change your buddy".
+  async function setupBuddy(first, intro) {
+    const cur = buddyPrefs();
+    const look = await Buddy.openSetup({ first: !cur || first, look: cur, intro });
+    if (!look) return false;
+    P().settings.buddy = Object.assign({ on: true, quiet: false, min: false }, cur || {}, look, cur ? {} : { on: true });
+    save();
+    applyBuddy();
+    if (state.tab === 'settings') render();
+    setTimeout(() => {
+      Buddy.react('wave');
+      Buddy.say(cur ? 'Looking good! Thanks for the new look.'
+        : `Hi, I'm **${look.name}**! I'll be around while you study, with tips, hints and a cheer when you get things right. Tap me any time.`,
+      { priority: 'user', mood: 'happy' });
+    }, 800);
+    return true;
+  }
+
+  // Say something once per session (key), if the buddy is free to talk.
+  function tell(key, text, opts) {
+    if (key && buddyTold.has(key)) return false;
+    const ok = Buddy.say(text, opts);
+    if (ok && key) buddyTold.add(key);
+    return ok;
+  }
+
+  function openTopic(s, t, mode) { return () => { go('study', { name: 'topic', subjectId: s.id, topicId: t.id, mode: mode || 'notes' }); scrollTop(); }; }
+
+  // What to study next, across the grade.
+  function studyRecommendation() {
+    const g = gradeData();
+    const last = P().settings.lastTopic;
+    if (last && last.grade === grade()) {
+      const s = subjectMeta(last.subjectId);
+      const t = s && s.topics.find((x) => x.id === last.topicId);
+      const tp = t && topicProg(tKey(s.id, t.id));
+      if (t && !(tp && tp.best != null)) return { text: `Want to pick up **${t.title}** where you left off?`, label: 'Carry on', go: openTopic(s, t, last.mode) };
+    }
+    let weakest = null;
+    for (const s of g.subjects) for (const t of s.topics) {
+      const tp = topicProg(tKey(s.id, t.id));
+      if (tp && tp.best != null && tp.bestMax) {
+        const p = pct(tp.best, tp.bestMax);
+        if (p < 60 && (!weakest || p < weakest.p)) weakest = { s, t, p };
+      }
+    }
+    if (weakest) return { text: `Your best on **${weakest.t.title}** is ${weakest.p}%. Want to give it another go?`, label: `Practise ${weakest.t.title}`, go: openTopic(weakest.s, weakest.t, 'questions') };
+    let next = null;
+    const subs = g.subjects.slice().sort((a, b) => subjectStats(b).practised - subjectStats(a).practised);
+    for (const s of subs) {
+      const t = s.topics.find((x) => !topicProg(tKey(s.id, x.id)));
+      if (t) { next = { s, t }; break; }
+    }
+    const st = Streak.status(P());
+    if (st.current > 0 && !st.todayMet) {
+      const left = Math.max(0, st.goalQuestions - st.questionsToday);
+      return { text: `${left} more question${left === 1 ? '' : 's'} today keeps your **${st.current}-day streak** going.`, label: next ? `Start ${next.t.title}` : null, go: next ? openTopic(next.s, next.t) : null };
+    }
+    if (next) return { text: `Why not start **${next.t.title}** in ${next.s.name}?`, label: `Start ${next.t.title}`, go: openTopic(next.s, next.t) };
+    return null;
+  }
+
+  function subjectAdvice(subjectId) {
+    const s = subjectMeta(subjectId);
+    if (!s || !s.topics.length) return null;
+    const todo = s.topics.find((t) => { const tp = topicProg(tKey(s.id, t.id)); return !(tp && tp.best != null); });
+    if (todo) {
+      const tp = topicProg(tKey(s.id, todo.id));
+      const started = tp && (tp.notesRead || Object.keys(tp.checked || {}).length);
+      return { text: started ? `You've started **${todo.title}**. Let's finish it!` : `Next up: **${todo.title}**.`, label: `Open ${todo.title}`, go: openTopic(s, todo) };
+    }
+    let low = null;
+    for (const t of s.topics) {
+      const tp = topicProg(tKey(s.id, t.id));
+      const p = pct(tp.best, tp.bestMax);
+      if (!low || p < low.p) low = { t, p };
+    }
+    if (low && low.p < 80) return { text: `You've practised every topic here! **${low.t.title}** (${low.p}%) could use another look.`, label: `Practise ${low.t.title}`, go: openTopic(s, low.t, 'questions') };
+    return s.exams.length
+      ? { text: `80% or more on every topic in ${s.name}. Impressive! Ready for an exam?`, label: 'See the exams', go: () => { go('exams', { name: 'list', subjectId: s.id }); scrollTop(); } }
+      : { text: `80% or more on every topic in ${s.name}. Impressive!` };
+  }
+
+  function examAdvice(subjectId) {
+    const s = subjectMeta(subjectId);
+    if (!s || !s.exams.length) return null;
+    const intro = (x) => () => { go('exams', { name: 'intro', subjectId: s.id, examId: x.id }); scrollTop(); };
+    const fresh = s.exams.find((x) => !(P().exams[xKey(s.id, x.id)] || []).length);
+    if (fresh) return { text: `You haven't written **${fresh.title}** yet. Fancy a go?`, label: `Open ${fresh.title}`, go: intro(fresh) };
+    let low = null;
+    for (const x of s.exams) {
+      const best = Math.max(...(P().exams[xKey(s.id, x.id)] || []).map((a) => a.percent));
+      if (!low || best < low.best) low = { x, best };
+    }
+    return { text: `Your best on **${low.x.title}** is ${low.best}%. Want to beat it?`, label: `Open ${low.x.title}`, go: intro(low.x) };
+  }
+
+  function progressAdvice() {
+    const stats = gradeData().subjects.map((s) => ({ s, st: subjectStats(s) })).filter((x) => x.st.avg != null).sort((a, b) => b.st.avg - a.st.avg);
+    if (!stats.length) return { text: "Practise a few topics and I'll tell you how you're doing." };
+    const best = stats[0], worst = stats[stats.length - 1];
+    if (stats.length === 1) return { text: `So far you're averaging **${best.st.avg}%** in ${best.s.name}. Practise another subject and I'll compare them.` };
+    return {
+      text: `You're strongest in **${best.s.name}** (${best.st.avg}%). **${worst.s.name}** (${worst.st.avg}%) needs the most work.`,
+      label: `Go to ${worst.s.name}`, go: () => { go('study', { name: 'subject', subjectId: worst.s.id }); scrollTop(); },
+    };
+  }
+
+  function streakAdvice() {
+    const st = Streak.status(P());
+    const left = Math.max(0, st.goalQuestions - st.questionsToday);
+    if (st.todayMet) return { text: `You're on a **${st.current}-day streak** and today's goal is done. See you tomorrow!` };
+    if (st.current) return { text: `**${st.current}-day streak!** ${left} more question${left === 1 ? '' : 's'} or one exam today keeps it going.` };
+    return { text: `No streak yet. Answer ${st.goalQuestions} practice questions today to start one!` };
+  }
+
+  function resultAdvice(v) {
+    const a = (P().exams[xKey(v.subjectId, v.examId)] || [])[v.attempt];
+    if (!a) return null;
+    const lvl = K.capsLevel(a.percent);
+    let worst = null;
+    for (const sec of a.sections || []) if (sec.max > 0 && (!worst || sec.score / sec.max < worst.score / worst.max)) worst = sec;
+    const head = a.percent >= 80 ? `**${a.percent}%**: outstanding! That's level ${lvl.level}.` : a.percent >= 50 ? `**${a.percent}%**: well done!` : `**${a.percent}%**. That was a tough paper.`;
+    const tail = worst && worst.score < worst.max ? ` ${M.inline(worst.title).replace(/<[^>]+>/g, '')} cost you the most marks (${pct(worst.score, worst.max)}%).` : '';
+    return { text: head + tail, label: 'Review my answers', go: () => { go('exams', { name: 'review', subjectId: v.subjectId, examId: v.examId, attempt: v.attempt }); scrollTop(); } };
+  }
+
+  function sayAdvice(r, opts) {
+    if (!r) return Buddy.say("I don't have a suggestion right now. You're doing great!", { priority: 'user' });
+    return Buddy.say(r.text, Object.assign({ priority: 'user', actions: r.go && r.label ? [{ id: 'go', label: r.label, primary: true, run: r.go }] : [] }, opts));
+  }
+
+  // After every page change: step out during exams, otherwise maybe offer a tip.
+  function buddyOnPage() {
+    if (document.documentElement.classList.contains('rehearsing') || !buddyPrefs()) return;
+    Buddy.closeBubble(); // whatever was said was about the page you just left
+    const v = state.views[state.tab] || {};
+    const inExam = state.tab === 'exams' && (v.name === 'run' || v.name === 'mark');
+    if (inExam) {
+      if (!buddyAway) {
+        buddyAway = true;
+        if (v.name === 'run') {
+          Buddy.react('wave');
+          Buddy.say(pickOne(["Good luck! No help in exams, so I'll wait outside.", "You've got this! See you when you're done."]), { priority: 'user', mood: 'happy' });
+          setTimeout(() => { if (buddyAway) Buddy.hide('exam', true); }, 2300);
+        } else Buddy.hide('exam', true);
+      }
+      return;
+    }
+    if (buddyAway) { buddyAway = false; Buddy.hide('exam', false); }
+    const key = navInfo().key;
+    buddyPageKey = key;
+    setTimeout(() => { if (buddyPageKey === key) buddyTip(v); }, 950);
+  }
+
+  function buddyTip(v) {
+    const tab = state.tab;
+    const withAction = (r) => (r && r.go && r.label ? [{ id: 'go', label: r.label, primary: true, run: r.go }] : []);
+    if (tab === 'study' && v.name === 'home') {
+      const r = studyRecommendation();
+      const h = new Date().getHours();
+      const hi = h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
+      tell('home', `${hi}! ${r ? r.text : "Pick a subject and let's get started."}`, { mood: 'happy', actions: withAction(r) });
+    } else if (tab === 'study' && v.name === 'subject') {
+      const r = subjectAdvice(v.subjectId);
+      if (r) tell(`subject:${v.subjectId}`, r.text, { actions: withAction(r) });
+    } else if (tab === 'study' && v.name === 'topic') {
+      const topic = state.cache.get(`t:${grade()}/${v.subjectId}/${v.topicId}`);
+      if (!topic) return;
+      const key = tKey(v.subjectId, v.topicId);
+      if (v.mode === 'questions') {
+        const sc = topicScore(topic, topicProg(key) || {});
+        if (sc.done === 0 && !sc.pending) tell(`qs:${key}`, `${sc.total} questions. Stuck on one? Tap **Hint** and I'll help.`);
+        else if (!sc.complete) tell(`qs:${key}`, `Welcome back! ${sc.done} of ${sc.total} done. Let's finish them.`);
+      } else {
+        const n = Sections.split(topic.notes).length;
+        const listen = document.querySelector('#reader-bar:not([hidden])') ? ' Or tap **Listen** and I\'ll read along with you.' : '';
+        tell(`notes:${key}`, n > 1 ? `This topic has ${n} sections. Read one, then tap **Continue** for the next.${listen}` : `Read through this, then test yourself with the questions.${listen}`);
+      }
+    } else if (tab === 'exams' && v.name === 'home') {
+      tell('exams', "Exams here work like the real thing: timed, then marked with the memo. I can't help during an exam, but I'll help you review afterwards.");
+    } else if (tab === 'exams' && v.name === 'list') {
+      const r = examAdvice(v.subjectId);
+      if (r) tell(`examlist:${v.subjectId}`, r.text, { actions: withAction(r) });
+    } else if (tab === 'exams' && v.name === 'intro') {
+      tell(`intro:${v.examId}`, 'Read every question carefully and keep an eye on the timer. You\'ve got this!', { mood: 'happy' });
+    } else if (tab === 'exams' && v.name === 'result') {
+      const r = resultAdvice(v);
+      const a = (P().exams[xKey(v.subjectId, v.examId)] || [])[v.attempt];
+      if (r && !buddyTold.has(`result:${v.examId}:${v.attempt}`)) {
+        Buddy.react(a && a.percent >= 50 ? 'celebrate' : 'think');
+        tell(`result:${v.examId}:${v.attempt}`, r.text, { priority: 'user', actions: withAction(r) });
+      }
+    } else if (tab === 'exams' && v.name === 'review') {
+      tell('review', "Here's the memo for every question. Look closely at where you lost marks.");
+    } else if (tab === 'progress') {
+      const r = progressAdvice();
+      tell('progress', r.text, { actions: withAction(r) });
+    } else if (tab === 'settings') {
+      tell('settings', 'This is where you can change how I look, or turn me off if you need some quiet.');
+    }
+  }
+
+  // Tap the buddy: a menu that fits the page.
+  function buddyMenu() {
+    const v = state.views[state.tab] || {};
+    const items = [];
+    const add = (id, label, run) => items.push({ id, label, run });
+    if (state.tab === 'study' && v.name === 'home') {
+      add('rec', 'What should I study?', () => sayAdvice(studyRecommendation()));
+      add('streak', "How's my streak?", () => sayAdvice(streakAdvice()));
+    } else if (state.tab === 'study' && v.name === 'subject') {
+      add('next', 'Which topic should I do next?', () => sayAdvice(subjectAdvice(v.subjectId)));
+    } else if (state.tab === 'study' && v.name === 'topic') {
+      if (v.mode === 'questions') {
+        add('hint', 'Give me a hint', () => {
+          const card = [...main.querySelectorAll('.q-card')].find((c) => c.querySelector('.hint-btn'));
+          if (!card) return Buddy.say("No more hints on these. Give it your best shot. You can do it!", { priority: 'user' });
+          card.scrollIntoView({ behavior: Motion.enabled() ? 'smooth' : 'auto', block: 'center' });
+          setTimeout(() => { const b = card.querySelector('.hint-btn'); if (b) b.click(); }, 300);
+        });
+        if (buddyWorksheet && buddyWorksheet.firstWrongCard()) add('wrong', 'Show me what I got wrong', () => buddyWorksheet.showCard(buddyWorksheet.firstWrongCard()));
+        add('notes', 'Take me to the notes', () => { state.views.study.mode = 'notes'; render(); scrollTop(); });
+      } else {
+        if (document.querySelector('#reader-bar:not([hidden])') && reader.index < 0) add('read', 'Read these notes to me', () => { const b = document.querySelector('#read-btn'); if (b) b.click(); });
+        add('quiz', 'Test me on this topic', () => { state.views.study.mode = 'questions'; render(); scrollTop(); });
+      }
+    } else if (state.tab === 'exams' && (v.name === 'home' || v.name === 'list' || v.name === 'intro')) {
+      const sid = v.subjectId || (gradeData().subjects.find((s) => s.exams.length) || {}).id;
+      if (sid) add('paper', 'Which exam should I write?', () => sayAdvice(examAdvice(sid)));
+    } else if (state.tab === 'exams' && (v.name === 'result' || v.name === 'review')) {
+      add('revise', 'How did I do?', () => sayAdvice(resultAdvice(v)));
+    } else if (state.tab === 'progress') {
+      add('how', 'How am I doing?', () => sayAdvice(progressAdvice()));
+      add('streak', "How's my streak?", () => sayAdvice(streakAdvice()));
+    }
+    return items;
+  }
+
+  // React to one checked answer.
+  function buddyAnswer(card, q, topic) {
+    if (card.classList.contains('is-correct')) {
+      buddyRun++;
+      Buddy.react('correct');
+      const n = buddyRun;
+      if (n === 3 || n === 5 || n % 10 === 0) Buddy.say(n === 3 ? 'Three in a row!' : n === 5 ? "Five in a row! You're flying." : `${n} in a row! Unstoppable.`, { priority: 'reaction', mood: 'happy' });
+      else if (Math.random() < 0.35) Buddy.say(pickOne(BUDDY_PRAISE), { priority: 'reaction', mood: 'happy' });
+    } else if (card.classList.contains('is-wrong') || card.classList.contains('is-partial')) {
+      buddyRun = 0;
+      const partial = card.classList.contains('is-partial');
+      Buddy.react(partial ? 'partial' : 'wrong');
+      const sec = Hints.relatedSection(q, topic);
+      Buddy.say(pickOne(partial ? BUDDY_PARTIAL : sec != null ? BUDDY_ENCOURAGE_NOTES : BUDDY_ENCOURAGE), {
+        priority: 'tip', mood: partial ? 'think' : 'sad',
+        actions: sec != null ? [{ id: 'notes', label: 'Show me in the notes', primary: true, run: () => showInNotes(sec) }] : [],
+      });
+    }
+  }
+
+  // Jump from a question to the notes section that explains it.
+  function showInNotes(sec) {
+    const v = state.views.study;
+    if (state.tab !== 'study' || v.name !== 'topic') return;
+    v.mode = 'notes';
+    v.focus = sec;
+    render();
+  }
 
   // ---------------------------------------------------------------- welcome / grade
 
@@ -1494,6 +1918,7 @@
       document.body.classList.remove('welcome-mode');
       syncGradeSelect();
       render();
+      if (!P().settings.buddy) setTimeout(() => setupBuddy(true), 600);
     }));
   }
 
@@ -1529,6 +1954,7 @@
     applyTextSize();
     applyMotion();
     applySound();
+    applyBuddy();
 
     document.getElementById('brand-logo').innerHTML = Icons.ui('logo', 'brand-logo');
     document.querySelectorAll('[data-icon]').forEach((el) => { el.innerHTML = Icons.ui(el.dataset.icon); });
@@ -1566,6 +1992,8 @@
     }
     syncGradeSelect();
     render();
+    // New in this version for existing users: meet the study buddy.
+    if (!progress.settings.buddy) setTimeout(() => setupBuddy(true, 'New in this update!'), 700);
   }
 
   boot().catch((err) => {

@@ -131,6 +131,15 @@
     submit() { bell('G5', 0, 0.06, 0.6); bell('D6', 0.09, 0.055, 0.7); },
     timeWarning() { bell('A5', 0, 0.08, 0.5); bell('A5', 0.22, 0.08, 0.5); },
 
+    // study buddy
+    buddy() {
+      const n = ['A5', 'C6', 'D6', 'E6'][Math.floor(Math.random() * 4)];
+      blip(hz(n), hz(n) * 1.12, 0, 0.05, 0.05);
+      blip(hz(n) * 1.19, hz(n) * 1.3, 0.06, 0.045, 0.06);
+    },
+    buddyHappy() { blip(hz('C6'), hz('G6'), 0, 0.06, 0.09); blip(hz('E6'), hz('C7'), 0.1, 0.055, 0.11); },
+    hint() { bell('E6', 0, 0.06, 0.45); bell('B6', 0.07, 0.05, 0.6); },
+
     // read aloud
     playStart() { blip(hz('D5'), hz('A5'), 0, 0.09, 0.08); },
     playPause() { blip(hz('A5'), hz('D5'), 0, 0.08, 0.08); },

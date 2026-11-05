@@ -10,6 +10,15 @@ A free, fully offline study app for South African learners following the **CAPS*
   leave and resume), self-marking with the memo, results with CAPS achievement levels, and a review of
   every answer.
 * **Progress**: topics practised, scores per subject, exam history, plus export/import/reset of your data.
+* **Hints** on practice questions (never in exams), getting stronger each time you ask: the sentence in
+  the notes that explains it (with the answer blanked out) and a link to that section, ruling out wrong
+  options, the answer's letter pattern, the first step of a calculation, one matching pair, key words
+  for written answers. Typed answers forgive small spelling mistakes, except in language subjects.
+* **Study buddy**: an animated character you design and name when you first open the app (or after
+  updating). It cheers right answers, offers to show where a missed answer is explained, suggests what to
+  study next from your progress, reacts to streaks and results, and has a tap-for-help menu. It steps out
+  during exams. Change it, switch it off, or make it speak only when tapped, in Settings.
+* **Settings** (cog, top right): text size, animations, sound effects and the study buddy.
 
 There are no accounts and nothing is sent over the internet. Progress is saved to a single file,
 `progress.json`, in your user-data folder:
@@ -105,6 +114,9 @@ its text, so editing a section automatically gives it new audio the next time yo
 * `main.js`: Electron main process (window, content loading, saving progress)
 * `preload.js`: the small API exposed to the page
 * `src/`: the interface (plain HTML/CSS/JS, no build step); maths is rendered with KaTeX
-* `scripts/validate-content.js`: content validator; `scripts/test-marking.js`: marking tests
+* `src/js/hints.js`: hints for practice questions; `src/js/buddy.js`: the study buddy (art, animation,
+  speech bubble, setup); what the buddy says is decided in `src/js/app.js` ("Study buddy")
+* `scripts/validate-content.js`: content validator; `scripts/test-marking.js`: marking and hint tests
+  (including a check that no hint in the content gives its answer away)
 * `scripts/screenshot.js`: clicks through the app and saves screenshots
   (`npx electron scripts/screenshot.js <outDir> [grade] [subjectId]`)

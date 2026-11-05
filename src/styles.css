@@ -556,3 +556,154 @@ main.nav-front { position: relative; z-index: 16; }
   .subject-icon.sm { border-radius: 9px; }
   .read-word { border-radius: 7px; }
 }
+
+/* ---------- study buddy (js/buddy.js) ---------- */
+.buddy { position: fixed; right: 16px; bottom: 12px; z-index: 40; pointer-events: none; }
+.buddy[hidden] { display: none; }
+.buddy-fig {
+  pointer-events: auto; display: block; width: 96px; height: 96px; padding: 0; border: 0; background: none;
+  cursor: pointer; border-radius: 50%; corner-shape: round;
+}
+.buddy-fig:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.buddy-fig svg, .bs-stage svg, .bs-tile svg, .buddy-card svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.buddy.is-min .buddy-fig { width: 50px; height: 50px; opacity: 0.85; }
+.buddy.is-min .buddy-fig:hover { opacity: 1; }
+.motion .buddy .buddy-fig { transition: width var(--bounce-d, .4s) var(--bounce, ease), height var(--bounce-d, .4s) var(--bounce, ease), transform var(--bounce-d, .4s) var(--bounce, ease); }
+.motion .buddy .buddy-fig:hover { transform: scale(1.06); }
+.motion .buddy .buddy-fig:active { transform: scale(0.94); transition-duration: 0.08s; }
+
+.buddy-bubble {
+  pointer-events: auto; position: absolute; right: 74px; bottom: 76px;
+  width: max-content; max-width: min(330px, calc(100vw - 110px));
+  background: var(--bg); color: var(--text); border: 1px solid var(--border-strong);
+  border-radius: 20px; padding: 0.7rem 0.95rem 0.8rem; font-size: 0.95rem; line-height: 1.45;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18); transform-origin: 100% 100%;
+}
+.buddy-bubble[hidden] { display: none; }
+.buddy-bubble::after {
+  content: ""; position: absolute; right: -7px; bottom: 16px; width: 14px; height: 14px;
+  background: var(--bg); border-right: 1px solid var(--border-strong); border-bottom: 1px solid var(--border-strong);
+  transform: rotate(-45deg); corner-shape: round; border-radius: 0 0 4px 0;
+}
+.buddy-name { font-size: 0.72rem; font-weight: 750; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.15rem; padding-right: 1.4rem; }
+.buddy-text { min-height: 1.4em; }
+.buddy-x {
+  position: absolute; top: 0.3rem; right: 0.4rem; width: 1.7rem; height: 1.7rem; border: 0; border-radius: 50%; corner-shape: round;
+  background: none; color: var(--muted); font-size: 1.15rem; line-height: 1; cursor: pointer;
+}
+.buddy-x:hover { background: var(--surface); color: var(--text); }
+.buddy-acts { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.65rem; }
+.buddy-act {
+  font: inherit; font-size: 0.9rem; text-align: left; cursor: pointer; color: var(--text);
+  border: 1px solid var(--border); background: var(--surface); border-radius: 12px; padding: 0.42rem 0.75rem;
+}
+.buddy-act:hover { border-color: var(--accent); }
+.buddy-act.primary { background: var(--btn); border-color: var(--btn); color: #fff; }
+.buddy-act.primary:hover { background: var(--btn-hover); }
+
+/* the character: expressions are shown and hidden by data-mood / data-talk */
+.buddy-svg .b-eye-happy, .buddy-svg .b-eye-closed, .buddy-svg .b-m, .buddy-svg .b-brows,
+.buddy-svg .b-spark, .buddy-svg .b-z, .buddy-svg .b-dot, .buddy-svg .b-bulb { display: none; }
+.buddy-svg .b-m-smile { display: inline; }
+.buddy-svg[data-mood="happy"] .b-eye-open, .buddy-svg[data-mood="listen"] .b-eye-open, .buddy-svg[data-mood="sleep"] .b-eye-open { display: none; }
+.buddy-svg[data-mood="happy"] .b-eye-happy, .buddy-svg[data-mood="listen"] .b-eye-happy { display: inline; }
+.buddy-svg[data-mood="sleep"] .b-eye-closed { display: inline; }
+.buddy-svg[data-mood="happy"] .b-m-smile, .buddy-svg[data-mood="sad"] .b-m-smile, .buddy-svg[data-mood="think"] .b-m-smile,
+.buddy-svg[data-mood="surprised"] .b-m-smile, .buddy-svg[data-mood="sleep"] .b-m-smile { display: none; }
+.buddy-svg[data-mood="happy"] .b-m-grin { display: inline; }
+.buddy-svg[data-mood="sad"] .b-m-sad, .buddy-svg[data-mood="sad"] .b-brows-sad { display: inline; }
+.buddy-svg[data-mood="think"] .b-m-flat, .buddy-svg[data-mood="think"] .b-brows-think { display: inline; }
+.buddy-svg[data-mood="surprised"] .b-m-o, .buddy-svg[data-mood="sleep"] .b-m-o { display: inline; }
+.buddy-svg[data-talk="1"] .b-m { display: none; }
+.buddy-svg[data-talk="1"] .b-m-open { display: inline; }
+.buddy-svg.sleeping .b-z, .buddy-svg.fx-spark .b-spark, .buddy-svg.fx-think .b-dot, .buddy-svg.fx-bulb .b-bulb { display: inline; }
+
+.buddy-svg .b-float, .buddy-svg .b-actor, .buddy-svg .b-body { transform-box: view-box; transform-origin: 60px 112px; }
+.buddy-svg .b-arm, .buddy-svg .b-tail, .buddy-svg .b-antenna { transform-box: view-box; }
+.buddy-svg .b-eye-in, .buddy-svg .b-shadow, .buddy-svg .b-spark, .buddy-svg .b-dot, .buddy-svg .b-bulb, .buddy-svg .b-z { transform-box: fill-box; transform-origin: center; }
+.buddy-svg .b-eyes, .buddy-svg .b-face { transition: transform 0.14s ease-out; }
+
+/* Idle life. The corner buddy moves in short bursts (js/buddy.js "fidget") and is
+   otherwise still: looping forever would redraw the window every frame (180 times a
+   second on a 180 Hz screen) even when the app is idle. Only the setup preview, which
+   is open briefly, and listening while notes are read aloud loop continuously. */
+.motion .buddy-svg.bs-big .b-float { animation: b-bob 3.8s ease-in-out infinite; }
+.motion .buddy-svg.bs-big .b-body { animation: b-breathe 3.2s ease-in-out infinite; }
+.motion .buddy-svg.bs-big .b-tail { animation: b-wag 2.4s ease-in-out infinite; }
+.motion .buddy-svg.bs-big .b-antenna { animation: b-sway 3.2s ease-in-out infinite; }
+.motion .buddy-svg.bs-big .b-light { animation: b-light 1.9s ease-in-out infinite; }
+.motion .buddy-svg.listening .b-float { animation: b-listen 1.8s ease-in-out infinite; }
+.motion .buddy-svg.zzz .b-z { animation: b-z 2.7s ease-in both; animation-delay: calc(var(--i) * 0.6s); }
+.motion .buddy-svg.fx-spark .b-spark { animation: b-spark 0.95s ease-out both; animation-delay: calc(var(--i) * 70ms); }
+.motion .buddy-svg.fx-think .b-dot { animation: b-dot 0.9s ease-in-out infinite both; animation-delay: calc(var(--i) * 0.15s); }
+.motion .buddy-svg.fx-bulb .b-bulb { animation: b-bulb 1.1s cubic-bezier(.2, 1.5, .4, 1) both; }
+@keyframes b-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@keyframes b-breathe { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(0.99, 1.028); } }
+@keyframes b-wag { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(8deg); } }
+@keyframes b-sway { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(7deg); } }
+@keyframes b-light { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@keyframes b-listen { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+@keyframes b-z { 0% { transform: translate(0, 4px) scale(0.6); opacity: 0; } 30% { opacity: 1; } 100% { transform: translate(8px, -14px) scale(1.1); opacity: 0; } }
+@keyframes b-spark { 0% { transform: scale(0) rotate(0deg); opacity: 0; } 40% { transform: scale(1.25) rotate(45deg); opacity: 1; } 100% { transform: scale(0) rotate(90deg); opacity: 0; } }
+@keyframes b-dot { 0%, 100% { transform: translateY(0); opacity: 0.5; } 50% { transform: translateY(-3px); opacity: 1; } }
+@keyframes b-bulb { 0% { transform: scale(0) translateY(6px); opacity: 0; } 50% { opacity: 1; } 100% { transform: scale(1) translateY(0); opacity: 1; } }
+
+/* setup sheet */
+.buddy-setup-back { position: fixed; inset: 0; z-index: 110; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(0, 0, 0, 0.45); }
+.buddy-setup {
+  width: min(880px, 100%); max-height: calc(100vh - 2rem); overflow: auto;
+  background: var(--bg); border-radius: 30px; padding: 1.5rem 1.6rem 1.3rem; box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+.bs-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.bs-head h2 { margin: 0 0 0.35rem; font-size: 1.55rem; }
+.bs-head p { margin: 0; max-width: 560px; }
+.bs-surprise { flex: none; }
+.bs-body { display: grid; grid-template-columns: 250px 1fr; gap: 1.5rem; margin-top: 1.2rem; }
+.bs-preview { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; min-height: 280px; background: var(--surface); border-radius: 24px; }
+.bs-stage { width: 200px; height: 200px; }
+.bs-name-show { margin-top: 0.4rem; font-size: 1.35rem; font-weight: 750; min-height: 1.6em; }
+.bs-group + .bs-group { margin-top: 1rem; }
+.bs-label { display: block; margin-bottom: 0.45rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.bs-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.bs-tile {
+  display: flex; flex-direction: column; align-items: center; gap: 0.1rem; width: 86px; padding: 0.45rem 0.3rem 0.4rem;
+  font: inherit; font-size: 0.78rem; color: var(--muted); cursor: pointer;
+  background: var(--bg); border: 1.5px solid var(--border); border-radius: 18px;
+}
+.bs-tile svg { width: 58px; height: 58px; }
+.bs-tile:hover { border-color: var(--border-strong); color: var(--text); }
+.bs-tile.on { border-color: var(--accent); background: var(--accent-soft); color: var(--text); font-weight: 600; }
+.bs-swatch {
+  width: 36px; height: 36px; padding: 0; cursor: pointer; border-radius: 50%; corner-shape: round;
+  background: var(--sw); border: 3px solid var(--bg); box-shadow: 0 0 0 1.5px var(--border-strong);
+}
+.bs-swatch.on { box-shadow: 0 0 0 3px var(--accent); }
+.bs-name-row { display: flex; gap: 0.5rem; align-items: center; }
+#bs-name { flex: 1; max-width: 280px; font-size: 1.05rem; }
+.bs-foot { display: flex; justify-content: flex-end; gap: 0.6rem; margin-top: 1.3rem; }
+@media (max-width: 760px) { .bs-body { grid-template-columns: 1fr; } .bs-head { flex-direction: column; } }
+
+/* settings card */
+.buddy-card { display: flex; align-items: center; gap: 0.9rem; }
+.buddy-card .buddy-mini { width: 64px; height: 64px; flex: none; }
+.buddy-card .btn { margin-left: 0.4rem; }
+
+/* ---------- hints (practice only) ---------- */
+.q-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.hint-btn { display: inline-flex; align-items: center; gap: 0.4rem; }
+.hint-btn .icon { width: 1.1rem; height: 1.1rem; color: #D99A00; }
+.q-hint-tag { display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.8rem; color: var(--muted); }
+.q-hint-tag .icon { width: 0.95rem; height: 0.95rem; color: #D99A00; }
+.q-hints { display: flex; flex-direction: column; gap: 0.45rem; margin-top: 0.75rem; }
+.q-hint { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.55rem 0.8rem; font-size: 0.95rem; background: var(--warn-soft); border-radius: 13px; }
+.q-hint > .icon { width: 1.15rem; height: 1.15rem; flex: none; margin-top: 0.15rem; color: #D99A00; }
+.hint-blank { display: inline-block; min-width: 3.2em; height: 0.95em; margin: 0 0.15em; vertical-align: baseline; border-bottom: 2px solid currentColor; }
+.hint-shape { font-family: ui-monospace, Consolas, monospace; font-weight: 650; letter-spacing: 0.06em; white-space: pre-wrap; }
+.hint-chip { display: inline-block; margin: 0.1rem; padding: 0 0.55rem; font-size: 0.88rem; background: var(--bg); border: 1px solid var(--border); border-radius: 999px; corner-shape: round; }
+.hint-link { margin-left: 0.35rem; font-size: 0.9rem; }
+.opt.opt-out { opacity: 0.36; text-decoration: line-through; cursor: not-allowed; }
+.motion .opt { transition: opacity 0.3s ease, background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease, box-shadow 0.25s ease, transform var(--bounce-d, 0.4s) var(--bounce, ease); }
+.note-section.focus-flash { animation: focus-flash 2.6s ease-out; }
+@keyframes focus-flash { 0%, 35% { background: var(--accent-soft); box-shadow: 0 0 0 0.6rem var(--accent-soft); } 100% { background: transparent; box-shadow: 0 0 0 0.6rem transparent; } }
+
+@media print { .buddy { display: none !important; } }

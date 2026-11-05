@@ -91,4 +91,43 @@ t('spelling slips in short answers', () => {
   assert.ok(!K.isLanguageSubject('life-orientation'));
   assert.ok(!K.isLanguageSubject('natural-sciences'));
 });
+t('hints never give the answer away (all content)', () => {
+  const H = require('../src/js/hints.js');
+  const fs = require('fs');
+  const path = require('path');
+  const root = path.join(__dirname, '..', 'content');
+  const strip = (h) => h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').toLowerCase();
+  const reEsc = (a) => a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  let questions = 0;
+  for (const g of fs.readdirSync(root)) for (const s of fs.readdirSync(path.join(root, g))) {
+    const d = path.join(root, g, s, 'topics');
+    if (!fs.existsSync(d)) continue;
+    for (const f of fs.readdirSync(d)) {
+      const topic = JSON.parse(fs.readFileSync(path.join(d, f), 'utf8'));
+      for (const q of topic.questions || []) {
+        questions++;
+        const hints = H.forQuestion(q, topic);
+        assert.ok(hints.length >= 1, `${g}/${s}/${topic.id}#${q.id} has no hints`);
+        const answers = H._answerTexts(q).map((a) => a.trim().toLowerCase()).filter((a) => a.length >= 3);
+        for (const h of hints) {
+          if (h.kind === 'pair' || h.kind === 'point') continue; // these reveal part of the answer on purpose, as the last hints
+          const text = strip(h.html);
+          for (const a of answers) {
+            const re = /^\d/.test(a) ? new RegExp(`(?<![\\d,.])${reEsc(a)}(?![\\d])`) : new RegExp(`\\b${reEsc(a)}\\b`);
+            assert.ok(!re.test(text), `${g}/${s}/${topic.id}#${q.id}: ${h.kind} hint gives away "${a}"`);
+          }
+        }
+      }
+    }
+  }
+  assert.ok(questions > 100);
+});
+t('hints: multiple choice rules out wrong options only', () => {
+  const H = require('../src/js/hints.js');
+  const q = { id: 'x', type: 'mcq', prompt: 'Pick one', options: ['a', 'b', 'c', 'd'], answer: 2 };
+  const hs = H.forQuestion(q, { notes: [] });
+  const out = hs.filter((h) => h.eliminate).pop().eliminate;
+  assert.strictEqual(out.length, 2);
+  assert.ok(!out.includes(2));
+});
 console.log(`${n} marking/markup test groups passed.`);

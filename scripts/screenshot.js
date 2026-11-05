@@ -14,7 +14,9 @@ const subjectId = args[2] || 'mathematics';
 fs.mkdirSync(outDir, { recursive: true });
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'freesheet-profile-'));
 app.setPath('userData', profile);
-fs.writeFileSync(path.join(profile, 'progress.json'), JSON.stringify({ version: 1, settings: { grade }, topics: {}, exams: {}, examDrafts: {} }));
+// A study buddy is already set up, so the "meet your buddy" sheet doesn't cover the screens.
+const buddy = { kind: 'fox', color: 'coral', accessory: 'glasses', name: 'Pip', on: true };
+fs.writeFileSync(path.join(profile, 'progress.json'), JSON.stringify({ version: 1, settings: { grade, buddy }, topics: {}, exams: {}, examDrafts: {} }));
 
 const errors = [];
 app.on('browser-window-created', (_e, win) => {

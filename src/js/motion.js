@@ -566,7 +566,8 @@
     back.style.pointerEvents = 'none';
     play(back.firstElementChild, [{ transform: 'scale(1)' }, { transform: 'scale(0.96)' }], { duration: 200, easing: 'ease-out', fill: 'forwards' });
     const a = play(back, [{ opacity: 1 }, { opacity: 0 }], { duration: 200, easing: 'ease-out', fill: 'forwards' });
-    return a ? a.finished.catch(() => {}) : Promise.resolve();
+    // A timer backs up "finished", which Chromium holds back while the window is hidden.
+    return a ? Promise.race([a.finished.catch(() => {}), new Promise((r) => setTimeout(r, 260))]) : Promise.resolve();
   }
 
   // Disclosures (<details>) ease their content in when opened.
@@ -598,7 +599,11 @@
   }
   function setRehearsing(on) { document.documentElement.classList.toggle('rehearsing', !!on); }
   // Nothing transitioning or moving: a frozen copy of the page would match it exactly.
-  function quiet() { return !active && !document.getAnimations().some((a) => a.playState === 'running'); }
+  // (Never-ending idle animations, like the study buddy breathing, don't count.)
+  function quiet() {
+    return !active && !document.getAnimations().some((a) => a.playState === 'running' &&
+      !(a.effect && a.effect.getComputedTiming && a.effect.getComputedTiming().iterations === Infinity));
+  }
 
   window.Motion = {
     cover, setRehearsing, quiet, settle: finishActive, rehearsalStep: ZOOM.duration + 60,
