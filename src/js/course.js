@@ -10,6 +10,9 @@
 //   blank    - choose the missing word in a sentence
 //   pick     - choose the right translation of a sentence
 //   listen   - put together the sentence you hear (when the audio exists)
+//   transform - grammar drills from the lesson's "drills": rewrite a sentence as told
+//              (past tense, passive, indirect speech, join with "omdat"...), with
+//              tiles or by typing
 // Answers are checked like a forgiving teacher: case, punctuation, contractions
 // ("I'm" = "I am") and common synonyms ("mom" = "mother") don't matter; a missing
 // accent or a small typo still counts, with a note; but a typo that makes a
@@ -64,7 +67,10 @@
     const accent = acc.find((a) => plain(a.n) === gp);
     if (accent) return { correct: true, match: accent.raw, note: 'accent' };
     const known = ctx && ctx.known;
-    const typo = acc.find((a) => K.typoOf(gp, plain(a.n), known));
+    // A typo changes letters, not the number of words: a missing or extra word
+    // ("nie", "het", "word") is a grammar mistake, so it is never forgiven.
+    const count = (t) => t.split(' ').length;
+    const typo = acc.find((a) => count(a.n) === count(g) && K.typoOf(gp, plain(a.n), known));
     if (typo) return { correct: true, match: typo.raw, note: 'typo' };
     return { correct: false, match: null, note: null };
   }
@@ -97,6 +103,7 @@
     for (const { lesson } of lessons) {
       for (const w of lesson.words) { addAll(w.af, 'af'); w.en.forEach((e) => addAll(e, 'en')); }
       for (const s of lesson.sentences) { s.af.forEach((a) => addAll(a, 'af')); s.en.forEach((e) => addAll(e, 'en')); }
+      for (const d of lesson.drills || []) { addAll(d.from, 'af'); d.to.forEach((a) => addAll(a, 'af')); }
     }
     const m = { course, lessons, words, meaningsOf, known, syn: course.englishSynonyms || {} };
     Object.defineProperty(course, '_model', { value: m, enumerable: false });
@@ -198,6 +205,19 @@
     return { type: 'blank', sentence: shown, options, answer: options.indexOf(pickC.t), en: s.en[0], full: s.af[0], audio: audioId(s.af[0]) };
   }
 
+  // A grammar drill: rewrite `from` as the task says. Tiles include the words of the
+  // original that the answer no longer uses (the present-tense verb, "van", ...),
+  // which are the natural wrong turns.
+  function transformExercise(d, input, rand, pool) {
+    const answer = d.to[0];
+    const tiles = tilesOf(answer);
+    const lower = new Set(tiles.map((t) => t.toLowerCase()));
+    const fromLeft = tilesOf(d.from).filter((t) => !lower.has(t.toLowerCase()));
+    const extra = takeDistinct([...fromLeft, ...pool.sentences.flatMap((x) => tilesOf(x.af[0])).filter((t) => !lower.has(t.toLowerCase()))],
+      Math.min(4, Math.max(2, Math.ceil(tiles.length / 3))), [], rand, (t) => t.toLowerCase());
+    return { type: 'transform', input, task: d.task, en: d.en || '', prompt: d.from, accepted: d.to, answer, tiles: shuffle([...tiles, ...extra], rand), audio: audioId(d.from), answerAudio: audioId(answer) };
+  }
+
   function pickExercise(m, s, rand, pool) {
     const others = takeDistinct(pool.sentences.filter((x) => x !== s), 2, [], rand, (x) => norm(x.en[0], 'en', m.syn));
     const options = shuffle([s.en[0], ...others.map((x) => x.en[0])], rand);
@@ -241,13 +261,17 @@
       hard.push(ex2 || typeExercise(s, 'af-en'));
     });
 
+    // Grammar drills come last: the hardest part of the lesson.
+    const drills = shuffle(L.drills || [], rand).map((d, i) => transformExercise(d, (i + o.attempt) % 2 ? 'type' : 'tiles', rand, pool));
+    hard.push(...drills);
+
     const pairsWords = L.words.length >= 4 ? L.words : [...L.words, ...pool.words.filter((w) => !L.words.includes(w))].slice(0, 5);
     // Order: new words woven into the easy ones, the pairs game in the middle, harder ones at the end.
     const first = [];
     const easyQ = easy.slice();
     intro.forEach((x, i) => { first.push(x); if (i % 2 === 1 && easyQ.length) first.push(easyQ.shift()); });
     out.push(...first, ...easyQ.splice(0, 2), pairsExercise(m, pairsWords, rand), ...easyQ, ...hard);
-    return out.slice(0, 16);
+    return out.slice(0, 19);
   }
 
   // A practice session mixing what has been learnt so far.
@@ -275,6 +299,7 @@
       out.push(ex || typeExercise(s, 'af-en'));
     });
     shuffle(words, rand).slice(0, 2).forEach((w) => out.splice(1 + Math.floor(rand() * out.length), 0, meaningExercise(m, w, rand, false, pool)));
+    shuffle(done.flatMap((x) => x.lesson.drills || []), rand).slice(0, 3).forEach((d, i) => out.push(transformExercise(d, (i + o.attempt) % 2 ? 'type' : 'tiles', rand, pool)));
     return out;
   }
 
@@ -287,7 +312,7 @@
         return { correct: response === ex.answer, note: null };
       case 'build': case 'type':
         return check(response, ex.accepted, ex.dir === 'af-en' ? 'en' : 'af', ctx);
-      case 'listen':
+      case 'listen': case 'transform':
         return check(response, ex.accepted, 'af', ctx);
       default:
         return { correct: true, note: null };
@@ -303,6 +328,7 @@
     for (const u of course.units) for (const l of u.lessons) {
       for (const w of l.words) out.set(audioId(w.af), w.af);
       for (const s of l.sentences) out.set(audioId(s.af[0]), s.af[0]);
+      for (const d of l.drills || []) { out.set(audioId(d.from), d.from); out.set(audioId(d.to[0]), d.to[0]); }
     }
     return [...out].map(([id, text]) => ({ id, text }));
   }

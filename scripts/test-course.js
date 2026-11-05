@@ -23,6 +23,8 @@ for (const id of fs.existsSync(dir) ? fs.readdirSync(dir) : []) {
       assert.ok(l.words.length >= 3, `${l.id}: needs at least 3 words`);
       assert.ok(l.sentences.length >= 3, `${l.id}: needs at least 3 sentences`);
       for (const s of l.sentences) assert.ok(s.af.length && s.en.length, `${l.id}: sentence missing a translation`);
+      for (const d of l.drills || []) assert.ok(d.task && d.from && d.to && d.to.length, `${l.id}: incomplete drill`);
+      assert.ok(Number.isInteger(course.grade), `${id}: needs a grade`);
     }
   });
 
@@ -68,6 +70,13 @@ for (const id of fs.existsSync(dir) ? fs.readdirSync(dir) : []) {
               case 'type':
                 for (const a of ex.accepted) assert.ok(C.checkExercise(course, ex, a).correct, `${where}: accepted answer "${a}" marked wrong`);
                 break;
+              case 'transform': {
+                for (const a of ex.accepted) assert.ok(C.checkExercise(course, ex, a).correct, `${where}: accepted answer "${a}" marked wrong`);
+                assert.ok(!C.checkExercise(course, ex, ex.prompt).correct, `${where}: leaving the sentence unchanged is marked right: ${ex.prompt}`);
+                const bag = ex.tiles.slice();
+                for (const w of C.tilesOf(ex.answer)) { const i = bag.indexOf(w); assert.ok(i >= 0, `${where}: tile "${w}" missing`); bag.splice(i, 1); }
+                break;
+              }
               default: assert.fail(`${where}: unknown type`);
             }
           }

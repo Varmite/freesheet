@@ -241,6 +241,15 @@
     Sound.setEnabled(P().settings.sounds !== false);
   }
 
+  // Text rendering: Inter, with Apple-style letter spacing; on Windows strokes are
+  // thickened a touch, as macOS does (see "smooth text" in styles.css). ClearType is
+  // switched off in main.js at start-up.
+  function applyTextRendering() {
+    const root = document.documentElement;
+    root.classList.toggle('smooth-text', P().settings.textRendering !== 'system');
+    root.classList.toggle('os-windows', api.platform === 'win32');
+  }
+
   function applyMotion() {
     Motion.setEnabled(P().settings.animations !== false);
   }
@@ -518,7 +527,7 @@
           ${bar(p)}
           <span class="card-meta">${st.practised} of ${st.total} practised${st.avg != null ? ` · avg ${st.avg}%` : ''}</span>
         </button>`;
-      }).join('')}${(state.catalog.courses || []).map(courseUI.homeCard).join('')}</div>
+      }).join('')}${(state.catalog.courses || []).filter((c) => c.grade == null || c.grade === grade()).map(courseUI.homeCard).join('')}</div>
       ${g.subjects.length ? '' : '<p class="muted">No subjects are available for this grade yet.</p>'}
     </div>`;
     main.querySelectorAll('[data-subject]').forEach((b) => b.addEventListener('click', () => {
@@ -1465,6 +1474,7 @@
     const ts = P().settings.textSize || 'normal';
     const anim = P().settings.animations !== false;
     const snd = P().settings.sounds !== false;
+    const smooth = P().settings.textRendering !== 'system';
     const bud = P().settings.buddy;
     const budOn = !!bud && bud.on !== false;
     const budQuiet = !!(bud && bud.quiet);
@@ -1477,6 +1487,11 @@
         <div class="setting"><span>Text size</span><div class="segmented small">
           ${['small', 'normal', 'large', 'xlarge'].map((k) => `<button class="seg ${ts === k ? 'active' : ''}" data-size="${k}">${{ small: 'Small', normal: 'Normal', large: 'Large', xlarge: 'Extra large' }[k]}</button>`).join('')}
         </div></div>
+        <div class="setting"><span>Text</span><div class="segmented small">
+          <button class="seg ${smooth ? 'active' : ''}" data-text="smooth">Smooth</button>
+          <button class="seg ${smooth ? '' : 'active'}" data-text="system">System</button>
+        </div><span class="muted small">Smooth draws text like macOS: greyscale smoothing (no colour fringes), the Inter typeface and fuller strokes.</span>
+        <span class="text-restart" id="text-restart" hidden><button class="btn small-btn" id="restart">Restart now</button><span class="muted small">to finish switching</span></span></div>
         <div class="setting"><span>Animations</span><div class="segmented small">
           <button class="seg ${anim ? 'active' : ''}" data-anim="1">On</button>
           <button class="seg ${anim ? '' : 'active'}" data-anim="0">Off</button>
@@ -1525,6 +1540,22 @@
       Motion.selectSegment(b);
       save();
     }));
+    // The font changes at once; ClearType on/off needs a restart.
+    const restartNote = main.querySelector('#text-restart');
+    const syncRestart = () => api.smoothTextActive().then((on) => {
+      if (api.platform !== 'win32' && api.platform !== 'linux') return;
+      restartNote.hidden = on === (P().settings.textRendering !== 'system');
+    }).catch(() => {});
+    syncRestart();
+    main.querySelectorAll('[data-text]').forEach((b) => b.addEventListener('click', () => {
+      Sound.play('select');
+      Motion.selectSegment(b);
+      P().settings.textRendering = b.dataset.text;
+      applyTextRendering();
+      save();
+      syncRestart();
+    }));
+    main.querySelector('#restart').addEventListener('click', async () => { await flush(); api.relaunch(); });
     main.querySelector('#buddy-change').addEventListener('click', () => setupBuddy(!P().settings.buddy));
     main.querySelectorAll('[data-bud]').forEach((b) => b.addEventListener('click', async () => {
       const on = b.dataset.bud === '1';
@@ -1572,14 +1603,14 @@
         r.data.settings.buddy = P().settings.buddy;
       }
       state.progress = r.data;
-      applyTextSize(); applyMotion(); applySound(); applyBuddy(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
+      applyTextSize(); applyTextRendering(); applyMotion(); applySound(); applyBuddy(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
     });
     main.querySelector('#open-folder').addEventListener('click', () => api.openDataFolder());
     main.querySelector('#reset').addEventListener('click', async () => {
       if (!(await dialog({ title: 'Reset all progress?', body: '<p>This deletes all notes read, practice answers and exam results for every grade. This cannot be undone. Consider exporting first.</p>', ok: 'Reset everything', danger: true }))) return;
       stopExam();
       const settings = P().settings;
-      state.progress = { version: 1, settings: { grade: settings.grade, textSize: settings.textSize, animations: settings.animations, sounds: settings.sounds, buddy: settings.buddy }, topics: {}, exams: {}, examDrafts: {} };
+      state.progress = { version: 1, settings: { grade: settings.grade, textSize: settings.textSize, animations: settings.animations, sounds: settings.sounds, buddy: settings.buddy, textRendering: settings.textRendering }, topics: {}, exams: {}, examDrafts: {} };
       await flush(); toast('Progress reset.'); render();
     });
     api.progressLocation().then((loc) => {
@@ -1972,6 +2003,7 @@
     window.addEventListener('focus', () => updateStreakBadge());
     setInterval(() => updateStreakBadge(), 60 * 1000);
     applyTextSize();
+    applyTextRendering();
     applyMotion();
     applySound();
     applyBuddy();

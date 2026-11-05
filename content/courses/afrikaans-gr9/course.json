@@ -1,0 +1,214 @@
+{
+  "id": "afrikaans-gr9",
+  "name": "Afrikaans",
+  "grade": 9,
+  "level": "Eerste Addisionele Taal · Graad 9",
+  "language": "af",
+  "about": "Grade 9 Afrikaans First Additional Language: the future, modal verbs, om ... te, conjunctions and word order, pronouns, possessives and relative clauses.",
+  "englishSynonyms": { "mom": "mother", "mum": "mother", "dad": "father", "kids": "children", "phone": "call", "practice": "practise", "practicing": "practising", "holiday": "holidays", "ill": "sick", "bike": "bicycle", "little": "small", "young": "small" },
+  "units": [
+    {
+      "id": "toekoms", "title": "Die toekoms", "english": "The future and modal verbs", "hue": 210,
+      "lessons": [
+        {
+          "id": "gr9-sal", "title": "Sal en gaan",
+          "words": [
+            { "af": "sal", "en": ["will"] },
+            { "af": "volgende", "en": ["next"] },
+            { "af": "eendag", "en": ["one day", "someday"] },
+            { "af": "beplan", "en": ["plan"] },
+            { "af": "bel", "en": ["call", "ring"] }
+          ],
+          "sentences": [
+            { "af": ["Ek sal jou môre bel."], "en": ["I will call you tomorrow.", "I will ring you tomorrow."] },
+            { "af": ["Volgende jaar gaan ons Kaapstad toe."], "en": ["Next year we are going to Cape Town.", "Next year we will go to Cape Town.", "We are going to Cape Town next year.", "We will go to Cape Town next year."] },
+            { "af": ["Eendag wil ek 'n dokter word."], "en": ["One day I want to become a doctor.", "One day I want to be a doctor.", "Someday I want to become a doctor."] },
+            { "af": ["Wat beplan jy vir die vakansie?"], "en": ["What are you planning for the holidays?", "What do you plan for the holidays?", "What are you planning for the vacation?"] }
+          ],
+          "drills": [
+            { "task": "Skryf in die toekomende tyd met \"sal\".", "en": "Write in the future tense with \"sal\" (the main verb goes to the end).", "from": "Ek bel jou.", "to": ["Ek sal jou bel."] },
+            { "task": "Skryf in die toekomende tyd met \"sal\".", "en": "Write in the future tense with \"sal\".", "from": "Hulle wen die wedstryd.", "to": ["Hulle sal die wedstryd wen."] },
+            { "task": "Skryf in die toekomende tyd met \"sal\".", "en": "Write in the future tense with \"sal\".", "from": "Ons help jou.", "to": ["Ons sal jou help."] }
+          ]
+        },
+        {
+          "id": "gr9-modaal", "title": "Moet, mag, hoef",
+          "words": [
+            { "af": "moet", "en": ["must", "have to"] },
+            { "af": "mag", "en": ["may"] },
+            { "af": "behoort", "en": ["should", "ought to"] },
+            { "af": "hoef", "en": ["need to"] },
+            { "af": "betyds", "en": ["on time"] }
+          ],
+          "sentences": [
+            { "af": ["Jy moet jou huiswerk doen."], "en": ["You must do your homework.", "You have to do your homework."] },
+            { "af": ["Mag ek die venster oopmaak?"], "en": ["May I open the window?"] },
+            { "af": ["Leerders behoort betyds te wees."], "en": ["Learners should be on time.", "Learners ought to be on time."] },
+            { "af": ["Jy hoef nie te kom nie."], "en": ["You do not need to come.", "You do not have to come."] }
+          ],
+          "drills": [
+            { "task": "Gebruik \"moet\" in die sin.", "en": "Add \"moet\" (the main verb moves to the end).", "from": "Ek leer vir die toets.", "to": ["Ek moet vir die toets leer."] },
+            { "task": "Gebruik \"moet\" in die sin.", "en": "Add \"moet\".", "from": "Ons ry stadig.", "to": ["Ons moet stadig ry."] },
+            { "task": "Gebruik \"mag\" en maak 'n vraag.", "en": "Use \"mag\" and make it a question.", "from": "Ek gaan buite speel.", "to": ["Mag ek buite gaan speel?"] }
+          ]
+        },
+        {
+          "id": "gr9-om-te", "title": "Om ... te",
+          "words": [
+            { "af": "probeer", "en": ["try"] },
+            { "af": "begin", "en": ["begin", "start"] },
+            { "af": "belangrik", "en": ["important"] },
+            { "af": "oefen", "en": ["practise", "exercise", "train"] },
+            { "af": "spaar", "en": ["save"] }
+          ],
+          "sentences": [
+            { "af": ["Dit is belangrik om water te drink."], "en": ["It is important to drink water."] },
+            { "af": ["Ek probeer om elke dag te oefen."], "en": ["I try to practise every day.", "I try to exercise every day.", "I try to train every day."] },
+            { "af": ["Sy het begin om te huil."], "en": ["She started to cry.", "She began to cry.", "She started crying.", "She began crying."] },
+            { "af": ["Dit is lekker om in die see te swem."], "en": ["It is nice to swim in the sea.", "It is fun to swim in the sea."] }
+          ],
+          "drills": [
+            { "task": "Verbind die sinne met \"om ... te\".", "en": "Join the sentences with \"om ... te\".", "from": "Ek gaan winkel toe. Ek koop brood.", "to": ["Ek gaan winkel toe om brood te koop."] },
+            { "task": "Verbind die sinne met \"om ... te\".", "en": "Join the sentences with \"om ... te\".", "from": "Sy spaar geld. Sy koop 'n foon.", "to": ["Sy spaar geld om 'n foon te koop."] },
+            { "task": "Verbind die sinne met \"om ... te\".", "en": "Join the sentences with \"om ... te\".", "from": "Hy oefen elke dag. Hy wen.", "to": ["Hy oefen elke dag om te wen."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voegwoorde", "title": "Voegwoorde", "english": "Conjunctions and word order", "hue": 330,
+      "lessons": [
+        {
+          "id": "gr9-want", "title": "Maar, want, dus",
+          "words": [
+            { "af": "maar", "en": ["but"] },
+            { "af": "want", "en": ["because", "for"] },
+            { "af": "of", "en": ["or"] },
+            { "af": "dus", "en": ["so", "therefore"] },
+            { "af": "nog", "en": ["still"] }
+          ],
+          "sentences": [
+            { "af": ["Ek is moeg, maar ek moet nog werk."], "en": ["I am tired, but I still have to work.", "I am tired, but I still must work."] },
+            { "af": ["Ons bly binne, want dit reën."], "en": ["We are staying inside because it is raining.", "We stay inside because it is raining.", "We are staying indoors because it is raining."] },
+            { "af": ["Wil jy tee of koffie hê?"], "en": ["Do you want tea or coffee?", "Would you like tea or coffee?"] },
+            { "af": ["Dit is laat, dus gaan ek slaap."], "en": ["It is late, so I am going to sleep.", "It is late, so I am going to bed.", "It is late, therefore I am going to sleep."] }
+          ],
+          "drills": [
+            { "task": "Verbind die sinne met \"want\".", "en": "Join with \"want\" (normal word order after it).", "from": "Ek eet. Ek is honger.", "to": ["Ek eet, want ek is honger."] },
+            { "task": "Verbind die sinne met \"maar\".", "en": "Join with \"maar\".", "from": "Hy is ryk. Hy is nie gelukkig nie.", "to": ["Hy is ryk, maar hy is nie gelukkig nie."] },
+            { "task": "Verbind die sinne met \"dus\".", "en": "Join with \"dus\" (the verb comes straight after it).", "from": "Dit is koud. Ek dra 'n baadjie.", "to": ["Dit is koud, dus dra ek 'n baadjie."] }
+          ]
+        },
+        {
+          "id": "gr9-omdat", "title": "Omdat, dat, as",
+          "words": [
+            { "af": "omdat", "en": ["because"] },
+            { "af": "dat", "en": ["that"] },
+            { "af": "as", "en": ["if", "when"] },
+            { "af": "terwyl", "en": ["while"] },
+            { "af": "tuis", "en": ["at home", "home"] }
+          ],
+          "sentences": [
+            { "af": ["Ek bly tuis omdat ek siek is."], "en": ["I am staying at home because I am sick.", "I stay at home because I am sick.", "I am staying home because I am sick."] },
+            { "af": ["Sy sê dat sy môre sal kom."], "en": ["She says that she will come tomorrow.", "She says she will come tomorrow."] },
+            { "af": ["As dit reën, bly ons binne."], "en": ["If it rains, we stay inside.", "If it rains, we will stay inside.", "When it rains, we stay inside."] },
+            { "af": ["Hy luister na musiek terwyl hy werk."], "en": ["He listens to music while he works.", "He listens to music while he is working."] }
+          ],
+          "drills": [
+            { "task": "Verbind die sinne met \"omdat\".", "en": "Join with \"omdat\" (the verb goes to the end).", "from": "Ek eet. Ek is honger.", "to": ["Ek eet omdat ek honger is."] },
+            { "task": "Verbind die sinne met \"omdat\".", "en": "Join with \"omdat\".", "from": "Ons lag. Die grap is snaaks.", "to": ["Ons lag omdat die grap snaaks is."] },
+            { "task": "Verbind die sinne met \"dat\".", "en": "Join with \"dat\" (the verb goes to the end).", "from": "Ek weet. Jy is slim.", "to": ["Ek weet dat jy slim is."] }
+          ]
+        },
+        {
+          "id": "gr9-toe", "title": "Toe en sodra",
+          "words": [
+            { "af": "toe", "en": ["when"] },
+            { "af": "sodra", "en": ["as soon as"] },
+            { "af": "totdat", "en": ["until"] },
+            { "af": "nadat", "en": ["after"] },
+            { "af": "skottelgoed", "en": ["dishes"] }
+          ],
+          "sentences": [
+            { "af": ["Toe ek klein was, het ek in Durban gewoon."], "en": ["When I was small, I lived in Durban.", "When I was a child, I lived in Durban."] },
+            { "af": ["Bel my sodra jy tuis is."], "en": ["Call me as soon as you are home.", "Call me as soon as you are at home.", "Call me as soon as you get home."] },
+            { "af": ["Ons wag totdat die reën ophou."], "en": ["We are waiting until the rain stops.", "We wait until the rain stops.", "We will wait until the rain stops."] },
+            { "af": ["Nadat ons geëet het, het ons die skottelgoed gewas."], "en": ["After we ate, we washed the dishes.", "After we had eaten, we washed the dishes.", "After eating, we washed the dishes."] }
+          ],
+          "drills": [
+            { "task": "Verbind die sinne met \"toe\".", "en": "Join with \"toe\" (when, in the past): verb to the end, then verb first in the main clause.", "from": "Ek het hom gesien. Ek het gelag.", "to": ["Toe ek hom gesien het, het ek gelag."] },
+            { "task": "Verbind die sinne met \"sodra\".", "en": "Join with \"sodra\", starting with it.", "from": "Ek kom by die huis. Ek bel jou.", "to": ["Sodra ek by die huis kom, bel ek jou."] },
+            { "task": "Verbind die sinne met \"totdat\".", "en": "Join with \"totdat\".", "from": "Ons wag. Die bus kom.", "to": ["Ons wag totdat die bus kom."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voornaamwoorde", "title": "Voornaamwoorde", "english": "Pronouns, possessives and relative clauses", "hue": 152,
+      "lessons": [
+        {
+          "id": "gr9-hom-haar", "title": "Hom, haar, hulle",
+          "words": [
+            { "af": "hom", "en": ["him"] },
+            { "af": "haar", "en": ["her"] },
+            { "af": "julle", "en": ["you all"] },
+            { "af": "ken", "en": ["know"] },
+            { "af": "help", "en": ["help"] }
+          ],
+          "sentences": [
+            { "af": ["Ek ken hom nie."], "en": ["I do not know him."] },
+            { "af": ["Sy het ons gister gehelp."], "en": ["She helped us yesterday.", "Yesterday she helped us."] },
+            { "af": ["Het julle haar gesien?"], "en": ["Did you see her?", "Have you seen her?"] },
+            { "af": ["Gee die boeke vir hulle."], "en": ["Give the books to them.", "Give them the books."] }
+          ],
+          "drills": [
+            { "task": "Vervang die naam met 'n voornaamwoord.", "en": "Replace the name with a pronoun.", "from": "Ek sien Thabo.", "to": ["Ek sien hom."] },
+            { "task": "Vervang die naam met 'n voornaamwoord.", "en": "Replace the name with a pronoun.", "from": "Ons help Lerato.", "to": ["Ons help haar."] },
+            { "task": "Vervang die woorde met 'n voornaamwoord.", "en": "Replace the underlined people with a pronoun.", "from": "Die onderwyser roep die leerders.", "to": ["Die onderwyser roep hulle."] }
+          ]
+        },
+        {
+          "id": "gr9-se", "title": "My suster se fiets",
+          "words": [
+            { "af": "se", "en": ["'s"] },
+            { "af": "sy", "en": ["his", "its"] },
+            { "af": "verpleegster", "en": ["nurse"] },
+            { "af": "langs", "en": ["next to", "beside"] },
+            { "af": "kar", "en": ["car"] }
+          ],
+          "sentences": [
+            { "af": ["Dit is my suster se fiets."], "en": ["This is my sister's bicycle.", "That is my sister's bicycle.", "It is my sister's bicycle.", "This is my sister's bike."] },
+            { "af": ["Thabo se ma is 'n verpleegster."], "en": ["Thabo's mother is a nurse."] },
+            { "af": ["Die hond het sy kos geëet."], "en": ["The dog ate its food.", "The dog has eaten its food."] },
+            { "af": ["Ons huis is langs hulle huis."], "en": ["Our house is next to their house.", "Our house is beside their house."] }
+          ],
+          "drills": [
+            { "task": "Gebruik \"se\".", "en": "Rewrite with \"se\" (the possessive).", "from": "Die kar van my pa is rooi.", "to": ["My pa se kar is rooi."] },
+            { "task": "Gebruik \"se\".", "en": "Rewrite with \"se\".", "from": "Die boek van Sipho is nuut.", "to": ["Sipho se boek is nuut."] },
+            { "task": "Gebruik \"se\".", "en": "Rewrite with \"se\".", "from": "Die naam van die hond is Rex.", "to": ["Die hond se naam is Rex."] }
+          ]
+        },
+        {
+          "id": "gr9-wat", "title": "Die man wat ...",
+          "words": [
+            { "af": "wat", "en": ["who", "which", "that"] },
+            { "af": "wie se", "en": ["whose"] },
+            { "af": "oom", "en": ["uncle"] },
+            { "af": "langsaan", "en": ["next door"] },
+            { "af": "gegee", "en": ["gave", "given"] }
+          ],
+          "sentences": [
+            { "af": ["Die man wat daar staan, is my oom."], "en": ["The man who is standing there is my uncle.", "The man standing there is my uncle.", "The man who stands there is my uncle."] },
+            { "af": ["Ek het die boek gelees wat jy my gegee het."], "en": ["I read the book that you gave me.", "I read the book you gave me.", "I have read the book that you gave me.", "I have read the book you gave me."] },
+            { "af": ["Die meisie wie se pa 'n dokter is, woon langsaan."], "en": ["The girl whose father is a doctor lives next door."] }
+          ],
+          "drills": [
+            { "task": "Verbind die sinne met \"wat\".", "en": "Join with \"wat\" (who/which).", "from": "Die hond blaf. Die hond is groot.", "to": ["Die hond wat blaf, is groot."] },
+            { "task": "Verbind die sinne met \"wat\".", "en": "Join with \"wat\".", "from": "Ek ken die seun. Die seun speel sokker.", "to": ["Ek ken die seun wat sokker speel."] },
+            { "task": "Verbind die sinne met \"wie se\".", "en": "Join with \"wie se\" (whose).", "from": "Dit is die meisie. Haar ma is 'n onderwyser.", "to": ["Dit is die meisie wie se ma 'n onderwyser is."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

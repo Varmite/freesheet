@@ -1,0 +1,163 @@
+{
+  "id": "afrikaans-gr11",
+  "name": "Afrikaans",
+  "grade": 11,
+  "level": "Eerste Addisionele Taal · Graad 11",
+  "language": "af",
+  "about": "Grade 11 Afrikaans First Additional Language: idioms and proverbs, figurative language, fixed comparisons and formal writing.",
+  "englishSynonyms": { "everybody": "everyone", "help": "lend a hand", "tire": "tyre", "post": "position", "reply": "answer", "ill": "sick" },
+  "units": [
+    {
+      "id": "idiome", "title": "Idiome en spreekwoorde", "english": "Idioms and proverbs", "hue": 330,
+      "lessons": [
+        {
+          "id": "gr11-idiome-1", "title": "Die kat uit die boom kyk",
+          "words": [
+            { "af": "die bobbejaan agter die bult gaan haal", "en": ["worry about problems before they happen"] },
+            { "af": "met die deur in die huis val", "en": ["come straight to the point"] },
+            { "af": "die kat uit die boom kyk", "en": ["wait and see"] },
+            { "af": "in die sop wees", "en": ["be in trouble"] }
+          ],
+          "sentences": [
+            { "af": ["Moenie die bobbejaan agter die bult gaan haal nie."], "en": ["Do not worry about problems before they happen.", "Do not cross your bridges before you come to them."] },
+            { "af": ["Hy het met die deur in die huis geval en gesê dat hy bedank."], "en": ["He came straight to the point and said that he was resigning.", "He got straight to the point and said that he was resigning.", "He came straight to the point and said he was resigning.", "He got straight to the point and said he was resigning."] },
+            { "af": ["Ek gaan eers die kat uit die boom kyk."], "en": ["I am going to wait and see first.", "First I am going to wait and see.", "I will wait and see first."] },
+            { "af": ["Nou is ons in die sop!"], "en": ["Now we are in trouble!"] }
+          ],
+          "drills": [
+            { "task": "Vervang die woorde met 'n idioom: \"wag om te sien wat gebeur\".", "en": "Replace with the idiom for \"wait and see what happens\".", "from": "Ek gaan eers wag om te sien wat gebeur.", "to": ["Ek gaan eers die kat uit die boom kyk."] },
+            { "task": "Vervang die woorde met 'n idioom: \"is in die moeilikheid\".", "en": "Replace with the idiom for \"is in trouble\".", "from": "Die span is in die moeilikheid.", "to": ["Die span is in die sop."] }
+          ]
+        },
+        {
+          "id": "gr11-idiome-2", "title": "Die spyker op die kop",
+          "words": [
+            { "af": "hand uit die mou steek", "en": ["lend a hand", "pitch in"] },
+            { "af": "op heterdaad betrap", "en": ["caught red-handed"] },
+            { "af": "die spyker op die kop slaan", "en": ["hit the nail on the head"] },
+            { "af": "'n blou Maandag", "en": ["a very short while"] }
+          ],
+          "sentences": [
+            { "af": ["Almal moet hand uit die mou steek."], "en": ["Everyone must lend a hand.", "Everyone has to lend a hand.", "Everyone must pitch in."] },
+            { "af": ["Die dief is op heterdaad betrap."], "en": ["The thief was caught red-handed."] },
+            { "af": ["Jy het die spyker op die kop geslaan."], "en": ["You hit the nail on the head.", "You have hit the nail on the head."] },
+            { "af": ["Die vakansie was net 'n blou Maandag."], "en": ["The holiday lasted only a very short while.", "The holiday was over in a very short while.", "The holiday was only a very short while."] }
+          ],
+          "drills": [
+            { "task": "Vervang die woorde met 'n idioom: \"help\".", "en": "Replace \"help\" with the idiom.", "from": "Almal moet help.", "to": ["Almal moet hand uit die mou steek."] },
+            { "task": "Vervang die woorde met 'n idioom: \"presies reg gesê\".", "en": "Replace with the idiom for \"said exactly the right thing\".", "from": "Jy het presies reg gesê.", "to": ["Jy het die spyker op die kop geslaan."] }
+          ]
+        },
+        {
+          "id": "gr11-spreekwoorde", "title": "Spreekwoorde",
+          "words": [
+            { "af": "oefening", "en": ["practice"] },
+            { "af": "selde", "en": ["seldom", "rarely"] },
+            { "af": "spoed", "en": ["speed", "haste"] },
+            { "af": "waarheid", "en": ["truth"] },
+            { "af": "leuen", "en": ["lie"] }
+          ],
+          "sentences": [
+            { "af": ["Oefening baar kuns."], "en": ["Practice makes perfect."] },
+            { "af": ["Haastige spoed is selde goed."], "en": ["More haste, less speed.", "Haste makes waste."] },
+            { "af": ["Wie laaste lag, lag die lekkerste."], "en": ["He who laughs last laughs best.", "He who laughs last laughs longest."] },
+            { "af": ["Waar daar 'n wil is, is daar 'n weg."], "en": ["Where there is a will, there is a way."] },
+            { "af": ["Al is die leuen nog so snel, die waarheid agterhaal hom wel."], "en": ["However fast a lie travels, the truth catches up with it.", "The truth always catches up with a lie."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beeldspraak", "title": "Beeldspraak", "english": "Figurative language", "hue": 190,
+      "lessons": [
+        {
+          "id": "gr11-beeldspraak", "title": "Vergelyking en metafoor",
+          "words": [
+            { "af": "vergelyking", "en": ["simile"] },
+            { "af": "metafoor", "en": ["metaphor"] },
+            { "af": "personifikasie", "en": ["personification"] },
+            { "af": "beeldspraak", "en": ["figurative language", "imagery"] },
+            { "af": "soos", "en": ["like", "as"] }
+          ],
+          "sentences": [
+            { "af": ["Sy is so bang soos 'n muis."], "en": ["She is as scared as a mouse.", "She is as timid as a mouse."] },
+            { "af": ["Hy is 'n leeu op die veld."], "en": ["He is a lion on the field."] },
+            { "af": ["Die wind fluister deur die bome."], "en": ["The wind whispers through the trees."] },
+            { "af": ["Haar oë is soos sterre."], "en": ["Her eyes are like stars."] }
+          ],
+          "drills": [
+            { "task": "Maak 'n metafoor van die vergelyking.", "en": "Turn the simile into a metaphor (drop \"soos\").", "from": "Hy is soos 'n leeu.", "to": ["Hy is 'n leeu."] },
+            { "task": "Maak 'n metafoor van die vergelyking.", "en": "Turn the simile into a metaphor.", "from": "Sy is soos 'n engel.", "to": ["Sy is 'n engel."] },
+            { "task": "Maak 'n vergelyking van die metafoor.", "en": "Turn the metaphor into a simile (add \"soos\").", "from": "Die klaskamer is 'n dieretuin.", "to": ["Die klaskamer is soos 'n dieretuin."] }
+          ]
+        },
+        {
+          "id": "gr11-vaste", "title": "So sterk soos 'n os",
+          "words": [
+            { "af": "so koud soos ys", "en": ["as cold as ice"] },
+            { "af": "so sterk soos 'n os", "en": ["as strong as an ox"] },
+            { "af": "so oud soos die Kaapse wapad", "en": ["as old as the hills"] },
+            { "af": "so plat soos 'n pannekoek", "en": ["as flat as a pancake"] }
+          ],
+          "sentences": [
+            { "af": ["Die water is so koud soos ys."], "en": ["The water is as cold as ice."] },
+            { "af": ["My oupa is so sterk soos 'n os."], "en": ["My grandfather is as strong as an ox."] },
+            { "af": ["Daardie grap is so oud soos die Kaapse wapad."], "en": ["That joke is as old as the hills."] },
+            { "af": ["Die band is so plat soos 'n pannekoek."], "en": ["The tyre is as flat as a pancake."] }
+          ],
+          "drills": [
+            { "task": "Gebruik 'n vaste vergelyking.", "en": "Replace \"baie koud\" with a fixed comparison.", "from": "Die water is baie koud.", "to": ["Die water is so koud soos ys."] },
+            { "task": "Gebruik 'n vaste vergelyking.", "en": "Replace \"baie sterk\" with a fixed comparison.", "from": "Hy is baie sterk.", "to": ["Hy is so sterk soos 'n os."] },
+            { "task": "Gebruik 'n vaste vergelyking.", "en": "Replace \"baie oud\" with a fixed comparison.", "from": "Dit is baie oud.", "to": ["Dit is so oud soos die Kaapse wapad."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formeel", "title": "Formele taal", "english": "Formal language and writing", "hue": 210,
+      "lessons": [
+        {
+          "id": "gr11-brief", "title": "Die formele brief",
+          "words": [
+            { "af": "geagte", "en": ["dear"] },
+            { "af": "aansoek", "en": ["application"] },
+            { "af": "betrekking", "en": ["position"] },
+            { "af": "bylae", "en": ["attachment", "appendix"] },
+            { "af": "u", "en": ["you"] }
+          ],
+          "sentences": [
+            { "af": ["Geagte Meneer"], "en": ["Dear Sir"] },
+            { "af": ["Ek wil graag aansoek doen om die betrekking."], "en": ["I would like to apply for the position."] },
+            { "af": ["My CV is as bylae aangeheg."], "en": ["My CV is attached as an attachment.", "My CV is attached as an appendix.", "My CV is attached."] },
+            { "af": ["Ek sien uit na u antwoord."], "en": ["I look forward to your answer."] }
+          ],
+          "drills": [
+            { "task": "Skryf formeel: gebruik \"u\".", "en": "Make it formal: use \"u\" instead of \"jy\"/\"jou\".", "from": "Kan jy my help?", "to": ["Kan u my help?"] },
+            { "task": "Skryf formeel: gebruik \"u\".", "en": "Make it formal: use \"u\".", "from": "Dankie vir jou brief.", "to": ["Dankie vir u brief."] },
+            { "task": "Skryf formeel: gebruik \"u\".", "en": "Make it formal: use \"u\".", "from": "Ek wil jou iets vra.", "to": ["Ek wil u iets vra."] }
+          ]
+        },
+        {
+          "id": "gr11-nuus", "title": "In die nuus",
+          "words": [
+            { "af": "regering", "en": ["government"] },
+            { "af": "minister", "en": ["minister"] },
+            { "af": "joernalis", "en": ["journalist"] },
+            { "af": "hospitaal", "en": ["hospital"] },
+            { "af": "projek", "en": ["project"] }
+          ],
+          "sentences": [
+            { "af": ["Die regering bou 'n nuwe hospitaal."], "en": ["The government is building a new hospital.", "The government builds a new hospital."] },
+            { "af": ["Die minister het gesê dat die projek volgende jaar sou begin."], "en": ["The minister said that the project would start next year.", "The minister said the project would start next year.", "The minister said that the project would begin next year."] },
+            { "af": ["Die joernalis het die minister uitgevra."], "en": ["The journalist questioned the minister.", "The journalist interviewed the minister."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die lydende vorm.", "en": "Rewrite in the passive (note: 'n Nuwe ...).", "from": "Die regering bou 'n nuwe hospitaal.", "to": ["'n Nuwe hospitaal word deur die regering gebou."] },
+            { "task": "Skryf in die indirekte rede.", "en": "Rewrite as indirect speech (ons becomes hulle, sal becomes sou).", "from": "Die minister het gesê: \"Ons sal die probleem oplos.\"", "to": ["Die minister het gesê dat hulle die probleem sou oplos."] },
+            { "task": "Skryf in die indirekte rede.", "en": "A question word stays at the front of the reported question.", "from": "Die joernalis het gevra: \"Wanneer begin die projek?\"", "to": ["Die joernalis het gevra wanneer die projek sou begin.", "Die joernalis het gevra wanneer die projek begin het."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

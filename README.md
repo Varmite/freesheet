@@ -18,7 +18,10 @@ A free, fully offline study app for South African learners following the **CAPS*
   updating). It cheers right answers, offers to show where a missed answer is explained, suggests what to
   study next from your progress, reacts to streaks and results, and has a tap-for-help menu. It steps out
   during exams. Change it, switch it off, or make it speak only when tapped, in Settings.
-* **Settings** (cog, top right): text size, animations, sound effects and the study buddy.
+* **Settings** (cog, top right): text size, text rendering, animations, sound effects and the study buddy.
+* **Smooth text** (default): text is drawn the way macOS draws it: greyscale anti-aliasing instead of
+  ClearType's colour fringes, the Inter typeface (SIL Open Font License, `src/fonts`) with Apple-style
+  tracking, and slightly fuller strokes on Windows. "System" switches back to Windows' own rendering.
 
 There are no accounts and nothing is sent over the internet. Progress is saved to a single file,
 `progress.json`, in your user-data folder:
@@ -89,23 +92,31 @@ affiliated with the Department of Basic Education or any commercial service.
 
 ### Language courses (Afrikaans)
 
-Afrikaans appears as a subject in every grade, taught as a gamified language course: units of short
-lessons that unlock in order, new words introduced one at a time, then exercises generated from each
-lesson's words and sentences (pick the meaning, match pairs, translate with word tiles in both
-directions, type a translation, fill in the blank, pick the right translation). Mistakes come back at
-the end of the lesson; answers forgive case, punctuation, contractions, synonyms, missing accents and
-small typos (with a note), but not a typo that makes a different real word. Lessons earn XP and count
-towards the daily streak, and your study buddy is the character who speaks the sentences and reacts.
+Afrikaans appears as a subject in every grade, with a course at that grade's CAPS First Additional
+Language level (`content/courses/afrikaans-gr8` … `afrikaans-gr12`): Grade 8 word order, questions,
+negatives, past tense, plurals and diminutives; Grade 9 future, modal verbs, om ... te, conjunctions and
+pronouns; Grade 10 the passive and indirect speech; Grade 11 idioms, proverbs, figurative language and
+formal writing; Grade 12 literature terms, persuasive language and complex sentences.
 
-The course is `content/courses/afrikaans/course.json` (units → lessons → `words` and `sentences`, each
-with every accepted translation); the engine is `src/js/course.js` and the screens `src/js/course-ui.js`.
-`node scripts/test-course.js` (part of `npm test`) generates every lesson several ways and checks that
-every exercise can be solved and every accepted answer is accepted.
+It is taught as a gamified language course: units of short lessons that unlock in order, new words
+introduced one at a time, then exercises generated from each lesson's words, sentences and grammar
+drills (pick the meaning, match pairs, translate with word tiles both ways, type a translation, fill in
+the blank, and rewrite a sentence as told: past tense, passive, indirect speech, join with "omdat"...).
+Mistakes come back at the end of the lesson; answers forgive case, punctuation, contractions,
+synonyms, missing accents and small typos (with a note), but not a typo that makes a different real
+word, nor a missing or extra word. Lessons earn XP and count towards the daily streak, and your study
+buddy is the character who speaks the sentences and reacts.
+
+Each grade's `course.json` has units → lessons → `words`, `sentences` (with every accepted
+translation) and `drills` (`task`, `from`, accepted `to`); the engine is `src/js/course.js` and the
+screens `src/js/course-ui.js`. `node scripts/test-course.js` (part of `npm test`) generates every lesson
+several ways and checks that every exercise can be solved, every accepted answer is accepted, and an
+unchanged sentence never passes a drill.
 
 Listening: there is no good offline Afrikaans text-to-speech voice (Meta's MMS and Piper have none), so
 the course has no audio yet. `node scripts/tts/course-extract.js` writes `tts/course-phrases.csv`: every
 word and sentence with the file name the app expects. Recordings saved as
-`audio/courses/afrikaans/<id>.ogg` are picked up automatically: speaker buttons appear and "Tap what you
+`audio/courses/<course>/<id>.ogg` are picked up automatically: speaker buttons appear and "Tap what you
 hear" exercises switch on.
 
 ## Read-aloud audio

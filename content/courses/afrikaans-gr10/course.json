@@ -1,0 +1,151 @@
+{
+  "id": "afrikaans-gr10",
+  "name": "Afrikaans",
+  "grade": 10,
+  "level": "Eerste Addisionele Taal · Graad 10",
+  "language": "af",
+  "about": "Grade 10 Afrikaans First Additional Language: the passive voice, direct and indirect speech, the environment and careers.",
+  "englishSynonyms": { "mom": "mother", "dad": "father", "tv": "television", "game": "match", "headmaster": "principal", "ill": "sick", "rubbish": "litter", "dustbin": "bin", "job": "work" },
+  "units": [
+    {
+      "id": "lydend", "title": "Die lydende vorm", "english": "The passive voice", "hue": 210,
+      "lessons": [
+        {
+          "id": "gr10-word", "title": "Word ... deur",
+          "words": [
+            { "af": "word", "en": ["is being", "is"] },
+            { "af": "deur", "en": ["by"] },
+            { "af": "geskryf", "en": ["written"] },
+            { "af": "geverf", "en": ["painted"] },
+            { "af": "uitgesaai", "en": ["broadcast"] }
+          ],
+          "sentences": [
+            { "af": ["Die brief word deur Sipho geskryf."], "en": ["The letter is being written by Sipho.", "The letter is written by Sipho."] },
+            { "af": ["Die huis word geverf."], "en": ["The house is being painted.", "The house is painted."] },
+            { "af": ["Die kos word in die kombuis voorberei."], "en": ["The food is being prepared in the kitchen.", "The food is prepared in the kitchen."] },
+            { "af": ["Die nuus word elke aand uitgesaai."], "en": ["The news is broadcast every evening.", "The news is broadcast every night."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die lydende vorm.", "en": "Rewrite in the passive (word ... deur ... ge-).", "from": "Sipho skryf die brief.", "to": ["Die brief word deur Sipho geskryf."] },
+            { "task": "Skryf in die lydende vorm.", "en": "Rewrite in the passive.", "from": "Die kinders eet die koek.", "to": ["Die koek word deur die kinders geëet."] },
+            { "task": "Skryf in die lydende vorm.", "en": "Rewrite in the passive.", "from": "Ma kook die kos.", "to": ["Die kos word deur Ma gekook."] }
+          ]
+        },
+        {
+          "id": "gr10-is-ge", "title": "Is ... ge- (verlede)",
+          "words": [
+            { "af": "brug", "en": ["bridge"] },
+            { "af": "gebou", "en": ["built"] },
+            { "af": "weens", "en": ["because of", "due to"] },
+            { "af": "uitgestel", "en": ["postponed"] },
+            { "af": "prys", "en": ["prize"] }
+          ],
+          "sentences": [
+            { "af": ["Die brug is in 1990 gebou."], "en": ["The bridge was built in 1990."] },
+            { "af": ["Die venster is deur die bal gebreek."], "en": ["The window was broken by the ball."] },
+            { "af": ["Die prys is aan die beste leerder gegee."], "en": ["The prize was given to the best learner."] },
+            { "af": ["Die wedstryd is weens die reën uitgestel."], "en": ["The match was postponed because of the rain.", "The match was postponed due to the rain."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die lydende vorm (verlede tyd).", "en": "Passive, past tense: \"het ... ge-\" becomes \"is ... ge-\".", "from": "Die seun het die venster gebreek.", "to": ["Die venster is deur die seun gebreek."] },
+            { "task": "Skryf in die lydende vorm (verlede tyd).", "en": "Passive, past tense.", "from": "My oupa het die huis gebou.", "to": ["Die huis is deur my oupa gebou."] },
+            { "task": "Skryf in die lydende vorm (verlede tyd).", "en": "Passive, past tense.", "from": "Die polisie het die dief gevang.", "to": ["Die dief is deur die polisie gevang."] }
+          ]
+        },
+        {
+          "id": "gr10-omgewing", "title": "Ons omgewing",
+          "words": [
+            { "af": "omgewing", "en": ["environment"] },
+            { "af": "besoedeling", "en": ["pollution"] },
+            { "af": "herwin", "en": ["recycle"] },
+            { "af": "afval", "en": ["litter", "waste"] },
+            { "af": "beskerm", "en": ["protect"] }
+          ],
+          "sentences": [
+            { "af": ["Ons moet die omgewing beskerm."], "en": ["We must protect the environment.", "We have to protect the environment."] },
+            { "af": ["Plastiek kan herwin word."], "en": ["Plastic can be recycled."] },
+            { "af": ["Besoedeling is 'n groot probleem in ons stede."], "en": ["Pollution is a big problem in our cities.", "Pollution is a major problem in our cities."] },
+            { "af": ["Gooi jou afval in die asblik."], "en": ["Throw your litter in the bin.", "Put your litter in the bin."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die bedrywende vorm.", "en": "Rewrite in the active voice.", "from": "Die boek word deur die leerder gelees.", "to": ["Die leerder lees die boek."] },
+            { "task": "Skryf in die bedrywende vorm.", "en": "Rewrite in the active voice (past tense).", "from": "Die liedjie is deur die koor gesing.", "to": ["Die koor het die liedjie gesing."] },
+            { "task": "Skryf in die lydende vorm.", "en": "Rewrite in the passive.", "from": "Die leerders herwin die papier.", "to": ["Die papier word deur die leerders herwin."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rede", "title": "Direkte en indirekte rede", "english": "Direct and indirect speech", "hue": 28,
+      "lessons": [
+        {
+          "id": "gr10-se-dat", "title": "Sy sê dat ...",
+          "words": [
+            { "af": "sê", "en": ["say", "says"] },
+            { "af": "vra", "en": ["ask", "asks"] },
+            { "af": "of", "en": ["whether", "if"] },
+            { "af": "verduidelik", "en": ["explain", "explains"] },
+            { "af": "antwoord", "en": ["answer", "answers"] }
+          ],
+          "sentences": [
+            { "af": ["Sy sê dat sy moeg is."], "en": ["She says that she is tired.", "She says she is tired."] },
+            { "af": ["Hy vra of ons honger is."], "en": ["He asks whether we are hungry.", "He asks if we are hungry."] },
+            { "af": ["Die onderwyser verduidelik dat die toets moeilik sal wees."], "en": ["The teacher explains that the test will be difficult.", "The teacher explains that the test will be hard."] },
+            { "af": ["Ek antwoord dat ek nie weet nie."], "en": ["I answer that I do not know."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die indirekte rede.", "en": "Rewrite as indirect speech (dat ..., verb at the end; ek becomes sy/hy).", "from": "Thandi sê: \"Ek is honger.\"", "to": ["Thandi sê dat sy honger is."] },
+            { "task": "Skryf in die indirekte rede.", "en": "Rewrite as indirect speech.", "from": "Pieter sê: \"Ek speel rugby.\"", "to": ["Pieter sê dat hy rugby speel."] },
+            { "task": "Skryf in die indirekte rede.", "en": "A yes/no question becomes \"of ...\".", "from": "Ma vra vir Thabo: \"Is jy klaar?\"", "to": ["Ma vra vir Thabo of hy klaar is."] }
+          ]
+        },
+        {
+          "id": "gr10-het-gese", "title": "Het gesê dat ... was",
+          "words": [
+            { "af": "gesê", "en": ["said"] },
+            { "af": "gevra", "en": ["asked"] },
+            { "af": "aangekondig", "en": ["announced"] },
+            { "af": "sou", "en": ["would"] },
+            { "af": "hoof", "en": ["principal"] }
+          ],
+          "sentences": [
+            { "af": ["Sy het gesê dat sy siek was."], "en": ["She said that she was sick.", "She said she was sick."] },
+            { "af": ["Hy het gevra of ek hom kon help."], "en": ["He asked whether I could help him.", "He asked if I could help him."] },
+            { "af": ["Die hoof het aangekondig dat die skool vroeg sou sluit."], "en": ["The principal announced that the school would close early.", "The principal announced that school would close early."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die indirekte rede.", "en": "After \"het gesê\", the present tense moves into the past (is becomes was).", "from": "Sipho het gesê: \"Ek is moeg.\"", "to": ["Sipho het gesê dat hy moeg was."] },
+            { "task": "Skryf in die indirekte rede.", "en": "Rewrite as indirect speech (kan becomes kon).", "from": "Lerato het gesê: \"Ek kan nie kom nie.\"", "to": ["Lerato het gesê dat sy nie kon kom nie."] },
+            { "task": "Skryf in die indirekte rede.", "en": "Rewrite as indirect speech (sal becomes sou).", "from": "Die hoof het gesê: \"Die skool sal vroeg sluit.\"", "to": ["Die hoof het gesê dat die skool vroeg sou sluit."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beroepe", "title": "Beroepe", "english": "Careers", "hue": 262,
+      "lessons": [
+        {
+          "id": "gr10-beroepe", "title": "Watter beroep?",
+          "words": [
+            { "af": "beroep", "en": ["career", "occupation"] },
+            { "af": "onderhoud", "en": ["interview"] },
+            { "af": "ervaring", "en": ["experience"] },
+            { "af": "opleiding", "en": ["training"] },
+            { "af": "salaris", "en": ["salary"] }
+          ],
+          "sentences": [
+            { "af": ["Watter beroep wil jy volg?"], "en": ["Which career do you want to follow?", "What career do you want to follow?", "Which career do you want to pursue?", "What career do you want to pursue?"] },
+            { "af": ["Ek het môre 'n onderhoud vir 'n werk."], "en": ["I have an interview for a job tomorrow.", "I have a job interview tomorrow.", "Tomorrow I have a job interview."] },
+            { "af": ["Hy het baie ervaring as elektrisiën."], "en": ["He has a lot of experience as an electrician.", "He has much experience as an electrician."] },
+            { "af": ["Verpleegsters kry drie jaar opleiding."], "en": ["Nurses get three years of training.", "Nurses receive three years of training."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die toekomende tyd.", "en": "Write in the future tense with \"sal\".", "from": "Ek word 'n ingenieur.", "to": ["Ek sal 'n ingenieur word."] },
+            { "task": "Skryf in die lydende vorm.", "en": "Rewrite in the passive.", "from": "Die maatskappy betaal die salaris.", "to": ["Die salaris word deur die maatskappy betaal."] },
+            { "task": "Verbind die sinne met \"omdat\".", "en": "Join with \"omdat\".", "from": "Sy wil 'n dokter word. Sy wil mense help.", "to": ["Sy wil 'n dokter word omdat sy mense wil help."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

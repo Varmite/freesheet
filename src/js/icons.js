@@ -60,7 +60,7 @@
     'afrikaans': ['chat', 140]
   };
   const KEYWORDS = [
-    ['english', 'book', 280], ['language', 'book', 280], ['math', 'maths', 222], ['science', 'flask', 165],
+    ['afrikaans', 'chat', 140], ['english', 'book', 280], ['language', 'book', 280], ['math', 'maths', 222], ['science', 'flask', 165],
     ['history', 'landmark', 24], ['geograph', 'globe', 190], ['econom', 'trend', 340], ['account', 'receipt', 32],
     ['business', 'briefcase', 300], ['tech', 'gear', 212], ['life', 'compass', 352]
   ];

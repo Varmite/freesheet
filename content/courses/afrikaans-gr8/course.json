@@ -1,0 +1,215 @@
+{
+  "id": "afrikaans-gr8",
+  "name": "Afrikaans",
+  "grade": 8,
+  "level": "Eerste Addisionele Taal · Graad 8",
+  "language": "af",
+  "about": "Grade 8 Afrikaans First Additional Language: word order, questions, negatives, the past tense, plurals, diminutives and comparisons.",
+  "englishSynonyms": { "mom": "mother", "mum": "mother", "dad": "father", "grandma": "grandmother", "granny": "grandmother", "grandpa": "grandfather", "kids": "children", "tv": "television", "maths": "mathematics", "bike": "bicycle", "smartest": "cleverest", "game": "match" },
+  "units": [
+    {
+      "id": "my-wereld", "title": "Ek en my wêreld", "english": "Me and my world: word order and questions", "hue": 152,
+      "lessons": [
+        {
+          "id": "gr8-roetine", "title": "My daaglikse roetine",
+          "words": [
+            { "af": "oggend", "en": ["morning"] },
+            { "af": "opstaan", "en": ["get up"] },
+            { "af": "aantrek", "en": ["get dressed", "put on"] },
+            { "af": "laat", "en": ["late"] },
+            { "af": "elke", "en": ["every", "each"] }
+          ],
+          "sentences": [
+            { "af": ["Ek staan elke oggend om sesuur op."], "en": ["I get up at six o'clock every morning.", "Every morning I get up at six o'clock.", "I get up at six every morning.", "Every morning I get up at six."] },
+            { "af": ["My broer trek sy skooluniform aan."], "en": ["My brother puts on his school uniform.", "My brother is putting on his school uniform."] },
+            { "af": ["Ons ry met die bus skool toe."], "en": ["We go to school by bus.", "We take the bus to school.", "We ride the bus to school."] },
+            { "af": ["Hoekom is jy vandag laat?"], "en": ["Why are you late today?"] }
+          ],
+          "drills": [
+            { "task": "Begin die sin met \"Elke oggend\".", "en": "Start the sentence with \"Elke oggend\" (the verb comes second).", "from": "Ek borsel my tande elke oggend.", "to": ["Elke oggend borsel ek my tande."] },
+            { "task": "Begin die sin met \"Vandag\".", "en": "Start the sentence with \"Vandag\".", "from": "Ons skryf vandag 'n toets.", "to": ["Vandag skryf ons 'n toets."] },
+            { "task": "Maak 'n vraag van die sin.", "en": "Turn the sentence into a question.", "from": "Jy woon in Durban.", "to": ["Woon jy in Durban?"] }
+          ]
+        },
+        {
+          "id": "gr8-vrae", "title": "Vrae vra",
+          "words": [
+            { "af": "wie", "en": ["who"] },
+            { "af": "wanneer", "en": ["when"] },
+            { "af": "hoekom", "en": ["why"] },
+            { "af": "waarheen", "en": ["where to"] },
+            { "af": "vakansie", "en": ["holiday", "holidays"] }
+          ],
+          "sentences": [
+            { "af": ["Wie is jou beste vriend?"], "en": ["Who is your best friend?"] },
+            { "af": ["Wanneer begin die skool?"], "en": ["When does school start?", "When does the school start?", "When does school begin?"] },
+            { "af": ["Waarheen gaan julle in die vakansie?"], "en": ["Where are you going in the holidays?", "Where are you going during the holidays?", "Where are you going in the holiday?", "Where do you go in the holidays?"] },
+            { "af": ["Hoekom lag die kinders?"], "en": ["Why are the children laughing?", "Why do the children laugh?"] }
+          ],
+          "drills": [
+            { "task": "Vra 'n vraag met \"wanneer\".", "en": "Ask a question with \"wanneer\" (when).", "from": "Die bus kom om agtuur.", "to": ["Wanneer kom die bus?"] },
+            { "task": "Vra 'n vraag met \"wie\".", "en": "Ask a question with \"wie\" (who).", "from": "Thabo speel sokker.", "to": ["Wie speel sokker?"] },
+            { "task": "Vra 'n vraag met \"waar\".", "en": "Ask a question with \"waar\" (where).", "from": "Sy woon in Kaapstad.", "to": ["Waar woon sy?"] }
+          ]
+        },
+        {
+          "id": "gr8-ontkenning", "title": "Nie ... nie",
+          "words": [
+            { "af": "nooit", "en": ["never"] },
+            { "af": "niemand", "en": ["nobody"] },
+            { "af": "niks", "en": ["nothing"] },
+            { "af": "nêrens", "en": ["nowhere"] },
+            { "af": "geen", "en": ["no", "none"] }
+          ],
+          "sentences": [
+            { "af": ["Ek eet nie vleis nie."], "en": ["I do not eat meat."] },
+            { "af": ["Niemand weet die antwoord nie."], "en": ["Nobody knows the answer.", "No one knows the answer."] },
+            { "af": ["Hy het niks gesê nie."], "en": ["He said nothing.", "He did not say anything."] },
+            { "af": ["Ons gaan nooit Saterdae skool toe nie."], "en": ["We never go to school on Saturdays."] }
+          ],
+          "drills": [
+            { "task": "Maak die sin negatief.", "en": "Make the sentence negative (remember the second \"nie\").", "from": "Ek hou van sokker.", "to": ["Ek hou nie van sokker nie."] },
+            { "task": "Maak die sin negatief.", "en": "Make the sentence negative.", "from": "Sy is honger.", "to": ["Sy is nie honger nie."] },
+            { "task": "Maak die sin negatief.", "en": "Make the sentence negative.", "from": "Die kinders speel buite.", "to": ["Die kinders speel nie buite nie."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gister", "title": "Gister en vandag", "english": "Yesterday and today: the past tense", "hue": 28,
+      "lessons": [
+        {
+          "id": "gr8-verlede", "title": "Het ge-",
+          "words": [
+            { "af": "gister", "en": ["yesterday"] },
+            { "af": "gisteraand", "en": ["last night", "yesterday evening"] },
+            { "af": "koop", "en": ["buy"] },
+            { "af": "kyk", "en": ["watch", "look"] },
+            { "af": "wedstryd", "en": ["match"] }
+          ],
+          "sentences": [
+            { "af": ["Ek het gister 'n nuwe boek gekoop."], "en": ["I bought a new book yesterday.", "Yesterday I bought a new book."] },
+            { "af": ["Ons het gisteraand televisie gekyk."], "en": ["We watched television last night.", "Last night we watched television."] },
+            { "af": ["My pa het verlede week hard gewerk."], "en": ["My father worked hard last week.", "Last week my father worked hard."] },
+            { "af": ["Het jy die wedstryd gesien?"], "en": ["Did you see the match?", "Have you seen the match?"] }
+          ],
+          "drills": [
+            { "task": "Skryf in die verlede tyd.", "en": "Write in the past tense (het ... ge-).", "from": "Ek speel sokker.", "to": ["Ek het sokker gespeel."] },
+            { "task": "Skryf in die verlede tyd.", "en": "Write in the past tense.", "from": "Sy lees 'n boek.", "to": ["Sy het 'n boek gelees."] },
+            { "task": "Skryf in die verlede tyd.", "en": "Write in the past tense.", "from": "Ons eet pizza.", "to": ["Ons het pizza geëet."] },
+            { "task": "Skryf in die verlede tyd.", "en": "Write in the past tense.", "from": "Hulle kyk 'n fliek.", "to": ["Hulle het 'n fliek gekyk."] }
+          ]
+        },
+        {
+          "id": "gr8-sonder-ge", "title": "Sonder ge-",
+          "words": [
+            { "af": "besoek", "en": ["visit"] },
+            { "af": "vergeet", "en": ["forget"] },
+            { "af": "herhaal", "en": ["repeat"] },
+            { "af": "ontmoet", "en": ["meet"] },
+            { "af": "huiswerk", "en": ["homework"] }
+          ],
+          "sentences": [
+            { "af": ["Ons het ons ouma besoek."], "en": ["We visited our grandmother."] },
+            { "af": ["Ek het my huiswerk vergeet."], "en": ["I forgot my homework.", "I have forgotten my homework."] },
+            { "af": ["Die onderwyser het die vraag herhaal."], "en": ["The teacher repeated the question."] },
+            { "af": ["Waar het jy hom ontmoet?"], "en": ["Where did you meet him?"] }
+          ],
+          "drills": [
+            { "task": "Skryf in die verlede tyd.", "en": "Past tense: verbs starting with be-, ver-, her-, ont- take no ge-.", "from": "Ek verstaan die les.", "to": ["Ek het die les verstaan."] },
+            { "task": "Skryf in die verlede tyd.", "en": "Write in the past tense.", "from": "Hy besoek sy oom.", "to": ["Hy het sy oom besoek."] },
+            { "task": "Skryf in die verlede tyd.", "en": "Write in the past tense.", "from": "Ons vergeet die tyd.", "to": ["Ons het die tyd vergeet."] }
+          ]
+        },
+        {
+          "id": "gr8-was", "title": "Was, kon, moes",
+          "words": [
+            { "af": "was", "en": ["was", "were"] },
+            { "af": "kon", "en": ["could"] },
+            { "af": "wou", "en": ["wanted"] },
+            { "af": "moes", "en": ["had to"] },
+            { "af": "fiets", "en": ["bicycle"] }
+          ],
+          "sentences": [
+            { "af": ["Dit was gister baie warm."], "en": ["It was very hot yesterday.", "Yesterday it was very hot.", "It was very warm yesterday."] },
+            { "af": ["Ek kon nie kom nie."], "en": ["I could not come.", "I was not able to come."] },
+            { "af": ["Sy wou 'n nuwe fiets hê."], "en": ["She wanted a new bicycle."] },
+            { "af": ["Ons moes vroeg opstaan."], "en": ["We had to get up early."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die verlede tyd.", "en": "Past tense: \"is\" becomes \"was\".", "from": "Ek is moeg.", "to": ["Ek was moeg."] },
+            { "task": "Skryf in die verlede tyd.", "en": "Past tense: \"kan\" becomes \"kon\".", "from": "Hy kan nie swem nie.", "to": ["Hy kon nie swem nie."] },
+            { "task": "Skryf in die verlede tyd.", "en": "Past tense: \"moet\" becomes \"moes\".", "from": "Ons moet wag.", "to": ["Ons moes wag."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meer", "title": "Meer en meeste", "english": "Plurals, diminutives and comparisons", "hue": 262,
+      "lessons": [
+        {
+          "id": "gr8-meervoud", "title": "Meervoude",
+          "words": [
+            { "af": "kinders", "en": ["children"] },
+            { "af": "stoele", "en": ["chairs"] },
+            { "af": "boeke", "en": ["books"] },
+            { "af": "dae", "en": ["days"] },
+            { "af": "strand", "en": ["beach"] }
+          ],
+          "sentences": [
+            { "af": ["Die kinders speel op die strand."], "en": ["The children are playing on the beach.", "The children play on the beach."] },
+            { "af": ["Daar is drie stoele in die kamer."], "en": ["There are three chairs in the room."] },
+            { "af": ["Ek lees twee boeke per week."], "en": ["I read two books a week.", "I read two books per week."] },
+            { "af": ["Die dae word korter in die winter."], "en": ["The days get shorter in winter.", "The days become shorter in winter.", "The days get shorter in the winter.", "The days become shorter in the winter."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die meervoud.", "en": "Write in the plural.", "from": "Die hond blaf.", "to": ["Die honde blaf."] },
+            { "task": "Skryf in die meervoud.", "en": "Write in the plural.", "from": "Die kind speel.", "to": ["Die kinders speel."] },
+            { "task": "Skryf in die meervoud.", "en": "Write in the plural.", "from": "Die boek is oud.", "to": ["Die boeke is oud."] }
+          ]
+        },
+        {
+          "id": "gr8-verklein", "title": "Verkleinwoorde",
+          "words": [
+            { "af": "katjie", "en": ["kitten", "little cat"] },
+            { "af": "huisie", "en": ["little house", "cottage"] },
+            { "af": "boompie", "en": ["little tree"] },
+            { "af": "blommetjie", "en": ["little flower"] },
+            { "af": "mannetjie", "en": ["little man"] }
+          ],
+          "sentences": [
+            { "af": ["Die katjie slaap in die son."], "en": ["The kitten is sleeping in the sun.", "The kitten sleeps in the sun."] },
+            { "af": ["Hulle woon in 'n klein huisie."], "en": ["They live in a little house.", "They live in a small house.", "They live in a small cottage."] },
+            { "af": ["Sy pluk 'n blommetjie."], "en": ["She picks a little flower.", "She is picking a little flower."] }
+          ],
+          "drills": [
+            { "task": "Skryf die verkleinwoord.", "en": "Use the diminutive (-tjie, -ie, -pie, -etjie).", "from": "Die kat speel.", "to": ["Die katjie speel."] },
+            { "task": "Skryf die verkleinwoord.", "en": "Use the diminutive.", "from": "Ek sien 'n boom.", "to": ["Ek sien 'n boompie."] },
+            { "task": "Skryf die verkleinwoord.", "en": "Use the diminutive.", "from": "Die man lag.", "to": ["Die mannetjie lag."] }
+          ]
+        },
+        {
+          "id": "gr8-vergelyk", "title": "Groter, grootste",
+          "words": [
+            { "af": "groter", "en": ["bigger", "taller"] },
+            { "af": "beter", "en": ["better"] },
+            { "af": "slimste", "en": ["cleverest"] },
+            { "af": "moeiliker", "en": ["more difficult", "harder"] },
+            { "af": "as", "en": ["than"] }
+          ],
+          "sentences": [
+            { "af": ["My broer is groter as ek."], "en": ["My brother is bigger than me.", "My brother is taller than me.", "My brother is bigger than I am.", "My brother is taller than I am."] },
+            { "af": ["Hierdie boek is beter as daardie een."], "en": ["This book is better than that one."] },
+            { "af": ["Sy is die slimste leerder in die klas."], "en": ["She is the cleverest learner in the class."] },
+            { "af": ["Wiskunde is moeiliker as Engels."], "en": ["Mathematics is more difficult than English.", "Mathematics is harder than English."] }
+          ],
+          "drills": [
+            { "task": "Gebruik die vergrotende trap van \"warm\".", "en": "Use the comparative of \"warm\".", "from": "Die son is warm, maar die vuur is ___.", "to": ["Die son is warm, maar die vuur is warmer."] },
+            { "task": "Gebruik die vergrotende trap van \"hoog\".", "en": "Use the comparative of \"hoog\" (careful with the spelling).", "from": "Die huis is hoog, maar die toring is ___.", "to": ["Die huis is hoog, maar die toring is hoër."] },
+            { "task": "Gebruik die oortreffende trap van \"vinnig\".", "en": "Use the superlative of \"vinnig\".", "from": "Hy is die ___ seun in die span.", "to": ["Hy is die vinnigste seun in die span."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

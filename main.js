@@ -84,7 +84,7 @@ function listCourses() {
     if (!d.isDirectory() || !ID_RE.test(d.name) || !fs.existsSync(file)) continue;
     try {
       const c = JSON.parse(fs.readFileSync(file, 'utf8'));
-      out.push({ id: d.name, name: c.name, about: c.about, units: c.units.length, lessons: c.units.reduce((n, u) => n + u.lessons.length, 0) });
+      out.push({ id: d.name, name: c.name, about: c.about, grade: c.grade, level: c.level, units: c.units.length, lessons: c.units.reduce((n, u) => n + u.lessons.length, 0) });
     } catch (e) { console.error('Bad course file', file, e.message); }
   }
   return out;
@@ -269,6 +269,8 @@ function registerIpc() {
 
   ipcMain.handle('app:open-data-folder', () => shell.openPath(app.getPath('userData')));
   ipcMain.handle('app:version', () => app.getVersion());
+  ipcMain.handle('app:smooth-text-active', () => app.commandLine.hasSwitch('disable-lcd-text'));
+  ipcMain.handle('app:relaunch', () => { app.relaunch(); app.exit(0); });
 }
 
 // ---------- Window ----------
@@ -310,6 +312,15 @@ function buildMenu() {
     Menu.setApplicationMenu(null);
   }
 }
+
+// ---------- Text rendering ----------
+// "Smooth" (the default) draws text the way macOS does: greyscale anti-aliasing
+// instead of ClearType's coloured sub-pixel fringes. Chromium only reads this switch
+// at start-up, so changing the setting needs a restart (Settings offers one).
+function textRenderingSetting() {
+  try { return (loadProgress().settings || {}).textRendering === 'system' ? 'system' : 'smooth'; } catch (e) { return 'smooth'; }
+}
+if (textRenderingSetting() === 'smooth') app.commandLine.appendSwitch('disable-lcd-text');
 
 if (!app.requestSingleInstanceLock()) {
   app.quit();

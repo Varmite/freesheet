@@ -1,0 +1,166 @@
+{
+  "id": "afrikaans-gr12",
+  "name": "Afrikaans",
+  "grade": 12,
+  "level": "Eerste Addisionele Taal · Graad 12",
+  "language": "af",
+  "about": "Grade 12 Afrikaans First Additional Language: literature, poetry and drama terms, persuasive and media language, debate, complex sentences and the passive with modal verbs.",
+  "englishSynonyms": { "advert": "advertisement", "ad": "advertisement", "ill": "sick", "audience": "group", "internal": "inner", "proof": "evidence", "proven": "proved" },
+  "units": [
+    {
+      "id": "letterkunde", "title": "Letterkunde", "english": "Literature: novel, poetry and drama", "hue": 262,
+      "lessons": [
+        {
+          "id": "gr12-roman", "title": "Die roman",
+          "words": [
+            { "af": "verteller", "en": ["narrator"] },
+            { "af": "karakter", "en": ["character"] },
+            { "af": "konflik", "en": ["conflict"] },
+            { "af": "tema", "en": ["theme"] },
+            { "af": "intrige", "en": ["plot"] },
+            { "af": "terugflits", "en": ["flashback"] }
+          ],
+          "sentences": [
+            { "af": ["Die verteller vertel die verhaal in die eerste persoon."], "en": ["The narrator tells the story in the first person."] },
+            { "af": ["Die hoofkarakter beleef 'n innerlike konflik."], "en": ["The main character experiences an inner conflict."] },
+            { "af": ["Die tema van die roman is verlies."], "en": ["The theme of the novel is loss."] },
+            { "af": ["Die intrige word deur 'n terugflits onderbreek."], "en": ["The plot is interrupted by a flashback."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die lydende vorm.", "en": "Rewrite in the passive.", "from": "'n Terugflits onderbreek die intrige.", "to": ["Die intrige word deur 'n terugflits onderbreek."] },
+            { "task": "Verbind die sinne met \"omdat\".", "en": "Join with \"omdat\".", "from": "Die karakter is eensaam. Hy het sy familie verloor.", "to": ["Die karakter is eensaam omdat hy sy familie verloor het."] }
+          ]
+        },
+        {
+          "id": "gr12-gedig", "title": "Die gedig",
+          "words": [
+            { "af": "strofe", "en": ["stanza"] },
+            { "af": "rym", "en": ["rhyme"] },
+            { "af": "ritme", "en": ["rhythm"] },
+            { "af": "spreker", "en": ["speaker"] },
+            { "af": "toon", "en": ["tone"] }
+          ],
+          "sentences": [
+            { "af": ["Die gedig bestaan uit drie strofes."], "en": ["The poem consists of three stanzas."] },
+            { "af": ["Die spreker se toon is hartseer."], "en": ["The speaker's tone is sad."] },
+            { "af": ["Die eerste en derde reëls rym."], "en": ["The first and third lines rhyme."] },
+            { "af": ["Die ritme skep 'n gevoel van spanning."], "en": ["The rhythm creates a feeling of tension.", "The rhythm creates a sense of tension."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die verlede tyd.", "en": "Write in the past tense.", "from": "Die digter skryf oor sy kinderjare.", "to": ["Die digter het oor sy kinderjare geskryf."] },
+            { "task": "Maak die sin negatief.", "en": "Make the sentence negative.", "from": "Die reëls rym.", "to": ["Die reëls rym nie."] }
+          ]
+        },
+        {
+          "id": "gr12-drama", "title": "Die drama",
+          "words": [
+            { "af": "toneel", "en": ["scene"] },
+            { "af": "bedryf", "en": ["act"] },
+            { "af": "regie-aanwysing", "en": ["stage direction"] },
+            { "af": "dialoog", "en": ["dialogue"] },
+            { "af": "klimaks", "en": ["climax"] }
+          ],
+          "sentences": [
+            { "af": ["Die klimaks vind in die laaste toneel plaas."], "en": ["The climax takes place in the last scene.", "The climax takes place in the final scene."] },
+            { "af": ["Die regie-aanwysings beskryf die karakter se gevoelens."], "en": ["The stage directions describe the character's feelings."] },
+            { "af": ["Die dialoog tussen die twee karakters is gespanne."], "en": ["The dialogue between the two characters is tense."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die indirekte rede.", "en": "Rewrite as indirect speech (after \"het gesê\": is becomes was).", "from": "Die karakter het gesê: \"Ek is bang.\"", "to": ["Die karakter het gesê dat hy bang was.", "Die karakter het gesê dat sy bang was."] },
+            { "task": "Verbind die sinne met \"terwyl\".", "en": "Join with \"terwyl\" (verb to the end).", "from": "Die gehoor lag. Die akteur val.", "to": ["Die gehoor lag terwyl die akteur val."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oorreding", "title": "Oorredende taal", "english": "Persuasive language, media and debate", "hue": 28,
+      "lessons": [
+        {
+          "id": "gr12-advertensie", "title": "Advertensies",
+          "words": [
+            { "af": "advertensie", "en": ["advertisement"] },
+            { "af": "teikengroep", "en": ["target group"] },
+            { "af": "oorreed", "en": ["persuade"] },
+            { "af": "slagspreuk", "en": ["slogan"] },
+            { "af": "mening", "en": ["opinion"] }
+          ],
+          "sentences": [
+            { "af": ["Die advertensie probeer die leser oorreed om die produk te koop."], "en": ["The advertisement tries to persuade the reader to buy the product."] },
+            { "af": ["Die teikengroep is jong mense."], "en": ["The target group is young people."] },
+            { "af": ["Na my mening is die slagspreuk baie effektief."], "en": ["In my opinion the slogan is very effective.", "In my opinion, the slogan is very effective."] },
+            { "af": ["Feite kan bewys word, maar menings nie."], "en": ["Facts can be proved, but opinions cannot."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die indirekte rede.", "en": "Rewrite as indirect speech (ons becomes hulle).", "from": "Die adverteerder sê: \"Ons produk is die beste.\"", "to": ["Die adverteerder sê dat hulle produk die beste is.", "Die adverteerder sê dat hul produk die beste is."] },
+            { "task": "Skryf in die lydende vorm.", "en": "Rewrite in the passive (past tense).", "from": "Die maatskappy het die advertensie in 2020 geskep.", "to": ["Die advertensie is in 2020 deur die maatskappy geskep.", "Die advertensie is deur die maatskappy in 2020 geskep."] }
+          ]
+        },
+        {
+          "id": "gr12-debat", "title": "Debat",
+          "words": [
+            { "af": "saamstem", "en": ["agree"] },
+            { "af": "verskil", "en": ["differ", "disagree"] },
+            { "af": "bewys", "en": ["evidence"] },
+            { "af": "gevolgtrekking", "en": ["conclusion"] },
+            { "af": "nodig", "en": ["necessary"] }
+          ],
+          "sentences": [
+            { "af": ["Ek stem nie met jou saam nie."], "en": ["I do not agree with you.", "I disagree with you."] },
+            { "af": ["Ek verskil van jou mening."], "en": ["I differ from your opinion.", "I disagree with your opinion."] },
+            { "af": ["Wat is jou bewys?"], "en": ["What is your evidence?"] },
+            { "af": ["Ons gevolgtrekking is dat skooluniforms nodig is."], "en": ["Our conclusion is that school uniforms are necessary."] }
+          ],
+          "drills": [
+            { "task": "Maak die sin negatief.", "en": "Make the sentence negative (separable verb: stem ... saam).", "from": "Ek stem met jou saam.", "to": ["Ek stem nie met jou saam nie."] },
+            { "task": "Verbind die sinne met \"want\".", "en": "Join with \"want\".", "from": "Skooluniforms is nodig. Hulle skep gelykheid.", "to": ["Skooluniforms is nodig, want hulle skep gelykheid."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "komplekse-sinne", "title": "Komplekse sinne", "english": "Complex sentences", "hue": 152,
+      "lessons": [
+        {
+          "id": "gr12-hoewel", "title": "Hoewel, sodat, tensy",
+          "words": [
+            { "af": "hoewel", "en": ["although"] },
+            { "af": "sodat", "en": ["so that"] },
+            { "af": "indien", "en": ["if", "in case"] },
+            { "af": "tensy", "en": ["unless"] },
+            { "af": "nogtans", "en": ["nevertheless", "nonetheless"] }
+          ],
+          "sentences": [
+            { "af": ["Hoewel hy hard gewerk het, het hy nie geslaag nie."], "en": ["Although he worked hard, he did not pass.", "Although he had worked hard, he did not pass."] },
+            { "af": ["Ons sal nie gaan nie, tensy dit ophou reën."], "en": ["We will not go unless it stops raining."] },
+            { "af": ["Sy het siek gevoel; nogtans het sy skool toe gegaan."], "en": ["She felt sick; nevertheless she went to school.", "She felt sick; nevertheless, she went to school.", "She felt sick; nonetheless she went to school."] }
+          ],
+          "drills": [
+            { "task": "Verbind die sinne. Begin met \"Hoewel\".", "en": "Join the sentences, starting with \"Hoewel\" (although).", "from": "Dit reën. Ons speel buite.", "to": ["Hoewel dit reën, speel ons buite."] },
+            { "task": "Verbind die sinne met \"sodat\".", "en": "Join with \"sodat\" (so that).", "from": "Ek werk hard. Ek kan slaag.", "to": ["Ek werk hard sodat ek kan slaag."] },
+            { "task": "Verbind die sinne. Begin met \"Indien\".", "en": "Join, starting with \"Indien\" (if).", "from": "Jy het vrae. Kontak my.", "to": ["Indien jy vrae het, kontak my."] }
+          ]
+        },
+        {
+          "id": "gr12-moet-word", "title": "Moet ... word",
+          "words": [
+            { "af": "invul", "en": ["fill in", "complete"] },
+            { "af": "oplos", "en": ["solve"] },
+            { "af": "teken", "en": ["sign"] },
+            { "af": "indien", "en": ["submit", "hand in"] },
+            { "af": "volledig", "en": ["completely", "in full"] }
+          ],
+          "sentences": [
+            { "af": ["Die vorm moet volledig ingevul word."], "en": ["The form must be filled in completely.", "The form must be completed in full.", "The form must be filled in in full."] },
+            { "af": ["Die opstel moet voor Vrydag ingedien word."], "en": ["The essay must be submitted before Friday.", "The essay must be handed in before Friday."] },
+            { "af": ["Die probleem kan maklik opgelos word."], "en": ["The problem can be solved easily.", "The problem can easily be solved."] }
+          ],
+          "drills": [
+            { "task": "Skryf in die lydende vorm.", "en": "Passive with a modal verb: moet ... ge- word.", "from": "Ons moet die vorm invul.", "to": ["Die vorm moet deur ons ingevul word."] },
+            { "task": "Skryf in die lydende vorm.", "en": "Passive with a modal verb.", "from": "Hulle kan die probleem oplos.", "to": ["Die probleem kan deur hulle opgelos word."] },
+            { "task": "Skryf in die lydende vorm.", "en": "Passive with a modal verb.", "from": "Jy moet die brief teken.", "to": ["Die brief moet deur jou geteken word."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

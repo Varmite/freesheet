@@ -48,7 +48,7 @@
       const pc = meta.lessons ? Math.round((done / meta.lessons) * 100) : 0;
       return `<button class="card" data-course="${esc(meta.id)}">
           <span class="card-head">${Icons.subject(meta.id)}<span class="card-title">${esc(meta.name)}</span></span>
-          <span class="card-sub">${meta.units} units · ${meta.lessons} lessons</span>
+          <span class="card-sub">${meta.level ? esc(meta.level) + ' · ' : ''}${meta.lessons} lessons</span>
           ${d.bar(pc)}
           <span class="card-meta">${done} of ${meta.lessons} lessons${p && p.xp ? ` · ${p.xp} XP` : ''}</span>
         </button>`;
@@ -72,6 +72,7 @@
         <div class="course-hero">
           <div class="course-hero-main">
             <h1 class="with-icon">${Icons.subject(course.id, 'lg')}${esc(course.name)}</h1>
+            ${course.level ? `<div class="course-level">${esc(course.level)}</div>` : ''}
             <p class="lead">${esc(course.about || '')}</p>
             <div class="btn-row">
               ${next ? `<button class="btn primary" id="go-next">${doneCount ? 'Continue' : 'Start'}: ${esc(next.lesson.title)}</button>` : ''}
@@ -132,6 +133,7 @@
       type: (ex) => (ex.dir === 'af-en' ? 'Type this in English' : 'Type this in Afrikaans'),
       blank: () => 'Fill in the missing word',
       listen: () => 'Tap what you hear',
+      transform: (ex) => ex.task,
       pairs: () => 'Tap the matching pairs',
     };
 
@@ -235,6 +237,13 @@
           body = `<p class="blank-sentence" lang="af">${esc(ex.sentence).replace('___', '<span class="blank-gap">&nbsp;</span>')}</p><p class="muted blank-en">${esc(ex.en)}</p>` +
             `<div class="opt-row">${ex.options.map((o, i) => `<button class="lopt" data-opt="${i}" lang="af"><kbd>${i + 1}</kbd>${esc(o)}</button>`).join('')}</div>`;
           break;
+        case 'transform':
+          body = (ex.en ? `<p class="muted drill-en">${esc(ex.en)}</p>` : '') + say(ex.prompt, 'af', ex.audio) +
+            (ex.input === 'tiles'
+              ? `<div class="answer-line" aria-label="Your answer"></div><div class="bank" lang="af">${ex.tiles.map((t, i) => `<button class="tile" data-tile="${i}">${esc(t)}</button>`).join('')}</div>`
+              : `<textarea class="lesson-input" rows="2" spellcheck="false" autocomplete="off" lang="af" placeholder="Skryf die nuwe sin"></textarea>` +
+                `<div class="accent-keys">${['ê', 'ë', 'ô', 'é', 'û', "'n"].map((k) => `<button class="tile small" data-key="${k}">${k}</button>`).join('')}</div>`);
+          break;
         case 'build': case 'listen':
           body = (ex.type === 'listen'
             ? `<div class="listen-row"><button class="listen-big" data-audio="${ex.audio}" aria-label="Play the sentence">${Icons.ui('speaker')}</button><div class="say-buddy listen-buddy" aria-hidden="true"></div></div>`
@@ -290,7 +299,7 @@
           d.Motion.press(b);
           ready(true);
         }));
-      } else if (ex.type === 'build' || ex.type === 'listen') {
+      } else if (ex.type === 'build' || ex.type === 'listen' || (ex.type === 'transform' && ex.input === 'tiles')) {
         const line = stage.querySelector('.answer-line');
         const bank = stage.querySelector('.bank');
         const sync = () => {
@@ -317,7 +326,7 @@
           d.Sound.play('select');
           sync();
         }));
-      } else if (ex.type === 'type') {
+      } else if (ex.type === 'type' || ex.type === 'transform') {
         const input = stage.querySelector('.lesson-input');
         input.addEventListener('input', () => { session.response = input.value; ready(input.value.trim().length > 0); });
         stage.querySelectorAll('[data-key]').forEach((k) => k.addEventListener('click', () => {
@@ -397,7 +406,7 @@
       switch (ex.type) {
         case 'meaning': case 'pick': return ex.options[ex.answer];
         case 'blank': return ex.full;
-        case 'build': case 'type': case 'listen': return ex.answer;
+        case 'build': case 'type': case 'listen': case 'transform': return ex.answer;
         default: return '';
       }
     }
