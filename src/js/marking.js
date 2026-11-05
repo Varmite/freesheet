@@ -26,6 +26,69 @@
       .replace(/^(the|a|an) /, '');
   }
 
+  // ---------- Spelling slips in short answers
+  //
+  // Outside language subjects a typed answer with small spelling mistakes still
+  // counts ("resillience" for "resilience"). The app turns this on per question by
+  // giving it a `typoWords` set: every word that appears anywhere in FreeSheet's
+  // content. That set is the safeguard: a word the learner typed that is itself a
+  // real word in the content ("endothermic" when the answer is "exothermic", "alkene"
+  // for "alkane") is a different answer, not a typo, so it is never accepted.
+  // Very short words and anything with digits must be exact.
+
+  const LANGUAGE_SUBJECT = /language|english|afrikaans|isizulu|isixhosa|isindebele|sepedi|sesotho|setswana|siswati|tshivenda|xitsonga|french|german/;
+  function isLanguageSubject(subjectId) { return LANGUAGE_SUBJECT.test(String(subjectId || '')); }
+
+  // How many slips a word of this length may have.
+  function allowedEdits(len) { return len <= 5 ? 0 : len <= 8 ? 1 : len <= 12 ? 2 : 3; } // <=5 letters (acronyms, short terms): exact
+
+  // Edit distance counting insertions, deletions, substitutions and swapped
+  // neighbours ("recieve") as one slip each. Stops early once past `max`.
+  function editDistance(a, b, max) {
+    if (Math.abs(a.length - b.length) > max) return max + 1;
+    let prev2 = null, prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+    for (let i = 1; i <= a.length; i++) {
+      const cur = [i];
+      let best = i;
+      for (let j = 1; j <= b.length; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        let v = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+        if (prev2 && i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) v = Math.min(v, prev2[j - 2] + 1);
+        cur.push(v);
+        if (v < best) best = v;
+      }
+      if (best > max) return max + 1;
+      prev2 = prev;
+      prev = cur;
+    }
+    return prev[b.length];
+  }
+
+  function words(s) { return s.replace(/[^\p{L}\p{N}']+/gu, ' ').trim().split(' ').filter(Boolean); }
+
+  // Is `given` the expected `answer` (both already through normText) with only
+  // small spelling slips? `known` is the set of real words (see above).
+  function typoOf(given, answer, known) {
+    if (!given || !answer || /\d/.test(given) || /\d/.test(answer)) return false;
+    let g = words(given), a = words(answer);
+    if (g.join('') === a.join('')) return true; // only the spacing or hyphens differ
+    if (g.length !== a.length) { g = [g.join('')]; a = [a.join('')]; }
+    // In a phrase the other words pin down the meaning, so the phrase gets a slip
+    // budget from its total length and words of 4-5 letters may have one slip too
+    // ("humman dignity"). A single word on its own keeps the stricter rule.
+    const phrase = a.length > 1;
+    let budget = phrase ? allowedEdits(a.join('').length) : Infinity;
+    for (let i = 0; i < a.length; i++) {
+      if (g[i] === a[i]) continue;
+      if (known && known.has(g[i])) return false; // a real, different word: not a typo
+      const len = a[i].length;
+      const max = phrase ? (len <= 3 ? 0 : Math.max(1, allowedEdits(len))) : allowedEdits(len);
+      const d = max ? editDistance(g[i], a[i], max) : max + 1;
+      if (d > max || (budget -= d) < 0) return false;
+    }
+    return true;
+  }
+
   // Parse a learner's number. Accepts SA style (12 500,75), "3.5", "-2", "R150", "3/4", "1e-3", "45%".
   function parseNumber(input) {
     if (input == null) return NaN;
@@ -94,8 +157,14 @@
       }
       case 'short': {
         const given = normText(r);
-        const ok = given !== '' && (q.answers || []).some((a) => normText(a) === given);
-        return { score: ok ? max : 0, max, correct: ok, needsSelfMark: false };
+        let ok = given !== '' && (q.answers || []).some((a) => normText(a) === given);
+        // Spelling slips (only when the app has switched them on for this question).
+        let spelling = null;
+        if (!ok && given && q.typoWords) {
+          const hit = (q.answers || []).find((a) => typoOf(given, normText(a), q.typoWords));
+          if (hit != null) { ok = true; spelling = String(hit); }
+        }
+        return { score: ok ? max : 0, max, correct: ok, needsSelfMark: false, spelling };
       }
       case 'numeric': {
         const v = parseNumber(r);
@@ -141,5 +210,5 @@
     return Number.isInteger(v) ? String(v) : String(v).replace('.', ',');
   }
 
-  return { marksOf, normText, parseNumber, isAnswered, mark, capsLevel, formatMarks };
+  return { marksOf, normText, parseNumber, isAnswered, mark, capsLevel, formatMarks, typoOf, editDistance, isLanguageSubject };
 });

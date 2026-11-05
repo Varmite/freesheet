@@ -51,6 +51,28 @@ function assertGrade(grade) {
 // ---------- Content ----------
 
 let catalogCache = null;
+let wordsCache = null;
+
+function buildWordList() {
+  const words = new Set();
+  const addText = (t) => {
+    for (const w of String(t).normalize('NFKC').toLowerCase().match(/\p{L}[\p{L}']*/gu) || []) words.add(w.replace(/'+$/, ''));
+  };
+  const walkValue = (v) => {
+    if (typeof v === 'string') addText(v);
+    else if (Array.isArray(v)) v.forEach(walkValue);
+    else if (v && typeof v === 'object') Object.values(v).forEach(walkValue);
+  };
+  const walkDir = (d) => {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const p = path.join(d, e.name);
+      if (e.isDirectory()) walkDir(p);
+      else if (e.name.endsWith('.json')) { try { walkValue(JSON.parse(fs.readFileSync(p, 'utf8'))); } catch (err) { /* skip unreadable files */ } }
+    }
+  };
+  if (fs.existsSync(contentDir())) walkDir(contentDir());
+  return [...words];
+}
 
 function buildCatalog() {
   const root = contentDir();
@@ -157,6 +179,13 @@ function registerIpc() {
   ipcMain.handle('audio:get', (_e, grade, subjectId, topicId, id) => {
     if (typeof id !== 'string' || !/^[0-9a-f]{8}$/.test(id)) throw new Error('Invalid audio id');
     return fs.promises.readFile(path.join(topicAudioDir(grade, subjectId, topicId), `${id}.ogg`));
+  });
+
+  // Every word that appears in the content, for telling spelling slips from real
+  // different answers when marking (see typoOf in src/js/marking.js).
+  ipcMain.handle('content:words', () => {
+    if (!wordsCache) wordsCache = buildWordList();
+    return wordsCache;
   });
 
   ipcMain.handle('catalog:get', () => {

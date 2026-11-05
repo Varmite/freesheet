@@ -53,4 +53,42 @@ t('markup', () => {
   assert.ok(M.segments('price $5').some((s) => s.unclosed));
   assert.strictEqual(M.inline('2 * 3 * 4'), '2 * 3 * 4');
 });
+t('spelling slips in short answers', () => {
+  // The real words the app passes in (normally: every word in the content).
+  const known = new Set(['resilience', 'exothermic', 'endothermic', 'alkane', 'alkene', 'hypotonic', 'hypertonic', 'mitosis', 'meiosis', 'cell', 'call', 'recycle', 'self', 'esteem']);
+  const q = (answers) => Object.defineProperty({ type: 'short', answers }, 'typoWords', { value: known });
+  const ok = (answers, given) => K.mark(q(answers), given);
+  // Accepted, with the right spelling reported back.
+  assert.ok(ok(['resilience'], 'Resillience').correct);
+  assert.strictEqual(ok(['resilience'], 'Resillience').spelling, 'resilience');
+  assert.ok(ok(['recycle'], 'recyle').correct);
+  assert.ok(ok(['photosynthesis'], 'photosynthisis').correct);
+  assert.ok(ok(['mitosis'], 'mitossis').correct);
+  assert.ok(ok(['self-esteem'], 'self esteem').correct);
+  assert.ok(ok(['self-esteem'], 'selfesteem').correct);
+  assert.ok(ok(['south african human rights commission'], 'south african human rights comission').correct);
+  assert.ok(ok(['human dignity'], 'humman dignity').correct); // short word inside a phrase
+  assert.ok(ok(['admission point score'], 'admission poinnt score').correct);
+  assert.ok(!ok(['human dignity'], 'humman dignnityy').correct); // 3 slips in 12 letters: over the phrase budget
+  // Exact answers are not reported as spelling slips.
+  assert.strictEqual(ok(['resilience'], 'resilience').spelling, null);
+  // A real, different word is a different answer, never a typo.
+  assert.ok(!ok(['exothermic'], 'endothermic').correct);
+  assert.ok(!ok(['alkane'], 'alkene').correct);
+  assert.ok(!ok(['hypotonic'], 'hypertonic').correct);
+  assert.ok(!ok(['mitosis'], 'meiosis').correct);
+  // Short words, acronyms and anything with digits must be exact.
+  assert.ok(!ok(['cell'], 'cel').correct);
+  assert.ok(!ok(['sahrc'], 'sarhc').correct);
+  assert.ok(!ok(['0800 428 428'], '0800 428 429').correct);
+  // Too many slips.
+  assert.ok(ok(['resilience'], 'reslince').correct); // two slips in a 10-letter word: fine
+  assert.ok(!ok(['resilience'], 'reselyunce').correct); // three: too many
+  // Off unless the app switches it on (language subjects stay strict).
+  assert.ok(!K.mark({ type: 'short', answers: ['resilience'] }, 'Resillience').correct);
+  assert.ok(K.isLanguageSubject('english-home-language'));
+  assert.ok(K.isLanguageSubject('afrikaans-first-additional-language'));
+  assert.ok(!K.isLanguageSubject('life-orientation'));
+  assert.ok(!K.isLanguageSubject('natural-sciences'));
+});
 console.log(`${n} marking/markup test groups passed.`);

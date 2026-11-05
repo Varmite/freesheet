@@ -132,7 +132,8 @@
           ` <span class="muted">(${K.formatMarks(res.score)} / ${res.max})</span>${expl}</div>`;
       }
       if (res.correct) {
-        return `<div class="q-feedback good"><strong>Correct</strong>${expl}</div>`;
+        const spelling = res.spelling ? `<div class="q-spelling">Watch the spelling: <strong>${esc(res.spelling)}</strong></div>` : '';
+        return `<div class="q-feedback good"><strong>Correct</strong>${spelling}${expl}</div>`;
       }
       const unanswered = !K.isAnswered(q, ctx.response);
       return `<div class="q-feedback bad"><strong>${unanswered ? 'Not answered' : 'Incorrect'}</strong>` +

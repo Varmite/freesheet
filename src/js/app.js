@@ -122,13 +122,33 @@
 
   async function loadTopic(subjectId, topicId) {
     const k = `t:${grade()}/${subjectId}/${topicId}`;
-    if (!state.cache.has(k)) state.cache.set(k, await api.getTopic(grade(), subjectId, topicId));
+    if (!state.cache.has(k)) {
+      const topic = await api.getTopic(grade(), subjectId, topicId);
+      await forgiveSpelling(subjectId, topic.questions || []);
+      state.cache.set(k, topic);
+    }
     return state.cache.get(k);
   }
   async function loadExam(subjectId, examId) {
     const k = `x:${grade()}/${subjectId}/${examId}`;
-    if (!state.cache.has(k)) state.cache.set(k, await api.getExam(grade(), subjectId, examId));
+    if (!state.cache.has(k)) {
+      const exam = await api.getExam(grade(), subjectId, examId);
+      await forgiveSpelling(subjectId, (exam.sections || []).flatMap((sec) => sec.questions || []));
+      state.cache.set(k, exam);
+    }
     return state.cache.get(k);
+  }
+
+  // Short typed answers accept small spelling slips, except in language subjects
+  // where spelling is part of what's being tested (see typoOf in marking.js).
+  let contentWords = null;
+  async function forgiveSpelling(subjectId, questions) {
+    if (K.isLanguageSubject(subjectId) || !questions.some((q) => q.type === 'short')) return;
+    if (!contentWords) contentWords = api.contentWords().then((w) => new Set(w)).catch(() => null);
+    const known = await contentWords;
+    if (!known) return;
+    // Not enumerable, so it never ends up in saved progress or exports.
+    for (const q of questions) if (q.type === 'short') Object.defineProperty(q, 'typoWords', { value: known, configurable: true });
   }
 
   // ---------------------------------------------------------------- helpers

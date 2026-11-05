@@ -283,6 +283,8 @@ input:disabled, textarea:disabled, select:disabled { background: var(--surface);
 .q-feedback.bad > strong { color: var(--bad); }
 .q-feedback.memo { background: var(--surface); }
 .q-expl { margin-top: 0.4rem; color: var(--text); }
+.q-spelling { margin-top: 0.25rem; color: var(--muted); font-size: 0.92rem; }
+.q-spelling strong { color: var(--text); }
 .q-expl p { margin: 0.3rem 0; }
 .self-mark { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; margin-top: 0.6rem; }
 .mark-btn {

@@ -3,6 +3,7 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('api', {
   getCatalog: () => ipcRenderer.invoke('catalog:get'),
+  contentWords: () => ipcRenderer.invoke('content:words'),
   getTopic: (grade, subjectId, topicId) => ipcRenderer.invoke('topic:get', grade, subjectId, topicId),
   getExam: (grade, subjectId, examId) => ipcRenderer.invoke('exam:get', grade, subjectId, examId),
   loadProgress: () => ipcRenderer.invoke('progress:load'),
