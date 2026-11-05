@@ -6,7 +6,8 @@
 //   npm run build -- --win   Windows only  (.exe installer + .msi)
 //   npm run build -- --mac   macOS only    (.dmg + .zip, Intel and Apple Silicon)
 //   npm run build -- --linux Linux only    (.AppImage + .deb + .tar.gz)
-//   options: --no-validate   skip the content check
+//   options: --x64 / --arm64 only that architecture (CI builds each Mac arch on its own machine)
+//            --no-validate   skip the content check
 //            --keep          do not empty ./build first
 //
 // What can be built where (electron-builder limits):
@@ -30,7 +31,7 @@ const OUT = path.join(ROOT, 'build');
 const argv = process.argv.slice(2);
 const flag = (f) => argv.includes(f);
 
-const known = ['--win', '--mac', '--linux', '--no-validate', '--keep'];
+const known = ['--win', '--mac', '--linux', '--x64', '--arm64', '--no-validate', '--keep'];
 const unknown = argv.filter((a) => !known.includes(a));
 if (unknown.length) {
   console.error(`Unknown option(s): ${unknown.join(' ')}\nValid options: ${known.join(' ')}`);
@@ -212,11 +213,17 @@ async function main() {
       if (explicit) console.warn(`\n${plan.label}: ${plan.note}`);
       continue;
     }
-    console.log(`\n=== ${plan.label}: ${plan.targets.join(', ')} (${plan.archs.join(', ')}) ===\n`);
+    const only = ['x64', 'arm64'].filter((a) => flag(`--${a}`));
+    const archs = only.length ? plan.archs.filter((a) => only.includes(a)) : plan.archs;
+    if (!archs.length) {
+      results.push({ p, label: plan.label, status: 'skipped', note: `no ${only.join('/')} build`, files: [] });
+      continue;
+    }
+    console.log(`\n=== ${plan.label}: ${plan.targets.join(', ')} (${archs.join(', ')}) ===\n`);
     try {
       const files = await build({
         projectDir: ROOT,
-        targets: PLATFORM[p].createTarget(plan.targets, ...plan.archs.map((a) => Arch[a])),
+        targets: PLATFORM[p].createTarget(plan.targets, ...archs.map((a) => Arch[a])),
         config: configFor(p),
         publish: 'never',
       });

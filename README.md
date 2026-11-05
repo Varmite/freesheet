@@ -78,7 +78,9 @@ builds are ad-hoc signed so they still open on Apple Silicon Macs.
 
 To build **all** of them at once, push the project to GitHub and run the **Build installers** workflow
 (`.github/workflows/build.yml`) from the Actions tab. It builds on real Windows, macOS and Linux machines and
-attaches the installers to the run. The apps are not code-signed, so Windows SmartScreen and macOS Gatekeeper
+attaches the installers to the run. The Intel and Apple Silicon Mac apps build on separate machines at
+the same time. If you have already built Windows on a PC, choose **platforms: mac-linux** to skip it:
+`gh workflow run build.yml -f platforms=mac-linux`. The apps are not code-signed, so Windows SmartScreen and macOS Gatekeeper
 will warn on first launch (on macOS, right-click the app and choose **Open**).
 
 ## Content

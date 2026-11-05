@@ -82,6 +82,9 @@
       "category": "public.app-category.education",
       "artifactName": "${productName}-${version}-mac-${arch}.${ext}"
     },
+    "dmg": {
+      "format": "ULFO"
+    },
     "linux": {
       "target": [
         "AppImage",

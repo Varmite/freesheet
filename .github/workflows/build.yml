@@ -7,8 +7,13 @@ on:
   workflow_dispatch:
     inputs:
       mac_runner:
-        description: 'Runner for the macOS build (try macos-15-intel if Apple Silicon runners are busy; both build Intel and Apple Silicon apps)'
+        description: 'Runner for the macOS build (try macos-15-intel if Apple Silicon runners are busy; either can build Intel and Apple Silicon apps)'
         default: macos-latest
+      platforms:
+        description: 'What to build ("mac-linux" when Windows is already built on a PC)'
+        type: choice
+        options: [all, mac-linux]
+        default: all
   push:
     tags: ['v*']
 
@@ -20,13 +25,23 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        # Each Mac architecture builds on its own machine, at the same time as the others.
+        platform: [win, mac-x64, mac-arm64, linux]
         include:
           - os: windows-latest
             platform: win
+            args: --win
           - os: ${{ inputs.mac_runner || 'macos-latest' }}
-            platform: mac
+            platform: mac-x64
+            args: --mac --x64
+          - os: ${{ inputs.mac_runner || 'macos-latest' }}
+            platform: mac-arm64
+            args: --mac --arm64
           - os: ubuntu-latest
             platform: linux
+            args: --linux
+        exclude:
+          - platform: ${{ inputs.platforms == 'mac-linux' && 'win' || 'none' }}
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -37,7 +52,7 @@ jobs:
       - run: npm ci
       - run: node node_modules/electron/install.js
       - run: npm test
-      - run: node scripts/build.js --${{ matrix.platform }} --no-validate
+      - run: node scripts/build.js ${{ matrix.args }} --no-validate
       - uses: actions/upload-artifact@v4
         with:
           name: FreeSheet-${{ matrix.platform }}
