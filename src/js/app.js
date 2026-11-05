@@ -313,14 +313,14 @@
 
   // How a page change animates (see js/motion.js): going deeper into a tab is a
   // push (tapped cards zoom open), going back up is a pop, tabs cross-fade.
-  const DEPTH = { home: 0, subject: 1, list: 1, topic: 2, intro: 2, run: 3, mark: 4, result: 5, review: 6 };
+  const DEPTH = { home: 0, subject: 1, list: 1, course: 1, topic: 2, intro: 2, lesson: 2, run: 3, mark: 4, result: 5, review: 6 };
   let lastNav = null;
   function navInfo() {
     const v = state.views[state.tab] || {};
     return {
       tab: state.tab,
       depth: DEPTH[v.name] || 0,
-      key: [state.tab, grade(), v.name, v.subjectId, v.topicId, v.examId, v.attempt, v.mode].join('|'),
+      key: [state.tab, grade(), v.name, v.subjectId, v.topicId, v.examId, v.attempt, v.mode, v.courseId, v.lessonId, v.run].join('|'),
     };
   }
   function navKind(from, to) {
@@ -460,7 +460,10 @@
         main.innerHTML = `<div class="page"><h1>No content found</h1><p>The <code>content</code> folder is empty or missing.</p></div>`;
         return;
       }
+      if (!(state.tab === 'study' && v.name === 'lesson')) courseUI.leave();
       if (state.tab === 'study') {
+        if (v.name === 'course') return await courseUI.viewCourse(v, token);
+        if (v.name === 'lesson') return await courseUI.viewLesson(v, token);
         if (v.name === 'home') return viewStudyHome();
         if (v.name === 'subject') return viewSubject(v);
         if (v.name === 'topic') return await viewTopic(v, token);
@@ -515,11 +518,14 @@
           ${bar(p)}
           <span class="card-meta">${st.practised} of ${st.total} practised${st.avg != null ? ` · avg ${st.avg}%` : ''}</span>
         </button>`;
-      }).join('')}</div>
+      }).join('')}${(state.catalog.courses || []).map(courseUI.homeCard).join('')}</div>
       ${g.subjects.length ? '' : '<p class="muted">No subjects are available for this grade yet.</p>'}
     </div>`;
     main.querySelectorAll('[data-subject]').forEach((b) => b.addEventListener('click', () => {
       go('study', { name: 'subject', subjectId: b.dataset.subject }); scrollTop();
+    }));
+    main.querySelectorAll('[data-course]').forEach((b) => b.addEventListener('click', () => {
+      go('study', { name: 'course', courseId: b.dataset.course }); scrollTop();
     }));
     const c = main.querySelector('#continue');
     if (c) c.addEventListener('click', () => { go('study', { name: 'topic', subjectId: last.subjectId, topicId: last.topicId, mode: last.mode || 'notes' }); scrollTop(); });
@@ -1612,6 +1618,18 @@
 
   function buddyPrefs() { return P().settings.buddy || null; }
 
+  // ---------------------------------------------------------------- language courses
+  // Screens in js/course-ui.js, engine in js/course.js.
+  const courseUI = CourseUI.create({
+    main, api, M, esc, Icons, Course,
+    P: () => P(), save: () => save(), go: (t, v) => go(t, v), grade: () => grade(), token: () => state.renderToken,
+    crumbs: (i) => crumbs(i), wireCrumbs: (i) => wireCrumbs(i), bar: (p) => bar(p), scrollTop: () => scrollTop(),
+    toast: (m) => toast(m), dialog: (o) => dialog(o), recordStreak: (k, n) => recordStreak(k, n),
+    Sound, Motion,
+    // The buddy plays the character in lessons (unless it's switched off).
+    buddyLook: () => { const b = buddyPrefs(); return b && b.on !== false ? b : null; },
+  });
+
   function applyBuddy() {
     const b = buddyPrefs();
     Buddy.configure({
@@ -1777,6 +1795,8 @@
       return;
     }
     if (buddyAway) { buddyAway = false; Buddy.hide('exam', false); }
+    Buddy.hide('course', state.tab === 'study' && (v.name === 'course' || v.name === 'lesson'));
+    if (state.tab === 'study' && (v.name === 'course' || v.name === 'lesson')) return;
     const key = navInfo().key;
     buddyPageKey = key;
     setTimeout(() => { if (buddyPageKey === key) buddyTip(v); }, 950);
@@ -1928,7 +1948,7 @@
     const [catalog, progress] = await Promise.all([api.getCatalog(), api.loadProgress()]);
     state.catalog = catalog;
     state.progress = progress;
-    for (const f of ['settings', 'topics', 'exams', 'examDrafts']) if (!progress[f] || typeof progress[f] !== 'object') progress[f] = {};
+    for (const f of ['settings', 'topics', 'exams', 'examDrafts', 'courses']) if (!progress[f] || typeof progress[f] !== 'object') progress[f] = {};
     streakBtn.addEventListener('click', showStreak);
     document.addEventListener('pointerdown', (e) => {
       if (e.button !== 0) return;

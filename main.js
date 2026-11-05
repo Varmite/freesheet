@@ -74,6 +74,23 @@ function buildWordList() {
   return [...words];
 }
 
+// Language courses (content/courses/<id>/course.json) are shown as a subject in every grade.
+function coursesDir() { return path.join(contentDir(), 'courses'); }
+function listCourses() {
+  const out = [];
+  if (!fs.existsSync(coursesDir())) return out;
+  for (const d of fs.readdirSync(coursesDir(), { withFileTypes: true })) {
+    const file = path.join(coursesDir(), d.name, 'course.json');
+    if (!d.isDirectory() || !ID_RE.test(d.name) || !fs.existsSync(file)) continue;
+    try {
+      const c = JSON.parse(fs.readFileSync(file, 'utf8'));
+      out.push({ id: d.name, name: c.name, about: c.about, units: c.units.length, lessons: c.units.reduce((n, u) => n + u.lessons.length, 0) });
+    } catch (e) { console.error('Bad course file', file, e.message); }
+  }
+  return out;
+}
+function courseAudioDir(id) { assertId(id, 'course'); return path.join(audioDir(), 'courses', id); }
+
 function buildCatalog() {
   const root = contentDir();
   const grades = [];
@@ -189,8 +206,22 @@ function registerIpc() {
   });
 
   ipcMain.handle('catalog:get', () => {
-    if (!catalogCache) catalogCache = buildCatalog();
+    if (!catalogCache) catalogCache = Object.assign(buildCatalog(), { courses: listCourses() });
     return catalogCache;
+  });
+  ipcMain.handle('course:get', (_e, id) => {
+    assertId(id, 'course');
+    return readJson(path.join(coursesDir(), id, 'course.json'));
+  });
+  // Course audio: optional Ogg files named by Course.audioId (see scripts/tts/course-extract.js).
+  ipcMain.handle('course:audio-list', (_e, id) => {
+    const dir = courseAudioDir(id);
+    if (!fs.existsSync(dir)) return [];
+    return fs.readdirSync(dir).filter((f) => /^[0-9a-f]{8}\.ogg$/.test(f)).map((f) => f.slice(0, 8));
+  });
+  ipcMain.handle('course:audio', (_e, id, audio) => {
+    if (typeof audio !== 'string' || !/^[0-9a-f]{8}$/.test(audio)) throw new Error('Invalid audio id');
+    return fs.promises.readFile(path.join(courseAudioDir(id), `${audio}.ogg`));
   });
   ipcMain.handle('topic:get', (_e, grade, subjectId, topicId) =>
     readContentFile(grade, subjectId, 'topics', topicId));

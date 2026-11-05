@@ -87,6 +87,27 @@ marks totals, and that all maths renders) and run the marking unit tests.
 The content is original and written to follow the CAPS documents and Annual Teaching Plans. It is not
 affiliated with the Department of Basic Education or any commercial service.
 
+### Language courses (Afrikaans)
+
+Afrikaans appears as a subject in every grade, taught as a gamified language course: units of short
+lessons that unlock in order, new words introduced one at a time, then exercises generated from each
+lesson's words and sentences (pick the meaning, match pairs, translate with word tiles in both
+directions, type a translation, fill in the blank, pick the right translation). Mistakes come back at
+the end of the lesson; answers forgive case, punctuation, contractions, synonyms, missing accents and
+small typos (with a note), but not a typo that makes a different real word. Lessons earn XP and count
+towards the daily streak, and your study buddy is the character who speaks the sentences and reacts.
+
+The course is `content/courses/afrikaans/course.json` (units → lessons → `words` and `sentences`, each
+with every accepted translation); the engine is `src/js/course.js` and the screens `src/js/course-ui.js`.
+`node scripts/test-course.js` (part of `npm test`) generates every lesson several ways and checks that
+every exercise can be solved and every accepted answer is accepted.
+
+Listening: there is no good offline Afrikaans text-to-speech voice (Meta's MMS and Piper have none), so
+the course has no audio yet. `node scripts/tts/course-extract.js` writes `tts/course-phrases.csv`: every
+word and sentence with the file name the app expects. Recordings saved as
+`audio/courses/afrikaans/<id>.ogg` are picked up automatically: speaker buttons appear and "Tap what you
+hear" exercises switch on.
+
 ## Read-aloud audio
 
 Notes are shown one section at a time (each heading starts a new section). Every section can be read aloud

@@ -750,7 +750,58 @@
     });
   }
 
+  // ---------------------------------------------------------------- puppet
+  //
+  // An animated copy of your buddy placed inside a page (the language course uses it
+  // as the character who speaks the sentences and reacts to answers). Returns
+  // { el, react(kind), talk(ms), mood(m, ms), destroy() }.
+  function puppet(container, opts) {
+    const look = normalise((opts && opts.look) || state.look || randomLook());
+    container.innerHTML = svg(look, 'puppet');
+    const s = container.querySelector('svg');
+    const stopBlink = startBlinking(s);
+    let moodTimer = 0, talkTimer = 0, talkEnd = 0;
+    const mood = (m, ms) => {
+      clearTimeout(moodTimer);
+      s.setAttribute('data-mood', m);
+      if (ms) moodTimer = setTimeout(() => s.isConnected && s.setAttribute('data-mood', 'idle'), ms);
+    };
+    const flash = (cls, ms) => {
+      if (!motionOn()) return;
+      s.classList.remove(cls);
+      void s.getBoundingClientRect();
+      s.classList.add(cls);
+      setTimeout(() => s.classList.remove(cls), ms);
+    };
+    function talk(ms) {
+      clearInterval(talkTimer); clearTimeout(talkEnd);
+      if (!motionOn()) return;
+      talkTimer = setInterval(() => s.setAttribute('data-talk', s.getAttribute('data-talk') === '1' ? '0' : '1'), 115);
+      talkEnd = setTimeout(() => { clearInterval(talkTimer); s.removeAttribute('data-talk'); }, ms || 900);
+    }
+    function react(kind) {
+      switch (kind) {
+        case 'correct': mood('happy', 1400); hop(s, false); flash('fx-spark', 1000); break;
+        case 'celebrate': mood('happy', 3000); hop(s, true); setTimeout(() => hop(s, true), 760); flash('fx-spark', 1800); break;
+        case 'wrong':
+          mood('sad', 1600);
+          anim(s.querySelector('.b-actor'), [{ transform: 'rotate(0deg) scale(1)' }, { transform: 'rotate(-6deg) scale(.96)', offset: 0.3 }, { transform: 'rotate(4deg) scale(.97)', offset: 0.6 }, { transform: 'rotate(0deg) scale(1)' }], { duration: 900, easing: 'ease-in-out' });
+          break;
+        case 'think': mood('think', 1400); flash('fx-think', 1200); break;
+        case 'wave': {
+          mood('happy', 1300);
+          anim(s.querySelector('.b-arm-r'), [{ transform: 'rotate(0deg)' }, { transform: 'rotate(-100deg)', offset: 0.2 }, { transform: 'rotate(-70deg)', offset: 0.4 },
+            { transform: 'rotate(-100deg)', offset: 0.6 }, { transform: 'rotate(-70deg)', offset: 0.8 }, { transform: 'rotate(0deg)' }], { duration: 1300, easing: 'ease-in-out' });
+          break;
+        }
+        default: break;
+      }
+    }
+    return { el: s, react, talk, mood, destroy() { stopBlink(); clearTimeout(moodTimer); clearInterval(talkTimer); clearTimeout(talkEnd); } };
+  }
+
   window.Buddy = {
+    puppet,
     KINDS, COLOURS, ACCESSORIES, svg, randomLook, normalise,
     configure, hide, say, react, listen, closeBubble, openSetup,
     name: () => (state.look ? state.look.name : ''),

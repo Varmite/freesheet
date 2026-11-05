@@ -6,3 +6,4 @@ build/
 # The generated audio/ is committed so builds on GitHub Actions include read-aloud.
 tts/.venv/
 tts/jobs.json
+tts/course-phrases.csv

@@ -1,0 +1,455 @@
+{
+  "id": "afrikaans",
+  "name": "Afrikaans",
+  "language": "af",
+  "about": "Learn Afrikaans step by step: short lessons with new words, sentences, matching and typing.",
+  "englishSynonyms": {
+    "mom": "mother", "mum": "mother", "mommy": "mother", "dad": "father", "daddy": "father",
+    "grandma": "grandmother", "granny": "grandmother", "grandpa": "grandfather",
+    "kids": "children", "kid": "child", "thanks": "thank you", "hi": "hello", "bye": "goodbye",
+    "colour": "color", "favourite": "favorite", "pupil": "learner", "student": "learner",
+    "dinner": "supper", "large": "big", "little": "small", "plus": "and"
+  },
+  "units": [
+    {
+      "id": "groete", "title": "Groete", "english": "Greetings", "hue": 152,
+      "lessons": [
+        {
+          "id": "groete-1", "title": "Hallo!",
+          "words": [
+            { "af": "hallo", "en": ["hello"] },
+            { "af": "totsiens", "en": ["goodbye"] },
+            { "af": "dankie", "en": ["thank you"] },
+            { "af": "asseblief", "en": ["please"] },
+            { "af": "ja", "en": ["yes"] },
+            { "af": "nee", "en": ["no"] }
+          ],
+          "sentences": [
+            { "af": ["Hallo!"], "en": ["Hello!"] },
+            { "af": ["Ja, asseblief."], "en": ["Yes, please."] },
+            { "af": ["Nee, dankie."], "en": ["No, thank you."] },
+            { "af": ["Totsiens!"], "en": ["Goodbye!"] },
+            { "af": ["Hallo, dankie!"], "en": ["Hello, thank you!"] }
+          ]
+        },
+        {
+          "id": "groete-2", "title": "Hoe gaan dit?",
+          "words": [
+            { "af": "goeiemôre", "en": ["good morning"] },
+            { "af": "goeiemiddag", "en": ["good afternoon"] },
+            { "af": "goeienaand", "en": ["good evening"] },
+            { "af": "goeienag", "en": ["good night"] },
+            { "af": "goed", "en": ["good", "well", "fine"] },
+            { "af": "baie", "en": ["very", "a lot", "many"] }
+          ],
+          "sentences": [
+            { "af": ["Goeiemôre! Hoe gaan dit?"], "en": ["Good morning! How are you?", "Good morning! How is it going?"] },
+            { "af": ["Dit gaan goed, dankie."], "en": ["I am fine, thank you.", "I am well, thank you.", "I am good, thank you.", "It is going well, thank you.", "I am doing well, thank you."] },
+            { "af": ["Baie dankie!"], "en": ["Thank you very much!", "Thank you a lot!", "Many thanks!"] },
+            { "af": ["Goeiemiddag! Dit gaan baie goed."], "en": ["Good afternoon! I am very well.", "Good afternoon! It is going very well.", "Good afternoon! I am doing very well.", "Good afternoon! I am very good."] },
+            { "af": ["Goeienaand en goeienag!"], "en": ["Good evening and good night!"] }
+          ]
+        },
+        {
+          "id": "groete-3", "title": "My naam is ...",
+          "words": [
+            { "af": "ek", "en": ["I"] },
+            { "af": "jy", "en": ["you"] },
+            { "af": "is", "en": ["is", "am", "are"] },
+            { "af": "naam", "en": ["name"] },
+            { "af": "wat", "en": ["what"] },
+            { "af": "jou", "en": ["your"] }
+          ],
+          "sentences": [
+            { "af": ["My naam is Thandi."], "en": ["My name is Thandi."] },
+            { "af": ["Wat is jou naam?"], "en": ["What is your name?"] },
+            { "af": ["Ek is Pieter."], "en": ["I am Pieter."] },
+            { "af": ["Jy is Sipho."], "en": ["You are Sipho."] },
+            { "af": ["Hoe gaan dit met jou?"], "en": ["How are you?", "How is it going with you?"] }
+          ]
+        },
+        {
+          "id": "groete-4", "title": "Aangename kennis",
+          "words": [
+            { "af": "woon", "en": ["live"] },
+            { "af": "waar", "en": ["where"] },
+            { "af": "in", "en": ["in"] },
+            { "af": "en", "en": ["and"] },
+            { "af": "aangename kennis", "en": ["nice to meet you", "pleased to meet you"] }
+          ],
+          "sentences": [
+            { "af": ["Ek woon in Kaapstad."], "en": ["I live in Cape Town."] },
+            { "af": ["Waar woon jy?"], "en": ["Where do you live?"] },
+            { "af": ["Aangename kennis!"], "en": ["Nice to meet you!", "Pleased to meet you!"] },
+            { "af": ["Ek is Lerato en ek woon in Durban."], "en": ["I am Lerato and I live in Durban."] },
+            { "af": ["Jy woon in Pretoria."], "en": ["You live in Pretoria."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "familie", "title": "Familie", "english": "Family", "hue": 330,
+      "lessons": [
+        {
+          "id": "familie-1", "title": "My familie",
+          "words": [
+            { "af": "ma", "en": ["mother"] },
+            { "af": "pa", "en": ["father"] },
+            { "af": "broer", "en": ["brother"] },
+            { "af": "suster", "en": ["sister"] },
+            { "af": "hy", "en": ["he"] },
+            { "af": "sy", "en": ["she"] }
+          ],
+          "sentences": [
+            { "af": ["Dit is my ma."], "en": ["This is my mother.", "That is my mother.", "It is my mother."] },
+            { "af": ["Hy is my broer."], "en": ["He is my brother."] },
+            { "af": ["Sy is my suster."], "en": ["She is my sister."] },
+            { "af": ["Dit is my pa."], "en": ["This is my father.", "That is my father.", "It is my father."] },
+            { "af": ["My broer is Thabo."], "en": ["My brother is Thabo."] }
+          ]
+        },
+        {
+          "id": "familie-2", "title": "Ek het ...",
+          "words": [
+            { "af": "het", "en": ["have", "has"] },
+            { "af": "twee", "en": ["two"] },
+            { "af": "ons", "en": ["we", "our"] },
+            { "af": "hulle", "en": ["they", "their"] },
+            { "af": "ouers", "en": ["parents"] },
+            { "af": "'n", "en": ["a", "an"] }
+          ],
+          "sentences": [
+            { "af": ["Ek het een broer."], "en": ["I have one brother.", "I have a brother."] },
+            { "af": ["Sy het twee susters."], "en": ["She has two sisters."] },
+            { "af": ["Ons is 'n familie."], "en": ["We are a family."] },
+            { "af": ["Hulle is my ouers."], "en": ["They are my parents."] },
+            { "af": ["Ons het twee broers."], "en": ["We have two brothers."] }
+          ]
+        },
+        {
+          "id": "familie-3", "title": "Oud en jonk",
+          "words": [
+            { "af": "ouma", "en": ["grandmother"] },
+            { "af": "oupa", "en": ["grandfather"] },
+            { "af": "oud", "en": ["old"] },
+            { "af": "jonk", "en": ["young"] },
+            { "af": "kind", "en": ["child"] },
+            { "af": "die", "en": ["the"] }
+          ],
+          "sentences": [
+            { "af": ["My ouma is oud."], "en": ["My grandmother is old."] },
+            { "af": ["Die kind is jonk."], "en": ["The child is young."] },
+            { "af": ["My oupa is baie oud."], "en": ["My grandfather is very old."] },
+            { "af": ["Hulle het twee kinders."], "en": ["They have two children."] },
+            { "af": ["Ouma en oupa is oud."], "en": ["Grandmother and grandfather are old."] }
+          ]
+        },
+        {
+          "id": "familie-4", "title": "By die huis",
+          "words": [
+            { "af": "hond", "en": ["dog"] },
+            { "af": "kat", "en": ["cat"] },
+            { "af": "huis", "en": ["house", "home"] },
+            { "af": "groot", "en": ["big"] },
+            { "af": "klein", "en": ["small"] }
+          ],
+          "sentences": [
+            { "af": ["Die hond is groot."], "en": ["The dog is big."] },
+            { "af": ["Ek het 'n kat."], "en": ["I have a cat."] },
+            { "af": ["Die kat is klein."], "en": ["The cat is small."] },
+            { "af": ["Ons huis is groot."], "en": ["Our house is big.", "Our home is big."] },
+            { "af": ["Die hond en die kat is in die huis."], "en": ["The dog and the cat are in the house.", "The dog and the cat are in the home."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "getalle", "title": "Getalle", "english": "Numbers", "hue": 210,
+      "lessons": [
+        {
+          "id": "getalle-1", "title": "Een tot vyf",
+          "words": [
+            { "af": "een", "en": ["one"] },
+            { "af": "drie", "en": ["three"] },
+            { "af": "vier", "en": ["four"] },
+            { "af": "vyf", "en": ["five"] },
+            { "af": "hoeveel", "en": ["how many", "how much"] }
+          ],
+          "sentences": [
+            { "af": ["Ek het drie honde."], "en": ["I have three dogs."] },
+            { "af": ["Hoeveel katte het jy?"], "en": ["How many cats do you have?", "How many cats have you got?"] },
+            { "af": ["Ek het vier katte."], "en": ["I have four cats."] },
+            { "af": ["Twee en twee is vier."], "en": ["Two and two is four.", "Two and two are four."] },
+            { "af": ["Een, twee, drie, vier, vyf!"], "en": ["One, two, three, four, five!"] }
+          ]
+        },
+        {
+          "id": "getalle-2", "title": "Ses tot tien",
+          "words": [
+            { "af": "ses", "en": ["six"] },
+            { "af": "sewe", "en": ["seven"] },
+            { "af": "agt", "en": ["eight"] },
+            { "af": "nege", "en": ["nine"] },
+            { "af": "tien", "en": ["ten"] }
+          ],
+          "sentences": [
+            { "af": ["Vyf en vyf is tien."], "en": ["Five and five is ten.", "Five and five are ten."] },
+            { "af": ["Hy het ses honde."], "en": ["He has six dogs."] },
+            { "af": ["Sy het agt katte."], "en": ["She has eight cats."] },
+            { "af": ["Die kind is nege."], "en": ["The child is nine."] },
+            { "af": ["Drie en vier is sewe."], "en": ["Three and four is seven.", "Three and four are seven."] }
+          ]
+        },
+        {
+          "id": "getalle-3", "title": "Hoe oud is jy?",
+          "words": [
+            { "af": "jaar", "en": ["year", "years"] },
+            { "af": "hoe", "en": ["how"] },
+            { "af": "hoe oud", "en": ["how old"] }
+          ],
+          "sentences": [
+            { "af": ["Hoe oud is jy?"], "en": ["How old are you?"] },
+            { "af": ["Ek is tien jaar oud."], "en": ["I am ten years old.", "I am ten."] },
+            { "af": ["My broer is sewe jaar oud."], "en": ["My brother is seven years old.", "My brother is seven."] },
+            { "af": ["Hoe oud is jou ouma?"], "en": ["How old is your grandmother?"] },
+            { "af": ["My suster is vyf jaar oud."], "en": ["My sister is five years old.", "My sister is five."] }
+          ]
+        },
+        {
+          "id": "getalle-4", "title": "Hoeveel kos dit?",
+          "words": [
+            { "af": "kos", "en": ["cost", "costs"] },
+            { "af": "rand", "en": ["rand"] },
+            { "af": "geld", "en": ["money"] },
+            { "af": "dit", "en": ["it", "this", "that"] }
+          ],
+          "sentences": [
+            { "af": ["Dit kos vyf rand."], "en": ["It costs five rand.", "That costs five rand.", "This costs five rand."] },
+            { "af": ["Hoeveel kos dit?"], "en": ["How much does it cost?", "How much is it?", "How much does this cost?", "How much does that cost?"] },
+            { "af": ["Ek het tien rand."], "en": ["I have ten rand."] },
+            { "af": ["Dit kos baie geld."], "en": ["It costs a lot of money.", "That costs a lot of money.", "This costs a lot of money."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kos", "title": "Kos", "english": "Food", "hue": 28,
+      "lessons": [
+        {
+          "id": "kos-1", "title": "Eet en drink",
+          "words": [
+            { "af": "brood", "en": ["bread"] },
+            { "af": "melk", "en": ["milk"] },
+            { "af": "water", "en": ["water"] },
+            { "af": "eet", "en": ["eat", "eats"] },
+            { "af": "drink", "en": ["drink", "drinks"] },
+            { "af": "appel", "en": ["apple"] }
+          ],
+          "sentences": [
+            { "af": ["Ek eet brood."], "en": ["I eat bread.", "I am eating bread."] },
+            { "af": ["Sy drink melk."], "en": ["She drinks milk.", "She is drinking milk."] },
+            { "af": ["Ons drink water."], "en": ["We drink water.", "We are drinking water."] },
+            { "af": ["Die kind eet 'n appel."], "en": ["The child eats an apple.", "The child is eating an apple."] },
+            { "af": ["Hy eet brood en drink melk."], "en": ["He eats bread and drinks milk.", "He is eating bread and drinking milk."] }
+          ]
+        },
+        {
+          "id": "kos-2", "title": "Ek is honger",
+          "words": [
+            { "af": "wil", "en": ["want", "wants"] },
+            { "af": "honger", "en": ["hungry"] },
+            { "af": "dors", "en": ["thirsty"] },
+            { "af": "kaas", "en": ["cheese"] },
+            { "af": "nie", "en": ["not"] }
+          ],
+          "sentences": [
+            { "af": ["Ek is honger."], "en": ["I am hungry."] },
+            { "af": ["Is jy dors?"], "en": ["Are you thirsty?"] },
+            { "af": ["Ek wil water hê."], "en": ["I want water.", "I would like water.", "I want some water."] },
+            { "af": ["Hy wil brood en kaas hê."], "en": ["He wants bread and cheese.", "He would like bread and cheese."] },
+            { "af": ["Ek is nie honger nie."], "en": ["I am not hungry."] }
+          ]
+        },
+        {
+          "id": "kos-3", "title": "Lekker!",
+          "words": [
+            { "af": "lekker", "en": ["delicious", "tasty", "nice"] },
+            { "af": "vleis", "en": ["meat"] },
+            { "af": "groente", "en": ["vegetables"] },
+            { "af": "vrugte", "en": ["fruit"] },
+            { "af": "hou van", "en": ["like", "likes"] }
+          ],
+          "sentences": [
+            { "af": ["Die kos is lekker!"], "en": ["The food is delicious!", "The food is tasty!", "The food is nice!"] },
+            { "af": ["Ek hou van vrugte."], "en": ["I like fruit."] },
+            { "af": ["Hou jy van vleis?"], "en": ["Do you like meat?"] },
+            { "af": ["Sy hou nie van groente nie."], "en": ["She does not like vegetables."] },
+            { "af": ["Ons hou van lekker kos."], "en": ["We like delicious food.", "We like tasty food.", "We like nice food."] }
+          ]
+        },
+        {
+          "id": "kos-4", "title": "Ontbyt en aandete",
+          "words": [
+            { "af": "ontbyt", "en": ["breakfast"] },
+            { "af": "aandete", "en": ["supper"] },
+            { "af": "vandag", "en": ["today"] },
+            { "af": "koffie", "en": ["coffee"] },
+            { "af": "tee", "en": ["tea"] },
+            { "af": "vir", "en": ["for"] }
+          ],
+          "sentences": [
+            { "af": ["Ek drink koffie vir ontbyt."], "en": ["I drink coffee for breakfast.", "I have coffee for breakfast."] },
+            { "af": ["Wat eet ons vir aandete?"], "en": ["What are we eating for supper?", "What do we eat for supper?", "What are we having for supper?"] },
+            { "af": ["Sy drink tee."], "en": ["She drinks tea.", "She is drinking tea."] },
+            { "af": ["Ons eet vandag vleis."], "en": ["We are eating meat today.", "We eat meat today.", "Today we are eating meat.", "Today we eat meat."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skool", "title": "Skool", "english": "School", "hue": 262,
+      "lessons": [
+        {
+          "id": "skool-1", "title": "In die klas",
+          "words": [
+            { "af": "skool", "en": ["school"] },
+            { "af": "onderwyser", "en": ["teacher"] },
+            { "af": "boek", "en": ["book"] },
+            { "af": "pen", "en": ["pen"] },
+            { "af": "klas", "en": ["class", "classroom"] },
+            { "af": "leerder", "en": ["learner"] }
+          ],
+          "sentences": [
+            { "af": ["Die onderwyser is in die klas."], "en": ["The teacher is in the class.", "The teacher is in the classroom."] },
+            { "af": ["Ek het 'n boek en 'n pen."], "en": ["I have a book and a pen."] },
+            { "af": ["Die leerder is by die skool."], "en": ["The learner is at school.", "The learner is at the school."] },
+            { "af": ["My skool is groot."], "en": ["My school is big."] }
+          ]
+        },
+        {
+          "id": "skool-2", "title": "Ons leer Afrikaans",
+          "words": [
+            { "af": "lees", "en": ["read", "reads"] },
+            { "af": "skryf", "en": ["write", "writes"] },
+            { "af": "leer", "en": ["learn", "learns"] },
+            { "af": "praat", "en": ["speak", "speaks", "talk"] },
+            { "af": "Engels", "en": ["English"] },
+            { "af": "'n bietjie", "en": ["a little", "a bit"] }
+          ],
+          "sentences": [
+            { "af": ["Ek lees 'n boek."], "en": ["I am reading a book.", "I read a book."] },
+            { "af": ["Ons leer Afrikaans."], "en": ["We are learning Afrikaans.", "We learn Afrikaans."] },
+            { "af": ["Die onderwyser skryf."], "en": ["The teacher writes.", "The teacher is writing."] },
+            { "af": ["Praat jy Engels?"], "en": ["Do you speak English?", "Are you speaking English?"] },
+            { "af": ["Ek praat 'n bietjie Afrikaans."], "en": ["I speak a little Afrikaans.", "I speak a bit of Afrikaans."] }
+          ]
+        },
+        {
+          "id": "skool-3", "title": "Maklik of moeilik?",
+          "words": [
+            { "af": "vraag", "en": ["question"] },
+            { "af": "antwoord", "en": ["answer"] },
+            { "af": "verstaan", "en": ["understand"] },
+            { "af": "weet", "en": ["know"] },
+            { "af": "maklik", "en": ["easy"] },
+            { "af": "moeilik", "en": ["difficult", "hard"] }
+          ],
+          "sentences": [
+            { "af": ["Ek verstaan nie."], "en": ["I do not understand."] },
+            { "af": ["Die vraag is moeilik."], "en": ["The question is difficult.", "The question is hard."] },
+            { "af": ["Ek weet die antwoord!"], "en": ["I know the answer!"] },
+            { "af": ["Afrikaans is maklik!"], "en": ["Afrikaans is easy!"] },
+            { "af": ["Weet jy die antwoord?"], "en": ["Do you know the answer?"] }
+          ]
+        },
+        {
+          "id": "skool-4", "title": "Die week",
+          "words": [
+            { "af": "Maandag", "en": ["Monday"] },
+            { "af": "Dinsdag", "en": ["Tuesday"] },
+            { "af": "Woensdag", "en": ["Wednesday"] },
+            { "af": "Vrydag", "en": ["Friday"] },
+            { "af": "toets", "en": ["test"] },
+            { "af": "gaan", "en": ["go", "goes", "going"] }
+          ],
+          "sentences": [
+            { "af": ["Ons het Maandag 'n toets."], "en": ["We have a test on Monday.", "We have a test Monday.", "On Monday we have a test."] },
+            { "af": ["Vandag is Vrydag."], "en": ["Today is Friday."] },
+            { "af": ["Die toets is Woensdag."], "en": ["The test is on Wednesday.", "The test is Wednesday."] },
+            { "af": ["Ek gaan Dinsdag skool toe."], "en": ["I am going to school on Tuesday.", "I go to school on Tuesday.", "On Tuesday I am going to school.", "On Tuesday I go to school."] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weer", "title": "Kleure en die weer", "english": "Colours and weather", "hue": 190,
+      "lessons": [
+        {
+          "id": "weer-1", "title": "Kleure",
+          "words": [
+            { "af": "rooi", "en": ["red"] },
+            { "af": "blou", "en": ["blue"] },
+            { "af": "groen", "en": ["green"] },
+            { "af": "geel", "en": ["yellow"] },
+            { "af": "swart", "en": ["black"] },
+            { "af": "wit", "en": ["white"] }
+          ],
+          "sentences": [
+            { "af": ["Die appel is rooi."], "en": ["The apple is red."] },
+            { "af": ["Die lug is blou."], "en": ["The sky is blue."] },
+            { "af": ["My kat is swart en wit."], "en": ["My cat is black and white."] },
+            { "af": ["Die gras is groen."], "en": ["The grass is green."] },
+            { "af": ["Die son is geel."], "en": ["The sun is yellow."] }
+          ]
+        },
+        {
+          "id": "weer-2", "title": "Die weer",
+          "words": [
+            { "af": "weer", "en": ["weather"] },
+            { "af": "son", "en": ["sun"] },
+            { "af": "reën", "en": ["rain", "raining"] },
+            { "af": "warm", "en": ["warm", "hot"] },
+            { "af": "koud", "en": ["cold"] },
+            { "af": "skyn", "en": ["shine", "shines", "shining"] }
+          ],
+          "sentences": [
+            { "af": ["Dit is koud vandag."], "en": ["It is cold today.", "Today it is cold."] },
+            { "af": ["Die son skyn."], "en": ["The sun is shining.", "The sun shines."] },
+            { "af": ["Dit reën."], "en": ["It is raining.", "It rains."] },
+            { "af": ["Hoe is die weer?"], "en": ["How is the weather?", "What is the weather like?"] },
+            { "af": ["Dit is warm en die son skyn."], "en": ["It is warm and the sun is shining.", "It is hot and the sun is shining.", "It is warm and the sun shines.", "It is hot and the sun shines."] }
+          ]
+        },
+        {
+          "id": "weer-3", "title": "Somer en winter",
+          "words": [
+            { "af": "somer", "en": ["summer"] },
+            { "af": "winter", "en": ["winter"] },
+            { "af": "wind", "en": ["wind"] },
+            { "af": "waai", "en": ["blow", "blows", "blowing"] }
+          ],
+          "sentences": [
+            { "af": ["In die somer is dit warm."], "en": ["In summer it is hot.", "In the summer it is hot.", "It is hot in summer.", "It is hot in the summer.", "In summer it is warm.", "In the summer it is warm.", "It is warm in summer.", "It is warm in the summer."] },
+            { "af": ["In die winter is dit koud."], "en": ["In winter it is cold.", "In the winter it is cold.", "It is cold in winter.", "It is cold in the winter."] },
+            { "af": ["Ek hou van die somer."], "en": ["I like summer.", "I like the summer."] },
+            { "af": ["Die wind waai."], "en": ["The wind is blowing.", "The wind blows."] }
+          ]
+        },
+        {
+          "id": "weer-4", "title": "My gunsteling",
+          "words": [
+            { "af": "gunsteling", "en": ["favorite"] },
+            { "af": "kleur", "en": ["color"] },
+            { "af": "môre", "en": ["tomorrow"] }
+          ],
+          "sentences": [
+            { "af": ["Wat is jou gunsteling kleur?"], "en": ["What is your favorite color?"] },
+            { "af": ["My gunsteling kleur is blou."], "en": ["My favorite color is blue."] },
+            { "af": ["Hou jy van die reën?"], "en": ["Do you like the rain?"] },
+            { "af": ["Môre is dit warm."], "en": ["Tomorrow it is warm.", "Tomorrow it will be warm.", "It will be warm tomorrow.", "It is warm tomorrow.", "Tomorrow it will be hot.", "It will be hot tomorrow."] }
+          ]
+        }
+      ]
+    }
+  ]
+}
