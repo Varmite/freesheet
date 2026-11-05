@@ -5,6 +5,10 @@ name: Build installers
 
 on:
   workflow_dispatch:
+    inputs:
+      mac_runner:
+        description: 'Runner for the macOS build (try macos-15-intel if Apple Silicon runners are busy; both build Intel and Apple Silicon apps)'
+        default: macos-latest
   push:
     tags: ['v*']
 
@@ -19,7 +23,7 @@ jobs:
         include:
           - os: windows-latest
             platform: win
-          - os: macos-latest
+          - os: ${{ inputs.mac_runner || 'macos-latest' }}
             platform: mac
           - os: ubuntu-latest
             platform: linux
