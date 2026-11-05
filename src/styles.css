@@ -886,17 +886,17 @@ html.smooth-text {
   text-rendering: optimizeLegibility;
   font-synthesis: none;
 }
-html.smooth-text body { letter-spacing: -0.008em; font-feature-settings: "calt", "kern"; }
-html.smooth-text h1 { letter-spacing: -0.024em; }
-html.smooth-text h2, html.smooth-text h3, html.smooth-text .result-big, html.smooth-text .streak-num { letter-spacing: -0.018em; }
-html.smooth-text .card-title, html.smooth-text .fb-msg, html.smooth-text .ex-title { letter-spacing: -0.012em; }
+/* Body text keeps Inter's own spacing: tightening it at reading sizes makes letters touch once they
+   are drawn in greyscale. Only large headings are tightened, as macOS does with display sizes. */
+html.smooth-text body { font-feature-settings: "calt", "kern"; }
+html.smooth-text h1 { letter-spacing: -0.02em; }
+html.smooth-text h2, html.smooth-text .result-big, html.smooth-text .streak-num { letter-spacing: -0.012em; }
 html.smooth-text .n-label, html.smooth-text .unit-label, html.smooth-text .bs-label, html.smooth-text .buddy-name { letter-spacing: 0.06em; }
 html.smooth-text .facts strong, html.smooth-text .exam-timer, html.smooth-text .course-stats strong { font-feature-settings: "tnum", "calt"; }
-html.smooth-text.os-windows body { -webkit-text-stroke: 0.2px currentColor; }
-html.smooth-text.os-windows .katex { -webkit-text-stroke: 0; }
-@media (prefers-color-scheme: dark) {
-  /* light-on-dark text already looks heavier */
-  html.smooth-text.os-windows body { -webkit-text-stroke: 0.12px currentColor; }
+/* Greyscale dark-on-light text looks a touch thin on Windows' low-DPI screens: use a slightly heavier
+   weight from the variable font (crisp outlines), not a stroke (which smears the letters). */
+@media (prefers-color-scheme: light) {
+  html.smooth-text.os-windows body { font-weight: 430; }
 }
 .text-restart { display: inline-flex; align-items: center; gap: 0.5rem; }
 .text-restart[hidden] { display: none; }

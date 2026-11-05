@@ -20,8 +20,8 @@ A free, fully offline study app for South African learners following the **CAPS*
   during exams. Change it, switch it off, or make it speak only when tapped, in Settings.
 * **Settings** (cog, top right): text size, text rendering, animations, sound effects and the study buddy.
 * **Smooth text** (default): text is drawn the way macOS draws it: greyscale anti-aliasing instead of
-  ClearType's colour fringes, the Inter typeface (SIL Open Font License, `src/fonts`) with Apple-style
-  tracking, and slightly fuller strokes on Windows. "System" switches back to Windows' own rendering.
+  ClearType's colour fringes and the Inter typeface (SIL Open Font License, `src/fonts`), tightened only
+  at heading sizes, with a slightly heavier weight for dark-on-light text on Windows. "System" switches back to Windows' own rendering.
 
 There are no accounts and nothing is sent over the internet. Progress is saved to a single file,
 `progress.json`, in your user-data folder:
