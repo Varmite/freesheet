@@ -1,0 +1,70 @@
+{
+  "id": "peer-pressure-and-relationships",
+  "title": "Peer Pressure and Relationships",
+  "term": 1,
+  "summary": "Positive and negative peer pressure, assertiveness and refusal skills, qualities of healthy friendships, bullying and cyberbullying, and resolving conflict.",
+  "notes": [
+    { "type": "heading", "text": "Peer pressure" },
+    { "type": "definition", "term": "Peer pressure", "text": "The influence that people of your own age group have on your choices and behaviour." },
+    { "type": "table", "headers": ["Positive peer pressure", "Negative peer pressure"], "rows": [
+      ["Friends encourage you to study for a test", "Being dared to shoplift"],
+      ["Joining a sports team because friends play", "Pressure to try alcohol, vapes or drugs"],
+      ["Being encouraged to stand up against bullying", "Pressure to skip school or bully someone"],
+      ["Friends who support healthy eating and exercise", "Pressure to share private photos or have sex"]
+    ] },
+    { "type": "heading", "text": "Communication styles" },
+    { "type": "table", "headers": ["Style", "Description", "Example response to 'Come and smoke with us'"], "rows": [
+      ["Passive", "Does not stand up for own rights or feelings; gives in", "'Um… okay, I suppose.'"],
+      ["Aggressive", "Stands up for self but disrespects or attacks others", "'Are you stupid? Get lost!'"],
+      ["Assertive", "Expresses own feelings and needs clearly and honestly while respecting others", "'No thanks. I don't smoke. I'll see you at practice.'"]
+    ] },
+    { "type": "heading", "text": "Refusal skills" },
+    { "type": "list", "items": [
+      "Say **'No'** clearly and firmly; you do not have to give a long explanation.",
+      "Use confident **body language**: stand tall and make eye contact.",
+      "**Give a reason** if you want: 'I have a match tomorrow.'",
+      "**Suggest an alternative**: 'Let's go play soccer instead.'",
+      "**Walk away** if the pressure continues.",
+      "Spend time with friends who share your values."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Use an **I-statement** to be assertive: 'I feel… when you… because… I would like…'. Example: 'I feel upset when you post photos of me without asking, because it is private. I would like you to take it down.'" },
+    { "type": "heading", "text": "Healthy and unhealthy relationships" },
+    { "type": "table", "headers": ["Healthy relationship", "Unhealthy relationship"], "rows": [
+      ["Respect, trust and honesty", "Lies, jealousy and controlling behaviour"],
+      ["Both people can say no", "Pressure, threats or manipulation"],
+      ["Open communication", "Name-calling, humiliation or silent treatment"],
+      ["Support each other's goals and friendships", "Isolating a person from friends and family"]
+    ] },
+    { "type": "heading", "text": "Bullying and cyberbullying" },
+    { "type": "paragraph", "text": "**Bullying** is repeated, deliberate behaviour that hurts or frightens someone with less power. It can be **physical** (hitting), **verbal** (insults), **social** (excluding, spreading rumours) or online (**cyberbullying**: hurtful messages, posts, fake profiles or sharing private images)." },
+    { "type": "list", "items": [
+      "If you are bullied: tell a trusted adult, keep evidence (screenshots), block and report the bully online, and do not retaliate.",
+      "If you see bullying: don't join in, support the victim and report it. Bystanders have power.",
+      "Help is available from Childline (**116**, free) and school counsellors."
+    ] },
+    { "type": "heading", "text": "Resolving conflict" },
+    { "type": "list", "ordered": true, "items": [
+      "Calm down before talking.",
+      "Each person explains their side using I-statements, while the other **listens** without interrupting.",
+      "Identify the real problem.",
+      "Brainstorm possible solutions.",
+      "Agree on a fair solution (a **win–win** compromise) and follow it."
+    ] }
+  ],
+  "questions": [
+    { "id": "define", "type": "short", "prompt": "What is the influence of people your own age on your behaviour called?", "answers": ["peer pressure"] },
+    { "id": "positive", "type": "mcq", "prompt": "Which is an example of POSITIVE peer pressure?", "options": ["Being dared to steal", "Friends encouraging you to join the debating club", "Pressure to vape", "Being pushed to bunk school"], "answer": 1 },
+    { "id": "assertive", "type": "mcq", "prompt": "Which response is assertive?", "options": ["'Fine, whatever you want.'", "'Shut up, you idiot!'", "'No thanks, I don't want to. Let's do something else.'", "Saying nothing and leaving with them"], "answer": 2 },
+    { "id": "childline", "type": "numeric", "prompt": "What is the free Childline number in South Africa?", "answer": 116, "tolerance": 0 },
+    { "id": "styles", "type": "match", "marks": 3, "prompt": "Match each communication style to its description.", "pairs": [
+      { "left": "Passive", "right": "Gives in and ignores own needs" },
+      { "left": "Aggressive", "right": "Attacks or disrespects others" },
+      { "left": "Assertive", "right": "Honest and respectful" }
+    ] },
+    { "id": "cyber", "type": "truefalse", "prompt": "Sharing a private photo of someone without their permission can be a form of cyberbullying.", "answer": true },
+    { "id": "refusal", "type": "open", "marks": 3, "prompt": "Describe THREE refusal skills you could use if friends pressure you to drink alcohol.", "memo": "Any three (1 each): say no firmly; confident body language; give a reason; suggest an alternative; walk away; stay with like-minded friends" },
+    { "id": "i-statement", "type": "open", "marks": 3, "prompt": "Write an I-statement to tell a friend that you are upset because they keep borrowing your things without asking.", "memo": "✓ 'I feel…' (feeling) (1)\n✓ 'when you take my things without asking…' (behaviour) (1)\n✓ 'because… I would like you to ask first' (reason/request) (1)" },
+    { "id": "bystander", "type": "open", "marks": 2, "prompt": "What can a bystander do when they see someone being bullied?", "memo": "Any two (1 each): don't join in or laugh; support the victim; tell a trusted adult/report it; encourage others to stand up" },
+    { "id": "unhealthy", "type": "open", "marks": 2, "prompt": "Give TWO warning signs of an unhealthy relationship.", "memo": "Any two (1 each): jealousy/control; pressure or threats; name-calling; isolation from friends; dishonesty; violence" }
+  ]
+}

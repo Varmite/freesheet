@@ -1,0 +1,56 @@
+{
+  "id": "human-rights-and-democracy",
+  "title": "Human Rights, Democracy and Discrimination",
+  "term": 2,
+  "summary": "The Bill of Rights and the limitation of rights, discrimination and human rights violations, the role of institutions such as the SAHRC and Constitutional Court, and how citizens participate in democracy.",
+  "notes": [
+    { "type": "heading", "text": "The Bill of Rights" },
+    { "type": "paragraph", "text": "Chapter 2 of the Constitution (1996), the **Bill of Rights**, protects the rights of everyone in South Africa. It is based on **human dignity, equality and freedom**." },
+    { "type": "heading", "text": "Limiting rights" },
+    { "type": "paragraph", "text": "Rights are not absolute. **Section 36** allows rights to be limited by law if the limitation is **reasonable and justifiable** in an open and democratic society. For example, freedom of expression does not protect **hate speech** or incitement to violence, and freedom of movement can be limited by a court order." },
+    { "type": "heading", "text": "Discrimination and violations" },
+    { "type": "table", "headers": ["Violation", "Example"], "rows": [
+      ["Racism", "Refusing service to someone because of race"],
+      ["Sexism and gender-based violence", "Paying women less for the same work; domestic abuse"],
+      ["Xenophobia", "Attacks on foreign nationals and their shops"],
+      ["Homophobia", "Bullying or attacking someone because of sexual orientation"],
+      ["Ableism", "Buildings without access for wheelchair users"],
+      ["Violation of children's rights", "Child labour, abuse, neglect"]
+    ] },
+    { "type": "callout", "label": "Fair or unfair?", "text": "Section 9 forbids **unfair** discrimination. Some measures that treat groups differently (affirmative action, ramps for wheelchair users, bursaries for poor students) are allowed because they **advance equality**." },
+    { "type": "heading", "text": "Institutions that protect democracy (Chapter 9)" },
+    { "type": "table", "headers": ["Institution", "Role"], "rows": [
+      ["South African Human Rights Commission (SAHRC)", "Promotes and protects human rights; investigates complaints"],
+      ["Public Protector", "Investigates abuse of power and maladministration in government"],
+      ["Commission for Gender Equality", "Promotes gender equality"],
+      ["Independent Electoral Commission (IEC)", "Runs free and fair elections"],
+      ["Auditor-General", "Checks how public money is spent"]
+    ] },
+    { "type": "paragraph", "text": "The **Constitutional Court** is the highest court on constitutional matters and can declare laws or government actions invalid." },
+    { "type": "heading", "text": "Participating in democracy" },
+    { "type": "list", "items": [
+      "Vote in elections (from 18; register from 16).",
+      "Join the Representative Council of Learners (RCL), youth organisations and community forums.",
+      "Sign petitions, write to representatives, take part in peaceful protest.",
+      "Report human rights violations to the SAHRC, police or Childline.",
+      "Volunteer in community projects."
+    ] }
+  ],
+  "questions": [
+    { "id": "limit", "type": "mcq", "prompt": "Which section of the Constitution allows rights to be limited?", "options": ["Section 9", "Section 16", "Section 29", "Section 36"], "answer": 3 },
+    { "id": "hate", "type": "truefalse", "prompt": "Freedom of expression protects hate speech.", "answer": false },
+    { "id": "sahrc", "type": "short", "prompt": "Which Chapter 9 institution investigates human rights complaints? (abbreviation)", "answers": ["sahrc", "south african human rights commission"] },
+    { "id": "pp", "type": "mcq", "prompt": "Which institution investigates abuse of power by government officials?", "options": ["IEC", "Public Protector", "Auditor-General", "Constitutional Court"], "answer": 1 },
+    { "id": "institutions", "type": "match", "marks": 4, "prompt": "Match each institution to its role.", "pairs": [
+      { "left": "IEC", "right": "Runs elections" },
+      { "left": "Auditor-General", "right": "Audits public spending" },
+      { "left": "Commission for Gender Equality", "right": "Promotes gender equality" },
+      { "left": "Constitutional Court", "right": "Can declare laws unconstitutional" }
+    ] },
+    { "id": "fair", "type": "open", "marks": 2, "prompt": "Explain why building ramps for wheelchair users is not unfair discrimination.", "memo": "✓ It treats a group differently in order to give them equal access (1)\n✓ so it advances equality, which the Constitution allows (1)" },
+    { "id": "violations", "type": "open", "marks": 3, "prompt": "Give THREE examples of human rights violations that still occur in South Africa.", "memo": "Any three (1 each): GBV; xenophobic attacks; racism; child abuse/labour; homophobic violence; corruption denying services" },
+    { "id": "participate", "type": "open", "marks": 3, "prompt": "Describe THREE ways a Grade 10 learner can participate in democracy.", "memo": "Any three (1 each): join the RCL; register to vote at 16; sign petitions; peaceful protest; volunteer; report violations; write to councillors" },
+    { "id": "xenophobia", "type": "open", "marks": 2, "prompt": "Which rights are violated during xenophobic attacks? Name TWO.", "memo": "Any two (1 each): right to life; equality; human dignity; freedom and security of the person; property" },
+    { "id": "values", "type": "short", "prompt": "Name ONE of the three founding values on which the Bill of Rights is based.", "answers": ["human dignity", "dignity", "equality", "freedom"] }
+  ]
+}

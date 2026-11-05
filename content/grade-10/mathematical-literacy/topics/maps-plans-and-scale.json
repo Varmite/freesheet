@@ -1,0 +1,44 @@
+{
+  "id": "maps-plans-and-scale",
+  "title": "Maps, Plans and Scale",
+  "term": 3,
+  "summary": "Number and bar scales, measuring real distances on maps and plans, using grid references and compass directions, reading floor plans, and following directions.",
+  "notes": [
+    { "type": "heading", "text": "Scale" },
+    { "type": "table", "headers": ["Type", "Example", "Meaning"], "rows": [
+      ["Number (ratio) scale", "1 : 50 000", "1 unit on the map = 50 000 of the same units in real life"],
+      ["Bar (line) scale", "A line marked 0 – 1 km – 2 km", "Measure on the map and compare with the bar"]
+    ] },
+    { "type": "callout", "label": "Why bar scales are useful", "text": "If a map is enlarged or reduced on a photocopier, a **bar scale** stays correct because it changes size with the map, but a number scale does not." },
+    { "type": "example", "title": "Worked example 1: real distance", "problem": "On a map with scale 1 : 50 000, two towns are 7,4 cm apart. What is the real distance in km?", "steps": ["Real distance = 7,4 × 50 000 = 370 000 cm", "370 000 cm ÷ 100 000 = 3,7 km"], "answer": "3,7 km" },
+    { "type": "example", "title": "Worked example 2: map distance", "problem": "A road is 12 km long. How long is it on a map with scale 1 : 200 000?", "steps": ["12 km = 1 200 000 cm", "Map distance = 1 200 000 ÷ 200 000 = 6 cm"], "answer": "6 cm" },
+    { "type": "heading", "text": "Finding the scale" },
+    { "type": "example", "title": "Worked example 3", "problem": "A 3 m wall is drawn as 6 cm on a plan. Write the scale as a ratio.", "steps": ["3 m = 300 cm", "6 : 300 = 1 : 50"], "answer": "1 : 50" },
+    { "type": "heading", "text": "Maps and directions" },
+    { "type": "list", "items": [
+      "**Grid references** (e.g. C4) locate places on street maps: letters for columns and numbers for rows.",
+      "**Compass directions**: N, NE, E, SE, S, SW, W, NW.",
+      "Directions use landmarks and turns: 'Turn left into Church Street, pass the clinic on your right, and take the second road on the left.'"
+    ] },
+    { "type": "heading", "text": "Floor plans" },
+    { "type": "paragraph", "text": "A **floor plan** shows the layout of a building from above, drawn to scale, with symbols for doors (an arc showing which way they open), windows (thin double lines in the wall), and fittings such as baths and stoves." },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200' font-family='sans-serif' font-size='11'><rect width='300' height='200' fill='white'/><rect x='20' y='20' width='260' height='160' fill='none' stroke='black' stroke-width='4'/><line x1='160' y1='20' x2='160' y2='180' stroke='black' stroke-width='3'/><line x1='160' y1='110' x2='280' y2='110' stroke='black' stroke-width='3'/><line x1='60' y1='20' x2='110' y2='20' stroke='white' stroke-width='4'/><line x1='60' y1='18' x2='110' y2='18' stroke='black'/><line x1='60' y1='22' x2='110' y2='22' stroke='black'/><path d='M160,60 A30,30 0 0 1 190,90' fill='none' stroke='black'/><line x1='160' y1='60' x2='160' y2='90' stroke='white' stroke-width='3'/><text x='60' y='105'>Lounge</text><text x='52' y='120'>5 m × 4 m</text><text x='190' y='60'>Bedroom</text><text x='195' y='150'>Bathroom</text><text x='22' y='196'>Scale 1 : 100</text></svg>", "caption": "A simple floor plan: thick lines are walls, double lines a window, and the arc shows which way a door opens" },
+    { "type": "example", "title": "Worked example 4", "problem": "On a 1 : 100 plan, a bedroom measures 3,5 cm by 3 cm. What is its real floor area?", "steps": ["Real dimensions: 3,5 m by 3 m", "Area = 3,5 × 3 = 10,5 m²"], "answer": "10,5 m²" }
+  ],
+  "questions": [
+    { "id": "ratio-scale", "type": "numeric", "prompt": "On a 1 : 25 000 map, a path is 8 cm long. What is its real length in km?", "answer": 2, "tolerance": 0, "unit": "km" },
+    { "id": "map-dist", "type": "numeric", "prompt": "Two schools are 4,5 km apart. How far apart are they on a 1 : 50 000 map, in cm?", "answer": 9, "tolerance": 0, "unit": "cm" },
+    { "id": "find-scale", "type": "mcq", "prompt": "A 10 m room is drawn as 5 cm on a plan. What is the scale?", "options": ["1 : 2", "1 : 20", "1 : 200", "1 : 2 000"], "answer": 2 },
+    { "id": "bar", "type": "truefalse", "prompt": "A bar scale remains correct when a map is enlarged on a photocopier.", "answer": true },
+    { "id": "plan-area", "type": "numeric", "prompt": "On a 1 : 50 plan, a kitchen measures 6 cm by 8 cm. Calculate the real area of the kitchen in m².", "answer": 12, "tolerance": 0, "unit": "m²" },
+    { "id": "compass", "type": "mcq", "prompt": "If you face north and turn 90° clockwise, which direction do you face?", "options": ["South", "West", "East", "North-east"], "answer": 2 },
+    { "id": "symbols", "type": "match", "marks": 3, "prompt": "Match each floor-plan symbol to its meaning.", "pairs": [
+      { "left": "Thick solid line", "right": "Wall" },
+      { "left": "Arc from a gap in a wall", "right": "Door and the way it opens" },
+      { "left": "Thin double line in a wall", "right": "Window" }
+    ] },
+    { "id": "travel", "type": "open", "marks": 3, "prompt": "On a 1 : 100 000 map, the route from home to a stadium is 18 cm. If a taxi travels at an average of 60 km/h, how long will the trip take?", "memo": "✓ Real distance = 18 km (1)\n✓ Time = 18 ÷ 60 = 0,3 h (1)\n✓ = 18 minutes (1)" },
+    { "id": "carpet", "type": "open", "marks": 4, "prompt": "On a 1 : 100 plan, a lounge measures 5 cm by 4 cm. Carpet costs R245 per m². Calculate the cost of carpeting the lounge.", "memo": "✓ Real size 5 m by 4 m (1)\n✓ Area 20 m² (1)\n✓ 20 × R245 (1)\n✓ = R4 900 (1)" },
+    { "id": "directions", "type": "open", "marks": 2, "prompt": "Give TWO things that make written directions easy to follow.", "memo": "Any two (1 each): use landmarks; give turns clearly (left/right); give distances or number of streets; use street names; give compass directions" }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "id": "november-paper-1",
+  "title": "November Examination: Paper 1",
+  "durationMinutes": 120,
+  "totalMarks": 100,
+  "instructions": [
+    "This paper consists of SEVEN questions. Answer ALL the questions.",
+    "Clearly show ALL calculations, diagrams and graphs that you used in determining your answers.",
+    "You may use an approved scientific calculator unless stated otherwise.",
+    "Round off answers to TWO decimal places, unless stated otherwise."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Algebra",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Solve for $x$: $x(x - 4) = 12$",
+          "memo": "✓ $x^2 - 4x - 12 = 0$ (1)\n✓ $(x - 6)(x + 2) = 0$ (1)\n✓ $x = 6$ or $x = -2$ (1)"
+        },
+        {
+          "id": "q1-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Solve for $x$, correct to two decimal places: $2x^2 - 7x + 2 = 0$",
+          "memo": "✓ Correct substitution into the formula (2)\n✓ $x \\approx 3{,}19$ (1)\n✓ $x \\approx 0{,}31$ (1)"
+        },
+        {
+          "id": "q1-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Solve for $x$: $x^2 - 3x - 10 \\leq 0$",
+          "memo": "✓ $(x - 5)(x + 2) \\leq 0$ (1)\n✓ $-2 \\leq x \\leq 5$ (2)"
+        },
+        {
+          "id": "q1-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Solve for $x$ without a calculator: $3^{2x} - 4 \\cdot 3^x + 3 = 0$",
+          "memo": "✓ Let $k = 3^x$: $k^2 - 4k + 3 = 0$ (1)\n✓ $(k - 3)(k - 1) = 0$ (1)\n✓ $3^x = 3$: $x = 1$ (1)\n✓ $3^x = 1$: $x = 0$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Sequences and series",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Find $T_{50}$ of the arithmetic sequence $-3; 1; 5; 9; \\ldots$",
+          "answer": 193,
+          "tolerance": 0
+        },
+        {
+          "id": "q2-2",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Calculate $\\displaystyle\\sum_{k=1}^{40}(5k - 2)$",
+          "answer": 4020,
+          "tolerance": 0
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "The first term of a geometric series is 54 and its sum to infinity is 81. Find the common ratio and the third term.",
+          "memo": "✓ $\\frac{54}{1 - r} = 81$ (1)\n✓ $1 - r = \\frac{2}{3}$, $r = \\frac{1}{3}$ (1)\n✓ $T_3 = 54\\left(\\frac{1}{3}\\right)^2$ (1)\n✓ $= 6$ (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "For which values of $x$ will $\\displaystyle\\sum_{k=1}^{\\infty}(x - 2)^k$ converge?",
+          "memo": "✓ $-1 < x - 2 < 1$ (1)\n✓ $1 < x < 3$ (1)\n✓ $x \\neq 2$ (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 5,
+          "prompt": "The sum of the first $n$ terms of a sequence is $S_n = n^2 + 3n$. (a) Find $T_1$ and $T_2$. (b) Show that the sequence is arithmetic and find $T_n$.",
+          "memo": "(a) ✓ $T_1 = S_1 = 4$ (1) ✓ $S_2 = 10$, so $T_2 = 6$ (1)\n(b) ✓ $T_n = S_n - S_{n-1} = 2n + 2$ (2) ✓ Constant difference $d = 2$, so arithmetic (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Functions and inverses",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Given: $f(x) = 2^x$ and $g(x) = -x^2 + 4$."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down the equation of $f^{-1}$ in the form $y = \\ldots$",
+          "memo": "✓✓ $y = \\log_2 x$"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down the domain of $f^{-1}$.",
+          "memo": "✓✓ $x > 0$"
+        },
+        {
+          "id": "q3-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "For which value of $x$ is $f^{-1}(x) = 3$?",
+          "answer": 8,
+          "tolerance": 0
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain why the inverse of $g$ is not a function, and suggest a restriction on the domain of $g$ so that $g^{-1}$ is a function.",
+          "memo": "✓ $g$ is many-to-one, e.g. $g(1) = g(-1) = 3$ (1)\n✓ so its inverse fails the vertical line test (1)\n✓ Restrict to $x \\geq 0$ (or $x \\leq 0$) (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Determine $g^{-1}(x)$ for the restriction $x \\geq 0$.",
+          "memo": "✓ $x = -y^2 + 4$ (1)\n✓ $y^2 = 4 - x$ (1)\n✓ $y = \\sqrt{4 - x}$, $x \\leq 4$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Finance",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "numeric",
+          "marks": 4,
+          "prompt": "Nandi takes out a home loan of R850 000 at 10,5% p.a. compounded monthly, repayable over 20 years with equal monthly payments starting one month after the loan is granted. Calculate the monthly payment, to the nearest cent.",
+          "answer": 8486.23,
+          "tolerance": 0.05,
+          "unit": "rand"
+        },
+        {
+          "id": "q4-2",
+          "type": "numeric",
+          "marks": 4,
+          "prompt": "Musa deposits R2 000 at the end of every month into an account earning 7,5% p.a. compounded monthly. What will the account be worth after 10 years? Give the answer to the nearest rand.",
+          "answer": 355861,
+          "tolerance": 1,
+          "unit": "rand"
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "How long, in years, will it take for an investment to triple at 8% p.a. compounded quarterly?",
+          "memo": "✓ $3 = (1{,}02)^n$ (1)\n✓ $n = \\frac{\\log 3}{\\log 1{,}02}$ (1)\n✓ $n \\approx 55{,}48$ quarters (1)\n✓ $\\approx 13{,}87$ years (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Polynomials",
+      "questions": [
+        {
+          "id": "q5-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Find the remainder when $x^3 - 4x^2 + 2x + 5$ is divided by $x - 3$.",
+          "answer": 2,
+          "tolerance": 0
+        },
+        {
+          "id": "q5-2",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Factorise $f(x) = x^3 - 3x^2 - 4x + 12$ fully, and solve $f(x) = 0$.",
+          "memo": "✓ $f(2) = 8 - 12 - 8 + 12 = 0$ (1)\n✓ $(x - 2)(x^2 - x - 6)$ (2)\n✓ $(x - 2)(x - 3)(x + 2)$ (1)\n✓ $x = 2$, $3$ or $-2$ (1)"
+        },
+        {
+          "id": "q5-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "$g(x) = 2x^3 + ax^2 - 7x + b$ has a factor $(x - 1)$, and leaves a remainder of $13$ when divided by $(x - 2)$. Determine $a$ and $b$.",
+          "memo": "✓ $g(1) = 2 + a - 7 + b = 0$: $a + b = 5$ (1)\n✓ $g(2) = 16 + 4a - 14 + b = 13$: $4a + b = 11$ (1)\n✓ Subtract: $3a = 6$, so $a = 2$ (1)\n✓ $b = 3$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Differential calculus",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Given: $h(x) = x^3 - 3x^2 - 9x + 2$."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q6-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine $f'(x)$ from first principles if $f(x) = 3x^2$.",
+          "memo": "✓ $f(x + h) = 3x^2 + 6xh + 3h^2$ (1)\n✓ $\\frac{6xh + 3h^2}{h}$ (1)\n✓ $= 6x + 3h$ (1)\n✓ $\\lim_{h \\to 0}$: $f'(x) = 6x$ (1)"
+        },
+        {
+          "id": "q6-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the coordinates of the turning points of $h$.",
+          "memo": "✓ $h'(x) = 3x^2 - 6x - 9 = 0$ (1)\n✓ $3(x - 3)(x + 1) = 0$ (1)\n✓ $(-1; 7)$ (1)\n✓ $(3; -25)$ (1)"
+        },
+        {
+          "id": "q6-3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Determine the $x$-coordinate of the point of inflection of $h$.",
+          "memo": "✓ $h''(x) = 6x - 6 = 0$ (1)\n✓ $x = 1$ (1)"
+        },
+        {
+          "id": "q6-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the equation of the tangent to $h$ at $x = 0$.",
+          "memo": "✓ $h(0) = 2$ (1)\n✓ $h'(0) = -9$ (1)\n✓ $y - 2 = -9(x - 0)$ (1)\n✓ $y = -9x + 2$ (1)"
+        },
+        {
+          "id": "q6-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "For which values of $x$ is $h$ decreasing?",
+          "memo": "✓ $h'(x) < 0$ (1)\n✓ $(x - 3)(x + 1) < 0$ (1)\n✓ $-1 < x < 3$ (1)"
+        },
+        {
+          "id": "q6-6",
+          "type": "open",
+          "marks": 5,
+          "prompt": "A rectangular garden of area 200 m² is to be fenced on three sides (the fourth side is a wall). Find the dimensions that use the least fencing.",
+          "memo": "✓ Let the sides perpendicular to the wall be $x$; parallel side $\\frac{200}{x}$ (1)\n✓ $L = 2x + \\frac{200}{x}$ (1)\n✓ $L'(x) = 2 - \\frac{200}{x^2} = 0$ (1)\n✓ $x = 10$ m (1)\n✓ Dimensions 10 m by 20 m (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Counting and probability",
+      "questions": [
+        {
+          "id": "q7-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "How many different arrangements are there of the letters of the word PARALLEL?",
+          "answer": 3360,
+          "tolerance": 0
+        },
+        {
+          "id": "q7-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Seven books, including 3 Maths books, are placed on a shelf. In how many ways can they be arranged if the Maths books must be together?",
+          "memo": "✓ $5!$ (1)\n✓ $\\times 3!$ (1)\n✓ $= 720$ (1)"
+        },
+        {
+          "id": "q7-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A 3-digit code is formed from the digits 1 to 7 without repetition. What is the probability that the code is greater than 500?",
+          "memo": "✓ Total $7 \\times 6 \\times 5 = 210$ (1)\n✓ First digit 5, 6 or 7: 3 choices (1)\n✓ $3 \\times 6 \\times 5 = 90$ (1)\n✓ $P = \\frac{90}{210} = \\frac{3}{7}$ (1)"
+        },
+        {
+          "id": "q7-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Events A and B are independent, $P(A) = 0{,}3$ and $P(A \\text{ or } B) = 0{,}58$. Find $P(B)$.",
+          "memo": "✓ $0{,}58 = 0{,}3 + P(B) - 0{,}3P(B)$ (1)\n✓ $0{,}28 = 0{,}7P(B)$ (1)\n✓ $P(B) = 0{,}4$ (1)"
+        }
+      ]
+    }
+  ]
+}

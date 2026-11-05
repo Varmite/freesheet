@@ -1,0 +1,277 @@
+{
+  "id": "november-paper-2",
+  "title": "November Examination: Paper 2",
+  "durationMinutes": 120,
+  "totalMarks": 100,
+  "instructions": [
+    "This paper consists of SIX questions. Answer ALL the questions.",
+    "Clearly show ALL calculations. Give reasons for all statements in geometry.",
+    "You may use an approved scientific calculator unless stated otherwise.",
+    "Round off answers to TWO decimal places, unless stated otherwise. Diagrams are not necessarily drawn to scale."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Statistics",
+      "context": [
+        {
+          "type": "table",
+          "caption": "Temperature at noon and number of cold drinks sold at a tuck shop",
+          "headers": [
+            "Temperature (°C)",
+            "18",
+            "21",
+            "24",
+            "27",
+            "30",
+            "33"
+          ],
+          "rows": [
+            [
+              "Cold drinks sold",
+              "22",
+              "30",
+              "35",
+              "44",
+              "50",
+              "57"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Determine the equation of the least-squares regression line.",
+          "memo": "✓ $a \\approx -19{,}59$ (1)\n✓ $b \\approx 2{,}32$ (1)\n✓ $\\hat{y} = -19{,}59 + 2{,}32x$ (1)"
+        },
+        {
+          "id": "q1-2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down the correlation coefficient and describe the correlation.",
+          "memo": "✓ $r \\approx 0{,}998$ (1)\n✓ Very strong positive correlation (1)"
+        },
+        {
+          "id": "q1-3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Predict the number of drinks sold when the temperature is 25 °C.",
+          "memo": "✓ $\\hat{y} = -19{,}59 + 2{,}32(25)$ (1)\n✓ $\\approx 38$ or $39$ drinks (1)"
+        },
+        {
+          "id": "q1-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Would it be reasonable to use the line to predict sales at 5 °C? Explain.",
+          "memo": "✓ No (1)\n✓ 5 °C is far outside the data range (extrapolation); the prediction is negative and meaningless (1)"
+        },
+        {
+          "id": "q1-5",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Explain the difference between interpolation and extrapolation, and calculate the average number of cold drinks sold per day over the six days.",
+          "memo": "✓ Interpolation: predicting within the range of the data (1)\n✓ Extrapolation: predicting outside the range (1)\n✓ Interpolation is more reliable (1)\n✓ Total $= 238$ (1)\n✓ Mean $\\approx 39{,}67$ drinks (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Analytical geometry",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "The circle with equation $x^2 + y^2 - 4x + 6y - 12 = 0$ has centre M. $P(5; 1)$ is a point on the circle."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the coordinates of M and the radius of the circle.",
+          "memo": "✓ $(x - 2)^2 + (y + 3)^2 = 12 + 4 + 9$ (2)\n✓ M(2; −3) (1)\n✓ $r = 5$ (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the equation of the tangent to the circle at P.",
+          "memo": "✓ $m_{MP} = \\frac{1 + 3}{5 - 2} = \\frac{4}{3}$ (1)\n✓ $m_{tan} = -\\frac{3}{4}$ (1)\n✓ $y - 1 = -\\frac{3}{4}(x - 5)$ (1)\n✓ $y = -\\frac{3}{4}x + \\frac{19}{4}$ (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Does the point $Q(6; -6)$ lie inside, on or outside the circle? Show working.",
+          "memo": "✓ $(6 - 2)^2 + (-6 + 3)^2 = 16 + 9$ (1)\n✓ $= 25 = r^2$ (1)\n✓ Q lies on the circle (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Find the length of PQ in simplest surd form.",
+          "memo": "✓ $\\sqrt{(6 - 5)^2 + (-6 - 1)^2}$ (1)\n✓ $= \\sqrt{50}$ (1)\n✓ $= 5\\sqrt{2}$ (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the equation of the circle that has PQ as a diameter.",
+          "memo": "✓ Centre = midpoint of PQ $= (5{,}5; -2{,}5)$ (1)\n✓ $r = \\frac{5\\sqrt{2}}{2}$, so $r^2 = 12{,}5$ (2)\n✓ $(x - 5{,}5)^2 + (y + 2{,}5)^2 = 12{,}5$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Trigonometry",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Without a calculator, show that $\\sin 105^\\circ = \\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$.",
+          "memo": "✓ $\\sin(60^\\circ + 45^\\circ)$ (1)\n✓ $\\sin 60^\\circ\\cos 45^\\circ + \\cos 60^\\circ\\sin 45^\\circ$ (1)\n✓ $\\frac{\\sqrt{3}}{2}\\cdot\\frac{\\sqrt{2}}{2} + \\frac{1}{2}\\cdot\\frac{\\sqrt{2}}{2}$ (1)\n✓ $= \\frac{\\sqrt{6} + \\sqrt{2}}{4}$ (1)"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "If $\\tan\\theta = \\frac{3}{4}$ and $\\theta$ is acute, find $\\cos 2\\theta$ without a calculator.",
+          "memo": "✓ Hypotenuse 5 (1)\n✓ $\\cos\\theta = \\frac{4}{5}$ (1)\n✓ $\\cos 2\\theta = 2\\left(\\frac{4}{5}\\right)^2 - 1$ (1)\n✓ $= \\frac{7}{25}$ (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Prove the identity: $\\dfrac{\\sin 2x}{\\cos 2x + 1} = \\tan x$",
+          "memo": "✓ $\\sin 2x = 2\\sin x\\cos x$ (1)\n✓ $\\cos 2x + 1 = 2\\cos^2 x$ (1)\n✓ $\\frac{2\\sin x\\cos x}{2\\cos^2 x}$ (1)\n✓ $= \\tan x$ (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Determine the general solution of $\\cos 2x - 3\\sin x - 2 = 0$.",
+          "memo": "✓ $1 - 2\\sin^2 x - 3\\sin x - 2 = 0$ (1)\n✓ $2\\sin^2 x + 3\\sin x + 1 = 0$, $(2\\sin x + 1)(\\sin x + 1) = 0$ (1)\n✓ $\\sin x = -1$: $x = 270^\\circ + k \\cdot 360^\\circ$ (1)\n✓ $\\sin x = -\\frac{1}{2}$: $x = 210^\\circ + k \\cdot 360^\\circ$ (1)\n✓ or $x = 330^\\circ + k \\cdot 360^\\circ$, $k \\in \\mathbb{Z}$ (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Simplify without a calculator: $\\dfrac{\\sin 2x \\cdot \\cos(90^\\circ - x)}{1 - \\cos 2x}$",
+          "memo": "✓ $\\sin 2x = 2\\sin x\\cos x$ (1)\n✓ $\\cos(90^\\circ - x) = \\sin x$ (1)\n✓ $1 - \\cos 2x = 2\\sin^2 x$ (1)\n✓ $\\frac{2\\sin^2 x\\cos x}{2\\sin^2 x} = \\cos x$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Trigonometry in two and three dimensions",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "A and B are two points on level ground, 150 m apart. F is the foot of a vertical tower FT. $\\hat{FAB} = 48^\\circ$ and $\\hat{FBA} = 72^\\circ$. The angle of elevation of T from B is $18^\\circ$."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Calculate BF, correct to two decimal places.",
+          "answer": 128.72,
+          "tolerance": 0.01,
+          "unit": "m"
+        },
+        {
+          "id": "q4-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the height of the tower FT, correct to two decimal places.",
+          "answer": 41.82,
+          "tolerance": 0.01,
+          "unit": "m"
+        },
+        {
+          "id": "q4-3",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Calculate the area of △ABF, correct to two decimal places.",
+          "answer": 9181.25,
+          "tolerance": 0.05,
+          "unit": "m²"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Show that, in general, if $AB = d$, $\\hat{FAB} = \\alpha$, $\\hat{FBA} = \\beta$ and the angle of elevation of T from B is $\\theta$, then $FT = \\dfrac{d\\sin\\alpha\\tan\\theta}{\\sin(\\alpha + \\beta)}$.",
+          "memo": "✓ $\\hat{AFB} = 180^\\circ - (\\alpha + \\beta)$, so $\\sin\\hat{AFB} = \\sin(\\alpha + \\beta)$ (1)\n✓ $\\frac{BF}{\\sin\\alpha} = \\frac{d}{\\sin(\\alpha + \\beta)}$ (1)\n✓ $BF = \\frac{d\\sin\\alpha}{\\sin(\\alpha + \\beta)}$ (1)\n✓ $FT = BF\\tan\\theta$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Euclidean geometry",
+      "questions": [
+        {
+          "id": "q5-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "In △PQR, ST ∥ QR with S on PQ and T on PR. PS = 6 cm, SQ = 9 cm and TR = 12 cm. Calculate PT, giving a reason.",
+          "memo": "✓ $\\frac{PS}{SQ} = \\frac{PT}{TR}$ (line ∥ one side of △) (1)\n✓ $\\frac{6}{9} = \\frac{PT}{12}$ (1)\n✓ PT = 8 cm (1)"
+        },
+        {
+          "id": "q5-2",
+          "type": "open",
+          "marks": 6,
+          "prompt": "In △ABC, $\\hat{BAC} = 90^\\circ$ and AD ⊥ BC with D on BC. (a) Prove that △ABD ||| △CBA. (b) Hence, if BD = 4 cm and DC = 12 cm, calculate AB.",
+          "memo": "(a) ✓ $\\hat{B}$ common (1) ✓ $\\hat{ADB} = \\hat{BAC} = 90^\\circ$ (1) ✓ △ABD ||| △CBA (∠∠∠) (1)\n(b) ✓ $\\frac{AB}{CB} = \\frac{BD}{BA}$, so $AB^2 = BD \\cdot BC$ (1) ✓ $AB^2 = 4 \\times 16 = 64$ (1) ✓ AB = 8 cm (1)"
+        },
+        {
+          "id": "q5-3",
+          "type": "open",
+          "marks": 5,
+          "prompt": "O is the centre of the circle and A, B, C and D are on the circle. $\\hat{AOC} = 130^\\circ$ with B on the major arc and D on the minor arc. TA is a tangent at A and $\\hat{TAD} = 40^\\circ$. Calculate, with reasons: (a) $\\hat{ABC}$ (b) $\\hat{ADC}$ (c) $\\hat{ABD}$",
+          "memo": "(a) ✓ $\\hat{ABC} = 65^\\circ$ (∠ at centre = 2 × ∠ at circumference) (2)\n(b) ✓ $\\hat{ADC} = 115^\\circ$ (opp ∠s of cyclic quad) (1)\n(c) ✓ $\\hat{ABD} = 40^\\circ$ (tan chord theorem) (2)"
+        },
+        {
+          "id": "q5-4",
+          "type": "open",
+          "marks": 5,
+          "prompt": "In △ABC, D is on AB and E is on AC such that DE ∥ BC. AD = 4 cm, DB = 6 cm and DE = 5 cm. (a) Prove that △ADE ||| △ABC. (b) Calculate BC.",
+          "memo": "(a) ✓ $\\hat{A}$ common (1) ✓ $\\hat{ADE} = \\hat{B}$ (corresp ∠s; DE ∥ BC) (1) ✓ △ADE ||| △ABC (∠∠∠) (1)\n(b) ✓ $\\frac{DE}{BC} = \\frac{AD}{AB} = \\frac{4}{10}$ (1) ✓ BC = 12,5 cm (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Measurement and data",
+      "questions": [
+        {
+          "id": "q6-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Calculate the mean and the (population) standard deviation of: $12; 15; 18; 20; 25$.",
+          "memo": "✓ $\\bar{x} = 18$ (1)\n✓ Squared deviations: 36; 9; 0; 4; 49 (1)\n✓ $\\sigma^2 = 19{,}6$ (1)\n✓ $\\sigma \\approx 4{,}43$ (1)"
+        },
+        {
+          "id": "q6-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "The ages of a group are summarised by: minimum 14, $Q_1$ = 16, median 17, $Q_3$ = 22, maximum 30. Describe the skewness of the data and identify whether 30 is an outlier.",
+          "memo": "✓ The median is closer to $Q_1$, so the data is positively skewed (2)\n✓ Upper fence $= 22 + 1{,}5(6) = 31$ (1)\n✓ 30 is not an outlier (1)"
+        },
+        {
+          "id": "q6-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "In Question 1, the correlation coefficient is about $0{,}998$. Explain in words what this tells the tuck-shop owner.",
+          "memo": "✓ There is a very strong positive linear relationship (1)\n✓ Hotter days are associated with more cold drinks sold (1)\n✓ The regression line can be used for reliable predictions within the data range (1)"
+        },
+        {
+          "id": "q6-4",
+          "type": "open",
+          "marks": 5,
+          "prompt": "A spherical ball has a diameter of 22 cm. (a) Calculate its volume. (b) The ball is packed into the smallest possible cube-shaped box. What percentage of the box is empty space?",
+          "memo": "(a) ✓ $V = \\frac{4}{3}\\pi(11)^3$ (1) ✓ $\\approx 5\\ 575{,}28$ cm³ (1)\n(b) ✓ Box $22^3 = 10\\ 648$ cm³ (1) ✓ Empty $= 5\\ 072{,}72$ cm³ (1) ✓ $\\approx 47{,}64\\%$ (1)"
+        }
+      ]
+    }
+  ]
+}

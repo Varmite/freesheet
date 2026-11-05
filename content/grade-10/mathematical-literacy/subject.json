@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "grade": 10,
+  "id": "mathematical-literacy",
+  "name": "Mathematical Literacy",
+  "description": "CAPS Grade 10 Mathematical Literacy: numbers and calculations in context, patterns and graphs, personal finance, financial documents and tariffs, measurement, maps and plans, data handling and probability.",
+  "topics": [
+    { "id": "numbers-and-calculations", "title": "Numbers and Calculations in Context", "term": 1 },
+    { "id": "patterns-relationships-and-graphs", "title": "Patterns, Relationships and Graphs", "term": 1 },
+    { "id": "income-expenditure-and-budgets", "title": "Finance: Income, Expenditure and Budgets", "term": 2 },
+    { "id": "financial-documents-and-tariffs", "title": "Finance: Financial Documents and Tariffs", "term": 2 },
+    { "id": "measurement", "title": "Measurement: Length, Mass, Volume, Temperature and Time", "term": 3 },
+    { "id": "maps-plans-and-scale", "title": "Maps, Plans and Scale", "term": 3 },
+    { "id": "data-handling", "title": "Data Handling", "term": 4 },
+    { "id": "probability", "title": "Probability", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 90, "totalMarks": 75 }
+  ]
+}

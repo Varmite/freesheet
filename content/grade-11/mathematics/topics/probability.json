@@ -1,0 +1,52 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "term": 4,
+  "summary": "Dependent and independent events, the addition and product rules, mutually exclusive and complementary events, Venn diagrams, tree diagrams and contingency tables.",
+  "notes": [
+    { "type": "heading", "text": "Key rules" },
+    { "type": "formula", "latex": "P(A \\text{ or } B) = P(A) + P(B) - P(A \\text{ and } B)", "caption": "The addition rule (inclusion–exclusion)" },
+    { "type": "list", "items": [
+      "**Mutually exclusive** events cannot happen together: $P(A \\text{ and } B) = 0$, so $P(A \\text{ or } B) = P(A) + P(B)$.",
+      "**Complementary** events: $P(\\text{not } A) = 1 - P(A)$.",
+      "**Independent** events: the outcome of one does not affect the other, so $P(A \\text{ and } B) = P(A) \\times P(B)$.",
+      "**Dependent** events: the first outcome changes the probability of the second (e.g. drawing without replacement)."
+    ] },
+    { "type": "example", "title": "Worked example 1: testing independence", "problem": "$P(A) = 0{,}4$, $P(B) = 0{,}5$ and $P(A \\text{ and } B) = 0{,}2$. Are A and B independent? Find $P(A \\text{ or } B)$.", "steps": [
+      "$P(A) \\times P(B) = 0{,}4 \\times 0{,}5 = 0{,}2 = P(A \\text{ and } B)$, so A and B are independent.",
+      "$P(A \\text{ or } B) = 0{,}4 + 0{,}5 - 0{,}2 = 0{,}7$"
+    ], "answer": "Independent; $P(A \\text{ or } B) = 0{,}7$" },
+    { "type": "heading", "text": "Venn diagrams" },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 180' font-family='sans-serif' font-size='13'><rect width='300' height='180' fill='white'/><rect x='10' y='10' width='280' height='160' fill='none' stroke='black'/><text x='18' y='28'>S</text><circle cx='115' cy='92' r='58' fill='none' stroke='black' stroke-width='2'/><circle cx='185' cy='92' r='58' fill='none' stroke='black' stroke-width='2'/><text x='85' y='40'>A</text><text x='205' y='40'>B</text><text x='82' y='97'>12</text><text x='142' y='97'>8</text><text x='205' y='97'>15</text><text x='250' y='160'>5</text></svg>", "caption": "A Venn diagram for 40 learners: 20 play soccer (A), 23 play netball (B), 8 play both and 5 play neither" },
+    { "type": "example", "title": "Worked example 2", "problem": "Using the Venn diagram (40 learners), find $P(\\text{A or B})$ and $P(\\text{only B})$.", "steps": [
+      "$n(A \\text{ or } B) = 12 + 8 + 15 = 35$, so $P = \\dfrac{35}{40} = 0{,}875$",
+      "$P(\\text{only } B) = \\dfrac{15}{40} = 0{,}375$"
+    ], "answer": "$0{,}875$ and $0{,}375$" },
+    { "type": "heading", "text": "Tree diagrams" },
+    { "type": "paragraph", "text": "A tree diagram shows the outcomes of events in sequence. **Multiply** along the branches for 'and'; **add** the results of different paths for 'or'." },
+    { "type": "example", "title": "Worked example 3: without replacement", "problem": "A bag has 5 red and 3 blue sweets. Two are taken one after the other without replacement. Find $P(\\text{one of each colour})$.", "steps": [
+      "$P(R \\text{ then } B) = \\dfrac{5}{8} \\times \\dfrac{3}{7} = \\dfrac{15}{56}$",
+      "$P(B \\text{ then } R) = \\dfrac{3}{8} \\times \\dfrac{5}{7} = \\dfrac{15}{56}$",
+      "$P(\\text{one of each}) = \\dfrac{30}{56} = \\dfrac{15}{28}$"
+    ], "answer": "$\\frac{15}{28}$" },
+    { "type": "heading", "text": "Contingency tables" },
+    { "type": "table", "caption": "Survey of 200 learners: do they eat breakfast?", "headers": ["", "Breakfast", "No breakfast", "Total"], "rows": [
+      ["Grade 10", "60", "40", "100"],
+      ["Grade 11", "60", "40", "100"],
+      ["Total", "120", "80", "200"]
+    ] },
+    { "type": "paragraph", "text": "$P(\\text{Grade 10}) = 0{,}5$, $P(\\text{breakfast}) = 0{,}6$ and $P(\\text{Grade 10 and breakfast}) = \\frac{60}{200} = 0{,}3 = 0{,}5 \\times 0{,}6$. So eating breakfast is **independent** of grade in this survey." }
+  ],
+  "questions": [
+    { "id": "mutex", "type": "numeric", "prompt": "A and B are mutually exclusive with $P(A) = 0{,}3$ and $P(B) = 0{,}45$. Find $P(A \\text{ or } B)$.", "answer": 0.75, "tolerance": 0 },
+    { "id": "complement", "type": "numeric", "prompt": "If $P(\\text{rain}) = 0{,}35$, find $P(\\text{no rain})$.", "answer": 0.65, "tolerance": 0 },
+    { "id": "independent", "type": "numeric", "prompt": "A and B are independent, $P(A) = 0{,}6$ and $P(B) = 0{,}3$. Find $P(A \\text{ and } B)$.", "answer": 0.18, "tolerance": 0 },
+    { "id": "addition", "type": "numeric", "prompt": "$P(A) = 0{,}5$, $P(B) = 0{,}4$, $P(A \\text{ and } B) = 0{,}15$. Find $P(A \\text{ or } B)$.", "answer": 0.75, "tolerance": 0 },
+    { "id": "is-indep", "type": "truefalse", "prompt": "If $P(A) = 0{,}2$, $P(B) = 0{,}5$ and $P(A \\text{ and } B) = 0{,}15$, then A and B are independent.", "answer": false, "explanation": "$0{,}2 \\times 0{,}5 = 0{,}1 \\neq 0{,}15$." },
+    { "id": "dependent", "type": "mcq", "prompt": "Which situation involves dependent events?", "options": ["Tossing a coin twice", "Rolling two dice", "Drawing two cards without replacement", "Spinning a spinner twice"], "answer": 2 },
+    { "id": "venn", "type": "open", "marks": 4, "prompt": "In a class of 30, 18 take Science, 15 take Art and 6 take both. (a) Draw a Venn diagram. (b) How many take neither? (c) Find $P(\\text{Science only})$.", "memo": "(a) ✓ Correct regions: 12, 6, 9 (1)\n(b) ✓ $30 - 27 = 3$ (1)\n(c) ✓ $\\frac{12}{30}$ (1) ✓ $= \\frac{2}{5}$ (1)" },
+    { "id": "tree", "type": "open", "marks": 4, "prompt": "The probability that a bus is late is 0,2 each day, independently. Find the probability that over two days the bus is (a) late on both days (b) late on exactly one day.", "memo": "(a) ✓ $0{,}2 \\times 0{,}2 = 0{,}04$ (1)\n(b) ✓ $0{,}2 \\times 0{,}8 + 0{,}8 \\times 0{,}2$ (2) ✓ $= 0{,}32$ (1)" },
+    { "id": "no-replace", "type": "open", "marks": 3, "prompt": "A box has 4 green and 6 yellow balls. Two are drawn without replacement. Find $P(\\text{both green})$.", "memo": "✓ $\\frac{4}{10} \\times \\frac{3}{9}$ (2)\n✓ $= \\frac{2}{15}$ (1)" },
+    { "id": "table", "type": "open", "marks": 3, "prompt": "Of 150 people, 90 own a car. Of the car owners, 54 are employed full-time; 60 of the 150 are employed full-time. Is owning a car independent of full-time employment? Show working.", "memo": "✓ $P(\\text{car}) \\times P(\\text{employed}) = 0{,}6 \\times 0{,}4 = 0{,}24$ (1)\n✓ $P(\\text{car and employed}) = \\frac{54}{150} = 0{,}36$ (1)\n✓ Not equal, so the events are dependent (1)" }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "factors-of-production",
+  "title": "Factors of Production",
+  "term": 4,
+  "summary": "The four factors of production (natural resources, labour, capital and entrepreneurship), the reward each earns, and how they are combined to produce goods and services.",
+  "notes": [
+    { "type": "heading", "text": "What are factors of production?" },
+    { "type": "paragraph", "text": "**Factors of production** are the resources needed to produce goods and services. There are four, and each earns a reward (payment) for its contribution." },
+    { "type": "table", "headers": ["Factor", "Meaning", "Examples", "Reward"], "rows": [
+      ["Natural resources (land)", "Everything provided by nature", "Land, water, minerals, forests, fish, sunlight", "**Rent**"],
+      ["Labour (human resources)", "The physical and mental effort of people who work", "Factory workers, teachers, nurses, programmers", "**Wages / salaries**"],
+      ["Capital", "Human-made goods used to produce other goods and services, and the money invested in them", "Machines, tools, buildings, vehicles, computers", "**Interest**"],
+      ["Entrepreneurship", "The skill of combining the other factors, taking risks and making decisions to start and run a business", "A person who starts a bakery or an app company", "**Profit**"]
+    ] },
+    { "type": "callout", "label": "Memory aid", "text": "**Land → Rent, Labour → Wages, Capital → Interest, Entrepreneur → Profit.**" },
+    { "type": "heading", "text": "Natural resources" },
+    { "type": "paragraph", "text": "Natural resources are **limited** (scarce). Some are **renewable** (sunlight, wind, forests, fish if managed) and others are **non-renewable** (coal, gold, oil). Businesses must use them responsibly and sustainably." },
+    { "type": "heading", "text": "Labour" },
+    { "type": "list", "items": [
+      "**Unskilled** labour: needs little training (e.g. cleaning, packing).",
+      "**Semi-skilled** labour: needs some training (e.g. machine operators, drivers).",
+      "**Skilled** labour: needs advanced education and training (e.g. engineers, doctors, accountants)."
+    ] },
+    { "type": "paragraph", "text": "**Productivity** is how much is produced per worker per hour. It can be improved by training, better tools and technology, good working conditions and motivation." },
+    { "type": "heading", "text": "Capital" },
+    { "type": "list", "items": [
+      "**Fixed capital**: goods that last a long time and are used repeatedly, such as buildings and machinery.",
+      "**Working capital**: goods used up in production and money to run the business day to day, such as raw materials and cash for wages."
+    ] },
+    { "type": "heading", "text": "Entrepreneurship" },
+    { "type": "paragraph", "text": "The **entrepreneur** sees an opportunity, organises land, labour and capital, takes the **risk** of losing money, and earns **profit** if the business succeeds. Qualities of a successful entrepreneur include creativity, hard work, confidence, willingness to take calculated risks, and good communication." },
+    { "type": "example", "title": "Identifying factors in a business", "problem": "Sipho runs a vegetable farm. He rents 5 hectares of land, employs three workers, owns a tractor and an irrigation system, and decides what to plant. Identify the factors of production.", "steps": [
+      "Natural resources: the land, soil and water.",
+      "Labour: the three workers (and Sipho's own work).",
+      "Capital: the tractor and irrigation system.",
+      "Entrepreneurship: Sipho, who organises everything and takes the risk."
+    ], "answer": "All four factors are present." }
+  ],
+  "questions": [
+    { "id": "four", "type": "open", "marks": 4, "prompt": "Name the FOUR factors of production.", "memo": "✓ Natural resources / land (1)\n✓ Labour (1)\n✓ Capital (1)\n✓ Entrepreneurship (1)" },
+    { "id": "reward-labour", "type": "mcq", "prompt": "What is the reward for labour?", "options": ["Rent", "Interest", "Wages and salaries", "Profit"], "answer": 2 },
+    { "id": "reward-ent", "type": "short", "prompt": "What is the reward earned by an entrepreneur?", "answers": ["profit"] },
+    { "id": "capital-example", "type": "mcq", "prompt": "Which is an example of capital as a factor of production?", "options": ["A forest", "A sewing machine", "A teacher", "Rainfall"], "answer": 1 },
+    { "id": "skilled", "type": "truefalse", "prompt": "A doctor is an example of skilled labour.", "answer": true },
+    { "id": "rewards", "type": "match", "marks": 4, "prompt": "Match each factor to its reward.", "pairs": [
+      { "left": "Natural resources", "right": "Rent" },
+      { "left": "Labour", "right": "Wages" },
+      { "left": "Capital", "right": "Interest" },
+      { "left": "Entrepreneurship", "right": "Profit" }
+    ] },
+    { "id": "productivity", "type": "open", "marks": 3, "prompt": "Give THREE ways a business can improve the productivity of its workers.", "memo": "Any three (1 each): training; better tools/technology; good working conditions; incentives/motivation; good management" },
+    { "id": "qualities", "type": "open", "marks": 3, "prompt": "Name THREE qualities of a successful entrepreneur.", "memo": "Any three (1 each): creative/innovative; hard-working; takes calculated risks; confident; good communicator; problem-solver; perseverance" },
+    { "id": "bakery", "type": "open", "marks": 4, "prompt": "Identify ONE example of each factor of production in a bakery.", "memo": "✓ Natural resources: water / wheat / the land the building stands on (1)\n✓ Labour: bakers, cashiers (1)\n✓ Capital: ovens, mixers, building (1)\n✓ Entrepreneurship: the owner who started the bakery (1)" },
+    { "id": "fixed-working", "type": "open", "marks": 2, "prompt": "What is the difference between fixed capital and working capital?", "memo": "✓ Fixed capital lasts a long time and is used again and again, e.g. machines (1)\n✓ Working capital is used up in production or daily running, e.g. raw materials, cash (1)" }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "polynomials",
+  "title": "Polynomials: Remainder and Factor Theorems",
+  "term": 2,
+  "summary": "Polynomial terminology, long and synthetic division, the remainder and factor theorems, and factorising and solving cubic equations.",
+  "notes": [
+    { "type": "heading", "text": "Polynomials" },
+    { "type": "paragraph", "text": "A **polynomial** in $x$ is a sum of terms of the form $ax^n$ where $n$ is a whole number. The **degree** is the highest power. A **cubic** polynomial has degree 3: $f(x) = ax^3 + bx^2 + cx + d$, $a \\neq 0$." },
+    { "type": "heading", "text": "The remainder theorem" },
+    { "type": "callout", "label": "Remainder theorem", "text": "When a polynomial $f(x)$ is divided by $(x - a)$, the remainder is $f(a)$. When divided by $(ax - b)$, the remainder is $f\\left(\\frac{b}{a}\\right)$." },
+    { "type": "example", "title": "Worked example 1", "problem": "Find the remainder when $f(x) = 2x^3 - 3x^2 + x - 5$ is divided by $x - 2$.", "steps": ["$f(2) = 2(8) - 3(4) + 2 - 5$", "$= 16 - 12 + 2 - 5 = 1$"], "answer": "Remainder $= 1$" },
+    { "type": "heading", "text": "The factor theorem" },
+    { "type": "callout", "label": "Factor theorem", "text": "$(x - a)$ is a factor of $f(x)$ if and only if $f(a) = 0$." },
+    { "type": "paragraph", "text": "To find a first factor of a cubic, test factors of the constant term: try $f(1)$, $f(-1)$, $f(2)$, $f(-2)$, … until you get zero." },
+    { "type": "example", "title": "Worked example 2: factorising a cubic", "problem": "Factorise $f(x) = x^3 - 2x^2 - 5x + 6$ fully and solve $f(x) = 0$.", "steps": [
+      "$f(1) = 1 - 2 - 5 + 6 = 0$, so $(x - 1)$ is a factor.",
+      "Divide (long division, synthetic division or inspection): $x^3 - 2x^2 - 5x + 6 = (x - 1)(x^2 - x - 6)$",
+      "$= (x - 1)(x - 3)(x + 2)$",
+      "$f(x) = 0$ when $x = 1$, $x = 3$ or $x = -2$."
+    ], "answer": "$(x - 1)(x - 3)(x + 2)$; $x \\in \\{-2; 1; 3\\}$" },
+    { "type": "heading", "text": "Synthetic division" },
+    { "type": "table", "caption": "Dividing $x^3 - 2x^2 - 5x + 6$ by $(x - 1)$", "headers": ["", "$1$", "$-2$", "$-5$", "$6$"], "rows": [
+      ["$1$", "", "$1$", "$-1$", "$-6$"],
+      ["", "$1$", "$-1$", "$-6$", "$0$"]
+    ] },
+    { "type": "paragraph", "text": "Write the coefficients, bring down the first, multiply by $a$ and add, repeatedly. The bottom row gives the quotient $x^2 - x - 6$ and remainder $0$." },
+    { "type": "example", "title": "Worked example 3: finding unknown coefficients", "problem": "$(x + 2)$ is a factor of $f(x) = x^3 + px^2 - 4x - 12$. Find $p$.", "steps": ["$f(-2) = 0$: $-8 + 4p + 8 - 12 = 0$", "$4p = 12$, so $p = 3$"], "answer": "$p = 3$" },
+    { "type": "callout", "label": "Exam tip", "text": "After finding one factor, the remaining quadratic may not factorise; then use the quadratic formula to find the other roots." }
+  ],
+  "questions": [
+    { "id": "degree", "type": "numeric", "prompt": "What is the degree of $4x^3 - x^5 + 2$?", "answer": 5, "tolerance": 0 },
+    { "id": "remainder", "type": "numeric", "prompt": "Find the remainder when $x^3 + 2x - 7$ is divided by $x - 3$.", "answer": 26, "tolerance": 0 },
+    { "id": "remainder2", "type": "numeric", "prompt": "Find the remainder when $2x^3 - x + 4$ is divided by $x + 1$.", "answer": 3, "tolerance": 0 },
+    { "id": "factor", "type": "mcq", "prompt": "Which is a factor of $x^3 - 7x + 6$?", "options": ["$x + 1$", "$x - 1$", "$x - 3$", "$x + 2$"], "answer": 1 },
+    { "id": "theorem", "type": "truefalse", "prompt": "If $f(4) = 0$, then $(x + 4)$ is a factor of $f(x)$.", "answer": false, "explanation": "$(x - 4)$ is the factor." },
+    { "id": "find-k", "type": "numeric", "prompt": "$(x - 2)$ is a factor of $x^3 + kx^2 - x - 2$. Find $k$.", "answer": -1, "tolerance": 0 },
+    { "id": "factorise", "type": "open", "marks": 4, "prompt": "Factorise fully: $x^3 + 2x^2 - 5x - 6$", "memo": "✓ $f(-1) = 0$, so $(x + 1)$ is a factor (1)\n✓ $(x + 1)(x^2 + x - 6)$ (2)\n✓ $(x + 1)(x + 3)(x - 2)$ (1)" },
+    { "id": "solve", "type": "open", "marks": 5, "prompt": "Solve for $x$: $2x^3 - 3x^2 - 11x + 6 = 0$", "memo": "✓ $f(3) = 54 - 27 - 33 + 6 = 0$ (1)\n✓ $(x - 3)(2x^2 + 3x - 2) = 0$ (2)\n✓ $(x - 3)(2x - 1)(x + 2) = 0$ (1)\n✓ $x = 3$, $\\frac{1}{2}$ or $-2$ (1)" },
+    { "id": "two-unknowns", "type": "open", "marks": 4, "prompt": "$f(x) = x^3 + ax^2 + bx - 6$ has a factor $(x - 1)$ and leaves a remainder of $-12$ when divided by $(x + 1)$. Find $a$ and $b$.", "memo": "✓ $f(1) = 1 + a + b - 6 = 0$: $a + b = 5$ (1)\n✓ $f(-1) = -1 + a - b - 6 = -12$: $a - b = -5$ (1)\n✓ $a = 0$ (1)\n✓ $b = 5$ (1)" },
+    { "id": "irrational", "type": "open", "marks": 4, "prompt": "Show that $(x - 2)$ is a factor of $x^3 - 3x^2 + x + 2$, and hence find all roots (leave in surd form).", "memo": "✓ $f(2) = 8 - 12 + 2 + 2 = 0$ (1)\n✓ $(x - 2)(x^2 - x - 1)$ (1)\n✓ $x = \\frac{1 \\pm \\sqrt{5}}{2}$ (1)\n✓ Roots: $2$, $\\frac{1 + \\sqrt{5}}{2}$, $\\frac{1 - \\sqrt{5}}{2}$ (1)" }
+  ]
+}

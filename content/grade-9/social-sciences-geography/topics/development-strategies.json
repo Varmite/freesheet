@@ -1,0 +1,61 @@
+{
+  "id": "development-strategies",
+  "title": "Development Issues and Strategies",
+  "term": 3,
+  "summary": "Issues that hold back development (unemployment, poverty, health and gender inequality), and strategies such as aid, fair trade, community projects, women's empowerment and government programmes.",
+  "notes": [
+    { "type": "heading", "text": "Development issues" },
+    { "type": "table", "headers": ["Issue", "How it limits development"], "rows": [
+      ["Unemployment", "South Africa's official unemployment rate is over 30% (much higher for young people). People without jobs cannot afford food, housing or education"],
+      ["Poverty", "Poor families struggle to meet basic needs; children may leave school early to work, continuing the cycle of poverty"],
+      ["Poor health (HIV, TB, malnutrition)", "Sick people cannot work or study; families spend money on care"],
+      ["Gender inequality", "When girls cannot attend school and women earn less or have no land rights, half of society's talent is wasted"],
+      ["Lack of education and skills", "Low-skilled workers earn low wages and are first to lose jobs"],
+      ["Unequal access to services", "Rural areas often lack clinics, schools, roads, water and electricity"]
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "The **cycle of poverty**: poor families → poor nutrition and schooling → low skills → low-paid or no jobs → poverty in the next generation. Development strategies try to break this cycle." },
+    { "type": "heading", "text": "Development strategies" },
+    { "type": "heading", "text": "1. Aid" },
+    { "type": "list", "items": [
+      "**Emergency (short-term) aid**: food, shelter and medicine after disasters such as floods or droughts.",
+      "**Development (long-term) aid**: building schools, clinics, roads and wells, or training people.",
+      "Aid is given by governments (**bilateral** aid), international organisations such as the UN and World Bank (**multilateral** aid), and **NGOs** (non-governmental organisations) such as Gift of the Givers.",
+      "**Problems**: aid can create dependency, be tied to conditions (e.g. buying goods from the donor), or be lost to corruption."
+    ] },
+    { "type": "heading", "text": "2. Trade and investment" },
+    { "type": "paragraph", "text": "**Fair trade** guarantees fair prices for small producers. **Beneficiation** (processing raw materials locally) creates jobs and earns more. Foreign investment in factories can create jobs, but profits may leave the country." },
+    { "type": "heading", "text": "3. Community-based development" },
+    { "type": "paragraph", "text": "**Bottom-up** projects are planned and run by local communities themselves, for example community food gardens, savings clubs (**stokvels**), co-operatives and small businesses. Because people choose and manage the projects, they are often more successful and sustainable than **top-down** projects planned by outsiders." },
+    { "type": "heading", "text": "4. Empowering women" },
+    { "type": "list", "items": [
+      "Educating girls leads to healthier families, lower birth rates and higher incomes.",
+      "**Microfinance** offers small loans to people (often women) to start businesses, without the collateral banks usually demand.",
+      "Equal rights to land and inheritance give women security."
+    ] },
+    { "type": "heading", "text": "5. Government programmes in South Africa" },
+    { "type": "list", "items": [
+      "**Social grants** (child support, old-age and disability grants) help millions of households.",
+      "The **Expanded Public Works Programme (EPWP)** creates temporary jobs building infrastructure.",
+      "**No-fee schools** and the **National School Nutrition Programme** keep children in school.",
+      "**RDP / BNG housing**, free basic water and electricity for poor households.",
+      "**NSFAS** funds tertiary education for students from poor families."
+    ] }
+  ],
+  "questions": [
+    { "id": "ngo", "type": "short", "prompt": "What does NGO stand for?", "answers": ["non-governmental organisation", "non-governmental organization", "non governmental organisation", "non governmental organization"] },
+    { "id": "emergency", "type": "mcq", "prompt": "Food parcels given to flood victims are an example of…", "options": ["development aid", "emergency aid", "tied aid", "microfinance"], "answer": 1 },
+    { "id": "bottom-up", "type": "mcq", "prompt": "A community vegetable garden planned and run by local residents is a…", "options": ["top-down project", "bottom-up project", "bilateral aid project", "trade barrier"], "answer": 1 },
+    { "id": "stokvel", "type": "short", "prompt": "What is the South African name for a community savings club?", "answers": ["stokvel", "a stokvel", "stokvels"] },
+    { "id": "dependency", "type": "truefalse", "prompt": "One disadvantage of aid is that it can create dependency.", "answer": true },
+    { "id": "programmes", "type": "match", "marks": 4, "prompt": "Match each programme to what it provides.", "pairs": [
+      { "left": "EPWP", "right": "Temporary jobs building infrastructure" },
+      { "left": "NSFAS", "right": "Funding for tertiary studies" },
+      { "left": "School Nutrition Programme", "right": "Meals for learners" },
+      { "left": "Child support grant", "right": "Money for caregivers of children" }
+    ] },
+    { "id": "cycle", "type": "open", "marks": 3, "prompt": "Explain the cycle of poverty.", "memo": "✓ Poor families cannot afford good food, healthcare and schooling (1)\n✓ Children grow up with few skills and get low-paid jobs or none (1)\n✓ so their own children are born into poverty (1)" },
+    { "id": "women", "type": "open", "marks": 3, "prompt": "Explain how educating girls helps a country to develop.", "memo": "Any three (1 each): women earn higher incomes; healthier families/better child nutrition; lower birth rates; children more likely to attend school; more skilled workforce" },
+    { "id": "aid-problems", "type": "open", "marks": 2, "prompt": "Give TWO problems with foreign aid.", "memo": "Any two (1 each): dependency; tied to conditions; corruption; may not reach the people in need; debt if given as loans" },
+    { "id": "microfinance", "type": "open", "marks": 2, "prompt": "What is microfinance and how does it help development?", "memo": "✓ Small loans given to poor people without collateral (1)\n✓ They can start or grow small businesses and earn an income (1)" }
+  ]
+}

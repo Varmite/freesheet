@@ -1,0 +1,43 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "term": 4,
+  "summary": "Expressing probability as fractions, decimals and percentages, theoretical and experimental probability, outcome tables and tree diagrams for two events, and probability in games and weather forecasts.",
+  "notes": [
+    { "type": "heading", "text": "What is probability?" },
+    { "type": "paragraph", "text": "**Probability** measures how likely an event is, on a scale from **0** (impossible) to **1** (certain). It can be written as a fraction, decimal or percentage: $\\frac{1}{4} = 0{,}25 = 25\\%$." },
+    { "type": "formula", "latex": "P(\\text{event}) = \\frac{\\text{number of favourable outcomes}}{\\text{total number of possible outcomes}}", "caption": "Theoretical probability (all outcomes equally likely)" },
+    { "type": "heading", "text": "Experimental probability" },
+    { "type": "formula", "latex": "\\text{relative frequency} = \\frac{\\text{number of times the event happened}}{\\text{number of trials}}" },
+    { "type": "paragraph", "text": "The more trials you do, the closer the experimental probability usually gets to the theoretical probability." },
+    { "type": "heading", "text": "Two events" },
+    { "type": "table", "caption": "Outcome table: tossing a coin and rolling a die", "headers": ["", "1", "2", "3", "4", "5", "6"], "rows": [
+      ["H", "H1", "H2", "H3", "H4", "H5", "H6"],
+      ["T", "T1", "T2", "T3", "T4", "T5", "T6"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "A coin is tossed and a die is rolled. Find P(heads and an even number).", "steps": ["12 equally likely outcomes.", "Favourable: H2, H4, H6, so 3 outcomes.", "$P = \\frac{3}{12} = \\frac{1}{4}$"], "answer": "$\\frac{1}{4}$ (25%)" },
+    { "type": "heading", "text": "Probability in everyday life" },
+    { "type": "list", "items": [
+      "**Weather**: 'a 70% chance of rain' means that on many days with similar conditions it rained on about 70 of every 100.",
+      "**Games and lotteries**: the chance of winning the Lotto jackpot is less than 1 in 20 million, so buying tickets is a very poor way to make money.",
+      "**Insurance and medical tests** use probability to measure risk."
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "Past results do not change future probabilities for independent events. If a coin lands heads five times in a row, the chance of heads on the next toss is still $\\frac{1}{2}$." }
+  ],
+  "questions": [
+    { "id": "scale", "type": "mcq", "prompt": "An event with probability 0 is…", "options": ["certain", "likely", "impossible", "unlikely"], "answer": 2 },
+    { "id": "die", "type": "numeric", "prompt": "A fair die is rolled. What is the probability of a number greater than 4? (decimal, 2 places)", "answer": 0.33, "tolerance": 0.01 },
+    { "id": "bag", "type": "numeric", "prompt": "A bag has 5 red, 3 green and 2 yellow sweets. What is P(green) as a percentage?", "answer": 30, "tolerance": 0, "unit": "%" },
+    { "id": "experimental", "type": "numeric", "prompt": "A spinner landed on blue 18 times in 60 spins. What is the experimental probability of blue (decimal)?", "answer": 0.3, "tolerance": 0 },
+    { "id": "coins", "type": "numeric", "prompt": "Two coins are tossed. What is the probability of getting two tails? (decimal)", "answer": 0.25, "tolerance": 0 },
+    { "id": "independent", "type": "truefalse", "prompt": "After three heads in a row, a fair coin is more likely to land tails next.", "answer": false },
+    { "id": "convert", "type": "match", "marks": 3, "prompt": "Match each probability to its equivalent.", "pairs": [
+      { "left": "1/2", "right": "50%" },
+      { "left": "0,2", "right": "20%" },
+      { "left": "3/4", "right": "75%" }
+    ] },
+    { "id": "table", "type": "open", "marks": 4, "prompt": "Two dice are rolled and the numbers are added. (a) How many outcomes are there? (b) Find P(total = 7). (c) Find P(total > 10).", "memo": "(a) ✓ 36 (1)\n(b) ✓ 6 outcomes (1) ✓ $\\frac{6}{36} = \\frac{1}{6}$ (1)\n(c) ✓ (5;6), (6;5), (6;6): $\\frac{3}{36} = \\frac{1}{12}$ (1)" },
+    { "id": "rain", "type": "open", "marks": 2, "prompt": "The forecast says there is a 30% chance of rain. A learner says, 'So it will not rain.' Is she correct? Explain.", "memo": "✓ No (1)\n✓ 30% means rain is less likely than not, but it can still happen (about 3 in 10 similar days) (1)" },
+    { "id": "expected", "type": "open", "marks": 2, "prompt": "A fair die is rolled 300 times. About how many times would you expect a 6? Explain.", "memo": "✓ $\\frac{1}{6} \\times 300$ (1)\n✓ = about 50 times (1)" }
+  ]
+}

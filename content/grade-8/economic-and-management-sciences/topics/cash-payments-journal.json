@@ -1,0 +1,53 @@
+{
+  "id": "cash-payments-journal",
+  "title": "The Cash Payments Journal",
+  "term": 3,
+  "summary": "The purpose and layout of the Cash Payments Journal (CPJ), recording payments by EFT and cheque in the correct columns, the Sundry accounts column and totalling the journal.",
+  "notes": [
+    { "type": "heading", "text": "What is the CPJ?" },
+    { "type": "paragraph", "text": "The **Cash Payments Journal (CPJ)** is the book of first entry in which all **payments made from the bank account** are recorded. The source documents are **EFT payment notices**, **cheque counterfoils** and the **bank statement** (for debit orders and bank charges)." },
+    { "type": "heading", "text": "Layout of the CPJ" },
+    { "type": "table", "caption": "Cash Payments Journal of Thandi's Hair Salon, March 2025 (CPJ 3)", "headers": ["Doc", "Day", "Name of payee", "Fol", "Bank", "Wages", "Stationery", "Sundry accounts: Amount", "Sundry accounts: Details"], "rows": [
+      ["EFT01", "2", "Beauty Supplies", "", "8 000", "", "", "8 000", "Equipment"],
+      ["EFT02", "6", "CNA", "", "320", "", "320", "", ""],
+      ["EFT03", "15", "M. Sithole", "", "2 500", "2 500", "", "", ""],
+      ["EFT04", "25", "Telkom", "", "680", "", "", "680", "Telephone"],
+      ["EFT05", "28", "T. Mbeki", "", "1 000", "", "", "1 000", "Drawings"],
+      ["EFT06", "31", "M. Sithole", "", "2 500", "2 500", "", "", ""],
+      ["", "31", "", "", "15 000", "5 000", "320", "9 680", ""]
+    ] },
+    { "type": "list", "items": [
+      "**Doc**: the EFT or cheque number.",
+      "**Name of payee**: the person or business that was paid.",
+      "**Bank**: every payment is recorded here.",
+      "**Analysis columns** (e.g. Wages, Stationery): for expenses that happen often.",
+      "**Sundry accounts**: for less frequent payments, such as buying equipment, paying a telephone account, drawings or repaying a loan."
+    ] },
+    { "type": "heading", "text": "Totalling and checking" },
+    { "type": "example", "title": "Checking the totals", "problem": "Check that the CPJ above balances.", "steps": ["Wages + Stationery + Sundry = 5 000 + 320 + 9 680", "= 15 000", "Bank total = 15 000 ✓"], "answer": "The journal balances." },
+    { "type": "callout", "label": "Remember", "text": "**Drawings** (the owner taking money for personal use) is NOT an expense of the business. It is recorded in the Sundry accounts column with 'Drawings' as the details." },
+    { "type": "heading", "text": "Bank charges and debit orders" },
+    { "type": "paragraph", "text": "Some payments are made directly by the bank, such as **bank charges** and **debit orders** (e.g. insurance). They are found on the **bank statement** and recorded in the CPJ using 'B/S' (bank statement) in the Doc column." },
+    { "type": "heading", "text": "Calculating the bank balance" },
+    { "type": "formula", "latex": "\\text{bank balance} = \\text{opening balance} + \\text{CRJ total} - \\text{CPJ total}" },
+    { "type": "example", "title": "Bank balance at the end of the month", "problem": "Thandi's bank balance on 1 March was R0. The CRJ total for March is R58 500 and the CPJ total is R15 000. What is the bank balance on 31 March?", "steps": ["0 + 58 500 − 15 000", "= R43 500"], "answer": "R43 500 (favourable)" },
+    { "type": "paragraph", "text": "A **favourable** balance means there is money in the account (an asset). An **unfavourable** balance (bank overdraft) means more has been paid out than was available; it is a **liability**." }
+  ],
+  "questions": [
+    { "id": "purpose", "type": "open", "marks": 1, "prompt": "What is recorded in the Cash Payments Journal?", "memo": "✓ All payments made from the business's bank account (1)" },
+    { "id": "source", "type": "mcq", "prompt": "Which source document is used for bank charges?", "options": ["Receipt", "Cash register roll", "Bank statement", "Deposit slip"], "answer": 2 },
+    { "id": "drawings", "type": "truefalse", "prompt": "Drawings is an expense of the business.", "answer": false },
+    { "id": "wages-col", "type": "short", "prompt": "Paying a worker's salary is recorded in the Bank column and which analysis column?", "answers": ["wages", "wages column", "salaries"] },
+    { "id": "equipment", "type": "mcq", "prompt": "In which column is the purchase of equipment recorded (besides Bank)?", "options": ["Wages", "Stationery", "Sundry accounts", "Current income"], "answer": 2 },
+    { "id": "total", "type": "numeric", "prompt": "In a CPJ, Wages total R6 000, Stationery R450 and Sundry accounts R3 550. What is the Bank total?", "answer": 10000, "tolerance": 0, "unit": "rand" },
+    { "id": "bank-balance", "type": "numeric", "prompt": "Opening bank balance R5 000; CRJ total R12 000; CPJ total R14 500. Calculate the closing bank balance in rand.", "answer": 2500, "tolerance": 0, "unit": "rand" },
+    { "id": "payments", "type": "match", "marks": 4, "prompt": "Match each payment to the column (other than Bank) where it is recorded.", "pairs": [
+      { "left": "Bought pens and paper", "right": "Stationery" },
+      { "left": "Paid an assistant", "right": "Wages" },
+      { "left": "Paid the electricity account", "right": "Sundry accounts: Water and electricity" },
+      { "left": "Owner took money for groceries", "right": "Sundry accounts: Drawings" }
+    ] },
+    { "id": "record", "type": "open", "marks": 4, "prompt": "Show how this transaction is recorded in the CPJ: '18 May: Paid R1 250 to Eskom for electricity, EFT 22.' Give the Doc, Day, payee and the columns and amounts used.", "memo": "✓ Doc: EFT22 (1)\n✓ Day 18, payee Eskom (1)\n✓ Bank R1 250 (1)\n✓ Sundry accounts R1 250, details: Water and electricity (1)" },
+    { "id": "overdraft", "type": "open", "marks": 2, "prompt": "What is a bank overdraft and how is it classified?", "memo": "✓ When more money has been paid out than was in the account (unfavourable balance) (1)\n✓ It is a liability (1)" }
+  ]
+}

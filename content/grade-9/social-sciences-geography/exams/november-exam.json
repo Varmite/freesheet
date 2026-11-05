@@ -1,0 +1,285 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of FOUR questions. Answer ALL the questions.",
+    "Show all working for calculations and include units.",
+    "Write in full sentences where explanations are required."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "The standard scale of an orthophoto map in South Africa is…",
+          "options": [
+            "1 : 50 000",
+            "1 : 10 000",
+            "1 : 250 000",
+            "1 : 1 000"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "The name of a school is an example of…",
+          "options": [
+            "spatial data",
+            "attribute data",
+            "remote sensing",
+            "a polygon"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "Which resource is non-renewable?",
+          "options": [
+            "Solar energy",
+            "Wind",
+            "Platinum",
+            "Forests"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "The HDI combines life expectancy, education and…",
+          "options": [
+            "income",
+            "rainfall",
+            "population size",
+            "exports"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "q1-5",
+          "type": "mcq",
+          "prompt": "Which type of weathering forms caves in limestone?",
+          "options": [
+            "Frost action",
+            "Exfoliation",
+            "Carbonation",
+            "Oxidation"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-7",
+          "type": "truefalse",
+          "prompt": "A gradient of 1 : 5 is steeper than a gradient of 1 : 50.",
+          "answer": true
+        },
+        {
+          "id": "q1-8",
+          "type": "truefalse",
+          "prompt": "Physical weathering changes the chemical make-up of a rock.",
+          "answer": false
+        },
+        {
+          "id": "q1-9",
+          "type": "short",
+          "prompt": "Name the type of weathering in which water freezes in cracks and expands.",
+          "answers": [
+            "frost action",
+            "freeze-thaw",
+            "freeze–thaw",
+            "frost wedging",
+            "freeze thaw"
+          ]
+        },
+        {
+          "id": "q1-6",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Gradient",
+              "right": "Steepness of a slope"
+            },
+            {
+              "left": "Buffer",
+              "right": "Zone of set distance around a feature"
+            },
+            {
+              "left": "Sustainable development",
+              "right": "Meeting needs without harming future generations"
+            },
+            {
+              "left": "Microfinance",
+              "right": "Small loans for poor entrepreneurs"
+            },
+            {
+              "left": "Mass movement",
+              "right": "Downhill movement of material under gravity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Map calculations and GIS",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "On a 1 : 50 000 map, a road between two towns is 11 cm long. Calculate its real length in km.",
+          "answer": 5.5,
+          "tolerance": 0.01,
+          "unit": "km"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Trig station A is at 1 540 m and spot height B is at 1 360 m. On a 1 : 50 000 map they are 3,6 cm apart. Calculate the average gradient between A and B.",
+          "memo": "✓ VI = 1 540 − 1 360 = 180 m (1)\n✓ HE = 3,6 × 500 = 1 800 m (1)\n✓ Gradient = 180/1 800 = 1 : 10 (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A rectangular plantation on a 1 : 50 000 map measures 3 cm by 2 cm. Calculate its real area.",
+          "answer": 1.5,
+          "tolerance": 0.01,
+          "unit": "km²"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A municipality wants to decide where to build a new clinic. Explain how it could use GIS layers to choose the best site.",
+          "memo": "✓ Overlay layers such as population density, existing clinics and roads (1)\n✓ Identify areas with many people but far from existing clinics (buffers) (1)\n✓ Choose a site with good road access, not in a flood zone (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A cyclist rides 9 km at 18 km/h. How many minutes does the trip take?",
+          "answer": 30,
+          "tolerance": 0,
+          "unit": "minutes"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Resources and development",
+      "context": [
+        {
+          "type": "table",
+          "caption": "Development indicators (rounded, for illustration)",
+          "headers": [
+            "Indicator",
+            "Country A",
+            "Country B"
+          ],
+          "rows": [
+            [
+              "Life expectancy (years)",
+              "82",
+              "58"
+            ],
+            [
+              "Infant mortality (per 1 000 births)",
+              "4",
+              "55"
+            ],
+            [
+              "Adult literacy (%)",
+              "99",
+              "62"
+            ],
+            [
+              "GDP per capita (US dollars)",
+              "48 000",
+              "1 200"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Which country (A or B) is more developed?",
+          "answers": [
+            "a",
+            "country a"
+          ]
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Use THREE indicators from the table to support your answer.",
+          "memo": "✓ Higher life expectancy (82 vs 58) (1)\n✓ Lower infant mortality (4 vs 55) (1)\n✓ Higher literacy / GDP per capita (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is GDP per capita alone not a good measure of development?",
+          "memo": "✓ It is an average that hides inequality (1)\n✓ It does not measure health, education or quality of life (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "South Africa is a water-scarce country. Describe TWO causes of water shortages and TWO ways of using water more sustainably.",
+          "memo": "Causes (1 each): low/uneven rainfall; drought; pollution; alien plants; leaks; growing demand\nSolutions (1 each): fix leaks; restrictions; rainwater harvesting; grey water; drip irrigation; remove alien plants"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain the difference between top-down and bottom-up development, and say why bottom-up projects are often more sustainable.",
+          "memo": "✓ Top-down: planned by government or outside organisations (1)\n✓ Bottom-up: planned and run by the community (1)\n✓ Communities choose projects that meet their real needs (1)\n✓ They take ownership, so projects continue after outside help ends (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Surface forces",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how exfoliation takes place in a hot desert.",
+          "memo": "✓ The rock surface heats and expands during the hot day (1)\n✓ It cools and contracts at night (1)\n✓ The outer layers weaken and peel off like onion skins (1)"
+        },
+        {
+          "id": "q4-2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO landforms found in the lower course of a river.",
+          "memo": "Any two (1 each): flood plain; oxbow lake; levee; delta; wide meanders"
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe TWO causes and TWO effects of soil erosion in rural South Africa.",
+          "memo": "Causes (1 each): overgrazing; deforestation; ploughing down slopes; heavy rain on bare soil\nEffects (1 each): loss of fertile soil; lower crop yields; dongas; silting of dams; poverty/food insecurity"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how tilted fence posts show that soil creep is happening.",
+          "memo": "✓ Soil near the surface moves downslope slowly (1)\n✓ It carries the tops of the posts with it, so they lean downhill (1)"
+        }
+      ]
+    }
+  ]
+}

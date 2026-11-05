@@ -1,0 +1,63 @@
+{
+  "id": "physical-fitness-and-wellbeing",
+  "title": "Physical Fitness and Well-being",
+  "term": 4,
+  "summary": "Components of fitness, the benefits of regular activity, warm-up and cool-down, safe exercise, healthy eating and sleep, and mental well-being.",
+  "notes": [
+    { "type": "heading", "text": "Why be active?" },
+    { "type": "paragraph", "text": "Teenagers should be physically active for at least **60 minutes a day**. Regular exercise strengthens the heart, lungs, muscles and bones; helps control weight; improves sleep, concentration and mood; reduces stress; and lowers the risk of diseases such as diabetes, high blood pressure and heart disease." },
+    { "type": "heading", "text": "Components of fitness" },
+    { "type": "table", "headers": ["Component", "Meaning", "Activity to improve it"], "rows": [
+      ["Cardiovascular endurance", "The heart and lungs supply oxygen to muscles over a long time", "Running, swimming, cycling, skipping"],
+      ["Muscular strength", "The force a muscle can produce", "Push-ups, squats, lifting weights"],
+      ["Muscular endurance", "How long muscles can keep working without tiring", "Sit-ups, planks, many repetitions"],
+      ["Flexibility", "The range of movement at the joints", "Stretching, yoga, dance"],
+      ["Speed and agility", "Moving quickly and changing direction easily", "Sprints, shuttle runs, ladder drills"],
+      ["Balance and coordination", "Controlling body movements", "Balancing exercises, ball skills, gymnastics"]
+    ] },
+    { "type": "heading", "text": "A safe exercise session" },
+    { "type": "list", "ordered": true, "items": [
+      "**Warm-up** (5 to 10 minutes): light jogging and dynamic stretches raise your heart rate and body temperature and prepare muscles, which helps prevent injury.",
+      "**Main activity**: the game, sport or fitness programme.",
+      "**Cool-down** (5 to 10 minutes): walking and gentle static stretches let your heart rate return to normal and reduce stiffness."
+    ] },
+    { "type": "list", "items": [
+      "Wear suitable clothes and shoes; drink water before, during and after exercise.",
+      "Use equipment correctly and play by the rules.",
+      "Stop if you feel pain or dizziness, and report injuries."
+    ] },
+    { "type": "callout", "label": "First aid for sprains: RICE", "text": "**R**est the injured part, apply **I**ce (wrapped in a cloth), **C**ompress with a bandage, and **E**levate the injury above the heart." },
+    { "type": "heading", "text": "Healthy eating" },
+    { "type": "table", "headers": ["Food group", "Function", "Examples"], "rows": [
+      ["Starches (carbohydrates)", "Energy", "Maize meal (pap), bread, rice, potatoes"],
+      ["Proteins", "Growth and repair", "Beans, eggs, fish, chicken, meat, soya"],
+      ["Fruit and vegetables", "Vitamins, minerals and fibre for protection against disease", "Spinach (morogo), carrots, oranges, bananas"],
+      ["Dairy", "Calcium for bones and teeth", "Milk, amasi, yoghurt, cheese"],
+      ["Fats and oils (small amounts)", "Energy and vitamins", "Vegetable oil, peanut butter, avocado"]
+    ] },
+    { "type": "paragraph", "text": "Drink plenty of **water**; limit sugary drinks, fried food, chips and sweets. Eat breakfast: it gives energy and helps you concentrate at school." },
+    { "type": "heading", "text": "Sleep and mental well-being" },
+    { "type": "list", "items": [
+      "Teenagers need about **8 to 10 hours** of sleep a night. Put screens away an hour before bed.",
+      "Mental well-being means coping with stress, enjoying life and having healthy relationships.",
+      "Look after your mind: talk about your feelings, spend time with friends and family, do activities you enjoy, spend time outdoors and ask for help when you need it."
+    ] }
+  ],
+  "questions": [
+    { "id": "minutes", "type": "numeric", "prompt": "For how many minutes a day should teenagers be physically active?", "answer": 60, "tolerance": 0, "unit": "minutes" },
+    { "id": "warmup", "type": "open", "marks": 2, "prompt": "Why is it important to warm up before exercise?", "memo": "✓ It raises heart rate and body temperature and prepares the muscles (1)\n✓ which helps prevent injuries (1)" },
+    { "id": "rice", "type": "short", "prompt": "In RICE first aid, what does the E stand for?", "answers": ["elevate", "elevation", "elevate the injury"] },
+    { "id": "protein", "type": "mcq", "prompt": "Which food group is mainly for growth and repair?", "options": ["Starches", "Proteins", "Fats", "Sugars"], "answer": 1 },
+    { "id": "sleep", "type": "truefalse", "prompt": "Teenagers need about 8 to 10 hours of sleep a night.", "answer": true },
+    { "id": "components", "type": "match", "marks": 4, "prompt": "Match each fitness component to an activity that improves it.", "pairs": [
+      { "left": "Cardiovascular endurance", "right": "Long-distance running" },
+      { "left": "Flexibility", "right": "Stretching and yoga" },
+      { "left": "Muscular strength", "right": "Push-ups and squats" },
+      { "left": "Agility", "right": "Shuttle runs" }
+    ] },
+    { "id": "benefits", "type": "open", "marks": 3, "prompt": "Give THREE benefits of regular physical activity.", "memo": "Any three (1 each): stronger heart and lungs; stronger muscles and bones; weight control; better sleep; better concentration; reduced stress/better mood; lower risk of disease" },
+    { "id": "session", "type": "open", "marks": 3, "prompt": "Name the THREE parts of a safe exercise session.", "memo": "✓ Warm-up (1)\n✓ Main activity (1)\n✓ Cool-down (1)" },
+    { "id": "meal", "type": "open", "marks": 3, "prompt": "Plan a healthy lunch that includes THREE different food groups. Name the group of each food.", "memo": "✓✓✓ Three foods from different groups, correctly named (1 each), e.g. brown bread (starch), egg (protein), apple (fruit)" },
+    { "id": "mental", "type": "open", "marks": 2, "prompt": "Suggest TWO ways to look after your mental well-being.", "memo": "Any two (1 each): talk about feelings; spend time with friends/family; hobbies; exercise; time outdoors; enough sleep; ask for help" }
+  ]
+}

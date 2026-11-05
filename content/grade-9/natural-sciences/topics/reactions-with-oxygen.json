@@ -1,0 +1,58 @@
+{
+  "id": "reactions-with-oxygen",
+  "title": "Reactions of Metals and Non-metals with Oxygen",
+  "term": 2,
+  "summary": "How metals react with oxygen to form metal oxides, rusting and how to prevent it, and how non-metals burn in oxygen to form non-metal oxides.",
+  "notes": [
+    { "type": "heading", "text": "Metals and oxygen" },
+    { "type": "paragraph", "text": "Most metals react with oxygen to form **metal oxides**. This is called **oxidation**. The general equation is:" },
+    { "type": "formula", "latex": "\\text{metal} + \\text{oxygen} \\rightarrow \\text{metal oxide}" },
+    { "type": "table", "caption": "Some metals burning in oxygen", "headers": ["Metal", "Observation", "Equation"], "rows": [
+      ["Magnesium", "Burns with a blinding white flame; forms white powder", "2Mg + O₂ → 2MgO"],
+      ["Iron (steel wool)", "Glows and sparks orange; forms black solid", "3Fe + 2O₂ → Fe₃O₄"],
+      ["Copper", "Does not burn; a black layer of copper oxide forms on the surface", "2Cu + O₂ → 2CuO"],
+      ["Sodium", "Burns with a bright yellow-orange flame", "4Na + O₂ → 2Na₂O"]
+    ] },
+    { "type": "callout", "label": "Safety", "text": "Never look directly at burning magnesium; the bright light can damage your eyes. Hold metals with tongs and wear safety glasses." },
+    { "type": "paragraph", "text": "Metals react with oxygen at different rates. Magnesium and sodium are very reactive; iron and copper react more slowly; gold and platinum hardly react at all, which is why gold jewellery stays shiny." },
+    { "type": "heading", "text": "Rusting" },
+    { "type": "paragraph", "text": "**Rusting** is the slow oxidation of iron or steel when it is in contact with both **oxygen** and **water**. Rust (hydrated iron oxide) is brown, flaky and weak; it falls off, exposing fresh iron to more rusting. Salt water and acid rain make rusting faster." },
+    { "type": "formula", "latex": "\\text{iron} + \\text{oxygen} + \\text{water} \\rightarrow \\text{hydrated iron(III) oxide (rust)}" },
+    { "type": "example", "title": "The rusting experiment", "problem": "Three iron nails are placed in test tubes: A in tap water open to air; B in boiled water with a layer of oil on top; C in dry air with calcium chloride (a drying agent). Which nail rusts, and why?", "steps": [
+      "A has both water and oxygen: it rusts.",
+      "B: boiling removes dissolved air and the oil stops new air dissolving, so there is no oxygen. No rust.",
+      "C: calcium chloride removes water vapour, so there is no water. No rust."
+    ], "answer": "Only nail A rusts: both oxygen and water are needed." },
+    { "type": "list", "items": [
+      "**Painting**, **oiling** or **greasing** keeps out air and water (gates, bicycle chains).",
+      "**Plastic coating** (fridge shelves, wire fences).",
+      "**Galvanising**: coating iron with zinc (roofs, buckets). Zinc reacts first, protecting the iron even if scratched.",
+      "**Alloys** such as stainless steel (iron mixed with chromium and nickel) do not rust."
+    ] },
+    { "type": "heading", "text": "Non-metals and oxygen" },
+    { "type": "paragraph", "text": "Many non-metals also burn in oxygen to form **non-metal oxides**, which are usually gases." },
+    { "type": "table", "headers": ["Non-metal", "Observation", "Equation"], "rows": [
+      ["Carbon", "Glows red; colourless gas forms that turns limewater milky", "C + O₂ → CO₂"],
+      ["Sulfur", "Burns with a blue flame; choking gas", "S + O₂ → SO₂"],
+      ["Hydrogen", "Burns with a squeaky pop; forms water", "2H₂ + O₂ → 2H₂O"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Metal oxides are usually **basic**; non-metal oxides that dissolve in water usually form **acids**. Sulfur dioxide from burning coal dissolves in rain to form **acid rain**, which damages buildings, plants and lakes." },
+    { "type": "paragraph", "text": "The **limewater test**: carbon dioxide bubbled through clear limewater turns it **milky**. A glowing splint relights in **oxygen**; a lit splint gives a squeaky pop with **hydrogen**." }
+  ],
+  "questions": [
+    { "id": "mg-product", "type": "short", "prompt": "Name the product when magnesium burns in oxygen.", "answers": ["magnesium oxide", "mgo"] },
+    { "id": "rust-needs", "type": "mcq", "prompt": "Which two substances are needed for iron to rust?", "options": ["Oxygen and carbon dioxide", "Oxygen and water", "Water and salt", "Nitrogen and water"], "answer": 1 },
+    { "id": "galvanise", "type": "short", "prompt": "Which metal is used to coat iron when it is galvanised?", "answers": ["zinc"] },
+    { "id": "limewater", "type": "mcq", "prompt": "Which gas turns limewater milky?", "options": ["Oxygen", "Hydrogen", "Carbon dioxide", "Sulfur dioxide"], "answer": 2 },
+    { "id": "gold", "type": "truefalse", "prompt": "Gold reacts quickly with oxygen in the air.", "answer": false },
+    { "id": "flames", "type": "match", "marks": 3, "prompt": "Match each element to what is seen when it burns in oxygen.", "pairs": [
+      { "left": "Magnesium", "right": "Blinding white flame" },
+      { "left": "Sulfur", "right": "Blue flame" },
+      { "left": "Hydrogen", "right": "Squeaky pop" }
+    ] },
+    { "id": "acid-rain", "type": "open", "marks": 3, "prompt": "Explain how burning coal in power stations causes acid rain, and give ONE effect of acid rain.", "memo": "✓ Coal contains sulfur, which burns to form sulfur dioxide (1)\n✓ Sulfur dioxide dissolves in rainwater to form acid (1)\n✓ Effect: damages buildings / kills plants and fish / corrodes metal (1)" },
+    { "id": "rust-expt", "type": "open", "marks": 2, "prompt": "In a rusting experiment, why is the water boiled and covered with a layer of oil?", "memo": "✓ Boiling removes dissolved oxygen/air (1)\n✓ The oil stops air from dissolving back into the water (1)" },
+    { "id": "prevent", "type": "open", "marks": 3, "prompt": "Describe THREE ways to prevent rusting and explain how each one works.", "memo": "Any three, 1 mark each with reason: painting / oiling / plastic coating (keeps out air and water); galvanising (zinc coating reacts instead of iron); using stainless steel (alloy that does not rust)" },
+    { "id": "equation-c", "type": "short", "prompt": "Write the chemical formula of the product when carbon burns completely in oxygen.", "answers": ["co2", "co₂"] }
+  ]
+}

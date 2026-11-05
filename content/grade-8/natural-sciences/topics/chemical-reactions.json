@@ -1,0 +1,64 @@
+{
+  "id": "chemical-reactions",
+  "title": "Chemical Reactions",
+  "term": 2,
+  "summary": "Tell physical and chemical changes apart, recognise signs of a reaction, name reactants and products, and understand that atoms are rearranged but never created or destroyed.",
+  "notes": [
+    { "type": "heading", "text": "Physical and chemical changes" },
+    { "type": "table", "headers": ["", "Physical change", "Chemical change"], "rows": [
+      ["New substance formed?", "No", "Yes"],
+      ["Reversible?", "Usually easy to reverse", "Usually difficult or impossible to reverse"],
+      ["What happens to particles", "Particles stay the same; only their arrangement or spacing changes", "Atoms are rearranged into new molecules"],
+      ["Examples", "Melting ice, dissolving sugar, tearing paper, boiling water", "Burning wood, rusting, cooking an egg, baking a cake, digestion"]
+    ] },
+    { "type": "heading", "text": "Signs that a chemical reaction has happened" },
+    { "type": "list", "items": [
+      "A **gas** is given off (bubbles or fizzing).",
+      "A **colour change** that cannot easily be reversed.",
+      "A **precipitate** (an insoluble solid) forms when two solutions are mixed.",
+      "Energy is given off or taken in: the mixture becomes **hot** or **cold**, or light is produced.",
+      "A smell is produced."
+    ] },
+    { "type": "heading", "text": "Reactants and products" },
+    { "type": "paragraph", "text": "The substances you start with are the **reactants**; the new substances formed are the **products**. A reaction is written as an equation with the reactants on the left, an arrow (meaning *produces* or *forms*), and the products on the right." },
+    { "type": "formula", "latex": "\\underbrace{\\text{carbon} + \\text{oxygen}}_{\\text{reactants}} \\rightarrow \\underbrace{\\text{carbon dioxide}}_{\\text{product}}", "caption": "Word equation for burning carbon" },
+    { "type": "formula", "latex": "\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2", "caption": "The same reaction written with chemical formulae" },
+    { "type": "heading", "text": "Conservation of atoms and mass" },
+    { "type": "paragraph", "text": "In a chemical reaction, the bonds between atoms break and new bonds form. Atoms are **rearranged**, but no atoms are created or destroyed. So the **total mass of the reactants equals the total mass of the products** (in a closed system). This is the **law of conservation of mass**." },
+    { "type": "example", "title": "Counting atoms in a balanced equation", "problem": "Show that atoms are conserved in: 2H₂ + O₂ → 2H₂O", "steps": [
+      "Left: 2H₂ has 4 hydrogen atoms; O₂ has 2 oxygen atoms.",
+      "Right: 2H₂O has 2 × 2 = 4 hydrogen atoms and 2 × 1 = 2 oxygen atoms.",
+      "The same number of each kind of atom is on both sides, so the equation is balanced."
+    ], "answer": "4 H and 2 O on each side" },
+    { "type": "example", "title": "Using conservation of mass", "problem": "12 g of magnesium burns completely in oxygen to form 20 g of magnesium oxide. What mass of oxygen reacted?", "steps": [
+      "mass of reactants = mass of products",
+      "12 g + mass of oxygen = 20 g",
+      "mass of oxygen = 20 − 12 = 8 g"
+    ], "answer": "8 g" },
+    { "type": "callout", "label": "Common mistake", "text": "When wood burns, the ash weighs less than the wood. Mass has not disappeared: the carbon dioxide and water vapour produced escaped into the air. In a sealed container, the total mass would stay the same." },
+    { "type": "heading", "text": "Some important reactions" },
+    { "type": "table", "headers": ["Reaction", "Word equation"], "rows": [
+      ["Combustion (burning)", "fuel + oxygen → carbon dioxide + water (+ heat and light)"],
+      ["Rusting", "iron + oxygen + water → iron oxide (rust)"],
+      ["Decomposition of hydrogen peroxide", "hydrogen peroxide → water + oxygen"],
+      ["Respiration", "glucose + oxygen → carbon dioxide + water + energy"]
+    ] }
+  ],
+  "questions": [
+    { "id": "chem-change", "type": "mcq", "prompt": "Which of the following is a chemical change?", "options": ["Ice melting", "Sugar dissolving in tea", "A candle wick burning", "Water boiling"], "answer": 2 },
+    { "id": "reactants", "type": "short", "prompt": "What name is given to the substances you start with in a chemical reaction?", "answers": ["reactants", "reactant", "the reactants"] },
+    { "id": "precipitate", "type": "short", "prompt": "What is an insoluble solid that forms when two solutions react called?", "answers": ["precipitate", "a precipitate"] },
+    { "id": "conserve", "type": "truefalse", "prompt": "In a chemical reaction, new atoms are created.", "answer": false, "explanation": "Atoms are only rearranged." },
+    { "id": "mass-calc", "type": "numeric", "prompt": "56 g of iron reacts completely with sulfur to form 88 g of iron sulfide. What mass of sulfur reacted?", "answer": 32, "tolerance": 0, "unit": "g" },
+    { "id": "count-o", "type": "numeric", "prompt": "In the equation CH₄ + 2O₂ → CO₂ + 2H₂O, how many oxygen atoms are on the product side?", "answer": 4, "tolerance": 0, "explanation": "CO₂ has 2 and 2H₂O has 2, so 4 in total." },
+    { "id": "signs", "type": "mcq", "prompt": "Which observation does NOT necessarily show that a chemical reaction has taken place?", "options": ["Bubbles of a new gas form", "The mixture gets very hot", "A solid changes shape when cut", "A permanent colour change"], "answer": 2 },
+    { "id": "observations", "type": "match", "marks": 4, "prompt": "Match each observation to the sign of a chemical reaction it shows.", "pairs": [
+      { "left": "Fizzing when vinegar is added to baking soda", "right": "A gas is produced" },
+      { "left": "A cloudy solid appears when two clear solutions are mixed", "right": "A precipitate forms" },
+      { "left": "The test tube becomes warm", "right": "Energy is released" },
+      { "left": "A copper roof slowly turns green", "right": "A colour change" }
+    ] },
+    { "id": "ash", "type": "open", "marks": 2, "prompt": "A learner says that mass is lost when paper burns because the ash is lighter than the paper. Explain why this is incorrect.", "memo": "✓ Gases (carbon dioxide and water vapour) are produced and escape into the air (1)\n✓ The total mass of all products equals the mass of the reactants (paper + oxygen); mass is conserved (1)" },
+    { "id": "physical-chemical", "type": "open", "marks": 2, "prompt": "State TWO differences between a physical change and a chemical change.", "memo": "✓ A chemical change forms a new substance; a physical change does not (1)\n✓ Physical changes are usually easily reversed; chemical changes are not (1)" }
+  ]
+}

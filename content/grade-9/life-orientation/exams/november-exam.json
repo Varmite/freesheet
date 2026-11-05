@@ -1,0 +1,220 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of THREE questions. Answer ALL the questions.",
+    "Read the case study carefully before answering Question 2.",
+    "Write in full sentences where explanations are required."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "Which is a long-term goal?",
+          "options": [
+            "Finish homework tonight",
+            "Pass a test on Friday",
+            "Become a registered nurse",
+            "Tidy my room"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "Which is an UNHEALTHY way to cope with stress?",
+          "options": [
+            "Exercise",
+            "Talking to a friend",
+            "Using alcohol",
+            "Deep breathing"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "Who runs elections in South Africa?",
+          "options": [
+            "SAPS",
+            "IEC",
+            "SAHRC",
+            "SABS"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "False information spread deliberately is called…",
+          "options": [
+            "misinformation",
+            "disinformation",
+            "bias",
+            "clickbait"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-5",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Resilience",
+              "right": "Ability to bounce back"
+            },
+            {
+              "left": "Protection order",
+              "right": "Court order against an abuser"
+            },
+            {
+              "left": "Digital footprint",
+              "right": "Permanent record of online activity"
+            },
+            {
+              "left": "Protective factor",
+              "right": "Something that reduces risk"
+            },
+            {
+              "left": "Elective subject",
+              "right": "A subject you choose"
+            }
+          ]
+        },
+        {
+          "id": "q1-6",
+          "type": "truefalse",
+          "prompt": "Citizens may vote in South African elections from the age of 16.",
+          "answer": false
+        },
+        {
+          "id": "q1-7",
+          "type": "truefalse",
+          "prompt": "Mathematics is required for most engineering degrees.",
+          "answer": true
+        },
+        {
+          "id": "q1-8",
+          "type": "short",
+          "marks": 1,
+          "prompt": "What does the T in SMART stand for?",
+          "answers": [
+            "time-bound",
+            "time bound",
+            "timely"
+          ]
+        },
+        {
+          "id": "q1-9",
+          "type": "short",
+          "marks": 1,
+          "prompt": "What is the national police emergency number?",
+          "answers": [
+            "10111"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Case study",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Case study: Sipho's term",
+          "text": "Sipho (15) is in Grade 9 and must choose his subjects for Grade 10. He enjoys building things and is good at Mathematics and Technology, but his friends are all choosing Mathematical Literacy and Tourism. At home, his parents have lost their jobs and are worried about money. Sipho has started sleeping badly, snapping at his younger sister and spending most nights on his phone. Last week a classmate shared an embarrassing edited photo of him in a group chat."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Identify THREE signs that Sipho is experiencing stress.",
+          "memo": "✓ Sleeping badly (1)\n✓ Snapping at his sister / irritability (1)\n✓ Spending most nights on his phone / withdrawing (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Suggest THREE healthy coping strategies for Sipho.",
+          "memo": "Any three (1 each): talk to a trusted adult or counsellor; exercise; limit screen time / sleep routine; plan time; hobbies; relaxation"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Advise Sipho on his subject choice. Should he follow his friends? Give reasons.",
+          "memo": "✓ No, he should not simply follow his friends (1)\n✓ He is good at Mathematics and Technology and enjoys building, which suits engineering or technical careers (1)\n✓ Many such careers require Mathematics, not Mathematical Literacy (1)\n✓ He should research career requirements / talk to a counsellor (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "What should Sipho do about the edited photo, and which law protects him?",
+          "memo": "✓ Do not reply; take screenshots as evidence (1)\n✓ Report it to the group admin/school/trusted adult and ask for it to be removed (1)\n✓ Cybercrimes Act (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO ways Sipho could fund his studies after school, given his family's financial situation.",
+          "memo": "Any two (1 each): NSFAS; bursaries; learnerships/apprenticeships; scholarships; SETA funding"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Health, citizenship and study skills",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe FOUR forms of gender-based violence, with an example of each.",
+          "memo": "Any four (1 each, with example): physical; sexual; emotional/psychological; economic; digital"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how alcohol use can lead to other risky behaviour among teenagers.",
+          "memo": "✓ Alcohol impairs judgement (1)\n✓ leading to unprotected sex / violence (1)\n✓ or road accidents / becoming a victim of crime (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Discuss FOUR ways young people can participate in democracy.",
+          "memo": "Any four (1 each): RCL; register at 16 and vote at 18; petitions; peaceful protest; contact councillors; volunteer; public participation; stay informed"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain THREE active study strategies.",
+          "memo": "Any three (1 each): self-testing; spaced practice; interleaving; elaboration; summaries/mind maps; past papers"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Write a SMART goal for improving your Mathematics mark, and explain how it meets TWO of the SMART criteria.",
+          "memo": "✓✓ A clear SMART goal with a target, method and deadline (2)\n✓✓ Explains two criteria, e.g. measurable (target %), time-bound (end of term) (2)"
+        },
+        {
+          "id": "q3-6",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe FOUR ways to check whether a story shared on social media is true.",
+          "memo": "Any four (1 each): check author/publisher; check date; look for evidence; compare with reliable sources; beware of emotional/clickbait headlines; reverse image search"
+        }
+      ]
+    }
+  ]
+}

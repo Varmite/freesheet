@@ -1,0 +1,50 @@
+{
+  "id": "beliefs-and-worldviews",
+  "title": "Belief Systems, Ideologies and Worldviews",
+  "term": 3,
+  "summary": "Major religions and belief systems in South Africa, ideologies and worldviews, how beliefs shape values and behaviour, freedom of religion, and respecting diversity.",
+  "notes": [
+    { "type": "heading", "text": "Key terms" },
+    { "type": "list", "items": [
+      "**Religion**: a set of beliefs, practices and rituals related to the sacred or divine (e.g. Christianity, Islam, Hinduism, Judaism, African Traditional Religion).",
+      "**Worldview**: a person's overall view of the world, including beliefs about life, humanity and morality. It may be religious or secular (non-religious).",
+      "**Ideology**: a set of ideas about how society should be organised (e.g. democracy, capitalism, socialism, ubuntu as a social philosophy)."
+    ] },
+    { "type": "heading", "text": "Belief systems in South Africa" },
+    { "type": "table", "headers": ["Belief system", "Some key features"], "rows": [
+      ["Christianity", "Belief in God and Jesus Christ; the Bible; churches; Christmas and Easter"],
+      ["Islam", "Belief in one God (Allah) and the Prophet Muhammad; the Qur'an; five pillars including prayer and fasting during Ramadan"],
+      ["Hinduism", "Many forms of the divine; karma and reincarnation; festivals such as Diwali"],
+      ["Judaism", "Belief in one God; the Torah; the Sabbath; Passover"],
+      ["African Traditional Religion", "Belief in a Supreme Being and the ancestors; rituals and ceremonies; strong community ties"],
+      ["Secular worldviews (e.g. humanism)", "Ethics based on reason and human well-being rather than religion"]
+    ] },
+    { "type": "callout", "label": "Ubuntu", "text": "*Umuntu ngumuntu ngabantu*: 'a person is a person through other people'. Ubuntu emphasises compassion, respect and community, and is shared across many South African cultures and belief systems." },
+    { "type": "heading", "text": "Freedom of religion" },
+    { "type": "paragraph", "text": "Section 15 of the Constitution protects freedom of **conscience, religion, thought, belief and opinion**. Public schools may hold religious observances if they are fair, voluntary and follow rules set by the school governing body. No one may be unfairly discriminated against because of religion (section 9)." },
+    { "type": "heading", "text": "Respecting diversity" },
+    { "type": "list", "items": [
+      "Learn about other beliefs from reliable sources and respectful questions.",
+      "Avoid stereotypes and jokes that mock beliefs.",
+      "Focus on shared values: kindness, honesty, justice and caring for others.",
+      "Respect people's right to hold different beliefs, or none."
+    ] }
+  ],
+  "questions": [
+    { "id": "worldview", "type": "open", "marks": 2, "prompt": "What is a worldview?", "memo": "✓ A person's overall view of the world and life (1)\n✓ including beliefs about humanity and morality; may be religious or secular (1)" },
+    { "id": "s15", "type": "numeric", "prompt": "Which section of the Constitution protects freedom of religion, belief and opinion?", "answer": 15, "tolerance": 0 },
+    { "id": "ramadan", "type": "mcq", "prompt": "Fasting during Ramadan is a practice in…", "options": ["Hinduism", "Islam", "Judaism", "Christianity"], "answer": 1 },
+    { "id": "diwali", "type": "short", "prompt": "Which Hindu festival is known as the Festival of Lights?", "answers": ["diwali", "deepavali"] },
+    { "id": "atr", "type": "truefalse", "prompt": "Honouring the ancestors is an important part of African Traditional Religion.", "answer": true },
+    { "id": "match", "type": "match", "marks": 4, "prompt": "Match each belief system to a sacred text or feature.", "pairs": [
+      { "left": "Christianity", "right": "The Bible" },
+      { "left": "Islam", "right": "The Qur'an" },
+      { "left": "Judaism", "right": "The Torah" },
+      { "left": "Humanism", "right": "Ethics based on reason and human well-being" }
+    ] },
+    { "id": "ubuntu", "type": "open", "marks": 2, "prompt": "Explain the meaning of ubuntu and how it can promote respect for diversity.", "memo": "✓ 'A person is a person through other people': we are connected and responsible for each other (1)\n✓ It encourages compassion and respect for all people regardless of belief (1)" },
+    { "id": "schools", "type": "open", "marks": 2, "prompt": "Under what conditions may public schools hold religious observances?", "memo": "✓ They must be fair and voluntary (1)\n✓ and follow rules set by the school governing body (1)" },
+    { "id": "respect", "type": "open", "marks": 3, "prompt": "Suggest THREE ways learners can show respect for classmates with different beliefs.", "memo": "Any three (1 each): learn about their beliefs; ask respectful questions; avoid mocking jokes; respect dietary/dress requirements; focus on shared values" },
+    { "id": "ideology", "type": "mcq", "prompt": "Which is an example of an ideology rather than a religion?", "options": ["Hinduism", "Socialism", "Islam", "Judaism"], "answer": 1 }
+  ]
+}

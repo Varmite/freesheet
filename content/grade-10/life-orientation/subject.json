@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "grade": 10,
+  "id": "life-orientation",
+  "name": "Life Orientation",
+  "description": "CAPS Grade 10 Life Orientation: self-awareness and change, relationships and gender roles, substance abuse and risky behaviour, human rights and democracy, careers and study skills, and social and environmental responsibility.",
+  "topics": [
+    { "id": "self-awareness-and-change", "title": "Self-Awareness and Adolescent Change", "term": 1 },
+    { "id": "relationships-and-gender-roles", "title": "Relationships, Gender Roles and Power", "term": 1 },
+    { "id": "substance-abuse-and-risky-behaviour", "title": "Substance Abuse and Risky Behaviour", "term": 2 },
+    { "id": "human-rights-and-democracy", "title": "Human Rights, Democracy and Discrimination", "term": 2 },
+    { "id": "careers-and-study-skills", "title": "Career Fields and Study Skills", "term": 3 },
+    { "id": "social-and-environmental-responsibility", "title": "Social and Environmental Responsibility", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
+  ]
+}

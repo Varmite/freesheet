@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "grade": 8,
+  "id": "english-home-language",
+  "name": "English Home Language",
+  "description": "CAPS Grade 8 English Home Language: reading for comprehension, parts of speech, sentence structure and punctuation, poetry and figures of speech, short stories, summary writing, visual texts, essays, letters and other transactional texts.",
+  "topics": [
+    { "id": "reading-for-comprehension", "title": "Reading for Comprehension", "term": 1 },
+    { "id": "parts-of-speech", "title": "Parts of Speech", "term": 1 },
+    { "id": "narrative-and-descriptive-essays", "title": "Narrative and Descriptive Essays", "term": 1 },
+    { "id": "poetry-and-figures-of-speech", "title": "Poetry and Figures of Speech", "term": 2 },
+    { "id": "sentences-and-punctuation", "title": "Sentence Structure and Punctuation", "term": 2 },
+    { "id": "friendly-and-formal-letters", "title": "Friendly and Formal Letters", "term": 2 },
+    { "id": "short-stories", "title": "Short Stories", "term": 3 },
+    { "id": "summary-writing", "title": "Summary Writing", "term": 3 },
+    { "id": "visual-texts", "title": "Visual Texts: Advertisements and Cartoons", "term": 4 },
+    { "id": "diaries-dialogues-and-reviews", "title": "Diaries, Dialogues and Reviews", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination: Language in Context", "durationMinutes": 90, "totalMarks": 70 }
+  ]
+}

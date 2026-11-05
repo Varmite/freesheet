@@ -1,0 +1,50 @@
+{
+  "id": "analytical-geometry",
+  "title": "Analytical Geometry",
+  "term": 1,
+  "summary": "Distance, midpoint and gradient; the equation of a straight line in different forms; parallel and perpendicular lines; and the angle of inclination of a line.",
+  "notes": [
+    { "type": "heading", "text": "Revision formulae" },
+    { "type": "formula", "latex": "d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\qquad M\\left(\\frac{x_1 + x_2}{2}; \\frac{y_1 + y_2}{2}\\right) \\qquad m = \\frac{y_2 - y_1}{x_2 - x_1}", "caption": "Distance, midpoint and gradient" },
+    { "type": "heading", "text": "Equation of a straight line" },
+    { "type": "table", "headers": ["Form", "Use it when you know…"], "rows": [
+      ["$y = mx + c$", "the gradient and the $y$-intercept"],
+      ["$y - y_1 = m(x - x_1)$", "the gradient and one point"],
+      ["$\\dfrac{y - y_1}{x - x_1} = \\dfrac{y_2 - y_1}{x_2 - x_1}$", "two points"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Find the equation of the line through $A(2; -1)$ with gradient $3$.", "steps": ["$y - (-1) = 3(x - 2)$", "$y + 1 = 3x - 6$", "$y = 3x - 7$"], "answer": "$y = 3x - 7$" },
+    { "type": "heading", "text": "Parallel and perpendicular lines" },
+    { "type": "list", "items": [
+      "**Parallel** lines have equal gradients: $m_1 = m_2$.",
+      "**Perpendicular** lines have gradients whose product is $-1$: $m_1 \\times m_2 = -1$.",
+      "Three points $A$, $B$, $C$ are **collinear** (on one line) if $m_{AB} = m_{BC}$."
+    ] },
+    { "type": "example", "title": "Worked example 2", "problem": "Find the equation of the line through $P(-2; 5)$ perpendicular to $y = \\frac{1}{2}x + 4$.", "steps": [
+      "$m_1 = \\frac{1}{2}$, so the perpendicular gradient is $m_2 = -2$.",
+      "$y - 5 = -2(x + 2)$",
+      "$y = -2x + 1$"
+    ], "answer": "$y = -2x + 1$" },
+    { "type": "heading", "text": "Angle of inclination" },
+    { "type": "paragraph", "text": "The **angle of inclination** $\\theta$ of a line is the angle the line makes with the **positive $x$-axis**, measured anticlockwise ($0^\\circ \\leq \\theta < 180^\\circ$)." },
+    { "type": "formula", "latex": "m = \\tan\\theta" },
+    { "type": "example", "title": "Worked example 3", "problem": "Find the angle of inclination of the line through $(1; 2)$ and $(4; -4)$.", "steps": [
+      "$m = \\dfrac{-4 - 2}{4 - 1} = -2$",
+      "$\\tan\\theta = -2$. The reference angle is $\\tan^{-1}(2) = 63{,}43^\\circ$.",
+      "Because $m < 0$, $\\theta$ is obtuse: $\\theta = 180^\\circ - 63{,}43^\\circ = 116{,}57^\\circ$."
+    ], "answer": "$\\theta \\approx 116{,}57^\\circ$" },
+    { "type": "callout", "label": "Common mistake", "text": "If the gradient is negative, the calculator gives a negative angle. Add $180^\\circ$ to get the angle of inclination." },
+    { "type": "example", "title": "Worked example 4: angle between two lines", "problem": "Lines $AB$ and $CD$ have angles of inclination $35^\\circ$ and $110^\\circ$. Find the acute angle between them.", "steps": ["The exterior angle of the triangle formed with the $x$-axis: $110^\\circ - 35^\\circ = 75^\\circ$."], "answer": "$75^\\circ$" }
+  ],
+  "questions": [
+    { "id": "distance", "type": "numeric", "prompt": "Find the distance between $A(-1; 2)$ and $B(5; 10)$.", "answer": 10, "tolerance": 0 },
+    { "id": "midpoint", "type": "mcq", "prompt": "The midpoint of $P(3; -4)$ and $Q(-7; 8)$ is…", "options": ["$(-2; 2)$", "$(2; -2)$", "$(-5; 6)$", "$(-4; 4)$"], "answer": 0 },
+    { "id": "perp", "type": "numeric", "prompt": "A line has gradient $\\frac{2}{3}$. What is the gradient of a line perpendicular to it? (decimal, two places)", "answer": -1.5, "tolerance": 0.01 },
+    { "id": "incline", "type": "numeric", "prompt": "Find the angle of inclination of a line with gradient $1$.", "answer": 45, "tolerance": 0, "unit": "°" },
+    { "id": "incline-neg", "type": "numeric", "prompt": "Find the angle of inclination of the line $y = -\\sqrt{3}x + 2$.", "answer": 120, "tolerance": 0.05, "unit": "°" },
+    { "id": "parallel", "type": "truefalse", "prompt": "The lines $y = 4x - 1$ and $2y = 8x + 5$ are parallel.", "answer": true },
+    { "id": "equation", "type": "open", "marks": 3, "prompt": "Find the equation of the line through $(3; 1)$ and $(-1; 9)$.", "memo": "✓ $m = \\frac{9 - 1}{-1 - 3} = -2$ (1)\n✓ $y - 1 = -2(x - 3)$ (1)\n✓ $y = -2x + 7$ (1)" },
+    { "id": "collinear", "type": "open", "marks": 3, "prompt": "Show that $A(1; 1)$, $B(3; 5)$ and $C(5; 9)$ are collinear.", "memo": "✓ $m_{AB} = \\frac{5 - 1}{3 - 1} = 2$ (1)\n✓ $m_{BC} = \\frac{9 - 5}{5 - 3} = 2$ (1)\n✓ Equal gradients and common point B, so collinear (1)" },
+    { "id": "perp-line", "type": "open", "marks": 3, "prompt": "Find the equation of the line through $(4; -1)$ that is perpendicular to $2x - y + 3 = 0$.", "memo": "✓ $y = 2x + 3$, so $m = 2$ and $m_\\perp = -\\frac{1}{2}$ (1)\n✓ $y + 1 = -\\frac{1}{2}(x - 4)$ (1)\n✓ $y = -\\frac{1}{2}x + 1$ (1)" },
+    { "id": "find-k", "type": "open", "marks": 3, "prompt": "The line through $(2; k)$ and $(5; 7)$ has gradient $\\frac{4}{3}$. Find $k$.", "memo": "✓ $\\frac{7 - k}{5 - 2} = \\frac{4}{3}$ (1)\n✓ $7 - k = 4$ (1)\n✓ $k = 3$ (1)" }
+  ]
+}

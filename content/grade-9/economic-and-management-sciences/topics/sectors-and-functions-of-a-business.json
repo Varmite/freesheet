@@ -1,0 +1,252 @@
+{
+  "id": "sectors-and-functions-of-a-business",
+  "title": "Sectors of the Economy and Functions of a Business",
+  "term": 4,
+  "summary": "The primary, secondary and tertiary sectors of the economy and how they link, the formal and informal sectors, and the eight functions of a business.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "The three sectors of the economy"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Sector",
+        "What it does",
+        "Examples"
+      ],
+      "rows": [
+        [
+          "Primary sector",
+          "Takes raw materials directly from nature",
+          "Farming, fishing, forestry, mining"
+        ],
+        [
+          "Secondary sector",
+          "Processes raw materials into finished or semi-finished products (manufacturing and construction)",
+          "Car factories, bakeries, sugar mills, steelworks, building houses"
+        ],
+        [
+          "Tertiary sector",
+          "Provides services",
+          "Shops (retail), banks, transport, tourism, education, healthcare"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "How the sectors link: a wooden table",
+      "problem": "Show how the three sectors are involved in producing and selling a wooden table.",
+      "steps": [
+        "Primary: a forestry company plants and cuts down pine trees.",
+        "Secondary: a sawmill cuts the timber; a furniture factory makes the table.",
+        "Tertiary: a truck transports it; a furniture shop sells it; a bank provides loans."
+      ],
+      "answer": "All three sectors depend on each other."
+    },
+    {
+      "type": "paragraph",
+      "text": "In South Africa, the **tertiary sector** contributes the largest share of the economy (GDP) and jobs, followed by the secondary and then the primary sector. Mining and farming are still very important for exports and rural jobs."
+    },
+    {
+      "type": "heading",
+      "text": "Formal and informal sectors"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Formal sector",
+        "Informal sector"
+      ],
+      "rows": [
+        [
+          "Businesses are registered with CIPC and SARS",
+          "Not registered; small and often run from home or the street"
+        ],
+        [
+          "Pay taxes and follow labour laws",
+          "Usually do not pay tax"
+        ],
+        [
+          "Workers have contracts and benefits",
+          "Little job security; few benefits"
+        ],
+        [
+          "Examples: supermarkets, banks, factories",
+          "Examples: street vendors, spaza shops, car washes, hairdressers working from home"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "label": "Key idea",
+      "text": "The informal sector provides millions of South Africans with an income and is often a first step towards a formal business."
+    },
+    {
+      "type": "heading",
+      "text": "The eight functions of a business"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Function",
+        "What it involves"
+      ],
+      "rows": [
+        [
+          "General management",
+          "Planning, organising, leading and controlling the whole business; setting goals"
+        ],
+        [
+          "Administration",
+          "Recording, storing and processing information: filing, record-keeping, computer systems"
+        ],
+        [
+          "Financial",
+          "Raising capital, budgeting, controlling money, investing, paying accounts"
+        ],
+        [
+          "Purchasing",
+          "Buying raw materials, stock and equipment of the right quality and quantity at the best price"
+        ],
+        [
+          "Production",
+          "Turning inputs into goods or services; quality control"
+        ],
+        [
+          "Marketing",
+          "Identifying customer needs, pricing, advertising, promotion and distribution (the 4 Ps: product, price, place, promotion)"
+        ],
+        [
+          "Human resources",
+          "Recruiting, selecting, training and paying staff; looking after their well-being"
+        ],
+        [
+          "Public relations",
+          "Building a good image of the business with the community and media; social responsibility projects"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In a small business, the owner may perform all these functions. In a large business, each function is usually a separate **department** with its own manager."
+    }
+  ],
+  "questions": [
+    {
+      "id": "primary",
+      "type": "mcq",
+      "prompt": "Which activity belongs to the primary sector?",
+      "options": [
+        "Making furniture",
+        "Mining coal",
+        "Selling cellphones",
+        "Teaching"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "secondary",
+      "type": "short",
+      "prompt": "Which sector processes raw materials into finished products?",
+      "answers": [
+        "secondary",
+        "secondary sector",
+        "the secondary sector"
+      ]
+    },
+    {
+      "id": "largest",
+      "type": "mcq",
+      "prompt": "Which sector contributes the most to South Africa's GDP?",
+      "options": [
+        "Primary",
+        "Secondary",
+        "Tertiary"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "informal",
+      "type": "truefalse",
+      "prompt": "A spaza shop that is not registered is part of the informal sector.",
+      "answer": true
+    },
+    {
+      "id": "sectors-match",
+      "type": "match",
+      "marks": 4,
+      "prompt": "Match each business to its sector.",
+      "pairs": [
+        {
+          "left": "Fishing company",
+          "right": "Primary"
+        },
+        {
+          "left": "Clothing factory",
+          "right": "Secondary"
+        },
+        {
+          "left": "Insurance company",
+          "right": "Tertiary"
+        },
+        {
+          "left": "Building contractor",
+          "right": "Secondary (construction)"
+        }
+      ]
+    },
+    {
+      "id": "functions-match",
+      "type": "match",
+      "marks": 4,
+      "prompt": "Match each task to the business function.",
+      "pairs": [
+        {
+          "left": "Advertising on radio",
+          "right": "Marketing"
+        },
+        {
+          "left": "Interviewing new staff",
+          "right": "Human resources"
+        },
+        {
+          "left": "Drawing up a budget",
+          "right": "Financial"
+        },
+        {
+          "left": "Sponsoring a school sports day",
+          "right": "Public relations"
+        }
+      ]
+    },
+    {
+      "id": "link",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Using bread as an example, explain how the three sectors depend on each other.",
+      "memo": "✓ Primary: a farmer grows wheat (1)\n✓ Secondary: a mill makes flour and a bakery bakes bread (1)\n✓ Tertiary: trucks transport it and shops sell it (1)"
+    },
+    {
+      "id": "formal-informal",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Give TWO differences between the formal and informal sectors.",
+      "memo": "Any two (1 each): registered vs not registered; pay tax vs usually no tax; follow labour laws/contracts vs little security; large vs small"
+    },
+    {
+      "id": "purchasing",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Describe the purchasing function.",
+      "memo": "✓ Buying raw materials, stock and equipment (1)\n✓ of the right quality and quantity, at the right price and time (1)"
+    },
+    {
+      "id": "four-ps",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Name the 4 Ps of marketing.",
+      "memo": "✓✓ Product, price, place, promotion (½ each)"
+    }
+  ]
+}

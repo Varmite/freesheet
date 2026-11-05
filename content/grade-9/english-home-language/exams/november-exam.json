@@ -1,0 +1,283 @@
+{
+  "id": "november-exam",
+  "title": "November Examination: Language in Context",
+  "durationMinutes": 120,
+  "totalMarks": 80,
+  "instructions": [
+    "This paper consists of FIVE sections. Answer ALL the questions.",
+    "Read the passages carefully before answering.",
+    "Answer in full sentences unless you are asked for one word or a quotation.",
+    "Use your own words unless you are asked to quote."
+  ],
+  "sections": [
+    {
+      "title": "SECTION A: Comprehension",
+      "context": [
+        {
+          "type": "passage",
+          "title": "The Silent Classroom (an original article written for this exam; the people and statistics are fictional)",
+          "text": "1  At 07:30 every weekday, Mr Dube's Grade 9 class at Lethabo Secondary does something unusual: absolutely nothing. For ten minutes, thirty-eight teenagers sit in silence. No phones, no talking, no textbooks. Just breathing.\n\n2  'At first they thought I had lost my mind,' Mr Dube laughs. 'One boy asked if this was a punishment. Now, if I forget, they remind me.'\n\n3  The idea came to him after a difficult year. Learners were arriving at school exhausted, anxious and distracted. Fights broke out over small things. 'I realised we were asking children to learn while their minds were like a taxi rank at rush hour,' he says.\n\n4  The results have surprised even the sceptics. According to the school's own records, detentions in his class fell by half within one term, and the class average rose by six percentage points. Of course, a single class cannot prove that silence alone made the difference; the learners also had a new Maths teacher that year.\n\n5  Still, the learners are convinced. 'It's the only quiet I get all day,' says Amahle, 15, who shares a room with three younger siblings. 'At home it's noisy, on the taxi it's noisy, online it's noisy. Here, my head gets a chance to catch up with me.'\n\n6  Other teachers at Lethabo are now trying the idea. The principal, Mrs Khoza, is cautious but hopeful. 'Ten minutes is a small price to pay,' she says, 'if it helps our learners find a little calm in a very loud world.'"
+        }
+      ],
+      "questions": [
+        {
+          "id": "a1",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "How many learners are in Mr Dube's class?",
+          "answer": 38,
+          "tolerance": 0
+        },
+        {
+          "id": "a2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What did one boy think the silence was at first, and why might he have thought this?",
+          "memo": "✓ A punishment (1)\n✓ Silence is often used as a punishment at school / it was unusual and unexplained (1)"
+        },
+        {
+          "id": "a3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Discuss the simile in paragraph 3: 'their minds were like a taxi rank at rush hour'.",
+          "memo": "✓ Simile: the learners' minds are compared to a busy taxi rank (1)\n✓ A taxi rank at rush hour is crowded, noisy and chaotic (1)\n✓ It shows their thoughts were racing, stressed and unable to focus (1)"
+        },
+        {
+          "id": "a4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "State TWO improvements recorded after one term.",
+          "memo": "✓ Detentions fell by half (1)\n✓ The class average rose by six percentage points (1)"
+        },
+        {
+          "id": "a5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Why does the writer mention the new Maths teacher in paragraph 4? What does this suggest about the writer?",
+          "memo": "✓ To show that another factor might explain the better results (1)\n✓ so the silence alone cannot be proven to have caused them (1)\n✓ The writer is balanced / careful / fair, not simply praising the idea (1)"
+        },
+        {
+          "id": "a6",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain what Amahle means by 'my head gets a chance to catch up with me'.",
+          "memo": "✓ Her life is so busy and noisy that her thoughts feel left behind (1)\n✓ The silence gives her time to calm down, reflect and process her thoughts (1)"
+        },
+        {
+          "id": "a7",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Identify the repetition in paragraph 5 and explain its effect.",
+          "memo": "✓ 'it's noisy' is repeated three times (1)\n✓ It emphasises that noise surrounds her everywhere, making the classroom's silence precious (1)"
+        },
+        {
+          "id": "a8",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Give ONE word from paragraph 6 that shows the principal is careful in her opinion.",
+          "answers": [
+            "cautious"
+          ]
+        },
+        {
+          "id": "a9",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the contrast in the final sentence: 'a little calm in a very loud world'.",
+          "memo": "✓ 'a little calm' is contrasted with 'a very loud world' (1)\n✓ It shows that even a small amount of peace is valuable when life is so busy and noisy (1)"
+        },
+        {
+          "id": "a10",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Is the article mainly fact or opinion? Support your answer with TWO examples.",
+          "memo": "✓ It mixes both, but reports facts and quotes opinions (1)\n✓ Fact, e.g. 'detentions in his class fell by half' (1)\n✓ Opinion, e.g. 'Ten minutes is a small price to pay' (1)"
+        },
+        {
+          "id": "a11",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Would you like your school to introduce ten minutes of silence each morning? Give your view with TWO reasons, one of which refers to the article.",
+          "memo": "✓ Clear opinion (1)\n✓ Reason referring to the article, explained (2)\n✓ Own reason (1)"
+        }
+      ]
+    },
+    {
+      "title": "SECTION B: Summary",
+      "instructions": "Use the article in Section A.",
+      "questions": [
+        {
+          "id": "b1",
+          "type": "open",
+          "marks": 10,
+          "prompt": "Summarise the reasons for and benefits of the silent ten minutes, in SEVEN points, as a fluent paragraph of no more than 80 words. State your word count.",
+          "memo": "Points (7, 1 each, any seven): learners arrived tired; anxious; distracted; fights over small things; minds overloaded/busy; fewer detentions; better marks; calm/quiet time not found elsewhere; time to process thoughts; learners now value it\nLanguage (3): fluent paragraph (1); own words (1); within limit with word count (1)"
+        }
+      ]
+    },
+    {
+      "title": "SECTION C: Visual literacy",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Described cartoon (original)",
+          "text": "Frame 1: A teacher stands in front of a class holding a sign saying 'SILENT MINUTES BEGIN NOW'. Every learner is looking at a phone hidden under the desk.\nFrame 2: The teacher, smiling, collects all the phones in a box.\nFrame 3: The classroom is silent. Every learner is fast asleep on their desk. A thought bubble above the teacher says: 'Well… it IS quiet.'"
+        }
+      ],
+      "questions": [
+        {
+          "id": "c1",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What do the learners' actions in Frame 1 suggest about their attitude to the silent minutes?",
+          "memo": "✓ They are not taking it seriously (1)\n✓ They cannot let go of their phones / are addicted (1)"
+        },
+        {
+          "id": "c2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain the humour in Frame 3.",
+          "memo": "✓ The teacher wanted calm, focused learners (1)\n✓ but without their phones they fall asleep (1)\n✓ The thought bubble ironically admits that the goal of quiet has been reached, though not as intended (1)"
+        },
+        {
+          "id": "c3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is the word 'IS' written in capital letters?",
+          "memo": "✓ It shows emphasis / stress in the teacher's thought (1)\n✓ conveying a resigned or ironic tone: it is technically quiet, but not what she wanted (1)"
+        },
+        {
+          "id": "c4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Compare the message of the cartoon with the message of the article.",
+          "memo": "✓ The article presents silence as beneficial and calming (1)\n✓ The cartoon humorously suggests it may not work as intended / that learners are exhausted (1)\n✓ Both suggest teenagers are overloaded and tired (similarity) (1)"
+        }
+      ]
+    },
+    {
+      "title": "SECTION D: Language structures and conventions",
+      "questions": [
+        {
+          "id": "d1",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Change to the passive voice: 'Mr Dube started the silent minutes.'",
+          "memo": "✓ The silent minutes were started (1)\n✓ by Mr Dube. (1)"
+        },
+        {
+          "id": "d2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Change to reported speech: 'Now, if I forget, they remind me,' said Mr Dube.",
+          "memo": "✓ Mr Dube said that (1)\n✓ if he forgot (1)\n✓ they reminded him then (1)"
+        },
+        {
+          "id": "d3",
+          "type": "mcq",
+          "prompt": "Choose the correct verb: 'Each of the learners ___ a notebook.'",
+          "options": [
+            "have",
+            "has",
+            "are having",
+            "were having"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "d4",
+          "type": "mcq",
+          "prompt": "Name the tense: 'The learners have been sitting quietly for ten minutes.'",
+          "options": [
+            "Present perfect continuous",
+            "Past continuous",
+            "Present perfect",
+            "Future perfect"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "d5",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Give an antonym for 'sceptics' as used in paragraph 4. (one word)",
+          "answers": [
+            "believers",
+            "supporters",
+            "optimists"
+          ]
+        },
+        {
+          "id": "d6",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite in inclusive language: 'Every learner must switch off his phone before the chairman arrives.'",
+          "memo": "✓ 'Every learner must switch off their phone' / 'Learners must switch off their phones' (1)\n✓ 'chairperson' (1)"
+        },
+        {
+          "id": "d7",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the difference in connotation between 'quiet' and 'deathly silent'.",
+          "memo": "✓ 'Quiet' is neutral to positive: calm, peaceful (1)\n✓ 'Deathly silent' is negative: eerie, frightening (1)"
+        },
+        {
+          "id": "d8",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Combine into one complex sentence: 'Amahle shares a room with three siblings. She values the quiet at school.'",
+          "memo": "✓✓ e.g. 'Because Amahle shares a room with three siblings, she values the quiet at school.' (2)"
+        },
+        {
+          "id": "d9",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Identify the punctuation mark used.",
+          "pairs": [
+            {
+              "left": "Joins two closely related main clauses",
+              "right": "Semicolon"
+            },
+            {
+              "left": "Introduces a list",
+              "right": "Colon"
+            },
+            {
+              "left": "Shows possession",
+              "right": "Apostrophe"
+            }
+          ]
+        },
+        {
+          "id": "d10",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Correct the errors: 'Their going to try the silent minutes, irregardless of what there friends say.'",
+          "memo": "✓ They're (1)\n✓ regardless / their (1)"
+        },
+        {
+          "id": "d11",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Give the past participle of ‘begin’.",
+          "answers": [
+            "begun"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SECTION E: Transactional writing",
+      "instructions": "Write about 180 to 200 words.",
+      "questions": [
+        {
+          "id": "e1",
+          "type": "open",
+          "marks": 15,
+          "prompt": "Write a formal letter to your principal proposing that your school introduce ten silent minutes at the start of each day. Use ideas from the article and your own ideas.",
+          "memo": "Format (3): addresses and date; salutation and subject line; correct closing (Yours faithfully/sincerely) with name\nContent (7): clear purpose in the introduction; at least three well-developed reasons (e.g. stress, concentration, behaviour, results); acknowledges a concern and responds; practical suggestion for how it would work; polite conclusion\nLanguage (5): formal register; varied vocabulary and sentence structures; accurate grammar, spelling and punctuation"
+        }
+      ]
+    }
+  ]
+}

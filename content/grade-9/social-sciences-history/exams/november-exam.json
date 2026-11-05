@@ -1,0 +1,58 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of THREE questions. Answer ALL the questions.",
+    "Read the sources carefully before answering the questions about them.",
+    "Use your own words unless you are asked to quote from a source."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Knowledge and understanding",
+      "questions": [
+        { "id": "q1-1", "type": "mcq", "prompt": "Germany's invasion of which country started World War II in 1939?", "options": ["France", "Poland", "Czechoslovakia", "Austria"], "answer": 1 },
+        { "id": "q1-2", "type": "mcq", "prompt": "The Nuremberg Laws of 1935…", "options": ["took away Jewish people's citizenship", "set up the Hitler Youth", "ended the war", "created the United Nations"], "answer": 0 },
+        { "id": "q1-3", "type": "mcq", "prompt": "Which law classified every South African by race?", "options": ["Group Areas Act", "Bantu Education Act", "Population Registration Act", "Natives Land Act"], "answer": 2 },
+        { "id": "q1-4", "type": "mcq", "prompt": "The Freedom Charter was adopted at…", "options": ["Sharpeville", "Kliptown", "Rivonia", "Robben Island"], "answer": 1 },
+        { "id": "q1-5", "type": "mcq", "prompt": "The Berlin Wall was opened in…", "options": ["1961", "1976", "1989", "1994"], "answer": 2 },
+        { "id": "q1-6", "type": "match", "marks": 5, "prompt": "Match each date to the event.", "pairs": [
+          { "left": "9 August 1956", "right": "Women's March to the Union Buildings" },
+          { "left": "21 March 1960", "right": "Sharpeville massacre" },
+          { "left": "16 June 1976", "right": "Soweto Uprising" },
+          { "left": "11 February 1990", "right": "Release of Nelson Mandela" },
+          { "left": "27 April 1994", "right": "First democratic election" }
+        ] },
+        { "id": "q1-7", "type": "truefalse", "prompt": "Umkhonto we Sizwe was formed before the Sharpeville massacre.", "answer": false },
+        { "id": "q1-8", "type": "truefalse", "prompt": "Steve Biko died in police custody in 1977.", "answer": true },
+        { "id": "q1-9", "type": "short", "marks": 1, "prompt": "Name the policy of giving in to Hitler's demands to avoid war.", "answers": ["appeasement"] },
+        { "id": "q1-10", "type": "short", "marks": 1, "prompt": "Who chaired the Truth and Reconciliation Commission?", "answers": ["desmond tutu", "archbishop desmond tutu", "tutu"] },
+        { "id": "q1-11", "type": "short", "marks": 1, "prompt": "Name the 1962 crisis over Soviet missiles close to the USA.", "answers": ["cuban missile crisis", "the cuban missile crisis"] }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Source-based questions: The Soweto Uprising",
+      "context": [
+        { "type": "passage", "title": "Source A: A learner's memory of 16 June 1976 (a composite account written for this exam, based on published testimonies)", "text": "We had agreed that the march would be peaceful. We carried placards and sang freedom songs. When we reached Orlando West, the police were waiting. A teargas canister landed near us and then we heard shots. A small boy fell. We did not understand why they were shooting at children." },
+        { "type": "passage", "title": "Source B: A government minister's explanation (a composite based on official statements in June 1976)", "text": "The riots were caused by agitators who misled the children. The police acted to protect lives and property after they were attacked with stones." },
+        { "type": "paragraph", "text": "Source C: In 1975 the government spent about R644 on each white learner and about R42 on each black learner." }
+      ],
+      "questions": [
+        { "id": "q2-1", "type": "open", "marks": 2, "prompt": "According to Source A, how did the learners plan to protest?", "memo": "✓ Peacefully (1)\n✓ marching with placards and singing freedom songs (1)" },
+        { "id": "q2-2", "type": "open", "marks": 2, "prompt": "Who does Source B blame for the unrest, and how does it justify the police's actions?", "memo": "✓ Agitators who misled the children (1)\n✓ The police were protecting lives and property after being stoned (1)" },
+        { "id": "q2-3", "type": "open", "marks": 4, "prompt": "Explain how Sources A and B differ, and which you consider more reliable. Give reasons.", "memo": "✓ A says the march was peaceful and police shot children; B says police reacted to violence (1)\n✓ Source A is more reliable (1)\n✓ Photographs and many testimonies support it / children were unarmed (1)\n✓ The government had a motive to deny responsibility (1)" },
+        { "id": "q2-4", "type": "numeric", "marks": 2, "prompt": "Use Source C. About how many times more was spent on a white learner than on a black learner? Round to the nearest whole number.", "answer": 15, "tolerance": 0.5 },
+        { "id": "q2-5", "type": "open", "marks": 2, "prompt": "Explain how Source C helps to explain why learners were angry in 1976.", "memo": "✓ Black schools received far less money (1)\n✓ leading to overcrowding, few books and poor teaching; the Afrikaans decree made this worse (1)" },
+        { "id": "q2-6", "type": "open", "marks": 8, "prompt": "Using the sources and your own knowledge, write a paragraph of about 8 to 10 lines explaining the causes and results of the Soweto Uprising.", "memo": "Causes (up to 4): Bantu Education; unequal funding (Source C); Afrikaans Medium Decree; Black Consciousness; SSRC planned march\nResults (up to 3): decree withdrawn; youth into exile/MK; international condemnation; Youth Day\nStructure: clear and well organised paragraph (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Extended writing",
+      "instructions": "Answer the question in about one page.",
+      "questions": [
+        { "id": "q3-1", "type": "open", "marks": 15, "prompt": "'The years 1990 to 1994 were a turning point in South African history.' Write an essay in which you explain why the apartheid government agreed to negotiate, the main events and challenges of the negotiations, and the significance of the 1994 election.", "memo": "Introduction with a clear line of argument (2)\nPressures: internal resistance (UDF, COSATU), sanctions, economic crisis, end of the Cold War (4)\nEvents and challenges: De Klerk's speech, Mandela's release, CODESA, violence (Boipatong, Bisho), Hani's assassination, compromises (4)\nSignificance of 1994: first democratic election, Mandela president, Constitution and Bill of Rights, TRC (3)\nConclusion (2)" }
+      ]
+    }
+  ]
+}

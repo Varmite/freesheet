@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "grade": 11,
+  "id": "mathematics",
+  "name": "Mathematics",
+  "description": "CAPS Grade 11 Mathematics: exponents and surds, quadratic equations and inequalities, quadratic number patterns, analytical geometry, functions, trigonometry, circle geometry, measurement, finance, probability and statistics.",
+  "topics": [
+    { "id": "exponents-and-surds", "title": "Exponents and Surds", "term": 1 },
+    { "id": "equations-and-inequalities", "title": "Equations and Inequalities", "term": 1 },
+    { "id": "number-patterns", "title": "Number Patterns: Quadratic Sequences", "term": 1 },
+    { "id": "analytical-geometry", "title": "Analytical Geometry", "term": 1 },
+    { "id": "functions", "title": "Functions: Parabola, Hyperbola and Exponential", "term": 2 },
+    { "id": "trigonometric-identities", "title": "Trigonometry: Identities, Reduction Formulae and Equations", "term": 2 },
+    { "id": "trigonometric-graphs", "title": "Trigonometric Graphs", "term": 2 },
+    { "id": "measurement", "title": "Measurement: Surface Area and Volume", "term": 3 },
+    { "id": "euclidean-geometry", "title": "Euclidean Geometry: Circle Theorems", "term": 3 },
+    { "id": "sine-cosine-and-area-rules", "title": "Trigonometry: Sine, Cosine and Area Rules", "term": 3 },
+    { "id": "finance-growth-and-decay", "title": "Finance, Growth and Decay", "term": 3 },
+    { "id": "probability", "title": "Probability", "term": 4 },
+    { "id": "statistics", "title": "Statistics", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-paper-1", "title": "November Examination: Paper 1", "durationMinutes": 120, "totalMarks": 100 },
+    { "id": "november-paper-2", "title": "November Examination: Paper 2", "durationMinutes": 120, "totalMarks": 100 }
+  ]
+}

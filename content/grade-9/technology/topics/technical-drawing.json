@@ -1,0 +1,57 @@
+{
+  "id": "technical-drawing",
+  "title": "Technical Drawing: Orthographic, Isometric and Perspective",
+  "term": 1,
+  "summary": "First-angle orthographic projection with hidden detail, converting between orthographic and isometric views, one- and two-point perspective, dimensioning rules and working drawings.",
+  "notes": [
+    { "type": "heading", "text": "Working drawings" },
+    { "type": "paragraph", "text": "A **working drawing** gives all the information needed to make a product: accurate views, **dimensions**, materials, scale and a title block. It is usually drawn in **first-angle orthographic projection**." },
+    { "type": "heading", "text": "First-angle orthographic projection" },
+    { "type": "table", "headers": ["View", "Seen from", "Placed"], "rows": [
+      ["Front view (front elevation)", "The front", "Top left of the page"],
+      ["Left view (side elevation)", "The left side", "To the **right** of the front view"],
+      ["Top view (plan)", "Above", "**Below** the front view"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "First-angle projection is shown by its symbol: a truncated cone drawn with a front view and a side view. Hidden edges are drawn as thin **dashed** lines, and holes have **centre lines** (long dash, short dash)." },
+    { "type": "heading", "text": "From orthographic to isometric" },
+    { "type": "list", "ordered": true, "items": [
+      "Draw an isometric **crate** (box) using the overall length, width and height from the orthographic views: verticals stay vertical; length and width lines are at 30°.",
+      "Mark the positions of features on the edges of the crate, measuring only along the three isometric axes.",
+      "Join the points and erase construction lines. Darken the outlines.",
+      "Circles become ellipses in isometric drawing."
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "In isometric drawing you may only measure true lengths **along** the isometric axes. Sloping (inclined) lines must be found by marking their end points first and then joining them." },
+    { "type": "heading", "text": "Perspective drawing" },
+    { "type": "table", "headers": ["Type", "How it is drawn", "Used for"], "rows": [
+      ["One-point perspective", "One vanishing point on the horizon line; front faces are drawn flat and all depth lines go towards the vanishing point", "Drawing a road, a room or a passage seen from the front"],
+      ["Two-point perspective", "Two vanishing points on the horizon line; vertical lines stay vertical and all other edges go to one of the two points", "Drawing buildings and products seen from a corner"]
+    ] },
+    { "type": "paragraph", "text": "The **horizon line** is at the viewer's eye level. Objects drawn above it are seen from below; objects below it are seen from above. Perspective makes objects look realistic because distant parts appear smaller, but measurements cannot be taken from it." },
+    { "type": "heading", "text": "Dimensioning rules" },
+    { "type": "list", "items": [
+      "Dimensions are in **millimetres**; the unit is not written.",
+      "Dimension lines are thin, with arrowheads touching the **extension (projection) lines**; leave a small gap between the object and the extension line.",
+      "Numbers are written above the dimension line, readable from the **bottom** or the **right-hand side** of the page.",
+      "Do not dimension the same feature twice; place dimensions outside the view where possible.",
+      "Circles are dimensioned with Ø (diameter) and arcs with R (radius)."
+    ] },
+    { "type": "heading", "text": "The title block" },
+    { "type": "paragraph", "text": "A title block in the bottom right corner shows the **title** of the drawing, the **name** of the person who drew it, the **date**, the **scale**, the **projection symbol** and the **drawing number**." }
+  ],
+  "questions": [
+    { "id": "left-view", "type": "mcq", "prompt": "In first-angle projection, where is the left view placed?", "options": ["To the left of the front view", "To the right of the front view", "Above the front view", "Below the top view"], "answer": 1 },
+    { "id": "hidden", "type": "short", "prompt": "What type of line shows hidden edges? (one word: … lines)", "answers": ["dashed", "dashed lines", "broken", "hidden"] },
+    { "id": "circle-iso", "type": "mcq", "prompt": "In isometric drawing, a circle is drawn as…", "options": ["a circle", "an ellipse", "a square", "a triangle"], "answer": 1 },
+    { "id": "two-point", "type": "numeric", "prompt": "How many vanishing points are used in two-point perspective?", "answer": 2, "tolerance": 0 },
+    { "id": "diameter", "type": "short", "prompt": "Which symbol is placed before a diameter dimension?", "answers": ["ø", "Ø", "diameter symbol"] },
+    { "id": "measure-persp", "type": "truefalse", "prompt": "Accurate measurements can be taken from a perspective drawing.", "answer": false },
+    { "id": "views", "type": "match", "marks": 3, "prompt": "Match each view to its position in first-angle projection.", "pairs": [
+      { "left": "Front view", "right": "Top left" },
+      { "left": "Top view", "right": "Below the front view" },
+      { "left": "Left view", "right": "Right of the front view" }
+    ] },
+    { "id": "dim-rules", "type": "open", "marks": 3, "prompt": "Give THREE rules for dimensioning a working drawing.", "memo": "Any three (1 each): dimensions in mm without unit; thin dimension lines with arrowheads; numbers readable from bottom or right; no duplicate dimensions; place outside the view; Ø for diameter and R for radius; small gap between object and extension lines" },
+    { "id": "title-block", "type": "open", "marks": 3, "prompt": "Name THREE items that must appear in a title block.", "memo": "Any three (1 each): title; name; date; scale; projection symbol; drawing number" },
+    { "id": "persp-use", "type": "open", "marks": 2, "prompt": "Why would a designer use two-point perspective to present a product to a client?", "memo": "✓ It makes the product look realistic / as the eye sees it (1)\n✓ so the client can easily imagine what it will look like (1)" }
+  ]
+}

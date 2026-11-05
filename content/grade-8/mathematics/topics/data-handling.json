@@ -1,0 +1,419 @@
+{
+  "id": "data-handling",
+  "title": "Data Handling",
+  "term": 4,
+  "summary": "Collect, organise and summarise data using frequency tables, stem-and-leaf displays and the mean, median, mode and range; represent it in bar graphs, histograms and pie charts; and interpret and report on it, including recognising bias.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "The data cycle"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Pose a question**, e.g. \"How do learners in our school travel to school?\"",
+        "**Collect** data with a survey, questionnaire, observation or experiment.",
+        "**Organise** the data in tally and frequency tables or stem-and-leaf displays.",
+        "**Summarise** it with measures such as the mean, median, mode and range.",
+        "**Represent** it in a suitable graph.",
+        "**Interpret** and **report**: answer the question and explain your conclusions."
+      ]
+    },
+    {
+      "type": "definition",
+      "term": "Population and sample",
+      "text": "The **population** is the whole group you want to know about (e.g. all 900 learners in the school). A **sample** is a smaller group chosen from the population. A good sample is **representative**: it includes all the different kinds of people in the population."
+    },
+    {
+      "type": "definition",
+      "term": "Bias",
+      "text": "A sample or question is **biased** if it favours certain answers. Asking only Grade 12s about the school uniform, or asking \"Don't you agree that homework is a waste of time?\", gives biased results."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Categorical data** is described in words (favourite sport, type of transport). **Numerical data** is numbers: **discrete** data is counted (number of siblings) and **continuous** data is measured (height, time)."
+    },
+    {
+      "type": "heading",
+      "text": "Organising data"
+    },
+    {
+      "type": "paragraph",
+      "text": "While collecting data, keep count with **tally marks**: draw one stroke for each answer, and every fifth stroke is drawn across the previous four, making a bundle of five that is quick to count. Then write the totals (the **frequencies**) in a frequency table."
+    },
+    {
+      "type": "table",
+      "caption": "Frequency table: how 30 learners travel to school",
+      "headers": [
+        "Transport",
+        "Frequency"
+      ],
+      "rows": [
+        [
+          "Walk",
+          "12"
+        ],
+        [
+          "Taxi",
+          "8"
+        ],
+        [
+          "Bus",
+          "6"
+        ],
+        [
+          "Car",
+          "4"
+        ],
+        [
+          "Total",
+          "30"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When there are many different numerical values, group them into **class intervals** of equal width, such as $0-9$, $10-19$, $20-29$. A **stem-and-leaf display** keeps the actual values: the stem is the tens digit and the leaves are the units digits."
+    },
+    {
+      "type": "table",
+      "caption": "Stem-and-leaf display of test marks out of 50 (3 | 4 means 34)",
+      "headers": [
+        "Stem",
+        "Leaves"
+      ],
+      "rows": [
+        [
+          "1",
+          "5  8"
+        ],
+        [
+          "2",
+          "2  4  4  7  9"
+        ],
+        [
+          "3",
+          "0  1  4  4  4  8"
+        ],
+        [
+          "4",
+          "2  5  9"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Summarising data"
+    },
+    {
+      "type": "table",
+      "caption": "Measures of central tendency and spread",
+      "headers": [
+        "Measure",
+        "How to find it"
+      ],
+      "rows": [
+        [
+          "Mean (average)",
+          "Add all the values and divide by the number of values"
+        ],
+        [
+          "Median",
+          "Arrange the values in order; it is the middle value. With an even number of values, it is halfway between the two middle values"
+        ],
+        [
+          "Mode",
+          "The value that occurs most often (there may be more than one, or none)"
+        ],
+        [
+          "Range",
+          "Largest value minus smallest value (it measures spread)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1",
+      "problem": "Nine learners scored these marks out of 20: $12;\\ 15;\\ 9;\\ 18;\\ 15;\\ 11;\\ 15;\\ 20;\\ 14$. Find the mean, median, mode and range.",
+      "steps": [
+        "Order the data: $9;\\ 11;\\ 12;\\ 14;\\ 15;\\ 15;\\ 15;\\ 18;\\ 20$.",
+        "Mean: $\\dfrac{129}{9} = 14{,}33$ (to 2 decimal places).",
+        "Median: there are 9 values, so the middle one is the 5th: $15$.",
+        "Mode: $15$ (it occurs three times).",
+        "Range: $20 - 9 = 11$."
+      ],
+      "answer": "Mean $14{,}33$; median $15$; mode $15$; range $11$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: an even number of values",
+      "problem": "Find the median of $4;\\ 7;\\ 8;\\ 10;\\ 12;\\ 15$.",
+      "steps": [
+        "There are 6 values, so the two middle values are the 3rd and 4th: $8$ and $10$.",
+        "Median $= \\dfrac{8 + 10}{2} = 9$."
+      ],
+      "answer": "$9$"
+    },
+    {
+      "type": "callout",
+      "label": "Common mistake",
+      "text": "Always **order** the data before finding the median. The middle of $3;\\ 9;\\ 5;\\ 12;\\ 7$ as written is $5$, but the median is $7$ (from $3;\\ 5;\\ 7;\\ 9;\\ 12$)."
+    },
+    {
+      "type": "callout",
+      "label": "Remember",
+      "text": "An **outlier** is a value much bigger or smaller than the rest. It changes the **mean** a lot, but hardly changes the median. If a data set has an outlier, the median is often a better summary."
+    },
+    {
+      "type": "heading",
+      "text": "Representing data"
+    },
+    {
+      "type": "table",
+      "caption": "Choosing a graph",
+      "headers": [
+        "Graph",
+        "Use it for"
+      ],
+      "rows": [
+        [
+          "Bar graph",
+          "Comparing categories; bars are separate"
+        ],
+        [
+          "Double bar graph",
+          "Comparing two data sets for the same categories"
+        ],
+        [
+          "Histogram",
+          "Grouped numerical data; bars touch because the intervals are continuous"
+        ],
+        [
+          "Pie chart",
+          "Showing parts of a whole (percentages or fractions of the total)"
+        ],
+        [
+          "Line graph",
+          "Showing change over time (e.g. temperature during a day)"
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" font-family=\"sans-serif\" font-size=\"12\"><g stroke=\"#ccc\" stroke-width=\"1\"><line x1=\"50\" y1=\"150\" x2=\"310\" y2=\"150\"/><line x1=\"50\" y1=\"130\" x2=\"310\" y2=\"130\"/><line x1=\"50\" y1=\"110\" x2=\"310\" y2=\"110\"/><line x1=\"50\" y1=\"90\" x2=\"310\" y2=\"90\"/><line x1=\"50\" y1=\"70\" x2=\"310\" y2=\"70\"/><line x1=\"50\" y1=\"50\" x2=\"310\" y2=\"50\"/><line x1=\"50\" y1=\"30\" x2=\"310\" y2=\"30\"/></g><g stroke=\"#000\" stroke-width=\"1.5\"><rect x=\"70\" y=\"50\" width=\"40\" height=\"120\" fill=\"#bbb\"/><rect x=\"130\" y=\"90\" width=\"40\" height=\"80\" fill=\"#bbb\"/><rect x=\"190\" y=\"110\" width=\"40\" height=\"60\" fill=\"#bbb\"/><rect x=\"250\" y=\"130\" width=\"40\" height=\"40\" fill=\"#bbb\"/><line x1=\"50\" y1=\"170\" x2=\"310\" y2=\"170\"/><line x1=\"50\" y1=\"170\" x2=\"50\" y2=\"20\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"90\" y=\"186\">Walk</text><text x=\"150\" y=\"186\">Taxi</text><text x=\"210\" y=\"186\">Bus</text><text x=\"270\" y=\"186\">Car</text><text x=\"180\" y=\"204\">Type of transport</text><text x=\"40\" y=\"174\">0</text><text x=\"40\" y=\"134\">4</text><text x=\"40\" y=\"94\">8</text><text x=\"40\" y=\"54\">12</text><text x=\"14\" y=\"100\" transform=\"rotate(-90 14 100)\">Number of learners</text></g></svg>",
+      "caption": "Bar graph: how 30 learners travel to school (Walk 12, Taxi 8, Bus 6, Car 4)."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Pie charts.** Each category gets a sector whose angle is its fraction of $360^\\circ$."
+    },
+    {
+      "type": "formula",
+      "latex": "\\text{angle of sector} = \\frac{\\text{frequency}}{\\text{total}} \\times 360^\\circ",
+      "caption": "Angle for a pie chart"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: pie chart angles",
+      "problem": "Calculate the pie chart angles for the transport data.",
+      "steps": [
+        "Walk: $\\frac{12}{30} \\times 360^\\circ = 144^\\circ$",
+        "Taxi: $\\frac{8}{30} \\times 360^\\circ = 96^\\circ$",
+        "Bus: $\\frac{6}{30} \\times 360^\\circ = 72^\\circ$",
+        "Car: $\\frac{4}{30} \\times 360^\\circ = 48^\\circ$",
+        "Check: $144 + 96 + 72 + 48 = 360$ ✓"
+      ],
+      "answer": "$144^\\circ$, $96^\\circ$, $72^\\circ$, $48^\\circ$"
+    },
+    {
+      "type": "heading",
+      "text": "Interpreting and reporting"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you report, answer the original question, refer to the summary measures and the graph, and mention anything that might make the results unreliable, such as a small or biased sample."
+    },
+    {
+      "type": "callout",
+      "label": "Misleading graphs",
+      "text": "Look at the axes carefully. A vertical axis that does not start at $0$ can make small differences look huge. Uneven scales, missing labels and 3D effects can also mislead."
+    },
+    {
+      "type": "heading",
+      "text": "Summary"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Data cycle: question, collect, organise, summarise, represent, interpret and report.",
+        "A sample should be representative and unbiased.",
+        "Mean = sum ÷ number of values; median = middle value of the ordered data; mode = most common value; range = largest − smallest.",
+        "Bar graphs compare categories; histograms show grouped numerical data with touching bars; pie charts show parts of a whole.",
+        "Pie chart angle $= \\frac{\\text{frequency}}{\\text{total}} \\times 360^\\circ$.",
+        "Check graphs for misleading scales."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "numeric",
+      "prompt": "Find the mean of $4;\\ 7;\\ 8;\\ 10;\\ 11$.",
+      "answer": 8,
+      "tolerance": 0,
+      "explanation": "Sum $= 40$; $40 \\div 5 = 8$."
+    },
+    {
+      "id": "q2",
+      "type": "numeric",
+      "prompt": "Find the median of $3;\\ 9;\\ 5;\\ 12;\\ 7$.",
+      "answer": 7,
+      "tolerance": 0,
+      "explanation": "Ordered: $3;\\ 5;\\ 7;\\ 9;\\ 12$. The middle value is $7$."
+    },
+    {
+      "id": "q3",
+      "type": "numeric",
+      "prompt": "Find the mode of $2;\\ 3;\\ 3;\\ 5;\\ 7;\\ 3;\\ 8$.",
+      "answer": 3,
+      "tolerance": 0,
+      "explanation": "$3$ occurs three times, more than any other value."
+    },
+    {
+      "id": "q4",
+      "type": "numeric",
+      "prompt": "Find the range of $15;\\ 22;\\ 9;\\ 31;\\ 18$.",
+      "answer": 22,
+      "tolerance": 0,
+      "explanation": "$31 - 9 = 22$."
+    },
+    {
+      "id": "q5",
+      "type": "numeric",
+      "prompt": "Find the median of $4;\\ 7;\\ 8;\\ 10;\\ 12;\\ 15$.",
+      "answer": 9,
+      "tolerance": 0,
+      "explanation": "Even number of values: halfway between $8$ and $10$, which is $9$."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "Which type of graph is best for showing how a whole is divided into parts?",
+      "options": [
+        "Line graph",
+        "Histogram",
+        "Pie chart",
+        "Stem-and-leaf display"
+      ],
+      "answer": 2,
+      "explanation": "A pie chart shows each category as a fraction of the whole circle."
+    },
+    {
+      "id": "q7",
+      "type": "truefalse",
+      "prompt": "In a histogram, the bars touch each other.",
+      "answer": true,
+      "explanation": "A histogram shows continuous class intervals, so there are no gaps between the bars."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "In the bar graph in the notes, how many learners travel by taxi?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "The taxi bar reaches 8."
+    },
+    {
+      "id": "q9",
+      "type": "numeric",
+      "prompt": "12 out of 30 learners walk to school. What angle should the \"walk\" sector have in a pie chart, in degrees?",
+      "unit": "°",
+      "answer": 144,
+      "tolerance": 0,
+      "explanation": "$\\frac{12}{30} \\times 360 = 144$."
+    },
+    {
+      "id": "q10",
+      "type": "match",
+      "prompt": "Match each term with its meaning.",
+      "marks": 5,
+      "pairs": [
+        {
+          "left": "Population",
+          "right": "The whole group you want to know about"
+        },
+        {
+          "left": "Sample",
+          "right": "A smaller group chosen from the population"
+        },
+        {
+          "left": "Mode",
+          "right": "The value that occurs most often"
+        },
+        {
+          "left": "Median",
+          "right": "The middle value of the ordered data"
+        },
+        {
+          "left": "Range",
+          "right": "The largest value minus the smallest value"
+        }
+      ],
+      "explanation": "These are the key words of data handling."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "One very large value is added to a data set. Which measure changes the most?",
+      "options": [
+        "Mode",
+        "Median",
+        "Mean",
+        "None of them"
+      ],
+      "answer": 2,
+      "explanation": "The mean uses the size of every value, so an outlier pulls it strongly. The median only moves a little."
+    },
+    {
+      "id": "q12",
+      "type": "truefalse",
+      "prompt": "To find out what the whole school thinks about the uniform, it is fair to ask only the Grade 12 learners.",
+      "answer": false,
+      "explanation": "That sample is biased: it leaves out Grades 8 to 11, who may think differently."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Nine learners scored these marks out of 20: $12;\\ 15;\\ 9;\\ 18;\\ 15;\\ 11;\\ 15;\\ 20;\\ 14$. Calculate the mean (to two decimal places), the median, the mode and the range.",
+      "memo": "Mean $= 129 \\div 9 = 14{,}33$ ✓ (1)\nMedian $= 15$ (5th value of the ordered data) ✓ (1)\nMode $= 15$ ✓ (1)\nRange $= 20 - 9 = 11$ ✓ (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 2,
+      "prompt": "The mean of five numbers is $12$. Four of the numbers are $10$, $14$, $9$ and $15$. Find the fifth number.",
+      "memo": "Total $= 5 \\times 12 = 60$ ✓ (1)\nFifth number $= 60 - 48 = 12$ ✓ (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 4,
+      "prompt": "30 learners were asked how they travel to school: Walk 12, Taxi 8, Bus 6, Car 4. Calculate the angle of each sector for a pie chart.",
+      "memo": "Walk $144^\\circ$ ✓ (1)\nTaxi $96^\\circ$ ✓ (1)\nBus $72^\\circ$ ✓ (1)\nCar $48^\\circ$ ✓ (1)"
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 2,
+      "prompt": "A bar graph comparing two shops' sales has a vertical axis that starts at R50 000 instead of R0. Explain why this graph could be misleading.",
+      "memo": "Starting the axis above zero cuts off the bottom of the bars ✓ (1)\nso a small difference in sales looks much bigger than it really is ✓ (1)"
+    }
+  ]
+}

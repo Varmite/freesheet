@@ -1,0 +1,59 @@
+{
+  "id": "critical-language-awareness",
+  "title": "Critical Language Awareness",
+  "term": 4,
+  "summary": "How language can manipulate and include or exclude people: denotation and connotation, emotive and loaded language, bias, stereotyping, euphemism, propaganda, and inclusive language.",
+  "notes": [
+    { "type": "heading", "text": "Language is never neutral" },
+    { "type": "paragraph", "text": "**Critical language awareness** means understanding how language is used to shape what we think and feel, to give power to some people and to exclude others. Advertisers, politicians, journalists and social-media users all choose words deliberately." },
+    { "type": "heading", "text": "Denotation and connotation" },
+    { "type": "list", "items": [
+      "**Denotation**: the dictionary meaning of a word.",
+      "**Connotation**: the associations and feelings a word carries.",
+      "*Home* and *house* have similar denotations, but *home* suggests warmth and belonging.",
+      "*Protesters*, *activists* and *mob* can describe the same group; each gives a very different impression."
+    ] },
+    { "type": "heading", "text": "Techniques of manipulation" },
+    { "type": "table", "headers": ["Technique", "Meaning", "Example"], "rows": [
+      ["Emotive / loaded language", "Words chosen to stir strong feelings", "'Greedy bosses are destroying our future.'"],
+      ["Bias", "Presenting only one side", "A report quoting only supporters of a new mall"],
+      ["Stereotyping", "Treating all members of a group as the same", "'Teenagers are always on their phones.'"],
+      ["Euphemism", "A mild word that hides something unpleasant", "'Passed away' for died; 'collateral damage' for civilian deaths"],
+      ["Generalisation", "A broad claim based on little evidence", "'Everyone knows that…'"],
+      ["Propaganda", "Biased information spread to promote a political cause, often using fear, slogans and repetition", "Wartime posters showing the enemy as monsters"],
+      ["Sarcasm", "Saying the opposite of what you mean in order to mock", "'Oh, great, another power cut.'"],
+      ["Jargon", "Specialised language that excludes outsiders", "Legal or technical terms in a public notice"]
+    ] },
+    { "type": "heading", "text": "Inclusive and exclusive language" },
+    { "type": "paragraph", "text": "Language can **exclude** people by ignoring them or using offensive terms. **Inclusive language** respects everyone." },
+    { "type": "table", "headers": ["Exclusive / outdated", "Inclusive"], "rows": [
+      ["chairman, policeman, fireman", "chairperson, police officer, firefighter"],
+      ["mankind", "humankind, people"],
+      ["'Every learner must bring his book.'", "'Every learner must bring their book.' / 'Learners must bring their books.'"],
+      ["'the disabled'", "'people with disabilities'"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Racist, sexist and xenophobic language, including slurs, can be hate speech, which is not protected by the right to freedom of expression in the Constitution." },
+    { "type": "example", "title": "Analysing two headlines", "problem": "Compare the headlines: (A) 'Brave residents march for clean water' and (B) 'Angry mob blocks roads'.", "steps": [
+      "Both may describe the same event.",
+      "Headline A uses positive connotations ('brave', 'residents', 'march') and focuses on the cause, encouraging sympathy.",
+      "Headline B uses negative connotations ('angry', 'mob', 'blocks') and focuses on disruption, encouraging disapproval."
+    ], "answer": "Word choice reveals the writer's attitude and influences the reader." }
+  ],
+  "questions": [
+    { "id": "denotation", "type": "short", "prompt": "What is the dictionary meaning of a word called?", "answers": ["denotation", "the denotation"] },
+    { "id": "euphemism", "type": "mcq", "prompt": "'He was let go by the company' instead of 'He was fired' is an example of…", "options": ["sarcasm", "euphemism", "jargon", "propaganda"], "answer": 1 },
+    { "id": "inclusive", "type": "mcq", "prompt": "Which is the most inclusive term?", "options": ["Fireman", "Firefighter", "Fire-boy", "Fire lady"], "answer": 1 },
+    { "id": "stereotype", "type": "truefalse", "prompt": "'All boys are good at sport' is a stereotype.", "answer": true },
+    { "id": "techniques", "type": "match", "marks": 4, "prompt": "Identify the technique.", "pairs": [
+      { "left": "'Wow, I just love waiting in queues for three hours.'", "right": "Sarcasm" },
+      { "left": "'Everyone agrees this is the best school.'", "right": "Generalisation" },
+      { "left": "'Ruthless thugs attacked innocent shoppers.'", "right": "Emotive language" },
+      { "left": "'Pursuant to clause 4(b), the party of the first part…'", "right": "Jargon" }
+    ] },
+    { "id": "headlines", "type": "open", "marks": 3, "prompt": "Compare the headlines 'Learners stand up for their rights' and 'Unruly learners disrupt school'. How does word choice influence the reader?", "memo": "✓ The first uses positive connotations ('stand up', 'rights'), encouraging support (1)\n✓ The second uses negative connotations ('unruly', 'disrupt'), encouraging disapproval (1)\n✓ The same event can be presented very differently, revealing the writer's bias (1)" },
+    { "id": "rewrite", "type": "open", "marks": 2, "prompt": "Rewrite in inclusive language: 'Each doctor must update his records, and the chairman will check them.'", "memo": "✓ 'Each doctor must update their records' / 'Doctors must update their records' (1)\n✓ 'and the chairperson will check them' (1)" },
+    { "id": "connotations", "type": "open", "marks": 2, "prompt": "Explain the difference in connotation between 'stubborn' and 'determined'.", "memo": "✓ 'Stubborn' is negative: unreasonably refusing to change (1)\n✓ 'Determined' is positive: admirably refusing to give up (1)" },
+    { "id": "propaganda", "type": "open", "marks": 2, "prompt": "What is propaganda and why is it dangerous?", "memo": "✓ Biased or misleading information spread to promote a cause (1)\n✓ It manipulates people's emotions and can spread hatred or justify violence (1)" },
+    { "id": "jargon-exclude", "type": "open", "marks": 2, "prompt": "Why might a municipal notice full of jargon exclude some residents?", "memo": "✓ Many residents may not understand the technical terms (1)\n✓ so they cannot participate or know their rights; plain language includes everyone (1)" }
+  ]
+}

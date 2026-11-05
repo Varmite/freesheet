@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "grade": 9,
+  "id": "mathematics",
+  "name": "Mathematics",
+  "description": "CAPS Grade 9 Mathematics: the number system, financial mathematics, exponents, patterns, functions, algebra and factorisation, equations, geometry, linear graphs, measurement, data handling and probability.",
+  "topics": [
+    { "id": "number-systems", "title": "Number Systems and Calculations", "term": 1 },
+    { "id": "ratio-rate-and-financial-mathematics", "title": "Ratio, Rate and Financial Mathematics", "term": 1 },
+    { "id": "exponents", "title": "Exponents", "term": 1 },
+    { "id": "numeric-and-geometric-patterns", "title": "Numeric and Geometric Patterns", "term": 1 },
+    { "id": "functions-and-relationships", "title": "Functions and Relationships", "term": 1 },
+    { "id": "algebraic-expressions", "title": "Algebraic Expressions and Factorisation", "term": 1 },
+    { "id": "algebraic-equations", "title": "Algebraic Equations", "term": 1 },
+    { "id": "construction-of-geometric-figures", "title": "Construction of Geometric Figures", "term": 2 },
+    { "id": "geometry-of-2d-shapes", "title": "Geometry of 2D Shapes: Congruence and Similarity", "term": 2 },
+    { "id": "geometry-of-straight-lines", "title": "Geometry of Straight Lines", "term": 2 },
+    { "id": "graphs", "title": "Graphs: Linear Functions", "term": 3 },
+    { "id": "perimeter-and-area", "title": "Perimeter, Area and the Theorem of Pythagoras", "term": 3 },
+    { "id": "surface-area-and-volume", "title": "Surface Area and Volume of 3D Objects", "term": 3 },
+    { "id": "transformation-geometry", "title": "Transformation Geometry", "term": 3 },
+    { "id": "geometry-of-3d-objects", "title": "Geometry of 3D Objects", "term": 3 },
+    { "id": "data-handling", "title": "Data Handling", "term": 4 },
+    { "id": "probability", "title": "Probability", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 120, "totalMarks": 100 }
+  ]
+}

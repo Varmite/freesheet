@@ -1,0 +1,295 @@
+{
+  "id": "parts-of-speech",
+  "title": "Parts of Speech",
+  "term": 1,
+  "summary": "The eight parts of speech: nouns, pronouns, verbs, adjectives, adverbs, prepositions, conjunctions and interjections, with their types, functions and degrees of comparison.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "The eight parts of speech"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Part of speech",
+        "Function",
+        "Examples"
+      ],
+      "rows": [
+        [
+          "Noun",
+          "Names a person, place, thing or idea",
+          "Thabo, Durban, table, happiness"
+        ],
+        [
+          "Pronoun",
+          "Replaces a noun",
+          "he, she, it, they, mine, who, myself"
+        ],
+        [
+          "Verb",
+          "Shows an action or a state of being",
+          "run, think, is, became"
+        ],
+        [
+          "Adjective",
+          "Describes a noun or pronoun",
+          "tall, red, three, delicious"
+        ],
+        [
+          "Adverb",
+          "Describes a verb, adjective or another adverb (how, when, where, how often, to what extent)",
+          "quickly, yesterday, here, often, very"
+        ],
+        [
+          "Preposition",
+          "Shows the relationship of a noun to another word (position, time, direction)",
+          "on, under, before, between, towards"
+        ],
+        [
+          "Conjunction",
+          "Joins words, phrases or clauses",
+          "and, but, or, because, although, when"
+        ],
+        [
+          "Interjection",
+          "Expresses sudden emotion",
+          "Wow! Ouch! Eish! Hey!"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Types of nouns"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Type",
+        "Meaning",
+        "Examples"
+      ],
+      "rows": [
+        [
+          "Common",
+          "General names",
+          "city, girl, dog"
+        ],
+        [
+          "Proper",
+          "Specific names; always start with a capital letter",
+          "Cape Town, Ayanda, Table Mountain"
+        ],
+        [
+          "Collective",
+          "A group as a whole",
+          "a **flock** of sheep, a **team** of players, a **swarm** of bees, a **pride** of lions"
+        ],
+        [
+          "Abstract",
+          "Ideas, feelings and qualities that cannot be touched",
+          "courage, love, freedom, anger"
+        ],
+        [
+          "Concrete",
+          "Things you can see, touch, hear, smell or taste",
+          "book, music, perfume"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Types of pronouns"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Personal**: I, you, he, she, it, we, they (subject); me, him, her, us, them (object).",
+        "**Possessive**: mine, yours, his, hers, ours, theirs.",
+        "**Reflexive**: myself, yourself, himself, ourselves, themselves.",
+        "**Relative**: who, whom, whose, which, that (introduce relative clauses).",
+        "**Demonstrative**: this, that, these, those.",
+        "**Interrogative**: who? what? which? whose?"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Degrees of comparison"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Positive",
+        "Comparative (two things)",
+        "Superlative (three or more)"
+      ],
+      "rows": [
+        [
+          "tall",
+          "taller",
+          "tallest"
+        ],
+        [
+          "beautiful",
+          "more beautiful",
+          "most beautiful"
+        ],
+        [
+          "good",
+          "better",
+          "best"
+        ],
+        [
+          "bad",
+          "worse",
+          "worst"
+        ],
+        [
+          "little",
+          "less",
+          "least"
+        ],
+        [
+          "many / much",
+          "more",
+          "most"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "label": "Common mistake",
+      "text": "Never use **more** with an **-er** word: say 'taller', not 'more taller'. Use **fewer** with things you can count (fewer learners) and **less** with things you cannot count (less water)."
+    },
+    {
+      "type": "heading",
+      "text": "Identifying parts of speech"
+    },
+    {
+      "type": "example",
+      "title": "Labelling a sentence",
+      "problem": "Identify the part of speech of each word: 'Wow, the young players ran quickly onto the field and they cheered.'",
+      "steps": [
+        "Wow: interjection; the: article (a type of adjective/determiner); young: adjective; players: noun",
+        "ran: verb; quickly: adverb; onto: preposition; the: article; field: noun",
+        "and: conjunction; they: pronoun; cheered: verb"
+      ],
+      "answer": "A word's part of speech depends on how it is used in the sentence."
+    },
+    {
+      "type": "paragraph",
+      "text": "The same word can be different parts of speech. *She will **run** the race* (verb). *She went for a **run*** (noun)."
+    }
+  ],
+  "questions": [
+    {
+      "id": "abstract",
+      "type": "mcq",
+      "prompt": "Which word is an abstract noun?",
+      "options": [
+        "desk",
+        "bravery",
+        "Johannesburg",
+        "teacher"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "collective",
+      "type": "short",
+      "prompt": "Complete with a collective noun: a ___ of lions.",
+      "answers": [
+        "pride"
+      ]
+    },
+    {
+      "id": "adverb",
+      "type": "mcq",
+      "prompt": "Identify the adverb: 'The old man walked slowly to the shop.'",
+      "options": [
+        "old",
+        "walked",
+        "slowly",
+        "shop"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "superlative",
+      "type": "short",
+      "prompt": "Give the superlative form of 'good'.",
+      "answers": [
+        "best",
+        "the best"
+      ]
+    },
+    {
+      "id": "fewer",
+      "type": "mcq",
+      "prompt": "Choose the correct word: 'There are ___ learners in our class this year.'",
+      "options": [
+        "less",
+        "fewer",
+        "lesser",
+        "more less"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reflexive",
+      "type": "short",
+      "prompt": "Fill in the reflexive pronoun: 'The children hurt ___ while playing.'",
+      "answers": [
+        "themselves"
+      ]
+    },
+    {
+      "id": "match-pos",
+      "type": "match",
+      "marks": 5,
+      "prompt": "Identify the part of speech of the underlined word in each sentence (shown in capitals).",
+      "pairs": [
+        {
+          "left": "She sat UNDER the tree.",
+          "right": "Preposition"
+        },
+        {
+          "left": "I stayed home BECAUSE I was ill.",
+          "right": "Conjunction"
+        },
+        {
+          "left": "OUCH! That hurts.",
+          "right": "Interjection"
+        },
+        {
+          "left": "The CLEVER girl solved it.",
+          "right": "Adjective"
+        },
+        {
+          "left": "THEY arrived late.",
+          "right": "Pronoun"
+        }
+      ]
+    },
+    {
+      "id": "comparative",
+      "type": "open",
+      "prompt": "Correct the error: 'This road is more longer than that one.'",
+      "marks": 1,
+      "memo": "✓ This road is longer than that one. (1)"
+    },
+    {
+      "id": "same-word",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Write two sentences using the word 'play', first as a verb and then as a noun.",
+      "memo": "✓ Verb, e.g. 'We play soccer after school.' (1)\n✓ Noun, e.g. 'The school play was a success.' (1)"
+    },
+    {
+      "id": "proper",
+      "type": "truefalse",
+      "prompt": "Proper nouns always begin with a capital letter.",
+      "answer": true
+    }
+  ]
+}

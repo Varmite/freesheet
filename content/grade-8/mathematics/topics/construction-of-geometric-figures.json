@@ -1,0 +1,106 @@
+{
+  "id": "construction-of-geometric-figures",
+  "title": "Construction of Geometric Figures",
+  "term": 2,
+  "summary": "Use a compass, ruler and protractor to bisect lines and angles, construct perpendicular lines and special angles, construct triangles and quadrilaterals, and use constructions to investigate their properties.",
+  "notes": [
+    { "type": "heading", "text": "Construction tools" },
+    { "type": "list", "items": [
+      "**Ruler:** draws straight lines and measures lengths.",
+      "**Compass:** draws circles and arcs. An arc is part of a circle; every point on it is the same distance (the radius) from the compass point.",
+      "**Protractor:** measures and draws angles in degrees.",
+      "**Sharp pencil:** accurate constructions need thin, clear lines."
+    ] },
+    { "type": "callout", "label": "Remember", "text": "In a construction, **do not rub out** your construction arcs. They show the examiner how you did the construction and earn marks." },
+
+    { "type": "heading", "text": "Bisecting a line segment" },
+    { "type": "paragraph", "text": "To **bisect** means to cut into two equal parts. The **perpendicular bisector** of a line segment cuts it in half at right angles ($90^\\circ$)." },
+    { "type": "list", "ordered": true, "items": [
+      "Draw the line segment $AB$.",
+      "Open the compass to **more than half** the length of $AB$.",
+      "Place the compass point on $A$ and draw an arc above and below the line.",
+      "Keep the same compass width. Place the point on $B$ and draw arcs that cut the first arcs.",
+      "Join the two points where the arcs cross. This line is the perpendicular bisector; it crosses $AB$ at the midpoint $M$."
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 225\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"60\" y1=\"110\" x2=\"300\" y2=\"110\" stroke-width=\"2\"/><path d=\"M166 4 A150 150 0 0 1 192 40\"/><path d=\"M192 180 A150 150 0 0 1 166 216\"/><path d=\"M168 40 A150 150 0 0 1 194 4\"/><path d=\"M194 216 A150 150 0 0 1 168 180\"/><line x1=\"180\" y1=\"10\" x2=\"180\" y2=\"210\"/><polyline points=\"180,100 190,100 190,110\"/></g><g fill=\"#000\"><circle cx=\"60\" cy=\"110\" r=\"3\"/><circle cx=\"300\" cy=\"110\" r=\"3\"/><text x=\"42\" y=\"115\">A</text><text x=\"308\" y=\"115\">B</text><text x=\"164\" y=\"128\">M</text></g></svg>", "caption": "Bisecting AB: arcs of equal radius from A and from B cross above and below the line. The line through the crossing points is perpendicular to AB and passes through its midpoint M." },
+
+    { "type": "heading", "text": "Bisecting an angle" },
+    { "type": "list", "ordered": true, "items": [
+      "Place the compass point on the vertex $O$ and draw an arc that cuts both arms of the angle at $P$ and $Q$.",
+      "Place the compass point on $P$ and draw an arc inside the angle.",
+      "Keep the same width. Place the point on $Q$ and draw an arc that cuts the previous arc at $R$.",
+      "Draw the line $OR$. It divides the angle into two equal angles."
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 225\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"40\" y1=\"200\" x2=\"330\" y2=\"200\" stroke-width=\"2\"/><line x1=\"40\" y1=\"200\" x2=\"150\" y2=\"10\" stroke-width=\"2\"/><path d=\"M100 96 A120 120 0 0 1 160 200\"/><path d=\"M183 103 A100 100 0 0 1 215 116\"/><path d=\"M200 91 A100 100 0 0 1 196 125\"/><line x1=\"40\" y1=\"200\" x2=\"263\" y2=\"71\"/></g><g fill=\"#000\"><text x=\"24\" y=\"215\">O</text><text x=\"155\" y=\"218\">P</text><text x=\"82\" y=\"95\">Q</text><text x=\"216\" y=\"100\">R</text></g></svg>", "caption": "Bisecting angle POQ: an arc from O gives P and Q; equal arcs from P and Q meet at R; OR is the bisector." },
+    { "type": "example", "title": "Worked example 1", "problem": "An angle of $70^\\circ$ is bisected. What is the size of each of the two new angles?", "steps": [
+      "Bisect means cut into two equal parts: $70^\\circ \\div 2 = 35^\\circ$."
+    ], "answer": "$35^\\circ$ each" },
+
+    { "type": "heading", "text": "Constructing perpendicular lines" },
+    { "type": "paragraph", "text": "**From a point on a line:** place the compass on the point and mark two points on the line, one on each side, the same distance away. Then bisect the segment between these two points, as above. The bisector passes through your point at $90^\\circ$.\n\n**From a point not on the line:** place the compass on the point and draw an arc that cuts the line twice. From each of these two points, draw arcs of equal radius on the other side of the line so that they cross. Join the original point to the crossing point." },
+
+    { "type": "heading", "text": "Constructing special angles without a protractor" },
+    { "type": "table", "caption": "Special angles", "headers": ["Angle", "How to construct it"], "rows": [
+      ["$60^\\circ$", "Draw a line with point $A$. With the compass on $A$, draw a large arc cutting the line at $B$. With the same width and the compass on $B$, draw an arc cutting the first arc at $C$. Join $AC$: $\\angle CAB = 60^\\circ$."],
+      ["$30^\\circ$", "Construct $60^\\circ$, then bisect it."],
+      ["$90^\\circ$", "Construct a perpendicular at a point on a line."],
+      ["$45^\\circ$", "Construct $90^\\circ$, then bisect it."],
+      ["$120^\\circ$", "Construct $60^\\circ$ twice next to each other on the same arc, or use the angle on a straight line: $180^\\circ - 60^\\circ$."]
+    ] },
+    { "type": "callout", "label": "Why does the 60° construction work?", "text": "$A$, $B$ and $C$ are all the same distance apart (the compass width), so triangle $ABC$ is equilateral, and every angle of an equilateral triangle is $60^\\circ$." },
+
+    { "type": "heading", "text": "Constructing triangles" },
+    { "type": "paragraph", "text": "A triangle can be constructed exactly when you know one of these sets of information:" },
+    { "type": "table", "caption": "Conditions for constructing a unique triangle", "headers": ["Given", "Name", "Method"], "rows": [
+      ["Three sides", "SSS", "Draw one side; use arcs with the other two lengths from its endpoints"],
+      ["Two sides and the angle between them", "SAS", "Draw one side, measure the angle at one end, measure the second side along the new arm"],
+      ["Two angles and a side", "ASA", "Draw the side and measure an angle at each end; the arms meet at the third vertex"],
+      ["Right angle, hypotenuse and one side", "RHS", "Construct $90^\\circ$, measure the side, then use an arc with the hypotenuse length"]
+    ] },
+    { "type": "example", "title": "Worked example 2: SSS", "problem": "Construct $\\triangle ABC$ with $AB = 6$ cm, $BC = 5$ cm and $AC = 4$ cm.", "steps": [
+      "Draw $AB = 6$ cm with a ruler.",
+      "Open the compass to 4 cm. With the point on $A$, draw an arc above $AB$.",
+      "Open the compass to 5 cm. With the point on $B$, draw an arc that cuts the first arc. Label the crossing point $C$.",
+      "Join $AC$ and $BC$."
+    ], "answer": "Triangle ABC with all construction arcs visible." },
+    { "type": "callout", "label": "Triangle inequality", "text": "The two shorter sides of a triangle must add up to **more than** the longest side. You cannot construct a triangle with sides 3 cm, 4 cm and 8 cm, because $3 + 4 = 7 < 8$: the arcs never meet." },
+    { "type": "callout", "label": "Common mistake", "text": "Knowing three angles (AAA) is **not** enough. Triangles with angles $50^\\circ$, $60^\\circ$ and $70^\\circ$ can be small or large; they have the same shape but not the same size." },
+
+    { "type": "heading", "text": "Investigating properties by construction" },
+    { "type": "paragraph", "text": "Constructions let you discover properties of shapes. If you construct any triangle and measure its angles, the three angles always add up to $180^\\circ$. If you construct an isosceles triangle (two equal sides), the two angles opposite the equal sides are always equal. In an equilateral triangle, all the angles are $60^\\circ$." },
+    { "type": "paragraph", "text": "Quadrilaterals can be constructed in the same way. For example, for a parallelogram construct two sides and the angle between them, then use arcs to make the opposite sides equal. Measuring shows that its opposite angles are equal and its diagonals bisect each other." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Keep all construction arcs; never rub them out.",
+      "Perpendicular bisector: equal arcs from both ends (compass more than half the length).",
+      "Angle bisector: arc from the vertex, then equal arcs from where it cuts the arms.",
+      "$60^\\circ$ comes from an equilateral triangle; bisect for $30^\\circ$. Perpendicular gives $90^\\circ$; bisect for $45^\\circ$.",
+      "A unique triangle needs SSS, SAS, ASA or RHS. AAA is not enough.",
+      "The two shorter sides must add up to more than the longest side."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "Which instrument is used to measure the size of an angle?", "options": ["Compass", "Ruler", "Protractor", "Set square"], "answer": 2, "explanation": "A protractor measures angles in degrees. A compass draws arcs and circles." },
+    { "id": "q2", "type": "truefalse", "prompt": "The perpendicular bisector of $AB$ passes through the midpoint of $AB$ and makes a $90^\\circ$ angle with $AB$.", "answer": true, "explanation": "Bisector: cuts $AB$ into two equal parts (through the midpoint). Perpendicular: at $90^\\circ$." },
+    { "id": "q3", "type": "mcq", "prompt": "How can you construct a $30^\\circ$ angle without a protractor?", "options": ["Construct $90^\\circ$ and bisect it", "Construct $60^\\circ$ and bisect it", "Construct $45^\\circ$ and bisect it", "Bisect a straight line"], "answer": 1, "explanation": "$60^\\circ \\div 2 = 30^\\circ$." },
+    { "id": "q4", "type": "mcq", "prompt": "How can you construct a $45^\\circ$ angle without a protractor?", "options": ["Construct $90^\\circ$ and bisect it", "Construct $60^\\circ$ and bisect it", "Construct $120^\\circ$ and bisect it", "Construct $30^\\circ$ twice"], "answer": 0, "explanation": "$90^\\circ \\div 2 = 45^\\circ$." },
+    { "id": "q5", "type": "truefalse", "prompt": "A triangle with sides 3 cm, 4 cm and 8 cm can be constructed.", "answer": false, "explanation": "$3 + 4 = 7$, which is less than $8$. The two shorter sides cannot reach each other." },
+    { "id": "q6", "type": "numeric", "prompt": "An angle of $70^\\circ$ is bisected. What is the size of each new angle, in degrees?", "unit": "°", "answer": 35, "tolerance": 0, "explanation": "$70 \\div 2 = 35$." },
+    { "id": "q7", "type": "mcq", "prompt": "Which information is **not** enough to construct one unique triangle?", "options": ["Three sides", "Two sides and the included angle", "Three angles", "Two angles and a side"], "answer": 2, "explanation": "Three angles fix the shape but not the size: you can draw many different-sized triangles with the same angles." },
+    { "id": "q8", "type": "match", "prompt": "Match each condition with what it gives you.", "marks": 4, "pairs": [
+      { "left": "SSS", "right": "Three sides" },
+      { "left": "SAS", "right": "Two sides and the angle between them" },
+      { "left": "ASA", "right": "Two angles and a side" },
+      { "left": "RHS", "right": "Right angle, hypotenuse and a side" }
+    ], "explanation": "S stands for a side, A for an angle, R for a right angle and H for the hypotenuse." },
+    { "id": "q9", "type": "short", "prompt": "What is the name of the line that cuts a line segment into two equal parts at right angles?", "answers": ["perpendicular bisector", "the perpendicular bisector", "a perpendicular bisector"], "explanation": "It is perpendicular (at $90^\\circ$) and it bisects (cuts in half)." },
+    { "id": "q10", "type": "numeric", "prompt": "You construct a triangle with all three sides 5 cm. What is the size of each angle, in degrees?", "unit": "°", "answer": 60, "tolerance": 0, "explanation": "It is equilateral, so the three equal angles share $180^\\circ$: $180 \\div 3 = 60$." },
+    { "id": "q11", "type": "truefalse", "prompt": "To bisect a line segment, the compass must be opened to more than half the length of the segment.", "answer": true, "explanation": "If the width is half the length or less, the arcs from the two ends will not cross." },
+    { "id": "q12", "type": "mcq", "prompt": "You are constructing $\\triangle ABC$ with $AB = 6$ cm, $BC = 5$ cm and $AC = 4$ cm. You have drawn $AB$. What do you do next?", "options": ["Measure a $60^\\circ$ angle at $A$", "Draw an arc of radius 4 cm from $A$ and an arc of radius 5 cm from $B$", "Draw an arc of radius 5 cm from $A$ and an arc of radius 4 cm from $B$", "Bisect $AB$"], "answer": 1, "explanation": "$C$ is 4 cm from $A$ (side $AC$) and 5 cm from $B$ (side $BC$)." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "Describe, step by step, how to bisect an angle using only a compass and a ruler.", "memo": "Arc from the vertex cutting both arms ✓ (1)\nFrom one cutting point, draw an arc inside the angle ✓ (1)\nWith the same compass width, draw an arc from the other cutting point so the arcs cross ✓ (1)\nJoin the vertex to the crossing point ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "Describe how to construct a $60^\\circ$ angle at point $A$ on a straight line, without a protractor, and explain why the method works.", "memo": "Compass on $A$, draw an arc cutting the line at $B$ ✓ (1)\nSame width, compass on $B$, arc cutting the first arc at $C$; join $AC$ ✓ (1)\n$AB = BC = AC$, so the triangle is equilateral and each angle is $60^\\circ$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "Construct a triangle with sides 5 cm, 6 cm and 7 cm. Measure its three angles with a protractor and add them. What do you notice?", "memo": "Accurate construction with arcs visible ✓ (1)\nAngles approximately $44^\\circ$, $57^\\circ$ and $79^\\circ$ ✓ (1)\nThe angles add up to $180^\\circ$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "Thandi says she can construct a triangle with sides 2 cm, 3 cm and 6 cm. Explain why she is wrong.", "memo": "The two shorter sides add up to $2 + 3 = 5$ cm ✓ (1)\nThis is less than 6 cm, so the arcs will not meet and no triangle can be formed ✓ (1)" }
+  ]
+}

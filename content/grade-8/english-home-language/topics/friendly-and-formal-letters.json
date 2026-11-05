@@ -1,0 +1,58 @@
+{
+  "id": "friendly-and-formal-letters",
+  "title": "Friendly and Formal Letters",
+  "term": 2,
+  "summary": "The purpose, format, register and language of friendly letters and formal letters (complaint, request and application), with examples and a checklist.",
+  "notes": [
+    { "type": "heading", "text": "Two kinds of letter" },
+    { "type": "table", "headers": ["", "Friendly (informal) letter", "Formal letter"], "rows": [
+      ["Written to", "Family and friends", "Organisations, officials, businesses, newspapers"],
+      ["Purpose", "Share news, thank, congratulate, sympathise, invite", "Complain, request, apply, inquire, give an opinion"],
+      ["Register (tone)", "Informal, warm, chatty; contractions allowed", "Formal, polite, clear and concise; no slang or contractions"],
+      ["Addresses", "Only the sender's address", "Sender's address and recipient's address"],
+      ["Greeting", "Dear Thandi, / Hi Gran,", "Dear Sir/Madam, / Dear Mr Naidoo,"],
+      ["Subject line", "None", "Yes, e.g. RE: APPLICATION FOR A PART-TIME POSITION"],
+      ["Ending", "Love, / Your friend, / Take care,", "Yours faithfully (if you used Sir/Madam) / Yours sincerely (if you used a name)"]
+    ] },
+    { "type": "heading", "text": "Format of a friendly letter" },
+    { "type": "passage", "title": "Example friendly letter (original)", "text": "14 Jacaranda Street\nPolokwane\n0699\n12 May 2025\n\nDear Lerato,\n\nThank you so much for the book you sent for my birthday! I started reading it on the bus and nearly missed my stop.\n\nGuess what? Our soccer team made it to the district final. Coach says we have a real chance if our goalkeeper stops letting in silly goals (that's me, by the way).\n\nHow is life in Cape Town? Is it true that the wind blows people off the pavement? Write back soon and tell me everything.\n\nLove,\nKarabo" },
+    { "type": "heading", "text": "Format of a formal letter" },
+    { "type": "list", "ordered": true, "items": [
+      "Sender's address (top right or top left) and date.",
+      "Recipient's title, name and address (left).",
+      "Greeting (salutation).",
+      "Subject line (RE:) in capitals or underlined.",
+      "Introduction: state the purpose of the letter.",
+      "Body: one main point per paragraph, with facts and details.",
+      "Conclusion: what you want to happen, and thank the reader.",
+      "Closing (Yours faithfully / Yours sincerely), signature and full name."
+    ] },
+    { "type": "passage", "title": "Example formal letter of complaint (original)", "text": "PO Box 455\nKwaDukuza\n4450\n3 March 2025\n\nThe Manager\nSunrise Electronics\n22 Main Road\nKwaDukuza\n4450\n\nDear Sir/Madam\n\nRE: FAULTY HEADPHONES PURCHASED ON 20 FEBRUARY 2025\n\nI am writing to complain about a pair of wireless headphones that I bought at your store on 20 February 2025 for R499 (receipt no. 10234).\n\nAfter only five days, the left earpiece stopped working. When I returned to the store, the assistant refused to help me and said that the problem was my fault.\n\nAccording to the Consumer Protection Act, I am entitled to a repair, replacement or refund for faulty goods returned within six months. I would therefore appreciate a replacement or a full refund.\n\nThank you for your attention. I look forward to your reply.\n\nYours faithfully\nS. Mthembu\nSibusiso Mthembu" },
+    { "type": "callout", "label": "Remember", "text": "**Dear Sir/Madam** → **Yours faithfully**. **Dear Mrs Pillay** → **Yours sincerely**. Keep formal letters short, polite and to the point." },
+    { "type": "heading", "text": "Checklist" },
+    { "type": "list", "items": [
+      "Correct format and layout.",
+      "Appropriate register for the reader.",
+      "Clear purpose stated early.",
+      "Logical paragraphs.",
+      "Correct spelling, grammar and punctuation."
+    ] }
+  ],
+  "questions": [
+    { "id": "faithfully", "type": "mcq", "prompt": "If you begin with 'Dear Sir/Madam', how should you end a formal letter?", "options": ["Love,", "Yours sincerely", "Yours faithfully", "Cheers,"], "answer": 2 },
+    { "id": "sincerely", "type": "short", "prompt": "If you begin 'Dear Mr Dlamini', which closing should you use? (two words)", "answers": ["yours sincerely"] },
+    { "id": "subject-line", "type": "truefalse", "prompt": "A friendly letter needs a subject line.", "answer": false },
+    { "id": "addresses", "type": "mcq", "prompt": "Which address is included in a formal letter but NOT in a friendly letter?", "options": ["The sender's address", "The recipient's address", "Both", "Neither"], "answer": 1 },
+    { "id": "register", "type": "match", "marks": 4, "prompt": "Classify each phrase as suitable for a friendly or formal letter.", "pairs": [
+      { "left": "I am writing to request information about…", "right": "Formal" },
+      { "left": "Guess what happened at school!", "right": "Friendly" },
+      { "left": "I look forward to your reply.", "right": "Formal (closing sentence)" },
+      { "left": "Can't wait to see you!", "right": "Friendly (informal)" }
+    ] },
+    { "id": "purpose", "type": "open", "marks": 2, "prompt": "Refer to the formal letter. What is the purpose of the letter and what does the writer want?", "memo": "✓ To complain about faulty headphones (1)\n✓ He wants a replacement or full refund (1)" },
+    { "id": "evidence", "type": "open", "marks": 2, "prompt": "Why does the writer include the date of purchase and the receipt number?", "memo": "✓ It proves when and where he bought the headphones (1)\n✓ so the store can check the sale and take his complaint seriously (1)" },
+    { "id": "cpa", "type": "short", "prompt": "Which law does the writer refer to? (three words + Act)", "answers": ["consumer protection act", "the consumer protection act"] },
+    { "id": "informal-features", "type": "open", "marks": 3, "prompt": "Give THREE features that show the letter to Lerato is informal.", "memo": "Any three (1 each): only the sender's address; 'Dear Lerato' first name; chatty tone; exclamations; contractions (that's); humour; 'Love,' ending; no subject line" },
+    { "id": "write-intro", "type": "open", "marks": 3, "prompt": "Write the opening paragraph of a formal letter to your municipality asking for a pedestrian crossing outside your school.", "memo": "✓ Formal register (1)\n✓ Clearly states the purpose (request for a crossing) (1)\n✓ Gives a reason/context, e.g. danger to learners (1)" }
+  ]
+}

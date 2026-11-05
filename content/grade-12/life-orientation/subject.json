@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "grade": 12,
+  "id": "life-orientation",
+  "name": "Life Orientation",
+  "description": "CAPS Grade 12 Life Orientation: coping with stress and change, lifestyle diseases, human rights violations and responsible citizenship, ethical traditions and religious laws, applying for study and work, the world of work, and preparing for matric examinations.",
+  "topics": [
+    { "id": "stress-and-change", "title": "Life Skills: Stress, Conflict and Change", "term": 1 },
+    { "id": "study-skills-for-matric", "title": "Study Skills and Exam Preparation for Matric", "term": 1 },
+    { "id": "lifestyle-diseases", "title": "Lifestyle Diseases and Wellness", "term": 2 },
+    { "id": "human-rights-violations", "title": "Human Rights Violations and Responsible Citizenship", "term": 2 },
+    { "id": "ethical-traditions", "title": "Ethical Traditions and Religious Laws", "term": 3 },
+    { "id": "applying-for-study-and-work", "title": "Applying for Study and Work: CVs and Interviews", "term": 3 },
+    { "id": "the-world-of-work", "title": "The World of Work: Labour Laws, Unemployment and Entrepreneurship", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
+  ]
+}

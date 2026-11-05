@@ -1,0 +1,43 @@
+{
+  "id": "probability-and-risk",
+  "title": "Probability and Risk",
+  "term": 3,
+  "summary": "Interpreting probability in contexts such as gambling, insurance, medical tests and weather; two-way tables and tree diagrams; expected value; and evaluating risk and fairness.",
+  "notes": [
+    { "type": "heading", "text": "Probability in real contexts" },
+    { "type": "list", "items": [
+      "**Weather**: '40% chance of rain' means rain fell on about 40 out of 100 similar days in the past.",
+      "**Lotteries**: the chance of winning the jackpot is tiny, while the expected return on each ticket is less than its price.",
+      "**Insurance**: premiums are set using the probability of claims in a large group.",
+      "**Health**: risk factors (smoking, diet) change the probability of disease."
+    ] },
+    { "type": "heading", "text": "Expected value" },
+    { "type": "formula", "latex": "\\text{expected value per game} = (\\text{probability of winning} \\times \\text{prize}) - \\text{cost to play}" },
+    { "type": "example", "title": "Worked example 1", "problem": "A scratch card costs R10. There is a 1 in 50 chance of winning R200 and a 1 in 10 chance of winning R20. Find the expected value of buying one card.", "steps": [
+      "Expected winnings: $\\frac{1}{50} \\times 200 + \\frac{1}{10} \\times 20 = 4 + 2 = R6$",
+      "Expected value: R6 − R10 = −R4"
+    ], "answer": "On average you lose R4 per card." },
+    { "type": "heading", "text": "Two-way tables" },
+    { "type": "table", "caption": "Road accidents in a town over one year", "headers": ["", "Wearing seat belt", "Not wearing seat belt", "Total"], "rows": [
+      ["Serious injury", "40", "160", "200"],
+      ["Minor or no injury", "760", "240", "1 000"],
+      ["Total", "800", "400", "1 200"]
+    ] },
+    { "type": "example", "title": "Worked example 2", "problem": "Compare the probability of serious injury for people wearing and not wearing seat belts.", "steps": ["Wearing: $\\frac{40}{800} = 5\\%$", "Not wearing: $\\frac{160}{400} = 40\\%$", "Not wearing a seat belt made serious injury 8 times as likely in this data."], "answer": "5% vs 40%" },
+    { "type": "callout", "label": "Relative risk", "text": "Comparing probabilities as a ratio (40% ÷ 5% = 8) is called **relative risk**. Always also look at the actual numbers, because a large relative risk of a very rare event may still be a small risk." },
+    { "type": "heading", "text": "Tree diagrams" },
+    { "type": "example", "title": "Worked example 3", "problem": "A factory's machines produce faulty items 3% of the time. Two items are chosen at random. Find P(at least one is faulty).", "steps": ["P(neither faulty) = 0,97 × 0,97 = 0,9409", "P(at least one faulty) = 1 − 0,9409 = 0,0591"], "answer": "About 5,9%" }
+  ],
+  "questions": [
+    { "id": "rain", "type": "mcq", "prompt": "A forecast gives a 20% chance of rain. Which is the best interpretation?", "options": ["It will rain for 20% of the day", "It will definitely not rain", "On days like this, it rains about 1 in 5 times", "20% of the area will get rain"], "answer": 2 },
+    { "id": "ev", "type": "numeric", "prompt": "A game costs R5. You win R30 with a probability of $\\frac{1}{8}$. What is the expected value per game, in rand? (use a minus sign for a loss)", "answer": -1.25, "tolerance": 0.01, "unit": "rand" },
+    { "id": "seatbelt", "type": "numeric", "prompt": "Using the seat-belt table, what percentage of all people involved in accidents were seriously injured? (two decimals)", "answer": 16.67, "tolerance": 0.01, "unit": "%" },
+    { "id": "at-least", "type": "numeric", "prompt": "The probability that a component fails is 0,1. Two independent components are used. What is P(at least one fails)?", "answer": 0.19, "tolerance": 0 },
+    { "id": "lotto", "type": "truefalse", "prompt": "Buying more lottery tickets every week is a reliable way to grow your savings.", "answer": false },
+    { "id": "insurance", "type": "open", "marks": 3, "prompt": "An insurer covers 10 000 cars. Each year about 2% are written off, with an average payout of R150 000. What minimum annual premium per car is needed to cover these payouts?", "memo": "✓ Expected write-offs: 2% × 10 000 = 200 (1)\n✓ Total payouts: 200 × R150 000 = R30 000 000 (1)\n✓ Minimum premium R3 000 per car (1)" },
+    { "id": "relative", "type": "open", "marks": 3, "prompt": "In a study, 6 out of 1 000 smokers and 1 out of 1 000 non-smokers developed a disease. Calculate the relative risk and explain what it means.", "memo": "✓ 0,6% and 0,1% (1)\n✓ Relative risk = 6 (1)\n✓ Smokers were 6 times as likely to develop the disease (1)" },
+    { "id": "fair-game", "type": "open", "marks": 3, "prompt": "A spinner has 5 equal sections numbered 1 to 5. It costs R4 to play and you win R15 if it lands on 5. Is the game fair? Show working.", "memo": "✓ P(5) = $\\frac{1}{5}$ (1)\n✓ Expected winnings $\\frac{1}{5} \\times R15 = R3$ (1)\n✓ R3 < R4, so not fair: the player expects to lose R1 per game (1)" },
+    { "id": "test", "type": "open", "marks": 2, "prompt": "Why might a positive result on a test for a rare disease still be likely to be a false positive?", "memo": "✓ Because the disease is rare, most people tested do not have it (1)\n✓ so even a small error rate produces more false positives than true positives (1)" },
+    { "id": "two-way", "type": "open", "marks": 2, "prompt": "Using the seat-belt table, find the probability that a seriously injured person was wearing a seat belt.", "memo": "✓ $\\frac{40}{200}$ (1)\n✓ = 20% (1)" }
+  ]
+}

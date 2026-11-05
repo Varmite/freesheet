@@ -1,0 +1,63 @@
+{
+  "id": "substance-abuse",
+  "title": "Substance Abuse",
+  "term": 2,
+  "summary": "Commonly abused substances, why teenagers use them, short- and long-term effects, signs of addiction, the effects on families and communities, and where to get help.",
+  "notes": [
+    { "type": "heading", "text": "What is substance abuse?" },
+    { "type": "definition", "term": "Substance abuse", "text": "Using alcohol, tobacco, drugs or medicines in a harmful way, or using illegal drugs at all." },
+    { "type": "definition", "term": "Addiction (dependence)", "text": "When a person feels they cannot cope without a substance and keeps using it despite the harm it causes. The body may develop **tolerance** (needing more to get the same effect) and **withdrawal** symptoms without it." },
+    { "type": "heading", "text": "Commonly abused substances" },
+    { "type": "table", "headers": ["Substance", "Effects and risks"], "rows": [
+      ["Alcohol", "Poor judgement, accidents, violence, risky sexual behaviour, liver damage; illegal to sell to under-18s"],
+      ["Tobacco and vapes (e-cigarettes)", "Nicotine is highly addictive; damages lungs and heart; causes cancer; vapes contain harmful chemicals"],
+      ["Dagga (cannabis)", "Affects memory, concentration and motivation in teenagers' developing brains; may trigger mental illness"],
+      ["Tik (methamphetamine)", "Extremely addictive; paranoia, aggression, weight loss, brain damage, rotten teeth"],
+      ["Nyaope / whoonga", "A highly addictive mixture often containing heroin; severe withdrawal; destroys health and lives"],
+      ["Inhalants (glue, petrol)", "Can cause brain damage or sudden death"],
+      ["Misused prescription or over-the-counter medicines", "Overdose, addiction"]
+    ] },
+    { "type": "heading", "text": "Why do some teenagers use substances?" },
+    { "type": "list", "items": [
+      "Peer pressure and wanting to fit in.",
+      "Curiosity and wanting to experiment.",
+      "To escape problems, stress, boredom or emotional pain.",
+      "Easy availability, and family members who use substances.",
+      "Low self-esteem.",
+      "Advertising and media that make substances look glamorous."
+    ] },
+    { "type": "heading", "text": "Effects of substance abuse" },
+    { "type": "table", "headers": ["On the individual", "On the family", "On the community"], "rows": [
+      ["Health problems and addiction", "Conflict, broken trust and stress", "Crime and violence increase"],
+      ["Poor school performance and dropping out", "Money spent on substances instead of needs", "Road accidents and injuries"],
+      ["Risky behaviour (unsafe sex, crime)", "Neglect and abuse of children", "Costs to health and police services"],
+      ["Mental illness, depression", "Family members may be stolen from", "Loss of productive young people"]
+    ] },
+    { "type": "callout", "label": "Warning signs", "text": "Sudden changes in friends, mood or behaviour; missing school; losing interest in hobbies; money or valuables disappearing; red eyes; secretive behaviour." },
+    { "type": "heading", "text": "Getting help" },
+    { "type": "list", "items": [
+      "Talk to a trusted adult: a parent, teacher, school counsellor, nurse or religious leader.",
+      "**SANCA** (South African National Council on Alcoholism and Drug Dependence) offers counselling and treatment.",
+      "The national **Substance Abuse Helpline**: 0800 12 13 14 (free, 24 hours).",
+      "Support groups such as Alcoholics Anonymous and Narcotics Anonymous."
+    ] },
+    { "type": "paragraph", "text": "**Healthy alternatives** to substance use include sport, music, art, youth groups, volunteering and spending time with supportive friends." }
+  ],
+  "questions": [
+    { "id": "addiction", "type": "open", "marks": 2, "prompt": "What is addiction?", "memo": "✓ A person feels they cannot cope without a substance (1)\n✓ and keeps using it despite the harm (1)" },
+    { "id": "tolerance", "type": "short", "prompt": "What is it called when a person needs more and more of a substance to get the same effect?", "answers": ["tolerance"] },
+    { "id": "nicotine", "type": "mcq", "prompt": "Which addictive substance is found in cigarettes and most vapes?", "options": ["Caffeine", "Nicotine", "Alcohol", "Tik"], "answer": 1 },
+    { "id": "under-18", "type": "truefalse", "prompt": "It is legal to sell alcohol to 16-year-olds in South Africa.", "answer": false },
+    { "id": "sanca", "type": "short", "prompt": "Name the South African organisation that helps people with alcohol and drug dependence. (abbreviation)", "answers": ["sanca"] },
+    { "id": "substances", "type": "match", "marks": 4, "prompt": "Match each substance to one effect.", "pairs": [
+      { "left": "Alcohol", "right": "Liver damage and poor judgement" },
+      { "left": "Tik", "right": "Paranoia and rotten teeth" },
+      { "left": "Inhalants", "right": "Sudden death from sniffing" },
+      { "left": "Tobacco", "right": "Lung cancer" }
+    ] },
+    { "id": "reasons", "type": "open", "marks": 3, "prompt": "Give THREE reasons why some teenagers start using substances.", "memo": "Any three (1 each): peer pressure; curiosity; escape problems/stress; availability; family influence; low self-esteem; media" },
+    { "id": "family-effects", "type": "open", "marks": 3, "prompt": "Describe THREE ways a person's substance abuse can affect their family.", "memo": "Any three (1 each): conflict; broken trust; financial problems; theft; neglect/abuse; emotional stress" },
+    { "id": "signs", "type": "open", "marks": 2, "prompt": "Name TWO warning signs that a friend may be abusing substances.", "memo": "Any two (1 each): change in friends; mood swings; missing school; loss of interest; secretive; money disappearing; red eyes" },
+    { "id": "alternatives", "type": "open", "marks": 2, "prompt": "Suggest TWO healthy alternatives to substance use for dealing with stress.", "memo": "Any two (1 each): sport/exercise; talking to someone; hobbies (music, art); youth groups; relaxation; volunteering" }
+  ]
+}

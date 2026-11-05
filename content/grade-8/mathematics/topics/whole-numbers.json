@@ -1,0 +1,153 @@
+{
+  "id": "whole-numbers",
+  "title": "Whole Numbers",
+  "term": 1,
+  "summary": "Use the properties of whole numbers, divisibility rules, prime factorisation, HCF and LCM, and the order of operations to calculate accurately and solve problems.",
+  "notes": [
+    { "type": "heading", "text": "Sets of numbers" },
+    { "type": "paragraph", "text": "In Grade 8 we work with two important sets of numbers. The **natural numbers** are the counting numbers, and the **whole numbers** are the natural numbers together with zero." },
+    { "type": "table", "caption": "Natural and whole numbers", "headers": ["Set", "Symbol", "Members"], "rows": [
+      ["Natural numbers", "$\\mathbb{N}$", "$\\{1;\\ 2;\\ 3;\\ 4;\\ \\ldots\\}$"],
+      ["Whole numbers", "$\\mathbb{N}_0$", "$\\{0;\\ 1;\\ 2;\\ 3;\\ \\ldots\\}$"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Zero is a whole number but **not** a natural number. There is no biggest whole number: you can always add 1." },
+
+    { "type": "heading", "text": "Properties of whole numbers" },
+    { "type": "paragraph", "text": "These properties explain why many mental calculation tricks work. Learn the names, because questions often ask which property has been used." },
+    { "type": "table", "caption": "Properties of whole numbers", "headers": ["Property", "In words", "Example"], "rows": [
+      ["Commutative (addition)", "The order of adding does not matter", "$5 + 7 = 7 + 5$"],
+      ["Commutative (multiplication)", "The order of multiplying does not matter", "$4 \\times 9 = 9 \\times 4$"],
+      ["Associative (addition)", "The grouping when adding does not matter", "$(2 + 3) + 8 = 2 + (3 + 8)$"],
+      ["Associative (multiplication)", "The grouping when multiplying does not matter", "$(2 \\times 5) \\times 7 = 2 \\times (5 \\times 7)$"],
+      ["Distributive", "Multiplication spreads over addition or subtraction", "$3(4 + 6) = 3 \\times 4 + 3 \\times 6$"],
+      ["Additive identity", "Adding 0 changes nothing", "$15 + 0 = 15$"],
+      ["Multiplicative identity", "Multiplying by 1 changes nothing", "$23 \\times 1 = 23$"],
+      ["Multiplying by zero", "Any number times 0 is 0", "$48 \\times 0 = 0$"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "Subtraction and division are **not** commutative or associative. $10 - 4 = 6$ but $4 - 10 = -6$, and $(24 \\div 4) \\div 2 = 3$ but $24 \\div (4 \\div 2) = 12$." },
+    { "type": "example", "title": "Worked example 1: using the properties to calculate mentally", "problem": "Calculate without a calculator: (a) $25 \\times 17 \\times 4$  (b) $99 \\times 46$  (c) $8 \\times 53 + 8 \\times 47$", "steps": [
+      "(a) Use the commutative and associative properties to pair $25$ and $4$: $(25 \\times 4) \\times 17 = 100 \\times 17 = 1\\ 700$.",
+      "(b) Write $99 = 100 - 1$ and use the distributive property: $100 \\times 46 - 1 \\times 46 = 4\\ 600 - 46 = 4\\ 554$.",
+      "(c) Take out the common factor $8$: $8(53 + 47) = 8 \\times 100 = 800$."
+    ], "answer": "(a) $1\\ 700$  (b) $4\\ 554$  (c) $800$" },
+
+    { "type": "heading", "text": "Factors, multiples and prime numbers" },
+    { "type": "definition", "term": "Factor", "text": "A **factor** of a number divides into it exactly, with no remainder. The factors of $12$ are $1;\\ 2;\\ 3;\\ 4;\\ 6;\\ 12$." },
+    { "type": "definition", "term": "Multiple", "text": "A **multiple** of a number is the result of multiplying it by a natural number. The multiples of $6$ are $6;\\ 12;\\ 18;\\ 24;\\ \\ldots$" },
+    { "type": "definition", "term": "Prime and composite numbers", "text": "A **prime number** has exactly two different factors: $1$ and itself (e.g. $2;\\ 3;\\ 5;\\ 7;\\ 11;\\ 13$). A **composite number** has more than two factors (e.g. $4;\\ 6;\\ 9;\\ 15$). The number $1$ is neither prime nor composite." },
+    { "type": "callout", "label": "Remember", "text": "$2$ is the only even prime number. Every other even number has $2$ as a factor, so it has more than two factors." },
+    { "type": "paragraph", "text": "**Divisibility rules** let you test for factors quickly, without dividing." },
+    { "type": "table", "caption": "Divisibility rules", "headers": ["Divisible by", "Rule", "Example"], "rows": [
+      ["2", "Last digit is even (0, 2, 4, 6, 8)", "3 518"],
+      ["3", "Sum of the digits is divisible by 3", "4 572: 4 + 5 + 7 + 2 = 18"],
+      ["4", "Last two digits form a number divisible by 4", "7 316: 16 ÷ 4 = 4"],
+      ["5", "Last digit is 0 or 5", "8 435"],
+      ["6", "Divisible by both 2 and 3", "1 236"],
+      ["8", "Last three digits form a number divisible by 8", "15 128: 128 ÷ 8 = 16"],
+      ["9", "Sum of the digits is divisible by 9", "6 543: 6 + 5 + 4 + 3 = 18"],
+      ["10", "Last digit is 0", "2 790"]
+    ] },
+
+    { "type": "heading", "text": "Prime factorisation" },
+    { "type": "paragraph", "text": "Every composite number can be written as a product of prime numbers in exactly one way (apart from order). To find the prime factors, keep dividing by the smallest prime that works. Write repeated factors using exponents." },
+    { "type": "table", "caption": "Prime factorisation of 360 by repeated division", "headers": ["Divide by", "Result"], "rows": [
+      ["2", "360 ÷ 2 = 180"],
+      ["2", "180 ÷ 2 = 90"],
+      ["2", "90 ÷ 2 = 45"],
+      ["3", "45 ÷ 3 = 15"],
+      ["3", "15 ÷ 3 = 5"],
+      ["5", "5 ÷ 5 = 1"]
+    ] },
+    { "type": "formula", "latex": "360 = 2 \\times 2 \\times 2 \\times 3 \\times 3 \\times 5 = 2^3 \\times 3^2 \\times 5", "caption": "Write the answer with exponents" },
+
+    { "type": "heading", "text": "Highest common factor (HCF) and lowest common multiple (LCM)" },
+    { "type": "definition", "term": "HCF", "text": "The **highest common factor** of two or more numbers is the biggest number that is a factor of all of them." },
+    { "type": "definition", "term": "LCM", "text": "The **lowest common multiple** of two or more numbers is the smallest number that is a multiple of all of them." },
+    { "type": "list", "items": [
+      "**HCF:** multiply the prime factors that are **common** to all the numbers, using the **lowest** power of each.",
+      "**LCM:** multiply **every** prime factor that appears in any of the numbers, using the **highest** power of each."
+    ] },
+    { "type": "example", "title": "Worked example 2", "problem": "Find the HCF and the LCM of $84$ and $120$.", "steps": [
+      "$84 = 2^2 \\times 3 \\times 7$",
+      "$120 = 2^3 \\times 3 \\times 5$",
+      "HCF: the common primes are $2$ and $3$. Lowest powers: $2^2 \\times 3 = 12$.",
+      "LCM: all primes, highest powers: $2^3 \\times 3 \\times 5 \\times 7 = 840$.",
+      "Check: $\\text{HCF} \\times \\text{LCM} = 12 \\times 840 = 10\\ 080 = 84 \\times 120$ ✓"
+    ], "answer": "HCF $= 12$, LCM $= 840$" },
+    { "type": "callout", "label": "Exam tip", "text": "Word problems tell you which one to use. **HCF** questions are about splitting things into the **largest equal groups** (cutting, sharing, packing). **LCM** questions are about things that **repeat** until they happen together again (buses, bells, flashing lights)." },
+    { "type": "example", "title": "Worked example 3: an LCM problem", "problem": "A taxi to Soweto leaves the rank every 12 minutes and a taxi to Alexandra leaves every 15 minutes. Both leave together at 07:00. When will they next leave together?", "steps": [
+      "This repeats, so find the LCM of $12$ and $15$.",
+      "$12 = 2^2 \\times 3$ and $15 = 3 \\times 5$, so $\\text{LCM} = 2^2 \\times 3 \\times 5 = 60$.",
+      "60 minutes after 07:00 is 08:00."
+    ], "answer": "08:00" },
+    { "type": "example", "title": "Worked example 4: an HCF problem", "problem": "A teacher has 36 pencils and 54 erasers. She wants to make identical packs with no items left over. What is the largest number of packs she can make, and what is in each pack?", "steps": [
+      "Splitting into the largest equal groups means HCF.",
+      "$36 = 2^2 \\times 3^2$ and $54 = 2 \\times 3^3$, so $\\text{HCF} = 2 \\times 3^2 = 18$.",
+      "Each pack has $36 \\div 18 = 2$ pencils and $54 \\div 18 = 3$ erasers."
+    ], "answer": "18 packs, each with 2 pencils and 3 erasers" },
+
+    { "type": "heading", "text": "Order of operations" },
+    { "type": "paragraph", "text": "When a calculation has more than one operation, work in this order, often remembered as **BODMAS**:" },
+    { "type": "list", "ordered": true, "items": [
+      "**B**rackets first.",
+      "**O**f, powers and roots (e.g. $3^2$, $\\sqrt{16}$).",
+      "**D**ivision and **M**ultiplication, from left to right.",
+      "**A**ddition and **S**ubtraction, from left to right."
+    ] },
+    { "type": "example", "title": "Worked example 5", "problem": "Calculate: (a) $18 + 6 \\times 4 - 10 \\div 2$  (b) $(15 - 3)^2 \\div 4 \\times 3$", "steps": [
+      "(a) Multiply and divide first: $6 \\times 4 = 24$ and $10 \\div 2 = 5$. Then $18 + 24 - 5 = 37$.",
+      "(b) Brackets: $15 - 3 = 12$. Power: $12^2 = 144$. Then left to right: $144 \\div 4 = 36$ and $36 \\times 3 = 108$."
+    ], "answer": "(a) $37$  (b) $108$" },
+    { "type": "callout", "label": "Common mistake", "text": "Division and multiplication have the **same** priority, so work from left to right. $24 \\div 4 \\times 2 = 6 \\times 2 = 12$, not $24 \\div 8 = 3$." },
+
+    { "type": "heading", "text": "Rounding and estimating" },
+    { "type": "paragraph", "text": "To round, look at the digit just to the right of the place you are rounding to. If it is $5$ or more, round up; if it is less than $5$, round down. Estimate answers by rounding first, then check that your exact answer is close." },
+    { "type": "table", "caption": "Rounding 37 482", "headers": ["Round to the nearest", "Answer"], "rows": [
+      ["10", "37 480"],
+      ["100", "37 500"],
+      ["1 000", "37 000"],
+      ["10 000", "40 000"]
+    ] },
+    { "type": "example", "title": "Worked example 6: long multiplication and division", "problem": "Calculate without a calculator: (a) $346 \\times 27$  (b) $9\\ 984 \\div 24$", "steps": [
+      "(a) Estimate: $350 \\times 30 = 10\\ 500$.",
+      "$346 \\times 20 = 6\\ 920$ and $346 \\times 7 = 2\\ 422$; add: $6\\ 920 + 2\\ 422 = 9\\ 342$. This is close to the estimate.",
+      "(b) Estimate: $10\\ 000 \\div 25 = 400$.",
+      "$24 \\times 400 = 9\\ 600$, leaving $384$; $24 \\times 16 = 384$. So $9\\ 984 \\div 24 = 416$."
+    ], "answer": "(a) $9\\ 342$  (b) $416$" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Natural numbers $\\mathbb{N} = \\{1;\\ 2;\\ 3;\\ \\ldots\\}$; whole numbers $\\mathbb{N}_0 = \\{0;\\ 1;\\ 2;\\ \\ldots\\}$.",
+      "Addition and multiplication are commutative and associative; multiplication is distributive over addition and subtraction.",
+      "A prime number has exactly two factors. $1$ is not prime, and $2$ is the only even prime.",
+      "Write numbers as products of primes using exponents, e.g. $360 = 2^3 \\times 3^2 \\times 5$.",
+      "HCF: common primes, lowest powers (sharing into groups). LCM: all primes, highest powers (things that repeat).",
+      "Order of operations: brackets, powers and roots, then × and ÷ left to right, then + and − left to right.",
+      "Estimate first, then check that your exact answer is reasonable."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "Which of these numbers is prime?", "options": ["$51$", "$57$", "$59$", "$91$"], "answer": 2, "explanation": "$51 = 3 \\times 17$, $57 = 3 \\times 19$ and $91 = 7 \\times 13$. Only $59$ has exactly two factors, $1$ and $59$." },
+    { "id": "q2", "type": "truefalse", "prompt": "$0$ is a natural number.", "answer": false, "explanation": "The natural numbers start at $1$. Zero is a **whole** number ($\\mathbb{N}_0$) but not a natural number." },
+    { "id": "q3", "type": "numeric", "prompt": "Find the HCF of $36$ and $60$.", "answer": 12, "tolerance": 0, "explanation": "$36 = 2^2 \\times 3^2$ and $60 = 2^2 \\times 3 \\times 5$. Common primes with lowest powers: $2^2 \\times 3 = 12$." },
+    { "id": "q4", "type": "numeric", "prompt": "Find the LCM of $12$ and $18$.", "answer": 36, "tolerance": 0, "explanation": "$12 = 2^2 \\times 3$ and $18 = 2 \\times 3^2$. All primes with highest powers: $2^2 \\times 3^2 = 36$." },
+    { "id": "q5", "type": "mcq", "prompt": "Calculate $20 - 4 \\times 3 + 6 \\div 2$.", "options": ["$27$", "$11$", "$51$", "$5$"], "answer": 1, "explanation": "Multiply and divide first: $4 \\times 3 = 12$ and $6 \\div 2 = 3$. Then $20 - 12 + 3 = 11$." },
+    { "id": "q6", "type": "match", "prompt": "Match each statement with the property it shows.", "marks": 5, "pairs": [
+      { "left": "$5 + 7 = 7 + 5$", "right": "Commutative property" },
+      { "left": "$(2 \\times 3) \\times 4 = 2 \\times (3 \\times 4)$", "right": "Associative property" },
+      { "left": "$3(4 + 5) = 3 \\times 4 + 3 \\times 5$", "right": "Distributive property" },
+      { "left": "$8 + 0 = 8$", "right": "Additive identity" },
+      { "left": "$9 \\times 1 = 9$", "right": "Multiplicative identity" }
+    ], "explanation": "Commutative: order changes. Associative: grouping changes. Distributive: multiplication spreads over addition. $0$ is the identity for addition and $1$ is the identity for multiplication." },
+    { "id": "q7", "type": "truefalse", "prompt": "$3\\ 492$ is divisible by $4$.", "answer": true, "explanation": "Look at the last two digits: $92 \\div 4 = 23$ exactly, so $3\\ 492$ is divisible by $4$." },
+    { "id": "q8", "type": "mcq", "prompt": "Which number is a factor of $2\\ 345$?", "options": ["$2$", "$3$", "$5$", "$9$"], "answer": 2, "explanation": "The last digit is $5$, so it is divisible by $5$. The last digit is odd (not divisible by $2$), and the digit sum $2 + 3 + 4 + 5 = 14$ is not divisible by $3$ or $9$." },
+    { "id": "q9", "type": "numeric", "prompt": "Round $46\\ 758$ to the nearest hundred.", "answer": 46800, "tolerance": 0, "explanation": "The hundreds digit is $7$ and the digit to its right is $5$, so round up: $46\\ 800$." },
+    { "id": "q10", "type": "numeric", "prompt": "Calculate without a calculator: $3\\ 456 \\div 16$", "answer": 216, "tolerance": 0, "explanation": "$16 \\times 200 = 3\\ 200$, leaving $256$, and $16 \\times 16 = 256$. So the answer is $200 + 16 = 216$." },
+    { "id": "q11", "type": "numeric", "prompt": "Use the properties of numbers to calculate $125 \\times 37 \\times 8$ mentally.", "answer": 37000, "tolerance": 0, "explanation": "Rearrange (commutative and associative): $(125 \\times 8) \\times 37 = 1\\ 000 \\times 37 = 37\\ 000$." },
+    { "id": "q12", "type": "numeric", "prompt": "$72 = 2^3 \\times 3^2$. What is the smallest natural number you must multiply $72$ by to get a perfect square?", "answer": 2, "tolerance": 0, "explanation": "A perfect square has even exponents on every prime. $3^2$ is fine, but $2^3$ needs one more $2$: $72 \\times 2 = 144 = 2^4 \\times 3^2 = 12^2$." },
+    { "id": "q13", "type": "open", "marks": 2, "prompt": "Use the distributive property to calculate $99 \\times 23$ without a calculator. Show your method.", "memo": "$99 \\times 23 = (100 - 1) \\times 23$ ✓ (1)\n$= 2\\ 300 - 23 = 2\\ 277$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 5, "prompt": "(a) Write $540$ and $756$ as products of prime factors, using exponents.  (2)\n(b) Hence find the HCF and the LCM of $540$ and $756$.  (3)", "memo": "(a) $540 = 2^2 \\times 3^3 \\times 5$ ✓ (1)\n$756 = 2^2 \\times 3^3 \\times 7$ ✓ (1)\n(b) HCF $= 2^2 \\times 3^3 = 108$ ✓ (1)\nLCM $= 2^2 \\times 3^3 \\times 5 \\times 7$ ✓ $= 3\\ 780$ ✓ (2)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "Bells at two schools ring at regular intervals. One rings every 18 minutes and the other every 24 minutes. Both ring at 08:00. At what time will they next ring together? Show your working.", "memo": "The events repeat, so use the LCM ✓ (1)\n$18 = 2 \\times 3^2$, $24 = 2^3 \\times 3$, LCM $= 2^3 \\times 3^2 = 72$ minutes ✓ (1)\n08:00 + 72 min = 09:12 ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "There are 48 boys and 60 girls in Grade 8. They must be divided into groups of equal size, and each group must contain only boys or only girls. What is the largest possible group size, and how many groups will there be?", "memo": "Largest equal groups: use the HCF ✓ (1)\nHCF of $48$ and $60$ is $12$, so groups of 12 ✓ (1)\n$48 \\div 12 + 60 \\div 12 = 4 + 5 = 9$ groups ✓ (1)" }
+  ]
+}

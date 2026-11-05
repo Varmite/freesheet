@@ -1,0 +1,61 @@
+{
+  "id": "data-handling",
+  "title": "Data Handling",
+  "term": 4,
+  "summary": "The data cycle, collecting and organising data, measures of central tendency and spread, and drawing and interpreting graphs.",
+  "notes": [
+    { "type": "heading", "text": "The data cycle" },
+    { "type": "list", "ordered": true, "items": [
+      "Pose a question (e.g. 'How do learners travel to school?').",
+      "Collect data (survey, questionnaire, observation or existing records).",
+      "Organise the data (tally tables, frequency tables).",
+      "Summarise it (averages and spread).",
+      "Represent it (graphs).",
+      "Interpret and analyse it, then answer the question."
+    ] },
+    { "type": "list", "items": [
+      "**Categorical** data: categories or names (favourite sport, mode of transport).",
+      "**Numerical** data: numbers. **Discrete** data is counted (number of siblings); **continuous** data is measured (height, time)."
+    ] },
+    { "type": "heading", "text": "Averages" },
+    { "type": "table", "headers": ["Measure", "How to find it", "Best used when…"], "rows": [
+      ["Mean", "Add all values, divide by how many there are", "Data has no extreme values (outliers)"],
+      ["Median", "Middle value when arranged in order", "Data has outliers (e.g. house prices, salaries)"],
+      ["Mode", "Most common value", "Categorical data, or finding the most popular choice"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Monthly salaries at a small business: R6 500; R7 200; R7 200; R8 000; R9 100; R45 000. Find the mean, median and mode. Which best describes a typical salary?", "steps": [
+      "Mean = R83 000 ÷ 6 = R13 833,33",
+      "Median = (R7 200 + R8 000) ÷ 2 = R7 600",
+      "Mode = R7 200",
+      "The R45 000 salary is an outlier that pulls the mean up, so the median (R7 600) is more typical."
+    ], "answer": "The median is the best measure here." },
+    { "type": "heading", "text": "Spread" },
+    { "type": "paragraph", "text": "The **range** = highest value − lowest value. It shows how spread out the data is. A small range means the data is consistent." },
+    { "type": "heading", "text": "Graphs" },
+    { "type": "table", "headers": ["Graph", "Use"], "rows": [
+      ["Bar graph", "Compare categories"],
+      ["Double / compound bar graph", "Compare two sets of data for each category"],
+      ["Pie chart", "Show parts of a whole as percentages (sector angle = % × 360°)"],
+      ["Line graph", "Show change over time (trends)"],
+      ["Histogram", "Show grouped numerical data (bars touch)"]
+    ] },
+    { "type": "example", "title": "Worked example 2: pie chart", "problem": "Of 40 learners, 18 walk, 12 take a taxi, 6 ride in a car and 4 use a bus. Find the angle for 'walk' in a pie chart.", "steps": ["Fraction walking = 18 ÷ 40 = 45%", "Angle = 0,45 × 360° = 162°"], "answer": "162°" },
+    { "type": "callout", "label": "Misleading graphs", "text": "Check the vertical axis: if it does not start at zero, small differences can look huge. Also watch for uneven scales and 3D effects that distort size." }
+  ],
+  "questions": [
+    { "id": "discrete", "type": "mcq", "prompt": "Which is continuous data?", "options": ["Number of pets", "Shoe size sold", "Height of learners", "Favourite colour"], "answer": 2 },
+    { "id": "mean", "type": "numeric", "prompt": "Find the mean of: 12; 15; 9; 18; 21; 15", "answer": 15, "tolerance": 0 },
+    { "id": "median", "type": "numeric", "prompt": "Find the median of: 7; 3; 9; 12; 5; 10", "answer": 8, "tolerance": 0 },
+    { "id": "mode", "type": "numeric", "prompt": "Find the mode of: 4; 6; 6; 7; 8; 6; 9; 4", "answer": 6, "tolerance": 0 },
+    { "id": "range", "type": "numeric", "prompt": "Daily temperatures: 14 °C; 19 °C; 22 °C; 17 °C; 11 °C. Find the range.", "answer": 11, "tolerance": 0, "unit": "°C" },
+    { "id": "best-measure", "type": "mcq", "prompt": "Which average is best for describing house prices in an area with a few mansions?", "options": ["Mean", "Median", "Mode", "Range"], "answer": 1 },
+    { "id": "graph-type", "type": "match", "marks": 3, "prompt": "Match each situation to the most suitable graph.", "pairs": [
+      { "left": "Monthly rainfall over a year", "right": "Line graph" },
+      { "left": "Percentage of a budget spent on each item", "right": "Pie chart" },
+      { "left": "Number of learners in each grade", "right": "Bar graph" }
+    ] },
+    { "id": "pie", "type": "numeric", "prompt": "In a survey of 60 people, 15 prefer rugby. What angle should rugby have in a pie chart?", "answer": 90, "tolerance": 0, "unit": "°" },
+    { "id": "misleading", "type": "open", "marks": 2, "prompt": "A company's bar graph of sales starts its vertical axis at R95 000. Explain why this could be misleading.", "memo": "✓ The axis does not start at zero (1)\n✓ so small differences in sales look much bigger than they are (1)" },
+    { "id": "cycle", "type": "open", "marks": 3, "prompt": "A learner wants to know how much time Grade 10s spend on social media. Describe how she could collect, organise and represent the data.", "memo": "✓ Collect: questionnaire/survey of a sample of Grade 10 learners (1)\n✓ Organise: frequency table of time groups (1)\n✓ Represent: histogram or bar graph; calculate averages (1)" }
+  ]
+}

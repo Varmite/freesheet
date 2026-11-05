@@ -2,57 +2,347 @@
   "id": "exponents",
   "title": "Exponents",
   "term": 1,
-  "summary": "Use the laws of exponents to simplify expressions and solve simple exponential equations.",
+  "summary": "Apply the laws of exponents for integer exponents to simplify algebraic and numerical expressions, and solve simple exponential equations by equating exponents.",
   "notes": [
-    { "type": "heading", "text": "What is an exponent?" },
-    { "type": "paragraph", "text": "An **exponent** tells you how many times a number (the **base**) is multiplied by itself. In $2^5$ the base is $2$ and the exponent is $5$, so $2^5 = 2 \\times 2 \\times 2 \\times 2 \\times 2 = 32$." },
-    { "type": "definition", "term": "Base and exponent", "text": "In $a^n$, $a$ is the base and $n$ is the exponent (also called the index or power)." },
+    { "type": "heading", "text": "Exponential notation" },
+    { "type": "paragraph", "text": "Exponents are a short way of writing repeated multiplication. Instead of writing $3 \\times 3 \\times 3 \\times 3$, we write $3^4$ and read it as \"3 to the power 4\". You will see exponents everywhere in Mathematics and Science: in area ($\\text{m}^2$), in volume ($\\text{cm}^3$), in compound interest and in scientific notation." },
+    { "type": "formula", "latex": "a^n = \\underbrace{a \\times a \\times a \\times \\cdots \\times a}_{n \\text{ factors}}", "caption": "Definition for a natural number n" },
+    { "type": "definition", "term": "Base, exponent and power", "text": "In $a^n$, $a$ is the **base** (the number being multiplied), $n$ is the **exponent** or **index** (how many times it is used as a factor), and the whole expression $a^n$ is called a **power**." },
+    { "type": "callout", "label": "Common mistake", "text": "Brackets matter. $(-2)^4 = (-2)(-2)(-2)(-2) = 16$, but $-2^4 = -(2 \\times 2 \\times 2 \\times 2) = -16$. Without brackets, the exponent belongs only to the $2$. Similarly, $3x^2$ means $3 \\times x \\times x$, while $(3x)^2 = 9x^2$." },
+    { "type": "paragraph", "text": "A negative base raised to an **even** exponent gives a positive answer, e.g. $(-3)^2 = 9$. A negative base raised to an **odd** exponent gives a negative answer, e.g. $(-2)^3 = -8$." },
+
     { "type": "heading", "text": "The laws of exponents" },
-    { "type": "paragraph", "text": "For $a, b > 0$ and $m, n$ real numbers:" },
+    { "type": "paragraph", "text": "In Grade 10 we work with **integer** exponents ($m, n \\in \\mathbb{Z}$) and positive bases ($a, b > 0$). Each law follows directly from the definition. For example, $a^2 \\times a^3 = (a \\times a)(a \\times a \\times a) = a^5$, which is why we add the exponents." },
     {
       "type": "table",
-      "caption": "Laws of exponents",
+      "caption": "Laws of exponents (a, b > 0 and m, n integers)",
       "headers": ["Law", "Rule", "Example"],
       "rows": [
-        ["Multiplication", "$a^m \\times a^n = a^{m+n}$", "$x^3 \\times x^4 = x^7$"],
-        ["Division", "$a^m \\div a^n = a^{m-n}$", "$y^8 \\div y^2 = y^6$"],
-        ["Power of a power", "$(a^m)^n = a^{mn}$", "$(2^3)^2 = 2^6$"],
-        ["Power of a product", "$(ab)^n = a^n b^n$", "$(3x)^2 = 9x^2$"],
-        ["Zero exponent", "$a^0 = 1$", "$7^0 = 1$"],
-        ["Negative exponent", "$a^{-n} = \\dfrac{1}{a^n}$", "$2^{-3} = \\dfrac{1}{8}$"],
-        ["Rational exponent", "$a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$", "$8^{\\frac{2}{3}} = 4$"]
+        ["1. Product (same base)", "$a^m \\times a^n = a^{m+n}$", "$x^3 \\times x^4 = x^7$"],
+        ["2. Quotient (same base)", "$\\dfrac{a^m}{a^n} = a^{m-n}$", "$\\dfrac{y^8}{y^2} = y^6$"],
+        ["3. Power of a power", "$(a^m)^n = a^{mn}$", "$(2^3)^2 = 2^6 = 64$"],
+        ["4. Power of a product", "$(ab)^n = a^n b^n$", "$(3x)^2 = 9x^2$"],
+        ["5. Power of a quotient", "$\\left(\\dfrac{a}{b}\\right)^n = \\dfrac{a^n}{b^n}$", "$\\left(\\dfrac{2}{5}\\right)^3 = \\dfrac{8}{125}$"],
+        ["6. Zero exponent", "$a^0 = 1$", "$7^0 = 1$;  $(5xy)^0 = 1$"],
+        ["7. Negative exponent", "$a^{-n} = \\dfrac{1}{a^n}$ and $\\dfrac{1}{a^{-n}} = a^n$", "$2^{-3} = \\dfrac{1}{8}$;  $\\dfrac{1}{x^{-2}} = x^2$"]
       ]
     },
-    { "type": "callout", "label": "Common mistake", "text": "$a^m + a^n$ is **not** $a^{m+n}$. The laws only apply to multiplication and division of powers with the same base." },
+    { "type": "heading", "text": "Why is $a^0 = 1$ and $a^{-n} = \\frac{1}{a^n}$?" },
+    { "type": "paragraph", "text": "Use the quotient law on a power divided by itself: $\\dfrac{a^3}{a^3} = a^{3-3} = a^0$. But anything (non-zero) divided by itself is $1$, so $a^0 = 1$.\n\nIn the same way, $\\dfrac{a^2}{a^5} = a^{2-5} = a^{-3}$. Cancelling gives $\\dfrac{a \\cdot a}{a \\cdot a \\cdot a \\cdot a \\cdot a} = \\dfrac{1}{a^3}$, so $a^{-3} = \\dfrac{1}{a^3}$. A negative exponent means \"one over\": it moves the power to the other side of the fraction line and the exponent becomes positive." },
+    { "type": "formula", "latex": "\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^{n}", "caption": "A negative exponent on a fraction flips the fraction" },
+    { "type": "callout", "label": "Common mistakes", "text": "• $a^m + a^n \\neq a^{m+n}$. The laws work for multiplication and division only: $2^3 + 2^2 = 8 + 4 = 12$, but $2^5 = 32$.\n• $2^{-3} \\neq -8$. A negative exponent does **not** make the answer negative: $2^{-3} = \\frac{1}{8}$.\n• $2x^{-1} = \\dfrac{2}{x}$, not $\\dfrac{1}{2x}$, because the exponent belongs only to $x$.\n• $3^2 \\times 3^4 = 3^6$, not $9^6$. Keep the base; add only the exponents." },
+
+    { "type": "heading", "text": "Simplifying algebraic expressions" },
+    { "type": "paragraph", "text": "Work in this order: (1) remove brackets using laws 3, 4 and 5, (2) deal with the coefficients (numbers), (3) apply the product and quotient laws to each variable separately, (4) write the final answer with **positive exponents** unless told otherwise." },
     {
       "type": "example",
       "title": "Worked example 1",
-      "problem": "Simplify $\\dfrac{2^{x+2} \\cdot 4^{x}}{8^{x}}$.",
+      "problem": "Simplify $(2x^3y)^2 \\cdot 3x^{-4}y$.",
       "steps": [
-        "Write every base as a power of 2: $4^x = (2^2)^x = 2^{2x}$ and $8^x = (2^3)^x = 2^{3x}$.",
-        "Combine: $\\dfrac{2^{x+2} \\cdot 2^{2x}}{2^{3x}} = 2^{x + 2 + 2x - 3x}$.",
-        "Simplify the exponent: $2^{2} = 4$."
+        "Remove the brackets: $(2x^3y)^2 = 2^2 x^6 y^2 = 4x^6y^2$.",
+        "Multiply: $4x^6y^2 \\cdot 3x^{-4}y = 12\\,x^{6 + (-4)}\\,y^{2+1}$.",
+        "$= 12x^2y^3$"
       ],
-      "answer": "$4$"
+      "answer": "$12x^2y^3$"
     },
-    { "type": "heading", "text": "Solving exponential equations" },
-    { "type": "paragraph", "text": "If $a^x = a^y$ (with $a > 0$, $a \\neq 1$) then $x = y$. Write both sides as powers of the same base, then equate the exponents." },
     {
       "type": "example",
       "title": "Worked example 2",
-      "problem": "Solve for $x$: $3^{x-1} = 27$.",
-      "steps": ["$27 = 3^3$, so $3^{x-1} = 3^3$.", "Equate exponents: $x - 1 = 3$."],
-      "answer": "$x = 4$"
+      "problem": "Simplify $\\dfrac{(-3a^2b^3)^3}{9a^4b^8}$.",
+      "steps": [
+        "Cube everything in the bracket, including the $-3$: $(-3)^3 = -27$, $(a^2)^3 = a^6$, $(b^3)^3 = b^9$.",
+        "$\\dfrac{-27a^6b^9}{9a^4b^8}$",
+        "Divide the coefficients and subtract the exponents: $-3a^{6-4}b^{9-8} = -3a^2b$."
+      ],
+      "answer": "$-3a^2b$"
     },
-    { "type": "formula", "latex": "a^x = a^y \\;\\Rightarrow\\; x = y", "caption": "Equal bases, equal exponents" }
+    {
+      "type": "example",
+      "title": "Worked example 3: negative exponents",
+      "problem": "Simplify, leaving positive exponents: (a) $(2x^{-2})^{-3}$  (b) $\\left(\\dfrac{2}{3}\\right)^{-2}$  (c) $\\dfrac{5a^{-2}b}{a^3b^{-4}}$",
+      "steps": [
+        "(a) $(2x^{-2})^{-3} = 2^{-3}x^{(-2)(-3)} = 2^{-3}x^{6} = \\dfrac{x^6}{8}$",
+        "(b) Flip the fraction and make the exponent positive: $\\left(\\dfrac{3}{2}\\right)^2 = \\dfrac{9}{4}$",
+        "(c) $5a^{-2-3}b^{1-(-4)} = 5a^{-5}b^{5} = \\dfrac{5b^5}{a^5}$"
+      ],
+      "answer": "(a) $\\dfrac{x^6}{8}$  (b) $\\dfrac{9}{4}$  (c) $\\dfrac{5b^5}{a^5}$"
+    },
+
+    { "type": "heading", "text": "Numerical bases: write them as prime factors" },
+    { "type": "paragraph", "text": "When an expression contains different numerical bases such as $6^x$, $9^x$ and $12^x$, the laws cannot be used directly, because the bases are not the same. The key idea is to write **every base as a product of prime numbers**. Then you can collect the powers of $2$, the powers of $3$, and so on." },
+    {
+      "type": "table",
+      "caption": "Common bases written as prime factors",
+      "headers": ["Number", "Prime factors", "Number", "Prime factors"],
+      "rows": [
+        ["$4$", "$2^2$", "$18$", "$2 \\cdot 3^2$"],
+        ["$6$", "$2 \\cdot 3$", "$24$", "$2^3 \\cdot 3$"],
+        ["$8$", "$2^3$", "$25$", "$5^2$"],
+        ["$9$", "$3^2$", "$27$", "$3^3$"],
+        ["$10$", "$2 \\cdot 5$", "$32$", "$2^5$"],
+        ["$12$", "$2^2 \\cdot 3$", "$36$", "$2^2 \\cdot 3^2$"],
+        ["$15$", "$3 \\cdot 5$", "$45$", "$3^2 \\cdot 5$"],
+        ["$16$", "$2^4$", "$72$", "$2^3 \\cdot 3^2$"]
+      ]
+    },
+    { "type": "paragraph", "text": "Remember to apply the exponent to **every** prime factor: $12^x = (2^2 \\cdot 3)^x = 2^{2x} \\cdot 3^x$, and $6^{x+1} = 2^{x+1} \\cdot 3^{x+1}$." },
+    {
+      "type": "example",
+      "title": "Worked example 4",
+      "problem": "Simplify $\\dfrac{9^n \\cdot 6^{n+1}}{27^n \\cdot 2^{n-1}}$.",
+      "steps": [
+        "Prime factors: $9^n = 3^{2n}$, $6^{n+1} = 2^{n+1} \\cdot 3^{n+1}$, $27^n = 3^{3n}$.",
+        "$\\dfrac{3^{2n} \\cdot 2^{n+1} \\cdot 3^{n+1}}{3^{3n} \\cdot 2^{n-1}}$",
+        "Powers of 2: $2^{(n+1) - (n-1)} = 2^{2}$.",
+        "Powers of 3: $3^{2n + n + 1 - 3n} = 3^{1}$.",
+        "$2^2 \\cdot 3 = 12$"
+      ],
+      "answer": "$12$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5",
+      "problem": "Simplify $\\dfrac{2^x \\cdot 10^{x+1}}{4^x \\cdot 5^x}$.",
+      "steps": [
+        "$10^{x+1} = 2^{x+1} \\cdot 5^{x+1}$ and $4^x = 2^{2x}$.",
+        "$\\dfrac{2^x \\cdot 2^{x+1} \\cdot 5^{x+1}}{2^{2x} \\cdot 5^x} = 2^{x + x + 1 - 2x} \\cdot 5^{x + 1 - x}$",
+        "$= 2^1 \\cdot 5^1 = 10$"
+      ],
+      "answer": "$10$"
+    },
+    { "type": "callout", "label": "Exam tip", "text": "When the variable disappears completely, you should get a plain number. If your answer still has some $x$'s in it, check whether you raised every prime factor to the correct power. Brackets around exponents like $2^{(n+1)-(n-1)}$ stop sign errors." },
+
+    { "type": "heading", "text": "Expressions with addition or subtraction" },
+    { "type": "paragraph", "text": "If the numerator or denominator contains terms that are **added or subtracted**, the laws cannot be applied across the $+$ or $-$ sign. Instead, **factorise** by taking out a common factor. Use $a^{x+k} = a^x \\cdot a^k$ to split the powers so that the common factor is easy to see." },
+    {
+      "type": "example",
+      "title": "Worked example 6",
+      "problem": "Simplify $\\dfrac{2^{x+3} + 2^x}{9 \\cdot 2^x}$.",
+      "steps": [
+        "Split the power: $2^{x+3} = 2^x \\cdot 2^3 = 8 \\cdot 2^x$.",
+        "Take out the common factor $2^x$ in the numerator: $\\dfrac{2^x(8 + 1)}{9 \\cdot 2^x}$.",
+        "$= \\dfrac{9 \\cdot 2^x}{9 \\cdot 2^x} = 1$"
+      ],
+      "answer": "$1$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 7",
+      "problem": "Simplify $\\dfrac{5^{x+1} - 5^{x-1}}{4 \\cdot 5^x}$.",
+      "steps": [
+        "Write $5^{x+1} = 5^x \\cdot 5$ and $5^{x-1} = 5^x \\cdot 5^{-1} = \\dfrac{5^x}{5}$.",
+        "Numerator: $5^x\\left(5 - \\dfrac{1}{5}\\right) = 5^x \\cdot \\dfrac{24}{5}$.",
+        "Divide by $4 \\cdot 5^x$: $\\dfrac{24}{5} \\div 4 = \\dfrac{24}{20} = \\dfrac{6}{5}$."
+      ],
+      "answer": "$\\dfrac{6}{5}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 8: using the difference of two squares",
+      "problem": "Simplify $\\dfrac{3^{2x} - 9}{3^x - 3}$.",
+      "steps": [
+        "$3^{2x} = (3^x)^2$ and $9 = 3^2$, so the numerator is a difference of two squares.",
+        "$\\dfrac{(3^x - 3)(3^x + 3)}{3^x - 3}$",
+        "Cancel the common factor: $3^x + 3$."
+      ],
+      "answer": "$3^x + 3$"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Do not cancel parts of a sum. In $\\dfrac{2^{x+3} + 2^x}{9 \\cdot 2^x}$ you may **not** cancel the $2^x$ on top with the $2^x$ below until the numerator has been factorised into a product." },
+
+    { "type": "heading", "text": "Solving exponential equations" },
+    { "type": "paragraph", "text": "In an **exponential equation** the unknown is in the exponent, e.g. $2^x = 32$. If two powers with the **same base** are equal, their exponents must be equal:" },
+    { "type": "formula", "latex": "a^x = a^y \\;\\Rightarrow\\; x = y \\qquad (a > 0,\\ a \\neq 1)", "caption": "Equal bases, equal exponents" },
+    { "type": "list", "ordered": true, "items": [
+      "Get the power on its own on one side (divide by any coefficient, or factorise if there are terms added together).",
+      "Write both sides as powers of the **same prime base**.",
+      "Equate the exponents and solve the resulting linear equation.",
+      "Check your answer by substituting it back."
+    ] },
+    {
+      "type": "table",
+      "caption": "Powers to know for solving equations",
+      "headers": ["Base", "Powers"],
+      "rows": [
+        ["$2$", "2;  4;  8;  16;  32;  64;  128;  256;  512;  1 024"],
+        ["$3$", "3;  9;  27;  81;  243;  729"],
+        ["$5$", "5;  25;  125;  625"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 9",
+      "problem": "Solve for $x$: (a) $2^x = 32$  (b) $4^{x+1} = 8$",
+      "steps": [
+        "(a) $32 = 2^5$, so $2^x = 2^5$ and $x = 5$.",
+        "(b) Both $4$ and $8$ are powers of $2$: $(2^2)^{x+1} = 2^3$, so $2^{2x+2} = 2^3$.",
+        "Equate exponents: $2x + 2 = 3$, so $2x = 1$ and $x = \\dfrac{1}{2}$."
+      ],
+      "answer": "(a) $x = 5$  (b) $x = \\dfrac{1}{2}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 10: a coefficient and a fraction",
+      "problem": "Solve for $x$: (a) $5 \\cdot 3^x = 405$  (b) $2^x = \\dfrac{1}{16}$  (c) $7^{x-2} = 1$",
+      "steps": [
+        "(a) Divide both sides by $5$ first: $3^x = 81 = 3^4$, so $x = 4$.",
+        "(b) $\\dfrac{1}{16} = \\dfrac{1}{2^4} = 2^{-4}$, so $x = -4$.",
+        "(c) $1 = 7^0$, so $x - 2 = 0$ and $x = 2$."
+      ],
+      "answer": "(a) $x = 4$  (b) $x = -4$  (c) $x = 2$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 11: a common factor",
+      "problem": "Solve for $x$: $2^{x+1} + 2^x = 24$",
+      "steps": [
+        "Factorise: $2^x \\cdot 2 + 2^x = 2^x(2 + 1) = 3 \\cdot 2^x$.",
+        "$3 \\cdot 2^x = 24$, so $2^x = 8 = 2^3$.",
+        "$x = 3$. Check: $2^4 + 2^3 = 16 + 8 = 24$ ✓"
+      ],
+      "answer": "$x = 3$"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "$5 \\cdot 3^x$ is **not** $15^x$. The exponent belongs only to the $3$, so divide by the $5$ first. Also, an equation such as $2^x = -8$ has **no solution**, because a positive base raised to any power is always positive." },
+    { "type": "callout", "label": "Looking ahead", "text": "In Grade 11 you will extend these laws to rational exponents such as $8^{\\frac{1}{3}} = \\sqrt[3]{8} = 2$, and solve harder exponential equations. Make sure the integer laws are automatic now." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "$a^n$ means $n$ factors of $a$; $a$ is the base and $n$ is the exponent. Watch brackets: $(-2)^4 = 16$ but $-2^4 = -16$.",
+      "Same base, multiply: add exponents. Same base, divide: subtract exponents. Power of a power: multiply exponents.",
+      "$(ab)^n = a^nb^n$ and $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$: the exponent applies to every factor in the bracket.",
+      "$a^0 = 1$ and $a^{-n} = \\frac{1}{a^n}$. A negative exponent does not make a number negative.",
+      "Different numerical bases: write each base as prime factors, then collect powers of each prime.",
+      "Terms added or subtracted: factorise (take out a common factor or use the difference of squares) before cancelling.",
+      "Exponential equations: isolate the power, write both sides with the same base, equate exponents and solve."
+    ] }
   ],
   "questions": [
-    { "id": "q1", "type": "mcq", "prompt": "Simplify $x^5 \\times x^3$.", "options": ["$x^{15}$", "$x^8$", "$2x^8$", "$x^2$"], "answer": 1, "explanation": "Same base, so add the exponents: $5 + 3 = 8$." },
-    { "id": "q2", "type": "truefalse", "prompt": "$5^0 = 0$", "answer": false, "explanation": "Any non-zero base to the power 0 equals $1$." },
-    { "id": "q3", "type": "numeric", "prompt": "Calculate $2^{-3}$. Give your answer as a decimal.", "answer": 0.125, "tolerance": 0.0001, "explanation": "$2^{-3} = \\dfrac{1}{2^3} = \\dfrac{1}{8} = 0{,}125$." },
-    { "id": "q4", "type": "numeric", "prompt": "Solve for $x$: $2^x = 32$.", "answer": 5, "explanation": "$32 = 2^5$, so $x = 5$." },
-    { "id": "q5", "type": "short", "prompt": "In the expression $7^4$, what is the number $7$ called?", "answers": ["base", "the base"], "explanation": "The number being multiplied is the base; $4$ is the exponent." },
-    { "id": "q6", "type": "match", "prompt": "Match each expression with its value.", "marks": 3, "pairs": [ { "left": "$9^{\\frac{1}{2}}$", "right": "3" }, { "left": "$4^{-1}$", "right": "1/4" }, { "left": "$(2^2)^3$", "right": "64" } ] },
-    { "id": "q7", "type": "open", "marks": 3, "prompt": "Simplify $\\dfrac{3^{n+1} - 3^{n}}{2 \\cdot 3^{n}}$. Show all your working.", "memo": "$\\dfrac{3^n(3 - 1)}{2 \\cdot 3^n}$ ✓ (take out common factor $3^n$)\n$= \\dfrac{3^n \\cdot 2}{2 \\cdot 3^n}$ ✓\n$= 1$ ✓" }
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Simplify $x^4 \\times x^5$.",
+      "options": ["$x^{20}$", "$x^9$", "$2x^9$", "$x^1$"],
+      "answer": 1,
+      "explanation": "Same base, multiplying: add the exponents. $4 + 5 = 9$, so $x^9$."
+    },
+    {
+      "id": "q2",
+      "type": "truefalse",
+      "prompt": "$(-3)^2 = -9$",
+      "answer": false,
+      "explanation": "$(-3)^2 = (-3)(-3) = 9$. A negative number raised to an even power is positive. ($-3^2$ without brackets would equal $-9$.)"
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "$2x^{-1} = \\dfrac{2}{x}$",
+      "answer": true,
+      "explanation": "The exponent $-1$ belongs only to $x$: $2x^{-1} = 2 \\times \\frac{1}{x} = \\frac{2}{x}$."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "prompt": "Simplify $(2a^3)^4$.",
+      "options": ["$8a^{12}$", "$16a^{7}$", "$2a^{12}$", "$16a^{12}$"],
+      "answer": 3,
+      "explanation": "Raise every factor to the power 4: $2^4 = 16$ and $(a^3)^4 = a^{12}$."
+    },
+    {
+      "id": "q5",
+      "type": "numeric",
+      "prompt": "Calculate $2^{-2} + 4^0$ without a calculator. Give your answer as an exact decimal.",
+      "answer": 1.25,
+      "tolerance": 0.001,
+      "explanation": "$2^{-2} = \\frac{1}{4} = 0{,}25$ and $4^0 = 1$, so the total is $1{,}25$."
+    },
+    {
+      "id": "q6",
+      "type": "match",
+      "prompt": "Match each expression with its value.",
+      "marks": 5,
+      "pairs": [
+        { "left": "$3^{-2}$", "right": "1/9" },
+        { "left": "$\\left(\\dfrac{2}{3}\\right)^{-1}$", "right": "3/2" },
+        { "left": "$5^0$", "right": "1" },
+        { "left": "$-2^4$", "right": "-16" },
+        { "left": "$(-2)^3$", "right": "-8" }
+      ],
+      "explanation": "$3^{-2} = \\frac{1}{9}$; a negative exponent flips a fraction, so $\\left(\\frac{2}{3}\\right)^{-1} = \\frac{3}{2}$; $5^0 = 1$; $-2^4 = -(16)$; $(-2)^3 = -8$ (odd power of a negative)."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "prompt": "Simplify $\\dfrac{6x^{-2}y^3}{2x^3y^{-1}}$ and write the answer with positive exponents.",
+      "options": ["$3xy^4$", "$\\dfrac{3y^4}{x^5}$", "$\\dfrac{3y^2}{x}$", "$\\dfrac{4y^4}{x^5}$"],
+      "answer": 1,
+      "explanation": "$6 \\div 2 = 3$; $x^{-2-3} = x^{-5}$; $y^{3-(-1)} = y^4$. So $3x^{-5}y^4 = \\frac{3y^4}{x^5}$."
+    },
+    {
+      "id": "q8",
+      "type": "numeric",
+      "prompt": "Solve for $x$: $3^{x+1} = 243$",
+      "answer": 4,
+      "tolerance": 0,
+      "explanation": "$243 = 3^5$, so $x + 1 = 5$ and $x = 4$."
+    },
+    {
+      "id": "q9",
+      "type": "numeric",
+      "prompt": "Solve for $x$: $2 \\cdot 3^x = 54$",
+      "answer": 3,
+      "tolerance": 0,
+      "explanation": "Divide by $2$ first: $3^x = 27 = 3^3$, so $x = 3$. (Note that $2 \\cdot 3^x$ is not $6^x$.)"
+    },
+    {
+      "id": "q10",
+      "type": "numeric",
+      "prompt": "Solve for $x$: $4^x = \\dfrac{1}{64}$",
+      "answer": -3,
+      "tolerance": 0,
+      "explanation": "$64 = 4^3$, so $\\frac{1}{64} = 4^{-3}$. Therefore $x = -3$."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "Solve for $x$: $9^{x-1} = 3$",
+      "options": ["$x = \\frac{3}{2}$", "$x = \\frac{1}{2}$", "$x = 2$", "$x = \\frac{4}{3}$"],
+      "answer": 0,
+      "explanation": "$9^{x-1} = (3^2)^{x-1} = 3^{2x-2}$. So $2x - 2 = 1$, giving $x = \\frac{3}{2}$."
+    },
+    {
+      "id": "q12",
+      "type": "numeric",
+      "prompt": "Solve for $x$: $8^x = 4^{x+1}$",
+      "answer": 2,
+      "tolerance": 0,
+      "explanation": "Write both sides as powers of 2: $2^{3x} = 2^{2x+2}$. So $3x = 2x + 2$ and $x = 2$. Check: $8^2 = 64 = 4^3$ ✓"
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Simplify $\\dfrac{2^{x+2} - 2^x}{3 \\cdot 2^{x+1}}$ without using a calculator.",
+      "memo": "Numerator: $2^x \\cdot 2^2 - 2^x = 2^x(4 - 1)$ ✓ (1)\nDenominator: $3 \\cdot 2^x \\cdot 2$ ✓ (1)\n$\\dfrac{3 \\cdot 2^x}{6 \\cdot 2^x} = \\dfrac{1}{2}$ ✓ (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Simplify $\\dfrac{6^x \\cdot 9^{x+1}}{27^x \\cdot 2^{x+1}}$ by writing each base in prime factors.",
+      "memo": "$6^x = 2^x \\cdot 3^x$ ✓ (1)\n$9^{x+1} = 3^{2x+2}$ and $27^x = 3^{3x}$ ✓ (1)\n$\\dfrac{2^x \\cdot 3^x \\cdot 3^{2x+2}}{3^{3x} \\cdot 2^{x+1}} = 2^{x-(x+1)} \\cdot 3^{x + 2x + 2 - 3x} = 2^{-1} \\cdot 3^2$ ✓ (1)\n$= \\dfrac{9}{2}$ ✓ (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Simplify and leave your answer with positive exponents: $\\dfrac{(-2a^2b)^3 \\cdot (3ab^{-2})^2}{6a^5b}$",
+      "memo": "$(-2a^2b)^3 = -8a^6b^3$ ✓ (1)\n$(3ab^{-2})^2 = 9a^2b^{-4}$ ✓ (1)\n$\\dfrac{-72a^8b^{-1}}{6a^5b} = -12a^3b^{-2}$ ✓ (1)\n$= -\\dfrac{12a^3}{b^2}$ ✓ (1)"
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 8,
+      "prompt": "Solve for $x$:\n(a) $25^x = 125$  (3)\n(b) $3^{x+2} - 3^x = 72$  (3)\n(c) $2^x = 0{,}125$  (2)",
+      "memo": "(a) $(5^2)^x = 5^3$ ✓ so $5^{2x} = 5^3$ ✓, $2x = 3$, $x = \\frac{3}{2}$ ✓ (3)\n(b) $3^x(3^2 - 1) = 72$ ✓, $8 \\cdot 3^x = 72$ so $3^x = 9 = 3^2$ ✓, $x = 2$ ✓ (3)\n(c) $0{,}125 = \\frac{1}{8} = 2^{-3}$ ✓, $x = -3$ ✓ (2)"
+    }
   ]
 }

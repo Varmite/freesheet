@@ -1,0 +1,49 @@
+{
+  "id": "lifestyle-diseases",
+  "title": "Lifestyle Diseases and Wellness",
+  "term": 2,
+  "summary": "Common lifestyle diseases (hypertension, type 2 diabetes, heart disease, cancer, obesity), risk factors, prevention and early detection, and the impact on individuals and South Africa.",
+  "notes": [
+    { "type": "heading", "text": "What are lifestyle diseases?" },
+    { "type": "paragraph", "text": "**Lifestyle diseases** (non-communicable diseases) are linked to the way people live: diet, activity, smoking, alcohol and stress. They are a leading cause of death in South Africa." },
+    { "type": "table", "headers": ["Disease", "Main risk factors", "Prevention"], "rows": [
+      ["Hypertension (high blood pressure)", "Too much salt, obesity, stress, alcohol, inactivity", "Less salt, exercise, healthy weight, regular check-ups"],
+      ["Type 2 diabetes", "Obesity, sugary foods and drinks, inactivity, family history", "Healthy diet, exercise, weight control"],
+      ["Heart disease and stroke", "Smoking, high cholesterol, hypertension, diabetes, inactivity", "Not smoking, exercise, healthy fats, managing blood pressure"],
+      ["Cancer (lung, cervical, breast, skin)", "Smoking, alcohol, UV exposure, some infections (HPV)", "Not smoking, sunscreen, HPV vaccine, screening"],
+      ["Obesity", "Excess kilojoules, inactivity, processed foods", "Balanced diet, portion control, activity"]
+    ] },
+    { "type": "callout", "label": "Risk factors", "text": "Some risk factors **cannot be changed** (age, genes, family history), but many **can** (diet, exercise, smoking, alcohol, stress). Changing these reduces risk significantly." },
+    { "type": "heading", "text": "Early detection" },
+    { "type": "list", "items": [
+      "Regular blood pressure and blood sugar tests at clinics.",
+      "Breast self-examination and Pap smears (cervical cancer screening).",
+      "Checking moles and skin changes.",
+      "Knowing your family's medical history."
+    ] },
+    { "type": "heading", "text": "Impact" },
+    { "type": "list", "items": [
+      "**Individual**: reduced quality of life, disability, early death, medical costs.",
+      "**Family**: loss of income, caring responsibilities, emotional strain.",
+      "**Country**: pressure on the health system, lost productivity, higher costs."
+    ] },
+    { "type": "example", "title": "Body Mass Index (BMI)", "problem": "Calculate the BMI of a person with a mass of 78 kg and a height of 1,72 m.", "steps": ["BMI = mass ÷ height²", "= 78 ÷ 1,72² = 78 ÷ 2,9584", "≈ 26,4"], "answer": "About 26,4 (in the 'overweight' range of 25–29,9 for adults)" }
+  ],
+  "questions": [
+    { "id": "ncd", "type": "short", "prompt": "Lifestyle diseases are also called non-… diseases. (one word)", "answers": ["communicable", "non-communicable"] },
+    { "id": "salt", "type": "mcq", "prompt": "Too much salt is a major risk factor for…", "options": ["hypertension", "cervical cancer", "flu", "TB"], "answer": 0 },
+    { "id": "hpv", "type": "mcq", "prompt": "Which vaccine helps prevent cervical cancer?", "options": ["Measles", "HPV", "BCG", "Polio"], "answer": 1 },
+    { "id": "bmi", "type": "numeric", "prompt": "Calculate the BMI of a person with mass 64 kg and height 1,60 m.", "answer": 25, "tolerance": 0.05 },
+    { "id": "changeable", "type": "truefalse", "prompt": "Family history is a risk factor that cannot be changed.", "answer": true },
+    { "id": "match", "type": "match", "marks": 4, "prompt": "Match each disease to a major risk factor.", "pairs": [
+      { "left": "Lung cancer", "right": "Smoking" },
+      { "left": "Type 2 diabetes", "right": "Sugary drinks and obesity" },
+      { "left": "Skin cancer", "right": "Excessive sun exposure" },
+      { "left": "Hypertension", "right": "High salt intake" }
+    ] },
+    { "id": "prevent", "type": "open", "marks": 3, "prompt": "Suggest THREE lifestyle changes that reduce the risk of heart disease.", "memo": "Any three (1 each): stop smoking; exercise; healthy diet; less salt; maintain healthy weight; manage stress; limit alcohol" },
+    { "id": "impact", "type": "open", "marks": 3, "prompt": "Discuss the impact of lifestyle diseases on the South African economy.", "memo": "✓ Pressure on public health services and budgets (1)\n✓ Lost productivity from illness and early death (1)\n✓ Families lose income, increasing poverty (1)" },
+    { "id": "detect", "type": "open", "marks": 2, "prompt": "Why is early detection of diseases such as diabetes and hypertension important?", "memo": "✓ They often have no early symptoms (1)\n✓ Early treatment prevents serious complications such as stroke, blindness or kidney failure (1)" },
+    { "id": "youth", "type": "open", "marks": 2, "prompt": "Why should young people care about lifestyle diseases now?", "memo": "✓ Habits formed young (diet, smoking, inactivity) continue into adulthood (1)\n✓ Risk builds over time; prevention is easier than cure (1)" }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "human-reproduction",
+  "title": "Human Reproduction",
+  "term": 1,
+  "summary": "Puberty, the male and female reproductive systems, the menstrual cycle, fertilisation and pregnancy, contraception and sexually transmitted infections.",
+  "notes": [
+    { "type": "heading", "text": "Puberty" },
+    { "type": "paragraph", "text": "**Puberty** is the stage, usually between about 9 and 15 years of age, when the body becomes sexually mature and able to reproduce. It is triggered by **hormones**: mainly **testosterone** in boys and **oestrogen** in girls." },
+    { "type": "table", "headers": ["Changes in boys", "Changes in girls", "Changes in both"], "rows": [
+      ["Voice deepens", "Breasts develop", "Growth spurt"],
+      ["Shoulders and chest broaden", "Hips widen", "Hair grows in the armpits and pubic area"],
+      ["Facial hair grows", "Menstruation (periods) begins", "Skin may become oily (acne)"],
+      ["Testes start producing sperm", "Ovaries start releasing eggs", "Emotional changes and new interest in relationships"]
+    ] },
+    { "type": "heading", "text": "The reproductive systems" },
+    { "type": "table", "caption": "Male reproductive system", "headers": ["Part", "Function"], "rows": [
+      ["Testes", "Produce sperm (male gametes) and testosterone"],
+      ["Scrotum", "Holds the testes outside the body, where it is cooler, so sperm develop properly"],
+      ["Sperm duct", "Carries sperm from the testes to the urethra"],
+      ["Glands (prostate, seminal vesicles)", "Add fluid to sperm to form semen"],
+      ["Penis and urethra", "Deliver semen into the vagina; the urethra also carries urine"]
+    ] },
+    { "type": "table", "caption": "Female reproductive system", "headers": ["Part", "Function"], "rows": [
+      ["Ovaries", "Produce eggs (ova, the female gametes) and oestrogen"],
+      ["Oviducts (fallopian tubes)", "Carry the egg to the uterus; fertilisation takes place here"],
+      ["Uterus (womb)", "Where the baby develops; its thick lining supports the embryo"],
+      ["Cervix", "Ring of muscle at the opening of the uterus"],
+      ["Vagina", "Receives sperm; the birth canal"]
+    ] },
+    { "type": "heading", "text": "The menstrual cycle" },
+    { "type": "paragraph", "text": "The **menstrual cycle** lasts about **28 days**. Each month the uterus lining thickens and an egg is released from an ovary (**ovulation**, around day 14). If the egg is not fertilised, the lining breaks down and leaves the body as blood through the vagina; this is **menstruation** (a period), lasting about 3 to 7 days." },
+    { "type": "heading", "text": "Fertilisation and pregnancy" },
+    { "type": "list", "ordered": true, "items": [
+      "During sexual intercourse, sperm are deposited in the vagina and swim through the uterus to the oviducts.",
+      "If a sperm meets an egg, the nuclei join: this is **fertilisation**, forming a **zygote**.",
+      "The zygote divides as it moves down the oviduct and becomes an **embryo**.",
+      "The embryo **implants** in the uterus lining (this is the start of pregnancy).",
+      "The **placenta** forms; through it oxygen and food pass from the mother's blood to the baby, and wastes pass back. The **umbilical cord** connects the baby to the placenta.",
+      "After about 8 weeks the embryo is called a **foetus**. Birth takes place after about **40 weeks** (9 months)."
+    ] },
+    { "type": "callout", "label": "Important", "text": "Alcohol, smoking and drugs cross the placenta and can harm the baby. Drinking alcohol in pregnancy can cause **foetal alcohol syndrome**, which affects the child's brain and growth for life." },
+    { "type": "heading", "text": "Contraception and sexual health" },
+    { "type": "table", "headers": ["Method", "How it works", "Protects against STIs?"], "rows": [
+      ["Abstinence", "No sexual intercourse", "Yes, completely"],
+      ["Condom (male or female)", "Barrier that stops sperm from reaching the egg", "Yes, greatly reduces risk"],
+      ["Contraceptive pill, injection or implant", "Hormones prevent ovulation", "No"]
+    ] },
+    { "type": "paragraph", "text": "**Sexually transmitted infections (STIs)** are spread through sexual contact, for example HIV, syphilis, gonorrhoea and herpes. Many have no early symptoms, so testing is important; clinics give free, confidential help." }
+  ],
+  "questions": [
+    { "id": "testosterone", "type": "short", "prompt": "Which hormone causes puberty changes in boys?", "answers": ["testosterone"] },
+    { "id": "egg-made", "type": "mcq", "prompt": "Where are eggs produced?", "options": ["Uterus", "Ovaries", "Oviducts", "Cervix"], "answer": 1 },
+    { "id": "fertilise-where", "type": "mcq", "prompt": "Where does fertilisation normally take place?", "options": ["Vagina", "Uterus", "Oviduct", "Ovary"], "answer": 2 },
+    { "id": "zygote", "type": "short", "prompt": "What is the cell formed when a sperm fertilises an egg called?", "answers": ["zygote", "a zygote"] },
+    { "id": "pill-sti", "type": "truefalse", "prompt": "The contraceptive pill protects against HIV.", "answer": false, "explanation": "Only barrier methods (condoms) and abstinence protect against STIs." },
+    { "id": "parts-match", "type": "match", "marks": 4, "prompt": "Match each structure to its function.", "pairs": [
+      { "left": "Placenta", "right": "Exchange of food, oxygen and wastes" },
+      { "left": "Scrotum", "right": "Keeps testes cooler than the body" },
+      { "left": "Uterus", "right": "Where the baby develops" },
+      { "left": "Testes", "right": "Produce sperm" }
+    ] },
+    { "id": "cycle-days", "type": "numeric", "prompt": "On about which day of a 28-day menstrual cycle does ovulation take place?", "answer": 14, "tolerance": 1 },
+    { "id": "menstruation", "type": "open", "marks": 2, "prompt": "Explain what menstruation is and why it happens.", "memo": "✓ The thickened lining of the uterus breaks down and leaves the body with blood (1)\n✓ because the egg released that month was not fertilised (1)" },
+    { "id": "alcohol", "type": "open", "marks": 2, "prompt": "Why should a pregnant woman not drink alcohol?", "memo": "✓ Alcohol passes through the placenta into the baby's blood (1)\n✓ It can cause foetal alcohol syndrome / damage to the baby's brain and growth (1)" },
+    { "id": "puberty-changes", "type": "open", "marks": 3, "prompt": "Name THREE changes that happen to girls during puberty.", "memo": "Any three (1 each): breasts develop; hips widen; menstruation begins; growth spurt; pubic and armpit hair; ovaries release eggs" }
+  ]
+}

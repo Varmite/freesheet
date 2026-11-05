@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "grade": 9,
+  "id": "social-sciences-history",
+  "name": "Social Sciences: History",
+  "description": "CAPS Grade 9 History: World War II and the Holocaust, apartheid and resistance in the 1950s, turning points in 1960, 1976 and 1990, and the Cold War.",
+  "topics": [
+    { "id": "world-war-two", "title": "World War II (1939–1945)", "term": 1 },
+    { "id": "nazi-germany-and-the-holocaust", "title": "Nazi Germany and the Holocaust", "term": 1 },
+    { "id": "apartheid-from-1948", "title": "Turning Points: Apartheid from 1948", "term": 2 },
+    { "id": "resistance-in-the-1950s", "title": "Resistance to Apartheid in the 1950s", "term": 2 },
+    { "id": "sharpeville-and-the-armed-struggle", "title": "1960: Sharpeville and the Armed Struggle", "term": 3 },
+    { "id": "the-soweto-uprising", "title": "1976: The Soweto Uprising", "term": 3 },
+    { "id": "the-road-to-democracy", "title": "1990–1994: The Road to Democracy", "term": 3 },
+    { "id": "the-cold-war", "title": "The Nuclear Age and the Cold War", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
+  ]
+}

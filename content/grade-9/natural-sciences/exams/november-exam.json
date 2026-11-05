@@ -1,0 +1,82 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This question paper consists of FIVE questions. Answer ALL the questions.",
+    "Show all working in calculations and include the correct units.",
+    "Use g = 10 N/kg where needed.",
+    "Write neatly and legibly."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Multiple choice",
+      "questions": [
+        { "id": "q1-1", "type": "mcq", "prompt": "Which organelle is found in animal cells?", "options": ["Cell wall", "Chloroplast", "Mitochondrion", "Large central vacuole"], "answer": 2 },
+        { "id": "q1-2", "type": "mcq", "prompt": "Which blood vessel has valves to prevent blood flowing backwards?", "options": ["Artery", "Vein", "Capillary", "Aorta"], "answer": 1 },
+        { "id": "q1-3", "type": "mcq", "prompt": "The structure that joins the foetus to the placenta is the…", "options": ["oviduct", "cervix", "umbilical cord", "uterus"], "answer": 2 },
+        { "id": "q1-4", "type": "mcq", "prompt": "The name of the compound FeS is…", "options": ["iron sulfate", "iron sulfide", "iron oxide", "iron sulfur"], "answer": 1 },
+        { "id": "q1-5", "type": "mcq", "prompt": "Which solution has a pH of about 13?", "options": ["Vinegar", "Pure water", "Lemon juice", "Drain cleaner"], "answer": 3 },
+        { "id": "q1-6", "type": "mcq", "prompt": "Galvanising protects iron from rusting by coating it with…", "options": ["copper", "zinc", "paint", "oil"], "answer": 1 },
+        { "id": "q1-7", "type": "mcq", "prompt": "The weight of a 2 kg book on Earth is about…", "options": ["2 N", "5 N", "20 N", "200 N"], "answer": 2 },
+        { "id": "q1-8", "type": "mcq", "prompt": "In a series circuit, the current…", "options": ["is the same everywhere", "is shared between components", "is zero in the last bulb", "increases as bulbs are added"], "answer": 0 },
+        { "id": "q1-9", "type": "mcq", "prompt": "Metamorphic rocks are formed by…", "options": ["cooling of lava", "compaction of sediments", "heat and pressure on existing rock", "evaporation of seawater"], "answer": 2 },
+        { "id": "q1-10", "type": "mcq", "prompt": "Which stage comes immediately after the main sequence in the life of the sun?", "options": ["White dwarf", "Red giant", "Supernova", "Nebula"], "answer": 1 }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Life and Living",
+      "questions": [
+        { "id": "q2-1", "type": "open", "marks": 3, "prompt": "Name THREE structures found in a plant cell but not in an animal cell.", "memo": "✓ Cell wall (1)\n✓ Chloroplasts (1)\n✓ Large central vacuole (1)" },
+        { "id": "q2-2", "type": "numeric", "marks": 1, "prompt": "A microscope has a ×10 eyepiece and a ×40 objective. What is the total magnification?", "answer": 400, "tolerance": 0 },
+        { "id": "q2-3", "type": "open", "marks": 4, "prompt": "Describe what happens to the diaphragm, the ribs, the volume of the chest and the air pressure in the lungs when you inhale.", "memo": "✓ Diaphragm contracts and flattens (1)\n✓ Ribs move up and out (1)\n✓ Chest volume increases (1)\n✓ Pressure in lungs decreases, so air moves in (1)" },
+        { "id": "q2-4", "type": "match", "marks": 3, "prompt": "Match each organ to its function.", "pairs": [
+          { "left": "Small intestine", "right": "Absorbs digested food" },
+          { "left": "Large intestine", "right": "Absorbs water" },
+          { "left": "Liver", "right": "Makes bile" }
+        ] },
+        { "id": "q2-5", "type": "open", "marks": 4, "prompt": "Describe the events from fertilisation to implantation.", "memo": "✓ A sperm joins with an egg in the oviduct (fertilisation) (1)\n✓ forming a zygote (1)\n✓ The zygote divides to form an embryo as it moves to the uterus (1)\n✓ The embryo implants in the thick uterus lining (1)" },
+        { "id": "q2-6", "type": "open", "marks": 2, "prompt": "Name ONE method of contraception that also protects against STIs and explain how it works.", "memo": "✓ Condom (or abstinence) (1)\n✓ It is a barrier that prevents sperm and body fluids from passing between partners (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Matter and Materials",
+      "questions": [
+        { "id": "q3-1", "type": "open", "marks": 2, "prompt": "Balance the equation: Na + Cl₂ → NaCl", "memo": "✓✓ 2Na + Cl₂ → 2NaCl" },
+        { "id": "q3-2", "type": "numeric", "marks": 1, "prompt": "How many oxygen atoms are there in 2H₂SO₄?", "answer": 8, "tolerance": 0 },
+        { "id": "q3-3", "type": "open", "marks": 3, "prompt": "Write a word equation for the reaction of hydrochloric acid with magnesium, and name a test for the gas formed.", "memo": "✓ hydrochloric acid + magnesium → magnesium chloride + hydrogen (2)\n✓ A lit splint gives a squeaky pop (1)" },
+        { "id": "q3-4", "type": "open", "marks": 2, "prompt": "What is neutralisation? Give ONE everyday example.", "memo": "✓ The reaction of an acid with a base to form a salt and water (1)\n✓ Example: antacid for indigestion / lime on acidic soil / toothpaste / treating a bee sting (1)" },
+        { "id": "q3-5", "type": "open", "marks": 4, "prompt": "Learners set up three test tubes with iron nails: A (tap water and air), B (boiled water covered with oil) and C (dry air with calcium chloride). (a) In which tube will the nail rust? (b) What do the results show? (c) Give TWO ways to prevent rusting.", "memo": "(a) ✓ A (1)\n(b) ✓ Both water and oxygen are needed for rusting (1)\n(c) ✓✓ any two: paint, oil/grease, galvanise, plastic coating, stainless steel (2)" },
+        { "id": "q3-6", "type": "open", "marks": 4, "prompt": "Carbon and sulfur both burn in oxygen. (a) Write a balanced equation for each. (b) Which of the products contributes to acid rain?", "memo": "(a) ✓ C + O₂ → CO₂ (1)\n✓ S + O₂ → SO₂ (1)\n(b) ✓ Sulfur dioxide (1) — it dissolves in rainwater to form an acid ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Energy and Change",
+      "questions": [
+        { "id": "q4-1", "type": "numeric", "marks": 2, "prompt": "A learner has a mass of 55 kg. Calculate the learner's weight on Earth.", "answer": 550, "tolerance": 0, "unit": "N" },
+        { "id": "q4-2", "type": "numeric", "marks": 2, "prompt": "A box is pushed to the right with a force of 120 N. Friction of 35 N acts to the left. Calculate the size of the resultant force.", "answer": 85, "tolerance": 0, "unit": "N" },
+        { "id": "q4-3", "type": "numeric", "marks": 2, "prompt": "Calculate the resistance of a component if the potential difference across it is 9 V and the current is 0,3 A.", "answer": 30, "tolerance": 0, "unit": "Ω" },
+        { "id": "q4-4", "type": "open", "marks": 3, "prompt": "Two identical bulbs are connected in parallel to a 6 V battery. The ammeter in the main circuit reads 1,2 A. (a) What is the voltage across each bulb? (b) What is the current through each bulb? (c) What would happen to the reading on the main ammeter if one bulb were removed?", "memo": "(a) ✓ 6 V (1)\n(b) ✓ 0,6 A (1)\n(c) ✓ It would decrease (to 0,6 A) (1)" },
+        { "id": "q4-5", "type": "numeric", "marks": 3, "prompt": "A 2 kW stove plate is used for 3 hours a day. Electricity costs R2,80 per kWh. Calculate the cost per day in rand.", "answer": 16.8, "tolerance": 0.01, "unit": "rand" },
+        { "id": "q4-6", "type": "open", "marks": 3, "prompt": "Describe the energy conversions in a coal-fired power station.", "memo": "✓ Chemical energy in coal is converted into heat when it burns (1)\n✓ Heat boils water to make steam, whose kinetic energy turns the turbines (1)\n✓ The generator converts kinetic energy into electrical energy (1)" },
+        { "id": "q4-7", "type": "open", "marks": 2, "prompt": "Explain how an earth leakage unit protects people.", "memo": "✓ It detects current leaking to earth, e.g. through a person (1)\n✓ and switches off (trips) the electricity very quickly to prevent a fatal shock (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Planet Earth and Beyond",
+      "questions": [
+        { "id": "q5-1", "type": "match", "marks": 4, "prompt": "Match each sphere to an example from it.", "pairs": [
+          { "left": "Lithosphere", "right": "Granite mountain" },
+          { "left": "Hydrosphere", "right": "Groundwater" },
+          { "left": "Atmosphere", "right": "Nitrogen gas" },
+          { "left": "Biosphere", "right": "Earthworm" }
+        ] },
+        { "id": "q5-2", "type": "open", "marks": 3, "prompt": "Name the three types of rock and give ONE example of each.", "memo": "✓ Igneous: granite/basalt (1)\n✓ Sedimentary: sandstone/shale/limestone (1)\n✓ Metamorphic: marble/slate/quartzite (1)" },
+        { "id": "q5-3", "type": "open", "marks": 2, "prompt": "Give ONE economic advantage and ONE environmental disadvantage of mining.", "memo": "✓ Advantage: jobs / exports / raw materials / taxes (1)\n✓ Disadvantage: habitat destruction / acid mine drainage / dust / mine dumps (1)" },
+        { "id": "q5-4", "type": "open", "marks": 3, "prompt": "Explain the difference between the natural greenhouse effect and global warming.", "memo": "✓ The natural greenhouse effect: greenhouse gases trap some heat, keeping Earth warm enough for life (1)\n✓ Human activities add extra greenhouse gases (1)\n✓ which trap more heat and raise the average global temperature (global warming) (1)" },
+        { "id": "q5-5", "type": "open", "marks": 3, "prompt": "Describe how a star forms.", "memo": "✓ Gravity pulls gas and dust in a nebula together (1)\n✓ The collapsing cloud heats up to form a protostar (1)\n✓ When the core is hot enough, nuclear fusion of hydrogen begins (1)" }
+      ]
+    }
+  ]
+}

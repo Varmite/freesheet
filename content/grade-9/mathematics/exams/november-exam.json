@@ -1,0 +1,106 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 120,
+  "totalMarks": 100,
+  "instructions": [
+    "This question paper consists of 9 questions. Answer ALL the questions.",
+    "Clearly show ALL calculations. Answers only will NOT necessarily be awarded full marks.",
+    "You may use an approved scientific calculator, unless stated otherwise.",
+    "Round off answers to TWO decimal places, unless stated otherwise.",
+    "Give reasons for all statements in the geometry questions.",
+    "Diagrams are NOT necessarily drawn to scale.",
+    "Write neatly and legibly."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Number systems and exponents",
+      "instructions": "Do NOT use a calculator in this question.",
+      "questions": [
+        { "id": "q1-irrational", "type": "mcq", "marks": 1, "prompt": "Which number is irrational?", "options": ["$\\sqrt{9}$", "$0{,}25$", "$\\sqrt{11}$", "$-\\frac{3}{4}$"], "answer": 2, "explanation": "$11$ is not a perfect square, so $\\sqrt{11}$ is irrational." },
+        { "id": "q1-negative-exponent", "type": "mcq", "marks": 1, "prompt": "What is the value of $3^{-2}$?", "options": ["$-9$", "$-6$", "$\\frac{1}{9}$", "$\\frac{1}{6}$"], "answer": 2, "explanation": "$3^{-2} = \\frac{1}{3^2} = \\frac{1}{9}$." },
+        { "id": "q1-recurring", "type": "open", "marks": 3, "prompt": "Write $0{,}\\dot{3}\\dot{6}$ as a common fraction in its simplest form. Show ALL your working.", "memo": "Let $x = 0{,}3636\\ldots$; $100x = 36{,}3636\\ldots$ ✓ (1)\n$99x = 36$ ✓ (1)\n$x = \\frac{36}{99} = \\frac{4}{11}$ ✓ (1)" },
+        { "id": "q1-fractions", "type": "open", "marks": 3, "prompt": "Calculate: $-\\dfrac{2}{3} + \\dfrac{5}{6} \\div \\left(-\\dfrac{1}{2}\\right)$", "memo": "$\\frac{5}{6} \\times (-2) = -\\frac{5}{3}$ ✓ (division first) (1)\n$-\\frac{2}{3} - \\frac{5}{3}$ ✓ (1)\n$= -\\frac{7}{3} = -2\\frac{1}{3}$ ✓ (1)" },
+        { "id": "q1-simplify", "type": "open", "marks": 3, "prompt": "Simplify, leaving positive exponents: $(2a^3b^{-2})^2 \\times 3a^{-4}b^5$", "memo": "$(2a^3b^{-2})^2 = 4a^6b^{-4}$ ✓ (1)\n$12$ ✓ (1)\n$a^{6-4}b^{-4+5} = a^2b$, so $12a^2b$ ✓ (1)" },
+        { "id": "q1-exp-equation", "type": "open", "marks": 2, "prompt": "Solve for $x$: $5^{x - 2} = \\dfrac{1}{25}$", "memo": "$\\frac{1}{25} = 5^{-2}$, so $x - 2 = -2$ ✓ (1)\n$x = 0$ ✓ (1)" },
+        { "id": "q1-scientific", "type": "open", "marks": 2, "prompt": "Calculate and give your answer in scientific notation: $(4 \\times 10^{-3}) \\times (3 \\times 10^{5})$", "memo": "$12 \\times 10^{2}$ ✓ (1)\n$= 1{,}2 \\times 10^{3}$ ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Financial mathematics and proportion",
+      "questions": [
+        { "id": "q2-compound", "type": "open", "marks": 4, "prompt": "Thandi invests R15 000 for 3 years at 7% per year.\n(a) Calculate the final amount if interest is compounded annually.  (2)\n(b) Calculate the final amount if simple interest is earned.  (1)\n(c) How much more does the compound interest investment earn?  (1)", "memo": "(a) $15\\ 000(1{,}07)^3$ ✓ $= \\text{R}18\\ 375{,}65$ ✓ (2)\n(b) $15\\ 000(1 + 0{,}07 \\times 3) = \\text{R}18\\ 150$ ✓ (1)\n(c) $\\text{R}225{,}65$ ✓ (1)" },
+        { "id": "q2-commission", "type": "open", "marks": 3, "prompt": "A salesperson earns a basic salary of R6 500 per month plus 5% commission on sales.\n(a) Calculate her total income in a month when her sales are R64 000.  (2)\n(b) In another month her total income is R10 500. Calculate her sales for that month.  (1)", "memo": "(a) Commission $= 0{,}05 \\times 64\\ 000 = \\text{R}3\\ 200$ ✓; total $= \\text{R}9\\ 700$ ✓ (2)\n(b) $(10\\ 500 - 6\\ 500) \\div 0{,}05 = \\text{R}80\\ 000$ ✓ (1)" },
+        { "id": "q2-inverse", "type": "open", "marks": 3, "prompt": "6 identical pumps empty a dam in 14 hours.\n(a) How long would 4 pumps take?  (2)\n(b) How many pumps are needed to empty the dam in 7 hours?  (1)", "memo": "(a) $6 \\times 14 = 84$ pump-hours ✓; $84 \\div 4 = 21$ hours ✓ (2)\n(b) $84 \\div 7 = 12$ pumps ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Patterns, functions and relationships",
+      "questions": [
+        { "id": "q3-linear-pattern", "type": "open", "marks": 4, "prompt": "Consider the pattern $5;\\ 9;\\ 13;\\ 17;\\ \\ldots$\n(a) Determine the general term $T_n$.  (2)\n(b) Calculate $T_{100}$.  (1)\n(c) Is $250$ a term of the pattern? Explain.  (1)", "memo": "(a) $d = 4$ ✓; $T_n = 4n + 1$ ✓ (2)\n(b) $401$ ✓ (1)\n(c) $4n + 1 = 250$ gives $n = 62{,}25$, not a natural number, so no ✓ (1)" },
+        { "id": "q3-ratio-pattern", "type": "open", "marks": 3, "prompt": "Consider the pattern $2;\\ 6;\\ 18;\\ 54;\\ \\ldots$\n(a) Write down the general term.  (2)\n(b) Calculate $T_7$.  (1)", "memo": "(a) Constant ratio 3 ✓; $T_n = 2 \\times 3^{n-1}$ ✓ (2)\n(b) $2 \\times 3^6 = 1\\ 458$ ✓ (1)" },
+        { "id": "q3-table", "type": "open", "marks": 3, "prompt": "The table shows a linear relationship:\n$x$: $-2;\\ 0;\\ 2;\\ 4$\n$y$: $11;\\ 7;\\ 3;\\ -1$\n(a) Find the rule in the form $y = mx + c$.  (2)\n(b) Find $x$ when $y = -13$.  (1)", "memo": "(a) $y$ decreases by 4 when $x$ increases by 2, so $m = -2$ ✓; $c = 7$, so $y = -2x + 7$ ✓ (2)\n(b) $-2x + 7 = -13$, $x = 10$ ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Algebraic expressions and factorisation",
+      "questions": [
+        { "id": "q4-expand-binomials", "type": "open", "marks": 2, "prompt": "Expand and simplify: $(x - 5)(x + 3)$", "memo": "$x^2 + 3x - 5x - 15$ ✓ (1)\n$= x^2 - 2x - 15$ ✓ (1)" },
+        { "id": "q4-square", "type": "open", "marks": 2, "prompt": "Expand and simplify: $(3x - 2)^2$", "memo": "$9x^2 - 12x$ ✓ (1)\n$+ 4$ ✓ (1)" },
+        { "id": "q4-trinomial-product", "type": "open", "marks": 3, "prompt": "Expand and simplify: $(2x + 1)(x^2 - x + 3)$", "memo": "$2x^3 - 2x^2 + 6x$ ✓ (1)\n$+ x^2 - x + 3$ ✓ (1)\n$= 2x^3 - x^2 + 5x + 3$ ✓ (1)" },
+        { "id": "q4-factor-common", "type": "open", "marks": 2, "prompt": "Factorise fully: $12a^2b - 18ab^2$", "memo": "$6ab$ ✓ (1)\n$6ab(2a - 3b)$ ✓ (1)" },
+        { "id": "q4-factor-dots", "type": "open", "marks": 2, "prompt": "Factorise fully: $3x^2 - 75$", "memo": "$3(x^2 - 25)$ ✓ (1)\n$3(x - 5)(x + 5)$ ✓ (1)" },
+        { "id": "q4-factor-trinomial", "type": "open", "marks": 2, "prompt": "Factorise fully: $x^2 - x - 12$", "memo": "$(x - 4)(x + 3)$ ✓✓ (2)" },
+        { "id": "q4-fraction", "type": "open", "marks": 2, "prompt": "Simplify: $\\dfrac{x^2 - 16}{x^2 + 2x - 8}$", "memo": "$\\dfrac{(x - 4)(x + 4)}{(x + 4)(x - 2)}$ ✓ (1)\n$= \\dfrac{x - 4}{x - 2}$ ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Equations",
+      "questions": [
+        { "id": "q5-linear", "type": "open", "marks": 2, "prompt": "Solve for $x$: $3(2x - 1) = 4x + 9$", "memo": "$6x - 3 = 4x + 9$ ✓ (1)\n$x = 6$ ✓ (1)" },
+        { "id": "q5-fractions", "type": "open", "marks": 3, "prompt": "Solve for $x$: $\\dfrac{x - 2}{3} - \\dfrac{x + 1}{4} = 1$", "memo": "$4(x - 2) - 3(x + 1) = 12$ ✓ (1)\n$4x - 8 - 3x - 3 = 12$ ✓ (1)\n$x = 23$ ✓ (1)" },
+        { "id": "q5-quadratic", "type": "open", "marks": 3, "prompt": "Solve for $x$: $x^2 + 2x - 24 = 0$", "memo": "$(x + 6)(x - 4) = 0$ ✓✓ (2)\n$x = -6$ or $x = 4$ ✓ (1)" },
+        { "id": "q5-subject", "type": "open", "marks": 2, "prompt": "Make $b$ the subject of the formula $P = 2(l + b)$.", "memo": "$\\frac{P}{2} = l + b$ ✓ (1)\n$b = \\frac{P}{2} - l$ ✓ (1)" },
+        { "id": "q5-word", "type": "open", "marks": 2, "prompt": "The length of a rectangle is 4 cm more than its breadth, and its area is $45\\ \\text{cm}^2$. Write an equation and solve it to find the breadth.", "memo": "$b(b + 4) = 45$, so $b^2 + 4b - 45 = 0$ ✓ (1)\n$(b + 9)(b - 5) = 0$; $b = 5$ cm (a length cannot be negative) ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Graphs",
+      "questions": [
+        { "id": "q6-gradient", "type": "open", "marks": 2, "prompt": "Calculate the gradient of the straight line through $(-1;\\ 4)$ and $(3;\\ -4)$.", "memo": "$m = \\dfrac{-4 - 4}{3 - (-1)}$ ✓ (1)\n$= -2$ ✓ (1)" },
+        { "id": "q6-equation", "type": "open", "marks": 2, "prompt": "Determine the equation of the line through $(-1;\\ 4)$ and $(3;\\ -4)$.", "memo": "$4 = -2(-1) + c$ ✓ (1)\n$c = 2$, so $y = -2x + 2$ ✓ (1)" },
+        { "id": "q6-intercepts", "type": "open", "marks": 2, "prompt": "Write down the coordinates of the $x$- and $y$-intercepts of $y = -2x + 2$.", "memo": "$y$-intercept $(0;\\ 2)$ ✓ (1)\n$x$-intercept $(1;\\ 0)$ ✓ (1)" },
+        { "id": "q6-intersection", "type": "open", "marks": 2, "prompt": "Find the point of intersection of $y = -2x + 2$ and $y = x - 4$.", "memo": "$-2x + 2 = x - 4$, so $x = 2$ ✓ (1)\n$y = -2$, so $(2;\\ -2)$ ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Geometry",
+      "instructions": "In the diagram, AB ∥ CD and the transversal PQ cuts AB at E and CD at F. ∠AEF = 3x + 10° and ∠EFD = 5x − 30°. Give reasons for all statements.",
+      "context": [
+        { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 200\" font-family=\"sans-serif\" font-size=\"13\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"20\" y1=\"50\" x2=\"310\" y2=\"50\"/><line x1=\"20\" y1=\"150\" x2=\"310\" y2=\"150\"/><line x1=\"100\" y1=\"190\" x2=\"240\" y2=\"10\"/><polyline points=\"60,44 68,50 60,56\"/><polyline points=\"60,144 68,150 60,156\"/></g><g fill=\"#000\"><text x=\"6\" y=\"55\">A</text><text x=\"314\" y=\"55\">B</text><text x=\"6\" y=\"155\">C</text><text x=\"314\" y=\"155\">D</text><text x=\"244\" y=\"14\">P</text><text x=\"88\" y=\"196\">Q</text><text x=\"194\" y=\"44\">E</text><text x=\"136\" y=\"168\">F</text><text x=\"132\" y=\"68\">3x + 10°</text><text x=\"146\" y=\"140\">5x − 30°</text></g></svg>", "caption": "AB ∥ CD, with ∠AEF = 3x + 10° and ∠EFD = 5x − 30°." }
+      ],
+      "questions": [
+        { "id": "q7-solve-x", "type": "open", "marks": 3, "prompt": "Calculate $x$ and the size of $\\hat{AEF}$, giving a reason.", "memo": "$3x + 10^\\circ = 5x - 30^\\circ$ ✓ (1)\n(alt ∠s; $AB \\parallel CD$) ✓ (1)\n$x = 20^\\circ$ and $\\hat{AEF} = 70^\\circ$ ✓ (1)" },
+        { "id": "q7-bef", "type": "open", "marks": 2, "prompt": "Calculate $\\hat{BEF}$, giving a reason.", "memo": "$\\hat{BEF} = 180^\\circ - 70^\\circ = 110^\\circ$ ✓ (1)\n(∠s on a str line) ✓ (1)" },
+        { "id": "q7-congruence", "type": "open", "marks": 4, "prompt": "In quadrilateral $PQRS$, $PQ = SR$ and $PQ \\parallel SR$. Diagonal $QS$ is drawn. Prove that $\\triangle PQS \\equiv \\triangle RSQ$.", "memo": "$PQ = SR$ (given) ✓ (1)\n$\\hat{PQS} = \\hat{RSQ}$ (alt ∠s; $PQ \\parallel SR$) ✓ (1)\n$QS$ common ✓ (1)\n$\\triangle PQS \\equiv \\triangle RSQ$ (SAS) ✓ (1)" },
+        { "id": "q7-similar", "type": "open", "marks": 3, "prompt": "At the same time of day, a vertical pole 2 m tall casts a shadow 1,5 m long, and a building casts a shadow 12 m long. Use similar triangles to calculate the height of the building.", "memo": "The triangles are similar (equal angles) ✓ (1)\n$\\frac{h}{2} = \\frac{12}{1{,}5}$ ✓ (1)\n$h = 16$ m ✓ (1)" },
+        { "id": "q7-polygon", "type": "open", "marks": 2, "prompt": "Calculate the sum of the interior angles of a heptagon (7 sides), and the size of each interior angle of a regular heptagon.", "memo": "$(7 - 2) \\times 180^\\circ = 900^\\circ$ ✓ (1)\n$900^\\circ \\div 7 \\approx 128{,}57^\\circ$ ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 8: Measurement",
+      "questions": [
+        { "id": "q8-rhombus", "type": "open", "marks": 3, "prompt": "A rhombus has diagonals of 16 cm and 12 cm. Calculate (a) its area and (b) the length of one side.", "memo": "(a) $\\frac{1}{2} \\times 16 \\times 12 = 96\\ \\text{cm}^2$ ✓ (1)\n(b) Half-diagonals 8 cm and 6 cm meet at $90^\\circ$ ✓; side $= \\sqrt{64 + 36} = 10$ cm ✓ (2)" },
+        { "id": "q8-cylinder", "type": "open", "marks": 4, "prompt": "A cylindrical container has a radius of 7 cm and a height of 20 cm.\n(a) Calculate its volume.  (2)\n(b) How many litres does it hold?  (1)\n(c) Calculate the area of its curved surface.  (1)", "memo": "(a) $\\pi(7)^2(20)$ ✓ $= 980\\pi \\approx 3\\ 078{,}76\\ \\text{cm}^3$ ✓ (2)\n(b) $\\approx 3{,}08$ litres ✓ (1)\n(c) $2\\pi(7)(20) = 280\\pi \\approx 879{,}65\\ \\text{cm}^2$ ✓ (1)" },
+        { "id": "q8-trapezium", "type": "open", "marks": 3, "prompt": "An isosceles trapezium has parallel sides of 10 cm and 16 cm and a perpendicular height of 6 cm.\n(a) Calculate its area.  (2)\n(b) Calculate the length of each slanting side.  (1)", "memo": "(a) $\\frac{1}{2}(10 + 16) \\times 6$ ✓ $= 78\\ \\text{cm}^2$ ✓ (2)\n(b) Overhang 3 cm; $\\sqrt{3^2 + 6^2} = \\sqrt{45} \\approx 6{,}71$ cm ✓ (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 9: Data handling and probability",
+      "questions": [
+        { "id": "q9-quartiles", "type": "open", "marks": 3, "prompt": "The marks of eight learners are: $4;\\ 7;\\ 9;\\ 10;\\ 12;\\ 15;\\ 18;\\ 21$. Find the median, the lower and upper quartiles, and the interquartile range.", "memo": "Median $= \\frac{10 + 12}{2} = 11$ ✓ (1)\n$Q_1 = 8$ and $Q_3 = 16{,}5$ ✓ (1)\nIQR $= 8{,}5$ ✓ (1)" },
+        { "id": "q9-probability", "type": "open", "marks": 3, "prompt": "(a) Two dice are rolled. Find $P(\\text{sum} = 6)$ and $P(\\text{a double})$.  (2)\n(b) A coin is tossed and a die is rolled. Find $P(\\text{tail and an even number})$.  (1)", "memo": "(a) $\\frac{5}{36}$ ✓; $\\frac{6}{36} = \\frac{1}{6}$ ✓ (2)\n(b) $\\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}$ ✓ (1)" }
+      ]
+    }
+  ]
+}

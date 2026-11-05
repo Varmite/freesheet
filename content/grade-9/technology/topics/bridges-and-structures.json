@@ -1,0 +1,59 @@
+{
+  "id": "bridges-and-structures",
+  "title": "Bridges and Structures",
+  "term": 1,
+  "summary": "Types of bridges (beam, truss, arch, cantilever, suspension and cable-stayed), how each carries loads, forces in bridge members, and choosing a bridge design.",
+  "notes": [
+    { "type": "heading", "text": "Why bridges?" },
+    { "type": "paragraph", "text": "A **bridge** is a structure that **spans** (crosses) an obstacle such as a river, valley or road. The **span** is the distance between supports. Bridges must carry their own weight (**dead load**, static) and moving traffic and wind (**live load**, dynamic)." },
+    { "type": "heading", "text": "Types of bridges" },
+    { "type": "table", "headers": ["Type", "How it works", "Span and use"], "rows": [
+      ["Beam bridge", "A horizontal beam rests on supports (piers or abutments) at each end. The top of the beam is in compression and the bottom in tension.", "Short spans; simple and cheap (footbridges, highway overpasses)"],
+      ["Truss bridge", "A beam strengthened with a triangulated frame (truss) of struts and ties", "Medium spans; strong and light (railway bridges)"],
+      ["Arch bridge", "The curved arch carries the load outwards and down to strong abutments; the arch is in compression", "Medium spans; often built of stone or concrete (Bloukrans Bridge in the Garden Route is a concrete arch)"],
+      ["Cantilever bridge", "Each half is a cantilever (a beam supported at one end only) projecting from a pier; the two arms meet in the middle", "Medium to long spans where supports cannot be placed in the middle"],
+      ["Suspension bridge", "The deck hangs from vertical cables attached to two main cables, which pass over tall towers and are anchored at each end; cables in tension, towers in compression", "Very long spans (Golden Gate Bridge)"],
+      ["Cable-stayed bridge", "Cables run directly from tall towers (pylons) to the deck in a fan or harp shape", "Long spans; modern (Nelson Mandela Bridge in Johannesburg)"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "A **cantilever** is a beam fixed at one end only, like a diving board or a balcony. The top is in tension and the bottom in compression." },
+    { "type": "heading", "text": "Forces in bridges" },
+    { "type": "list", "items": [
+      "**Compression**: pillars, arches, towers and the top of beams.",
+      "**Tension**: cables, ties and the bottom of beams.",
+      "**Bending**: beams and decks between supports.",
+      "**Torsion**: twisting caused by strong winds (the Tacoma Narrows Bridge in the USA collapsed in 1940 because wind made it twist and sway)."
+    ] },
+    { "type": "heading", "text": "Choosing a bridge design" },
+    { "type": "list", "items": [
+      "**Length of span** needed.",
+      "**Load**: pedestrians, cars or trains.",
+      "**Ground conditions**: can supports be built in the river? Are the banks strong enough for arch abutments?",
+      "**Materials and cost**: steel, reinforced concrete, timber, rope.",
+      "**Environment and appearance**: impact on rivers and wildlife; looks.",
+      "**Ships**: does the bridge need to be high or open to let boats pass?"
+    ] },
+    { "type": "example", "title": "Testing a model bridge", "problem": "Learners build a paper beam bridge spanning 300 mm. It collapses with a load of 150 g. Suggest how to make it stronger without adding more paper.", "steps": [
+      "Fold or corrugate the paper to make the deck stiffer.",
+      "Roll paper into tubes for beams.",
+      "Add a triangulated truss along the sides.",
+      "Use an arch shape below the deck."
+    ], "answer": "Change the shape: folding, tubes, triangulation or an arch." }
+  ],
+  "questions": [
+    { "id": "span", "type": "short", "prompt": "What is the distance between the supports of a bridge called?", "answers": ["span", "the span"] },
+    { "id": "longest", "type": "mcq", "prompt": "Which type of bridge can span the longest distances?", "options": ["Beam", "Arch", "Suspension", "Truss"], "answer": 2 },
+    { "id": "arch-force", "type": "mcq", "prompt": "The curved part of an arch bridge is mainly in…", "options": ["tension", "compression", "torsion", "shear"], "answer": 1 },
+    { "id": "mandela", "type": "short", "prompt": "What type of bridge is the Nelson Mandela Bridge in Johannesburg?", "answers": ["cable-stayed", "cable stayed", "cable-stayed bridge"] },
+    { "id": "cantilever", "type": "truefalse", "prompt": "A cantilever is a beam supported at one end only.", "answer": true },
+    { "id": "types", "type": "match", "marks": 4, "prompt": "Match each bridge type to its description.", "pairs": [
+      { "left": "Beam", "right": "Horizontal beam on two supports" },
+      { "left": "Truss", "right": "Strengthened with triangles" },
+      { "left": "Suspension", "right": "Deck hangs from main cables over towers" },
+      { "left": "Cantilever", "right": "Arms project from piers and meet in the middle" }
+    ] },
+    { "id": "beam-forces", "type": "open", "marks": 2, "prompt": "A car drives onto the middle of a beam bridge. Which part of the beam is in compression and which in tension?", "memo": "✓ The top of the beam is in compression (1)\n✓ The bottom of the beam is in tension (1)" },
+    { "id": "suspension-forces", "type": "open", "marks": 2, "prompt": "Name the forces in the cables and the towers of a suspension bridge.", "memo": "✓ Cables: tension (1)\n✓ Towers: compression (1)" },
+    { "id": "choose", "type": "open", "marks": 3, "prompt": "Give THREE factors an engineer must consider when choosing a bridge design.", "memo": "Any three (1 each): span; type of load; ground conditions; materials; cost; environmental impact; appearance; need for ships to pass" },
+    { "id": "live-dead", "type": "open", "marks": 2, "prompt": "Explain the difference between dead load and live load on a bridge.", "memo": "✓ Dead load: the bridge's own weight; static (1)\n✓ Live load: moving traffic, people and wind; dynamic (1)" }
+  ]
+}

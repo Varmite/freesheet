@@ -1,0 +1,182 @@
+{
+  "id": "critical-reading",
+  "title": "Reading for Comprehension and Critical Reading",
+  "term": 1,
+  "summary": "Distinguishing fact and opinion, identifying the writer's purpose, tone and bias, understanding the effect of language choices, and answering higher-order comprehension questions.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "Reading critically"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Critical reading** means not simply accepting what you read, but asking questions: Who wrote this? Why? Is it fact or opinion? What is left out? How does the language try to influence me?"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Fact",
+        "Opinion"
+      ],
+      "rows": [
+        [
+          "Can be proved true or false",
+          "A belief, feeling or judgement that cannot be proved"
+        ],
+        [
+          "'Durban is on the east coast.'",
+          "'Durban is the best city in South Africa.'"
+        ],
+        [
+          "Often uses numbers, dates, research",
+          "Often uses words like *I think*, *best*, *should*, *clearly*, *beautiful*"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Purpose, tone and audience"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Purpose**: why the text was written: to inform, persuade, entertain, instruct, warn or criticise.",
+        "**Audience**: who it is written for (e.g. teenagers, parents, scientists).",
+        "**Tone**: the writer's attitude, shown through word choice: admiring, critical, sarcastic, urgent, humorous, neutral.",
+        "**Bias**: a one-sided view that ignores other perspectives."
+      ]
+    },
+    {
+      "type": "passage",
+      "title": "Practice passage: Should Schools Ban Cellphones? (original text; the survey and principal are fictional)",
+      "text": "In 2023, a survey of 2 000 South African teachers found that seven out of ten believed cellphones distract learners during lessons. Some schools have responded by banning phones completely, locking them away in pouches until the final bell.\n\nSupporters of a ban argue that phones fuel cyberbullying and make it almost impossible to concentrate when a notification can interrupt every few minutes. One principal in Pretoria claims that marks at her school rose after the ban, although no independent study has confirmed this.\n\nYet a blanket ban seems an old-fashioned answer to a modern problem. Phones are powerful learning tools: dictionaries, calculators, cameras and libraries in a pocket. Surely the wiser choice is to teach young people to use them responsibly, rather than to pretend that the digital world stops at the school gate?"
+    },
+    {
+      "type": "example",
+      "title": "Critical questions on the passage",
+      "problem": "(a) Find one fact and one opinion. (b) What is the writer's own view in the final paragraph, and how do you know?",
+      "steps": [
+        "(a) Fact: 'a survey of 2 000 South African teachers found that seven out of ten believed cellphones distract learners'. Opinion: 'a blanket ban seems an old-fashioned answer'.",
+        "(b) The writer opposes a total ban and prefers teaching responsible use.",
+        "Evidence: the word 'Yet' signals a change in argument; the writer uses loaded words ('old-fashioned', 'wiser') and a rhetorical question ('Surely…?') to persuade the reader."
+      ],
+      "answer": "Separate verifiable statements from judgements, and look for signal words and persuasive devices."
+    },
+    {
+      "type": "heading",
+      "text": "Language and its effect"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Connotation**: the feelings a word suggests. 'Slim' (positive) and 'skinny' (negative) have similar meanings but different connotations.",
+        "**Emotive language**: words chosen to stir feelings (e.g. 'fuel cyberbullying').",
+        "**Rhetorical question**: a question asked for effect, not for an answer.",
+        "**Hedging words**: 'claims', 'seems', 'allegedly' show the writer is not certain or distances themselves from a claim."
+      ]
+    },
+    {
+      "type": "callout",
+      "label": "Exam tip",
+      "text": "For 'Discuss the writer's tone' questions, give the tone word (e.g. critical), then quote a word or phrase that shows it, then explain how it shows that tone."
+    }
+  ],
+  "questions": [
+    {
+      "id": "fact",
+      "type": "mcq",
+      "prompt": "Which statement is a FACT?",
+      "options": [
+        "Soccer is the most exciting sport.",
+        "Cape Town has the most beautiful beaches.",
+        "The 2010 FIFA World Cup was held in South Africa.",
+        "Everyone should learn to cook."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "survey",
+      "type": "short",
+      "prompt": "According to the passage, how many teachers out of ten believed cellphones distract learners?",
+      "answers": [
+        "seven",
+        "7",
+        "seven out of ten",
+        "7 out of 10"
+      ]
+    },
+    {
+      "id": "claims",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Why does the writer use the word 'claims' when referring to the principal?",
+      "memo": "✓ It suggests the statement has not been proved (1)\n✓ The writer distances themselves and casts doubt, because no independent study confirmed it (1)"
+    },
+    {
+      "id": "view",
+      "type": "mcq",
+      "prompt": "What is the writer's view on banning cellphones?",
+      "options": [
+        "Strongly in favour of a total ban",
+        "Against a total ban; favours teaching responsible use",
+        "Has no opinion",
+        "Thinks phones should be banned at home too"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "rhetorical",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Identify the rhetorical question in the final paragraph and explain its purpose.",
+      "memo": "✓ 'Surely the wiser choice is…school gate?' (1)\n✓ It persuades the reader to agree; the answer is presented as obvious (1)"
+    },
+    {
+      "id": "connotation",
+      "type": "match",
+      "marks": 3,
+      "prompt": "Match each word for a thin person to its connotation.",
+      "pairs": [
+        {
+          "left": "Slender",
+          "right": "Positive"
+        },
+        {
+          "left": "Scrawny",
+          "right": "Negative"
+        },
+        {
+          "left": "Thin",
+          "right": "Neutral"
+        }
+      ]
+    },
+    {
+      "id": "balanced",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Is the passage balanced or biased? Give reasons with reference to the text.",
+      "memo": "✓ Partly balanced: it presents both sides (survey and supporters' arguments) (1)\n✓ But it is ultimately biased against a ban: loaded words like 'old-fashioned' and a rhetorical question (1)\n✓ It also casts doubt on the principal's claim (1)"
+    },
+    {
+      "id": "learning-tools",
+      "type": "open",
+      "marks": 2,
+      "prompt": "What figure of speech is used in 'libraries in a pocket', and what does it mean?",
+      "memo": "✓ Metaphor (1)\n✓ A phone gives access to huge amounts of information, like carrying a whole library (1)"
+    },
+    {
+      "id": "opinion-words",
+      "type": "truefalse",
+      "prompt": "Words such as 'best', 'should' and 'surely' often signal opinions.",
+      "answer": true
+    },
+    {
+      "id": "own-view",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Do you agree with the writer? Give your own view with TWO reasons.",
+      "memo": "✓ Clear opinion (1)\n✓✓ Two relevant, well-explained reasons (2)"
+    }
+  ]
+}

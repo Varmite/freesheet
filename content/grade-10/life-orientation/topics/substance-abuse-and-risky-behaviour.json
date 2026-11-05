@@ -1,0 +1,55 @@
+{
+  "id": "substance-abuse-and-risky-behaviour",
+  "title": "Substance Abuse and Risky Behaviour",
+  "term": 2,
+  "summary": "Factors behind risky behaviour, the effects of substance abuse on the individual, family and society, links between substance use, unsafe sex and violence, and strategies for prevention and getting help.",
+  "notes": [
+    { "type": "heading", "text": "Why do young people take risks?" },
+    { "type": "list", "items": [
+      "**Peer pressure** and the wish to fit in.",
+      "**Curiosity** and seeking excitement.",
+      "The developing **teenage brain**: the area that controls planning and impulse control matures last (in the mid-20s).",
+      "**Stress**, trauma or emotional pain.",
+      "**Easy availability** of alcohol and drugs; adults who model substance use.",
+      "**Media** that glamorises drinking, smoking and vaping."
+    ] },
+    { "type": "heading", "text": "Effects of substance abuse" },
+    { "type": "table", "headers": ["Level", "Effects"], "rows": [
+      ["Individual", "Addiction, mental health problems, poor school results, accidents, risky sex, crime, damage to the brain, liver, lungs and heart"],
+      ["Family", "Conflict, financial strain, broken trust, neglect, violence"],
+      ["Community and country", "Crime, road deaths, pressure on health services, lost productivity, gang activity"]
+    ] },
+    { "type": "callout", "label": "The link between risks", "text": "Alcohol and drugs lower inhibitions and impair judgement, making unprotected sex, sexual assault, violence and drunk driving much more likely. One risk often leads to others." },
+    { "type": "heading", "text": "Prevention and protective factors" },
+    { "type": "list", "items": [
+      "Strong refusal skills and healthy self-esteem.",
+      "Supportive family and friends.",
+      "Involvement in sport, culture and community activities.",
+      "Clear goals for the future.",
+      "Accurate knowledge about the effects of substances."
+    ] },
+    { "type": "heading", "text": "Getting help" },
+    { "type": "list", "items": [
+      "**Substance Abuse Helpline**: 0800 12 13 14 (toll-free).",
+      "**SANCA** (South African National Council on Alcoholism and Drug Dependence): counselling and treatment.",
+      "School counsellors, clinics and support groups (Narcotics Anonymous, Alcoholics Anonymous).",
+      "Treatment often involves detoxification, counselling and long-term support to prevent relapse."
+    ] }
+  ],
+  "questions": [
+    { "id": "brain", "type": "truefalse", "prompt": "The part of the brain that controls planning and impulse control is fully developed by age 13.", "answer": false, "explanation": "It matures in the mid-20s." },
+    { "id": "factors", "type": "open", "marks": 3, "prompt": "Give THREE reasons why teenagers may engage in risky behaviour.", "memo": "Any three (1 each): peer pressure; curiosity/excitement; developing brain; stress; availability; role models; media" },
+    { "id": "sanca", "type": "short", "prompt": "Name the South African organisation that offers treatment for alcohol and drug dependence (abbreviation).", "answers": ["sanca"] },
+    { "id": "levels", "type": "match", "marks": 3, "prompt": "Match each effect to the level it mainly affects.", "pairs": [
+      { "left": "Liver damage", "right": "Individual" },
+      { "left": "Money spent on drugs instead of food", "right": "Family" },
+      { "left": "Increase in road deaths", "right": "Community" }
+    ] },
+    { "id": "link", "type": "open", "marks": 3, "prompt": "Explain how alcohol use increases the risk of HIV infection.", "memo": "✓ Alcohol lowers inhibitions and impairs judgement (1)\n✓ making unprotected sex more likely (1)\n✓ and increasing the risk of sexual assault (1)" },
+    { "id": "protective", "type": "mcq", "prompt": "Which is a protective factor against substance abuse?", "options": ["Friends who use drugs", "Boredom", "Involvement in sport", "Easy access to alcohol"], "answer": 2 },
+    { "id": "family", "type": "open", "marks": 3, "prompt": "Describe THREE effects a parent's alcohol abuse could have on the family.", "memo": "Any three (1 each): conflict; financial strain; neglect of children; violence; broken trust; emotional trauma" },
+    { "id": "relapse", "type": "short", "prompt": "What is it called when a person returns to using a substance after a period of not using it?", "answers": ["relapse", "a relapse"] },
+    { "id": "help", "type": "open", "marks": 2, "prompt": "Your friend admits he cannot stop vaping. Give TWO practical steps he could take.", "memo": "Any two (1 each): talk to a trusted adult/counsellor; contact a clinic or helpline; set a quit plan; avoid triggers; get support from friends" },
+    { "id": "society", "type": "open", "marks": 2, "prompt": "Give TWO ways substance abuse affects South African society.", "memo": "Any two (1 each): crime; road accidents; pressure on health services; gang activity; lost productivity; family breakdown" }
+  ]
+}

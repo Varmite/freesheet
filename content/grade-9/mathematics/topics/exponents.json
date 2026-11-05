@@ -1,0 +1,96 @@
+{
+  "id": "exponents",
+  "title": "Exponents",
+  "term": 1,
+  "summary": "Apply the laws of exponents with integer exponents (including zero and negative exponents), calculate with scientific notation for very large and very small numbers, and solve simple exponential equations.",
+  "notes": [
+    { "type": "heading", "text": "The laws of exponents (revision)" },
+    { "type": "table", "caption": "Laws of exponents for integer exponents (bases not zero)", "headers": ["Law", "Rule", "Example"], "rows": [
+      ["Product", "$a^m \\times a^n = a^{m+n}$", "$x^{-2} \\times x^5 = x^3$"],
+      ["Quotient", "$a^m \\div a^n = a^{m-n}$", "$y^3 \\div y^7 = y^{-4}$"],
+      ["Power of a power", "$(a^m)^n = a^{mn}$", "$(2^{-1})^3 = 2^{-3}$"],
+      ["Power of a product", "$(ab)^n = a^nb^n$", "$(3x)^2 = 9x^2$"],
+      ["Power of a quotient", "$\\left(\\dfrac{a}{b}\\right)^n = \\dfrac{a^n}{b^n}$", "$\\left(\\dfrac{2}{5}\\right)^2 = \\dfrac{4}{25}$"],
+      ["Zero exponent", "$a^0 = 1$", "$(7xy)^0 = 1$"],
+      ["Negative exponent", "$a^{-n} = \\dfrac{1}{a^n}$", "$2^{-3} = \\dfrac{1}{8}$"]
+    ] },
+
+    { "type": "heading", "text": "Negative exponents" },
+    { "type": "paragraph", "text": "Look at the pattern: $2^3 = 8$, $2^2 = 4$, $2^1 = 2$, $2^0 = 1$. Each time the exponent drops by 1, we divide by 2. Continuing: $2^{-1} = \\frac{1}{2}$, $2^{-2} = \\frac{1}{4}$, $2^{-3} = \\frac{1}{8}$. A negative exponent means **the reciprocal** of the positive power." },
+    { "type": "formula", "latex": "a^{-n} = \\frac{1}{a^n} \\qquad \\frac{1}{a^{-n}} = a^n \\qquad \\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n", "caption": "Negative exponents move a factor across the fraction line" },
+    { "type": "callout", "label": "Common mistake", "text": "A negative exponent does **not** make the answer negative. $5^{-1} = \\frac{1}{5}$, not $-5$. Also $3x^{-2} = \\frac{3}{x^2}$, because the exponent belongs only to $x$." },
+    { "type": "example", "title": "Worked example 1", "problem": "Calculate or simplify, leaving positive exponents: (a) $2^{-3}$  (b) $\\left(\\dfrac{2}{3}\\right)^{-2}$  (c) $(3a^{-2})^2$  (d) $\\dfrac{6x^{-2}y^3}{2x^3y^{-1}}$", "steps": [
+      "(a) $\\dfrac{1}{2^3} = \\dfrac{1}{8}$",
+      "(b) Flip and make the exponent positive: $\\left(\\dfrac{3}{2}\\right)^2 = \\dfrac{9}{4}$",
+      "(c) $9a^{-4} = \\dfrac{9}{a^4}$",
+      "(d) $3x^{-2-3}y^{3-(-1)} = 3x^{-5}y^4 = \\dfrac{3y^4}{x^5}$"
+    ], "answer": "(a) $\\frac{1}{8}$  (b) $\\frac{9}{4}$  (c) $\\frac{9}{a^4}$  (d) $\\frac{3y^4}{x^5}$" },
+    { "type": "example", "title": "Worked example 2: harder simplification", "problem": "Simplify $\\dfrac{(2x^{-3}y^2)^{-2}}{4x^2y^{-1}}$ and leave positive exponents.", "steps": [
+      "Numerator: $2^{-2}x^{6}y^{-4} = \\dfrac{x^6}{4y^4}$.",
+      "Divide by $4x^2y^{-1}$: $\\dfrac{x^6}{4y^4} \\times \\dfrac{y}{4x^2} = \\dfrac{x^4}{16y^3}$."
+    ], "answer": "$\\dfrac{x^4}{16y^3}$" },
+    { "type": "example", "title": "Worked example 3: numerical bases", "problem": "Simplify without a calculator: $\\dfrac{3^4 \\times 9^2}{27^3}$", "steps": [
+      "Write each base as a power of 3: $9^2 = (3^2)^2 = 3^4$ and $27^3 = (3^3)^3 = 3^9$.",
+      "$\\dfrac{3^4 \\times 3^4}{3^9} = 3^{8 - 9} = 3^{-1} = \\dfrac{1}{3}$"
+    ], "answer": "$\\frac{1}{3}$" },
+
+    { "type": "heading", "text": "Scientific notation" },
+    { "type": "paragraph", "text": "In scientific notation, a number is written as $a \\times 10^n$ with $1 \\le a < 10$ and $n$ an integer. **Large** numbers have a **positive** power of 10; **small** numbers (between 0 and 1) have a **negative** power of 10." },
+    { "type": "table", "caption": "Examples", "headers": ["Ordinary number", "Scientific notation"], "rows": [
+      ["$384\\ 000$", "$3{,}84 \\times 10^5$"],
+      ["$0{,}00045$", "$4{,}5 \\times 10^{-4}$"],
+      ["$0{,}0032$", "$3{,}2 \\times 10^{-3}$"],
+      ["$0{,}000\\ 000\\ 12$", "$1{,}2 \\times 10^{-7}$"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Count how many places the comma moves to get a number between 1 and 10. Moving to the **right** (small numbers) gives a **negative** exponent: $0{,}00045 \\to 4{,}5$ moves 4 places right, so $10^{-4}$." },
+    { "type": "example", "title": "Worked example 4: calculating", "problem": "Calculate and give the answer in scientific notation: (a) $(6 \\times 10^5) \\times (4 \\times 10^{-2})$  (b) $\\dfrac{8 \\times 10^6}{2 \\times 10^{-3}}$", "steps": [
+      "(a) Multiply the numbers and add the exponents: $24 \\times 10^{3}$. But $24$ is not between 1 and 10, so write $2{,}4 \\times 10^1 \\times 10^3 = 2{,}4 \\times 10^4$.",
+      "(b) Divide the numbers and subtract the exponents: $4 \\times 10^{6 - (-3)} = 4 \\times 10^9$."
+    ], "answer": "(a) $2{,}4 \\times 10^4$  (b) $4 \\times 10^9$" },
+    { "type": "example", "title": "Worked example 5: comparing sizes", "problem": "A virus is $1{,}2 \\times 10^{-7}$ m wide and a human hair is $8 \\times 10^{-5}$ m wide. About how many times wider is the hair?", "steps": [
+      "$\\dfrac{8 \\times 10^{-5}}{1{,}2 \\times 10^{-7}} = 6{,}67 \\times 10^{2} \\approx 667$"
+    ], "answer": "About 667 times" },
+
+    { "type": "heading", "text": "Simple exponential equations" },
+    { "type": "paragraph", "text": "If $a^x = a^y$ (with $a > 0$, $a \\neq 1$), then $x = y$. Write both sides as powers of the same base, then equate the exponents." },
+    { "type": "example", "title": "Worked example 6", "problem": "Solve for $x$: (a) $3^x = \\dfrac{1}{9}$  (b) $5^{x - 1} = 125$  (c) $2^{x + 1} = \\dfrac{1}{16}$", "steps": [
+      "(a) $\\dfrac{1}{9} = 3^{-2}$, so $x = -2$.",
+      "(b) $125 = 5^3$, so $x - 1 = 3$ and $x = 4$.",
+      "(c) $\\dfrac{1}{16} = 2^{-4}$, so $x + 1 = -4$ and $x = -5$."
+    ], "answer": "(a) $-2$  (b) $4$  (c) $-5$" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "The laws hold for all integer exponents.",
+      "$a^0 = 1$; $a^{-n} = \\frac{1}{a^n}$; a negative exponent flips a fraction.",
+      "Write answers with positive exponents unless told otherwise.",
+      "Scientific notation: $a \\times 10^n$, $1 \\le a < 10$; small numbers have negative $n$.",
+      "Multiply/divide in scientific notation: multiply/divide the numbers, add/subtract the exponents, then adjust.",
+      "Exponential equations: same base, equate exponents."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "Calculate $2^{-3}$ as a decimal.", "answer": 0.125, "tolerance": 0.0001, "explanation": "$2^{-3} = \\frac{1}{8} = 0{,}125$." },
+    { "id": "q2", "type": "mcq", "prompt": "Simplify $x^{-2} \\times x^5$.", "options": ["$x^{-10}$", "$x^3$", "$x^7$", "$x^{-7}$"], "answer": 1, "explanation": "Add the exponents: $-2 + 5 = 3$." },
+    { "id": "q3", "type": "truefalse", "prompt": "$5^{-1} = -5$", "answer": false, "explanation": "$5^{-1} = \\frac{1}{5}$. A negative exponent gives the reciprocal, not a negative number." },
+    { "id": "q4", "type": "numeric", "prompt": "Calculate $\\left(\\dfrac{2}{3}\\right)^{-2}$. Give a fraction or a decimal.", "answer": 2.25, "tolerance": 0.001, "explanation": "$\\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4} = 2{,}25$." },
+    { "id": "q5", "type": "mcq", "prompt": "Write $0{,}00045$ in scientific notation.", "options": ["$4{,}5 \\times 10^{4}$", "$45 \\times 10^{-5}$", "$4{,}5 \\times 10^{-4}$", "$4{,}5 \\times 10^{-3}$"], "answer": 2, "explanation": "The comma moves 4 places to the right to give $4{,}5$, so $10^{-4}$." },
+    { "id": "q6", "type": "numeric", "prompt": "Write $3{,}2 \\times 10^{-3}$ as an ordinary decimal number.", "answer": 0.0032, "tolerance": 0.000001, "explanation": "Move the comma 3 places to the left: $0{,}0032$." },
+    { "id": "q7", "type": "mcq", "prompt": "Simplify $(3a^{-2})^2$ and write it with positive exponents.", "options": ["$\\dfrac{9}{a^4}$", "$\\dfrac{6}{a^4}$", "$9a^4$", "$\\dfrac{3}{a^4}$"], "answer": 0, "explanation": "$3^2 a^{-4} = 9a^{-4} = \\frac{9}{a^4}$." },
+    { "id": "q8", "type": "numeric", "prompt": "Solve for $x$: $3^x = \\dfrac{1}{9}$", "answer": -2, "tolerance": 0, "explanation": "$\\frac{1}{9} = 3^{-2}$, so $x = -2$." },
+    { "id": "q9", "type": "match", "prompt": "Match each expression with its value.", "marks": 5, "pairs": [
+      { "left": "$4^{-1}$", "right": "1/4" },
+      { "left": "$10^{-2}$", "right": "0,01" },
+      { "left": "$\\left(\\frac{1}{2}\\right)^{-3}$", "right": "8" },
+      { "left": "$7^0$", "right": "1" },
+      { "left": "$(-3)^{-2}$", "right": "1/9" }
+    ], "explanation": "$4^{-1} = \\frac{1}{4}$; $10^{-2} = \\frac{1}{100}$; $\\left(\\frac{1}{2}\\right)^{-3} = 2^3$; $7^0 = 1$; $(-3)^{-2} = \\frac{1}{(-3)^2} = \\frac{1}{9}$." },
+    { "id": "q10", "type": "numeric", "prompt": "Calculate $(6 \\times 10^5) \\times (4 \\times 10^{-2})$ and give the answer as an ordinary number.", "answer": 24000, "tolerance": 0, "explanation": "$24 \\times 10^3 = 24\\ 000$ (or $2{,}4 \\times 10^4$)." },
+    { "id": "q11", "type": "mcq", "prompt": "Calculate $\\dfrac{8 \\times 10^6}{2 \\times 10^{-3}}$.", "options": ["$4 \\times 10^{3}$", "$4 \\times 10^{9}$", "$4 \\times 10^{-9}$", "$6 \\times 10^{9}$"], "answer": 1, "explanation": "$8 \\div 2 = 4$ and $10^{6 - (-3)} = 10^9$." },
+    { "id": "q12", "type": "numeric", "prompt": "Solve for $x$: $5^{x - 1} = 125$", "answer": 4, "tolerance": 0, "explanation": "$125 = 5^3$, so $x - 1 = 3$ and $x = 4$." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "Simplify and leave your answer with positive exponents: $\\dfrac{(2x^{-3}y^2)^{-2}}{4x^2y^{-1}}$", "memo": "$(2x^{-3}y^2)^{-2} = 2^{-2}x^6y^{-4}$ ✓ (1)\n$= \\dfrac{x^6}{4y^4}$ ✓ (1)\n$\\dfrac{x^6}{4y^4} \\times \\dfrac{y}{4x^2}$ ✓ (1)\n$= \\dfrac{x^4}{16y^3}$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "Simplify without a calculator: $\\dfrac{3^4 \\times 9^2}{27^3}$", "memo": "$9^2 = 3^4$ and $27^3 = 3^9$ ✓ (1)\n$3^{4 + 4 - 9}$ ✓ (1)\n$= 3^{-1} = \\frac{1}{3}$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "A virus is $0{,}000\\ 000\\ 12$ m wide and a human hair is $0{,}000\\ 08$ m wide.\n(a) Write both measurements in scientific notation.  (2)\n(b) About how many times wider is the hair than the virus?  (2)", "memo": "(a) $1{,}2 \\times 10^{-7}$ m ✓; $8 \\times 10^{-5}$ m ✓ (2)\n(b) $\\dfrac{8 \\times 10^{-5}}{1{,}2 \\times 10^{-7}}$ ✓ $\\approx 667$ times ✓ (2)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "Solve for $x$: $2^{x + 1} = \\dfrac{1}{16}$", "memo": "$\\frac{1}{16} = 2^{-4}$, so $x + 1 = -4$ ✓ (1)\n$x = -5$ ✓ (1)" }
+  ]
+}

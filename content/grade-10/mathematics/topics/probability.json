@@ -1,0 +1,416 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "term": 4,
+  "summary": "Calculate theoretical probability and relative frequency, and use Venn diagrams, complements and the addition rule to work with combined events.",
+  "notes": [
+    { "type": "heading", "text": "What is probability?" },
+    { "type": "paragraph", "text": "Probability measures **how likely** something is to happen. Will it rain in Durban tomorrow? Will Bafana Bafana win the toss? Will a learner chosen at random walk to school? Probability gives each of these a number from $0$ (impossible) to $1$ (certain)." },
+    { "type": "heading", "text": "Key terms" },
+    { "type": "definition", "term": "Experiment (trial)", "text": "An action or process with a result that cannot be predicted with certainty, for example tossing a coin, rolling a die or spinning a spinner. Each repeat of the experiment is called a **trial**." },
+    { "type": "definition", "term": "Outcome", "text": "A single possible result of an experiment. Rolling a die can give the outcome $4$." },
+    { "type": "definition", "term": "Sample space (S)", "text": "The set of **all** possible outcomes of an experiment. For one die, $S = \\{1; 2; 3; 4; 5; 6\\}$. The number of outcomes in the sample space is written $n(S)$, so here $n(S) = 6$." },
+    { "type": "definition", "term": "Event (E)", "text": "A set of outcomes we are interested in; it is a subset of the sample space. The event \"rolling an even number\" is $E = \\{2; 4; 6\\}$ and the number of outcomes in it is $n(E) = 3$." },
+    { "type": "callout", "label": "Remember", "text": "In South Africa we separate the elements of a set with semicolons, e.g. $\\{1; 2; 3\\}$, because the comma is used as the decimal sign." },
+    {
+      "type": "table",
+      "caption": "Some common sample spaces",
+      "headers": ["Experiment", "Sample space S", "n(S)"],
+      "rows": [
+        ["Toss one coin", "$\\{H; T\\}$", "2"],
+        ["Toss two coins", "$\\{HH; HT; TH; TT\\}$", "4"],
+        ["Roll one die", "$\\{1; 2; 3; 4; 5; 6\\}$", "6"],
+        ["Spin a spinner with 8 equal sectors numbered 1 to 8", "$\\{1; 2; 3; 4; 5; 6; 7; 8\\}$", "8"],
+        ["Draw one card from a standard pack", "52 different cards", "52"]
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "When tossing two coins, HT (heads on the first coin, tails on the second) and TH are **different** outcomes. So the sample space has 4 outcomes, not 3." },
+
+    { "type": "heading", "text": "Theoretical probability" },
+    { "type": "paragraph", "text": "If all the outcomes in the sample space are **equally likely** (a fair coin, a fair die, a well-shuffled pack), the theoretical probability of an event $E$ is:" },
+    { "type": "formula", "latex": "P(E) = \\frac{n(E)}{n(S)} = \\frac{\\text{number of favourable outcomes}}{\\text{total number of possible outcomes}}", "caption": "Theoretical probability" },
+    {
+      "type": "list",
+      "items": [
+        "$0 \\le P(E) \\le 1$ for every event. A probability can never be negative or bigger than 1.",
+        "$P(E) = 0$ means the event is **impossible** (e.g. rolling a 7 on a normal die).",
+        "$P(E) = 1$ means the event is **certain** (e.g. rolling a number less than 7).",
+        "The probabilities of all the individual outcomes in a sample space add up to $1$."
+      ]
+    },
+    { "type": "paragraph", "text": "A probability can be written as a fraction, a decimal or a percentage. They all mean the same thing:" },
+    {
+      "type": "table",
+      "caption": "Probabilities in different forms",
+      "headers": ["Fraction", "Decimal", "Percentage", "Meaning"],
+      "rows": [
+        ["$0$", "$0$", "$0\\%$", "impossible"],
+        ["$\\frac{1}{4}$", "$0{,}25$", "$25\\%$", "unlikely"],
+        ["$\\frac{1}{2}$", "$0{,}5$", "$50\\%$", "even chance"],
+        ["$\\frac{3}{4}$", "$0{,}75$", "$75\\%$", "likely"],
+        ["$1$", "$1$", "$100\\%$", "certain"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1: Rolling a die",
+      "problem": "A fair die is rolled once. Find the probability of rolling (a) a prime number, (b) a number greater than 4, (c) a 0.",
+      "steps": [
+        "$S = \\{1; 2; 3; 4; 5; 6\\}$, so $n(S) = 6$.",
+        "(a) Prime numbers: $\\{2; 3; 5\\}$, so $n(E) = 3$ and $P(\\text{prime}) = \\frac{3}{6} = \\frac{1}{2} = 0{,}5$. (Remember that 1 is not prime.)",
+        "(b) Greater than 4: $\\{5; 6\\}$, so $P = \\frac{2}{6} = \\frac{1}{3} \\approx 0{,}33$.",
+        "(c) There is no 0 on a die, so $P = \\frac{0}{6} = 0$ (impossible)."
+      ],
+      "answer": "(a) $\\frac{1}{2}$; (b) $\\frac{1}{3}$; (c) $0$"
+    },
+    { "type": "heading", "text": "A standard pack of cards" },
+    { "type": "paragraph", "text": "A standard pack has **52 cards** in **4 suits**: hearts ♥ and diamonds ♦ (red), clubs ♣ and spades ♠ (black). Each suit has 13 cards: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen and King. The Jack, Queen and King are called **picture cards**, so there are $3 \\times 4 = 12$ picture cards. There are 26 red cards and 26 black cards, and 4 cards of each value (four Aces, four Kings, and so on)." },
+    {
+      "type": "example",
+      "title": "Worked example 2: Drawing a card",
+      "problem": "One card is drawn at random from a well-shuffled standard pack. Find the probability that it is (a) a red King, (b) a club, (c) a picture card.",
+      "steps": [
+        "$n(S) = 52$.",
+        "(a) Red Kings: King of hearts and King of diamonds, so $P = \\frac{2}{52} = \\frac{1}{26}$.",
+        "(b) There are 13 clubs: $P = \\frac{13}{52} = \\frac{1}{4}$.",
+        "(c) There are 12 picture cards: $P = \\frac{12}{52} = \\frac{3}{13}$."
+      ],
+      "answer": "(a) $\\frac{1}{26}$; (b) $\\frac{1}{4}$; (c) $\\frac{3}{13}$"
+    },
+    { "type": "heading", "text": "Sample space for two dice" },
+    { "type": "paragraph", "text": "When two dice are rolled and the numbers are added, it helps to draw a table of all the outcomes. There are $6 \\times 6 = 36$ equally likely outcomes. Each cell below shows the sum." },
+    {
+      "type": "table",
+      "caption": "Sum of two dice (first die down the side, second die across the top)",
+      "headers": ["+", "1", "2", "3", "4", "5", "6"],
+      "rows": [
+        ["**1**", "2", "3", "4", "5", "6", "7"],
+        ["**2**", "3", "4", "5", "6", "7", "8"],
+        ["**3**", "4", "5", "6", "7", "8", "9"],
+        ["**4**", "5", "6", "7", "8", "9", "10"],
+        ["**5**", "6", "7", "8", "9", "10", "11"],
+        ["**6**", "7", "8", "9", "10", "11", "12"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: The sum of two dice",
+      "problem": "Two fair dice are rolled and the numbers are added. Find (a) $P(\\text{sum} = 7)$, (b) $P(\\text{sum} = 12)$, (c) $P(\\text{sum} > 9)$.",
+      "steps": [
+        "From the table, $n(S) = 36$.",
+        "(a) A sum of 7 appears 6 times (on the diagonal): $P = \\frac{6}{36} = \\frac{1}{6}$.",
+        "(b) A sum of 12 appears once (6 and 6): $P = \\frac{1}{36}$.",
+        "(c) Sums of 10, 11 or 12 appear $3 + 2 + 1 = 6$ times: $P = \\frac{6}{36} = \\frac{1}{6}$."
+      ],
+      "answer": "(a) $\\frac{1}{6}$; (b) $\\frac{1}{36}$; (c) $\\frac{1}{6}$"
+    },
+
+    { "type": "heading", "text": "Relative frequency" },
+    { "type": "paragraph", "text": "Theoretical probability tells us what **should** happen. When we actually do an experiment, we count what **does** happen. The **relative frequency** (also called experimental probability) is found from the results of an experiment." },
+    { "type": "formula", "latex": "\\text{Relative frequency} = \\frac{\\text{number of times the event occurred}}{\\text{total number of trials}}", "caption": "Relative frequency (experimental probability)" },
+    { "type": "paragraph", "text": "Relative frequency is useful when we cannot work out a theoretical probability, for example the probability that a taxi arrives late, or that a seed from a packet will germinate. We use survey data or records instead." },
+    {
+      "type": "table",
+      "caption": "One class's results from tossing a coin (the theoretical probability of heads is 0,5)",
+      "headers": ["Number of tosses", "Number of heads", "Relative frequency of heads"],
+      "rows": [
+        ["10", "7", "0,7"],
+        ["50", "29", "0,58"],
+        ["100", "54", "0,54"],
+        ["500", "242", "0,484"],
+        ["1 000", "497", "0,497"]
+      ]
+    },
+    { "type": "paragraph", "text": "With only 10 tosses the relative frequency (0,7) is far from 0,5. As the number of trials **increases**, the relative frequency gets **closer and closer** to the theoretical probability. With a small number of trials, results can be very different from what theory predicts, and this is just chance, not a mistake." },
+    { "type": "callout", "label": "Exam tip", "text": "If asked whether an experiment's result proves a coin or die is unfair (biased), say that a small number of trials is not enough evidence. The experiment should be repeated many more times; if the relative frequency still stays far from the theoretical probability, the coin or die may be biased." },
+    {
+      "type": "example",
+      "title": "Worked example 4: Relative frequency of a spinner",
+      "problem": "Lerato spins a spinner with four equal sectors coloured red, blue, green and yellow 40 times. It lands on red 13 times. (a) Find the relative frequency of red. (b) What is the theoretical probability of red? (c) Compare the two.",
+      "steps": [
+        "(a) Relative frequency $= \\frac{13}{40} = 0{,}325$.",
+        "(b) There are 4 equally likely colours, so $P(\\text{red}) = \\frac{1}{4} = 0{,}25$.",
+        "(c) The relative frequency is higher than expected, but 40 spins is a small number of trials. If Lerato spun it, say, 1 000 times, the relative frequency of red should be much closer to 0,25."
+      ],
+      "answer": "(a) $0{,}325$; (b) $0{,}25$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5: Using survey data",
+      "problem": "A survey of 200 learners at a school in Polokwane found that 86 travel to school by taxi, 64 walk, 30 travel by car and 20 by bus. Estimate the probability that a learner chosen at random from the school walks to school.",
+      "steps": [
+        "Relative frequency $= \\frac{64}{200} = 0{,}32$.",
+        "As a percentage: $0{,}32 \\times 100 = 32\\%$."
+      ],
+      "answer": "$P(\\text{walks}) \\approx 0{,}32$ or $32\\%$"
+    },
+
+    { "type": "heading", "text": "Venn diagrams" },
+    { "type": "paragraph", "text": "A **Venn diagram** shows the sample space as a rectangle, with each event drawn as a circle inside it. When two events can happen together, the circles overlap. A Venn diagram with two events has **four regions**." },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" font-family=\"sans-serif\" font-size=\"13\"><rect x=\"5\" y=\"5\" width=\"310\" height=\"190\" fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"95\" r=\"70\" fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"95\" r=\"70\" fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"/><g fill=\"#000\"><text x=\"14\" y=\"22\" font-size=\"15\">S</text><text x=\"70\" y=\"34\" font-size=\"15\">A</text><text x=\"240\" y=\"34\" font-size=\"15\">B</text><text x=\"75\" y=\"99\">A only</text><text x=\"143\" y=\"99\">A and B</text><text x=\"212\" y=\"99\">B only</text><text x=\"105\" y=\"188\">neither A nor B</text></g></svg>",
+      "caption": "A Venn diagram for two overlapping events A and B in the sample space S. The overlap is A and B; the region outside both circles but inside S is \"neither A nor B\"."
+    },
+    {
+      "type": "table",
+      "caption": "Venn diagram notation",
+      "headers": ["Words", "Notation", "Region on the Venn diagram"],
+      "rows": [
+        ["A or B (A, B or both)", "$A \\cup B$ (union)", "everything inside either circle"],
+        ["A and B (both)", "$A \\cap B$ (intersection)", "the overlap only"],
+        ["not A (complement of A)", "$A'$", "everything in S outside circle A"],
+        ["neither A nor B", "$(A \\cup B)'$", "inside S but outside both circles"],
+        ["A only", "$A \\cap B'$", "circle A without the overlap"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 6: A sports survey",
+      "problem": "In a Grade 10 class of 40 learners, 22 play soccer (S), 15 play netball (N) and 5 play both. Draw a Venn diagram and find the probability that a learner chosen at random (a) plays soccer only, (b) plays soccer or netball, (c) plays neither sport.",
+      "steps": [
+        "Always start with the overlap: 5 play both.",
+        "Soccer only $= 22 - 5 = 17$. Netball only $= 15 - 5 = 10$.",
+        "Neither $= 40 - (17 + 5 + 10) = 40 - 32 = 8$. Check: $17 + 5 + 10 + 8 = 40$. ✓",
+        "(a) $P(\\text{soccer only}) = \\frac{17}{40} = 0{,}425$.",
+        "(b) $P(S \\text{ or } N) = \\frac{17 + 5 + 10}{40} = \\frac{32}{40} = 0{,}8$.",
+        "(c) $P(\\text{neither}) = \\frac{8}{40} = \\frac{1}{5} = 0{,}2$."
+      ],
+      "answer": "(a) $\\frac{17}{40}$; (b) $\\frac{4}{5}$; (c) $\\frac{1}{5}$"
+    },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" font-family=\"sans-serif\" font-size=\"16\"><rect x=\"5\" y=\"5\" width=\"310\" height=\"190\" fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"95\" r=\"70\" fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"95\" r=\"70\" fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"/><g fill=\"#000\"><text x=\"14\" y=\"24\">S: 40</text><text x=\"55\" y=\"34\">Soccer</text><text x=\"222\" y=\"34\">Netball</text><text x=\"92\" y=\"100\">17</text><text x=\"155\" y=\"100\">5</text><text x=\"215\" y=\"100\">10</text><text x=\"280\" y=\"182\">8</text></g></svg>",
+      "caption": "Venn diagram for Worked example 6: 17 soccer only, 5 both, 10 netball only and 8 neither (total 40)."
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Do not write 22 in the soccer-only part. The 22 soccer players **include** the 5 who play both, so subtract the overlap first. Always check that all four regions add up to the total." },
+
+    { "type": "heading", "text": "The addition rule" },
+    { "type": "paragraph", "text": "If we add $P(A)$ and $P(B)$, the outcomes in the overlap are counted **twice**. So we subtract the overlap once:" },
+    { "type": "formula", "latex": "P(A \\text{ or } B) = P(A) + P(B) - P(A \\text{ and } B)", "caption": "The addition rule (for any two events)" },
+    {
+      "type": "example",
+      "title": "Worked example 7: The addition rule with a die",
+      "problem": "A fair die is rolled. Event A: an even number. Event B: a number greater than 3. Find $P(A \\text{ or } B)$.",
+      "steps": [
+        "$A = \\{2; 4; 6\\}$, $B = \\{4; 5; 6\\}$ and $A \\text{ and } B = \\{4; 6\\}$.",
+        "$P(A \\text{ or } B) = \\frac{3}{6} + \\frac{3}{6} - \\frac{2}{6} = \\frac{4}{6} = \\frac{2}{3}$.",
+        "Check by listing: $A \\text{ or } B = \\{2; 4; 5; 6\\}$, which has 4 outcomes, so $\\frac{4}{6}$. ✓"
+      ],
+      "answer": "$P(A \\text{ or } B) = \\frac{2}{3}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 8: A King or a heart",
+      "problem": "A card is drawn from a standard pack. Find the probability that it is a King or a heart.",
+      "steps": [
+        "$P(\\text{King}) = \\frac{4}{52}$ and $P(\\text{heart}) = \\frac{13}{52}$.",
+        "The King of hearts is in both events: $P(\\text{King and heart}) = \\frac{1}{52}$.",
+        "$P(\\text{King or heart}) = \\frac{4}{52} + \\frac{13}{52} - \\frac{1}{52} = \\frac{16}{52} = \\frac{4}{13}$."
+      ],
+      "answer": "$\\frac{4}{13}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 9: Using the rule to find a missing probability",
+      "problem": "For two events, $P(A) = 0{,}5$, $P(B) = 0{,}4$ and $P(A \\text{ or } B) = 0{,}75$. (a) Find $P(A \\text{ and } B)$. (b) Fill in the probability of each region of a Venn diagram.",
+      "steps": [
+        "(a) $0{,}75 = 0{,}5 + 0{,}4 - P(A \\text{ and } B)$, so $P(A \\text{ and } B) = 0{,}9 - 0{,}75 = 0{,}15$.",
+        "(b) A only $= 0{,}5 - 0{,}15 = 0{,}35$. B only $= 0{,}4 - 0{,}15 = 0{,}25$.",
+        "Neither $= 1 - 0{,}75 = 0{,}25$.",
+        "Check: $0{,}35 + 0{,}15 + 0{,}25 + 0{,}25 = 1$. ✓"
+      ],
+      "answer": "$P(A \\text{ and } B) = 0{,}15$; regions: $0{,}35$; $0{,}15$; $0{,}25$; neither $0{,}25$"
+    },
+
+    { "type": "heading", "text": "Mutually exclusive events" },
+    { "type": "definition", "term": "Mutually exclusive events", "text": "Events that **cannot happen at the same time**. They have no outcomes in common, so $P(A \\text{ and } B) = 0$. On a Venn diagram their circles do not overlap." },
+    { "type": "paragraph", "text": "For mutually exclusive events the addition rule becomes simpler, because there is no overlap to subtract:" },
+    { "type": "formula", "latex": "P(A \\text{ or } B) = P(A) + P(B) \\quad \\text{(only if A and B are mutually exclusive)}", "caption": "Addition rule for mutually exclusive events" },
+    {
+      "type": "example",
+      "title": "Worked example 10: A heart or a black card",
+      "problem": "A card is drawn from a standard pack. Find the probability that it is a heart or a black card.",
+      "steps": [
+        "A heart is red, so a card cannot be both a heart and black: the events are mutually exclusive.",
+        "$P(\\text{heart or black}) = \\frac{13}{52} + \\frac{26}{52} = \\frac{39}{52} = \\frac{3}{4}$."
+      ],
+      "answer": "$\\frac{3}{4}$"
+    },
+    { "type": "callout", "label": "Exam tip", "text": "To **prove** that two events are mutually exclusive, show that $P(A \\text{ and } B) = 0$, or equivalently that $P(A \\text{ or } B) = P(A) + P(B)$. If $P(A) + P(B) > 1$, the events cannot be mutually exclusive." },
+
+    { "type": "heading", "text": "Complementary and exhaustive events" },
+    { "type": "definition", "term": "Exhaustive events", "text": "Events that together include **every** outcome in the sample space, so at least one of them must happen. If A and B are exhaustive, $P(A \\text{ or } B) = 1$." },
+    { "type": "definition", "term": "Complementary events", "text": "Two events that are **both** mutually exclusive **and** exhaustive: exactly one of them must happen. The complement of A is \"not A\", written $A'$." },
+    { "type": "formula", "latex": "P(\\text{not } A) = 1 - P(A)", "caption": "Complementary events" },
+    {
+      "type": "table",
+      "caption": "Comparing types of events (one die is rolled)",
+      "headers": ["Type", "Condition", "Example"],
+      "rows": [
+        ["Mutually exclusive", "$P(A \\text{ and } B) = 0$", "A = $\\{1; 2\\}$, B = $\\{5; 6\\}$"],
+        ["Exhaustive", "$P(A \\text{ or } B) = 1$", "A = $\\{1; 2; 3; 4\\}$, B = $\\{3; 4; 5; 6\\}$ (they overlap, but cover all of S)"],
+        ["Complementary", "both conditions: $P(B) = 1 - P(A)$", "A = $\\{1; 2\\}$, B = $\\{3; 4; 5; 6\\}$"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 11: Using the complement",
+      "problem": "The probability that it rains in Cape Town on a particular day in July is 40%. (a) What is the probability that it does not rain? (b) A bag contains 3 red, 5 blue and 4 white beads. Find the probability that a bead chosen at random is not white.",
+      "steps": [
+        "(a) $P(\\text{no rain}) = 1 - 0{,}4 = 0{,}6$, which is $60\\%$.",
+        "(b) There are $3 + 5 + 4 = 12$ beads, so $P(\\text{white}) = \\frac{4}{12} = \\frac{1}{3}$.",
+        "$P(\\text{not white}) = 1 - \\frac{1}{3} = \\frac{2}{3}$. (Check: 8 of the 12 beads are not white, and $\\frac{8}{12} = \\frac{2}{3}$.)"
+      ],
+      "answer": "(a) $60\\%$; (b) $\\frac{2}{3}$"
+    },
+    { "type": "callout", "label": "Remember", "text": "The complement is often the quickest route. \"Not A\" includes **everything** except A. For example, on a die the complement of \"less than 3\" is \"3 or more\", i.e. $\\{3; 4; 5; 6\\}$, not \"more than 3\"." },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "Experiment: an action with an uncertain result. Outcome: one possible result. Sample space $S$: all possible outcomes, with $n(S)$ of them. Event $E$: a subset of $S$ with $n(E)$ outcomes.",
+        "Theoretical probability (equally likely outcomes): $P(E) = \\frac{n(E)}{n(S)}$, and $0 \\le P(E) \\le 1$.",
+        "Probabilities can be written as fractions, decimals or percentages.",
+        "Relative frequency $= \\frac{\\text{number of times the event occurred}}{\\text{number of trials}}$. It gets closer to the theoretical probability as the number of trials increases.",
+        "A Venn diagram with two events has four regions: A only, A and B, B only, and neither. Fill in the overlap first and check that the regions add up to the total.",
+        "Addition rule: $P(A \\text{ or } B) = P(A) + P(B) - P(A \\text{ and } B)$.",
+        "Mutually exclusive: $P(A \\text{ and } B) = 0$, so $P(A \\text{ or } B) = P(A) + P(B)$.",
+        "Exhaustive: $P(A \\text{ or } B) = 1$. Complementary (mutually exclusive and exhaustive): $P(\\text{not } A) = 1 - P(A)$."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "A fair die is rolled once. What is the probability of rolling a 5?",
+      "options": ["$\\frac{1}{5}$", "$\\frac{5}{6}$", "$\\frac{1}{6}$", "$\\frac{1}{2}$"],
+      "answer": 2,
+      "explanation": "There are 6 equally likely outcomes and only one of them is a 5, so $P(5) = \\frac{1}{6}$."
+    },
+    {
+      "id": "q2",
+      "type": "truefalse",
+      "prompt": "An event can have a probability of $1{,}2$.",
+      "answer": false,
+      "explanation": "Every probability lies between $0$ and $1$. A probability of $1$ already means the event is certain, so nothing can be more likely."
+    },
+    {
+      "id": "q3",
+      "type": "short",
+      "prompt": "What is the name for the set of all possible outcomes of an experiment?",
+      "answers": ["sample space", "the sample space", "sample space S", "S"],
+      "explanation": "The sample space $S$ lists every possible outcome. For a coin, $S = \\{H; T\\}$."
+    },
+    {
+      "id": "q4",
+      "type": "numeric",
+      "prompt": "A bag contains 5 red, 3 blue and 2 green marbles. One marble is taken out at random. Calculate the probability that it is blue. Give your answer as a decimal.",
+      "answer": 0.3,
+      "tolerance": 0.001,
+      "explanation": "$n(S) = 5 + 3 + 2 = 10$ and $n(\\text{blue}) = 3$, so $P(\\text{blue}) = \\frac{3}{10} = 0{,}3$."
+    },
+    {
+      "id": "q5",
+      "type": "match",
+      "prompt": "Match each term with its meaning.",
+      "marks": 5,
+      "pairs": [
+        { "left": "Outcome", "right": "A single possible result of an experiment" },
+        { "left": "Event", "right": "A set of outcomes (a subset of the sample space)" },
+        { "left": "Mutually exclusive events", "right": "Events that cannot happen at the same time" },
+        { "left": "Exhaustive events", "right": "Events that together include every outcome in the sample space" },
+        { "left": "Complementary events", "right": "Events that are both mutually exclusive and exhaustive" }
+      ],
+      "explanation": "Complementary events are a special case: they do not overlap (mutually exclusive) and together cover the whole sample space (exhaustive)."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "A card is drawn at random from a standard pack of 52 cards. What is the probability that it is a picture card (Jack, Queen or King)?",
+      "options": ["$\\frac{3}{13}$", "$\\frac{1}{13}$", "$\\frac{4}{13}$", "$\\frac{1}{4}$"],
+      "answer": 0,
+      "explanation": "There are 3 picture cards in each of the 4 suits, so 12 picture cards. $P = \\frac{12}{52} = \\frac{3}{13}$."
+    },
+    {
+      "id": "q7",
+      "type": "truefalse",
+      "prompt": "If $P(A) = 0{,}35$, then $P(\\text{not } A) = 0{,}65$.",
+      "answer": true,
+      "explanation": "$P(\\text{not } A) = 1 - P(A) = 1 - 0{,}35 = 0{,}65$."
+    },
+    {
+      "id": "q8",
+      "type": "numeric",
+      "prompt": "Sipho spins a spinner 80 times and it lands on blue 28 times. Calculate the relative frequency of landing on blue. Give your answer as a decimal.",
+      "answer": 0.35,
+      "tolerance": 0.001,
+      "explanation": "Relative frequency $= \\frac{\\text{number of times blue}}{\\text{number of spins}} = \\frac{28}{80} = 0{,}35$."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "A and B are mutually exclusive events with $P(A) = 0{,}3$ and $P(B) = 0{,}45$. What is $P(A \\text{ or } B)$?",
+      "options": ["$0{,}135$", "$0{,}15$", "$0{,}25$", "$0{,}75$"],
+      "answer": 3,
+      "explanation": "For mutually exclusive events $P(A \\text{ and } B) = 0$, so $P(A \\text{ or } B) = 0{,}3 + 0{,}45 = 0{,}75$. ($0{,}135$ comes from wrongly multiplying.)"
+    },
+    {
+      "id": "q10",
+      "type": "numeric",
+      "prompt": "For two events, $P(A) = 0{,}6$, $P(B) = 0{,}5$ and $P(A \\text{ or } B) = 0{,}8$. Calculate $P(A \\text{ and } B)$. Give your answer as a decimal.",
+      "answer": 0.3,
+      "tolerance": 0.001,
+      "explanation": "Addition rule: $0{,}8 = 0{,}6 + 0{,}5 - P(A \\text{ and } B)$, so $P(A \\text{ and } B) = 1{,}1 - 0{,}8 = 0{,}3$."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "A die is rolled. Event A is \"rolling a number less than 3\". Which event is the complement of A?",
+      "options": ["Rolling a number greater than 3", "Rolling a number of 3 or more", "Rolling a 1 or a 2", "Rolling an even number"],
+      "answer": 1,
+      "explanation": "$A = \\{1; 2\\}$, so not A $= \\{3; 4; 5; 6\\}$, which is \"3 or more\". \"Greater than 3\" leaves out the 3."
+    },
+    {
+      "id": "q12",
+      "type": "truefalse",
+      "prompt": "When a die is rolled, the events \"rolling an even number\" and \"rolling a prime number\" are mutually exclusive.",
+      "answer": false,
+      "explanation": "Even $= \\{2; 4; 6\\}$ and prime $= \\{2; 3; 5\\}$. The outcome 2 is in both, so the events can happen together and are not mutually exclusive."
+    },
+    {
+      "id": "q13",
+      "type": "numeric",
+      "prompt": "Two fair dice are rolled and the numbers are added. Calculate the probability that the sum is 9. Give your answer as a fraction or as a decimal correct to three decimal places.",
+      "answer": 0.1111,
+      "tolerance": 0.001,
+      "explanation": "A sum of 9 comes from (3; 6), (4; 5), (5; 4) and (6; 3): 4 outcomes out of 36. $P = \\frac{4}{36} = \\frac{1}{9} \\approx 0{,}111$."
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Thandi rolls a die 60 times and gets a six 14 times.\n\n(a) Calculate the relative frequency of rolling a six, correct to two decimal places. (1)\n(b) Write down the theoretical probability of rolling a six on a fair die, correct to two decimal places. (1)\n(c) Thandi says her die must be unfair. Do you agree? Explain what she should do to test her claim. (2)",
+      "memo": "(a) $\\frac{14}{60} \\approx 0{,}23$ ✓ (1)\n(b) $\\frac{1}{6} \\approx 0{,}17$ ✓ (1)\n(c) No, not necessarily: 60 rolls is a small number of trials, so the relative frequency can differ from the theoretical probability by chance ✓ (1)\nShe should roll the die many more times (e.g. 1 000); as the number of trials increases, the relative frequency of a fair die should get closer to $\\frac{1}{6}$. Only if it stays far from $\\frac{1}{6}$ is the die likely to be biased ✓ (1)\n[4 marks]",
+      "explanation": "Relative frequency approaches theoretical probability only when the number of trials is large."
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 9,
+      "prompt": "A survey of 50 learners at a school in Durban found that 28 watch rugby (R), 20 watch cricket (C) and 9 watch both.\n\n(a) Draw a Venn diagram to show this information, including the number of learners in each region. (3)\n(b) Calculate the probability that a learner chosen at random watches rugby or cricket. (2)\n(c) Calculate the probability that a learner chosen at random watches neither sport. (1)\n(d) Calculate the probability that a learner chosen at random watches exactly one of the two sports. (2)\n(e) Are the events R and C mutually exclusive? Give a reason. (1)",
+      "memo": "(a) Two overlapping circles R and C inside a rectangle S (total 50):\nBoth (overlap) $= 9$ ✓ (1)\nRugby only $= 28 - 9 = 19$ and cricket only $= 20 - 9 = 11$ ✓ (1)\nNeither $= 50 - (19 + 9 + 11) = 11$ ✓ (1)\n(b) $P(R \\text{ or } C) = \\frac{19 + 9 + 11}{50}$ ✓ (1) $= \\frac{39}{50} = 0{,}78$ ✓ (1)\n(OR $\\frac{28}{50} + \\frac{20}{50} - \\frac{9}{50} = \\frac{39}{50}$)\n(c) $P(\\text{neither}) = \\frac{11}{50} = 0{,}22$ ✓ (1)\n(d) Exactly one sport $= 19 + 11 = 30$ ✓ (1); $P = \\frac{30}{50} = \\frac{3}{5}$ ✓ (1)\n(e) No: 9 learners watch both, so $P(R \\text{ and } C) = \\frac{9}{50} \\neq 0$ ✓ (1)\n[9 marks]",
+      "explanation": "Fill in the overlap first, then subtract it from each event's total. Mutually exclusive events have an empty overlap."
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 7,
+      "prompt": "A and B are two events in a sample space with $P(A) = 0{,}4$, $P(B) = 0{,}35$ and $P(A \\text{ or } B) = 0{,}6$.\n\n(a) Calculate $P(A \\text{ and } B)$. (2)\n(b) Write down $P(\\text{not } A)$. (1)\n(c) Calculate the probability that neither A nor B occurs. (2)\n(d) Calculate the probability that A occurs but B does not. (2)",
+      "memo": "(a) $P(A \\text{ or } B) = P(A) + P(B) - P(A \\text{ and } B)$\n$0{,}6 = 0{,}4 + 0{,}35 - P(A \\text{ and } B)$ ✓ (1)\n$P(A \\text{ and } B) = 0{,}15$ ✓ (1)\n(b) $P(\\text{not } A) = 1 - 0{,}4 = 0{,}6$ ✓ (1)\n(c) $P(\\text{neither}) = 1 - P(A \\text{ or } B)$ ✓ (1) $= 1 - 0{,}6 = 0{,}4$ ✓ (1)\n(d) $P(A \\text{ only}) = P(A) - P(A \\text{ and } B)$ ✓ (1) $= 0{,}4 - 0{,}15 = 0{,}25$ ✓ (1)\n[7 marks]",
+      "explanation": "Drawing a Venn diagram with probabilities helps: A only 0,25; both 0,15; B only 0,2; neither 0,4. These add up to 1."
+    }
+  ]
+}

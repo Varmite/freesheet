@@ -1,0 +1,58 @@
+{
+  "id": "graphic-communication",
+  "title": "Graphic Communication",
+  "term": 1,
+  "summary": "Freehand sketching, types of lines, oblique and isometric drawings, first-angle orthographic projection, scale and dimensioning.",
+  "notes": [
+    { "type": "heading", "text": "Why drawings matter" },
+    { "type": "paragraph", "text": "**Graphic communication** is the use of drawings to share design ideas. Drawings can show the shape, size and details of a product much more clearly than words." },
+    { "type": "heading", "text": "Types of lines" },
+    { "type": "table", "headers": ["Line", "Appearance", "Use"], "rows": [
+      ["Outline (visible edge)", "Thick, dark, continuous", "Edges that can be seen"],
+      ["Construction line", "Thin, faint", "Guidelines for drawing; erased or left faint"],
+      ["Hidden detail line", "Thin dashes", "Edges that cannot be seen from that view"],
+      ["Centre line", "Thin, long dash and short dash", "Centre of circles and symmetrical shapes"],
+      ["Dimension line", "Thin with arrowheads at both ends", "Shows measurements"]
+    ] },
+    { "type": "heading", "text": "Pictorial (3D) drawings" },
+    { "type": "table", "headers": ["Drawing", "How it is drawn"], "rows": [
+      ["**Oblique**", "The front view is drawn flat, true shape and size. Depth lines are drawn at **45°** to the horizontal, often at half their real length (cabinet oblique)."],
+      ["**Isometric**", "The object is turned so that an edge faces you. Vertical edges stay **vertical**; horizontal edges are drawn at **30°** to the horizontal. All measurements along the three axes are true length."],
+      ["**Perspective**", "Lines meet at one or two vanishing points, making the object look realistic (used by artists and architects)."]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 150\" font-family=\"sans-serif\" font-size=\"11\" fill=\"none\" stroke=\"black\" stroke-width=\"1.5\"><rect x=\"20\" y=\"55\" width=\"80\" height=\"60\"/><polyline points=\"20,55 50,25 130,25 100,55\"/><polyline points=\"130,25 130,85 100,115\"/><polygon points=\"240,130 290,101 290,51 240,80\"/><polygon points=\"240,130 190,101 190,51 240,80\"/><polygon points=\"240,80 290,51 240,22 190,51\"/><g fill=\"black\" stroke=\"none\"><text x=\"35\" y=\"140\">oblique (45°)</text><text x=\"200\" y=\"148\">isometric (30°)</text></g></svg>", "caption": "A box drawn in oblique projection (left) and isometric projection (right)" },
+    { "type": "heading", "text": "Orthographic projection" },
+    { "type": "paragraph", "text": "**Orthographic projection** shows an object as several flat (2D) views, each seen straight on. In **first-angle orthographic projection** (used in South Africa):" },
+    { "type": "list", "items": [
+      "The **front view** is drawn first.",
+      "The **top view** (plan) is drawn **below** the front view.",
+      "The **left view** is drawn on the **right** of the front view (the view from the left is placed on the right)."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Views in orthographic projection must line up: the top view is directly below the front view, and the side view is level with the front view. Use faint projection lines to transfer sizes." },
+    { "type": "heading", "text": "Scale and dimensions" },
+    { "type": "list", "items": [
+      "**1 : 1** (full size): the drawing is the same size as the object.",
+      "**1 : 2** (reduction): the drawing is half the real size. Used for large objects.",
+      "**2 : 1** (enlargement): the drawing is twice the real size. Used for small objects.",
+      "Dimensions are written in **millimetres (mm)**, without writing the unit, above the dimension line so they can be read from the bottom or the right of the page."
+    ] },
+    { "type": "example", "title": "Using scale", "problem": "A table top is 1 200 mm long. How long is it on a drawing at a scale of 1 : 10?", "steps": ["1 200 ÷ 10 = 120 mm"], "answer": "120 mm (12 cm)" }
+  ],
+  "questions": [
+    { "id": "hidden", "type": "mcq", "prompt": "Which type of line shows edges that cannot be seen?", "options": ["Thick continuous line", "Thin dashed line", "Long dash–short dash line", "Thin line with arrowheads"], "answer": 1 },
+    { "id": "iso-angle", "type": "numeric", "prompt": "At what angle to the horizontal are horizontal edges drawn in isometric drawing?", "answer": 30, "tolerance": 0, "unit": "°" },
+    { "id": "oblique-angle", "type": "numeric", "prompt": "At what angle are depth lines drawn in oblique drawing?", "answer": 45, "tolerance": 0, "unit": "°" },
+    { "id": "first-angle", "type": "mcq", "prompt": "In first-angle orthographic projection, the top view is drawn…", "options": ["above the front view", "below the front view", "to the left of the front view", "on a separate page"], "answer": 1 },
+    { "id": "scale-calc", "type": "numeric", "prompt": "A door is 2 000 mm high. How high is it on a drawing at 1 : 20?", "answer": 100, "tolerance": 0, "unit": "mm" },
+    { "id": "units", "type": "short", "prompt": "In which unit are dimensions usually given on technical drawings?", "answers": ["millimetres", "mm", "millimeters"] },
+    { "id": "lines", "type": "match", "marks": 4, "prompt": "Match each line to its use.", "pairs": [
+      { "left": "Construction line", "right": "Faint guidelines" },
+      { "left": "Centre line", "right": "Centre of circles" },
+      { "left": "Outline", "right": "Visible edges" },
+      { "left": "Dimension line", "right": "Shows measurements" }
+    ] },
+    { "id": "enlarge", "type": "truefalse", "prompt": "A scale of 2 : 1 means the drawing is twice as big as the real object.", "answer": true },
+    { "id": "iso-vs-oblique", "type": "open", "marks": 2, "prompt": "Give ONE difference between isometric and oblique drawing.", "memo": "✓✓ e.g. In oblique, the front face is drawn flat (true shape) and depth at 45°; in isometric, the object is turned to a corner and horizontal lines are drawn at 30° (2)" },
+    { "id": "views", "type": "open", "marks": 3, "prompt": "Name the THREE views usually drawn in orthographic projection and say where each is placed in first-angle projection.", "memo": "✓ Front view: drawn first (1)\n✓ Top view: below the front view (1)\n✓ Left view: to the right of the front view (1)" }
+  ]
+}

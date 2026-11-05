@@ -1,0 +1,67 @@
+{
+  "id": "electricity-safety-and-the-national-grid",
+  "title": "Safety, the National Grid and the Cost of Electricity",
+  "term": 3,
+  "summary": "Electrical safety devices, how electricity is generated and distributed through the national grid, and calculating the cost of electrical energy in kWh.",
+  "notes": [
+    { "type": "heading", "text": "Safety with electricity" },
+    { "type": "paragraph", "text": "Mains electricity in South Africa is **230 V AC**, which can kill. Household circuits contain safety devices that cut off the current when something goes wrong." },
+    { "type": "table", "headers": ["Device", "How it protects"], "rows": [
+      ["Fuse", "A thin wire that melts when the current is too high, breaking the circuit"],
+      ["Circuit breaker", "A switch in the distribution board that trips (opens) when the current is too high; it can be reset"],
+      ["Earth leakage unit", "Trips when current leaks to earth (for example through a person), preventing electric shock"],
+      ["Earth wire", "Connects the metal casing of an appliance to the ground so that a fault current flows safely away"],
+      ["Insulation", "Plastic coating on wires and plugs stops current from reaching people"]
+    ] },
+    { "type": "list", "items": [
+      "Never overload a plug point with many adaptors.",
+      "Do not touch switches or appliances with wet hands; keep appliances away from water.",
+      "Replace damaged cords and plugs.",
+      "Illegal connections (*izinyoka*) cause fires, electrocution and power cuts.",
+      "Stay away from fallen power lines and substations."
+    ] },
+    { "type": "heading", "text": "Generating electricity" },
+    { "type": "paragraph", "text": "Most of South Africa's electricity is produced in **coal-fired power stations** in Mpumalanga and Limpopo. Coal is burned to boil water; the **steam** turns **turbines**, which turn **generators** that convert kinetic energy into electrical energy." },
+    { "type": "formula", "latex": "\\text{chemical (coal)} \\rightarrow \\text{heat} \\rightarrow \\text{kinetic (steam, turbine)} \\rightarrow \\text{electrical}", "caption": "Energy conversions in a coal power station" },
+    { "type": "table", "caption": "Other sources of electricity", "headers": ["Source", "Renewable?", "Example in South Africa"], "rows": [
+      ["Nuclear", "No", "Koeberg, near Cape Town"],
+      ["Hydro-electric (falling water)", "Yes", "Gariep Dam"],
+      ["Pumped storage", "Uses water pumped up when demand is low", "Drakensberg, Palmiet"],
+      ["Wind", "Yes", "Wind farms in the Eastern and Western Cape"],
+      ["Solar", "Yes", "Solar parks in the Northern Cape; rooftop panels"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Burning coal releases carbon dioxide (a greenhouse gas) and sulfur dioxide (which causes acid rain). Renewable sources produce far less pollution, but wind and solar depend on the weather." },
+    { "type": "heading", "text": "The national grid" },
+    { "type": "paragraph", "text": "The **national grid** is the network of power lines that carries electricity from power stations to users across the country. **Step-up transformers** raise the voltage to very high values (up to 765 000 V) so that less energy is lost as heat in the long lines. **Step-down transformers** at substations reduce it to 230 V for homes." },
+    { "type": "heading", "text": "Power and the cost of electricity" },
+    { "type": "definition", "term": "Power", "text": "The rate at which an appliance uses energy, measured in watts (W) or kilowatts (kW). 1 kW = 1 000 W." },
+    { "type": "formula", "latex": "\\text{energy (kWh)} = \\text{power (kW)} \\times \\text{time (h)}", "caption": "Electricity is sold in kilowatt-hours (kWh), sometimes called units" },
+    { "type": "example", "title": "Calculating cost", "problem": "A 2 000 W kettle is used for a total of 30 minutes a day. Electricity costs R2,50 per kWh. Calculate the cost per day.", "steps": [
+      "Power = 2 000 W = 2 kW; time = 30 min = 0,5 h",
+      "Energy = 2 × 0,5 = 1 kWh",
+      "Cost = 1 × R2,50 = R2,50"
+    ], "answer": "R2,50 per day" },
+    { "type": "list", "items": [
+      "Switch off lights and appliances when not in use.",
+      "Use energy-efficient LED bulbs.",
+      "Install a solar water heater or geyser blanket; set the geyser lower.",
+      "Boil only the water you need."
+    ] }
+  ],
+  "questions": [
+    { "id": "fuse", "type": "mcq", "prompt": "How does a fuse protect a circuit?", "options": ["It increases the voltage", "Its wire melts when the current is too high", "It stores extra charge", "It earths the appliance"], "answer": 1 },
+    { "id": "mains", "type": "numeric", "prompt": "What is the mains voltage in South African homes?", "answer": 230, "tolerance": 10, "unit": "V" },
+    { "id": "koeberg", "type": "short", "prompt": "Name South Africa's nuclear power station.", "answers": ["koeberg"] },
+    { "id": "turbine", "type": "mcq", "prompt": "In a coal power station, what turns the turbines?", "options": ["Wind", "Falling water", "Steam", "Burning coal directly"], "answer": 2 },
+    { "id": "step-up", "type": "truefalse", "prompt": "Electricity is transmitted at very high voltages to reduce energy losses in the power lines.", "answer": true },
+    { "id": "kwh", "type": "numeric", "prompt": "A 1 500 W heater is switched on for 4 hours. How many kWh of energy does it use?", "answer": 6, "tolerance": 0, "unit": "kWh" },
+    { "id": "cost", "type": "numeric", "prompt": "A 100 W bulb is left on for 10 hours. Electricity costs R3,00 per kWh. Calculate the cost in rand.", "answer": 3, "tolerance": 0.01, "unit": "rand" },
+    { "id": "devices", "type": "match", "marks": 3, "prompt": "Match each safety device to its job.", "pairs": [
+      { "left": "Earth leakage unit", "right": "Trips when current leaks through a person" },
+      { "left": "Circuit breaker", "right": "Resettable switch that trips on overload" },
+      { "left": "Earth wire", "right": "Carries fault current from metal casing to ground" }
+    ] },
+    { "id": "renewable", "type": "open", "marks": 3, "prompt": "Give ONE advantage and TWO disadvantages of generating electricity from coal.", "memo": "Advantage (1): coal is plentiful/cheap in South Africa; reliable supply day and night\nDisadvantages (1 each): produces CO₂ / greenhouse gases; causes acid rain (SO₂); non-renewable; mining damages land; uses lots of water" },
+    { "id": "save", "type": "open", "marks": 2, "prompt": "Suggest TWO ways a family can reduce its electricity bill.", "memo": "Any two (1 each): switch off unused appliances; LED bulbs; solar geyser / geyser blanket; boil only needed water; use appliances efficiently" }
+  ]
+}

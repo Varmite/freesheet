@@ -1,0 +1,66 @@
+{
+  "id": "world-war-two",
+  "title": "World War II (1939–1945)",
+  "term": 1,
+  "summary": "The causes of World War II, Hitler's expansion and appeasement, the main events in Europe and the Pacific, South Africa's role and the end of the war.",
+  "notes": [
+    { "type": "heading", "text": "Causes of World War II" },
+    { "type": "list", "items": [
+      "**The Treaty of Versailles (1919)**: Germans resented losing land, paying reparations and accepting war guilt.",
+      "**The Great Depression (from 1929)**: mass unemployment and poverty made people turn to extreme leaders who promised solutions.",
+      "**The rise of dictators**: Mussolini (Italy, 1922), Hitler (Germany, 1933) and military leaders in Japan wanted to expand their countries.",
+      "**Failure of the League of Nations**: it had no army and could not stop Japan invading Manchuria (1931) or Italy invading Ethiopia (1935).",
+      "**Appeasement**: Britain and France gave in to Hitler's demands to avoid war."
+    ] },
+    { "type": "heading", "text": "Hitler's expansion, 1936–1939" },
+    { "type": "table", "headers": ["Year", "Event"], "rows": [
+      ["1936", "German troops re-occupied the Rhineland, breaking the Treaty of Versailles"],
+      ["1938", "**Anschluss**: Germany united with Austria"],
+      ["1938", "**Munich Agreement**: Britain (Chamberlain) and France allowed Germany to take the Sudetenland from Czechoslovakia; Chamberlain claimed 'peace for our time'"],
+      ["March 1939", "Germany occupied the rest of Czechoslovakia"],
+      ["August 1939", "**Nazi-Soviet Pact**: Germany and the USSR agreed not to fight each other and secretly to divide Poland"],
+      ["1 September 1939", "Germany invaded **Poland**. Britain and France declared war on 3 September"]
+    ] },
+    { "type": "definition", "term": "Appeasement", "text": "The policy of giving in to the demands of an aggressive country in the hope of avoiding war." },
+    { "type": "heading", "text": "The course of the war" },
+    { "type": "table", "headers": ["Axis powers", "Allied powers"], "rows": [
+      ["Germany, Italy, Japan", "Britain and its empire (including South Africa), France, the USSR (from 1941), the USA (from 1941), China"]
+    ] },
+    { "type": "list", "items": [
+      "**Blitzkrieg** ('lightning war'): fast attacks with tanks and aircraft conquered Poland, Denmark, Norway, the Netherlands, Belgium and France by June 1940.",
+      "**Battle of Britain (1940)**: the RAF defeated the German air force, preventing an invasion of Britain.",
+      "**Operation Barbarossa (June 1941)**: Germany invaded the USSR. The German defeat at **Stalingrad** (1942–1943) was a turning point.",
+      "**Pearl Harbor (7 December 1941)**: Japan attacked the US naval base in Hawaii, bringing the USA into the war.",
+      "**North Africa**: Allied victory at **El Alamein** (Egypt, 1942).",
+      "**D-Day (6 June 1944)**: Allied forces landed in Normandy, France, to free Western Europe.",
+      "**Germany surrendered on 8 May 1945** (VE Day) after Hitler's suicide."
+    ] },
+    { "type": "heading", "text": "The war in the Pacific ends" },
+    { "type": "paragraph", "text": "Japan kept fighting. On **6 August 1945** the USA dropped an **atomic bomb** on **Hiroshima** and on **9 August** on **Nagasaki**, killing more than 200 000 people. Japan surrendered on 15 August (formally on 2 September 1945)." },
+    { "type": "heading", "text": "South Africa and World War II" },
+    { "type": "list", "items": [
+      "Parliament voted narrowly to join the war on Britain's side; **Jan Smuts** became Prime Minister. Some Afrikaner nationalists opposed the war, and the Ossewabrandwag carried out sabotage.",
+      "About 330 000 South Africans volunteered. They fought in East Africa (Ethiopia), North Africa (Tobruk and El Alamein) and Italy.",
+      "Black and coloured men served in the **Native Military Corps** and Cape Corps but were mostly not allowed to carry arms. **Job Maseko**, a prisoner of war, sank a German ship at Tobruk using an improvised explosive and received the Military Medal.",
+      "Industry grew rapidly during the war, drawing many black workers to the cities."
+    ] },
+    { "type": "callout", "label": "Results", "text": "About **70 to 85 million people** died, the majority of them civilians. The **United Nations** was formed in 1945, Europe was divided between the USA and the USSR, and colonies began demanding independence." }
+  ],
+  "questions": [
+    { "id": "start", "type": "mcq", "prompt": "Which event started World War II in Europe?", "options": ["The Anschluss", "The invasion of Poland", "The attack on Pearl Harbor", "The Munich Agreement"], "answer": 1 },
+    { "id": "appease", "type": "short", "prompt": "What is the name of the policy of giving in to an aggressive country's demands to avoid war?", "answers": ["appeasement"] },
+    { "id": "pearl", "type": "truefalse", "prompt": "The USA joined the war after Japan attacked Pearl Harbor in 1941.", "answer": true },
+    { "id": "axis", "type": "mcq", "prompt": "Which countries were the main Axis powers?", "options": ["Britain, France, USSR", "Germany, Italy, Japan", "Germany, USSR, Japan", "Italy, France, USA"], "answer": 1 },
+    { "id": "smuts", "type": "short", "prompt": "Who was South Africa's Prime Minister during World War II?", "answers": ["jan smuts", "smuts", "j.c. smuts", "jc smuts"] },
+    { "id": "events", "type": "match", "marks": 4, "prompt": "Match each event to its year.", "pairs": [
+      { "left": "Munich Agreement", "right": "1938" },
+      { "left": "Invasion of Poland", "right": "1939" },
+      { "left": "Battle of Britain", "right": "1940" },
+      { "left": "D-Day landings", "right": "1944" }
+    ] },
+    { "id": "causes", "type": "open", "marks": 4, "prompt": "Explain FOUR causes of World War II.", "memo": "Any four (1 each): resentment of Versailles; Great Depression; rise of dictators; failure of the League of Nations; appeasement; Nazi-Soviet Pact; German expansion" },
+    { "id": "blitzkrieg", "type": "open", "marks": 2, "prompt": "What was Blitzkrieg and why was it successful at first?", "memo": "✓ 'Lightning war': fast, surprise attacks using tanks and aircraft together (1)\n✓ Enemies could not organise their defences in time (1)" },
+    { "id": "maseko", "type": "open", "marks": 2, "prompt": "Who was Job Maseko and why is he remembered?", "memo": "✓ A black South African soldier captured at Tobruk (1)\n✓ He sank a German ship using a home-made explosive and was awarded the Military Medal (1)" },
+    { "id": "atomic", "type": "open", "marks": 2, "prompt": "How did World War II end in the Pacific?", "memo": "✓ The USA dropped atomic bombs on Hiroshima and Nagasaki in August 1945 (1)\n✓ Japan surrendered (1)" }
+  ]
+}

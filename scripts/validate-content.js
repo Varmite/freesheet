@@ -256,8 +256,27 @@ function subjectDirsUnder(p) {
   return out;
 }
 
+// A single topic/exam file can be validated on its own (used while content is being written):
+//   node scripts/validate-content.js content/grade-10/mathematics/topics/exponents.json
+function checkSingleFile(file) {
+  const abs = path.resolve(file);
+  const kind = path.basename(path.dirname(abs));
+  const subjectFile = path.join(path.dirname(path.dirname(abs)), 'subject.json');
+  const id = path.basename(abs, '.json');
+  const s = fs.existsSync(subjectFile) ? readJson(subjectFile) : null;
+  if (!s) { err(abs, 'cannot find subject.json for this file'); return; }
+  const list = kind === 'topics' ? s.topics : kind === 'exams' ? s.exams : null;
+  if (!list) { err(abs, 'file must be inside a topics/ or exams/ folder'); return; }
+  const meta = list.find((m) => m && m.id === id);
+  if (!meta) { err(abs, `"${id}" is not listed in subject.json ${kind}`); return; }
+  if (kind === 'topics') checkTopic(abs, meta); else checkExam(abs, meta);
+}
+
 const targets = process.argv.slice(2);
-const dirs = (targets.length ? targets : [ROOT]).flatMap(subjectDirsUnder);
+const files = targets.filter((t) => t.endsWith('.json'));
+const dirTargets = targets.filter((t) => !t.endsWith('.json'));
+files.forEach(checkSingleFile);
+const dirs = (dirTargets.length || files.length ? dirTargets : [ROOT]).flatMap(subjectDirsUnder);
 dirs.forEach(checkSubject);
 console.log(`\n${stats.subjects} subjects, ${stats.topics} topics, ${stats.questions} practice questions, ` +
   `${stats.exams} exams (${stats.examQuestions} questions). ${errors} errors, ${warnings} warnings.`);

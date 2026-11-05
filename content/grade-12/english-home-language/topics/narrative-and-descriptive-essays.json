@@ -1,0 +1,420 @@
+{
+  "id": "narrative-and-descriptive-essays",
+  "title": "Narrative and Descriptive Essays",
+  "term": 1,
+  "summary": "Plan, write and polish narrative and descriptive essays of 400-450 words that meet the CAPS Home Language essay rubric for Paper 3.",
+  "notes": [
+    { "type": "heading", "text": "The essay in Paper 3" },
+    { "type": "paragraph", "text": "Paper 3 (Writing) is a 2½-hour paper worth 100 marks. **Section A** is the essay, worth **50 marks**. You choose ONE topic from a list that usually includes titles, phrases, quotations and pictures (visual prompts). Some topics name the essay type you must write; others are open, so you decide whether a narrative, descriptive, reflective, argumentative or discursive essay suits the topic best. This topic covers the two creative types: **narrative** and **descriptive** essays. (Reflective, argumentative and discursive essays are covered in their own topics.)" },
+    { "type": "paragraph", "text": "At Home Language level your essay must be **400-450 words** long. Length is part of the Structure mark, so an essay that is far too short or far too long loses marks and usually also loses quality: a short essay rarely develops its ideas, and a long one tends to ramble." },
+    {
+      "type": "table",
+      "caption": "How the HL essay is assessed (rubric out of 50)",
+      "headers": ["Criterion", "Marks", "What the marker looks for"],
+      "rows": [
+        ["Content and planning", "30", "A thoughtful, original response to the topic; ideas that are well developed and sustained; clear awareness of purpose and audience; evidence of planning (coherent organisation of ideas)"],
+        ["Language, style and editing", "15", "Tone and register suited to the essay type; precise, vivid vocabulary; varied and correct sentences; accurate grammar, spelling and punctuation; virtually no errors left after proofreading"],
+        ["Structure", "5", "Features of the essay type; logical paragraph development with clear links between paragraphs; correct length (400-450 words)"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Because Content and planning carries 30 of the 50 marks, the biggest gains come from a fresh interpretation of the topic and well-developed ideas, not from fancy vocabulary. Spend about 10 minutes thinking and planning before you write a single sentence of your essay." },
+
+    { "type": "heading", "text": "Process writing: plan, draft, edit, proofread" },
+    { "type": "paragraph", "text": "CAPS expects you to use the **writing process**. In class you work through all the stages over several days; in the exam you compress them into about 75 minutes." },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Analyse the topic.** Underline key words. Decide on the essay type, your purpose, your audience and a possible literal or figurative interpretation.",
+        "**Brainstorm and plan.** Use a mind map, a list or a flow chart to generate ideas, then put them in order: what goes in the introduction, each body paragraph and the conclusion.",
+        "**Draft.** Write the first version, concentrating on ideas and flow rather than perfection.",
+        "**Revise.** Reread for content and structure: Is the topic answered? Is the climax (narrative) or dominant impression (descriptive) strong? Are paragraphs in the best order? Cut what is irrelevant; add detail where it is thin.",
+        "**Edit.** Improve sentences and word choice: replace vague words, vary sentence openings and lengths, remove clichés and repetition.",
+        "**Proofread.** Check spelling, punctuation, tense, concord and paragraphing. Count your words.",
+        "**Final version.** In class, write a clean copy. In the exam, make neat corrections on your draft and give the essay a suitable title."
+      ]
+    },
+    { "type": "definition", "term": "Mind map", "text": "A planning diagram with the topic in the centre and ideas branching outwards. Each main branch can become a paragraph; smaller branches become the supporting details. Mind maps are useful because they let ideas appear in any order before you organise them." },
+    { "type": "callout", "label": "Remember", "text": "In the exam your planning must appear on the answer page, clearly labelled as planning (for example, written above your essay with the word PLANNING and a neat line drawn through it once you have finished). Markers look for evidence of planning under Content and planning." },
+    {
+      "type": "example",
+      "title": "Worked example 1: planning a narrative essay",
+      "problem": "Plan a narrative essay on the topic: **The last taxi home**.",
+      "steps": [
+        "**Interpret the title.** Literal: a character must catch the final taxi of the night. Figurative: a last chance to make things right. Choose the literal meaning but let it carry the figurative idea: the journey becomes the character's last chance to reconcile with her father.",
+        "**Decide on point of view and tense.** First person, past tense, to make the tension personal.",
+        "**Mind map branches.** Character: Zinhle, 17, stubborn, has argued with her father. Setting: Durban, a rainy Friday night, the taxi rank emptying. Conflict: external (she may be stranded) and internal (pride versus guilt). Turning point: the driver is a man who knows her father. Resolution: she arrives home and speaks first.",
+        "**Order the paragraphs.** P1: open in the middle of the action as the taxi pulls away without her (hook). P2: flashback to the argument that made her storm out. P3: rising action as rain, an empty rank and a dead phone battery increase the pressure. P4: climax as the last taxi arrives and the driver's words about her father force her to face her guilt. P5: resolution: she walks into the kitchen and apologises; final image of the porch light left on for her.",
+        "**Check against the rubric.** Clear plot, two kinds of conflict, a character who changes, a strong ending and a manageable time span (one evening) that fits 450 words."
+      ],
+      "answer": "A five-paragraph plan with a hook, a flashback, rising tension, a climax and a resolution that links the literal taxi ride to the figurative idea of a last chance."
+    },
+
+    { "type": "heading", "text": "Interpreting the topic" },
+    { "type": "paragraph", "text": "Many topics can be read **literally** (at face value) or **figuratively** (as a symbol or metaphor). A topic such as *Crossing the river* could be a real crossing of the Orange River, or a figurative 'crossing' such as leaving school, forgiving someone or moving to a new country. A figurative interpretation is often more original, but only if you make the link to the title clear. Whatever you choose, the essay must respond to the topic throughout, not just in the first and last lines." },
+    {
+      "type": "example",
+      "title": "Worked example 2: interpreting a quotation topic",
+      "problem": "Topic: **'Home is not a place; it is a feeling.'** How could this be approached as a narrative and as a descriptive essay?",
+      "steps": [
+        "**Key words:** home, place, feeling. The topic contrasts a physical location with an emotion.",
+        "**Narrative approach:** a learner who moves from Polokwane to Cape Town feels homeless in a new house, until an act of kindness from a neighbour makes her feel she belongs. The plot shows 'home' shifting from a place to a feeling.",
+        "**Descriptive approach:** describe Sunday lunch at a grandmother's table (smells of roast chicken and samp, the scrape of chairs, laughter) to build a dominant impression of warmth and belonging. The description itself shows that 'home' is a feeling created by people.",
+        "**Check:** both approaches keep the contrast between place and feeling at the centre, so the topic is answered throughout."
+      ],
+      "answer": "Choose one approach and keep returning to the idea that home is created by emotion and people rather than walls."
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Do not force a memorised essay onto a topic it does not fit. Markers quickly recognise an essay whose title has been 'stuck on', and Content and planning marks drop sharply when the topic is not addressed." },
+
+    { "type": "heading", "text": "The narrative essay" },
+    { "type": "definition", "term": "Narrative essay", "text": "An essay that tells a story, real or imagined, with a clear plot, characters, setting and conflict. Its purpose is to entertain and to engage the reader emotionally. It is usually written in the past tense." },
+    {
+      "type": "table",
+      "caption": "Plot structure in a narrative essay",
+      "headers": ["Stage", "What happens", "Tip for a 450-word essay"],
+      "rows": [
+        ["Exposition", "Introduces the main character, setting and situation", "Keep it brief; weave background into the action instead of a long introduction"],
+        ["Rising action", "Complications build the conflict and suspense", "Two or three well-chosen events are enough"],
+        ["Climax", "The turning point: the moment of greatest tension where the conflict comes to a head", "Slow down here; give this moment the most detail"],
+        ["Falling action", "The immediate consequences of the climax", "Often just a few sentences"],
+        ["Resolution", "The conflict is settled (or deliberately left open); the character may have changed", "End with a strong final image or line, not a moral lecture"]
+      ]
+    },
+    { "type": "definition", "term": "Conflict", "text": "The struggle that drives a story. **External conflict** is a struggle against something outside the character: another person, society, nature or technology. **Internal conflict** is a struggle within the character's own mind, such as guilt, fear or a difficult decision. The strongest narratives often combine both." },
+    { "type": "definition", "term": "Characterisation", "text": "The ways a writer reveals what a character is like. **Direct characterisation** tells the reader ('Thabo was selfish'). **Indirect characterisation** shows the character through actions, speech, thoughts, appearance and the reactions of others. Indirect characterisation is usually more convincing." },
+    {
+      "type": "table",
+      "caption": "Point of view (narrative perspective)",
+      "headers": ["Point of view", "Pronouns", "Effect"],
+      "rows": [
+        ["First person", "I, me, we", "Immediate and personal; the reader shares the narrator's thoughts but knows only what the narrator knows"],
+        ["Third person limited", "he, she, they", "Follows one character closely; allows some distance while keeping suspense"],
+        ["Third person omniscient", "he, she, they", "An all-knowing narrator who can enter several characters' minds and reveal what the characters themselves do not know, which is useful for dramatic irony"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Choose ONE point of view and keep to it. Slipping from 'I' into 'he' or jumping between characters' thoughts confuses the reader and costs marks under Language, style and editing." },
+    { "type": "definition", "term": "Show, don't tell", "text": "A technique in which the writer lets the reader work out emotions and character traits from concrete details (actions, body language, dialogue, setting) rather than stating them directly." },
+    {
+      "type": "example",
+      "title": "Worked example 3: turning telling into showing",
+      "problem": "Rewrite this 'telling' sentence so that it shows the emotion: **Sipho was very nervous before his speech.**",
+      "steps": [
+        "**Identify the emotion being told:** nervousness.",
+        "**List physical and behavioural signs** of nervousness: rereading notes, fidgeting, a dry mouth, noticing small sounds.",
+        "**Choose specific details** and a precise verb or two. Avoid naming the emotion at all.",
+        "**Write the showing version:** Sipho read the first line of his speech for the fifth time. The cue cards had gone soft at the corners where his thumbs kept worrying them, and when the principal called his name, his chair scraped against the floor as if it, too, wanted to escape."
+      ],
+      "answer": "The reader now infers Sipho's nerves from his actions and the personified chair, which is more vivid and engaging than being told."
+    },
+    { "type": "paragraph", "text": "**Dialogue** brings characters to life and can move the plot forward quickly, but it must be used sparingly in a 450-word essay. Use it to reveal character or tension, not for small talk ('Hello.' 'Hi, how are you?')." },
+    {
+      "type": "list",
+      "items": [
+        "Start a **new paragraph** every time the speaker changes.",
+        "Put the spoken words inside **inverted commas** (single or double, but be consistent).",
+        "Punctuation that belongs to the speech goes **inside** the closing inverted commas: “Wait,” she said. “Is that yours?”",
+        "Use a comma, not a full stop, before the speech tag when the sentence continues: “I'll be late,” he warned.",
+        "'Said' is often the best speech tag because it is almost invisible; use stronger verbs (whispered, snapped) only when they add meaning."
+      ]
+    },
+    { "type": "definition", "term": "Flashback", "text": "A scene that interrupts the present action to show events that happened earlier. It is useful for revealing the cause of a conflict, but signal it clearly (for example by a shift into the past perfect: 'Two days earlier, she had...') and return clearly to the present." },
+    { "type": "definition", "term": "Foreshadowing", "text": "Hints or clues early in the story about what will happen later. It builds suspense and makes the ending feel earned rather than random." },
+    {
+      "type": "passage",
+      "title": "Model narrative opening (original): 'The Envelope'",
+      "text": "The envelope had been lying on the kitchen table for three days before Lerato found the courage to touch it. It was thin and brown, the kind that only ever brought bad news, and her name was printed across the front in a stranger's neat capitals.\n\n“Are you going to open it, or are you going to keep staring at it like it owes you money?” her brother asked from the doorway, a slice of toast balanced in one hand.\n\nShe did not answer. Outside, a taxi hooted twice and the neighbour's dog began its morning complaint. Lerato slid her thumb under the flap. Her hands, she noticed, were not quite steady."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 4: analysing the model opening",
+      "problem": "Explain why the opening of 'The Envelope' is effective.",
+      "steps": [
+        "**Hook:** the story begins with a mystery (what is in the envelope, and why has she avoided it for three days?), so the reader wants to continue.",
+        "**Conflict:** an internal conflict (fear versus the need to know) is suggested without being named.",
+        "**Show, don't tell:** we are never told Lerato is anxious; we see it in her delay and her unsteady hands.",
+        "**Characterisation through dialogue:** the brother's teasing simile ('like it owes you money') reveals his personality and the siblings' relationship in one line.",
+        "**Setting through sound:** the taxi and the dog place the story in an ordinary South African morning, which contrasts with the tension inside the house.",
+        "**Point of view:** third person limited; we see only what Lerato notices."
+      ],
+      "answer": "In under 100 words the opening establishes character, setting, conflict and suspense through concrete detail."
+    },
+    { "type": "callout", "label": "Common mistakes in narratives", "text": "Ending with 'and then I woke up; it was all a dream' (it cancels the story); too many characters for 450 words; covering years of events instead of a short, focused time span; a rushed climax followed by a long moral lesson; and endless dialogue that does not move the plot." },
+
+    { "type": "heading", "text": "The descriptive essay" },
+    { "type": "definition", "term": "Descriptive essay", "text": "An essay that paints a vivid word picture of a person, place, object, event or experience so that the reader can see, hear, smell, taste and feel it. Its purpose is to create an impression, not to tell a story, so it has no plot, conflict or climax." },
+    { "type": "definition", "term": "Dominant impression", "text": "The single overall mood or feeling that the whole description builds (for example, peaceful, chaotic, eerie or joyful). Every detail you choose should support it; details that contradict it should be left out unless you are deliberately creating contrast." },
+    {
+      "type": "list",
+      "items": [
+        "**Sensory detail:** appeal to all five senses, not only sight. Smell and sound are especially powerful for setting a mood.",
+        "**Figurative language:** similes, metaphors, personification and onomatopoeia create fresh images. Make them original; clichés such as 'as quiet as a mouse' weaken a description.",
+        "**Precise vocabulary:** specific nouns ('jacaranda', not 'tree') and strong verbs ('the wind *gnaws* at the roof', not 'the wind is strong') do more work than piles of adjectives.",
+        "**Present tense** is common in descriptive essays because it creates immediacy, although the past tense is acceptable if used consistently.",
+        "**Clear organisation:** a logical pattern (see the table below) so the reader can follow the description.",
+        "**No storyline:** events may happen in the background, but the focus stays on what things are like, not on what happens next."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "Ways to organise a description",
+      "headers": ["Method", "How it works", "Example of use"],
+      "rows": [
+        ["Spatial", "Moves through space in a logical direction: near to far, left to right, outside to inside, top to bottom", "Describing a kitchen from the doorway to the window"],
+        ["Temporal (chronological)", "Follows the passing of time without becoming a plot", "A township street from dawn to dusk; a market from opening to closing"],
+        ["General to specific (zooming in)", "Starts with a wide view and narrows to small, telling details", "A stadium crowd, then one fan's painted face"],
+        ["Sense by sense", "Builds the picture one sense at a time", "A spice market: sight, then smell, then sound"]
+      ]
+    },
+    {
+      "type": "passage",
+      "title": "Model descriptive paragraph (original): 'The Rank at Dawn'",
+      "text": "At half past five the taxi rank is still more shadow than shape. Rows of white minibuses sit nose to tail under the flyover, their windscreens fogged, their engines ticking as they warm. The air tastes of diesel and frying vetkoek. Somewhere a gaatjie calls out destinations in a hoarse sing-song while hawkers unfold their tables and stack pyramids of oranges that glow like small suns under the street lights. Feet shuffle; coins clink into palms; a radio leaks gospel music from an open door. The whole place hums like a hive that has not quite woken up: restless, purposeful and impatient for the day."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5: analysing a descriptive paragraph",
+      "problem": "Identify the techniques that make 'The Rank at Dawn' effective.",
+      "steps": [
+        "**Dominant impression:** a place waking up, full of restless energy. The final sentence states it through the image of the hive, and every earlier detail supports it.",
+        "**Senses:** sight (white minibuses, fogged windscreens, glowing oranges); sound (ticking engines, the gaatjie's call, clinking coins, gospel music); smell and taste (diesel, frying vetkoek).",
+        "**Figurative language:** simile ('glow like small suns', 'hums like a hive'); personification ('a radio leaks gospel music'); onomatopoeia ('clink').",
+        "**Organisation:** general to specific, from the shadowy overview of the rank to small details such as coins and the radio, then back out to the whole place in the final sentence.",
+        "**Style:** present tense for immediacy; the semicolons in 'Feet shuffle; coins clink...; a radio leaks...' create a quick rhythm that imitates the bustle.",
+        "**No storyline:** nobody's journey is told; the paragraph captures a moment."
+      ],
+      "answer": "The paragraph uses sensory detail, original figures of speech and a clear organising pattern to build one dominant impression."
+    },
+    { "type": "callout", "label": "Common mistake", "text": "A descriptive essay that drifts into a story ('Then my cousin fell out of the tree and we rushed him to hospital...') loses its focus. If you find a plot taking over, you are writing a narrative; either change the essay type or cut the events." },
+    {
+      "type": "table",
+      "caption": "Narrative and descriptive essays compared",
+      "headers": ["Feature", "Narrative", "Descriptive"],
+      "rows": [
+        ["Purpose", "To tell a story and entertain", "To create a vivid picture and impression"],
+        ["Plot and conflict", "Essential", "Avoided"],
+        ["Usual tense", "Past", "Present (or past, used consistently)"],
+        ["Organising principle", "Plot: exposition to resolution", "Spatial, temporal, general-to-specific or by sense"],
+        ["Key techniques", "Characterisation, dialogue, suspense, flashback, foreshadowing, show-don't-tell", "Sensory imagery, figurative language, precise vocabulary, dominant impression"],
+        ["Ending", "Resolution or a deliberate open ending", "Returns to and reinforces the dominant impression"]
+      ]
+    },
+
+    { "type": "heading", "text": "Effective introductions" },
+    { "type": "paragraph", "text": "Your first paragraph must hook the marker. It should also establish the tone and, for a narrative, the point of view and setting. Good techniques include:" },
+    {
+      "type": "list",
+      "items": [
+        "**In medias res** (starting in the middle of the action): 'The taxi was already pulling away when I reached the corner.'",
+        "**Dialogue:** a line of speech that hints at conflict.",
+        "**A vivid image or sensory detail** (ideal for descriptive essays).",
+        "**A striking or puzzling statement** that raises a question in the reader's mind.",
+        "Avoid: 'In this essay I am going to write about...', dictionary definitions of the title, and slow openings such as waking up and brushing your teeth."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 6: improving an introduction",
+      "problem": "Improve this introduction to a narrative essay called 'Lost': **In this essay I am going to tell you about the day I got lost. It was a nice day and I went to the mall with my friends.**",
+      "steps": [
+        "**Diagnose the problems:** it announces the topic instead of telling the story; 'nice' is vague; it begins too early in the events, so nothing is at stake.",
+        "**Decide where the tension begins:** the moment the narrator realises she is alone.",
+        "**Rewrite using in medias res and sensory detail:** One minute my friends were beside me at the escalator; the next, there was only a sea of strangers' shoulders and the smell of popcorn from the cinema. I turned in a full circle. My phone, I remembered too late, was in Ayanda's bag."
+      ],
+      "answer": "The new opening drops the reader straight into the conflict, shows panic instead of naming it, and ends on a complication that creates suspense."
+    },
+
+    { "type": "heading", "text": "Effective conclusions" },
+    {
+      "type": "list",
+      "items": [
+        "**Resolve the conflict** in a way that is believable and connected to what came before (narrative).",
+        "**Circular ending:** return to an image or line from the introduction, now with new meaning.",
+        "**Twist:** a surprise that the earlier clues make possible (use foreshadowing so it does not feel like a trick).",
+        "**Lingering final image:** for descriptive essays, a closing detail that sums up the dominant impression.",
+        "Avoid: the 'it was all a dream' ending, a sudden moral sermon, and simply stopping because you ran out of time."
+      ]
+    },
+
+    { "type": "heading", "text": "Paragraphing and cohesion" },
+    { "type": "paragraph", "text": "Each paragraph should focus on one stage of the plot or one aspect of the description. Start a new paragraph for a change of time, place, speaker or focus. **Cohesion** is the 'glue' that links sentences and paragraphs so the essay reads smoothly." },
+    {
+      "type": "table",
+      "caption": "Cohesive devices",
+      "headers": ["Device", "Examples"],
+      "rows": [
+        ["Time connectors (narrative)", "moments later, by midnight, meanwhile, two days earlier, at last"],
+        ["Spatial connectors (descriptive)", "beyond the gate, above the rooftops, in the far corner, closer still"],
+        ["Pronoun reference", "Using 'she', 'it' or 'this' to refer back to something already named"],
+        ["Repetition of a key word or image", "Returning to 'the porch light' at the start and end of the essay"],
+        ["Synonyms and word chains", "storm, downpour, the rain, the deluge"]
+      ]
+    },
+    { "type": "heading", "text": "Language, style and editing" },
+    {
+      "type": "list",
+      "items": [
+        "**Vary your sentences:** mix short, punchy sentences (useful at the climax) with longer, flowing ones (useful for description). Vary how sentences begin.",
+        "**Keep the tense consistent:** narratives normally stay in the past tense; use the past perfect ('had gone') for flashbacks.",
+        "**Choose the right register:** creative essays may use some informal language in dialogue, but the narration should be controlled and correct. South African words (vetkoek, gogo, robot) add local colour when used naturally.",
+        "**Cut clichés and filler:** 'suddenly', 'very', 'really', 'nice', 'beautiful' and 'all of a sudden' are often signs that a sentence needs a stronger word.",
+        "**Proofread** for spelling (SA/British: colour, realise, travelled), concord ('the group of learners **was**'), punctuation of dialogue and paragraph breaks."
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Leave five minutes at the end to proofread. Read your essay slowly, line by line, as if it were someone else's. Neat corrections with a single line through the error are perfectly acceptable." },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "The HL essay is 400-450 words and is marked out of 50: Content and planning 30, Language, style and editing 15, Structure 5.",
+        "Use the writing process: analyse the topic, plan (mind map or list), draft, revise, edit, proofread. Show your planning.",
+        "Interpret the topic literally or figuratively, but answer it throughout the essay.",
+        "A narrative tells a story with exposition, rising action, climax, falling action and resolution, driven by internal and/or external conflict.",
+        "Reveal character mainly through indirect characterisation and show, don't tell; keep one consistent point of view.",
+        "Use dialogue sparingly and punctuate it correctly; use flashback and foreshadowing purposefully.",
+        "A descriptive essay builds one dominant impression through sensory detail, original figurative language and precise vocabulary, with no storyline.",
+        "Organise descriptions spatially, temporally, from general to specific or sense by sense.",
+        "Hook the reader with a strong introduction; end with a resolution, circular ending or memorable image, never 'it was all a dream'.",
+        "Link paragraphs with cohesive devices, vary sentence structure, and proofread carefully."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "What is the required length of a Home Language essay in Paper 3?",
+      "options": ["250-300 words", "300-350 words", "400-450 words", "500-550 words"],
+      "answer": 2,
+      "explanation": "At Home Language level the essay must be 400-450 words. Length is assessed under the Structure criterion."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "In the HL essay rubric out of 50, how many marks are allocated to Content and planning?",
+      "options": ["15", "30", "25", "5"],
+      "answer": 1,
+      "explanation": "Content and planning carries 30 marks, Language, style and editing 15, and Structure 5 (30 + 15 + 5 = 50)."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "A good descriptive essay should be built around a plot that rises to a clear climax.",
+      "answer": false,
+      "explanation": "Plot, conflict and climax belong to the narrative essay. A descriptive essay creates a dominant impression through sensory detail and should avoid a storyline."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "When writing dialogue, you should start a new paragraph each time the speaker changes.",
+      "answer": true,
+      "explanation": "A new paragraph for each new speaker makes it clear who is talking without needing a speech tag every time."
+    },
+    {
+      "id": "q5",
+      "type": "short",
+      "prompt": "What is the term for a scene that interrupts the present action of a story to show events that happened earlier?",
+      "answers": ["flashback", "a flashback", "flash back", "flash-back", "analepsis"],
+      "explanation": "A flashback takes the reader back in time, often to reveal the cause of a conflict. Signal it clearly, for example with the past perfect tense."
+    },
+    {
+      "id": "q6",
+      "type": "short",
+      "prompt": "What is the term for the single overall mood or feeling that every detail in a descriptive essay should help to build?",
+      "answers": ["dominant impression", "the dominant impression", "a dominant impression", "dominant mood", "overall impression"],
+      "explanation": "The dominant impression (for example peaceful, chaotic or eerie) unifies a description; details that contradict it should usually be left out."
+    },
+    {
+      "id": "q7",
+      "type": "match",
+      "prompt": "Match each stage of plot structure with its description.",
+      "marks": 5,
+      "pairs": [
+        { "left": "Exposition", "right": "Introduces the main character, setting and situation" },
+        { "left": "Rising action", "right": "Complications build suspense and intensify the conflict" },
+        { "left": "Climax", "right": "The turning point of greatest tension" },
+        { "left": "Falling action", "right": "The immediate consequences of the turning point" },
+        { "left": "Resolution", "right": "The conflict is settled and the story ends" }
+      ],
+      "explanation": "A narrative moves from exposition through rising action to the climax, then through falling action to the resolution."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "Read the extract and identify the point of view.\n\n“Thabo was certain his plan was foolproof. He had no idea that, three streets away, his sister had already found the note and was smiling to herself.”",
+      "options": ["First person", "Second person", "Third person limited", "Third person omniscient"],
+      "answer": 3,
+      "explanation": "The narrator uses 'he' and 'she' and knows what Thabo does not know (his sister's discovery and her reaction), so this is an all-knowing, third-person omniscient narrator."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "Which sentence best demonstrates the technique of 'show, don't tell'?",
+      "options": [
+        "Naledi bit her lip, folded the report card into a tiny square and pushed it to the bottom of her school bag.",
+        "Naledi was very upset and ashamed about her bad marks.",
+        "Naledi felt terrible because her report card was disappointing.",
+        "It was obvious that Naledi was sad about her results."
+      ],
+      "answer": 0,
+      "explanation": "The first option never names the emotion; the reader infers shame from her actions. The others simply tell us how she feels."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "“Nomvula lay awake for hours, torn between telling her teacher what she had seen and protecting her best friend.” What type of conflict is central to this sentence?",
+      "options": ["Character versus nature", "Character versus society", "Internal conflict (character versus self)", "Character versus technology"],
+      "answer": 2,
+      "explanation": "Nomvula's struggle is a difficult decision inside her own mind (loyalty versus honesty), which is internal conflict."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "You are describing your grandmother's kitchen, moving from the doorway, past the coal stove, to the window above the sink. Which method of organisation are you using?",
+      "options": ["Temporal (chronological) organisation", "Spatial organisation", "Order of importance", "Cause and effect"],
+      "answer": 1,
+      "explanation": "Moving through a space in a logical direction (doorway to window) is spatial organisation."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "Which of these openings for a narrative essay called 'The Storm' is the WEAKEST?",
+      "options": [
+        "“Get the washing in!” Ma shouted, but the first hailstones were already bouncing off the stoep.",
+        "The sky over Bloemfontein turned the colour of a bruise in less than ten minutes.",
+        "By the time the river burst its banks, we had already made the worst decision of our lives.",
+        "In this essay I am going to write about a storm that happened last year."
+      ],
+      "answer": 3,
+      "explanation": "Announcing what the essay is about is a weak, flat opening. The other options use dialogue, a vivid image and a striking statement that creates suspense."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Rewrite the following 'telling' sentence as two or three sentences that SHOW the emotion instead of naming it:\n\n**Mr Govender was furious when he saw the broken window.**",
+      "memo": "Model answer: Mr Govender stopped in the doorway. For a long moment he said nothing; he only stared at the glass glittering across his desk, his jaw working. Then he set his coffee mug down so hard that it cracked.\n\nMarking:\n✓ The word 'furious' (or any synonym such as 'angry') is not used; the emotion is left for the reader to infer (1)\n✓ At least one concrete physical action or body-language detail (for example, clenched jaw, slammed mug) (1)\n✓ A second, different detail (setting, speech, sound or reaction) that reinforces the emotion (1)\n✓ Correct, controlled sentences with precise word choice (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Write an introductory paragraph (60-80 words) for a narrative essay with the title **The Key**. Your introduction must hook the reader, establish a point of view and suggest a conflict.",
+      "memo": "Model answer: The key was not on its hook. I checked my blazer pockets, then my bag, then my blazer pockets again, as if the thing might have grown back. Through the kitchen window I could see Dad's bakkie in the driveway, the bakkie I had promised, on my life, never to touch. It was ten past eleven. He would be home from his night shift at six. (66 words)\n\nMarking:\n✓ Effective hook (in medias res, dialogue, striking statement or vivid image) that creates curiosity (1)\n✓ Clear, consistent point of view (1)\n✓ A conflict or complication is suggested, internal and/or external (1)\n✓ Responds clearly to the title (the key is central, literally or figuratively) (1)\n✓ Language: vivid, correct, within 60-80 words; avoids 'In this essay I will...' (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 8,
+      "prompt": "Read this paragraph from a learner's descriptive essay called 'My Gran's House':\n\n“My gran's house is very nice. It is old and it is big. One day I went there and my cousin fell out of the mango tree and we had to take him to hospital. The garden is very beautiful and the flowers are nice. It was as quiet as a mouse. I love it there.”\n\n(a) Identify THREE weaknesses in the paragraph. (3)\n(b) Rewrite it as an effective descriptive paragraph of 80-100 words. (5)",
+      "memo": "(a) Any THREE of the following (1 mark each):\n✓ Vague, empty adjectives ('nice', 'big', 'beautiful') with no specific detail\n✓ It tells rather than shows; there is no sensory detail beyond a little sight\n✓ It drifts into a storyline (the cousin's fall and the hospital trip), which does not belong in a descriptive essay\n✓ It uses a cliché ('as quiet as a mouse')\n✓ There is no clear dominant impression\n✓ Inconsistent tense (present 'is' and past 'was')\n✓ Short, repetitive sentence structures ('It is... it is...')\n\n(b) Model answer: Gran's house leans into the hillside like an old woman resting on a walking stick. Its tin roof ticks in the afternoon heat, and the wooden floors creak a greeting under every step. In the kitchen the air is thick with the smell of Sunlight soap and simmering beans. Outside, the mango tree throws a pool of green shade over the yard, where bees drone lazily among the marigolds. Even the clock in the passage seems to tick more slowly here, as if time itself has decided to rest. (89 words)\n\nMarking for (b):\n✓ Clear dominant impression sustained throughout (for example, peace, age, rest) (1)\n✓ Details appealing to at least three senses (1)\n✓ Original figurative language (no clichés) (1)\n✓ No storyline; consistent tense (1)\n✓ Precise vocabulary, varied and correct sentences, 80-100 words (1)"
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 50,
+      "prompt": "Write an essay of 400-450 words on ONE of the following topics. Show your planning and give your essay a suitable title.\n\n(a) **The night the lights went out** (narrative)\n(b) **Market day** (descriptive)",
+      "memo": "Mark using the CAPS HL essay rubric. Award a mark in each criterion and add them.\n\n**Content and planning (30)**\n✓ Top band (24-30): an original, insightful interpretation of the topic that is sustained throughout; ideas are fully developed and engaging; planning is evident and the essay is coherent.\n• (a) Narrative: the lights going out (a power failure, load-shedding, or a figurative 'darkness' such as loss or fear) is central to the plot, not just mentioned. There is a clear conflict, a well-paced build-up, a convincing climax and a satisfying resolution. Characters are revealed through action and dialogue rather than description alone.\n• (b) Descriptive: a vivid picture of a market (for example, a fresh-produce market, a Saturday craft market, a street market) with a clear dominant impression. Rich sensory detail covers more than sight; there is no storyline.\n✓ Middle band (15-23): the topic is addressed and ideas are relevant but are more predictable or unevenly developed.\n✓ Lower bands (below 15): the topic is misinterpreted or only loosely linked; ideas are thin, repetitive or memorised; little evidence of planning.\n\n**Language, style and editing (15)**\n✓ Top band (12-15): tone and register are appropriate; vocabulary is precise and vivid; figurative language is fresh; sentences are varied and controlled; virtually error-free.\n✓ Middle band (8-11): generally correct with some imprecise word choice, clichés or errors that do not obscure meaning.\n✓ Lower bands (below 8): frequent errors in grammar, spelling, punctuation or dialogue layout; limited vocabulary.\n\n**Structure (5)**\n✓ 5: features of the essay type are fully present; logical, well-linked paragraphs; strong introduction and conclusion; 400-450 words.\n✓ 3-4: mostly well organised with minor lapses in paragraphing or length.\n✓ 0-2: poor paragraphing, no clear structure, or length far outside the required range.\n\n**Total: 50**"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "media-and-digital-citizenship",
+  "title": "Media and Digital Citizenship",
+  "term": 3,
+  "summary": "Types and roles of media, bias and fake news, evaluating sources, online safety and privacy, digital footprints, cyberbullying, and responsible social media use.",
+  "notes": [
+    { "type": "heading", "text": "The media" },
+    { "type": "paragraph", "text": "The **media** are ways of communicating information to many people: newspapers, radio, television, websites, podcasts and **social media** (such as TikTok, Instagram, WhatsApp and YouTube)." },
+    { "type": "list", "items": [
+      "**Inform** people about news and events.",
+      "**Educate** and explain issues.",
+      "**Entertain**.",
+      "**Persuade** through advertising and opinion.",
+      "**Hold leaders accountable** by exposing corruption (the 'watchdog' role)."
+    ] },
+    { "type": "heading", "text": "Bias and fake news" },
+    { "type": "definition", "term": "Bias", "text": "Presenting information in a one-sided way, favouring one view over others." },
+    { "type": "definition", "term": "Fake news (misinformation and disinformation)", "text": "False or misleading information presented as news. **Misinformation** is shared by mistake; **disinformation** is spread on purpose to deceive." },
+    { "type": "table", "caption": "How to check a source", "headers": ["Ask…", "Why"], "rows": [
+      ["Who wrote it and who published it?", "Is it a reliable, known organisation or an anonymous account?"],
+      ["When was it published?", "Old stories are often reshared as if they were new"],
+      ["Is there evidence?", "Are sources, data or experts named?"],
+      ["Do other reliable sources report the same thing?", "Check at least two trusted sources"],
+      ["Is it designed to make me angry or afraid?", "Shocking headlines (clickbait) are often misleading"],
+      ["Could the image be edited or AI-generated?", "Do a reverse image search"]
+    ] },
+    { "type": "heading", "text": "Online safety and privacy" },
+    { "type": "list", "items": [
+      "Never share passwords, your home address, ID number or bank details.",
+      "Use strong passwords and two-step verification.",
+      "Set social media accounts to **private** and accept only people you know.",
+      "Never meet someone you only know online without a trusted adult.",
+      "Be careful of **scams** (messages promising prizes or asking for money) and **grooming** (adults pretending to be young to gain a child's trust).",
+      "Think before sharing images: once something is online you lose control of it."
+    ] },
+    { "type": "definition", "term": "Digital footprint", "text": "The permanent record of everything you do online: posts, photos, comments, likes and searches. Future employers and universities may look at it." },
+    { "type": "heading", "text": "Cyberbullying and the law" },
+    { "type": "paragraph", "text": "Cyberbullying, threats and sharing intimate images without consent are crimes under the **Cybercrimes Act** (2020). If you are targeted: do not reply, take **screenshots**, **block** and **report** the account, and tell a trusted adult." },
+    { "type": "callout", "label": "Digital citizenship", "text": "A good digital citizen is respectful online, thinks before posting, checks facts before sharing, protects their privacy, stands up against cyberbullying and balances screen time with offline activities." }
+  ],
+  "questions": [
+    { "id": "watchdog", "type": "mcq", "prompt": "When the media expose corruption, they are playing which role?", "options": ["Entertainment", "Watchdog", "Advertising", "Fiction"], "answer": 1 },
+    { "id": "disinfo", "type": "short", "prompt": "What is false information that is spread deliberately to deceive people called?", "answers": ["disinformation"] },
+    { "id": "footprint", "type": "short", "prompt": "What is the permanent record of your online activity called?", "answers": ["digital footprint", "a digital footprint"] },
+    { "id": "private", "type": "truefalse", "prompt": "Setting your social media accounts to private helps to protect your safety.", "answer": true },
+    { "id": "law", "type": "mcq", "prompt": "Which South African law makes certain online harms, such as sharing intimate images without consent, a crime?", "options": ["Schools Act", "Cybercrimes Act", "Labour Relations Act", "Water Act"], "answer": 1 },
+    { "id": "terms", "type": "match", "marks": 4, "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Clickbait", "right": "Shocking headline to get clicks" },
+      { "left": "Grooming", "right": "Adult gaining a child's trust to exploit them" },
+      { "left": "Bias", "right": "One-sided presentation" },
+      { "left": "Scam", "right": "Trick to steal money or information" }
+    ] },
+    { "id": "check", "type": "open", "marks": 3, "prompt": "Describe THREE ways to check whether a news story you see online is true.", "memo": "Any three (1 each): check the author/publisher; check the date; look for evidence; compare with other reliable sources; be wary of emotional headlines; reverse image search" },
+    { "id": "safety", "type": "open", "marks": 3, "prompt": "Give THREE tips for staying safe online.", "memo": "Any three (1 each): don't share personal details; strong passwords; private accounts; don't meet strangers; beware of scams; think before sharing images" },
+    { "id": "cyberbully", "type": "open", "marks": 2, "prompt": "What should you do if you are being cyberbullied?", "memo": "Any two (1 each): don't reply; take screenshots; block and report; tell a trusted adult; report to police if serious" },
+    { "id": "footprint-why", "type": "open", "marks": 2, "prompt": "Why should teenagers think carefully about their digital footprint?", "memo": "✓ Posts are permanent and can be shared widely (1)\n✓ Future employers or universities may see them / they can affect reputation and safety (1)" }
+  ]
+}

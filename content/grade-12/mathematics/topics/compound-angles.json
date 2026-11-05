@@ -1,0 +1,48 @@
+{
+  "id": "compound-angles",
+  "title": "Trigonometry: Compound and Double Angles",
+  "term": 2,
+  "summary": "The compound-angle and double-angle identities, using them to simplify expressions, prove identities and solve equations.",
+  "notes": [
+    { "type": "heading", "text": "Compound-angle identities" },
+    { "type": "formula", "latex": "\\cos(\\alpha - \\beta) = \\cos\\alpha\\cos\\beta + \\sin\\alpha\\sin\\beta \\qquad \\cos(\\alpha + \\beta) = \\cos\\alpha\\cos\\beta - \\sin\\alpha\\sin\\beta" },
+    { "type": "formula", "latex": "\\sin(\\alpha + \\beta) = \\sin\\alpha\\cos\\beta + \\cos\\alpha\\sin\\beta \\qquad \\sin(\\alpha - \\beta) = \\sin\\alpha\\cos\\beta - \\cos\\alpha\\sin\\beta" },
+    { "type": "callout", "label": "Common mistake", "text": "$\\sin(\\alpha + \\beta) \\neq \\sin\\alpha + \\sin\\beta$. For example, $\\sin(30^\\circ + 60^\\circ) = \\sin 90^\\circ = 1$, but $\\sin 30^\\circ + \\sin 60^\\circ \\approx 1{,}37$." },
+    { "type": "example", "title": "Worked example 1", "problem": "Without a calculator, find $\\cos 15^\\circ$.", "steps": [
+      "$\\cos 15^\\circ = \\cos(45^\\circ - 30^\\circ) = \\cos 45^\\circ\\cos 30^\\circ + \\sin 45^\\circ\\sin 30^\\circ$",
+      "$= \\dfrac{\\sqrt{2}}{2} \\cdot \\dfrac{\\sqrt{3}}{2} + \\dfrac{\\sqrt{2}}{2} \\cdot \\dfrac{1}{2}$",
+      "$= \\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$"
+    ], "answer": "$\\frac{\\sqrt{6} + \\sqrt{2}}{4}$" },
+    { "type": "example", "title": "Worked example 2: recognising the expansion", "problem": "Simplify $\\sin 70^\\circ\\cos 10^\\circ - \\cos 70^\\circ\\sin 10^\\circ$", "steps": ["This is $\\sin(70^\\circ - 10^\\circ) = \\sin 60^\\circ$", "$= \\dfrac{\\sqrt{3}}{2}$"], "answer": "$\\frac{\\sqrt{3}}{2}$" },
+    { "type": "heading", "text": "Double-angle identities" },
+    { "type": "formula", "latex": "\\sin 2\\alpha = 2\\sin\\alpha\\cos\\alpha" },
+    { "type": "formula", "latex": "\\cos 2\\alpha = \\cos^2\\alpha - \\sin^2\\alpha = 2\\cos^2\\alpha - 1 = 1 - 2\\sin^2\\alpha" },
+    { "type": "example", "title": "Worked example 3", "problem": "If $\\sin\\theta = \\frac{3}{5}$ and $\\theta$ is acute, find $\\sin 2\\theta$ and $\\cos 2\\theta$.", "steps": [
+      "Draw a triangle: opposite 3, hypotenuse 5, adjacent 4, so $\\cos\\theta = \\frac{4}{5}$.",
+      "$\\sin 2\\theta = 2 \\cdot \\frac{3}{5} \\cdot \\frac{4}{5} = \\frac{24}{25}$",
+      "$\\cos 2\\theta = 1 - 2\\left(\\frac{3}{5}\\right)^2 = \\frac{7}{25}$"
+    ], "answer": "$\\frac{24}{25}$ and $\\frac{7}{25}$" },
+    { "type": "example", "title": "Worked example 4: proving an identity", "problem": "Prove that $\\dfrac{\\sin 2x}{1 + \\cos 2x} = \\tan x$", "steps": [
+      "LHS $= \\dfrac{2\\sin x\\cos x}{1 + 2\\cos^2 x - 1}$",
+      "$= \\dfrac{2\\sin x\\cos x}{2\\cos^2 x} = \\dfrac{\\sin x}{\\cos x} = \\tan x =$ RHS"
+    ], "answer": "LHS = RHS" },
+    { "type": "callout", "label": "Exam tip", "text": "Choose the form of $\\cos 2\\alpha$ that cancels something: use $2\\cos^2\\alpha - 1$ next to a '$+1$', and $1 - 2\\sin^2\\alpha$ next to a '$1 -$'." },
+    { "type": "example", "title": "Worked example 5: equation", "problem": "Find the general solution of $\\sin 2x = \\cos x$.", "steps": [
+      "$2\\sin x\\cos x - \\cos x = 0$, so $\\cos x(2\\sin x - 1) = 0$",
+      "$\\cos x = 0$: $x = 90^\\circ + k \\cdot 180^\\circ$",
+      "$\\sin x = \\frac{1}{2}$: $x = 30^\\circ + k \\cdot 360^\\circ$ or $x = 150^\\circ + k \\cdot 360^\\circ$, $k \\in \\mathbb{Z}$"
+    ], "answer": "$x = 90^\\circ + k \\cdot 180^\\circ$; $30^\\circ + k \\cdot 360^\\circ$; $150^\\circ + k \\cdot 360^\\circ$" }
+  ],
+  "questions": [
+    { "id": "expand", "type": "mcq", "prompt": "$\\cos(A + B)$ equals…", "options": ["$\\cos A\\cos B + \\sin A\\sin B$", "$\\cos A\\cos B - \\sin A\\sin B$", "$\\sin A\\cos B + \\cos A\\sin B$", "$\\cos A + \\cos B$"], "answer": 1 },
+    { "id": "double", "type": "mcq", "prompt": "$2\\sin 15^\\circ\\cos 15^\\circ$ equals…", "options": ["$\\sin 15^\\circ$", "$\\sin 30^\\circ$", "$\\cos 30^\\circ$", "$2\\sin 30^\\circ$"], "answer": 1 },
+    { "id": "value", "type": "numeric", "prompt": "Simplify: $\\cos 50^\\circ\\cos 10^\\circ - \\sin 50^\\circ\\sin 10^\\circ$ (give a decimal)", "answer": 0.5, "tolerance": 0 },
+    { "id": "cos2", "type": "numeric", "prompt": "Evaluate $1 - 2\\sin^2 22{,}5^\\circ$, correct to four decimal places.", "answer": 0.7071, "tolerance": 0.0001 },
+    { "id": "not-equal", "type": "truefalse", "prompt": "$\\cos(2 \\times 30^\\circ) = 2\\cos 30^\\circ$", "answer": false },
+    { "id": "sin75", "type": "open", "marks": 4, "prompt": "Without a calculator, determine $\\sin 75^\\circ$ in simplest surd form.", "memo": "✓ $\\sin(45^\\circ + 30^\\circ)$ (1)\n✓ $\\sin 45^\\circ\\cos 30^\\circ + \\cos 45^\\circ\\sin 30^\\circ$ (1)\n✓ $\\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2}$ (1)\n✓ $\\frac{\\sqrt{6} + \\sqrt{2}}{4}$ (1)" },
+    { "id": "given", "type": "open", "marks": 4, "prompt": "If $\\cos\\theta = -\\frac{5}{13}$ and $180^\\circ < \\theta < 270^\\circ$, find $\\sin 2\\theta$.", "memo": "✓ $\\sin\\theta = -\\frac{12}{13}$ (Q3) (2)\n✓ $\\sin 2\\theta = 2(-\\frac{12}{13})(-\\frac{5}{13})$ (1)\n✓ $= \\frac{120}{169}$ (1)" },
+    { "id": "prove", "type": "open", "marks": 4, "prompt": "Prove: $\\dfrac{1 - \\cos 2x}{\\sin 2x} = \\tan x$", "memo": "✓ $1 - \\cos 2x = 2\\sin^2 x$ (1)\n✓ $\\sin 2x = 2\\sin x\\cos x$ (1)\n✓ $\\frac{2\\sin^2 x}{2\\sin x\\cos x}$ (1)\n✓ $= \\frac{\\sin x}{\\cos x} = \\tan x$ (1)" },
+    { "id": "equation", "type": "open", "marks": 5, "prompt": "Solve for $x \\in [0^\\circ; 360^\\circ]$: $\\cos 2x + \\cos x = 0$", "memo": "✓ $2\\cos^2 x - 1 + \\cos x = 0$ (1)\n✓ $(2\\cos x - 1)(\\cos x + 1) = 0$ (1)\n✓ $\\cos x = \\frac{1}{2}$: $x = 60^\\circ$, $300^\\circ$ (2)\n✓ $\\cos x = -1$: $x = 180^\\circ$ (1)" },
+    { "id": "simplify", "type": "open", "marks": 3, "prompt": "Simplify: $\\dfrac{\\sin 2x}{\\sin x}$ for $\\sin x \\neq 0$", "memo": "✓ $\\frac{2\\sin x\\cos x}{\\sin x}$ (2)\n✓ $= 2\\cos x$ (1)" }
+  ]
+}

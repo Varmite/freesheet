@@ -1,0 +1,53 @@
+{
+  "id": "coping-with-stress",
+  "title": "Coping with Stress and Emotions",
+  "term": 1,
+  "summary": "Causes and signs of stress, healthy and unhealthy coping strategies, managing emotions such as anger, grief and depression, and where to find support.",
+  "notes": [
+    { "type": "heading", "text": "What is stress?" },
+    { "type": "definition", "term": "Stress", "text": "The body's and mind's reaction to pressure or a challenging situation. A little stress can motivate you; too much, for too long, harms health and well-being." },
+    { "type": "table", "headers": ["Common causes of stress for teenagers", "Signs of stress"], "rows": [
+      ["Exams and schoolwork", "Headaches, stomach aches, tense muscles"],
+      ["Family problems, divorce, illness or death", "Trouble sleeping or sleeping too much"],
+      ["Peer pressure, bullying and relationships", "Irritability, anger, mood swings"],
+      ["Money problems and unemployment at home", "Eating too much or too little"],
+      ["Body changes and self-image", "Difficulty concentrating; withdrawing from friends"],
+      ["Crime and violence in the community", "Feeling anxious, hopeless or overwhelmed"]
+    ] },
+    { "type": "heading", "text": "Coping strategies" },
+    { "type": "table", "headers": ["Healthy (positive) strategies", "Unhealthy (negative) strategies"], "rows": [
+      ["Talk to someone you trust", "Using alcohol, drugs or cigarettes"],
+      ["Exercise, dance or play sport", "Bottling up feelings"],
+      ["Plan and manage your time", "Taking anger out on others"],
+      ["Relaxation and deep breathing", "Self-harm"],
+      ["Hobbies, music, art, writing in a journal", "Avoiding problems or staying online for hours"],
+      ["Enough sleep and healthy food", "Overeating or not eating"]
+    ] },
+    { "type": "heading", "text": "Managing emotions" },
+    { "type": "list", "items": [
+      "**Anger**: it is normal to feel angry, but how you act matters. Stop, take deep breaths, count to ten, walk away to cool down, and then talk calmly using I-statements.",
+      "**Grief**: after a loss people may feel shock, denial, anger, sadness and finally acceptance. Grief takes time; sharing memories and talking helps.",
+      "**Depression**: lasting sadness, hopelessness and loss of interest for more than two weeks is a medical condition, not a weakness. It can be treated with counselling and sometimes medication."
+    ] },
+    { "type": "callout", "label": "Get help", "text": "If you or a friend feels hopeless or talks about self-harm or suicide, tell a trusted adult immediately. **SADAG** (South African Depression and Anxiety Group) suicide crisis line: **0800 567 567** (free, 24 hours). **Childline**: **116**." },
+    { "type": "heading", "text": "Building resilience" },
+    { "type": "paragraph", "text": "**Resilience** is the ability to 'bounce back' after difficult experiences. It grows when you have supportive relationships, healthy habits, problem-solving skills, a sense of purpose and a positive but realistic outlook." }
+  ],
+  "questions": [
+    { "id": "stress-def", "type": "open", "marks": 2, "prompt": "What is stress?", "memo": "✓ The body's and mind's reaction (1)\n✓ to pressure or a challenging situation (1)" },
+    { "id": "healthy", "type": "mcq", "prompt": "Which is a HEALTHY way to cope with stress?", "options": ["Drinking alcohol", "Bottling up feelings", "Going for a run", "Shouting at family"], "answer": 2 },
+    { "id": "resilience", "type": "short", "prompt": "What is the ability to bounce back after difficult experiences called?", "answers": ["resilience"] },
+    { "id": "sadag", "type": "short", "prompt": "What does SADAG stand for?", "answers": ["south african depression and anxiety group"] },
+    { "id": "depression", "type": "truefalse", "prompt": "Depression is a medical condition that can be treated.", "answer": true },
+    { "id": "strategies", "type": "match", "marks": 4, "prompt": "Classify each coping strategy.", "pairs": [
+      { "left": "Writing in a journal", "right": "Healthy" },
+      { "left": "Using drugs to forget problems", "right": "Unhealthy" },
+      { "left": "Talking to a counsellor", "right": "Healthy (support)" },
+      { "left": "Hitting a younger sibling", "right": "Unhealthy (aggression)" }
+    ] },
+    { "id": "signs", "type": "open", "marks": 3, "prompt": "Name THREE signs that a teenager is experiencing too much stress.", "memo": "Any three (1 each): headaches; sleep problems; irritability; eating changes; poor concentration; withdrawal; anxiety" },
+    { "id": "anger", "type": "open", "marks": 3, "prompt": "Describe THREE steps to manage anger in a healthy way.", "memo": "Any three (1 each): stop and breathe deeply; count to ten; walk away to cool down; exercise; talk calmly using I-statements later; find solutions" },
+    { "id": "friend", "type": "open", "marks": 2, "prompt": "Your friend says they feel hopeless and have stopped eating. What should you do?", "memo": "✓ Listen and show you care / take it seriously (1)\n✓ Encourage them to get help and tell a trusted adult or call SADAG/Childline (1)" },
+    { "id": "resilient", "type": "open", "marks": 2, "prompt": "Give TWO things that help a person to become more resilient.", "memo": "Any two (1 each): supportive relationships; healthy habits; problem-solving skills; sense of purpose; positive outlook; asking for help" }
+  ]
+}

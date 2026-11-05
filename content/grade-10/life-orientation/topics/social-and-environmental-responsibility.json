@@ -1,0 +1,45 @@
+{
+  "id": "social-and-environmental-responsibility",
+  "title": "Social and Environmental Responsibility",
+  "term": 4,
+  "summary": "Environmental problems that affect health, such as pollution, water scarcity and climate change, social responsibility in the community, and practical ways to take action.",
+  "notes": [
+    { "type": "heading", "text": "Environmental health problems" },
+    { "type": "table", "headers": ["Problem", "Health effects", "Causes"], "rows": [
+      ["Air pollution", "Asthma, lung disease, heart disease", "Coal power stations, vehicle exhaust, burning rubbish and fuel indoors"],
+      ["Water pollution", "Cholera, diarrhoea, skin infections", "Sewage, factory and mine waste, litter"],
+      ["Poor waste management", "Disease spread by rats and flies; injuries", "Illegal dumping, lack of refuse collection"],
+      ["Water scarcity", "Poor hygiene, dehydration, food insecurity", "Drought, leaks, waste, growing demand"],
+      ["Climate change", "Heatwaves, floods, droughts, food shortages", "Greenhouse gases from burning fossil fuels, deforestation"]
+    ] },
+    { "type": "heading", "text": "Social responsibility" },
+    { "type": "paragraph", "text": "**Social responsibility** means acting in ways that benefit your community and society, not just yourself. Examples: volunteering at a soup kitchen, tutoring younger learners, organising a clean-up, caring for the elderly, and respecting public property." },
+    { "type": "heading", "text": "Taking action" },
+    { "type": "list", "items": [
+      "**Reduce, reuse, recycle**: cut waste, reuse containers, recycle paper, plastic, glass and cans.",
+      "**Save water and electricity**: fix leaks, shorter showers, switch off lights and appliances.",
+      "**Avoid burning rubbish**; report illegal dumping to the municipality.",
+      "**Plant indigenous trees and food gardens**.",
+      "**Campaign**: start an environmental club or awareness campaign at school."
+    ] },
+    { "type": "callout", "label": "The law", "text": "Section 24 of the Constitution gives everyone the right to an environment that is not harmful to their health or well-being, and requires the environment to be protected for future generations." },
+    { "type": "heading", "text": "Planning a community project" },
+    { "type": "list", "ordered": true, "items": ["Identify a problem (e.g. litter near the school).", "Research its causes and effects.", "Set a SMART goal.", "Plan actions, resources and responsibilities.", "Carry out the project.", "Evaluate the results and share them."] }
+  ],
+  "questions": [
+    { "id": "cholera", "type": "mcq", "prompt": "Cholera is mainly spread by…", "options": ["air pollution", "polluted water", "noise", "sunlight"], "answer": 1 },
+    { "id": "s24", "type": "numeric", "prompt": "Which section of the Constitution protects the right to a healthy environment?", "answer": 24, "tolerance": 0 },
+    { "id": "three-r", "type": "short", "prompt": "Complete the slogan: Reduce, reuse, …", "answers": ["recycle"] },
+    { "id": "burning", "type": "truefalse", "prompt": "Burning household rubbish is a safe way to get rid of waste.", "answer": false },
+    { "id": "problems", "type": "match", "marks": 3, "prompt": "Match each problem to a health effect.", "pairs": [
+      { "left": "Air pollution", "right": "Asthma" },
+      { "left": "Sewage in rivers", "right": "Diarrhoea" },
+      { "left": "Heatwaves from climate change", "right": "Heatstroke" }
+    ] },
+    { "id": "social-resp", "type": "open", "marks": 2, "prompt": "What is social responsibility? Give an example.", "memo": "✓ Acting in ways that benefit the community and society (1)\n✓ Example, e.g. volunteering, clean-ups, tutoring (1)" },
+    { "id": "actions", "type": "open", "marks": 3, "prompt": "Suggest THREE things a household can do to reduce its impact on the environment.", "memo": "Any three (1 each): recycle; save water; save electricity; avoid burning rubbish; plant trees/food garden; use public transport" },
+    { "id": "project", "type": "open", "marks": 4, "prompt": "Describe how your class could plan a project to reduce litter around the school.", "memo": "✓ Identify the problem and its causes (1)\n✓ Set a SMART goal (1)\n✓ Plan actions, e.g. bins, clean-up days, posters, recycling (1)\n✓ Evaluate the results (1)" },
+    { "id": "climate", "type": "open", "marks": 2, "prompt": "Give TWO causes of climate change.", "memo": "Any two (1 each): burning fossil fuels; deforestation; methane from livestock and landfills; industry emissions" },
+    { "id": "water", "type": "open", "marks": 2, "prompt": "Explain why water scarcity is a health problem.", "memo": "✓ People cannot wash or keep sanitation clean, so disease spreads (1)\n✓ Less water for drinking and growing food (1)" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "reading-for-comprehension",
+  "title": "Reading for Comprehension",
+  "term": 1,
+  "summary": "Reading strategies, question types (literal, inferential, evaluative), quoting and answering in your own words, and using mark allocation, practised on an original passage.",
+  "notes": [
+    { "type": "heading", "text": "Reading strategies" },
+    { "type": "list", "ordered": true, "items": [
+      "**Skim** the passage for the general idea: title, first and last paragraphs, headings.",
+      "**Read** the questions so you know what to look for.",
+      "**Read closely**, marking key words and the writer's opinions.",
+      "**Scan** for specific details when answering each question."
+    ] },
+    { "type": "heading", "text": "Levels of questions" },
+    { "type": "table", "headers": ["Level", "What it asks", "Typical wording"], "rows": [
+      ["Literal", "Facts stated in the text", "'State', 'Name', 'Quote', 'List'"],
+      ["Reorganisation", "Combining or summarising information", "'Summarise', 'Compare'"],
+      ["Inferential", "Reading between the lines", "'Why do you think…', 'What does this suggest…'"],
+      ["Evaluative", "Judging the text with reasons", "'Do you agree…', 'Is this effective…'"],
+      ["Appreciation", "Response to the writer's style and effect", "'Comment on the use of…'"]
+    ] },
+    { "type": "definition", "term": "Quote", "text": "Copy the exact words from the text inside quotation marks. Do not change spelling or add words." },
+    { "type": "definition", "term": "In your own words", "text": "Rephrase the idea; copying the text earns no marks." },
+    { "type": "passage", "title": "Practice passage: The Last Bookshop on Long Street (written for FreeSheet)", "text": "[1] When Mr Abrahams opened his bookshop in 1987, there were six others on the same street. Today his is the only one left. The shelves still sag under second-hand paperbacks, and the shop still smells of dust and coffee, but the customers are fewer and greyer.\n\n[2] 'People tell me books are dying,' he says, smiling. 'They have been dying for as long as I have been selling them.' He points to a group of teenagers in the corner, sitting on the floor with a stack of comics. 'Those three come every Saturday. They hardly buy anything, but they read for hours. That is not a dying habit.'\n\n[3] Still, the numbers worry him. Rent has tripled in ten years, and online stores sell new books for less than he pays for them. To survive, he has started a reading club and a book-swap table, and he hosts poetry evenings on the first Friday of every month. 'A bookshop cannot just sell books any more,' he says. 'It has to be a place people want to be.'" },
+    { "type": "callout", "label": "Exam tip", "text": "Let the mark allocation guide you: 2 marks usually needs two points, or one point with an explanation. For a true/false question with a reason, the mark is given only if the reason (often a quotation) is correct." }
+  ],
+  "questions": [
+    { "id": "literal", "type": "numeric", "prompt": "How many other bookshops were on the street when Mr Abrahams opened his shop?", "answer": 6, "tolerance": 0 },
+    { "id": "year", "type": "numeric", "prompt": "In which year did the bookshop open?", "answer": 1987, "tolerance": 0 },
+    { "id": "level", "type": "mcq", "prompt": "'Why do you think Mr Abrahams smiles when he says books are dying?' This is a(n)…", "options": ["literal question", "inferential question", "reorganisation question", "spelling question"], "answer": 1 },
+    { "id": "greyer", "type": "mcq", "prompt": "What does 'the customers are fewer and greyer' suggest?", "options": ["Customers wear grey clothes", "There are fewer customers and most are older", "The shop is badly lit", "Customers are unhappy"], "answer": 1 },
+    { "id": "rent", "type": "truefalse", "prompt": "According to paragraph 3, the rent has doubled in ten years.", "answer": false },
+    { "id": "quote", "type": "short", "prompt": "Quote FOUR consecutive words from paragraph 3 that show the shop must offer more than books.", "answers": ["cannot just sell books", "a bookshop cannot just", "a place people want", "place people want to"] },
+    { "id": "levels", "type": "match", "marks": 4, "prompt": "Match each question level to its description.", "pairs": [
+      { "left": "Literal", "right": "Facts directly stated" },
+      { "left": "Inferential", "right": "Reading between the lines" },
+      { "left": "Evaluative", "right": "Judging with reasons" },
+      { "left": "Appreciation", "right": "Response to style and effect" }
+    ] },
+    { "id": "survive", "type": "open", "marks": 3, "prompt": "List THREE things Mr Abrahams has done to keep his shop open.", "memo": "✓ Started a reading club (1)\n✓ Set up a book-swap table (1)\n✓ Hosts monthly poetry evenings (1)" },
+    { "id": "irony", "type": "open", "marks": 2, "prompt": "Explain why the teenagers in paragraph 2 support Mr Abrahams's view.", "memo": "✓ They read for hours every Saturday (1)\n✓ showing that young people still enjoy reading, so books are not 'dying' (1)" },
+    { "id": "evaluate", "type": "open", "marks": 3, "prompt": "Do you agree that 'a bookshop cannot just sell books any more'? Give reasons.", "memo": "✓ Clear stance (1)\n✓✓ Two well-reasoned points, e.g. online competition is cheaper; people want experiences and community (2)" }
+  ]
+}

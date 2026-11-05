@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "grade": 9,
+  "id": "natural-sciences",
+  "name": "Natural Sciences",
+  "description": "CAPS Grade 9 Natural Sciences: cells, human body systems and reproduction, compounds and reactions, acids and bases, forces, electricity and the national grid, the Earth's spheres, mining, the atmosphere and the life of stars.",
+  "topics": [
+    { "id": "cells-as-the-basic-units-of-life", "title": "Cells as the Basic Units of Life", "term": 1 },
+    { "id": "human-body-systems", "title": "Systems in the Human Body", "term": 1 },
+    { "id": "human-reproduction", "title": "Human Reproduction", "term": 1 },
+    { "id": "compounds-and-chemical-reactions", "title": "Compounds and Chemical Reactions", "term": 2 },
+    { "id": "reactions-with-oxygen", "title": "Reactions of Metals and Non-metals with Oxygen", "term": 2 },
+    { "id": "acids-bases-and-ph", "title": "Acids, Bases and pH", "term": 2 },
+    { "id": "forces", "title": "Forces", "term": 3 },
+    { "id": "electric-cells-and-resistance", "title": "Electric Cells, Resistance and Circuits", "term": 3 },
+    { "id": "electricity-safety-and-the-national-grid", "title": "Safety, the National Grid and the Cost of Electricity", "term": 3 },
+    { "id": "the-earth-as-a-system", "title": "The Earth as a System", "term": 4 },
+    { "id": "mining-of-mineral-resources", "title": "Mining of Mineral Resources", "term": 4 },
+    { "id": "the-atmosphere", "title": "The Atmosphere", "term": 4 },
+    { "id": "birth-life-and-death-of-stars", "title": "Birth, Life and Death of Stars", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 90, "totalMarks": 75 }
+  ]
+}

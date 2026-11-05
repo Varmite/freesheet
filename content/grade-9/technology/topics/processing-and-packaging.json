@@ -1,0 +1,60 @@
+{
+  "id": "processing-and-packaging",
+  "title": "Processing: Preservation and Packaging",
+  "term": 4,
+  "summary": "Why and how food is preserved, traditional and modern preservation methods, the functions of packaging, packaging materials, nets (developments) and environmental impact.",
+  "notes": [
+    { "type": "heading", "text": "Why preserve food?" },
+    { "type": "paragraph", "text": "Food spoils because of **micro-organisms** (bacteria, yeasts and moulds), **enzymes** in the food itself, and damage by insects and air. Preservation slows or stops spoilage so food lasts longer, can be transported and stored, and is available out of season." },
+    { "type": "paragraph", "text": "Micro-organisms need **warmth**, **moisture**, **food** and usually **oxygen** to grow. Preservation methods remove one or more of these conditions." },
+    { "type": "table", "headers": ["Method", "How it works", "Examples"], "rows": [
+      ["Drying / dehydrating", "Removes water so microbes cannot grow", "Biltong, dried fruit, mopane worms, dried maize"],
+      ["Salting", "Salt draws water out of the food and microbes", "Biltong, salted fish (bokkoms)"],
+      ["Sugaring", "High sugar concentration draws water out", "Jam, preserved fruit"],
+      ["Pickling", "Acid (vinegar) prevents microbes growing", "Atchar, pickled onions, chakalaka in jars"],
+      ["Refrigeration (about 4 °C)", "Cold slows microbe growth", "Milk, meat, vegetables"],
+      ["Freezing (−18 °C)", "Very cold stops microbe growth (does not kill them)", "Frozen vegetables, meat"],
+      ["Heating: pasteurisation and canning", "Heat kills microbes; sealing keeps new ones out", "Pasteurised milk, canned beans"],
+      ["Smoking", "Dries the food and adds chemicals that slow spoilage", "Smoked fish, smoked sausage"],
+      ["Fermentation", "Useful microbes produce acid or alcohol that prevents harmful ones", "Amasi, umqombothi, yoghurt, sauerkraut"]
+    ] },
+    { "type": "callout", "label": "Indigenous knowledge", "text": "Many traditional South African methods, such as drying meat into biltong, sun-drying vegetables (*imifino*) and fermenting milk into amasi, are effective preservation technologies that have been used for centuries." },
+    { "type": "heading", "text": "Functions of packaging" },
+    { "type": "list", "items": [
+      "**Protect** the product from damage, dirt, moisture and tampering.",
+      "**Preserve** it by keeping out air and microbes.",
+      "**Contain** loose items or liquids.",
+      "**Inform**: name, ingredients, nutrition, expiry date, barcode, instructions, recycling symbols.",
+      "**Promote** (market) the product with attractive design, colours and branding.",
+      "Make it easy to **transport, stack and display**."
+    ] },
+    { "type": "heading", "text": "Packaging materials" },
+    { "type": "table", "headers": ["Material", "Advantages", "Disadvantages"], "rows": [
+      ["Cardboard and paper", "Cheap, light, printable, recyclable, biodegradable", "Weak when wet"],
+      ["Glass", "Airtight, see-through, reusable, recyclable", "Heavy and breaks easily"],
+      ["Metal (tin-plated steel, aluminium)", "Strong, airtight, long shelf life, recyclable", "Can dent; uses lots of energy to make"],
+      ["Plastic", "Light, waterproof, shaped easily, cheap", "Made from oil; slow to break down; pollutes"]
+    ] },
+    { "type": "heading", "text": "Nets (developments)" },
+    { "type": "paragraph", "text": "A **net** (development) is the flat shape that is cut out and folded to make a 3D container. A net includes **tabs** (flaps) for gluing and **fold lines** (dashed) and **cut lines** (solid). A cube's net has six squares; a cuboid box's net has six rectangles." },
+    { "type": "heading", "text": "Packaging and the environment" },
+    { "type": "paragraph", "text": "Too much packaging wastes resources and fills landfills. Designers can reduce the impact by using **less material**, choosing **recyclable** or **biodegradable** materials, designing for **reuse**, and printing clear recycling information." }
+  ],
+  "questions": [
+    { "id": "conditions", "type": "open", "marks": 3, "prompt": "Name THREE conditions micro-organisms need to grow.", "memo": "Any three (1 each): warmth; moisture; food; oxygen; suitable pH" },
+    { "id": "biltong", "type": "mcq", "prompt": "Biltong is preserved mainly by…", "options": ["freezing", "drying and salting", "canning", "pickling"], "answer": 1 },
+    { "id": "freezing", "type": "truefalse", "prompt": "Freezing kills all micro-organisms in food.", "answer": false, "explanation": "Freezing stops their growth; they can become active again when the food thaws." },
+    { "id": "amasi", "type": "short", "prompt": "Which preservation method is used to make amasi?", "answers": ["fermentation", "fermenting", "fermented"] },
+    { "id": "pasteurise", "type": "mcq", "prompt": "Pasteurisation preserves milk by…", "options": ["adding salt", "heating it to kill microbes", "drying it", "adding vinegar"], "answer": 1 },
+    { "id": "methods", "type": "match", "marks": 4, "prompt": "Match each food to its preservation method.", "pairs": [
+      { "left": "Atchar", "right": "Pickling" },
+      { "left": "Jam", "right": "Sugaring" },
+      { "left": "Canned beans", "right": "Canning" },
+      { "left": "Dried mopane worms", "right": "Drying" }
+    ] },
+    { "id": "functions", "type": "open", "marks": 4, "prompt": "Give FOUR functions of packaging.", "memo": "Any four (1 each): protect; preserve; contain; inform; promote/market; ease of transport and display" },
+    { "id": "glass-plastic", "type": "open", "marks": 2, "prompt": "Give ONE advantage of glass and ONE disadvantage of plastic as packaging.", "memo": "✓ Glass: airtight / reusable / recyclable / see-through (1)\n✓ Plastic: made from non-renewable oil / does not break down / pollutes (1)" },
+    { "id": "net", "type": "short", "prompt": "What is the flat shape that is folded to make a box called?", "answers": ["net", "a net", "development"] },
+    { "id": "eco", "type": "open", "marks": 2, "prompt": "Suggest TWO ways to make packaging more environmentally friendly.", "memo": "Any two (1 each): use less material; recyclable materials; biodegradable materials; design for reuse; refill packs" }
+  ]
+}

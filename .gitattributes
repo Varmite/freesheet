@@ -1,0 +1,5 @@
+# Read-aloud audio and installer images are binary: never convert line endings.
+*.ogg binary
+*.png binary
+*.ico binary
+*.bmp binary

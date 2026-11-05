@@ -1,0 +1,89 @@
+{
+  "id": "number-systems",
+  "title": "Number Systems and Calculations",
+  "term": 1,
+  "summary": "Classify numbers as natural, whole, integer, rational or irrational, convert recurring decimals to fractions, estimate roots, and calculate fluently with integers, fractions and decimals.",
+  "notes": [
+    { "type": "heading", "text": "The real number system" },
+    { "type": "paragraph", "text": "In Grade 9 you complete the picture of the **real numbers**, which are all the numbers that can be placed on a number line. Each set of numbers sits inside a bigger set." },
+    { "type": "table", "caption": "Sets of numbers", "headers": ["Set", "Symbol", "Description", "Examples"], "rows": [
+      ["Natural numbers", "$\\mathbb{N}$", "Counting numbers", "$1;\\ 2;\\ 3;\\ \\ldots$"],
+      ["Whole numbers", "$\\mathbb{N}_0$", "Natural numbers and zero", "$0;\\ 1;\\ 2;\\ \\ldots$"],
+      ["Integers", "$\\mathbb{Z}$", "Whole numbers and their negatives", "$\\ldots;\\ -2;\\ -1;\\ 0;\\ 1;\\ \\ldots$"],
+      ["Rational numbers", "$\\mathbb{Q}$", "Numbers that can be written as $\\frac{a}{b}$ with $a, b$ integers and $b \\neq 0$", "$\\frac{3}{4}$;  $-5$;  $0{,}25$;  $0{,}\\dot{3}$"],
+      ["Irrational numbers", "$\\mathbb{Q}'$", "Numbers that cannot be written as a fraction of integers", "$\\sqrt{2}$;  $\\sqrt{7}$;  $\\pi$"],
+      ["Real numbers", "$\\mathbb{R}$", "All rational and irrational numbers", "Every point on the number line"]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 220\" font-family=\"sans-serif\" font-size=\"12\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><rect x=\"5\" y=\"5\" width=\"410\" height=\"210\" rx=\"8\"/><rect x=\"15\" y=\"30\" width=\"285\" height=\"175\" rx=\"8\"/><rect x=\"30\" y=\"55\" width=\"195\" height=\"140\" rx=\"8\"/><rect x=\"45\" y=\"80\" width=\"150\" height=\"105\" rx=\"8\"/><rect x=\"60\" y=\"105\" width=\"110\" height=\"70\" rx=\"8\"/><rect x=\"310\" y=\"30\" width=\"95\" height=\"175\" rx=\"8\"/></g><g fill=\"#000\"><text x=\"12\" y=\"22\">Real numbers</text><text x=\"22\" y=\"47\">Rational numbers</text><text x=\"37\" y=\"72\">Integers</text><text x=\"52\" y=\"97\">Whole numbers</text><text x=\"67\" y=\"122\">Natural numbers</text><text x=\"80\" y=\"152\">1;  2;  3; ...</text><text x=\"178\" y=\"140\">0</text><text x=\"204\" y=\"140\">-5</text><text x=\"238\" y=\"110\">3/4</text><text x=\"238\" y=\"145\">0,25</text><text x=\"318\" y=\"47\">Irrational</text><text x=\"340\" y=\"100\">√2</text><text x=\"345\" y=\"140\">π</text></g></svg>", "caption": "The real numbers: natural numbers sit inside the whole numbers, which sit inside the integers, which sit inside the rational numbers. The irrational numbers are the other real numbers." },
+    { "type": "callout", "label": "Remember", "text": "Every integer is rational, because it can be written over 1: $-5 = \\frac{-5}{1}$. A number is either rational or irrational, never both." },
+
+    { "type": "heading", "text": "Rational and irrational decimals" },
+    { "type": "list", "items": [
+      "**Terminating** decimals, such as $0{,}25 = \\frac{1}{4}$, are rational.",
+      "**Recurring** decimals, such as $0{,}333\\ldots = 0{,}\\dot{3}$ or $0{,}454545\\ldots = 0{,}\\dot{4}\\dot{5}$, are rational. A dot over a digit shows that it repeats.",
+      "Decimals that go on forever **without repeating**, such as $\\pi = 3{,}14159\\ldots$ and $\\sqrt{2} = 1{,}41421\\ldots$, are irrational."
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "$\\frac{22}{7}$ is a rational number, so it is **not** equal to $\\pi$; it is only an approximation. Similarly, $\\sqrt{16} = 4$ is rational, because 16 is a perfect square. Only roots of numbers that are not perfect squares (or cubes) are irrational." },
+
+    { "type": "heading", "text": "Converting recurring decimals to fractions" },
+    { "type": "example", "title": "Worked example 1", "problem": "Write as a common fraction: (a) $0{,}\\dot{7}$  (b) $0{,}\\dot{4}\\dot{5}$", "steps": [
+      "(a) Let $x = 0{,}777\\ldots$ Then $10x = 7{,}777\\ldots$",
+      "Subtract: $10x - x = 7$, so $9x = 7$ and $x = \\dfrac{7}{9}$.",
+      "(b) Let $x = 0{,}454545\\ldots$ Two digits repeat, so multiply by $100$: $100x = 45{,}4545\\ldots$",
+      "Subtract: $99x = 45$, so $x = \\dfrac{45}{99} = \\dfrac{5}{11}$."
+    ], "answer": "(a) $\\frac{7}{9}$  (b) $\\frac{5}{11}$" },
+    { "type": "callout", "label": "Exam tip", "text": "Multiply by $10$ if one digit repeats, by $100$ if two digits repeat, and by $1\\ 000$ if three digits repeat. Subtracting removes the endless tail." },
+
+    { "type": "heading", "text": "Estimating roots" },
+    { "type": "paragraph", "text": "To estimate an irrational root, find the perfect squares on either side. $\\sqrt{50}$: $49 < 50 < 64$, so $7 < \\sqrt{50} < 8$, and because $50$ is very close to $49$, $\\sqrt{50} \\approx 7{,}1$. Check with a calculator: $\\sqrt{50} = 7{,}07\\ldots$" },
+
+    { "type": "heading", "text": "Calculating with rational numbers" },
+    { "type": "paragraph", "text": "All the rules you know still apply: the sign rules for integers, common denominators for adding fractions, the reciprocal for dividing, and the order of operations." },
+    { "type": "definition", "term": "Multiplicative inverse (reciprocal)", "text": "Two numbers are **reciprocals** if their product is $1$. The reciprocal of $\\frac{a}{b}$ is $\\frac{b}{a}$. The reciprocal of $-\\frac{2}{5}$ is $-\\frac{5}{2} = -2{,}5$. Zero has no reciprocal." },
+    { "type": "example", "title": "Worked example 2: fractions with negatives", "problem": "Calculate: (a) $-\\dfrac{3}{4} + \\dfrac{5}{6}$  (b) $\\left(-\\dfrac{2}{3}\\right) \\times \\dfrac{9}{4}$  (c) $\\left(-\\dfrac{2}{3}\\right)^2 \\div 1\\dfrac{1}{3} - \\dfrac{1}{4}$", "steps": [
+      "(a) LCD $12$: $-\\dfrac{9}{12} + \\dfrac{10}{12} = \\dfrac{1}{12}$.",
+      "(b) $-\\dfrac{18}{12} = -\\dfrac{3}{2}$.",
+      "(c) $\\dfrac{4}{9} \\div \\dfrac{4}{3} = \\dfrac{4}{9} \\times \\dfrac{3}{4} = \\dfrac{1}{3}$; then $\\dfrac{1}{3} - \\dfrac{1}{4} = \\dfrac{4}{12} - \\dfrac{3}{12} = \\dfrac{1}{12}$."
+    ], "answer": "(a) $\\frac{1}{12}$  (b) $-\\frac{3}{2}$  (c) $\\frac{1}{12}$" },
+    { "type": "example", "title": "Worked example 3: decimals", "problem": "Calculate without a calculator: (a) $(-0{,}3)^2$  (b) $2{,}4 \\div (-0{,}06)$  (c) $\\sqrt{0{,}25} + \\sqrt[3]{-0{,}008}$", "steps": [
+      "(a) $(-0{,}3)(-0{,}3) = 0{,}09$ (two decimal places).",
+      "(b) $240 \\div (-6) = -40$.",
+      "(c) $\\sqrt{0{,}25} = 0{,}5$ and $\\sqrt[3]{-0{,}008} = -0{,}2$ (because $(-0{,}2)^3 = -0{,}008$). Total: $0{,}3$."
+    ], "answer": "(a) $0{,}09$  (b) $-40$  (c) $0{,}3$" },
+    { "type": "callout", "label": "Common mistake", "text": "$(0{,}3)^2 = 0{,}09$, not $0{,}9$. Count the decimal places: $0{,}3 \\times 0{,}3$ has $1 + 1 = 2$ decimal places." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "$\\mathbb{N} \\subset \\mathbb{N}_0 \\subset \\mathbb{Z} \\subset \\mathbb{Q}$; rational and irrational numbers together make the real numbers $\\mathbb{R}$.",
+      "Rational: can be written as $\\frac{a}{b}$; terminating and recurring decimals are rational.",
+      "Irrational: non-terminating, non-recurring decimals, e.g. $\\sqrt{2}$ and $\\pi$.",
+      "Recurring decimal to fraction: let $x$ = the decimal, multiply by $10$, $100$, ..., and subtract.",
+      "Estimate roots using the perfect squares on either side.",
+      "The reciprocal of $\\frac{a}{b}$ is $\\frac{b}{a}$; dividing means multiplying by the reciprocal."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "Which number is irrational?", "options": ["$\\sqrt{16}$", "$0{,}\\dot{3}$", "$\\sqrt{7}$", "$\\frac{22}{7}$"], "answer": 2, "explanation": "$7$ is not a perfect square, so $\\sqrt{7}$ is a non-recurring, non-terminating decimal. $\\sqrt{16} = 4$, $0{,}\\dot{3} = \\frac{1}{3}$ and $\\frac{22}{7}$ are rational." },
+    { "id": "q2", "type": "truefalse", "prompt": "Every integer is a rational number.", "answer": true, "explanation": "Any integer $n$ can be written as $\\frac{n}{1}$." },
+    { "id": "q3", "type": "mcq", "prompt": "Between which two consecutive integers does $\\sqrt{50}$ lie?", "options": ["5 and 6", "6 and 7", "7 and 8", "24 and 26"], "answer": 2, "explanation": "$7^2 = 49$ and $8^2 = 64$, and $49 < 50 < 64$." },
+    { "id": "q4", "type": "numeric", "prompt": "Write down the reciprocal of $-\\dfrac{2}{5}$ as a decimal.", "answer": -2.5, "tolerance": 0.001, "explanation": "Flip the fraction and keep the sign: $-\\frac{5}{2} = -2{,}5$." },
+    { "id": "q5", "type": "numeric", "prompt": "Calculate $-\\dfrac{3}{4} + \\dfrac{5}{6}$. Type a fraction (e.g. 1/3) or a decimal correct to three decimal places.", "answer": 0.083333, "tolerance": 0.001, "explanation": "$-\\frac{9}{12} + \\frac{10}{12} = \\frac{1}{12} \\approx 0{,}083$." },
+    { "id": "q6", "type": "numeric", "prompt": "Calculate $\\left(-\\dfrac{2}{3}\\right) \\times \\dfrac{9}{4}$. Give a fraction or a decimal.", "answer": -1.5, "tolerance": 0.001, "explanation": "$-\\frac{18}{12} = -\\frac{3}{2} = -1{,}5$." },
+    { "id": "q7", "type": "mcq", "prompt": "Write $0{,}\\dot{7}$ as a common fraction.", "options": ["$\\frac{7}{10}$", "$\\frac{7}{9}$", "$\\frac{7}{99}$", "$\\frac{77}{100}$"], "answer": 1, "explanation": "$10x - x = 7$, so $9x = 7$ and $x = \\frac{7}{9}$." },
+    { "id": "q8", "type": "numeric", "prompt": "Calculate $(-0{,}3)^2$.", "answer": 0.09, "tolerance": 0.0001, "explanation": "$(-0{,}3)(-0{,}3) = 0{,}09$." },
+    { "id": "q9", "type": "match", "prompt": "Match each number with the smallest set of numbers it belongs to.", "marks": 5, "pairs": [
+      { "left": "$12$", "right": "Natural numbers" },
+      { "left": "$0$", "right": "Whole numbers" },
+      { "left": "$-5$", "right": "Integers" },
+      { "left": "$\\frac{3}{7}$", "right": "Rational numbers" },
+      { "left": "$\\pi$", "right": "Irrational numbers" }
+    ], "explanation": "$12$ is a counting number; $0$ is whole but not natural; $-5$ is an integer but not whole; $\\frac{3}{7}$ is a fraction of integers; $\\pi$ cannot be written as a fraction." },
+    { "id": "q10", "type": "numeric", "prompt": "Calculate $\\sqrt{0{,}25} + \\sqrt[3]{-0{,}008}$.", "answer": 0.3, "tolerance": 0.0001, "explanation": "$0{,}5 + (-0{,}2) = 0{,}3$." },
+    { "id": "q11", "type": "truefalse", "prompt": "The number $0{,}121121112\\ldots$ (where the number of 1s keeps increasing) is rational.", "answer": false, "explanation": "The decimal never ends and never settles into a repeating block, so it is irrational." },
+    { "id": "q12", "type": "numeric", "prompt": "Calculate $2{,}4 \\div (-0{,}06)$ without a calculator.", "answer": -40, "tolerance": 0, "explanation": "Multiply both by 100: $240 \\div (-6) = -40$." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Show that $0{,}\\dot{4}\\dot{5} = \\dfrac{5}{11}$.", "memo": "Let $x = 0{,}4545\\ldots$; $100x = 45{,}4545\\ldots$ ✓ (1)\n$99x = 45$ ✓ (1)\n$x = \\frac{45}{99} = \\frac{5}{11}$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Calculate without a calculator: $\\left(-\\dfrac{2}{3}\\right)^2 \\div 1\\dfrac{1}{3} - \\dfrac{1}{4}$", "memo": "$\\left(-\\frac{2}{3}\\right)^2 = \\frac{4}{9}$ ✓ (1)\n$\\frac{4}{9} \\times \\frac{3}{4} = \\frac{1}{3}$ ✓ (reciprocal) (1)\n$\\frac{4}{12} - \\frac{3}{12}$ ✓ (1)\n$= \\frac{1}{12}$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 2, "prompt": "Without a calculator, find two consecutive integers between which $\\sqrt{90}$ lies, and estimate $\\sqrt{90}$ to one decimal place.", "memo": "$81 < 90 < 100$, so $9 < \\sqrt{90} < 10$ ✓ (1)\nEstimate about $9{,}5$ (calculator: $9{,}49$) ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "Sort these numbers into rational and irrational: $-4$;  $\\sqrt{9}$;  $0{,}25$;  $\\sqrt{3}$;  $\\frac{22}{7}$;  $\\pi$", "memo": "Rational: $-4$, $\\sqrt{9}$ ($= 3$), $0{,}25$, $\\frac{22}{7}$ ✓✓ (2)\nIrrational: $\\sqrt{3}$, $\\pi$ ✓ (1)" }
+  ]
+}

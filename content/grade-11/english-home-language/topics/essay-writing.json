@@ -1,0 +1,49 @@
+{
+  "id": "essay-writing",
+  "title": "Essay Writing: Discursive, Argumentative and Reflective",
+  "term": 3,
+  "summary": "Planning and writing discursive, argumentative and reflective essays of 300–350 words: thesis, structure, counter-argument, cohesion, register and style.",
+  "notes": [
+    { "type": "heading", "text": "Grade 11 expectations" },
+    { "type": "paragraph", "text": "Grade 11 HL essays are usually **300–350 words**. Marks are given for **content and planning** (originality, depth of ideas), **language, style and editing** (register, word choice, sentence variety, accuracy) and **structure** (paragraphing, coherence)." },
+    { "type": "heading", "text": "Argumentative vs discursive" },
+    { "type": "table", "headers": ["", "Argumentative", "Discursive"], "rows": [
+      ["Purpose", "Persuade the reader to accept ONE view", "Explore BOTH sides fairly"],
+      ["Introduction", "States a clear stance", "Introduces the issue neutrally"],
+      ["Body", "Reasons for the stance; rebuts a counter-argument", "Points for, then points against (or alternating)"],
+      ["Conclusion", "Restates the stance strongly", "Weighs both sides; may give a balanced view"],
+      ["Tone", "Confident, assertive", "Objective, measured"]
+    ] },
+    { "type": "heading", "text": "The reflective essay" },
+    { "type": "paragraph", "text": "A reflective essay explores a personal experience, belief or idea and shows **insight**: what you learnt and how you changed. It is usually written in the first person, with honest, thoughtful language. Narrate only enough to support the reflection." },
+    { "type": "heading", "text": "Cohesion and style" },
+    { "type": "list", "items": [
+      "**Discourse markers**: 'on the other hand', 'nevertheless', 'consequently', 'to illustrate'.",
+      "**Sentence variety**: mix short, punchy sentences with complex ones.",
+      "**Precise vocabulary**: 'detrimental' instead of 'bad'; 'scrutinise' instead of 'look at'.",
+      "**Register**: formal for argument; personal but controlled for reflection."
+    ] },
+    { "type": "example", "title": "Building a counter-argument paragraph", "problem": "Topic: 'Social media does more harm than good.' (argumentative, agreeing)", "steps": [
+      "Concede: 'Admittedly, social media allows people to stay in touch with distant family.'",
+      "Rebut: 'However, studies of teenage users link heavy use to anxiety and poor sleep.'",
+      "Link: 'The benefits of connection are therefore outweighed by the damage to well-being.'"
+    ], "answer": "Concession + rebuttal + link makes the argument stronger and shows mature thinking." }
+  ],
+  "questions": [
+    { "id": "length", "type": "mcq", "prompt": "What is the usual length of a Grade 11 HL essay?", "options": ["150–200 words", "300–350 words", "400–450 words", "600 words"], "answer": 1 },
+    { "id": "discursive", "type": "mcq", "prompt": "Which essay type explores both sides fairly?", "options": ["Argumentative", "Discursive", "Narrative", "Descriptive"], "answer": 1 },
+    { "id": "reflective", "type": "short", "prompt": "Which essay type focuses on personal insight and growth?", "answers": ["reflective", "reflective essay", "a reflective essay"] },
+    { "id": "stance", "type": "truefalse", "prompt": "An argumentative essay should state a clear stance in the introduction.", "answer": true },
+    { "id": "counter", "type": "truefalse", "prompt": "Mentioning a counter-argument always weakens an argumentative essay.", "answer": false },
+    { "id": "markers", "type": "match", "marks": 4, "prompt": "Match each discourse marker to its function.", "pairs": [
+      { "left": "Nevertheless", "right": "Contrast" },
+      { "left": "Consequently", "right": "Result" },
+      { "left": "To illustrate", "right": "Example" },
+      { "left": "Furthermore", "right": "Addition" }
+    ] },
+    { "id": "vocab", "type": "open", "marks": 2, "prompt": "Improve the vocabulary: 'The new law is really bad for poor people.'", "memo": "✓✓ e.g. 'The new legislation is detrimental to low-income households.' (precise, formal vocabulary) (2)" },
+    { "id": "concede", "type": "open", "marks": 3, "prompt": "Write a concession and rebuttal for an essay arguing that school should start at 9:00.", "memo": "✓ Concession of the opposing view, e.g. parents' work schedules (1)\n✓ Rebuttal with a reason/evidence, e.g. teenagers' sleep needs and concentration (1)\n✓ Appropriate discourse markers and formal register (1)" },
+    { "id": "reflect", "type": "open", "marks": 2, "prompt": "Why should a reflective essay not simply tell a story?", "memo": "✓ The focus is on insight/meaning, not events (1)\n✓ The writer must show what was learnt or how they changed (1)" },
+    { "id": "intro", "type": "open", "marks": 3, "prompt": "Write an introduction (2–3 sentences) for a discursive essay on 'Should matric exams be abolished?'", "memo": "✓ Introduces the issue engagingly (1)\n✓ Indicates that both sides will be considered (1)\n✓ Neutral, formal register (1)" }
+  ]
+}

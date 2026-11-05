@@ -1,0 +1,51 @@
+{
+  "id": "drama",
+  "title": "Drama",
+  "term": 4,
+  "summary": "Features of drama (acts and scenes, dialogue, stage directions, monologue, soliloquy, aside), dramatic structure, tension and irony, and analysing an original one-act scene.",
+  "notes": [
+    { "type": "heading", "text": "What makes drama different?" },
+    { "type": "paragraph", "text": "A **drama** (play) is written to be **performed** on stage. The story is told almost entirely through **dialogue** and **action**. The writer is the **playwright**, and the written text is the **script**." },
+    { "type": "table", "headers": ["Feature", "Meaning"], "rows": [
+      ["Act and scene", "An **act** is a major division of a play; acts are divided into **scenes**, often marked by a change of place or time"],
+      ["Dialogue", "Conversation between characters"],
+      ["Stage directions", "Instructions in italics or brackets about movement, tone, setting, lighting and sound"],
+      ["Monologue", "A long speech by one character to others on stage"],
+      ["Soliloquy", "A speech in which a character, alone on stage, reveals their private thoughts to the audience"],
+      ["Aside", "A brief remark to the audience that the other characters on stage cannot hear"],
+      ["Cast list (dramatis personae)", "The list of characters at the start of the play"],
+      ["Props, set and costume", "Objects used on stage, the scenery, and what the actors wear"]
+    ] },
+    { "type": "heading", "text": "Dramatic structure" },
+    { "type": "list", "ordered": true, "items": [
+      "**Exposition**: introduces characters, setting and background.",
+      "**Rising action**: complications and conflict build **tension**.",
+      "**Climax**: the moment of greatest tension; the turning point.",
+      "**Falling action**: consequences of the climax.",
+      "**Resolution (dénouement)**: the conflict is resolved."
+    ] },
+    { "type": "callout", "label": "Dramatic irony", "text": "Drama often uses **dramatic irony**: the audience knows something a character does not, which builds tension or humour." },
+    { "type": "passage", "title": "Scene from 'The Envelope' (an original one-act play written for FreeSheet)", "text": "[A small kitchen in Mthatha. Evening. MAMA NOMVULA (50s) sits at the table sorting bills. Her son SIPHO (17) enters, hiding an envelope behind his back.]\n\nSIPHO: (too cheerfully) Evening, Ma! You look… wonderful tonight.\nMAMA NOMVULA: (without looking up) What did you break?\nSIPHO: Nothing! Can a son not compliment his mother?\nMAMA NOMVULA: A son can. My son does not. (She looks up.) What is behind your back?\nSIPHO: (aside, to the audience) She has eyes like a hawk. If she sees the university stamp, she'll know I applied without telling her.\n(He hesitates, then places the envelope on the table.)\nSIPHO: It came today. I haven't opened it.\nMAMA NOMVULA: (picking it up slowly) University of Cape Town. (A long pause.) Cape Town is very far, Sipho. And very expensive.\nSIPHO: I know. That's why I didn't tell you. I didn't want you to worry about the money before… before there was anything to worry about.\nMAMA NOMVULA: (her voice softening) So you carried this worry alone. (She holds out the envelope.) Open it. We will worry together.\n(SIPHO tears it open. He reads in silence. The lights dim slowly until only his face is lit.)" },
+    { "type": "example", "title": "Analysing the scene", "problem": "Explain the purpose of Sipho's aside and the effect of the final stage direction.", "steps": [
+      "The aside reveals Sipho's thoughts only to the audience: he applied to university secretly and fears his mother's reaction. This creates **dramatic irony**, because we know what is in the envelope before Mama Nomvula does.",
+      "The final stage direction (the lights dim until only his face is lit) focuses all attention on Sipho and creates **suspense**: the audience must wait to discover whether he has been accepted."
+    ], "answer": "The aside creates dramatic irony; the lighting builds suspense and ends the scene on a climax." }
+  ],
+  "questions": [
+    { "id": "soliloquy", "type": "mcq", "prompt": "A speech in which a character alone on stage shares private thoughts is a…", "options": ["monologue", "soliloquy", "dialogue", "stage direction"], "answer": 1 },
+    { "id": "aside", "type": "short", "prompt": "What is a brief remark to the audience that other characters cannot hear called?", "answers": ["aside", "an aside"] },
+    { "id": "playwright", "type": "short", "prompt": "What is the writer of a play called?", "answers": ["playwright", "a playwright", "dramatist"] },
+    { "id": "act-scene", "type": "truefalse", "prompt": "Acts in a play are usually divided into scenes.", "answer": true },
+    { "id": "features", "type": "match", "marks": 4, "prompt": "Match each feature to its meaning.", "pairs": [
+      { "left": "Stage directions", "right": "Instructions about movement, tone and setting" },
+      { "left": "Props", "right": "Objects used on stage" },
+      { "left": "Cast list", "right": "The characters in the play" },
+      { "left": "Monologue", "right": "Long speech by one character to others" }
+    ] },
+    { "id": "what-break", "type": "open", "marks": 2, "prompt": "Why does Mama Nomvula ask 'What did you break?' What does this show about her?", "memo": "✓ Sipho is being unusually cheerful and complimentary, so she suspects he is hiding something (1)\n✓ She knows her son well / is shrewd and has a dry sense of humour (1)" },
+    { "id": "hawk", "type": "open", "marks": 2, "prompt": "Identify and explain the figure of speech in 'She has eyes like a hawk.'", "memo": "✓ Simile (1)\n✓ His mother is very observant / notices everything, as a hawk has sharp eyesight (1)" },
+    { "id": "worry-together", "type": "open", "marks": 3, "prompt": "Explain how Mama Nomvula's attitude changes in the scene, with reference to her words.", "memo": "✓ At first she is suspicious and stern ('What did you break?') (1)\n✓ then worried about the cost ('very far… very expensive') (1)\n✓ finally loving and supportive ('We will worry together') (1)" },
+    { "id": "stage-direction", "type": "open", "marks": 2, "prompt": "Why is the stage direction '(her voice softening)' important for an actor?", "memo": "✓ It tells the actor how to deliver the line (1)\n✓ showing the audience that her attitude has changed from worry to tenderness (1)" },
+    { "id": "theme", "type": "open", "marks": 3, "prompt": "What theme(s) does the scene explore? Support your answer.", "memo": "✓ Theme, e.g. family love and support / ambition versus financial hardship / honesty in families (1)\n✓✓ Evidence from the scene: Sipho's secret application to protect his mother; her decision to share the worry (2)" }
+  ]
+}

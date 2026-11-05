@@ -1,0 +1,369 @@
+{
+  "id": "speeches-reports-and-reviews",
+  "title": "Speeches, Reports and Reviews",
+  "term": 2,
+  "summary": "Master the format, purpose, audience and register of four longer transactional texts for Paper 3: the formal speech, the formal report, the review and the obituary.",
+  "notes": [
+    { "type": "heading", "text": "Longer transactional texts in Paper 3" },
+    { "type": "paragraph", "text": "Transactional texts are **functional** pieces of writing: they do a job in the real world, such as informing a committee, persuading an audience or helping readers decide which film to see. In **Paper 3, Section B**, each longer transactional text is marked out of **25**, and Home Language candidates write **180-200 words** (count the body of the text only, not addresses, dates or headings). Always read the instructions on the paper to see how many questions you must answer from the section.\n\nThis topic covers four text types that are often examined: the **formal speech**, the **formal report**, the **review** and the **obituary**." },
+    {
+      "type": "table",
+      "caption": "How longer transactional texts are marked (HL, 25 marks)",
+      "headers": ["Criterion", "Marks", "What the examiner looks for"],
+      "rows": [
+        ["Content, planning and format", "15", "Relevant, well-developed ideas that respond fully to the task; awareness of purpose and audience; correct format and the conventions of the text type"],
+        ["Language, style and editing", "10", "Register and tone suited to the audience; accurate grammar, spelling and punctuation; varied, precise vocabulary; a fluent, edited text within the word limit"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Before you write, answer three questions: **Who** is my audience? **Why** am I writing (to inform, persuade, evaluate, commemorate)? **What** format does this text type require? These three answers decide your register, tone and layout." },
+    { "type": "definition", "term": "Register", "text": "The level of formality of the language you choose to suit your audience, purpose and context. A report to the school governing body needs a formal register; a speech at a friend's eighteenth birthday can be semi-formal and warmer." },
+    { "type": "definition", "term": "Tone", "text": "The attitude your writing conveys, for example respectful, enthusiastic, objective, sombre or humorous." },
+    { "type": "heading", "text": "1. The formal speech" },
+    { "type": "paragraph", "text": "A speech is written to be **heard**, not read. It must catch the listeners' attention immediately, be easy to follow by ear and leave a lasting impression. Typical occasions include a valedictory function, a prize-giving, an assembly, a campaign launch, a vote of thanks or a welcome address." },
+    {
+      "type": "table",
+      "caption": "Structure of a formal speech",
+      "headers": ["Part", "What it does", "Example"],
+      "rows": [
+        ["Greeting (salutation)", "Acknowledges the audience, the most senior or important people first", "Programme director, Principal, honoured guests, parents and fellow learners, good evening."],
+        ["Hook", "Grabs attention: a question, a striking statement, a short anecdote or a quotation", "Do you remember how you felt when you walked through our gates for the first time?"],
+        ["Introduction of self and purpose", "Tells the audience who you are (if necessary) and why you are speaking", "My name is Naledi Mokoena, and I am here to welcome you to Vukani High."],
+        ["Body (two or three main points)", "Develops the message in clear, signposted points", "Firstly... Secondly... Finally..."],
+        ["Conclusion", "Summarises the message, often with a call to action or memorable final line", "These five years will pass faster than you think. Make them count."],
+        ["Thanks", "Closes politely", "Thank you."]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Signposting** helps listeners follow: 'Firstly', 'My second point is', 'Let me end by saying'.",
+        "**Direct address and inclusive pronouns** ('you', 'we', 'our') build a connection with the audience.",
+        "**Rhetorical devices** suit speeches well: rhetorical questions, the rule of three, repetition, antithesis and short, punchy sentences.",
+        "**Sentence length**: mix short sentences for emphasis with longer ones; avoid very complicated sentences that are hard to follow aloud.",
+        "**Register**: usually formal, but warmer and more personal than a report. Humour is acceptable if it suits the occasion."
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Do not set out a speech like a letter (no addresses, no 'Dear...' and no 'Yours sincerely'), and do not write it as an essay that never acknowledges the audience. If the question asks for a speech, the examiner expects a greeting, a sense of a live audience and a clear ending." },
+    {
+      "type": "passage",
+      "title": "Model speech: Welcome to Grade 8s (about 190 words; names and school are fictional)",
+      "text": "Good morning, Principal Mrs Dlamini, members of staff and, most importantly, our new Grade 8 learners.\n\nDo you remember how you felt when you walked through our gates this morning? Five years ago, I stood exactly where you are standing, clutching a timetable I could not read and wondering whether I would ever find the science laboratory. My name is Naledi Mokoena, and as head girl of Vukani High School, I am here to tell you that the nerves will pass, but the opportunities will not wait.\n\nFirstly, get involved. Join a sports team, the choir or the debating society. You will make friends faster on a netball court than in a corridor.\n\nSecondly, ask for help. Your teachers are not your opponents; they are your coaches. The learners who succeed here are not always the cleverest. They are the ones who put up their hands.\n\nFinally, look after one another. A kind word to a classmate who is struggling can change that person's whole year.\n\nGrade 8s, these five years will pass faster than you think. Make them count. Welcome to the Vukani family, and thank you."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1: Analysing the model speech",
+      "problem": "Identify the features that make the model speech effective.",
+      "steps": [
+        "**Greeting**: senior people first (the principal, then staff), with a warm emphasis on the real audience, 'most importantly, our new Grade 8 learners'.",
+        "**Hook**: a rhetorical question followed by a relatable anecdote about the speaker's own first day.",
+        "**Purpose**: clearly stated, with an antithesis: 'the nerves will pass, but the opportunities will not wait'.",
+        "**Body**: three short, signposted pieces of advice (Firstly, Secondly, Finally), each with a concrete detail.",
+        "**Devices**: antithesis ('not your opponents; they are your coaches'), short sentences for emphasis ('Make them count.').",
+        "**Conclusion**: direct address ('Grade 8s'), a call to action and polite thanks. The register is formal but friendly, which suits teenage listeners."
+      ]
+    },
+    { "type": "heading", "text": "2. The formal report" },
+    { "type": "paragraph", "text": "A formal report presents the results of an **investigation** to a person or body that requested it, such as the principal, the School Governing Body (SGB), the SRC or a manager. Its purpose is to **inform objectively** and to **recommend action** based on evidence." },
+    { "type": "definition", "term": "Terms of reference", "text": "The section of a report that states who requested the report, what had to be investigated and, if relevant, the deadline. It defines the scope of the investigation." },
+    {
+      "type": "table",
+      "caption": "Format of a formal report",
+      "headers": ["Section", "Contents"],
+      "rows": [
+        ["Title", "A clear, specific heading: 'Report on water wastage at Thabong Secondary School'"],
+        ["To / From / Date", "The person or body receiving the report, the writer's name and designation, and the date"],
+        ["1. Terms of reference", "Who asked for the report and what had to be investigated"],
+        ["2. Procedure (method)", "How the information was gathered: observations, interviews, questionnaires, records consulted"],
+        ["3. Findings", "The facts discovered, set out in numbered points, without opinions"],
+        ["4. Conclusions", "What the findings mean: a brief interpretation of the main problem or situation"],
+        ["5. Recommendations", "Practical actions that follow logically from the findings and conclusions"],
+        ["Name and designation", "The writer's name (and signature) and position, e.g. 'Chairperson, Environmental Committee'"]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Objective tone**: present facts, not feelings. Avoid emotive words such as 'shocking' or 'disgusting'.",
+        "**Passive voice** keeps the focus on the facts rather than the writer: 'Thirty learners were interviewed' rather than 'We interviewed thirty learners'.",
+        "**Past tense** for the procedure and findings (what was done and found); **modal verbs** for recommendations ('should be repaired').",
+        "**Numbered headings and sub-points** (1, 2, 2.1, 2.2) make the report easy to scan.",
+        "**Concise, precise language**: no rhetorical questions, slang or exaggeration."
+      ]
+    },
+    { "type": "definition", "term": "Passive voice", "text": "A sentence structure in which the receiver of the action becomes the subject: 'The taps were inspected' (passive) instead of 'The committee inspected the taps' (active). It sounds impersonal and objective, which suits reports." },
+    {
+      "type": "table",
+      "caption": "Making report language objective",
+      "headers": ["Subjective or active", "Objective, report style"],
+      "rows": [
+        ["We looked at all the taps in the school.", "All the taps in the school were inspected."],
+        ["I was horrified by the state of the toilets!", "Four of the six toilets were found to be blocked."],
+        ["Kids told us the tuck shop is a rip-off.", "Most learners interviewed considered the tuck-shop prices too high."],
+        ["The principal must fix the gate now!", "It is recommended that the broken gate be repaired urgently."]
+      ]
+    },
+    {
+      "type": "passage",
+      "title": "Model report (about 190 words in the body; names are fictional)",
+      "text": "REPORT ON WATER WASTAGE AT THABONG SECONDARY SCHOOL\n\nTo: The Principal, Mr T. Molefe\nFrom: Lerato Sithole, Chairperson, Environmental Committee\nDate: 14 May 2026\n\n1. Terms of reference\nThe Principal requested the Environmental Committee to investigate the causes of the school's high water usage and to recommend ways of reducing it.\n\n2. Procedure\n2.1 The school's water accounts for the past six months were examined.\n2.2 All taps, toilets and outside pipes were inspected.\n2.3 Fifty learners and ten members of staff were interviewed.\n\n3. Findings\n3.1 Water usage increased by about a third between November and April.\n3.2 Six taps in the learners' bathrooms were found to be leaking.\n3.3 The sports-field sprinklers were switched on during the hottest part of the day, when much of the water evaporates.\n3.4 Most of the learners interviewed were unaware that the school had a water problem.\n\n4. Conclusions\nMost of the wastage is caused by faulty fittings and poor watering practices, and it is made worse by a lack of awareness among learners.\n\n5. Recommendations\n5.1 The leaking taps should be repaired immediately.\n5.2 The sprinklers should be used only early in the morning.\n5.3 A water-saving campaign should be launched at assembly.\n\nL. Sithole\nChairperson, Environmental Committee"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Each recommendation must follow from a finding. A report that finds leaking taps but recommends 'a new school hall' has lost its logic. Also keep opinions out of the Findings: interpretation belongs in the Conclusions and suggestions belong in the Recommendations." },
+    { "type": "heading", "text": "3. The review" },
+    { "type": "paragraph", "text": "A review gives readers an **informed, evaluative opinion** of a book, film, series, music album, concert, game or restaurant so that they can decide whether it is worth their time and money. A good review balances **information** (what it is), **evaluation** (how good it is, and why) and **recommendation** (who should read, watch, listen or eat there)." },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Headline or title**: often catchy, e.g. 'Dust Road: a quiet triumph from the Karoo'.",
+        "**Key details**: title, author/director/artist, genre, publisher or studio, age restriction, running time, venue, price, as relevant.",
+        "**Brief summary or description**: set up the premise or describe the experience **without spoilers** (never reveal the ending or a twist).",
+        "**Evaluation**: discuss strengths and weaknesses with specific examples (acting, plot, characters, style, food, service, atmosphere, value for money).",
+        "**Rating**: e.g. '4 out of 5' or '8/10'.",
+        "**Recommendation**: say who would enjoy it, or who should avoid it."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "What to evaluate in different reviews",
+      "headers": ["Review of a...", "Aspects to evaluate"],
+      "rows": [
+        ["Book", "Plot, characterisation, themes, writing style, pace, target readership"],
+        ["Film or series", "Storyline, acting, direction, cinematography, soundtrack, special effects, length"],
+        ["Music album or concert", "Vocals, lyrics, musicianship, production, stand-out tracks, stage presence"],
+        ["Restaurant", "Food (taste, presentation, portions), service, ambience, cleanliness, value for money"]
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "Evaluative vocabulary",
+      "headers": ["Positive", "Negative", "Balanced or qualified"],
+      "rows": [
+        ["gripping, compelling, masterful, mouth-watering, flawless", "tedious, predictable, clichéd, bland, overpriced", "uneven, promising but flawed, enjoyable if not memorable"],
+        ["a tour de force, beautifully crafted", "falls flat, drags in the middle", "has its moments, worth seeing despite its flaws"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "A review is an opinion piece, so the first person ('I') is acceptable, but every opinion must be **justified** with a specific detail. 'The acting was great' earns little; 'Zinhle Mabaso gives Anele a stubborn humour that makes her instantly believable' shows judgement." },
+    {
+      "type": "passage",
+      "title": "Model film review (about 200 words; the film and actors are fictional)",
+      "text": "DUST ROAD: A QUIET TRIUMPH FROM THE KAROO\n\nDirector: Sipho Ndlovu | Genre: drama | Age restriction: 13 | Running time: 104 minutes\nRating: 4 out of 5\n\nDust Road follows Anele, a seventeen-year-old who must drive her grandfather's battered bakkie across the Karoo to deliver a letter he is too ill to deliver himself. Along the way she picks up an unlikely pair of passengers, and the journey becomes far more than a delivery.\n\nThe film's greatest strength is its lead performance. Newcomer Zinhle Mabaso gives Anele a stubborn humour that makes her instantly believable, and the flashback scenes with her grandfather are tender without becoming sentimental. The cinematography is breathtaking: wide, golden shots of the Karoo make the landscape feel like a character in its own right.\n\nThe film is not flawless. The middle section drags, and a subplot involving a stolen spare wheel feels like filler that could easily have been cut.\n\nNevertheless, Dust Road is an honest, moving film about family and the roads that lead us home. I highly recommend it to anyone who enjoys character-driven stories, and to families looking for something meaningful to watch together."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: Why the review works",
+      "problem": "Identify the features of the model review.",
+      "steps": [
+        "**Headline and details**: a catchy headline, then director, genre, age restriction, running time and rating, so readers have the facts at a glance.",
+        "**Summary without spoilers**: the premise is set up (the journey, the letter, the passengers) but the content of the letter and the ending are not revealed.",
+        "**Balanced evaluation**: strengths (acting, cinematography) are supported with specific details; a weakness (the slow middle and pointless subplot) is acknowledged.",
+        "**Recommendation**: the final paragraph identifies who would enjoy the film.",
+        "**Language**: precise evaluative vocabulary ('breathtaking', 'tender without becoming sentimental', 'feels like filler') in a lively but controlled register."
+      ]
+    },
+    { "type": "heading", "text": "4. The obituary" },
+    { "type": "definition", "term": "Obituary", "text": "A notice, usually published in a newspaper, newsletter or online, that announces a person's death and gives a respectful account of their life, achievements and character." },
+    { "type": "definition", "term": "Eulogy", "text": "A speech of praise and remembrance **delivered** at a funeral or memorial service. It is spoken, more personal and often addresses the mourners directly. Do not confuse it with an obituary, which is a written notice." },
+    {
+      "type": "list",
+      "items": [
+        "**Heading**: the person's full name (often with a title, e.g. Mrs or Dr) and dates of birth and death.",
+        "**Opening announcement**: who died, when, where and at what age; the cause of death is optional and is often omitted or stated gently ('after a short illness').",
+        "**Life story**: birthplace, education, career, achievements and contributions to the community.",
+        "**Character**: personal qualities, illustrated with a brief anecdote or a characteristic saying.",
+        "**Family**: those who **survive** the person ('She is survived by...') and, if relevant, close family who died before them ('predeceased by...').",
+        "**Funeral or memorial details**: date, time and place; any special requests (e.g. donations instead of flowers).",
+        "**Register and tone**: formal, dignified, respectful and warm; written in the **third person** and mostly in the **past tense**."
+      ]
+    },
+    {
+      "type": "passage",
+      "title": "Model obituary (about 180 words; the person is fictional)",
+      "text": "MRS GRACE NOMVULA KHUMALO\n12 March 1941 – 2 June 2026\n\nGrace Nomvula Khumalo, a beloved teacher, community leader and grandmother, passed away peacefully at her home in Pietermaritzburg on 2 June 2026, at the age of 85.\n\nBorn in Edendale, Mrs Khumalo trained as a teacher at a time when few opportunities were open to Black women. She taught English at a secondary school in Sobantu for 38 years and started the school's first library with books she collected door to door. Generations of learners remember her firm but warm manner and her favourite saying: 'A book is a key that fits every door.'\n\nAfter retiring, she ran a homework club from her garage for the children in her street, and she sang in her church choir until last year.\n\nShe is survived by her three children, Thabo, Lindiwe and Sibusiso, seven grandchildren and two great-grandchildren. She was predeceased by her husband, Jabulani, in 2010.\n\nA memorial service will be held at the Methodist church in Edendale on Saturday 13 June 2026 at 10:00. Instead of flowers, the family asks that books be donated to a local community library."
+    },
+    { "type": "heading", "text": "Comparing the four text types" },
+    {
+      "type": "table",
+      "caption": "Purpose, audience, register and format at a glance",
+      "headers": ["Text", "Purpose", "Typical audience", "Register and tone", "Key format features"],
+      "rows": [
+        ["Formal speech", "To inform, inspire, persuade or celebrate", "A live audience (assembly, function, ceremony)", "Formal but engaging; direct and personal", "Greeting in order of seniority, hook, signposted points, conclusion, thanks"],
+        ["Formal report", "To present findings and recommend action", "Whoever requested the report (principal, SGB, manager)", "Formal, objective, impersonal; passive voice", "Title, To/From/Date, numbered sections: terms of reference, procedure, findings, conclusions, recommendations"],
+        ["Review", "To evaluate and recommend", "Readers of a magazine, newspaper or website", "Semi-formal to formal; lively and opinionated but justified", "Headline, key details, spoiler-free summary, evaluation, rating, recommendation"],
+        ["Obituary", "To announce a death and honour a life", "Readers of a newspaper, newsletter or website", "Formal, dignified, respectful; third person", "Name and dates, announcement, life and achievements, survivors, funeral details"]
+      ]
+    },
+    { "type": "heading", "text": "Planning, writing and editing" },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Underline the key words in the question: text type, audience, purpose and any details you must include.",
+        "Jot down a quick plan: the format headings and two or three main points.",
+        "Write the text in the correct format, using the register that suits the audience.",
+        "Check that every instruction in the question has been addressed (for example 'include two recommendations').",
+        "Edit for spelling, punctuation, concord and tense, and count the words in the body: aim for 180-200.",
+        "Submit your plan with your answer, and draw a line through it so that it is not marked as your final text."
+      ]
+    },
+    { "type": "callout", "label": "Remember", "text": "Content in transactional texts must be **specific and realistic**. A report that says 'Things were found to be bad' earns few marks; 'Six taps were found to be leaking' earns many. Invent sensible, believable details that fit the scenario in the question." },
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "HL longer transactional texts: 180-200 words, 25 marks (Content, planning and format 15; Language, style and editing 10).",
+        "Always identify audience, purpose and format before writing; these determine register and tone.",
+        "Speech: greet the audience in order of seniority, hook, state purpose, signposted points, rhetorical devices, strong ending, thanks.",
+        "Report: title, To/From/Date, terms of reference, procedure, findings, conclusions, recommendations; objective, passive voice, numbered points.",
+        "Recommendations must follow logically from the findings.",
+        "Review: headline, key details, spoiler-free summary, justified evaluation of strengths and weaknesses, rating, recommendation.",
+        "Obituary: name and dates, announcement, life and achievements, character, survivors, funeral details; formal, respectful, third person.",
+        "An obituary is a written notice; a eulogy is a speech delivered at a funeral."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which section of a formal report states who asked for the report and what had to be investigated?",
+      "options": [
+        "Findings",
+        "Terms of reference",
+        "Procedure",
+        "Recommendations"
+      ],
+      "answer": 1,
+      "explanation": "The terms of reference define the scope of the report: who requested it and what had to be investigated. The procedure explains how the information was gathered."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "Which is the most appropriate opening for a formal speech at a school prize-giving evening?",
+      "options": [
+        "Programme director, Principal, honoured guests, parents and fellow learners, good evening.",
+        "Hey everyone, what's up? Thanks for rocking up tonight.",
+        "Dear Sir or Madam, I am writing to you about tonight's prize-giving.",
+        "Yours faithfully, the Grade 12 class."
+      ],
+      "answer": 0,
+      "explanation": "A formal speech greets the audience in order of seniority in a formal register. Option 2 is far too casual, and options 3 and 4 belong to formal letters."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "prompt": "Which sentence is best suited to the **Findings** section of a formal report?",
+      "options": [
+        "I was shocked to see how disgusting the toilets were!",
+        "We think the toilets are probably quite dirty.",
+        "The toilets should be cleaned twice a day.",
+        "Four of the six toilets were found to be blocked."
+      ],
+      "answer": 3,
+      "explanation": "Findings are objective, specific facts, often in the passive voice. Option 1 is emotive, option 2 is vague and subjective, and option 3 is a recommendation."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "prompt": "Which of the following should a review of a novel **avoid**?",
+      "options": [
+        "Mentioning the author and the publisher",
+        "Giving the novel a rating",
+        "Revealing the twist at the end of the story",
+        "Commenting on the writer's style"
+      ],
+      "answer": 2,
+      "explanation": "A review must not spoil the story for readers. It may summarise the premise, but it should never reveal the ending or a twist."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "prompt": "Which detail is **not** normally included in an obituary?",
+      "options": [
+        "The person's full name and dates of birth and death",
+        "A detailed list of the person's faults and failures",
+        "The family members who survive the person",
+        "Details of the funeral or memorial service"
+      ],
+      "answer": 1,
+      "explanation": "An obituary is respectful and dignified. It celebrates the person's life and achievements; it does not list their faults."
+    },
+    {
+      "id": "q6",
+      "type": "truefalse",
+      "prompt": "The recommendations in a formal report should follow logically from its findings.",
+      "answer": true,
+      "explanation": "Each recommendation should solve a problem identified in the findings. Unrelated recommendations break the logic of the report."
+    },
+    {
+      "id": "q7",
+      "type": "truefalse",
+      "prompt": "An obituary is a speech delivered by a family member at a funeral.",
+      "answer": false,
+      "explanation": "That is a eulogy. An obituary is a written notice, usually published in a newspaper, newsletter or online."
+    },
+    {
+      "id": "q8",
+      "type": "match",
+      "prompt": "Match each feature with the text type it belongs to.",
+      "marks": 4,
+      "pairs": [
+        { "left": "Begins by greeting the audience, the most senior people first", "right": "Formal speech" },
+        { "left": "Contains terms of reference and numbered findings", "right": "Formal report" },
+        { "left": "Ends with a rating and a recommendation for readers", "right": "Review" },
+        { "left": "Lists the family members who survive the person", "right": "Obituary" }
+      ],
+      "explanation": "Each text type has its own conventions: a greeting for a speech, terms of reference and findings for a report, a rating for a review, and survivors and funeral details for an obituary."
+    },
+    {
+      "id": "q9",
+      "type": "short",
+      "prompt": "What is the term for the level of formality of the language you choose to suit your audience and purpose?",
+      "answers": ["register", "the register", "language register"],
+      "explanation": "Register ranges from formal to informal. A report needs a formal register; a speech at a friend's party can be more relaxed."
+    },
+    {
+      "id": "q10",
+      "type": "short",
+      "prompt": "What is a speech of praise and remembrance delivered at a funeral called?",
+      "answers": ["eulogy", "a eulogy", "the eulogy", "funeral oration"],
+      "explanation": "A eulogy is spoken at a funeral or memorial service, whereas an obituary is a written notice."
+    },
+    {
+      "id": "q11",
+      "type": "numeric",
+      "prompt": "A Home Language longer transactional text is marked out of 25. How many of these marks are allocated to **Language, style and editing**?",
+      "answer": 10,
+      "tolerance": 0,
+      "unit": "marks",
+      "explanation": "Content, planning and format = 15 marks; Language, style and editing = 10 marks; total = 25."
+    },
+    {
+      "id": "q12",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Rewrite each sentence in the objective style suitable for a formal report. Use the passive voice where possible.\n(a) We interviewed thirty learners at break.\n(b) I think the tuck shop is way too expensive.\n(c) We checked all the fire extinguishers.\n(d) The principal must fix the broken gate now!",
+      "memo": "(a) Thirty learners were interviewed at break. ✓ (1)\n(b) Most learners interviewed considered the tuck-shop prices too high. / The tuck-shop prices were found to be higher than those of nearby shops. ✓ (1) (Award the mark for any objective, non-emotive version without 'I think' and slang.)\n(c) All the fire extinguishers were checked. ✓ (1)\n(d) It is recommended that the broken gate be repaired urgently. / The broken gate should be repaired as a matter of urgency. ✓ (1) (No exclamation mark; a modal such as 'should' or 'It is recommended' is used.)"
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 5,
+      "prompt": "You are a Grade 12 learner launching an anti-bullying campaign at a school assembly. Write ONLY the opening of your speech (60-80 words): the greeting, a hook and a statement of your purpose.",
+      "memo": "Model answer: 'Good morning, Principal, members of staff and fellow learners. Close your eyes for a moment and think of a time when someone made you feel small. Now imagine feeling that way every single day. For some learners at our school, this is not imagination; it is reality. My name is Ayanda Zulu, and on behalf of the Grade 12 class, I am here to launch our campaign, Stand Up, Speak Out.'\n\nMark allocation:\n✓ Appropriate greeting, most senior person first (1)\n✓ An effective hook (question, striking statement, scenario or anecdote) (1)\n✓ Speaker introduces themselves or their role (1)\n✓ Purpose of the speech is clearly stated (1)\n✓ Register suits a school assembly; direct address or inclusive language used; within the word limit (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 25,
+      "prompt": "The SRC has asked you to investigate safety at the scholar-transport pick-up point outside your school gate. Write the formal report (180-200 words) that you will submit to the SRC.",
+      "memo": "Model answer (names are fictional; any realistic details are acceptable):\n\nREPORT ON SAFETY AT THE LEARNER PICK-UP POINT\nTo: The SRC, Lethabo High School\nFrom: K. Naidoo, SRC Safety Representative\nDate: 3 August 2026\n\n1. Terms of reference\nThe SRC requested an investigation into safety at the pick-up point outside the school gate, with recommendations for improvement.\n\n2. Procedure\n2.1 The pick-up point was observed on five afternoons between 14:00 and 15:00.\n2.2 Twenty learners, five scholar-transport drivers and two security guards were interviewed.\n\n3. Findings\n3.1 Taxis and private cars stopped in the road, blocking traffic.\n3.2 Learners crossed between moving vehicles because there is no pedestrian crossing.\n3.3 Security guards were posted only at the gate, not at the road.\n3.4 Several learners reported waiting for more than an hour without shelter.\n\n4. Conclusions\nThe pick-up point is unsafe because vehicles and pedestrians are not separated and supervision is inadequate.\n\n5. Recommendations\n5.1 The municipality should be asked to paint a pedestrian crossing and a demarcated drop-off bay.\n5.2 A guard or teacher should supervise the road between 14:00 and 15:00.\n5.3 A covered waiting area should be built inside the school grounds.\n\nK. Naidoo\nSRC Safety Representative\n\nMarking guideline (25):\nContent, planning and format (15):\n✓ Title, To/From/Date and writer's name and designation (2)\n✓ Terms of reference clearly stating who requested the report and its scope (2)\n✓ Procedure explaining how information was gathered (2)\n✓ Specific, realistic, objective findings (at least three) (4)\n✓ A conclusion that interprets the findings (2)\n✓ Practical recommendations that follow logically from the findings (3)\nLanguage, style and editing (10):\n✓ Formal, objective register; no emotive language or opinions in the findings (3)\n✓ Passive voice and past tense used appropriately; modals in the recommendations (3)\n✓ Accurate spelling, punctuation and grammar; numbered points used consistently (3)\n✓ Within 180-200 words (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 25,
+      "prompt": "Your community newspaper has invited learners to review a local restaurant or food outlet. Write the review (180-200 words).",
+      "memo": "Model answer (the restaurant is fictional):\n\nGOGO'S KITCHEN: COMFORT FOOD WITH A TOWNSHIP HEARTBEAT\nVenue: Gogo's Kitchen, Mamelodi East | Cuisine: traditional South African | Price: about R120 per person | Rating: 4 out of 5\n\nTucked between a hair salon and a spaza shop, Gogo's Kitchen does not look like much from the outside. Step inside, however, and the smell of slow-cooked oxtail and freshly steamed dumplings tells you that you are in for something special.\n\nI ordered the oxtail stew with dombolo, while my friend chose pap and chakalaka with grilled boerewors. The oxtail was meltingly tender in a rich, well-seasoned gravy, and the dombolo was light enough to soak up every drop. The chakalaka had a satisfying kick, although the boerewors was slightly overcooked.\n\nService was warm and friendly, if a little slow on a busy Saturday: we waited forty minutes for our main course. The dining room is small but spotless, brightened by shweshwe tablecloths and photographs of the owner's family.\n\nAt about R120 a head, Gogo's Kitchen offers generous portions at a fair price. It is not the place for a quick bite, but if you want honest, home-cooked food served with a smile, it is well worth the trip. Go hungry, and go early.\n\nMarking guideline (25):\nContent, planning and format (15):\n✓ Catchy headline and key details (name, location, type of food, price) (2)\n✓ Description of the setting and experience that sets the scene (2)\n✓ Evaluation of the food with specific details (3)\n✓ Evaluation of service, atmosphere and value for money (3)\n✓ Balanced judgement: at least one weakness acknowledged (2)\n✓ Clear rating and a recommendation for readers (3)\nLanguage, style and editing (10):\n✓ Lively but controlled register suited to newspaper readers (3)\n✓ Precise evaluative and descriptive vocabulary (3)\n✓ Accurate spelling, punctuation and grammar (3)\n✓ Within 180-200 words (1)"
+    }
+  ]
+}

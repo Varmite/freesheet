@@ -1,0 +1,51 @@
+{
+  "id": "birth-life-and-death-of-stars",
+  "title": "Birth, Life and Death of Stars",
+  "term": 4,
+  "summary": "How stars form in nebulae, how they produce energy by nuclear fusion, the life cycles of average and massive stars, and the sun's place among the stars.",
+  "notes": [
+    { "type": "heading", "text": "The birth of a star" },
+    { "type": "paragraph", "text": "Stars are born in **nebulae**: huge clouds of gas (mostly hydrogen) and dust in space. Gravity pulls parts of the cloud together. As the cloud collapses it spins and heats up, forming a **protostar**. When the core becomes hot enough (about 15 million °C), **nuclear fusion** begins and a star is born." },
+    { "type": "definition", "term": "Nuclear fusion", "text": "The process in which the nuclei of light atoms (hydrogen) join to form heavier atoms (helium), releasing enormous amounts of energy as light and heat." },
+    { "type": "heading", "text": "The life of a star" },
+    { "type": "paragraph", "text": "For most of its life a star is a **main sequence star**, steadily fusing hydrogen into helium. Two forces are balanced: **gravity** pulls the star inwards, and the **outward pressure** from the energy released by fusion pushes outwards. The sun is a main sequence star about 4,6 billion years old, roughly halfway through its life." },
+    { "type": "callout", "label": "Remember", "text": "The more massive a star, the hotter and brighter it burns and the **shorter** its life. Massive stars use up their hydrogen in a few million years; the sun will last about 10 billion years; small red dwarfs may last trillions of years." },
+    { "type": "heading", "text": "The death of a star" },
+    { "type": "table", "caption": "Life cycles", "headers": ["Stage", "Average star (like the sun)", "Massive star (more than about 8 times the sun's mass)"], "rows": [
+      ["1", "Nebula", "Nebula"],
+      ["2", "Main sequence star", "Main sequence star (blue, very hot)"],
+      ["3", "Red giant: hydrogen runs out, the outer layers swell and cool", "Red supergiant"],
+      ["4", "Planetary nebula: outer layers drift away as a glowing shell", "Supernova: a massive explosion, brighter than a whole galaxy for a short time"],
+      ["5", "White dwarf: a small, hot, dense core that slowly cools", "Neutron star or black hole"]
+    ] },
+    { "type": "definition", "term": "Black hole", "text": "A region in space where matter is so tightly packed that its gravity is strong enough to stop even light from escaping." },
+    { "type": "definition", "term": "Neutron star", "text": "The extremely dense remaining core of a supernova; a teaspoon of it would weigh billions of tonnes." },
+    { "type": "paragraph", "text": "In about 5 billion years the sun will become a **red giant**, swallowing Mercury and Venus and possibly Earth, before ending as a **white dwarf**." },
+    { "type": "heading", "text": "We are made of star stuff" },
+    { "type": "paragraph", "text": "The early universe contained mostly hydrogen and helium. Heavier elements such as carbon, oxygen and iron were made by fusion inside stars, and elements heavier than iron (like gold) were made in supernova explosions. When stars die they scatter these elements into space, where they form new stars, planets and eventually living things." },
+    { "type": "heading", "text": "Colour and temperature" },
+    { "type": "table", "headers": ["Colour", "Surface temperature", "Example"], "rows": [
+      ["Blue", "Above 10 000 °C", "Rigel (in Orion)"],
+      ["White", "About 7 500 to 10 000 °C", "Sirius"],
+      ["Yellow", "About 5 500 °C", "The sun"],
+      ["Red", "Below about 3 500 °C", "Betelgeuse (red supergiant), Antares"]
+    ] }
+  ],
+  "questions": [
+    { "id": "nebula", "type": "short", "prompt": "What is the name for a cloud of gas and dust in which stars are born?", "answers": ["nebula", "a nebula", "nebulae"] },
+    { "id": "fusion", "type": "mcq", "prompt": "In nuclear fusion in a main sequence star…", "options": ["helium splits into hydrogen", "hydrogen nuclei join to form helium", "iron is burnt with oxygen", "carbon reacts with water"], "answer": 1 },
+    { "id": "forces", "type": "open", "marks": 2, "prompt": "Name the two forces that are balanced in a main sequence star.", "memo": "✓ Gravity pulling inwards (1)\n✓ Outward pressure from the energy released by fusion (1)" },
+    { "id": "sun-end", "type": "mcq", "prompt": "How will the sun end its life?", "options": ["As a black hole", "As a neutron star", "As a white dwarf", "As a supernova"], "answer": 2 },
+    { "id": "massive-life", "type": "truefalse", "prompt": "Massive stars live longer than small stars.", "answer": false, "explanation": "Massive stars use their fuel much faster, so they have shorter lives." },
+    { "id": "light-escape", "type": "short", "prompt": "What object has gravity so strong that not even light can escape?", "answers": ["black hole", "a black hole"] },
+    { "id": "colour-hot", "type": "mcq", "prompt": "Which colour star is the hottest?", "options": ["Red", "Yellow", "White", "Blue"], "answer": 3 },
+    { "id": "order", "type": "match", "marks": 4, "prompt": "Match each stage in the life of a sun-like star to its number in order.", "pairs": [
+      { "left": "Nebula", "right": "Stage 1" },
+      { "left": "Main sequence star", "right": "Stage 2" },
+      { "left": "Red giant", "right": "Stage 3" },
+      { "left": "White dwarf", "right": "Stage 4" }
+    ] },
+    { "id": "supernova", "type": "open", "marks": 2, "prompt": "What is a supernova and what can be left behind after one?", "memo": "✓ A huge explosion at the end of the life of a massive star (1)\n✓ A neutron star or a black hole is left behind (1)" },
+    { "id": "star-stuff", "type": "open", "marks": 2, "prompt": "Explain why scientists say that the atoms in our bodies were made in stars.", "memo": "✓ Elements heavier than hydrogen and helium (such as carbon and oxygen) are made by fusion inside stars (1)\n✓ When stars die they scatter these elements into space, where they become part of new planets and living things (1)" }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "id": "statistics",
+  "title": "Statistics",
+  "term": 3,
+  "summary": "Summarise and compare numerical data using the mean, median, mode, range, quartiles, percentiles, the five-number summary and box-and-whisker diagrams.",
+  "notes": [
+    { "type": "heading", "text": "What is statistics?" },
+    { "type": "paragraph", "text": "**Statistics** is the science of collecting, organising, summarising and interpreting data so that we can make sensible decisions. A school might use statistics to compare Grade 10 test results, a taxi association to study waiting times at a rank, or Stats SA to describe household incomes across the country." },
+    { "type": "definition", "term": "Data", "text": "A collection of facts or values, such as test marks, heights or numbers of goals scored. Each individual value is a **data value** (or observation)." },
+    { "type": "definition", "term": "Univariate numerical data", "text": "Data that records **one** numerical variable for each member of a group, for example the mass of each learner in a class. In Grade 10 we work with univariate numerical data." },
+    {
+      "type": "table",
+      "caption": "Types of data",
+      "headers": ["Type", "Description", "Examples"],
+      "rows": [
+        ["Numerical (quantitative): discrete", "can only take certain separate values, usually by counting", "number of siblings, goals scored"],
+        ["Numerical (quantitative): continuous", "can take any value in a range, usually by measuring", "height, mass, time, temperature"],
+        ["Categorical (qualitative)", "describes a category, not a number", "favourite sport, home language"]
+      ]
+    },
+    { "type": "definition", "term": "Population and sample", "text": "The **population** is the whole group you want information about (for example all Grade 10 learners in Gauteng). A **sample** is a smaller group chosen from the population. A good sample is chosen randomly and is large enough to represent the population fairly." },
+    { "type": "paragraph", "text": "Data can be collected through surveys and questionnaires, interviews, observations, measurements and experiments, or taken from existing records. Raw data is easier to work with once it is **organised**: write the values in order from smallest to largest, or group them in a **frequency table** that shows how many times each value (or each class of values) occurs." },
+
+    { "type": "heading", "text": "Measures of central tendency (ungrouped data)" },
+    { "type": "paragraph", "text": "A **measure of central tendency** is a single value that describes the centre (the typical value) of a data set." },
+    { "type": "definition", "term": "Mean", "text": "The sum of all the data values divided by the number of values. Symbol $\\bar{x}$ (read \"x-bar\")." },
+    { "type": "formula", "latex": "\\bar{x} = \\frac{\\sum x}{n} = \\frac{\\text{sum of all values}}{\\text{number of values}}", "caption": "The mean" },
+    { "type": "definition", "term": "Median", "text": "The middle value of the data when it is arranged **in order**. Its position is the $\\left(\\dfrac{n + 1}{2}\\right)$th value. If $n$ is even, the median is the mean of the two middle values." },
+    { "type": "definition", "term": "Mode", "text": "The value that occurs most often. A data set can have one mode, two modes (bimodal), more than two modes, or no mode if every value occurs equally often." },
+    {
+      "type": "example",
+      "title": "Worked example 1: an odd number of values",
+      "problem": "Nine learners scored the following marks out of 20 in a Maths quiz: $12;\\ 15;\\ 9;\\ 18;\\ 15;\\ 11;\\ 20;\\ 15;\\ 14$. Determine the mean, median and mode.",
+      "steps": [
+        "Order the data: $9;\\ 11;\\ 12;\\ 14;\\ 15;\\ 15;\\ 15;\\ 18;\\ 20$ ($n = 9$).",
+        "Mean: $\\bar{x} = \\dfrac{129}{9} = 14{,}33$ (to two decimal places).",
+        "Median: position $\\dfrac{9 + 1}{2} = 5$, so the median is the 5th value, $15$.",
+        "Mode: $15$ appears three times, more than any other value."
+      ],
+      "answer": "Mean $= 14{,}33$; median $= 15$; mode $= 15$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: an even number of values",
+      "problem": "The numbers of minutes ten learners spent on homework one evening were: $12;\\ 7;\\ 21;\\ 8;\\ 4;\\ 15;\\ 7;\\ 10;\\ 16;\\ 13$. Determine the mean, median and mode.",
+      "steps": [
+        "Order the data: $4;\\ 7;\\ 7;\\ 8;\\ 10;\\ 12;\\ 13;\\ 15;\\ 16;\\ 21$ ($n = 10$).",
+        "Mean: $\\bar{x} = \\dfrac{113}{10} = 11{,}3$ minutes.",
+        "Median: position $\\dfrac{10 + 1}{2} = 5{,}5$, so it lies halfway between the 5th and 6th values: $\\dfrac{10 + 12}{2} = 11$ minutes.",
+        "Mode: $7$ minutes (it appears twice)."
+      ],
+      "answer": "Mean $= 11{,}3$; median $= 11$; mode $= 7$"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "You must **order** the data before finding the median. The median is the middle value of the ordered list, not the middle value of the list as it was given. Also, $\\frac{n + 1}{2}$ gives the **position** of the median, not the median itself." },
+
+    { "type": "heading", "text": "Grouped data" },
+    { "type": "paragraph", "text": "When there are many data values, we group them into **class intervals** in a grouped frequency table. A class such as $10 \\le t < 15$ includes 10 but not 15. Because we no longer know the exact values, we can only **estimate** the mean, and we identify the class that contains the mode and the median rather than an exact value." },
+    { "type": "definition", "term": "Class midpoint", "text": "The value halfway between the lower and upper boundaries of a class: $\\text{midpoint} = \\dfrac{\\text{lower boundary} + \\text{upper boundary}}{2}$. We assume every value in the class is equal to the midpoint." },
+    { "type": "formula", "latex": "\\text{estimated mean} = \\frac{\\sum (f \\times \\text{midpoint})}{\\sum f} = \\frac{\\sum (f \\times \\text{midpoint})}{n}", "caption": "Estimated mean of grouped data" },
+    { "type": "definition", "term": "Modal class", "text": "The class interval with the highest frequency." },
+    {
+      "type": "table",
+      "caption": "Waiting times of 35 commuters at a taxi rank",
+      "headers": ["Waiting time $t$ (minutes)", "Frequency $f$", "Midpoint", "$f \\times$ midpoint", "Cumulative frequency"],
+      "rows": [
+        ["$0 \\le t < 5$", "4", "2,5", "10", "4"],
+        ["$5 \\le t < 10$", "9", "7,5", "67,5", "13"],
+        ["$10 \\le t < 15$", "12", "12,5", "150", "25"],
+        ["$15 \\le t < 20$", "7", "17,5", "122,5", "32"],
+        ["$20 \\le t < 25$", "3", "22,5", "67,5", "35"],
+        ["Total", "35", "", "417,5", ""]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: grouped data",
+      "problem": "Use the table of taxi-rank waiting times to (a) estimate the mean waiting time, (b) state the modal class and (c) determine the class that contains the median.",
+      "steps": [
+        "(a) Multiply each frequency by its class midpoint and add: $\\sum (f \\times \\text{midpoint}) = 10 + 67{,}5 + 150 + 122{,}5 + 67{,}5 = 417{,}5$.",
+        "Estimated mean $= \\dfrac{417{,}5}{35} = 11{,}93$ minutes (to two decimal places).",
+        "(b) The highest frequency is $12$, so the modal class is $10 \\le t < 15$.",
+        "(c) The median is the $\\dfrac{35 + 1}{2} = 18$th value. The cumulative frequencies show that 13 values lie below 10 minutes and 25 values lie below 15 minutes, so the 18th value lies in the class $10 \\le t < 15$."
+      ],
+      "answer": "(a) about 11,93 minutes  (b) $10 \\le t < 15$  (c) $10 \\le t < 15$"
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Always say **estimated** mean for grouped data. A running total (cumulative frequency) column makes it quick to find the class containing the median, $Q_1$ or $Q_3$." },
+
+    { "type": "heading", "text": "Measures of dispersion" },
+    { "type": "paragraph", "text": "Two classes can have the same mean but very different results: in one class most learners may score close to the mean, while in the other the marks are spread out from very low to very high. **Measures of dispersion** (spread) describe how spread out the data is." },
+    { "type": "definition", "term": "Range", "text": "The difference between the largest and smallest values: $\\text{range} = \\text{maximum} - \\text{minimum}$. It is easy to calculate but is strongly affected by extreme values." },
+    { "type": "heading", "text": "Quartiles and percentiles" },
+    { "type": "paragraph", "text": "**Quartiles** divide ordered data into four equal parts, each containing about $25\\%$ of the values." },
+    {
+      "type": "table",
+      "caption": "The quartiles",
+      "headers": ["Quartile", "Name", "Meaning"],
+      "rows": [
+        ["$Q_1$", "lower (first) quartile", "about $25\\%$ of the data lies below it; the median of the lower half"],
+        ["$Q_2$", "median", "about $50\\%$ of the data lies below it"],
+        ["$Q_3$", "upper (third) quartile", "about $75\\%$ of the data lies below it; the median of the upper half"]
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Arrange the data in order and find the median $Q_2$.",
+        "Split the data into a lower half and an upper half. If $n$ is odd, leave the median out of both halves.",
+        "$Q_1$ is the median of the lower half, and $Q_3$ is the median of the upper half."
+      ]
+    },
+    { "type": "definition", "term": "Interquartile range (IQR)", "text": "$\\text{IQR} = Q_3 - Q_1$. It measures the spread of the **middle 50%** of the data, so it is not affected by extreme values." },
+    { "type": "definition", "term": "Semi-interquartile range", "text": "Half of the interquartile range: $\\dfrac{Q_3 - Q_1}{2}$." },
+    { "type": "definition", "term": "Percentile", "text": "Percentiles divide ordered data into 100 equal parts. The $p$th percentile is the value below which about $p\\%$ of the data lies. So $Q_1$ is the 25th percentile, the median is the 50th percentile and $Q_3$ is the 75th percentile." },
+    { "type": "paragraph", "text": "Percentiles are often used to compare one result with a large group. If Ayanda's Maths mark is at the **90th percentile** in her district, about $90\\%$ of the learners scored the same as or lower than she did, and only about $10\\%$ scored higher. This does **not** mean she scored $90\\%$. Clinics also use percentile charts to check a baby's mass against other babies of the same age." },
+    {
+      "type": "example",
+      "title": "Worked example 4: quartiles, IQR and range (n odd)",
+      "problem": "The numbers of push-ups done in one minute by 11 learners were: $23;\\ 31;\\ 17;\\ 28;\\ 35;\\ 19;\\ 26;\\ 40;\\ 22;\\ 30;\\ 25$. Determine the range, the quartiles, the IQR and the semi-interquartile range.",
+      "steps": [
+        "Order: $17;\\ 19;\\ 22;\\ 23;\\ 25;\\ 26;\\ 28;\\ 30;\\ 31;\\ 35;\\ 40$ ($n = 11$).",
+        "Range $= 40 - 17 = 23$.",
+        "Median: the 6th value, so $Q_2 = 26$.",
+        "Lower half (5 values before the median): $17;\\ 19;\\ 22;\\ 23;\\ 25$, so $Q_1 = 22$.",
+        "Upper half (5 values after the median): $28;\\ 30;\\ 31;\\ 35;\\ 40$, so $Q_3 = 31$.",
+        "IQR $= 31 - 22 = 9$; semi-interquartile range $= \\dfrac{9}{2} = 4{,}5$."
+      ],
+      "answer": "Range $= 23$; $Q_1 = 22$, $Q_2 = 26$, $Q_3 = 31$; IQR $= 9$; semi-IQR $= 4{,}5$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5: quartiles when n is even",
+      "problem": "Find $Q_1$ and $Q_3$ for the homework times in Worked example 2: $4;\\ 7;\\ 7;\\ 8;\\ 10;\\ 12;\\ 13;\\ 15;\\ 16;\\ 21$.",
+      "steps": [
+        "$n = 10$ is even, so the median ($11$) lies between the 5th and 6th values and the data splits exactly into two halves of 5.",
+        "Lower half: $4;\\ 7;\\ 7;\\ 8;\\ 10$, so $Q_1 = 7$.",
+        "Upper half: $12;\\ 13;\\ 15;\\ 16;\\ 21$, so $Q_3 = 15$.",
+        "IQR $= 15 - 7 = 8$ minutes."
+      ],
+      "answer": "$Q_1 = 7$, $Q_3 = 15$, IQR $= 8$"
+    },
+
+    { "type": "heading", "text": "The five-number summary and box-and-whisker diagrams" },
+    { "type": "definition", "term": "Five-number summary", "text": "The five values minimum, $Q_1$, median, $Q_3$ and maximum, written in this order. Together they describe the centre and the spread of the data." },
+    { "type": "paragraph", "text": "A **box-and-whisker diagram** (box plot) is a picture of the five-number summary drawn above a number line with an even scale. The **box** stretches from $Q_1$ to $Q_3$ with a vertical line at the median, and the **whiskers** stretch from the box out to the minimum and maximum. The box contains the middle $50\\%$ of the data; each whisker represents about $25\\%$." },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 140\" font-family=\"sans-serif\" font-size=\"11\"><line x1=\"46\" y1=\"55\" x2=\"86\" y2=\"55\" stroke=\"black\"/><line x1=\"158\" y1=\"55\" x2=\"230\" y2=\"55\" stroke=\"black\"/><line x1=\"46\" y1=\"45\" x2=\"46\" y2=\"65\" stroke=\"black\"/><line x1=\"230\" y1=\"45\" x2=\"230\" y2=\"65\" stroke=\"black\"/><rect x=\"86\" y=\"35\" width=\"72\" height=\"40\" fill=\"none\" stroke=\"black\"/><line x1=\"118\" y1=\"35\" x2=\"118\" y2=\"75\" stroke=\"black\" stroke-width=\"2\"/><text x=\"38\" y=\"30\">min</text><text x=\"80\" y=\"28\">Q₁</text><text x=\"104\" y=\"28\">median</text><text x=\"152\" y=\"28\">Q₃</text><text x=\"220\" y=\"30\">max</text><line x1=\"30\" y1=\"100\" x2=\"270\" y2=\"100\" stroke=\"black\"/><line x1=\"30\" y1=\"96\" x2=\"30\" y2=\"104\" stroke=\"black\"/><line x1=\"70\" y1=\"96\" x2=\"70\" y2=\"104\" stroke=\"black\"/><line x1=\"110\" y1=\"96\" x2=\"110\" y2=\"104\" stroke=\"black\"/><line x1=\"150\" y1=\"96\" x2=\"150\" y2=\"104\" stroke=\"black\"/><line x1=\"190\" y1=\"96\" x2=\"190\" y2=\"104\" stroke=\"black\"/><line x1=\"230\" y1=\"96\" x2=\"230\" y2=\"104\" stroke=\"black\"/><line x1=\"270\" y1=\"96\" x2=\"270\" y2=\"104\" stroke=\"black\"/><text x=\"24\" y=\"118\">15</text><text x=\"64\" y=\"118\">20</text><text x=\"104\" y=\"118\">25</text><text x=\"144\" y=\"118\">30</text><text x=\"184\" y=\"118\">35</text><text x=\"224\" y=\"118\">40</text><text x=\"264\" y=\"118\">45</text><text x=\"110\" y=\"135\">push-ups</text></svg>",
+      "caption": "Box-and-whisker diagram of the push-up data: minimum 17, Q₁ = 22, median 26, Q₃ = 31, maximum 40."
+    },
+    { "type": "callout", "label": "Exam tip", "text": "When you draw a box plot, use a ruler, draw an evenly scaled number line with a label and units, and make sure the box and whiskers line up exactly with the five values." },
+
+    { "type": "heading", "text": "Describing the shape of data: symmetry and skewness" },
+    { "type": "paragraph", "text": "The position of the median inside the box, and the lengths of the whiskers, tell us about the **shape** of the distribution." },
+    {
+      "type": "table",
+      "caption": "Symmetric and skewed data",
+      "headers": ["Shape", "What the box plot looks like", "Mean and median"],
+      "rows": [
+        ["Symmetric", "median in the middle of the box; whiskers about the same length", "mean ≈ median"],
+        ["Skewed right (positively skewed)", "median closer to $Q_1$; longer whisker on the right; a tail of large values", "mean > median"],
+        ["Skewed left (negatively skewed)", "median closer to $Q_3$; longer whisker on the left; a tail of small values", "mean < median"]
+      ]
+    },
+    { "type": "paragraph", "text": "For the push-up data, $Q_2 - Q_1 = 26 - 22 = 4$ and $Q_3 - Q_2 = 31 - 26 = 5$, and the right whisker ($40 - 31 = 9$) is longer than the left whisker ($22 - 17 = 5$). The data is therefore slightly **skewed to the right**. As expected, the mean $\\dfrac{296}{11} \\approx 26{,}9$ is a little larger than the median $26$." },
+    { "type": "callout", "label": "Remember", "text": "The direction of the skew is the direction of the **long tail**, not the side where most of the data is bunched up. \"Skewed right\" means the long whisker points to the right (towards the larger values)." },
+
+    { "type": "heading", "text": "Comparing data sets" },
+    { "type": "paragraph", "text": "Two box plots drawn on the same number line make comparison easy. Compare the **centre** (medians), the **spread** (ranges and IQRs) and the **shape** (skewness)." },
+    {
+      "type": "example",
+      "title": "Worked example 6: comparing two classes",
+      "problem": "The five-number summaries of a test (out of 100) for two Grade 10 classes are:\nClass A: $32;\\ 48;\\ 55;\\ 61;\\ 78$\nClass B: $40;\\ 52;\\ 58;\\ 63;\\ 71$\nCompare the performance of the two classes.",
+      "steps": [
+        "Centre: Class B has the higher median ($58$ compared with $55$), so a typical learner in Class B scored a little higher.",
+        "Spread: Class A range $= 78 - 32 = 46$ and IQR $= 61 - 48 = 13$. Class B range $= 71 - 40 = 31$ and IQR $= 63 - 52 = 11$.",
+        "Class B's marks are less spread out, so Class B performed more **consistently**. Class A had both the highest and the lowest mark."
+      ],
+      "answer": "Class B performed slightly better on average and more consistently."
+    },
+
+    { "type": "heading", "text": "Outliers and choosing the best measure" },
+    { "type": "definition", "term": "Outlier", "text": "A data value that is much larger or much smaller than the rest of the data. An outlier may be a recording mistake, or a genuine but unusual value." },
+    { "type": "paragraph", "text": "Outliers pull the **mean** and the **range** strongly towards them. The **median**, **mode** and **IQR** depend on the positions of values in the ordered list, so they hardly change." },
+    {
+      "type": "example",
+      "title": "Worked example 7: the effect of an outlier",
+      "problem": "The monthly salaries at a small business in Polokwane are: R6 500; R7 000; R7 200; R7 500; R8 000; R45 000 (the owner). Calculate the mean and median salary, and decide which better describes a typical salary.",
+      "steps": [
+        "Mean $= \\dfrac{6\\,500 + 7\\,000 + 7\\,200 + 7\\,500 + 8\\,000 + 45\\,000}{6} = \\dfrac{81\\,200}{6} = \\text{R}13\\,533{,}33$.",
+        "Median $= \\dfrac{7\\,200 + 7\\,500}{2} = \\text{R}7\\,350$.",
+        "Five of the six people earn less than R8 000, yet the mean is above R13 500 because of the outlier R45 000."
+      ],
+      "answer": "The median (R7 350) is the better description of a typical salary."
+    },
+    {
+      "type": "table",
+      "caption": "Choosing an appropriate measure",
+      "headers": ["Measure", "Best used when", "Weakness"],
+      "rows": [
+        ["Mean", "data is fairly symmetric with no outliers", "strongly affected by outliers"],
+        ["Median", "data is skewed or has outliers (e.g. salaries, house prices)", "ignores the actual sizes of most values"],
+        ["Mode", "you need the most common value (e.g. shoe size to stock)", "may not exist or may not be near the centre"],
+        ["Range", "a quick idea of total spread", "uses only the two most extreme values"],
+        ["IQR", "spread of skewed data or data with outliers", "ignores the top and bottom 25%"]
+      ]
+    },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "Always order the data first.",
+        "Mean $= \\dfrac{\\sum x}{n}$; median is the middle value (position $\\frac{n+1}{2}$); mode is the most frequent value.",
+        "Grouped data: estimated mean $= \\dfrac{\\sum f \\times \\text{midpoint}}{n}$; the modal class has the highest frequency; use cumulative frequency to find the class containing the median.",
+        "Range $=$ maximum $-$ minimum.",
+        "$Q_1$ and $Q_3$ are the medians of the lower and upper halves; IQR $= Q_3 - Q_1$; semi-IQR $= \\frac{1}{2}(Q_3 - Q_1)$.",
+        "The $p$th percentile has about $p\\%$ of the data below it; $Q_1$, $Q_2$ and $Q_3$ are the 25th, 50th and 75th percentiles.",
+        "Five-number summary: minimum, $Q_1$, median, $Q_3$, maximum; drawn as a box-and-whisker diagram.",
+        "Median closer to $Q_1$ and long right whisker: skewed right (mean > median). Median closer to $Q_3$ and long left whisker: skewed left (mean < median).",
+        "Outliers strongly affect the mean and range; use the median and IQR for skewed data or data with outliers."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which measure of central tendency is most affected by an outlier?",
+      "options": ["The median", "The mode", "The mean", "The lower quartile"],
+      "answer": 2,
+      "explanation": "The mean uses the actual size of every value, so one very large or very small value pulls it strongly. The median, mode and quartiles depend on positions or frequencies."
+    },
+    {
+      "id": "q2",
+      "type": "truefalse",
+      "prompt": "The median of $3;\\ 8;\\ 5;\\ 10;\\ 4$ is $5$.",
+      "answer": true,
+      "explanation": "Ordered: $3;\\ 4;\\ 5;\\ 8;\\ 10$. The middle (3rd) value is $5$."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "Every data set has exactly one mode.",
+      "answer": false,
+      "explanation": "A data set can have no mode, one mode, or more than one mode (for example, $2;\\ 2;\\ 5;\\ 5;\\ 7$ has modes $2$ and $5$)."
+    },
+    {
+      "id": "q4",
+      "type": "numeric",
+      "prompt": "Calculate the mean of $12;\\ 7;\\ 9;\\ 15;\\ 10;\\ 13$.",
+      "answer": 11,
+      "tolerance": 0.001,
+      "explanation": "Sum $= 66$ and $n = 6$, so $\\bar{x} = \\dfrac{66}{6} = 11$."
+    },
+    {
+      "id": "q5",
+      "type": "numeric",
+      "prompt": "Determine the median of $21;\\ 14;\\ 18;\\ 30;\\ 25;\\ 16$.",
+      "answer": 19.5,
+      "tolerance": 0.001,
+      "explanation": "Ordered: $14;\\ 16;\\ 18;\\ 21;\\ 25;\\ 30$. With $n = 6$ the median is the mean of the 3rd and 4th values: $\\dfrac{18 + 21}{2} = 19{,}5$."
+    },
+    {
+      "id": "q6",
+      "type": "match",
+      "prompt": "Match each term with its description.",
+      "marks": 5,
+      "pairs": [
+        { "left": "Range", "right": "maximum minus minimum" },
+        { "left": "Interquartile range", "right": "Q₃ minus Q₁" },
+        { "left": "Semi-interquartile range", "right": "half of (Q₃ minus Q₁)" },
+        { "left": "Median", "right": "the middle value of the ordered data" },
+        { "left": "Modal class", "right": "the class with the highest frequency" }
+      ],
+      "explanation": "These are the definitions from the notes. The IQR measures the spread of the middle 50% of the data."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "prompt": "Which list shows the five-number summary in the correct order?",
+      "options": [
+        "Minimum, $Q_1$, median, $Q_3$, maximum",
+        "Minimum, mean, median, mode, maximum",
+        "$Q_1$, minimum, median, maximum, $Q_3$",
+        "Minimum, $Q_1$, mean, $Q_3$, maximum"
+      ],
+      "answer": 0,
+      "explanation": "The five-number summary is minimum, lower quartile, median, upper quartile, maximum. It uses the median, not the mean."
+    },
+    {
+      "id": "q8",
+      "type": "numeric",
+      "prompt": "Determine the interquartile range of: $14;\\ 9;\\ 22;\\ 5;\\ 18;\\ 11;\\ 25;\\ 12;\\ 8;\\ 20;\\ 15$.",
+      "answer": 11,
+      "tolerance": 0.001,
+      "explanation": "Ordered: $5;\\ 8;\\ 9;\\ 11;\\ 12;\\ 14;\\ 15;\\ 18;\\ 20;\\ 22;\\ 25$. Median $= 14$ (6th value). Lower half $5;\\ 8;\\ 9;\\ 11;\\ 12$ gives $Q_1 = 9$; upper half $15;\\ 18;\\ 20;\\ 22;\\ 25$ gives $Q_3 = 20$. IQR $= 20 - 9 = 11$."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "In a box-and-whisker diagram the median is much closer to $Q_1$ than to $Q_3$, and the right whisker is much longer than the left whisker. The data is:",
+      "options": ["symmetric", "skewed left (negatively skewed)", "evenly spread", "skewed right (positively skewed)"],
+      "answer": 3,
+      "explanation": "The long tail points to the right (towards larger values), so the data is skewed right. In this case the mean is usually greater than the median."
+    },
+    {
+      "id": "q10",
+      "type": "short",
+      "prompt": "What is the name of the value below which about $25\\%$ of ordered data lies?",
+      "answers": ["lower quartile", "the lower quartile", "first quartile", "the first quartile", "Q1", "Q₁", "25th percentile", "the 25th percentile"],
+      "explanation": "The lower (first) quartile $Q_1$, which is also the 25th percentile."
+    },
+    {
+      "id": "q11",
+      "type": "numeric",
+      "prompt": "The masses (in kg) of 25 Grade 10 learners are grouped as follows:\n$40 \\le m < 50$: 4 learners\n$50 \\le m < 60$: 9 learners\n$60 \\le m < 70$: 8 learners\n$70 \\le m < 80$: 4 learners\nEstimate the mean mass, correct to one decimal place.",
+      "answer": 59.8,
+      "tolerance": 0.05,
+      "unit": "kg",
+      "explanation": "Midpoints: $45;\\ 55;\\ 65;\\ 75$. $\\sum f \\times \\text{midpoint} = 4(45) + 9(55) + 8(65) + 4(75) = 180 + 495 + 520 + 300 = 1\\,495$. Estimated mean $= \\dfrac{1\\,495}{25} = 59{,}8$ kg."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "For the mass data in the previous question (25 learners), which class contains the median?",
+      "options": ["$40 \\le m < 50$", "$50 \\le m < 60$", "$60 \\le m < 70$", "$70 \\le m < 80$"],
+      "answer": 1,
+      "explanation": "The median is the $\\frac{25 + 1}{2} = 13$th value. Cumulative frequencies are $4;\\ 13;\\ 21;\\ 25$, so the 13th value is the last one in $50 \\le m < 60$."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 8,
+      "prompt": "Fifteen learners recorded how many minutes it takes them to travel to school:\n$25;\\ 12;\\ 5;\\ 45;\\ 18;\\ 30;\\ 10;\\ 22;\\ 60;\\ 12;\\ 8;\\ 35;\\ 20;\\ 15;\\ 25$\n(a) Write down the five-number summary. (5)\n(b) Calculate the interquartile range. (1)\n(c) Describe the skewness of the data. Give a reason. (2)",
+      "memo": "Ordered: $5;\\ 8;\\ 10;\\ 12;\\ 12;\\ 15;\\ 18;\\ 20;\\ 22;\\ 25;\\ 25;\\ 30;\\ 35;\\ 45;\\ 60$\n(a) Minimum $= 5$ ✓ (1)\n$Q_1 = 12$ (median of the lower 7 values) ✓ (1)\nMedian $= 20$ (8th value) ✓ (1)\n$Q_3 = 30$ (median of the upper 7 values) ✓ (1)\nMaximum $= 60$ ✓ (1)\n(b) IQR $= 30 - 12 = 18$ minutes ✓ (1)\n(c) Skewed right (positively skewed) ✓ (1)\nReason: the median is closer to $Q_1$ ($20 - 12 = 8$) than to $Q_3$ ($30 - 20 = 10$), and the right whisker ($60 - 30 = 30$) is much longer than the left whisker ($12 - 5 = 7$) ✓ (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 6,
+      "prompt": "The prices of seven houses sold in a suburb (in thousands of rand) were:\n$850;\\ 920;\\ 980;\\ 1\\,050;\\ 1\\,100;\\ 1\\,150;\\ 4\\,800$\n(a) Calculate the mean price. (2)\n(b) Determine the median price. (2)\n(c) An estate agent advertises that the \"average house price\" in the suburb is about R1,55 million. Explain why this is misleading and state which measure gives a better picture of a typical price. (2)",
+      "memo": "(a) Mean $= \\dfrac{850 + 920 + 980 + 1\\,050 + 1\\,100 + 1\\,150 + 4\\,800}{7} = \\dfrac{10\\,850}{7}$ ✓ (1)\n$= 1\\,550$ thousand, i.e. R1 550 000 ✓ (1)\n(b) The data is already ordered and $n = 7$, so the median is the 4th value ✓ (1)\nMedian $= 1\\,050$ thousand, i.e. R1 050 000 ✓ (1)\n(c) The mean is pulled up by the outlier (R4 800 000); six of the seven houses cost less than R1 550 000 ✓ (1)\nThe median (R1 050 000) is a better measure of a typical price ✓ (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 6,
+      "prompt": "The five-number summaries of the marks (out of 100) for two Grade 10 Mathematics classes are:\nClass A: $28;\\ 45;\\ 58;\\ 66;\\ 85$\nClass B: $35;\\ 52;\\ 60;\\ 64;\\ 79$\n(a) Calculate the interquartile range of each class. (2)\n(b) Which class performed more consistently? Give a reason. (2)\n(c) Describe the skewness of the Class A data. Give a reason. (2)",
+      "memo": "(a) Class A: IQR $= 66 - 45 = 21$ ✓ (1)\nClass B: IQR $= 64 - 52 = 12$ ✓ (1)\n(b) Class B ✓ (1)\nIts IQR (12) and range ($79 - 35 = 44$) are smaller than those of Class A (IQR 21, range 57), so its marks are less spread out ✓ (1)\n(c) Skewed left (negatively skewed) ✓ (1)\nThe median is closer to $Q_3$ ($66 - 58 = 8$) than to $Q_1$ ($58 - 45 = 13$) ✓ (1)"
+    }
+  ]
+}

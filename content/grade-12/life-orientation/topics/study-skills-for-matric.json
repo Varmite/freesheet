@@ -1,0 +1,56 @@
+{
+  "id": "study-skills-for-matric",
+  "title": "Study Skills and Exam Preparation for Matric",
+  "term": 1,
+  "summary": "Planning a matric study timetable, evidence-based study strategies, understanding question verbs and cognitive levels, exam-writing techniques, and managing exam stress.",
+  "notes": [
+    { "type": "heading", "text": "Planning the year" },
+    { "type": "list", "items": [
+      "List all assessment dates: tests, assignments, prelims and final exams.",
+      "Draw up a **term plan** and a **weekly timetable** with fixed study time for each subject.",
+      "Plan revision in cycles: learn, review after a day, a week and a month (**spaced practice**).",
+      "Build in rest, exercise and sleep."
+    ] },
+    { "type": "heading", "text": "Effective strategies" },
+    { "type": "table", "headers": ["Strategy", "How"], "rows": [
+      ["Retrieval practice", "Test yourself without notes; use past papers and flash cards"],
+      ["Spaced practice", "Revisit topics several times over weeks"],
+      ["Interleaving", "Mix question types in one session"],
+      ["Elaboration", "Explain why and how; connect ideas"],
+      ["Dual coding", "Combine words with diagrams, timelines and mind maps"]
+    ] },
+    { "type": "heading", "text": "Cognitive levels and question verbs" },
+    { "type": "table", "headers": ["Level", "Typical verbs", "What is expected"], "rows": [
+      ["Knowledge / recall", "List, name, define, state", "Short, accurate facts"],
+      ["Comprehension", "Explain, describe, summarise", "Show understanding in your own words"],
+      ["Application", "Apply, calculate, solve, demonstrate", "Use knowledge in a new situation"],
+      ["Analysis and evaluation", "Analyse, compare, critically discuss, evaluate, justify", "Break down information, weigh evidence and give a reasoned judgement"]
+    ] },
+    { "type": "heading", "text": "In the exam" },
+    { "type": "list", "ordered": true, "items": [
+      "Use reading time to plan: note marks and choose questions where there is a choice.",
+      "Budget time by marks: in a 3-hour paper worth 150 marks, allow about 1,2 minutes per mark.",
+      "Answer what is asked; underline key words.",
+      "Show working and structure long answers with an introduction, body and conclusion.",
+      "Leave time to check."
+    ] },
+    { "type": "callout", "label": "Exam stress", "text": "Prepare early, sleep well before exams, eat breakfast, arrive early, and use slow breathing if you panic. If a question seems impossible, move on and return to it later." }
+  ],
+  "questions": [
+    { "id": "retrieval", "type": "mcq", "prompt": "Testing yourself without looking at notes is called…", "options": ["re-reading", "retrieval practice", "highlighting", "dual coding"], "answer": 1 },
+    { "id": "levels", "type": "match", "marks": 4, "prompt": "Match each verb to its cognitive level.", "pairs": [
+      { "left": "Define", "right": "Knowledge" },
+      { "left": "Explain", "right": "Comprehension" },
+      { "left": "Calculate", "right": "Application" },
+      { "left": "Critically discuss", "right": "Evaluation" }
+    ] },
+    { "id": "spaced", "type": "truefalse", "prompt": "Spaced practice means revising a topic several times over a period of weeks.", "answer": true },
+    { "id": "dual", "type": "short", "prompt": "What is the strategy of combining words with diagrams and visuals called? (two words)", "answers": ["dual coding"] },
+    { "id": "timetable", "type": "open", "marks": 3, "prompt": "Give THREE features of a good matric study timetable.", "memo": "Any three (1 each): includes all subjects; based on assessment dates; spaced revision; realistic; includes breaks, sleep and exercise; reviewed regularly" },
+    { "id": "evaluate", "type": "open", "marks": 2, "prompt": "What is expected in an answer to an 'evaluate' question?", "memo": "✓ Weigh up evidence or arguments (1)\n✓ and give a reasoned judgement or conclusion (1)" },
+    { "id": "exam-tech", "type": "open", "marks": 3, "prompt": "Describe THREE exam-writing techniques.", "memo": "Any three (1 each): plan during reading time; budget time by marks; underline key words; answer what is asked; structure long answers; check work" },
+    { "id": "stuck", "type": "open", "marks": 2, "prompt": "What should you do if you cannot answer a question in an exam?", "memo": "✓ Move on to other questions so you do not lose time (1)\n✓ Return to it later; write what you know for partial marks (1)" },
+    { "id": "interleave", "type": "open", "marks": 2, "prompt": "Explain interleaving and why it helps in Mathematics.", "memo": "✓ Mixing different types of problems in one session (1)\n✓ It trains you to choose the right method, as in an exam (1)" },
+    { "id": "prelims", "type": "open", "marks": 2, "prompt": "Why are preliminary examinations important for Grade 12 learners?", "memo": "✓ They give practice under exam conditions (1)\n✓ and show weak areas to focus on before the final exams (1)" }
+  ]
+}

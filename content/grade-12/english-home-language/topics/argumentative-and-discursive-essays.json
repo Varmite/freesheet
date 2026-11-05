@@ -1,0 +1,464 @@
+{
+  "id": "argumentative-and-discursive-essays",
+  "title": "Argumentative and Discursive Essays",
+  "term": 2,
+  "summary": "Learn to argue one clear position convincingly or discuss all sides of an issue fairly, using strong thesis statements, well-built paragraphs, sound logic and a formal register.",
+  "notes": [
+    { "type": "heading", "text": "Where these essays fit in Paper 3" },
+    { "type": "paragraph", "text": "In **Paper 3 (Writing), Section A**, you choose **one** essay topic from a list and write an essay of **400-450 words** for **50 marks**. Some topics are labelled (for example 'argumentative' or 'discursive'), but many are simply a statement, a question or a picture. You must then decide which type of essay best suits the topic and stick to that type from beginning to end.\n\nArgumentative and discursive essays are both **essays about an issue**. The difference lies in what you do with the issue: an argumentative essay **takes a side and defends it**, while a discursive essay **lays out all sides fairly and then weighs them up**." },
+    {
+      "type": "table",
+      "caption": "How the HL essay is marked (CAPS essay rubric, 50 marks)",
+      "headers": ["Criterion", "Marks", "What the examiner looks for"],
+      "rows": [
+        ["Content and planning", "30", "Relevance to the topic, depth and originality of ideas, a clear stance (argumentative) or fair balance (discursive), convincing evidence, mature insight and a planned, coherent line of thought"],
+        ["Language, style and editing", "15", "Formal register, precise vocabulary, varied sentence structures, effective rhetorical devices, accurate grammar, spelling and punctuation"],
+        ["Structure", "5", "A clear introduction, well-developed body paragraphs with topic sentences, logical sequencing with connectors, and a conclusion; length within 400-450 words"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Content and planning carries 30 of the 50 marks. A carefully planned essay with a few well-developed arguments scores far better than a long list of shallow points. Submit your plan (mind-map or outline) with your essay, and give the essay a title." },
+    { "type": "heading", "text": "Argumentative versus discursive" },
+    { "type": "definition", "term": "Argumentative essay", "text": "An essay in which the writer takes **one clear stance** on a debatable issue and tries to **convince** the reader to agree, using reasons, evidence and persuasive techniques. Opposing views are raised only so that they can be rebutted." },
+    { "type": "definition", "term": "Discursive essay", "text": "An essay that **discusses an issue from all (or both) sides** in a balanced, objective way. Each viewpoint is presented fairly with its own reasons and evidence. The writer usually keeps a neutral tone in the body and may weigh up the evidence or give a measured, reasoned view only in the conclusion." },
+    {
+      "type": "table",
+      "caption": "Comparing the two essay types",
+      "headers": ["Feature", "Argumentative", "Discursive"],
+      "rows": [
+        ["Purpose", "To persuade the reader to accept one position", "To inform the reader by exploring different positions fairly"],
+        ["Stance", "One clear stance, stated in the introduction and held throughout", "No fixed stance in the body; a balanced weighing-up in the conclusion"],
+        ["Thesis", "Arguable claim: 'X should happen because...'", "Statement of the issue and its complexity: 'There are strong arguments on both sides...'"],
+        ["Opposing views", "Raised briefly, then conceded in part and rebutted", "Given equal space and treated with respect"],
+        ["Tone", "Confident, assertive, sometimes passionate", "Neutral, objective, measured"],
+        ["Typical language", "Persuasive and rhetorical devices; first person ('I firmly believe') is acceptable", "Third person and impersonal phrases ('It is often argued that...', 'Supporters claim...')"],
+        ["Conclusion", "Restates the stance forcefully; may end with a call to action", "Summarises both sides and weighs the evidence; may offer a cautious, reasoned judgement"]
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Two things cost learners marks: (1) a 'discursive' essay that slowly turns into one-sided arguing, and (2) an 'argumentative' essay that sits on the fence ('There are good and bad points...'). Decide on the type before you start writing and check every paragraph against that decision." },
+    {
+      "type": "example",
+      "title": "Worked example 1: Deciding which essay type a topic needs",
+      "problem": "Decide whether each topic calls for an argumentative or a discursive essay:\n(a) 'Social media does more harm than good to teenagers. Do you agree?'\n(b) 'Discuss the advantages and disadvantages of a four-day school week.'\n(c) 'Load-shedding has taught South Africans to be resilient.'",
+      "steps": [
+        "Look for the **instruction words**. 'Do you agree?' asks for **your** opinion, so (a) is **argumentative**. You must agree or disagree and defend that position.",
+        "'Discuss the advantages and disadvantages' asks you to explore **both sides**, so (b) is **discursive**. A neutral, balanced treatment is required.",
+        "Topic (c) is a bare statement. It can be treated either way: you could argue for or against it (argumentative), or explore both the ways people have adapted and the damage it has done (discursive). Choose the type that lets you write most convincingly, then **signal the type clearly in your introduction**."
+      ],
+      "answer": "(a) argumentative; (b) discursive; (c) either, provided the chosen type is handled consistently."
+    },
+    { "type": "heading", "text": "The thesis statement" },
+    { "type": "definition", "term": "Thesis statement", "text": "One or two sentences, usually at the end of the introduction, that state the writer's main position (argumentative) or the central issue and approach (discursive). Every body paragraph should support or develop the thesis." },
+    { "type": "paragraph", "text": "A strong argumentative thesis is **arguable** (a reasonable person could disagree), **specific** (it names the issue precisely) and often **previews the main reasons**. A fact ('Many learners own cellphones') is not a thesis because nobody can argue against it. An announcement ('In this essay I will write about cellphones') is not a thesis because it takes no position." },
+    {
+      "type": "table",
+      "caption": "Weak and strong thesis statements",
+      "headers": ["Weak", "Why it is weak", "Strong"],
+      "rows": [
+        ["In this essay I will discuss school uniforms.", "Announces the topic but takes no position", "School uniforms should remain compulsory because they reduce peer pressure, cut costs for families and build a sense of belonging."],
+        ["Taxis are an important part of South African life.", "A fact, not an arguable claim", "The minibus-taxi industry should receive government subsidies so that commuters pay fair fares and drivers can be properly regulated."],
+        ["Some people like the idea of a sugar tax and some do not.", "Vague; neither a clear stance nor a clear focus", "(Discursive) A higher sugar tax raises difficult questions about public health, personal freedom and the cost of living, and each side of the debate deserves careful consideration."]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: Turning a topic into a thesis",
+      "problem": "Topic: 'Should learners who fail Grade 12 be allowed to rewrite only the subjects they failed?' Write an argumentative thesis.",
+      "steps": [
+        "Take a side: Yes, they should be allowed to rewrite only the failed subjects.",
+        "Brainstorm two or three reasons: it saves time and money; it keeps motivated learners in the system; it recognises what they have already achieved.",
+        "Combine the stance and reasons into one clear sentence in a formal register."
+      ],
+      "answer": "Learners who fail matric should be allowed to rewrite only the subjects they failed, because this recognises what they have already achieved, saves families time and money, and keeps motivated young people working towards a qualification."
+    },
+    { "type": "heading", "text": "Building a strong body paragraph" },
+    { "type": "paragraph", "text": "Each body paragraph should develop **one main idea**. A useful pattern is **TEEL** (sometimes called PEEL):" },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Topic sentence** (or Point): states the paragraph's main idea in one sentence and links it to the thesis.",
+        "**Explanation**: unpacks the idea; tells the reader why or how it is true.",
+        "**Evidence**: supports the idea with an example, a fact, an expert view, an experience or logical reasoning.",
+        "**Link**: shows how the paragraph supports the thesis, or leads smoothly into the next paragraph."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: A TEEL paragraph analysed",
+      "problem": "Thesis: 'Schools should start the day at 08:30 instead of 07:30.' Analyse this body paragraph:\n\n'Firstly, a later start would allow teenagers to get the sleep their bodies need. Research on adolescent sleep has found that teenagers' body clocks shift during puberty, so they naturally fall asleep later at night. A learner who must catch a taxi at 06:00 to reach school by 07:30 may therefore be sitting in a Maths lesson after only six hours of sleep. It is not surprising that tired learners struggle to concentrate. Starting an hour later would thus give learners a fair chance to arrive alert and ready to learn.'",
+      "steps": [
+        "**Topic sentence**: 'Firstly, a later start would allow teenagers to get the sleep their bodies need.' The connector 'Firstly' signals the first argument, and the sentence clearly supports the thesis.",
+        "**Explanation**: 'teenagers' body clocks shift during puberty, so they naturally fall asleep later' explains why sleep is a problem.",
+        "**Evidence**: the reference to sleep research and the concrete example of the learner catching a taxi at 06:00 make the point real and relatable.",
+        "**Link**: 'Starting an hour later would thus give learners a fair chance...' returns to the thesis. The connector 'thus' shows a logical conclusion."
+      ],
+      "answer": "The paragraph has all four elements, one clear idea, logical connectors (Firstly, therefore, thus) and a formal register."
+    },
+    { "type": "heading", "text": "Using evidence well" },
+    {
+      "type": "list",
+      "items": [
+        "**Examples**: specific, concrete cases ('a learner who travels 20 km by taxi each morning').",
+        "**Facts and general knowledge**: information you know to be accurate and up to date (for example, South Africa now has twelve official languages, since South African Sign Language was added in 2023). Check that your 'facts' really are facts.",
+        "**Expert or authoritative opinion**: 'Health professionals warn that...'. Do not invent quotations from real, named people.",
+        "**Personal experience or observation**: acceptable in an argumentative essay if it is relevant and not over-used.",
+        "**Logical reasoning**: cause and effect ('If fares rise, fewer workers can afford to travel, so productivity falls')."
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Do not make up precise statistics ('87,3% of learners hate homework'). Examiners notice invented figures and they weaken your credibility. Use general, accurate statements ('many learners', 'a significant number of households') or examples you know to be true." },
+    { "type": "heading", "text": "Anticipating and rebutting counter-arguments" },
+    { "type": "paragraph", "text": "A convincing argumentative essay does not pretend that the other side does not exist. It **anticipates** the strongest objections and **rebuts** them. This shows maturity and makes your stance harder to attack. A rebuttal paragraph usually has three moves:" },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**State the counter-argument fairly**: 'Critics argue that...', 'Opponents claim that...'",
+        "**Concede what is reasonable**: 'Admittedly...', 'It is true that...', 'This concern deserves to be taken seriously.'",
+        "**Rebut it**: show why it is weaker than your position, using a reason or evidence: 'However...', 'Nevertheless...', 'Yet this overlooks...'"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 4: Writing a rebuttal",
+      "problem": "Thesis: 'Cellphones should be allowed in classrooms.' Write a rebuttal of the view that phones distract learners.",
+      "steps": [
+        "State the counter-argument: 'Opponents of cellphones in class argue that learners will simply scroll through social media instead of working.'",
+        "Concede: 'Admittedly, a phone can be a powerful distraction, and some learners will be tempted to misuse it.'",
+        "Rebut with reasoning: 'However, the same is true of a doodle on a notebook or a whispered conversation, and schools do not ban paper or speech. Clear rules, such as keeping phones face down until the teacher calls for them, address misuse without removing a valuable learning tool.'"
+      ],
+      "answer": "The finished paragraph treats the opposing view with respect, concedes a reasonable point and then shows why the writer's stance still stands."
+    },
+    { "type": "heading", "text": "Persuasive and rhetorical devices" },
+    { "type": "paragraph", "text": "Persuasion rests on three classic appeals: **logos** (appeal to logic and evidence), **ethos** (appeal to credibility and trustworthiness) and **pathos** (appeal to emotion). Strong essays use all three, but rely mostly on logos." },
+    {
+      "type": "table",
+      "caption": "Useful devices for argumentative essays",
+      "headers": ["Device", "What it does", "Example"],
+      "rows": [
+        ["Rhetorical question", "A question asked for effect, not for an answer; it makes the reader think", "Must we wait until another child falls into a pit toilet before we act?"],
+        ["Rule of three (tricolon)", "Three parallel items create rhythm and a sense of completeness", "Safe schools, decent clinics and reliable electricity are not luxuries."],
+        ["Emotive language", "Words chosen to stir feelings", "Children shiver in classrooms with broken windows."],
+        ["Inclusive pronouns", "'We', 'us' and 'our' make the reader feel part of the cause", "Our communities deserve better."],
+        ["Repetition / anaphora", "Repeating words at the start of clauses for emphasis", "It is time to listen. It is time to act. It is time to change."],
+        ["Antithesis", "Contrasting ideas placed side by side", "Community service is not a punishment; it is an opportunity."],
+        ["Appeal to authority", "Citing a credible source", "Doctors and dentists warn that sugary drinks contribute to tooth decay and diabetes."],
+        ["Direct address", "Speaking to the reader as 'you'", "Imagine you had to walk 10 km to school every morning."],
+        ["Anecdote", "A brief, relevant story that illustrates a point", "When the library at my old school closed, reading for pleasure stopped."]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Use devices with purpose and restraint. Two or three well-placed rhetorical questions are effective; a question in every paragraph becomes irritating. In a discursive essay, keep emotive language to a minimum, because it undermines your neutral tone." },
+    { "type": "heading", "text": "Logical connectors" },
+    { "type": "paragraph", "text": "Connectors (also called discourse markers or transition words) show the logical relationship between ideas. They are essential for coherence and are rewarded under both Structure and Language." },
+    {
+      "type": "table",
+      "caption": "Connectors grouped by function",
+      "headers": ["Function", "Connectors"],
+      "rows": [
+        ["Sequencing", "Firstly, secondly, furthermore, finally, to begin with"],
+        ["Adding", "Moreover, in addition, furthermore, besides, similarly"],
+        ["Contrasting", "However, on the other hand, conversely, whereas, nevertheless"],
+        ["Conceding", "Admittedly, although, granted, it is true that, while"],
+        ["Cause and effect", "Therefore, consequently, as a result, thus, hence"],
+        ["Illustrating", "For example, for instance, such as, to illustrate"],
+        ["Concluding", "In conclusion, ultimately, all things considered, on balance"]
+      ]
+    },
+    { "type": "heading", "text": "Avoiding logical fallacies" },
+    { "type": "definition", "term": "Logical fallacy", "text": "A flaw in reasoning that makes an argument appear convincing when it is actually unsound. Using fallacies weakens your essay; spotting them in other people's arguments strengthens your rebuttals." },
+    {
+      "type": "table",
+      "caption": "Common fallacies to avoid",
+      "headers": ["Fallacy", "What it is", "Example", "How to avoid it"],
+      "rows": [
+        ["Ad hominem", "Attacking the person instead of their argument", "We should ignore the principal's plan; she doesn't even live in this town.", "Respond to the reasons, not the speaker."],
+        ["Straw man", "Misrepresenting an opponent's view so that it is easier to knock down", "People who support a later school start just want learners to be lazy.", "State the opposing view fairly, in its strongest form."],
+        ["Hasty generalisation", "Drawing a broad conclusion from too few examples", "Two of my friends failed after using AI tools, so AI ruins everyone's marks.", "Use enough representative evidence; qualify claims with 'many' or 'some'."],
+        ["False dilemma", "Presenting only two options when more exist", "Either we close the tuck shop or we accept that learners will become obese.", "Acknowledge middle-ground options."],
+        ["Slippery slope", "Claiming one step will inevitably lead to a chain of disasters", "If we allow sneakers on Fridays, soon learners will come to school in pyjamas.", "Show the actual link between each step, or drop the claim."],
+        ["Bandwagon", "Claiming something is right because many people do or believe it", "Everyone is vaping, so it can't be that harmful.", "Base claims on evidence, not popularity."]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5: Spotting and fixing a fallacy",
+      "problem": "Identify and correct the fallacy: 'Those who opposed e-tolls were simply people who refused to pay for anything.'",
+      "steps": [
+        "The writer misrepresents the opponents' position: people who opposed e-tolls usually raised specific objections (for example the cost to commuters or the fairness of the system). Reducing their view to 'refusing to pay for anything' makes it easier to dismiss.",
+        "This is a **straw man** fallacy.",
+        "Fix it by stating the opposing view fairly and then responding to it: 'Opponents of e-tolls argue that the system placed an unfair burden on daily commuters who had no alternative routes. While this concern is valid, ...'"
+      ],
+      "answer": "Straw man; correct it by representing the opposing argument accurately before rebutting it."
+    },
+    { "type": "heading", "text": "Formal register" },
+    { "type": "paragraph", "text": "Both essay types require a **formal register**: the language of serious public discussion. This does not mean using long words for their own sake; it means being precise, controlled and respectful." },
+    {
+      "type": "list",
+      "items": [
+        "No slang, SMS language or casual fillers ('like', 'stuff', 'super', 'ASAP', 'lol').",
+        "No contractions ('do not' rather than 'don't').",
+        "Avoid exaggerated punctuation ('!!!') and capital letters for emphasis.",
+        "Prefer precise words: 'many households struggle to afford transport' rather than 'loads of people are battling'.",
+        "In discursive essays, prefer the third person and impersonal phrases ('It could be argued that...'). In argumentative essays, the first person is acceptable but do not overuse 'I think'; 'I firmly believe' once in the introduction is enough.",
+        "Vary sentence length: a short sentence after several long ones creates emphasis."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "Informal to formal",
+      "headers": ["Informal", "Formal"],
+      "rows": [
+        ["Kids these days are glued to their phones.", "Many teenagers spend several hours a day on their phones."],
+        ["The government must sort this out ASAP!!!", "The government should address this problem urgently."],
+        ["It's a no-brainer that recycling is good.", "The benefits of recycling are clear."],
+        ["Loads of people reckon taxis are dodgy.", "Many commuters have concerns about taxi safety."]
+      ]
+    },
+    { "type": "heading", "text": "Structuring the whole essay" },
+    {
+      "type": "table",
+      "caption": "Paragraph plans for a 400-450 word essay",
+      "headers": ["Paragraph", "Argumentative", "Discursive"],
+      "rows": [
+        ["1. Introduction (about 60 words)", "Hook, brief context, thesis stating your stance", "Hook, brief context, statement that the issue is debated and that both sides will be considered"],
+        ["2. Body", "Strongest supporting argument (TEEL)", "First argument FOR"],
+        ["3. Body", "Second supporting argument (TEEL)", "Second argument FOR (or first argument AGAINST, if you alternate)"],
+        ["4. Body", "Counter-argument conceded and rebutted", "Arguments AGAINST, given equal weight"],
+        ["5. Body (optional)", "Third supporting argument, or a second rebuttal", "Further arguments AGAINST"],
+        ["6. Conclusion (about 50 words)", "Restate stance in fresh words, summarise reasons, call to action or memorable final thought", "Summarise both sides, weigh the evidence, give a balanced judgement or a thought-provoking final question"]
+      ]
+    },
+    { "type": "paragraph", "text": "**Effective hooks** for the introduction include a striking scenario ('Picture a clinic where the queue begins before sunrise'), a thought-provoking question, a short anecdote or a bold claim. Avoid dictionary definitions ('The Oxford Dictionary defines...') and clichés ('Since the beginning of time...').\n\n**Effective conclusions** do not simply repeat the introduction word for word and never introduce a brand-new argument. They pull the essay together and leave the reader with something to think about." },
+    { "type": "heading", "text": "A model argumentative essay" },
+    {
+      "type": "passage",
+      "title": "Model essay: A year for the nation (argumentative, about 440 words)",
+      "text": "Picture a clinic in rural Limpopo where the queue begins before sunrise, and a primary school in Khayelitsha where forty learners share a single class reader. Now picture thousands of energetic school-leavers who spend the year after matric at home, unsure of what to do next. South Africa does not lack willing hands; it lacks a system that puts them to work where they are most needed. I firmly believe that a year of paid community service should be compulsory for every school-leaver.\n\nFirstly, community service would give young people what employers repeatedly say they lack: experience. A school-leaver who has spent a year assisting at a clinic, tutoring younger learners or maintaining a community food garden has learnt to arrive on time, follow instructions and solve real problems. No certificate can prove these skills, but a reference from a supervisor can. The year would therefore be an investment in employability rather than a delay.\n\nSecondly, the programme would strengthen communities that are too often left behind. Under-staffed schools, crowded clinics and neglected public spaces could all benefit from extra support. Moreover, when young people work alongside residents from different backgrounds, they begin to understand one another, building the social cohesion that our divided history still makes difficult. A young person who spends a year helping at an old-age home in Soweto is unlikely ever to see the elderly as strangers again.\n\nCritics argue that forcing young people to serve is unfair, especially to those who have already secured a university place or a job. This concern deserves to be taken seriously. However, compulsory does not have to mean inflexible. Learners could defer their service, complete it part-time alongside their studies, or choose a placement linked to their future careers, so that a future engineer might assist a municipal works department. Others claim that the country cannot afford such a scheme. Yet the cost of a generation without skills or hope is far greater than the cost of a modest stipend.\n\nFinally, a shared year of service would give young South Africans something rare: a common experience of building the country rather than waiting for it to change. An earlier generation united to win our freedom; this generation could unite to make that freedom work. Is that not exactly the sense of ownership that our democracy needs?\n\nCompulsory community service is not a punishment; it is an opportunity. It would equip school-leavers with experience, uplift struggling communities and unite a generation around a common purpose. Instead of leaving our young people idle at the gate of adulthood, let us open that gate onto a year of meaningful work."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 6: Why the model essay works",
+      "problem": "Identify the features that would earn the model essay high marks.",
+      "steps": [
+        "**Introduction**: the hook paints two vivid South African scenes (pathos), then the antithesis 'does not lack willing hands; it lacks a system' leads into a clear thesis in the final sentence.",
+        "**Body paragraphs**: each begins with a topic sentence and a sequencing connector (Firstly, Secondly, Finally) and develops one idea with explanation and concrete examples (clinic, tutoring, food garden).",
+        "**Counter-arguments**: paragraph 4 raises two objections (fairness and cost), concedes ('This concern deserves to be taken seriously') and rebuts each ('However...', 'Yet...').",
+        "**Devices**: rule of three ('arrive on time, follow instructions and solve real problems'), rhetorical question, inclusive pronouns ('our democracy'), antithesis in the conclusion.",
+        "**Conclusion**: restates the stance in fresh words, summarises the three reasons and ends with a memorable image (the 'gate of adulthood').",
+        "**Register**: formal throughout, no contractions or slang, no invented statistics."
+      ]
+    },
+    { "type": "heading", "text": "A discursive essay in action" },
+    {
+      "type": "example",
+      "title": "Worked example 7: Planning and opening a discursive essay",
+      "problem": "Topic: 'Should learners be allowed to use artificial intelligence (AI) tools for schoolwork?' Plan a discursive essay and write its introduction and conclusion.",
+      "steps": [
+        "**Arguments for**: AI can explain difficult concepts at a learner's own pace; it can give instant feedback on drafts; learning to use it responsibly prepares learners for the workplace.",
+        "**Arguments against**: learners may hand in work they did not write, which is dishonest and undermines learning; AI tools sometimes produce confident but incorrect information; not all learners have equal access to devices and data, which could widen inequality.",
+        "**Introduction**: 'In the space of a few years, AI tools that can write an essay or solve an equation in seconds have moved from science fiction into many learners' pockets. Teachers, parents and learners are divided about whether these tools should be welcomed in schoolwork or kept firmly out of it. Both positions raise serious points that deserve careful consideration.'",
+        "**Conclusion**: 'On balance, AI is neither a miracle nor a menace. It can deepen understanding when it is used as a tutor, yet it can hollow out learning when it is used as a substitute for thinking. Perhaps the real question is not whether learners should use AI, but whether schools will teach them to use it wisely.'",
+        "Notice the neutral, impersonal language ('Teachers, parents and learners are divided', 'Both positions'), the balanced antithesis in the conclusion and the thought-provoking final sentence instead of a one-sided call to action."
+      ]
+    },
+    { "type": "heading", "text": "Planning in the exam" },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Choose** (about 5 minutes): read all the topics and choose the one you have the most to say about, not the one that looks easiest.",
+        "**Decide the type**: argumentative or discursive, and (if argumentative) your stance.",
+        "**Brainstorm** (about 5 minutes): a quick mind-map of reasons, examples and counter-arguments.",
+        "**Select and order**: keep the three or four strongest points; for an argumentative essay, put a strong point first and your strongest point last or just before the conclusion.",
+        "**Write** (about 45 minutes): introduction, body paragraphs (TEEL), conclusion. Give the essay a title.",
+        "**Edit** (about 5-10 minutes): check spelling, punctuation, concord and connectors; count words roughly (lines × average words per line)."
+      ]
+    },
+    { "type": "callout", "label": "Remember", "text": "Paper 3 also contains transactional writing, so manage your time. Do not spend so long on the essay that you rush the other sections." },
+    { "type": "heading", "text": "South African topics to practise" },
+    {
+      "type": "list",
+      "items": [
+        "'The minimum age for a learner's licence should be raised to eighteen.' (argumentative)",
+        "'Discuss whether South Africa should adopt nuclear power to end load-shedding.' (discursive)",
+        "'Matric results are a poor measure of a learner's worth.' Do you agree?",
+        "'Should the school year be divided into two semesters instead of four terms?'",
+        "'Township economies are the key to beating youth unemployment.'",
+        "'Social media influencers are today's most powerful teachers.' Discuss."
+      ]
+    },
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "HL essays: 400-450 words, 50 marks (Content and planning 30, Language, style and editing 15, Structure 5).",
+        "Argumentative = one clear stance, defended with reasons and evidence, opposing views rebutted, confident tone.",
+        "Discursive = all sides presented fairly in a neutral tone; the conclusion weighs the evidence.",
+        "A thesis must be arguable and specific; announcements and facts are not theses.",
+        "Build body paragraphs with TEEL: Topic sentence, Explanation, Evidence, Link.",
+        "Rebuttal = state the counter-argument fairly, concede what is reasonable, then refute it.",
+        "Use persuasive devices (rhetorical questions, rule of three, antithesis, inclusive pronouns) with restraint.",
+        "Connectors (however, therefore, admittedly, moreover) make the logic visible.",
+        "Avoid fallacies: ad hominem, straw man, hasty generalisation, false dilemma, slippery slope, bandwagon.",
+        "Keep a formal register: no slang, contractions or invented statistics."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which essay topic most clearly requires a **discursive** essay?",
+      "options": [
+        "'Load-shedding has made South Africans more resilient.' Do you agree?",
+        "Discuss the advantages and disadvantages of a four-day school week.",
+        "Why the voting age should be lowered to sixteen.",
+        "Convince your readers that school uniforms should be scrapped."
+      ],
+      "answer": 1,
+      "explanation": "'Discuss the advantages and disadvantages' asks you to explore both sides fairly, which is the purpose of a discursive essay. The other topics ask for your opinion or for persuasion, so they are argumentative."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "Which of the following is the strongest thesis statement for an **argumentative** essay?",
+      "options": [
+        "In this essay I will write about minibus taxis.",
+        "Minibus taxis are an important part of life in South Africa.",
+        "Government should subsidise the minibus-taxi industry so that fares remain affordable, drivers can be properly regulated and commuters can travel safely.",
+        "Some people like taxis and some people do not."
+      ],
+      "answer": 2,
+      "explanation": "A strong thesis is arguable, specific and previews the reasons. Option 1 only announces the topic, option 2 is a fact nobody would dispute, and option 4 takes no position."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "In a discursive essay, the writer should make their personal opinion clear in every body paragraph.",
+      "answer": false,
+      "explanation": "A discursive essay keeps a neutral, objective tone in the body and gives each side fair treatment. A measured judgement, if any, belongs in the conclusion."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "In an argumentative essay, briefly conceding a reasonable point made by the opposing side and then rebutting it can make your argument more convincing.",
+      "answer": true,
+      "explanation": "Conceding and rebutting shows that you have considered the other side and still have good reasons for your stance. This strengthens your credibility (ethos)."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "prompt": "Identify the device in this sentence: 'Must we wait until another child falls into a pit toilet before we act?'",
+      "options": [
+        "Rhetorical question",
+        "Antithesis",
+        "Hyperbole",
+        "Ad hominem"
+      ],
+      "answer": 0,
+      "explanation": "The question is asked for effect, not to get an answer. It forces the reader to think about the urgency of the problem."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "Read the extract and identify the essay type.\n\n'Supporters of a higher sugar tax point out that sugary drinks contribute to diabetes and tooth decay, placing a heavy burden on public clinics. Opponents, on the other hand, argue that the tax hurts poorer households and costs jobs in the beverage industry. Both sides raise concerns that policy-makers cannot ignore.'",
+      "options": [
+        "Argumentative",
+        "Discursive",
+        "Narrative",
+        "Descriptive"
+      ],
+      "answer": 1,
+      "explanation": "The extract presents both sides fairly ('Supporters... Opponents, on the other hand...') and uses neutral, impersonal language without taking a side. These are features of a discursive essay."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "prompt": "Which connector is best suited to **conceding** a point before rebutting it?",
+      "options": [
+        "Furthermore",
+        "Consequently",
+        "Admittedly",
+        "For instance"
+      ],
+      "answer": 2,
+      "explanation": "'Admittedly' signals that the writer accepts part of an opposing point. 'Furthermore' adds, 'Consequently' shows a result and 'For instance' introduces an example."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "Which element of a TEEL paragraph is **missing** from this paragraph?\n\n'A survey at our school found that most learners use their phones to check homework instructions. This shows that phones can support learning when they are used responsibly. Therefore, a total ban would remove a useful learning tool.'",
+      "options": [
+        "Evidence",
+        "A link back to the thesis",
+        "A logical connector",
+        "A topic sentence"
+      ],
+      "answer": 3,
+      "explanation": "The paragraph opens with evidence (the survey) instead of a topic sentence that states its main idea, for example: 'Cellphones can be valuable learning tools.' It has explanation, evidence, a connector ('Therefore') and a link."
+    },
+    {
+      "id": "q9",
+      "type": "match",
+      "prompt": "Match each statement with the logical fallacy it contains.",
+      "marks": 4,
+      "pairs": [
+        { "left": "'You can't trust Thabo's views on school safety; he failed Maths last year.'", "right": "Ad hominem" },
+        { "left": "'People who want a later school start just want to sleep all day.'", "right": "Straw man" },
+        { "left": "'My two cousins dropped out of university, so university is a waste of money.'", "right": "Hasty generalisation" },
+        { "left": "'Either we ban all cellphones at school or we accept that learners will never concentrate.'", "right": "False dilemma" }
+      ],
+      "explanation": "Ad hominem attacks the person; a straw man distorts the opposing view; a hasty generalisation draws a big conclusion from two examples; a false dilemma offers only two options when others exist."
+    },
+    {
+      "id": "q10",
+      "type": "short",
+      "prompt": "What is the name for the sentence, usually at the end of the introduction, that states the writer's main position?",
+      "answers": ["thesis statement", "thesis", "the thesis statement", "a thesis statement", "the thesis"],
+      "explanation": "The thesis statement states the writer's position. Every body paragraph should support or develop it."
+    },
+    {
+      "id": "q11",
+      "type": "short",
+      "prompt": "Name the fallacy: 'If we allow learners to wear sneakers on Fridays, soon they will come to school in pyjamas and stop doing homework altogether.'",
+      "answers": ["slippery slope", "slippery-slope", "the slippery slope", "slippery slope fallacy", "slippery slope argument"],
+      "explanation": "A slippery slope claims that one small step will inevitably lead to a chain of increasingly bad results, without showing how each step follows."
+    },
+    {
+      "id": "q12",
+      "type": "numeric",
+      "prompt": "According to the CAPS essay rubric, how many of the 50 marks for a Home Language essay are allocated to **Content and planning**?",
+      "answer": 30,
+      "tolerance": 0,
+      "unit": "marks",
+      "explanation": "Content and planning = 30, Language, style and editing = 15, Structure = 5, giving a total of 50."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Rewrite the following sentences in a formal register suitable for an argumentative essay:\n\n'I reckon kids shouldn't have to pay for taxis to school 'cause it's super expensive and loads of parents are battling. The gov must sort it out ASAP!!!'",
+      "memo": "Model answer: 'Learners should not have to pay for their transport to school, because taxi fares are a heavy burden on many families who are already struggling financially. The government should address this problem urgently.'\n\nMark allocation:\n✓ Slang and casual words removed or replaced ('reckon', 'kids', 'super', 'loads', 'battling', 'gov', 'sort it out', 'ASAP') (1)\n✓ Contractions written out in full ('should not', 'because') (1)\n✓ Precise, formal vocabulary used (e.g. 'learners', 'heavy burden', 'struggling financially', 'address') (1)\n✓ Excessive punctuation removed; sentences grammatically correct with the original meaning kept (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Your thesis is: 'The school day should start at 08:30 instead of 07:30.' Write ONE rebuttal paragraph (80-100 words) that responds to the objection that a later start would make school end too late for afternoon sport and family responsibilities.",
+      "memo": "Model answer: 'Critics of a later start argue that the school day would end too late, leaving less time for sport, part-time work and chores at home. Admittedly, this is a genuine concern for many families. However, the change would shift the timetable by only one hour, and schools could shorten breaks slightly or move some extra-murals to the morning on certain days. Moreover, learners who are well rested tend to play and work better. A modest adjustment to the timetable is a small price to pay for learners who arrive alert and ready to learn.'\n\nMark allocation:\n✓ States the counter-argument fairly and accurately (1)\n✓ Concedes a reasonable aspect of it, using a conceding connector such as 'Admittedly' or 'It is true that' (1)\n✓ Rebuts with at least one clear, logical reason (1)\n✓ Supports the rebuttal with a practical suggestion, example or further reason (1)\n✓ Links back to the thesis in a formal register, within the word limit (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Write the introduction (60-80 words) for a **discursive** essay on the topic: 'Should South Africa raise the minimum age for a learner's driving licence from 17 to 18?'",
+      "memo": "Model answer: 'For many South African teenagers, a learner's licence is a passport to independence, yet road crashes claim the lives of many young South Africans every year. This has led some people to call for the minimum age for a learner's licence to be raised from 17 to 18. Others believe that such a change would punish responsible young people and do little to improve safety. Both views deserve careful consideration.'\n\nMark allocation:\n✓ An engaging hook (scenario, question or striking statement) (1)\n✓ Brief context that introduces the issue clearly (1)\n✓ Indicates that there are opposing views, mentioning at least two sides (1)\n✓ Neutral, balanced tone with no personal stance (1)\n✓ Formal register and correct language, within the word limit (1)"
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 8,
+      "prompt": "Plan an **argumentative** essay on the topic: 'Every school in South Africa should have a vegetable garden.' Your plan must include: a thesis statement, three supporting arguments each with a piece of evidence or an example, one counter-argument with your rebuttal, and an idea for your conclusion. (Point form is acceptable.)",
+      "memo": "Model plan (other relevant, well-reasoned points are acceptable):\n\nThesis: Every school should have a vegetable garden, because gardens improve learners' nutrition, turn the curriculum into hands-on learning and teach skills that can create income. ✓ (1)\n\nArgument 1: Nutrition. Fresh vegetables can supplement the school feeding scheme, so hungry learners concentrate better. ✓ (1) Evidence/example: a learner who eats a healthy lunch is more alert in afternoon lessons; vegetables such as spinach are rich in iron. ✓ (1)\n\nArgument 2: Practical learning. Life Sciences, Mathematics and Agricultural Sciences come alive when learners measure plots, test soil and observe plant growth. ✓ (1) Example: calculating the area of a bed or recording germination rates. ✓ (1)\n\nArgument 3: Skills and income. Learners gain skills that can start small businesses, and surplus produce can be sold to raise funds. ✓ (1)\n\nCounter-argument and rebuttal: Critics say schools lack water, space and staff. Admittedly some schools are under-resourced; however, container gardens, rainwater tanks and community volunteers make gardens possible even on small grounds. ✓ (1)\n\nConclusion idea: Restate the stance, summarise the three benefits and end with a call to action, e.g. 'Let every school yard grow more than weeds.' ✓ (1)\n\n(Award marks only where each point is relevant, clearly linked to the stance and developed.)"
+    }
+  ]
+}

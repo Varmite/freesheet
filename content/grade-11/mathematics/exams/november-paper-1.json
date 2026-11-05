@@ -1,0 +1,259 @@
+{
+  "id": "november-paper-1",
+  "title": "November Examination: Paper 1",
+  "durationMinutes": 120,
+  "totalMarks": 100,
+  "instructions": [
+    "This paper consists of SIX questions. Answer ALL the questions.",
+    "Clearly show ALL calculations, diagrams and graphs that you used in determining your answers.",
+    "You may use an approved scientific calculator unless stated otherwise.",
+    "Round off answers to TWO decimal places, unless stated otherwise."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Algebra, equations and inequalities",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Solve for $x$: $x^2 - 5x - 14 = 0$",
+          "memo": "✓ $(x - 7)(x + 2) = 0$ (2)\n✓ $x = 7$ or $x = -2$ (1)"
+        },
+        {
+          "id": "q1-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Solve for $x$, correct to two decimal places: $3x^2 + x - 5 = 0$",
+          "memo": "✓ Correct substitution into the formula (2)\n✓ $x \\approx 1{,}14$ (1)\n✓ $x \\approx -1{,}47$ (1)"
+        },
+        {
+          "id": "q1-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Solve for $x$: $x^2 + 2x - 15 > 0$",
+          "memo": "✓ $(x + 5)(x - 3) > 0$ (1)\n✓ Critical values $-5$ and $3$ (1)\n✓ $x < -5$ or $x > 3$ (2)"
+        },
+        {
+          "id": "q1-4",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Solve simultaneously: $y = x - 3$ and $x^2 + xy = 20$",
+          "memo": "✓ $x^2 + x(x - 3) = 20$ (1)\n✓ $2x^2 - 3x - 20 = 0$ (1)\n✓ $(2x + 5)(x - 4) = 0$ (1)\n✓ $x = 4$, $y = 1$ (1)\n✓ $x = -\\frac{5}{2}$, $y = -\\frac{11}{2}$ (1)"
+        },
+        {
+          "id": "q1-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the values of $k$ for which $x^2 - 6x + k = 0$ has real roots.",
+          "memo": "✓ $\\Delta \\geq 0$ (1)\n✓ $36 - 4k \\geq 0$ (2)\n✓ $k \\leq 9$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Exponents and surds",
+      "instructions": "Do NOT use a calculator in this question.",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Simplify: $\\dfrac{2^{x+2} \\cdot 4^{x-1}}{8^{x}}$",
+          "memo": "✓ $\\frac{2^{x+2} \\cdot 2^{2x-2}}{2^{3x}}$ (1)\n✓ $2^{x + 2 + 2x - 2 - 3x}$ (1)\n✓ $= 2^0 = 1$ (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Simplify: $\\sqrt{48} - \\sqrt{27} + 2\\sqrt{3}$",
+          "memo": "✓ $4\\sqrt{3} - 3\\sqrt{3}$ (2)\n✓ $+ 2\\sqrt{3} = 3\\sqrt{3}$ (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Solve for $x$: $x^{\\frac{3}{4}} = 8$",
+          "memo": "✓ $x = 8^{\\frac{4}{3}}$ (1)\n✓ $= (2^3)^{\\frac{4}{3}} = 2^4$ (1)\n✓ $x = 16$ (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Solve for $x$: $\\sqrt{x + 1} = x - 5$",
+          "memo": "✓ $x + 1 = x^2 - 10x + 25$ (1)\n✓ $x^2 - 11x + 24 = 0$ (1)\n✓ $(x - 8)(x - 3) = 0$ (1)\n✓ Check: $x = 8$ ✓ (1)\n✓ $x = 3$ rejected ($2 \\neq -2$) (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Number patterns",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Given the quadratic sequence $5; 8; 13; 20; \\ldots$ Determine the general term $T_n$.",
+          "memo": "✓ Second difference 2, $a = 1$ (1)\n✓ $3a + b = 3$, $b = 0$ (1)\n✓ $a + b + c = 5$, $c = 4$ (1)\n✓ $T_n = n^2 + 4$ (1)"
+        },
+        {
+          "id": "q3-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Using your answer to 3.1, calculate $T_{30}$.",
+          "answer": 904,
+          "tolerance": 0
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Which term of the sequence in 3.1 is equal to $229$?",
+          "memo": "✓ $n^2 + 4 = 229$ (1)\n✓ $n^2 = 225$ (1)\n✓ $n = 15$ (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain why the sequence in 3.1 has no term equal to $100$.",
+          "memo": "✓ $n^2 + 4 = 100$ gives $n^2 = 96$ (1)\n✓ $n = \\sqrt{96} \\approx 9{,}80$ (1)\n✓ Not a natural number, so 100 is not a term (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Functions",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Given: $f(x) = -x^2 + 2x + 8$ and $g(x) = \\dfrac{4}{x - 1} + 2$."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Determine the coordinates of the turning point of $f$.",
+          "memo": "✓ $x = -\\frac{2}{2(-1)} = 1$ (1)\n✓ $f(1) = 9$ (1)\n✓ $(1; 9)$ (1)"
+        },
+        {
+          "id": "q4-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Determine the $x$-intercepts of $f$.",
+          "memo": "✓ $-x^2 + 2x + 8 = 0$, $x^2 - 2x - 8 = 0$ (1)\n✓ $(x - 4)(x + 2) = 0$ (1)\n✓ $(-2; 0)$ and $(4; 0)$ (1)"
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down the equations of the asymptotes of $g$.",
+          "memo": "✓ $x = 1$ (1)\n✓ $y = 2$ (1)"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Determine the $y$-intercept of $g$.",
+          "memo": "✓ $g(0) = -4 + 2$ (1)\n✓ $(0; -2)$ (1)"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down the range of $f$.",
+          "memo": "✓✓ $y \\leq 9$"
+        },
+        {
+          "id": "q4-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Calculate the average gradient of $f$ between $x = -1$ and $x = 3$.",
+          "memo": "✓ $f(3) = 5$ and $f(-1) = 5$ (2)\n✓ Average gradient $= \\frac{5 - 5}{4} = 0$ (1)"
+        },
+        {
+          "id": "q4-7",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Given $h(x) = 2^{x+1} - 4$, write down the asymptote and determine the $x$-intercept.",
+          "memo": "✓ Asymptote $y = -4$ (1)\n✓ $2^{x+1} = 4 = 2^2$ (1)\n✓ $x = 1$ (1)"
+        },
+        {
+          "id": "q4-8",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Sketch the graphs of $f$ and $g$ on the same set of axes. Show all intercepts, asymptotes and turning points.",
+          "memo": "✓ Shape of $f$ with TP $(1; 9)$ (1)\n✓ Intercepts of $f$: $(-2; 0)$, $(4; 0)$, $(0; 8)$ (1)\n✓ Asymptotes of $g$: $x = 1$, $y = 2$ (1)\n✓ Intercepts of $g$: $(0; -2)$, $(-1; 0)$ (1)\n✓ Correct shape and position of both branches of $g$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Finance, growth and decay",
+      "questions": [
+        {
+          "id": "q5-1",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "A delivery van bought for R320 000 depreciates at 18% p.a. on the reducing-balance method. Calculate its value after 5 years, to the nearest rand.",
+          "answer": 118637,
+          "tolerance": 1,
+          "unit": "rand"
+        },
+        {
+          "id": "q5-2",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Convert an interest rate of 10,5% p.a. compounded monthly to an effective annual rate (as a percentage, two decimal places).",
+          "answer": 11.02,
+          "tolerance": 0.01,
+          "unit": "%"
+        },
+        {
+          "id": "q5-3",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Thandi invests R15 000 at 8% p.a. compounded quarterly. After 2 years she deposits another R5 000. Calculate the balance at the end of 4 years.",
+          "memo": "✓ $i = 0{,}02$ per quarter (1)\n✓ $15\\ 000(1{,}02)^{16} = 20\\ 591{,}79$ (2)\n✓ $5\\ 000(1{,}02)^{8} = 5\\ 858{,}30$ (1)\n✓ Total $\\approx R26\\ 450{,}08$ (1)"
+        },
+        {
+          "id": "q5-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A computer worth R18 000 depreciates on the straight-line method to R6 300 in 5 years. Calculate the annual rate of depreciation.",
+          "memo": "✓ $6\\ 300 = 18\\ 000(1 - 5i)$ (1)\n✓ $1 - 5i = 0{,}35$ (1)\n✓ $i = 0{,}13 = 13\\%$ p.a. (1)"
+        },
+        {
+          "id": "q5-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "What nominal annual interest rate, compounded monthly, is equivalent to an effective rate of 12% p.a.?",
+          "memo": "✓ $1{,}12 = \\left(1 + \\frac{i}{12}\\right)^{12}$ (1)\n✓ $1 + \\frac{i}{12} = 1{,}12^{\\frac{1}{12}}$ (1)\n✓ $\\frac{i}{12} = 0{,}009489$ (1)\n✓ $i \\approx 11{,}39\\%$ p.a. (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Probability",
+      "questions": [
+        {
+          "id": "q6-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Events A and B are independent with $P(A) = 0{,}4$ and $P(B) = 0{,}35$. Calculate $P(A \\text{ or } B)$.",
+          "memo": "✓ $P(A \\text{ and } B) = 0{,}14$ (1)\n✓ $0{,}4 + 0{,}35 - 0{,}14$ (1)\n✓ $= 0{,}61$ (1)"
+        },
+        {
+          "id": "q6-2",
+          "type": "open",
+          "marks": 5,
+          "prompt": "In a group of 50 learners, 28 play rugby, 20 play cricket and 9 play both. (a) Draw a Venn diagram. (b) Find the probability that a learner chosen at random plays neither sport.",
+          "memo": "(a) ✓ Rugby only 19 (1) ✓ both 9 (1) ✓ cricket only 11 (1)\n(b) ✓ Neither $= 50 - 39 = 11$ (1) ✓ $P = \\frac{11}{50} = 0{,}22$ (1)"
+        },
+        {
+          "id": "q6-3",
+          "type": "open",
+          "marks": 5,
+          "prompt": "A bag contains 3 red and 7 white marbles. Two marbles are drawn without replacement. (a) Draw a tree diagram. (b) Find the probability that the marbles are the same colour.",
+          "memo": "(a) ✓ First branches $\\frac{3}{10}$, $\\frac{7}{10}$ (1) ✓ second branches $\\frac{2}{9}, \\frac{7}{9}, \\frac{3}{9}, \\frac{6}{9}$ (1)\n(b) ✓ $P(RR) = \\frac{6}{90}$ (1) ✓ $P(WW) = \\frac{42}{90}$ (1) ✓ Total $\\frac{48}{90} = \\frac{8}{15}$ (1)"
+        }
+      ]
+    }
+  ]
+}

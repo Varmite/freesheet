@@ -1,0 +1,303 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper consists of FOUR questions. Answer ALL the questions.",
+    "Show all workings for calculations.",
+    "Use the information provided for the accounting questions."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "In which economic system are decisions made mainly through supply and demand?",
+          "options": [
+            "Traditional",
+            "Command",
+            "Market",
+            "None"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "Which is an injection into the circular flow?",
+          "options": [
+            "Savings",
+            "Taxes",
+            "Imports",
+            "Exports"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "According to the law of supply, when price rises, quantity supplied…",
+          "options": [
+            "falls",
+            "rises",
+            "stays the same",
+            "becomes zero"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "The source document for the Debtors Journal is the…",
+          "options": [
+            "original invoice",
+            "duplicate invoice",
+            "receipt",
+            "EFT notice"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-5",
+          "type": "mcq",
+          "prompt": "A bakery belongs to the…",
+          "options": [
+            "primary sector",
+            "secondary sector",
+            "tertiary sector",
+            "informal sector only"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-6",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Opportunity cost",
+              "right": "Next best alternative given up"
+            },
+            {
+              "left": "Creditor",
+              "right": "Supplier the business owes money to"
+            },
+            {
+              "left": "Collective bargaining",
+              "right": "Negotiation between unions and employers"
+            },
+            {
+              "left": "Equilibrium price",
+              "right": "Price where demand equals supply"
+            },
+            {
+              "left": "Fixed cost",
+              "right": "Cost that does not change with output"
+            }
+          ]
+        },
+        {
+          "id": "q1-7",
+          "type": "truefalse",
+          "prompt": "Debtors are liabilities of the business.",
+          "answer": false
+        },
+        {
+          "id": "q1-8",
+          "type": "truefalse",
+          "prompt": "The demand curve slopes downwards from left to right.",
+          "answer": true
+        },
+        {
+          "id": "q1-9",
+          "type": "truefalse",
+          "prompt": "Workers in South Africa have a constitutional right to strike.",
+          "answer": true
+        },
+        {
+          "id": "q1-10",
+          "type": "truefalse",
+          "prompt": "Marketing is the business function responsible for recruiting staff.",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: The economy",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain why South Africa is described as a mixed economy. Give TWO examples.",
+          "memo": "✓ Both the private sector and the government play a role (1)\n✓ Private ownership of most businesses (1)\n✓ Example 1, e.g. private banks and shops (1)\n✓ Example 2, e.g. government-owned Eskom/Transnet, public schools, social grants (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe the real flow and the money flow between households and businesses.",
+          "memo": "✓ Households supply factors of production to businesses (1)\n✓ Businesses pay income (rent, wages, interest, profit) (1)\n✓ Businesses supply goods and services to households (1)\n✓ Households pay for them (consumer spending) (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "At R30 per kg, consumers want 1 000 kg of tomatoes and farmers supply 1 600 kg. (a) Is there a surplus or a shortage, and how much? (b) What will happen to the price? Explain.",
+          "memo": "(a) ✓ Surplus (1) ✓ of 600 kg (1)\n(b) ✓ The price will fall (1) ✓ as farmers lower prices to sell unsold tomatoes, moving towards equilibrium (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain THREE functions of trade unions.",
+          "memo": "Any three (1 each): collective bargaining; protect from unfair dismissal; health and safety; represent members; educate members; influence policy"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Compare a command economy and a market economy by referring to ownership of resources and who makes economic decisions.",
+          "memo": "✓ Command: the state owns most resources (1)\n✓ Command: the government plans and decides what, how and for whom (1)\n✓ Market: resources are privately owned (1)\n✓ Market: decisions are made by individuals and businesses through supply, demand and prices (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Financial literacy",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "**Bright Sparks Electrical** is a trading business that uses a mark-up of **25% on cost**. Transactions for September 2025:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "3 Sept: Sold goods on credit to J. Nkosi, R5 000. Invoice 210.",
+            "8 Sept: Bought trading stock on credit from Volt Wholesalers, R14 000. Invoice VW88.",
+            "12 Sept: Cash sales, R7 500. CRR.",
+            "18 Sept: Sold goods on credit to M. Pillay, R2 500. Invoice 211.",
+            "25 Sept: J. Nkosi paid R3 000 on her account. Receipt 044.",
+            "29 Sept: Paid Volt Wholesalers R9 000 on account. EFT 61."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the cost of sales for the credit sale on 3 September.",
+          "answer": 4000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the total of the Sales column in the Debtors Journal for September.",
+          "answer": 7500,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Name the journal in which each transaction is recorded: (a) 8 Sept, (b) 12 Sept, (c) 25 Sept, (d) 29 Sept.",
+          "memo": "(a) ✓ Creditors Journal (1)\n(b) ✓ Cash Receipts Journal (1)\n(c) ✓ Cash Receipts Journal (1)\n(d) ✓ Cash Payments Journal (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "How much does J. Nkosi owe on 30 September?",
+          "answer": 2000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-5",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "How much does the business owe Volt Wholesalers on 30 September?",
+          "answer": 5000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "For the cash sales on 12 September, give the amounts in the Bank, Sales and Cost of sales columns of the CRJ.",
+          "memo": "✓ Bank R7 500 (1)\n✓ Sales R7 500 (1)\n✓ Cost of sales R6 000 (7 500 × 100/125) (1)"
+        },
+        {
+          "id": "q3-7",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Show the double entry (account debited and account credited) when the Debtors Journal totals are posted to the General Ledger.",
+          "memo": "✓ Debtors control debited (1) ✓ Sales credited (1)\n✓ Cost of sales debited (1) ✓ Trading stock credited (1)"
+        },
+        {
+          "id": "q3-8",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give ONE advantage and ONE disadvantage for Bright Sparks of selling on credit.",
+          "memo": "✓ Advantage: more customers / higher sales / loyalty (1)\n✓ Disadvantage: bad debts / cash-flow problems / administration (1)"
+        },
+        {
+          "id": "q3-9",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how the Creditors Journal total for 8 September is posted to the General Ledger, and classify the Creditors control account.",
+          "memo": "✓ Trading stock account debited R14 000 (1)\n✓ Creditors control account credited R14 000 (1)\n✓ Creditors control is a liability (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Entrepreneurship",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Do a SWOT analysis for a learner who wants to start a school tuck shop, giving ONE point for each.",
+          "memo": "✓ Strength, e.g. knows learners' tastes (1)\n✓ Weakness, e.g. little capital / limited time (1)\n✓ Opportunity, e.g. no other tuck shop / many learners (1)\n✓ Threat, e.g. school rules / rising prices / competition from vendors (1)"
+        },
+        {
+          "id": "q4-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Muffins sell for R15 each and cost R6 each to make. Fixed costs are R900 per month. Calculate the break-even quantity. Show your working.",
+          "memo": "✓ Contribution per muffin: 15 − 6 = R9 (1)\n✓ 900 ÷ 9 (1)\n✓ = 100 muffins (1)"
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain FOUR functions of a business, with an example of each.",
+          "memo": "Any four (1 each, with example): general management; administration; financial; purchasing; production; marketing; human resources; public relations"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE sources of finance for a new small business.",
+          "memo": "Any three (1 each): own savings; family/friends; bank loan; NYDA/SEDFA; investors/partners"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give TWO differences between the formal and informal sectors, and explain why the informal sector is important in South Africa.",
+          "memo": "✓✓ Two differences (1 each): registered vs unregistered; tax; labour laws/contracts; size\n✓✓ Importance: provides income/jobs for many unemployed people (1); first step to a formal business / provides goods close to communities (1)"
+        }
+      ]
+    }
+  ]
+}

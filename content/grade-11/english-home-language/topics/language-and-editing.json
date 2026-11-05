@@ -1,0 +1,43 @@
+{
+  "id": "language-and-editing",
+  "title": "Language Structures and Editing",
+  "term": 1,
+  "summary": "Phrases and clauses, relative clauses, conditionals, modals, participles and dangling modifiers, punctuation for effect, and editing for concord, tense and ambiguity.",
+  "notes": [
+    { "type": "heading", "text": "Phrases and clauses" },
+    { "type": "list", "items": [
+      "A **phrase** has no finite verb: 'after the storm', 'running late'.",
+      "A **clause** has a subject and a finite verb. A **main clause** can stand alone; a **subordinate clause** cannot: 'because the road was closed'.",
+      "**Relative clauses** begin with who, whom, whose, which or that. A **non-defining** clause adds extra information and is set off by commas: 'My brother, who lives in Polokwane, is a nurse.'"
+    ] },
+    { "type": "heading", "text": "Conditional sentences" },
+    { "type": "table", "headers": ["Type", "Use", "Example"], "rows": [
+      ["Zero", "General truths", "If you heat ice, it melts."],
+      ["First", "Real future possibility", "If it rains, we will cancel the match."],
+      ["Second", "Unlikely or imaginary present", "If I won the lottery, I would travel."],
+      ["Third", "Imaginary past (regret)", "If I had studied, I would have passed."]
+    ] },
+    { "type": "heading", "text": "Modals" },
+    { "type": "paragraph", "text": "Modal verbs express degrees of certainty, obligation or permission: **must** (obligation or strong certainty), **should** (advice), **may/might** (possibility), **can/could** (ability or permission), **will/would** (future or willingness)." },
+    { "type": "heading", "text": "Dangling modifiers and ambiguity" },
+    { "type": "example", "title": "Fixing a dangling modifier", "problem": "'Walking to school, the rain soaked my blazer.'", "steps": ["The opening phrase 'Walking to school' must describe the subject.", "As written, it says the rain was walking.", "Make the walker the subject."], "answer": "'While I was walking to school, the rain soaked my blazer.'" },
+    { "type": "paragraph", "text": "**Ambiguity** occurs when a sentence has two possible meanings: 'The police shot the man with a gun.' (Did the man have the gun?) Rewrite to make the meaning clear." },
+    { "type": "callout", "label": "Punctuation for effect", "text": "**Dash**: adds emphasis or an afterthought. **Ellipsis (…)**: omission, a trailing thought or suspense. **Exclamation mark**: strong emotion. **Inverted commas** around a single word can suggest sarcasm: 'Our \"reliable\" train was late again.'" }
+  ],
+  "questions": [
+    { "id": "clause", "type": "mcq", "prompt": "Which is a subordinate clause?", "options": ["The learners laughed.", "because the teacher slipped", "on the slippery floor", "laughing loudly"], "answer": 1 },
+    { "id": "conditional", "type": "mcq", "prompt": "'If I had left earlier, I would have caught the bus' is a…", "options": ["zero conditional", "first conditional", "second conditional", "third conditional"], "answer": 3 },
+    { "id": "modal", "type": "short", "prompt": "Which modal expresses advice in 'You should rest'?", "answers": ["should"] },
+    { "id": "inverted", "type": "truefalse", "prompt": "Inverted commas around a single word can show sarcasm.", "answer": true },
+    { "id": "phrase", "type": "truefalse", "prompt": "'After the long holiday' is a clause.", "answer": false },
+    { "id": "punct", "type": "match", "marks": 3, "prompt": "Match each punctuation mark to an effect.", "pairs": [
+      { "left": "Ellipsis", "right": "Suspense or a trailing thought" },
+      { "left": "Dash", "right": "Emphasis or an afterthought" },
+      { "left": "Exclamation mark", "right": "Strong emotion" }
+    ] },
+    { "id": "dangling", "type": "open", "marks": 2, "prompt": "Correct the dangling modifier: 'Having finished the exam, the bell rang.'", "memo": "✓✓ e.g. 'Having finished the exam, I heard the bell ring.' / 'After I had finished the exam, the bell rang.' (2)" },
+    { "id": "relative", "type": "open", "marks": 2, "prompt": "Combine using a non-defining relative clause: 'Ms Dlamini teaches Grade 11. She won a national award.'", "memo": "✓ Ms Dlamini, who teaches Grade 11, (1)\n✓ won a national award. (commas correct) (1)" },
+    { "id": "ambiguity", "type": "open", "marks": 2, "prompt": "Explain the ambiguity and rewrite: 'I saw the girl with the binoculars.'", "memo": "✓ It is unclear whether I used binoculars or the girl had them (1)\n✓ e.g. 'Using binoculars, I saw the girl.' (1)" },
+    { "id": "second", "type": "open", "marks": 2, "prompt": "Complete as a second conditional: 'If I ___ (be) the principal, I ___ (ban) homework.'", "memo": "✓ were (1)\n✓ would ban (1)" }
+  ]
+}

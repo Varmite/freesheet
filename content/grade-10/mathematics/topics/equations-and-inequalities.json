@@ -1,0 +1,659 @@
+{
+  "id": "equations-and-inequalities",
+  "title": "Equations and Inequalities",
+  "term": 1,
+  "summary": "Solve linear, quadratic (by factorisation), literal, simple exponential and simultaneous equations, solve linear inequalities, and use equations to solve word problems.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "What is an equation?"
+    },
+    {
+      "type": "paragraph",
+      "text": "An **equation** is a mathematical statement that two expressions are equal, for example $3x + 5 = 20$. To **solve** an equation means to find every value of the variable that makes the statement true. Think of an equation as a balanced scale: whatever you do to one side, you must do to the other side to keep it balanced."
+    },
+    {
+      "type": "definition",
+      "term": "Solution (root)",
+      "text": "A value of the variable that makes the equation true. For $3x + 5 = 20$ the solution is $x = 5$, because $3(5) + 5 = 20$."
+    },
+    {
+      "type": "callout",
+      "label": "Remember",
+      "text": "You can always **check** a solution by substituting it back into the original equation. If the left-hand side (LHS) equals the right-hand side (RHS), your answer is correct. Checking takes a few seconds and catches most mistakes."
+    },
+    {
+      "type": "heading",
+      "text": "Linear equations"
+    },
+    {
+      "type": "paragraph",
+      "text": "A **linear equation** is an equation in which the highest power of the variable is $1$, such as $2(x - 3) = 4x + 1$. A linear equation has exactly one solution (unless it simplifies to something always true or never true)."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Remove brackets by multiplying out (watch the signs).",
+        "If there are fractions, multiply **every term** on both sides by the lowest common denominator (LCD).",
+        "Collect the terms with the variable on one side and the constants on the other side.",
+        "Simplify and divide by the coefficient of the variable.",
+        "Check your answer in the original equation."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1: brackets",
+      "problem": "Solve for $x$: $3(x - 2) - 2(x + 1) = 5 - 4x$",
+      "steps": [
+        "Multiply out the brackets: $3x - 6 - 2x - 2 = 5 - 4x$. Note that $-2 \\times (+1) = -2$.",
+        "Simplify the LHS: $x - 8 = 5 - 4x$.",
+        "Add $4x$ to both sides and add $8$ to both sides: $5x = 13$.",
+        "Divide by $5$: $x = \\dfrac{13}{5} = 2{,}6$.",
+        "Check: LHS $= 3(0{,}6) - 2(3{,}6) = 1{,}8 - 7{,}2 = -5{,}4$; RHS $= 5 - 4(2{,}6) = 5 - 10{,}4 = -5{,}4$. ✓"
+      ],
+      "answer": "$x = 2{,}6$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: fractions",
+      "problem": "Solve for $x$: $\\dfrac{x + 1}{3} - \\dfrac{x - 2}{4} = 2$",
+      "steps": [
+        "The LCD of $3$ and $4$ is $12$. Multiply every term by $12$: $12 \\cdot \\dfrac{x + 1}{3} - 12 \\cdot \\dfrac{x - 2}{4} = 12 \\cdot 2$.",
+        "This gives $4(x + 1) - 3(x - 2) = 24$.",
+        "Multiply out: $4x + 4 - 3x + 6 = 24$. The minus sign in front of the second fraction changes the sign of **both** terms in $(x - 2)$.",
+        "Simplify: $x + 10 = 24$, so $x = 14$.",
+        "Check: $\\dfrac{15}{3} - \\dfrac{12}{4} = 5 - 3 = 2$ ✓"
+      ],
+      "answer": "$x = 14$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: variable in the denominator",
+      "problem": "Solve for $x$: $\\dfrac{2}{x} + \\dfrac{3}{2x} = \\dfrac{7}{6}$",
+      "steps": [
+        "Restriction first: the denominators cannot be zero, so $x \\neq 0$.",
+        "The LCD of $x$, $2x$ and $6$ is $6x$. Multiply every term by $6x$: $12 + 9 = 7x$.",
+        "So $21 = 7x$ and $x = 3$. This does not break the restriction, so it is valid.",
+        "Check: $\\dfrac{2}{3} + \\dfrac{3}{6} = \\dfrac{4}{6} + \\dfrac{3}{6} = \\dfrac{7}{6}$ ✓"
+      ],
+      "answer": "$x = 3$"
+    },
+    {
+      "type": "callout",
+      "label": "Common mistake",
+      "text": "When you multiply by the LCD, multiply **every** term, including terms without fractions and terms on the right-hand side. For example, in $\\dfrac{x}{2} + 3 = 5$, multiplying by $2$ gives $x + 6 = 10$, not $x + 3 = 10$."
+    },
+    {
+      "type": "heading",
+      "text": "Quadratic equations (solved by factorisation)"
+    },
+    {
+      "type": "paragraph",
+      "text": "A **quadratic equation** has the variable to the power $2$ as its highest power. In **standard form** it is written as $ax^2 + bx + c = 0$ with $a \\neq 0$. A quadratic equation can have two, one or no real solutions. In Grade 10 we solve quadratic equations by **factorising**. (The quadratic formula is done in Grade 11.)"
+    },
+    {
+      "type": "definition",
+      "term": "Zero-product principle",
+      "text": "If $A \\times B = 0$, then $A = 0$ or $B = 0$. This is why the equation must equal **zero** before you factorise: only zero has this property."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Rewrite the equation in standard form: everything on one side, $0$ on the other side.",
+        "Take out any common factor, then factorise fully (trinomial, difference of two squares, and so on).",
+        "Set each factor equal to zero.",
+        "Solve each small linear equation.",
+        "Check both answers and reject any that do not fit the context or the restrictions."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 4",
+      "problem": "Solve for $x$: $x^2 - 5x = 6$",
+      "steps": [
+        "Standard form: $x^2 - 5x - 6 = 0$.",
+        "Find two numbers that multiply to $-6$ and add to $-5$: they are $-6$ and $+1$. So $(x - 6)(x + 1) = 0$.",
+        "$x - 6 = 0$ or $x + 1 = 0$.",
+        "Check $x = 6$: $36 - 30 = 6$ ✓. Check $x = -1$: $1 + 5 = 6$ ✓"
+      ],
+      "answer": "$x = 6$ or $x = -1$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5: brackets that do not equal zero",
+      "problem": "Solve for $x$: $(x - 2)(x + 3) = 14$",
+      "steps": [
+        "The product equals $14$, not $0$, so we **cannot** set each bracket equal to $14$. Multiply out first: $x^2 + x - 6 = 14$.",
+        "Standard form: $x^2 + x - 20 = 0$.",
+        "Factorise: $(x + 5)(x - 4) = 0$.",
+        "$x = -5$ or $x = 4$.",
+        "Check $x = -5$: $(-7)(-2) = 14$ ✓. Check $x = 4$: $(2)(7) = 14$ ✓"
+      ],
+      "answer": "$x = -5$ or $x = 4$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 6: common factor and difference of squares",
+      "problem": "Solve for $x$: (a) $3x^2 = 12x$   (b) $2x^2 - 50 = 0$",
+      "steps": [
+        "(a) Standard form: $3x^2 - 12x = 0$.",
+        "Common factor: $3x(x - 4) = 0$, so $3x = 0$ or $x - 4 = 0$.",
+        "Therefore $x = 0$ or $x = 4$. (If you had divided both sides by $x$ you would have lost the solution $x = 0$.)",
+        "(b) Common factor: $2(x^2 - 25) = 0$.",
+        "Difference of two squares: $2(x - 5)(x + 5) = 0$.",
+        "Therefore $x = 5$ or $x = -5$, often written $x = \\pm 5$."
+      ],
+      "answer": "(a) $x = 0$ or $x = 4$   (b) $x = \\pm 5$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 7: a fraction that leads to a quadratic",
+      "problem": "Solve for $x$: $x + \\dfrac{6}{x} = 5$",
+      "steps": [
+        "Restriction: $x \\neq 0$.",
+        "Multiply every term by $x$: $x^2 + 6 = 5x$.",
+        "Standard form: $x^2 - 5x + 6 = 0$.",
+        "Factorise: $(x - 2)(x - 3) = 0$, so $x = 2$ or $x = 3$.",
+        "Both values are allowed ($x \\neq 0$). Check $x = 2$: $2 + 3 = 5$ ✓"
+      ],
+      "answer": "$x = 2$ or $x = 3$"
+    },
+    {
+      "type": "callout",
+      "label": "Common mistake",
+      "text": "Never divide both sides of an equation by $x$ (or by a bracket containing $x$). You may be dividing by zero and you will lose a solution. Take out the common factor instead."
+    },
+    {
+      "type": "heading",
+      "text": "Literal equations: changing the subject of a formula"
+    },
+    {
+      "type": "paragraph",
+      "text": "A **literal equation** contains several letters (variables). Changing the subject means rearranging the formula so that one chosen letter stands alone on one side. Use exactly the same balancing steps as for ordinary equations: treat the other letters as if they were numbers."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 8: simple interest",
+      "problem": "The simple interest formula is $A = P(1 + in)$. (a) Make $i$ the subject. (b) Thabo invests R8 000 and after 3 years he has R10 400. Find the interest rate.",
+      "steps": [
+        "(a) Divide both sides by $P$: $\\dfrac{A}{P} = 1 + in$.",
+        "Subtract $1$: $\\dfrac{A}{P} - 1 = in$.",
+        "Divide by $n$: $i = \\dfrac{A - P}{Pn}$ (writing $\\dfrac{A}{P} - 1$ as $\\dfrac{A - P}{P}$).",
+        "(b) Substitute: $i = \\dfrac{10\\,400 - 8\\,000}{8\\,000 \\times 3} = \\dfrac{2\\,400}{24\\,000} = 0{,}1$.",
+        "As a percentage: $0{,}1 \\times 100\\% = 10\\%$ per year."
+      ],
+      "answer": "(a) $i = \\dfrac{A - P}{Pn}$   (b) $10\\%$ per year"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 9: subject appears twice, and a square root",
+      "problem": "(a) Make $x$ the subject of $ax - b = cx + d$.   (b) Make $r$ the subject of $V = \\pi r^2 h$ (with $r > 0$).",
+      "steps": [
+        "(a) Get all the $x$-terms on one side: $ax - cx = d + b$.",
+        "Take out $x$ as a common factor: $x(a - c) = b + d$.",
+        "Divide by $(a - c)$: $x = \\dfrac{b + d}{a - c}$, where $a \\neq c$.",
+        "(b) Divide both sides by $\\pi h$: $r^2 = \\dfrac{V}{\\pi h}$.",
+        "Take the positive square root (a radius is positive): $r = \\sqrt{\\dfrac{V}{\\pi h}}$."
+      ]
+    },
+    {
+      "type": "callout",
+      "label": "Exam tip",
+      "text": "If the letter you want appears in more than one term, collect those terms on one side and **factorise** the letter out. Undo operations in the reverse order to how they were applied to the letter."
+    },
+    {
+      "type": "heading",
+      "text": "Simple exponential equations"
+    },
+    {
+      "type": "paragraph",
+      "text": "In an exponential equation the variable is in the exponent, e.g. $2^{x} = 32$. Write both sides as powers of the **same base**; then the exponents must be equal: if $a^x = a^y$ (with $a > 0$ and $a \\neq 1$), then $x = y$. The laws of exponents are covered in detail in the Exponents topic."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 10",
+      "problem": "Solve for $x$: (a) $2^{x + 1} = 32$   (b) $9^{x} = 27$   (c) $3 \\cdot 2^{x} = 24$",
+      "steps": [
+        "(a) $32 = 2^5$, so $2^{x + 1} = 2^5$. Equate exponents: $x + 1 = 5$, so $x = 4$.",
+        "(b) Use base $3$: $9^x = (3^2)^x = 3^{2x}$ and $27 = 3^3$. So $2x = 3$ and $x = \\dfrac{3}{2}$.",
+        "(c) Divide by $3$ first: $2^x = 8 = 2^3$, so $x = 3$."
+      ],
+      "answer": "(a) $x = 4$   (b) $x = 1{,}5$   (c) $x = 3$"
+    },
+    {
+      "type": "callout",
+      "label": "Common mistake",
+      "text": "In $3 \\cdot 2^x = 24$ you may **not** multiply $3 \\times 2$ to get $6^x$. The exponent belongs only to the $2$. Divide by $3$ first."
+    },
+    {
+      "type": "heading",
+      "text": "Simultaneous linear equations"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Simultaneous equations** are two (or more) equations that must be true at the same time. With two unknowns, such as $x$ and $y$, you need two equations. The solution is an ordered pair $(x; y)$ that satisfies **both** equations. There are three methods: **substitution**, **elimination** and **graphically**."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 11: substitution",
+      "problem": "Solve simultaneously: $y = 2x - 1$ and $3x + 2y = 12$",
+      "steps": [
+        "The first equation already gives $y$ in terms of $x$. Substitute it into the second: $3x + 2(2x - 1) = 12$.",
+        "Simplify: $3x + 4x - 2 = 12$, so $7x = 14$ and $x = 2$.",
+        "Substitute back: $y = 2(2) - 1 = 3$.",
+        "Check in the second equation: $3(2) + 2(3) = 12$ ✓"
+      ],
+      "answer": "$x = 2$ and $y = 3$, i.e. $(2; 3)$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 12: elimination",
+      "problem": "Solve simultaneously: $3x + 2y = 7$ ... (1) and $2x - 3y = 9$ ... (2)",
+      "steps": [
+        "Make the $y$-coefficients the same size with opposite signs. Equation (1) $\\times 3$: $9x + 6y = 21$ ... (3). Equation (2) $\\times 2$: $4x - 6y = 18$ ... (4).",
+        "Add (3) and (4): $13x = 39$, so $x = 3$.",
+        "Substitute into (1): $3(3) + 2y = 7$, so $2y = -2$ and $y = -1$.",
+        "Check in (2): $2(3) - 3(-1) = 6 + 3 = 9$ ✓"
+      ],
+      "answer": "$x = 3$ and $y = -1$"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Graphical method:** write each equation in the form $y = mx + c$ and draw both straight lines on the same set of axes. The solution is the point where the lines **intersect**. For $y = x + 1$ and $y = -2x + 7$ the lines cross at $(2; 3)$, so $x = 2$ and $y = 3$. Check algebraically: $x + 1 = -2x + 7$ gives $3x = 6$, so $x = 2$."
+    },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260' font-family='sans-serif' font-size='10'><rect width='320' height='260' fill='white'/><line x1='18' y1='18' x2='18' y2='242' stroke='#e6e6e6'/><line x1='58.6' y1='18' x2='58.6' y2='242' stroke='#e6e6e6'/><line x1='99.1' y1='18' x2='99.1' y2='242' stroke='#e6e6e6'/><line x1='139.7' y1='18' x2='139.7' y2='242' stroke='#e6e6e6'/><line x1='180.3' y1='18' x2='180.3' y2='242' stroke='#e6e6e6'/><line x1='220.9' y1='18' x2='220.9' y2='242' stroke='#e6e6e6'/><line x1='261.4' y1='18' x2='261.4' y2='242' stroke='#e6e6e6'/><line x1='302' y1='18' x2='302' y2='242' stroke='#e6e6e6'/><line x1='18' y1='242' x2='302' y2='242' stroke='#e6e6e6'/><line x1='18' y1='219.6' x2='302' y2='219.6' stroke='#e6e6e6'/><line x1='18' y1='197.2' x2='302' y2='197.2' stroke='#e6e6e6'/><line x1='18' y1='174.8' x2='302' y2='174.8' stroke='#e6e6e6'/><line x1='18' y1='152.4' x2='302' y2='152.4' stroke='#e6e6e6'/><line x1='18' y1='130' x2='302' y2='130' stroke='#e6e6e6'/><line x1='18' y1='107.6' x2='302' y2='107.6' stroke='#e6e6e6'/><line x1='18' y1='85.2' x2='302' y2='85.2' stroke='#e6e6e6'/><line x1='18' y1='62.8' x2='302' y2='62.8' stroke='#e6e6e6'/><line x1='18' y1='40.4' x2='302' y2='40.4' stroke='#e6e6e6'/><line x1='18' y1='18' x2='302' y2='18' stroke='#e6e6e6'/><line x1='12' y1='197.2' x2='310' y2='197.2' stroke='black'/><text x='310' y='193.2'>x</text><line x1='99.1' y1='248' x2='99.1' y2='10' stroke='black'/><text x='104.1' y='12'>y</text><text x='18' y='209.2' text-anchor='middle'>-2</text><text x='58.6' y='209.2' text-anchor='middle'>-1</text><text x='139.7' y='209.2' text-anchor='middle'>1</text><text x='180.3' y='209.2' text-anchor='middle'>2</text><text x='220.9' y='209.2' text-anchor='middle'>3</text><text x='261.4' y='209.2' text-anchor='middle'>4</text><text x='302' y='209.2' text-anchor='middle'>5</text><text x='95.1' y='245' text-anchor='end'>-2</text><text x='95.1' y='222.6' text-anchor='end'>-1</text><text x='95.1' y='177.8' text-anchor='end'>1</text><text x='95.1' y='155.4' text-anchor='end'>2</text><text x='95.1' y='133' text-anchor='end'>3</text><text x='95.1' y='110.6' text-anchor='end'>4</text><text x='95.1' y='88.2' text-anchor='end'>5</text><text x='95.1' y='65.8' text-anchor='end'>6</text><text x='95.1' y='43.4' text-anchor='end'>7</text><text x='95.1' y='21' text-anchor='end'>8</text><text x='95.1' y='209.2' text-anchor='end'>0</text><clipPath id='c0'><rect x='18' y='18' width='284' height='224'/></clipPath><path d='M18,219.6L18.7,219.2L19.4,218.8L20.1,218.4L20.8,218L21.5,217.6L22.3,217.2L23,216.9L23.7,216.5L24.4,216.1L25.1,215.7L25.8,215.3L26.5,214.9L27.2,214.5L27.9,214.1L28.7,213.7L29.4,213.3L30.1,212.9L30.8,212.5L31.5,212.2L32.2,211.8L32.9,211.4L33.6,211L34.3,210.6L35,210.2L35.8,209.8L36.5,209.4L37.2,209L37.9,208.6L38.6,208.2L39.3,207.8L40,207.4L40.7,207.1L41.4,206.7L42.1,206.3L42.9,205.9L43.6,205.5L44.3,205.1L45,204.7L45.7,204.3L46.4,203.9L47.1,203.5L47.8,203.1L48.5,202.7L49.2,202.4L50,202L50.7,201.6L51.4,201.2L52.1,200.8L52.8,200.4L53.5,200L54.2,199.6L54.9,199.2L55.6,198.8L56.3,198.4L57.1,198L57.8,197.6L58.5,197.3L59.2,196.9L59.9,196.5L60.6,196.1L61.3,195.7L62,195.3L62.7,194.9L63.4,194.5L64.2,194.1L64.9,193.7L65.6,193.3L66.3,192.9L67,192.6L67.7,192.2L68.4,191.8L69.1,191.4L69.8,191L70.5,190.6L71.3,190.2L72,189.8L72.7,189.4L73.4,189L74.1,188.6L74.8,188.2L75.5,187.8L76.2,187.5L76.9,187.1L77.6,186.7L78.4,186.3L79.1,185.9L79.8,185.5L80.5,185.1L81.2,184.7L81.9,184.3L82.6,183.9L83.3,183.5L84,183.1L84.7,182.8L85.5,182.4L86.2,182L86.9,181.6L87.6,181.2L88.3,180.8L89,180.4L89.7,180L90.4,179.6L91.1,179.2L91.8,178.8L92.6,178.4L93.3,178L94,177.7L94.7,177.3L95.4,176.9L96.1,176.5L96.8,176.1L97.5,175.7L98.2,175.3L98.9,174.9L99.7,174.5L100.4,174.1L101.1,173.7L101.8,173.3L102.5,173L103.2,172.6L103.9,172.2L104.6,171.8L105.3,171.4L106,171L106.8,170.6L107.5,170.2L108.2,169.8L108.9,169.4L109.6,169L110.3,168.6L111,168.2L111.7,167.9L112.4,167.5L113.1,167.1L113.9,166.7L114.6,166.3L115.3,165.9L116,165.5L116.7,165.1L117.4,164.7L118.1,164.3L118.8,163.9L119.5,163.5L120.2,163.2L121,162.8L121.7,162.4L122.4,162L123.1,161.6L123.8,161.2L124.5,160.8L125.2,160.4L125.9,160L126.6,159.6L127.3,159.2L128.1,158.8L128.8,158.4L129.5,158.1L130.2,157.7L130.9,157.3L131.6,156.9L132.3,156.5L133,156.1L133.7,155.7L134.4,155.3L135.2,154.9L135.9,154.5L136.6,154.1L137.3,153.7L138,153.4L138.7,153L139.4,152.6L140.1,152.2L140.8,151.8L141.5,151.4L142.3,151L143,150.6L143.7,150.2L144.4,149.8L145.1,149.4L145.8,149L146.5,148.6L147.2,148.3L147.9,147.9L148.6,147.5L149.4,147.1L150.1,146.7L150.8,146.3L151.5,145.9L152.2,145.5L152.9,145.1L153.6,144.7L154.3,144.3L155,143.9L155.7,143.6L156.5,143.2L157.2,142.8L157.9,142.4L158.6,142L159.3,141.6L160,141.2L160.7,140.8L161.4,140.4L162.1,140L162.8,139.6L163.5,139.2L164.3,138.8L165,138.5L165.7,138.1L166.4,137.7L167.1,137.3L167.8,136.9L168.5,136.5L169.2,136.1L169.9,135.7L170.7,135.3L171.4,134.9L172.1,134.5L172.8,134.1L173.5,133.8L174.2,133.4L174.9,133L175.6,132.6L176.3,132.2L177,131.8L177.8,131.4L178.5,131L179.2,130.6L179.9,130.2L180.6,129.8L181.3,129.4L182,129L182.7,128.7L183.4,128.3L184.1,127.9L184.9,127.5L185.6,127.1L186.3,126.7L187,126.3L187.7,125.9L188.4,125.5L189.1,125.1L189.8,124.7L190.5,124.3L191.2,124L192,123.6L192.7,123.2L193.4,122.8L194.1,122.4L194.8,122L195.5,121.6L196.2,121.2L196.9,120.8L197.6,120.4L198.3,120L199.1,119.6L199.8,119.2L200.5,118.9L201.2,118.5L201.9,118.1L202.6,117.7L203.3,117.3L204,116.9L204.7,116.5L205.4,116.1L206.2,115.7L206.9,115.3L207.6,114.9L208.3,114.5L209,114.2L209.7,113.8L210.4,113.4L211.1,113L211.8,112.6L212.5,112.2L213.3,111.8L214,111.4L214.7,111L215.4,110.6L216.1,110.2L216.8,109.8L217.5,109.4L218.2,109.1L218.9,108.7L219.6,108.3L220.4,107.9L221.1,107.5L221.8,107.1L222.5,106.7L223.2,106.3L223.9,105.9L224.6,105.5L225.3,105.1L226,104.7L226.7,104.4L227.5,104L228.2,103.6L228.9,103.2L229.6,102.8L230.3,102.4L231,102L231.7,101.6L232.4,101.2L233.1,100.8L233.8,100.4L234.6,100L235.3,99.6L236,99.3L236.7,98.9L237.4,98.5L238.1,98.1L238.8,97.7L239.5,97.3L240.2,96.9L240.9,96.5L241.7,96.1L242.4,95.7L243.1,95.3L243.8,94.9L244.5,94.6L245.2,94.2L245.9,93.8L246.6,93.4L247.3,93L248,92.6L248.8,92.2L249.5,91.8L250.2,91.4L250.9,91L251.6,90.6L252.3,90.2L253,89.8L253.7,89.5L254.4,89.1L255.1,88.7L255.9,88.3L256.6,87.9L257.3,87.5L258,87.1L258.7,86.7L259.4,86.3L260.1,85.9L260.8,85.5L261.5,85.1L262.2,84.8L263,84.4L263.7,84L264.4,83.6L265.1,83.2L265.8,82.8L266.5,82.4L267.2,82L267.9,81.6L268.6,81.2L269.3,80.8L270.1,80.4L270.8,80L271.5,79.7L272.2,79.3L272.9,78.9L273.6,78.5L274.3,78.1L275,77.7L275.7,77.3L276.4,76.9L277.2,76.5L277.9,76.1L278.6,75.7L279.3,75.3L280,75L280.7,74.6L281.4,74.2L282.1,73.8L282.8,73.4L283.5,73L284.3,72.6L285,72.2L285.7,71.8L286.4,71.4L287.1,71L287.8,70.6L288.5,70.2L289.2,69.9L289.9,69.5L290.6,69.1L291.4,68.7L292.1,68.3L292.8,67.9L293.5,67.5L294.2,67.1L294.9,66.7L295.6,66.3L296.3,65.9L297,65.5L297.7,65.2L298.5,64.8L299.2,64.4L299.9,64L300.6,63.6L301.3,63.2L302,62.8' fill='none' stroke='black' stroke-width='1.8' clip-path='url(#c0)'/><text x='267.6' y='72.5' text-anchor='end' font-size='11' font-style='italic' paint-order='stroke' stroke='white' stroke-width='3'>y = x + 1</text><clipPath id='c1'><rect x='18' y='18' width='284' height='224'/></clipPath><path d='M18,16L18.7,16L19.4,16L20.1,16L20.8,16L21.5,16L22.3,16L23,16L23.7,16L24.4,16L25.1,16L25.8,16L26.5,16L27.2,16L27.9,16L28.7,16L29.4,16L30.1,16L30.8,16L31.5,16L32.2,16L32.9,16L33.6,16L34.3,16L35,16L35.8,16L36.5,16L37.2,16L37.9,16L38.6,16L39.3,16L40,16L40.7,16L41.4,16L42.1,16L42.9,16L43.6,16L44.3,16L45,16L45.7,16L46.4,16L47.1,16L47.8,16L48.5,16L49.2,16L50,16L50.7,16L51.4,16L52.1,16L52.8,16L53.5,16L54.2,16L54.9,16L55.6,16L56.3,16L57.1,16L57.8,16L58.5,16L59.2,16L59.9,16L60.6,16L61.3,16L62,16L62.7,16L63.4,16L64.2,16L64.9,16L65.6,16L66.3,16L67,16L67.7,16L68.4,16L69.1,16L69.8,16L70.5,16L71.3,16L72,16L72.7,16L73.4,16L74.1,16L74.8,16L75.5,16L76.2,16L76.9,16L77.6,16.7L78.4,17.4L79.1,18.2L79.8,19L80.5,19.8L81.2,20.6L81.9,21.4L82.6,22.1L83.3,22.9L84,23.7L84.7,24.5L85.5,25.3L86.2,26.1L86.9,26.8L87.6,27.6L88.3,28.4L89,29.2L89.7,30L90.4,30.8L91.1,31.6L91.8,32.3L92.6,33.1L93.3,33.9L94,34.7L94.7,35.5L95.4,36.3L96.1,37L96.8,37.8L97.5,38.6L98.2,39.4L98.9,40.2L99.7,41L100.4,41.7L101.1,42.5L101.8,43.3L102.5,44.1L103.2,44.9L103.9,45.7L104.6,46.4L105.3,47.2L106,48L106.8,48.8L107.5,49.6L108.2,50.4L108.9,51.2L109.6,51.9L110.3,52.7L111,53.5L111.7,54.3L112.4,55.1L113.1,55.9L113.9,56.6L114.6,57.4L115.3,58.2L116,59L116.7,59.8L117.4,60.6L118.1,61.3L118.8,62.1L119.5,62.9L120.2,63.7L121,64.5L121.7,65.3L122.4,66L123.1,66.8L123.8,67.6L124.5,68.4L125.2,69.2L125.9,70L126.6,70.8L127.3,71.5L128.1,72.3L128.8,73.1L129.5,73.9L130.2,74.7L130.9,75.5L131.6,76.2L132.3,77L133,77.8L133.7,78.6L134.4,79.4L135.2,80.2L135.9,80.9L136.6,81.7L137.3,82.5L138,83.3L138.7,84.1L139.4,84.9L140.1,85.6L140.8,86.4L141.5,87.2L142.3,88L143,88.8L143.7,89.6L144.4,90.4L145.1,91.1L145.8,91.9L146.5,92.7L147.2,93.5L147.9,94.3L148.6,95.1L149.4,95.8L150.1,96.6L150.8,97.4L151.5,98.2L152.2,99L152.9,99.8L153.6,100.5L154.3,101.3L155,102.1L155.7,102.9L156.5,103.7L157.2,104.5L157.9,105.2L158.6,106L159.3,106.8L160,107.6L160.7,108.4L161.4,109.2L162.1,110L162.8,110.7L163.5,111.5L164.3,112.3L165,113.1L165.7,113.9L166.4,114.7L167.1,115.4L167.8,116.2L168.5,117L169.2,117.8L169.9,118.6L170.7,119.4L171.4,120.1L172.1,120.9L172.8,121.7L173.5,122.5L174.2,123.3L174.9,124.1L175.6,124.8L176.3,125.6L177,126.4L177.8,127.2L178.5,128L179.2,128.8L179.9,129.6L180.6,130.3L181.3,131.1L182,131.9L182.7,132.7L183.4,133.5L184.1,134.3L184.9,135L185.6,135.8L186.3,136.6L187,137.4L187.7,138.2L188.4,139L189.1,139.7L189.8,140.5L190.5,141.3L191.2,142.1L192,142.9L192.7,143.7L193.4,144.4L194.1,145.2L194.8,146L195.5,146.8L196.2,147.6L196.9,148.4L197.6,149.2L198.3,149.9L199.1,150.7L199.8,151.5L200.5,152.3L201.2,153.1L201.9,153.9L202.6,154.6L203.3,155.4L204,156.2L204.7,157L205.4,157.8L206.2,158.6L206.9,159.3L207.6,160.1L208.3,160.9L209,161.7L209.7,162.5L210.4,163.3L211.1,164L211.8,164.8L212.5,165.6L213.3,166.4L214,167.2L214.7,168L215.4,168.8L216.1,169.5L216.8,170.3L217.5,171.1L218.2,171.9L218.9,172.7L219.6,173.5L220.4,174.2L221.1,175L221.8,175.8L222.5,176.6L223.2,177.4L223.9,178.2L224.6,178.9L225.3,179.7L226,180.5L226.7,181.3L227.5,182.1L228.2,182.9L228.9,183.6L229.6,184.4L230.3,185.2L231,186L231.7,186.8L232.4,187.6L233.1,188.4L233.8,189.1L234.6,189.9L235.3,190.7L236,191.5L236.7,192.3L237.4,193.1L238.1,193.8L238.8,194.6L239.5,195.4L240.2,196.2L240.9,197L241.7,197.8L242.4,198.5L243.1,199.3L243.8,200.1L244.5,200.9L245.2,201.7L245.9,202.5L246.6,203.2L247.3,204L248,204.8L248.8,205.6L249.5,206.4L250.2,207.2L250.9,208L251.6,208.7L252.3,209.5L253,210.3L253.7,211.1L254.4,211.9L255.1,212.7L255.9,213.4L256.6,214.2L257.3,215L258,215.8L258.7,216.6L259.4,217.4L260.1,218.1L260.8,218.9L261.5,219.7L262.2,220.5L263,221.3L263.7,222.1L264.4,222.8L265.1,223.6L265.8,224.4L266.5,225.2L267.2,226L267.9,226.8L268.6,227.6L269.3,228.3L270.1,229.1L270.8,229.9L271.5,230.7L272.2,231.5L272.9,232.3L273.6,233L274.3,233.8L275,234.6L275.7,235.4L276.4,236.2L277.2,237L277.9,237.7L278.6,238.5L279.3,239.3L280,240.1L280.7,240.9L281.4,241.7L282.1,242.4L282.8,243.2L283.5,244L284.3,244L285,244L285.7,244L286.4,244L287.1,244L287.8,244L288.5,244L289.2,244L289.9,244L290.6,244L291.4,244L292.1,244L292.8,244L293.5,244L294.2,244L294.9,244L295.6,244L296.3,244L297,244L297.7,244L298.5,244L299.2,244L299.9,244L300.6,244L301.3,244L302,244' fill='none' stroke='black' stroke-width='1.8' stroke-dasharray='6 3' clip-path='url(#c1)'/><text x='129.5' y='61.3' text-anchor='start' font-size='11' font-style='italic' paint-order='stroke' stroke='white' stroke-width='3'>y = −2x + 7</text><circle cx='180.3' cy='130' r='3' fill='black'/><text x='185.3' y='125'>(2; 3)</text></svg>",
+      "caption": "The solution of the simultaneous equations y = x + 1 and y = −2x + 7 is the point of intersection (2; 3)."
+    },
+    {
+      "type": "callout",
+      "label": "Exam tip",
+      "text": "Use **substitution** when one equation is already in the form $y = \\ldots$ or $x = \\ldots$. Use **elimination** when the coefficients of one variable are equal or easily made equal. Always number your equations and check your answer in the equation you did not use for substitution."
+    },
+    {
+      "type": "heading",
+      "text": "Word problems"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Read the problem carefully and identify the unknown(s).",
+        "Define the variable(s) in words with units, e.g. \"Let the width be $x$ metres\".",
+        "Translate the information into an equation (or two equations).",
+        "Solve the equation(s).",
+        "Reject answers that do not make sense (e.g. a negative length or age).",
+        "Answer the question in a full sentence with units, and check against the story."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 13: ages",
+      "problem": "Thandi is three times as old as her brother Sipho. In 5 years' time Thandi will be twice as old as Sipho. How old are they now?",
+      "steps": [
+        "Let Sipho's age now be $x$ years. Then Thandi is $3x$ years old.",
+        "In 5 years: Sipho is $x + 5$ and Thandi is $3x + 5$.",
+        "Equation: $3x + 5 = 2(x + 5)$.",
+        "Solve: $3x + 5 = 2x + 10$, so $x = 5$.",
+        "Check: now 5 and 15; in 5 years 10 and 20, and $20 = 2 \\times 10$ ✓"
+      ],
+      "answer": "Sipho is 5 years old and Thandi is 15 years old."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 14: money (simultaneous equations)",
+      "problem": "At the school tuck shop, 3 pies and 2 cooldrinks cost R81,00, while 2 pies and 5 cooldrinks cost R92,50. Find the price of one pie and of one cooldrink.",
+      "steps": [
+        "Let a pie cost $p$ rand and a cooldrink cost $d$ rand.",
+        "$3p + 2d = 81$ ... (1) and $2p + 5d = 92{,}5$ ... (2)",
+        "(1) $\\times 2$: $6p + 4d = 162$ ... (3). (2) $\\times 3$: $6p + 15d = 277{,}5$ ... (4).",
+        "(4) $-$ (3): $11d = 115{,}5$, so $d = 10{,}5$.",
+        "Substitute into (1): $3p + 21 = 81$, so $3p = 60$ and $p = 20$.",
+        "Check in (2): $2(20) + 5(10{,}5) = 40 + 52{,}5 = 92{,}5$ ✓"
+      ],
+      "answer": "A pie costs R20,00 and a cooldrink costs R10,50."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 15: rectangle (quadratic)",
+      "problem": "A rectangular vegetable garden at a school in Polokwane is 3 m longer than it is wide. Its area is 40 m². Find its dimensions.",
+      "steps": [
+        "Let the width be $x$ m. Then the length is $(x + 3)$ m.",
+        "Area: $x(x + 3) = 40$, so $x^2 + 3x - 40 = 0$.",
+        "Factorise: $(x + 8)(x - 5) = 0$, so $x = -8$ or $x = 5$.",
+        "A width cannot be negative, so reject $x = -8$. Therefore $x = 5$.",
+        "Check: $5 \\times 8 = 40$ ✓"
+      ],
+      "answer": "The garden is 5 m wide and 8 m long."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 16: speed, distance and time",
+      "problem": "Lerato drives from Durban to Pietermaritzburg at an average speed of 80 km/h and returns along the same road at 100 km/h. The total driving time is 1 hour 48 minutes. How far is it from Durban to Pietermaritzburg along this road?",
+      "steps": [
+        "Use time $= \\dfrac{\\text{distance}}{\\text{speed}}$. Let the distance one way be $d$ km.",
+        "1 h 48 min $= 1 + \\dfrac{48}{60} = 1{,}8$ hours.",
+        "Equation: $\\dfrac{d}{80} + \\dfrac{d}{100} = 1{,}8$.",
+        "Multiply every term by the LCD $400$: $5d + 4d = 720$, so $9d = 720$ and $d = 80$.",
+        "Check: $\\dfrac{80}{80} + \\dfrac{80}{100} = 1 + 0{,}8 = 1{,}8$ hours ✓"
+      ],
+      "answer": "The distance is 80 km."
+    },
+    {
+      "type": "heading",
+      "text": "Linear inequalities"
+    },
+    {
+      "type": "paragraph",
+      "text": "An **inequality** compares two expressions using $<$, $>$, $\\leq$ or $\\geq$. The solution of a linear inequality is usually a whole **range** of values, not a single number. For example, $x + 3 > 5$ is true for every $x > 2$. We solve inequalities just like equations, with **one extra rule**."
+    },
+    {
+      "type": "callout",
+      "label": "Important rule",
+      "text": "When you **multiply or divide** both sides of an inequality by a **negative** number, you must **reverse** the inequality sign. For example, $2 < 5$ but $-2 > -5$. So $-3x \\geq 6$ becomes $x \\leq -2$."
+    },
+    {
+      "type": "table",
+      "caption": "Ways of writing the solution of an inequality",
+      "headers": [
+        "Inequality",
+        "Number line",
+        "Interval notation",
+        "Set-builder notation"
+      ],
+      "rows": [
+        [
+          "$x > 2$",
+          "open dot at 2, arrow to the right",
+          "$(2; \\infty)$",
+          "$\\{x \\mid x > 2,\\ x \\in \\mathbb{R}\\}$"
+        ],
+        [
+          "$x \\geq 2$",
+          "closed (filled) dot at 2, arrow to the right",
+          "$[2; \\infty)$",
+          "$\\{x \\mid x \\geq 2,\\ x \\in \\mathbb{R}\\}$"
+        ],
+        [
+          "$x < -1$",
+          "open dot at $-1$, arrow to the left",
+          "$(-\\infty; -1)$",
+          "$\\{x \\mid x < -1,\\ x \\in \\mathbb{R}\\}$"
+        ],
+        [
+          "$-2 < x \\leq 3$",
+          "open dot at $-2$, closed dot at 3, shaded between",
+          "$(-2; 3]$",
+          "$\\{x \\mid -2 < x \\leq 3,\\ x \\in \\mathbb{R}\\}$"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "label": "Remember",
+      "text": "A round bracket $($ or $)$ and an open dot mean the endpoint is **not** included ($<$ or $>$). A square bracket $[$ or $]$ and a closed dot mean the endpoint **is** included ($\\leq$ or $\\geq$). Infinity ($\\infty$) is not a number, so it always gets a round bracket. In South Africa we separate the endpoints with a semicolon: $(-2; 3]$."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 17: sign reversal",
+      "problem": "Solve $5 - 3x \\geq 11$ and represent the solution on a number line, in interval notation and in set-builder notation.",
+      "steps": [
+        "Subtract $5$ from both sides: $-3x \\geq 6$.",
+        "Divide by $-3$ and **reverse** the sign: $x \\leq -2$.",
+        "Number line: a closed dot at $-2$ with the line shaded to the left (see the diagram).",
+        "Interval notation: $(-\\infty; -2]$.",
+        "Set-builder notation: $\\{x \\mid x \\leq -2,\\ x \\in \\mathbb{R}\\}$.",
+        "Quick check with a value in the solution, $x = -3$: $5 - 3(-3) = 14 \\geq 11$ ✓"
+      ],
+      "answer": "$x \\leq -2$"
+    },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 70' font-family='sans-serif' font-size='11'><rect width='320' height='70' fill='white'/><line x1='8' y1='32' x2='312' y2='32' stroke='black'/><polygon points='316,32 308,28 308,36'/><polygon points='4,32 12,28 12,36'/><line x1='22' y1='28' x2='22' y2='36' stroke='black'/><text x='22' y='52' text-anchor='middle'>-5</text><line x1='56.5' y1='28' x2='56.5' y2='36' stroke='black'/><text x='56.5' y='52' text-anchor='middle'>-4</text><line x1='91' y1='28' x2='91' y2='36' stroke='black'/><text x='91' y='52' text-anchor='middle'>-3</text><line x1='125.5' y1='28' x2='125.5' y2='36' stroke='black'/><text x='125.5' y='52' text-anchor='middle'>-2</text><line x1='160' y1='28' x2='160' y2='36' stroke='black'/><text x='160' y='52' text-anchor='middle'>-1</text><line x1='194.5' y1='28' x2='194.5' y2='36' stroke='black'/><text x='194.5' y='52' text-anchor='middle'>0</text><line x1='229' y1='28' x2='229' y2='36' stroke='black'/><text x='229' y='52' text-anchor='middle'>1</text><line x1='263.5' y1='28' x2='263.5' y2='36' stroke='black'/><text x='263.5' y='52' text-anchor='middle'>2</text><line x1='298' y1='28' x2='298' y2='36' stroke='black'/><text x='298' y='52' text-anchor='middle'>3</text><line x1='8' y1='32' x2='125.5' y2='32' stroke='black' stroke-width='5'/><circle cx='125.5' cy='32' r='5' fill='black' stroke='black' stroke-width='2'/></svg>",
+      "caption": "x ≤ −2: closed dot at −2 (included) and shading to the left."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 18: a double inequality",
+      "problem": "Solve $-3 < 2x + 1 \\leq 7$ and write the answer in interval notation.",
+      "steps": [
+        "A double inequality has three parts. Do the same thing to all three parts.",
+        "Subtract $1$ from each part: $-4 < 2x \\leq 6$.",
+        "Divide each part by $2$ (positive, so no sign change): $-2 < x \\leq 3$.",
+        "Interval notation: $(-2; 3]$."
+      ],
+      "answer": "$-2 < x \\leq 3$, i.e. $x \\in (-2; 3]$"
+    },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 70' font-family='sans-serif' font-size='11'><rect width='320' height='70' fill='white'/><line x1='8' y1='32' x2='312' y2='32' stroke='black'/><polygon points='316,32 308,28 308,36'/><polygon points='4,32 12,28 12,36'/><line x1='22' y1='28' x2='22' y2='36' stroke='black'/><text x='22' y='52' text-anchor='middle'>-4</text><line x1='52.666666666666664' y1='28' x2='52.666666666666664' y2='36' stroke='black'/><text x='52.666666666666664' y='52' text-anchor='middle'>-3</text><line x1='83.33333333333333' y1='28' x2='83.33333333333333' y2='36' stroke='black'/><text x='83.33333333333333' y='52' text-anchor='middle'>-2</text><line x1='114' y1='28' x2='114' y2='36' stroke='black'/><text x='114' y='52' text-anchor='middle'>-1</text><line x1='144.66666666666666' y1='28' x2='144.66666666666666' y2='36' stroke='black'/><text x='144.66666666666666' y='52' text-anchor='middle'>0</text><line x1='175.33333333333334' y1='28' x2='175.33333333333334' y2='36' stroke='black'/><text x='175.33333333333334' y='52' text-anchor='middle'>1</text><line x1='206' y1='28' x2='206' y2='36' stroke='black'/><text x='206' y='52' text-anchor='middle'>2</text><line x1='236.66666666666666' y1='28' x2='236.66666666666666' y2='36' stroke='black'/><text x='236.66666666666666' y='52' text-anchor='middle'>3</text><line x1='267.3333333333333' y1='28' x2='267.3333333333333' y2='36' stroke='black'/><text x='267.3333333333333' y='52' text-anchor='middle'>4</text><line x1='298' y1='28' x2='298' y2='36' stroke='black'/><text x='298' y='52' text-anchor='middle'>5</text><line x1='83.33333333333333' y1='32' x2='236.66666666666666' y2='32' stroke='black' stroke-width='5'/><circle cx='83.33333333333333' cy='32' r='5' fill='white' stroke='black' stroke-width='2'/><circle cx='236.66666666666666' cy='32' r='5' fill='black' stroke='black' stroke-width='2'/></svg>",
+      "caption": "−2 < x ≤ 3: open dot at −2 (not included), closed dot at 3 (included)."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 19: double inequality with a negative coefficient",
+      "problem": "Solve $-1 \\leq \\dfrac{1 - 2x}{3} < 3$ and list the integer solutions.",
+      "steps": [
+        "Multiply every part by $3$: $-3 \\leq 1 - 2x < 9$.",
+        "Subtract $1$ from every part: $-4 \\leq -2x < 8$.",
+        "Divide every part by $-2$ and reverse **both** signs: $2 \\geq x > -4$.",
+        "Rewrite with the smaller number on the left: $-4 < x \\leq 2$.",
+        "Integer solutions ($x \\in \\mathbb{Z}$): $-3; -2; -1; 0; 1; 2$."
+      ],
+      "answer": "$-4 < x \\leq 2$; integers: $-3; -2; -1; 0; 1; 2$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 20: inequality with fractions",
+      "problem": "Solve $\\dfrac{2 - x}{3} \\leq \\dfrac{x + 4}{2}$.",
+      "steps": [
+        "Multiply both sides by the LCD $6$ (positive, so no sign change): $2(2 - x) \\leq 3(x + 4)$.",
+        "Multiply out: $4 - 2x \\leq 3x + 12$.",
+        "Subtract $3x$ and $4$ from both sides: $-5x \\leq 8$.",
+        "Divide by $-5$ and reverse the sign: $x \\geq -\\dfrac{8}{5}$, i.e. $x \\geq -1{,}6$."
+      ],
+      "answer": "$x \\geq -1{,}6$, i.e. $x \\in [-1{,}6; \\infty)$"
+    },
+    {
+      "type": "callout",
+      "label": "Common mistake",
+      "text": "Do not reverse the sign when you **add or subtract** a negative number, or when you divide by a positive number. Only multiplying or dividing by a negative reverses the sign."
+    },
+    {
+      "type": "heading",
+      "text": "Summary"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Linear equations: remove brackets, multiply every term by the LCD, collect like terms, solve and check. State restrictions when $x$ is in a denominator.",
+        "Quadratic equations: write in standard form $ax^2 + bx + c = 0$, factorise, set each factor equal to zero (zero-product principle). Never divide by $x$.",
+        "Literal equations: use balancing steps to isolate the required letter; factorise if it appears in more than one term.",
+        "Exponential equations: write both sides with the same base, then equate the exponents.",
+        "Simultaneous equations: substitution, elimination or graphically (point of intersection). The solution is an ordered pair.",
+        "Inequalities: solve like equations, but **reverse the sign** when multiplying or dividing by a negative number.",
+        "Represent solutions on a number line (open dot: not included; closed dot: included), in interval notation, e.g. $(-2; 3]$, or in set-builder notation, e.g. $\\{x \\mid -2 < x \\leq 3,\\ x \\in \\mathbb{R}\\}$.",
+        "Word problems: define the variable with units, write an equation, solve, reject impossible answers, answer in a sentence."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Solve for $x$: $4x - 7 = 2x + 5$",
+      "options": [
+        "$x = -1$",
+        "$x = 1$",
+        "$x = 6$",
+        "$x = 2$"
+      ],
+      "answer": 2,
+      "explanation": "Subtract $2x$ from both sides and add $7$: $2x = 12$, so $x = 6$. Check: $4(6) - 7 = 17$ and $2(6) + 5 = 17$."
+    },
+    {
+      "id": "q2",
+      "type": "numeric",
+      "prompt": "Solve for $x$: $\\dfrac{x + 2}{3} - \\dfrac{x - 1}{2} = 1$. Give the exact value.",
+      "answer": 1,
+      "tolerance": 0,
+      "explanation": "Multiply every term by $6$: $2(x + 2) - 3(x - 1) = 6$, so $2x + 4 - 3x + 3 = 6$, giving $-x + 7 = 6$ and $x = 1$."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "If $-2x < 8$, then $x < -4$.",
+      "answer": false,
+      "explanation": "Dividing by $-2$ reverses the sign: $x > -4$. Test $x = 0$: $-2(0) = 0 < 8$ is true, and $0 > -4$."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "prompt": "Solve for $x$: $x^2 - x - 12 = 0$",
+      "options": [
+        "$x = 4$ or $x = -3$",
+        "$x = -4$ or $x = 3$",
+        "$x = 12$ or $x = -1$",
+        "$x = 6$ or $x = -2$"
+      ],
+      "answer": 0,
+      "explanation": "Two numbers that multiply to $-12$ and add to $-1$ are $-4$ and $3$: $(x - 4)(x + 3) = 0$, so $x = 4$ or $x = -3$."
+    },
+    {
+      "id": "q5",
+      "type": "truefalse",
+      "prompt": "The equation $x^2 = 5x$ has only one solution, namely $x = 5$.",
+      "answer": false,
+      "explanation": "Write it as $x^2 - 5x = 0$, so $x(x - 5) = 0$, giving $x = 0$ or $x = 5$. Dividing both sides by $x$ loses the solution $x = 0$."
+    },
+    {
+      "id": "q6",
+      "type": "short",
+      "prompt": "Complete the name of this rule: if $A \\times B = 0$, then $A = 0$ or $B = 0$. It is called the zero-______ principle.",
+      "answers": [
+        "product",
+        "zero-product",
+        "zero product",
+        "zero-product principle",
+        "zero product principle"
+      ],
+      "explanation": "The **zero-product principle** is the reason a quadratic equation must equal zero before you factorise and solve."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "prompt": "Make $i$ the subject of the formula $A = P(1 + in)$.",
+      "options": [
+        "$i = \\dfrac{A}{Pn} - 1$",
+        "$i = \\dfrac{A - 1}{Pn}$",
+        "$i = \\dfrac{A - P}{n}$",
+        "$i = \\dfrac{A - P}{Pn}$"
+      ],
+      "answer": 3,
+      "explanation": "$\\dfrac{A}{P} = 1 + in$, so $\\dfrac{A}{P} - 1 = in$, i.e. $\\dfrac{A - P}{P} = in$, and $i = \\dfrac{A - P}{Pn}$."
+    },
+    {
+      "id": "q8",
+      "type": "numeric",
+      "prompt": "Solve for $x$: $4^{x} = 32$. Give your answer as a decimal.",
+      "answer": 2.5,
+      "tolerance": 0.001,
+      "explanation": "Use base $2$: $4^x = 2^{2x}$ and $32 = 2^5$. So $2x = 5$ and $x = 2{,}5$."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "Solve simultaneously: $x + y = 10$ and $x - y = 4$.",
+      "options": [
+        "$x = 3$ and $y = 7$",
+        "$x = 7$ and $y = 3$",
+        "$x = 6$ and $y = 4$",
+        "$x = 14$ and $y = -4$"
+      ],
+      "answer": 1,
+      "explanation": "Add the equations: $2x = 14$, so $x = 7$. Then $y = 10 - 7 = 3$. Check: $7 - 3 = 4$ ✓"
+    },
+    {
+      "id": "q10",
+      "type": "match",
+      "prompt": "Match each inequality with its interval notation.",
+      "marks": 4,
+      "pairs": [
+        {
+          "left": "$x > 3$",
+          "right": "(3; ∞)"
+        },
+        {
+          "left": "$x \\leq 3$",
+          "right": "(−∞; 3]"
+        },
+        {
+          "left": "$-1 \\leq x < 3$",
+          "right": "[−1; 3)"
+        },
+        {
+          "left": "$-1 < x \\leq 3$",
+          "right": "(−1; 3]"
+        }
+      ],
+      "explanation": "Round brackets mean the endpoint is not included; square brackets mean it is included. Infinity always has a round bracket."
+    },
+    {
+      "id": "q11",
+      "type": "numeric",
+      "prompt": "Mrs Naidoo is 28 years older than her daughter Priya. In 4 years' time Mrs Naidoo will be three times as old as Priya. How old is Priya now?",
+      "answer": 10,
+      "tolerance": 0,
+      "unit": "years",
+      "explanation": "Let Priya be $x$; her mother is $x + 28$. In 4 years: $x + 32 = 3(x + 4)$, so $x + 32 = 3x + 12$, giving $2x = 20$ and $x = 10$. Check: 10 and 38 now; 14 and 42 in 4 years, and $42 = 3 \\times 14$."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "Solve $-5 \\leq 3 - 2x < 7$.",
+      "options": [
+        "$-4 \\leq x < 2$",
+        "$-2 \\leq x < 4$",
+        "$-2 < x \\leq 4$",
+        "$-4 < x \\leq 2$"
+      ],
+      "answer": 2,
+      "explanation": "Subtract $3$: $-8 \\leq -2x < 4$. Divide by $-2$ and reverse both signs: $4 \\geq x > -2$, which is $-2 < x \\leq 4$."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Solve for $x$: $(x + 1)(x - 4) = 6$. Show all your working.",
+      "memo": "$x^2 - 3x - 4 = 6$ ✓ (multiply out)\n$x^2 - 3x - 10 = 0$ ✓ (standard form)\n$(x - 5)(x + 2) = 0$ ✓ (factors)\n$x = 5$ or $x = -2$ ✓ (both answers)\n\nNote: setting $x + 1 = 6$ and $x - 4 = 6$ earns no marks, because the product does not equal zero.",
+      "explanation": "Check: $(6)(1) = 6$ ✓ and $(-1)(-6) = 6$ ✓"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Solve simultaneously for $x$ and $y$: $2x - y = 7$ and $3x + 2y = 7$.",
+      "memo": "Elimination: multiply the first equation by $2$: $4x - 2y = 14$ ✓\nAdd to the second equation: $7x = 21$ ✓\n$x = 3$ ✓\n$y = 2(3) - 7 = -1$ ✓\n\n(Substitution is also acceptable: $y = 2x - 7$, so $3x + 2(2x - 7) = 7$, $7x = 21$.)",
+      "explanation": "Check in the second equation: $3(3) + 2(-1) = 9 - 2 = 7$ ✓"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 5,
+      "prompt": "The length of a rectangular netball court marking area is 4 m more than its width, and its area is 60 m². Let the width be $x$ m. Form an equation and solve it to find the length and width of the rectangle.",
+      "memo": "$x(x + 4) = 60$ ✓ (equation)\n$x^2 + 4x - 60 = 0$ ✓ (standard form)\n$(x + 10)(x - 6) = 0$ ✓ (factors)\n$x = 6$ (reject $x = -10$, because a width cannot be negative) ✓\nWidth $= 6$ m and length $= 10$ m ✓",
+      "explanation": "Check: $6 \\times 10 = 60$ m² and $10 - 6 = 4$ m ✓"
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Solve $\\dfrac{x - 4}{3} - \\dfrac{x + 1}{2} \\geq -2$. Represent your answer on a number line and in interval notation.",
+      "memo": "Multiply by $6$: $2(x - 4) - 3(x + 1) \\geq -12$ ✓\n$2x - 8 - 3x - 3 \\geq -12$, so $-x - 11 \\geq -12$ ✓\n$-x \\geq -1$, so $x \\leq 1$ ✓ (sign reversed)\nNumber line: closed dot at $1$ with shading to the left ✓\nInterval notation: $(-\\infty; 1]$ ✓",
+      "explanation": "Check with $x = 1$: $\\dfrac{-3}{3} - \\dfrac{2}{2} = -1 - 1 = -2 \\geq -2$ ✓, and with $x = 4$ (not in the solution): $0 - 2{,}5 = -2{,}5$, which is not $\\geq -2$."
+    }
+  ]
+}

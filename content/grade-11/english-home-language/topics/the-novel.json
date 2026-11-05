@@ -1,0 +1,40 @@
+{
+  "id": "the-novel",
+  "title": "The Novel: Theme, Symbol and Narrative Technique",
+  "term": 2,
+  "summary": "Analysing the novel at a deeper level: theme and how it develops, symbolism and motifs, narrative voice and reliability, flashback and foreshadowing, and setting as mood, with an original extract.",
+  "notes": [
+    { "type": "heading", "text": "Theme versus subject" },
+    { "type": "paragraph", "text": "The **subject** is what the novel is about (a family farm, a war). The **theme** is the message or insight it offers, stated as a full sentence: 'Pride can blind people to the suffering they cause.' Themes develop through character choices, conflicts and the ending." },
+    { "type": "heading", "text": "Narrative techniques" },
+    { "type": "table", "headers": ["Technique", "Purpose"], "rows": [
+      ["Flashback", "Shows past events that explain the present"],
+      ["Foreshadowing", "Hints at what will happen, building suspense"],
+      ["Unreliable narrator", "A narrator whose account we cannot fully trust, making readers question events"],
+      ["Multiple narrators", "Show events from several perspectives"],
+      ["Stream of consciousness", "Presents a character's flow of thoughts"],
+      ["Pathetic fallacy", "Weather or setting reflects emotion (a storm during a crisis)"]
+    ] },
+    { "type": "heading", "text": "Symbols and motifs" },
+    { "type": "paragraph", "text": "A **symbol** is an object, place or event that stands for something larger (a locked gate for exclusion). A **motif** is a recurring image or idea that reinforces a theme (repeated references to fire, mirrors or journeys)." },
+    { "type": "passage", "title": "Practice extract (written for FreeSheet)", "text": "The jacaranda had been planted the year my father was born, and for as long as I could remember it had flowered every October, carpeting the driveway in purple. My father used to complain about the mess. 'One day I'll cut that thing down,' he would say, sweeping, though we all knew he never would.\n\nThe October after he died, the tree did not flower. My mother said it was the drought. My brother said it was coincidence. I said nothing, but I stood under its bare branches every afternoon, waiting, as if it owed me something.\n\nIt was only later, much later, that I understood why I had been so angry with a tree." },
+    { "type": "callout", "label": "Exam tip", "text": "In novel essays (400–450 words at Grade 12; similar preparation at Grade 11), trace how a theme or character develops from beginning to end, and refer to specific incidents." }
+  ],
+  "questions": [
+    { "id": "theme", "type": "mcq", "prompt": "Which is a statement of THEME rather than subject?", "options": ["A family farm", "The Second World War", "Grief can make us look for meaning in ordinary things", "A boy and his dog"], "answer": 2 },
+    { "id": "foreshadow", "type": "short", "prompt": "What is a hint about future events in a story called?", "answers": ["foreshadowing"] },
+    { "id": "fallacy", "type": "short", "prompt": "What is the term for weather that mirrors a character's emotions?", "answers": ["pathetic fallacy"] },
+    { "id": "motif", "type": "truefalse", "prompt": "A motif is a recurring image or idea in a text.", "answer": true },
+    { "id": "pov", "type": "mcq", "prompt": "The practice extract is narrated in the…", "options": ["first person", "second person", "third person omniscient", "third person limited"], "answer": 0 },
+    { "id": "techniques", "type": "match", "marks": 4, "prompt": "Match each technique to its purpose.", "pairs": [
+      { "left": "Flashback", "right": "Reveals past events" },
+      { "left": "Unreliable narrator", "right": "Makes readers question the account" },
+      { "left": "Multiple narrators", "right": "Shows different perspectives" },
+      { "left": "Stream of consciousness", "right": "Presents a flow of thoughts" }
+    ] },
+    { "id": "symbol", "type": "open", "marks": 3, "prompt": "What does the jacaranda tree symbolise in the extract?", "memo": "✓ The father's life/presence (planted the year he was born) (1)\n✓ Its failure to flower after his death mirrors the family's grief/loss (1)\n✓ It represents continuity that has been broken (1)" },
+    { "id": "irony", "type": "open", "marks": 2, "prompt": "Explain the irony of the father's words 'One day I'll cut that thing down'.", "memo": "✓ He complained about the tree but never cut it down; he secretly loved it (1)\n✓ After his death, the tree 'dies' in a sense on its own (1)" },
+    { "id": "reactions", "type": "open", "marks": 3, "prompt": "Contrast the reactions of the mother, the brother and the narrator to the tree not flowering.", "memo": "✓ Mother gives a practical explanation (the drought) (1)\n✓ Brother dismisses it as coincidence (1)\n✓ The narrator responds emotionally, waiting under the tree; grief makes the narrator seek meaning (1)" },
+    { "id": "ending", "type": "open", "marks": 2, "prompt": "What is the effect of the final sentence?", "memo": "✓ It shows the narrator is looking back with greater understanding (retrospective narration) (1)\n✓ and suggests the anger was really grief for the father, inviting reflection (1)" }
+  ]
+}

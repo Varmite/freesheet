@@ -1,0 +1,64 @@
+{
+  "id": "standard-of-living",
+  "title": "Standard of Living",
+  "term": 1,
+  "summary": "Needs and wants, standard of living and quality of life, how it is measured, causes and effects of poverty and unemployment, and how government and communities improve living standards.",
+  "notes": [
+    { "type": "heading", "text": "Needs, wants and standard of living" },
+    { "type": "list", "items": [
+      "**Needs**: things we must have to survive: food, water, shelter, clothing, healthcare.",
+      "**Wants**: things we would like to have but can live without: a cellphone upgrade, branded shoes, a holiday."
+    ] },
+    { "type": "definition", "term": "Standard of living", "text": "The level of wealth, goods and services available to a person or community, for example income, housing, food and access to services." },
+    { "type": "definition", "term": "Quality of life", "text": "A broader idea of well-being, including health, safety, education, freedom, a clean environment and good relationships, not only money." },
+    { "type": "heading", "text": "Measuring standard of living" },
+    { "type": "table", "headers": ["Indicator", "A higher standard of living shows…"], "rows": [
+      ["Income per person (GDP per capita)", "Higher average income"],
+      ["Access to services", "Clean water, electricity, sanitation, schools and clinics"],
+      ["Housing", "Formal houses with services rather than informal shelters"],
+      ["Health", "Higher life expectancy, lower infant mortality"],
+      ["Education", "Higher literacy rates and more years of schooling"]
+    ] },
+    { "type": "heading", "text": "Poverty" },
+    { "type": "definition", "term": "Poverty", "text": "A situation in which people do not have enough income or resources to meet their basic needs." },
+    { "type": "list", "items": [
+      "**Absolute poverty**: people cannot afford even the basic needs for survival.",
+      "**Relative poverty**: people are poor compared with others in their society."
+    ] },
+    { "type": "table", "headers": ["Causes of poverty", "Effects of poverty"], "rows": [
+      ["Unemployment", "Hunger and malnutrition"],
+      ["Low levels of education and skills", "Poor health and shorter lives"],
+      ["Inequality and the legacy of apartheid", "Children leave school early"],
+      ["Illness (HIV, TB) of breadwinners", "Crime and substance abuse may increase"],
+      ["Large families with one income", "Living in informal settlements without services"]
+    ] },
+    { "type": "heading", "text": "Unemployment" },
+    { "type": "definition", "term": "Unemployment", "text": "When people who are able and willing to work cannot find a job." },
+    { "type": "formula", "latex": "\\text{unemployment rate} = \\frac{\\text{number of unemployed}}{\\text{labour force}} \\times 100" },
+    { "type": "example", "title": "Calculating the unemployment rate", "problem": "A town has a labour force of 50 000 people, of whom 16 000 are unemployed. Calculate the unemployment rate.", "steps": ["16 000 ÷ 50 000 × 100", "= 32%"], "answer": "32%" },
+    { "type": "heading", "text": "Improving the standard of living" },
+    { "type": "list", "items": [
+      "**Government**: social grants, free basic services, RDP houses, no-fee schools, free primary healthcare, public works jobs.",
+      "**Businesses**: creating jobs, training workers, corporate social investment.",
+      "**Communities**: food gardens, stokvels, NGOs and volunteers.",
+      "**Individuals**: staying in school, gaining skills, starting small businesses, budgeting wisely."
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Taxes paid by working people and businesses fund the services and grants that improve the standard of living for everyone. This is called **redistribution of income**." }
+  ],
+  "questions": [
+    { "id": "need", "type": "mcq", "prompt": "Which is a NEED?", "options": ["A gaming console", "Clean water", "Designer clothes", "A holiday"], "answer": 1 },
+    { "id": "absolute", "type": "short", "prompt": "What type of poverty describes people who cannot afford even basic needs for survival?", "answers": ["absolute poverty", "absolute"] },
+    { "id": "quality", "type": "truefalse", "prompt": "Quality of life includes things like safety, health and freedom, not only income.", "answer": true },
+    { "id": "unemp-calc", "type": "numeric", "prompt": "A labour force of 20 000 has 5 000 unemployed people. Calculate the unemployment rate.", "answer": 25, "tolerance": 0, "unit": "%" },
+    { "id": "unemp-def", "type": "open", "marks": 2, "prompt": "Define unemployment.", "memo": "✓ People who are able and willing to work (1)\n✓ cannot find a job (1)" },
+    { "id": "who-helps", "type": "match", "marks": 3, "prompt": "Match each action to who carries it out.", "pairs": [
+      { "left": "Paying child support grants", "right": "Government" },
+      { "left": "Training new employees", "right": "Businesses" },
+      { "left": "Running a community food garden", "right": "Communities" }
+    ] },
+    { "id": "causes", "type": "open", "marks": 3, "prompt": "Give THREE causes of poverty in South Africa.", "memo": "Any three (1 each): unemployment; low education/skills; inequality/legacy of apartheid; illness; large families; lack of land/resources" },
+    { "id": "effects", "type": "open", "marks": 3, "prompt": "Describe THREE effects of poverty on a family.", "memo": "Any three (1 each): hunger/malnutrition; poor health; children leave school; poor housing; stress; crime" },
+    { "id": "indicators", "type": "mcq", "prompt": "Which indicator shows a LOW standard of living?", "options": ["High literacy rate", "High infant mortality rate", "Most homes have electricity", "High income per person"], "answer": 1 },
+    { "id": "redistribution", "type": "open", "marks": 2, "prompt": "Explain how taxes help to redistribute income.", "memo": "✓ Government collects taxes, with higher earners paying more (1)\n✓ The money is used for grants and free services for poorer people (1)" }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "novel-study",
+  "title": "Novel Study: The Picture of Dorian Gray",
+  "term": 1,
+  "summary": "Plot, characters, themes, symbols and narrative techniques in Oscar Wilde's The Picture of Dorian Gray (1890/1891), with key quotations and essay preparation.",
+  "notes": [
+    { "type": "heading", "text": "Context" },
+    { "type": "paragraph", "text": "Oscar Wilde published *The Picture of Dorian Gray* in 1890 (expanded in 1891). It reflects the **Aesthetic Movement** ('art for art's sake') and the **hypocrisy of Victorian society**, which valued a respectable surface while hiding vice. The novel caused scandal and was later used against Wilde at his trials." },
+    { "type": "heading", "text": "Plot summary" },
+    { "type": "list", "ordered": true, "items": [
+      "The painter **Basil Hallward** paints a portrait of the beautiful young **Dorian Gray**. **Lord Henry Wotton** fills Dorian with ideas about the supreme value of youth and pleasure.",
+      "Dorian wishes that the portrait would age instead of him; the wish comes true.",
+      "Dorian falls in love with the actress **Sibyl Vane**, but rejects her cruelly when her acting fails. She kills herself. Dorian notices a cruel line around the mouth of the portrait.",
+      "Influenced by a 'poisonous' yellow book from Lord Henry, Dorian lives a secret life of corruption for many years while staying young and beautiful; the portrait, hidden in the old schoolroom, becomes hideous.",
+      "Dorian shows Basil the portrait and murders him. He blackmails **Alan Campbell** into destroying the body.",
+      "**James Vane**, Sibyl's brother, tries to take revenge but is accidentally shot.",
+      "Dorian stabs the portrait to destroy the evidence of his conscience. Servants find the portrait restored to its original beauty and a withered, loathsome old man dead on the floor, a knife in his heart."
+    ] },
+    { "type": "heading", "text": "Characters" },
+    { "type": "table", "headers": ["Character", "Role and significance"], "rows": [
+      ["Dorian Gray", "A beautiful, impressionable young man who becomes corrupt and selfish; his outward beauty hides inner decay"],
+      ["Lord Henry Wotton", "A witty, cynical aristocrat whose epigrams and 'new Hedonism' corrupt Dorian; he talks about sin but does not act"],
+      ["Basil Hallward", "The painter who idolises Dorian; represents moral conscience and genuine affection; murdered by Dorian"],
+      ["Sibyl Vane", "A young actress who represents art and innocence; destroyed by Dorian's cruelty"],
+      ["James Vane", "Sibyl's protective brother; represents justice and revenge"]
+    ] },
+    { "type": "heading", "text": "Themes" },
+    { "type": "list", "items": [
+      "**The duality of appearance and reality**: Dorian's beauty masks his moral corruption.",
+      "**Influence and corruption**: Lord Henry's ideas and the yellow book shape Dorian.",
+      "**The relationship between art and life**: the portrait becomes Dorian's conscience.",
+      "**Youth, beauty and ageing**: the obsession with youth leads to destruction.",
+      "**Conscience and consequences**: sin cannot ultimately be hidden."
+    ] },
+    { "type": "table", "caption": "Key quotations", "headers": ["Quotation", "Significance"], "rows": [
+      ["'The only way to get rid of a temptation is to yield to it.' (Lord Henry)", "His hedonistic philosophy"],
+      ["'If it were I who was to be always young, and the picture that was to grow old!' (Dorian)", "The fateful wish"],
+      ["'Each of us has Heaven and Hell in him, Basil.' (Dorian)", "The duality of human nature"],
+      ["'It was his beauty that had ruined him.'", "Dorian's realisation near the end"]
+    ] },
+    { "type": "callout", "label": "Symbols", "text": "**The portrait**: Dorian's soul and conscience. **The yellow book**: corrupting influence. **The opium dens**: Dorian's hidden vice and escape. **The knife**: used to kill Basil and finally Dorian himself." }
+  ],
+  "questions": [
+    { "id": "author", "type": "short", "prompt": "Who wrote The Picture of Dorian Gray?", "answers": ["oscar wilde", "wilde"] },
+    { "id": "painter", "type": "short", "prompt": "Name the painter of Dorian's portrait.", "answers": ["basil hallward", "basil"] },
+    { "id": "influence", "type": "mcq", "prompt": "Which character's ideas about youth and pleasure most corrupt Dorian?", "options": ["Basil Hallward", "Lord Henry Wotton", "James Vane", "Alan Campbell"], "answer": 1 },
+    { "id": "sibyl", "type": "truefalse", "prompt": "Sibyl Vane is an actress whom Dorian rejects after a poor performance.", "answer": true },
+    { "id": "characters", "type": "match", "marks": 4, "prompt": "Match each character to their role.", "pairs": [
+      { "left": "James Vane", "right": "Seeks revenge for his sister" },
+      { "left": "Alan Campbell", "right": "Forced to destroy Basil's body" },
+      { "left": "Basil Hallward", "right": "Represents conscience and genuine affection" },
+      { "left": "Lord Henry", "right": "Cynical speaker of witty epigrams" }
+    ] },
+    { "id": "portrait", "type": "open", "marks": 3, "prompt": "Explain the symbolism of the portrait.", "memo": "✓ It represents Dorian's soul/conscience (1)\n✓ It shows the moral effect of his sins while his face stays young (1)\n✓ Its hidden location reflects his attempt to hide his corruption (1)" },
+    { "id": "ending", "type": "open", "marks": 3, "prompt": "Discuss the significance of the novel's ending.", "memo": "✓ Dorian tries to destroy the portrait, i.e. his conscience (1)\n✓ He kills himself; the portrait returns to its beauty and Dorian becomes withered (1)\n✓ It shows that sin and consequences cannot be escaped; truth is revealed (1)" },
+    { "id": "hypocrisy", "type": "open", "marks": 3, "prompt": "How does the novel criticise Victorian society?", "memo": "✓ Society judges by appearances, so beautiful Dorian is accepted despite rumours (1)\n✓ Respectability hides vice (1)\n✓ Wilde exposes this hypocrisy through Dorian's double life (1)" },
+    { "id": "lord-henry", "type": "open", "marks": 3, "prompt": "Is Lord Henry responsible for Dorian's downfall? Discuss.", "memo": "✓ Clear position (1)\n✓ Evidence that his ideas and the yellow book influence Dorian (1)\n✓ Counter-point: Dorian chooses his actions; Lord Henry never acts on his words (1)" },
+    { "id": "quote", "type": "open", "marks": 2, "prompt": "Explain the meaning of 'Each of us has Heaven and Hell in him.'", "memo": "✓ Everyone has the capacity for good and evil (1)\n✓ linking to the novel's theme of duality, seen in Dorian and the portrait (1)" }
+  ]
+}

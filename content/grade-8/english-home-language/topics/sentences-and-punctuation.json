@@ -1,0 +1,60 @@
+{
+  "id": "sentences-and-punctuation",
+  "title": "Sentence Structure and Punctuation",
+  "term": 2,
+  "summary": "Subject, verb and object, phrases and clauses, simple, compound and complex sentences, types of sentences by purpose, and the correct use of punctuation marks.",
+  "notes": [
+    { "type": "heading", "text": "Parts of a sentence" },
+    { "type": "list", "items": [
+      "**Subject**: who or what the sentence is about. *The **dog** barked.*",
+      "**Predicate**: what is said about the subject, including the verb. *The dog **barked loudly**.*",
+      "**Object**: the person or thing that receives the action. *Lindiwe kicked **the ball**.*"
+    ] },
+    { "type": "definition", "term": "Phrase", "text": "A group of words without a finite verb (subject and verb together). It does not make complete sense on its own: *in the morning*, *the tall girl*." },
+    { "type": "definition", "term": "Clause", "text": "A group of words with a subject and a finite verb. A **main (independent) clause** makes sense on its own; a **subordinate (dependent) clause** does not: *because it was raining*." },
+    { "type": "heading", "text": "Types of sentences by structure" },
+    { "type": "table", "headers": ["Type", "Structure", "Example"], "rows": [
+      ["Simple", "One main clause", "The bus arrived late."],
+      ["Compound", "Two or more main clauses joined by a coordinating conjunction (for, and, nor, but, or, yet, so: **FANBOYS**)", "The bus arrived late, **so** we missed assembly."],
+      ["Complex", "A main clause plus one or more subordinate clauses (joined by because, although, when, if, while, since, who, which…)", "**Although** the bus arrived late, we were not punished."]
+    ] },
+    { "type": "heading", "text": "Types of sentences by purpose" },
+    { "type": "table", "headers": ["Type", "Purpose", "Ends with", "Example"], "rows": [
+      ["Statement (declarative)", "Gives information", "Full stop", "School starts at 7:45."],
+      ["Question (interrogative)", "Asks something", "Question mark", "Where is the library?"],
+      ["Command (imperative)", "Gives an order or instruction", "Full stop or exclamation mark", "Close the door."],
+      ["Exclamation (exclamatory)", "Shows strong feeling", "Exclamation mark", "What a goal that was!"]
+    ] },
+    { "type": "heading", "text": "Punctuation" },
+    { "type": "table", "headers": ["Mark", "Main uses", "Example"], "rows": [
+      ["Capital letter", "Start of sentences, proper nouns, 'I'", "On Monday, Ayanda and I went to Durban."],
+      ["Comma ,", "Separates items in a list; after introductory words; around extra information; before a quotation", "We bought bread, milk and eggs. / However, it rained."],
+      ["Apostrophe '", "Possession and contractions", "Sipho's bag; the girls' bags; don't; it's (= it is)"],
+      ["Inverted commas ' '", "Direct speech, quotations, titles of short works", "'Hurry up,' said Mom."],
+      ["Colon :", "Introduces a list or explanation", "Bring three things: a pen, a ruler and a calculator."],
+      ["Semicolon ;", "Joins two closely related main clauses", "It was late; we went home."],
+      ["Brackets ( )", "Extra, non-essential information", "The PSL (Premier Soccer League) final"],
+      ["Dash –", "A pause or dramatic addition", "There was only one problem – the key was missing."],
+      ["Hyphen -", "Joins words", "well-known, twenty-one, mother-in-law"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "**its** (belonging to it) has no apostrophe: *The dog wagged its tail.* **it's** always means *it is* or *it has*: *It's raining.* Plural nouns do NOT take an apostrophe unless they show possession: *three apples*, not *three apple's*." },
+    { "type": "callout", "label": "Avoid comma splices", "text": "Do not join two main clauses with only a comma. Wrong: *It was cold, we went inside.* Right: *It was cold, so we went inside.* or *It was cold; we went inside.*" }
+  ],
+  "questions": [
+    { "id": "subject", "type": "short", "prompt": "Identify the subject: 'The hungry learners rushed to the tuck shop.' (give the main noun only)", "answers": ["learners", "the hungry learners", "hungry learners"] },
+    { "id": "phrase-clause", "type": "mcq", "prompt": "Which is a clause?", "options": ["under the bridge", "after lunch", "because she was tired", "the old man"], "answer": 2 },
+    { "id": "compound", "type": "mcq", "prompt": "Which sentence is compound?", "options": ["We ate supper.", "We ate supper and then we washed the dishes.", "After we ate supper, we washed the dishes.", "Eating supper."], "answer": 1 },
+    { "id": "complex", "type": "mcq", "prompt": "Which sentence is complex?", "options": ["I like tea.", "I like tea, but she likes coffee.", "Although I like tea, I drank coffee.", "Tea or coffee?"], "answer": 2 },
+    { "id": "its", "type": "mcq", "prompt": "Choose the correct word: 'The cat licked ___ paw.'", "options": ["it's", "its", "its'", "it is"], "answer": 1 },
+    { "id": "purposes", "type": "match", "marks": 4, "prompt": "Classify each sentence by purpose.", "pairs": [
+      { "left": "Please switch off your phones.", "right": "Command" },
+      { "left": "What a beautiful sunset!", "right": "Exclamation" },
+      { "left": "The library closes at four.", "right": "Statement" },
+      { "left": "Have you finished your homework?", "right": "Question" }
+    ] },
+    { "id": "apostrophe", "type": "open", "marks": 2, "prompt": "Rewrite with apostrophes: 'The teachers cars were parked near the principals office.' (several teachers; one principal)", "memo": "✓ teachers' cars (1)\n✓ principal's office (1)" },
+    { "id": "splice", "type": "open", "marks": 2, "prompt": "Correct the comma splice in two different ways: 'The match was cancelled, it rained all day.'", "memo": "✓ e.g. 'The match was cancelled because it rained all day.' (1)\n✓ e.g. 'The match was cancelled; it rained all day.' or two sentences (1)" },
+    { "id": "combine", "type": "open", "marks": 2, "prompt": "Combine into ONE complex sentence: 'Nomsa studied hard. She passed her exam.'", "memo": "✓✓ e.g. 'Because Nomsa studied hard, she passed her exam.' / 'Nomsa passed her exam because she studied hard.' (2)" },
+    { "id": "colon", "type": "truefalse", "prompt": "A colon can be used to introduce a list.", "answer": true }
+  ]
+}

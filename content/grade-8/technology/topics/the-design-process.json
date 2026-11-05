@@ -1,0 +1,59 @@
+{
+  "id": "the-design-process",
+  "title": "The Design Process",
+  "term": 1,
+  "summary": "The steps of the design process (IDMEC), writing a design brief with specifications and constraints, investigating, generating ideas, making and evaluating a product.",
+  "notes": [
+    { "type": "heading", "text": "What is technology?" },
+    { "type": "paragraph", "text": "**Technology** is the use of knowledge, skills and resources to solve problems and meet people's needs and wants by designing and making products, structures and systems. Technologists follow a structured method called the **design process**." },
+    { "type": "heading", "text": "The design process: IDMEC" },
+    { "type": "table", "headers": ["Step", "What you do"], "rows": [
+      ["**I**nvestigate", "Understand the problem: who needs a solution and why? Research existing products, materials and the environment where the product will be used."],
+      ["**D**esign", "Write a design brief with specifications and constraints. Sketch several possible ideas, then choose the best and draw it in detail."],
+      ["**M**ake", "Plan the steps, list tools and materials, and build the product or a model safely."],
+      ["**E**valuate", "Test the product against the specifications. What works? What could be improved?"],
+      ["**C**ommunicate", "Present the solution using drawings, reports, models and presentations. Communication happens throughout the process."]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "The design process is not a straight line. After evaluating, designers often go back to earlier steps to improve the product." },
+    { "type": "heading", "text": "The design brief" },
+    { "type": "definition", "term": "Design brief", "text": "A short, clear statement of what is to be designed and made, for whom and why." },
+    { "type": "example", "title": "Example of a design brief", "problem": "Write a design brief for a learner who struggles to carry heavy textbooks.", "steps": [
+      "Problem: learners at Siyabonga Secondary carry heavy books for long distances, causing back pain.",
+      "Brief: Design and make a strong, lightweight, affordable bag on wheels that a learner can pull to school."
+    ], "answer": "The brief says what (a wheeled bag), for whom (learners) and why (to reduce back pain)." },
+    { "type": "definition", "term": "Specifications", "text": "The requirements the product must meet, e.g. 'must carry at least 8 kg', 'must be waterproof', 'must fold flat'." },
+    { "type": "definition", "term": "Constraints", "text": "Limitations that restrict the design, e.g. cost (less than R200), time (two weeks), available materials, size and safety rules." },
+    { "type": "heading", "text": "Investigating" },
+    { "type": "list", "items": [
+      "**Product analysis**: examine existing products. What do they do well? How are they made? What are their weaknesses?",
+      "**Research**: books, the internet, interviews and questionnaires with users.",
+      "**Testing materials**: which material is strongest, cheapest, most waterproof?",
+      "Consider the **impact** of the product on people and the environment, and **indigenous technology** (traditional solutions such as Zulu beehive huts or clay pots that keep water cool)."
+    ] },
+    { "type": "heading", "text": "Generating and choosing ideas" },
+    { "type": "paragraph", "text": "Draw **at least two or three** freehand sketches of different ideas, with labels and notes. Choose the best idea by comparing each one against the specifications and constraints, for example with a table." },
+    { "type": "heading", "text": "Making and evaluating" },
+    { "type": "list", "items": [
+      "Draw up a **plan of action** (a step-by-step sequence) and a list of tools and materials.",
+      "Follow **safety rules**: wear safety goggles, use tools correctly, keep the workspace tidy.",
+      "Evaluate the final product: does it meet every specification? Ask users for feedback and suggest improvements."
+    ] }
+  ],
+  "questions": [
+    { "id": "idmec", "type": "short", "prompt": "What does the M in IDMEC stand for?", "answers": ["make", "making"] },
+    { "id": "order", "type": "mcq", "prompt": "Which is the correct order of the design process?", "options": ["Design, investigate, make, evaluate, communicate", "Investigate, design, make, evaluate, communicate", "Make, design, investigate, evaluate, communicate", "Investigate, make, design, communicate, evaluate"], "answer": 1 },
+    { "id": "brief", "type": "open", "marks": 2, "prompt": "What is a design brief?", "memo": "✓ A short statement of what is to be designed and made (1)\n✓ for whom and why (1)" },
+    { "id": "constraint", "type": "mcq", "prompt": "Which of these is a constraint?", "options": ["It must be waterproof", "It must cost less than R150", "It must hold 5 kg", "It must be easy to use"], "answer": 1 },
+    { "id": "spec-or-con", "type": "match", "marks": 4, "prompt": "Classify each statement as a specification or a constraint.", "pairs": [
+      { "left": "Must be completed in two weeks", "right": "Constraint (time)" },
+      { "left": "Must hold at least 2 litres of water", "right": "Specification" },
+      { "left": "Only recycled materials may be used", "right": "Constraint (materials)" },
+      { "left": "Must fit inside a school bag", "right": "Specification (size)" }
+    ] },
+    { "id": "evaluate", "type": "truefalse", "prompt": "During evaluation, a product is tested against its specifications.", "answer": true },
+    { "id": "product-analysis", "type": "open", "marks": 3, "prompt": "Give THREE questions you could ask when analysing an existing product.", "memo": "Any three (1 each): What is its purpose? Who uses it? What materials are used? How is it made? Is it safe? What does it cost? How could it be improved? What is its impact on the environment?" },
+    { "id": "sketches", "type": "open", "marks": 2, "prompt": "Why should a designer sketch several ideas before choosing one?", "memo": "✓ To explore different possible solutions (1)\n✓ so the best one can be chosen by comparing them with the specifications (1)" },
+    { "id": "indigenous", "type": "open", "marks": 2, "prompt": "Give an example of indigenous technology and explain the problem it solves.", "memo": "✓ Example, e.g. clay pot / beehive hut / grinding stone (1)\n✓ Explanation, e.g. a clay pot keeps water cool by evaporation through the clay (1)" },
+    { "id": "safety", "type": "open", "marks": 2, "prompt": "Give TWO safety rules to follow while making a product.", "memo": "Any two (1 each): wear safety goggles; use tools correctly; keep the workspace tidy; tie back long hair; report injuries; do not run with tools" }
+  ]
+}

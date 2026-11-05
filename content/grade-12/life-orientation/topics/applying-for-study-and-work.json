@@ -1,0 +1,50 @@
+{
+  "id": "applying-for-study-and-work",
+  "title": "Applying for Study and Work: CVs and Interviews",
+  "term": 3,
+  "summary": "Applying to institutions and for bursaries, writing a curriculum vitae and cover letter, preparing for interviews, and presenting yourself professionally online and in person.",
+  "notes": [
+    { "type": "heading", "text": "Applying for study" },
+    { "type": "list", "items": [
+      "Check each institution's **closing dates**, **APS** and **subject requirements**.",
+      "Apply online (or through the Central Applications Office for KwaZulu-Natal institutions) using your Grade 11 results.",
+      "Apply for **NSFAS** and bursaries at the same time.",
+      "Keep certified copies of your ID, results and proof of income ready."
+    ] },
+    { "type": "heading", "text": "The curriculum vitae (CV)" },
+    { "type": "table", "headers": ["Section", "Content"], "rows": [
+      ["Personal details", "Name, contact number, email, location (ID number and photo are optional)"],
+      ["Profile", "Two or three sentences about your strengths and goals"],
+      ["Education", "School, highest grade passed, subjects and achievements"],
+      ["Experience", "Part-time jobs, volunteering, holiday work, leadership roles"],
+      ["Skills", "Computer skills, languages, driver's licence, other abilities"],
+      ["References", "Two people (not family) who can vouch for you, with contact details and permission"]
+    ] },
+    { "type": "callout", "label": "CV tips", "text": "Keep it to one or two pages, use a clear layout, check spelling, tailor it to each job, use a professional email address, and never include false information." },
+    { "type": "heading", "text": "Cover letter" },
+    { "type": "paragraph", "text": "A **cover letter** (motivational letter) accompanies your CV. It names the position, explains why you are interested and suitable, and asks for an interview. Keep it formal and to one page." },
+    { "type": "heading", "text": "Interviews" },
+    { "type": "table", "headers": ["Before", "During", "After"], "rows": [
+      ["Research the organisation; prepare answers; plan your route; prepare neat clothes and documents", "Arrive early; greet politely; make eye contact; listen carefully; give examples; ask a question at the end", "Thank the interviewers; send a short thank-you email; reflect on what went well"]
+    ] },
+    { "type": "paragraph", "text": "Common questions: 'Tell us about yourself', 'Why do you want this position?', 'What are your strengths and weaknesses?', 'Describe a time you solved a problem.' Use the **STAR** method: **S**ituation, **T**ask, **A**ction, **R**esult." },
+    { "type": "callout", "label": "Digital footprint", "text": "Employers and bursary providers may check your social media. Remove inappropriate posts and keep a professional profile." }
+  ],
+  "questions": [
+    { "id": "cv", "type": "short", "prompt": "What does CV stand for? (two words)", "answers": ["curriculum vitae"] },
+    { "id": "references", "type": "mcq", "prompt": "Who should you list as a reference on a CV?", "options": ["Your mother", "A teacher or employer who knows your work", "A celebrity", "Your best friend"], "answer": 1 },
+    { "id": "star", "type": "short", "prompt": "In the STAR method for interviews, what does the A stand for?", "answers": ["action"] },
+    { "id": "false-info", "type": "truefalse", "prompt": "It is acceptable to exaggerate your marks on a CV to improve your chances.", "answer": false },
+    { "id": "sections", "type": "match", "marks": 4, "prompt": "Match each item to the CV section where it belongs.", "pairs": [
+      { "left": "Volunteering at a soup kitchen", "right": "Experience" },
+      { "left": "Fluent in English and Sesotho", "right": "Skills" },
+      { "left": "Matric subjects and awards", "right": "Education" },
+      { "left": "Former manager's contact details", "right": "References" }
+    ] },
+    { "id": "cover", "type": "open", "marks": 3, "prompt": "Name THREE things a cover letter should include.", "memo": "Any three (1 each): the position applied for; where you saw it; why you are interested; why you are suitable; request for an interview; formal greeting and closing" },
+    { "id": "interview-before", "type": "open", "marks": 3, "prompt": "Describe THREE ways to prepare for an interview.", "memo": "Any three (1 each): research the organisation; practise answers; plan route and arrive early; prepare neat clothing; bring documents; prepare questions to ask" },
+    { "id": "star-use", "type": "open", "marks": 4, "prompt": "Use the STAR method to answer: 'Describe a time you showed leadership.'", "memo": "✓ Situation described (1)\n✓ Task/challenge explained (1)\n✓ Action taken by you (1)\n✓ Result/outcome (1)" },
+    { "id": "online", "type": "open", "marks": 2, "prompt": "Why should job seekers manage their social media profiles?", "memo": "✓ Employers may check social media before hiring (1)\n✓ Inappropriate posts can cost you an opportunity (1)" },
+    { "id": "documents", "type": "open", "marks": 2, "prompt": "Name TWO documents you need when applying to a university.", "memo": "Any two (1 each): certified ID copy; Grade 11 results / matric results; proof of income (for funding); application fee proof" }
+  ]
+}

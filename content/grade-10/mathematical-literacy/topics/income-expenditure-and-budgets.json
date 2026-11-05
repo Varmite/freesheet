@@ -1,0 +1,65 @@
+{
+  "id": "income-expenditure-and-budgets",
+  "title": "Finance: Income, Expenditure and Budgets",
+  "term": 2,
+  "summary": "Types of income and expenditure, payslips and deductions, drawing up and analysing a personal or household budget, and profit and loss.",
+  "notes": [
+    { "type": "heading", "text": "Income" },
+    { "type": "list", "items": [
+      "**Fixed income**: the same amount every month (e.g. a salary).",
+      "**Variable income**: changes from month to month (e.g. commission, tips, overtime, informal trading).",
+      "**Gross income**: total earnings before deductions. **Net income** (take-home pay): what is left after deductions."
+    ] },
+    { "type": "heading", "text": "Payslips and deductions" },
+    { "type": "table", "caption": "Payslip of a shop assistant (illustrative)", "headers": ["Item", "Amount"], "rows": [
+      ["Basic salary", "R9 800,00"],
+      ["Overtime (6 hours at R85)", "R510,00"],
+      ["**Gross pay**", "**R10 310,00**"],
+      ["UIF (1% of gross)", "R103,10"],
+      ["Pension fund (7,5% of basic)", "R735,00"],
+      ["Medical aid", "R980,00"],
+      ["PAYE (income tax)", "R420,00"],
+      ["**Total deductions**", "**R2 238,10**"],
+      ["**Net pay**", "**R8 071,90**"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "**UIF** (Unemployment Insurance Fund) is 1% of gross pay, paid by the employee, and the employer pays another 1%. It provides money if you lose your job. **PAYE** is income tax deducted by the employer and paid to SARS." },
+    { "type": "heading", "text": "Expenditure" },
+    { "type": "list", "items": [
+      "**Fixed expenses**: stay the same each month (rent, school fees, insurance, loan repayments).",
+      "**Variable expenses**: change (food, electricity, transport, entertainment).",
+      "**Occasional expenses**: happen now and then (car repairs, school uniforms, gifts)."
+    ] },
+    { "type": "heading", "text": "Budgets" },
+    { "type": "paragraph", "text": "A **budget** is a plan for income and expenditure over a period. A budget has a **surplus** if income is more than expenditure and a **deficit** if expenditure is more than income." },
+    { "type": "table", "caption": "The Mokoena household monthly budget", "headers": ["Income", "Amount", "Expenditure", "Amount"], "rows": [
+      ["Net salary", "R14 500", "Rent", "R4 800"],
+      ["Child support grant", "R530", "Groceries", "R4 200"],
+      ["", "", "Transport", "R1 900"],
+      ["", "", "Electricity and water", "R1 350"],
+      ["", "", "School costs", "R900"],
+      ["", "", "Savings", "R1 000"],
+      ["**Total**", "**R15 030**", "**Total**", "**R14 150**"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Using the budget, calculate the surplus and the percentage of income spent on rent.", "steps": ["Surplus = R15 030 − R14 150 = R880", "Rent % = R4 800 ÷ R15 030 × 100 = 31,9%"], "answer": "Surplus R880; rent is about 31,9% of income" },
+    { "type": "heading", "text": "Profit and loss" },
+    { "type": "formula", "latex": "\\text{profit} = \\text{income} - \\text{expenses} \\qquad \\text{profit per item} = \\text{selling price} - \\text{cost price}", "caption": "A negative profit is a loss" },
+    { "type": "example", "title": "Worked example 2", "problem": "Zinhle buys 60 bunches of spinach at R8 each and sells them at R14 each. Her stall costs R80 per day. What is her profit if she sells 55 bunches?", "steps": ["Income: 55 × R14 = R770", "Expenses: 60 × R8 + R80 = R560", "Profit: R770 − R560 = R210"], "answer": "R210" }
+  ],
+  "questions": [
+    { "id": "gross-net", "type": "mcq", "prompt": "Take-home pay after deductions is called…", "options": ["gross income", "net income", "variable income", "fixed income"], "answer": 1 },
+    { "id": "uif", "type": "numeric", "prompt": "Calculate the employee's UIF contribution on a gross salary of R12 400.", "answer": 124, "tolerance": 0, "unit": "rand" },
+    { "id": "fixed", "type": "mcq", "prompt": "Which is a fixed expense?", "options": ["Groceries", "Electricity", "Rent", "Entertainment"], "answer": 2 },
+    { "id": "net", "type": "numeric", "prompt": "Gross pay is R8 600 and total deductions are R1 340. Calculate net pay.", "answer": 7260, "tolerance": 0, "unit": "rand" },
+    { "id": "deficit", "type": "truefalse", "prompt": "If expenditure is greater than income, the budget has a deficit.", "answer": true },
+    { "id": "classify", "type": "match", "marks": 4, "prompt": "Classify each item.", "pairs": [
+      { "left": "Monthly salary", "right": "Fixed income" },
+      { "left": "Waiter's tips", "right": "Variable income" },
+      { "left": "Car insurance premium", "right": "Fixed expense" },
+      { "left": "Taxi fares", "right": "Variable expense" }
+    ] },
+    { "id": "overtime", "type": "open", "marks": 3, "prompt": "A security guard earns R65 per hour for 40 hours a week, and overtime at 1,5 times the normal rate. Calculate his gross pay for a week in which he works 46 hours.", "memo": "✓ Normal: 40 × R65 = R2 600 (1)\n✓ Overtime: 6 × R97,50 = R585 (1)\n✓ Total R3 185 (1)" },
+    { "id": "budget", "type": "open", "marks": 4, "prompt": "A student's monthly income is R4 200. Rent is R1 800, food R1 300, transport R650 and data R350. (a) Is there a surplus or deficit, and how much? (b) Suggest one way to improve the budget.", "memo": "(a) ✓ Expenditure R4 100 (1) ✓ Surplus R100 (1)\n(b) ✓✓ A sensible suggestion, e.g. cheaper data bundle, walk/share transport, save the surplus (2)" },
+    { "id": "profit", "type": "open", "marks": 3, "prompt": "A learner makes 40 cupcakes at a total cost of R180 and sells them at R8 each. Calculate the profit if all are sold, and the minimum number she must sell to break even.", "memo": "✓ Income 40 × R8 = R320, profit R140 (1)\n✓ Break even: R180 ÷ R8 = 22,5 (1)\n✓ She must sell 23 cupcakes (1)" },
+    { "id": "percent-spend", "type": "numeric", "prompt": "A family spends R3 150 on groceries out of a net income of R18 000. What percentage of income is this?", "answer": 17.5, "tolerance": 0.01, "unit": "%" }
+  ]
+}

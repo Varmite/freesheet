@@ -1,0 +1,65 @@
+{
+  "id": "euclidean-geometry",
+  "title": "Euclidean Geometry: Circle Theorems",
+  "term": 3,
+  "summary": "The circle theorems and their converses: perpendicular from the centre, angles at the centre and circumference, angles in the same segment, cyclic quadrilaterals, tangents and the tan-chord theorem, with proofs and riders.",
+  "notes": [
+    { "type": "heading", "text": "Terms" },
+    { "type": "list", "items": [
+      "**Chord**: a line segment joining two points on a circle. A **diameter** is a chord through the centre.",
+      "**Arc**: part of the circumference. A chord **subtends** an angle at a point.",
+      "**Tangent**: a line that touches the circle at exactly one point.",
+      "**Cyclic quadrilateral**: a quadrilateral with all four vertices on a circle."
+    ] },
+    { "type": "heading", "text": "The theorems" },
+    { "type": "table", "headers": ["Theorem", "Statement", "Reason to write"], "rows": [
+      ["1", "The line from the centre perpendicular to a chord bisects the chord", "line from centre ⊥ to chord"],
+      ["2", "The angle at the centre is twice the angle at the circumference subtended by the same arc", "∠ at centre = 2 × ∠ at circumference"],
+      ["3", "The angle in a semicircle is a right angle", "∠ in semi-circle"],
+      ["4", "Angles in the same segment are equal", "∠s in the same seg"],
+      ["5", "The opposite angles of a cyclic quadrilateral are supplementary", "opp ∠s of cyclic quad"],
+      ["6", "The exterior angle of a cyclic quadrilateral equals the interior opposite angle", "ext ∠ of cyclic quad"],
+      ["7", "A tangent is perpendicular to the radius at the point of contact", "tan ⊥ radius"],
+      ["8", "Two tangents drawn from the same point outside a circle are equal", "tans from same pt"],
+      ["9", "The angle between a tangent and a chord equals the angle in the alternate segment", "tan chord theorem"]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 220' font-family='sans-serif' font-size='13'><rect width='260' height='220' fill='white'/><circle cx='130' cy='110' r='90' fill='none' stroke='black' stroke-width='2'/><circle cx='130' cy='110' r='3'/><text x='136' y='106'>O</text><line x1='52' y1='155' x2='208' y2='155' stroke='black'/><line x1='52' y1='155' x2='130' y2='110' stroke='black'/><line x1='208' y1='155' x2='130' y2='110' stroke='black'/><line x1='52' y1='155' x2='110' y2='22' stroke='black'/><line x1='208' y1='155' x2='110' y2='22' stroke='black'/><text x='104' y='16'>C</text><text x='36' y='166'>A</text><text x='212' y='166'>B</text><text x='122' y='132'>2x</text><text x='106' y='46'>x</text></svg>", "caption": "Theorem 2: the angle AOB at the centre is twice the angle ACB at the circumference" },
+    { "type": "heading", "text": "Converses: proving a quadrilateral is cyclic" },
+    { "type": "list", "items": [
+      "One pair of opposite angles is supplementary (converse opp ∠s of cyclic quad).",
+      "An exterior angle equals the interior opposite angle (converse ext ∠ of cyclic quad).",
+      "A side subtends equal angles at the other two vertices (converse ∠s in the same seg)."
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "O is the centre of the circle and $\\hat{AOB} = 124^\\circ$. C is on the major arc. Find $\\hat{ACB}$ and, if D is on the minor arc AB, find $\\hat{ADB}$.", "steps": [
+      "$\\hat{ACB} = \\frac{1}{2}(124^\\circ) = 62^\\circ$ (∠ at centre = 2 × ∠ at circumference)",
+      "ACBD is a cyclic quadrilateral, so $\\hat{ADB} = 180^\\circ - 62^\\circ = 118^\\circ$ (opp ∠s of cyclic quad)"
+    ], "answer": "$62^\\circ$ and $118^\\circ$" },
+    { "type": "example", "title": "Worked example 2: tangents", "problem": "PA and PB are tangents to a circle with centre O. If $\\hat{APB} = 50^\\circ$, find $\\hat{AOB}$ and $\\hat{PAB}$.", "steps": [
+      "$\\hat{OAP} = \\hat{OBP} = 90^\\circ$ (tan ⊥ radius)",
+      "In quadrilateral OAPB: $\\hat{AOB} = 360^\\circ - 90^\\circ - 90^\\circ - 50^\\circ = 130^\\circ$ (∠s of quad)",
+      "PA = PB (tans from same pt), so $\\hat{PAB} = \\hat{PBA} = \\frac{180^\\circ - 50^\\circ}{2} = 65^\\circ$ (∠s opp = sides)"
+    ], "answer": "$\\hat{AOB} = 130^\\circ$; $\\hat{PAB} = 65^\\circ$" },
+    { "type": "example", "title": "Worked example 3: perpendicular from the centre", "problem": "A chord of length 16 cm is 6 cm from the centre of a circle. Find the radius.", "steps": [
+      "The perpendicular from the centre bisects the chord, giving halves of 8 cm (line from centre ⊥ to chord).",
+      "$r^2 = 8^2 + 6^2 = 100$ (Pythagoras), so $r = 10$ cm."
+    ], "answer": "10 cm" },
+    { "type": "callout", "label": "Exam tip", "text": "In riders, mark all known angles on your diagram as you go. Look for isosceles triangles formed by radii (radii are equal), and look for the tan-chord theorem whenever a tangent meets a chord." }
+  ],
+  "questions": [
+    { "id": "centre", "type": "numeric", "prompt": "The angle at the circumference subtended by an arc is $38^\\circ$. Find the angle at the centre subtended by the same arc.", "answer": 76, "tolerance": 0, "unit": "°" },
+    { "id": "semicircle", "type": "numeric", "prompt": "AB is a diameter and C is on the circle. What is the size of $\\hat{ACB}$?", "answer": 90, "tolerance": 0, "unit": "°" },
+    { "id": "cyclic", "type": "numeric", "prompt": "In cyclic quadrilateral ABCD, $\\hat{A} = 105^\\circ$. Find $\\hat{C}$.", "answer": 75, "tolerance": 0, "unit": "°" },
+    { "id": "tangent", "type": "mcq", "prompt": "The angle between a tangent and the radius at the point of contact is…", "options": ["$45^\\circ$", "$60^\\circ$", "$90^\\circ$", "$180^\\circ$"], "answer": 2 },
+    { "id": "same-seg", "type": "truefalse", "prompt": "Angles subtended by the same chord in the same segment are equal.", "answer": true },
+    { "id": "chord", "type": "numeric", "prompt": "A circle has radius 13 cm. A chord is 5 cm from the centre. How long is the chord?", "answer": 24, "tolerance": 0, "unit": "cm" },
+    { "id": "reasons", "type": "match", "marks": 4, "prompt": "Match each statement to its reason.", "pairs": [
+      { "left": "PA = PB for tangents from P", "right": "tans from same pt" },
+      { "left": "Angle between tangent and chord equals angle in alternate segment", "right": "tan chord theorem" },
+      { "left": "Exterior angle equals interior opposite angle", "right": "ext ∠ of cyclic quad" },
+      { "left": "OM bisects chord AB when OM ⊥ AB", "right": "line from centre ⊥ to chord" }
+    ] },
+    { "id": "tan-chord", "type": "open", "marks": 3, "prompt": "TA is a tangent to the circle at A. Chord AB makes $\\hat{TAB} = 70^\\circ$, and C is a point on the circle in the alternate segment. Find $\\hat{ACB}$, and $\\hat{AOB}$ if O is the centre. Give reasons.", "memo": "✓ $\\hat{ACB} = 70^\\circ$ (tan chord theorem) (2)\n✓ $\\hat{AOB} = 140^\\circ$ (∠ at centre = 2 × ∠ at circumference) (1)" },
+    { "id": "prove-cyclic", "type": "open", "marks": 3, "prompt": "In quadrilateral PQRS, $\\hat{P} = 2x$ and $\\hat{R} = x + 60^\\circ$. For which value of $x$ is PQRS cyclic? Give a reason.", "memo": "✓ For a cyclic quad, $\\hat{P} + \\hat{R} = 180^\\circ$ (converse opp ∠s of cyclic quad) (1)\n✓ $3x + 60^\\circ = 180^\\circ$ (1)\n✓ $x = 40^\\circ$ (1)" },
+    { "id": "isosceles", "type": "open", "marks": 3, "prompt": "O is the centre of a circle. A and B lie on the circle and $\\hat{OAB} = 28^\\circ$. Find $\\hat{AOB}$ and the angle subtended by AB at a point C on the major arc.", "memo": "✓ $\\hat{OBA} = 28^\\circ$ (∠s opp equal radii) (1)\n✓ $\\hat{AOB} = 124^\\circ$ (sum of ∠s in △) (1)\n✓ $\\hat{ACB} = 62^\\circ$ (∠ at centre = 2 × ∠ at circumference) (1)" }
+  ]
+}

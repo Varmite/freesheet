@@ -1,0 +1,319 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of FOUR questions. Answer ALL the questions.",
+    "Show all calculations and include units.",
+    "Write in full sentences where explanations are required."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "Lines of longitude measure distance…",
+          "options": [
+            "north and south of the equator",
+            "east and west of the Prime Meridian",
+            "above sea level",
+            "between two cities"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "Which instrument measures air pressure?",
+          "options": [
+            "Anemometer",
+            "Barometer",
+            "Rain gauge",
+            "Hygrometer"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "Which climate region has hot, dry summers and wet winters?",
+          "options": [
+            "Savanna",
+            "Mediterranean",
+            "Tropical rainforest",
+            "Temperate grassland"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "A settlement where buildings are spread far apart is…",
+          "options": [
+            "nucleated",
+            "linear",
+            "dispersed",
+            "a CBD"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-5",
+          "type": "mcq",
+          "prompt": "Which type of transport is best for exporting large amounts of coal to China?",
+          "options": [
+            "Air",
+            "Road",
+            "Sea",
+            "Pipeline"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-7",
+          "type": "truefalse",
+          "prompt": "Places east of the Prime Meridian are ahead of Greenwich time.",
+          "answer": true
+        },
+        {
+          "id": "q1-8",
+          "type": "truefalse",
+          "prompt": "A small-scale map shows a small area in great detail.",
+          "answer": false
+        },
+        {
+          "id": "q1-9",
+          "type": "short",
+          "prompt": "What is the line of latitude at 23½° S called?",
+          "answers": [
+            "tropic of capricorn",
+            "the tropic of capricorn"
+          ]
+        },
+        {
+          "id": "q1-10",
+          "type": "short",
+          "prompt": "Which zone of a city has the tallest buildings and highest land values? (give the abbreviation)",
+          "answers": [
+            "cbd",
+            "central business district"
+          ]
+        },
+        {
+          "id": "q1-6",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Bearing",
+              "right": "Angle clockwise from true north"
+            },
+            {
+              "left": "Climate",
+              "right": "Average weather over 30 years"
+            },
+            {
+              "left": "Urbanisation",
+              "right": "Growth of the urban share of population"
+            },
+            {
+              "left": "Import",
+              "right": "Good bought from another country"
+            },
+            {
+              "left": "Contour line",
+              "right": "Joins places of equal height"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Map skills",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "On a 1 : 50 000 topographic map, two dams are 7,2 cm apart. Calculate the real distance in km.",
+          "answer": 3.6,
+          "tolerance": 0.01,
+          "unit": "km"
+        },
+        {
+          "id": "q2-2",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "What is the bearing of south-west?",
+          "answer": 225,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "It is 09:00 at Greenwich (0°). Calculate the time at 75° E. Show your working.",
+          "memo": "✓ 75 ÷ 15 = 5 hours (1)\n✓ East is ahead, so add (1)\n✓ 09:00 + 5 h = 14:00 (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How would you know from contour lines that a slope is steep?",
+          "memo": "✓ The contour lines are close together (1)\n✓ meaning height changes quickly over a short distance (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Pretoria is at 25°45′ S, 28°11′ E. In which two hemispheres is Pretoria?",
+          "memo": "✓ Southern hemisphere (1)\n✓ Eastern hemisphere (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Climate",
+      "context": [
+        {
+          "type": "table",
+          "caption": "Climate data for Town X",
+          "headers": [
+            "Month",
+            "J",
+            "F",
+            "M",
+            "A",
+            "M",
+            "J",
+            "J",
+            "A",
+            "S",
+            "O",
+            "N",
+            "D"
+          ],
+          "rows": [
+            [
+              "Temperature (°C)",
+              21,
+              21,
+              20,
+              18,
+              15,
+              13,
+              12,
+              13,
+              15,
+              17,
+              19,
+              20
+            ],
+            [
+              "Rainfall (mm)",
+              15,
+              17,
+              20,
+              50,
+              85,
+              95,
+              90,
+              80,
+              45,
+              30,
+              20,
+              15
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the annual temperature range of Town X.",
+          "answer": 9,
+          "tolerance": 0,
+          "unit": "°C"
+        },
+        {
+          "id": "q3-2",
+          "type": "short",
+          "marks": 1,
+          "prompt": "In which month does Town X receive the most rain? (write the month in full)",
+          "answers": [
+            "june"
+          ]
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name the climate region of Town X and give TWO reasons from the data.",
+          "memo": "✓ Mediterranean (1)\n✓ Most rain falls in winter (May to August) (1)\n✓ Warm summers and mild winters (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how ocean currents affect the climates of the east and west coasts of South Africa.",
+          "memo": "✓ The warm Agulhas Current on the east coast brings warm, moist air and rain (1)\n✓ The cold Benguela Current on the west coast cools the air (1)\n✓ so the west coast is dry / desert (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why a coastal town has a smaller temperature range than an inland town.",
+          "memo": "✓ The sea heats up and cools down slowly (1)\n✓ so it keeps coastal temperatures mild in summer and winter (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Settlement, transport and trade",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give TWO push factors and TWO pull factors that cause rural–urban migration.",
+          "memo": "Push (1 each): lack of jobs; drought; poverty; few services; conflict\nPull (1 each): jobs; better services; education; healthcare; family; bright lights"
+        },
+        {
+          "id": "q4-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe TWO problems caused by rapid urbanisation and suggest a solution for each.",
+          "memo": "✓ Problem 1 (1) ✓ matching solution (1)\n✓ Problem 2 (1) ✓ matching solution (1)\ne.g. housing shortage → housing programmes; congestion → public transport; unemployment → support small businesses"
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Compare road and rail transport by giving ONE advantage of each and stating which is better for moving iron ore.",
+          "memo": "✓ Road: door-to-door / flexible (1)\n✓ Rail: carries heavy loads cheaply (1)\n✓ Rail is better for iron ore (1)"
+        },
+        {
+          "id": "q4-4",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A country exports goods worth R240 billion and imports goods worth R260 billion. Calculate the balance of trade in billions of rand (use a minus sign for a deficit).",
+          "answer": -20,
+          "tolerance": 0,
+          "unit": "billion rand"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why do developing countries earn less from exporting raw materials than from manufactured goods?",
+          "memo": "✓ Raw materials have a lower value than processed goods (1)\n✓ The value is added (and jobs created) in the countries that manufacture the products (1)"
+        }
+      ]
+    }
+  ]
+}

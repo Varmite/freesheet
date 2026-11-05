@@ -1,0 +1,61 @@
+{
+  "id": "diversity-and-discrimination",
+  "title": "Diversity, Prejudice and Discrimination",
+  "term": 3,
+  "summary": "Diversity in South Africa, stereotypes, prejudice and discrimination, forms of discrimination such as racism, sexism and xenophobia, and how to promote inclusion and nation-building.",
+  "notes": [
+    { "type": "heading", "text": "Diversity" },
+    { "type": "paragraph", "text": "**Diversity** means differences between people: culture, language, race, religion, gender, age, ability, nationality and beliefs. South Africa has **12 official languages** (including South African Sign Language since 2023) and many cultures and religions. Our motto, *!ke e: ǀxarra ǁke*, means **'diverse people unite'**." },
+    { "type": "heading", "text": "From stereotype to discrimination" },
+    { "type": "table", "headers": ["Term", "Meaning", "Example"], "rows": [
+      ["Stereotype", "A fixed, oversimplified **idea** about a group of people", "'Girls are bad at Maths.'"],
+      ["Prejudice", "A negative **attitude or feeling** towards someone because of the group they belong to, formed without knowing them", "Disliking someone because of their accent"],
+      ["Discrimination", "Unfair **action or treatment** because of a person's group", "Refusing to pick someone for a team because of their nationality"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Stereotypes are **thoughts**, prejudice is a **feeling**, and discrimination is an **action**. Each can lead to the next." },
+    { "type": "heading", "text": "Forms of discrimination" },
+    { "type": "table", "headers": ["Form", "Discrimination based on"], "rows": [
+      ["Racism", "Race or skin colour"],
+      ["Sexism", "Sex or gender"],
+      ["Xenophobia", "Being from another country (fear or hatred of foreigners)"],
+      ["Homophobia", "Sexual orientation"],
+      ["Ableism", "Disability"],
+      ["Ageism", "Age"],
+      ["Religious intolerance", "Religion or belief"]
+    ] },
+    { "type": "paragraph", "text": "Section 9 of the Constitution forbids **unfair discrimination** on grounds including race, gender, sex, pregnancy, marital status, ethnic or social origin, colour, sexual orientation, age, disability, religion, conscience, belief, culture, language and birth." },
+    { "type": "heading", "text": "Effects of discrimination" },
+    { "type": "list", "items": [
+      "Victims feel hurt, excluded, angry and may develop low self-esteem or depression.",
+      "Communities become divided; distrust and conflict grow.",
+      "Talent is wasted when people are denied opportunities.",
+      "It can lead to violence, such as xenophobic attacks."
+    ] },
+    { "type": "heading", "text": "Promoting inclusion" },
+    { "type": "list", "items": [
+      "**Learn** about other cultures, languages and religions; ask respectful questions.",
+      "**Challenge** stereotypes and jokes that put others down.",
+      "**Include** everyone in groups and activities.",
+      "Celebrate days such as **Heritage Day** (24 September), **Human Rights Day** (21 March) and **Freedom Day** (27 April).",
+      "Practise **ubuntu**: 'I am because we are' (*umuntu ngumuntu ngabantu*), the idea that we are connected and should treat each other with compassion."
+    ] },
+    { "type": "callout", "label": "Nation-building", "text": "Nation-building means working together to create a united, fair society that respects diversity. Sport, music and national symbols (the flag, anthem and coat of arms) help bring people together." }
+  ],
+  "questions": [
+    { "id": "languages", "type": "numeric", "prompt": "How many official languages does South Africa have?", "answer": 12, "tolerance": 0 },
+    { "id": "stereotype", "type": "mcq", "prompt": "'All teenagers are lazy.' This is an example of a…", "options": ["stereotype", "right", "responsibility", "value"], "answer": 0 },
+    { "id": "xenophobia", "type": "short", "prompt": "What is the fear or hatred of people from other countries called?", "answers": ["xenophobia"] },
+    { "id": "heritage", "type": "short", "prompt": "On which date is Heritage Day celebrated? (e.g. 1 May)", "answers": ["24 september", "24th september", "september 24"] },
+    { "id": "sequence", "type": "truefalse", "prompt": "Discrimination is an action, while prejudice is an attitude or feeling.", "answer": true },
+    { "id": "forms", "type": "match", "marks": 4, "prompt": "Match each form of discrimination to its basis.", "pairs": [
+      { "left": "Sexism", "right": "Gender" },
+      { "left": "Ableism", "right": "Disability" },
+      { "left": "Ageism", "right": "Age" },
+      { "left": "Racism", "right": "Race" }
+    ] },
+    { "id": "differences", "type": "open", "marks": 3, "prompt": "Explain the difference between a stereotype, prejudice and discrimination.", "memo": "✓ Stereotype: an oversimplified idea about a group (1)\n✓ Prejudice: a negative attitude/feeling formed without knowing the person (1)\n✓ Discrimination: unfair treatment/action (1)" },
+    { "id": "effects", "type": "open", "marks": 3, "prompt": "Describe THREE effects of discrimination on victims and communities.", "memo": "Any three (1 each): hurt/low self-esteem; depression; exclusion; division and conflict; wasted talent; violence" },
+    { "id": "ubuntu", "type": "open", "marks": 2, "prompt": "Explain what ubuntu means and how it can help reduce discrimination.", "memo": "✓ 'I am because we are': we are all connected and depend on each other (1)\n✓ It encourages compassion and respect for everyone, so people are treated with dignity (1)" },
+    { "id": "inclusion", "type": "open", "marks": 2, "prompt": "Suggest TWO ways your class can make a new learner from another country feel welcome.", "memo": "Any two (1 each): include them in activities; learn greetings in their language; learn about their culture; stop xenophobic comments; pair them with a buddy" }
+  ]
+}

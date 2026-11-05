@@ -1,0 +1,66 @@
+{
+  "id": "exam-preparation",
+  "title": "Study Strategies and Exam Preparation",
+  "term": 4,
+  "summary": "Active study methods, spaced practice and self-testing, a revision timetable, understanding question verbs and mark allocations, exam-room strategies and learning from results.",
+  "notes": [
+    { "type": "heading", "text": "Active versus passive studying" },
+    { "type": "paragraph", "text": "**Passive** studying (only re-reading or highlighting) feels easy but is not very effective. **Active** studying makes your brain work to recall and use information, so you remember much more." },
+    { "type": "table", "headers": ["Active strategy", "How to do it"], "rows": [
+      ["Self-testing (retrieval practice)", "Close your book and write or say everything you remember; then check what you missed"],
+      ["Spaced practice", "Revise a topic several times over days and weeks, rather than once in a long session"],
+      ["Interleaving", "Mix different types of problems in one session (e.g. different kinds of Maths questions)"],
+      ["Elaboration", "Ask yourself 'why?' and 'how?' and connect new ideas to what you already know"],
+      ["Summaries and mind maps", "Condense notes into key points and diagrams in your own words"],
+      ["Past papers", "Practise under timed exam conditions and mark your work with the memo"]
+    ] },
+    { "type": "heading", "text": "A revision timetable" },
+    { "type": "list", "items": [
+      "Start at least **four weeks** before exams.",
+      "List all subjects and topics; spend more time on difficult topics.",
+      "Plan **specific tasks** (e.g. 'Science: do 10 questions on acids') rather than vague goals ('study Science').",
+      "Include breaks, exercise, meals and 8 or more hours of sleep.",
+      "Review your plan weekly and adjust it."
+    ] },
+    { "type": "heading", "text": "Understanding questions" },
+    { "type": "table", "headers": ["Verb", "What to do"], "rows": [
+      ["Name / list / state", "Give short facts without explanation"],
+      ["Define", "Give the exact meaning of a term"],
+      ["Describe", "Give the characteristics or details of something"],
+      ["Explain", "Give reasons or show how or why something happens"],
+      ["Compare", "Give similarities AND differences"],
+      ["Discuss", "Examine different points of view or aspects, with evidence"],
+      ["Evaluate / assess", "Judge the value or success of something and give reasons"],
+      ["Suggest / recommend", "Give your own practical ideas"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Use the **mark allocation** as a guide: a 3-mark 'explain' question usually needs three clear points or a point with explanation and an example." },
+    { "type": "heading", "text": "In the exam room" },
+    { "type": "list", "ordered": true, "items": [
+      "Read the instructions and the whole paper first (use the reading time).",
+      "Plan your time: roughly one minute per mark.",
+      "Answer the questions you know well first, but number answers correctly.",
+      "Underline key words in each question.",
+      "Write clearly and in full sentences where needed.",
+      "Leave time to check your answers."
+    ] },
+    { "type": "heading", "text": "After the exam" },
+    { "type": "paragraph", "text": "When you get your results, look at your mistakes and work out **why** you lost marks: lack of knowledge, misreading the question, poor time management or careless errors. Use this to improve your study plan. A disappointing result is information, not failure." }
+  ],
+  "questions": [
+    { "id": "active", "type": "mcq", "prompt": "Which is an ACTIVE study strategy?", "options": ["Re-reading notes many times", "Highlighting the textbook", "Testing yourself without looking at notes", "Listening to music while reading"], "answer": 2 },
+    { "id": "spaced", "type": "short", "prompt": "What is revising a topic several times over days and weeks called? (… practice)", "answers": ["spaced practice", "spaced", "spaced repetition"] },
+    { "id": "compare", "type": "truefalse", "prompt": "A 'compare' question asks for both similarities and differences.", "answer": true },
+    { "id": "time", "type": "numeric", "prompt": "Using the guideline of about one minute per mark, how many minutes should you spend on a 15-mark question?", "answer": 15, "tolerance": 0, "unit": "minutes" },
+    { "id": "verbs", "type": "match", "marks": 4, "prompt": "Match each question verb to what it asks.", "pairs": [
+      { "left": "Define", "right": "Give the exact meaning" },
+      { "left": "Evaluate", "right": "Judge the value and give reasons" },
+      { "left": "Suggest", "right": "Give your own practical ideas" },
+      { "left": "Describe", "right": "Give characteristics or details" }
+    ] },
+    { "id": "timetable", "type": "open", "marks": 3, "prompt": "Give THREE tips for an effective revision timetable.", "memo": "Any three (1 each): start early; more time for difficult topics; specific tasks; include breaks and sleep; review weekly; realistic" },
+    { "id": "passive", "type": "open", "marks": 2, "prompt": "Why is re-reading notes less effective than self-testing?", "memo": "✓ Re-reading is passive; it feels familiar but does not make you recall (1)\n✓ Self-testing makes the brain retrieve information, which strengthens memory (1)" },
+    { "id": "exam-room", "type": "open", "marks": 3, "prompt": "Describe THREE strategies to use in the exam room.", "memo": "Any three (1 each): read instructions/whole paper; plan time; answer known questions first; underline key words; number correctly; check answers" },
+    { "id": "results", "type": "open", "marks": 2, "prompt": "How can a learner use exam results to improve?", "memo": "✓ Analyse mistakes to find why marks were lost (1)\n✓ Adjust the study plan / practise weak areas (1)" },
+    { "id": "marks", "type": "open", "marks": 2, "prompt": "How does the mark allocation help you answer a question?", "memo": "✓ It shows how many points or how much detail is expected (1)\n✓ It helps you plan time and avoid writing too much or too little (1)" }
+  ]
+}

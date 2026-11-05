@@ -1,0 +1,54 @@
+{
+  "id": "causes-of-world-war-one",
+  "title": "The Causes of World War I",
+  "term": 4,
+  "summary": "The long-term causes of World War I (militarism, alliances, imperialism and nationalism), the assassination at Sarajevo, and how a local crisis became a world war.",
+  "notes": [
+    { "type": "heading", "text": "Europe before 1914" },
+    { "type": "paragraph", "text": "**World War I** (the First World War or 'Great War') lasted from **1914 to 1918**. It was fought mainly in Europe but involved countries and colonies from around the world. More than 16 million people died. Historians remember the long-term causes with the word **MAIN**." },
+    { "type": "table", "caption": "The MAIN causes", "headers": ["Cause", "Meaning", "Example"], "rows": [
+      ["**M**ilitarism", "Building up large armies and navies and believing war is a good way to solve problems", "The naval arms race between Britain and Germany to build Dreadnought battleships"],
+      ["**A**lliances", "Agreements to help each other in war", "Triple Alliance and Triple Entente divided Europe into two armed camps"],
+      ["**I**mperialism", "Competition for colonies and empire", "Germany wanted 'a place in the sun'; crises over Morocco in 1905 and 1911"],
+      ["**N**ationalism", "Strong pride in one's nation, sometimes the belief that it is better than others; also the desire of peoples to have their own country", "Serbian nationalists wanted to free Slavs ruled by Austria-Hungary"]
+    ] },
+    { "type": "heading", "text": "The two alliances" },
+    { "type": "table", "headers": ["Triple Alliance (Central Powers)", "Triple Entente (Allies)"], "rows": [
+      ["Germany", "Britain"],
+      ["Austria-Hungary", "France"],
+      ["Italy (but it joined the Allies in 1915)", "Russia"],
+      ["Later joined by the Ottoman Empire and Bulgaria", "Later joined by Italy, the USA (1917), Japan and others"]
+    ] },
+    { "type": "heading", "text": "The spark: Sarajevo, 28 June 1914" },
+    { "type": "paragraph", "text": "**Archduke Franz Ferdinand**, heir to the throne of Austria-Hungary, and his wife Sophie were visiting **Sarajevo** in Bosnia, which Austria-Hungary had taken over. They were shot dead by **Gavrilo Princip**, a 19-year-old Bosnian Serb who belonged to a nationalist group called the **Black Hand**." },
+    { "type": "heading", "text": "From crisis to world war" },
+    { "type": "list", "ordered": true, "items": [
+      "Austria-Hungary blamed Serbia and, with Germany's support (the 'blank cheque'), sent Serbia a harsh ultimatum.",
+      "**28 July**: Austria-Hungary declared war on Serbia.",
+      "Russia, protector of the Slavs, mobilised its army to support Serbia.",
+      "**1 August**: Germany declared war on Russia, and on **3 August** on France, Russia's ally.",
+      "Germany's **Schlieffen Plan** meant attacking France quickly through neutral **Belgium**.",
+      "**4 August**: Britain declared war on Germany to defend Belgian neutrality (the 1839 Treaty of London) and support France."
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "The assassination was the **immediate cause** (the trigger). The alliance system turned a local conflict in the Balkans into a war between all the great powers within about a week." },
+    { "type": "passage", "title": "Source D: The 'blank cheque' (a paraphrase of Germany's assurance to Austria-Hungary, July 1914)", "text": "Austria-Hungary must deal with Serbia firmly, and Germany will stand by her side as a faithful ally, whatever the consequences." },
+    { "type": "paragraph", "text": "Because the European powers had empires, the war quickly became a **world war**: soldiers and labourers from India, Africa, Australia, Canada and New Zealand fought for Britain and France, and fighting took place in African colonies as well." }
+  ],
+  "questions": [
+    { "id": "years", "type": "short", "prompt": "In which years was World War I fought? (e.g. 1900–1905)", "answers": ["1914-1918", "1914–1918", "1914 to 1918", "1914 - 1918"] },
+    { "id": "assassin", "type": "short", "prompt": "Who assassinated Archduke Franz Ferdinand?", "answers": ["gavrilo princip", "princip"] },
+    { "id": "city", "type": "mcq", "prompt": "In which city was Franz Ferdinand killed?", "options": ["Vienna", "Belgrade", "Sarajevo", "Berlin"], "answer": 2 },
+    { "id": "entente", "type": "mcq", "prompt": "Which countries made up the Triple Entente?", "options": ["Germany, Austria-Hungary, Italy", "Britain, France, Russia", "Britain, Germany, France", "Russia, Serbia, Belgium"], "answer": 1 },
+    { "id": "belgium", "type": "truefalse", "prompt": "Britain declared war on Germany after German troops invaded neutral Belgium.", "answer": true },
+    { "id": "main", "type": "match", "marks": 4, "prompt": "Match each cause to an example.", "pairs": [
+      { "left": "Militarism", "right": "Naval race to build Dreadnoughts" },
+      { "left": "Alliances", "right": "Europe divided into two armed camps" },
+      { "left": "Imperialism", "right": "Rivalry over Morocco" },
+      { "left": "Nationalism", "right": "Serbs wanting a united Slav state" }
+    ] },
+    { "id": "alliances-effect", "type": "open", "marks": 3, "prompt": "Explain how the alliance system turned a local conflict into a world war.", "memo": "✓ Austria-Hungary declared war on Serbia, supported by Germany (1)\n✓ Russia mobilised to defend Serbia, so Germany declared war on Russia and France (1)\n✓ Britain joined to support France and Belgium; their empires were drawn in too (1)" },
+    { "id": "immediate", "type": "open", "marks": 2, "prompt": "What is the difference between a long-term cause and an immediate cause? Use World War I as an example.", "memo": "✓ Long-term causes build tension over many years, e.g. militarism, alliances, imperialism, nationalism (1)\n✓ The immediate cause is the event that triggers the war: the assassination at Sarajevo (1)" },
+    { "id": "source-d", "type": "open", "marks": 2, "prompt": "Read Source D. What promise is the Kaiser making, and why was it important?", "memo": "✓ Germany will support Austria-Hungary in whatever action it takes against Serbia (the 'blank cheque') (1)\n✓ It encouraged Austria-Hungary to act aggressively, making war more likely (1)" },
+    { "id": "schlieffen", "type": "short", "prompt": "What was the name of Germany's plan to defeat France quickly by attacking through Belgium?", "answers": ["schlieffen plan", "the schlieffen plan", "schlieffen"] }
+  ]
+}

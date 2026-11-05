@@ -1,0 +1,53 @@
+{
+  "id": "financial-documents-and-tariffs",
+  "title": "Finance: Financial Documents and Tariffs",
+  "term": 2,
+  "summary": "Reading till slips, invoices, bank statements and municipal accounts; calculating VAT; and comparing tariff systems for electricity, water, cellphones and transport.",
+  "notes": [
+    { "type": "heading", "text": "Financial documents" },
+    { "type": "table", "headers": ["Document", "Purpose"], "rows": [
+      ["Till slip", "Proof of a purchase in a shop; lists items, prices, VAT and change"],
+      ["Invoice", "A bill sent by a business requesting payment for goods or services"],
+      ["Bank statement", "A record of all money in (credits) and out (debits) of an account, with the balance"],
+      ["Municipal account", "Monthly bill for water, electricity, rates and refuse removal"],
+      ["Payslip", "Shows earnings, deductions and net pay"]
+    ] },
+    { "type": "heading", "text": "VAT" },
+    { "type": "paragraph", "text": "**Value-added tax (VAT)** is 15% in South Africa. Some basic foods (brown bread, maize meal, milk, eggs, rice, fresh vegetables and fruit) are **zero-rated**: no VAT is charged on them." },
+    { "type": "formula", "latex": "\\text{price incl. VAT} = \\text{price excl. VAT} \\times 1{,}15 \\qquad \\text{VAT amount} = \\text{price incl. VAT} \\times \\frac{15}{115}" },
+    { "type": "example", "title": "Worked example 1", "problem": "A till slip total is R345,00 including VAT, and all items are VAT-able. How much VAT was paid?", "steps": ["VAT = R345 × 15 ÷ 115", "= R45,00"], "answer": "R45,00" },
+    { "type": "heading", "text": "Tariffs" },
+    { "type": "definition", "term": "Tariff", "text": "A fixed price or charge for a service, often set out in a table." },
+    { "type": "table", "caption": "Illustrative municipal water tariff (per month)", "headers": ["Water used", "Cost per kilolitre (kℓ)"], "rows": [
+      ["First 6 kℓ", "Free"],
+      ["Over 6 kℓ up to 15 kℓ", "R18,50"],
+      ["Over 15 kℓ up to 30 kℓ", "R32,00"],
+      ["Over 30 kℓ", "R48,00"]
+    ] },
+    { "type": "example", "title": "Worked example 2: a sliding-scale tariff", "problem": "Using the tariff, calculate the cost of using 22 kℓ of water in a month.", "steps": [
+      "First 6 kℓ: R0",
+      "Next 9 kℓ (6 to 15): 9 × R18,50 = R166,50",
+      "Next 7 kℓ (15 to 22): 7 × R32,00 = R224,00",
+      "Total: R390,50"
+    ], "answer": "R390,50" },
+    { "type": "callout", "label": "Exam tip", "text": "For sliding-scale (block) tariffs, work through each band in turn and only charge each kilolitre at the rate for its band. Do NOT charge all 22 kℓ at the R32 rate." },
+    { "type": "heading", "text": "Comparing options" },
+    { "type": "example", "title": "Worked example 3: cellphone contracts", "problem": "Contract A costs R199 per month including 100 free minutes, then R1,20 per minute. Prepaid costs R1,90 per minute. Which is cheaper for 160 minutes per month?", "steps": ["Contract: R199 + 60 × R1,20 = R271", "Prepaid: 160 × R1,90 = R304"], "answer": "Contract A is cheaper (R271)." }
+  ],
+  "questions": [
+    { "id": "vat-rate", "type": "numeric", "prompt": "What is the VAT rate in South Africa?", "answer": 15, "tolerance": 0, "unit": "%" },
+    { "id": "vat-add", "type": "numeric", "prompt": "A service costs R800 excluding VAT. What is the price including VAT?", "answer": 920, "tolerance": 0, "unit": "rand" },
+    { "id": "vat-amount", "type": "numeric", "prompt": "A shirt costs R230 including VAT. How much of this is VAT?", "answer": 30, "tolerance": 0, "unit": "rand" },
+    { "id": "zero", "type": "mcq", "prompt": "Which item is zero-rated for VAT?", "options": ["Cold drink", "Brown bread", "Chocolate", "Soap"], "answer": 1 },
+    { "id": "debit", "type": "truefalse", "prompt": "On a bank statement, a debit is money paid out of the account.", "answer": true },
+    { "id": "documents", "type": "match", "marks": 3, "prompt": "Match each document to its purpose.", "pairs": [
+      { "left": "Invoice", "right": "Requests payment for goods or services" },
+      { "left": "Till slip", "right": "Proof of a shop purchase" },
+      { "left": "Bank statement", "right": "Record of money in and out of an account" }
+    ] },
+    { "id": "water", "type": "open", "marks": 4, "prompt": "Using the water tariff in the notes, calculate the cost of 35 kℓ.", "memo": "✓ 9 × R18,50 = R166,50 (1)\n✓ 15 × R32,00 = R480,00 (1)\n✓ 5 × R48,00 = R240,00 (1)\n✓ Total R886,50 (1)" },
+    { "id": "contract", "type": "open", "marks": 4, "prompt": "Using the cellphone options in worked example 3, for how many minutes do Contract A and prepaid cost the same? (Assume more than 100 minutes.)", "memo": "✓ $199 + 1{,}2(m - 100) = 1{,}9m$ (1)\n✓ $79 + 1{,}2m = 1{,}9m$ (1)\n✓ $0{,}7m = 79$ (1)\n✓ $m \\approx 113$ minutes (1)" },
+    { "id": "balance", "type": "open", "marks": 3, "prompt": "An account has a balance of R2 340. A salary of R9 500 is paid in, and debit orders of R3 200 and R1 150 go off, plus R65 bank charges. What is the new balance?", "memo": "✓ R2 340 + R9 500 = R11 840 (1)\n✓ Debits R4 415 (1)\n✓ Balance R7 425 (1)" },
+    { "id": "electricity", "type": "open", "marks": 3, "prompt": "Prepaid electricity costs R2,85 per kWh. A household uses 380 kWh per month. Calculate the monthly cost and the cost for a year.", "memo": "✓ 380 × R2,85 (1)\n✓ = R1 083 per month (1)\n✓ R12 996 per year (1)" }
+  ]
+}

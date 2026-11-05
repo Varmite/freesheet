@@ -1,0 +1,225 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of THREE questions. Answer ALL the questions.",
+    "Read the case study carefully before answering Question 2.",
+    "Write in full sentences where explanations are required."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "Which communication style respects both your own and other people's rights?",
+          "options": [
+            "Passive",
+            "Aggressive",
+            "Assertive",
+            "Silent"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "The highest law in South Africa is…",
+          "options": [
+            "the Bill of Rights only",
+            "the Constitution",
+            "the Schools Act",
+            "the Children's Act"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "Which is a TVET college qualification most likely to lead to?",
+          "options": [
+            "Becoming a medical doctor",
+            "Becoming an electrician",
+            "Becoming a judge",
+            "Becoming a professor"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "Which food group provides calcium for strong bones?",
+          "options": [
+            "Starches",
+            "Dairy",
+            "Fats",
+            "Sugars"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-5",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Self-esteem",
+              "right": "How much you value yourself"
+            },
+            {
+              "left": "Stereotype",
+              "right": "Oversimplified idea about a group"
+            },
+            {
+              "left": "Tolerance (drugs)",
+              "right": "Needing more for the same effect"
+            },
+            {
+              "left": "Consent",
+              "right": "Freely agreeing without pressure"
+            },
+            {
+              "left": "Procrastination",
+              "right": "Putting tasks off"
+            }
+          ]
+        },
+        {
+          "id": "q1-6",
+          "type": "truefalse",
+          "prompt": "Antibiotics or antiretrovirals can cure HIV completely.",
+          "answer": false
+        },
+        {
+          "id": "q1-7",
+          "type": "truefalse",
+          "prompt": "Every right in the Bill of Rights comes with a responsibility.",
+          "answer": true
+        },
+        {
+          "id": "q1-8",
+          "type": "short",
+          "marks": 1,
+          "prompt": "What is the fear or hatred of foreigners called?",
+          "answers": [
+            "xenophobia"
+          ]
+        },
+        {
+          "id": "q1-9",
+          "type": "short",
+          "marks": 1,
+          "prompt": "What is the free Childline number?",
+          "answers": [
+            "116"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Case study",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Case study: Lerato's choice",
+          "text": "Lerato (14) has just moved to a new school. A popular group invites her to a party on Friday night. At the party, the group passes around a vape and some alcohol. One of the girls says, 'Come on, everyone does it. Don't be boring.' Lerato wants to be accepted, but she has a netball trial early on Saturday morning and she has promised herself that she will not drink or smoke."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Identify the type of peer pressure Lerato faces and give a reason.",
+          "memo": "✓ Negative peer pressure (1)\n✓ She is being pressured to vape and drink, which is harmful (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Write an assertive response Lerato could give.",
+          "memo": "✓ Says no clearly (1)\n✓ Gives a reason or uses an I-statement (1)\n✓ Is respectful / suggests an alternative (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE possible consequences if Lerato gives in.",
+          "memo": "Any three (1 each): poor performance at trial; health effects; addiction risk; risky behaviour/unsafe situations; breaking own values/guilt; trouble with parents or the law"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How could healthy self-esteem help Lerato in this situation?",
+          "memo": "✓ She would value herself and her goals (1)\n✓ and be confident enough to say no without needing the group's approval (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Suggest FOUR ways Lerato can make new friends at her school without compromising her values.",
+          "memo": "Any four (1 each): join netball/sports teams; join clubs or societies; talk to classmates with similar interests; volunteer; attend youth groups; be friendly and open"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Rights, careers and well-being",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Choose TWO rights from the Bill of Rights and give the responsibility that goes with each.",
+          "memo": "✓ Right 1 (1) ✓ matching responsibility (1)\n✓ Right 2 (1) ✓ matching responsibility (1)"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain the difference between prejudice and discrimination, and give an example of discrimination.",
+          "memo": "✓ Prejudice is a negative attitude or feeling (1)\n✓ Discrimination is unfair treatment / action (1)\n✓ Example, e.g. refusing someone a job because of race (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain how you would use your interests, abilities and values to choose a career. Give an example.",
+          "memo": "✓ Interests: what you enjoy (1)\n✓ Abilities: what you are good at (1)\n✓ Values: what is important to you (1)\n✓ Example linking these to a suitable career (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE effective study methods.",
+          "memo": "Any three (1 each): summaries; mind maps; mnemonics; flash cards; past papers; SQ3R; teaching someone"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE benefits of regular physical activity for teenagers.",
+          "memo": "Any three (1 each): healthy heart/lungs; strong muscles and bones; weight control; better sleep and concentration; reduced stress; lower disease risk"
+        },
+        {
+          "id": "q3-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE ways substance abuse affects a community.",
+          "memo": "Any three (1 each): more crime and violence; road accidents; pressure on health services and police; loss of productive young people; broken families; unemployment"
+        },
+        {
+          "id": "q3-7",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE emotional or social changes that teenagers may experience during puberty.",
+          "memo": "Any three (1 each): mood swings; need for independence/privacy; friends become more important; attraction to others; worry about appearance; increased peer pressure"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "critical-language-awareness",
+  "title": "Critical Language Awareness",
+  "term": 2,
+  "summary": "How language constructs power and persuades: propaganda techniques, bias and omission, manipulative statistics, euphemism and doublespeak, inclusive and exclusive language, and register.",
+  "notes": [
+    { "type": "heading", "text": "Language and power" },
+    { "type": "paragraph", "text": "Language is never neutral. Those with power, such as governments, companies and the media, choose words that shape how we see events. Critical readers ask: **Who wrote this? For whom? What is included, and what is left out? Who benefits?**" },
+    { "type": "heading", "text": "Propaganda techniques" },
+    { "type": "table", "headers": ["Technique", "Description", "Example"], "rows": [
+      ["Name-calling", "Attaching a negative label", "'These so-called experts…'"],
+      ["Glittering generalities", "Vague, positive words", "'freedom', 'a brighter future'"],
+      ["Plain folks", "Speaker pretends to be ordinary", "A politician eating at a roadside stall"],
+      ["Testimonial", "A celebrity endorses", "A sports star advertises a bank"],
+      ["Fear appeal", "Creates anxiety", "'Without this policy, crime will soar.'"],
+      ["Card-stacking", "Shows only favourable facts", "Leaving out side effects"]
+    ] },
+    { "type": "heading", "text": "Euphemism and doublespeak" },
+    { "type": "paragraph", "text": "**Doublespeak** deliberately hides the truth: 'rightsizing' or 'restructuring' for firing workers, 'collateral damage' for civilian deaths, 'price adjustment' for a price increase." },
+    { "type": "heading", "text": "Manipulating with numbers" },
+    { "type": "list", "items": [
+      "'Crime down 50%!': from 2 cases to 1?",
+      "'Up to 70% off': perhaps only one item.",
+      "Graphs with a vertical axis that does not start at zero exaggerate small differences."
+    ] },
+    { "type": "callout", "label": "Inclusive and exclusive language", "text": "Gender-neutral terms ('chairperson', 'firefighter', 'they') include everyone. 'Us and them' language ('those people') excludes and divides." }
+  ],
+  "questions": [
+    { "id": "card", "type": "mcq", "prompt": "Showing only the favourable facts about a product is called…", "options": ["name-calling", "card-stacking", "plain folks", "testimonial"], "answer": 1 },
+    { "id": "rightsizing", "type": "short", "prompt": "What is the term for language like 'rightsizing' that deliberately hides an unpleasant truth?", "answers": ["doublespeak", "euphemism"] },
+    { "id": "neutral", "type": "mcq", "prompt": "Which is the gender-neutral alternative to 'policeman'?", "options": ["Policewoman", "Police officer", "Copper", "Lawman"], "answer": 1 },
+    { "id": "axis", "type": "truefalse", "prompt": "A graph whose vertical axis does not start at zero can exaggerate small differences.", "answer": true },
+    { "id": "plainfolks", "type": "truefalse", "prompt": "'Plain folks' propaganda uses celebrity endorsements.", "answer": false },
+    { "id": "techniques", "type": "match", "marks": 4, "prompt": "Match each example to its propaganda technique.", "pairs": [
+      { "left": "'A brighter tomorrow for all!'", "right": "Glittering generalities" },
+      { "left": "'My opponent is a puppet of big business.'", "right": "Name-calling" },
+      { "left": "'If you don't vote for us, your jobs will vanish.'", "right": "Fear appeal" },
+      { "left": "A famous actor recommends a medicine", "right": "Testimonial" }
+    ] },
+    { "id": "doublespeak", "type": "open", "marks": 2, "prompt": "A company announces a 'workforce optimisation programme'. Explain what this means and why the phrase is used.", "memo": "✓ It probably means retrenching/firing workers (1)\n✓ The vague, positive phrase hides the harsh reality and protects the company's image (1)" },
+    { "id": "statistic", "type": "open", "marks": 2, "prompt": "Why should readers question the headline 'Burglaries down 50% in Parkhurst!'?", "memo": "✓ We are not told the actual numbers; it could be a very small change (1)\n✓ or a short, selective time period; statistics can be presented to mislead (1)" },
+    { "id": "exclusive", "type": "open", "marks": 2, "prompt": "Explain the effect of 'those people' in: 'Those people are taking our jobs.'", "memo": "✓ It creates an 'us and them' division (1)\n✓ dehumanising and excluding a group, and encouraging prejudice (1)" },
+    { "id": "questions", "type": "open", "marks": 3, "prompt": "List THREE questions a critical reader should ask about a text.", "memo": "Any three: ✓ Who wrote it? ✓ For whom/what audience? ✓ What is its purpose? ✓ What has been left out? ✓ Who benefits? (3)" }
+  ]
+}

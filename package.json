@@ -9,14 +9,19 @@
     "start": "electron .",
     "validate": "node scripts/validate-content.js",
     "test": "node scripts/validate-content.js && node scripts/test-marking.js",
-    "dist": "electron-builder",
-    "dist:win": "electron-builder --win",
-    "dist:mac": "electron-builder --mac",
-    "dist:linux": "electron-builder --linux"
+    "build": "node scripts/build.js",
+    "build:win": "node scripts/build.js --win",
+    "build:mac": "node scripts/build.js --mac",
+    "build:linux": "node scripts/build.js --linux",
+    "tts": "node scripts/tts/extract.js && tts\\.venv\\Scripts\\python tts\\generate.py"
   },
   "build": {
     "appId": "za.freesheet.app",
     "productName": "FreeSheet",
+    "directories": {
+      "output": "build",
+      "buildResources": "build-resources"
+    },
     "files": [
       "main.js",
       "preload.js",
@@ -27,27 +32,67 @@
       {
         "from": "content",
         "to": "content"
+      },
+      {
+        "from": "audio",
+        "to": "audio",
+        "filter": [
+          "**/*.ogg"
+        ]
       }
     ],
     "win": {
       "target": [
         "nsis",
-        "portable"
-      ]
+        "msi"
+      ],
+      "icon": "build-resources/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "installerIcon": "build-resources/icon.ico",
+      "uninstallerIcon": "build-resources/icon.ico",
+      "installerSidebar": "build-resources/installerSidebar.bmp",
+      "uninstallerSidebar": "build-resources/installerSidebar.bmp",
+      "installerHeader": "build-resources/installerHeader.bmp",
+      "license": "build-resources/license.txt",
+      "include": "build-resources/installer.nsh",
+      "shortcutName": "FreeSheet",
+      "uninstallDisplayName": "FreeSheet",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false
+    },
+    "msi": {
+      "oneClick": false,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "${productName}-${version}.${ext}"
     },
     "mac": {
       "target": [
         "dmg",
         "zip"
       ],
-      "category": "public.app-category.education"
+      "category": "public.app-category.education",
+      "artifactName": "${productName}-${version}-mac-${arch}.${ext}"
     },
     "linux": {
       "target": [
         "AppImage",
-        "deb"
+        "deb",
+        "tar.gz"
       ],
-      "category": "Education"
+      "category": "Education",
+      "maintainer": "FreeSheet",
+      "synopsis": "Offline CAPS study notes, practice questions and exams",
+      "artifactName": "${productName}-${version}-linux-${arch}.${ext}",
+      "syncDesktopName": true
     }
   },
   "dependencies": {
@@ -56,5 +101,7 @@
   "devDependencies": {
     "electron": "^45.2.1",
     "electron-builder": "^26.18.0"
-  }
+  },
+  "author": "FreeSheet",
+  "desktopName": "freesheet.desktop"
 }

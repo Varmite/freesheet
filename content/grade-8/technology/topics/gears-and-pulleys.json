@@ -1,0 +1,54 @@
+{
+  "id": "gears-and-pulleys",
+  "title": "Mechanical Systems: Gears and Pulleys",
+  "term": 2,
+  "summary": "Driver and driven gears, gear ratios, speed and direction of rotation, idler gears, chains and sprockets, belt drives and pulleys.",
+  "notes": [
+    { "type": "heading", "text": "Gears" },
+    { "type": "paragraph", "text": "**Gears** are wheels with teeth that mesh (fit together) to transfer rotary motion from one shaft to another. The gear that is turned by the motor or by hand is the **driver gear**; the gear it turns is the **driven gear**." },
+    { "type": "list", "items": [
+      "Two meshing gears turn in **opposite directions**.",
+      "A small driver turning a large driven gear: the output turns **slower** but with **more force** (torque).",
+      "A large driver turning a small driven gear: the output turns **faster** but with **less force**."
+    ] },
+    { "type": "heading", "text": "Gear ratio" },
+    { "type": "formula", "latex": "\\text{gear ratio} = \\frac{\\text{number of teeth on driven gear}}{\\text{number of teeth on driver gear}}" },
+    { "type": "example", "title": "Calculating a gear ratio", "problem": "A driver gear with 15 teeth turns a driven gear with 45 teeth. (a) Calculate the gear ratio. (b) If the driver turns at 90 revolutions per minute (r/min), how fast does the driven gear turn?", "steps": [
+      "(a) Gear ratio = 45 ÷ 15 = 3, written as 3 : 1",
+      "The driver turns 3 times for every 1 turn of the driven gear.",
+      "(b) Driven speed = 90 ÷ 3 = 30 r/min"
+    ], "answer": "3 : 1; 30 r/min" },
+    { "type": "formula", "latex": "\\text{driven speed} = \\text{driver speed} \\times \\frac{\\text{teeth on driver}}{\\text{teeth on driven}}" },
+    { "type": "heading", "text": "Idler gears and types of gears" },
+    { "type": "paragraph", "text": "An **idler gear** placed between the driver and driven gears makes the driven gear turn in the **same direction** as the driver. It does not change the speed." },
+    { "type": "table", "headers": ["Gear type", "Use"], "rows": [
+      ["Spur gears", "Simple gears on parallel shafts (clocks, toys)"],
+      ["Bevel gears", "Change the direction of rotation through 90° (hand drill, egg beater)"],
+      ["Rack and pinion", "Change rotary motion into linear (straight-line) motion (car steering, sliding gates)"],
+      ["Worm and worm wheel", "Large speed reduction; turns in one direction only (guitar tuning pegs)"]
+    ] },
+    { "type": "heading", "text": "Chains and sprockets" },
+    { "type": "paragraph", "text": "A **bicycle** uses a **chain** to connect two toothed wheels called **sprockets**. Unlike meshing gears, both sprockets turn in the **same direction**. A large front sprocket (chainring) driving a small rear sprocket makes the wheel turn faster." },
+    { "type": "heading", "text": "Belt drives and pulleys" },
+    { "type": "paragraph", "text": "A **belt drive** uses a rubber belt around two **pulleys**. It is quiet, cheap and flexible, but the belt can **slip**. Pulleys turn in the same direction unless the belt is crossed." },
+    { "type": "formula", "latex": "\\text{velocity ratio} = \\frac{\\text{diameter of driven pulley}}{\\text{diameter of driver pulley}}" },
+    { "type": "paragraph", "text": "**Lifting pulleys** (as on a crane, a flagpole or a well) use a rope over a grooved wheel. A single fixed pulley changes the **direction** of the effort (you pull down to lift up). A system of several pulleys (a block and tackle) gives a **mechanical advantage**, so heavy loads can be lifted with less effort." }
+  ],
+  "questions": [
+    { "id": "direction", "type": "mcq", "prompt": "Two meshing gears turn…", "options": ["in the same direction", "in opposite directions", "at the same speed always", "only clockwise"], "answer": 1 },
+    { "id": "ratio", "type": "numeric", "prompt": "A driver gear has 20 teeth and the driven gear has 60 teeth. Calculate the gear ratio (write the first number of the ratio only, e.g. 3 for 3 : 1).", "answer": 3, "tolerance": 0 },
+    { "id": "speed", "type": "numeric", "prompt": "A driver gear with 40 teeth turns at 60 r/min and drives a gear with 10 teeth. Calculate the speed of the driven gear.", "answer": 240, "tolerance": 0, "unit": "r/min" },
+    { "id": "idler", "type": "short", "prompt": "What is the gear placed between two gears so that they turn in the same direction called?", "answers": ["idler gear", "idler", "an idler gear"] },
+    { "id": "rack", "type": "mcq", "prompt": "Which gear system changes rotary motion into straight-line motion?", "options": ["Bevel gears", "Spur gears", "Rack and pinion", "Worm gear"], "answer": 2 },
+    { "id": "chain", "type": "truefalse", "prompt": "The two sprockets on a bicycle chain turn in the same direction.", "answer": true },
+    { "id": "gear-types", "type": "match", "marks": 4, "prompt": "Match each mechanism to an example.", "pairs": [
+      { "left": "Bevel gears", "right": "Hand drill" },
+      { "left": "Rack and pinion", "right": "Sliding gate motor" },
+      { "left": "Worm and worm wheel", "right": "Guitar tuning peg" },
+      { "left": "Chain and sprockets", "right": "Bicycle" }
+    ] },
+    { "id": "small-large", "type": "open", "marks": 2, "prompt": "A small driver gear turns a large driven gear. What happens to the speed and the force of the output?", "memo": "✓ The output speed decreases (1)\n✓ The output force (torque) increases (1)" },
+    { "id": "belt", "type": "open", "marks": 2, "prompt": "Give ONE advantage and ONE disadvantage of a belt drive compared with gears.", "memo": "✓ Advantage: quiet / cheap / can connect shafts far apart / acts as safety if jammed (1)\n✓ Disadvantage: can slip / wears out / stretches (1)" },
+    { "id": "pulley", "type": "open", "marks": 2, "prompt": "Explain how a single fixed pulley on a flagpole makes work easier.", "memo": "✓ It changes the direction of the effort (1)\n✓ so you can pull down to raise the flag up (1)" }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "relationships-and-sexual-health",
+  "title": "Relationships and Sexual Health",
+  "term": 1,
+  "summary": "Healthy and abusive relationships, responsible sexual decision-making, contraception, HIV and STI prevention and treatment, teenage pregnancy, and the law on consent and sexual offences.",
+  "notes": [
+    { "type": "heading", "text": "Healthy relationships" },
+    { "type": "paragraph", "text": "Healthy relationships are built on **respect, trust, honesty, equality and good communication**. Each person keeps their own friends, interests and right to say no." },
+    { "type": "heading", "text": "Making responsible decisions" },
+    { "type": "list", "items": [
+      "Know your **values** and **boundaries** before you are in a situation.",
+      "Communicate openly with your partner.",
+      "Avoid alcohol and drugs, which impair judgement.",
+      "Consider the consequences: pregnancy, STIs, emotional effects.",
+      "Remember that **delaying** sex is a valid and healthy choice."
+    ] },
+    { "type": "heading", "text": "Contraception and protection" },
+    { "type": "table", "headers": ["Method", "Prevents pregnancy", "Protects against STIs/HIV"], "rows": [
+      ["Male or female condom", "Yes (if used correctly every time)", "Yes"],
+      ["Pill, injection, implant, IUD", "Yes, highly effective", "No"],
+      ["Emergency contraception", "Yes, if taken within 3–5 days", "No"],
+      ["Dual protection (condom + another method)", "Very effective", "Yes"]
+    ] },
+    { "type": "heading", "text": "HIV and STIs" },
+    { "type": "list", "items": [
+      "HIV can be treated with **antiretroviral therapy (ART)**. People on effective treatment can live long, healthy lives, and if the virus is undetectable they do not transmit it sexually (**U = U**: undetectable = untransmittable).",
+      "**PrEP** (pre-exposure prophylaxis) is a daily pill that greatly reduces the risk of HIV for HIV-negative people at risk.",
+      "**PEP** (post-exposure prophylaxis) must be started within **72 hours** after possible exposure, e.g. after sexual assault.",
+      "Many STIs (chlamydia, gonorrhoea, syphilis) have no early symptoms but are treatable. Regular testing is important."
+    ] },
+    { "type": "callout", "label": "The law", "text": "The age of consent in South Africa is **16**. Sex with a child under 12 is always rape. The Sexual Offences Act makes sharing intimate images of a child a crime. Young people from age 12 can access contraception and HIV testing confidentially at clinics." },
+    { "type": "heading", "text": "Teenage pregnancy" },
+    { "type": "paragraph", "text": "Teenage pregnancy can affect health, schooling and finances. Pregnant learners have the right to continue their education. Support is available from clinics, social workers and organisations such as loveLife." }
+  ],
+  "questions": [
+    { "id": "dual", "type": "open", "marks": 2, "prompt": "What is dual protection and why is it recommended?", "memo": "✓ Using a condom together with another contraceptive method (1)\n✓ It protects against both pregnancy and STIs/HIV (1)" },
+    { "id": "pep", "type": "numeric", "prompt": "Within how many hours after possible HIV exposure must PEP be started?", "answer": 72, "tolerance": 0, "unit": "hours" },
+    { "id": "uu", "type": "mcq", "prompt": "What does U = U mean?", "options": ["Unprotected = unsafe", "Undetectable = untransmittable", "Unknown = untested", "Unsafe = unhealthy"], "answer": 1 },
+    { "id": "prep", "type": "short", "prompt": "What is the name of the daily pill that reduces the risk of HIV infection for HIV-negative people?", "answers": ["prep", "pre-exposure prophylaxis"] },
+    { "id": "pill-sti", "type": "truefalse", "prompt": "The contraceptive injection protects against STIs.", "answer": false },
+    { "id": "age", "type": "numeric", "prompt": "What is the age of consent for sexual activity in South Africa?", "answer": 16, "tolerance": 0, "unit": "years" },
+    { "id": "decisions", "type": "open", "marks": 3, "prompt": "Give THREE strategies for making responsible decisions about sex.", "memo": "Any three (1 each): know your values and boundaries; communicate openly; avoid alcohol/drugs; consider consequences; delay sex; use protection" },
+    { "id": "symptoms", "type": "open", "marks": 2, "prompt": "Why is regular STI testing important even if a person has no symptoms?", "memo": "✓ Many STIs have no early symptoms (1)\n✓ Early treatment prevents complications (e.g. infertility) and further spread (1)" },
+    { "id": "pregnancy", "type": "open", "marks": 3, "prompt": "Discuss THREE possible effects of teenage pregnancy on a young mother.", "memo": "Any three (1 each): health risks; interrupted schooling; financial pressure; emotional stress; limited career options; stigma" },
+    { "id": "healthy", "type": "open", "marks": 3, "prompt": "Name THREE qualities of a healthy romantic relationship.", "memo": "Any three (1 each): respect; trust; honesty; equality; good communication; respect for boundaries; support" }
+  ]
+}

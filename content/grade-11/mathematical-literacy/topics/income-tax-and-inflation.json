@@ -1,0 +1,41 @@
+{
+  "id": "income-tax-and-inflation",
+  "title": "Finance: Income Tax and Inflation",
+  "term": 2,
+  "summary": "Using an income tax table with rebates to calculate annual and monthly tax, the tax threshold, and how inflation reduces the value of money over time.",
+  "notes": [
+    { "type": "heading", "text": "Income tax" },
+    { "type": "paragraph", "text": "Employees pay **income tax** (PAYE) to SARS on their **taxable income**. South Africa uses a **progressive** system: higher income is taxed at a higher rate. Every taxpayer receives a **primary rebate**, an amount subtracted from the tax calculated." },
+    { "type": "table", "caption": "ILLUSTRATIVE tax table for practice (real SARS tables change every year)", "headers": ["Taxable income (per year)", "Rates of tax"], "rows": [
+      ["R1 – R240 000", "18% of taxable income"],
+      ["R240 001 – R375 000", "R43 200 + 26% of taxable income above R240 000"],
+      ["R375 001 – R520 000", "R78 300 + 31% of taxable income above R375 000"],
+      ["R520 001 – R680 000", "R123 250 + 36% of taxable income above R520 000"]
+    ] },
+    { "type": "paragraph", "text": "Illustrative rebates: **primary rebate R17 500** (all taxpayers); secondary rebate R9 500 (65 and older)." },
+    { "type": "example", "title": "Worked example 1", "problem": "Sizwe (aged 34) has a taxable income of R312 000 per year. Using the illustrative table, calculate his annual and monthly tax.", "steps": [
+      "Bracket 2: R43 200 + 26% × (R312 000 − R240 000)",
+      "= R43 200 + 26% × R72 000 = R43 200 + R18 720 = R61 920",
+      "Subtract primary rebate: R61 920 − R17 500 = R44 420 per year",
+      "Monthly: R44 420 ÷ 12 = R3 701,67"
+    ], "answer": "R44 420 per year; about R3 701,67 per month" },
+    { "type": "definition", "term": "Tax threshold", "text": "The income below which no tax is paid, because the tax is less than the rebate. With an 18% rate and a R17 500 rebate: threshold = R17 500 ÷ 0,18 ≈ R97 222." },
+    { "type": "callout", "label": "Exam tip", "text": "Tax tables use **annual** income. Convert a monthly salary to an annual one (× 12) first, and divide the final tax by 12 for the monthly amount." },
+    { "type": "heading", "text": "Inflation" },
+    { "type": "definition", "term": "Inflation", "text": "The general increase in prices over time, measured by Stats SA using the **Consumer Price Index (CPI)**. If inflation is 5%, an item costing R100 now will cost about R105 next year." },
+    { "type": "example", "title": "Worked example 2", "problem": "A school uniform costs R1 200 now. If inflation averages 6% per year, what will it cost in 3 years?", "steps": ["Year 1: R1 200 × 1,06 = R1 272", "Year 2: R1 272 × 1,06 = R1 348,32", "Year 3: R1 348,32 × 1,06 = R1 429,22"], "answer": "About R1 429,22" },
+    { "type": "paragraph", "text": "If your salary increases by **less** than inflation, your **buying power** falls: you can afford less than before. Savings should earn interest at a rate above inflation to grow in real terms." }
+  ],
+  "questions": [
+    { "id": "progressive", "type": "mcq", "prompt": "A progressive tax system means…", "options": ["everyone pays the same amount", "higher incomes are taxed at a higher rate", "only businesses pay tax", "tax decreases as income increases"], "answer": 1 },
+    { "id": "annual", "type": "numeric", "prompt": "A monthly taxable salary is R22 500. What is the annual taxable income?", "answer": 270000, "tolerance": 0, "unit": "rand" },
+    { "id": "bracket1", "type": "numeric", "prompt": "Using the illustrative table, calculate the tax (before rebate) on a taxable income of R180 000.", "answer": 32400, "tolerance": 0, "unit": "rand" },
+    { "id": "after-rebate", "type": "numeric", "prompt": "Using your previous answer, calculate the tax payable after the primary rebate of R17 500.", "answer": 14900, "tolerance": 0, "unit": "rand" },
+    { "id": "inflation", "type": "numeric", "prompt": "A loaf of bread costs R18. If inflation is 5%, what will it cost next year? (two decimals)", "answer": 18.9, "tolerance": 0.01, "unit": "rand" },
+    { "id": "buying-power", "type": "truefalse", "prompt": "If your salary increases by 4% while inflation is 6%, your buying power increases.", "answer": false },
+    { "id": "full-tax", "type": "open", "marks": 4, "prompt": "Ayanda (aged 45) earns a taxable income of R420 000 per year. Using the illustrative table and rebate, calculate her annual tax.", "memo": "✓ Bracket 3: R78 300 + 31% × (R420 000 − R375 000) (1)\n✓ = R78 300 + R13 950 = R92 250 (1)\n✓ − R17 500 (1)\n✓ = R74 750 (1)" },
+    { "id": "monthly-tax", "type": "open", "marks": 2, "prompt": "Using your answer above, calculate Ayanda's monthly PAYE.", "memo": "✓ R74 750 ÷ 12 (1)\n✓ ≈ R6 229,17 (1)" },
+    { "id": "threshold", "type": "open", "marks": 2, "prompt": "Explain what the tax threshold is and why a person earning R80 000 a year pays no tax under the illustrative table.", "memo": "✓ The income below which no tax is paid (1)\n✓ 18% of R80 000 = R14 400, which is less than the R17 500 rebate (1)" },
+    { "id": "inflate-3", "type": "open", "marks": 3, "prompt": "A car service costs R2 500 today. Inflation is expected to be 7% per year. Calculate the cost in 2 years.", "memo": "✓ R2 500 × 1,07 = R2 675 (1)\n✓ R2 675 × 1,07 (1)\n✓ = R2 862,25 (1)" }
+  ]
+}

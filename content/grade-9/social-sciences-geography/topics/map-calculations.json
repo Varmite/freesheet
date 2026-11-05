@@ -1,0 +1,55 @@
+{
+  "id": "map-calculations",
+  "title": "Map Skills: Calculations",
+  "term": 1,
+  "summary": "Calculate distance, area, average gradient, bearings and direction, and time and speed using topographic maps.",
+  "notes": [
+    { "type": "heading", "text": "Distance" },
+    { "type": "formula", "latex": "\\text{real distance} = \\text{map distance} \\times \\text{scale}", "caption": "On a 1 : 50 000 map, 1 cm = 0,5 km; on a 1 : 10 000 orthophoto map, 1 cm = 0,1 km (100 m)" },
+    { "type": "example", "title": "Distance on a 1 : 50 000 map", "problem": "The straight-line distance between two trigonometrical stations is 5,6 cm. Find the real distance in km and in m.", "steps": ["5,6 × 0,5 = 2,8 km", "2,8 × 1 000 = 2 800 m"], "answer": "2,8 km (2 800 m)" },
+    { "type": "heading", "text": "Area" },
+    { "type": "formula", "latex": "\\text{area} = \\text{length} \\times \\text{breadth}", "caption": "Convert each side to real distance FIRST, then multiply. Area is in km²." },
+    { "type": "example", "title": "Area of a block", "problem": "A rectangular farm on a 1 : 50 000 map measures 4 cm by 3 cm. Calculate its real area.", "steps": [
+      "Length: 4 × 0,5 = 2 km",
+      "Breadth: 3 × 0,5 = 1,5 km",
+      "Area = 2 × 1,5 = 3 km²"
+    ], "answer": "3 km²" },
+    { "type": "callout", "label": "Common mistake", "text": "Do NOT multiply 4 × 3 = 12 cm² and then multiply by 0,5. Because area has two dimensions, each side must be converted separately." },
+    { "type": "heading", "text": "Average gradient" },
+    { "type": "paragraph", "text": "**Gradient** describes how steep a slope is. It is the relationship between the **vertical interval (VI)**, the difference in height, and the **horizontal equivalent (HE)**, the horizontal distance. Both must be in the **same unit** (metres)." },
+    { "type": "formula", "latex": "\\text{gradient} = \\frac{\\text{VI}}{\\text{HE}} \\quad\\text{written as}\\quad 1 : \\frac{\\text{HE}}{\\text{VI}}" },
+    { "type": "example", "title": "Calculating gradient", "problem": "Spot height A is 1 420 m and trig station B is 1 620 m. On a 1 : 50 000 map they are 4 cm apart. Calculate the average gradient from A to B.", "steps": [
+      "VI = 1 620 − 1 420 = 200 m",
+      "HE = 4 cm × 500 m = 2 000 m",
+      "Gradient = 200 / 2 000 = 1 / 10"
+    ], "answer": "1 : 10 (for every 10 m forward, the land rises 1 m)" },
+    { "type": "callout", "label": "Remember", "text": "The bigger the second number, the gentler the slope. 1 : 5 is steeper than 1 : 50." },
+    { "type": "heading", "text": "Bearing and direction" },
+    { "type": "list", "ordered": true, "items": [
+      "Draw a line from the starting point to the end point.",
+      "Draw a north line through the starting point, parallel to the map's grid lines.",
+      "Place your protractor on the starting point and measure the angle **clockwise from north** to the line.",
+      "Write it as three digits, e.g. 064°."
+    ] },
+    { "type": "paragraph", "text": "**True bearing** is measured from true (geographic) north. **Magnetic bearing** is measured from magnetic north, which a compass points to; the difference is the **magnetic declination**, shown on topographic maps. In South Africa, magnetic north is west of true north, so magnetic bearing = true bearing + magnetic declination." },
+    { "type": "heading", "text": "Speed, distance and time" },
+    { "type": "formula", "latex": "\\text{time} = \\frac{\\text{distance}}{\\text{speed}}" },
+    { "type": "example", "title": "Travel time", "problem": "A road between two towns measures 12 cm on a 1 : 50 000 map. How long will a cyclist travelling at 20 km/h take?", "steps": ["Distance = 12 × 0,5 = 6 km", "Time = 6 ÷ 20 = 0,3 h", "0,3 × 60 = 18 minutes"], "answer": "18 minutes" }
+  ],
+  "questions": [
+    { "id": "dist", "type": "numeric", "prompt": "On a 1 : 50 000 map two points are 9 cm apart. What is the real distance in km?", "answer": 4.5, "tolerance": 0.01, "unit": "km" },
+    { "id": "ortho-dist", "type": "numeric", "prompt": "On a 1 : 10 000 orthophoto map a road is 6 cm long. What is its real length in metres?", "answer": 600, "tolerance": 0, "unit": "m" },
+    { "id": "area", "type": "numeric", "prompt": "A dam on a 1 : 50 000 map is a rectangle 2 cm by 1 cm. Calculate its real area.", "answer": 0.5, "tolerance": 0.01, "unit": "km²" },
+    { "id": "vi", "type": "numeric", "prompt": "Point A is 1 260 m above sea level and point B is 1 380 m. What is the vertical interval?", "answer": 120, "tolerance": 0, "unit": "m" },
+    { "id": "steeper", "type": "mcq", "prompt": "Which gradient is steepest?", "options": ["1 : 8", "1 : 25", "1 : 60", "1 : 100"], "answer": 0 },
+    { "id": "units", "type": "truefalse", "prompt": "When calculating gradient, VI and HE must be in the same unit.", "answer": true },
+    { "id": "gradient", "type": "open", "marks": 3, "prompt": "On a 1 : 50 000 map, the horizontal distance between two points is 3 cm and the height difference is 75 m. Calculate the average gradient.", "memo": "✓ HE = 3 × 500 = 1 500 m (1)\n✓ Gradient = 75 / 1 500 (1)\n✓ = 1 : 20 (1)" },
+    { "id": "time", "type": "numeric", "prompt": "A hiker walks 10 km at 4 km/h. How many hours does the walk take?", "answer": 2.5, "tolerance": 0.01, "unit": "hours" },
+    { "id": "terms", "type": "match", "marks": 3, "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Vertical interval", "right": "Difference in height between two points" },
+      { "left": "Horizontal equivalent", "right": "Horizontal distance between two points" },
+      { "left": "Magnetic declination", "right": "Angle between true north and magnetic north" }
+    ] },
+    { "id": "area-mistake", "type": "open", "marks": 2, "prompt": "A learner calculated the area of a 4 cm × 2 cm block on a 1 : 50 000 map as 8 × 0,5 = 4 km². Explain the mistake and give the correct answer.", "memo": "✓ Each side must be converted to km before multiplying (1)\n✓ 2 km × 1 km = 2 km² (1)" }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "human-rights-and-responsibilities",
+  "title": "Human Rights and Responsibilities",
+  "term": 3,
+  "summary": "The Constitution and the Bill of Rights, important rights and the responsibilities that come with them, children's rights, human rights violations and institutions that protect rights.",
+  "notes": [
+    { "type": "heading", "text": "The Constitution and the Bill of Rights" },
+    { "type": "paragraph", "text": "The **Constitution of the Republic of South Africa (1996)** is the **highest law** of the country. All other laws and the actions of government must agree with it. Chapter 2 of the Constitution is the **Bill of Rights**, which protects the rights of **everyone** in South Africa." },
+    { "type": "callout", "label": "Founding values", "text": "The Constitution is based on **human dignity**, **equality** and **freedom**, non-racialism and non-sexism, and the rule of law." },
+    { "type": "heading", "text": "Rights and responsibilities" },
+    { "type": "paragraph", "text": "Every right comes with a **responsibility**: we must respect the same rights of other people. Rights can also be **limited** when they clash with the rights of others; for example, freedom of expression does not include hate speech." },
+    { "type": "table", "headers": ["Right (section)", "Matching responsibility"], "rows": [
+      ["Equality (s 9)", "Treat everyone fairly; do not discriminate"],
+      ["Human dignity (s 10)", "Respect other people; do not humiliate or bully"],
+      ["Life (s 11)", "Do not harm others; drive safely"],
+      ["Freedom and security of the person (s 12)", "Do not use violence against anyone"],
+      ["Privacy (s 14)", "Do not read others' messages or share their personal information"],
+      ["Freedom of expression (s 16)", "Do not spread hate speech or lies about others"],
+      ["Environment (s 24)", "Do not litter or pollute; save water and energy"],
+      ["Education (s 29)", "Attend school, work hard and allow others to learn"]
+    ] },
+    { "type": "heading", "text": "Children's rights (section 28)" },
+    { "type": "list", "items": [
+      "A name and nationality from birth.",
+      "Family care or appropriate alternative care.",
+      "Basic nutrition, shelter, health care and social services.",
+      "Protection from **maltreatment, neglect, abuse** and degradation.",
+      "Protection from **child labour** and exploitative work.",
+      "A child's **best interests** are of paramount importance in every matter concerning the child."
+    ] },
+    { "type": "heading", "text": "Human rights violations" },
+    { "type": "paragraph", "text": "A **human rights violation** happens when someone's rights are ignored or abused, for example racism and discrimination, gender-based violence (GBV), child abuse, xenophobic attacks on foreign nationals, bullying, or denying someone access to education or healthcare." },
+    { "type": "heading", "text": "Who protects our rights?" },
+    { "type": "table", "headers": ["Institution", "Role"], "rows": [
+      ["South African Human Rights Commission (SAHRC)", "Investigates human rights violations and educates the public"],
+      ["Constitutional Court", "The highest court on constitutional matters; can strike down laws that conflict with the Constitution"],
+      ["Public Protector", "Investigates abuse of power and corruption by government officials"],
+      ["Commission for Gender Equality", "Promotes gender equality and investigates gender discrimination"],
+      ["SAPS (police) and courts", "Enforce laws and protect people from crime"]
+    ] },
+    { "type": "paragraph", "text": "Ordinary citizens also protect rights by speaking out, reporting abuse, voting, joining campaigns and treating others with respect." }
+  ],
+  "questions": [
+    { "id": "highest", "type": "short", "prompt": "What is the highest law in South Africa?", "answers": ["the constitution", "constitution"] },
+    { "id": "chapter", "type": "mcq", "prompt": "The Bill of Rights is in which chapter of the Constitution?", "options": ["Chapter 1", "Chapter 2", "Chapter 5", "Chapter 9"], "answer": 1 },
+    { "id": "year", "type": "numeric", "prompt": "In which year was the current Constitution adopted?", "answer": 1996, "tolerance": 0 },
+    { "id": "limited", "type": "truefalse", "prompt": "Freedom of expression allows people to use hate speech.", "answer": false },
+    { "id": "sahrc", "type": "short", "prompt": "Which institution investigates human rights violations? (abbreviation)", "answers": ["sahrc", "south african human rights commission"] },
+    { "id": "rights-resp", "type": "match", "marks": 4, "prompt": "Match each right to its responsibility.", "pairs": [
+      { "left": "Right to education", "right": "Attend school and let others learn" },
+      { "left": "Right to a clean environment", "right": "Do not litter" },
+      { "left": "Right to privacy", "right": "Do not share others' personal information" },
+      { "left": "Right to dignity", "right": "Do not humiliate others" }
+    ] },
+    { "id": "violation", "type": "open", "marks": 3, "prompt": "Give THREE examples of human rights violations in South Africa today.", "memo": "Any three (1 each): gender-based violence; child abuse; xenophobia; racism; bullying; child labour; corruption that denies services" },
+    { "id": "children", "type": "open", "marks": 3, "prompt": "Name THREE rights that children have in terms of section 28 of the Constitution.", "memo": "Any three (1 each): name and nationality; family care; basic nutrition, shelter, health care; protection from abuse/neglect; protection from child labour; best interests are paramount" },
+    { "id": "citizens", "type": "open", "marks": 2, "prompt": "How can learners help to protect human rights in their school?", "memo": "Any two (1 each): respect others; report bullying; include everyone; speak out against discrimination; join a human rights club/campaign" },
+    { "id": "values", "type": "open", "marks": 3, "prompt": "Name THREE founding values of the Constitution.", "memo": "Any three (1 each): human dignity; equality; freedom; non-racialism; non-sexism; rule of law; democracy" }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "id": "finance-and-growth",
+  "title": "Finance and Growth",
+  "term": 3,
+  "summary": "Use the simple and compound growth formulae to solve problems on interest, hire purchase, inflation, population growth and exchange rates.",
+  "notes": [
+    { "type": "heading", "text": "Why finance matters" },
+    { "type": "paragraph", "text": "Whether you are saving for a matric dance outfit, buying a cellphone on credit or planning to study at university, you will deal with **interest**. Banks pay you interest when you save and charge you interest when you borrow. In this topic you learn the two basic ways in which money grows (simple and compound growth) and apply them to hire purchase, inflation, population growth and exchange rates." },
+    { "type": "definition", "term": "Principal ($P$)", "text": "The amount of money originally invested or borrowed (the starting amount)." },
+    { "type": "definition", "term": "Accumulated amount ($A$)", "text": "The final amount after interest has been added: principal plus all the interest." },
+    { "type": "definition", "term": "Interest rate ($i$)", "text": "The percentage of the principal earned or charged per period, written as a **decimal** in formulae. For example $8\\%$ per annum (p.a., per year) gives $i = 0{,}08$." },
+    { "type": "definition", "term": "Time period ($n$)", "text": "The number of periods (usually years) for which the money is invested or borrowed." },
+    { "type": "callout", "label": "Remember", "text": "Convert percentages to decimals by dividing by 100: $12\\% = 0{,}12$, $7{,}5\\% = 0{,}075$, $0{,}5\\% = 0{,}005$. If time is given in months, convert it to years for an annual rate: $18$ months $= 1{,}5$ years." },
+
+    { "type": "heading", "text": "Simple interest" },
+    { "type": "paragraph", "text": "With **simple interest**, interest is calculated **only on the original principal**. The same amount of interest is added every year, so the investment grows in a straight line (linear growth). Each year the interest is $P \\times i$, so after $n$ years the total interest is $I = Pin$." },
+    { "type": "formula", "latex": "A = P(1 + in)", "caption": "Simple interest (simple growth)" },
+    {
+      "type": "example",
+      "title": "Worked example 1: calculating A (simple interest)",
+      "problem": "Naledi invests R8 000 at $7{,}5\\%$ p.a. simple interest for 4 years. Calculate the accumulated amount and the total interest earned.",
+      "steps": [
+        "$P = 8\\,000$, $i = 0{,}075$, $n = 4$.",
+        "$A = 8\\,000(1 + 0{,}075 \\times 4) = 8\\,000(1{,}3)$.",
+        "$A = \\text{R}10\\,400$.",
+        "Interest $= 10\\,400 - 8\\,000 = \\text{R}2\\,400$."
+      ],
+      "answer": "$A = \\text{R}10\\,400{,}00$; interest earned $= \\text{R}2\\,400{,}00$"
+    },
+    { "type": "heading", "text": "Solving for P, i and n with simple interest" },
+    { "type": "paragraph", "text": "Substitute the values you know into $A = P(1 + in)$ and solve the resulting linear equation. Do not round in the middle of your working." },
+    {
+      "type": "example",
+      "title": "Worked example 2: finding the interest rate",
+      "problem": "R5 000 grows to R6 800 in 3 years at a simple interest rate. Determine the annual interest rate.",
+      "steps": [
+        "$6\\,800 = 5\\,000(1 + 3i)$.",
+        "Divide by $5\\,000$: $1{,}36 = 1 + 3i$.",
+        "$3i = 0{,}36$, so $i = 0{,}12$.",
+        "Convert to a percentage: $0{,}12 \\times 100 = 12\\%$."
+      ],
+      "answer": "$12\\%$ p.a. simple interest"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: finding the time period",
+      "problem": "How many years will it take R12 000 to grow to R17 400 at $9\\%$ p.a. simple interest?",
+      "steps": [
+        "$17\\,400 = 12\\,000(1 + 0{,}09n)$.",
+        "$\\dfrac{17\\,400}{12\\,000} = 1{,}45 = 1 + 0{,}09n$.",
+        "$0{,}09n = 0{,}45$, so $n = 5$."
+      ],
+      "answer": "5 years"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 4: finding the principal",
+      "problem": "What amount must be invested at $6\\%$ p.a. simple interest to grow to R9 750 after 5 years?",
+      "steps": [
+        "$9\\,750 = P(1 + 0{,}06 \\times 5) = P(1{,}3)$.",
+        "$P = \\dfrac{9\\,750}{1{,}3} = 7\\,500$."
+      ],
+      "answer": "R7 500,00"
+    },
+
+    { "type": "heading", "text": "Compound interest" },
+    { "type": "paragraph", "text": "With **compound interest**, the interest earned each period is added to the balance, and the next period's interest is calculated on this new, larger balance. You earn **interest on interest**. Each year the balance is multiplied by $(1 + i)$, so after $n$ years it has been multiplied by $(1 + i)^n$. This is exponential growth, linking to the exponential graph you studied in Term 2." },
+    { "type": "formula", "latex": "A = P(1 + i)^n", "caption": "Compound interest (compound growth)" },
+    {
+      "type": "example",
+      "title": "Worked example 5: calculating A (compound interest)",
+      "problem": "Naledi invests R8 000 at $7{,}5\\%$ p.a. compounded annually for 4 years. Calculate the accumulated amount and compare it with simple interest (Worked example 1).",
+      "steps": [
+        "$A = 8\\,000(1 + 0{,}075)^4 = 8\\,000(1{,}075)^4$.",
+        "On the calculator: $8000 \\times 1.075 \\wedge 4 = 10\\,683{,}753\\ldots$",
+        "$A = \\text{R}10\\,683{,}75$.",
+        "Compound interest gives $10\\,683{,}75 - 10\\,400 = \\text{R}283{,}75$ more than simple interest."
+      ],
+      "answer": "R10 683,75"
+    },
+    {
+      "type": "table",
+      "caption": "R10 000 invested at 10% p.a.: simple versus compound growth",
+      "headers": ["End of year", "Simple interest balance", "Compound interest balance"],
+      "rows": [
+        ["0", "R10 000,00", "R10 000,00"],
+        ["1", "R11 000,00", "R11 000,00"],
+        ["2", "R12 000,00", "R12 100,00"],
+        ["3", "R13 000,00", "R13 310,00"],
+        ["4", "R14 000,00", "R14 641,00"],
+        ["5", "R15 000,00", "R16 105,10"]
+      ]
+    },
+    { "type": "paragraph", "text": "Notice that after year 1 the two balances are equal, but then compound interest pulls ahead. Simple interest adds a constant R1 000 each year (a linear pattern), while compound interest adds more each year because each year's interest is $10\\%$ of a bigger balance (an exponential pattern). Over long periods the difference becomes very large." },
+    {
+      "type": "table",
+      "caption": "Comparing simple and compound growth",
+      "headers": ["", "Simple interest", "Compound interest"],
+      "rows": [
+        ["Interest calculated on", "the original principal only", "the principal plus interest already earned"],
+        ["Interest each year", "constant", "increases every year"],
+        ["Formula", "$A = P(1 + in)$", "$A = P(1 + i)^n$"],
+        ["Type of growth", "linear (straight-line graph)", "exponential (curved graph)"],
+        ["Typical use", "hire purchase, some short-term loans", "savings accounts, investments, home loans, inflation, population growth"]
+      ]
+    },
+
+    { "type": "heading", "text": "Compounding more than once a year" },
+    { "type": "paragraph", "text": "Interest is often added more than once a year. If the annual rate is $i$ and interest is compounded $m$ times per year, then each period the rate is $\\dfrac{i}{m}$, and over $n$ years there are $n \\times m$ periods." },
+    { "type": "formula", "latex": "A = P\\left(1 + \\frac{i}{m}\\right)^{n \\times m}", "caption": "Compound interest with m compounding periods per year" },
+    {
+      "type": "table",
+      "caption": "Compounding periods",
+      "headers": ["Compounded", "$m$ (periods per year)", "Rate per period for 12% p.a."],
+      "rows": [
+        ["annually (yearly)", "1", "$12\\%$"],
+        ["half-yearly (semi-annually)", "2", "$6\\%$"],
+        ["quarterly", "4", "$3\\%$"],
+        ["monthly", "12", "$1\\%$"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 6: quarterly compounding",
+      "problem": "Sibusiso invests R20 000 at $8\\%$ p.a. compounded quarterly for 3 years. Calculate the value of the investment after 3 years.",
+      "steps": [
+        "Rate per quarter: $\\dfrac{0{,}08}{4} = 0{,}02$. Number of quarters: $3 \\times 4 = 12$.",
+        "$A = 20\\,000(1 + 0{,}02)^{12}$.",
+        "$A = 25\\,364{,}835\\ldots$"
+      ],
+      "answer": "R25 364,84"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "If you change the rate to $\\frac{i}{m}$ you **must** also change the exponent to $n \\times m$. Writing $20\\,000(1{,}02)^3$ is wrong: it uses a quarterly rate for only 3 quarters." },
+    { "type": "paragraph", "text": "For the same annual rate, more frequent compounding gives slightly more money, because interest starts earning interest sooner." },
+
+    { "type": "heading", "text": "Solving for P and i with compound interest" },
+    {
+      "type": "example",
+      "title": "Worked example 7: finding the principal (present value)",
+      "problem": "How much must Aisha invest now at $9\\%$ p.a. compounded annually so that she has R50 000 in 6 years' time for university fees?",
+      "steps": [
+        "$50\\,000 = P(1{,}09)^6$.",
+        "$P = \\dfrac{50\\,000}{(1{,}09)^6}$.",
+        "$P = 29\\,813{,}366\\ldots$"
+      ],
+      "answer": "R29 813,37"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 8: finding the compound interest rate",
+      "problem": "An investment of R15 000 grew to R22 000 in 5 years, with interest compounded annually. Calculate the annual interest rate, correct to two decimal places.",
+      "steps": [
+        "$22\\,000 = 15\\,000(1 + i)^5$.",
+        "Divide: $(1 + i)^5 = \\dfrac{22\\,000}{15\\,000}$.",
+        "Take the fifth root of both sides: $1 + i = \\sqrt[5]{\\dfrac{22\\,000}{15\\,000}} = \\left(\\dfrac{22\\,000}{15\\,000}\\right)^{\\frac{1}{5}} = 1{,}079608\\ldots$",
+        "$i = 0{,}079608\\ldots$, so the rate is $7{,}96\\%$ p.a."
+      ],
+      "answer": "$7{,}96\\%$ p.a."
+    },
+    { "type": "callout", "label": "Exam tip", "text": "In Grade 10 you solve for $n$ only with **simple** interest. Finding $n$ in $A = P(1 + i)^n$ requires logarithms, which you will learn in Grade 12." },
+
+    { "type": "heading", "text": "Hire purchase" },
+    { "type": "paragraph", "text": "**Hire purchase (HP)** is a way of buying an item (such as furniture, a fridge or a laptop) and paying for it over time. You pay a **deposit** up front and borrow the rest. The store charges **simple interest** on the amount owing for the whole period, and you repay the loan plus interest in equal **monthly instalments**. You only own the item once the final payment has been made." },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Deposit $=$ percentage $\\times$ cash price.",
+        "Loan amount (principal) $P =$ cash price $-$ deposit.",
+        "Amount to be repaid $A = P(1 + in)$.",
+        "Monthly instalment $= \\dfrac{A}{\\text{number of months}}$ (add any monthly insurance).",
+        "Total cost $=$ deposit $+$ all instalments (including insurance)."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 9: hire purchase",
+      "problem": "Thandi buys a fridge with a cash price of R9 600 on hire purchase. She pays a $10\\%$ deposit and the balance is financed over 2 years at $18\\%$ p.a. simple interest. Calculate (a) the monthly instalment and (b) the total cost of the fridge.",
+      "steps": [
+        "Deposit $= 0{,}10 \\times 9\\,600 = \\text{R}960$.",
+        "Loan amount $P = 9\\,600 - 960 = \\text{R}8\\,640$.",
+        "$A = 8\\,640(1 + 0{,}18 \\times 2) = 8\\,640(1{,}36) = \\text{R}11\\,750{,}40$.",
+        "(a) Monthly instalment $= \\dfrac{11\\,750{,}40}{24} = \\text{R}489{,}60$.",
+        "(b) Total cost $= 960 + 11\\,750{,}40 = \\text{R}12\\,710{,}40$."
+      ],
+      "answer": "(a) R489,60 per month  (b) R12 710,40, which is R3 110,40 more than the cash price"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 10: hire purchase with insurance",
+      "problem": "A laptop costs R12 000 cash. Jaco pays a deposit of R1 500 and finances the rest over 3 years at $15\\%$ p.a. simple interest. The store adds compulsory insurance of R45 per month. Calculate his monthly payment and the total amount he pays.",
+      "steps": [
+        "$P = 12\\,000 - 1\\,500 = \\text{R}10\\,500$.",
+        "$A = 10\\,500(1 + 0{,}15 \\times 3) = 10\\,500(1{,}45) = \\text{R}15\\,225$.",
+        "Instalment without insurance $= \\dfrac{15\\,225}{36} = \\text{R}422{,}9166\\ldots$",
+        "Monthly payment $= 422{,}9166\\ldots + 45 = \\text{R}467{,}92$.",
+        "Total paid $= 1\\,500 + 15\\,225 + 36 \\times 45 = \\text{R}18\\,345$."
+      ],
+      "answer": "R467,92 per month; about R18 345 in total (R18 345,12 if you multiply the rounded payment by 36)"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Interest on hire purchase is charged on the amount **after** the deposit, not on the cash price. Also remember that the number of instalments is in **months** ($n$ years $= 12n$ months), while $n$ in the formula is in **years** for an annual rate." },
+
+    { "type": "heading", "text": "Inflation" },
+    { "type": "definition", "term": "Inflation", "text": "The general increase in the prices of goods and services over time. In South Africa it is measured by Stats SA using the Consumer Price Index (CPI) and is given as an annual percentage." },
+    { "type": "paragraph", "text": "Inflation works like compound interest: each year prices increase by a percentage of the **previous year's** price. Use $A = P(1 + i)^n$, where $P$ is today's price, $i$ is the annual inflation rate and $A$ is the future price. To find a price in the past, solve for $P$." },
+    {
+      "type": "example",
+      "title": "Worked example 11: future price",
+      "problem": "A loaf of bread costs R18,50. If the average inflation rate is $5{,}5\\%$ p.a., what will it cost in 4 years' time?",
+      "steps": [
+        "$A = 18{,}50(1 + 0{,}055)^4$.",
+        "$A = 18{,}50 \\times 1{,}2388\\ldots = 22{,}918\\ldots$"
+      ],
+      "answer": "R22,92"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 12: price in the past",
+      "problem": "A small car costs R320 000 today. If inflation averaged $5\\%$ p.a. over the last 4 years, what did a similar car cost 4 years ago?",
+      "steps": [
+        "$320\\,000 = P(1{,}05)^4$.",
+        "$P = \\dfrac{320\\,000}{(1{,}05)^4} = 263\\,264{,}79\\ldots$"
+      ],
+      "answer": "R263 264,79"
+    },
+
+    { "type": "heading", "text": "Population growth" },
+    { "type": "paragraph", "text": "Populations of people, animals or bacteria often grow by a fixed percentage each year, which is compound growth. Use $A = P(1 + i)^n$ with $P$ the current population and $A$ the future population. Round to a **whole number** because you cannot have part of a person." },
+    {
+      "type": "example",
+      "title": "Worked example 13: population of a town",
+      "problem": "A town in Limpopo has 45 000 residents and the population grows at $2{,}3\\%$ per year. Estimate the population in 10 years' time.",
+      "steps": [
+        "$A = 45\\,000(1{,}023)^{10}$.",
+        "$A = 56\\,489{,}6\\ldots$"
+      ],
+      "answer": "About 56 490 people"
+    },
+
+    { "type": "heading", "text": "Exchange rates" },
+    { "type": "definition", "term": "Exchange rate", "text": "The price of one currency in terms of another, for example US\\$1 $=$ R18,25 means that one United States dollar costs R18,25." },
+    { "type": "list", "items": [
+      "**Foreign currency to rand:** multiply by the rate. US\\$240 at R18,25 per dollar costs $240 \\times 18{,}25 = \\text{R}4\\,380$.",
+      "**Rand to foreign currency:** divide by the rate. R5 000 at R19,80 per euro buys $5\\,000 \\div 19{,}80 = 252{,}53$, that is €252,53 (rounded to the nearest cent)."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Check that your answer makes sense. If R1 is worth much less than one unit of the foreign currency, you will get **fewer** foreign units than rand when you convert, and **more** rand than foreign units when you convert back." },
+    { "type": "paragraph", "text": "Exchange rates change (fluctuate) daily because of supply and demand, interest rates, political events and commodity prices. When you need **more** rand to buy one dollar (for example the rate moves from R17,50 to R18,90), the rand has **weakened** (depreciated). When you need **fewer** rand, the rand has **strengthened** (appreciated)." },
+    {
+      "type": "table",
+      "caption": "Effects of a fluctuating rand",
+      "headers": ["", "Rand weakens", "Rand strengthens"],
+      "rows": [
+        ["Imported goods (phones, fuel, cars)", "more expensive", "cheaper"],
+        ["South Africans travelling overseas", "travel costs more", "travel costs less"],
+        ["Exporters (e.g. fruit and wine farmers)", "earn more rand per sale", "earn fewer rand per sale"],
+        ["Foreign tourists visiting SA", "SA is cheaper for them", "SA is more expensive for them"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 14: the effect of a weaker rand",
+      "problem": "A cellphone costs US\\$1 200 overseas. The exchange rate changes from R17,50 to R18,90 per US dollar. By how much does the rand price increase?",
+      "steps": [
+        "Before: $1\\,200 \\times 17{,}50 = \\text{R}21\\,000$.",
+        "After: $1\\,200 \\times 18{,}90 = \\text{R}22\\,680$.",
+        "Increase $= 22\\,680 - 21\\,000 = \\text{R}1\\,680$."
+      ],
+      "answer": "The phone costs R1 680 more because the rand weakened."
+    },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "Simple interest: $A = P(1 + in)$; interest on the principal only; linear growth.",
+        "Compound interest: $A = P(1 + i)^n$; interest on interest; exponential growth.",
+        "Write rates as decimals; $n$ is in years for an annual rate.",
+        "Compounding $m$ times per year: use $\\frac{i}{m}$ as the rate and $n \\times m$ as the number of periods.",
+        "You can solve for $A$, $P$ and $i$ in both formulae, and for $n$ in the simple interest formula.",
+        "Hire purchase: simple interest on (cash price $-$ deposit); instalment $= A \\div$ number of months; total cost $=$ deposit $+$ all instalments.",
+        "Inflation and population growth use the compound growth formula; round population answers to whole numbers.",
+        "Exchange rates: foreign to rand, multiply; rand to foreign, divide. A weaker rand makes imports and overseas travel more expensive.",
+        "Do not round until the final answer; give money to the nearest cent."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "In the formula $A = P(1 + in)$, what does $n$ represent?",
+      "options": ["The interest rate", "The principal", "The number of time periods (years)", "The accumulated amount"],
+      "answer": 2,
+      "explanation": "$P$ is the principal, $i$ the interest rate as a decimal, $n$ the number of periods and $A$ the accumulated amount."
+    },
+    {
+      "id": "q2",
+      "type": "truefalse",
+      "prompt": "With compound interest, interest is earned on the principal and on interest already earned.",
+      "answer": true,
+      "explanation": "This is what makes compound interest grow faster than simple interest: you earn interest on interest."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "In hire purchase, interest is usually calculated as compound interest on the full cash price.",
+      "answer": false,
+      "explanation": "Hire purchase uses simple interest, and it is charged on the amount owing after the deposit has been paid, not on the full cash price."
+    },
+    {
+      "id": "q4",
+      "type": "numeric",
+      "prompt": "R6 000 is invested at $8\\%$ p.a. simple interest for 5 years. Calculate the accumulated amount in rand.",
+      "answer": 8400,
+      "tolerance": 0.01,
+      "unit": "R",
+      "explanation": "$A = 6\\,000(1 + 0{,}08 \\times 5) = 6\\,000(1{,}4) = \\text{R}8\\,400$."
+    },
+    {
+      "id": "q5",
+      "type": "numeric",
+      "prompt": "R6 000 is invested at $8\\%$ p.a. compounded annually for 5 years. Calculate the accumulated amount, correct to the nearest cent.",
+      "answer": 8815.97,
+      "tolerance": 0.01,
+      "unit": "R",
+      "explanation": "$A = 6\\,000(1{,}08)^5 = 8\\,815{,}968\\ldots \\approx \\text{R}8\\,815{,}97$. That is R415,97 more than simple interest in the previous question."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "R10 000 is invested for 4 years at $9\\%$ p.a. compounded monthly. Which expression gives the accumulated amount?",
+      "options": [
+        "$10\\,000\\left(1 + 0{,}09\\right)^{48}$",
+        "$10\\,000\\left(1 + \\frac{0{,}09}{12}\\right)^{4}$",
+        "$10\\,000\\left(1 + 0{,}09 \\times 4\\right)$",
+        "$10\\,000\\left(1 + \\frac{0{,}09}{12}\\right)^{48}$"
+      ],
+      "answer": 3,
+      "explanation": "Monthly compounding: rate per month $= \\frac{0{,}09}{12}$ and number of months $= 4 \\times 12 = 48$. Both the rate and the exponent must change."
+    },
+    {
+      "id": "q7",
+      "type": "match",
+      "prompt": "Match each compounding frequency with the number of times interest is added per year.",
+      "marks": 4,
+      "pairs": [
+        { "left": "Compounded annually", "right": "1" },
+        { "left": "Compounded half-yearly", "right": "2" },
+        { "left": "Compounded quarterly", "right": "4" },
+        { "left": "Compounded monthly", "right": "12" }
+      ],
+      "explanation": "A year has 2 halves, 4 quarters and 12 months."
+    },
+    {
+      "id": "q8",
+      "type": "numeric",
+      "prompt": "R4 500 grows to R5 940 in 4 years at simple interest. Calculate the annual interest rate as a percentage.",
+      "answer": 8,
+      "tolerance": 0.01,
+      "unit": "%",
+      "explanation": "$5\\,940 = 4\\,500(1 + 4i)$, so $1{,}32 = 1 + 4i$, $4i = 0{,}32$ and $i = 0{,}08 = 8\\%$."
+    },
+    {
+      "id": "q9",
+      "type": "numeric",
+      "prompt": "The exchange rate is US\\$1 $=$ R18,40. How many rand does a pair of sneakers costing US\\$350 cost?",
+      "answer": 6440,
+      "tolerance": 0.01,
+      "unit": "R",
+      "explanation": "Foreign currency to rand: multiply. $350 \\times 18{,}40 = \\text{R}6\\,440$."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "The rand/dollar exchange rate changes from R18,00 to R19,00 per US dollar. Which statement is correct?",
+      "options": [
+        "The rand has weakened, so imported goods become more expensive.",
+        "The rand has strengthened, so imported goods become cheaper.",
+        "The rand has weakened, so overseas holidays become cheaper for South Africans.",
+        "The rand has strengthened, so exporters earn more rand per sale."
+      ],
+      "answer": 0,
+      "explanation": "More rand are now needed to buy one dollar, so the rand has weakened. Anything priced in dollars (imports, overseas travel) now costs more in rand."
+    },
+    {
+      "id": "q11",
+      "type": "numeric",
+      "prompt": "How many years will it take for R7 000 to grow to R10 360 at $6\\%$ p.a. simple interest?",
+      "answer": 8,
+      "tolerance": 0.01,
+      "unit": "years",
+      "explanation": "$10\\,360 = 7\\,000(1 + 0{,}06n)$, so $1{,}48 = 1 + 0{,}06n$, $0{,}06n = 0{,}48$ and $n = 8$."
+    },
+    {
+      "id": "q12",
+      "type": "numeric",
+      "prompt": "How much must be invested now at $10\\%$ p.a. compounded half-yearly to have R40 000 in 4 years' time? Give your answer correct to the nearest cent.",
+      "answer": 27073.57,
+      "tolerance": 0.01,
+      "unit": "R",
+      "explanation": "Rate per half-year $= 0{,}05$, number of half-years $= 8$. $P = \\dfrac{40\\,000}{(1{,}05)^8} = 27\\,073{,}574\\ldots \\approx \\text{R}27\\,073{,}57$."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 7,
+      "prompt": "Sipho buys a television with a cash price of R14 500 on hire purchase. He pays a $20\\%$ deposit, and the balance is financed over 3 years at $16{,}5\\%$ p.a. simple interest.\n(a) Calculate the deposit. (1)\n(b) Calculate the amount that must be repaid on the loan, including interest. (3)\n(c) Calculate the monthly instalment. (2)\n(d) Calculate the total cost of the television. (1)",
+      "memo": "(a) Deposit $= 0{,}2 \\times 14\\,500 = \\text{R}2\\,900$ ✓ (1)\n(b) Loan $P = 14\\,500 - 2\\,900 = \\text{R}11\\,600$ ✓ (1)\n$A = 11\\,600(1 + 0{,}165 \\times 3)$ ✓ (substitution) (1)\n$A = 11\\,600(1{,}495) = \\text{R}17\\,342$ ✓ (1)\n(c) Instalment $= \\dfrac{17\\,342}{36}$ ✓ (dividing by 36 months) (1)\n$= \\text{R}481{,}72$ ✓ (1)\n(d) Total cost $= 2\\,900 + 17\\,342 = \\text{R}20\\,242$ ✓ (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Lerato wants to invest R25 000 for 5 years. Bank A offers $7{,}2\\%$ p.a. compounded annually. Bank B offers $7\\%$ p.a. compounded monthly. Which bank gives the better return, and by how much? Show all calculations and give money correct to the nearest cent.",
+      "memo": "Bank A: $A = 25\\,000(1{,}072)^5$ ✓ (1)\n$= \\text{R}35\\,392{,}72$ ✓ (1)\nBank B: $A = 25\\,000\\left(1 + \\dfrac{0{,}07}{12}\\right)^{60}$ ✓ (correct rate per month and 60 periods) (1)\n$= \\text{R}35\\,440{,}63$ ✓ (1)\nBank B is better, by $35\\,440{,}63 - 35\\,392{,}72 = \\text{R}47{,}91$ ✓ (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 6,
+      "prompt": "The population of a small town was 32 000 in 2020 and 38 500 in 2026. Assume that the population grows at a constant compound rate.\n(a) Calculate the annual growth rate, correct to two decimal places. (4)\n(b) Use your answer to predict the population in 2030. (2)",
+      "memo": "(a) $38\\,500 = 32\\,000(1 + i)^6$ ✓ ($n = 6$ and correct substitution) (1)\n$(1 + i)^6 = \\dfrac{38\\,500}{32\\,000}$ ✓ (1)\n$1 + i = \\left(\\dfrac{38\\,500}{32\\,000}\\right)^{\\frac{1}{6}} = 1{,}03130\\ldots$ ✓ (1)\n$i = 3{,}13\\%$ p.a. ✓ (1)\n(b) $A = 38\\,500(1{,}0313)^4$ ✓ ($n = 4$, from 2026 to 2030) (1)\n$\\approx 43\\,551$ people ✓ (1)\n(Using $32\\,000(1{,}0313)^{10}$ from 2020 gives the same answer, 43 551. Accept small differences caused by rounding the rate.)"
+    }
+  ]
+}

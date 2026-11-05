@@ -1,0 +1,50 @@
+{
+  "id": "resource-use-and-sustainability",
+  "title": "Resource Use and Sustainability",
+  "term": 2,
+  "summary": "Renewable and non-renewable resources, sustainable use, water, soil and energy resources in South Africa, and how communities and governments can manage resources wisely.",
+  "notes": [
+    { "type": "heading", "text": "Natural resources" },
+    { "type": "definition", "term": "Natural resource", "text": "Something found in nature that people use to meet their needs, such as water, soil, forests, fish, minerals and sunlight." },
+    { "type": "table", "headers": ["Renewable resources", "Non-renewable resources"], "rows": [
+      ["Can be replaced naturally within a human lifetime if used carefully", "Cannot be replaced once used up, or take millions of years to form"],
+      ["Sunlight, wind, water, forests, fish, soil (if conserved)", "Coal, oil, natural gas, gold, platinum, iron ore"]
+    ] },
+    { "type": "definition", "term": "Sustainable development", "text": "Development that meets the needs of people today without harming the ability of future generations to meet their own needs." },
+    { "type": "heading", "text": "Water" },
+    { "type": "paragraph", "text": "South Africa is a **water-scarce** country: its average rainfall (about 450 mm a year) is little more than half the world average, and rainfall is uneven, with the west much drier than the east. Most water is used by **agriculture (irrigation)**, followed by towns and industries." },
+    { "type": "list", "items": [
+      "**Threats**: droughts (e.g. the Cape Town 'Day Zero' crisis of 2017–2018), pollution from sewage, mines and factories, alien plants that use large amounts of water, and leaking pipes.",
+      "**Solutions**: fixing leaks, water restrictions, rainwater tanks, grey-water reuse, drip irrigation, removing alien plants (the **Working for Water** programme), desalination and inter-basin transfers such as the **Lesotho Highlands Water Project**."
+    ] },
+    { "type": "heading", "text": "Soil" },
+    { "type": "paragraph", "text": "Only about **12%** of South Africa's land is suitable for growing crops. Fertile soil takes hundreds of years to form but can be lost quickly through **soil erosion**, caused by overgrazing, ploughing slopes, removing vegetation and poor farming." },
+    { "type": "heading", "text": "Energy" },
+    { "type": "paragraph", "text": "About 80% of South Africa's electricity comes from **coal**, which is non-renewable and causes air pollution and greenhouse gas emissions. Load-shedding has shown how important it is to diversify. South Africa has excellent conditions for **solar** (in the Northern Cape) and **wind** energy (along the coasts)." },
+    { "type": "heading", "text": "Over-use of resources" },
+    { "type": "table", "headers": ["Resource", "Over-use", "Sustainable practice"], "rows": [
+      ["Fish", "Overfishing of species such as abalone and snoek", "Fishing quotas, closed seasons, marine protected areas"],
+      ["Grazing land", "Overgrazing leads to soil erosion and desertification", "Rotational grazing, limiting herd sizes"],
+      ["Forests and indigenous plants", "Cutting trees for firewood; harvesting medicinal plants", "Replanting, community nurseries, alternative fuels"],
+      ["Wildlife", "Poaching of rhinos and abalone", "Anti-poaching units, community conservation, education"]
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "Remember the three Rs: **Reduce** (use less), **Reuse** (use again), **Recycle** (turn waste into new products). Each one saves resources and reduces pollution." },
+    { "type": "paragraph", "text": "**Community-based conservation** gives local people a share in the benefits of protecting resources, for example jobs and income from eco-tourism in game reserves such as the Makuleke region of the Kruger National Park." }
+  ],
+  "questions": [
+    { "id": "renewable", "type": "mcq", "prompt": "Which resource is renewable?", "options": ["Coal", "Gold", "Wind", "Natural gas"], "answer": 2 },
+    { "id": "sustain-def", "type": "open", "marks": 2, "prompt": "Define sustainable development.", "memo": "✓ Meeting the needs of people today (1)\n✓ without harming the ability of future generations to meet their needs (1)" },
+    { "id": "water-user", "type": "mcq", "prompt": "Which sector uses the most water in South Africa?", "options": ["Mining", "Households", "Agriculture (irrigation)", "Power stations"], "answer": 2 },
+    { "id": "coal-pc", "type": "numeric", "prompt": "About what percentage of South Africa's electricity comes from coal?", "answer": 80, "tolerance": 10, "unit": "%" },
+    { "id": "lesotho", "type": "short", "prompt": "Name the scheme that transfers water from Lesotho to Gauteng.", "answers": ["lesotho highlands water project", "lesotho highlands water scheme", "lhwp"] },
+    { "id": "three-rs", "type": "match", "marks": 3, "prompt": "Match each action to one of the three Rs.", "pairs": [
+      { "left": "Taking a shopping bag to the shop again and again", "right": "Reuse" },
+      { "left": "Taking shorter showers", "right": "Reduce" },
+      { "left": "Turning old bottles into new glass", "right": "Recycle" }
+    ] },
+    { "id": "scarce", "type": "truefalse", "prompt": "South Africa's average rainfall is higher than the world average.", "answer": false },
+    { "id": "save-water", "type": "open", "marks": 3, "prompt": "Suggest THREE ways a household can save water.", "memo": "Any three (1 each): fix leaks; shorter showers; rainwater tank; reuse grey water; water gardens at night; indigenous plants; full loads in washing machines" },
+    { "id": "overgrazing", "type": "open", "marks": 2, "prompt": "Explain how overgrazing leads to soil erosion.", "memo": "✓ Too many animals eat the grass faster than it can regrow, leaving bare ground (1)\n✓ Without plant cover and roots, rain and wind wash or blow the soil away (1)" },
+    { "id": "community", "type": "open", "marks": 2, "prompt": "Why is it important to involve local communities in conservation?", "memo": "✓ They benefit from jobs and income, e.g. eco-tourism (1)\n✓ so they have a reason to protect the resources instead of over-using them (1)" }
+  ]
+}

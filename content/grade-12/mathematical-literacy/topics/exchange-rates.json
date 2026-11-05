@@ -1,0 +1,46 @@
+{
+  "id": "exchange-rates",
+  "title": "Finance: Exchange Rates",
+  "term": 2,
+  "summary": "Reading exchange-rate tables, converting between currencies, buying and selling rates and commission, the effect of a strong or weak rand, and comparing prices internationally.",
+  "notes": [
+    { "type": "heading", "text": "Exchange rates" },
+    { "type": "paragraph", "text": "An **exchange rate** tells you how much one currency is worth in another. If US\\$1 = R18,50, then something costing US\\$40 costs 40 × R18,50 = R740." },
+    { "type": "table", "caption": "Illustrative exchange rates", "headers": ["Currency", "Symbol", "Rand per 1 unit"], "rows": [
+      ["US dollar", "US\\$", "R18,50"],
+      ["Euro", "€", "R20,10"],
+      ["British pound", "£", "R23,60"],
+      ["Botswana pula", "P", "R1,36"],
+      ["Namibian dollar", "N\\$", "R1,00"]
+    ] },
+    { "type": "list", "items": [
+      "**Foreign currency → rand**: multiply by the rate.",
+      "**Rand → foreign currency**: divide by the rate."
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Thabo has R12 000 to take on holiday to Europe. How many euros will he get at R20,10 per euro?", "steps": ["R12 000 ÷ R20,10 = €597,01"], "answer": "About €597" },
+    { "type": "heading", "text": "Buying and selling rates" },
+    { "type": "paragraph", "text": "Banks **sell** foreign currency to you at a higher rate and **buy** it back from you at a lower rate. They may also charge **commission**, a percentage fee." },
+    { "type": "example", "title": "Worked example 2", "problem": "A bank sells US dollars at R18,90 and charges 1,5% commission. How much will US\\$500 cost?", "steps": ["500 × R18,90 = R9 450", "Commission: 1,5% × R9 450 = R141,75", "Total: R9 591,75"], "answer": "R9 591,75" },
+    { "type": "heading", "text": "A strong or weak rand" },
+    { "type": "table", "headers": ["", "Rand strengthens (e.g. R18 → R16 per US\\$)", "Rand weakens (e.g. R18 → R20 per US\\$)"], "rows": [
+      ["Imports (e.g. petrol, cellphones)", "Cheaper", "More expensive"],
+      ["Travelling overseas", "Cheaper for South Africans", "More expensive"],
+      ["Exports (e.g. fruit, wine, minerals)", "Less competitive; exporters earn fewer rand", "More competitive; exporters earn more rand"],
+      ["Tourists visiting South Africa", "South Africa is more expensive for them", "South Africa is cheaper for them"]
+    ] },
+    { "type": "example", "title": "Worked example 3: comparing prices", "problem": "A pair of sneakers costs £85 in London and R2 150 in Johannesburg. Where are they cheaper? (£1 = R23,60)", "steps": ["£85 × R23,60 = R2 006", "R2 006 < R2 150"], "answer": "Cheaper in London (by R144), before any shipping or duties" },
+    { "type": "callout", "label": "Exam tip", "text": "Always check which way the rate is given: 'rand per dollar' (R18,50 = US\\$1) or 'dollars per rand' (US\\$0,054 = R1). They are reciprocals of each other." }
+  ],
+  "questions": [
+    { "id": "to-rand", "type": "numeric", "prompt": "A game costs US\\$60 online. At R18,50 per US dollar, what is the price in rand?", "answer": 1110, "tolerance": 0, "unit": "rand" },
+    { "id": "to-foreign", "type": "numeric", "prompt": "How many British pounds can you buy with R5 900 at R23,60 per pound?", "answer": 250, "tolerance": 0, "unit": "£" },
+    { "id": "pula", "type": "numeric", "prompt": "A hotel in Botswana costs P850 per night. What is this in rand at R1,36 per pula?", "answer": 1156, "tolerance": 0, "unit": "rand" },
+    { "id": "weak", "type": "mcq", "prompt": "If the rand weakens against the US dollar, imported petrol becomes…", "options": ["cheaper", "more expensive", "the same price", "free of VAT"], "answer": 1 },
+    { "id": "exporter", "type": "truefalse", "prompt": "A weaker rand helps South African exporters earn more rand for their goods.", "answer": true },
+    { "id": "reciprocal", "type": "numeric", "prompt": "If R1 = US\\$0,05, how many rand is US\\$1 worth?", "answer": 20, "tolerance": 0, "unit": "rand" },
+    { "id": "commission", "type": "open", "marks": 3, "prompt": "A bank sells euros at R20,40 and charges 2% commission. Calculate the cost of buying €300.", "memo": "✓ 300 × R20,40 = R6 120 (1)\n✓ Commission R122,40 (1)\n✓ Total R6 242,40 (1)" },
+    { "id": "compare", "type": "open", "marks": 3, "prompt": "A laptop costs US\\$899 in New York and R17 999 in Cape Town. At R18,50 per dollar, where is it cheaper and by how much?", "memo": "✓ 899 × R18,50 = R16 631,50 (1)\n✓ New York is cheaper (1)\n✓ by R1 367,50 (1)" },
+    { "id": "change", "type": "open", "marks": 3, "prompt": "Last year US\\$1 = R17,20. This year US\\$1 = R18,92. Calculate the percentage change, and say whether the rand strengthened or weakened.", "memo": "✓ (18,92 − 17,20) ÷ 17,20 × 100 (1)\n✓ = 10% (1)\n✓ The rand weakened (1)" },
+    { "id": "tourism", "type": "open", "marks": 2, "prompt": "Explain why a weak rand can be good for tourism in South Africa.", "memo": "✓ Foreign currency buys more rand (1)\n✓ so holidays in South Africa are cheaper for foreign visitors, attracting more tourists (1)" }
+  ]
+}

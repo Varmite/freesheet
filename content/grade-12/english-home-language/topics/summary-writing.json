@@ -1,0 +1,355 @@
+{
+  "id": "summary-writing",
+  "title": "Summary Writing",
+  "term": 1,
+  "summary": "Identify seven main points on a given focus and write them as a fluent paragraph of no more than 90 words, in your own words, for Paper 1 Question 2.",
+  "notes": [
+    { "type": "heading", "text": "The summary question in Paper 1" },
+    { "type": "paragraph", "text": "Question 2 of Paper 1 (Language in Context) is the summary, worth **10 marks**. You are given a passage (usually 400 to 600 words) and a **focus**: a specific aspect of the passage that you must summarise, for example “the benefits of indigenous crops” or “the steps a household can take to save electricity”. You must find **seven main points** related to that focus and write them as **one fluent paragraph in your own words**, using **no more than 90 words**, and state your word count at the end." },
+    {
+      "type": "table",
+      "caption": "What the summary instruction requires",
+      "headers": ["Requirement", "What it means in practice"],
+      "rows": [
+        ["Seven points", "Find exactly seven separate main ideas that answer the focus question. Each correct point earns 1 mark."],
+        ["Fluent paragraph", "Write a single, well-connected paragraph of full sentences. Do NOT use point form, bullets or numbers."],
+        ["Own words", "Paraphrase the points. Copying sentences from the passage (quoting verbatim) costs you the language marks."],
+        ["No more than 90 words", "This is an upper limit, not a target. Anything after the 90-word limit is not read."],
+        ["Word count", "State the number of words in brackets at the end, e.g. (86 words)."],
+        ["No title", "You are not required to write a title. If you do, it is not counted or marked."]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "The focus question is a filter. A passage may contain far more than seven ideas, but only the ideas that answer the **specific focus** count. If the focus is “the benefits” of something, the problems and the history are irrelevant, however interesting they are." },
+
+    { "type": "heading", "text": "Key terms" },
+    { "type": "definition", "term": "Main point", "text": "A key idea that directly answers the focus question. In well-written paragraphs, the main point is often (but not always) stated in the topic sentence." },
+    { "type": "definition", "term": "Topic sentence", "text": "The sentence that states the main idea of a paragraph. The other sentences in the paragraph explain, illustrate or prove it. It is usually the first sentence, but it can come in the middle or at the end." },
+    { "type": "definition", "term": "Supporting detail", "text": "Material that develops the main point: examples, statistics, quotations, anecdotes, descriptions, explanations and repetition. Supporting detail is normally left out of a summary." },
+    { "type": "definition", "term": "Paraphrase", "text": "To restate an idea in your own words while keeping its original meaning. A good paraphrase is usually shorter and simpler than the original." },
+    { "type": "definition", "term": "Cohesive devices", "text": "Linking words and phrases (also called connectives or transition words), such as “furthermore”, “however”, “because” and “finally”, and referring words such as “they” and “these”, which join sentences into a logical, fluent paragraph." },
+
+    { "type": "heading", "text": "How the summary is marked" },
+    { "type": "paragraph", "text": "Following the DBE marking guidelines for Home Language, the 10 marks are split into **7 marks for content** (1 mark for each correct point) and **3 marks for language**. The language mark depends on how many points you have correctly identified and whether you have used your own words." },
+    {
+      "type": "table",
+      "caption": "Distribution of the 3 language marks (DBE guidelines)",
+      "headers": ["Situation", "Points correct / quotes", "Language marks"],
+      "rows": [
+        ["Own words used (no verbatim quoting)", "1 to 3 points correct", "1"],
+        ["Own words used (no verbatim quoting)", "4 to 5 points correct", "2"],
+        ["Own words used (no verbatim quoting)", "6 to 7 points correct", "3"],
+        ["Points quoted verbatim from the passage", "1 to 5 points quoted", "1"],
+        ["Points quoted verbatim from the passage", "6 to 7 points quoted", "0"]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Word limit exceeded:** the marker reads only up to the end of the last sentence that falls within the 90-word limit and ignores the rest. Any points after that are lost.",
+        "**Word count:** markers check your count themselves. You are not penalised for forgetting it or for miscounting, but stating it shows you have checked, and an honest count protects you from losing points beyond the limit.",
+        "**Verbatim quoting:** a point copied word for word may still be credited for content, but it reduces your language mark (see the table above).",
+        "**Point form:** a list does not meet the instruction to write a fluent paragraph, so it cannot show the language skills that the language marks reward."
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Writing an introduction such as “This passage is about the many benefits of indigenous crops, which the writer discusses in detail.” This uses 16 words and earns nothing. Start with a short opening phrase at most, then go straight to the points." },
+
+    { "type": "heading", "text": "Step-by-step method" },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Read the instruction twice.** Underline the focus (e.g. “the benefits of…”, “the reasons why…”, “the advice given to…”). Note the word limit and the number of points.",
+        "**Skim the passage** to understand its overall topic and structure.",
+        "**Read intensively** and underline only the ideas that answer the focus. Number them 1 to 7 in the margin.",
+        "**Cross out supporting detail:** examples, statistics, names, anecdotes, quotations, figurative language and repetition.",
+        "**Write a rough point list** of seven short points in your own words.",
+        "**Combine the points into a paragraph**, using cohesive devices so that the ideas flow logically.",
+        "**Count your words** and edit until you are at or below 90. Check grammar, spelling and that you have not changed the meaning.",
+        "**Write the final version** with the word count in brackets at the end."
+      ]
+    },
+
+    { "type": "heading", "text": "What to keep and what to discard" },
+    {
+      "type": "table",
+      "caption": "Selecting material for a summary",
+      "headers": ["Keep", "Discard"],
+      "rows": [
+        ["Main ideas that answer the focus", "Ideas that are true but answer a different question"],
+        ["The general statement", "Examples that illustrate it (“for example…”, “such as…”)"],
+        ["The idea behind a statistic (e.g. “cheaper”)", "The statistic itself (e.g. “costs 40% less”)"],
+        ["The literal meaning of an image", "Figurative language (similes, metaphors, idioms)"],
+        ["One clear statement of each idea", "Repetition of the same idea in different words"],
+        ["The writer's points", "Personal anecdotes, quotations, rhetorical questions and the introduction and conclusion, unless they contain a new point"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked analysis: topic sentence or supporting detail?",
+      "problem": "Focus: the dangers of using a cellphone while driving. Paragraph: “Using a phone behind the wheel slows a driver's reactions. A driver who looks down at a message for just a few seconds travels the length of a soccer field without seeing the road. Last year my cousin rear-ended a bakkie on the N2 while reading a text.” Which part is the main point?",
+      "steps": [
+        "Sentence 1 is a general statement that answers the focus: it states a danger. This is the topic sentence.",
+        "Sentence 2 is an illustration (the soccer field comparison) that proves sentence 1. Discard it.",
+        "Sentence 3 is a personal anecdote. Discard it.",
+        "Paraphrase the main point: phone use makes drivers react more slowly."
+      ],
+      "answer": "Main point: using a phone while driving delays a driver's reactions. Everything else is supporting detail."
+    },
+
+    { "type": "heading", "text": "Paraphrasing techniques" },
+    {
+      "type": "list",
+      "items": [
+        "**Use synonyms**: “remarkably nutritious” becomes “highly nourishing”.",
+        "**Change the word class**: “provides protection” becomes “protects”; “is beneficial” becomes “benefits”.",
+        "**Change the sentence structure**: turn an active sentence into a passive one, or begin with a different part of the sentence.",
+        "**Generalise lists**: “sorghum, cowpeas, amadumbe and morogo” becomes “indigenous crops”; “TVs, decoders and chargers” becomes “appliances”.",
+        "**Replace figurative language with literal language**: “a riot of pumpkin vines” is an example and is discarded; “the industry is the backbone of the economy” becomes “the industry is essential to the economy”.",
+        "**Keep technical terms** that have no simple synonym (e.g. “geyser”, “drought”). Changing them would change the meaning."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked paraphrases",
+      "problem": "Rewrite each sentence in your own words, keeping only the main idea.",
+      "steps": [
+        "Original: “Having adapted to African conditions over thousands of years, many of them survive drought and high temperatures far better than introduced crops.” Paraphrase: They withstand dry, hot conditions better than foreign crops.",
+        "Original: “Because they need little water, fertiliser or pesticide, these crops are cheaper to grow.” Paraphrase: They are inexpensive to cultivate.",
+        "Original: “Reviving these foods keeps that cultural knowledge alive for the generations to come.” Paraphrase: Eating them preserves traditional knowledge for the future."
+      ],
+      "answer": "Each paraphrase is shorter than the original, uses new words for the key ideas and leaves out explanations and lists."
+    },
+
+    { "type": "heading", "text": "Cohesive devices: making the paragraph fluent" },
+    {
+      "type": "table",
+      "caption": "Linking words grouped by function",
+      "headers": ["Function", "Examples"],
+      "rows": [
+        ["Adding a point", "also, furthermore, moreover, in addition, besides"],
+        ["Showing contrast", "however, whereas, although, on the other hand, yet"],
+        ["Giving a reason", "because, since, as"],
+        ["Showing a result", "therefore, consequently, as a result, so, thus"],
+        ["Sequencing", "firstly, then, next, finally, lastly"],
+        ["Giving an example (rarely needed in a summary)", "for example, such as, for instance"]
+      ]
+    },
+    { "type": "callout", "label": "Remember", "text": "Do not start every sentence with “Firstly… Secondly… Thirdly…”. It wastes words and sounds mechanical. Vary your linking words and use them only where they show a real logical relationship." },
+
+    { "type": "heading", "text": "Worked example: a complete summary" },
+    { "type": "paragraph", "text": "**Instruction:** Summarise the benefits of indigenous crops, as discussed in the passage below. List SEVEN points in fluent paragraph form, in your own words, using no more than 90 words. Indicate the number of words you have used in brackets at the end." },
+    {
+      "type": "passage",
+      "title": "Model passage: Rediscovering the food of our grandparents",
+      "text": "[1] Walk into any supermarket in South Africa and you will find shelves stacked with imported quinoa, kale and blueberries, often at eye-watering prices. Yet some of the most nourishing foods on earth grow quietly in our own soil, largely ignored. Indigenous crops such as sorghum, cowpeas, amadumbe and the leafy greens known as morogo or imifino fed generations of South Africans long before maize became the national staple.\n\n[2] The first advantage of these crops is that they cope well with a harsh climate. Having adapted to African conditions over thousands of years, many of them survive drought and high temperatures far better than introduced crops. Sorghum, for example, can produce a harvest in seasons when the rain is too poor for maize. As climate change brings longer dry spells, this resilience could become vital.\n\n[3] Indigenous foods are also remarkably nutritious. Cowpeas are rich in protein, while many wild leafy greens contain more iron and vitamins than cabbage does. A diet that includes them can help to fight the “hidden hunger” of vitamin and mineral deficiencies, which affects many children whose meals consist mainly of starch.\n\n[4] Because they need little water, fertiliser or pesticide, these crops are cheaper to grow. A small-scale farmer in Limpopo or the Eastern Cape does not need expensive inputs to produce a reasonable harvest, and even a family with a small backyard can grow a few rows of morogo.\n\n[5] There are environmental benefits too. Planting a variety of local crops, rather than vast fields of a single plant, keeps the soil healthy and supports the insects and birds that depend on diverse plant life. My neighbour's garden, a riot of pumpkin vines and spinach, hums with bees all summer long.\n\n[6] Indigenous food also connects us to our heritage. Traditional ways of growing, cooking and storing these crops carry the knowledge of our grandparents and great-grandparents. Reviving these foods keeps that cultural knowledge alive for the generations to come.\n\n[7] Growing demand for these foods also creates opportunities. As restaurants and supermarkets begin to stock them, rural farmers who grow indigenous crops gain a valuable new source of income. Some people still dismiss them as “poor people's food”; nothing could be further from the truth. Isn't it time we filled our plates with the food of our own land?"
+    },
+    {
+      "type": "example",
+      "title": "Step 1: Select the relevant points",
+      "problem": "Go through the passage paragraph by paragraph. Which material answers the focus “the benefits of indigenous crops”?",
+      "steps": [
+        "Paragraph 1 is the introduction (imported foods, list of crops, history). It contains no benefit. Discard.",
+        "Paragraph 2: the topic sentence gives a benefit (cope with a harsh climate; survive drought and heat). The sorghum example and the climate change sentence support it. Keep one point.",
+        "Paragraph 3 contains two separate benefits: they are nutritious (protein, iron, vitamins), and they help to fight deficiencies in children who eat mostly starch. Keep two points.",
+        "Paragraph 4: they are cheap to grow. The Limpopo farmer and backyard examples are supporting detail. Keep one point.",
+        "Paragraph 5: they keep soil healthy and support insects and birds (biodiversity). The neighbour's garden is an anecdote with figurative language (“a riot”). Keep one point.",
+        "Paragraph 6: they preserve cultural knowledge. Keep one point.",
+        "Paragraph 7: they give rural farmers a new income. The “poor people's food” opinion and the rhetorical question are discarded. Keep one point."
+      ],
+      "answer": "Seven points: one each from paragraphs 2, 4, 5, 6 and 7, and two from paragraph 3."
+    },
+    {
+      "type": "table",
+      "caption": "Step 2: The point list in own words",
+      "headers": ["No.", "From the passage", "In my own words"],
+      "rows": [
+        ["1", "“survive drought and high temperatures far better than introduced crops” (para 2)", "They withstand drought and heat better than introduced crops."],
+        ["2", "“remarkably nutritious… rich in protein… more iron and vitamins” (para 3)", "They are highly nourishing, supplying protein, iron and vitamins."],
+        ["3", "“help to fight the hidden hunger… children whose meals consist mainly of starch” (para 3)", "They help to prevent vitamin and mineral shortages in children who eat mostly starch."],
+        ["4", "“need little water, fertiliser or pesticide… cheaper to grow” (para 4)", "They are inexpensive to grow."],
+        ["5", "“keeps the soil healthy and supports the insects and birds” (para 5)", "Growing a variety of local plants keeps soil healthy and supports wildlife."],
+        ["6", "“keeps that cultural knowledge alive” (para 6)", "They preserve traditional knowledge passed down by ancestors."],
+        ["7", "“rural farmers… gain a valuable new source of income” (para 7)", "Rising demand gives rural farmers a new income."]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Step 3: Write and count the paragraph",
+      "problem": "Join the seven points into one fluent paragraph of no more than 90 words.",
+      "steps": [
+        "Begin with a brief opening that names the topic (five words), rather than a long introduction.",
+        "Link related points: points 2 and 3 are joined with “so”, because the second is a result of the first.",
+        "Use varied cohesive devices (“also”, “because”, “furthermore”, “finally”) and the pronoun “they” to avoid repeating “indigenous crops”.",
+        "Count every word, including “a”, “and” and “the”. The paragraph below has 89 words, within the limit."
+      ],
+      "answer": "Indigenous crops have many advantages. They survive drought and heat better than introduced crops. They are also highly nutritious, supplying protein, iron and vitamins, so they help to prevent the vitamin and mineral shortages common among children who eat mainly starch. Because they need little water, fertiliser or pesticide, they are inexpensive to grow. Furthermore, cultivating a variety of local plants keeps soil healthy and supports wildlife. These foods also preserve cultural knowledge passed down by our ancestors. Finally, rising demand gives rural farmers a new source of income. (89 words)"
+    },
+    {
+      "type": "example",
+      "title": "Worked analysis: what went wrong in this draft?",
+      "problem": "A learner wrote this first draft (102 words): “In the passage, the writer explains that there are a number of benefits of indigenous crops such as sorghum, cowpeas and amadumbe. Firstly, these crops are able to survive drought and high temperatures much better than introduced crops, and sorghum, for example, can still produce a harvest when there is not enough rain for maize. Secondly, they are very nutritious, because cowpeas are rich in protein and leafy greens have more iron than cabbage. This means that they can help to fight hidden hunger in children. They are also cheaper to grow because they do not need much water, fertiliser or pesticide.”",
+      "steps": [
+        "The opening sentence (22 words) only introduces the topic and lists examples. It earns no marks.",
+        "The sorghum example and the cowpea and cabbage details are supporting detail, not points.",
+        "Several phrases are copied from the passage (“survive drought and high temperatures”, “better than introduced crops”, “fight hidden hunger”), which lowers the language mark.",
+        "Because the draft is 102 words, the marker stops after the last full sentence within 90 words (the sentence ending “…hidden hunger in children”). The point about cost, after the limit, is ignored.",
+        "Result: only three points are credited, and points 5, 6 and 7 were never reached."
+      ],
+      "answer": "Cut the introduction and examples, paraphrase, and spend the words on all seven points, as in the 89-word model above."
+    },
+    {
+      "type": "callout",
+      "label": "Final checklist",
+      "text": "Seven points? One paragraph? Own words? No examples, figures of speech or repetition? 90 words or fewer? Word count in brackets? Grammar, spelling and punctuation checked?"
+    },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "Paper 1 Question 2 is worth 10 marks: 7 for content points and 3 for language.",
+        "Find exactly seven points that answer the specific focus question.",
+        "Write one fluent paragraph in your own words, of no more than 90 words, with the word count in brackets.",
+        "Topic sentences usually carry main points; examples, statistics, anecdotes, quotations, figurative language and repetition are discarded.",
+        "Paraphrase with synonyms, changes in word class and sentence structure, and by generalising lists.",
+        "Use varied cohesive devices to show the logical links between points.",
+        "Quoting verbatim reduces the language mark; words beyond the limit are not read.",
+        "No title is required, and long introductions waste words."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "truefalse",
+      "prompt": "In the Home Language summary question, you must write no more than 90 words.",
+      "answer": true,
+      "explanation": "The upper limit is 90 words. Anything after the last full sentence within the limit is not marked."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "How many main points must you include in the Paper 1 summary?",
+      "options": ["Five", "Six", "Seven", "Ten"],
+      "answer": 2,
+      "explanation": "You must identify seven points; each correct point earns 1 mark, and the remaining 3 marks are for language."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "You must give your summary a title, otherwise you lose a mark.",
+      "answer": false,
+      "explanation": "A title is not required. If you write one, it is not counted or marked, so it wastes time."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "prompt": "Focus: the advantages of indigenous crops. Read this paragraph: “Sorghum, for example, can produce a harvest in seasons when the rain is too poor for maize. As climate change brings longer dry spells, this resilience could become vital. The first advantage of these crops is that they cope well with a harsh climate. Many of them survive drought and high temperatures far better than introduced crops.” (The sentences have been rearranged.) Which sentence is the topic sentence?",
+      "options": [
+        "Sorghum, for example, can produce a harvest in seasons when the rain is too poor for maize.",
+        "As climate change brings longer dry spells, this resilience could become vital.",
+        "The first advantage of these crops is that they cope well with a harsh climate.",
+        "Many of them survive drought and high temperatures far better than introduced crops."
+      ],
+      "answer": 2,
+      "explanation": "This sentence states the general idea of the paragraph; the others give an example, a consequence and an explanation that support it. A topic sentence is not always the first sentence."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "prompt": "Focus: the ways in which households can save electricity. Which sentence should be LEFT OUT of a summary?",
+      "options": [
+        "Switch appliances off at the wall instead of leaving them on standby.",
+        "My uncle in Pietermaritzburg was astonished to see his bill drop after he started doing this every evening.",
+        "Boil only the amount of water you need in the kettle.",
+        "Hang washing on a line instead of using a tumble dryer."
+      ],
+      "answer": 1,
+      "explanation": "The sentence about the uncle is a personal anecdote that illustrates a point rather than adding a new one. The other three are practical ways of saving electricity."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "Original sentence: “The town's ageing water pipes, many of which were laid more than half a century ago, burst with alarming regularity.” Which option is the best paraphrase of the main idea for a summary?",
+      "options": [
+        "The town's ageing water pipes burst with alarming regularity.",
+        "The municipality should be ashamed of itself for neglecting the pipes.",
+        "The town replaces its water pipes every fifty years.",
+        "The town's old pipes break frequently."
+      ],
+      "answer": 3,
+      "explanation": "Option D keeps the meaning in new, concise words. Option A is copied almost verbatim, option B adds an opinion that was not in the original, and option C changes the meaning."
+    },
+    {
+      "id": "q7",
+      "type": "short",
+      "prompt": "What term describes restating an idea in your own words while keeping its original meaning?",
+      "answers": ["paraphrase", "paraphrasing", "paraphrased"],
+      "explanation": "To paraphrase is to express the same meaning in different words. The summary instruction “in your own words” requires you to paraphrase."
+    },
+    {
+      "id": "q8",
+      "type": "numeric",
+      "prompt": "How many words are in this summary sentence? “Indigenous crops tolerate drought, are highly nutritious and cost little to grow.” Give a whole number.",
+      "answer": 12,
+      "tolerance": 0,
+      "explanation": "Indigenous (1) crops (2) tolerate (3) drought (4) are (5) highly (6) nutritious (7) and (8) cost (9) little (10) to (11) grow (12). Every word counts, including short words such as “and” and “to”."
+    },
+    {
+      "id": "q9",
+      "type": "match",
+      "prompt": "Match each cohesive device with the function it performs.",
+      "marks": 5,
+      "pairs": [
+        { "left": "Furthermore", "right": "Adding another point" },
+        { "left": "However", "right": "Showing contrast" },
+        { "left": "Consequently", "right": "Showing a result" },
+        { "left": "Because", "right": "Giving a reason" },
+        { "left": "Finally", "right": "Introducing the last item in a sequence" }
+      ],
+      "explanation": "Choosing a linking word that matches the logical relationship between two points makes a summary fluent and clear."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "A learner identifies six correct points, writes in fluent paragraph form and uses his own words throughout. According to the DBE language-mark distribution, how many language marks out of 3 should he receive?",
+      "options": ["1", "2", "3", "0"],
+      "answer": 2,
+      "explanation": "Without verbatim quoting, 6 to 7 correct points earn 3 language marks (4 to 5 points earn 2; 1 to 3 points earn 1). His total would be 6 + 3 = 9 out of 10."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "Nomsa's summary contains 104 words. What happens when it is marked?",
+      "options": [
+        "The marker reads up to the end of the last sentence within the 90-word limit and ignores the rest.",
+        "She automatically receives zero for the whole question.",
+        "She loses exactly 1 mark but every point is still credited.",
+        "Nothing happens, because the word limit is only a guideline."
+      ],
+      "answer": 0,
+      "explanation": "Points that come after the word limit are simply not read, so any points in the extra words are lost."
+    },
+    {
+      "id": "q12",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Rewrite the following three notes as ONE or TWO fluent sentences in your own words, using suitable cohesive devices to show how the ideas are linked.\n\n• Minibus taxis are the most widely used form of public transport.\n• Taxi fares have risen sharply this year.\n• Many commuters now walk part of the way to work.",
+      "memo": "Model answer: Although minibus taxis are the country's most popular form of public transport, fares have increased steeply this year; as a result, many commuters now walk part of their journey to work.\n\n✓ All three ideas are included accurately (1)\n✓ Suitable cohesive devices show the logical links, e.g. contrast (“although”, “but”) and result (“as a result”, “so”, “consequently”) (1)\n✓ The answer is one or two grammatically correct, fluent sentences, not a list (1)"
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 10,
+      "prompt": "Read the passage below. Summarise the benefits of reading for pleasure for teenagers, as discussed in the passage. List SEVEN points in fluent paragraph form, in your own words, using NO MORE THAN 90 words. Indicate the number of words you have used in brackets at the end.\n\n**Why every teenager should read for fun**\n\n[1] Ask a group of Grade 11 learners when they last read a book that was not prescribed, and many will laugh. Between homework, sport, part-time jobs and the endless scroll of social media, reading for pleasure seems like a luxury from another century. Yet teachers and researchers agree that it may be one of the most valuable habits a young person can develop.\n\n[2] Most obviously, regular reading builds language skills. Every novel exposes readers to thousands of words used in context, so they gradually develop a richer vocabulary and a feel for how good sentences are put together. Learners who read widely often find that their own essays improve without any extra effort.\n\n[3] Reading also trains the mind to focus. Unlike a video that lasts thirty seconds, a book demands sustained attention over hours and days. In an age of constant notifications, this ability to concentrate deeply is increasingly rare, and increasingly prized.\n\n[4] There are emotional benefits too. Losing yourself in a good story is a way of escaping, for a while, from the pressures of exams and family responsibilities, and many readers say that a chapter before bed helps them to relax and sleep better. Thandi, a matric learner from Mthatha, calls her library card “the cheapest therapy in town”.\n\n[5] Fiction, in particular, allows us to see the world through the eyes of people very different from ourselves. Following a character's struggles from the inside helps readers to understand other people's feelings and points of view, which makes them more empathetic.\n\n[6] Readers also tend to do better at school, and not only in English. Research has found that young people who read for pleasure often make more progress in other subjects, including mathematics, than those who rarely read, because reading strengthens comprehension across the curriculum.\n\n[7] Books broaden our horizons, introducing us to places, periods of history and ideas we might never otherwise encounter. And, perhaps most importantly, they spark the imagination: a reader must picture every scene, every face and every voice, a creative act that no screen can perform for us.\n\n[8] So switch off the phone, find a comfortable chair and open a book. Your future self will thank you.",
+      "memo": "Award 1 mark for each of the following SEVEN points (7 marks), expressed in the candidate's own words:\n✓ 1. It improves vocabulary and writing / language skills (para 2)\n✓ 2. It develops the ability to concentrate / focus for long periods (para 3)\n✓ 3. It relieves stress / helps readers to relax and sleep better (para 4)\n✓ 4. It develops empathy / understanding of other people's feelings and views (para 5)\n✓ 5. It leads to better performance in other school subjects (para 6)\n✓ 6. It broadens knowledge of other places, times and ideas (para 7)\n✓ 7. It stimulates the imagination / creativity (para 7)\n\nDo NOT credit: the introduction, the thirty-second video comparison, Thandi's quotation, the reference to mathematics as an example, or the concluding advice.\n\nLanguage (3 marks), no verbatim quoting: 1 to 3 points correct = 1; 4 to 5 = 2; 6 to 7 = 3. If points are quoted verbatim: 1 to 5 quotes = 1; 6 to 7 quotes = 0.\nIf the summary exceeds 90 words, mark only up to the end of the last sentence within the limit.\n\nModel summary: Reading for pleasure benefits teenagers in many ways. It enriches their vocabulary and improves their writing. Because books require sustained attention, reading strengthens concentration. It also offers an escape from pressure, helping readers to relax and sleep better. Seeing life through characters' eyes develops empathy for others. In addition, readers achieve better results in other subjects, since reading builds comprehension across the curriculum. Books introduce unfamiliar places, eras and ideas, broadening readers' outlook. Finally, picturing scenes and characters stimulates the imagination. (81 words)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 10,
+      "prompt": "Read the passage below. Summarise the practical ways in which households can reduce their electricity use, as discussed in the passage. List SEVEN points in fluent paragraph form, in your own words, using NO MORE THAN 90 words. Indicate the number of words you have used in brackets at the end.\n\n**Saving power, saving money**\n\n[1] For years, South African families have planned meals, homework and even bath times around load-shedding schedules, and every household has felt the sting of rising electricity tariffs. Nobody can control what happens at a power station. What families can control is how much electricity they use at home, and small changes add up surprisingly quickly.\n\n[2] The biggest consumer of electricity in most homes is the geyser. Wrapping it and its pipes in an insulating blanket stops heat from escaping, so the element switches on less often. Turning the thermostat down to about 60 °C also reduces the energy needed to keep the water hot, without making showers uncomfortable.\n\n[3] Lighting is the next easy target. Old-fashioned incandescent bulbs waste most of their energy as heat, whereas LED bulbs give the same light using a fraction of the electricity. They cost more to buy, but they last for years.\n\n[4] Many appliances quietly drain power even when nobody is using them. Television sets, decoders, chargers and microwave ovens with glowing clocks all draw electricity on standby. Switching them off at the wall plug at night prevents this hidden waste. My uncle in Pietermaritzburg was astonished to see his bill drop after he started doing this every evening.\n\n[5] In the kitchen, the humble kettle deserves attention. Many people fill it to the top when they want a single cup of tea, then boil that water again an hour later. Boiling only the amount of water needed saves both time and energy. Similarly, cooking with lids on pots, or using a pressure cooker or a microwave instead of the stove, cuts cooking time and the electricity it consumes.\n\n[6] Finally, on a sunny South African day, there is little reason to use a tumble dryer, one of the most power-hungry appliances in any home. Hanging washing on a line costs nothing and leaves clothes smelling fresh.\n\n[7] None of these steps requires expensive equipment or technical skill. Together, they can make a real difference to a family's budget, and they reduce the pressure on the national grid. Surely that is worth a few minutes of effort?",
+      "memo": "Award 1 mark for each of the following SEVEN points (7 marks), expressed in the candidate's own words:\n✓ 1. Insulate the geyser and its pipes / cover them with a geyser blanket (para 2)\n✓ 2. Lower the geyser's thermostat setting (to about 60 °C) (para 2)\n✓ 3. Replace incandescent bulbs with LED bulbs (para 3)\n✓ 4. Switch appliances off at the wall rather than leaving them on standby (para 4)\n✓ 5. Boil only as much water as is needed in the kettle (para 5)\n✓ 6. Cook efficiently, e.g. with lids on pots or by using a pressure cooker or microwave instead of the stove (para 5)\n✓ 7. Dry washing on a line instead of in a tumble dryer (para 6)\n\nDo NOT credit: load-shedding background, the explanation of why incandescent bulbs waste energy, the cost and lifespan of LEDs, the list of standby appliances, the uncle's anecdote, the conclusion or the rhetorical question.\n\nLanguage (3 marks), no verbatim quoting: 1 to 3 points correct = 1; 4 to 5 = 2; 6 to 7 = 3. If points are quoted verbatim: 1 to 5 quotes = 1; 6 to 7 quotes = 0.\nIf the summary exceeds 90 words, mark only up to the end of the last sentence within the limit.\n\nModel summary: Households can reduce their electricity consumption in several practical ways. They should insulate the geyser and its pipes and lower its thermostat setting. Replacing old light bulbs with LEDs also saves considerable power. Appliances should be switched off at the wall instead of being left on standby. When using the kettle, people should boil only the water they need. Cooking more efficiently, for instance with lids on pots or with a pressure cooker, uses less energy. Finally, families should dry laundry outdoors rather than in a tumble dryer. (88 words)"
+    }
+  ]
+}

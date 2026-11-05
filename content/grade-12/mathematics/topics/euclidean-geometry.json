@@ -1,0 +1,39 @@
+{
+  "id": "euclidean-geometry",
+  "title": "Euclidean Geometry: Proportionality and Similarity",
+  "term": 3,
+  "summary": "The proportionality theorem, similar triangles (equiangular triangles have proportional sides), and the theorem of Pythagoras proved by similarity, with riders.",
+  "notes": [
+    { "type": "heading", "text": "Ratio and proportion" },
+    { "type": "paragraph", "text": "Two triangles with equal heights have areas in the same ratio as their bases. This idea leads to the proportionality theorem." },
+    { "type": "heading", "text": "The proportionality theorem" },
+    { "type": "callout", "label": "Theorem", "text": "A line drawn parallel to one side of a triangle divides the other two sides **proportionally**. If $DE \\parallel BC$ in △ABC, then $\\dfrac{AD}{DB} = \\dfrac{AE}{EC}$. (Reason: line ∥ one side of △, or prop theorem; DE ∥ BC)" },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 200' font-family='sans-serif' font-size='13'><rect width='280' height='200' fill='white'/><polygon points='140,20 30,180 250,180' fill='none' stroke='black' stroke-width='2'/><line x1='96' y1='84' x2='184' y2='84' stroke='black' stroke-width='2'/><text x='136' y='15'>A</text><text x='16' y='192'>B</text><text x='254' y='192'>C</text><text x='80' y='84'>D</text><text x='190' y='84'>E</text><text x='120' y='80'>&gt;</text><text x='136' y='176'>&gt;</text></svg>", "caption": "DE ∥ BC, so AD : DB = AE : EC" },
+    { "type": "example", "title": "Worked example 1", "problem": "In △ABC, DE ∥ BC with D on AB and E on AC. AD = 6 cm, DB = 4 cm and AE = 9 cm. Find EC.", "steps": ["$\\dfrac{AD}{DB} = \\dfrac{AE}{EC}$ (line ∥ one side of △)", "$\\dfrac{6}{4} = \\dfrac{9}{EC}$, so $EC = 6$ cm"], "answer": "EC = 6 cm" },
+    { "type": "callout", "label": "Converse", "text": "If a line divides two sides of a triangle in the same proportion, then it is parallel to the third side. (Reason: line divides two sides of △ in prop)" },
+    { "type": "heading", "text": "Similar triangles" },
+    { "type": "paragraph", "text": "Two triangles are **similar** (|||) if they are **equiangular**. Then their corresponding sides are in proportion. Conversely, if the sides are in proportion, the triangles are equiangular." },
+    { "type": "formula", "latex": "\\triangle ABC \\,|||\\, \\triangle DEF \\implies \\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{AC}{DF}" },
+    { "type": "callout", "label": "Remember", "text": "Write the letters of similar triangles in **corresponding order**: if $\\hat{A} = \\hat{D}$, $\\hat{B} = \\hat{E}$ and $\\hat{C} = \\hat{F}$, write △ABC ||| △DEF. Reason: (∠∠∠)." },
+    { "type": "example", "title": "Worked example 2", "problem": "In △PQR, S lies on PR such that $\\hat{PQS} = \\hat{R}$. Prove that $PQ^2 = PS \\cdot PR$.", "steps": [
+      "In △PQS and △PRQ: $\\hat{P}$ is common; $\\hat{PQS} = \\hat{R}$ (given); so the third angles are equal (sum of ∠s in △).",
+      "△PQS ||| △PRQ (∠∠∠)",
+      "$\\dfrac{PQ}{PR} = \\dfrac{PS}{PQ}$ (||| △s)",
+      "$PQ^2 = PS \\cdot PR$"
+    ], "answer": "Proved" },
+    { "type": "heading", "text": "Pythagoras and similarity" },
+    { "type": "paragraph", "text": "In right-angled △ABC with $\\hat{A} = 90^\\circ$ and AD ⊥ BC, the three triangles △ABC, △DBA and △DAC are all similar. This gives $AB^2 = BD \\cdot BC$, $AC^2 = CD \\cdot CB$ and $AD^2 = BD \\cdot DC$, and adding the first two gives the **theorem of Pythagoras**: $AB^2 + AC^2 = BC^2$." }
+  ],
+  "questions": [
+    { "id": "prop", "type": "numeric", "prompt": "In △ABC, DE ∥ BC with AD = 8, DB = 2 and AE = 12. Find EC.", "answer": 3, "tolerance": 0 },
+    { "id": "prop2", "type": "numeric", "prompt": "In △PQR, ST ∥ QR with S on PQ and T on PR. PS = 5, SQ = 10, PT = 4. Find PR.", "answer": 12, "tolerance": 0 },
+    { "id": "similar-cond", "type": "mcq", "prompt": "Two triangles are similar if they are…", "options": ["equal in area", "equiangular", "both right-angled", "both isosceles"], "answer": 1 },
+    { "id": "ratio", "type": "numeric", "prompt": "△ABC ||| △DEF with AB = 6, DE = 9 and BC = 8. Find EF.", "answer": 12, "tolerance": 0 },
+    { "id": "converse", "type": "truefalse", "prompt": "If a line divides two sides of a triangle in the same ratio, it is parallel to the third side.", "answer": true },
+    { "id": "altitude", "type": "numeric", "prompt": "In right-angled △ABC with $\\hat{A} = 90^\\circ$, AD ⊥ BC, BD = 4 and DC = 9. Find AD.", "answer": 6, "tolerance": 0 },
+    { "id": "proof", "type": "open", "marks": 5, "prompt": "In △ABC, $\\hat{A} = 90^\\circ$ and AD ⊥ BC. Prove that △ABD ||| △CBA and hence that $AB^2 = BD \\cdot BC$.", "memo": "✓ $\\hat{B}$ common (1)\n✓ $\\hat{ADB} = \\hat{CAB} = 90^\\circ$ (1)\n✓ △ABD ||| △CBA (∠∠∠) (1)\n✓ $\\frac{AB}{CB} = \\frac{BD}{BA}$ (||| △s) (1)\n✓ $AB^2 = BD \\cdot BC$ (1)" },
+    { "id": "prop-proof", "type": "open", "marks": 4, "prompt": "In △ABC, D is on AB and E is on AC with AD = 3, DB = 6, AE = 4 and EC = 8. Prove that DE ∥ BC.", "memo": "✓ $\\frac{AD}{DB} = \\frac{3}{6} = \\frac{1}{2}$ (1)\n✓ $\\frac{AE}{EC} = \\frac{4}{8} = \\frac{1}{2}$ (1)\n✓ $\\frac{AD}{DB} = \\frac{AE}{EC}$ (1)\n✓ DE ∥ BC (line divides two sides of △ in prop) (1)" },
+    { "id": "area-ratio", "type": "open", "marks": 3, "prompt": "In △ABC, D lies on BC with BD : DC = 2 : 3. Find the ratio area △ABD : area △ADC and give a reason.", "memo": "✓ The triangles have the same height from A (1)\n✓ so their areas are in the ratio of their bases (1)\n✓ $2 : 3$ (1)" },
+    { "id": "order", "type": "open", "marks": 2, "prompt": "Why must the letters of similar triangles be written in corresponding order?", "memo": "✓ So that corresponding angles match (1)\n✓ and the correct sides are placed in proportion (1)" }
+  ]
+}

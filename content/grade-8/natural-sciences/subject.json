@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "grade": 8,
+  "id": "natural-sciences",
+  "name": "Natural Sciences",
+  "description": "CAPS Grade 8 Natural Sciences: photosynthesis and respiration, ecosystems, micro-organisms, atoms and the particle model, chemical reactions, static electricity, circuits, visible light, the solar system and beyond.",
+  "topics": [
+    { "id": "photosynthesis-and-respiration", "title": "Photosynthesis and Respiration", "term": 1 },
+    { "id": "ecosystems-and-interdependence", "title": "Ecosystems and Interdependence", "term": 1 },
+    { "id": "micro-organisms", "title": "Micro-organisms", "term": 1 },
+    { "id": "atoms-elements-and-compounds", "title": "Atoms, Elements and Compounds", "term": 2 },
+    { "id": "particle-model-of-matter", "title": "The Particle Model of Matter", "term": 2 },
+    { "id": "chemical-reactions", "title": "Chemical Reactions", "term": 2 },
+    { "id": "static-electricity", "title": "Static Electricity", "term": 3 },
+    { "id": "electric-circuits", "title": "Electric Circuits and Energy Transfer", "term": 3 },
+    { "id": "visible-light", "title": "Visible Light", "term": 3 },
+    { "id": "the-solar-system", "title": "The Solar System", "term": 4 },
+    { "id": "beyond-the-solar-system", "title": "Beyond the Solar System", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 90, "totalMarks": 75 }
+  ]
+}

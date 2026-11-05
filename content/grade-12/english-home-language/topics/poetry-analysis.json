@@ -1,0 +1,40 @@
+{
+  "id": "poetry-analysis",
+  "title": "Poetry: Analysing a Poem",
+  "term": 1,
+  "summary": "A method for analysing prescribed poems for contextual questions and essays: speaker, situation, structure, diction, imagery, sound, tone and theme, illustrated with Shelley's 'Ozymandias'.",
+  "notes": [
+    { "type": "heading", "text": "A method: SIFT plus structure" },
+    { "type": "table", "headers": ["Step", "Ask"], "rows": [
+      ["Subject and situation", "What is happening? Who is the speaker, and to whom?"],
+      ["Images and diction", "Which words and images stand out? What do they connote?"],
+      ["Figurative language", "Metaphor, simile, personification, symbol, irony, paradox?"],
+      ["Tone and mood", "What is the speaker's attitude? What atmosphere is created?"],
+      ["Structure and sound", "Form (sonnet, free verse), rhyme, rhythm, enjambment, caesura, the volta (turn)"],
+      ["Theme", "What does the poem say about life, power, love, time, nature or society?"]
+    ] },
+    { "type": "passage", "title": "Ozymandias – Percy Bysshe Shelley (1818; public domain)", "text": "I met a traveller from an antique land,\nWho said—\"Two vast and trunkless legs of stone\nStand in the desert. . . . Near them, on the sand,\nHalf sunk a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed;\nAnd on the pedestal, these words appear:\nMy name is Ozymandias, King of Kings;\nLook on my Works, ye Mighty, and despair!\nNothing beside remains. Round the decay\nOf that colossal Wreck, boundless and bare\nThe lone and level sands stretch far away.\"" },
+    { "type": "heading", "text": "Applying the method" },
+    { "type": "list", "items": [
+      "**Form**: a sonnet (14 lines) with an unusual rhyme scheme; the story is told at second hand, through a traveller, which adds distance.",
+      "**Diction and imagery**: 'shattered visage', 'sneer of cold command' show the king's arrogance and cruelty; 'colossal Wreck' is an oxymoron of greatness and ruin.",
+      "**Irony**: the inscription boasts 'Look on my Works, ye Mighty, and despair!', but nothing remains. The 'despair' now comes from realising that all power fades.",
+      "**Structure**: the volta comes with 'Nothing beside remains', shifting from the boast to the empty desert.",
+      "**Sound**: alliteration in 'boundless and bare' and 'lone and level sands' slows the final line, emphasising the vast emptiness.",
+      "**Theme**: the impermanence of human power and pride; time and nature outlast tyrants. Art (the sculptor's work) survives longer than the ruler."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "In contextual questions, use the mark allocation: a 3-mark question usually needs a point, a quotation and an explanation of its effect. In the poetry essay (about 250–300 words), write an introduction with a clear argument, body paragraphs that each analyse a technique with evidence, and a conclusion." }
+  ],
+  "questions": [
+    { "id": "form", "type": "mcq", "prompt": "'Ozymandias' is written in the form of a…", "options": ["ballad", "sonnet", "haiku", "free-verse poem"], "answer": 1 },
+    { "id": "lines", "type": "numeric", "prompt": "How many lines does a sonnet have?", "answer": 14, "tolerance": 0 },
+    { "id": "volta", "type": "short", "prompt": "What is the turning point in a sonnet called?", "answers": ["volta", "the volta", "turn"] },
+    { "id": "oxymoron", "type": "open", "marks": 2, "prompt": "Identify the figure of speech in 'colossal Wreck' and explain its effect.", "memo": "✓ Oxymoron (1)\n✓ It combines grandeur ('colossal') with ruin ('Wreck'), showing how the great statue has been destroyed (1)" },
+    { "id": "irony", "type": "open", "marks": 3, "prompt": "Explain the irony of the inscription 'Look on my Works, ye Mighty, and despair!'", "memo": "✓ Ozymandias meant other rulers to despair at his greatness (1)\n✓ but his works have vanished: 'Nothing beside remains' (1)\n✓ so the despair now comes from seeing that all power is temporary (1)" },
+    { "id": "sneer", "type": "open", "marks": 2, "prompt": "What does 'sneer of cold command' suggest about Ozymandias?", "memo": "✓ He was arrogant and contemptuous (1)\n✓ and ruled harshly, without warmth or compassion (1)" },
+    { "id": "sound", "type": "open", "marks": 2, "prompt": "Discuss the effect of alliteration in 'The lone and level sands stretch far away.'", "memo": "✓ Repeated 'l' and 's' sounds slow the line (1)\n✓ emphasising the vast, empty, endless desert (1)" },
+    { "id": "theme", "type": "open", "marks": 3, "prompt": "State the central theme of the poem and support it with ONE quotation.", "memo": "✓ The impermanence of power and human pride (1)\n✓ Quotation, e.g. 'Nothing beside remains' (1)\n✓ Explanation (1)" },
+    { "id": "narrator", "type": "open", "marks": 2, "prompt": "Why do you think Shelley tells the story through a 'traveller from an antique land'?", "memo": "✓ It creates distance in time and place (1)\n✓ emphasising how long ago and far away the king's power was; even his fame is second-hand (1)" },
+    { "id": "sculptor", "type": "open", "marks": 2, "prompt": "What does the poem suggest about art through the sculptor?", "memo": "✓ The sculptor captured the king's passions so well that they survive (1)\n✓ suggesting art outlasts the powerful people it depicts (1)" }
+  ]
+}

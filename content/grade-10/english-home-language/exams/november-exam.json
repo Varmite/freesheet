@@ -1,0 +1,114 @@
+{
+  "id": "november-exam",
+  "title": "November Examination: Paper 1 (Language in Context)",
+  "durationMinutes": 120,
+  "totalMarks": 70,
+  "instructions": [
+    "This question paper consists of THREE sections: SECTION A: Comprehension (30 marks); SECTION B: Summary (10 marks); SECTION C: Language structures and conventions (30 marks).",
+    "Answer ALL the questions.",
+    "Read ALL the texts carefully before you answer.",
+    "Answer in full sentences unless you are asked to quote or give a single word. Use your own words unless asked to quote.",
+    "For open questions, write your answer in your workbook, then compare it with the memorandum and mark it honestly.",
+    "All texts in this paper were written for this paper. All names are fictional."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Reading for Meaning and Understanding",
+      "instructions": "SECTION A: COMPREHENSION. Read TEXT A and answer the questions. The paragraphs are numbered.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT A: The River Keepers (an article written for this paper)",
+          "text": "[1] Every second Saturday, before most of Pietermaritzburg is awake, a group of about forty volunteers gathers at a bridge over the Msunduzi River. They wear gumboots and gloves, carry black bags, and have a single goal: to pull as much rubbish out of the water as they can before lunch.\n\n[2] The group, which calls itself the River Keepers, was started four years ago by a retired science teacher, Mrs Nomvula Zulu. 'I used to bring my learners here to test the water,' she explains. 'One day a boy asked me why the river smelled like a rubbish dump. I didn't have a good answer, so I decided to do something about it.'\n\n[3] In their first year the River Keepers removed more than twelve tonnes of waste: plastic bottles, nappies, car tyres, even a fridge. Today they collect less each month, which Mrs Zulu sees as a sign of success rather than failure. 'People have started to notice us,' she says. 'When your neighbour is up to her knees in the river picking up your chip packet, you think twice before you drop the next one.'\n\n[4] Not everyone is convinced. Some residents argue that cleaning up is the municipality's job and that volunteers let officials off the hook. Mrs Zulu disagrees, though not entirely. 'Of course the municipality must do its part,' she says. 'But a river doesn't care whose job it is. It just needs to be clean.'\n\n[5] The project has grown beyond rubbish collection. Local schools now send learners to measure water quality, and a youth group has painted murals of fish and birds on the walls beneath the bridge. Fishermen report that they are catching more fish than they have in years. For Mrs Zulu, though, the greatest change is harder to measure. 'People used to turn their backs on this river,' she says. 'Now they are facing it again.'"
+        }
+      ],
+      "questions": [
+        { "id": "q1-1", "type": "numeric", "marks": 1, "prompt": "1.1 Approximately how many volunteers gather at the bridge?", "answer": 40, "tolerance": 0 },
+        { "id": "q1-2", "type": "short", "marks": 1, "prompt": "1.2 What was Mrs Zulu's profession before she retired?", "answers": ["science teacher", "a science teacher", "teacher", "a teacher"] },
+        { "id": "q1-3", "type": "open", "marks": 2, "prompt": "1.3 Refer to paragraph 2. What prompted Mrs Zulu to start the River Keepers?", "memo": "✓ A learner asked why the river smelled like a rubbish dump (1)\n✓ She had no good answer and decided to act (1)" },
+        { "id": "q1-4", "type": "mcq", "marks": 1, "prompt": "1.4 How much waste was removed in the first year?", "options": ["Four tonnes", "More than twelve tonnes", "Forty bags", "One fridge"], "answer": 1 },
+        { "id": "q1-5", "type": "open", "marks": 3, "prompt": "1.5 Explain why Mrs Zulu sees collecting less rubbish as 'a sign of success rather than failure' (paragraph 3).", "memo": "✓ Less rubbish means less is being dumped (1)\n✓ because people have noticed the volunteers (1)\n✓ and have changed their behaviour/think twice before littering (1)" },
+        { "id": "q1-6", "type": "open", "marks": 2, "prompt": "1.6 Comment on the effectiveness of the image 'up to her knees in the river picking up your chip packet'.", "memo": "✓ It creates a vivid picture of a neighbour cleaning up personally (1)\n✓ making the reader feel guilty/responsible, so it persuades people not to litter (1)" },
+        { "id": "q1-7", "type": "truefalse", "marks": 1, "prompt": "1.7 All residents support the River Keepers.", "answer": false },
+        { "id": "q1-8", "type": "open", "marks": 2, "prompt": "1.8 What is the argument of residents who are 'not convinced' (paragraph 4)?", "memo": "✓ Cleaning the river is the municipality's job (1)\n✓ and volunteers let officials avoid their responsibility (1)" },
+        { "id": "q1-9", "type": "open", "marks": 2, "prompt": "1.9 Mrs Zulu disagrees 'though not entirely'. Explain what this shows about her attitude.", "memo": "✓ She accepts that the municipality must do its part (1)\n✓ but believes the river's needs matter more than who is responsible; she is balanced/practical (1)" },
+        { "id": "q1-10", "type": "open", "marks": 2, "prompt": "1.10 Identify and explain the figure of speech in 'a river doesn't care whose job it is'.", "memo": "✓ Personification (1)\n✓ The river is given human feelings, emphasising that arguing about responsibility doesn't help the river (1)" },
+        { "id": "q1-11", "type": "open", "marks": 3, "prompt": "1.11 List THREE ways in which the project 'has grown beyond rubbish collection' (paragraph 5).", "memo": "✓ Schools send learners to measure water quality (1)\n✓ A youth group painted murals under the bridge (1)\n✓ Fishermen are catching more fish (1)" },
+        { "id": "q1-12", "type": "open", "marks": 3, "prompt": "1.12 Discuss the meaning of 'People used to turn their backs on this river. Now they are facing it again.'", "memo": "✓ Literally, people used to ignore/avoid the river (1)\n✓ Figuratively, they did not care about it or take responsibility (1)\n✓ Now they value it and are involved in caring for it (1)" },
+        { "id": "q1-13", "type": "short", "marks": 1, "prompt": "1.13 Give ONE word from paragraph 1 that means 'people who work without pay'.", "answers": ["volunteers"] },
+        { "id": "q1-14", "type": "mcq", "marks": 1, "prompt": "1.14 The tone of the article is mainly…", "options": ["angry", "hopeful", "sarcastic", "fearful"], "answer": 1 },
+        { "id": "q1-15", "type": "open", "marks": 3, "prompt": "1.15 Is 'The River Keepers' a suitable title for this article? Justify your answer.", "memo": "✓ Clear stance (1)\n✓✓ Two reasons, e.g. 'keepers' suggests guardians who protect the river; it names the group the article is about (2)" },
+        { "id": "q1-16", "type": "open", "marks": 2, "prompt": "1.16 Would you join a group like the River Keepers? Give a reason for your answer.", "memo": "✓ Clear answer (1)\n✓ Valid, supported reason (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Summary",
+      "instructions": "SECTION B: SUMMARY. Read TEXT B and answer the question.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT B: Getting a Good Night's Sleep (written for this paper)",
+          "text": "Teenagers need between eight and ten hours of sleep a night, yet many get far less. Experts offer some simple advice. First, go to bed and wake up at the same time every day, even on weekends, so that your body clock stays regular. Avoid screens for at least an hour before bed, because the blue light from phones tricks the brain into thinking it is still daytime. Caffeine, found in coffee, energy drinks and some fizzy drinks, should be avoided after lunchtime. Make your bedroom dark, quiet and cool. Exercise during the day helps you to fall asleep faster, but a heavy workout late at night can keep you awake. Finally, if you cannot sleep, get up and do something calm, like reading, rather than lying in bed worrying. Following these tips can improve concentration, mood and even marks at school."
+        }
+      ],
+      "questions": [
+        { "id": "q2", "type": "open", "marks": 10, "prompt": "Summarise SEVEN tips for getting a good night's sleep, as given in TEXT B.\n\nNOTE:\n1. Write a fluent paragraph, NOT point form.\n2. Do NOT exceed 90 words.\n3. Write the number of words in brackets at the end.", "memo": "CONTENT (7 marks), any seven:\n✓ Keep a regular sleeping and waking time every day. (1)\n✓ Avoid screens for an hour before bed. (1)\n✓ Avoid caffeine after lunch. (1)\n✓ Keep the bedroom dark. (1)\n✓ Keep it quiet. (1)\n✓ Keep it cool. (1)\n✓ Exercise during the day. (1)\n✓ Avoid hard exercise late at night. (1)\n✓ If you cannot sleep, get up and do something calm. (1)\n\nLANGUAGE (3 marks): fluent paragraph, own words, few errors = 3; partly copied or some errors = 2; mostly copied = 1; point form = 0.\n\nMODEL: To sleep well, teenagers should go to bed and wake up at the same time daily and stop using screens an hour before bedtime. They should not have caffeine after lunch. Their bedrooms should be dark, quiet and cool. Exercising during the day helps, but intense late-night workouts should be avoided. Those who cannot sleep should get up and do something relaxing. (64 words)\n\nTotal: (10)" }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Analysing an Advertisement",
+      "instructions": "SECTION C. Read the description of the advertisement (TEXT C) and answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT C: Advertisement (described)",
+          "text": "The background is a sunrise over a mountain. In the foreground, a pair of muddy hiking boots stands on a rock. HEADLINE (top, bold): 'GO FURTHER.' BODY COPY: 'TrailMax boots are waterproof, lightweight and built to last. Tested on Table Mountain, the Drakensberg and the Otter Trail. Because the best views are at the end of the hardest paths.' At the bottom: the TrailMax logo (a mountain peak) and 'Available at all leading outdoor stores.'"
+        }
+      ],
+      "questions": [
+        { "id": "q3-1", "type": "short", "marks": 1, "prompt": "3.1 Quote the headline of the advertisement.", "answers": ["go further.", "go further"] },
+        { "id": "q3-2", "type": "open", "marks": 2, "prompt": "3.2 Explain the double meaning of the headline.", "memo": "✓ Literally, walk longer distances in the boots (1)\n✓ Figuratively, push yourself / achieve more in life (1)" },
+        { "id": "q3-3", "type": "open", "marks": 2, "prompt": "3.3 Why are the boots shown muddy rather than new and clean?", "memo": "✓ It shows they have been used in tough conditions (1)\n✓ suggesting they are durable and suited to real adventures (1)" },
+        { "id": "q3-4", "type": "open", "marks": 2, "prompt": "3.4 Why does the advertiser mention Table Mountain, the Drakensberg and the Otter Trail?", "memo": "✓ They are well-known, challenging South African hikes (1)\n✓ This proves the boots' quality and appeals to local hikers (1)" },
+        { "id": "q3-5", "type": "open", "marks": 3, "prompt": "3.5 Discuss how the sunrise and the final sentence of the body copy work together.", "memo": "✓ The sunrise suggests reward/beauty/a new beginning (1)\n✓ The sentence says the best views come after hard paths (1)\n✓ Together they suggest that effort (helped by the boots) brings reward (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Analysing a Cartoon",
+      "instructions": "Read the description of the cartoon (TEXT D) and answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT D: Cartoon (described)",
+          "text": "Frame 1: A father, looking stern, points at his teenage son on the couch, who is staring at a phone. Father: 'You spend far too much time on that thing! When I was your age, we went outside!'\nFrame 2: The son, without looking up: 'Okay, Dad.'\nFrame 3: Later. The son is outside, kicking a ball. Through the window, the father is lying on the couch, smiling at his own phone. Thought bubble above the son: 'When he was my age…'"
+        }
+      ],
+      "questions": [
+        { "id": "q4-1", "type": "short", "marks": 1, "prompt": "4.1 Describe the father's expression in frame 1 in ONE word.", "answers": ["stern", "angry", "strict", "annoyed", "cross"] },
+        { "id": "q4-2", "type": "open", "marks": 2, "prompt": "4.2 What does the son's response in frame 2 suggest?", "memo": "✓ He is not really listening/is absorbed in his phone (1)\n✓ He answers automatically just to end the conversation (1)" },
+        { "id": "q4-3", "type": "open", "marks": 3, "prompt": "4.3 Explain the irony in frame 3.", "memo": "✓ The father criticised the son for too much phone use (1)\n✓ but in frame 3 the father is the one on his phone (1)\n✓ while the son is outside, doing what the father recommended (1)" },
+        { "id": "q4-4", "type": "open", "marks": 2, "prompt": "4.4 Why is the son's thought shown in a thought bubble rather than a speech bubble?", "memo": "✓ He thinks it but does not say it (1)\n✓ adding to the humour; the reader shares his private, ironic observation (1)" },
+        { "id": "q4-5", "type": "open", "marks": 2, "prompt": "4.5 What message does the cartoonist convey?", "memo": "✓ Adults criticise young people for phone use (1)\n✓ but are often just as addicted; adults should set an example (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Language and Editing Skills",
+      "instructions": "Read TEXT E, which contains deliberate errors, and answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT E",
+          "text": "(a) Every one of the learners have brought their permission slips.\n(b) The principle announced that the trip would go ahead.\n(c) The bus collected us at seven.\n(d) \"We will leave tomorrow,\" said the teacher.\n(e) Its going to be a long journey, but its worth it.\n(f) The trip was enjoyable. The trip was tiring."
+        }
+      ],
+      "questions": [
+        { "id": "q5-1", "type": "open", "marks": 1, "prompt": "5.1 Correct the concord error in sentence (a).", "memo": "✓ 'Every one of the learners **has** brought…' (1)" },
+        { "id": "q5-2", "type": "short", "marks": 1, "prompt": "5.2 Correct the spelling error in sentence (b).", "answers": ["principal"] },
+        { "id": "q5-3", "type": "open", "marks": 2, "prompt": "5.3 Rewrite sentence (c) in the passive voice.", "memo": "✓ We were collected (1)\n✓ by the bus at seven. (1)" },
+        { "id": "q5-4", "type": "open", "marks": 3, "prompt": "5.4 Rewrite sentence (d) in indirect speech.", "memo": "✓ The teacher said that (1)\n✓ they would leave (1)\n✓ the next day / the following day. (1)" },
+        { "id": "q5-5", "type": "open", "marks": 1, "prompt": "5.5 Correct sentence (e).", "memo": "✓ 'It's going to be a long journey, but it's worth it.' (both apostrophes needed) (1)" },
+        { "id": "q5-6", "type": "open", "marks": 2, "prompt": "5.6 Combine the two sentences in (f) into one sentence, avoiding repetition.", "memo": "✓✓ e.g. 'The trip was enjoyable but tiring.' / 'Although the trip was tiring, it was enjoyable.' (2)" }
+      ]
+    }
+  ]
+}

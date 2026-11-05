@@ -1,0 +1,64 @@
+{
+  "id": "urbanisation",
+  "title": "Urbanisation and Urban Challenges",
+  "term": 3,
+  "summary": "Why people move to cities (push and pull factors), urban land-use zones, informal settlements, and the problems and solutions of fast-growing cities in South Africa.",
+  "notes": [
+    { "type": "heading", "text": "What is urbanisation?" },
+    { "type": "definition", "term": "Urbanisation", "text": "The increase in the percentage of a country's population living in towns and cities." },
+    { "type": "paragraph", "text": "More than half of the world's people now live in urban areas. In South Africa about **two-thirds** of people live in towns and cities. Gauteng, the smallest province by area, has the largest population." },
+    { "type": "heading", "text": "Push and pull factors" },
+    { "type": "table", "headers": ["Push factors (from rural areas)", "Pull factors (to cities)"], "rows": [
+      ["Few jobs, low wages", "More jobs and higher wages"],
+      ["Drought and crop failure", "Better schools, universities and hospitals"],
+      ["Lack of services: water, electricity, clinics", "Electricity, piped water and entertainment"],
+      ["Poverty and lack of land", "Hope of a better life ('bright lights')"],
+      ["Conflict or violence", "Family members already living in the city"]
+    ] },
+    { "type": "definition", "term": "Rural–urban migration", "text": "The movement of people from the countryside to towns and cities. It is the main cause of urbanisation, together with natural increase (more births than deaths) in cities." },
+    { "type": "heading", "text": "Land use in cities" },
+    { "type": "table", "headers": ["Zone", "Description"], "rows": [
+      ["Central Business District (CBD)", "The centre: offices, banks, shops, government buildings; tall buildings; very high land values; busy traffic"],
+      ["Industrial zone", "Factories and warehouses, usually near railways, highways or harbours"],
+      ["High-income residential", "Large houses with gardens on the outskirts, often in pleasant areas"],
+      ["Middle- and low-income residential", "Smaller houses, flats and townships"],
+      ["Informal settlements", "Shacks built by people without formal housing, often on the edges of the city"],
+      ["Rural–urban fringe", "Where the city meets the countryside: smallholdings, new suburbs, shopping malls"]
+    ] },
+    { "type": "callout", "label": "Apartheid legacy", "text": "Under the **Group Areas Act**, black South Africans were forced to live in townships far from city centres and jobs. Many people still travel long distances and spend a large part of their income on transport." },
+    { "type": "heading", "text": "Problems of rapid urbanisation" },
+    { "type": "list", "items": [
+      "**Housing shortages** and the growth of **informal settlements** with poor services.",
+      "**Unemployment**: there are not enough jobs for everyone, so many work in the **informal sector** (street vendors, spaza shops).",
+      "**Traffic congestion** and pollution.",
+      "**Pressure on services**: water, sanitation, electricity, schools and clinics.",
+      "**Crime** and health problems such as the spread of disease in overcrowded areas.",
+      "**Urban sprawl**: cities spread outwards over farmland and natural areas."
+    ] },
+    { "type": "heading", "text": "Solutions" },
+    { "type": "list", "items": [
+      "Government housing programmes (RDP houses) and **upgrading** informal settlements with water, toilets and electricity.",
+      "Improved **public transport**, such as bus rapid transit (Rea Vaya in Johannesburg, MyCiTi in Cape Town) and the Gautrain.",
+      "**Rural development**: creating jobs and services in rural areas so fewer people need to move.",
+      "Supporting small businesses and the informal sector.",
+      "Building denser housing closer to jobs, and protecting green spaces."
+    ] }
+  ],
+  "questions": [
+    { "id": "def", "type": "short", "prompt": "What is the increase in the percentage of people living in towns and cities called?", "answers": ["urbanisation", "urbanization"] },
+    { "id": "push-pull", "type": "mcq", "prompt": "Which is a PULL factor?", "options": ["Drought", "Lack of jobs in rural areas", "Better hospitals in the city", "Poor schools in villages"], "answer": 2 },
+    { "id": "cbd", "type": "short", "prompt": "What do the letters CBD stand for?", "answers": ["central business district"] },
+    { "id": "gauteng", "type": "truefalse", "prompt": "Gauteng is the smallest province by area but has the largest population.", "answer": true },
+    { "id": "classify", "type": "match", "marks": 4, "prompt": "Classify each factor.", "pairs": [
+      { "left": "Crop failure on a farm", "right": "Push factor" },
+      { "left": "Job opportunities in factories", "right": "Pull factor" },
+      { "left": "No electricity in the village", "right": "Push factor (lack of services)" },
+      { "left": "Universities in the city", "right": "Pull factor (education)" }
+    ] },
+    { "id": "informal-sector", "type": "mcq", "prompt": "A woman sells fruit at a taxi rank without a formal shop. She works in the…", "options": ["formal sector", "informal sector", "primary sector", "public sector"], "answer": 1 },
+    { "id": "problems", "type": "open", "marks": 4, "prompt": "Describe FOUR problems caused by rapid urbanisation.", "memo": "Any four (1 each): housing shortage/informal settlements; unemployment; traffic congestion; pollution; pressure on services; crime; disease; urban sprawl" },
+    { "id": "solutions", "type": "open", "marks": 3, "prompt": "Suggest THREE ways in which a city can manage rapid urbanisation.", "memo": "Any three (1 each): housing programmes; upgrading informal settlements; public transport; rural development; supporting small businesses; densification/planning" },
+    { "id": "apartheid", "type": "open", "marks": 2, "prompt": "Explain how apartheid planning still affects people living in South African cities.", "memo": "✓ Black people were forced to live in townships far from city centres (1)\n✓ Many still travel long distances to work at high cost / cities remain divided (1)" },
+    { "id": "cbd-features", "type": "open", "marks": 2, "prompt": "Give TWO characteristics of the CBD.", "memo": "Any two (1 each): tall buildings; offices and banks; shops; very high land value; traffic congestion; few residents" }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "subject-choice-and-careers",
+  "title": "Subject Choice and Career Planning",
+  "term": 4,
+  "summary": "Choosing subjects for Grades 10 to 12, compulsory and elective subjects, Mathematics or Mathematical Literacy, NSC pass requirements, study pathways, funding, and making a career plan.",
+  "notes": [
+    { "type": "heading", "text": "Choosing your FET subjects" },
+    { "type": "paragraph", "text": "At the end of Grade 9 you choose the subjects you will take in Grades 10, 11 and 12 (the Further Education and Training, or **FET**, phase). These choices affect what you can study after school, so choose carefully." },
+    { "type": "table", "headers": ["Compulsory subjects (4)", "Elective subjects (choose 3)"], "rows": [
+      ["Home Language", "e.g. Physical Sciences, Life Sciences, Geography, History"],
+      ["First Additional Language", "Accounting, Business Studies, Economics"],
+      ["Mathematics OR Mathematical Literacy", "Engineering Graphics and Design, Information Technology, CAT"],
+      ["Life Orientation", "Tourism, Consumer Studies, Agricultural Sciences, Visual Arts, Music, Dramatic Arts and others"]
+    ] },
+    { "type": "heading", "text": "Mathematics or Mathematical Literacy?" },
+    { "type": "paragraph", "text": "**Mathematics** is required for most degrees in engineering, medicine, the natural sciences, actuarial science, accounting and IT. **Mathematical Literacy** focuses on using maths in everyday life (budgets, measurement, maps) and is accepted for many other courses. Choosing Mathematical Literacy may close some doors, so check the requirements of careers you are interested in." },
+    { "type": "heading", "text": "National Senior Certificate (NSC) passes" },
+    { "type": "table", "headers": ["Pass level", "Opens the door to", "Minimum requirement (summary)"], "rows": [
+      ["Bachelor's pass", "Degree studies at a university", "Home Language 40%; 4 subjects from the designated list at 50% or more; 2 further subjects at 30%"],
+      ["Diploma pass", "Diploma studies at a university of technology or college", "Home Language 40%; 4 subjects at 40% or more; 2 further subjects at 30%"],
+      ["Higher Certificate pass", "Higher Certificate courses", "Home Language 40%; 2 subjects at 40%; 4 further subjects at 30%"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Universities also set their own entry requirements, usually using an **Admission Point Score (APS)** calculated from your marks, plus minimum marks in specific subjects. Always check the requirements early." },
+    { "type": "heading", "text": "Factors to consider" },
+    { "type": "list", "items": [
+      "Your **interests**, **abilities** and **marks** in Grade 9.",
+      "The **requirements** of careers you are considering.",
+      "**Subjects offered** at your school.",
+      "Advice from teachers, counsellors and family, but the choice must be **yours**.",
+      "Do **not** choose a subject just because your friends are taking it or because it seems easy."
+    ] },
+    { "type": "heading", "text": "Funding further study" },
+    { "type": "list", "items": [
+      "**NSFAS** (National Student Financial Aid Scheme): bursaries for students from households with a low income, at public universities and TVET colleges.",
+      "Bursaries from companies, government departments and SETAs, often linked to working for the sponsor afterwards.",
+      "Merit scholarships for excellent marks, and study loans from banks."
+    ] },
+    { "type": "heading", "text": "A career plan" },
+    { "type": "list", "ordered": true, "items": [
+      "Know yourself: interests, abilities, values and personality.",
+      "Research careers: duties, qualifications, demand and salary.",
+      "Choose subjects that keep your options open.",
+      "Set short-, medium- and long-term goals.",
+      "Find out about institutions, applications and funding.",
+      "Gain experience: job shadowing, volunteering, holiday work."
+    ] }
+  ],
+  "questions": [
+    { "id": "compulsory", "type": "mcq", "prompt": "Which of these is a compulsory subject in Grades 10 to 12?", "options": ["Physical Sciences", "Life Orientation", "Accounting", "Geography"], "answer": 1 },
+    { "id": "electives", "type": "numeric", "prompt": "How many elective subjects must a learner choose in the FET phase?", "answer": 3, "tolerance": 0 },
+    { "id": "nsfas", "type": "short", "prompt": "What does NSFAS stand for?", "answers": ["national student financial aid scheme"] },
+    { "id": "maths", "type": "truefalse", "prompt": "Most engineering degrees accept Mathematical Literacy instead of Mathematics.", "answer": false },
+    { "id": "aps", "type": "short", "prompt": "What score do universities calculate from matric marks to decide on admission? (abbreviation)", "answers": ["aps", "admission point score"] },
+    { "id": "passes", "type": "match", "marks": 3, "prompt": "Match each NSC pass to what it allows you to study.", "pairs": [
+      { "left": "Bachelor's pass", "right": "Degree at a university" },
+      { "left": "Diploma pass", "right": "Diploma studies" },
+      { "left": "Higher Certificate pass", "right": "Higher Certificate courses" }
+    ] },
+    { "id": "factors", "type": "open", "marks": 4, "prompt": "Give FOUR factors to consider when choosing FET subjects.", "memo": "Any four (1 each): interests; abilities/marks; career requirements; subjects offered at school; advice from counsellors/teachers; long-term goals" },
+    { "id": "friends", "type": "open", "marks": 2, "prompt": "Why is it unwise to choose subjects just because your friends are taking them?", "memo": "✓ Your interests, abilities and career goals may be different (1)\n✓ The wrong subjects could close career options or lead to poor marks (1)" },
+    { "id": "funding", "type": "open", "marks": 2, "prompt": "Name TWO ways to fund studies after school.", "memo": "Any two (1 each): NSFAS; company/government bursaries; SETA funding; merit scholarships; study loans; part-time work" },
+    { "id": "plan", "type": "open", "marks": 3, "prompt": "Describe THREE steps in drawing up a career plan.", "memo": "Any three (1 each): know yourself; research careers; choose suitable subjects; set goals; research institutions and funding; gain experience" }
+  ]
+}

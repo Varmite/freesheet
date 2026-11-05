@@ -1,0 +1,54 @@
+{
+  "id": "reading-for-comprehension",
+  "title": "Reading for Comprehension",
+  "term": 1,
+  "summary": "Reading strategies (skimming, scanning, close reading), types of comprehension questions, finding the main idea, inferring meaning and answering in your own words.",
+  "notes": [
+    { "type": "heading", "text": "Reading strategies" },
+    { "type": "table", "headers": ["Strategy", "What you do", "When to use it"], "rows": [
+      ["Skimming", "Read quickly for the general idea: title, first and last paragraphs, topic sentences", "First reading of a passage"],
+      ["Scanning", "Search quickly for a specific fact, name, date or number", "Finding the answer to a factual question"],
+      ["Close (intensive) reading", "Read slowly and carefully, thinking about meaning, tone and word choice", "Answering inference and opinion questions"]
+    ] },
+    { "type": "heading", "text": "Levels of questions" },
+    { "type": "table", "headers": ["Level", "What it asks", "Typical question words"], "rows": [
+      ["Literal", "Facts stated directly in the text", "Who? What? When? Where? Quote… List…"],
+      ["Reorganisation", "Putting information together, e.g. in a table or summary", "Summarise… Compare…"],
+      ["Inferential", "Reading between the lines; meaning that is implied, not stated", "Why do you think…? What does this suggest…? Explain…"],
+      ["Evaluative", "Judging the text or giving your opinion with reasons", "Do you agree…? Is this effective…?"],
+      ["Appreciative", "Responding to the writer's style and its effect on the reader", "How does the writer make you feel…?"]
+    ] },
+    { "type": "passage", "title": "Practice passage: The Water Tank (original text written for FreeSheet)", "text": "When the taps in Mamelodi ran dry for the third week, Thando's grandmother did something nobody expected. She sold her old sewing machine.\n\nWith the money, and with help from three neighbours, she bought a second-hand plastic water tank and two lengths of gutter. On Saturday morning half the street gathered to watch the men fix the gutters to the roof. 'You will see,' Gogo said, though there had not been a cloud for a month. 'The rain always comes back to those who are ready for it.'\n\nThe rain came eleven days later, heavy and sudden, drumming on the tin roof. By morning the tank was full. Gogo hung a small sign on the gate: WATER FOR COOKING AND DRINKING. TAKE ONE BUCKET. LEAVE A SMILE.\n\nBy December, four more houses on the street had tanks of their own." },
+    { "type": "example", "title": "Answering questions on the passage", "problem": "Answer: (a) What did Gogo sell? (literal) (b) Why do you think Gogo sold something she valued? (inferential) (c) What does the last sentence suggest about the effect of Gogo's actions? (inferential)", "steps": [
+      "(a) Her old sewing machine.",
+      "(b) She thought clean water for her family and neighbours was more important than the machine; she was willing to sacrifice for others.",
+      "(c) Her example inspired others: neighbours followed her lead and also installed tanks."
+    ], "answer": "Use facts from the text for literal questions; give reasons supported by the text for inferential questions." },
+    { "type": "heading", "text": "Answering techniques" },
+    { "type": "list", "items": [
+      "Read the questions **before** you read the passage closely, so you know what to look for.",
+      "Check the **mark allocation**: 2 marks usually need two points or a point plus explanation.",
+      "**Quote** means copy the exact words, in quotation marks. **In your own words** means do NOT copy.",
+      "Answer in **full sentences** unless asked for one word.",
+      "For true/false questions, give a **quotation** or reason if asked to prove your answer.",
+      "Work out unfamiliar words from **context** (the words around them)."
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "When asked for **one word**, write only one word. When asked to **quote**, use the exact words with quotation marks. Points are lost for ignoring these instructions." }
+  ],
+  "questions": [
+    { "id": "scan", "type": "mcq", "prompt": "Which reading strategy helps you find a specific date quickly?", "options": ["Skimming", "Scanning", "Close reading", "Summarising"], "answer": 1 },
+    { "id": "inferential", "type": "mcq", "prompt": "A question that asks you to read between the lines is…", "options": ["literal", "inferential", "reorganisation", "a spelling question"], "answer": 1 },
+    { "id": "sold", "type": "short", "prompt": "Refer to the practice passage. What did Gogo sell? (two or three words)", "answers": ["her sewing machine", "sewing machine", "her old sewing machine", "old sewing machine", "a sewing machine"] },
+    { "id": "days", "type": "numeric", "prompt": "How many days later did the rain come, according to the passage?", "answer": 11, "tolerance": 0 },
+    { "id": "quote", "type": "open", "marks": 1, "prompt": "Quote the sentence in which Gogo shows her confidence that it will rain.", "memo": "✓ 'The rain always comes back to those who are ready for it.' (1)" },
+    { "id": "drumming", "type": "open", "marks": 2, "prompt": "Explain why the writer uses the word 'drumming' to describe the rain.", "memo": "✓ It suggests the loud, steady, rhythmic sound of heavy rain on the tin roof (1)\n✓ It creates a vivid / joyful mood after the long drought (1)" },
+    { "id": "sign", "type": "open", "marks": 2, "prompt": "What does Gogo's sign tell us about her character?", "memo": "✓ She is generous/community-minded (sharing water) (1)\n✓ She is warm and has a sense of humour ('LEAVE A SMILE') (1)" },
+    { "id": "truefalse", "type": "truefalse", "prompt": "According to the passage, it was raining on the Saturday the gutters were installed.", "answer": false, "explanation": "'There had not been a cloud for a month.'" },
+    { "id": "evaluate", "type": "open", "marks": 3, "prompt": "Do you think Gogo made a wise decision? Give reasons for your answer.", "memo": "✓ Clear opinion (1)\n✓✓ Two reasons supported by the text, e.g. her family had water when the taps were dry; she helped the whole street; neighbours followed her example (2)" },
+    { "id": "levels", "type": "match", "marks": 3, "prompt": "Match each question to its level.", "pairs": [
+      { "left": "Where does the story take place?", "right": "Literal" },
+      { "left": "Why do you think the neighbours helped?", "right": "Inferential" },
+      { "left": "Do you agree with Gogo's decision?", "right": "Evaluative" }
+    ] }
+  ]
+}

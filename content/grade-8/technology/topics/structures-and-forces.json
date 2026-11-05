@@ -1,0 +1,63 @@
+{
+  "id": "structures-and-forces",
+  "title": "Structures and Forces",
+  "term": 1,
+  "summary": "Types of structures (frame, shell and solid), the purposes of structures, static and dynamic loads, and the internal forces of tension, compression, bending, torsion and shear.",
+  "notes": [
+    { "type": "heading", "text": "What is a structure?" },
+    { "type": "definition", "term": "Structure", "text": "An object made of parts joined together that can support a load (carry weight) without collapsing, while keeping its shape." },
+    { "type": "list", "items": [
+      "**Natural structures**: trees, birds' nests, spider webs, skeletons, termite mounds.",
+      "**Human-made structures**: bridges, towers, houses, chairs, cellphone masts."
+    ] },
+    { "type": "heading", "text": "Types of structures" },
+    { "type": "table", "headers": ["Type", "Description", "Examples"], "rows": [
+      ["Frame structure", "A skeleton of parts (members) joined together; the frame carries the load", "Electricity pylons, roof trusses, bicycle frames, scaffolding, cranes"],
+      ["Shell structure", "A thin outer covering that is hollow inside; the shape gives it strength", "Eggs, crash helmets, cooldrink cans, car bodies, tortoise shells"],
+      ["Solid (mass) structure", "Made of a large amount of solid material; strength comes from its weight", "Dam walls, brick walls, pyramids, mountains"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Many structures combine types. A car has a **frame** chassis and a **shell** body; a house has **solid** brick walls and a **frame** roof." },
+    { "type": "heading", "text": "Purposes of structures" },
+    { "type": "list", "items": [
+      "**Support**: hold up a load (a table, a bridge).",
+      "**Protect**: keep something safe (a helmet, a cellphone cover).",
+      "**Contain**: hold things (a bottle, a box).",
+      "**Span**: cross a gap (a bridge).",
+      "**Shelter**: give cover (a house, a tent)."
+    ] },
+    { "type": "heading", "text": "Loads" },
+    { "type": "table", "headers": ["Load", "Meaning", "Example"], "rows": [
+      ["Static load", "A load that does not move or change", "The weight of the bridge itself; a TV on a table"],
+      ["Dynamic load", "A load that moves or changes", "Cars driving over a bridge; wind blowing on a tower; people jumping on a trampoline"]
+    ] },
+    { "type": "heading", "text": "Internal forces" },
+    { "type": "paragraph", "text": "When a load acts on a structure, forces develop inside its parts (members)." },
+    { "type": "table", "headers": ["Force", "Effect", "Example"], "rows": [
+      ["**Tension**", "Pulls or stretches a member", "Cables of a suspension bridge, a rope in a tug-of-war"],
+      ["**Compression**", "Pushes or squashes a member", "Pillars holding up a roof, the legs of a chair"],
+      ["**Bending**", "Tension on one side and compression on the other side of a beam", "A plank across a stream with someone standing in the middle"],
+      ["**Torsion**", "Twisting", "Wringing a wet cloth, turning a screwdriver"],
+      ["**Shear**", "Two forces in opposite directions that try to slide or cut parts past each other", "Scissors cutting paper, a bolt holding two plates together"]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 110\" font-family=\"sans-serif\" font-size=\"11\"><rect x=\"40\" y=\"40\" width=\"80\" height=\"14\" fill=\"#ddd\" stroke=\"black\"/><line x1=\"10\" y1=\"47\" x2=\"38\" y2=\"47\" stroke=\"black\" stroke-width=\"2\"/><polygon points=\"10,47 18,42 18,52\"/><line x1=\"122\" y1=\"47\" x2=\"150\" y2=\"47\" stroke=\"black\" stroke-width=\"2\"/><polygon points=\"150,47 142,42 142,52\"/><text x=\"55\" y=\"80\">tension</text><rect x=\"210\" y=\"40\" width=\"60\" height=\"14\" fill=\"#ddd\" stroke=\"black\"/><line x1=\"178\" y1=\"47\" x2=\"208\" y2=\"47\" stroke=\"black\" stroke-width=\"2\"/><polygon points=\"208,47 200,42 200,52\"/><line x1=\"272\" y1=\"47\" x2=\"302\" y2=\"47\" stroke=\"black\" stroke-width=\"2\"/><polygon points=\"272,47 280,42 280,52\"/><text x=\"205\" y=\"80\">compression</text></svg>", "caption": "Tension pulls a member apart; compression pushes it together" },
+    { "type": "callout", "label": "Exam tip", "text": "Ropes, cables and chains can only resist **tension**. Pillars, columns and struts resist **compression**." }
+  ],
+  "questions": [
+    { "id": "frame", "type": "mcq", "prompt": "An electricity pylon is an example of a…", "options": ["shell structure", "frame structure", "solid structure", "natural structure"], "answer": 1 },
+    { "id": "shell", "type": "short", "prompt": "What type of structure is an egg?", "answers": ["shell", "shell structure", "a shell structure"] },
+    { "id": "solid", "type": "mcq", "prompt": "Which is a solid structure?", "options": ["Crash helmet", "Roof truss", "Dam wall", "Bicycle frame"], "answer": 2 },
+    { "id": "dynamic", "type": "truefalse", "prompt": "Wind blowing against a building is a dynamic load.", "answer": true },
+    { "id": "tension", "type": "short", "prompt": "Which force stretches or pulls a member?", "answers": ["tension"] },
+    { "id": "forces-match", "type": "match", "marks": 5, "prompt": "Match each example to the internal force.", "pairs": [
+      { "left": "Wringing out a towel", "right": "Torsion" },
+      { "left": "Pillars holding up a stadium roof", "right": "Compression" },
+      { "left": "Cables of a suspension bridge", "right": "Tension" },
+      { "left": "Scissors cutting paper", "right": "Shear" },
+      { "left": "A diving board with a swimmer on the end", "right": "Bending" }
+    ] },
+    { "id": "static-dynamic", "type": "open", "marks": 2, "prompt": "What is the difference between a static load and a dynamic load?", "memo": "✓ A static load does not move or change, e.g. the weight of the structure (1)\n✓ A dynamic load moves or changes, e.g. traffic or wind (1)" },
+    { "id": "purposes", "type": "open", "marks": 3, "prompt": "Give THREE purposes of structures, with an example of each.", "memo": "Any three (1 each, with example): support; protect; contain; span; shelter" },
+    { "id": "combo", "type": "open", "marks": 2, "prompt": "Explain why a car is a combination of structure types.", "memo": "✓ The chassis is a frame structure (1)\n✓ The body is a thin shell structure (1)" },
+    { "id": "bending", "type": "open", "marks": 2, "prompt": "When a person stands in the middle of a plank across a stream, the plank bends. Which side is in tension and which in compression?", "memo": "✓ The top surface is in compression (1)\n✓ The bottom surface is in tension (1)" }
+  ]
+}

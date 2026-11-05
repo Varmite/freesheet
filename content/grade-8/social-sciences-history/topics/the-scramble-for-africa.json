@@ -1,0 +1,63 @@
+{
+  "id": "the-scramble-for-africa",
+  "title": "The Scramble for Africa",
+  "term": 3,
+  "summary": "Why European powers raced to colonise Africa in the late 1800s, the Berlin Conference, how Africa was divided, and how Africans resisted.",
+  "notes": [
+    { "type": "heading", "text": "What was the Scramble for Africa?" },
+    { "type": "paragraph", "text": "In **1870** Europeans controlled only about 10% of Africa, mostly along the coast. By **1914** they controlled about **90%**; only **Ethiopia** and **Liberia** remained independent. This rapid race by European powers to take over African land is called the **Scramble for Africa**." },
+    { "type": "definition", "term": "Colonialism", "text": "When a powerful country takes control of another territory and its people, rules them and uses the land and resources for its own benefit." },
+    { "type": "definition", "term": "Imperialism", "text": "The policy of extending a country's power and influence by gaining colonies or controlling other countries." },
+    { "type": "heading", "text": "Why did Europeans want colonies?" },
+    { "type": "table", "headers": ["Reason", "Explanation"], "rows": [
+      ["Economic", "Industrial Europe needed raw materials (rubber, cotton, palm oil, copper, gold) and new markets to sell factory goods"],
+      ["Political", "Colonies brought prestige and power; rivals Britain, France and Germany each wanted more land than the others"],
+      ["Strategic", "Control of sea routes, ports and the Suez Canal (opened 1869)"],
+      ["Social and religious", "Missionaries wanted to spread Christianity; many Europeans held racist ideas that they were 'civilising' Africans"],
+      ["Technology", "Quinine (against malaria), steamships, railways, the telegraph and the **Maxim gun** made conquest possible"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Europeans often said they were bringing 'civilisation, commerce and Christianity'. Historians point out that the main motive was economic gain, and that these ideas were used to justify taking African land." },
+    { "type": "heading", "text": "The Berlin Conference, 1884–1885" },
+    { "type": "paragraph", "text": "To avoid war between themselves, 14 countries met in **Berlin**, hosted by German Chancellor **Otto von Bismarck**. **No Africans were invited.** They agreed on rules for claiming African territory:" },
+    { "type": "list", "items": [
+      "A country had to inform the others of its claims.",
+      "It had to show **effective occupation**: officials, soldiers or traders on the ground.",
+      "King Leopold II of Belgium was recognised as owner of the **Congo Free State**.",
+      "Free trade and navigation were promised on the Congo and Niger rivers."
+    ] },
+    { "type": "paragraph", "text": "Borders were drawn with rulers on maps, often as straight lines, without regard for the people living there. Some ethnic groups were split between colonies, while rival groups were forced together. Many of these borders remain today and have caused conflicts after independence." },
+    { "type": "table", "caption": "Main colonial powers by 1914", "headers": ["Power", "Examples of colonies"], "rows": [
+      ["Britain", "Egypt, Nigeria, Gold Coast (Ghana), Kenya, Rhodesia, South Africa"],
+      ["France", "Algeria, Senegal, Mali, Madagascar, most of West Africa"],
+      ["Germany", "German South West Africa (Namibia), Tanganyika, Cameroon, Togo"],
+      ["Belgium", "Congo"],
+      ["Portugal", "Angola, Mozambique"],
+      ["Italy", "Libya, Eritrea, Somaliland"]
+    ] },
+    { "type": "heading", "text": "African resistance" },
+    { "type": "list", "items": [
+      "**Battle of Adwa (1896)**: Emperor **Menelik II** of Ethiopia defeated the Italian army and kept Ethiopia independent.",
+      "**Herero and Nama** in German South West Africa rose up in 1904; the Germans responded with genocide, killing about 80% of the Herero.",
+      "**Maji Maji rebellion** (1905–1907) in German East Africa.",
+      "**Asante** (Ashanti) wars against the British in the Gold Coast, including Yaa Asantewaa's war (1900).",
+      "**Battle of Isandlwana (1879)**: the Zulu army defeated the British, although the Zulu kingdom was conquered later that year."
+    ] }
+  ],
+  "questions": [
+    { "id": "independent", "type": "mcq", "prompt": "Which two African countries were still independent in 1914?", "options": ["Egypt and Kenya", "Ethiopia and Liberia", "Ghana and Nigeria", "Congo and Angola"], "answer": 1 },
+    { "id": "berlin-host", "type": "short", "prompt": "In which city was the conference held in 1884–1885 to divide Africa?", "answers": ["berlin"] },
+    { "id": "no-africans", "type": "truefalse", "prompt": "African leaders were invited to the Berlin Conference.", "answer": false },
+    { "id": "adwa", "type": "mcq", "prompt": "Which army did Menelik II defeat at the Battle of Adwa in 1896?", "options": ["British", "French", "German", "Italian"], "answer": 3 },
+    { "id": "maxim", "type": "short", "prompt": "Which early machine gun gave Europeans a huge military advantage in Africa?", "answers": ["maxim gun", "the maxim gun", "maxim"] },
+    { "id": "colonies-match", "type": "match", "marks": 4, "prompt": "Match each colony to the power that ruled it.", "pairs": [
+      { "left": "Congo", "right": "Belgium" },
+      { "left": "Mozambique", "right": "Portugal" },
+      { "left": "Namibia", "right": "Germany" },
+      { "left": "Senegal", "right": "France" }
+    ] },
+    { "id": "reasons", "type": "open", "marks": 4, "prompt": "Explain FOUR reasons why European countries colonised Africa.", "memo": "Any four, 1 each: raw materials; markets for goods; national prestige / rivalry; strategic sea routes; spreading Christianity / 'civilising mission'; new technology made it possible" },
+    { "id": "effective", "type": "open", "marks": 2, "prompt": "What did 'effective occupation' mean at the Berlin Conference?", "memo": "✓ A country could only claim land if it had real control on the ground (1)\n✓ such as officials, soldiers or trading posts (1)" },
+    { "id": "borders", "type": "open", "marks": 3, "prompt": "Explain how the way borders were drawn at the Berlin Conference still affects Africa today.", "memo": "✓ Borders were drawn on maps without considering the people (1)\n✓ Ethnic groups were split, and rival groups forced together (1)\n✓ This has caused border disputes and civil conflict after independence (1)" },
+    { "id": "colonialism", "type": "short", "prompt": "What word describes a powerful country taking control of another territory and using its resources?", "answers": ["colonialism", "imperialism", "colonisation", "colonization"] }
+  ]
+}

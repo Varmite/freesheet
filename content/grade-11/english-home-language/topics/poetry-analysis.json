@@ -1,0 +1,38 @@
+{
+  "id": "poetry-analysis",
+  "title": "Poetry: Tone, Imagery and Theme",
+  "term": 1,
+  "summary": "Analysing tone, imagery, symbolism, sound and structure in protest and social poetry, with William Blake's 'London', and writing the poetry essay of 250–300 words.",
+  "notes": [
+    { "type": "heading", "text": "Going deeper than devices" },
+    { "type": "paragraph", "text": "At Grade 11, naming a device is not enough. Ask: **what does it suggest, and how does it support the poem's tone and theme?** A strong answer follows the pattern *device + quotation + effect + link to theme*." },
+    { "type": "passage", "title": "London – William Blake (1794; public domain)", "text": "I wander thro' each charter'd street,\nNear where the charter'd Thames does flow.\nAnd mark in every face I meet\nMarks of weakness, marks of woe.\n\nIn every cry of every Man,\nIn every Infants cry of fear,\nIn every voice: in every ban,\nThe mind-forg'd manacles I hear\n\nHow the Chimney-sweepers cry\nEvery blackning Church appalls,\nAnd the hapless Soldiers sigh\nRuns in blood down Palace walls\n\nBut most thro' midnight streets I hear\nHow the youthful Harlots curse\nBlasts the new-born Infants tear\nAnd blights with plagues the Marriage hearse" },
+    { "type": "heading", "text": "Analysis" },
+    { "type": "list", "items": [
+      "**'charter'd'**: repeated to suggest that even the streets and the river are owned and controlled; ordinary people have no freedom.",
+      "**Repetition** of 'every' and **anaphora** ('In every…') show that suffering is everywhere; no one escapes.",
+      "**'mind-forg'd manacles'**: a metaphor (with alliteration) for mental chains: people are imprisoned by fear, rules and accepted ideas.",
+      "**Institutions criticised**: the Church ('blackning', ignoring child chimney-sweepers), the monarchy ('Palace walls' stained with soldiers' blood) and marriage ('Marriage hearse', an oxymoron joining love and death).",
+      "**Sound**: harsh words ('cry', 'curse', 'blasts', 'blights') create a bitter, angry tone.",
+      "**Structure**: four regular quatrains with an ABAB rhyme scheme; the regularity mirrors the rigid, controlled city.",
+      "**Tone**: bitter, condemning, despairing. **Theme**: social injustice and the oppression of the poor by powerful institutions."
+    ] },
+    { "type": "callout", "label": "The poetry essay", "text": "250–300 words. Introduction with a thesis that answers the topic; two or three body paragraphs, each dealing with an aspect (diction, imagery, tone, structure) with embedded quotations; brief conclusion. Do not paraphrase the poem line by line." }
+  ],
+  "questions": [
+    { "id": "stanzas", "type": "numeric", "prompt": "How many stanzas does 'London' have?", "answer": 4, "tolerance": 0 },
+    { "id": "manacles", "type": "mcq", "prompt": "What are 'mind-forg'd manacles'?", "options": ["Real chains made by blacksmiths", "Mental restrictions people accept", "Jewellery", "Prison walls"], "answer": 1 },
+    { "id": "oxymoron", "type": "short", "prompt": "Name the figure of speech in 'Marriage hearse'.", "answers": ["oxymoron", "an oxymoron"] },
+    { "id": "anaphora", "type": "truefalse", "prompt": "The repetition of 'In every' at the start of lines is an example of anaphora.", "answer": true },
+    { "id": "rhyme", "type": "short", "prompt": "Give the rhyme scheme of each stanza.", "answers": ["abab"] },
+    { "id": "institutions", "type": "match", "marks": 3, "prompt": "Match each image to the institution Blake criticises.", "pairs": [
+      { "left": "'blackning Church'", "right": "Religion" },
+      { "left": "'Palace walls'", "right": "The monarchy / state" },
+      { "left": "'Marriage hearse'", "right": "Marriage" }
+    ] },
+    { "id": "charterd", "type": "open", "marks": 3, "prompt": "Discuss the effect of the repetition of 'charter'd' in the first two lines.", "memo": "✓ 'Chartered' means owned/controlled by law or commerce (1)\n✓ Even the natural river is controlled, which is unnatural (1)\n✓ This suggests ordinary people have no freedom; it sets the oppressive tone (1)" },
+    { "id": "marks", "type": "open", "marks": 2, "prompt": "Explain the play on the word 'mark' in lines 3–4.", "memo": "✓ First 'mark' means to notice (1)\n✓ 'Marks' means visible signs/scars of suffering on people's faces (1)" },
+    { "id": "tone", "type": "open", "marks": 3, "prompt": "Describe the speaker's tone and support your answer with TWO quotations.", "memo": "✓ Bitter/angry/despairing/condemning (1)\n✓ Quotation 1, e.g. 'Marks of weakness, marks of woe' (1)\n✓ Quotation 2, e.g. 'Runs in blood down Palace walls' (1)" },
+    { "id": "soldier", "type": "open", "marks": 2, "prompt": "What does 'the hapless Soldiers sigh / Runs in blood down Palace walls' suggest?", "memo": "✓ Soldiers suffer and die in wars for the rulers (1)\n✓ The rulers are guilty/stained by their blood (1)" }
+  ]
+}

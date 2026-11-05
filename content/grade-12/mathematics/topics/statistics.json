@@ -1,0 +1,47 @@
+{
+  "id": "statistics",
+  "title": "Statistics: Regression and Correlation",
+  "term": 3,
+  "summary": "Bivariate data, scatter plots, the least-squares regression line, the correlation coefficient $r$, and making and judging predictions.",
+  "notes": [
+    { "type": "heading", "text": "Bivariate data and scatter plots" },
+    { "type": "paragraph", "text": "**Bivariate data** has two variables for each item, such as hours studied ($x$) and test mark ($y$). A **scatter plot** shows each pair as a point, revealing any relationship." },
+    { "type": "table", "headers": ["Pattern", "Meaning"], "rows": [
+      ["Points rise from left to right", "Positive correlation: as $x$ increases, $y$ tends to increase"],
+      ["Points fall from left to right", "Negative correlation"],
+      ["No clear pattern", "No correlation"],
+      ["Points close to a line", "Strong correlation; scattered loosely = weak"]
+    ] },
+    { "type": "heading", "text": "The least-squares regression line" },
+    { "type": "formula", "latex": "\\hat{y} = a + bx", "caption": "The line of best fit: $b$ is the gradient and $a$ the $y$-intercept (found on the calculator in STAT mode, linear regression)" },
+    { "type": "paragraph", "text": "The least-squares line minimises the sum of the squared vertical distances from the points to the line. It always passes through the point $(\\bar{x}; \\bar{y})$." },
+    { "type": "heading", "text": "The correlation coefficient" },
+    { "type": "paragraph", "text": "The **correlation coefficient** $r$ measures the strength and direction of a **linear** relationship, with $-1 \\leq r \\leq 1$." },
+    { "type": "table", "headers": ["Value of $r$", "Interpretation"], "rows": [
+      ["$r = 1$ or $r = -1$", "Perfect positive / negative correlation"],
+      ["$0{,}8 \\leq |r| < 1$", "Strong"],
+      ["$0{,}5 \\leq |r| < 0{,}8$", "Moderate"],
+      ["$|r| < 0{,}5$", "Weak"],
+      ["$r = 0$", "No linear correlation"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Hours studied: 1; 2; 3; 4; 5; 6. Marks: 45; 50; 58; 62; 70; 77. Find the regression line and $r$, and predict the mark for 7 hours.", "steps": [
+      "Calculator: $a = 37{,}93$, $b = 6{,}4$, so $\\hat{y} = 37{,}93 + 6{,}4x$",
+      "$r = 0{,}997$: a very strong positive correlation",
+      "$\\hat{y} = 37{,}93 + 6{,}4(7) \\approx 82{,}7$"
+    ], "answer": "$\\hat{y} = 37{,}93 + 6{,}4x$; $r \\approx 0{,}997$; about 83%" },
+    { "type": "callout", "label": "Interpolation and extrapolation", "text": "Predictions **within** the range of the data (interpolation) are more reliable than predictions **outside** it (extrapolation). Predicting a mark for 20 hours of study would give over 160%, which is impossible." },
+    { "type": "callout", "label": "Correlation is not causation", "text": "A strong correlation does not prove that one variable causes the other. Ice-cream sales and drownings are correlated because both increase in hot weather." }
+  ],
+  "questions": [
+    { "id": "positive", "type": "mcq", "prompt": "In a scatter plot the points fall from left to right. The correlation is…", "options": ["positive", "negative", "zero", "perfect"], "answer": 1 },
+    { "id": "range-r", "type": "mcq", "prompt": "Which value cannot be a correlation coefficient?", "options": ["$-0{,}95$", "$0$", "$0{,}6$", "$1{,}2$"], "answer": 3 },
+    { "id": "strong", "type": "mcq", "prompt": "$r = -0{,}91$ indicates a…", "options": ["weak positive correlation", "strong negative correlation", "moderate negative correlation", "no correlation"], "answer": 1 },
+    { "id": "predict", "type": "numeric", "prompt": "The regression line is $\\hat{y} = 12 + 3{,}5x$. Predict $y$ when $x = 8$.", "answer": 40, "tolerance": 0 },
+    { "id": "mean-point", "type": "truefalse", "prompt": "The least-squares regression line always passes through $(\\bar{x}; \\bar{y})$.", "answer": true },
+    { "id": "calc", "type": "open", "marks": 4, "prompt": "Data: $x$: 2; 4; 6; 8; 10 and $y$: 5; 9; 12; 17; 20. Use a calculator to find the equation of the least-squares regression line and the correlation coefficient.", "memo": "✓ $a = 1{,}2$ (1)\n✓ $b = 1{,}9$ (1)\n✓ $\\hat{y} = 1{,}2 + 1{,}9x$ (1)\n✓ $r \\approx 0{,}997$ (1)" },
+    { "id": "extrapolate", "type": "open", "marks": 2, "prompt": "Why is it risky to use a regression line to make predictions far outside the range of the data?", "memo": "✓ The relationship may not continue in the same way beyond the data (1)\n✓ so predictions may be unrealistic or impossible (1)" },
+    { "id": "causation", "type": "open", "marks": 2, "prompt": "A study finds a strong positive correlation between shoe size and reading ability in primary school children. Does a bigger foot cause better reading? Explain.", "memo": "✓ No (1)\n✓ Both increase with age (a third variable); correlation does not prove causation (1)" },
+    { "id": "gradient", "type": "open", "marks": 2, "prompt": "Interpret the gradient $b = 6{,}4$ in worked example 1.", "memo": "✓ For each extra hour of study (1)\n✓ the mark increases by about 6,4% on average (1)" },
+    { "id": "weak", "type": "open", "marks": 2, "prompt": "What does a correlation coefficient of $r = 0{,}2$ tell you about predictions made with the regression line?", "memo": "✓ The linear correlation is weak (1)\n✓ so predictions will not be reliable (1)" }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "visual-literacy",
+  "title": "Visual Literacy: Advertisements and Cartoons",
+  "term": 2,
+  "summary": "Reading visual texts: layout, images, colour, font, slogans and target audience in advertisements, and frames, speech bubbles and humour in cartoons.",
+  "notes": [
+    { "type": "heading", "text": "Parts of an advertisement" },
+    { "type": "table", "headers": ["Element", "Purpose"], "rows": [
+      ["Headline", "Grabs attention, often with a pun or question"],
+      ["Visual (image)", "Shows the product or creates a mood"],
+      ["Body copy", "Gives information and persuades"],
+      ["Slogan", "A memorable phrase linked to the brand"],
+      ["Logo", "The brand's symbol"],
+      ["Call to action", "Tells the reader what to do: 'Order now!'"]
+    ] },
+    { "type": "heading", "text": "Design choices" },
+    { "type": "list", "items": [
+      "**Colour**: green suggests nature and health; red suggests energy, danger or passion; gold suggests luxury.",
+      "**Font**: bold capitals for urgency; elegant script for luxury.",
+      "**Layout**: the eye is drawn to the largest or brightest item first.",
+      "**Target audience**: who the advert is aimed at, shown by images, language and the product."
+    ] },
+    { "type": "passage", "title": "Described advertisement (original)", "text": "A smiling teenager in a soccer kit drinks from a bright green bottle. Water droplets sparkle on the bottle. HEADLINE (large white capitals): 'GAME ON!' BODY COPY: 'Fuel up with ZEST Sports Water: zero sugar, all-natural lemon flavour, and the electrolytes your body needs.' SLOGAN (bottom right, beside a lightning-bolt logo): 'ZEST. Feel the charge.'" },
+    { "type": "heading", "text": "Cartoons" },
+    { "type": "paragraph", "text": "Cartoons use **frames**, **speech bubbles** (words), **thought bubbles** (thoughts), **facial expressions**, **body language** and **exaggeration**. Humour often comes from **irony**, **puns** or a surprising **punchline** in the last frame." },
+    { "type": "callout", "label": "Exam tip", "text": "Describe what you see, then explain its effect: 'The teenager's broad smile suggests the drink makes you feel happy and energetic.'" }
+  ],
+  "questions": [
+    { "id": "slogan", "type": "short", "prompt": "Quote the slogan of the ZEST advertisement.", "answers": ["zest. feel the charge.", "zest. feel the charge", "feel the charge"] },
+    { "id": "audience", "type": "mcq", "prompt": "Who is the most likely target audience of the ZEST advertisement?", "options": ["Retired people", "Young, sporty people", "Babies", "Business travellers"], "answer": 1 },
+    { "id": "green", "type": "mcq", "prompt": "What does the green colour of the bottle most likely suggest?", "options": ["Danger", "Health and nature", "Luxury", "Sadness"], "answer": 1 },
+    { "id": "call", "type": "truefalse", "prompt": "'Order now!' is an example of a call to action.", "answer": true },
+    { "id": "thought", "type": "truefalse", "prompt": "Speech bubbles in cartoons show what characters are thinking but not saying.", "answer": false },
+    { "id": "elements", "type": "match", "marks": 4, "prompt": "Match each ZEST element to its type.", "pairs": [
+      { "left": "'GAME ON!'", "right": "Headline" },
+      { "left": "Lightning bolt", "right": "Logo" },
+      { "left": "'zero sugar, all-natural lemon flavour'", "right": "Body copy" },
+      { "left": "Teenager in soccer kit", "right": "Visual" }
+    ] },
+    { "id": "headline", "type": "open", "marks": 2, "prompt": "Explain why 'GAME ON!' is an effective headline.", "memo": "✓ It is short, bold and energetic (1)\n✓ and links the drink to sport/excitement, appealing to the target audience (1)" },
+    { "id": "pun", "type": "open", "marks": 2, "prompt": "Explain the double meaning of 'Feel the charge'.", "memo": "✓ 'Charge' means energy/electrical charge (linked to the lightning bolt and electrolytes) (1)\n✓ and to charge forward/attack in a game (1)" },
+    { "id": "droplets", "type": "open", "marks": 2, "prompt": "Why does the designer show water droplets on the bottle?", "memo": "✓ They suggest the drink is cold (1)\n✓ and refreshing, making it more appealing (1)" },
+    { "id": "evaluate", "type": "open", "marks": 2, "prompt": "Do you think the advertisement is convincing? Give ONE reason.", "memo": "✓ Clear opinion (1)\n✓ Supported reason from the visual or text (1)" }
+  ]
+}

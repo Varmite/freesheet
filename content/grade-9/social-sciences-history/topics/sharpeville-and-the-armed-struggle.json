@@ -1,0 +1,42 @@
+{
+  "id": "sharpeville-and-the-armed-struggle",
+  "title": "1960: Sharpeville and the Armed Struggle",
+  "term": 3,
+  "summary": "The formation of the PAC, the Sharpeville massacre of 21 March 1960, the banning of the liberation movements, the turn to armed struggle and the Rivonia Trial.",
+  "notes": [
+    { "type": "heading", "text": "The Pan Africanist Congress" },
+    { "type": "paragraph", "text": "In **1959** some members left the ANC to form the **Pan Africanist Congress (PAC)**, led by **Robert Sobukwe**. The PAC believed that Africans should lead their own liberation and disagreed with the multiracial Congress Alliance and parts of the Freedom Charter." },
+    { "type": "heading", "text": "The Sharpeville massacre, 21 March 1960" },
+    { "type": "paragraph", "text": "The PAC called on people to leave their passes at home and present themselves for arrest at police stations, so that the jails would be overwhelmed. At **Sharpeville**, near Vereeniging, about 5 000 to 7 000 unarmed people gathered outside the police station. The police opened fire: **69 people were killed** and about 180 wounded. Most were shot in the back while running away." },
+    { "type": "passage", "title": "Source I: A survivor's account (a composite based on survivors' testimonies)", "text": "We were singing and some were laughing. Nobody had a weapon. Then the shooting started and people began to fall. We ran, but the bullets were following us. I saw a woman fall next to me; she was shot in the back." },
+    { "type": "passage", "title": "Source J: A police commander's view (a composite based on police statements to the press in 1960)", "text": "The native mentality does not allow them to gather for a peaceful demonstration. For them to gather means violence. My men were in danger and had to defend themselves." },
+    { "type": "callout", "label": "Exam tip", "text": "When two sources disagree, consider who wrote each one and why. The police commander had a reason to justify the shooting; his words also show racist assumptions. Evidence of wounds in the back supports the survivors' account." },
+    { "type": "heading", "text": "Results of Sharpeville" },
+    { "type": "list", "items": [
+      "There was worldwide condemnation; for the first time, the UN Security Council criticised South Africa.",
+      "A **State of Emergency** was declared and about 18 000 people were detained.",
+      "On **8 April 1960** the **ANC and PAC were banned** under the Unlawful Organisations Act.",
+      "In 1961 South Africa became a **republic** and left the Commonwealth.",
+      "Peaceful protest seemed impossible, so the movements turned to **armed struggle**.",
+      "21 March is now **Human Rights Day** in South Africa."
+    ] },
+    { "type": "heading", "text": "The armed struggle" },
+    { "type": "paragraph", "text": "In **1961** the ANC and the South African Communist Party formed **Umkhonto we Sizwe (MK)**, 'Spear of the Nation', with Mandela as its first commander. MK began a campaign of **sabotage** on 16 December 1961, attacking government buildings, power lines and railways while trying to avoid loss of life. The PAC's armed wing was called **Poqo** (later APLA)." },
+    { "type": "heading", "text": "The Rivonia Trial, 1963–1964" },
+    { "type": "paragraph", "text": "In July 1963 police raided **Liliesleaf Farm** in Rivonia, the secret headquarters of MK, and arrested Walter Sisulu, Govan Mbeki, Ahmed Kathrada and others. Mandela, already in prison, was tried with them for sabotage. In **June 1964**, eight of the accused, including Mandela, were sentenced to **life imprisonment**, most of them on **Robben Island**." },
+    { "type": "passage", "title": "Source K: From Nelson Mandela's statement at the Rivonia Trial, 20 April 1964", "text": "I have fought against white domination, and I have fought against black domination. I have cherished the ideal of a democratic and free society in which all persons live together in harmony and with equal opportunities. It is an ideal which I hope to live for and to achieve. But if needs be, it is an ideal for which I am prepared to die." },
+    { "type": "paragraph", "text": "Through the 1960s the government crushed internal resistance. Leaders were jailed, banned or forced into **exile**; Oliver Tambo led the ANC from abroad, building international support." }
+  ],
+  "questions": [
+    { "id": "pac-leader", "type": "short", "prompt": "Who led the PAC when it was formed in 1959?", "answers": ["robert sobukwe", "sobukwe"] },
+    { "id": "date", "type": "mcq", "prompt": "On which date did the Sharpeville massacre take place?", "options": ["16 June 1976", "21 March 1960", "9 August 1956", "26 June 1955"], "answer": 1 },
+    { "id": "deaths", "type": "numeric", "prompt": "How many people were killed at Sharpeville?", "answer": 69, "tolerance": 0 },
+    { "id": "mk", "type": "short", "prompt": "What was the name of the ANC's armed wing formed in 1961?", "answers": ["umkhonto we sizwe", "mk"] },
+    { "id": "banned", "type": "truefalse", "prompt": "The ANC and PAC were banned after the Sharpeville massacre.", "answer": true },
+    { "id": "human-rights-day", "type": "mcq", "prompt": "21 March is commemorated today as…", "options": ["Freedom Day", "Youth Day", "Human Rights Day", "Heritage Day"], "answer": 2 },
+    { "id": "sources", "type": "open", "marks": 4, "prompt": "Compare Sources I and J. (a) How do they differ about the crowd? (b) Which source is more reliable? Give TWO reasons.", "memo": "(a) ✓ Source I says the crowd was peaceful and unarmed; Source J claims they were violent and the police were in danger (1)\n(b) ✓ Source I is more reliable (1)\n✓ Evidence that most were shot in the back supports it (1)\n✓ The commander wanted to justify the police and shows racist bias (1)" },
+    { "id": "turn-armed", "type": "open", "marks": 3, "prompt": "Why did the ANC turn to armed struggle in 1961?", "memo": "✓ Peaceful protest had been met with violence, e.g. Sharpeville (1)\n✓ The ANC was banned, so legal protest was impossible (1)\n✓ The government ignored all demands for rights (1)" },
+    { "id": "source-k", "type": "open", "marks": 2, "prompt": "Read Source K. What kind of society did Mandela want?", "memo": "✓ A democratic and free society (1)\n✓ where all people live in harmony with equal opportunities, without white or black domination (1)" },
+    { "id": "rivonia", "type": "open", "marks": 2, "prompt": "What was the outcome of the Rivonia Trial?", "memo": "✓ Mandela and seven others were sentenced to life imprisonment (1)\n✓ Most were sent to Robben Island (1)" }
+  ]
+}

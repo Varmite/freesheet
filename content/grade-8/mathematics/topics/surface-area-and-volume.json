@@ -1,0 +1,98 @@
+{
+  "id": "surface-area-and-volume",
+  "title": "Surface Area and Volume of 3D Objects",
+  "term": 3,
+  "summary": "Calculate the surface area and volume of cubes, rectangular prisms and triangular prisms, use nets, and convert between units of volume and capacity.",
+  "notes": [
+    { "type": "heading", "text": "Prisms" },
+    { "type": "paragraph", "text": "A **prism** is a 3D object with two identical, parallel faces (the **bases**) joined by rectangular faces. The prism is named after the shape of its base: a **rectangular prism** has rectangular bases, a **triangular prism** has triangular bases, and a **cube** is a rectangular prism with all edges equal." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 200\" font-family=\"sans-serif\" font-size=\"13\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.8\"><polygon points=\"45,70 185,70 185,160 45,160\"/><polyline points=\"45,70 95,30 235,30 185,70\"/><polyline points=\"235,30 235,120 185,160\"/><polygon points=\"270,160 350,160 310,95\"/><polyline points=\"310,95 360,55 400,120 350,160\"/></g><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"><polyline points=\"45,160 95,120 95,30\"/><line x1=\"95\" y1=\"120\" x2=\"235\" y2=\"120\"/><polyline points=\"270,160 320,120 400,120\"/><line x1=\"320\" y1=\"120\" x2=\"360\" y2=\"55\"/></g><g fill=\"#000\"><text x=\"98\" y=\"178\">l = 7 cm</text><text x=\"2\" y=\"120\">h = 5</text><text x=\"212\" y=\"155\">b = 4</text><text x=\"85\" y=\"196\">Rectangular prism</text><text x=\"290\" y=\"196\">Triangular prism</text></g></svg>", "caption": "A rectangular prism (7 cm by 4 cm by 5 cm) and a triangular prism. Dashed lines are hidden edges." },
+    { "type": "table", "caption": "Faces, edges and vertices", "headers": ["Object", "Faces", "Edges", "Vertices"], "rows": [
+      ["Cube", "6 squares", "12", "8"],
+      ["Rectangular prism", "6 rectangles", "12", "8"],
+      ["Triangular prism", "2 triangles + 3 rectangles", "9", "6"]
+    ] },
+
+    { "type": "heading", "text": "Surface area" },
+    { "type": "definition", "term": "Surface area", "text": "The **surface area** of a 3D object is the total area of all its faces. If you unfold the object flat, you get its **net**; the surface area is the area of the net. Units: $\\text{cm}^2$, $\\text{m}^2$." },
+    { "type": "table", "caption": "Surface area formulae", "headers": ["Object", "Surface area"], "rows": [
+      ["Cube with edge $s$", "$6s^2$"],
+      ["Rectangular prism", "$2(lb + lh + bh)$"],
+      ["Triangular prism", "$2 \\times \\text{area of triangle} + \\text{area of the three rectangles}$"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Calculate the surface area of the rectangular prism in the diagram ($l = 7$ cm, $b = 4$ cm, $h = 5$ cm).", "steps": [
+      "There are three pairs of equal faces.",
+      "Top and bottom: $2 \\times 7 \\times 4 = 56$; front and back: $2 \\times 7 \\times 5 = 70$; two ends: $2 \\times 4 \\times 5 = 40$.",
+      "Total: $56 + 70 + 40 = 166\\ \\text{cm}^2$."
+    ], "answer": "$166\\ \\text{cm}^2$" },
+    { "type": "example", "title": "Worked example 2: a triangular prism", "problem": "A triangular prism has right-angled triangles with sides 3 cm, 4 cm and 5 cm as its ends. The prism is 10 cm long. Calculate its surface area.", "steps": [
+      "Two triangles: $2 \\times \\frac{1}{2} \\times 3 \\times 4 = 12\\ \\text{cm}^2$.",
+      "Three rectangles, one for each side of the triangle: $3 \\times 10 + 4 \\times 10 + 5 \\times 10 = 120\\ \\text{cm}^2$.",
+      "Total: $12 + 120 = 132\\ \\text{cm}^2$."
+    ], "answer": "$132\\ \\text{cm}^2$" },
+    { "type": "callout", "label": "Common mistake", "text": "In a triangular prism, the three rectangles are usually **different** sizes, because the triangle's sides are different. Each rectangle has the length of the prism and the width of one side of the triangle." },
+
+    { "type": "heading", "text": "Volume" },
+    { "type": "definition", "term": "Volume", "text": "**Volume** is the amount of space a 3D object takes up. It is measured in **cubic units**: $\\text{mm}^3$, $\\text{cm}^3$, $\\text{m}^3$." },
+    { "type": "formula", "latex": "V = \\text{area of base} \\times \\text{height of prism}", "caption": "Volume of any prism" },
+    { "type": "table", "caption": "Volume formulae", "headers": ["Object", "Volume"], "rows": [
+      ["Cube", "$V = s^3$"],
+      ["Rectangular prism", "$V = l \\times b \\times h$"],
+      ["Triangular prism", "$V = \\left(\\frac{1}{2} \\times \\text{base} \\times \\text{height of triangle}\\right) \\times \\text{length of prism}$"]
+    ] },
+    { "type": "example", "title": "Worked example 3", "problem": "(a) Find the volume of the rectangular prism in the diagram.\n(b) A triangular prism has a triangle with base 6 cm and height 4 cm, and is 10 cm long. Find its volume.", "steps": [
+      "(a) $V = 7 \\times 4 \\times 5 = 140\\ \\text{cm}^3$.",
+      "(b) Area of base (the triangle) $= \\frac{1}{2} \\times 6 \\times 4 = 12\\ \\text{cm}^2$.",
+      "$V = 12 \\times 10 = 120\\ \\text{cm}^3$."
+    ], "answer": "(a) $140\\ \\text{cm}^3$  (b) $120\\ \\text{cm}^3$" },
+    { "type": "callout", "label": "Exam tip", "text": "Two different \"heights\" appear in a triangular prism: the height of the **triangle** (used for its area) and the length (or height) of the **prism**. Label your sketch so you do not mix them up." },
+
+    { "type": "heading", "text": "Capacity and unit conversions" },
+    { "type": "paragraph", "text": "**Capacity** is the amount a container can hold, usually measured in millilitres (ml), litres (l) and kilolitres (kl). Volume and capacity are linked:" },
+    { "type": "table", "caption": "Volume and capacity", "headers": ["Volume", "Capacity"], "rows": [
+      ["$1\\ \\text{cm}^3$", "1 ml"],
+      ["$1\\ 000\\ \\text{cm}^3$", "1 litre"],
+      ["$1\\ \\text{m}^3 = 1\\ 000\\ 000\\ \\text{cm}^3$", "1 000 litres = 1 kl"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "Volume conversions use the **cube** of the length conversion. $1\\ \\text{m} = 100\\ \\text{cm}$, so $1\\ \\text{m}^3 = 100 \\times 100 \\times 100 = 1\\ 000\\ 000\\ \\text{cm}^3$, not $100\\ \\text{cm}^3$." },
+    { "type": "example", "title": "Worked example 4: a water tank", "problem": "A rectangular water tank is 2 m long, 1,5 m wide and 1 m high. How many litres of water can it hold?", "steps": [
+      "$V = 2 \\times 1{,}5 \\times 1 = 3\\ \\text{m}^3$.",
+      "$1\\ \\text{m}^3 = 1\\ 000$ litres, so $3\\ \\text{m}^3 = 3\\ 000$ litres."
+    ], "answer": "3 000 litres" },
+
+    { "type": "heading", "text": "Changing the dimensions" },
+    { "type": "paragraph", "text": "If every edge of a cube is doubled, the surface area is multiplied by $2^2 = 4$ and the volume is multiplied by $2^3 = 8$. A cube with edge 2 cm has volume $8\\ \\text{cm}^3$; a cube with edge 4 cm has volume $64\\ \\text{cm}^3$, which is 8 times as big." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Surface area = total area of all faces (the net). Cube: $6s^2$; rectangular prism: $2(lb + lh + bh)$.",
+      "Volume of a prism = area of base × height. Cube: $s^3$; rectangular prism: $lbh$.",
+      "Triangular prism: volume $= \\frac{1}{2}bh \\times$ length; surface area = 2 triangles + 3 rectangles.",
+      "$1\\ \\text{cm}^3 = 1$ ml; $1\\ 000\\ \\text{cm}^3 = 1$ l; $1\\ \\text{m}^3 = 1\\ 000$ l.",
+      "Doubling every edge multiplies surface area by 4 and volume by 8."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "Calculate the volume of a cube with edges of 4 cm.", "unit": "cm³", "answer": 64, "tolerance": 0, "explanation": "$4^3 = 64\\ \\text{cm}^3$." },
+    { "id": "q2", "type": "numeric", "prompt": "Calculate the volume of a rectangular prism 7 cm long, 4 cm wide and 5 cm high.", "unit": "cm³", "answer": 140, "tolerance": 0, "explanation": "$7 \\times 4 \\times 5 = 140\\ \\text{cm}^3$." },
+    { "id": "q3", "type": "numeric", "prompt": "Calculate the surface area of a cube with edges of 3 cm.", "unit": "cm²", "answer": 54, "tolerance": 0, "explanation": "$6 \\times 3^2 = 54\\ \\text{cm}^2$." },
+    { "id": "q4", "type": "numeric", "prompt": "Calculate the surface area of a rectangular prism 7 cm long, 4 cm wide and 5 cm high.", "unit": "cm²", "answer": 166, "tolerance": 0, "explanation": "$2(28 + 35 + 20) = 2 \\times 83 = 166\\ \\text{cm}^2$." },
+    { "id": "q5", "type": "truefalse", "prompt": "1 litre $= 1\\ 000\\ \\text{cm}^3$.", "answer": true, "explanation": "$1\\ \\text{cm}^3 = 1$ ml and $1\\ 000$ ml $= 1$ litre." },
+    { "id": "q6", "type": "numeric", "prompt": "A tank is 2 m long, 1,5 m wide and 1 m high. How many litres can it hold?", "unit": "litres", "answer": 3000, "tolerance": 0, "explanation": "$3\\ \\text{m}^3 \\times 1\\ 000 = 3\\ 000$ litres." },
+    { "id": "q7", "type": "mcq", "prompt": "Which formula gives the volume of any prism?", "options": ["Perimeter of base × height", "Area of base × height", "Sum of the areas of all faces", "½ × base × height"], "answer": 1, "explanation": "Volume of a prism = area of the base × the height (length) of the prism." },
+    { "id": "q8", "type": "numeric", "prompt": "A triangular prism has a triangular base with base 6 cm and height 4 cm. The prism is 10 cm long. Calculate its volume.", "unit": "cm³", "answer": 120, "tolerance": 0, "explanation": "Triangle: $\\frac{1}{2} \\times 6 \\times 4 = 12\\ \\text{cm}^2$; volume $= 12 \\times 10 = 120\\ \\text{cm}^3$." },
+    { "id": "q9", "type": "match", "prompt": "Match each volume with the equal capacity.", "marks": 4, "pairs": [
+      { "left": "$1\\ \\text{cm}^3$", "right": "1 ml" },
+      { "left": "$1\\ 000\\ \\text{cm}^3$", "right": "1 litre" },
+      { "left": "$1\\ \\text{m}^3$", "right": "1 000 litres" },
+      { "left": "$500\\ \\text{cm}^3$", "right": "500 ml" }
+    ], "explanation": "$1\\ \\text{cm}^3 = 1$ ml, so $1\\ 000\\ \\text{cm}^3 = 1$ litre and $1\\ \\text{m}^3 = 1\\ 000\\ 000\\ \\text{cm}^3 = 1\\ 000$ litres." },
+    { "id": "q10", "type": "numeric", "prompt": "How many cubes with 2 cm edges fit exactly into a box measuring 10 cm by 6 cm by 4 cm?", "answer": 30, "tolerance": 0, "explanation": "$5$ along the length, $3$ across and $2$ up: $5 \\times 3 \\times 2 = 30$. (Or $240 \\div 8 = 30$.)" },
+    { "id": "q11", "type": "numeric", "prompt": "A rectangular prism has a volume of $120\\ \\text{cm}^3$. Its base is 6 cm by 5 cm. Calculate its height.", "unit": "cm", "answer": 4, "tolerance": 0, "explanation": "$120 = 30 \\times h$, so $h = 4$ cm." },
+    { "id": "q12", "type": "mcq", "prompt": "How many squares does the net of a cube have?", "options": ["4", "5", "6", "8"], "answer": 2, "explanation": "A cube has 6 faces, so its net has 6 squares." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "A triangular prism has right-angled triangles with sides 3 cm, 4 cm and 5 cm at its ends, and is 10 cm long. Calculate its total surface area.", "memo": "Two triangles: $2 \\times \\frac{1}{2} \\times 3 \\times 4 = 12\\ \\text{cm}^2$ ✓ (1)\nRectangles: $30 + 40 + 50$ ✓ $= 120\\ \\text{cm}^2$ ✓ (2)\nTotal $= 132\\ \\text{cm}^2$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "A fish tank is 60 cm long, 30 cm wide and 40 cm high.\n(a) Calculate its volume in $\\text{cm}^3$.  (1)\n(b) How many litres does it hold when full?  (1)\n(c) How many litres are needed to fill it to $\\frac{3}{4}$ of its height?  (2)", "memo": "(a) $60 \\times 30 \\times 40 = 72\\ 000\\ \\text{cm}^3$ ✓ (1)\n(b) $72$ litres ✓ (1)\n(c) $\\frac{3}{4} \\times 72$ ✓ $= 54$ litres ✓ (2)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "A closed wooden box is 2 m long, 1 m wide and 0,5 m high. The outside must be painted. One litre of paint covers $2{,}5\\ \\text{m}^2$. Paint is sold in 1-litre tins. How many tins must be bought?", "memo": "$\\text{SA} = 2(2 \\times 1 + 2 \\times 0{,}5 + 1 \\times 0{,}5) = 7\\ \\text{m}^2$ ✓ (1)\n$7 \\div 2{,}5 = 2{,}8$ litres ✓ (1)\nBuy 3 tins (round up) ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "The edges of a cube are doubled. By what number is its volume multiplied? Explain.", "memo": "Volume is multiplied by 8 ✓ (1)\n$(2s)^3 = 8s^3$, because each of the three dimensions doubles ✓ (1)" }
+  ]
+}

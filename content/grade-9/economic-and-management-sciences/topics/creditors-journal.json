@@ -1,0 +1,53 @@
+{
+  "id": "creditors-journal",
+  "title": "Credit Transactions: The Creditors Journal",
+  "term": 3,
+  "summary": "Buying on credit, creditors as liabilities, the original invoice as source document, recording credit purchases in the Creditors Journal, paying creditors and posting to the ledger.",
+  "notes": [
+    { "type": "heading", "text": "Buying on credit" },
+    { "type": "paragraph", "text": "Businesses often buy trading stock and other items from suppliers on credit and pay later, usually within 30 to 60 days. A supplier to whom the business owes money is a **creditor**. Creditors are a **liability**." },
+    { "type": "table", "headers": ["Advantages of buying on credit", "Disadvantages"], "rows": [
+      ["The business can sell the goods before paying for them", "Interest may be charged on late payments"],
+      ["Helps cash flow, especially for new businesses", "Too much debt can lead to financial trouble"],
+      ["Builds a credit record with suppliers", "Discounts for paying cash may be lost"]
+    ] },
+    { "type": "heading", "text": "The source document" },
+    { "type": "paragraph", "text": "When buying on credit, the business receives the **original invoice** from the supplier. This is the source document for the **Creditors Journal (CJ)**." },
+    { "type": "callout", "label": "Remember", "text": "Selling on credit: the business issues the invoice and keeps the **duplicate** (Debtors Journal). Buying on credit: the business receives the **original** invoice (Creditors Journal)." },
+    { "type": "heading", "text": "The Creditors Journal" },
+    { "type": "table", "caption": "Creditors Journal of Kasi Fashions, April 2025", "headers": ["Doc", "Day", "Creditor", "Fol", "Creditors control", "Trading stock", "Stationery", "Sundry accounts"], "rows": [
+      ["B45", "3", "Wholesale Clothing", "C1", "12 000", "12 000", "", ""],
+      ["X77", "9", "Office World", "C2", "850", "", "350", "500 (Equipment)"],
+      ["B52", "20", "Wholesale Clothing", "C1", "6 500", "6 500", "", ""],
+      ["", "30", "", "", "19 350", "18 500", "350", "500"]
+    ] },
+    { "type": "paragraph", "text": "Check: Trading stock + Stationery + Sundry = 18 500 + 350 + 500 = 19 350 = Creditors control ✓." },
+    { "type": "heading", "text": "Posting the Creditors Journal" },
+    { "type": "table", "headers": ["Column total", "Account debited", "Account credited"], "rows": [
+      ["Trading stock R18 500", "Trading stock", "Creditors control (R19 350 in total)"],
+      ["Stationery R350", "Stationery", ""],
+      ["Sundry: Equipment R500", "Equipment", ""]
+    ] },
+    { "type": "paragraph", "text": "Each invoice is also posted to the individual creditor's account in the **Creditors Ledger**, so the business knows how much it owes each supplier." },
+    { "type": "heading", "text": "Paying creditors" },
+    { "type": "paragraph", "text": "When the business pays a creditor, the payment is recorded in the **CPJ** in the Bank column and the **Creditors control** column. The amount owed decreases." },
+    { "type": "example", "title": "Amount owed to a creditor", "problem": "Kasi Fashions owed Wholesale Clothing R0 on 1 April. It bought goods for R12 000 and R6 500 on credit, and paid R10 000 by EFT on 25 April. How much is owed on 30 April?", "steps": ["Total credit purchases: 12 000 + 6 500 = R18 500", "Less payment: 18 500 − 10 000 = R8 500"], "answer": "R8 500" }
+  ],
+  "questions": [
+    { "id": "creditor", "type": "short", "prompt": "What is a supplier to whom the business owes money called?", "answers": ["creditor", "a creditor"] },
+    { "id": "creditor-type", "type": "mcq", "prompt": "Creditors are classified as…", "options": ["assets", "liabilities", "income", "expenses"], "answer": 1 },
+    { "id": "source", "type": "mcq", "prompt": "Which source document is used to record credit purchases?", "options": ["Duplicate invoice", "Original invoice", "Receipt", "Cash register roll"], "answer": 1 },
+    { "id": "pay", "type": "short", "prompt": "In which journal is a payment to a creditor by EFT recorded? (abbreviation)", "answers": ["cpj", "cash payments journal"] },
+    { "id": "total", "type": "numeric", "prompt": "In a CJ, Trading stock totals R9 400, Stationery R600 and Sundry R1 000. What is the total of the Creditors control column?", "answer": 11000, "tolerance": 0, "unit": "rand" },
+    { "id": "owed", "type": "numeric", "prompt": "A business bought goods on credit for R7 000 and R5 000, then paid the creditor R8 000. How much is still owed?", "answer": 4000, "tolerance": 0, "unit": "rand" },
+    { "id": "debit-stock", "type": "truefalse", "prompt": "When the Creditors Journal is posted, the Trading stock account is debited.", "answer": true },
+    { "id": "journals", "type": "match", "marks": 4, "prompt": "Match each transaction to the journal where it is recorded.", "pairs": [
+      { "left": "Bought stock on credit", "right": "Creditors Journal" },
+      { "left": "Sold goods on credit", "right": "Debtors Journal" },
+      { "left": "Received payment from a debtor", "right": "Cash Receipts Journal" },
+      { "left": "Paid a creditor", "right": "Cash Payments Journal" }
+    ] },
+    { "id": "record", "type": "open", "marks": 3, "prompt": "On 14 May, a business bought trading stock on credit from Bulk Traders for R4 200 (invoice T91). Show how this is recorded in the CJ.", "memo": "✓ Doc T91, Day 14, Creditor Bulk Traders (1)\n✓ Creditors control R4 200 (1)\n✓ Trading stock R4 200 (1)" },
+    { "id": "adv", "type": "open", "marks": 2, "prompt": "Give TWO advantages of buying on credit.", "memo": "Any two (1 each): sell goods before paying; helps cash flow; builds credit record; no need for large cash amounts" }
+  ]
+}

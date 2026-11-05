@@ -1,0 +1,84 @@
+{
+  "id": "functions-and-relationships",
+  "title": "Functions and Relationships",
+  "term": 1,
+  "summary": "Find input values, output values and rules for linear and non-linear relationships given in words, flow diagrams, tables, formulae and graphs, and use them to model and compare real-life situations.",
+  "notes": [
+    { "type": "heading", "text": "Representing relationships" },
+    { "type": "paragraph", "text": "A relationship between an input $x$ and an output $y$ can be given in words, as a flow diagram, as a table, as a formula or as a graph. In Grade 9 you must be able to move between all five and decide whether a relationship is **linear** or **non-linear**." },
+    { "type": "table", "caption": "One relationship, five ways", "headers": ["Representation", "Example"], "rows": [
+      ["Words", "Multiply the input by $-3$, then add $4$"],
+      ["Flow diagram", "$x \\to \\boxed{\\times(-3)} \\to \\boxed{+4} \\to y$"],
+      ["Table", "$x$: $-1;\\ 0;\\ 1;\\ 2$ and $y$: $7;\\ 4;\\ 1;\\ -2$"],
+      ["Formula", "$y = -3x + 4$"],
+      ["Graph", "A straight line through $(0;\\ 4)$ that goes down 3 units for every 1 unit to the right"]
+    ] },
+
+    { "type": "heading", "text": "Finding a rule from a table" },
+    { "type": "paragraph", "text": "For a linear relationship, the coefficient of $x$ is the change in $y$ divided by the change in $x$. Then find the constant by substituting one pair of values." },
+    { "type": "example", "title": "Worked example 1: x-values that do not go up by 1", "problem": "Find the rule:\n$x$: $0;\\ 2;\\ 4;\\ 6$\n$y$: $1;\\ 7;\\ 13;\\ 19$", "steps": [
+      "When $x$ increases by $2$, $y$ increases by $6$. So $y$ increases by $6 \\div 2 = 3$ for every $1$ unit of $x$: the rule contains $3x$.",
+      "When $x = 0$, $y = 1$, so the constant is $1$.",
+      "$y = 3x + 1$. Check: $x = 4$ gives $13$ ✓"
+    ], "answer": "$y = 3x + 1$" },
+    { "type": "callout", "label": "Common mistake", "text": "If $x$ goes up in steps of 2, the difference in $y$ is **not** the coefficient of $x$. Divide by the step in $x$ first." },
+
+    { "type": "heading", "text": "Linear and non-linear relationships" },
+    { "type": "table", "caption": "Recognising relationships from a table", "headers": ["Relationship", "In the table", "Example"], "rows": [
+      ["Linear: $y = mx + c$", "Constant difference in $y$ for equal steps in $x$", "$y = 2x - 7$"],
+      ["Quadratic: contains $x^2$", "Constant second difference; symmetrical values", "$y = x^2 - 4$"],
+      ["Inverse: $y = \\frac{k}{x}$", "$x \\times y$ is constant", "$y = \\frac{12}{x}$"],
+      ["Exponential: $y = a^x$", "Constant ratio for equal steps in $x$", "$y = 2^x$"]
+    ] },
+    { "type": "example", "title": "Worked example 2: non-linear rules", "problem": "(a) For $y = x^2 - 4$, find $y$ when $x = -3$, and find the positive $x$ when $y = 21$.\n(b) For $y = \\dfrac{12}{x}$, find $y$ when $x = -3$.\n(c) For $y = 2^x$, find $y$ when $x = 5$.", "steps": [
+      "(a) $(-3)^2 - 4 = 5$. For $y = 21$: $x^2 = 25$, so $x = 5$ (or $-5$).",
+      "(b) $12 \\div (-3) = -4$.",
+      "(c) $2^5 = 32$."
+    ], "answer": "(a) $5$; $x = 5$  (b) $-4$  (c) $32$" },
+    { "type": "callout", "label": "Remember", "text": "For $y = x^2 + c$, the inputs $x$ and $-x$ give the **same** output, because $(-x)^2 = x^2$. That is why tables of quadratic relationships are symmetrical." },
+
+    { "type": "heading", "text": "Relationships in real life" },
+    { "type": "example", "title": "Worked example 3: comparing contracts", "problem": "Cellphone contract A costs R150 per month plus R1 per minute. Contract B costs R50 per month plus R2 per minute. (a) Write a formula for each. (b) Which is cheaper for 80 minutes? (c) For how many minutes do they cost the same?", "steps": [
+      "(a) A: $C = 150 + m$. B: $C = 50 + 2m$.",
+      "(b) A: $150 + 80 = \\text{R}230$. B: $50 + 160 = \\text{R}210$. B is cheaper.",
+      "(c) $150 + m = 50 + 2m$, so $m = 100$ minutes. Both cost R250."
+    ], "answer": "(b) Contract B  (c) 100 minutes" },
+    { "type": "paragraph", "text": "On a graph, the two contracts are two straight lines. They cross at the **break-even point** $(100;\\ 250)$. For fewer than 100 minutes B is cheaper; for more than 100 minutes A is cheaper." },
+    { "type": "example", "title": "Worked example 4: a rectangle", "problem": "A rectangle has a perimeter of 20 cm. Write a formula for the breadth $b$ in terms of the length $l$, and complete the table for $l = 2;\\ 4;\\ 6$.", "steps": [
+      "$2l + 2b = 20$, so $l + b = 10$ and $b = 10 - l$.",
+      "$l = 2 \\to b = 8$; $l = 4 \\to b = 6$; $l = 6 \\to b = 4$."
+    ], "answer": "$b = 10 - l$; $8;\\ 6;\\ 4$" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Move between words, flow diagrams, tables, formulae and graphs.",
+      "Linear rule from a table: coefficient of $x$ = change in $y$ ÷ change in $x$; then find the constant.",
+      "Linear: constant difference. Quadratic: constant second difference and symmetry. Inverse: constant product. Exponential: constant ratio.",
+      "Set two formulae equal to find a break-even point."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "For $y = -3x + 4$, find $y$ when $x = -2$.", "answer": 10, "tolerance": 0, "explanation": "$-3(-2) + 4 = 6 + 4 = 10$." },
+    { "id": "q2", "type": "mcq", "prompt": "Find the rule for the table:\n$x$: $0;\\ 2;\\ 4;\\ 6$\n$y$: $1;\\ 7;\\ 13;\\ 19$", "options": ["$y = 6x + 1$", "$y = 3x + 1$", "$y = 2x + 3$", "$y = x + 6$"], "answer": 1, "explanation": "$y$ increases by 6 when $x$ increases by 2, so by 3 per unit; at $x = 0$, $y = 1$." },
+    { "id": "q3", "type": "truefalse", "prompt": "In the table $x$: $1;\\ 2;\\ 3;\\ 4$ and $y$: $12;\\ 6;\\ 4;\\ 3$, the product $xy$ is constant.", "answer": true, "explanation": "$1 \\times 12 = 2 \\times 6 = 3 \\times 4 = 4 \\times 3 = 12$, so $y = \\frac{12}{x}$ (inverse proportion)." },
+    { "id": "q4", "type": "numeric", "prompt": "For $y = x^2 - 4$, find the positive value of $x$ when $y = 21$.", "answer": 5, "tolerance": 0, "explanation": "$x^2 = 25$, so $x = 5$ (or $-5$)." },
+    { "id": "q5", "type": "mcq", "prompt": "Which relationship is linear?", "options": ["$y = x^2 + 1$", "$y = \\frac{6}{x}$", "$y = 2x - 7$", "$y = 3^x$"], "answer": 2, "explanation": "$y = 2x - 7$ has the form $y = mx + c$, giving a constant difference and a straight-line graph." },
+    { "id": "q6", "type": "numeric", "prompt": "For $y = \\dfrac{12}{x}$, find $y$ when $x = -3$.", "answer": -4, "tolerance": 0, "explanation": "$12 \\div (-3) = -4$." },
+    { "id": "q7", "type": "numeric", "prompt": "For $y = 2^x$, find $y$ when $x = 5$.", "answer": 32, "tolerance": 0, "explanation": "$2^5 = 32$." },
+    { "id": "q8", "type": "mcq", "prompt": "A rule says: \"square the input, then add 3\". Which formula is correct?", "options": ["$y = (x + 3)^2$", "$y = x^2 + 3$", "$y = 2x + 3$", "$y = 3x^2$"], "answer": 1, "explanation": "Square first ($x^2$), then add 3." },
+    { "id": "q9", "type": "match", "prompt": "Substitute $x = -2$ into each rule and match it with the output.", "marks": 5, "pairs": [
+      { "left": "$y = x^2$", "right": "4" },
+      { "left": "$y = 2x + 1$", "right": "-3" },
+      { "left": "$y = -x + 5$", "right": "7" },
+      { "left": "$y = x^3$", "right": "-8" },
+      { "left": "$y = \\frac{10}{x}$", "right": "-5" }
+    ], "explanation": "$(-2)^2 = 4$; $-4 + 1 = -3$; $2 + 5 = 7$; $(-2)^3 = -8$; $10 \\div (-2) = -5$." },
+    { "id": "q10", "type": "numeric", "prompt": "Contract A costs R150 plus R1 per minute; contract B costs R50 plus R2 per minute. For how many minutes do they cost the same?", "unit": "min", "answer": 100, "tolerance": 0, "explanation": "$150 + m = 50 + 2m$, so $m = 100$." },
+    { "id": "q11", "type": "truefalse", "prompt": "For $y = x^2 + 1$, the inputs $x = 3$ and $x = -3$ give the same output.", "answer": true, "explanation": "$3^2 + 1 = 10$ and $(-3)^2 + 1 = 10$." },
+    { "id": "q12", "type": "numeric", "prompt": "A linear relationship has the table $x$: $1;\\ 4;\\ 7$ and $y$: $5;\\ 11;\\ 17$. Find $y$ when $x = 10$.", "answer": 23, "tolerance": 0, "explanation": "$y$ increases by 6 for every 3 in $x$, i.e. 2 per unit: $y = 2x + 3$. At $x = 10$: $23$." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "The table shows a linear relationship:\n$x$: $-1;\\ 0;\\ 1;\\ 2$\n$y$: $7;\\ 4;\\ 1;\\ -2$\n(a) Find the rule.  (2)\n(b) Find $x$ when $y = -20$.  (2)", "memo": "(a) $y$ decreases by 3 per unit: $-3x$ ✓; $y = -3x + 4$ ✓ (2)\n(b) $-3x + 4 = -20$ ✓; $x = 8$ ✓ (2)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Contract A costs R150 per month plus R1 per minute. Contract B costs R50 per month plus R2 per minute.\n(a) Write a formula for the cost $C$ of each contract for $m$ minutes.  (2)\n(b) Which contract is cheaper for 80 minutes? Show your working.  (1)\n(c) For how many minutes do the contracts cost the same?  (1)", "memo": "(a) A: $C = 150 + m$ ✓; B: $C = 50 + 2m$ ✓ (2)\n(b) A: R230; B: R210; B is cheaper ✓ (1)\n(c) $150 + m = 50 + 2m$, $m = 100$ minutes ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "(a) Complete the table for $y = x^2 - 2x$ for $x = -1;\\ 0;\\ 1;\\ 2;\\ 3$.  (2)\n(b) Is this relationship linear? Explain using your table.  (1)", "memo": "(a) $y$: $3;\\ 0;\\ -1;\\ 0;\\ 3$ ✓✓ (2)\n(b) No: the differences ($-3;\\ -1;\\ 1;\\ 3$) are not constant ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "A rectangle has a perimeter of 20 cm.\n(a) Write a formula for its breadth $b$ in terms of its length $l$.  (1)\n(b) Find $b$ when $l = 2$, $l = 4$ and $l = 6$.  (2)", "memo": "(a) $b = 10 - l$ ✓ (1)\n(b) $8$; $6$ ✓; $4$ cm ✓ (2)" }
+  ]
+}

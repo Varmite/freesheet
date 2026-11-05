@@ -1,0 +1,247 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper consists of FOUR questions. Answer ALL the questions.",
+    "Show ALL calculations clearly.",
+    "Round off answers to TWO decimal places, unless stated otherwise.",
+    "Units must be shown in final answers. Tax tables and exchange rates are illustrative."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Finance",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Sipho runs a small business making school jerseys. Fixed costs are R4 200 per month. Each jersey costs R85 to make and sells for R160."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write formulas for Sipho's monthly cost ($C$) and income ($I$) for $n$ jerseys.",
+          "memo": "✓ $C = 4\\ 200 + 85n$ (1)\n✓ $I = 160n$ (1)"
+        },
+        {
+          "id": "q1-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Calculate the break-even number of jerseys.",
+          "memo": "✓ $160n = 4\\ 200 + 85n$ (1)\n✓ $75n = 4\\ 200$, $n = 56$ (1)\n✓ 56 jerseys (1)"
+        },
+        {
+          "id": "q1-3",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Calculate Sipho's profit if he sells 90 jerseys in a month.",
+          "answer": 2550,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q1-4",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Using the illustrative tax table (R240 001 – R375 000: R43 200 + 26% of the amount above R240 000; primary rebate R17 500), calculate the annual tax on a taxable income of R350 000.",
+          "memo": "✓ R350 000 − R240 000 = R110 000 (1)\n✓ 26% × R110 000 = R28 600 (1)\n✓ R43 200 + R28 600 = R71 800 (1)\n✓ − R17 500 (1)\n✓ = R54 300 (1)"
+        },
+        {
+          "id": "q1-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A personal loan of R25 000 is repaid with 30 instalments of R1 120 plus an initiation fee of R1 150. Calculate the total cost of credit.",
+          "memo": "✓ 30 × R1 120 = R33 600 (1)\n✓ + R1 150 = R34 750 (1)\n✓ Cost of credit R9 750 (1)"
+        },
+        {
+          "id": "q1-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "R8 000 is invested at 7,2% p.a. compounded monthly for 2 years. Calculate the final amount.",
+          "memo": "✓ $i = 0{,}072 \\div 12 = 0{,}006$, $n = 24$ (1)\n✓ R8 000 × (1,006)²⁴ (1)\n✓ ≈ R9 235,10 (1)"
+        },
+        {
+          "id": "q1-7",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Inflation is 6% per year. If Sipho's fixed costs rise with inflation, what will they be in two years' time?",
+          "memo": "✓ R4 200 × 1,06 = R4 452 (1)\n✓ × 1,06 (1)\n✓ = R4 719,12 (1)"
+        },
+        {
+          "id": "q1-8",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A medical aid covers a taxpayer, her spouse and two children. Using illustrative credits of R364 (main member), R364 (first dependant) and R246 (each additional dependant) per month, calculate the annual medical tax credit.",
+          "memo": "✓ R364 + R364 + 2 × R246 = R1 220 per month (2)\n✓ × 12 = R14 640 per year (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Exchange rates and measurement",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Illustrative rates: US\\$1 = R18,60; €1 = R20,20; £1 = R23,80."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Convert €450 to rand.",
+          "answer": 9090,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q2-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "How many US dollars can be bought with R7 440?",
+          "answer": 400,
+          "tolerance": 0,
+          "unit": "US dollars"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how a weakening rand affects (a) the price of imported cellphones and (b) South African fruit exporters.",
+          "memo": "(a) ✓ Imports become more expensive (1)\n(b) ✓ Exporters earn more rand for each dollar of sales (1) ✓ so their products are more competitive (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A cylindrical tin has a radius of 5 cm and a height of 12 cm. Calculate its volume in millilitres and the area of its label (around the side only). Use $\\pi = 3{,}142$.",
+          "memo": "✓ V = 3,142 × 25 × 12 (1)\n✓ = 942,6 cm³ = 942,6 mℓ (1)\n✓ Label = 2 × 3,142 × 5 × 12 (1)\n✓ = 377,04 cm² (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Tins with a diameter of 10 cm and height 12 cm are packed upright in a box 50 cm × 40 cm × 24 cm. How many tins fit?",
+          "answer": 40,
+          "tolerance": 0
+        },
+        {
+          "id": "q2-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A tourist from the UK buys a carving for R1 666 in Cape Town. How much is this in pounds, and is it cheaper than a similar carving costing £75 in London?",
+          "memo": "✓ R1 666 ÷ R23,80 (1)\n✓ = £70 (1)\n✓ Yes, cheaper by £5 (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Maps and plans",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "On a 1 : 200 000 map, the distance between two towns is 14,5 cm. Calculate the real distance in km.",
+          "answer": 29,
+          "tolerance": 0,
+          "unit": "km"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A family drives 720 km at an average speed of 90 km/h with two 20-minute stops. They leave at 05:45. At what time do they arrive?",
+          "memo": "✓ 720 ÷ 90 = 8 h (1)\n✓ Stops 40 min (1)\n✓ Total 8 h 40 min (1)\n✓ Arrive 14:25 (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Their car uses 7,8 ℓ/100 km and petrol costs R23,40/ℓ. Calculate the fuel cost for the 720 km trip.",
+          "memo": "✓ 720 ÷ 100 × 7,8 = 56,16 ℓ (1)\n✓ × R23,40 (1)\n✓ ≈ R1 314,14 (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "On a 1 : 50 plan, a room measures 10 cm by 8 cm and the room is 2,8 m high. Calculate the volume of the room.",
+          "memo": "✓ Real: 5 m × 4 m (1)\n✓ × 2,8 m (1)\n✓ = 56 m³ (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A 1 : 25 scale model of a car is 18 cm long. How long is the real car in metres, and how long would a 1 : 18 model of the same car be (to the nearest cm)?",
+          "memo": "✓ 18 × 25 = 450 cm = 4,5 m (1)\n✓ 450 ÷ 18 (1)\n✓ = 25 cm (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Data handling and probability",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Monthly salaries at a small company (rand): 9 500; 9 500; 10 200; 11 000; 11 800; 12 500; 14 000; 48 000"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the mean salary.",
+          "answer": 15812.5,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "q4-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Determine the median salary.",
+          "answer": 11400,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "The company advertises 'average salary over R15 000'. Is this misleading? Explain.",
+          "memo": "✓ Yes (1)\n✓ The mean is inflated by one high salary (R48 000); most workers earn far less, and the median is R11 400 (1)"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A game costs R8. You roll a die and win R30 if you roll a 6. (a) Calculate the expected value per game. (b) Is the game fair?",
+          "memo": "(a) ✓ $\\frac{1}{6} \\times R30 = R5$ (1) ✓ R5 − R8 = −R3 (1)\n(b) ✓ Not fair (1) ✓ the player loses R3 per game on average (1)"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Of 500 people tested, 40 have a condition. Of these, 36 test positive. Of the 460 without it, 46 test positive. If a person tests positive, what is the probability they have the condition?",
+          "memo": "✓ Total positive: 36 + 46 = 82 (1)\n✓ $\\frac{36}{82}$ (1)\n✓ ≈ 43,9% (1)"
+        },
+        {
+          "id": "q4-6",
+          "type": "open",
+          "marks": 2,
+          "prompt": "The probability that a flight is delayed is 0,15. For two independent flights, find P(neither is delayed).",
+          "memo": "✓ 0,85 × 0,85 (1)\n✓ = 0,7225 (72,25%) (1)"
+        },
+        {
+          "id": "q4-7",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Calculate the range and explain why the interquartile range would be a better measure of spread for the salary data.",
+          "memo": "✓ Range = R48 000 − R9 500 = R38 500 (1)\n✓ The range is affected by the outlier (R48 000) (1)\n✓ The IQR uses the middle 50% and ignores extremes (1)"
+        }
+      ]
+    }
+  ]
+}

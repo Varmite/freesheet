@@ -1,0 +1,46 @@
+{
+  "id": "trigonometry-2d-and-3d",
+  "title": "Trigonometry: Problems in Two and Three Dimensions",
+  "term": 2,
+  "summary": "Solve problems in two and three dimensions by combining right-angled trigonometry with the sine, cosine and area rules, including heights, distances and angles in space.",
+  "notes": [
+    { "type": "heading", "text": "Strategy for 3D problems" },
+    { "type": "list", "ordered": true, "items": [
+      "Identify the triangles in the diagram: usually one **vertical** triangle (with the height) and one **horizontal** triangle (on the ground).",
+      "Mark right angles: a vertical tower is perpendicular to every line on the ground through its foot.",
+      "Find a common side shared by the two triangles.",
+      "Use right-angled trigonometry in the right-angled triangle and the sine or cosine rule in the other.",
+      "Keep answers in terms of the given variables if asked to 'show that' or 'prove'."
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200' font-family='sans-serif' font-size='12'><rect width='300' height='200' fill='white'/><polygon points='60,170 240,170 180,120' fill='none' stroke='black' stroke-width='1.5'/><line x1='180' y1='120' x2='180' y2='20' stroke='black' stroke-width='2'/><line x1='60' y1='170' x2='180' y2='20' stroke='black' stroke-dasharray='4 3'/><line x1='240' y1='170' x2='180' y2='20' stroke='black' stroke-dasharray='4 3'/><polyline points='172,120 172,112 180,112' fill='none' stroke='black'/><text x='176' y='14'>T</text><text x='186' y='126'>F</text><text x='46' y='184'>A</text><text x='244' y='184'>B</text><text x='190' y='70'>h</text></svg>", "caption": "A vertical tower TF with its foot F on horizontal ground; A and B are points on the ground" },
+    { "type": "example", "title": "Worked example 1", "problem": "A and B are two points on level ground, 80 m apart. TF is a vertical tower with foot F. $\\hat{FAB} = 40^\\circ$, $\\hat{ABF} = 65^\\circ$, and the angle of elevation of T from A is $25^\\circ$. Find the height of the tower.", "steps": [
+      "In △ABF: $\\hat{AFB} = 180^\\circ - 40^\\circ - 65^\\circ = 75^\\circ$",
+      "Sine rule: $\\dfrac{AF}{\\sin 65^\\circ} = \\dfrac{80}{\\sin 75^\\circ}$, so $AF = 75{,}06$ m",
+      "In right-angled △TFA: $TF = AF\\tan 25^\\circ = 35{,}00$ m"
+    ], "answer": "About 35,0 m" },
+    { "type": "example", "title": "Worked example 2: in terms of variables", "problem": "In △ABC on horizontal ground, $AB = x$, $\\hat{A} = \\alpha$ and $\\hat{ACB} = \\beta$. CD is a vertical pole at C with angle of elevation $\\theta$ from B. Show that $CD = \\dfrac{x\\sin\\alpha\\tan\\theta}{\\sin\\beta}$.", "steps": [
+      "Sine rule in △ABC: $\\dfrac{BC}{\\sin\\alpha} = \\dfrac{x}{\\sin\\beta}$, so $BC = \\dfrac{x\\sin\\alpha}{\\sin\\beta}$",
+      "In right-angled △BCD: $CD = BC\\tan\\theta = \\dfrac{x\\sin\\alpha\\tan\\theta}{\\sin\\beta}$"
+    ], "answer": "Shown" },
+    { "type": "callout", "label": "Exam tip", "text": "In 'show that' questions, work only with the letters given. Do not substitute numbers until the question asks you to calculate." },
+    { "type": "heading", "text": "Choosing the rule" },
+    { "type": "table", "headers": ["Triangle", "Use"], "rows": [
+      ["Right-angled", "SOH CAH TOA and Pythagoras"],
+      ["Non-right-angled, side–angle pair known", "Sine rule"],
+      ["Non-right-angled, two sides and included angle, or three sides", "Cosine rule"],
+      ["Area needed", "Area rule $\\frac{1}{2}ab\\sin C$"]
+    ] }
+  ],
+  "questions": [
+    { "id": "perp", "type": "truefalse", "prompt": "A vertical pole is perpendicular to every line on horizontal ground that passes through its foot.", "answer": true },
+    { "id": "rule", "type": "mcq", "prompt": "In a horizontal triangle you know two angles and one side. Which rule finds another side?", "options": ["Cosine rule", "Sine rule", "Area rule", "Pythagoras"], "answer": 1 },
+    { "id": "height", "type": "numeric", "prompt": "From a point 60 m from the foot of a vertical tower the angle of elevation is $32^\\circ$. Find the height, correct to two decimal places.", "answer": 37.49, "tolerance": 0.01, "unit": "m" },
+    { "id": "cos-ground", "type": "numeric", "prompt": "Points A and B on the ground are 50 m and 70 m from point C, and $\\hat{ACB} = 60^\\circ$. Find AB, correct to two decimal places.", "answer": 62.45, "tolerance": 0.01, "unit": "m" },
+    { "id": "sine-ground", "type": "numeric", "prompt": "In △ABF on level ground, $AB = 100$ m, $\\hat{A} = 50^\\circ$ and $\\hat{B} = 70^\\circ$. Find BF (opposite $\\hat{A}$), correct to two decimal places.", "answer": 88.45, "tolerance": 0.01, "unit": "m" },
+    { "id": "worked", "type": "open", "marks": 5, "prompt": "P and Q are 120 m apart on level ground. R is the foot of a vertical tower RT. $\\hat{RPQ} = 52^\\circ$ and $\\hat{PQR} = 68^\\circ$. The angle of elevation of T from Q is $20^\\circ$. Calculate the height of the tower.", "memo": "✓ $\\hat{PRQ} = 60^\\circ$ (1)\n✓ $\\frac{QR}{\\sin 52^\\circ} = \\frac{120}{\\sin 60^\\circ}$ (1)\n✓ $QR \\approx 109{,}19$ m (1)\n✓ $RT = QR\\tan 20^\\circ$ (1)\n✓ $\\approx 39{,}74$ m (1)" },
+    { "id": "show", "type": "open", "marks": 4, "prompt": "In △ABC (horizontal), $BC = d$, $\\hat{B} = x$ and $\\hat{C} = y$. AD is a vertical pole at A, and the angle of elevation of D from B is $\\theta$. Show that $AD = \\dfrac{d\\sin y\\tan\\theta}{\\sin(x + y)}$.", "memo": "✓ $\\hat{A} = 180^\\circ - (x + y)$, so $\\sin A = \\sin(x + y)$ (1)\n✓ $\\frac{AB}{\\sin y} = \\frac{d}{\\sin(x + y)}$ (1)\n✓ $AB = \\frac{d\\sin y}{\\sin(x + y)}$ (1)\n✓ $AD = AB\\tan\\theta$ (1)" },
+    { "id": "area", "type": "numeric", "prompt": "A triangular piece of land has sides 45 m and 60 m with included angle $110^\\circ$. Find its area, correct to two decimal places.", "answer": 1268.59, "tolerance": 0.01, "unit": "m²" },
+    { "id": "elev-angle", "type": "open", "marks": 3, "prompt": "A 25 m vertical mast stands at C. B is 40 m from C on level ground. Find the angle of elevation of the top of the mast from B.", "memo": "✓ $\\tan\\theta = \\frac{25}{40}$ (1)\n✓ $= 0{,}625$ (1)\n✓ $\\theta \\approx 32{,}01^\\circ$ (1)" },
+    { "id": "common", "type": "open", "marks": 2, "prompt": "Why is it important to identify a side common to two triangles in a 3D problem?", "memo": "✓ The common side links the two triangles (1)\n✓ It is found in one triangle and then used to solve the other (1)" }
+  ]
+}

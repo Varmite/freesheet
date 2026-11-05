@@ -1,0 +1,45 @@
+{
+  "id": "resistance-in-the-1950s",
+  "title": "Resistance to Apartheid in the 1950s",
+  "term": 2,
+  "summary": "The ANC Youth League and the Programme of Action, the Defiance Campaign, the Freedom Charter, the 1956 Women's March and the Treason Trial.",
+  "notes": [
+    { "type": "heading", "text": "A new generation of leaders" },
+    { "type": "paragraph", "text": "The **African National Congress (ANC)**, founded in 1912, had at first used petitions and deputations. In **1944** young members including **Nelson Mandela**, **Walter Sisulu**, **Oliver Tambo** and **Anton Lembede** formed the **ANC Youth League**, which called for more direct, mass action. In **1949** the ANC adopted the Youth League's **Programme of Action**: boycotts, strikes, civil disobedience and non-cooperation." },
+    { "type": "heading", "text": "The Defiance Campaign, 1952" },
+    { "type": "paragraph", "text": "The ANC and the **South African Indian Congress** launched the **Defiance Campaign against Unjust Laws** on **26 June 1952**. Volunteers deliberately broke apartheid laws, for example using 'whites only' entrances, being in town after curfew or not carrying passes, and allowed themselves to be arrested peacefully." },
+    { "type": "list", "items": [
+      "More than **8 000** people were arrested.",
+      "ANC membership grew from about 7 000 to about 100 000.",
+      "The government responded with harsher laws and heavier penalties for protest.",
+      "The campaign followed Gandhi's ideas of **passive resistance**."
+    ] },
+    { "type": "heading", "text": "The Congress of the People and the Freedom Charter, 1955" },
+    { "type": "paragraph", "text": "The **Congress Alliance** (the ANC, the SA Indian Congress, the Coloured People's Congress, the white Congress of Democrats and the SA Congress of Trade Unions) asked people across the country to send in their demands. On **26 June 1955**, about 3 000 delegates met at **Kliptown**, Soweto, at the **Congress of the People** and adopted the **Freedom Charter**." },
+    { "type": "passage", "title": "Source H: Extract from the Freedom Charter, 1955", "text": "We, the People of South Africa, declare for all our country and the world to know: that South Africa belongs to all who live in it, black and white, and that no government can justly claim authority unless it is based on the will of all the people.\n\nThe People Shall Govern!\nAll National Groups Shall have Equal Rights!\nThe People Shall Share in the Country's Wealth!\nThe Land Shall be Shared Among Those Who Work It!\nAll Shall be Equal Before the Law!\nAll Shall Enjoy Equal Human Rights!\nThere Shall be Work and Security!\nThe Doors of Learning and Culture Shall be Opened!\nThere Shall be Houses, Security and Comfort!\nThere Shall be Peace and Friendship!" },
+    { "type": "callout", "label": "Key idea", "text": "Many ideas in the Freedom Charter, such as equality before the law and the right to education, are found in South Africa's **Constitution of 1996**." },
+    { "type": "heading", "text": "The Women's March, 9 August 1956" },
+    { "type": "paragraph", "text": "When the government announced that black women would also have to carry passes, the **Federation of South African Women** (FEDSAW) organised a march. About **20 000 women** of all races, led by **Lilian Ngoyi**, **Helen Joseph**, **Rahima Moosa** and **Sophia Williams-De Bruyn**, marched to the **Union Buildings** in Pretoria. They left petitions for Prime Minister Strijdom and stood in silence for 30 minutes, then sang:\n\n*Wathint' abafazi, wathint' imbokodo* ('You strike the women, you strike a rock')." },
+    { "type": "paragraph", "text": "9 August is now celebrated as **National Women's Day**." },
+    { "type": "heading", "text": "The Treason Trial, 1956–1961" },
+    { "type": "paragraph", "text": "In December 1956 police arrested **156 leaders** of the Congress Alliance, including Mandela, Sisulu, Tambo, Albert Luthuli and Helen Joseph, and charged them with **high treason**, claiming that the Freedom Charter was a communist plan to overthrow the state by violence. The trial dragged on for more than four years, but in **1961** all the accused were found **not guilty**." },
+    { "type": "paragraph", "text": "Other resistance in the 1950s included the **Alexandra bus boycott** (1957), when thousands walked up to 30 km a day rather than pay higher fares, and rural uprisings such as in **Sekhukhuneland** and **Pondoland** against the Bantu Authorities system." }
+  ],
+  "questions": [
+    { "id": "youth-league", "type": "numeric", "prompt": "In which year was the ANC Youth League formed?", "answer": 1944, "tolerance": 0 },
+    { "id": "defiance", "type": "mcq", "prompt": "What did volunteers do during the Defiance Campaign?", "options": ["Fought the police with weapons", "Deliberately broke unjust laws and accepted arrest", "Left the country", "Voted in elections"], "answer": 1 },
+    { "id": "kliptown", "type": "short", "prompt": "Where was the Freedom Charter adopted in 1955?", "answers": ["kliptown", "kliptown, soweto", "soweto"] },
+    { "id": "women-day", "type": "short", "prompt": "Which date in 1956 is remembered as Women's Day? (e.g. 1 May)", "answers": ["9 august", "9th august", "august 9"] },
+    { "id": "treason", "type": "truefalse", "prompt": "All the accused in the Treason Trial were found guilty in 1961.", "answer": false },
+    { "id": "people", "type": "match", "marks": 4, "prompt": "Match each person to their role in the 1950s.", "pairs": [
+      { "left": "Lilian Ngoyi", "right": "Led the 1956 Women's March" },
+      { "left": "Anton Lembede", "right": "First president of the ANC Youth League" },
+      { "left": "Albert Luthuli", "right": "ANC president during the 1950s" },
+      { "left": "J. G. Strijdom", "right": "Prime Minister who received the petitions" }
+    ] },
+    { "id": "source-h", "type": "open", "marks": 3, "prompt": "Read Source H. (a) According to the Charter, to whom does South Africa belong? (b) Choose ONE clause and explain how it challenged apartheid.", "memo": "(a) ✓ All who live in it, black and white (1)\n(b) ✓ Names a clause (1) ✓ explains how it opposed an apartheid law, e.g. 'The Doors of Learning shall be Opened' challenged Bantu Education (1)" },
+    { "id": "defiance-results", "type": "open", "marks": 2, "prompt": "Give TWO results of the Defiance Campaign.", "memo": "Any two (1 each): over 8 000 arrested; ANC membership grew to about 100 000; government passed harsher laws; ANC became a mass movement" },
+    { "id": "women-march", "type": "open", "marks": 3, "prompt": "Why did women march to the Union Buildings in 1956, and why was the march significant?", "memo": "✓ To protest against passes being extended to black women (1)\n✓ About 20 000 women of all races took part, showing unity and organisation (1)\n✓ It showed women's leading role in the struggle; it is remembered as National Women's Day (1)" },
+    { "id": "programme", "type": "open", "marks": 2, "prompt": "How did the Programme of Action of 1949 change the ANC's methods?", "memo": "✓ Earlier the ANC used petitions and deputations (1)\n✓ Now it used mass action: boycotts, strikes and civil disobedience (1)" }
+  ]
+}

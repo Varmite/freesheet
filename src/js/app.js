@@ -15,7 +15,8 @@
     catalog: null,
     progress: null,
     tab: 'study',
-    views: { study: { name: 'home' }, exams: { name: 'home' }, progress: { name: 'home' } },
+    views: { study: { name: 'home' }, exams: { name: 'home' }, progress: { name: 'home' }, settings: { name: 'home' } },
+    returnTab: 'study', // the tab to go back to when leaving Settings
     cache: new Map(),
     exam: null,       // active exam session
     timer: null,
@@ -46,6 +47,63 @@
   });
 
   function P() { return state.progress; }
+
+  // ---------------------------------------------------------------- daily streak
+
+  const streakBtn = document.getElementById('streak-btn');
+  const settingsBtn = document.getElementById('settings-btn');
+  function updateStreakBadge(pop) {
+    if (!streakBtn || !P()) return;
+    const st = Streak.status(P());
+    streakBtn.classList.toggle('lit', st.todayMet);
+    streakBtn.innerHTML = `${Icons.ui('flame', 'streak-flame')}<span>${st.current}</span>`;
+    const left = Math.max(0, st.goalQuestions - st.questionsToday);
+    streakBtn.title = st.todayMet
+      ? `${st.current}-day streak. Today's goal is done.`
+      : `${st.current}-day streak. ${left} more question${left === 1 ? '' : 's'} or 1 exam today to ${st.current ? 'keep it going' : 'start a streak'}.`;
+    if (pop) {
+      streakBtn.classList.remove('pop');
+      void streakBtn.offsetWidth;
+      streakBtn.classList.add('pop');
+    }
+  }
+  function recordStreak(kind, count) {
+    if (!count) return;
+    const r = Streak.record(P(), kind, count);
+    updateStreakBadge(r.justMet);
+    if (r.justMet) celebrateStreak(r.current);
+  }
+  function celebrateStreak(n) {
+    setTimeout(() => Sound.play('streak'), 450); // after the answer's own chime
+    const t = document.createElement('div');
+    t.className = 'streak-toast';
+    t.setAttribute('role', 'status');
+    t.innerHTML = `${Icons.ui('flame', 'streak-toast-flame')}<div><strong>${n}-day streak!</strong>` +
+      `<span>${n === 1 ? 'You started a streak. Come back tomorrow to keep it going.' : "Today's goal is done. See you tomorrow."}</span></div>`;
+    document.body.appendChild(t);
+    setTimeout(() => t.classList.add('show'), 10);
+    setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 4200);
+  }
+  function showStreak() {
+    const st = Streak.status(P());
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const left = Math.max(0, st.goalQuestions - st.questionsToday);
+    const goal = st.todayMet
+      ? `<p class="streak-goal done">Today's goal is done. Come back tomorrow to keep your streak.</p>`
+      : `<p class="streak-goal">Check <strong>${left} more practice question${left === 1 ? '' : 's'}</strong> or finish <strong>1 exam</strong> today to ${st.current ? 'keep your streak' : 'start a streak'}.</p>
+         <div class="streak-meter">${bar(Math.round(Math.min(st.questionsToday, st.goalQuestions) / st.goalQuestions * 100))}<span>${Math.min(st.questionsToday, st.goalQuestions)} / ${st.goalQuestions} questions</span></div>`;
+    dialog({
+      title: 'Daily streak',
+      cancel: null,
+      ok: 'Close',
+      body: `<div class="streak-hero${st.todayMet ? ' lit' : ''}">${Icons.ui('flame', 'streak-hero-flame')}
+          <div><div class="streak-num">${st.current}</div><div class="muted">day${st.current === 1 ? '' : 's'} in a row</div></div></div>
+        <div class="streak-week">${st.week.map((d) => `<div class="streak-day${d.met ? ' met' : ''}${d.today ? ' today' : ''}">
+          <span class="streak-dot">${d.met ? Icons.ui('flame') : ''}</span><span>${days[d.date.getDay()]}</span></div>`).join('')}</div>
+        ${goal}
+        <p class="muted">Longest streak: ${st.longest} day${st.longest === 1 ? '' : 's'}</p>`,
+    });
+  }
   function grade() { return P().settings.grade; }
   function gradeData() {
     return state.catalog.grades.find((g) => g.grade === grade()) || { grade: grade(), subjects: [] };
@@ -75,9 +133,18 @@
 
   // ---------------------------------------------------------------- helpers
 
+  // The sound for a just-checked answer card.
+  function answerSound(card) {
+    if (card.classList.contains('is-correct')) Sound.play('correct');
+    else if (card.classList.contains('is-wrong')) Sound.play('wrong');
+    else if (card.classList.contains('is-partial')) Sound.play('partial');
+    else Sound.play('reveal'); // a written answer: the memo appears for self-marking
+  }
+
   function pct(score, max) { return max > 0 ? Math.round((score / max) * 100) : 0; }
 
   function toast(msg) {
+    Sound.play('toast');
     const t = document.createElement('div');
     t.className = 'toast';
     t.textContent = msg;
@@ -93,8 +160,13 @@
         <h2 id="dlg-title">${esc(title)}</h2><div class="modal-body">${body || ''}</div>
         <div class="modal-actions">${cancel ? `<button class="btn" data-r="0">${esc(cancel)}</button>` : ''}
         <button class="btn ${danger ? 'danger' : 'primary'}" data-r="1">${esc(ok)}</button></div></div></div>`;
+      const back = dialogRoot.firstElementChild;
+      let closed = false;
       const close = (v) => {
-        dialogRoot.innerHTML = '';
+        if (closed) return;
+        closed = true;
+        Sound.play('close');
+        Motion.dialogOut(back).then(() => back.remove());
         document.removeEventListener('keydown', onKey, true);
         if (prevFocus && prevFocus.focus) prevFocus.focus();
         resolve(v);
@@ -103,9 +175,11 @@
         if (e.key === 'Escape') { e.preventDefault(); close(false); }
       };
       document.addEventListener('keydown', onKey, true);
-      dialogRoot.querySelectorAll('[data-r]').forEach((b) => b.addEventListener('click', () => close(b.dataset.r === '1')));
-      dialogRoot.querySelector('.modal-back').addEventListener('click', (e) => { if (e.target.classList.contains('modal-back') && cancel) close(false); });
-      dialogRoot.querySelector('[data-r="1"]').focus();
+      back.querySelectorAll('[data-r]').forEach((b) => b.addEventListener('click', () => close(b.dataset.r === '1')));
+      back.addEventListener('click', (e) => { if (e.target === back && cancel) close(false); });
+      back.querySelector('[data-r="1"]').focus();
+      Motion.dialogIn(back);
+      Sound.play('open');
     });
   }
 
@@ -137,6 +211,14 @@
     try {
       return new Date(iso).toLocaleDateString('en-ZA', { day: 'numeric', month: 'short', year: 'numeric' });
     } catch (e) { return iso; }
+  }
+
+  function applySound() {
+    Sound.setEnabled(P().settings.sounds !== false);
+  }
+
+  function applyMotion() {
+    Motion.setEnabled(P().settings.animations !== false);
   }
 
   function applyTextSize() {
@@ -205,13 +287,147 @@
     render();
   }
 
+  // How a page change animates (see js/motion.js): going deeper into a tab is a
+  // push (tapped cards zoom open), going back up is a pop, tabs cross-fade.
+  const DEPTH = { home: 0, subject: 1, list: 1, topic: 2, intro: 2, run: 3, mark: 4, result: 5, review: 6 };
+  let lastNav = null;
+  function navInfo() {
+    const v = state.views[state.tab] || {};
+    return {
+      tab: state.tab,
+      depth: DEPTH[v.name] || 0,
+      key: [state.tab, grade(), v.name, v.subjectId, v.topicId, v.examId, v.attempt, v.mode].join('|'),
+    };
+  }
+  function navKind(from, to) {
+    if (!from) return 'first';
+    // Settings sits on top of whichever tab it was opened from, like an iOS push.
+    if (to.tab === 'settings' && from.tab !== 'settings') return 'push';
+    if (from.tab === 'settings' && to.tab !== 'settings') return 'pop';
+    if (from.tab !== to.tab) return 'tab';
+    if (to.depth > from.depth) return 'push';
+    if (to.depth < from.depth) return 'pop';
+    return 'swap';
+  }
+
+  // Re-renders of the same page (text size, retry) do not animate; moving to a new page does.
+  // A page change can name its own sound (the topic pager sounds like forward/back).
+  let pendingNavSound = null;
+
+  // Scroll position of each page, so going back returns to where you were (as on iOS).
+  const scrollMemory = new Map();
+
   async function render() {
+    const nav = navInfo();
+    const moved = !lastNav || lastNav.key !== nav.key;
+    const kind = navKind(lastNav, nav);
+    const fromKey = lastNav && lastNav.key;
+    if (moved && fromKey) scrollMemory.set(fromKey, window.scrollY);
+    lastNav = nav;
+    const token = state.renderToken + 1;
+    // Freeze the old page on screen so it can animate out once the new one is ready.
+    const tr = moved && fromKey ? Motion.capture(main) : null;
+    await renderView();
+    if (token !== state.renderToken) { Motion.discard(tr); return; }
+    Motion.decorate(main);
+    if (!moved) { Motion.discard(tr); return; }
+    if (kind === 'pop' && scrollMemory.has(nav.key)) window.scrollTo(0, scrollMemory.get(nav.key));
+    Motion.navigate(main, tr, { kind, fromKey, toKey: nav.key });
+    const navSound = pendingNavSound || { push: 'push', pop: 'pop', tab: 'tab', swap: 'swap' }[kind];
+    pendingNavSound = null;
+    if (navSound) Sound.play(navSound);
+    scheduleWarmUp();
+  }
+
+  // ---------- Transition warm-up
+  // The first card zoom in a session drops ~35 frames at 180 Hz; once a real zoom
+  // has run, they drop 1-2 (measured with Chromium frame tracing). So when the app
+  // is idle on the Study home, it runs one real zoom into a subject and back,
+  // hidden under a frozen copy of the page (see the warm-up notes in motion.js).
+  // It takes ~1.4 s and runs at full speed (running it faster was measured to warm
+  // less). A press during it ends it at once and the click is passed on to
+  // whatever is under the pointer once the page is back.
+  let warmedUp = false, warmTimer = 0;
+  function scheduleWarmUp() {
+    if (warmedUp || !Motion.enabled()) return;
+    clearTimeout(warmTimer);
+    warmTimer = setTimeout(() => requestIdleCallback(() => rehearseTransitions(), { timeout: 2000 }), 400);
+  }
+
+  async function rehearseTransitions() {
+    if (warmedUp || !Motion.enabled()) return;
+    const card = state.tab === 'study' && state.views.study.name === 'home' && main.querySelector('.grid .card[data-subject]');
+    if (!card || document.querySelector('.modal-back')) return; // tried again after the next page change
+    // Wait for the page to be at rest and the pointer to be off anything with a
+    // hover effect (the frozen copy can't show one).
+    if (!Motion.quiet() || main.querySelector('.card:hover, .row:hover, .btn:hover, .continue:hover, .link:hover, .seg:hover')) { scheduleWarmUp(); return; }
+    warmedUp = true;
+    const y = window.scrollY;
+    const cover = Motion.cover(main);
+    let cut, pressAt = null, released = false;
+    const interrupted = new Promise((r) => { cut = r; });
+    const hold = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (e.type === 'pointerdown') pressAt = { x: e.clientX, y: e.clientY };
+      if (e.type === 'pointerup' && pressAt) released = true;
+      cut();
+    };
+    const kinds = ['pointerdown', 'mousedown', 'mouseup', 'pointerup', 'click', 'keydown', 'wheel'];
+    for (const k of kinds) window.addEventListener(k, hold, { capture: true, passive: false });
+    const pause = () => Promise.race([new Promise((r) => setTimeout(r, Motion.rehearsalStep)), interrupted]);
+    // The rehearsed page may be longer or shorter than this one: keep the scrollbar
+    // exactly as it is, or its appearing would shift the layout visibly.
+    const root = document.documentElement;
+    root.style.overflowY = root.scrollHeight > root.clientHeight ? 'scroll' : 'hidden';
+    Motion.setRehearsing(true);
+    try {
+      Motion.noteOrigin(card);
+      state.views.study = { name: 'subject', subjectId: card.dataset.subject };
+      await render();
+      await pause();
+      state.views.study = { name: 'home' };
+      await render();
+      await pause();
+    } finally {
+      Motion.settle();
+      window.scrollTo(0, y);
+      root.style.overflowY = '';
+      Motion.setRehearsing(false);
+      cover.layer.remove();
+      for (const k of kinds) window.removeEventListener(k, hold, { capture: true });
+      document.documentElement.dataset.warmedUp = '';
+    }
+    // A press that interrupted it was aimed at the cover, which is gone by the time
+    // the button comes up, so the browser won't produce a click. Act on the release
+    // instead: click whatever is really under the pointer now, and drop any native
+    // click that does still follow so it can't happen twice.
+    if (pressAt) {
+      const at = pressAt;
+      const fire = () => { const el = document.elementFromPoint(at.x, at.y); if (el) el.click(); };
+      const dropNative = (e) => { if (e.isTrusted) { e.preventDefault(); e.stopPropagation(); } };
+      window.addEventListener('click', dropNative, true);
+      setTimeout(() => window.removeEventListener('click', dropNative, true), 600);
+      if (released) fire();
+      else {
+        const up = () => { window.removeEventListener('pointerup', up, true); fire(); };
+        window.addEventListener('pointerup', up, true);
+      }
+    }
+  }
+
+  async function renderView() {
     const token = ++state.renderToken;
+    stopReader();
+    updateStreakBadge();
     document.querySelectorAll('.tab').forEach((b) => {
       const on = b.dataset.tab === state.tab;
       b.classList.toggle('active', on);
       b.setAttribute('aria-selected', on);
     });
+    Motion.moveTabPill(document.querySelector('.tabs'), true);
+    settingsBtn.classList.toggle('active', state.tab === 'settings');
+    settingsBtn.setAttribute('aria-pressed', state.tab === 'settings');
     const v = state.views[state.tab];
     try {
       let html;
@@ -233,6 +449,8 @@
         if (v.name === 'review') return await viewExamReview(v, token);
       } else if (state.tab === 'progress') {
         return viewProgress();
+      } else if (state.tab === 'settings') {
+        return viewSettings();
       }
       main.innerHTML = html || '';
     } catch (err) {
@@ -267,7 +485,7 @@
         const st = subjectStats(s);
         const p = st.total ? Math.round((st.practised / st.total) * 100) : 0;
         return `<button class="card" data-subject="${esc(s.id)}">
-          <span class="card-title">${esc(s.name)}</span>
+          <span class="card-head">${Icons.subject(s.id)}<span class="card-title">${esc(s.name)}</span></span>
           <span class="card-sub">${st.total} topic${st.total === 1 ? '' : 's'}</span>
           ${bar(p)}
           <span class="card-meta">${st.practised} of ${st.total} practised${st.avg != null ? ` · avg ${st.avg}%` : ''}</span>
@@ -296,7 +514,7 @@
     main.innerHTML = `<div class="page">
       ${crumbs(items)}
       <div class="page-head">
-        <div><h1>${esc(s.name)}</h1><p class="lead">${M.inline(s.description)}</p></div>
+        <div><h1 class="with-icon">${Icons.subject(s.id, "lg")}<span>${esc(s.name)}</span></h1><p class="lead">${M.inline(s.description)}</p></div>
         <div class="head-stats"><div><strong>${st.practised}/${st.total}</strong><span>practised</span></div>
           <div><strong>${st.avg != null ? st.avg + '%' : '–'}</strong><span>average</span></div></div>
       </div>
@@ -333,7 +551,7 @@
       });
       main.querySelector('#no-match').hidden = any;
     };
-    f.addEventListener('input', applyFilter);
+    f.addEventListener('input', () => Motion.flip(main.querySelectorAll('.term, .term li, #no-match, .aside-link'), applyFilter));
     applyFilter();
     const te = main.querySelector('#to-exams');
     if (te) te.addEventListener('click', () => { go('exams', { name: 'list', subjectId: s.id }); scrollTop(); });
@@ -370,8 +588,8 @@
       </div>
       <div id="topic-body"></div>
       <nav class="pager">
-        ${prev ? `<button class="btn" data-goto="${esc(prev.id)}">← ${esc(prev.title)}</button>` : '<span></span>'}
-        ${next ? `<button class="btn" data-goto="${esc(next.id)}">${esc(next.title)} →</button>` : '<span></span>'}
+        ${prev ? `<button class="btn" data-goto="${esc(prev.id)}" data-dir="back">← ${esc(prev.title)}</button>` : '<span></span>'}
+        ${next ? `<button class="btn" data-goto="${esc(next.id)}" data-dir="forward">${esc(next.title)} →</button>` : '<span></span>'}
       </nav>
     </div>`;
     wireCrumbs(items);
@@ -379,6 +597,8 @@
       v.mode = b.dataset.mode; render(); scrollTop();
     }));
     main.querySelectorAll('[data-goto]').forEach((b) => b.addEventListener('click', () => {
+      Motion.setHint(b.dataset.dir);
+      pendingNavSound = b.dataset.dir === 'forward' ? 'push' : 'pop';
       go('study', { name: 'topic', subjectId: s.id, topicId: b.dataset.goto, mode: 'notes' }); scrollTop();
     }));
     const body = main.querySelector('#topic-body');
@@ -386,20 +606,154 @@
     else renderPractice(body, topic, key);
   }
 
+  // ---------- Notes: revealed one section at a time, with optional read-aloud audio
+
+  const reader = { audio: null, url: null, index: -1, paused: false, follow: null };
+
+  function stopReader() {
+    if (reader.follow) reader.follow.stop();
+    reader.follow = null;
+    if (reader.audio) { reader.audio.onended = null; reader.audio.pause(); reader.audio.removeAttribute('src'); }
+    if (reader.url) URL.revokeObjectURL(reader.url);
+    reader.audio = null; reader.url = null; reader.index = -1; reader.paused = false;
+  }
+
   function renderNotes(body, topic, key, v) {
-    const tp = topicProg(key);
-    body.innerHTML = `<article class="notes">${M.blocks(topic.notes)}</article>
-      <div class="notes-end">
-        <p>${tp && tp.notesRead ? 'You have marked these notes as read.' : 'Finished reading? Test yourself on what you have just studied.'}</p>
-        <button class="btn primary" id="to-questions">Practise ${topic.questions.length} questions →</button>
-      </div>`;
-    body.querySelector('#to-questions').addEventListener('click', () => {
-      topicProg(key, true).notesRead = true;
+    const secs = Sections.split(topic.notes);
+    const total = secs.length;
+    const tpOld = topicProg(key);
+    let shown = Math.min(total, Math.max(1, v.shown || (tpOld && tpOld.sectionsSeen) || 1));
+    let audioIds = new Set();
+    let speed = Number(P().settings.readSpeed) || 1;
+
+    body.innerHTML = `<div class="reader-bar" id="reader-bar" hidden>
+        <button class="btn" id="read-btn"></button>
+        <button class="btn icon-btn" id="read-stop" title="Stop reading" aria-label="Stop reading" hidden>${Icons.ui('stop')}</button>
+        <label class="read-speed">Speed <select id="read-speed">${[0.75, 1, 1.25, 1.5].map((x) =>
+          `<option value="${x}" ${x === speed ? 'selected' : ''}>${x}×</option>`).join('')}</select></label>
+        <span class="muted small" id="read-status"></span>
+      </div>
+      <article class="notes" id="notes"></article>
+      <div id="notes-more"></div>`;
+    const article = body.querySelector('#notes');
+    const more = body.querySelector('#notes-more');
+    const bar = body.querySelector('#reader-bar');
+    const readBtn = body.querySelector('#read-btn');
+    const stopBtn = body.querySelector('#read-stop');
+    const status = body.querySelector('#read-status');
+
+    function hasAudio(i) { return audioIds.has(secs[i].id); }
+
+    function sectionHtml(sec, i) {
+      const play = hasAudio(i)
+        ? `<button class="section-play" data-play="${i}" title="Listen to this section" aria-label="Listen to this section">${Icons.ui('speaker')}</button>` : '';
+      return `<section class="note-section${reader.index === i ? ' speaking' : ''}" data-i="${i}">${play}${M.blocks(sec.blocks)}</section>`;
+    }
+
+    function drawSections() {
+      article.innerHTML = secs.slice(0, shown).map(sectionHtml).join('');
+      article.querySelectorAll('[data-play]').forEach((b) => b.addEventListener('click', () => { Sound.play('playStart'); play(Number(b.dataset.play)); }));
+      if (shown < total) {
+        const nextTitle = secs[shown].title ? `: ${M.inline(secs[shown].title)}` : '';
+        more.innerHTML = `<div class="notes-next">
+            <div class="section-count">Section ${shown} of ${total}</div>
+            <div class="bar"><span style="width:${Math.round((shown / total) * 100)}%"></span></div>
+            <button class="btn primary" id="more-btn">Continue${nextTitle} →</button>
+          </div>`;
+        more.querySelector('#more-btn').addEventListener('click', () => { Sound.play('reveal'); reveal(shown + 1); scrollToSection(shown - 1); });
+      } else {
+        const tp = topicProg(key);
+        more.innerHTML = `<div class="notes-end">
+            <p>${tp && tp.notesRead ? 'You have marked these notes as read.' : 'You have reached the end of the notes. Test yourself on what you have just studied.'}</p>
+            <button class="btn primary" id="to-questions">Practise ${topic.questions.length} questions →</button>
+          </div>`;
+        more.querySelector('#to-questions').addEventListener('click', () => {
+          stopReader();
+          topicProg(key, true).notesRead = true;
+          save();
+          v.mode = 'questions';
+          render();
+          scrollTop();
+        });
+      }
+    }
+
+    function reveal(n) {
+      if (n <= shown) return;
+      shown = Math.min(total, n);
+      v.shown = shown;
+      const tp = topicProg(key, true);
+      tp.sectionsSeen = Math.max(tp.sectionsSeen || 0, shown);
       save();
-      v.mode = 'questions';
-      render();
-      scrollTop();
+      drawSections();
+      Motion.reveal(article.querySelector(`[data-i="${shown - 1}"]`));
+      Motion.reveal(more.firstElementChild, 80);
+    }
+
+    function scrollToSection(i) {
+      const el = article.querySelector(`[data-i="${i}"]`);
+      if (el) el.scrollIntoView({ behavior: Motion.enabled() ? 'smooth' : 'auto', block: 'start' });
+    }
+
+    function drawControls() {
+      const active = reader.index >= 0;
+      readBtn.innerHTML = !active ? `${Icons.ui('speaker')}<span>Listen to these notes</span>`
+        : reader.paused ? `${Icons.ui('play')}<span>Resume</span>` : `${Icons.ui('pause')}<span>Pause</span>`;
+      stopBtn.hidden = !active;
+      status.textContent = active ? `Reading section ${reader.index + 1} of ${total}` : '';
+      article.querySelectorAll('.note-section').forEach((el) => el.classList.toggle('speaking', Number(el.dataset.i) === reader.index));
+    }
+
+    async function play(i) {
+      stopReader();
+      while (i < total && !hasAudio(i)) i++;
+      if (i >= total || !body.isConnected) { drawControls(); return; }
+      reveal(i + 1);
+      reader.index = i;
+      drawControls();
+      scrollToSection(i);
+      try {
+        const data = await api.getAudio(grade(), v.subjectId, topic.id, secs[i].id);
+        if (reader.index !== i || !body.isConnected) return;
+        reader.url = URL.createObjectURL(new Blob([data], { type: 'audio/ogg' }));
+        const audio = reader.audio = new Audio(reader.url);
+        audio.playbackRate = speed;
+        audio.onended = () => { if (i + 1 < total) play(i + 1); else { stopReader(); drawControls(); } };
+        // Work out word timings while the audio starts; highlighting joins in when ready.
+        ReadAlong.analyse(data).then((timing) => {
+          if (reader.audio !== audio) return;
+          reader.follow = ReadAlong.follow(audio, () => article.querySelector(`.note-section[data-i="${i}"]`), secs[i], timing);
+        }).catch((err) => console.warn('Read-along timing unavailable:', err));
+        await audio.play();
+      } catch (err) {
+        console.error('Audio failed:', err);
+        stopReader();
+        drawControls();
+        status.textContent = 'This audio could not be played.';
+      }
+    }
+
+    readBtn.addEventListener('click', () => {
+      if (reader.index < 0) { Sound.play('playStart'); return play(0); }
+      if (!reader.audio) return;
+      if (reader.paused) { Sound.play('playStart'); reader.audio.play(); reader.paused = false; } else { Sound.play('playPause'); reader.audio.pause(); reader.paused = true; }
+      drawControls();
     });
+    stopBtn.addEventListener('click', () => { Sound.play('playStop'); stopReader(); drawControls(); });
+    body.querySelector('#read-speed').addEventListener('change', (e) => {
+      speed = Number(e.target.value) || 1;
+      P().settings.readSpeed = speed;
+      save();
+      if (reader.audio) reader.audio.playbackRate = speed;
+    });
+
+    drawSections();
+    drawControls();
+    api.listAudio(grade(), v.subjectId, topic.id).then((ids) => {
+      if (!body.isConnected) return;
+      audioIds = new Set(ids);
+      if (secs.some((sec, i) => hasAudio(i))) { bar.hidden = false; drawSections(); drawControls(); Motion.reveal(bar); }
+    }).catch(() => {});
   }
 
   function renderPractice(body, topic, key) {
@@ -426,8 +780,11 @@
       }
     }
 
+    let wasComplete = topicScore(topic, tp).complete;
     function updateSummary() {
       const sc = topicScore(topic, tp);
+      const justDone = sc.complete && !wasComplete;
+      wasComplete = sc.complete;
       const p = pct(sc.score, sc.max);
       body.querySelector('#score-bar').innerHTML =
         `<span><strong>${K.formatMarks(sc.score)}</strong> / ${sc.max} marks</span>` +
@@ -441,6 +798,10 @@
           <div>${K.formatMarks(sc.score)} / ${sc.max} marks · Level ${lvl.level}: ${esc(lvl.label)}</div>
           <p class="muted">${p >= 80 ? 'Excellent work.' : p >= 50 ? 'Good effort. Review the notes for the questions you got wrong, then try again.' : 'Go back over the notes and try again.'}</p>
           <div class="btn-row"><button class="btn" id="re-notes">Back to notes</button><button class="btn primary" id="retry">Try again</button></div></div>`;
+        if (justDone) {
+          Motion.pop(end.firstElementChild);
+          setTimeout(() => Sound.play(p >= 50 ? 'complete' : 'finishSoft'), 380);
+        }
         end.querySelector('#retry').addEventListener('click', () => {
           tp.responses = {}; tp.checked = {}; tp.selfMarks = {}; tp.recorded = false;
           save(); render(); scrollTop();
@@ -458,13 +819,21 @@
             const ok = await dialog({ title: 'Check all answers?', body: `<p>${unanswered} question${unanswered === 1 ? ' is' : 's are'} not answered yet and will be marked wrong.</p>`, ok: 'Check all' });
             if (!ok) return;
           }
+          let answeredNow = 0, n = 0;
           topic.questions.forEach((q, i) => {
             if (!tp.checked[q.id]) {
+              if (K.isAnswered(q, tp.responses[q.id])) answeredNow++;
               tp.checked[q.id] = true;
               cards[i].ctx.phase = 'feedback';
               cards[i].el.refresh();
+              const k = n++, d = Math.min(k, 12) * 30;
+              Motion.reveal(cards[i].el.querySelector('.q-feedback'), d);
+              setTimeout(() => Motion.verdict(cards[i].el), d);
+              // One chime per answer, spaced out so they ripple rather than pile up.
+              if (k < 8) setTimeout(() => answerSound(cards[i].el), k * 90);
             }
           });
+          recordStreak('question', answeredNow);
           recordIfComplete(); save(); updateSummary();
         });
       }
@@ -479,9 +848,13 @@
         allowCheck: true,
         onResponse: (r) => { tp.responses[q.id] = r; save(); },
         onCheck: () => {
+          if (!tp.checked[q.id] && K.isAnswered(q, tp.responses[q.id])) recordStreak('question', 1);
           tp.checked[q.id] = true;
           ctx.phase = 'feedback';
           el.refresh();
+          Motion.reveal(el.querySelector('.q-feedback'));
+          Motion.verdict(el);
+          answerSound(el);
           recordIfComplete(); save(); updateSummary();
         },
         onSelfMark: (n) => {
@@ -509,7 +882,7 @@
       <div class="grid">${subs.map((s) => {
         const st = subjectStats(s);
         return `<button class="card" data-subject="${esc(s.id)}">
-          <span class="card-title">${esc(s.name)}</span>
+          <span class="card-head">${Icons.subject(s.id)}<span class="card-title">${esc(s.name)}</span></span>
           <span class="card-sub">${s.exams.length} paper${s.exams.length === 1 ? '' : 's'}</span>
           <span class="card-meta">${st.examsWritten ? `${st.examsWritten} written · best ${st.bestExam}%` : 'Not written yet'}</span>
         </button>`;
@@ -550,7 +923,7 @@
     ];
     main.innerHTML = `<div class="page">
       ${crumbs(items)}
-      <h1>${esc(s.name)} exams</h1>
+      <h1 class="with-icon">${Icons.subject(s.id, "lg")}<span>${esc(s.name)} exams</span></h1>
       <ul class="rows exam-rows">${s.exams.map((x) => {
         const hist = P().exams[xKey(s.id, x.id)] || [];
         const draft = P().examDrafts[xKey(s.id, x.id)];
@@ -651,6 +1024,7 @@
       phase: draft ? draft.phase : 'run',
     };
     writeExamDraft(); flush();
+    Sound.play('examStart');
     if (state.exam.phase === 'run') startTimer();
     go('exams', { name: state.exam.phase === 'mark' ? 'mark' : 'run', subjectId: s.id, examId: meta.id });
     scrollTop();
@@ -679,6 +1053,7 @@
         t.classList.toggle('low', e.timerOn && e.remainingSec <= 300);
       }
       if (e.elapsedSec % 15 === 0) { writeExamDraft(); save(); }
+      if (e.timerOn && (e.remainingSec === 300 || e.remainingSec === 60)) Sound.play('timeWarning');
       if (e.timerOn && e.remainingSec <= 0) {
         clearInterval(state.timer);
         submitExam(true);
@@ -766,6 +1141,7 @@
     clearInterval(state.timer);
     e.phase = 'mark';
     writeExamDraft(); flush();
+    Sound.play(timeUp ? 'timeWarning' : 'submit');
     const hasOpen = allExamQuestions(e.exam).some((x) => x.q.type === 'open');
     if (timeUp) {
       // Show the marking/result screen behind the notice so the exam cannot continue.
@@ -854,10 +1230,12 @@
     hist.push(attempt);
     if (hist.length > 30) hist.splice(0, hist.length - 30);
     delete P().examDrafts[e.key];
+    recordStreak('exam', 1);
     const { subjectId, examId } = e;
     stopExam();
     flush();
     go('exams', { name: 'result', subjectId, examId, attempt: hist.length - 1 });
+    setTimeout(() => Sound.play(attempt.percent >= 50 ? 'complete' : 'finishSoft'), 300);
     scrollTop();
   }
 
@@ -948,7 +1326,7 @@
       for (const [i, a] of (P().exams[xKey(s.id, x.id)] || []).entries()) recent.push({ s, x, a, i });
     }
     recent.sort((p, q) => (p.a.date < q.a.date ? 1 : -1));
-    const ts = P().settings.textSize || 'normal';
+    const streakNow = Streak.status(P());
     main.innerHTML = `<div class="page">
       <h1>Grade ${g.grade} progress</h1>
       <div class="facts">
@@ -956,10 +1334,11 @@
         <div><strong>${practised ? Math.round(sumPct / practised) + '%' : '–'}</strong><span>average practice score</span></div>
         <div><strong>${examsWritten}</strong><span>exams written</span></div>
         <div><strong>${examsWritten ? Math.round(examPctSum / examsWritten) + '%' : '–'}</strong><span>average exam score</span></div>
+        <div><strong>${streakNow.current} day${streakNow.current === 1 ? '' : 's'}</strong><span>current streak (best ${streakNow.longest})</span></div>
       </div>
       <h2>By subject</h2>
       <div class="n-table-wrap"><table class="n-table progress-table"><thead><tr><th>Subject</th><th>Notes read</th><th>Topics practised</th><th>Average</th><th>Best exam</th></tr></thead><tbody>
-        ${rows.map(({ s, st }) => `<tr><td><button class="link" data-subject="${esc(s.id)}">${esc(s.name)}</button></td>
+        ${rows.map(({ s, st }) => `<tr><td><button class="link subject-link" data-subject="${esc(s.id)}">${Icons.subject(s.id, "sm")}${esc(s.name)}</button></td>
           <td>${st.notes}/${st.total}</td><td><div class="cell-bar">${bar(st.total ? Math.round(st.practised / st.total * 100) : 0)}<span>${st.practised}/${st.total}</span></div></td>
           <td>${st.avg != null ? st.avg + '%' : '–'}</td><td>${st.bestExam != null ? st.bestExam + '%' : '–'}</td></tr>`).join('')}
       </tbody></table></div>
@@ -969,12 +1348,44 @@
           <td><button class="link" data-res="${esc(r.s.id)}|${esc(r.x.id)}|${r.i}">${esc(r.x.title)}</button></td><td>${r.a.percent}%</td></tr>`).join('')}
       </tbody></table></div>` : '<p class="muted">You have not written any exams in this grade yet.</p>'}
 
-      <h2>Settings</h2>
+    </div>`;
+    main.querySelectorAll('[data-subject]').forEach((b) => b.addEventListener('click', () => go('study', { name: 'subject', subjectId: b.dataset.subject })));
+    main.querySelectorAll('[data-res]').forEach((b) => b.addEventListener('click', () => {
+      const [sid, xid, i] = b.dataset.res.split('|');
+      go('exams', { name: 'result', subjectId: sid, examId: xid, attempt: Number(i) });
+    }));
+  }
+
+  // ---------------------------------------------------------------- settings
+  // Opened from the gear in the top bar; Back returns to the tab you came from.
+
+  function viewSettings() {
+    const ts = P().settings.textSize || 'normal';
+    const anim = P().settings.animations !== false;
+    const snd = P().settings.sounds !== false;
+    main.innerHTML = `<div class="page page-settings">
+      <button class="link back-link" id="settings-back">‹ Back</button>
+      <h1>Settings</h1>
+      <h2>Display</h2>
       <div class="settings">
         <div class="setting"><span>Text size</span><div class="segmented small">
           ${['small', 'normal', 'large', 'xlarge'].map((k) => `<button class="seg ${ts === k ? 'active' : ''}" data-size="${k}">${{ small: 'Small', normal: 'Normal', large: 'Large', xlarge: 'Extra large' }[k]}</button>`).join('')}
         </div></div>
-        <div class="setting"><span>Your data</span><div class="btn-row">
+        <div class="setting"><span>Animations</span><div class="segmented small">
+          <button class="seg ${anim ? 'active' : ''}" data-anim="1">On</button>
+          <button class="seg ${anim ? '' : 'active'}" data-anim="0">Off</button>
+        </div><span class="muted small">Smooth transitions at your screen's full refresh rate, with a touch of motion blur.</span></div>
+      </div>
+      <h2>Sound</h2>
+      <div class="settings">
+        <div class="setting"><span>Sound effects</span><div class="segmented small">
+          <button class="seg ${snd ? 'active' : ''}" data-snd="1">On</button>
+          <button class="seg ${snd ? '' : 'active'}" data-snd="0">Off</button>
+        </div><span class="muted small">Soft sounds for taps, page changes and answers.</span></div>
+      </div>
+      <h2>Your data</h2>
+      <div class="settings">
+        <div class="setting"><span>Progress</span><div class="btn-row">
           <button class="btn" id="export">Export progress</button>
           <button class="btn" id="import">Import progress</button>
           <button class="btn" id="open-folder">Open data folder</button>
@@ -982,13 +1393,27 @@
         <p class="muted small" id="location"></p>
       </div>
     </div>`;
-    main.querySelectorAll('[data-subject]').forEach((b) => b.addEventListener('click', () => go('study', { name: 'subject', subjectId: b.dataset.subject })));
-    main.querySelectorAll('[data-res]').forEach((b) => b.addEventListener('click', () => {
-      const [sid, xid, i] = b.dataset.res.split('|');
-      go('exams', { name: 'result', subjectId: sid, examId: xid, attempt: Number(i) });
+    main.querySelector('#settings-back').addEventListener('click', leaveSettings);
+    main.querySelectorAll('[data-snd]').forEach((b) => b.addEventListener('click', () => {
+      const on = b.dataset.snd === '1';
+      P().settings.sounds = on;
+      applySound();
+      Sound.play('toggleOn'); // only heard when turning sound on: a preview of it
+      Motion.selectSegment(b);
+      save();
     }));
     main.querySelectorAll('[data-size]').forEach((b) => b.addEventListener('click', () => {
-      P().settings.textSize = b.dataset.size; applyTextSize(); save(); render();
+      Sound.size(['small', 'normal', 'large', 'xlarge'].indexOf(b.dataset.size));
+      Motion.selectSegment(b);
+      P().settings.textSize = b.dataset.size; applyTextSize(); save();
+    }));
+    main.querySelectorAll('[data-anim]').forEach((b) => b.addEventListener('click', () => {
+      // Turning animations on: enable first so the thumb itself animates.
+      if (b.dataset.anim === '1') { P().settings.animations = true; applyMotion(); }
+      Sound.play(b.dataset.anim === '1' ? 'toggleOn' : 'toggleOff');
+      Motion.selectSegment(b);
+      P().settings.animations = b.dataset.anim === '1';
+      applyMotion(); save();
     }));
     main.querySelector('#export').addEventListener('click', async () => {
       await flush();
@@ -1001,14 +1426,14 @@
       if (!(await dialog({ title: 'Replace your progress?', body: '<p>Importing replaces all progress on this computer with the progress in the file.</p>', ok: 'Import', danger: true }))) return;
       stopExam();
       state.progress = r.data;
-      applyTextSize(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
+      applyTextSize(); applyMotion(); applySound(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
     });
     main.querySelector('#open-folder').addEventListener('click', () => api.openDataFolder());
     main.querySelector('#reset').addEventListener('click', async () => {
       if (!(await dialog({ title: 'Reset all progress?', body: '<p>This deletes all notes read, practice answers and exam results for every grade. This cannot be undone. Consider exporting first.</p>', ok: 'Reset everything', danger: true }))) return;
       stopExam();
       const settings = P().settings;
-      state.progress = { version: 1, settings: { grade: settings.grade, textSize: settings.textSize }, topics: {}, exams: {}, examDrafts: {} };
+      state.progress = { version: 1, settings: { grade: settings.grade, textSize: settings.textSize, animations: settings.animations, sounds: settings.sounds }, topics: {}, exams: {}, examDrafts: {} };
       await flush(); toast('Progress reset.'); render();
     });
     api.progressLocation().then((loc) => {
@@ -1016,6 +1441,15 @@
       if (el) el.textContent = `Progress is saved on this computer only, in ${loc}`;
     });
   }
+
+  function openSettings() {
+    if (document.body.classList.contains('welcome-mode')) return;
+    if (state.tab === 'settings') return leaveSettings();
+    state.returnTab = state.tab;
+    setTab('settings');
+    scrollTop();
+  }
+  function leaveSettings() { setTab(state.returnTab || 'study'); }
 
   // ---------------------------------------------------------------- welcome / grade
 
@@ -1033,6 +1467,7 @@
       <div class="grade-buttons">${state.catalog.grades.map((g) => `<button class="btn big" data-grade="${g.grade}">Grade ${g.grade}</button>`).join('')}</div>
       <p class="muted">You can change the grade at any time from the top bar.</p>
     </div>`;
+    Motion.navigate(main, null, { kind: 'first' });
     main.querySelectorAll('[data-grade]').forEach((b) => b.addEventListener('click', () => {
       P().settings.grade = Number(b.dataset.grade);
       save();
@@ -1049,7 +1484,34 @@
     state.catalog = catalog;
     state.progress = progress;
     for (const f of ['settings', 'topics', 'exams', 'examDrafts']) if (!progress[f] || typeof progress[f] !== 'object') progress[f] = {};
+    streakBtn.addEventListener('click', showStreak);
+    document.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return;
+      const t = e.target.closest('button, .card, .row, select, summary, a, label.check, input[type="checkbox"]');
+      if (t && !t.disabled) Sound.play('tap');
+    }, true);
+    document.addEventListener('keydown', (e) => {
+      if ((e.key === 'Enter' || e.key === ' ') && e.target.closest && e.target.closest('button, summary') && !e.repeat) Sound.play('tap');
+    }, true);
+    document.addEventListener('toggle', (e) => {
+      if (e.target instanceof HTMLDetailsElement) Sound.play(e.target.open ? 'reveal' : 'close');
+    }, true);
+    settingsBtn.innerHTML = Icons.ui('settings');
+    settingsBtn.addEventListener('click', openSettings);
+    // Remember which card or row was tapped, so the page it opens can zoom out of it.
+    main.addEventListener('click', (e) => {
+      const el = e.target.closest('.card, .row, .continue');
+      if (el && main.contains(el)) Motion.noteOrigin(el);
+    }, true);
+    // Keep the badge right if the app stays open past midnight.
+    window.addEventListener('focus', () => updateStreakBadge());
+    setInterval(() => updateStreakBadge(), 60 * 1000);
     applyTextSize();
+    applyMotion();
+    applySound();
+
+    document.getElementById('brand-logo').innerHTML = Icons.ui('logo', 'brand-logo');
+    document.querySelectorAll('[data-icon]').forEach((el) => { el.innerHTML = Icons.ui(el.dataset.icon); });
 
     document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => {
       if (document.body.classList.contains('welcome-mode')) return;
@@ -1069,7 +1531,7 @@
       stopExam();
       P().settings.grade = Number(gradeSelect.value);
       save();
-      state.views = { study: { name: 'home' }, exams: { name: 'home' }, progress: { name: 'home' } };
+      state.views = { study: { name: 'home' }, exams: { name: 'home' }, progress: { name: 'home' }, settings: { name: 'home' } };
       render();
       scrollTop();
     });

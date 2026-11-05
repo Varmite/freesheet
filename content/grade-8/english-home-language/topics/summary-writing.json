@@ -1,0 +1,47 @@
+{
+  "id": "summary-writing",
+  "title": "Summary Writing",
+  "term": 3,
+  "summary": "How to identify main points on a given focus, leave out examples and repetition, and write a summary in your own words as point form or a paragraph within a word limit.",
+  "notes": [
+    { "type": "heading", "text": "What is a summary?" },
+    { "type": "paragraph", "text": "A **summary** is a shortened version of a text that keeps only the **main points** related to a given **focus**. In Grade 8 you are usually asked to find **five to seven points** and write them in **your own words**, either in point form or as a fluent paragraph, within a word limit (often 70 to 90 words)." },
+    { "type": "heading", "text": "Steps to write a summary" },
+    { "type": "list", "ordered": true, "items": [
+      "Read the **instructions** carefully: what is the focus, how many points, what format and how many words?",
+      "Skim the passage for the general idea.",
+      "Read it again closely and **underline** only the points that answer the focus.",
+      "Leave out examples, statistics, repetition, quotations, descriptions and the writer's opinions.",
+      "Rewrite each point briefly in **your own words**.",
+      "If a paragraph is required, link the points with **conjunctions** and **transition words** (firstly, also, in addition, furthermore, finally).",
+      "Count the words and write the total at the end."
+    ] },
+    { "type": "passage", "title": "Practice passage: Why Sleep Matters (original)", "text": "Many teenagers think sleep is a waste of time, but scientists disagree. While you sleep, your brain sorts and stores what you learned during the day, which is why a good night's sleep before a test can improve your marks more than staying up late to study. Sleep also allows your body to repair muscles and grow; in fact, most growth hormone is released during deep sleep. People who sleep well are less likely to catch colds, because sleep strengthens the immune system. A tired teenager is often grumpy, anxious or easily upset, since lack of sleep affects the part of the brain that controls emotions. Sleepy learners also struggle to concentrate in class. Finally, a regular bedtime can help you keep a healthy weight, as tiredness increases cravings for sugary snacks." },
+    { "type": "example", "title": "Summarising the passage", "problem": "Focus: list SIX benefits of sleep for teenagers, in point form, in your own words.", "steps": [
+      "1. It helps the brain store new learning.",
+      "2. It allows the body to grow and repair itself.",
+      "3. It strengthens the immune system.",
+      "4. It helps to control emotions and mood.",
+      "5. It improves concentration.",
+      "6. It helps maintain a healthy weight."
+    ], "answer": "Notice that the examples (the test, colds, sugary snacks) are left out." },
+    { "type": "callout", "label": "Common mistake", "text": "Do not copy whole sentences from the passage, add your own ideas or opinions, or include examples. Each point should be short and clear." }
+  ],
+  "questions": [
+    { "id": "focus", "type": "open", "marks": 1, "prompt": "What is meant by the 'focus' of a summary?", "memo": "✓ The specific topic or aspect of the passage that you must summarise (1)" },
+    { "id": "omit", "type": "mcq", "prompt": "Which of these should you leave OUT of a summary?", "options": ["Main points", "Examples and statistics", "Points that answer the focus", "Key ideas in your own words"], "answer": 1 },
+    { "id": "own-words", "type": "truefalse", "prompt": "In a summary you should copy the writer's sentences exactly.", "answer": false },
+    { "id": "transition", "type": "mcq", "prompt": "Which word is a transition word that helps to link points in a summary paragraph?", "options": ["Furthermore", "Banana", "Ouch", "Quickly"], "answer": 0 },
+    { "id": "steps", "type": "open", "marks": 4, "prompt": "List FOUR steps you would follow when writing a summary.", "memo": "Any four (1 each): read instructions; skim the passage; underline points on the focus; leave out examples and repetition; rewrite in own words; link points; count words" },
+    { "id": "example-or-point", "type": "match", "marks": 4, "prompt": "Decide whether each sentence from the passage is a main point or an example (detail).", "pairs": [
+      { "left": "Sleep strengthens the immune system.", "right": "Main point" },
+      { "left": "People who sleep well are less likely to catch colds.", "right": "Example / detail" },
+      { "left": "Sleep helps the brain store learning.", "right": "Main point (learning)" },
+      { "left": "A good night's sleep before a test can improve your marks.", "right": "Example (the test)" }
+    ] },
+    { "id": "paragraph", "type": "open", "marks": 6, "prompt": "Write a paragraph of no more than 60 words summarising the benefits of sleep, using the passage 'Why Sleep Matters'. State your word count.", "memo": "Award 1 mark for each correct point, up to 5: learning/memory; growth and repair; immune system; emotions; concentration; healthy weight\n✓ 1 mark for a fluent paragraph in own words within the word limit, with word count" },
+    { "id": "word-count", "type": "open", "marks": 1, "prompt": "Why must you state the number of words at the end of a summary?", "memo": "✓ To show that you have kept within the word limit (1)" },
+    { "id": "opinion", "type": "truefalse", "prompt": "You may add your own opinion about the topic in a summary.", "answer": false },
+    { "id": "rephrase", "type": "open", "marks": 2, "prompt": "Rewrite in your own words, as one short point: 'lack of sleep affects the part of the brain that controls emotions'.", "memo": "✓✓ e.g. 'Tiredness makes it harder to manage feelings.' (own words, accurate, concise) (2)" }
+  ]
+}

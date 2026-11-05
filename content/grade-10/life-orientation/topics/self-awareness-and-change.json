@@ -1,0 +1,51 @@
+{
+  "id": "self-awareness-and-change",
+  "title": "Self-Awareness and Adolescent Change",
+  "term": 1,
+  "summary": "Physical, emotional, social and cognitive changes in adolescence, self-awareness and self-esteem, personal values, coping with change, and the transition to the FET phase.",
+  "notes": [
+    { "type": "heading", "text": "Adolescence: a time of change" },
+    { "type": "table", "headers": ["Type of change", "Examples"], "rows": [
+      ["Physical", "Growth spurts, hormonal changes, changes in body shape, skin and voice"],
+      ["Emotional", "Mood swings, stronger feelings, searching for identity, wanting independence"],
+      ["Social", "Friends and peers become more important; first romantic relationships; new roles at home"],
+      ["Cognitive", "Thinking becomes more abstract; questioning rules and beliefs; planning for the future"],
+      ["Moral and spiritual", "Developing personal values and beliefs, sometimes different from those of parents"]
+    ] },
+    { "type": "heading", "text": "Self-awareness" },
+    { "type": "definition", "term": "Self-awareness", "text": "Understanding your own personality, strengths, weaknesses, feelings, values and motives, and how they affect your behaviour and other people." },
+    { "type": "list", "items": [
+      "**Strengths and weaknesses**: identifying them helps you set realistic goals and seek help where needed.",
+      "**Self-esteem**: how you value yourself. Healthy self-esteem helps you resist negative pressure and recover from setbacks.",
+      "**Values**: principles that guide your choices, such as honesty, respect, responsibility and compassion."
+    ] },
+    { "type": "callout", "label": "Johari window", "text": "A model of self-awareness with four 'windows': things known to you and others (open), known to others but not to you (blind spot), known to you but hidden from others (hidden), and unknown to everyone (unknown). Feedback and sharing make the open area bigger." },
+    { "type": "heading", "text": "Coping with change" },
+    { "type": "paragraph", "text": "Grade 10 brings new subjects, higher expectations and a step towards adulthood. Healthy coping includes planning, asking for help, keeping routines, exercising, talking about feelings and focusing on what you can control." },
+    { "type": "heading", "text": "Building a positive self-concept" },
+    { "type": "list", "items": [
+      "Use positive, realistic self-talk.",
+      "Set and achieve small goals.",
+      "Choose friends who respect and support you.",
+      "Learn from mistakes instead of seeing them as failures.",
+      "Take care of your physical and mental health."
+    ] }
+  ],
+  "questions": [
+    { "id": "cognitive", "type": "mcq", "prompt": "Questioning rules and thinking about the future are examples of which type of change?", "options": ["Physical", "Social", "Cognitive", "Emotional"], "answer": 2 },
+    { "id": "self-awareness", "type": "open", "marks": 2, "prompt": "Define self-awareness.", "memo": "✓ Understanding your own personality, strengths, weaknesses, feelings and values (1)\n✓ and how they affect your behaviour and others (1)" },
+    { "id": "johari", "type": "mcq", "prompt": "In the Johari window, things others know about you but you do not know are your…", "options": ["open area", "blind spot", "hidden area", "unknown area"], "answer": 1 },
+    { "id": "values", "type": "short", "prompt": "What term describes the principles that guide a person's choices and behaviour?", "answers": ["values", "personal values"] },
+    { "id": "change-types", "type": "match", "marks": 4, "prompt": "Match each example to the type of change.", "pairs": [
+      { "left": "Voice deepening", "right": "Physical" },
+      { "left": "Mood swings", "right": "Emotional" },
+      { "left": "Spending more time with peers", "right": "Social" },
+      { "left": "Thinking in abstract ways", "right": "Cognitive" }
+    ] },
+    { "id": "esteem", "type": "open", "marks": 3, "prompt": "Explain THREE ways healthy self-esteem benefits a Grade 10 learner.", "memo": "Any three (1 each): resists negative peer pressure; tries new challenges; recovers from setbacks; builds healthy relationships; makes responsible decisions; better mental health" },
+    { "id": "coping", "type": "open", "marks": 3, "prompt": "Suggest THREE healthy ways to cope with the changes of moving into Grade 10.", "memo": "Any three (1 each): plan and manage time; ask teachers for help; keep routines; exercise; talk to someone; join clubs; focus on what you can control" },
+    { "id": "feedback", "type": "truefalse", "prompt": "Asking for honest feedback from others can increase your self-awareness.", "answer": true },
+    { "id": "self-concept", "type": "open", "marks": 3, "prompt": "Describe THREE strategies to build a positive self-concept.", "memo": "Any three (1 each): positive self-talk; set achievable goals; supportive friends; learn from mistakes; look after health; recognise strengths" },
+    { "id": "moral", "type": "open", "marks": 2, "prompt": "Why might teenagers develop values that differ from those of their parents?", "memo": "✓ They begin to think independently and question beliefs (1)\n✓ and are influenced by peers, media and new experiences (1)" }
+  ]
+}

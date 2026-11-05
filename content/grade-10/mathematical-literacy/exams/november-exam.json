@@ -1,0 +1,302 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper consists of FOUR questions. Answer ALL the questions.",
+    "Show ALL calculations clearly.",
+    "Round off answers to TWO decimal places, unless stated otherwise.",
+    "Units of measurement must be shown in final answers."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Finance",
+      "context": [
+        {
+          "type": "table",
+          "caption": "Nomsa's monthly payslip",
+          "headers": [
+            "Item",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "Basic salary",
+              "R11 200,00"
+            ],
+            [
+              "Overtime",
+              "A"
+            ],
+            [
+              "Gross salary",
+              "R12 040,00"
+            ],
+            [
+              "UIF",
+              "B"
+            ],
+            [
+              "Pension (7% of basic salary)",
+              "C"
+            ],
+            [
+              "PAYE",
+              "R648,00"
+            ],
+            [
+              "Net salary",
+              "D"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the value of A (overtime).",
+          "answer": 840,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q1-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate B, the UIF contribution (1% of gross salary).",
+          "answer": 120.4,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "q1-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate C, the pension contribution.",
+          "answer": 784,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q1-4",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate D, the net salary.",
+          "answer": 10487.6,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "q1-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Overtime is paid at R105 per hour. How many hours of overtime did Nomsa work?",
+          "memo": "✓ R840 ÷ R105 (2)\n✓ = 8 hours (1)"
+        },
+        {
+          "id": "q1-6",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Nomsa spends R3 900 on rent, R2 600 on groceries, R1 400 on transport and R950 on electricity. Calculate her surplus and the percentage of her net salary she spends on rent.",
+          "memo": "✓ Expenses R8 850 (1)\n✓ Surplus R10 487,60 − R8 850 = R1 637,60 (1)\n✓ Rent % = R3 900 ÷ R10 487,60 × 100 (1)\n✓ ≈ 37,19% (1)"
+        },
+        {
+          "id": "q1-7",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A fridge costs R6 210 including 15% VAT. Calculate the price excluding VAT.",
+          "answer": 5400,
+          "tolerance": 0.01,
+          "unit": "rand"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Measurement and maps",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A rectangular classroom floor is 8,5 m by 6 m. Floor sealant covers 12 m² per litre and is sold in 5 ℓ tins at R385 each. How many tins are needed and what will they cost?",
+          "memo": "✓ Area 51 m² (1)\n✓ 51 ÷ 12 = 4,25 ℓ (1)\n✓ 1 tin (1)\n✓ R385 (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Convert 30 °C to °F using °F = 1,8 × °C + 32.",
+          "answer": 86,
+          "tolerance": 0,
+          "unit": "°F"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A bus departs at 09:35 and the trip takes 2 h 50 min. At what time does it arrive?",
+          "memo": "✓ 09:35 + 2 h = 11:35 (1)\n✓ + 50 min = 12:25 (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "On a map with scale 1 : 50 000, the distance between two villages is 11,6 cm. Calculate the real distance in km.",
+          "answer": 5.8,
+          "tolerance": 0,
+          "unit": "km"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "On a 1 : 100 floor plan, a bedroom measures 3,8 cm by 3,2 cm. Calculate the real floor area.",
+          "memo": "✓ 3,8 m by 3,2 m (1)\n✓ 3,8 × 3,2 (1)\n✓ = 12,16 m² (1)"
+        },
+        {
+          "id": "q2-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain why a map maker might use a bar scale rather than a number scale.",
+          "memo": "✓ The bar scale remains accurate if the map is enlarged or reduced (2)\n✓ It is easy to read without calculations (1)"
+        },
+        {
+          "id": "q2-7",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A circular flower bed has a diameter of 3 m. Calculate (a) the length of edging needed to go around it and (b) its area. Use $\\pi = 3{,}142$.",
+          "memo": "(a) ✓ $C = \\pi \\times 3$ (1) ✓ $\\approx 9{,}43$ m (1)\n(b) ✓ $A = 3{,}142 \\times 1{,}5^2$ (1) ✓ $\\approx 7{,}07$ m² (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Patterns, relationships and tariffs",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "**Option A** (a phone contract): R150 per month plus R0,90 per minute. **Option B** (prepaid): R1,65 per minute."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the cost of Option A for 120 minutes.",
+          "answer": 258,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write a formula for the cost of each option in terms of the number of minutes $m$.",
+          "memo": "✓ A: $C = 150 + 0{,}9m$ (1)\n✓ B: $C = 1{,}65m$ (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Determine the number of minutes for which both options cost the same.",
+          "memo": "✓ $150 + 0{,}9m = 1{,}65m$ (1)\n✓ $0{,}75m = 150$ (1)\n✓ $m = 200$ minutes (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Lerato uses about 90 minutes a month. Which option should she choose? Give a reason.",
+          "memo": "✓ Option B (1)\n✓ 90 < 200 minutes, so prepaid is cheaper (R148,50 vs R231) (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Electricity costs R2,40 per kWh for the first 350 kWh and R3,10 per kWh for usage above that. Calculate the cost of using 520 kWh.",
+          "memo": "✓ 350 × R2,40 = R840 (1)\n✓ 170 kWh above (1)\n✓ 170 × R3,10 = R527 (1)\n✓ Total R1 367 (1)"
+        },
+        {
+          "id": "q3-6",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "5 workers take 12 days to paint a school. How many days would 6 workers take, working at the same rate?",
+          "answer": 10,
+          "tolerance": 0,
+          "unit": "days"
+        },
+        {
+          "id": "q3-7",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A recipe for 6 people needs 450 g of flour and 3 eggs. (a) How much flour is needed for 10 people? (b) How many eggs are needed for 10 people? Round sensibly.",
+          "memo": "(a) ✓ 450 ÷ 6 = 75 g per person (1) ✓ 75 × 10 = 750 g (1)\n(b) ✓ 0,5 × 10 = 5 eggs (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Data handling and probability",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Number of learners absent from a class each day over two weeks: 3; 5; 2; 4; 3; 12; 3; 2; 4; 2"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the mean number of absentees.",
+          "answer": 4,
+          "tolerance": 0
+        },
+        {
+          "id": "q4-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Determine the median.",
+          "answer": 3,
+          "tolerance": 0
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down the modes and the range.",
+          "memo": "✓ Modes: 2 and 3 (1)\n✓ Range: 12 − 2 = 10 (1)"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Which average best represents a typical day? Explain.",
+          "memo": "✓ The median (1)\n✓ The value 12 is an outlier that increases the mean (1)"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "In a survey of 80 learners, 28 chose soccer as their favourite sport. Calculate the angle for soccer in a pie chart.",
+          "memo": "✓ 28 ÷ 80 = 35% (1)\n✓ 0,35 × 360° (1)\n✓ = 126° (1)"
+        },
+        {
+          "id": "q4-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A bag contains 6 blue, 4 white and 2 black counters. One is drawn at random. Find P(not blue) as a fraction and a percentage.",
+          "memo": "✓ 6 counters are not blue (1)\n✓ $\\frac{6}{12} = \\frac{1}{2}$ (1)\n✓ 50% (1)"
+        },
+        {
+          "id": "q4-7",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A fair coin is tossed and a fair die is rolled. Find P(tails and a number less than 3).",
+          "memo": "✓ 12 outcomes (1)\n✓ T1, T2 (1)\n✓ $\\frac{2}{12} = \\frac{1}{6}$ (1)"
+        }
+      ]
+    }
+  ]
+}

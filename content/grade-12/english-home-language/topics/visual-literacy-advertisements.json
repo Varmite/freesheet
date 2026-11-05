@@ -1,0 +1,326 @@
+{
+  "id": "visual-literacy-advertisements",
+  "title": "Visual Literacy: Advertisements",
+  "term": 2,
+  "summary": "Analyse how advertisements combine images, words, layout, font and colour to persuade a target audience, and answer Paper 1 Question 3 with confidence.",
+  "notes": [
+    { "type": "heading", "text": "Advertisements in Paper 1" },
+    { "type": "paragraph", "text": "In Paper 1 (Language in Context), **Question 3** is the advertisement question and is worth **10 marks**. You are given one advertisement (sometimes two to compare) and three to five questions worth 1 to 3 marks each. The questions test whether you can read an advertisement as a carefully constructed text: every picture, word, colour and font has been chosen to persuade a particular audience.\n\nNote: every advertisement, product and brand in these notes is invented for teaching purposes." },
+    { "type": "callout", "label": "Exam tip", "text": "Always refer to **specific details** in the advertisement. “The picture is eye-catching” earns nothing; “The close-up of the runner's mud-splattered shoe draws attention to how tough the product is” earns marks." },
+
+    { "type": "heading", "text": "Purpose and target audience" },
+    { "type": "definition", "term": "Purpose", "text": "What the advertisement wants to achieve: usually to **persuade** people to buy a product or use a service, but also to build a brand's image, to announce an event, or (in a **public service announcement**) to change people's behaviour, e.g. to save water, stop drinking and driving or get vaccinated." },
+    { "type": "definition", "term": "Target audience", "text": "The specific group of people the advertisement is aimed at. Advertisers define their audience by age, gender, income or socio-economic group, lifestyle and interests, location and sometimes language or culture." },
+    { "type": "list", "items": [
+      "**Who is shown?** People in an advert usually look like the target audience, or like the person the audience wants to become.",
+      "**What is the setting?** A luxury hotel suggests wealthy consumers; a school playground suggests parents or children.",
+      "**What is the register?** Slang and emojis suggest young people; formal, technical language suggests professionals.",
+      "**What does it cost?** A price of R25 000 rules out most teenagers.",
+      "**Where would it appear?** A business magazine, a gaming website and a parenting blog have very different readers."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "A target-audience question usually carries 2 marks: 1 for identifying the audience **precisely** (not just “everyone” or “people”), and 1 for **justifying** your answer with evidence from both the visual and the verbal elements." },
+
+    { "type": "heading", "text": "The elements of an advertisement" },
+    { "type": "table", "caption": "Anatomy of an advertisement", "headers": ["Element", "What it is", "What to say about it"], "rows": [
+      ["Headline", "The large, prominent words that catch attention, usually at the top.", "How it grabs attention: wordplay, a question, a bold claim, an imperative."],
+      ["Copy (body copy)", "The smaller block of text that gives information and arguments.", "What it tells or promises; its tone, register and persuasive devices."],
+      ["Slogan (tagline)", "A short, memorable phrase linked to the brand and repeated across many adverts.", "Its sound devices (rhyme, alliteration), wordplay and the value it attaches to the brand."],
+      ["Logo", "The brand's symbol or emblem; may include the brand name.", "How its design reflects the brand's values (a leaf for natural, a shield for safety)."],
+      ["Visual image", "The photograph, drawing or graphic.", "Who or what is shown, setting, camera angle, body language, symbols, focal point."],
+      ["Call to action", "Words telling the reader what to do next.", "Usually an imperative: “Buy now”, “Visit our website”, “SMS JOIN to ...”."],
+      ["Contact details", "Website, phone number, social media handle, store address.", "Make it easy to act (the final stage of AIDA)."],
+      ["Small print", "Tiny text, often after an asterisk, that sets out conditions.", "What it reveals or limits; whether it contradicts the main claim."],
+      ["White space", "Empty space around elements.", "Creates a clean, uncluttered, often upmarket look; directs the eye."]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "The **headline** and the **slogan** are not the same. The headline belongs to one particular advertisement and changes from campaign to campaign. The slogan stays with the brand (it often appears next to the logo) and is repeated for years." },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 780 440' font-family='sans-serif'><rect x='0' y='0' width='780' height='440' fill='#fff'/><rect x='20' y='20' width='520' height='400' fill='none' stroke='#000' stroke-width='2'/><text x='290' y='72' font-size='30' font-weight='bold' text-anchor='middle' fill='#000'>RUN WITH THE RAIN</text><path d='M80 110 l-8 16 M120 105 l-8 16 M160 112 l-8 16 M200 104 l-8 16 M240 110 l-8 16 M280 106 l-8 16' stroke='#000' stroke-width='1.5'/><path d='M70 280 L70 232 Q74 208 104 206 L140 210 Q160 182 190 186 L216 196 Q252 226 300 240 Q322 248 318 268 L318 280 Z' fill='none' stroke='#000' stroke-width='2'/><path d='M66 286 L322 286' stroke='#000' stroke-width='5'/><path d='M150 204 l14 10 M162 196 l14 10 M174 190 l14 10' stroke='#000' stroke-width='1.5'/><text x='345' y='150' font-size='12' fill='#000'>Deep-lug soles grip wet rock.</text><text x='345' y='170' font-size='12' fill='#000'>Quick-dry mesh breathes.</text><text x='345' y='190' font-size='12' fill='#000'>Table Mountain to the Berg.</text><text x='345' y='210' font-size='12' font-weight='bold' fill='#000'>Now only R1 299*</text><rect x='345' y='300' width='180' height='34' fill='none' stroke='#000' stroke-width='2'/><text x='435' y='322' font-size='12' font-weight='bold' text-anchor='middle' fill='#000'>FIND YOUR PAIR TODAY</text><circle cx='80' cy='356' r='24' fill='none' stroke='#000' stroke-width='2'/><text x='80' y='362' font-size='18' font-weight='bold' text-anchor='middle' fill='#000'>IV</text><text x='115' y='352' font-size='20' font-weight='bold' fill='#000'>IMVULA</text><text x='115' y='374' font-size='13' font-style='italic' fill='#000'>Made for Mzansi's mountains.</text><text x='60' y='406' font-size='9' fill='#000'>*R1 299 applies to selected sizes only. While stocks last.</text><g font-size='12' font-weight='bold' text-anchor='middle' fill='#000'><circle cx='42' cy='62' r='10' fill='#fff' stroke='#000'/><text x='42' y='66'>1</text><circle cx='48' cy='215' r='10' fill='#fff' stroke='#000'/><text x='48' y='219'>2</text><circle cx='330' cy='146' r='10' fill='#fff' stroke='#000'/><text x='330' y='150'>3</text><circle cx='330' cy='317' r='10' fill='#fff' stroke='#000'/><text x='330' y='321'>4</text><circle cx='40' cy='326' r='10' fill='#fff' stroke='#000'/><text x='40' y='330'>5</text><circle cx='314' cy='370' r='10' fill='#fff' stroke='#000'/><text x='314' y='374'>6</text><circle cx='42' cy='402' r='10' fill='#fff' stroke='#000'/><text x='42' y='406'>7</text></g><g font-size='14' fill='#000'><text x='570' y='50' font-weight='bold'>Key</text><text x='570' y='80'>1  Headline</text><text x='570' y='108'>2  Visual image</text><text x='570' y='136'>3  Copy (body copy)</text><text x='570' y='164'>4  Call to action</text><text x='570' y='192'>5  Logo and brand name</text><text x='570' y='220'>6  Slogan (tagline)</text><text x='570' y='248'>7  Small print</text></g></svg>", "caption": "Advertisement A: the parts of an advertisement for Imvula trail-running shoes (an invented brand)." },
+    { "type": "passage", "title": "Advertisement A described in full", "text": "The advertisement is printed in a running magazine. The background is a stormy blue-grey sky over a misty mountain, with slanting lines of rain. In the centre, a bright orange trail-running shoe is shown in close-up, splashing through a muddy puddle; drops of water fly off the sole. The headline **RUN WITH THE RAIN** is in thick white capital letters across the top. On the right, the short body copy in plain white type reads: “Deep-lug soles grip wet rock. Quick-dry mesh breathes. Table Mountain to the Berg. Now only R1 299*”. Below it is an orange box with the words FIND YOUR PAIR TODAY. At the bottom left is the logo: a circle containing the letters IV, beside the brand name IMVULA and the slogan *Made for Mzansi's mountains.* At the very bottom, in tiny print: “*R1 299 applies to selected sizes only. While stocks last.”" },
+
+    { "type": "heading", "text": "Layout and design" },
+    { "type": "paragraph", "text": "**Layout** is the way the elements are arranged on the page. A good layout has a clear **focal point** (the first thing your eye goes to, usually the largest or brightest image or the headline) and then guides the eye through the rest of the advertisement. Readers of English tend to scan from top left to bottom right, so advertisers often put the headline at the top and the logo and call to action at the bottom right, where the eye comes to rest.\n\nAlso consider **size** (the biggest element is the most important), **placement** (centre = importance), **white space** (a clean, uncluttered look often suggests quality or luxury; a crowded layout suggests bargains and energy) and **framing** (borders or boxes that separate information)." },
+
+    { "type": "heading", "text": "Font (typography)" },
+    { "type": "table", "caption": "Font features and their typical effects", "headers": ["Font feature", "Typical effect"], "rows": [
+      ["Large, bold capital letters", "Grabs attention; suggests strength, urgency or excitement; can feel like shouting."],
+      ["Serif font (with small strokes at the ends of letters, like Times New Roman)", "Traditional, formal, trustworthy, established; common for banks, law firms, luxury goods."],
+      ["Sans-serif font (plain, without strokes, like Arial)", "Modern, clean, simple, easy to read; common for technology and health products."],
+      ["Script or handwritten font", "Personal, elegant, romantic or homely; suggests a human touch."],
+      ["Playful, irregular or cartoon-like font", "Fun, informal, youthful; suitable for children's products or snacks."],
+      ["Italics", "Emphasis, movement, elegance; often used for slogans."],
+      ["Different font sizes", "Creates a hierarchy: the most important words are biggest."],
+      ["Jagged or distorted letters", "Energy, danger, speed or excitement (energy drinks, action films)."]
+    ] },
+
+    { "type": "heading", "text": "Use of colour" },
+    { "type": "paragraph", "text": "Colours carry **connotations** (associations). Advertisers choose them to match the product and the mood they want to create. Always link the colour to the product and the target audience; never just name the colour." },
+    { "type": "table", "caption": "Common colour connotations in advertising", "headers": ["Colour", "Common connotations", "Typical products"], "rows": [
+      ["Red", "Passion, energy, danger, urgency, appetite", "Fast food, sales (“SALE!”), sports cars"],
+      ["Green", "Nature, health, freshness, growth, environmentally friendly", "Organic food, eco-friendly products, banking (money, growth)"],
+      ["Blue", "Trust, calm, reliability, coolness, cleanliness", "Banks, insurance, water, medical products"],
+      ["Black", "Luxury, sophistication, power, elegance (also death, mourning)", "Perfume, luxury cars, designer clothing"],
+      ["White", "Purity, cleanliness, simplicity, peace", "Medical products, washing powder, dairy"],
+      ["Gold and yellow", "Wealth, success, happiness, sunshine, warmth", "Jewellery, premium brands, holidays, breakfast foods"],
+      ["Orange", "Energy, fun, warmth, enthusiasm", "Juice, sports gear, children's products"],
+      ["Pink and pastels", "Softness, gentleness, femininity (a stereotype worth commenting on)", "Baby products, cosmetics"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Connotations depend on context. Red on a fire-safety poster signals danger; red on a Valentine's Day advert signals love. Colours can also be symbolic: the colours of the South African flag suggest national pride (patriotism)." },
+
+    { "type": "heading", "text": "Visual images and the link between visual and verbal elements" },
+    { "type": "paragraph", "text": "When you analyse the image, consider:\n\n• **Who** is shown (age, gender, clothing, body language, facial expression) and whether they **look directly at the viewer** (direct gaze creates a personal connection);\n• **camera angle and shot**: a **low-angle** shot (looking up) makes the subject seem powerful, heroic or dominant; a **high-angle** shot (looking down) makes it seem small or vulnerable; a **close-up** shows detail or emotion; a **long shot** shows the setting;\n• **setting and props**: a mountain suggests adventure, a kitchen suggests family;\n• **symbols**: a padlock for security, a heart for love, a leaf for natural ingredients;\n• **lighting**: bright light suggests optimism; dark, moody light suggests mystery or luxury.\n\nThe **visual** elements (images, colour, layout) and the **verbal** elements (headline, copy, slogan) work together. The words **anchor** the meaning of the image, telling us how to read it, and the image **illustrates** or reinforces the words. Many exam questions ask how the two are linked." },
+    { "type": "example", "title": "Worked analysis 1: linking visual and verbal (Advertisement A)", "problem": "Discuss how the visual image supports the headline “RUN WITH THE RAIN” in Advertisement A. (3)", "steps": [
+      "Describe the visual detail: the close-up of the orange shoe splashing through a muddy puddle, with rain falling and water flying off the sole.",
+      "Link it to the words: the image shows the shoe literally running in the rain, so it illustrates the headline exactly.",
+      "Explain the persuasive effect: the headline turns rain from an obstacle into something to embrace (“with” the rain, not “in spite of” it), and the image proves the claim by showing the shoe performing well in wet conditions. The bright orange shoe stands out against the grey sky, suggesting that the runner stays energetic and visible even in bad weather."
+    ], "answer": "The image of the shoe splashing through mud in the rain illustrates the headline literally; together they suggest that the shoe turns bad weather into an adventure, which appeals to keen trail runners. (3)" },
+
+    { "type": "heading", "text": "Persuasive techniques in advertising" },
+    { "type": "table", "caption": "Persuasive techniques (examples are invented)", "headers": ["Technique", "How it works", "Example"], "rows": [
+      ["Emotive appeal", "Stirs feelings such as love, guilt, pride, nostalgia or pity.", "A grandmother hugging her grandchild: “Because family is everything.”"],
+      ["Testimonial / endorsement", "A celebrity, expert or satisfied customer recommends the product.", "A famous chef: “I cook only with Golden Ridge oil.”"],
+      ["Humour", "Makes the audience laugh, so they remember the brand and feel positive about it.", "A cow looking jealous of a carton of soya milk."],
+      ["Statistics and scientific claims", "Numbers and technical language make claims sound objective and proven.", "“Clinically tested. 87% saw results.”"],
+      ["Puns and wordplay", "A word or phrase with two meanings; clever and memorable.", "Juice advert: “Squeeze the day!”"],
+      ["Imperatives", "Commands that urge action.", "“Book now.” “Taste the difference.”"],
+      ["Rhetorical questions", "Involve the reader and suggest a need.", "“Tired of dropped calls?”"],
+      ["Direct address", "“You” and “your” make the advert feel personal.", "“You deserve a break.”"],
+      ["Bandwagon", "Everyone is buying it; join them.", "“South Africa's favourite snack.”"],
+      ["Snob appeal / exclusivity", "Owning it makes you special, elite or sophisticated.", "“For the few who expect more.”"],
+      ["Fear appeal", "Frightens the audience about the consequences of not buying.", "“Is your family protected if the worst happens?”"],
+      ["Urgency / limited offer", "Pressure to act quickly.", "“Only while stocks last!” “Sale ends Sunday!”"],
+      ["Patriotism / local pride", "Appeals to love of country or community.", "“Proudly made in Mzansi.”"],
+      ["Hyperbole and superlatives", "Exaggeration; claims to be the best.", "“The softest towels in the universe.”"],
+      ["Sound devices", "Alliteration, rhyme and rhythm make slogans catchy.", "“Crisp, crunchy, cheesy.”"]
+    ] },
+
+    { "type": "heading", "text": "Puns and wordplay" },
+    { "type": "definition", "term": "Pun", "text": "A play on words that uses a word with two meanings, or two words that sound alike, to create humour or a double message. In advertising, puns are memorable and often link the product to a positive idea." },
+    { "type": "example", "title": "Worked analysis 2: explaining a pun", "problem": "An advertisement for Sunny Grove orange juice (invented) shows a smiling woman holding a glass of juice in bright morning sunlight. The headline reads “Squeeze the day!” Explain the pun and comment on its effectiveness. (3)", "steps": [
+      "Identify the saying it plays on: “Seize the day” (make the most of every moment).",
+      "Give the first meaning: “squeeze” refers to squeezing oranges to make juice, which suggests that the product is fresh and natural.",
+      "Give the second meaning: by echoing “seize the day”, the headline suggests that drinking the juice will give you energy to make the most of your day.",
+      "Evaluate: the pun is effective because it is witty and memorable and links the product to a positive, active lifestyle; the image of morning sunlight reinforces the idea of a fresh start."
+    ] },
+
+    { "type": "heading", "text": "The AIDA principle" },
+    { "type": "paragraph", "text": "Most advertisements follow the **AIDA** principle, a four-stage model of how an advert moves a consumer towards buying." },
+    { "type": "table", "caption": "AIDA", "headers": ["Stage", "Aim", "How advertisements achieve it"], "rows": [
+      ["**A**ttention", "Catch the eye", "Striking image, bold headline, bright colour, humour, a shocking question"],
+      ["**I**nterest", "Make the reader want to know more", "Copy explaining features, intriguing claims, a story"],
+      ["**D**esire", "Make the reader want the product", "Benefits, emotional appeals, testimonials, attractive people and lifestyles"],
+      ["**A**ction", "Get the reader to act", "Call to action, imperatives, special offers, urgency, contact details"]
+    ] },
+    { "type": "example", "title": "Worked analysis 3: applying AIDA (Advertisement A)", "problem": "Show how Advertisement A follows the AIDA principle.", "steps": [
+      "**Attention**: the bold white headline and the bright orange shoe splashing against a grey, stormy background catch the eye.",
+      "**Interest**: the copy lists features (“Deep-lug soles grip wet rock. Quick-dry mesh breathes.”) that a trail runner would want to know about.",
+      "**Desire**: “Table Mountain to the Berg” and the slogan “Made for Mzansi's mountains” let local runners imagine themselves on famous trails; the price “Now only R1 299” makes the shoe seem affordable.",
+      "**Action**: the boxed imperative “FIND YOUR PAIR TODAY” tells the reader what to do, and “today” adds urgency."
+    ] },
+
+    { "type": "heading", "text": "Manipulative and misleading claims" },
+    { "type": "paragraph", "text": "Advertisers are not allowed to lie outright, so they often use language that **sounds** impressive but promises very little. Learn to spot these tricks:" },
+    { "type": "list", "items": [
+      "**Weasel words**: words that weaken a claim while seeming to strengthen it: “helps”, “fights”, “up to”, “virtually”, “can”, “may”, “looks”, “feels”. “Helps reduce wrinkles” does not promise to reduce them.",
+      "**Vague comparatives**: “better”, “more”, “extra”, “new and improved”. Better than what? More than what?",
+      "**Suspicious statistics**: “9 out of 10 users agree” may be based on a survey of ten people chosen by the company.",
+      "**Pseudo-scientific jargon**: invented technical-sounding terms (“with Hydra-Boost molecules”) that impress but cannot be checked.",
+      "**“Free” and “from” prices**: “Free phone!” may require a 36-month contract; “From R99” means the item you want is probably more expensive.",
+      "**Small print**: conditions in tiny print, often linked by an asterisk, that limit or contradict the main claim.",
+      "**Edited images**: airbrushed models and enhanced food photographs create unrealistic expectations.",
+      "**Implied claims**: placing a product next to a healthy athlete implies that it is healthy, without saying so."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "When you see an asterisk (*), find the small print. Examiners love asking how the small print changes or undermines the headline claim. Quote both and explain the contradiction." },
+    { "type": "example", "title": "Worked analysis 4: a misleading claim", "problem": "An advertisement for SlimLeaf Tea (invented) shows a slim, smiling woman in a tape measure belt. The headline reads: “Lose up to 5 kg in two weeks!*” The small print says: “*When combined with a calorie-controlled diet and daily exercise. Results may vary.” Critically comment on the claim. (3)", "steps": [
+      "“Up to” is a weasel word: 5 kg is the maximum, and many people may lose nothing at all.",
+      "The small print reveals that the weight loss depends on dieting and exercise, which would cause weight loss with or without the tea. The tea's own contribution is never proved.",
+      "“Results may vary” protects the company if the product does not work.",
+      "The image of a slim, smiling woman implies that drinking the tea leads to this body and happiness, which may exploit the insecurities of people who are unhappy with their weight.",
+      "Conclusion: the headline is misleading because the small print undermines it."
+    ] },
+
+    { "type": "heading", "text": "Evaluating effectiveness" },
+    { "type": "paragraph", "text": "“Is this advertisement effective?” or “Do you think the advertisement achieves its purpose?” questions require you to **take a stand** and **justify** it. Consider whether the advertisement:" },
+    { "type": "list", "items": [
+      "catches the attention of its **specific** target audience;",
+      "makes its message clear quickly (most people glance at an advert for a few seconds);",
+      "links the visual and verbal elements so that each strengthens the other;",
+      "uses persuasive techniques that suit the audience (humour for teenagers, trust and expertise for medical products);",
+      "makes it easy to act (call to action, contact details);",
+      "is honest, or whether its claims and small print might make consumers distrust the brand;",
+      "might offend or exclude people through stereotypes."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "In evaluation questions, “Yes, it is effective because it is colourful” earns nothing. Give a clear view, refer to two specific features, and explain why they would or would not work **for this audience**." },
+
+    { "type": "heading", "text": "Answering Question 3 step by step" },
+    { "type": "list", "ordered": true, "items": [
+      "Look at the whole advertisement for 30 seconds before reading the questions. Ask: What is being sold? To whom? What is the main message?",
+      "Read every word, including the small print, the slogan and the text on the product itself.",
+      "Read the questions and note the mark allocation: 1 mark = one point; 2 marks = point plus explanation or evidence; 3 marks = a developed discussion.",
+      "Use the correct terminology: headline, copy, slogan, logo, target audience, pun, imperative, connotation, focal point.",
+      "Always refer to specific visual **and** verbal details, and explain their effect on the target audience.",
+      "Answer in full sentences. Do not retell the advert; analyse it."
+    ] },
+    { "type": "table", "caption": "Common question words", "headers": ["Question word", "What the examiner wants"], "rows": [
+      ["Identify / Name / State", "A short, accurate answer (usually 1 mark)."],
+      ["Explain", "Make the meaning or reason clear, with evidence."],
+      ["Discuss / Comment on", "Give a point, support it with detail from the advertisement and explain its effect."],
+      ["Critically discuss / Evaluate", "Make a judgement (for example effective or not, fair or misleading) and justify it."],
+      ["Account for", "Give the reason why something has been done."]
+    ] },
+
+    { "type": "passage", "title": "Advertisement B: a public service announcement (invented)", "text": "The whole advertisement is in shades of brown and grey, except for one detail. A close-up photograph shows a young girl's cupped hands held under a dripping outside tap. A single drop of water, coloured bright blue, is falling into her hands. The ground below is dry and cracked.\n\nHeadline (large black capitals): **ONE DROP. ONE CHILD. ONE FUTURE.**\n\nCopy (small black type): “A tap that drips once a second can waste about 30 litres of water a day. That's enough drinking water for a family. Fix leaks. Close taps. Every drop counts.”\n\nAt the bottom right is a blue circular logo shaped like a water drop, with the words WATER WISE ALLIANCE and a toll-free number." },
+    { "type": "example", "title": "Worked analysis 5: model answers for Advertisement B", "problem": "Answer these DBE-style questions on Advertisement B.\n\n(a) What is the purpose of this advertisement? (1)\n(b) Comment on the use of colour in the advertisement. (2)\n(c) Discuss the effectiveness of the headline. (2)\n(d) Identify and explain ONE persuasive technique in the copy. (2)", "steps": [
+      "(a) To persuade people to save water by fixing leaks and closing taps. (It is a public service announcement, not a product advert.) ✓",
+      "(b) The dull browns and greys suggest drought and lifelessness ✓, so the single bright blue drop stands out as precious and becomes the focal point, emphasising how valuable every drop of water is ✓.",
+      "(c) The repetition of “ONE” in three short, parallel sentences (a rule of three) creates a slow, serious rhythm ✓. It links a single drop of water to a child's life and future, making a small action feel important and creating an emotional appeal ✓.",
+      "(d) Statistics ✓: “about 30 litres of water a day” turns a small drip into a large, shocking amount, giving the message credibility. OR Imperatives ✓: “Fix leaks. Close taps.” are short, direct commands that tell the reader exactly what to do. ✓"
+    ] },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Paper 1 Question 3 is worth 10 marks; always refer to specific visual and verbal details.",
+      "Identify the purpose (sell, build brand image, change behaviour) and a precise target audience, with evidence.",
+      "Know the elements: headline, copy, slogan, logo, visual image, call to action, contact details, small print, white space.",
+      "The headline belongs to one advert; the slogan stays with the brand.",
+      "Layout creates a focal point and guides the eye; font and colour carry connotations that must be linked to the product.",
+      "Camera angles: low angle = power; high angle = vulnerability; close-up = detail or emotion.",
+      "Words anchor images and images illustrate words; examiners often ask how the visual and verbal elements link.",
+      "Persuasive techniques include emotive appeal, testimonial, humour, statistics, puns, imperatives, rhetorical questions, direct address, bandwagon, exclusivity, fear, urgency and patriotism.",
+      "AIDA: Attention, Interest, Desire, Action.",
+      "Watch for weasel words (helps, up to), vague comparatives, dubious statistics, pseudo-science and small print that undermines the main claim.",
+      "In evaluation questions, take a stand and justify it with specific features and their effect on the target audience."
+    ] }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which ONE of the following best describes a **slogan**?",
+      "options": [
+        "The large words at the top of one particular advertisement",
+        "The tiny text that sets out the conditions of an offer",
+        "The block of information that describes the product's features",
+        "A short, memorable phrase that is linked to a brand and repeated across many advertisements"
+      ],
+      "answer": 3,
+      "explanation": "The slogan (tagline) stays with the brand. The first option describes the headline, the second the small print and the third the copy."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "In the AIDA principle, what does the letter **D** stand for?",
+      "options": ["Design", "Desire", "Detail", "Demand"],
+      "answer": 1,
+      "explanation": "AIDA = Attention, Interest, Desire, Action. In the Desire stage the advertisement makes the reader want the product."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "Advertisers usually place the small print in a large, bold font so that consumers notice the conditions of the offer.",
+      "answer": false,
+      "explanation": "Small print is deliberately tiny and placed where it is easily overlooked, because the conditions it contains often limit or undermine the main claim."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "A public service announcement aims mainly to change people's attitudes or behaviour (for example, to save water or stop drinking and driving) rather than to sell a product.",
+      "answer": true,
+      "explanation": "Public service announcements promote social causes such as safety, health and conservation."
+    },
+    {
+      "id": "q5",
+      "type": "short",
+      "prompt": "“Helps fight the signs of ageing.” What term describes words such as “helps” and “fights”, which make a claim sound strong while actually promising very little?",
+      "answers": ["weasel words", "weasel word", "a weasel word", "weasel"],
+      "explanation": "“Helps fight” does not promise that anything will actually change. Such words are called weasel words."
+    },
+    {
+      "id": "q6",
+      "type": "short",
+      "prompt": "What is the term for the main block of text in an advertisement that gives information about the product and its benefits?",
+      "answers": ["copy", "body copy", "the copy", "the body copy", "body text"],
+      "explanation": "The copy (body copy) is the smaller text that develops the message introduced by the headline."
+    },
+    {
+      "id": "q7",
+      "type": "match",
+      "prompt": "Match each line from an (invented) advertisement with the persuasive technique it uses.",
+      "marks": 6,
+      "pairs": [
+        { "left": "“Three out of four mothers prefer Snuggle-Soft nappies.”", "right": "Statistics" },
+        { "left": "“Banyana Banyana striker Naledi Khoza wears only ProKick boots.”", "right": "Testimonial" },
+        { "left": "“Tired of Wi-Fi that crawls?”", "right": "Rhetorical question" },
+        { "left": "“Grab yours today!”", "right": "Imperative" },
+        { "left": "Fresh Greens Café: “Lettuce entertain you!”", "right": "Pun" },
+        { "left": "“Don't let one careless moment destroy your family's future. Insure with SafeNest.”", "right": "Fear appeal" }
+      ],
+      "explanation": "Numbers suggest proof (statistics); a famous person endorses the product (testimonial); a question with no answer expected involves the reader (rhetorical question); a command urges action (imperative); “Lettuce” sounds like “Let us” (pun); frightening consequences (fear appeal)."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "An advertisement for EcoClean washing powder (invented) is designed almost entirely in green and white. What is the most likely reason?",
+      "options": [
+        "Green suggests nature and environmental friendliness, while white suggests cleanliness.",
+        "Green suggests danger, while white suggests luxury.",
+        "Green and white are the cheapest colours to print.",
+        "Green suggests passion, while white suggests mourning."
+      ],
+      "answer": 0,
+      "explanation": "Colour connotations should match the product: green links the powder to nature and eco-friendliness, and white to clean laundry."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "An advertisement for a 4x4 vehicle shows the vehicle photographed from a **low angle**, towering against the sky on top of a mountain. What effect does the low angle create?",
+      "options": [
+        "It makes the vehicle look small and vulnerable.",
+        "It shows the fine detail of the vehicle's interior.",
+        "It makes the vehicle look powerful, dominant and heroic.",
+        "It suggests that the vehicle is cheap and practical."
+      ],
+      "answer": 2,
+      "explanation": "Looking up at a subject makes it seem larger and more powerful. A high angle would make it seem small or vulnerable."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "An advertisement for Silver Oaks Estate (invented) shows a grey-haired couple dancing on the patio of a large, modern home overlooking a golf course. The copy reads: “Your best years start now. Frail care, 24-hour security and a championship golf course on your doorstep. Units from R3,2 million.”\n\nWho is the most likely target audience?",
+      "options": [
+        "Young couples buying their first home",
+        "Students looking for affordable accommodation",
+        "Families with young children who need good schools nearby",
+        "Wealthy people who are retired or about to retire"
+      ],
+      "answer": 3,
+      "explanation": "The grey-haired couple, “frail care” and “your best years start now” point to people at retirement age; a price of over R3 million and a golf course point to a high income."
+    },
+    {
+      "id": "q11",
+      "type": "open",
+      "marks": 3,
+      "prompt": "An advertisement for Sizwe Savings Bank (invented) shows a bank consultant smiling warmly as she listens to a young client. The slogan reads: “Sizwe Savings Bank. We take an interest in you.”\n\nExplain the pun in the slogan and comment on why it is effective.",
+      "memo": "✓ First meaning: the bank cares about its clients and pays attention to their needs (it is “interested” in them), which the image of the consultant listening warmly supports. (1)\n✓ Second meaning: the bank pays interest on savings, so your money grows. (1)\n✓ Effectiveness: the pun is clever and memorable and combines an emotional promise (personal care) with a financial benefit (earning interest), building trust in the brand. (1)"
+    },
+    {
+      "id": "q12",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Read the description of the advertisement below and answer the questions.\n\nAn advertisement for VoltRush energy drink (invented) shows a teenage skateboarder in a cap and baggy T-shirt flying high above a ramp at a beachfront skate park, photographed from a low angle against a bright sky. The headline **DEFY GRAVITY** is printed in huge, jagged, electric-yellow letters. A can of VoltRush is shown in the bottom corner with the slogan “Charge up. Go hard.” The small print reads: “Not recommended for children, pregnant women or persons sensitive to caffeine.”\n\n(a) Identify the target audience of this advertisement and justify your answer. (2)\n(b) Discuss how the visual image and the headline work together to persuade the target audience. (2)",
+      "memo": "(a) Teenagers and young adults, especially young men, who enjoy extreme sports and an adventurous, high-energy lifestyle. ✓ Justification: the teenage skateboarder in casual, trendy clothing, the skate-park setting and the short, energetic slang-like slogan “Go hard” would appeal to this group. ✓ (2)\n\n(b) The image shows the skateboarder high in the air, literally appearing to “defy gravity”, so the picture illustrates the headline. ✓ Together they suggest that drinking VoltRush will give you the energy and courage to achieve extraordinary things, which appeals to young people who want excitement and admiration. The low angle makes the skateboarder look heroic, and the jagged, electric-yellow letters suggest energy and danger. ✓ (2)\n(Credit may also be given for noting the irony that the small print warns against the drink for children, although the image appeals to the young.)"
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 10,
+      "prompt": "Read the description of the advertisement below and answer the questions that follow (Question 3 style, 10 marks).\n\nAn advertisement for Gogo's Garden Rooibos Iced Tea (invented) shows a grandmother and her teenage grandson sitting on the stoep of an old farmhouse at sunset. Both are laughing, and each holds a tall glass of iced tea. On the table between them is a jug of iced tea with slices of lemon. The colours are warm golds, oranges and reds.\n\nHeadline (elegant handwritten font): *Some things are worth taking slowly.*\nCopy: “Brewed from 100% South African rooibos and sweetened with just a touch of honey. Nothing artificial. Gogo's Garden: the taste of long summer afternoons.”\nLogo: a small teapot with a rooibos leaf, next to the slogan “Gogo's Garden – Grown here. Loved here.”\nSmall print: “*Contains 5 g sugar per 100 ml.”\n\n(a) Identify the target audience of the advertisement and justify your answer. (2)\n(b) Discuss how the visual image supports the headline. (2)\n(c) Comment on the effectiveness of the slogan. (2)\n(d) Critically discuss whether the phrase “just a touch of honey” is honest, in the light of the small print. (2)\n(e) Do you think this advertisement is effective? Justify your answer by referring to TWO features not already discussed. (2)",
+      "memo": "(a) Families, especially adults and parents who value tradition, family time and natural products (accept also: South Africans of all ages who enjoy a relaxed lifestyle). ✓ Justification: the image of a grandmother and grandson together, the farmhouse setting and the stress on “100% South African” and “Nothing artificial” appeal to health-conscious, family-oriented consumers. ✓ (2)\n\n(b) The grandmother and grandson are relaxing on the stoep at sunset, with no sign of rush or technology, which illustrates the idea of “taking things slowly”. ✓ This suggests that, like time spent with family, the tea is something to savour; the drink is linked with warmth, love and unhurried moments, making it seem special. ✓ (2)\n\n(c) The slogan uses parallel structure and repetition (“Grown here. Loved here.”) ✓, which makes it short, rhythmic and memorable. It appeals to local pride (patriotism) by stressing that the rooibos is South African and suggests that local people love it, so buying it feels like supporting something home-grown and trusted. ✓ (2)\n\n(d) It is misleading. ✓ “Just a touch” suggests a tiny, healthy amount of sweetener, but the small print reveals 5 g of sugar per 100 ml, which is a considerable amount (about 25 g in a 500 ml bottle); consumers who believe the drink is a healthy, barely sweetened choice could be deceived. ✓ (2)\n(Accept a reasoned view that it is technically honest because the information is given, provided the candidate notes that it is hidden in small print; award 1 mark.)\n\n(e) Yes/No with justification referring to TWO features not discussed above, e.g.:\n✓ The warm golds and oranges suggest sunset, warmth and comfort, matching the relaxed mood. (1)\n✓ The handwritten font of the headline feels personal and homely, as if written by Gogo herself. (1)\n✓ The name “Gogo's Garden” and the teapot logo create a sense of tradition and home-made care. (1)\n✓ The lemon slices and ice suggest refreshment on a hot day. (1)\n(A candidate who argues that it is NOT effective, e.g. because it does not show the product clearly enough or the small print may cause distrust, must give two valid reasons.) (2)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 3,
+      "prompt": "An advertisement for BrightSmile toothpaste (invented) shows a close-up of a model's dazzling white smile. The text reads:\n\n“Up to 3 shades whiter in just 7 days!* 9 out of 10 dentists recommend BrightSmile.**\n*Results may vary.\n**Based on a survey of 10 dentists.”\n\nCritically discuss why a consumer should be cautious about these claims.",
+      "memo": "Any THREE of the following (✓✓✓):\n✓ “Up to” is a weasel word: three shades is the maximum possible result, not a promise, so most users may see much less.\n✓ “Results may vary” in the small print protects the company if the toothpaste does not work as claimed.\n✓ The survey of only 10 dentists is far too small to be meaningful, so “9 out of 10 dentists” sounds impressive but proves very little; we are also not told who chose the dentists or whether they were paid.\n✓ The model's dazzling smile has probably been professionally whitened or digitally edited, creating an unrealistic expectation.\n✓ The important conditions are hidden in small print, which suggests the company does not want consumers to notice them."
+    }
+  ]
+}

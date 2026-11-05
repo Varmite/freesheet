@@ -1,0 +1,60 @@
+{
+  "id": "self-concept-and-self-esteem",
+  "title": "Self-Concept and Self-Esteem",
+  "term": 1,
+  "summary": "What self-concept and self-esteem are, factors that influence them, signs of high and low self-esteem, and practical ways to build a positive self-image.",
+  "notes": [
+    { "type": "heading", "text": "Who am I?" },
+    { "type": "definition", "term": "Self-concept", "text": "The picture you have of yourself: your beliefs about your abilities, appearance, personality, values and roles." },
+    { "type": "definition", "term": "Self-esteem", "text": "How much you value, respect and like yourself; how you feel about your self-concept." },
+    { "type": "definition", "term": "Self-image", "text": "How you see yourself, especially your appearance. It may be different from how others see you." },
+    { "type": "heading", "text": "What influences self-concept?" },
+    { "type": "table", "headers": ["Influence", "Example"], "rows": [
+      ["Family", "Parents who praise effort and listen help children feel valued; constant criticism can damage self-esteem"],
+      ["Friends and peers", "Acceptance by friends builds confidence; being excluded or bullied hurts"],
+      ["School and teachers", "Achievements, encouragement and fair treatment"],
+      ["Media and social media", "Edited photos and influencers can create unrealistic ideas of beauty and success"],
+      ["Culture and religion", "Values and expectations about who you should be"],
+      ["Your own thoughts", "Negative self-talk ('I'm useless') versus positive self-talk ('I can learn this')"]
+    ] },
+    { "type": "heading", "text": "High and low self-esteem" },
+    { "type": "table", "headers": ["People with healthy self-esteem often…", "People with low self-esteem often…"], "rows": [
+      ["Accept themselves, including their weaknesses", "Feel worthless or not good enough"],
+      ["Try new things and are not afraid of mistakes", "Avoid challenges because they fear failure"],
+      ["Can say no to peer pressure", "Give in to pressure to be accepted"],
+      ["Accept compliments and criticism calmly", "Brush off compliments and are hurt by criticism"],
+      ["Respect other people", "May bully others or allow others to bully them"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Healthy self-esteem is not arrogance. Arrogant people think they are better than others; people with healthy self-esteem value themselves **and** others." },
+    { "type": "heading", "text": "Building positive self-esteem" },
+    { "type": "list", "items": [
+      "**Know your strengths**: make a list of your talents, skills and good qualities.",
+      "**Set realistic goals** and celebrate small achievements.",
+      "**Use positive self-talk**: replace 'I always fail' with 'I'll try a different way next time'.",
+      "**Accept mistakes** as part of learning.",
+      "**Choose supportive friends** who respect you.",
+      "**Look after your body**: exercise, sleep and healthy food improve mood.",
+      "**Limit comparison** on social media; remember that images are often edited.",
+      "**Help others**: volunteering builds a sense of purpose."
+    ] },
+    { "type": "heading", "text": "Personal strengths and SMART goals" },
+    { "type": "paragraph", "text": "A **SMART** goal is **S**pecific, **M**easurable, **A**chievable, **R**ealistic and **T**ime-bound. Example: 'I will improve my Maths mark from 55% to 65% by the end of Term 2 by doing 30 minutes of practice exercises four times a week.'" }
+  ],
+  "questions": [
+    { "id": "self-esteem", "type": "open", "marks": 2, "prompt": "What is the difference between self-concept and self-esteem?", "memo": "✓ Self-concept is the picture/beliefs you have about yourself (1)\n✓ Self-esteem is how much you value and like yourself (1)" },
+    { "id": "influence", "type": "mcq", "prompt": "Which is most likely to LOWER a teenager's self-esteem?", "options": ["Praise for effort", "Supportive friends", "Comparing themselves with edited social media photos", "Achieving a goal"], "answer": 2 },
+    { "id": "arrogance", "type": "truefalse", "prompt": "Having healthy self-esteem means thinking you are better than everyone else.", "answer": false },
+    { "id": "smart", "type": "short", "prompt": "In a SMART goal, what does the T stand for?", "answers": ["time-bound", "time bound", "timely", "time"] },
+    { "id": "signs", "type": "match", "marks": 4, "prompt": "Classify each behaviour.", "pairs": [
+      { "left": "Tries new things without fear of mistakes", "right": "Healthy self-esteem" },
+      { "left": "Gives in to pressure to be accepted", "right": "Low self-esteem" },
+      { "left": "Accepts compliments politely", "right": "Healthy self-esteem (accepts praise)" },
+      { "left": "Believes they are worthless", "right": "Low self-esteem (feels worthless)" }
+    ] },
+    { "id": "self-talk", "type": "open", "marks": 2, "prompt": "Rewrite this negative self-talk as positive self-talk: 'I'm terrible at sport, so there's no point trying.'", "memo": "✓✓ Any positive, realistic rewrite, e.g. 'I'm still learning; if I practise, I will improve and enjoy it more.' (2)" },
+    { "id": "build", "type": "open", "marks": 3, "prompt": "Suggest THREE ways a learner can build healthy self-esteem.", "memo": "Any three (1 each): know your strengths; set realistic goals; positive self-talk; accept mistakes; supportive friends; exercise and sleep; limit comparison; help others" },
+    { "id": "smart-goal", "type": "open", "marks": 3, "prompt": "Write a SMART goal for improving your reading.", "memo": "✓ Specific and measurable (e.g. read one novel / 20 pages a day) (1)\n✓ Achievable and realistic (1)\n✓ Time-bound (e.g. by the end of the term) (1)" },
+    { "id": "media", "type": "open", "marks": 2, "prompt": "Explain how social media can affect a teenager's self-image.", "memo": "✓ Edited photos and influencers show unrealistic standards of beauty or success (1)\n✓ Comparing yourself to them can make you feel inadequate / lower self-esteem (1)" },
+    { "id": "family", "type": "open", "marks": 2, "prompt": "Give TWO ways in which a family can help a teenager develop a positive self-concept.", "memo": "Any two (1 each): praise effort; listen; show love and support; set fair rules; encourage independence; avoid harsh criticism" }
+  ]
+}

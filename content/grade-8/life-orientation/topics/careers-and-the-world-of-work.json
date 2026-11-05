@@ -1,0 +1,63 @@
+{
+  "id": "careers-and-the-world-of-work",
+  "title": "Careers and the World of Work",
+  "term": 4,
+  "summary": "Career fields, matching interests, abilities and values to careers, sources of career information, scarce skills in South Africa, and work ethics.",
+  "notes": [
+    { "type": "heading", "text": "Why plan your career early?" },
+    { "type": "paragraph", "text": "In Grade 9 you will choose your subjects for Grades 10 to 12, and these choices affect which careers and studies are open to you. Thinking about your interests, abilities and values now helps you make good choices." },
+    { "type": "heading", "text": "Know yourself" },
+    { "type": "table", "headers": ["Aspect", "Questions to ask"], "rows": [
+      ["Interests", "What do I enjoy doing? Working with people, numbers, tools, nature, computers or ideas?"],
+      ["Abilities (aptitudes)", "What am I good at? Which subjects do I do well in?"],
+      ["Personality", "Am I outgoing or reserved? Do I like routine or variety?"],
+      ["Values", "What is important to me? Helping others, money, creativity, security, independence?"]
+    ] },
+    { "type": "heading", "text": "Career fields" },
+    { "type": "table", "headers": ["Field", "Example careers"], "rows": [
+      ["Health and social services", "Nurse, doctor, pharmacist, social worker, physiotherapist"],
+      ["Engineering and technology", "Electrician, civil engineer, IT technician, software developer"],
+      ["Natural sciences and environment", "Agricultural scientist, environmental officer, game ranger, geologist"],
+      ["Business, finance and economics", "Accountant, entrepreneur, banker, marketer"],
+      ["Education and training", "Teacher, lecturer, early childhood practitioner"],
+      ["Arts, media and design", "Graphic designer, journalist, musician, architect"],
+      ["Law, safety and security", "Lawyer, police officer, paramedic, firefighter"],
+      ["Hospitality and tourism", "Chef, tour guide, hotel manager"]
+    ] },
+    { "type": "heading", "text": "Routes to a career" },
+    { "type": "list", "items": [
+      "**University**: degrees (e.g. medicine, law, engineering) usually need a Bachelor's pass in matric and specific subjects such as Mathematics and Physical Sciences.",
+      "**TVET colleges** (Technical and Vocational Education and Training): practical qualifications such as electrical engineering, hospitality, office administration.",
+      "**Apprenticeships and learnerships**: learn a trade (plumber, welder, electrician) while working and earning.",
+      "**Entrepreneurship**: starting your own business."
+    ] },
+    { "type": "callout", "label": "Scarce skills", "text": "South Africa needs more people with skills in areas such as engineering, artisans (electricians, plumbers, welders), ICT, health sciences, teaching (especially Maths and Science) and accounting. Careers in scarce-skill areas usually have better job opportunities and bursaries." },
+    { "type": "heading", "text": "Finding career information" },
+    { "type": "list", "items": [
+      "School career counsellors and Life Orientation teachers.",
+      "Career expos and open days at universities and colleges.",
+      "Websites such as the national career advice portal (NCAP) and Khetha (Department of Higher Education).",
+      "**Job shadowing**: spending a day with someone at work.",
+      "Talking to people who work in a career that interests you."
+    ] },
+    { "type": "heading", "text": "Work ethics" },
+    { "type": "paragraph", "text": "Employers look for people with a good **work ethic**: punctuality, reliability, honesty, a positive attitude, teamwork, respect, willingness to learn and taking responsibility." }
+  ],
+  "questions": [
+    { "id": "tvet", "type": "short", "prompt": "What does the T in TVET college stand for?", "answers": ["technical"] },
+    { "id": "learnership", "type": "mcq", "prompt": "A programme where you learn a trade while working and earning is called…", "options": ["a degree", "a learnership or apprenticeship", "job shadowing", "a career expo"], "answer": 1 },
+    { "id": "shadow", "type": "short", "prompt": "What is spending a day observing someone at work called?", "answers": ["job shadowing", "shadowing"] },
+    { "id": "subjects", "type": "truefalse", "prompt": "The subjects you choose in Grade 9 can affect which careers are open to you later.", "answer": true },
+    { "id": "fields", "type": "match", "marks": 4, "prompt": "Match each career to its field.", "pairs": [
+      { "left": "Physiotherapist", "right": "Health and social services" },
+      { "left": "Civil engineer", "right": "Engineering and technology" },
+      { "left": "Accountant", "right": "Business, finance and economics" },
+      { "left": "Game ranger", "right": "Natural sciences and environment" }
+    ] },
+    { "id": "self", "type": "open", "marks": 3, "prompt": "Name THREE things about yourself you should consider when choosing a career.", "memo": "Any three (1 each): interests; abilities/aptitudes; personality; values; school subjects/marks" },
+    { "id": "sources", "type": "open", "marks": 3, "prompt": "Name THREE sources of career information.", "memo": "Any three (1 each): career counsellor/LO teacher; career expos; open days; websites (NCAP, Khetha); job shadowing; talking to workers" },
+    { "id": "scarce", "type": "open", "marks": 2, "prompt": "What are scarce skills, and why is it a good idea to consider a career in a scarce-skill area?", "memo": "✓ Skills that the country needs but there are not enough people with them (1)\n✓ More job opportunities / bursaries / better pay (1)" },
+    { "id": "ethic", "type": "open", "marks": 3, "prompt": "Name THREE qualities of a good work ethic.", "memo": "Any three (1 each): punctuality; reliability; honesty; positive attitude; teamwork; respect; willingness to learn; responsibility" },
+    { "id": "routes", "type": "open", "marks": 2, "prompt": "Give ONE difference between studying at a university and at a TVET college.", "memo": "✓✓ e.g. Universities offer degrees that are more theoretical and need a Bachelor's pass; TVET colleges offer practical, vocational qualifications with different entry requirements (2)" }
+  ]
+}

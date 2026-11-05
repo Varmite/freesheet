@@ -1,0 +1,47 @@
+{
+  "id": "finance-growth-and-decay",
+  "title": "Finance, Growth and Decay",
+  "term": 3,
+  "summary": "Simple and compound decay (straight-line and reducing-balance depreciation), nominal and effective interest rates, and timelines with changing rates, deposits and withdrawals.",
+  "notes": [
+    { "type": "heading", "text": "Revision: growth" },
+    { "type": "formula", "latex": "A = P(1 + in) \\qquad A = P(1 + i)^n", "caption": "Simple and compound growth ($P$ principal, $A$ accumulated amount, $i$ interest rate as a decimal, $n$ number of periods)" },
+    { "type": "heading", "text": "Depreciation (decay)" },
+    { "type": "table", "headers": ["Method", "Formula", "Description"], "rows": [
+      ["Simple (straight-line) depreciation", "$A = P(1 - in)$", "The value drops by the same amount every year"],
+      ["Compound (reducing-balance) depreciation", "$A = P(1 - i)^n$", "The value drops by the same percentage of the current value every year"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "A car bought for R250 000 depreciates at 15% p.a. Find its value after 4 years using (a) straight-line and (b) reducing-balance depreciation.", "steps": [
+      "(a) $A = 250\\ 000(1 - 0{,}15 \\times 4) = 250\\ 000(0{,}4) = R100\\ 000$",
+      "(b) $A = 250\\ 000(1 - 0{,}15)^4 = 250\\ 000(0{,}85)^4 = R130\\ 501{,}56$"
+    ], "answer": "(a) R100 000 (b) R130 501,56" },
+    { "type": "example", "title": "Worked example 2: finding the rate", "problem": "A machine bought for R80 000 is worth R45 000 after 5 years of reducing-balance depreciation. Find the annual rate.", "steps": [
+      "$45\\ 000 = 80\\ 000(1 - i)^5$",
+      "$(1 - i)^5 = 0{,}5625$, so $1 - i = 0{,}5625^{\\frac{1}{5}} = 0{,}8913$",
+      "$i = 0{,}1087$: about 10,87% p.a."
+    ], "answer": "About 10,87% p.a." },
+    { "type": "heading", "text": "Nominal and effective interest" },
+    { "type": "paragraph", "text": "A **nominal** rate is the quoted annual rate, compounded $m$ times a year (e.g. 12% p.a. compounded monthly). The **effective** rate is the equivalent rate compounded once a year." },
+    { "type": "formula", "latex": "1 + i_{\\text{eff}} = \\left(1 + \\frac{i_{\\text{nom}}}{m}\\right)^m", "caption": "$m$ = number of compounding periods per year (monthly 12, quarterly 4, half-yearly 2)" },
+    { "type": "example", "title": "Worked example 3", "problem": "Convert 9% p.a. compounded monthly to an effective annual rate.", "steps": ["$1 + i_{\\text{eff}} = \\left(1 + \\dfrac{0{,}09}{12}\\right)^{12} = 1{,}0938$", "$i_{\\text{eff}} = 9{,}38\\%$"], "answer": "9,38% p.a. effective" },
+    { "type": "callout", "label": "Exam tip", "text": "When interest is compounded monthly, both $i$ and $n$ must be in months: $i = \\frac{\\text{annual rate}}{12}$ and $n = $ number of years $\\times 12$." },
+    { "type": "heading", "text": "Timelines" },
+    { "type": "paragraph", "text": "When rates change, or money is added or withdrawn, draw a **timeline**. Move each amount forward to the end date at the correct rate for each period, then add (deposits) or subtract (withdrawals)." },
+    { "type": "example", "title": "Worked example 4", "problem": "R10 000 is invested at 8% p.a. compounded annually. After 2 years the rate changes to 10% p.a. compounded annually. What is the investment worth after 5 years?", "steps": [
+      "After 2 years: $10\\ 000(1{,}08)^2 = 11\\ 664$",
+      "Next 3 years: $11\\ 664(1{,}10)^3 = 15\\ 524{,}78$"
+    ], "answer": "R15 524,78" }
+  ],
+  "questions": [
+    { "id": "straight", "type": "numeric", "prompt": "A laptop costing R12 000 depreciates by 20% p.a. on the straight-line method. What is it worth after 3 years?", "answer": 4800, "tolerance": 0, "unit": "rand" },
+    { "id": "reducing", "type": "numeric", "prompt": "A tractor costing R400 000 depreciates at 12% p.a. on the reducing-balance method. Find its value after 6 years, to the nearest rand.", "answer": 185762, "tolerance": 1, "unit": "rand" },
+    { "id": "effective", "type": "numeric", "prompt": "Convert 12% p.a. compounded quarterly to an effective annual rate, as a percentage correct to two decimal places.", "answer": 12.55, "tolerance": 0.01, "unit": "%" },
+    { "id": "monthly-n", "type": "numeric", "prompt": "For an investment over 4 years with interest compounded monthly, what is $n$?", "answer": 48, "tolerance": 0 },
+    { "id": "compound", "type": "numeric", "prompt": "R5 000 is invested at 7% p.a. compounded monthly for 3 years. Find the final amount, correct to the nearest cent.", "answer": 6164.63, "tolerance": 0.01, "unit": "rand" },
+    { "id": "compare", "type": "truefalse", "prompt": "For the same nominal rate, interest compounded monthly gives more than interest compounded annually.", "answer": true },
+    { "id": "rate", "type": "open", "marks": 3, "prompt": "A car worth R180 000 depreciates to R110 000 in 4 years on the reducing-balance method. Calculate the rate of depreciation.", "memo": "✓ $110\\ 000 = 180\\ 000(1 - i)^4$ (1)\n✓ $1 - i = (0{,}6111)^{\\frac{1}{4}} = 0{,}8842$ (1)\n✓ $i \\approx 11{,}58\\%$ p.a. (1)" },
+    { "id": "timeline", "type": "open", "marks": 4, "prompt": "R20 000 is invested at 9% p.a. compounded annually. After 3 years, R5 000 is withdrawn. What is the balance after 5 years?", "memo": "✓ After 3 years: $20\\ 000(1{,}09)^3 = 25\\ 900{,}58$ (1)\n✓ After withdrawal: $20\\ 900{,}58$ (1)\n✓ $20\\ 900{,}58(1{,}09)^2$ (1)\n✓ $\\approx R24\\ 831{,}98$ (1)" },
+    { "id": "nominal", "type": "open", "marks": 3, "prompt": "An effective rate of 10% p.a. is required. What nominal rate, compounded monthly, gives this?", "memo": "✓ $1{,}10 = (1 + \\frac{i}{12})^{12}$ (1)\n✓ $1 + \\frac{i}{12} = 1{,}10^{\\frac{1}{12}} = 1{,}007974$ (1)\n✓ $i \\approx 9{,}57\\%$ p.a. (1)" },
+    { "id": "half", "type": "open", "marks": 3, "prompt": "How many years will it take for an item to lose half its value at 15% p.a. reducing-balance depreciation? (Use trial and improvement or logs; give a whole number of years.)", "memo": "✓ $(0{,}85)^n = 0{,}5$ (1)\n✓ $n = \\frac{\\log 0{,}5}{\\log 0{,}85} \\approx 4{,}27$ (1)\n✓ After about 5 whole years it is worth less than half (accept 4,27 years) (1)" }
+  ]
+}

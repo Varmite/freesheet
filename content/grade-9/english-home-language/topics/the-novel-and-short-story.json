@@ -1,0 +1,44 @@
+{
+  "id": "the-novel-and-short-story",
+  "title": "The Novel and the Short Story",
+  "term": 3,
+  "summary": "Analysing prose fiction: plot structure and subplots, characterisation, conflict, setting and atmosphere, narrative point of view, symbolism, irony and theme, using an original extract.",
+  "notes": [
+    { "type": "heading", "text": "Novel and short story" },
+    { "type": "paragraph", "text": "A **novel** is a long work of prose fiction with many characters, a complex plot and often **subplots** (secondary storylines). A **short story** is much shorter, usually focuses on one main event and a few characters, and is often read in one sitting. Both use the same literary elements." },
+    { "type": "heading", "text": "Literary elements" },
+    { "type": "table", "headers": ["Element", "Questions to ask"], "rows": [
+      ["Plot and structure", "What happens? Where is the climax? Are there flashbacks or subplots? Is the ending open or closed?"],
+      ["Characterisation", "How are characters revealed (actions, speech, thoughts, appearance, others' reactions)? Do they change?"],
+      ["Conflict", "Internal (within a character) or external (with another person, society or nature)?"],
+      ["Setting and atmosphere", "Where and when? How does the setting create mood or reflect the characters' feelings?"],
+      ["Narrative voice", "First person (limited, personal, possibly unreliable) or third person (limited or omniscient: knowing everyone's thoughts)?"],
+      ["Symbolism", "Do objects, colours or places stand for bigger ideas?"],
+      ["Irony", "**Verbal** (saying the opposite of what is meant), **situational** (the opposite of what is expected happens) or **dramatic** (the reader knows something the character does not)"],
+      ["Theme", "What does the text say about life, people or society?"]
+    ] },
+    { "type": "passage", "title": "Extract from 'The Bridge at Silver Creek' (an original story written for FreeSheet)", "text": "Nobody in Silver Creek crossed the old rope bridge after dark. Not since the flood, when the river had risen in a single night and taken the Mokoena house with it.\n\nKatlego had heard the story a hundred times. Her grandmother told it slowly, always ending with the same words: 'The river remembers.' Katlego, who was fifteen and believed in science, not ghosts, would roll her eyes and go back to her phone.\n\nBut tonight her phone was dead, the clinic was on the other side of the river, and her little brother's breathing had turned into a terrible whistle. The road bridge was twelve kilometres away. The rope bridge was two hundred metres.\n\nShe stood at the edge with a torch in her teeth and Tumi on her back. The planks swayed. Below, the water talked to itself in the dark, low and endless. 'The river remembers,' she whispered, and for the first time she understood that her grandmother had never been talking about ghosts. She had been talking about fear, and about what people do with it.\n\nKatlego put her foot on the first plank." },
+    { "type": "example", "title": "Analysing the extract", "problem": "Discuss the conflict and how the writer creates suspense.", "steps": [
+      "External conflict: Katlego versus nature (the dark, the river, the dangerous bridge) and against time (her brother's illness).",
+      "Internal conflict: her fear versus her responsibility to save Tumi.",
+      "Suspense: contrasting distances (twelve kilometres vs two hundred metres) show the urgency; short sentences; personification of the river ('talked to itself'); the open ending ('put her foot on the first plank') leaves the reader wondering whether she will make it."
+    ], "answer": "Identify each type of conflict and link techniques to their effect on the reader." },
+    { "type": "callout", "label": "Exam tip", "text": "Contextual questions on a novel often ask you to **place the extract** in the story, explain a character's **motive**, discuss **irony** or a **symbol**, or give your **opinion** of a character's actions. Always support your answer with evidence from the text." }
+  ],
+  "questions": [
+    { "id": "subplot", "type": "short", "prompt": "What is a secondary storyline in a novel called?", "answers": ["subplot", "a subplot", "sub-plot"] },
+    { "id": "omniscient", "type": "mcq", "prompt": "A narrator who knows the thoughts and feelings of all the characters is…", "options": ["first person", "third person limited", "third person omniscient", "unreliable"], "answer": 2 },
+    { "id": "dramatic", "type": "mcq", "prompt": "When the reader knows something that a character does not, this is…", "options": ["verbal irony", "situational irony", "dramatic irony", "a flashback"], "answer": 2 },
+    { "id": "distance", "type": "numeric", "prompt": "In the extract, how far away is the road bridge?", "answer": 12, "tolerance": 0, "unit": "km" },
+    { "id": "science", "type": "open", "marks": 2, "prompt": "What does Katlego's reaction to her grandmother's story at first reveal about her character?", "memo": "✓ She is sceptical / rational ('believed in science, not ghosts') (1)\n✓ She is a bit dismissive / typical teenager (rolls her eyes, goes back to her phone) (1)" },
+    { "id": "conflict", "type": "match", "marks": 3, "prompt": "Classify each conflict from the extract.", "pairs": [
+      { "left": "Katlego's fear against her duty to her brother", "right": "Internal conflict" },
+      { "left": "Katlego against the dark, rushing river", "right": "External: character vs nature" },
+      { "left": "Getting to the clinic before Tumi gets worse", "right": "External: against time" }
+    ] },
+    { "id": "river-talks", "type": "open", "marks": 3, "prompt": "Discuss the figure of speech in 'the water talked to itself in the dark, low and endless' and its effect.", "memo": "✓ Personification (1)\n✓ The river is given the human ability to talk (1)\n✓ It creates an eerie, threatening atmosphere and adds to the suspense (1)" },
+    { "id": "remembers", "type": "open", "marks": 3, "prompt": "Explain what Katlego finally understands about the words 'The river remembers'.", "memo": "✓ She realises the words were not about ghosts (1)\n✓ but about fear left by the flood/tragedy (1)\n✓ and how people choose to face or be ruled by that fear (1)" },
+    { "id": "ending", "type": "open", "marks": 2, "prompt": "Is the ending of the extract open or closed? Explain its effect.", "memo": "✓ Open (1)\n✓ The reader does not know whether she crosses safely, which creates suspense and makes the reader imagine the outcome (1)" },
+    { "id": "opinion", "type": "open", "marks": 3, "prompt": "Do you think Katlego makes the right decision? Discuss.", "memo": "✓ Clear opinion (1)\n✓✓ Two reasons with evidence, e.g. her brother's life is in danger and the clinic is only 200 m away; but crossing in the dark with a child is very dangerous (2)" }
+  ]
+}

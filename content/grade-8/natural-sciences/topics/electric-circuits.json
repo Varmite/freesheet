@@ -1,0 +1,63 @@
+{
+  "id": "electric-circuits",
+  "title": "Electric Circuits and Energy Transfer",
+  "term": 3,
+  "summary": "Components and circuit diagrams, conductors and insulators, energy transfer in circuits, and how series and parallel circuits behave.",
+  "notes": [
+    { "type": "heading", "text": "What is an electric circuit?" },
+    { "type": "paragraph", "text": "An **electric circuit** is a complete, unbroken path through which electric current can flow. Every circuit needs an **energy source** (a cell or battery), **conducting wires** and at least one **component** that uses the energy (a bulb, motor, buzzer). A **switch** opens and closes the circuit." },
+    { "type": "definition", "term": "Electric current", "text": "The flow of charge (electrons) through a conductor. It is measured in **amperes (A)** with an **ammeter**." },
+    { "type": "table", "caption": "Common circuit symbols", "headers": ["Component", "What it does", "How it is drawn"], "rows": [
+      ["Cell", "Supplies energy", "A long thin line (positive) and a short thick line (negative)"],
+      ["Battery", "Two or more cells joined together", "Several cell symbols in a row"],
+      ["Bulb (lamp)", "Converts electrical energy to light and heat", "A circle with a cross inside"],
+      ["Switch", "Opens or closes the circuit", "A line with a gap and a hinged bar"],
+      ["Resistor", "Reduces the current", "A small rectangle"],
+      ["Ammeter", "Measures current; connected in series", "A circle with an A"],
+      ["Voltmeter", "Measures potential difference; connected in parallel", "A circle with a V"]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 150\" font-family=\"sans-serif\" font-size=\"11\" stroke=\"black\" fill=\"none\" stroke-width=\"2\"><line x1=\"30\" y1=\"30\" x2=\"115\" y2=\"30\"/><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"45\"/><line x1=\"125\" y1=\"22\" x2=\"125\" y2=\"38\" stroke-width=\"5\"/><line x1=\"125\" y1=\"30\" x2=\"230\" y2=\"30\"/><line x1=\"230\" y1=\"30\" x2=\"230\" y2=\"120\"/><line x1=\"230\" y1=\"120\" x2=\"160\" y2=\"120\"/><circle cx=\"145\" cy=\"120\" r=\"15\"/><line x1=\"134\" y1=\"109\" x2=\"156\" y2=\"131\"/><line x1=\"156\" y1=\"109\" x2=\"134\" y2=\"131\"/><line x1=\"130\" y1=\"120\" x2=\"95\" y2=\"120\"/><line x1=\"95\" y1=\"120\" x2=\"65\" y2=\"105\"/><line x1=\"60\" y1=\"120\" x2=\"30\" y2=\"120\"/><line x1=\"30\" y1=\"120\" x2=\"30\" y2=\"30\"/><g stroke=\"none\" fill=\"black\"><text x=\"112\" y=\"12\">cell</text><text x=\"132\" y=\"148\">bulb</text><text x=\"60\" y=\"96\">switch</text></g></svg>", "caption": "A simple series circuit with a cell, an open switch and a bulb" },
+    { "type": "heading", "text": "Conductors and insulators" },
+    { "type": "list", "items": [
+      "**Conductors** allow current to flow easily: metals such as copper, aluminium and iron, and graphite (pencil lead).",
+      "**Insulators** do not allow current to flow: plastic, rubber, glass, wood and dry air. Wires are coated in plastic for safety."
+    ] },
+    { "type": "heading", "text": "Energy transfer in a circuit" },
+    { "type": "paragraph", "text": "The cell stores **chemical potential energy**. When the circuit is closed, this is transferred as electrical energy to the components, which convert it into useful forms. Some energy is always wasted, usually as heat." },
+    { "type": "table", "headers": ["Component", "Energy conversion"], "rows": [
+      ["Bulb", "Electrical → light + heat"],
+      ["Motor", "Electrical → kinetic (movement) + sound + heat"],
+      ["Buzzer", "Electrical → sound"],
+      ["Heating element (kettle)", "Electrical → heat"]
+    ] },
+    { "type": "heading", "text": "Series and parallel circuits" },
+    { "type": "table", "headers": ["", "Series circuit", "Parallel circuit"], "rows": [
+      ["Path", "Only one path for the current", "Two or more branches"],
+      ["Adding more bulbs", "Each bulb gets dimmer", "Each bulb stays just as bright"],
+      ["If one bulb blows", "The circuit is broken: all go out", "The other branches keep working"],
+      ["Current", "The same everywhere in the circuit", "Splits between branches and adds up again"],
+      ["Used in", "Torches, simple switches", "House wiring, car headlights"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Adding more **cells in series** makes bulbs brighter (more energy pushes the current). Adding more **bulbs in series** makes them dimmer, because the total resistance increases and less current flows." },
+    { "type": "definition", "term": "Resistance", "text": "How much a component opposes the flow of current. Thin, long wires and materials like nichrome have high resistance; resistance causes energy to be converted to heat." },
+    { "type": "callout", "label": "Safety", "text": "A **short circuit** happens when current flows through a path with almost no resistance, for example when the two terminals of a cell are joined directly by a wire. A very large current flows, the wire becomes hot and the cell runs flat quickly. In a house this can cause fires; fuses and circuit breakers cut the current." }
+  ],
+  "questions": [
+    { "id": "complete", "type": "truefalse", "prompt": "Current can flow in a circuit with a gap in it.", "answer": false, "explanation": "A circuit must be complete (closed) for current to flow." },
+    { "id": "ammeter", "type": "short", "prompt": "Which instrument measures electric current?", "answers": ["ammeter", "an ammeter"] },
+    { "id": "unit", "type": "mcq", "prompt": "In what unit is current measured?", "options": ["Volts", "Amperes", "Ohms", "Watts"], "answer": 1 },
+    { "id": "conductor", "type": "mcq", "prompt": "Which material is a conductor?", "options": ["Rubber", "Glass", "Graphite", "Plastic"], "answer": 2 },
+    { "id": "motor", "type": "mcq", "prompt": "What is the main useful energy conversion in an electric motor?", "options": ["Electrical to light", "Electrical to kinetic", "Chemical to sound", "Kinetic to electrical"], "answer": 1 },
+    { "id": "house", "type": "short", "prompt": "Are the lights in a house wired in series or in parallel?", "answers": ["parallel", "in parallel"] },
+    { "id": "conversions", "type": "match", "marks": 4, "prompt": "Match each component to its main energy conversion.", "pairs": [
+      { "left": "Bulb", "right": "Electrical to light and heat" },
+      { "left": "Buzzer", "right": "Electrical to sound" },
+      { "left": "Kettle element", "right": "Electrical to heat" },
+      { "left": "Cell", "right": "Chemical to electrical" }
+    ] },
+    { "id": "one-blows", "type": "mcq", "prompt": "Three bulbs are connected in series. What happens if one bulb blows?", "options": ["The other two get brighter", "The other two go out", "Nothing changes", "Only the next bulb goes out"], "answer": 1, "explanation": "A series circuit has only one path, so a break stops all current." },
+    { "id": "dim", "type": "open", "marks": 2, "prompt": "Explain why two bulbs connected in series with one cell glow less brightly than one bulb on its own.", "memo": "✓ The total resistance of the circuit increases (1)\n✓ so less current flows / the energy from the cell is shared between two bulbs (1)" },
+    { "id": "short-circuit", "type": "open", "marks": 2, "prompt": "What is a short circuit and why is it dangerous?", "memo": "✓ Current flows through a path with very low resistance, bypassing the components (1)\n✓ A very large current flows, which makes wires hot and can cause fires / flattens the battery (1)" },
+    { "id": "parallel-why", "type": "open", "marks": 2, "prompt": "Give TWO reasons why houses are wired in parallel.", "memo": "✓ If one appliance is switched off or breaks, the others still work (1)\n✓ Each appliance gets the full voltage / works at full power (1)" }
+  ]
+}

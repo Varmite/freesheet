@@ -1,0 +1,87 @@
+{
+  "id": "geometry-of-2d-shapes",
+  "title": "Geometry of 2D Shapes: Congruence and Similarity",
+  "term": 2,
+  "summary": "Prove that triangles are congruent (SSS, SAS, AAS, RHS) or similar (equal angles or sides in proportion), and use congruence, similarity and the properties of triangles and quadrilaterals to solve problems.",
+  "notes": [
+    { "type": "heading", "text": "Congruent triangles" },
+    { "type": "paragraph", "text": "Two triangles are **congruent** ($\\equiv$) if they have the same shape and size: all three pairs of sides and all three pairs of angles are equal. You do not need to check all six; any one of these conditions is enough:" },
+    { "type": "table", "caption": "Conditions for congruency", "headers": ["Condition", "What must be equal"], "rows": [
+      ["SSS", "Three pairs of sides"],
+      ["SAS", "Two pairs of sides and the angle **between** them (the included angle)"],
+      ["AAS", "Two pairs of angles and one pair of corresponding sides"],
+      ["RHS", "A right angle, the hypotenuse and one other pair of sides"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Write the letters in **corresponding order**. $\\triangle PQR \\equiv \\triangle XYZ$ means $P \\leftrightarrow X$, $Q \\leftrightarrow Y$ and $R \\leftrightarrow Z$, so $PQ = XY$, $QR = YZ$ and $\\hat{P} = \\hat{X}$." },
+    { "type": "example", "title": "Worked example 1: a congruency proof", "problem": "In quadrilateral $ABCD$ (a kite), $AB = AD$ and $BC = DC$. Prove that $\\triangle ABC \\equiv \\triangle ADC$, and hence that $\\hat{B} = \\hat{D}$.", "steps": [
+      "In $\\triangle ABC$ and $\\triangle ADC$:",
+      "$AB = AD$ (given)",
+      "$BC = DC$ (given)",
+      "$AC = AC$ (common side)",
+      "$\\therefore \\triangle ABC \\equiv \\triangle ADC$ (SSS)",
+      "$\\therefore \\hat{B} = \\hat{D}$ (corresponding angles of congruent triangles, ≡ Δs)"
+    ], "answer": "Proved by SSS; then $\\hat{B} = \\hat{D}$." },
+    { "type": "callout", "label": "Exam tip", "text": "Set out a proof in steps: name the two triangles, list three equal pairs **each with a reason**, state the congruency with its condition, then make the deduction. A common side is an easy pair to miss." },
+    { "type": "example", "title": "Worked example 2: using vertically opposite angles", "problem": "Line segments $AB$ and $CD$ bisect each other at $M$. Prove that $\\triangle AMC \\equiv \\triangle BMD$ and that $AC = BD$.", "steps": [
+      "$AM = MB$ ($M$ is the midpoint of $AB$)",
+      "$CM = MD$ ($M$ is the midpoint of $CD$)",
+      "$\\hat{AMC} = \\hat{BMD}$ (vert opp ∠s)",
+      "$\\therefore \\triangle AMC \\equiv \\triangle BMD$ (SAS)",
+      "$\\therefore AC = BD$ (≡ Δs)"
+    ], "answer": "Proved by SAS." },
+    { "type": "callout", "label": "Common mistake", "text": "SSA (two sides and an angle that is **not** between them) and AAA are **not** congruency conditions." },
+
+    { "type": "heading", "text": "Similar triangles" },
+    { "type": "paragraph", "text": "Two triangles are **similar** ($|||$) if they have the same shape. For triangles, either of these conditions is enough:" },
+    { "type": "list", "items": [
+      "**All three pairs of angles are equal** (AAA). In practice, two pairs are enough, because the third angle then must be equal too.",
+      "**All three pairs of sides are in the same ratio** (in proportion)."
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 175\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\"><polygon points=\"20,150 100,150 20,90\"/><polygon points=\"140,150 260,150 140,60\"/><polyline points=\"20,140 30,140 30,150\" stroke-width=\"1.3\"/><polyline points=\"140,140 150,140 150,150\" stroke-width=\"1.3\"/></g><g fill=\"#000\"><text x=\"6\" y=\"166\">A</text><text x=\"102\" y=\"166\">B</text><text x=\"12\" y=\"84\">C</text><text x=\"126\" y=\"166\">D</text><text x=\"262\" y=\"166\">E</text><text x=\"132\" y=\"54\">F</text><text x=\"56\" y=\"168\">8</text><text x=\"4\" y=\"124\">6</text><text x=\"64\" y=\"112\">10</text><text x=\"192\" y=\"168\">12</text><text x=\"124\" y=\"110\">9</text><text x=\"206\" y=\"98\">y</text></g></svg>", "caption": "Right-angled triangles ABC (AB = 8, AC = 6, BC = 10) and DEF (DE = 12, DF = 9, EF = y), with right angles at A and D." },
+    { "type": "example", "title": "Worked example 3", "problem": "In the diagram, show that $\\triangle ABC\\ |||\\ \\triangle DEF$ and calculate $y$.", "steps": [
+      "$\\dfrac{DE}{AB} = \\dfrac{12}{8} = 1{,}5$ and $\\dfrac{DF}{AC} = \\dfrac{9}{6} = 1{,}5$.",
+      "$\\hat{A} = \\hat{D} = 90^\\circ$, and the sides around these angles are in the same ratio, so the triangles have the same shape: $\\triangle ABC\\ |||\\ \\triangle DEF$.",
+      "Then $EF = 1{,}5 \\times BC = 1{,}5 \\times 10 = 15$. (Check with Pythagoras: $\\sqrt{12^2 + 9^2} = 15$ ✓)"
+    ], "answer": "$y = 15$" },
+    { "type": "callout", "label": "Remember", "text": "If similar figures have scale factor $k$, their **areas** are in the ratio $k^2$. Triangle $DEF$ above has area $\\frac{1}{2} \\times 12 \\times 9 = 54$, which is $1{,}5^2 = 2{,}25$ times the area of $\\triangle ABC$ ($24$)." },
+    { "type": "example", "title": "Worked example 4: shadows", "problem": "At the same time of day, a 1,5 m pole casts a 2 m shadow and a tree casts a 12 m shadow. How tall is the tree?", "steps": [
+      "The sun's rays make the same angle with the ground for both, and both stand vertically, so the triangles are similar (equal angles).",
+      "$\\dfrac{h}{1{,}5} = \\dfrac{12}{2}$, so $h = 1{,}5 \\times 6 = 9$ m."
+    ], "answer": "9 m" },
+
+    { "type": "heading", "text": "Using congruence to explain quadrilateral properties" },
+    { "type": "paragraph", "text": "A diagonal $AC$ divides parallelogram $ABCD$ into two triangles. $AB = CD$ and $BC = DA$ (opposite sides of a parallelogram) and $AC$ is common, so $\\triangle ABC \\equiv \\triangle CDA$ (SSS). It follows that the opposite angles $\\hat{B}$ and $\\hat{D}$ are equal. Many quadrilateral properties can be proved like this." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Congruent: same shape and size. Conditions: SSS, SAS, AAS, RHS (not SSA or AAA).",
+      "Similar: same shape. Conditions: equal angles, or all sides in the same ratio.",
+      "Write vertices in corresponding order and give a reason for each equal pair.",
+      "After proving congruency, corresponding sides and angles are equal (≡ Δs).",
+      "Similar figures with scale factor $k$: lengths × $k$, area × $k^2$."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "Two right-angled triangles have equal hypotenuses and one other pair of equal sides. Which condition proves they are congruent?", "options": ["SSS", "SAS", "AAS", "RHS"], "answer": 3, "explanation": "Right angle, Hypotenuse, Side: RHS." },
+    { "id": "q2", "type": "truefalse", "prompt": "If the three angles of one triangle are equal to the three angles of another triangle, the triangles are similar.", "answer": true, "explanation": "Equal angles mean the same shape, so the triangles are similar (but not necessarily congruent)." },
+    { "id": "q3", "type": "numeric", "prompt": "$\\triangle ABC\\ |||\\ \\triangle DEF$ with $AB = 8$ and $DE = 12$. What is the scale factor from $\\triangle ABC$ to $\\triangle DEF$?", "answer": 1.5, "tolerance": 0.001, "explanation": "$12 \\div 8 = 1{,}5$." },
+    { "id": "q4", "type": "numeric", "prompt": "In the diagram in the notes, $BC = 10$ and the scale factor is $1{,}5$. Calculate $y = EF$.", "answer": 15, "tolerance": 0, "explanation": "$1{,}5 \\times 10 = 15$." },
+    { "id": "q5", "type": "mcq", "prompt": "Which is NOT a condition for congruent triangles?", "options": ["SSS", "SAS", "AAA", "RHS"], "answer": 2, "explanation": "AAA only proves similarity." },
+    { "id": "q6", "type": "truefalse", "prompt": "Congruent triangles are also similar.", "answer": true, "explanation": "They have equal angles and their sides are in the ratio $1 : 1$." },
+    { "id": "q7", "type": "numeric", "prompt": "A 1,5 m pole casts a 2 m shadow at the same time as a tree casts a 12 m shadow. How tall is the tree, in metres?", "unit": "m", "answer": 9, "tolerance": 0, "explanation": "Similar triangles: $h = 1{,}5 \\times \\frac{12}{2} = 9$ m." },
+    { "id": "q8", "type": "mcq", "prompt": "$\\triangle PQR \\equiv \\triangle XYZ$. Which side is equal to $PQ$?", "options": ["$XZ$", "$YZ$", "$XY$", "$ZX$ or $YZ$"], "answer": 2, "explanation": "$P \\leftrightarrow X$ and $Q \\leftrightarrow Y$, so $PQ = XY$." },
+    { "id": "q9", "type": "match", "prompt": "Match each congruency condition with its meaning.", "marks": 4, "pairs": [
+      { "left": "SSS", "right": "Three pairs of sides equal" },
+      { "left": "SAS", "right": "Two sides and the included angle" },
+      { "left": "AAS", "right": "Two angles and a corresponding side" },
+      { "left": "RHS", "right": "Right angle, hypotenuse and a side" }
+    ], "explanation": "S = side, A = angle, R = right angle, H = hypotenuse." },
+    { "id": "q10", "type": "numeric", "prompt": "A triangle with sides 3, 4 and 5 is similar to a triangle with sides 6, 8 and $x$. Find $x$.", "answer": 10, "tolerance": 0, "explanation": "The scale factor is $2$, so $x = 2 \\times 5 = 10$." },
+    { "id": "q11", "type": "numeric", "prompt": "Two similar triangles have a scale factor of 1,5. The smaller triangle has an area of $24\\ \\text{cm}^2$. Calculate the area of the larger triangle.", "unit": "cm²", "answer": 54, "tolerance": 0, "explanation": "Area is multiplied by $1{,}5^2 = 2{,}25$: $24 \\times 2{,}25 = 54$." },
+    { "id": "q12", "type": "mcq", "prompt": "Diagonal $AC$ divides parallelogram $ABCD$ into $\\triangle ABC$ and $\\triangle CDA$. Which condition proves that they are congruent?", "options": ["SSS", "RHS", "AAA", "SSA"], "answer": 0, "explanation": "$AB = CD$, $BC = DA$ (opposite sides of a parallelogram) and $AC$ is common." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "In kite $ABCD$, $AB = AD$ and $BC = DC$. Prove that $\\triangle ABC \\equiv \\triangle ADC$, and hence that $\\hat{B} = \\hat{D}$.", "memo": "$AB = AD$ (given) and $BC = DC$ (given) ✓ (1)\n$AC$ common ✓ (1)\n$\\triangle ABC \\equiv \\triangle ADC$ (SSS) ✓ (1)\n$\\hat{B} = \\hat{D}$ (≡ Δs) ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Right-angled triangles $ABC$ and $DEF$ have $\\hat{A} = \\hat{D} = 90^\\circ$, $AB = 8$, $AC = 6$, $BC = 10$, $DE = 12$ and $DF = 9$.\n(a) Show that $\\triangle ABC\\ |||\\ \\triangle DEF$.  (2)\n(b) Calculate $EF$.  (2)", "memo": "(a) $\\frac{12}{8} = \\frac{9}{6} = 1{,}5$ ✓ and the included angles are both $90^\\circ$ ✓ (2)\n(b) $EF = 1{,}5 \\times 10$ ✓ $= 15$ ✓ (2)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "At the same time of day, a learner 1,6 m tall casts a shadow 2,4 m long, and a flagpole casts a shadow 15 m long. Calculate the height of the flagpole.", "memo": "The triangles are similar (equal angles) ✓ (1)\n$\\frac{h}{1{,}6} = \\frac{15}{2{,}4}$ ✓ (1)\n$h = 10$ m ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 4, "prompt": "Line segments $AB$ and $CD$ bisect each other at $M$. Prove that $\\triangle AMC \\equiv \\triangle BMD$, and hence that $AC = BD$.", "memo": "$AM = MB$ and $CM = MD$ (given: bisect each other) ✓ (1)\n$\\hat{AMC} = \\hat{BMD}$ (vert opp ∠s) ✓ (1)\n$\\triangle AMC \\equiv \\triangle BMD$ (SAS) ✓ (1)\n$AC = BD$ (≡ Δs) ✓ (1)" }
+  ]
+}

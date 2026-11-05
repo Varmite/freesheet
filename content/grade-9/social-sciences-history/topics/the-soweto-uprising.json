@@ -1,0 +1,50 @@
+{
+  "id": "the-soweto-uprising",
+  "title": "1976: The Soweto Uprising",
+  "term": 3,
+  "summary": "Bantu Education and the Afrikaans Medium Decree, Black Consciousness and Steve Biko, the events of 16 June 1976, and the effects of the uprising.",
+  "notes": [
+    { "type": "heading", "text": "Background: Bantu Education" },
+    { "type": "paragraph", "text": "Under the **Bantu Education Act (1953)**, schools for black learners were badly funded. In 1975 the government spent about R644 a year on each white learner but only about R42 on each black learner. Classes were overcrowded, many teachers were under-qualified, and there were few textbooks." },
+    { "type": "heading", "text": "Black Consciousness" },
+    { "type": "paragraph", "text": "In the late 1960s **Steve Biko** and others founded the **South African Students' Organisation (SASO)** and the **Black Consciousness Movement (BCM)**. Black Consciousness taught that black people must free themselves from feelings of inferiority, take pride in their identity and history, and lead their own struggle. These ideas inspired many high-school learners in the 1970s." },
+    { "type": "callout", "label": "Quote", "text": "'The most potent weapon in the hands of the oppressor is the mind of the oppressed.' (Steve Biko)" },
+    { "type": "heading", "text": "The Afrikaans Medium Decree" },
+    { "type": "paragraph", "text": "In **1974** the government ordered that from Standard 5 (Grade 7) onwards, half of all subjects in black schools, including mathematics and social studies, had to be taught in **Afrikaans**. Learners and many teachers did not speak Afrikaans well, and many saw it as the 'language of the oppressor'." },
+    { "type": "heading", "text": "16 June 1976" },
+    { "type": "list", "ordered": true, "items": [
+      "Learners formed the **Soweto Students' Representative Council**, led by **Tsietsi Mashinini**, and planned a peaceful protest march.",
+      "On the morning of **16 June 1976**, between 10 000 and 20 000 learners marched towards **Orlando Stadium**, carrying placards such as 'Down with Afrikaans'.",
+      "Police blocked the march near Orlando West High School. They fired tear gas and then live bullets into the crowd.",
+      "**Hector Pieterson**, aged 12 or 13, was one of the first to be killed. A photograph by **Sam Nzima** showed him being carried by Mbuyisa Makhubo, with his sister **Antoinette Sithole** running beside them.",
+      "Learners responded by burning government buildings and beer halls. The unrest spread to other parts of the country."
+    ] },
+    { "type": "paragraph", "text": "By the end of 1977, more than **500 people** (some estimates are much higher) had been killed, many of them children, and thousands were injured or detained." },
+    { "type": "heading", "text": "Effects of the uprising" },
+    { "type": "list", "items": [
+      "The Afrikaans Medium Decree was withdrawn.",
+      "Thousands of young people left the country to join the ANC and PAC in exile and train as MK soldiers.",
+      "The photograph of Hector Pieterson shocked the world and increased international pressure on apartheid.",
+      "In 1977 the government banned Black Consciousness organisations. Steve Biko died in police custody in **September 1977** after being brutally assaulted; the UN imposed a mandatory **arms embargo**.",
+      "The uprising showed the power of young people in the struggle. **16 June** is now **Youth Day**."
+    ] },
+    { "type": "passage", "title": "Source L: A placard carried on 16 June 1976 (as recorded in photographs)", "text": "IF WE MUST DO AFRIKAANS, VORSTER MUST DO ZULU" }
+  ],
+  "questions": [
+    { "id": "date", "type": "short", "prompt": "On which date did the Soweto Uprising begin? (e.g. 1 May 1990)", "answers": ["16 june 1976", "16th june 1976", "june 16 1976", "june 16, 1976"] },
+    { "id": "language", "type": "mcq", "prompt": "Learners in Soweto protested against being taught in…", "options": ["English", "isiZulu", "Afrikaans", "Sesotho"], "answer": 2 },
+    { "id": "hector", "type": "short", "prompt": "Name the boy whose photograph became a symbol of the uprising.", "answers": ["hector pieterson", "hector peterson", "pieterson"] },
+    { "id": "biko", "type": "mcq", "prompt": "Steve Biko is best known as a leader of the…", "options": ["Freedom Charter", "Black Consciousness Movement", "Defiance Campaign", "Women's March"], "answer": 1 },
+    { "id": "youth-day", "type": "truefalse", "prompt": "16 June is commemorated as Youth Day in South Africa.", "answer": true },
+    { "id": "people", "type": "match", "marks": 4, "prompt": "Match each person to their role.", "pairs": [
+      { "left": "Tsietsi Mashinini", "right": "Student leader of the march" },
+      { "left": "Sam Nzima", "right": "Photographer" },
+      { "left": "Mbuyisa Makhubo", "right": "Carried Hector Pieterson" },
+      { "left": "Steve Biko", "right": "Black Consciousness leader" }
+    ] },
+    { "id": "causes", "type": "open", "marks": 4, "prompt": "Explain FOUR causes of the Soweto Uprising.", "memo": "Any four (1 each): Bantu Education was inferior; unequal funding; overcrowded classes / poor facilities; Afrikaans Medium Decree; Afrikaans seen as language of the oppressor; Black Consciousness ideas; anger at apartheid in general" },
+    { "id": "source-l", "type": "open", "marks": 2, "prompt": "Read Source L. Explain the message of the placard.", "memo": "✓ It was unfair to force black learners to learn in a language that was not theirs (1)\n✓ It uses humour/irony: the Prime Minister would not accept being forced to learn Zulu (1)" },
+    { "id": "effects", "type": "open", "marks": 3, "prompt": "Give THREE results of the Soweto Uprising.", "memo": "Any three (1 each): decree withdrawn; many youth went into exile/joined MK; international condemnation; BCM banned; arms embargo; youth became central to the struggle" },
+    { "id": "funding", "type": "open", "marks": 2, "prompt": "In 1975 about R644 was spent on each white learner and about R42 on each black learner. What does this show about apartheid education?", "memo": "✓ Education was very unequal (1)\n✓ The government deliberately gave black learners inferior education to keep them in low-paid jobs (1)" }
+  ]
+}

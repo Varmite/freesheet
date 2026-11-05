@@ -1,0 +1,66 @@
+{
+  "id": "accounting-for-a-trading-business",
+  "title": "Accounting for a Trading Business: CRJ and CPJ",
+  "term": 1,
+  "summary": "How a trading business differs from a service business, trading stock, mark-up and cost of sales, and recording cash sales and purchases in the CRJ and CPJ.",
+  "notes": [
+    { "type": "heading", "text": "Service and trading businesses" },
+    { "type": "paragraph", "text": "A **service business** earns income by providing a service (a hair salon, a plumber). A **trading business** buys goods (called **trading stock**) and sells them at a higher price to make a profit (a clothing shop, a spaza shop)." },
+    { "type": "table", "headers": ["Term", "Meaning"], "rows": [
+      ["Trading stock", "Goods bought to sell again; an asset"],
+      ["Sales", "Income from selling trading stock, at selling price"],
+      ["Cost of sales", "The cost price of the goods that were sold; an expense"],
+      ["Mark-up", "The amount (usually a percentage of cost price) added to the cost to get the selling price"],
+      ["Gross profit", "Sales − cost of sales"]
+    ] },
+    { "type": "heading", "text": "Mark-up calculations" },
+    { "type": "formula", "latex": "\\text{selling price} = \\text{cost price} \\times \\frac{100 + \\text{mark-up \\%}}{100}" },
+    { "type": "formula", "latex": "\\text{cost price} = \\text{selling price} \\times \\frac{100}{100 + \\text{mark-up \\%}}" },
+    { "type": "example", "title": "Finding the cost of sales", "problem": "A shop uses a mark-up of 50% on cost. It sells goods for R1 800 cash. Calculate the cost of sales.", "steps": [
+      "Cost price = 1 800 × 100 / 150",
+      "= R1 200",
+      "Gross profit = 1 800 − 1 200 = R600"
+    ], "answer": "Cost of sales R1 200" },
+    { "type": "callout", "label": "Remember", "text": "Every time goods are sold, **two things happen**: the business earns **sales** (income at selling price) and loses **trading stock** (an asset, at cost price). That is why the CRJ of a trading business has both a Sales column and a Cost of sales column." },
+    { "type": "heading", "text": "The CRJ of a trading business" },
+    { "type": "table", "caption": "Cash Receipts Journal of Kasi Fashions, February 2025 (mark-up 50% on cost)", "headers": ["Doc", "Day", "Details", "Analysis of receipts", "Bank", "Sales", "Cost of sales", "Sundry accounts"], "rows": [
+      ["R10", "1", "B. Zulu (capital)", "", "20 000", "", "", "20 000"],
+      ["CRR", "7", "Cash sales", "", "4 500", "4 500", "3 000", ""],
+      ["CRR", "14", "Cash sales", "", "3 000", "3 000", "2 000", ""],
+      ["", "28", "", "", "27 500", "7 500", "5 000", "20 000"]
+    ] },
+    { "type": "paragraph", "text": "The **Cost of sales** column is **not** added when checking the Bank total, because it does not involve money received. Check: Sales + Sundry = 7 500 + 20 000 = 27 500 = Bank ✓." },
+    { "type": "heading", "text": "The CPJ of a trading business" },
+    { "type": "table", "caption": "Cash Payments Journal of Kasi Fashions, February 2025", "headers": ["Doc", "Day", "Payee", "Bank", "Trading stock", "Wages", "Sundry accounts"], "rows": [
+      ["EFT11", "2", "Wholesale Clothing", "9 000", "9 000", "", ""],
+      ["EFT12", "15", "A. Moyo", "2 200", "", "2 200", ""],
+      ["EFT13", "20", "City Council (rent)", "3 500", "", "", "3 500"],
+      ["", "28", "", "14 700", "9 000", "2 200", "3 500"]
+    ] },
+    { "type": "heading", "text": "Posting to the General Ledger" },
+    { "type": "table", "headers": ["Journal column", "Debit", "Credit"], "rows": [
+      ["CRJ: Bank", "Bank", ""],
+      ["CRJ: Sales", "", "Sales"],
+      ["CRJ: Cost of sales", "Cost of sales", "Trading stock"],
+      ["CPJ: Bank", "", "Bank"],
+      ["CPJ: Trading stock", "Trading stock", ""]
+    ] }
+  ],
+  "questions": [
+    { "id": "trading-def", "type": "open", "marks": 2, "prompt": "What is the difference between a service business and a trading business?", "memo": "✓ A service business earns income by providing services (1)\n✓ A trading business buys goods and sells them at a profit (1)" },
+    { "id": "stock-type", "type": "mcq", "prompt": "Trading stock is classified as…", "options": ["an expense", "an asset", "income", "a liability"], "answer": 1 },
+    { "id": "sp", "type": "numeric", "prompt": "Goods cost R400. The mark-up is 25% on cost. Calculate the selling price.", "answer": 500, "tolerance": 0, "unit": "rand" },
+    { "id": "cp", "type": "numeric", "prompt": "Goods were sold for R2 600 with a mark-up of 30% on cost. Calculate the cost of sales.", "answer": 2000, "tolerance": 0, "unit": "rand" },
+    { "id": "gp", "type": "numeric", "prompt": "Sales were R12 000 and cost of sales R8 000. Calculate the gross profit.", "answer": 4000, "tolerance": 0, "unit": "rand" },
+    { "id": "cos-total", "type": "truefalse", "prompt": "The Cost of sales column in the CRJ is included when checking that the Bank column balances.", "answer": false },
+    { "id": "posting", "type": "match", "marks": 4, "prompt": "Match each posting to the account debited.", "pairs": [
+      { "left": "CRJ Bank total", "right": "Bank" },
+      { "left": "CRJ Cost of sales total", "right": "Cost of sales" },
+      { "left": "CPJ Trading stock total", "right": "Trading stock" },
+      { "left": "CPJ Wages total", "right": "Wages" }
+    ] },
+    { "id": "two-effects", "type": "open", "marks": 2, "prompt": "Explain why a cash sale is recorded in both the Sales and Cost of sales columns.", "memo": "✓ The business earns income at selling price (Sales) (1)\n✓ and trading stock (at cost price) leaves the business, which becomes cost of sales (1)" },
+    { "id": "record-sale", "type": "open", "marks": 3, "prompt": "Cash sales of R3 900 were made on 10 March (mark-up 30% on cost). Give the amounts entered in the Bank, Sales and Cost of sales columns of the CRJ.", "memo": "✓ Bank R3 900 (1)\n✓ Sales R3 900 (1)\n✓ Cost of sales R3 000 (3 900 × 100/130) (1)" },
+    { "id": "stock-purchase", "type": "short", "prompt": "In which analysis column of the CPJ is a cash purchase of goods for resale recorded?", "answers": ["trading stock", "trading stock column"] }
+  ]
+}

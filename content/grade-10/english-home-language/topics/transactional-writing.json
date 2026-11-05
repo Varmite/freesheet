@@ -1,0 +1,46 @@
+{
+  "id": "transactional-writing",
+  "title": "Transactional Writing: Letters, Emails and Notices",
+  "term": 4,
+  "summary": "Formats and register for formal and friendly letters, emails, notices, invitations and agendas, with the Grade 10 length of 120–150 words.",
+  "notes": [
+    { "type": "heading", "text": "What is transactional writing?" },
+    { "type": "paragraph", "text": "Transactional texts are written for a **practical purpose** and a specific **audience**: to request, complain, inform, invite or apply. Correct **format** and **register** are marked as well as content. A Grade 10 transactional text is usually **120–150 words** (body only)." },
+    { "type": "heading", "text": "Formal letter layout" },
+    { "type": "list", "ordered": true, "items": [
+      "Sender's address (top right or top left) and date.",
+      "Recipient's title and address (left).",
+      "Salutation: 'Dear Sir/Madam' or 'Dear Ms Naidoo'.",
+      "Subject line (**RE:** or underlined heading).",
+      "Body: introduction (purpose), development, conclusion (what you want done).",
+      "Closing: 'Yours faithfully' (if you used Sir/Madam) or 'Yours sincerely' (if you used a name), signature and full name."
+    ] },
+    { "type": "heading", "text": "Friendly letter" },
+    { "type": "paragraph", "text": "Has the sender's address and date, an informal salutation ('Dear Gogo'), a chatty, personal tone, and a warm closing ('Lots of love'). Contractions and informal language are acceptable, but spelling must still be correct." },
+    { "type": "heading", "text": "Other formats" },
+    { "type": "table", "headers": ["Text", "Key features"], "rows": [
+      ["Email", "To, Cc, Subject line; greeting; short paragraphs; sign-off; formal or informal depending on the reader"],
+      ["Notice", "Heading; who, what, when, where; contact details; issued by and date"],
+      ["Invitation", "Host, occasion, date, time, venue, dress code, RSVP"],
+      ["Agenda", "Name of organisation, date, time, venue; numbered items: welcome, apologies, minutes of previous meeting, matters arising, new business, general, closure"]
+    ] },
+    { "type": "example", "title": "Formal letter opening", "problem": "Write the first lines of a letter of complaint about a faulty phone.", "steps": ["Dear Sir/Madam", "RE: COMPLAINT ABOUT A FAULTY CELLPHONE", "I am writing to complain about a Novo X5 cellphone that I bought from your Menlyn store on 2 March, which stopped working after one week."], "answer": "Purpose stated clearly in the first sentence, with facts (product, place, date, problem)." }
+  ],
+  "questions": [
+    { "id": "faithfully", "type": "mcq", "prompt": "Which closing goes with 'Dear Sir/Madam'?", "options": ["Yours sincerely", "Yours faithfully", "Love", "Cheers"], "answer": 1 },
+    { "id": "length", "type": "mcq", "prompt": "How long is a Grade 10 HL transactional text usually?", "options": ["50–80 words", "120–150 words", "250–300 words", "400 words"], "answer": 1 },
+    { "id": "rsvp", "type": "short", "prompt": "What abbreviation on an invitation asks guests to reply?", "answers": ["rsvp", "r.s.v.p.", "r.s.v.p"] },
+    { "id": "subject", "type": "truefalse", "prompt": "A formal letter should include a subject line.", "answer": true },
+    { "id": "contractions", "type": "truefalse", "prompt": "Slang and contractions are appropriate in a letter of application.", "answer": false },
+    { "id": "formats", "type": "match", "marks": 4, "prompt": "Match each text to a feature it must have.", "pairs": [
+      { "left": "Email", "right": "Subject line and recipient's address" },
+      { "left": "Invitation", "right": "Venue, time and RSVP" },
+      { "left": "Agenda", "right": "Numbered items for discussion" },
+      { "left": "Notice", "right": "Heading and who, what, when, where" }
+    ] },
+    { "id": "purpose", "type": "open", "marks": 2, "prompt": "What should the first paragraph of a formal letter do?", "memo": "✓ State the purpose of the letter clearly (1)\n✓ with relevant facts (what, when, where) (1)" },
+    { "id": "register", "type": "open", "marks": 2, "prompt": "Rewrite formally: 'Your bus driver was super rude to my kid, not cool!'", "memo": "✓✓ e.g. 'I wish to report that one of your bus drivers was discourteous to my son.' (formal vocabulary, no slang) (2)" },
+    { "id": "notice", "type": "open", "marks": 4, "prompt": "List FOUR details that a notice about a school book fair must contain.", "memo": "Any four: ✓ heading/what (book fair) ✓ date ✓ time ✓ venue ✓ who may attend ✓ contact person ✓ issued by and date (4)" },
+    { "id": "agenda", "type": "open", "marks": 3, "prompt": "Give the first THREE items on a standard meeting agenda.", "memo": "✓ Welcome/opening (1)\n✓ Apologies (1)\n✓ Minutes of the previous meeting (1)" }
+  ]
+}

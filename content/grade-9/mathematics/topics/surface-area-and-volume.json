@@ -1,0 +1,83 @@
+{
+  "id": "surface-area-and-volume",
+  "title": "Surface Area and Volume of 3D Objects",
+  "term": 3,
+  "summary": "Calculate the surface area, volume and capacity of rectangular prisms, triangular prisms and cylinders, convert between units, and describe how doubling or tripling dimensions changes surface area and volume.",
+  "notes": [
+    { "type": "heading", "text": "Volume of prisms and cylinders" },
+    { "type": "paragraph", "text": "For any **right prism**, and for a cylinder (which is like a prism with a circular base), the volume is the area of the base multiplied by the height." },
+    { "type": "formula", "latex": "V = \\text{area of base} \\times h", "caption": "Volume of a prism or cylinder" },
+    { "type": "table", "caption": "Volume formulae", "headers": ["Object", "Base", "Volume"], "rows": [
+      ["Cube", "Square $s \\times s$", "$V = s^3$"],
+      ["Rectangular prism", "Rectangle $l \\times b$", "$V = lbh$"],
+      ["Triangular prism", "Triangle $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$", "$V = \\frac{1}{2}bh \\times \\text{length}$"],
+      ["Cylinder", "Circle $\\pi r^2$", "$V = \\pi r^2 h$"]
+    ] },
+
+    { "type": "heading", "text": "Surface area of a cylinder" },
+    { "type": "paragraph", "text": "Unroll a cylinder and you get its **net**: two circles and a rectangle. The rectangle's length is the circumference of the circle, $2\\pi r$, and its width is the height $h$." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 200\" font-family=\"sans-serif\" font-size=\"13\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.8\"><ellipse cx=\"100\" cy=\"40\" rx=\"60\" ry=\"15\"/><line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\"/><line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"160\"/><path d=\"M40 160 A60 15 0 0 0 160 160\"/><path d=\"M40 160 A60 15 0 0 1 160 160\" stroke-dasharray=\"4 3\" stroke-width=\"1.2\"/><line x1=\"100\" y1=\"40\" x2=\"160\" y2=\"40\" stroke-width=\"1.2\"/><line x1=\"178\" y1=\"40\" x2=\"178\" y2=\"160\" stroke-width=\"1\"/><polyline points=\"174,48 178,40 182,48\" stroke-width=\"1\"/><polyline points=\"174,152 178,160 182,152\" stroke-width=\"1\"/><circle cx=\"270\" cy=\"32\" r=\"22\"/><rect x=\"210\" y=\"54\" width=\"120\" height=\"80\"/><circle cx=\"270\" cy=\"156\" r=\"22\"/></g><g fill=\"#000\"><circle cx=\"100\" cy=\"40\" r=\"2.5\"/><text x=\"126\" y=\"53\">r</text><text x=\"184\" y=\"104\">h</text><text x=\"256\" y=\"100\">2πr</text><text x=\"334\" y=\"98\">h</text><text x=\"72\" y=\"196\">Cylinder</text><text x=\"220\" y=\"196\" font-size=\"12\">Net of the cylinder</text></g></svg>", "caption": "A cylinder with radius r and height h, and its net: two circles of radius r and a rectangle 2πr long and h wide." },
+    { "type": "formula", "latex": "\\text{SA} = \\underbrace{2\\pi r^2}_{\\text{two circles}} + \\underbrace{2\\pi r h}_{\\text{curved surface}}", "caption": "Total surface area of a closed cylinder" },
+    { "type": "example", "title": "Worked example 1", "problem": "A cylinder has radius 3 cm and height 10 cm. Calculate (a) its volume and (b) its total surface area. Round to two decimal places.", "steps": [
+      "(a) $V = \\pi (3)^2 (10) = 90\\pi \\approx 282{,}74\\ \\text{cm}^3$.",
+      "(b) $\\text{SA} = 2\\pi(3)^2 + 2\\pi(3)(10) = 18\\pi + 60\\pi = 78\\pi \\approx 245{,}04\\ \\text{cm}^2$."
+    ], "answer": "(a) $282{,}74\\ \\text{cm}^3$  (b) $245{,}04\\ \\text{cm}^2$" },
+    { "type": "callout", "label": "Common mistake", "text": "If you are given the **diameter**, halve it first. A tin with diameter 8 cm has $r = 4$ cm. Also, an open container (no lid) has only **one** circle in its surface area." },
+
+    { "type": "heading", "text": "Surface area of prisms" },
+    { "type": "paragraph", "text": "Add the areas of all the faces. For a rectangular prism, $\\text{SA} = 2(lb + lh + bh)$. For a triangular prism, add the two triangles and the three rectangles." },
+    { "type": "example", "title": "Worked example 2: a triangular prism", "problem": "A triangular prism has right-angled triangles with sides 3 cm, 4 cm and 5 cm at its ends. It is 20 cm long. Calculate its volume and total surface area.", "steps": [
+      "Area of the triangle: $\\frac{1}{2} \\times 3 \\times 4 = 6\\ \\text{cm}^2$.",
+      "$V = 6 \\times 20 = 120\\ \\text{cm}^3$.",
+      "$\\text{SA} = 2 \\times 6 + (3 + 4 + 5) \\times 20 = 12 + 240 = 252\\ \\text{cm}^2$."
+    ], "answer": "$V = 120\\ \\text{cm}^3$; $\\text{SA} = 252\\ \\text{cm}^2$" },
+    { "type": "callout", "label": "Exam tip", "text": "The three rectangles of a prism together form one long rectangle whose length is the **perimeter of the base**. So the side area of any prism is $\\text{perimeter of base} \\times \\text{height}$." },
+
+    { "type": "heading", "text": "Capacity and units" },
+    { "type": "table", "caption": "Conversions", "headers": ["Volume", "Equivalent"], "rows": [
+      ["$1\\ \\text{cm}^3$", "1 ml"],
+      ["$1\\ 000\\ \\text{cm}^3$", "1 litre"],
+      ["$1\\ \\text{m}^3$", "$1\\ 000\\ 000\\ \\text{cm}^3$ = 1 000 litres = 1 kl"]
+    ] },
+    { "type": "example", "title": "Worked example 3: a water tank", "problem": "A cylindrical water tank has radius 0,7 m and height 1,5 m. How many litres does it hold? How long does it take to fill at 20 litres per minute?", "steps": [
+      "$V = \\pi (0{,}7)^2(1{,}5) = 0{,}735\\pi \\approx 2{,}309\\ \\text{m}^3$.",
+      "$2{,}309 \\times 1\\ 000 \\approx 2\\ 309$ litres.",
+      "Time: $2\\ 309 \\div 20 \\approx 115{,}5$ minutes (about 1 hour 55 minutes)."
+    ], "answer": "About 2 309 litres; about 115,5 minutes" },
+
+    { "type": "heading", "text": "Changing dimensions" },
+    { "type": "paragraph", "text": "If **all** dimensions are multiplied by $k$, surface area is multiplied by $k^2$ and volume by $k^3$. Tripling every dimension multiplies volume by $27$. If only the radius of a cylinder is doubled (height unchanged), the volume is multiplied by $4$, because $r$ is squared in $\\pi r^2 h$." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Volume of a prism or cylinder: area of base × height. Cylinder: $V = \\pi r^2 h$.",
+      "Closed cylinder: $\\text{SA} = 2\\pi r^2 + 2\\pi rh$; the curved surface unrolls into a $2\\pi r$ by $h$ rectangle.",
+      "Prisms: add all faces; side area = perimeter of base × height.",
+      "$1\\ \\text{cm}^3 = 1$ ml; $1\\ \\text{m}^3 = 1\\ 000$ litres.",
+      "All dimensions × $k$: area × $k^2$, volume × $k^3$."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "Calculate the volume of a cylinder with radius 3 cm and height 10 cm. Use the $\\pi$ key and round to two decimal places.", "unit": "cm³", "answer": 282.74, "tolerance": 0.01, "explanation": "$\\pi \\times 9 \\times 10 = 90\\pi \\approx 282{,}74$." },
+    { "id": "q2", "type": "mcq", "prompt": "Which expression gives the area of the curved surface of a cylinder?", "options": ["$\\pi r^2$", "$2\\pi r^2$", "$2\\pi rh$", "$\\pi r^2 h$"], "answer": 2, "explanation": "The curved surface unrolls into a rectangle $2\\pi r$ by $h$." },
+    { "id": "q3", "type": "numeric", "prompt": "Calculate the total surface area of a closed cylinder with radius 3 cm and height 10 cm. Round to two decimal places.", "unit": "cm²", "answer": 245.04, "tolerance": 0.01, "explanation": "$18\\pi + 60\\pi = 78\\pi \\approx 245{,}04$." },
+    { "id": "q4", "type": "numeric", "prompt": "A cylindrical container has radius 10 cm and height 30 cm. How many litres does it hold? Round to two decimal places.", "unit": "litres", "answer": 9.42, "tolerance": 0.01, "explanation": "$V = \\pi(100)(30) = 3\\ 000\\pi \\approx 9\\ 424{,}78\\ \\text{cm}^3 \\approx 9{,}42$ litres." },
+    { "id": "q5", "type": "truefalse", "prompt": "Doubling the radius of a cylinder (keeping the height the same) doubles its volume.", "answer": false, "explanation": "$\\pi(2r)^2h = 4\\pi r^2h$: the volume is multiplied by 4." },
+    { "id": "q6", "type": "numeric", "prompt": "A triangular prism has a right-angled triangle with legs 6 cm and 8 cm as its base, and is 15 cm long. Calculate its volume.", "unit": "cm³", "answer": 360, "tolerance": 0, "explanation": "Triangle: $\\frac{1}{2} \\times 6 \\times 8 = 24$; $V = 24 \\times 15 = 360\\ \\text{cm}^3$." },
+    { "id": "q7", "type": "numeric", "prompt": "A tank has a volume of $2\\ \\text{m}^3$. How many litres does it hold?", "unit": "litres", "answer": 2000, "tolerance": 0, "explanation": "$1\\ \\text{m}^3 = 1\\ 000$ litres." },
+    { "id": "q8", "type": "numeric", "prompt": "A cylinder has a volume of $500\\ \\text{cm}^3$ and a radius of 5 cm. Calculate its height, correct to two decimal places.", "unit": "cm", "answer": 6.37, "tolerance": 0.01, "explanation": "$h = \\frac{500}{\\pi \\times 25} \\approx 6{,}37$ cm." },
+    { "id": "q9", "type": "match", "prompt": "Match each object with its volume formula.", "marks": 4, "pairs": [
+      { "left": "Cube", "right": "s³" },
+      { "left": "Rectangular prism", "right": "l × b × h" },
+      { "left": "Triangular prism", "right": "½ × base × height × length" },
+      { "left": "Cylinder", "right": "π × r² × h" }
+    ], "explanation": "Each is (area of base) × height." },
+    { "id": "q10", "type": "numeric", "prompt": "How many $\\text{cm}^3$ are in $1\\ \\text{m}^3$?", "unit": "cm³", "answer": 1000000, "tolerance": 0, "explanation": "$100 \\times 100 \\times 100 = 1\\ 000\\ 000$." },
+    { "id": "q11", "type": "mcq", "prompt": "Every dimension of a box is tripled. By what number is its volume multiplied?", "options": ["3", "6", "9", "27"], "answer": 3, "explanation": "$3^3 = 27$." },
+    { "id": "q12", "type": "numeric", "prompt": "An open box (no lid) is 30 cm long, 20 cm wide and 10 cm high. Calculate its outside surface area.", "unit": "cm²", "answer": 1600, "tolerance": 0, "explanation": "Base $600$ + two sides $2 \\times 300$ + two ends $2 \\times 200$ $= 1\\ 600\\ \\text{cm}^2$." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "A cylindrical water tank has a radius of 0,7 m and a height of 1,5 m.\n(a) Calculate its volume in $\\text{m}^3$.  (2)\n(b) How many litres does it hold?  (1)\n(c) How long will it take to fill at 20 litres per minute?  (1)", "memo": "(a) $\\pi(0{,}7)^2(1{,}5)$ ✓ $\\approx 2{,}31\\ \\text{m}^3$ ✓ (2)\n(b) $\\approx 2\\ 309$ litres ✓ (1)\n(c) $2\\ 309 \\div 20 \\approx 115{,}5$ minutes ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "A paper label covers the curved surface of a tin with diameter 8 cm and height 11 cm. Calculate the area of the label, correct to two decimal places.", "memo": "$r = 4$ cm ✓ (1)\n$2\\pi(4)(11) = 88\\pi$ ✓ (1)\n$\\approx 276{,}46\\ \\text{cm}^2$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "A triangular prism has ends that are right-angled triangles with sides 3 cm, 4 cm and 5 cm. The prism is 20 cm long. Calculate (a) its volume and (b) its total surface area.", "memo": "(a) Triangle area $6\\ \\text{cm}^2$ ✓; $V = 120\\ \\text{cm}^3$ ✓ (2)\n(b) $2 \\times 6 + 12 \\times 20$ ✓ $= 252\\ \\text{cm}^2$ ✓ (2)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "Which container holds more: a cylinder with radius 5 cm and height 12 cm, or a box 9 cm by 9 cm by 11 cm? Show your calculations.", "memo": "Cylinder: $\\pi(25)(12) = 300\\pi \\approx 942{,}48\\ \\text{cm}^3$ ✓ (1)\nBox: $9 \\times 9 \\times 11 = 891\\ \\text{cm}^3$ ✓ (1)\nThe cylinder holds more ✓ (1)" }
+  ]
+}

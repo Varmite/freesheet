@@ -1,0 +1,54 @@
+{
+  "id": "short-stories",
+  "title": "Short Stories",
+  "term": 3,
+  "summary": "Elements of a short story (setting, characters, plot, conflict, theme, narrator), characterisation techniques and literary devices, applied to an original short story.",
+  "notes": [
+    { "type": "heading", "text": "Elements of a short story" },
+    { "type": "table", "headers": ["Element", "Meaning"], "rows": [
+      ["Setting", "Where and when the story takes place; it often creates the mood"],
+      ["Characters", "The people (or animals) in the story. The **protagonist** is the main character; the **antagonist** opposes the protagonist"],
+      ["Plot", "The sequence of events: exposition → rising action → climax → falling action → resolution"],
+      ["Conflict", "The struggle that drives the plot. **External**: character vs character, society or nature. **Internal**: a struggle within a character's mind"],
+      ["Theme", "The central message or insight about life"],
+      ["Narrator / point of view", "**First person** ('I'): a character tells the story. **Third person** ('he/she/they'): an outside narrator"]
+    ] },
+    { "type": "heading", "text": "Characterisation" },
+    { "type": "paragraph", "text": "Writers reveal what characters are like through **direct characterisation** (the narrator tells us: 'Sizwe was selfish') and **indirect characterisation** (we work it out from what the character says, does, thinks and looks like, and how others react to them)." },
+    { "type": "list", "items": [
+      "**Round character**: complex, with many traits; **flat character**: simple, with one or two traits.",
+      "**Dynamic character**: changes during the story; **static character**: stays the same."
+    ] },
+    { "type": "heading", "text": "Literary devices in stories" },
+    { "type": "list", "items": [
+      "**Foreshadowing**: hints about what will happen later.",
+      "**Flashback**: a scene from the past interrupts the present.",
+      "**Suspense**: tension that makes the reader eager to know what happens.",
+      "**Symbolism**: an object that represents a bigger idea (e.g. a dove for peace).",
+      "**Irony**: a contrast between what is expected and what happens."
+    ] },
+    { "type": "passage", "title": "The Red Bicycle (an original short story written for FreeSheet)", "text": "Every afternoon Musa walked past Mr Botha's shop and stopped to look at the red bicycle in the window. It had a silver bell and a price tag of R1 800, which might as well have been a million.\n\nMusa began washing cars at the taxi rank on Saturdays. His hands cracked in the winter cold, and twice older boys took his money. Still, the tin under his bed grew heavier. By September he had R1 650.\n\nThen his little sister Zinhle fell ill. The clinic gave her medicine, but she needed proper shoes for the long walk to school, and his mother's purse was empty. Musa sat on his bed for a long time, the tin in his lap. In the morning he bought Zinhle a pair of black school shoes, and a small loaf of bread for the house.\n\nIn December, the red bicycle disappeared from the window. Musa did not look this time; he crossed the road instead. But on Christmas morning there was a knock at the door. Mr Botha stood there, holding the handlebars. 'Your mother told me about the shoes,' he said gruffly. 'A boy who works that hard should not walk everywhere. You can pay me the rest by sweeping my shop.'\n\nZinhle rang the silver bell all the way down the street." },
+    { "type": "example", "title": "Analysing the story", "problem": "Identify the internal conflict and the theme of 'The Red Bicycle'.", "steps": [
+      "Internal conflict: Musa struggles between his dream of owning the bicycle and his responsibility to help his sister and family ('sat on his bed for a long time, the tin in his lap').",
+      "He resolves it by choosing his family.",
+      "Theme: selflessness and kindness are rewarded; generosity can inspire generosity in others."
+    ], "answer": "Musa's internal conflict is dream versus duty; the theme is the value of sacrifice and kindness." }
+  ],
+  "questions": [
+    { "id": "protagonist", "type": "short", "prompt": "What is the main character of a story called?", "answers": ["protagonist", "the protagonist"] },
+    { "id": "plot-order", "type": "mcq", "prompt": "Which is the correct order of plot structure?", "options": ["Climax, exposition, resolution, rising action", "Exposition, rising action, climax, falling action, resolution", "Rising action, exposition, resolution, climax", "Resolution, climax, falling action, exposition"], "answer": 1 },
+    { "id": "narrator", "type": "mcq", "prompt": "From which point of view is 'The Red Bicycle' told?", "options": ["First person", "Second person", "Third person"], "answer": 2 },
+    { "id": "saved", "type": "numeric", "prompt": "How much money had Musa saved by September?", "answer": 1650, "tolerance": 0, "unit": "rand" },
+    { "id": "dynamic", "type": "truefalse", "prompt": "A dynamic character changes during the story.", "answer": true },
+    { "id": "elements", "type": "match", "marks": 4, "prompt": "Match each element to an example from 'The Red Bicycle'.", "pairs": [
+      { "left": "Setting", "right": "A township street with a shop and a taxi rank" },
+      { "left": "Internal conflict", "right": "Musa choosing between the bicycle and his sister" },
+      { "left": "Climax", "right": "Musa spends his savings on Zinhle's shoes" },
+      { "left": "Resolution", "right": "Mr Botha brings the bicycle on Christmas morning" }
+    ] },
+    { "id": "character", "type": "open", "marks": 3, "prompt": "Describe Musa's character. Give TWO traits with evidence from the story.", "memo": "✓ Trait 1, e.g. hard-working (1) with evidence: washing cars in the cold every Saturday (½+½)\n✓ Trait 2, e.g. selfless/caring: spends savings on his sister's shoes and bread (1)" },
+    { "id": "cross", "type": "open", "marks": 2, "prompt": "Why does Musa cross the road in December instead of looking in the window?", "memo": "✓ The bicycle has gone and he thinks someone else has bought it (1)\n✓ He is sad/disappointed and does not want to be reminded of his lost dream (1)" },
+    { "id": "botha", "type": "open", "marks": 2, "prompt": "The word 'gruffly' suggests Mr Botha sounds rough. Why is this ironic?", "memo": "✓ He speaks roughly (1)\n✓ but his action is extremely kind and generous (1)" },
+    { "id": "ending", "type": "open", "marks": 2, "prompt": "Why do you think the writer ends the story with Zinhle ringing the bell?", "memo": "✓ It shows joy and that the bicycle benefits the whole family, especially the sister he sacrificed for (1)\n✓ It completes the story neatly, linking back to the silver bell at the start / symbolises happiness (1)" }
+  ]
+}

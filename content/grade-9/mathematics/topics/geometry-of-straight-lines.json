@@ -1,0 +1,91 @@
+{
+  "id": "geometry-of-straight-lines",
+  "title": "Geometry of Straight Lines",
+  "term": 2,
+  "summary": "Use angle relationships on straight lines, around points, at intersecting lines and with parallel lines to solve multi-step problems with reasons, including algebraic angle problems and proving that lines are parallel.",
+  "notes": [
+    { "type": "heading", "text": "Angle relationships (revision)" },
+    { "type": "table", "caption": "Facts and their reasons", "headers": ["Fact", "Reason (as written in proofs)"], "rows": [
+      ["Angles on a straight line add up to $180^\\circ$", "∠s on a str line"],
+      ["Angles around a point add up to $360^\\circ$", "∠s round a pt"],
+      ["Vertically opposite angles are equal", "vert opp ∠s"],
+      ["Corresponding angles are equal (if lines are parallel)", "corresp ∠s; $AB \\parallel CD$"],
+      ["Alternate angles are equal (if lines are parallel)", "alt ∠s; $AB \\parallel CD$"],
+      ["Co-interior angles add up to $180^\\circ$ (if lines are parallel)", "co-int ∠s; $AB \\parallel CD$"],
+      ["Angles of a triangle add up to $180^\\circ$", "∠ sum of Δ"],
+      ["Exterior angle = sum of the interior opposite angles", "ext ∠ of Δ"]
+    ] },
+    { "type": "paragraph", "text": "To prove that lines are **parallel**, use the converses: equal corresponding angles (corresp ∠s =), equal alternate angles (alt ∠s =), or co-interior angles that add up to $180^\\circ$ (co-int ∠s supp)." },
+
+    { "type": "heading", "text": "Solving with algebra" },
+    { "type": "paragraph", "text": "When angles are given as expressions, use an angle relationship to write an **equation**, solve it, and then substitute back to find the angles." },
+    { "type": "example", "title": "Worked example 1", "problem": "(a) Two angles on a straight line are $x$ and $2x + 30^\\circ$. Find $x$.\n(b) Two vertically opposite angles are $4x - 10^\\circ$ and $2x + 40^\\circ$. Find $x$ and the angle.\n(c) Four angles around a point are $x$, $2x$, $3x$ and $90^\\circ$. Find $x$.", "steps": [
+      "(a) $x + 2x + 30^\\circ = 180^\\circ$ (∠s on a str line), so $3x = 150^\\circ$ and $x = 50^\\circ$.",
+      "(b) $4x - 10^\\circ = 2x + 40^\\circ$ (vert opp ∠s), so $2x = 50^\\circ$, $x = 25^\\circ$ and each angle is $90^\\circ$.",
+      "(c) $6x + 90^\\circ = 360^\\circ$ (∠s round a pt), so $6x = 270^\\circ$ and $x = 45^\\circ$."
+    ], "answer": "(a) $50^\\circ$  (b) $x = 25^\\circ$; $90^\\circ$  (c) $45^\\circ$" },
+    { "type": "example", "title": "Worked example 2: parallel lines with algebra", "problem": "$AB \\parallel CD$. Two co-interior angles are $3x + 20^\\circ$ and $2x + 10^\\circ$. Find $x$ and both angles.", "steps": [
+      "$3x + 20^\\circ + 2x + 10^\\circ = 180^\\circ$ (co-int ∠s; $AB \\parallel CD$).",
+      "$5x = 150^\\circ$, so $x = 30^\\circ$.",
+      "The angles are $110^\\circ$ and $70^\\circ$."
+    ], "answer": "$x = 30^\\circ$; $110^\\circ$ and $70^\\circ$" },
+
+    { "type": "heading", "text": "Multi-step problems" },
+    { "type": "paragraph", "text": "Harder problems need several steps. Sometimes it helps to draw an extra line (a **construction**) parallel to the given lines." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"20\" y1=\"40\" x2=\"300\" y2=\"40\"/><line x1=\"20\" y1=\"170\" x2=\"300\" y2=\"170\"/><polyline points=\"60,34 68,40 60,46\"/><polyline points=\"60,164 68,170 60,176\"/><polyline points=\"120,40 220,105 110,170\" stroke-width=\"2\"/><line x1=\"220\" y1=\"105\" x2=\"300\" y2=\"105\" stroke-dasharray=\"5 4\"/></g><g fill=\"#000\"><text x=\"6\" y=\"45\">A</text><text x=\"306\" y=\"45\">B</text><text x=\"6\" y=\"175\">C</text><text x=\"306\" y=\"175\">D</text><text x=\"114\" y=\"32\">E</text><text x=\"104\" y=\"190\">F</text><text x=\"226\" y=\"100\">G</text><text x=\"152\" y=\"55\">40°</text><text x=\"150\" y=\"166\">30°</text><text x=\"198\" y=\"110\">x</text><text x=\"306\" y=\"110\">H</text></g></svg>", "caption": "AB ∥ CD. ∠BEG = 40°, ∠DFG = 30° and x = ∠EGF. The dashed line GH is drawn parallel to AB." },
+    { "type": "example", "title": "Worked example 3: the zigzag", "problem": "In the diagram, $AB \\parallel CD$, $\\hat{BEG} = 40^\\circ$ and $\\hat{DFG} = 30^\\circ$. Calculate $x = \\hat{EGF}$.", "steps": [
+      "Construction: draw $GH \\parallel AB$ (so also $GH \\parallel CD$).",
+      "$\\hat{EGH} = \\hat{BEG} = 40^\\circ$ (alt ∠s; $AB \\parallel GH$).",
+      "$\\hat{FGH} = \\hat{DFG} = 30^\\circ$ (alt ∠s; $CD \\parallel GH$).",
+      "$x = 40^\\circ + 30^\\circ = 70^\\circ$."
+    ], "answer": "$x = 70^\\circ$" },
+    { "type": "callout", "label": "Exam tip", "text": "If you add a construction line to a diagram, you must **state it** in your answer (e.g. \"Construction: draw $GH \\parallel AB$\") before you use it." },
+    { "type": "example", "title": "Worked example 4: proving the angle sum of a triangle", "problem": "Use parallel lines to prove that the angles of $\\triangle ABC$ add up to $180^\\circ$.", "steps": [
+      "Construction: through $A$, draw line $DE$ parallel to $BC$, with $D$ on the same side as $B$.",
+      "$\\hat{DAB} = \\hat{B}$ (alt ∠s; $DE \\parallel BC$)",
+      "$\\hat{EAC} = \\hat{C}$ (alt ∠s; $DE \\parallel BC$)",
+      "$\\hat{DAB} + \\hat{BAC} + \\hat{EAC} = 180^\\circ$ (∠s on a str line)",
+      "$\\therefore \\hat{B} + \\hat{BAC} + \\hat{C} = 180^\\circ$"
+    ], "answer": "Proved." },
+
+    { "type": "heading", "text": "Are the lines parallel?" },
+    { "type": "example", "title": "Worked example 5", "problem": "A transversal cuts lines $PQ$ and $RS$. Two corresponding angles are $3x + 10^\\circ$ and $4x - 15^\\circ$, and $x = 25^\\circ$. Is $PQ \\parallel RS$?", "steps": [
+      "$3(25) + 10 = 85^\\circ$ and $4(25) - 15 = 85^\\circ$.",
+      "The corresponding angles are equal, so $PQ \\parallel RS$ (corresp ∠s =)."
+    ], "answer": "Yes" },
+    { "type": "callout", "label": "Common mistake", "text": "Do not assume lines are parallel just because they look parallel. Unless parallel lines are given (or marked with arrows), you must **prove** it before using corresponding, alternate or co-interior angles." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Know every angle fact and the exact reason to write for it.",
+      "Use the relationships to set up and solve equations for unknown angles.",
+      "For complicated figures, work step by step and consider a construction parallel to the given lines.",
+      "Prove lines parallel with equal corresponding or alternate angles, or supplementary co-interior angles.",
+      "State any construction before using it."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "Two angles on a straight line are $x$ and $2x + 30^\\circ$. Calculate $x$, in degrees.", "unit": "°", "answer": 50, "tolerance": 0, "explanation": "$3x + 30 = 180$, so $x = 50$." },
+    { "id": "q2", "type": "numeric", "prompt": "Two vertically opposite angles are $4x - 10^\\circ$ and $2x + 40^\\circ$. Calculate $x$, in degrees.", "unit": "°", "answer": 25, "tolerance": 0, "explanation": "$4x - 10 = 2x + 40$, so $2x = 50$ and $x = 25$." },
+    { "id": "q3", "type": "numeric", "prompt": "In the zigzag diagram in the notes, $\\hat{BEG} = 40^\\circ$ and $\\hat{DFG} = 30^\\circ$. Calculate $x = \\hat{EGF}$, in degrees.", "unit": "°", "answer": 70, "tolerance": 0, "explanation": "With $GH \\parallel AB$: $40^\\circ + 30^\\circ = 70^\\circ$ (alternate angles)." },
+    { "id": "q4", "type": "mcq", "prompt": "Which reason correctly justifies that two alternate angles are equal?", "options": ["vert opp ∠s", "alt ∠s; $AB \\parallel CD$", "∠s on a str line", "alt ∠s ="], "answer": 1, "explanation": "Alternate angles are equal **because** the lines are parallel, so the reason must mention the parallel lines. \"alt ∠s =\" is the reason for proving lines parallel." },
+    { "id": "q5", "type": "truefalse", "prompt": "Two lines are cut by a transversal and two co-interior angles are $95^\\circ$ and $85^\\circ$. The lines are parallel.", "answer": true, "explanation": "$95^\\circ + 85^\\circ = 180^\\circ$, so the co-interior angles are supplementary and the lines are parallel." },
+    { "id": "q6", "type": "numeric", "prompt": "Four angles around a point are $x$, $2x$, $3x$ and $90^\\circ$. Calculate $x$, in degrees.", "unit": "°", "answer": 45, "tolerance": 0, "explanation": "$6x + 90 = 360$, so $x = 45$." },
+    { "id": "q7", "type": "mcq", "prompt": "$AB \\parallel CD$. Two corresponding angles are $3x + 5^\\circ$ and $5x - 25^\\circ$. Find $x$.", "options": ["$10^\\circ$", "$15^\\circ$", "$20^\\circ$", "$25^\\circ$"], "answer": 1, "explanation": "$3x + 5 = 5x - 25$, so $2x = 30$ and $x = 15^\\circ$." },
+    { "id": "q8", "type": "numeric", "prompt": "An exterior angle of a triangle is $130^\\circ$, and one of the interior opposite angles is $70^\\circ$. Calculate the other interior opposite angle, in degrees.", "unit": "°", "answer": 60, "tolerance": 0, "explanation": "Exterior angle = sum of interior opposite angles: $130 - 70 = 60$." },
+    { "id": "q9", "type": "match", "prompt": "Match each reason with the fact it stands for.", "marks": 5, "pairs": [
+      { "left": "corresp ∠s; AB ∥ CD", "right": "Corresponding angles between parallel lines are equal" },
+      { "left": "alt ∠s; AB ∥ CD", "right": "Alternate angles between parallel lines are equal" },
+      { "left": "co-int ∠s; AB ∥ CD", "right": "Co-interior angles between parallel lines add to 180°" },
+      { "left": "vert opp ∠s", "right": "Vertically opposite angles are equal" },
+      { "left": "∠s on a str line", "right": "Angles on a straight line add to 180°" }
+    ], "explanation": "Learn these abbreviations; they are expected in geometry answers." },
+    { "id": "q10", "type": "numeric", "prompt": "Two co-interior angles between parallel lines are $3x$ and $2x$. Calculate $x$, in degrees.", "unit": "°", "answer": 36, "tolerance": 0, "explanation": "$5x = 180$, so $x = 36$." },
+    { "id": "q11", "type": "truefalse", "prompt": "Three angles of $75^\\circ$, $60^\\circ$ and $55^\\circ$ can lie next to each other on a straight line.", "answer": false, "explanation": "$75 + 60 + 55 = 190^\\circ$, not $180^\\circ$." },
+    { "id": "q12", "type": "mcq", "prompt": "A transversal cuts lines $PQ$ and $RS$. Two corresponding angles are $68^\\circ$ and $72^\\circ$. What can you conclude?", "options": ["$PQ \\parallel RS$", "$PQ$ is not parallel to $RS$", "$PQ \\perp RS$", "Nothing can be concluded"], "answer": 1, "explanation": "If the lines were parallel, the corresponding angles would be equal. They are not, so the lines are not parallel." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "$AB \\parallel CD$. Point $E$ is on $AB$, $F$ is on $CD$, and $G$ lies between the lines (as in the zigzag diagram). $\\hat{BEG} = 40^\\circ$ and $\\hat{DFG} = 30^\\circ$. Calculate $\\hat{EGF}$, giving reasons.", "memo": "Construction: $GH \\parallel AB$ ✓ (1)\n$\\hat{EGH} = 40^\\circ$ (alt ∠s; $AB \\parallel GH$) ✓ (1)\n$\\hat{FGH} = 30^\\circ$ (alt ∠s; $CD \\parallel GH$) ✓ (1)\n$\\hat{EGF} = 70^\\circ$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Through vertex $A$ of $\\triangle ABC$, line $DE$ is drawn parallel to $BC$. Use this to prove that $\\hat{A} + \\hat{B} + \\hat{C} = 180^\\circ$.", "memo": "$\\hat{DAB} = \\hat{B}$ (alt ∠s; $DE \\parallel BC$) ✓ (1)\n$\\hat{EAC} = \\hat{C}$ (alt ∠s; $DE \\parallel BC$) ✓ (1)\n$\\hat{DAB} + \\hat{BAC} + \\hat{EAC} = 180^\\circ$ (∠s on a str line) ✓ (1)\nSo $\\hat{B} + \\hat{A} + \\hat{C} = 180^\\circ$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "$AB \\parallel CD$. Two co-interior angles are $3x + 20^\\circ$ and $2x + 10^\\circ$. Calculate $x$ and both angles.", "memo": "$3x + 20^\\circ + 2x + 10^\\circ = 180^\\circ$ (co-int ∠s; $AB \\parallel CD$) ✓ (1)\n$x = 30^\\circ$ ✓ (1)\n$110^\\circ$ and $70^\\circ$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "A transversal cuts lines $PQ$ and $RS$. Two corresponding angles are $3x + 10^\\circ$ and $4x - 15^\\circ$. If $x = 25^\\circ$, is $PQ \\parallel RS$? Explain.", "memo": "$3(25) + 10 = 85^\\circ$ ✓ (1)\n$4(25) - 15 = 85^\\circ$ ✓ (1)\nThe corresponding angles are equal, so $PQ \\parallel RS$ (corresp ∠s =) ✓ (1)" }
+  ]
+}

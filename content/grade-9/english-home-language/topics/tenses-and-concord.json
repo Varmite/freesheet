@@ -1,0 +1,62 @@
+{
+  "id": "tenses-and-concord",
+  "title": "Tenses and Concord",
+  "term": 1,
+  "summary": "The twelve tenses (simple, continuous, perfect and perfect continuous in past, present and future), irregular verbs, keeping tenses consistent, and subject–verb agreement (concord).",
+  "notes": [
+    { "type": "heading", "text": "The tenses" },
+    { "type": "table", "headers": ["", "Past", "Present", "Future"], "rows": [
+      ["Simple", "I walked", "I walk", "I will walk"],
+      ["Continuous (progressive)", "I was walking", "I am walking", "I will be walking"],
+      ["Perfect", "I had walked", "I have walked", "I will have walked"],
+      ["Perfect continuous", "I had been walking", "I have been walking", "I will have been walking"]
+    ] },
+    { "type": "list", "items": [
+      "**Simple**: a completed action or a habit. *She **reads** every night.*",
+      "**Continuous**: an action in progress. *They **were playing** when it rained.*",
+      "**Perfect**: an action completed before another time. *By the time we arrived, the film **had started**.*",
+      "**Perfect continuous**: an action that continued up to a point. *He **has been studying** for three hours.*"
+    ] },
+    { "type": "heading", "text": "Irregular verbs" },
+    { "type": "table", "headers": ["Base", "Simple past", "Past participle"], "rows": [
+      ["go", "went", "gone"],
+      ["see", "saw", "seen"],
+      ["write", "wrote", "written"],
+      ["begin", "began", "begun"],
+      ["bring", "brought", "brought"],
+      ["choose", "chose", "chosen"],
+      ["lie (recline)", "lay", "lain"],
+      ["lay (put down)", "laid", "laid"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "Use the **past participle** with *have/has/had*: *I **have seen** it* (not *I have saw*); *She **had written*** (not *had wrote*). Keep tenses **consistent** in a piece of writing unless the time changes." },
+    { "type": "heading", "text": "Concord (subject–verb agreement)" },
+    { "type": "paragraph", "text": "The verb must **agree** with its subject in number: a **singular** subject takes a singular verb and a **plural** subject takes a plural verb. *The dog **barks**. The dogs **bark**.*" },
+    { "type": "table", "headers": ["Rule", "Example"], "rows": [
+      ["Ignore phrases between the subject and verb", "The box **of chocolates is** on the table."],
+      ["Two subjects joined by 'and' are plural", "Thabo and Lindi **are** late."],
+      ["With 'either…or' / 'neither…nor', the verb agrees with the nearer subject", "Neither the teacher nor the learners **were** ready. / Neither the learners nor the teacher **was** ready."],
+      ["Each, every, everyone, nobody, somebody are singular", "Everyone **has** a book. Each of the boys **is** here."],
+      ["Collective nouns are usually singular when the group acts as one", "The team **is** winning."],
+      ["'There is/are' agrees with the noun that follows", "There **are** three apples. There **is** a problem."],
+      ["Amounts of money, time and distance are singular", "Fifty rand **is** too much."]
+    ] },
+    { "type": "example", "title": "Correcting concord errors", "problem": "Correct: 'One of my friends live in Soweto, and everybody in our class like her.'", "steps": ["The subject is 'One' (singular), so: One of my friends **lives**.", "'Everybody' is singular, so: everybody **likes** her."], "answer": "One of my friends lives in Soweto, and everybody in our class likes her." }
+  ],
+  "questions": [
+    { "id": "tense-name", "type": "mcq", "prompt": "Name the tense: 'They had been waiting for an hour.'", "options": ["Past continuous", "Past perfect", "Past perfect continuous", "Present perfect"], "answer": 2 },
+    { "id": "future-perfect", "type": "mcq", "prompt": "Which sentence is in the future perfect tense?", "options": ["I will finish soon.", "I will have finished by six.", "I will be finishing.", "I have finished."], "answer": 1 },
+    { "id": "participle", "type": "short", "prompt": "Give the past participle of 'write'.", "answers": ["written"] },
+    { "id": "seen", "type": "short", "prompt": "Correct the verb: 'I have saw that movie before.' (one word)", "answers": ["seen"] },
+    { "id": "box", "type": "mcq", "prompt": "Choose the correct verb: 'The box of books ___ heavy.'", "options": ["are", "is", "were", "be"], "answer": 1 },
+    { "id": "neither", "type": "mcq", "prompt": "Choose the correct verb: 'Neither the coach nor the players ___ happy with the result.'", "options": ["was", "were", "is", "has been"], "answer": 1 },
+    { "id": "everyone", "type": "truefalse", "prompt": "'Everyone are welcome' is grammatically correct.", "answer": false },
+    { "id": "tenses-match", "type": "match", "marks": 4, "prompt": "Name the tense of each sentence.", "pairs": [
+      { "left": "She sings in the choir.", "right": "Simple present" },
+      { "left": "We were eating supper.", "right": "Past continuous" },
+      { "left": "He has lost his key.", "right": "Present perfect" },
+      { "left": "They will travel tomorrow.", "right": "Simple future" }
+    ] },
+    { "id": "rewrite-past", "type": "open", "marks": 3, "prompt": "Rewrite in the simple past tense: 'The learners choose their subjects, bring the forms and begin the new year.'", "memo": "✓ chose (1)\n✓ brought (1)\n✓ began (1)" },
+    { "id": "concord-fix", "type": "open", "marks": 2, "prompt": "Correct the concord errors: 'There is many reasons why the team are losing.'", "memo": "✓ There are many reasons (1)\n✓ the team is losing (1)" }
+  ]
+}

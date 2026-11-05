@@ -1,0 +1,204 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of THREE questions. Answer ALL the questions.",
+    "Read the case study carefully before answering Question 2.",
+    "Write in full sentences where explanations are required."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "Which section of the Constitution allows rights to be limited?",
+          "options": [
+            "Section 9",
+            "Section 24",
+            "Section 36",
+            "Section 29"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "In the Johari window, information you keep private is in the…",
+          "options": [
+            "open area",
+            "blind spot",
+            "hidden area",
+            "unknown area"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "Which Holland type enjoys order, detail and data?",
+          "options": [
+            "Artistic",
+            "Social",
+            "Conventional",
+            "Realistic"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-4",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Gender role",
+              "right": "Behaviour society expects because of gender"
+            },
+            {
+              "left": "Consent",
+              "right": "Freely given agreement that can be withdrawn"
+            },
+            {
+              "left": "Relapse",
+              "right": "Returning to substance use"
+            },
+            {
+              "left": "Social responsibility",
+              "right": "Acting for the good of the community"
+            },
+            {
+              "left": "Xenophobia",
+              "right": "Hatred or fear of foreigners"
+            }
+          ]
+        },
+        {
+          "id": "q1-5",
+          "type": "truefalse",
+          "prompt": "Affirmative action is a form of unfair discrimination prohibited by the Constitution.",
+          "answer": false
+        },
+        {
+          "id": "q1-6",
+          "type": "truefalse",
+          "prompt": "The teenage brain's impulse-control centre matures in the mid-20s.",
+          "answer": true
+        },
+        {
+          "id": "q1-7",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Which organisation runs elections in South Africa? (abbreviation)",
+          "answers": [
+            "iec"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Case study",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Case study: Kagiso's party",
+          "text": "Kagiso (16) is popular and wants to keep his place in his group of friends. At a weekend party, older boys bring alcohol and dagga. Kagiso's girlfriend, Naledi, says she wants to go home, but Kagiso's friends mock him: 'A real man doesn't let his girlfriend tell him what to do.' Kagiso drinks heavily and later pressures Naledi to stay. A friend offers to drive them home, although he has also been drinking."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Identify THREE risky behaviours in the case study.",
+          "memo": "Any three (1 each): underage drinking; drug use; pressuring a partner; ignoring consent/boundaries; getting into a car with a drunk driver"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how the friends' comment reflects a harmful gender stereotype, and its possible effect on Naledi.",
+          "memo": "✓ It suggests men should control women / make decisions (1)\n✓ It pressures Kagiso to dominate rather than respect Naledi (1)\n✓ Naledi's choices and safety are disregarded; risk of abuse (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how alcohol increased the danger in this situation.",
+          "memo": "✓ It impaired Kagiso's judgement and lowered inhibitions (1)\n✓ making pressure or coercion more likely (1)\n✓ and the drunk driver puts lives at risk (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "What should Naledi and Kagiso have done to stay safe? Give FOUR suggestions.",
+          "memo": "Any four (1 each): leave when uncomfortable; respect each other's decisions; refuse alcohol/drugs; arrange a safe lift with a parent; never ride with a drunk driver; stay with trusted friends; call for help"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO places where Naledi could get help if Kagiso becomes controlling or abusive.",
+          "memo": "Any two (1 each): GBV Command Centre 0800 428 428; Childline 116; police; school counsellor; trusted adult"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Rights, careers and the environment",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Name TWO Chapter 9 institutions and describe the role of each.",
+          "memo": "✓ Institution 1 (1) ✓ role (1)\n✓ Institution 2 (1) ✓ role (1)"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain why freedom of expression does not allow hate speech.",
+          "memo": "✓ Rights can be limited if reasonable and justifiable (section 36) (1)\n✓ Hate speech violates others' dignity and equality (1)\n✓ and can incite violence (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe FOUR study habits that will help a learner succeed in Grade 10.",
+          "memo": "Any four (1 each): timetable; active study methods; spaced revision; past papers; enough sleep; ask for help; limit distractions"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Discuss TWO environmental problems in your community and suggest one solution for each.",
+          "memo": "✓ Problem 1 (1) ✓ solution (1)\n✓ Problem 2 (1) ✓ solution (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain THREE ways in which healthy self-esteem helps a young person resist negative peer pressure.",
+          "memo": "Any three (1 each): confident to say no; does not need approval; values own goals; makes independent decisions; chooses supportive friends"
+        },
+        {
+          "id": "q3-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how a learner could use the Holland personality types to explore careers.",
+          "memo": "✓ Complete an interest questionnaire to find their strongest types (1)\n✓ Look at careers linked to those types (1)\n✓ Research the requirements of those careers (1)"
+        },
+        {
+          "id": "q3-7",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE ways young people can participate actively in democracy.",
+          "memo": "Any three (1 each): RCL; register to vote at 16; petitions; peaceful protest; volunteering; youth organisations; contacting councillors"
+        }
+      ]
+    }
+  ]
+}

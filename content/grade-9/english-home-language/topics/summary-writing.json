@@ -1,0 +1,191 @@
+{
+  "id": "summary-writing",
+  "title": "Summary Writing",
+  "term": 3,
+  "summary": "Selecting points on a specific focus, avoiding unnecessary detail, paraphrasing, and writing a fluent summary paragraph within a word limit.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "The Grade 9 summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "In Grade 9 you are usually asked to summarise a passage on a specific **focus** in **seven points**, written as a **fluent paragraph** of no more than **80 to 90 words**, in **your own words**. Marks are given for the correct points and for language (fluency, own words, word limit)."
+    },
+    {
+      "type": "heading",
+      "text": "Method"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Underline the **focus** in the instruction.",
+        "Read the passage and highlight **only** the sentences that relate to the focus.",
+        "Write each point as a short note in your own words.",
+        "Check that you have exactly seven separate points (not one point repeated).",
+        "Join the points into a paragraph using **linking words**.",
+        "Count your words honestly and write the number at the end in brackets."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "What to leave out",
+      "headers": [
+        "Leave out",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Examples and illustrations",
+          "'such as a bag of chips or a fizzy drink'"
+        ],
+        [
+          "Statistics and dates (unless they are the point)",
+          "'In 2022, 34% of…'"
+        ],
+        [
+          "Quotations and direct speech",
+          "'As one expert said, \"…\"'"
+        ],
+        [
+          "Repetition",
+          "The same point said in different words"
+        ],
+        [
+          "Introductory and concluding comments",
+          "'This is a very important issue'"
+        ],
+        [
+          "Your own opinions",
+          "'I think this is unfair'"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Paraphrasing"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Paraphrasing** means expressing an idea in your own words. Change the vocabulary (use synonyms), change the sentence structure, and shorten. A **general word** can replace a list: *'apples, bananas, oranges and pears'* becomes *'fruit'*."
+    },
+    {
+      "type": "passage",
+      "title": "Practice passage: Saving Water at School (original)",
+      "text": "Our school used more water last term than ever before, so the RCL investigated ways to cut waste. The simplest solution was to fix dripping taps, which can waste up to 30 litres a day each. The ground staff agreed to water the gardens early in the morning instead of at midday, so less water evaporates in the heat. Learners suggested putting posters above every basin, reminding everyone to close the taps properly. The tuck shop now sells refillable bottles instead of bottled water. A rainwater tank, donated by a local hardware store, collects runoff from the hall roof for the vegetable garden. The science club has started monthly meter readings to track progress, and the class that saves the most will win a pizza party. Finally, the toilets have been fitted with dual-flush buttons."
+    },
+    {
+      "type": "example",
+      "title": "A model summary",
+      "problem": "Summarise the ways the school is saving water in seven points, as a paragraph of no more than 70 words.",
+      "steps": [
+        "Points: 1. fix leaking taps; 2. water gardens early; 3. posters reminding learners to close taps; 4. refillable bottles; 5. rainwater tank for the garden; 6. monthly meter readings to monitor use; 7. dual-flush toilets."
+      ],
+      "answer": "The school is repairing leaking taps and watering its gardens early in the day to reduce evaporation. Posters remind learners to turn taps off fully, and refillable bottles have replaced bottled water. A donated tank now stores rainwater for the vegetable garden. In addition, water use is checked every month, and dual-flush toilets have been installed. (57 words)"
+    },
+    {
+      "type": "callout",
+      "label": "Notice",
+      "text": "The model leaves out the 30 litres statistic, the pizza-party prize and who donated the tank, because they are details, not ways of saving water."
+    }
+  ],
+  "questions": [
+    {
+      "id": "points",
+      "type": "numeric",
+      "prompt": "How many points are usually required in a Grade 9 summary?",
+      "answer": 7,
+      "tolerance": 0
+    },
+    {
+      "id": "paraphrase",
+      "type": "short",
+      "prompt": "What is expressing an idea in your own words called?",
+      "answers": [
+        "paraphrasing",
+        "paraphrase"
+      ]
+    },
+    {
+      "id": "general-word",
+      "type": "short",
+      "prompt": "Replace this list with one general word: 'cars, buses, taxis and trucks'.",
+      "answers": [
+        "vehicles",
+        "transport",
+        "motor vehicles"
+      ]
+    },
+    {
+      "id": "leave-out",
+      "type": "mcq",
+      "prompt": "Which should be included in a summary?",
+      "options": [
+        "Examples",
+        "Quotations",
+        "Main points on the focus",
+        "Your personal opinion"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "pizza",
+      "type": "truefalse",
+      "prompt": "The pizza-party prize should be included as a point in the water-saving summary.",
+      "answer": false
+    },
+    {
+      "id": "classify",
+      "type": "match",
+      "marks": 4,
+      "prompt": "Decide whether each item from the passage is a main point or should be left out.",
+      "pairs": [
+        {
+          "left": "Fix dripping taps",
+          "right": "Main point"
+        },
+        {
+          "left": "Taps can waste up to 30 litres a day",
+          "right": "Leave out (statistic)"
+        },
+        {
+          "left": "Dual-flush toilets installed",
+          "right": "Main point (toilets)"
+        },
+        {
+          "left": "Donated by a local hardware store",
+          "right": "Leave out (detail)"
+        }
+      ]
+    },
+    {
+      "id": "linking",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Give TWO linking words you could use to join points in a summary paragraph.",
+      "memo": "Any two (1 each): furthermore; in addition; also; moreover; as well as; finally; and"
+    },
+    {
+      "id": "rewrite",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Paraphrase: 'The ground staff agreed to water the gardens early in the morning instead of at midday, so less water evaporates in the heat.'",
+      "memo": "✓✓ e.g. 'Gardens are watered early to reduce evaporation.' (own words, concise, accurate) (2)"
+    },
+    {
+      "id": "summary-task",
+      "type": "open",
+      "marks": 10,
+      "prompt": "Read the passage and summarise the benefits of reading for pleasure in SEVEN points, as a fluent paragraph of no more than 70 words. State your word count.\n\n‘Reading for pleasure does far more than pass the time. Learners who read widely build a much larger vocabulary, which improves their writing in every subject. Stories let us see the world through other people’s eyes, so regular readers tend to show more empathy. A good book is also an escape: studies show that just six minutes of reading can lower stress levels. Reading strengthens concentration, because, unlike scrolling, it demands sustained attention. It also improves memory, as readers must keep track of characters and events. Many readers say they sleep better if they swap their screens for a book at bedtime. Finally, a reading habit is cheap: public libraries lend books free of charge.’",
+      "memo": "Points (7, 1 each): bigger vocabulary; better writing; more empathy/understanding others; reduces stress/escape; better concentration; better memory; better sleep; it is cheap/free (any seven)\nLanguage (3): fluent paragraph (1); own words (1); within 70 words with word count (1)"
+    },
+    {
+      "id": "word-limit",
+      "type": "open",
+      "marks": 1,
+      "prompt": "What should you do if your summary is over the word limit?",
+      "memo": "✓ Remove unnecessary words/details and combine points more concisely until it fits the limit (1)"
+    }
+  ]
+}

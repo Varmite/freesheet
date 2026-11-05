@@ -1,0 +1,48 @@
+{
+  "id": "visual-literacy",
+  "title": "Visual Literacy: Advertisements, Cartoons and Film",
+  "term": 2,
+  "summary": "Analysing persuasive visual texts and moving images: target audience and appeals in advertisements, satire in cartoons, and camera shots, angles, lighting and sound in film.",
+  "notes": [
+    { "type": "heading", "text": "Persuasive appeals in advertising" },
+    { "type": "table", "headers": ["Appeal", "How it works"], "rows": [
+      ["Ethos", "Credibility: experts, trusted brands, celebrities"],
+      ["Pathos", "Emotion: fear, love, nostalgia, guilt, desire"],
+      ["Logos", "Logic: facts, statistics, comparisons"],
+      ["Status appeal", "Owning the product makes you superior or successful"],
+      ["Social responsibility", "Buying helps the environment or a cause"]
+    ] },
+    { "type": "heading", "text": "Satire in cartoons" },
+    { "type": "paragraph", "text": "Editorial cartoons **satirise** people and institutions through **caricature**, **exaggeration**, **irony**, **symbolism** and **labels**. To analyse one, identify the issue, the target, the techniques and the cartoonist's attitude." },
+    { "type": "heading", "text": "Film techniques" },
+    { "type": "table", "headers": ["Technique", "Effect"], "rows": [
+      ["Close-up", "Shows emotion in detail; creates intimacy"],
+      ["Long shot", "Shows the setting; can make a character seem isolated"],
+      ["Low angle (looking up)", "Makes a character look powerful or threatening"],
+      ["High angle (looking down)", "Makes a character seem small or vulnerable"],
+      ["Low-key lighting", "Dark shadows: mystery, fear, tension"],
+      ["High-key lighting", "Bright and even: cheerful, safe"],
+      ["Diegetic sound", "Sound from the story world (dialogue, footsteps)"],
+      ["Non-diegetic sound", "Added sound (soundtrack, narrator) to build mood"]
+    ] },
+    { "type": "passage", "title": "Described film still (original)", "text": "A low-angle shot shows a factory owner standing on a balcony, silhouetted against a red evening sky. Below him, in a high-angle long shot, workers queue at the factory gates. A slow, heavy drumbeat plays on the soundtrack." },
+    { "type": "callout", "label": "Exam tip", "text": "Always link the technique to its effect on the viewer and to the message: 'The low angle makes the owner appear dominant, which emphasises the power imbalance between him and the workers.'" }
+  ],
+  "questions": [
+    { "id": "lowangle", "type": "mcq", "prompt": "A low-angle shot usually makes a character appear…", "options": ["weak", "powerful", "far away", "happy"], "answer": 1 },
+    { "id": "closeup", "type": "short", "prompt": "Which type of shot best shows a character's emotion in detail?", "answers": ["close-up", "close up", "closeup", "a close-up"] },
+    { "id": "diegetic", "type": "mcq", "prompt": "A soundtrack added to build tension is…", "options": ["diegetic sound", "non-diegetic sound", "dialogue", "a sound effect in the story world"], "answer": 1 },
+    { "id": "pathos", "type": "truefalse", "prompt": "Pathos is an appeal to the audience's emotions.", "answer": true },
+    { "id": "lighting", "type": "truefalse", "prompt": "Low-key lighting is typically used to create a cheerful mood.", "answer": false },
+    { "id": "appeals", "type": "match", "marks": 4, "prompt": "Match each advert to the appeal it mainly uses.", "pairs": [
+      { "left": "'Clinically proven to reduce cavities by 40%'", "right": "Logos" },
+      { "left": "A doctor recommends a cough syrup", "right": "Ethos" },
+      { "left": "A puppy waits for its owner by the door", "right": "Pathos" },
+      { "left": "'For those who have arrived.' (luxury car)", "right": "Status appeal" }
+    ] },
+    { "id": "still", "type": "open", "marks": 3, "prompt": "Discuss how camera angles in the described film still show the relationship between the owner and the workers.", "memo": "✓ The low angle makes the owner look powerful/dominant (1)\n✓ The high-angle long shot makes the workers look small, powerless and numerous (1)\n✓ The contrast emphasises inequality/a power imbalance (1)" },
+    { "id": "red", "type": "open", "marks": 2, "prompt": "What might the red sky and the drumbeat suggest?", "memo": "✓ Red suggests danger/anger/conflict (1)\n✓ The slow, heavy drumbeat builds tension or a sense of something threatening about to happen (1)" },
+    { "id": "silhouette", "type": "open", "marks": 2, "prompt": "Why might the director show the owner as a silhouette?", "memo": "✓ It hides his face, making him seem mysterious/impersonal (1)\n✓ suggesting he is distant from or uncaring towards the workers (1)" },
+    { "id": "satire", "type": "open", "marks": 4, "prompt": "Name FOUR steps for analysing an editorial cartoon.", "memo": "✓ Identify the issue ✓ the target ✓ the techniques ✓ the cartoonist's attitude/message (1 each = 4)" }
+  ]
+}

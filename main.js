@@ -15,6 +15,19 @@ function contentDir() {
     : path.join(__dirname, 'content');
 }
 
+function audioDir() {
+  return app.isPackaged
+    ? path.join(process.resourcesPath, 'audio')
+    : path.join(__dirname, 'audio');
+}
+
+function topicAudioDir(grade, subjectId, topicId) {
+  const g = assertGrade(grade);
+  assertId(subjectId, 'subject');
+  assertId(topicId, 'topic');
+  return path.join(audioDir(), `grade-${g}`, subjectId, topicId);
+}
+
 function progressFile() {
   return path.join(app.getPath('userData'), 'progress.json');
 }
@@ -135,6 +148,17 @@ function saveProgressSync(data) {
 // ---------- IPC ----------
 
 function registerIpc() {
+  // Read-aloud audio: one Ogg Opus file per notes section, named by a hash of its text.
+  ipcMain.handle('audio:list', (_e, grade, subjectId, topicId) => {
+    const dir = topicAudioDir(grade, subjectId, topicId);
+    if (!fs.existsSync(dir)) return [];
+    return fs.readdirSync(dir).filter((f) => /^[0-9a-f]{8}\.ogg$/.test(f)).map((f) => f.slice(0, 8));
+  });
+  ipcMain.handle('audio:get', (_e, grade, subjectId, topicId, id) => {
+    if (typeof id !== 'string' || !/^[0-9a-f]{8}$/.test(id)) throw new Error('Invalid audio id');
+    return fs.promises.readFile(path.join(topicAudioDir(grade, subjectId, topicId), `${id}.ogg`));
+  });
+
   ipcMain.handle('catalog:get', () => {
     if (!catalogCache) catalogCache = buildCatalog();
     return catalogCache;

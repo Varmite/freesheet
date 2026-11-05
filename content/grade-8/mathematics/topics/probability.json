@@ -1,0 +1,99 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "term": 4,
+  "summary": "Describe outcomes and events, list sample spaces for simple experiments, calculate theoretical probability and relative frequency, and compare the two.",
+  "notes": [
+    { "type": "heading", "text": "The language of probability" },
+    { "type": "paragraph", "text": "**Probability** measures how likely something is to happen. It is used in weather forecasts, insurance, games and medicine." },
+    { "type": "table", "caption": "Key words", "headers": ["Word", "Meaning", "Example (rolling a die)"], "rows": [
+      ["Experiment (trial)", "An action with an uncertain result", "Rolling a die once"],
+      ["Outcome", "One possible result", "Rolling a 4"],
+      ["Sample space", "The list of all possible outcomes", "$\\{1;\\ 2;\\ 3;\\ 4;\\ 5;\\ 6\\}$"],
+      ["Event", "One or more outcomes we are interested in", "Rolling an even number: $\\{2;\\ 4;\\ 6\\}$"]
+    ] },
+    { "type": "paragraph", "text": "Outcomes are **equally likely** when each has the same chance, as with a fair coin, a fair die or a spinner with equal sectors." },
+
+    { "type": "heading", "text": "Theoretical probability" },
+    { "type": "formula", "latex": "P(E) = \\frac{\\text{number of favourable outcomes}}{\\text{total number of possible outcomes}}", "caption": "Probability of an event E when all outcomes are equally likely" },
+    { "type": "paragraph", "text": "A probability is a number from $0$ to $1$. It can be written as a fraction, a decimal or a percentage." },
+    { "type": "table", "caption": "The probability scale", "headers": ["Probability", "Meaning", "Example"], "rows": [
+      ["$0$", "Impossible", "Rolling a 7 on an ordinary die"],
+      ["between $0$ and $\\frac{1}{2}$", "Unlikely", "Rolling a 6"],
+      ["$\\frac{1}{2}$", "Even chance", "A fair coin landing heads"],
+      ["between $\\frac{1}{2}$ and $1$", "Likely", "Rolling a number greater than 1"],
+      ["$1$", "Certain", "Rolling a number less than 7"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "A bag contains 3 red, 5 blue and 2 green beads. One bead is taken without looking. Find (a) $P(\\text{blue})$, (b) $P(\\text{red or green})$, (c) $P(\\text{yellow})$.", "steps": [
+      "Total number of beads: $3 + 5 + 2 = 10$.",
+      "(a) $P(\\text{blue}) = \\dfrac{5}{10} = \\dfrac{1}{2}$",
+      "(b) $P(\\text{red or green}) = \\dfrac{3 + 2}{10} = \\dfrac{1}{2}$",
+      "(c) There are no yellow beads: $P(\\text{yellow}) = 0$."
+    ], "answer": "(a) $\\frac{1}{2}$  (b) $\\frac{1}{2}$  (c) $0$" },
+
+    { "type": "heading", "text": "Complementary events" },
+    { "type": "paragraph", "text": "An event either happens or it does not. The probabilities of an event and its **complement** (\"not the event\") add up to $1$." },
+    { "type": "formula", "latex": "P(\\text{not } E) = 1 - P(E)", "caption": "Complementary events" },
+    { "type": "example", "title": "Worked example 2", "problem": "Using the bag of beads above, find $P(\\text{not red})$.", "steps": [
+      "$P(\\text{red}) = \\dfrac{3}{10}$, so $P(\\text{not red}) = 1 - \\dfrac{3}{10} = \\dfrac{7}{10}$.",
+      "Check: there are $5 + 2 = 7$ beads that are not red ✓"
+    ], "answer": "$\\frac{7}{10}$" },
+
+    { "type": "heading", "text": "Sample spaces for two events" },
+    { "type": "paragraph", "text": "When two things happen together, list all the outcomes in an organised way, using a list or a two-way table, so that none are missed." },
+    { "type": "example", "title": "Worked example 3: two coins", "problem": "Two coins are tossed. List the sample space and find $P(\\text{two heads})$ and $P(\\text{one head and one tail})$.", "steps": [
+      "Sample space: $\\{HH;\\ HT;\\ TH;\\ TT\\}$: 4 equally likely outcomes.",
+      "$P(\\text{two heads}) = \\dfrac{1}{4}$",
+      "One head and one tail: $HT$ or $TH$, so $\\dfrac{2}{4} = \\dfrac{1}{2}$."
+    ], "answer": "$\\frac{1}{4}$ and $\\frac{1}{2}$" },
+    { "type": "callout", "label": "Common mistake", "text": "With two coins, \"one head and one tail\" can happen in **two** ways ($HT$ and $TH$). That is why it is more likely than two heads." },
+    { "type": "table", "caption": "Sample space for tossing a coin and rolling a die (12 outcomes)", "headers": ["", "1", "2", "3", "4", "5", "6"], "rows": [
+      ["H", "H1", "H2", "H3", "H4", "H5", "H6"],
+      ["T", "T1", "T2", "T3", "T4", "T5", "T6"]
+    ] },
+    { "type": "paragraph", "text": "From the table, $P(\\text{heads and an even number}) = \\dfrac{3}{12} = \\dfrac{1}{4}$ (the outcomes H2, H4 and H6)." },
+
+    { "type": "heading", "text": "Relative frequency (experimental probability)" },
+    { "type": "paragraph", "text": "When you actually do an experiment many times, you can count how often an event happens." },
+    { "type": "formula", "latex": "\\text{relative frequency} = \\frac{\\text{number of times the event happened}}{\\text{number of trials}}", "caption": "Relative frequency" },
+    { "type": "example", "title": "Worked example 4", "problem": "A coin is tossed 50 times and lands heads 28 times. Find the relative frequency of heads and compare it with the theoretical probability.", "steps": [
+      "Relative frequency $= \\dfrac{28}{50} = 0{,}56$.",
+      "Theoretical probability $= \\dfrac{1}{2} = 0{,}5$.",
+      "They are close but not equal. With more tosses, the relative frequency would usually get closer to $0{,}5$."
+    ], "answer": "$0{,}56$ compared with $0{,}5$" },
+    { "type": "callout", "label": "Remember", "text": "Probability does not tell you exactly what will happen in a few trials. A fair coin can land heads three times in a row. Over a **large** number of trials, the relative frequency settles close to the theoretical probability." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Sample space: all possible outcomes. Event: the outcomes you want.",
+      "$P(E) = \\frac{\\text{favourable outcomes}}{\\text{total outcomes}}$, from $0$ (impossible) to $1$ (certain).",
+      "$P(\\text{not } E) = 1 - P(E)$.",
+      "List outcomes of two events systematically, e.g. in a two-way table.",
+      "Relative frequency = times the event happened ÷ number of trials; it gets closer to the theoretical probability as the number of trials increases."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "A fair die is rolled. What is the probability of rolling a 4? Type a fraction (such as 1/2) or a decimal correct to three decimal places.", "answer": 0.166667, "tolerance": 0.001, "explanation": "One favourable outcome out of six: $\\frac{1}{6} \\approx 0{,}167$." },
+    { "id": "q2", "type": "mcq", "prompt": "What is the probability of an impossible event?", "options": ["$0$", "$\\frac{1}{2}$", "$1$", "$-1$"], "answer": 0, "explanation": "Impossible events have probability $0$; certain events have probability $1$." },
+    { "id": "q3", "type": "numeric", "prompt": "A bag has 3 red, 5 blue and 2 green beads. One is chosen at random. What is $P(\\text{blue})$? Give a fraction or a decimal.", "answer": 0.5, "tolerance": 0.001, "explanation": "$\\frac{5}{10} = \\frac{1}{2}$." },
+    { "id": "q4", "type": "truefalse", "prompt": "A probability can be equal to $1{,}2$.", "answer": false, "explanation": "Probabilities are always between $0$ and $1$ (inclusive)." },
+    { "id": "q5", "type": "numeric", "prompt": "In the same bag (3 red, 5 blue, 2 green), what is $P(\\text{not red})$? Give a fraction or a decimal.", "answer": 0.7, "tolerance": 0.001, "explanation": "$1 - \\frac{3}{10} = \\frac{7}{10}$." },
+    { "id": "q6", "type": "numeric", "prompt": "A coin is tossed 50 times and lands heads 28 times. What is the relative frequency of heads, as a decimal?", "answer": 0.56, "tolerance": 0.001, "explanation": "$\\frac{28}{50} = 0{,}56$." },
+    { "id": "q7", "type": "mcq", "prompt": "Two coins are tossed. Which is the complete sample space?", "options": ["$\\{HH;\\ TT\\}$", "$\\{HH;\\ HT;\\ TT\\}$", "$\\{HH;\\ HT;\\ TH;\\ TT\\}$", "$\\{H;\\ T\\}$"], "answer": 2, "explanation": "$HT$ and $TH$ are different outcomes (first coin heads, or second coin heads)." },
+    { "id": "q8", "type": "numeric", "prompt": "Two coins are tossed. What is the probability of getting two heads? Give a fraction or a decimal.", "answer": 0.25, "tolerance": 0.001, "explanation": "One outcome ($HH$) out of four: $\\frac{1}{4}$." },
+    { "id": "q9", "type": "match", "prompt": "A fair die is rolled. Match each event with its probability.", "marks": 5, "pairs": [
+      { "left": "Rolling a 7", "right": "0" },
+      { "left": "Rolling an even number", "right": "1/2" },
+      { "left": "Rolling a number less than 7", "right": "1" },
+      { "left": "Rolling a 5", "right": "1/6" },
+      { "left": "Rolling a multiple of 3", "right": "1/3" }
+    ], "explanation": "Count favourable outcomes out of 6: none; $\\{2;\\ 4;\\ 6\\}$; all six; $\\{5\\}$; $\\{3;\\ 6\\}$." },
+    { "id": "q10", "type": "numeric", "prompt": "A coin is tossed and a die is rolled. How many outcomes are in the sample space?", "answer": 12, "tolerance": 0, "explanation": "$2 \\times 6 = 12$ outcomes (H1 to H6 and T1 to T6)." },
+    { "id": "q11", "type": "numeric", "prompt": "A fair die is rolled. What is the probability of rolling a prime number? Give a fraction or a decimal.", "answer": 0.5, "tolerance": 0.001, "explanation": "The primes are $2$, $3$ and $5$: $\\frac{3}{6} = \\frac{1}{2}$." },
+    { "id": "q12", "type": "mcq", "prompt": "What happens to the relative frequency of an event as an experiment is repeated many more times?", "options": ["It gets further from the theoretical probability", "It gets closer to the theoretical probability", "It becomes exactly 1", "It always stays the same"], "answer": 1, "explanation": "Over many trials, the relative frequency settles close to the theoretical probability." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "A spinner has 8 equal sectors numbered 1 to 8. Find:\n(a) $P(\\text{odd number})$  (1)\n(b) $P(\\text{number greater than 5})$  (1)\n(c) $P(\\text{multiple of 4})$  (1)", "memo": "(a) $\\frac{4}{8} = \\frac{1}{2}$ ✓ (1)\n(b) $\\{6;\\ 7;\\ 8\\}$: $\\frac{3}{8}$ ✓ (1)\n(c) $\\{4;\\ 8\\}$: $\\frac{2}{8} = \\frac{1}{4}$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Two dice are rolled and the numbers are added.\n(a) How many outcomes are in the sample space?  (1)\n(b) In how many ways can the total be 7?  (1)\n(c) Find $P(\\text{total} = 7)$ and $P(\\text{total} = 12)$.  (2)", "memo": "(a) $6 \\times 6 = 36$ ✓ (1)\n(b) $(1;6), (2;5), (3;4), (4;3), (5;2), (6;1)$: 6 ways ✓ (1)\n(c) $P(7) = \\frac{6}{36} = \\frac{1}{6}$ ✓; $P(12) = \\frac{1}{36}$ ✓ (2)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "A die is rolled 60 times and a 6 comes up 14 times.\n(a) Calculate the relative frequency of rolling a 6.  (1)\n(b) How many 6s would you expect in 60 rolls?  (1)\n(c) Does this mean the die is unfair? Explain.  (1)", "memo": "(a) $\\frac{14}{60} \\approx 0{,}23$ ✓ (1)\n(b) $\\frac{1}{6} \\times 60 = 10$ ✓ (1)\n(c) Not necessarily: results vary in a small number of trials; many more rolls would be needed to decide ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "The letters of the word MATHEMATICS are written on 11 cards and one card is chosen at random. Find $P(\\text{M})$ and $P(\\text{vowel})$.", "memo": "$P(\\text{M}) = \\frac{2}{11}$ ✓ (1)\nVowels A, E, A, I: $P(\\text{vowel}) = \\frac{4}{11}$ ✓ (1)" }
+  ]
+}

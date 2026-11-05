@@ -1,0 +1,58 @@
+{
+  "id": "drama-macbeth",
+  "title": "Drama: Macbeth",
+  "term": 3,
+  "summary": "Plot, characters, themes, imagery and dramatic techniques in Shakespeare's Macbeth, with key quotations and contextual-question practice.",
+  "notes": [
+    { "type": "heading", "text": "Context" },
+    { "type": "paragraph", "text": "*Macbeth* (about 1606) is Shakespeare's shortest tragedy, set in **Scotland**. Written for King James I, who believed in witchcraft and the **divine right of kings**, it shows that killing a king disturbs the natural order and leads to chaos." },
+    { "type": "heading", "text": "Plot summary" },
+    { "type": "list", "ordered": true, "items": [
+      "**Act 1**: Three **witches** prophesy that **Macbeth** will become Thane of Cawdor and king, and that **Banquo's** descendants will be kings. Macbeth is made Thane of Cawdor. **Lady Macbeth** persuades him to murder King **Duncan**.",
+      "**Act 2**: Macbeth kills Duncan in his sleep. Duncan's sons, Malcolm and Donalbain, flee. Macbeth becomes king.",
+      "**Act 3**: Fearing Banquo's prophecy, Macbeth has Banquo murdered, but Banquo's son **Fleance** escapes. Banquo's **ghost** appears at the banquet.",
+      "**Act 4**: The witches show apparitions: 'beware Macduff'; no man 'of woman born' can harm Macbeth; he is safe until **Birnam Wood** comes to **Dunsinane**. Macbeth has **Macduff's** family murdered.",
+      "**Act 5**: Lady Macbeth sleepwalks, tormented by guilt, and dies. Malcolm's army carries branches from Birnam Wood. Macduff reveals he was 'untimely ripp'd' from his mother's womb, and kills Macbeth. Malcolm becomes king."
+    ] },
+    { "type": "heading", "text": "Characters" },
+    { "type": "table", "headers": ["Character", "Key traits"], "rows": [
+      ["Macbeth", "Brave warrior; ambitious; becomes a paranoid tyrant; his fatal flaw is vaulting ambition"],
+      ["Lady Macbeth", "Ambitious and manipulative at first; later destroyed by guilt"],
+      ["Banquo", "Loyal and honourable; a foil to Macbeth, as he resists the witches' temptation"],
+      ["Macduff", "Loyal to Scotland; avenges his family"],
+      ["The witches", "Agents of chaos and temptation; speak in riddles and paradox"]
+    ] },
+    { "type": "heading", "text": "Themes and imagery" },
+    { "type": "list", "items": [
+      "**Ambition**: unchecked ambition corrupts and destroys.",
+      "**Appearance versus reality**: 'Fair is foul, and foul is fair'; 'look like the innocent flower, / But be the serpent under't'.",
+      "**Guilt**: blood imagery ('Out, damned spot!'); sleeplessness ('Macbeth does murder sleep').",
+      "**Fate versus free will**: do the witches cause the murders or only reveal Macbeth's desires?",
+      "**The natural order**: after Duncan's murder, horses eat each other and day turns dark."
+    ] },
+    { "type": "table", "caption": "Key quotations", "headers": ["Quotation", "Speaker and significance"], "rows": [
+      ["'Fair is foul, and foul is fair'", "The witches (1.1): appearance vs reality"],
+      ["'Is this a dagger which I see before me'", "Macbeth (2.1): hallucination, guilt before the murder"],
+      ["'Will all great Neptune's ocean wash this blood / Clean from my hand?'", "Macbeth (2.2): overwhelming guilt"],
+      ["'Out, damned spot! out, I say!'", "Lady Macbeth (5.1): guilt in her sleepwalking"],
+      ["'Life's but a walking shadow'", "Macbeth (5.5): despair; life is meaningless"]
+    ] }
+  ],
+  "questions": [
+    { "id": "setting", "type": "short", "prompt": "In which country is Macbeth set?", "answers": ["scotland"] },
+    { "id": "king", "type": "short", "prompt": "Which king does Macbeth murder?", "answers": ["duncan", "king duncan"] },
+    { "id": "birnam", "type": "mcq", "prompt": "The witches say Macbeth is safe until…", "options": ["the sun sets", "Birnam Wood comes to Dunsinane", "Banquo returns", "Malcolm is crowned"], "answer": 1 },
+    { "id": "fleance", "type": "mcq", "prompt": "Who escapes when Banquo is murdered?", "options": ["Malcolm", "Fleance", "Donalbain", "Macduff"], "answer": 1 },
+    { "id": "foil", "type": "truefalse", "prompt": "Banquo is a foil to Macbeth because he does not act on the witches' prophecy.", "answer": true },
+    { "id": "quotes", "type": "match", "marks": 4, "prompt": "Match each quotation to its speaker.", "pairs": [
+      { "left": "'Fair is foul, and foul is fair'", "right": "The witches" },
+      { "left": "'Out, damned spot!'", "right": "Lady Macbeth" },
+      { "left": "'Is this a dagger which I see before me'", "right": "Macbeth" },
+      { "left": "Was 'untimely ripp'd' from his mother's womb", "right": "Macduff" }
+    ] },
+    { "id": "blood", "type": "open", "marks": 3, "prompt": "Discuss the significance of blood imagery in the play.", "memo": "✓ Blood represents guilt (1)\n✓ e.g. Macbeth says all Neptune's ocean cannot wash his hands clean; Lady Macbeth sees a spot she cannot remove (1)\n✓ It shows that guilt cannot be escaped and grows as the murders increase (1)" },
+    { "id": "lady", "type": "open", "marks": 3, "prompt": "Contrast Lady Macbeth in Act 1 with Lady Macbeth in Act 5.", "memo": "✓ Act 1: ambitious, ruthless, in control, persuades Macbeth (1)\n✓ Act 5: tormented by guilt, sleepwalking, broken (1)\n✓ This shows the destructive effect of guilt and her complete reversal (1)" },
+    { "id": "fate", "type": "open", "marks": 3, "prompt": "Are the witches responsible for Macbeth's downfall? Discuss.", "memo": "✓ Clear stance (1)\n✓ For: they plant the idea and give misleading prophecies (1)\n✓ Against: Macbeth chooses to kill; Banquo hears the prophecies and does not (1)" },
+    { "id": "shadow", "type": "open", "marks": 2, "prompt": "What does 'Life's but a walking shadow' reveal about Macbeth near the end?", "memo": "✓ He feels life is empty and meaningless (1)\n✓ His ambition has brought him only despair, not fulfilment (1)" }
+  ]
+}

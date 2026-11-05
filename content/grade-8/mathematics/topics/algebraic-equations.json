@@ -1,0 +1,118 @@
+{
+  "id": "algebraic-equations",
+  "title": "Algebraic Equations",
+  "term": 1,
+  "summary": "Solve equations by inspection and by using additive and multiplicative inverses, including equations with brackets, fractions, variables on both sides and simple exponents, and set up equations to solve word problems.",
+  "notes": [
+    { "type": "heading", "text": "Expressions and equations" },
+    { "type": "paragraph", "text": "An **expression** such as $2x + 3$ has no equals sign; you can only simplify it. An **equation** such as $2x + 3 = 11$ says that two expressions are equal. To **solve** an equation means to find the value of the variable that makes it true. This value is called the **solution**." },
+    { "type": "paragraph", "text": "Think of an equation as a balanced scale. Whatever you do to one side, you must do to the other side, so that it stays balanced." },
+
+    { "type": "heading", "text": "Solving by inspection" },
+    { "type": "paragraph", "text": "Simple equations can be solved by asking: \"Which number makes this true?\" For $x + 7 = 12$, the number is $5$, because $5 + 7 = 12$. This is called **inspection**. For harder equations, use inverse operations." },
+
+    { "type": "heading", "text": "Using inverse operations" },
+    { "type": "list", "items": [
+      "Addition and subtraction undo each other (**additive inverses**). To remove $+7$, subtract $7$ from both sides.",
+      "Multiplication and division undo each other (**multiplicative inverses**). To remove $\\times 3$, divide both sides by $3$."
+    ] },
+    { "type": "example", "title": "Worked example 1: one and two steps", "problem": "Solve: (a) $x + 9 = 4$  (b) $4x = -28$  (c) $3x - 5 = 16$", "steps": [
+      "(a) Subtract $9$ from both sides: $x = 4 - 9 = -5$.",
+      "(b) Divide both sides by $4$: $x = -7$.",
+      "(c) Add $5$ to both sides: $3x = 21$. Divide both sides by $3$: $x = 7$.",
+      "Check (c): $3(7) - 5 = 21 - 5 = 16$ ✓"
+    ], "answer": "(a) $x = -5$  (b) $x = -7$  (c) $x = 7$" },
+    { "type": "callout", "label": "Exam tip", "text": "Always check your answer by substituting it into the **original** equation. If the left side equals the right side, you are correct." },
+
+    { "type": "heading", "text": "Equations with brackets" },
+    { "type": "paragraph", "text": "Remove the brackets using the distributive property, collect like terms, and then solve." },
+    { "type": "example", "title": "Worked example 2", "problem": "Solve: (a) $2(x - 3) = 10$  (b) $3(2x - 1) - 2(x + 4) = 9$", "steps": [
+      "(a) $2x - 6 = 10$, so $2x = 16$ and $x = 8$.",
+      "(b) Expand: $6x - 3 - 2x - 8 = 9$.",
+      "Collect like terms: $4x - 11 = 9$.",
+      "$4x = 20$, so $x = 5$."
+    ], "answer": "(a) $x = 8$  (b) $x = 5$" },
+
+    { "type": "heading", "text": "Variables on both sides" },
+    { "type": "paragraph", "text": "Move all the terms with the variable to one side and all the constants to the other side, using inverse operations." },
+    { "type": "example", "title": "Worked example 3", "problem": "Solve $5x + 4 = 2x - 11$.", "steps": [
+      "Subtract $2x$ from both sides: $3x + 4 = -11$.",
+      "Subtract $4$ from both sides: $3x = -15$.",
+      "Divide by $3$: $x = -5$.",
+      "Check: left $= 5(-5) + 4 = -21$; right $= 2(-5) - 11 = -21$ ✓"
+    ], "answer": "$x = -5$" },
+    { "type": "callout", "label": "Common mistake", "text": "When a term moves to the other side, it is because you used the inverse operation on **both** sides. $5x + 4 = 2x - 11$ does not become $5x + 2x = -11 - 4$: subtracting $2x$ gives $5x - 2x$." },
+
+    { "type": "heading", "text": "Equations with fractions" },
+    { "type": "paragraph", "text": "Get rid of fractions by multiplying **every term** on both sides by the denominator (or the lowest common denominator, LCD)." },
+    { "type": "example", "title": "Worked example 4", "problem": "Solve: (a) $\\dfrac{x}{3} + 2 = 6$  (b) $\\dfrac{x + 1}{4} = \\dfrac{x - 2}{3}$", "steps": [
+      "(a) Subtract $2$: $\\dfrac{x}{3} = 4$. Multiply by $3$: $x = 12$.",
+      "(b) Multiply both sides by the LCD $12$: $3(x + 1) = 4(x - 2)$.",
+      "$3x + 3 = 4x - 8$",
+      "$3 + 8 = 4x - 3x$, so $x = 11$."
+    ], "answer": "(a) $x = 12$  (b) $x = 11$" },
+
+    { "type": "heading", "text": "Equations with exponents" },
+    { "type": "list", "items": [
+      "$x^2 = 49$: both $7^2$ and $(-7)^2$ equal $49$, so $x = 7$ or $x = -7$.",
+      "$x^3 = -27$: only $(-3)^3 = -27$, so $x = -3$.",
+      "$2^x = 32$: write $32$ as a power of $2$: $2^x = 2^5$, so $x = 5$."
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "An equation like $x^2 = 49$ has **two** solutions. Do not forget the negative one." },
+
+    { "type": "heading", "text": "Solving word problems" },
+    { "type": "list", "ordered": true, "items": [
+      "Read carefully and decide what the unknown is. Let it be $x$ (write \"Let $x$ = ...\").",
+      "Write the other quantities in terms of $x$.",
+      "Write an equation from the information.",
+      "Solve the equation.",
+      "Answer the question in words and check that your answer makes sense."
+    ] },
+    { "type": "example", "title": "Worked example 5: consecutive numbers", "problem": "The sum of three consecutive whole numbers is $51$. Find the numbers.", "steps": [
+      "Let the smallest number be $x$. The others are $x + 1$ and $x + 2$.",
+      "$x + (x + 1) + (x + 2) = 51$",
+      "$3x + 3 = 51$, so $3x = 48$ and $x = 16$."
+    ], "answer": "The numbers are 16, 17 and 18." },
+    { "type": "example", "title": "Worked example 6: ages", "problem": "Mrs Dlamini is three times as old as her daughter. In 12 years' time she will be twice as old as her daughter. How old are they now?", "steps": [
+      "Let the daughter's age now be $d$. Then Mrs Dlamini is $3d$.",
+      "In 12 years: daughter $d + 12$, mother $3d + 12$.",
+      "$3d + 12 = 2(d + 12)$",
+      "$3d + 12 = 2d + 24$, so $d = 12$."
+    ], "answer": "The daughter is 12 and Mrs Dlamini is 36." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "An equation has an equals sign; solving it means finding the value that makes it true.",
+      "Use inverse operations, doing the same thing to both sides.",
+      "Expand brackets first; collect variables on one side and constants on the other.",
+      "Clear fractions by multiplying every term by the LCD.",
+      "$x^2 = k$ (with $k > 0$) has two solutions; $x^3 = k$ has one.",
+      "For word problems: let $x$ be the unknown, write an equation, solve, and answer in words.",
+      "Check by substituting into the original equation."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "Solve for $x$: $x + 9 = 4$", "answer": -5, "tolerance": 0, "explanation": "Subtract $9$ from both sides: $x = 4 - 9 = -5$." },
+    { "id": "q2", "type": "numeric", "prompt": "Solve for $x$: $4x = -28$", "answer": -7, "tolerance": 0, "explanation": "Divide both sides by $4$: $x = -7$." },
+    { "id": "q3", "type": "numeric", "prompt": "Solve for $x$: $3x - 5 = 16$", "answer": 7, "tolerance": 0, "explanation": "$3x = 21$, so $x = 7$." },
+    { "id": "q4", "type": "mcq", "prompt": "Solve for $x$: $2(x - 3) = 10$", "options": ["$x = 2$", "$x = 6{,}5$", "$x = 8$", "$x = 13$"], "answer": 2, "explanation": "$2x - 6 = 10$, so $2x = 16$ and $x = 8$." },
+    { "id": "q5", "type": "truefalse", "prompt": "$x = 3$ is the solution of $4x - 1 = 2x + 5$.", "answer": true, "explanation": "Left: $4(3) - 1 = 11$. Right: $2(3) + 5 = 11$. Both sides are equal ✓" },
+    { "id": "q6", "type": "numeric", "prompt": "Solve for $x$: $5x + 4 = 2x - 11$", "answer": -5, "tolerance": 0, "explanation": "$3x = -15$, so $x = -5$." },
+    { "id": "q7", "type": "numeric", "prompt": "Solve for $x$: $\\dfrac{x}{3} + 2 = 6$", "answer": 12, "tolerance": 0, "explanation": "$\\dfrac{x}{3} = 4$, so $x = 12$." },
+    { "id": "q8", "type": "numeric", "prompt": "Solve for $x$: $2^x = 32$", "answer": 5, "tolerance": 0, "explanation": "$32 = 2^5$, so $x = 5$." },
+    { "id": "q9", "type": "mcq", "prompt": "Solve for $x$: $x^2 = 49$", "options": ["$x = 7$", "$x = -7$", "$x = 7$ or $x = -7$", "$x = 24{,}5$"], "answer": 2, "explanation": "$7^2 = 49$ and $(-7)^2 = 49$, so there are two solutions." },
+    { "id": "q10", "type": "match", "prompt": "Match each equation with its solution.", "marks": 5, "pairs": [
+      { "left": "$x - 4 = 10$", "right": "14" },
+      { "left": "$3x = 18$", "right": "6" },
+      { "left": "$\\dfrac{x}{2} = 9$", "right": "18" },
+      { "left": "$2x + 1 = -7$", "right": "-4" },
+      { "left": "$x^3 = 8$", "right": "2" }
+    ], "explanation": "$x = 10 + 4$; $x = 18 \\div 3$; $x = 9 \\times 2$; $2x = -8$ so $x = -4$; $2^3 = 8$." },
+    { "id": "q11", "type": "numeric", "prompt": "The perimeter of a square is 52 cm. Write an equation and solve it to find the length of one side, in cm.", "unit": "cm", "answer": 13, "tolerance": 0, "explanation": "$4s = 52$, so $s = 13$ cm." },
+    { "id": "q12", "type": "truefalse", "prompt": "$2x + 3$ is an equation.", "answer": false, "explanation": "There is no equals sign, so $2x + 3$ is an expression, not an equation." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Solve for $x$: $3(2x - 1) - 2(x + 4) = 9$", "memo": "$6x - 3 - 2x - 8 = 9$ ✓ (1)\n$4x - 11 = 9$, so $4x = 20$ ✓ (1)\n$x = 5$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "The sum of three consecutive whole numbers is $51$. Write an equation and solve it to find the numbers.", "memo": "$x + (x + 1) + (x + 2) = 51$ ✓ (1)\n$3x + 3 = 51$, $x = 16$ ✓ (1)\nThe numbers are 16, 17 and 18 ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "A father is three times as old as his son. In 12 years' time he will be twice as old as his son. Let the son's age now be $s$. Write an equation and solve it to find both their ages now.", "memo": "Father now $3s$; in 12 years: $s + 12$ and $3s + 12$ ✓ (1)\n$3s + 12 = 2(s + 12)$ ✓ (1)\n$3s + 12 = 2s + 24$, $s = 12$ ✓ (1)\nSon 12, father 36 ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "Solve for $x$: $\\dfrac{x + 1}{4} = \\dfrac{x - 2}{3}$", "memo": "Multiply by the LCD 12: $3(x + 1) = 4(x - 2)$ ✓ (1)\n$3x + 3 = 4x - 8$ ✓ (1)\n$x = 11$ ✓ (1)" }
+  ]
+}

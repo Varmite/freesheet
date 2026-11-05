@@ -1,0 +1,495 @@
+{
+  "id": "measurement",
+  "title": "Measurement",
+  "term": 3,
+  "summary": "Calculate the surface area and volume of prisms, cylinders, pyramids, cones, spheres and combined objects, and see how scaling dimensions changes them.",
+  "notes": [
+    { "type": "heading", "text": "Units and conversions" },
+    { "type": "paragraph", "text": "Measurement is about finding how long, how big or how much space something takes up. Before you calculate anything, check that **all measurements are in the same unit**. Length is measured in units (mm, cm, m, km), area in **square units** (mm², cm², m²) and volume in **cubic units** (mm³, cm³, m³). Capacity (how much liquid a container holds) is measured in millilitres (mℓ), litres (ℓ) and kilolitres (kℓ)." },
+    {
+      "type": "table",
+      "caption": "Useful conversions",
+      "headers": ["Quantity", "Conversion", "Why"],
+      "rows": [
+        ["Length", "1 cm = 10 mm; 1 m = 100 cm; 1 km = 1 000 m", "Basic metric units"],
+        ["Area", "1 cm² = 100 mm²; 1 m² = 10 000 cm²", "$1\\ \\text{m}^2 = 100\\ \\text{cm} \\times 100\\ \\text{cm}$"],
+        ["Volume", "1 cm³ = 1 000 mm³; 1 m³ = 1 000 000 cm³", "$1\\ \\text{m}^3 = 100 \\times 100 \\times 100\\ \\text{cm}^3$"],
+        ["Volume to capacity", "1 cm³ = 1 mℓ; 1 000 cm³ = 1 ℓ", "A 10 cm cube holds exactly 1 litre"],
+        ["Volume to capacity", "1 m³ = 1 000 ℓ = 1 kℓ", "$1\\ 000\\ 000\\ \\text{cm}^3 \\div 1\\ 000$"]
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "1 m = 100 cm, but 1 m² is **not** 100 cm². For area you multiply by the length factor **twice** (100 × 100 = 10 000) and for volume **three times** (100 × 100 × 100 = 1 000 000)." },
+    {
+      "type": "example",
+      "title": "Worked example 1: Litres in a fish tank",
+      "problem": "A rectangular fish tank is 60 cm long, 25 cm wide and 40 cm high. How many litres of water does it hold when full?",
+      "steps": [
+        "Volume $= l \\times b \\times h = 60 \\times 25 \\times 40 = 60\\ 000\\ \\text{cm}^3$.",
+        "Use $1\\ 000\\ \\text{cm}^3 = 1\\ \\ell$: $60\\ 000 \\div 1\\ 000 = 60\\ \\ell$."
+      ],
+      "answer": "The tank holds $60$ litres."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1b: Converting between units",
+      "problem": "(a) Convert $3{,}2\\ \\text{m}^3$ to litres. (b) Convert $4\\ 500\\ \\text{cm}^3$ to $\\text{m}^3$. (c) Convert $2{,}5\\ \\text{m}^2$ to $\\text{cm}^2$.",
+      "steps": [
+        "(a) $1\\ \\text{m}^3 = 1\\ 000\\ \\ell$, so $3{,}2\\ \\text{m}^3 = 3{,}2 \\times 1\\ 000 = 3\\ 200\\ \\ell$.",
+        "(b) $1\\ \\text{m}^3 = 1\\ 000\\ 000\\ \\text{cm}^3$. Going from a small unit to a big unit, divide: $4\\ 500 \\div 1\\ 000\\ 000 = 0{,}0045\\ \\text{m}^3$.",
+        "(c) $1\\ \\text{m}^2 = 10\\ 000\\ \\text{cm}^2$. Going from a big unit to a small unit, multiply: $2{,}5 \\times 10\\ 000 = 25\\ 000\\ \\text{cm}^2$."
+      ],
+      "answer": "(a) $3\\ 200\\ \\ell$; (b) $0{,}0045\\ \\text{m}^3$; (c) $25\\ 000\\ \\text{cm}^2$"
+    },
+
+    { "type": "heading", "text": "Revision: area and perimeter of 2D shapes" },
+    { "type": "paragraph", "text": "The **perimeter** of a flat (2D) shape is the total distance around its edge. The **area** is the amount of flat surface it covers. You need these formulae because the faces of 3D objects are 2D shapes." },
+    {
+      "type": "table",
+      "caption": "Area and perimeter formulae",
+      "headers": ["Shape", "Area", "Perimeter"],
+      "rows": [
+        ["Square (side $s$)", "$s^2$", "$4s$"],
+        ["Rectangle (length $l$, breadth $b$)", "$l \\times b$", "$2l + 2b$"],
+        ["Triangle (base $b$, perpendicular height $h$)", "$\\frac{1}{2} b h$", "sum of the three sides"],
+        ["Parallelogram", "$b \\times h$", "sum of the four sides"],
+        ["Trapezium (parallel sides $a$ and $b$)", "$\\frac{1}{2}(a + b)h$", "sum of the four sides"],
+        ["Circle (radius $r$)", "$\\pi r^2$", "circumference $= 2\\pi r = \\pi d$"]
+      ]
+    },
+    { "type": "callout", "label": "Remember", "text": "The height of a triangle, parallelogram or trapezium is always the **perpendicular** height (at 90° to the base), not the slanted side. Use the $\\pi$ button on your calculator and only round your **final** answer." },
+    {
+      "type": "example",
+      "title": "Worked example 2: A garden with a semicircular end",
+      "problem": "A garden in Soweto is made of a rectangle 8 m long and 5 m wide, with a semicircle on one of the 5 m sides. Calculate the area and the perimeter of the garden, correct to two decimal places.",
+      "steps": [
+        "The semicircle has diameter 5 m, so its radius is $r = 2{,}5$ m.",
+        "Area $= 8 \\times 5 + \\frac{1}{2}\\pi(2{,}5)^2 = 40 + 9{,}817... = 49{,}82\\ \\text{m}^2$.",
+        "Perimeter: the 5 m side where the semicircle joins is **inside** the shape, so do not count it. The outside edge is $8 + 5 + 8$ plus half the circumference.",
+        "Perimeter $= 21 + \\frac{1}{2}\\pi(5) = 21 + 7{,}853... = 28{,}85\\ \\text{m}$."
+      ],
+      "answer": "Area $\\approx 49{,}82\\ \\text{m}^2$; perimeter $\\approx 28{,}85$ m."
+    },
+
+    { "type": "heading", "text": "Right prisms and cylinders" },
+    { "type": "definition", "term": "Right prism", "text": "A 3D object with two identical, parallel faces (the **bases**) joined by rectangular side faces that are perpendicular to the bases. It is named after the shape of its base: rectangular prism, triangular prism, and so on. Every slice parallel to the base (the **cross-section**) is the same shape and size." },
+    { "type": "definition", "term": "Cylinder", "text": "A right prism-like object whose bases are two identical, parallel circles. If you unroll the curved side you get a rectangle of length $2\\pi r$ (the circumference) and width $h$." },
+    { "type": "definition", "term": "Surface area", "text": "The total area of all the outer faces of a 3D object. Think of it as the area of its **net** (the flat shape you get when you unfold it). Measured in square units." },
+    { "type": "definition", "term": "Volume", "text": "The amount of space a 3D object occupies. Measured in cubic units." },
+    { "type": "paragraph", "text": "For **every** right prism and cylinder two general rules work:" },
+    { "type": "formula", "latex": "V = (\\text{area of base}) \\times h", "caption": "Volume of a right prism or cylinder" },
+    { "type": "formula", "latex": "SA = 2 \\times (\\text{area of base}) + (\\text{perimeter of base}) \\times h", "caption": "Total surface area of a closed right prism or cylinder" },
+    {
+      "type": "table",
+      "caption": "Formulae for right prisms and cylinders",
+      "headers": ["Object", "Surface area", "Volume"],
+      "rows": [
+        ["Cube (side $s$)", "$6s^2$", "$s^3$"],
+        ["Rectangular prism ($l$, $b$, $h$)", "$2(lb + lh + bh)$", "$l \\times b \\times h$"],
+        ["Triangular prism", "$2 \\times (\\frac{1}{2}bh_\\triangle) + (\\text{sum of triangle sides}) \\times H$", "$\\frac{1}{2}bh_\\triangle \\times H$"],
+        ["Cylinder (radius $r$, height $h$)", "$2\\pi r^2 + 2\\pi r h$", "$\\pi r^2 h$"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Read carefully whether a container is **open** (no lid) or **closed**. An open cylinder has surface area $\\pi r^2 + 2\\pi rh$, because only one circle is present. For a triangular prism, $h_\\triangle$ is the height of the triangle and $H$ is the length (height) of the prism; do not mix them up." },
+    {
+      "type": "example",
+      "title": "Worked example 3: A triangular prism",
+      "problem": "A wedge-shaped door stop is a right triangular prism. Its triangular face has perpendicular sides 3 cm and 4 cm, and the prism is 10 cm long. Calculate its volume and total surface area.",
+      "steps": [
+        "Hypotenuse of the triangle (Pythagoras): $\\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$ cm.",
+        "Area of triangular base $= \\frac{1}{2} \\times 3 \\times 4 = 6\\ \\text{cm}^2$.",
+        "Volume $= 6 \\times 10 = 60\\ \\text{cm}^3$.",
+        "Surface area $= 2(6) + (3 + 4 + 5) \\times 10 = 12 + 120 = 132\\ \\text{cm}^2$."
+      ],
+      "answer": "$V = 60\\ \\text{cm}^3$ and $SA = 132\\ \\text{cm}^2$."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 4: A water tank",
+      "problem": "A farmer near Bloemfontein has a closed cylindrical water tank with radius 0,8 m and height 2 m. (a) How many litres does it hold? (b) The outside of the tank (including top and bottom) must be painted. Calculate the area to be painted. Round to two decimal places.",
+      "steps": [
+        "(a) $V = \\pi r^2 h = \\pi (0{,}8)^2 (2) = 1{,}28\\pi = 4{,}0212...\\ \\text{m}^3$.",
+        "$1\\ \\text{m}^3 = 1\\ 000\\ \\ell$, so the tank holds $4{,}0212... \\times 1\\ 000 \\approx 4\\ 021{,}24\\ \\ell$.",
+        "(b) $SA = 2\\pi r^2 + 2\\pi r h = 2\\pi(0{,}64) + 2\\pi(0{,}8)(2) = 1{,}28\\pi + 3{,}2\\pi = 4{,}48\\pi$.",
+        "$SA \\approx 14{,}07\\ \\text{m}^2$."
+      ],
+      "answer": "(a) about $4\\ 021{,}24$ litres; (b) about $14{,}07\\ \\text{m}^2$."
+    },
+
+    { "type": "heading", "text": "Right pyramids, right cones and spheres" },
+    { "type": "definition", "term": "Right pyramid", "text": "A 3D object with a polygon as its base and triangular side faces that meet at one point, the **apex**, which lies directly above the centre of the base. A square-based pyramid has 4 identical triangular faces; a triangular-based pyramid has 3 side faces." },
+    { "type": "definition", "term": "Right cone", "text": "A 3D object with a circular base and a curved surface rising to an apex directly above the centre of the circle." },
+    { "type": "definition", "term": "Perpendicular height (H)", "text": "The vertical distance from the apex straight down to the centre of the base. It is used to calculate **volume**." },
+    { "type": "definition", "term": "Slant height (s)", "text": "The distance measured along a sloping face, from the apex down to the midpoint of a base edge (pyramid) or to the edge of the base circle (cone). It is used to calculate **surface area**." },
+    { "type": "definition", "term": "Sphere and hemisphere", "text": "A sphere is a perfectly round ball: every point on its surface is the same distance $r$ from the centre. A hemisphere is exactly half of a sphere." },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 215\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"110\" y1=\"20\" x2=\"40\" y2=\"160\"/><line x1=\"110\" y1=\"20\" x2=\"180\" y2=\"160\"/><path d=\"M40 160 A70 16 0 0 0 180 160\"/><path d=\"M40 160 A70 16 0 0 1 180 160\" stroke-dasharray=\"4 3\"/><line x1=\"110\" y1=\"20\" x2=\"110\" y2=\"160\" stroke-dasharray=\"4 3\"/><line x1=\"110\" y1=\"160\" x2=\"180\" y2=\"160\"/><polyline points=\"110,150 120,150 120,160\"/><line x1=\"240\" y1=\"170\" x2=\"340\" y2=\"170\"/><line x1=\"340\" y1=\"170\" x2=\"390\" y2=\"135\"/><line x1=\"390\" y1=\"135\" x2=\"290\" y2=\"135\" stroke-dasharray=\"4 3\"/><line x1=\"290\" y1=\"135\" x2=\"240\" y2=\"170\" stroke-dasharray=\"4 3\"/><line x1=\"315\" y1=\"30\" x2=\"240\" y2=\"170\"/><line x1=\"315\" y1=\"30\" x2=\"340\" y2=\"170\"/><line x1=\"315\" y1=\"30\" x2=\"390\" y2=\"135\"/><line x1=\"315\" y1=\"30\" x2=\"290\" y2=\"135\" stroke-dasharray=\"4 3\"/><line x1=\"315\" y1=\"30\" x2=\"315\" y2=\"152\" stroke-dasharray=\"4 3\"/><line x1=\"315\" y1=\"30\" x2=\"290\" y2=\"170\"/><line x1=\"315\" y1=\"152\" x2=\"290\" y2=\"170\" stroke-dasharray=\"4 3\"/></g><g fill=\"#000\"><text x=\"115\" y=\"100\">H</text><text x=\"152\" y=\"90\">s</text><text x=\"140\" y=\"155\">r</text><text x=\"75\" y=\"208\">Right cone</text><text x=\"319\" y=\"100\">H</text><text x=\"285\" y=\"110\">s</text><text x=\"286\" y=\"186\">b</text><text x=\"250\" y=\"208\">Square-based pyramid</text></g></svg>",
+      "caption": "A right cone and a square-based right pyramid. H is the perpendicular height (dashed, inside the object), s is the slant height (along a face) and r or b are base measurements."
+    },
+    { "type": "heading", "text": "Finding the slant height with Pythagoras" },
+    { "type": "paragraph", "text": "The perpendicular height, the slant height and a base measurement form a **right-angled triangle** inside the object. The slant height is always the hypotenuse." },
+    { "type": "formula", "latex": "\\text{Cone: } s^2 = H^2 + r^2 \\qquad \\text{Square pyramid: } s^2 = H^2 + \\left(\\tfrac{b}{2}\\right)^2", "caption": "Slant height s is the hypotenuse" },
+    { "type": "paragraph", "text": "In a square-based pyramid the right-angled triangle runs from the apex, down to the centre of the base, and across to the midpoint of one base edge. That last distance is **half** the base length, $\\frac{b}{2}$." },
+    { "type": "paragraph", "text": "In exams these formulae are given on an information sheet, but you must know which height goes where:" },
+    {
+      "type": "table",
+      "caption": "Formulae for pyramids, cones and spheres (as given in exams)",
+      "headers": ["Object", "Surface area", "Volume"],
+      "rows": [
+        ["Square-based pyramid (base side $b$)", "$b^2 + 2bs$", "$\\frac{1}{3} b^2 H$"],
+        ["Triangular-based pyramid", "area of base $+ 3 \\times \\frac{1}{2}(\\text{base edge})(s)$ if the side faces are identical", "$\\frac{1}{3} \\times \\text{area of base} \\times H$"],
+        ["Right cone", "$\\pi r^2 + \\pi r s$", "$\\frac{1}{3}\\pi r^2 H$"],
+        ["Sphere", "$4\\pi r^2$", "$\\frac{4}{3}\\pi r^3$"],
+        ["Hemisphere (solid)", "$2\\pi r^2 + \\pi r^2 = 3\\pi r^2$", "$\\frac{2}{3}\\pi r^3$"]
+      ]
+    },
+    { "type": "callout", "label": "Remember", "text": "A pyramid or cone has exactly $\\frac{1}{3}$ of the volume of the prism or cylinder with the same base and height. Use **H** (perpendicular height) for volume and **s** (slant height) for surface area. In $b^2 + 2bs$, the $2bs$ comes from 4 triangles each of area $\\frac{1}{2}bs$." },
+    {
+      "type": "example",
+      "title": "Worked example 5: A square-based pyramid",
+      "problem": "A glass pyramid has a square base of side 10 cm and a perpendicular height of 12 cm. Calculate (a) its slant height, (b) its total surface area, and (c) its volume. Use $SA = b^2 + 2bs$ and $V = \\frac{1}{3}b^2H$.",
+      "steps": [
+        "(a) Half the base is $5$ cm. $s^2 = 12^2 + 5^2 = 144 + 25 = 169$, so $s = 13$ cm.",
+        "(b) $SA = 10^2 + 2(10)(13) = 100 + 260 = 360\\ \\text{cm}^2$.",
+        "(c) $V = \\frac{1}{3}(10^2)(12) = \\frac{1}{3}(1\\ 200) = 400\\ \\text{cm}^3$."
+      ],
+      "answer": "$s = 13$ cm, $SA = 360\\ \\text{cm}^2$, $V = 400\\ \\text{cm}^3$."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 6: A cone",
+      "problem": "A solid wooden cone has base radius 5 cm and perpendicular height 12 cm. Calculate its total surface area and volume, correct to two decimal places. Use $SA = \\pi r^2 + \\pi r s$ and $V = \\frac{1}{3}\\pi r^2 H$.",
+      "steps": [
+        "Slant height: $s = \\sqrt{12^2 + 5^2} = \\sqrt{169} = 13$ cm.",
+        "$SA = \\pi(5)^2 + \\pi(5)(13) = 25\\pi + 65\\pi = 90\\pi \\approx 282{,}74\\ \\text{cm}^2$.",
+        "$V = \\frac{1}{3}\\pi(5)^2(12) = 100\\pi \\approx 314{,}16\\ \\text{cm}^3$."
+      ],
+      "answer": "$SA \\approx 282{,}74\\ \\text{cm}^2$; $V \\approx 314{,}16\\ \\text{cm}^3$."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 7: A triangular-based pyramid",
+      "problem": "A right pyramid has an equilateral triangle base with sides 6 cm. Each of the three identical side faces has a slant height of 8 cm, and the perpendicular height of the pyramid is $\\sqrt{61} \\approx 7{,}81$ cm. Calculate its total surface area and volume, correct to two decimal places. Use $V = \\frac{1}{3} \\times \\text{area of base} \\times H$.",
+      "steps": [
+        "Height of the base triangle (Pythagoras, using half of a side): $h = \\sqrt{6^2 - 3^2} = \\sqrt{27} \\approx 5{,}196$ cm.",
+        "Area of base $= \\frac{1}{2}(6)(\\sqrt{27}) = 3\\sqrt{27} \\approx 15{,}588\\ \\text{cm}^2$.",
+        "Area of the three side faces $= 3 \\times \\frac{1}{2}(6)(8) = 72\\ \\text{cm}^2$.",
+        "$SA = 15{,}588... + 72 \\approx 87{,}59\\ \\text{cm}^2$.",
+        "$V = \\frac{1}{3} \\times 3\\sqrt{27} \\times \\sqrt{61} = \\sqrt{27}\\sqrt{61} \\approx 40{,}58\\ \\text{cm}^3$."
+      ],
+      "answer": "$SA \\approx 87{,}59\\ \\text{cm}^2$; $V \\approx 40{,}58\\ \\text{cm}^3$."
+    },
+    { "type": "callout", "label": "Check your answer", "text": "The slant height is the **hypotenuse** of the right-angled triangle formed with the perpendicular height, so the slant height is **always longer** than the perpendicular height ($s > H$). If you get $s < H$, you have subtracted instead of added the squares." },
+    {
+      "type": "example",
+      "title": "Worked example 8: A soccer ball",
+      "problem": "A size 5 soccer ball has a radius of about 11 cm. Calculate its surface area and volume, correct to two decimal places. Use $SA = 4\\pi r^2$ and $V = \\frac{4}{3}\\pi r^3$.",
+      "steps": [
+        "$SA = 4\\pi(11)^2 = 484\\pi \\approx 1\\ 520{,}53\\ \\text{cm}^2$.",
+        "$V = \\frac{4}{3}\\pi(11)^3 = \\frac{4}{3}\\pi(1\\ 331) \\approx 5\\ 575{,}28\\ \\text{cm}^3$."
+      ],
+      "answer": "$SA \\approx 1\\ 520{,}53\\ \\text{cm}^2$; $V \\approx 5\\ 575{,}28\\ \\text{cm}^3$ (about 5,6 litres of air)."
+    },
+    { "type": "callout", "label": "Common mistake", "text": "If you are given the **diameter**, halve it first to get the radius. Cubing $r$ in the sphere formula means a small error in the radius becomes a large error in the volume." },
+
+    { "type": "heading", "text": "Combined objects" },
+    { "type": "paragraph", "text": "Many real objects are made by joining simple shapes: a grain silo (cylinder plus hemisphere), a rondavel (cylinder plus cone roof), an ice cream (cone plus hemisphere) or a pencil (cylinder plus cone)." },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Split the object into simple shapes and write down the dimensions of each.",
+        "**Volume:** add the volumes of the parts (or subtract if a part is cut out or hollow).",
+        "**Surface area:** add only the surfaces that are on the **outside**. Faces where two parts are joined are hidden and must be left out.",
+        "Round only at the end."
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "For surface area of combined objects, do **not** just add the total surface areas of the parts. For example, a hemisphere on top of a cylinder: use only the **curved** surface of the hemisphere ($2\\pi r^2$), the curved surface of the cylinder ($2\\pi rh$) and the bottom circle ($\\pi r^2$). The top circle of the cylinder is covered." },
+    {
+      "type": "example",
+      "title": "Worked example 9: A grain silo",
+      "problem": "A grain silo in the Free State is a cylinder of radius 2 m and height 6 m with a hemisphere on top. Calculate (a) the volume of the silo and (b) its outer surface area, including the floor. Round to two decimal places.",
+      "steps": [
+        "(a) Cylinder: $\\pi(2)^2(6) = 24\\pi$. Hemisphere: $\\frac{2}{3}\\pi(2)^3 = \\frac{16}{3}\\pi$.",
+        "$V = 24\\pi + \\frac{16}{3}\\pi = \\frac{88}{3}\\pi \\approx 92{,}15\\ \\text{m}^3$.",
+        "(b) Floor: $\\pi(2)^2 = 4\\pi$. Curved wall: $2\\pi(2)(6) = 24\\pi$. Curved hemisphere: $2\\pi(2)^2 = 8\\pi$.",
+        "$SA = 4\\pi + 24\\pi + 8\\pi = 36\\pi \\approx 113{,}10\\ \\text{m}^2$."
+      ],
+      "answer": "(a) $V \\approx 92{,}15\\ \\text{m}^3$; (b) $SA \\approx 113{,}10\\ \\text{m}^2$."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 10: A rondavel",
+      "problem": "A rondavel has a cylindrical wall of radius 3 m and height 2,5 m, with a cone-shaped thatched roof of perpendicular height 4 m (no overhang). Calculate (a) the area of thatch needed for the roof and (b) the volume of air inside. Round to two decimal places.",
+      "steps": [
+        "(a) Slant height of roof: $s = \\sqrt{4^2 + 3^2} = 5$ m. Only the curved surface of the cone is thatched: $\\pi r s = \\pi(3)(5) = 15\\pi \\approx 47{,}12\\ \\text{m}^2$.",
+        "(b) Cylinder: $\\pi(3)^2(2{,}5) = 22{,}5\\pi$. Cone: $\\frac{1}{3}\\pi(3)^2(4) = 12\\pi$.",
+        "$V = 22{,}5\\pi + 12\\pi = 34{,}5\\pi \\approx 108{,}38\\ \\text{m}^3$."
+      ],
+      "answer": "(a) about $47{,}12\\ \\text{m}^2$ of thatch; (b) about $108{,}38\\ \\text{m}^3$ of air."
+    },
+
+    { "type": "heading", "text": "The effect of multiplying dimensions by a factor k" },
+    { "type": "paragraph", "text": "What happens to the volume and surface area if you make an object bigger? It depends on **how many** of the dimensions you change. Area is two-dimensional (length × length) and volume is three-dimensional (length × length × length)." },
+    {
+      "type": "table",
+      "caption": "Effect of multiplying dimensions by k",
+      "headers": ["Change", "Effect on volume", "Effect on surface area"],
+      "rows": [
+        ["**All** dimensions multiplied by $k$ (any object)", "multiplied by $k^3$", "multiplied by $k^2$"],
+        ["Radius of a sphere multiplied by $k$", "multiplied by $k^3$", "multiplied by $k^2$"],
+        ["**One** dimension multiplied by $k$ (e.g. only the height of a prism or cylinder)", "multiplied by $k$", "changes, but not by a simple factor: recalculate"],
+        ["Only the **radius** of a cylinder or cone multiplied by $k$ (height unchanged)", "multiplied by $k^2$", "changes, but not by a simple factor: recalculate"]
+      ]
+    },
+    { "type": "paragraph", "text": "Why? For a cylinder $V = \\pi r^2 h$. If $r$ becomes $kr$: $V_{\\text{new}} = \\pi (kr)^2 h = k^2 \\pi r^2 h = k^2 V$. If both $r$ and $h$ are multiplied by $k$: $V_{\\text{new}} = \\pi(kr)^2(kh) = k^3 \\pi r^2 h = k^3 V$." },
+    {
+      "type": "example",
+      "title": "Worked example 11: Scaling a box",
+      "problem": "A rectangular box measures 2 cm by 3 cm by 4 cm. Every dimension is multiplied by 3. Find the new volume and surface area.",
+      "steps": [
+        "Original: $V = 2 \\times 3 \\times 4 = 24\\ \\text{cm}^3$ and $SA = 2(6 + 8 + 12) = 52\\ \\text{cm}^2$.",
+        "All dimensions $\\times 3$: new $V = 3^3 \\times 24 = 27 \\times 24 = 648\\ \\text{cm}^3$.",
+        "New $SA = 3^2 \\times 52 = 9 \\times 52 = 468\\ \\text{cm}^2$.",
+        "Check directly: the new box is $6 \\times 9 \\times 12$: $V = 648$ and $SA = 2(54 + 72 + 108) = 468$. ✓"
+      ],
+      "answer": "$V = 648\\ \\text{cm}^3$ (27 times bigger); $SA = 468\\ \\text{cm}^2$ (9 times bigger)."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 12: Doubling the radius of a cylinder",
+      "problem": "A cylindrical tin has radius 3 cm and height 10 cm. What happens to its volume if (a) only the radius is doubled, (b) both the radius and height are doubled?",
+      "steps": [
+        "Original: $V = \\pi(3)^2(10) = 90\\pi\\ \\text{cm}^3$.",
+        "(a) $r = 6$: $V = \\pi(6)^2(10) = 360\\pi$, which is $4 = 2^2$ times bigger.",
+        "(b) $r = 6$, $h = 20$: $V = \\pi(6)^2(20) = 720\\pi$, which is $8 = 2^3$ times bigger."
+      ],
+      "answer": "(a) Volume multiplied by 4; (b) volume multiplied by 8."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 13: Tripling the radius of a ball",
+      "problem": "A ball has radius 2 cm. Its radius is multiplied by 3. By what factor do its surface area and volume change? Use $SA = 4\\pi r^2$ and $V = \\frac{4}{3}\\pi r^3$.",
+      "steps": [
+        "Original: $SA = 4\\pi(2)^2 = 16\\pi$ and $V = \\frac{4}{3}\\pi(2)^3 = \\frac{32}{3}\\pi$.",
+        "New radius $6$ cm: $SA = 4\\pi(6)^2 = 144\\pi$, which is $9 = 3^2$ times bigger.",
+        "$V = \\frac{4}{3}\\pi(6)^3 = 288\\pi$, and $288\\pi \\div \\frac{32}{3}\\pi = 27 = 3^3$, so the volume is 27 times bigger.",
+        "A sphere has only one dimension (its radius), so multiplying the radius by $k$ is the same as multiplying **all** its dimensions by $k$."
+      ],
+      "answer": "Surface area $\\times 9$; volume $\\times 27$."
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Doubling the radius does **not** double the volume. The radius is squared (or cubed for a sphere), so the factor is squared (or cubed) too." },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "Use the same units throughout. 1 m² = 10 000 cm²; 1 m³ = 1 000 000 cm³; 1 cm³ = 1 mℓ; 1 000 cm³ = 1 ℓ; 1 m³ = 1 000 ℓ.",
+        "Right prisms and cylinders: $V = \\text{area of base} \\times h$; $SA = 2 \\times \\text{base area} + \\text{perimeter of base} \\times h$.",
+        "Cylinder: $V = \\pi r^2 h$ and closed $SA = 2\\pi r^2 + 2\\pi r h$.",
+        "Pyramids and cones: $V = \\frac{1}{3} \\times \\text{area of base} \\times H$. Square pyramid $SA = b^2 + 2bs$; cone $SA = \\pi r^2 + \\pi r s$.",
+        "Find the slant height with Pythagoras: cone $s^2 = H^2 + r^2$; square pyramid $s^2 = H^2 + (\\frac{b}{2})^2$.",
+        "Sphere: $SA = 4\\pi r^2$, $V = \\frac{4}{3}\\pi r^3$. Hemisphere: half the volume; curved surface $2\\pi r^2$.",
+        "Combined objects: add (or subtract) volumes; for surface area include only the exposed faces.",
+        "All dimensions $\\times k$: volume $\\times k^3$ and surface area $\\times k^2$. Only one dimension $\\times k$: volume $\\times k$. Radius only $\\times k$ in a cylinder or cone: volume $\\times k^2$.",
+        "Round only the final answer and always give units."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "How many litres are there in $1\\ \\text{m}^3$?",
+      "options": ["$100$", "$1\\ 000$", "$10\\ 000$", "$1\\ 000\\ 000$"],
+      "answer": 1,
+      "explanation": "$1\\ \\text{m}^3 = 100 \\times 100 \\times 100 = 1\\ 000\\ 000\\ \\text{cm}^3$, and $1\\ 000\\ \\text{cm}^3 = 1\\ \\ell$, so $1\\ \\text{m}^3 = 1\\ 000\\ \\ell$."
+    },
+    {
+      "id": "q2",
+      "type": "truefalse",
+      "prompt": "$1\\ \\text{m}^2 = 100\\ \\text{cm}^2$",
+      "answer": false,
+      "explanation": "$1\\ \\text{m}^2 = 100\\ \\text{cm} \\times 100\\ \\text{cm} = 10\\ 000\\ \\text{cm}^2$. For area, the length factor is used twice."
+    },
+    {
+      "id": "q3",
+      "type": "short",
+      "prompt": "In a right cone, what is the distance from the apex to the edge of the base circle, measured along the sloping surface, called?",
+      "answers": ["slant height", "the slant height", "slant-height", "slanted height", "slant height s", "s"],
+      "explanation": "This is the slant height $s$. It is used for surface area, while the perpendicular height $H$ is used for volume."
+    },
+    {
+      "id": "q4",
+      "type": "numeric",
+      "prompt": "A rectangular fish tank is 80 cm long, 35 cm wide and 45 cm high. How many litres of water does it hold when full? (The answer is a whole number.)",
+      "answer": 126,
+      "tolerance": 0.01,
+      "unit": "ℓ",
+      "explanation": "$V = 80 \\times 35 \\times 45 = 126\\ 000\\ \\text{cm}^3$. Since $1\\ 000\\ \\text{cm}^3 = 1\\ \\ell$, the tank holds $126\\ 000 \\div 1\\ 000 = 126$ litres."
+    },
+    {
+      "id": "q5",
+      "type": "match",
+      "prompt": "Match each object with its volume formula ($H$ or $h$ is the perpendicular height).",
+      "marks": 5,
+      "pairs": [
+        { "left": "Cylinder", "right": "πr²h" },
+        { "left": "Right cone", "right": "(1/3)πr²H" },
+        { "left": "Sphere", "right": "(4/3)πr³" },
+        { "left": "Square-based pyramid", "right": "(1/3)b²H" },
+        { "left": "Rectangular prism", "right": "l × b × h" }
+      ],
+      "explanation": "Prisms and cylinders: base area × height. Pyramids and cones: one third of base area × height. Sphere: $\\frac{4}{3}\\pi r^3$."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "A right triangular prism has a triangular base with perpendicular sides 6 cm and 8 cm. The prism is 15 cm long. What is its volume?",
+      "options": ["$360\\ \\text{cm}^3$", "$720\\ \\text{cm}^3$", "$180\\ \\text{cm}^3$", "$1\\ 440\\ \\text{cm}^3$"],
+      "answer": 0,
+      "explanation": "Area of triangle $= \\frac{1}{2}(6)(8) = 24\\ \\text{cm}^2$. $V = 24 \\times 15 = 360\\ \\text{cm}^3$. The answer $720$ forgets the $\\frac{1}{2}$ in the triangle area."
+    },
+    {
+      "id": "q7",
+      "type": "numeric",
+      "prompt": "Calculate the volume of a cylinder with radius 7 cm and height 10 cm. Give your answer correct to two decimal places.",
+      "answer": 1539.38,
+      "tolerance": 0.01,
+      "unit": "cm³",
+      "explanation": "$V = \\pi r^2 h = \\pi(7)^2(10) = 490\\pi \\approx 1\\ 539{,}38\\ \\text{cm}^3$."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "A right cone has base radius 6 cm and perpendicular height 8 cm. What is its slant height?",
+      "options": ["$14$ cm", "$\\sqrt{28}$ cm", "$48$ cm", "$10$ cm"],
+      "answer": 3,
+      "explanation": "$s^2 = H^2 + r^2 = 8^2 + 6^2 = 64 + 36 = 100$, so $s = 10$ cm. The slant height is the hypotenuse, so you add the squares."
+    },
+    {
+      "id": "q9",
+      "type": "numeric",
+      "prompt": "Calculate the total surface area of a closed cylinder with radius 5 cm and height 12 cm. Use $SA = 2\\pi r^2 + 2\\pi r h$. Give your answer correct to two decimal places.",
+      "answer": 534.07,
+      "tolerance": 0.01,
+      "unit": "cm²",
+      "explanation": "$SA = 2\\pi(5)^2 + 2\\pi(5)(12) = 50\\pi + 120\\pi = 170\\pi \\approx 534{,}07\\ \\text{cm}^2$."
+    },
+    {
+      "id": "q10",
+      "type": "numeric",
+      "prompt": "A sphere has a **diameter** of 12 cm. Calculate its volume using $V = \\frac{4}{3}\\pi r^3$. Give your answer correct to two decimal places.",
+      "answer": 904.78,
+      "tolerance": 0.01,
+      "unit": "cm³",
+      "explanation": "The radius is half the diameter: $r = 6$ cm. $V = \\frac{4}{3}\\pi(6)^3 = \\frac{4}{3}\\pi(216) = 288\\pi \\approx 904{,}78\\ \\text{cm}^3$."
+    },
+    {
+      "id": "q11",
+      "type": "numeric",
+      "prompt": "A right pyramid has a square base of side 6 cm and a perpendicular height of 4 cm. Calculate its total surface area using $SA = b^2 + 2bs$, where $s$ is the slant height.",
+      "answer": 96,
+      "tolerance": 0.01,
+      "unit": "cm²",
+      "explanation": "Half the base is $3$ cm, so $s = \\sqrt{4^2 + 3^2} = 5$ cm. $SA = 6^2 + 2(6)(5) = 36 + 60 = 96\\ \\text{cm}^2$."
+    },
+    {
+      "id": "q12",
+      "type": "truefalse",
+      "prompt": "If the radius of a sphere is doubled, its volume is also doubled. (Use $V = \\frac{4}{3}\\pi r^3$.)",
+      "answer": false,
+      "explanation": "$V = \\frac{4}{3}\\pi r^3$. If $r$ becomes $2r$, the volume is multiplied by $2^3 = 8$."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "prompt": "The radius of a cylinder is multiplied by 3 while its height stays the same. The volume is multiplied by:",
+      "options": ["$3$", "$6$", "$9$", "$27$"],
+      "answer": 2,
+      "explanation": "$V = \\pi r^2 h$. Replacing $r$ by $3r$ gives $\\pi(3r)^2h = 9\\pi r^2 h$, so the volume is multiplied by $3^2 = 9$. ($27$ would be correct only if the height were tripled too.)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 4,
+      "prompt": "An ice cream cone has a radius of 3 cm and a perpendicular height of 10 cm. It is completely filled with ice cream, and a hemisphere of ice cream with the same radius sits on top. Calculate the total volume of ice cream, correct to two decimal places.\n\nUse: $V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 H$ and $V_{\\text{sphere}} = \\frac{4}{3}\\pi r^3$.",
+      "memo": "$V_{\\text{cone}} = \\frac{1}{3}\\pi(3)^2(10) = 30\\pi$ ✓ (1)\n$V_{\\text{hemisphere}} = \\frac{1}{2} \\times \\frac{4}{3}\\pi(3)^3$ ✓ (halving the sphere formula) (1)\n$= 18\\pi$ ✓ (1)\n$V_{\\text{total}} = 30\\pi + 18\\pi = 48\\pi \\approx 150{,}80\\ \\text{cm}^3$ ✓ (1)\n[4 marks]",
+      "explanation": "Volumes of joined parts are added. A hemisphere has half the volume of a sphere."
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 8,
+      "prompt": "A rondavel in the Eastern Cape has a cylindrical wall with radius 4 m and height 2,5 m. Its cone-shaped roof has a perpendicular height of 3 m and no overhang.\n\nUse: curved surface of a cone $= \\pi r s$; $V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 H$.\n\n(a) Calculate the slant height of the roof. (2)\n(b) Calculate the area of the roof that must be thatched, correct to two decimal places. (2)\n(c) Thatching costs R85 per m². Calculate the cost of thatching the roof. (1)\n(d) Calculate the volume of air inside the rondavel, correct to two decimal places. (3)",
+      "memo": "(a) $s^2 = 3^2 + 4^2 = 25$ ✓ (1)\n$s = 5$ m ✓ (1)\n(b) Roof area $= \\pi r s = \\pi(4)(5)$ ✓ (1)\n$= 20\\pi \\approx 62{,}83\\ \\text{m}^2$ ✓ (1)\n(c) Cost $= 62{,}83 \\times 85 \\approx$ R5 340,55 (or R5 340,71 using the unrounded area) ✓ (1)\n(d) $V_{\\text{cylinder}} = \\pi(4)^2(2{,}5) = 40\\pi$ ✓ (1)\n$V_{\\text{cone}} = \\frac{1}{3}\\pi(4)^2(3) = 16\\pi$ ✓ (1)\n$V = 40\\pi + 16\\pi = 56\\pi \\approx 175{,}93\\ \\text{m}^3$ ✓ (1)\n[8 marks]",
+      "explanation": "Only the curved surface of the cone is thatched (the base circle is the ceiling, not roof). The volume of air is the sum of the cylinder and cone volumes."
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 7,
+      "prompt": "A closed rectangular box measures 10 cm by 8 cm by 5 cm.\n\n(a) Calculate the volume and total surface area of the box. (3)\n(b) Every dimension of the box is multiplied by 3. Without recalculating from the new dimensions, write down the new volume and the new surface area. Explain how you got them. (2)\n(c) Instead, only the height (5 cm) is doubled. Show that the volume doubles but the surface area does NOT double. (2)",
+      "memo": "(a) $V = 10 \\times 8 \\times 5 = 400\\ \\text{cm}^3$ ✓ (1)\n$SA = 2(10 \\times 8 + 10 \\times 5 + 8 \\times 5) = 2(80 + 50 + 40)$ ✓ (1)\n$= 340\\ \\text{cm}^2$ ✓ (1)\n(b) New $V = 3^3 \\times 400 = 10\\ 800\\ \\text{cm}^3$ ✓ (volume is multiplied by $k^3$) (1)\nNew $SA = 3^2 \\times 340 = 3\\ 060\\ \\text{cm}^2$ ✓ (area is multiplied by $k^2$) (1)\n(c) New box $10 \\times 8 \\times 10$: $V = 800\\ \\text{cm}^3 = 2 \\times 400$ ✓ (1)\n$SA = 2(80 + 100 + 80) = 520\\ \\text{cm}^2 \\neq 2 \\times 340 = 680$, so the surface area does not double ✓ (1)\n[7 marks]",
+      "explanation": "Volume is three-dimensional, so scaling all dimensions by $k$ multiplies it by $k^3$; surface area is two-dimensional, so it is multiplied by $k^2$. Changing only one dimension multiplies the volume by $k$, but the surface area must be recalculated."
+    },
+    {
+      "id": "q17",
+      "type": "mcq",
+      "prompt": "How many $\\text{cm}^3$ are there in $0{,}5\\ \\text{m}^3$?",
+      "options": ["$5\\ 000\\ \\text{cm}^3$", "$50\\ 000\\ \\text{cm}^3$", "$500\\ 000\\ \\text{cm}^3$", "$5\\ 000\\ 000\\ \\text{cm}^3$"],
+      "answer": 2,
+      "explanation": "$1\\ \\text{m}^3 = 100 \\times 100 \\times 100 = 1\\ 000\\ 000\\ \\text{cm}^3$, so $0{,}5\\ \\text{m}^3 = 0{,}5 \\times 1\\ 000\\ 000 = 500\\ 000\\ \\text{cm}^3$. The answer $50$ (from multiplying by 100 only) is a common mistake."
+    },
+    {
+      "id": "q18",
+      "type": "truefalse",
+      "prompt": "The slant height of a right cone is always longer than its perpendicular height.",
+      "answer": true,
+      "explanation": "The perpendicular height $H$, the radius $r$ and the slant height $s$ form a right-angled triangle with $s$ as the hypotenuse: $s^2 = H^2 + r^2$, so $s > H$."
+    },
+    {
+      "id": "q19",
+      "type": "numeric",
+      "prompt": "A right cone has base radius 9 cm and perpendicular height 12 cm. Calculate its total surface area using $SA = \\pi r^2 + \\pi r s$, where $s$ is the slant height. Give your answer correct to two decimal places.",
+      "answer": 678.58,
+      "tolerance": 0.01,
+      "unit": "cm²",
+      "explanation": "$s = \\sqrt{12^2 + 9^2} = \\sqrt{225} = 15$ cm. $SA = \\pi(9)^2 + \\pi(9)(15) = 81\\pi + 135\\pi = 216\\pi \\approx 678{,}58\\ \\text{cm}^2$."
+    },
+    {
+      "id": "q20",
+      "type": "numeric",
+      "prompt": "A cylindrical tin has a base but **no lid**. Its radius is 4 cm and its height is 9 cm. Calculate the outside surface area of the tin, correct to two decimal places.",
+      "answer": 276.46,
+      "tolerance": 0.01,
+      "unit": "cm²",
+      "explanation": "Only one circle is present: $SA = \\pi r^2 + 2\\pi r h = \\pi(4)^2 + 2\\pi(4)(9) = 16\\pi + 72\\pi = 88\\pi \\approx 276{,}46\\ \\text{cm}^2$."
+    },
+    {
+      "id": "q21",
+      "type": "numeric",
+      "prompt": "A tent is a right pyramid with a square base of side 3 m and a perpendicular height of 2 m. Calculate the volume of air inside it using $V = \\frac{1}{3}b^2H$. (The answer is a whole number.)",
+      "answer": 6,
+      "tolerance": 0.01,
+      "unit": "m³",
+      "explanation": "$V = \\frac{1}{3}(3)^2(2) = \\frac{1}{3}(18) = 6\\ \\text{m}^3$. Use the perpendicular height (not the slant height) for volume."
+    },
+    {
+      "id": "q22",
+      "type": "mcq",
+      "prompt": "Every dimension of a right cone (its radius and its perpendicular height) is multiplied by 2. Its total surface area is multiplied by:",
+      "options": ["$2$", "$4$", "$6$", "$8$"],
+      "answer": 1,
+      "explanation": "When **all** dimensions are multiplied by $k$, every area is multiplied by $k^2$. Here $k = 2$, so the surface area is multiplied by $2^2 = 4$. (The volume would be multiplied by $2^3 = 8$.)"
+    },
+    {
+      "id": "q23",
+      "type": "open",
+      "marks": 7,
+      "prompt": "A solid metal ornament is made of a cylinder with radius 3 cm and height 8 cm, with a hemisphere of radius 3 cm fixed on top. The bottom of the cylinder is flat.\n\nUse: $SA_{\\text{sphere}} = 4\\pi r^2$ and $V_{\\text{sphere}} = \\frac{4}{3}\\pi r^3$.\n\n(a) Calculate the total outside surface area of the ornament, correct to two decimal places. (4)\n(b) Calculate the volume of the ornament, correct to two decimal places. (3)",
+      "memo": "(a) Bottom circle $= \\pi(3)^2 = 9\\pi$ ✓ (1)\nCurved surface of cylinder $= 2\\pi(3)(8) = 48\\pi$ ✓ (1)\nCurved surface of hemisphere $= \\frac{1}{2} \\times 4\\pi(3)^2 = 18\\pi$ ✓ (1)\n(The top circle of the cylinder is covered by the hemisphere and is not counted.)\n$SA = 9\\pi + 48\\pi + 18\\pi = 75\\pi \\approx 235{,}62\\ \\text{cm}^2$ ✓ (1)\n(b) $V_{\\text{cylinder}} = \\pi(3)^2(8) = 72\\pi$ ✓ (1)\n$V_{\\text{hemisphere}} = \\frac{1}{2} \\times \\frac{4}{3}\\pi(3)^3 = 18\\pi$ ✓ (1)\n$V = 72\\pi + 18\\pi = 90\\pi \\approx 282{,}74\\ \\text{cm}^3$ ✓ (1)\n[7 marks]",
+      "explanation": "For the surface area of a combined object, include only the outside surfaces; the joined faces are hidden. For volume, add the volumes of the parts."
+    }
+  ]
+}

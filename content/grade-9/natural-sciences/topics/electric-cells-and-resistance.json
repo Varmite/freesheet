@@ -1,0 +1,56 @@
+{
+  "id": "electric-cells-and-resistance",
+  "title": "Electric Cells, Resistance and Circuits",
+  "term": 3,
+  "summary": "Electric cells as energy systems, current, potential difference and resistance, factors affecting resistance, and current and voltage in series and parallel circuits.",
+  "notes": [
+    { "type": "heading", "text": "Electric cells" },
+    { "type": "paragraph", "text": "An **electric cell** converts stored **chemical potential energy** into **electrical energy**. It has a positive terminal and a negative terminal; when connected in a closed circuit, chemical reactions inside the cell push charges around the circuit. A **battery** is two or more cells connected together." },
+    { "type": "table", "headers": ["Quantity", "Meaning", "Unit", "Measured with"], "rows": [
+      ["Current (I)", "The rate of flow of charge", "ampere (A)", "Ammeter, connected in **series**"],
+      ["Potential difference (V)", "The energy given to or used by each unit of charge; also called voltage", "volt (V)", "Voltmeter, connected in **parallel** across a component"],
+      ["Resistance (R)", "How much a component opposes the current", "ohm (Ω)", "Calculated from V and I"]
+    ] },
+    { "type": "formula", "latex": "R = \\frac{V}{I}", "caption": "Resistance = potential difference ÷ current" },
+    { "type": "example", "title": "Calculating resistance", "problem": "A potential difference of 6 V across a resistor causes a current of 0,5 A. Calculate the resistance.", "steps": ["R = V ÷ I = 6 ÷ 0,5", "= 12 Ω"], "answer": "12 Ω" },
+    { "type": "heading", "text": "Resistance" },
+    { "type": "paragraph", "text": "When charges move through a conductor, they collide with the atoms of the material. This opposition is **resistance**, and it converts electrical energy into **heat** (and sometimes light). A high resistance lets less current flow." },
+    { "type": "table", "caption": "Factors that affect the resistance of a wire", "headers": ["Factor", "Effect"], "rows": [
+      ["Length", "A longer wire has more resistance"],
+      ["Thickness (cross-sectional area)", "A thinner wire has more resistance"],
+      ["Material", "Nichrome has high resistance; copper has very low resistance"],
+      ["Temperature", "For most metals, resistance increases as temperature rises"]
+    ] },
+    { "type": "paragraph", "text": "High resistance is useful in **heating elements** (kettles, toasters, stoves) and **light bulb filaments**. Copper is used for connecting wires because its low resistance wastes little energy. A **rheostat** (variable resistor) changes resistance by changing the length of wire in the circuit, for example in a dimmer switch." },
+    { "type": "heading", "text": "Series circuits" },
+    { "type": "list", "items": [
+      "The **current is the same** at every point: $I_{\\text{total}} = I_1 = I_2$.",
+      "The **potential difference is shared**: $V_{\\text{total}} = V_1 + V_2$.",
+      "Adding more resistors **increases** the total resistance, so the current **decreases**."
+    ] },
+    { "type": "heading", "text": "Parallel circuits" },
+    { "type": "list", "items": [
+      "The **current splits** between the branches: $I_{\\text{total}} = I_1 + I_2$.",
+      "The **potential difference is the same** across each branch: $V_{\\text{total}} = V_1 = V_2$.",
+      "Adding more resistors in parallel **decreases** the total resistance, so the total current from the battery **increases**."
+    ] },
+    { "type": "example", "title": "Reading meters in a parallel circuit", "problem": "Two bulbs are in parallel with a 9 V battery. The current through bulb 1 is 0,3 A and through bulb 2 is 0,6 A. Find the total current and the voltage across bulb 2.", "steps": ["Total current = 0,3 + 0,6 = 0,9 A", "Voltage is the same across each parallel branch: 9 V"], "answer": "0,9 A and 9 V" },
+    { "type": "callout", "label": "Exam tip", "text": "Remember: **series shares voltage; parallel shares current**." }
+  ],
+  "questions": [
+    { "id": "cell-energy", "type": "mcq", "prompt": "An electric cell converts…", "options": ["electrical energy into chemical energy", "chemical potential energy into electrical energy", "heat into electrical energy", "light into chemical energy"], "answer": 1 },
+    { "id": "voltmeter", "type": "short", "prompt": "Is a voltmeter connected in series or in parallel with a component?", "answers": ["parallel", "in parallel"] },
+    { "id": "ohm", "type": "short", "prompt": "What is the unit of resistance?", "answers": ["ohm", "ohms", "Ω"] },
+    { "id": "r-calc", "type": "numeric", "prompt": "Calculate the resistance of a bulb if a potential difference of 12 V causes a current of 2 A.", "answer": 6, "tolerance": 0, "unit": "Ω" },
+    { "id": "thin-wire", "type": "truefalse", "prompt": "A thin wire has a lower resistance than a thick wire of the same material and length.", "answer": false },
+    { "id": "series-v", "type": "numeric", "prompt": "Two identical bulbs are in series with a 6 V battery. What is the potential difference across each bulb?", "answer": 3, "tolerance": 0, "unit": "V" },
+    { "id": "parallel-i", "type": "numeric", "prompt": "In a parallel circuit, branch currents are 0,4 A and 0,8 A. What is the total current from the battery?", "answer": 1.2, "tolerance": 0.01, "unit": "A" },
+    { "id": "factors", "type": "match", "marks": 3, "prompt": "Match each change to its effect on the resistance of a wire.", "pairs": [
+      { "left": "Make the wire longer", "right": "Resistance increases" },
+      { "left": "Make the wire thicker", "right": "Resistance decreases" },
+      { "left": "Replace a copper wire with a nichrome wire of the same size", "right": "Resistance becomes much higher" }
+    ] },
+    { "id": "nichrome", "type": "open", "marks": 2, "prompt": "Why is nichrome used for the heating element in a kettle while copper is used for the cable?", "memo": "✓ Nichrome has high resistance, so it converts electrical energy into heat (1)\n✓ Copper has low resistance, so very little energy is wasted in the cable (1)" },
+    { "id": "add-parallel", "type": "open", "marks": 2, "prompt": "What happens to the total current from the battery when another bulb is added in parallel? Explain.", "memo": "✓ The total current increases (1)\n✓ because the total resistance of the circuit decreases (there is another path for the current) (1)" }
+  ]
+}

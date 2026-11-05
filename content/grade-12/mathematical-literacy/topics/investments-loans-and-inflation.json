@@ -1,0 +1,36 @@
+{
+  "id": "investments-loans-and-inflation",
+  "title": "Finance: Investments, Loans and Inflation",
+  "term": 2,
+  "summary": "Comparing investment options, compound interest calculated monthly and annually, loan repayments and the real cost of credit, and the effect of inflation on savings and prices.",
+  "notes": [
+    { "type": "heading", "text": "Investments" },
+    { "type": "paragraph", "text": "When comparing investments, consider the **interest rate**, how often interest is **compounded**, any **fees**, how long the money is **locked in**, and the **risk**." },
+    { "type": "example", "title": "Worked example 1: comparing two accounts", "problem": "R20 000 is invested for 2 years. Option A: 8% p.a. simple interest. Option B: 7,8% p.a. compounded monthly. Which gives more?", "steps": [
+      "A: R20 000 + 2 × 8% × R20 000 = R23 200",
+      "B: R20 000 × (1 + 0,078 ÷ 12)^24 = R23 364,73",
+      "Option B earns R164,73 more."
+    ], "answer": "Option B" },
+    { "type": "heading", "text": "Loans and the real cost of credit" },
+    { "type": "paragraph", "text": "A loan's **total cost** = all instalments + fees. Lenders quote an interest rate, but initiation fees, monthly service fees and credit life insurance add to the real cost." },
+    { "type": "example", "title": "Worked example 2", "problem": "A personal loan of R30 000 is repaid with 36 instalments of R1 290, plus a R1 200 initiation fee. How much does the loan cost in total, and how much is the cost of credit?", "steps": ["Instalments: 36 × R1 290 = R46 440", "Total repaid: R46 440 + R1 200 = R47 640", "Cost of credit: R47 640 − R30 000 = R17 640"], "answer": "R47 640 in total; R17 640 is the cost of credit" },
+    { "type": "callout", "label": "Exam tip", "text": "Loan repayment tables (e.g. 'monthly repayment per R1 000 borrowed') are often given. Multiply by the number of thousands borrowed, e.g. R12,35 per R1 000 for R450 000 gives 450 × R12,35 = R5 557,50." },
+    { "type": "heading", "text": "Inflation" },
+    { "type": "paragraph", "text": "If prices rise by more than the interest you earn, your savings lose **buying power**. The **real** return is roughly the interest rate minus the inflation rate." },
+    { "type": "example", "title": "Worked example 3", "problem": "Savings earn 4% p.a. while inflation is 6% p.a. What happens to the buying power of R10 000 after one year?", "steps": ["Savings grow to R10 400.", "Goods costing R10 000 now cost R10 600.", "The savings buy less than before: buying power fell by about 2%."], "answer": "Buying power decreases" },
+    { "type": "table", "caption": "Illustrative CPI (Consumer Price Index) values", "headers": ["Year", "CPI"], "rows": [["2021", "100"], ["2022", "106,9"], ["2023", "113,2"], ["2024", "118,0"]] },
+    { "type": "paragraph", "text": "Inflation from 2023 to 2024 = (118,0 − 113,2) ÷ 113,2 × 100 ≈ 4,2%." }
+  ],
+  "questions": [
+    { "id": "simple", "type": "numeric", "prompt": "Calculate the simple interest on R15 000 at 6,5% p.a. for 3 years.", "answer": 2925, "tolerance": 0, "unit": "rand" },
+    { "id": "compound", "type": "numeric", "prompt": "R10 000 is invested at 8% p.a. compounded annually. What is it worth after 3 years (two decimals)?", "answer": 12597.12, "tolerance": 0.01, "unit": "rand" },
+    { "id": "monthly", "type": "numeric", "prompt": "R5 000 is invested at 9% p.a. compounded monthly for 1 year. Calculate the final amount (two decimals).", "answer": 5469.03, "tolerance": 0.01, "unit": "rand" },
+    { "id": "cost-credit", "type": "numeric", "prompt": "A R20 000 loan is repaid with 24 instalments of R1 050. What is the cost of credit?", "answer": 5200, "tolerance": 0, "unit": "rand" },
+    { "id": "buying-power", "type": "truefalse", "prompt": "If inflation is higher than the interest earned, the buying power of savings decreases.", "answer": true },
+    { "id": "table", "type": "numeric", "prompt": "A bond costs R11,80 per month per R1 000 borrowed. What is the monthly repayment on R650 000?", "answer": 7670, "tolerance": 0, "unit": "rand" },
+    { "id": "cpi", "type": "open", "marks": 3, "prompt": "Using the illustrative CPI table, calculate the inflation rate from 2021 to 2022, and what a R500 basket of goods in 2021 would cost in 2023.", "memo": "✓ 6,9% (1)\n✓ R500 × 113,2 ÷ 100 (1)\n✓ = R566 (1)" },
+    { "id": "compare", "type": "open", "marks": 4, "prompt": "R50 000 is invested for 3 years. Option A: 7% p.a. simple interest. Option B: 6,5% p.a. compounded annually. Which option is better, and by how much?", "memo": "✓ A: R50 000 + 3 × R3 500 = R60 500 (1)\n✓ B: R50 000 × 1,065³ (1)\n✓ = R60 397,48 (1)\n✓ A is better by R102,52 (1)" },
+    { "id": "fees", "type": "open", "marks": 2, "prompt": "Name TWO costs, besides interest, that can increase the real cost of a loan.", "memo": "Any two (1 each): initiation fee; monthly service fee; credit life insurance; penalties for late payment" },
+    { "id": "real", "type": "open", "marks": 2, "prompt": "An investment earns 9% p.a. while inflation is 5,5%. Estimate the real rate of growth and explain what it means.", "memo": "✓ About 3,5% (1)\n✓ The buying power of the money grows by about 3,5% per year (1)" }
+  ]
+}

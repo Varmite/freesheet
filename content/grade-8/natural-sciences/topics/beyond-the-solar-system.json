@@ -1,0 +1,58 @@
+{
+  "id": "beyond-the-solar-system",
+  "title": "Beyond the Solar System",
+  "term": 4,
+  "summary": "Stars, galaxies and the Milky Way, light years and huge distances, how we look into space with telescopes, and South Africa's role in astronomy.",
+  "notes": [
+    { "type": "heading", "text": "Stars" },
+    { "type": "paragraph", "text": "The sun is just one of billions of stars. Stars differ in **size**, **temperature** and **colour**: blue stars are the hottest, then white, yellow (like the sun), orange, and red stars, which are the coolest. Stars look tiny because they are extremely far away." },
+    { "type": "list", "items": [
+      "A **constellation** is a group of stars that forms a pattern in the night sky, such as Orion or Crux (the Southern Cross).",
+      "The **Southern Cross** and its two pointer stars help people in the southern hemisphere find south at night.",
+      "Many cultures gave names to stars. In isiXhosa, the Pleiades star cluster is *isiLimela*; its appearance marked the start of the planting season."
+    ] },
+    { "type": "heading", "text": "Galaxies" },
+    { "type": "definition", "term": "Galaxy", "text": "A huge system of billions of stars, gas and dust held together by gravity." },
+    { "type": "paragraph", "text": "Our solar system is in the **Milky Way**, a **spiral galaxy** about 100 000 light years across. On a dark, clear night it appears as a faint band of light across the sky. The nearest large galaxy is **Andromeda**. From the southern hemisphere you can see two small nearby galaxies, the **Large and Small Magellanic Clouds**. The **universe** contains billions of galaxies." },
+    { "type": "table", "caption": "Shapes of galaxies", "headers": ["Type", "Shape", "Example"], "rows": [
+      ["Spiral", "Flat disc with curved arms around a bright centre", "Milky Way, Andromeda"],
+      ["Elliptical", "Oval or round, with little gas and dust", "M87"],
+      ["Irregular", "No clear shape", "Magellanic Clouds"]
+    ] },
+    { "type": "heading", "text": "Distances in space" },
+    { "type": "definition", "term": "Light year", "text": "The DISTANCE light travels in one year: about 9,5 million million km (9,5 × 10¹² km). It is a unit of distance, not time." },
+    { "type": "table", "headers": ["Object", "Distance from Earth"], "rows": [
+      ["Moon", "About 384 000 km (about 1,3 light seconds)"],
+      ["Sun", "About 150 million km (about 8 light minutes)"],
+      ["Proxima Centauri (nearest star after the sun)", "About 4,2 light years"],
+      ["Andromeda galaxy", "About 2,5 million light years"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "When we look at a distant star we see light that left it long ago. Light from the sun is about 8 minutes old; light from Andromeda left it 2,5 million years ago. Looking far into space means looking back in time." },
+    { "type": "heading", "text": "Looking into space" },
+    { "type": "list", "items": [
+      "**Optical telescopes** use lenses or mirrors to collect visible light. Large ones are built on high mountains or in dry, dark places away from city lights.",
+      "**Radio telescopes** use large dishes to collect radio waves from space; they work in cloudy weather and in daylight.",
+      "**Space telescopes** such as Hubble and James Webb orbit above the atmosphere, which blurs and blocks some radiation.",
+      "Space probes and rovers travel to planets and send back pictures and data."
+    ] },
+    { "type": "heading", "text": "South Africa and astronomy" },
+    { "type": "paragraph", "text": "South Africa's clear, dark skies make it one of the best places in the world for astronomy. **SALT** (the Southern African Large Telescope) near Sutherland in the Northern Cape is the largest single optical telescope in the southern hemisphere. **MeerKAT**, a radio telescope of 64 dishes in the Karoo, is part of the international **Square Kilometre Array (SKA)** project, which will be the world's largest radio telescope." },
+    { "type": "paragraph", "text": "Space exploration has given us satellites for communication, weather forecasting and GPS navigation, as well as inventions such as improved water filters and medical imaging." }
+  ],
+  "questions": [
+    { "id": "our-galaxy", "type": "short", "prompt": "What is the name of our galaxy?", "answers": ["milky way", "the milky way"] },
+    { "id": "light-year", "type": "mcq", "prompt": "A light year is a unit of…", "options": ["time", "speed", "distance", "brightness"], "answer": 2 },
+    { "id": "hottest-star", "type": "mcq", "prompt": "What colour are the hottest stars?", "options": ["Red", "Yellow", "Orange", "Blue"], "answer": 3 },
+    { "id": "salt", "type": "short", "prompt": "Near which Northern Cape town is the Southern African Large Telescope (SALT)?", "answers": ["sutherland"] },
+    { "id": "constellation", "type": "truefalse", "prompt": "A constellation is a group of galaxies held together by gravity.", "answer": false, "explanation": "A constellation is a pattern of stars as seen from Earth." },
+    { "id": "galaxy-types", "type": "match", "marks": 3, "prompt": "Match each galaxy to its type.", "pairs": [
+      { "left": "Milky Way", "right": "Spiral" },
+      { "left": "Large Magellanic Cloud", "right": "Irregular" },
+      { "left": "M87", "right": "Elliptical" }
+    ] },
+    { "id": "sun-minutes", "type": "numeric", "prompt": "About how many minutes does light take to travel from the sun to the Earth?", "answer": 8, "tolerance": 0.5, "unit": "minutes" },
+    { "id": "radio", "type": "open", "marks": 2, "prompt": "Give TWO advantages of radio telescopes over optical telescopes.", "memo": "Any two (1 each):\n✓ They can be used in daylight\n✓ They can be used when it is cloudy\n✓ They detect objects that give off radio waves but little visible light / see through dust clouds" },
+    { "id": "space-telescope", "type": "open", "marks": 2, "prompt": "Why are some telescopes placed in orbit around the Earth?", "memo": "✓ The atmosphere blurs images and blocks some types of radiation (1)\n✓ Above the atmosphere they get clearer images / detect all radiation (1)" },
+    { "id": "back-in-time", "type": "open", "marks": 2, "prompt": "Explain what astronomers mean when they say that looking at distant galaxies is looking back in time.", "memo": "✓ Light takes a very long time (millions of years) to travel from distant galaxies to Earth (1)\n✓ so we see the galaxy as it was when the light left it, not as it is now (1)" }
+  ]
+}

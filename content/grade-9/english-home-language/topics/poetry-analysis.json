@@ -1,0 +1,55 @@
+{
+  "id": "poetry-analysis",
+  "title": "Poetry Analysis",
+  "term": 2,
+  "summary": "Analysing a poem's speaker, subject, theme, tone and mood, imagery and diction, structure and sound, and writing paragraph answers about poems, using an original poem.",
+  "notes": [
+    { "type": "heading", "text": "A method for analysing a poem" },
+    { "type": "list", "ordered": true, "items": [
+      "**Title**: what does it suggest?",
+      "**Speaker**: who is speaking (the 'persona'), and to whom?",
+      "**Subject**: what is the poem literally about?",
+      "**Theme**: what is the deeper message about life?",
+      "**Tone and mood**: what is the speaker's attitude, and what feeling does the poem create?",
+      "**Diction and imagery**: which words and images stand out, and why?",
+      "**Structure and sound**: stanzas, line length, rhyme, rhythm, repetition, enjambment, punctuation, sound devices.",
+      "**Shift**: is there a turning point where the tone or idea changes?"
+    ] },
+    { "type": "heading", "text": "Key terms" },
+    { "type": "table", "headers": ["Term", "Meaning"], "rows": [
+      ["Diction", "The poet's choice of words"],
+      ["Imagery", "Language that creates pictures in the reader's mind, appealing to the senses"],
+      ["Symbol", "An object that represents a bigger idea"],
+      ["Enjambment", "A line that runs on into the next without punctuation, creating flow or emphasis"],
+      ["Caesura", "A pause in the middle of a line, usually created by punctuation"],
+      ["Refrain", "A line or phrase repeated throughout a poem"],
+      ["Volta / shift", "A turning point in the poem's argument or mood"],
+      ["Sonnet", "A 14-line poem with a set rhyme scheme"]
+    ] },
+    { "type": "passage", "title": "The Last Taxi Home (an original poem written for FreeSheet)", "text": "The city exhales its final breath of day;\nthe robots blink their tired amber eyes.\nAt the rank, the vendors fold their stalls away,\nand pigeons count the crumbs beneath grey skies.\n\nMy mother waits, her handbag on her knee,\nher shoes still dusty from a stranger's floor.\nShe scrubbed their kitchens bright for them to see,\nthen caught the train, and now she waits once more.\n\nThe last taxi swings in, its music loud,\nand she climbs in, a queen without a crown.\nShe does not know I watch her from the crowd,\nor how I'll build her palace in this town." },
+    { "type": "example", "title": "Analysing the poem", "problem": "Discuss the theme and the metaphor 'a queen without a crown'.", "steps": [
+      "Subject: the speaker watches his or her mother, a domestic worker, waiting for the last taxi after a long day.",
+      "Metaphor: the mother is called 'a queen without a crown'. She has dignity, strength and worth like a queen, but lacks the wealth and recognition ('crown').",
+      "Theme: the quiet sacrifice and dignity of working parents, and the child's love, respect and determination to repay that sacrifice.",
+      "Shift: the final two lines move from description to the speaker's personal promise: 'how I'll build her palace in this town', extending the royal imagery."
+    ], "answer": "Link each device to the theme." },
+    { "type": "callout", "label": "Exam tip", "text": "In a paragraph answer on a poem, write a clear opening statement, refer to at least three relevant devices with **short quotations**, explain the effect of each, and link them to the theme or question." }
+  ],
+  "questions": [
+    { "id": "diction", "type": "short", "prompt": "What is the term for a poet's choice of words?", "answers": ["diction"] },
+    { "id": "lines", "type": "numeric", "prompt": "How many lines are there in a sonnet?", "answer": 14, "tolerance": 0 },
+    { "id": "rhyme", "type": "mcq", "prompt": "What is the rhyme scheme of each stanza of 'The Last Taxi Home'?", "options": ["AABB", "ABAB", "ABBA", "Free verse"], "answer": 1 },
+    { "id": "personification", "type": "open", "marks": 3, "prompt": "Discuss the figure of speech in line 2: 'the robots blink their tired amber eyes'.", "memo": "✓ Personification (1)\n✓ The traffic lights are given human eyes and tiredness (1)\n✓ It reflects the weariness of the city and of the mother at the end of the day / sets the mood (1)" },
+    { "id": "dusty", "type": "open", "marks": 2, "prompt": "What does the line 'her shoes still dusty from a stranger's floor' reveal about the mother's work?", "memo": "✓ She is a domestic worker / cleans other people's houses (1)\n✓ The word 'stranger's' suggests her work is for people who do not know or appreciate her (1)" },
+    { "id": "queen", "type": "open", "marks": 3, "prompt": "Explain the metaphor 'a queen without a crown'.", "memo": "✓ The mother is compared to a queen (1)\n✓ She has dignity, strength and worth (1)\n✓ but no wealth, power or recognition (no crown) (1)" },
+    { "id": "tone", "type": "mcq", "prompt": "Which word best describes the speaker's tone in the final stanza?", "options": ["Bitter", "Admiring and determined", "Bored", "Sarcastic"], "answer": 1 },
+    { "id": "terms", "type": "match", "marks": 4, "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Enjambment", "right": "Line runs on without punctuation" },
+      { "left": "Caesura", "right": "Pause in the middle of a line" },
+      { "left": "Refrain", "right": "Repeated line or phrase" },
+      { "left": "Volta", "right": "Turning point in a poem" }
+    ] },
+    { "id": "palace", "type": "open", "marks": 2, "prompt": "How do the last two lines change the poem?", "memo": "✓ There is a shift from describing the mother to the speaker's personal feelings and promise (1)\n✓ The speaker vows to give her a better life ('build her palace'), continuing the royal metaphor and adding hope (1)" },
+    { "id": "theme", "type": "open", "marks": 3, "prompt": "Write a short paragraph on the theme of the poem, referring to TWO quotations.", "memo": "✓ Clear statement of theme, e.g. dignity and sacrifice of working parents / a child's love and gratitude (1)\n✓ Quotation with explanation (1)\n✓ Second quotation with explanation (1)" }
+  ]
+}

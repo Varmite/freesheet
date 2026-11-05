@@ -1,0 +1,51 @@
+{
+  "id": "human-rights-violations",
+  "title": "Human Rights Violations and Responsible Citizenship",
+  "term": 2,
+  "summary": "Identifying human rights violations, their causes and effects, the role of the media and institutions in addressing them, and how responsible citizens can take action.",
+  "notes": [
+    { "type": "heading", "text": "What is a human rights violation?" },
+    { "type": "paragraph", "text": "A **human rights violation** happens when a person's rights in the Bill of Rights are denied or abused, by the state, by organisations or by individuals." },
+    { "type": "table", "headers": ["Violation", "Rights affected"], "rows": [
+      ["Gender-based violence", "Dignity, freedom and security of the person, life"],
+      ["Xenophobic attacks", "Equality, dignity, life, property"],
+      ["Corruption that diverts money from services", "Access to housing, health care, water, education"],
+      ["Child labour and abuse", "Children's rights (section 28), education"],
+      ["Police brutality", "Freedom and security of the person; dignity"],
+      ["Unequal access to schooling", "Right to basic education (section 29)"]
+    ] },
+    { "type": "heading", "text": "Causes and effects" },
+    { "type": "list", "items": [
+      "**Causes**: poverty and inequality, prejudice, lack of education about rights, weak law enforcement, corruption, abuse of power.",
+      "**Effects**: trauma and injury, loss of trust in institutions, social division, poverty and lost opportunities."
+    ] },
+    { "type": "heading", "text": "Who addresses violations?" },
+    { "type": "list", "items": [
+      "**Courts** and the **police** enforce the law.",
+      "**Chapter 9 institutions**: the SAHRC, Public Protector and Commission for Gender Equality investigate complaints.",
+      "**The media** expose violations and inform the public (e.g. investigative journalism).",
+      "**Civil society**: NGOs, unions and community groups campaign, offer support and go to court.",
+      "**International bodies**: the UN and African Commission on Human and Peoples' Rights."
+    ] },
+    { "type": "callout", "label": "Responsible citizenship", "text": "A responsible citizen respects others' rights, obeys the law, votes, reports violations, participates peacefully in campaigns, and challenges discrimination when they see it." },
+    { "type": "heading", "text": "Planning a campaign" },
+    { "type": "list", "ordered": true, "items": ["Choose an issue and research it.", "Identify the audience and the change you want.", "Plan activities: posters, social media, petitions, talks, events.", "Work with partners (NGOs, the RCL, community leaders).", "Evaluate the impact."] }
+  ],
+  "questions": [
+    { "id": "define", "type": "open", "marks": 2, "prompt": "What is a human rights violation?", "memo": "✓ When a person's rights in the Bill of Rights (1)\n✓ are denied or abused by the state, organisations or individuals (1)" },
+    { "id": "s29", "type": "mcq", "prompt": "Which right is violated when learners are taught in collapsing classrooms without textbooks?", "options": ["Right to privacy", "Right to basic education", "Freedom of religion", "Right to vote"], "answer": 1 },
+    { "id": "violations", "type": "match", "marks": 4, "prompt": "Match each violation to a right affected.", "pairs": [
+      { "left": "Child labour on farms", "right": "Children's rights" },
+      { "left": "Attacks on foreign-owned shops", "right": "Right to property" },
+      { "left": "Torture in police custody", "right": "Freedom and security of the person" },
+      { "left": "Hate speech", "right": "Human dignity" }
+    ] },
+    { "id": "media", "type": "truefalse", "prompt": "The media can help address human rights violations by exposing them.", "answer": true },
+    { "id": "causes", "type": "open", "marks": 3, "prompt": "Discuss THREE causes of human rights violations in South Africa.", "memo": "Any three (1 each): poverty and inequality; prejudice; lack of rights education; weak law enforcement; corruption; abuse of power" },
+    { "id": "effects", "type": "open", "marks": 3, "prompt": "Explain THREE effects of gender-based violence on individuals and society.", "memo": "Any three (1 each): physical and emotional trauma; death; fear and loss of freedom; economic costs; family breakdown; strain on health and justice systems" },
+    { "id": "campaign", "type": "open", "marks": 4, "prompt": "Plan a school campaign against bullying, giving FOUR steps.", "memo": "Any four in a logical order (1 each): research the problem; set a goal; identify audience; plan activities (posters, talks, reporting system); partner with RCL/teachers; evaluate" },
+    { "id": "citizen", "type": "open", "marks": 2, "prompt": "Give TWO actions of a responsible citizen when they witness a human rights violation.", "memo": "Any two (1 each): report it to police/SAHRC; support the victim; document evidence safely; speak out; join campaigns" },
+    { "id": "corruption", "type": "open", "marks": 2, "prompt": "Explain how corruption can violate the rights of poor communities.", "memo": "✓ Money meant for services is stolen or wasted (1)\n✓ so people are denied housing, water, health care or education (1)" },
+    { "id": "pp", "type": "short", "prompt": "Which Chapter 9 institution investigates maladministration and abuse of power in government? (two words)", "answers": ["public protector", "the public protector"] }
+  ]
+}

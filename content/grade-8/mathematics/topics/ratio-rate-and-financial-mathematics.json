@@ -1,0 +1,130 @@
+{
+  "id": "ratio-rate-and-financial-mathematics",
+  "title": "Ratio, Rate and Financial Mathematics",
+  "term": 1,
+  "summary": "Work with ratios, rates and direct and inverse proportion, and solve everyday money problems involving profit, loss, discount, VAT, simple interest, hire purchase and exchange rates.",
+  "notes": [
+    { "type": "heading", "text": "Ratio" },
+    { "type": "definition", "term": "Ratio", "text": "A **ratio** compares two or more quantities measured in the **same unit**. The ratio of 6 boys to 9 girls is written $6 : 9$. A ratio has no units." },
+    { "type": "paragraph", "text": "Simplify a ratio the same way you simplify a fraction: divide every part by the HCF. Before simplifying, make sure all quantities are in the same unit." },
+    { "type": "example", "title": "Worked example 1: simplifying ratios", "problem": "Simplify: (a) $24 : 36$  (b) $40\\ \\text{cm} : 2\\ \\text{m}$  (c) $12 : 18 : 30$", "steps": [
+      "(a) The HCF of $24$ and $36$ is $12$: $24 : 36 = 2 : 3$.",
+      "(b) Change to the same unit: $2\\ \\text{m} = 200\\ \\text{cm}$. Then $40 : 200 = 1 : 5$.",
+      "(c) The HCF of $12$, $18$ and $30$ is $6$: $12 : 18 : 30 = 2 : 3 : 5$."
+    ], "answer": "(a) $2 : 3$  (b) $1 : 5$  (c) $2 : 3 : 5$" },
+    { "type": "paragraph", "text": "To **share an amount in a given ratio**: add the parts of the ratio, find the value of one part, then multiply." },
+    { "type": "example", "title": "Worked example 2: sharing in a ratio", "problem": "Nomsa and Peter share R480 in the ratio $3 : 5$. How much does each get?", "steps": [
+      "Total number of parts: $3 + 5 = 8$.",
+      "One part: $480 \\div 8 = 60$.",
+      "Nomsa: $3 \\times 60 = 180$. Peter: $5 \\times 60 = 300$.",
+      "Check: $180 + 300 = 480$ ✓"
+    ], "answer": "Nomsa gets R180 and Peter gets R300." },
+    { "type": "callout", "label": "Common mistake", "text": "In the ratio $3 : 5$, Nomsa does **not** get $\\frac{3}{5}$ of the money. There are $8$ parts altogether, so she gets $\\frac{3}{8}$ and Peter gets $\\frac{5}{8}$." },
+
+    { "type": "heading", "text": "Rate" },
+    { "type": "definition", "term": "Rate", "text": "A **rate** compares two quantities measured in **different units**, for example kilometres per hour (km/h), rand per kilogram (R/kg) or litres per minute. A rate always has units." },
+    { "type": "example", "title": "Worked example 3: speed and best buys", "problem": "(a) A bus travels 360 km in 4 hours. What is its average speed?\n(b) Rice costs R38 for a 2 kg bag or R90 for a 5 kg bag. Which is the better buy?", "steps": [
+      "(a) Speed $= \\dfrac{\\text{distance}}{\\text{time}} = \\dfrac{360}{4} = 90\\ \\text{km/h}$.",
+      "(b) Find the price per kilogram for each bag.",
+      "2 kg bag: $38 \\div 2 = \\text{R}19$ per kg. 5 kg bag: $90 \\div 5 = \\text{R}18$ per kg.",
+      "The 5 kg bag is cheaper per kilogram."
+    ], "answer": "(a) 90 km/h  (b) The 5 kg bag (R18 per kg)" },
+    { "type": "formula", "latex": "\\text{speed} = \\frac{\\text{distance}}{\\text{time}} \\qquad \\text{distance} = \\text{speed} \\times \\text{time} \\qquad \\text{time} = \\frac{\\text{distance}}{\\text{speed}}", "caption": "The speed, distance and time formulae" },
+
+    { "type": "heading", "text": "Direct and inverse proportion" },
+    { "type": "definition", "term": "Direct proportion", "text": "Two quantities are in **direct proportion** if, when one is multiplied by a number, the other is multiplied by the same number. The more you buy, the more you pay. The ratio between them stays constant." },
+    { "type": "definition", "term": "Inverse (indirect) proportion", "text": "Two quantities are in **inverse proportion** if, when one is multiplied by a number, the other is **divided** by the same number. The more workers, the fewer days. Their product stays constant." },
+    { "type": "example", "title": "Worked example 4: direct proportion", "problem": "4 kg of apples cost R60. What do 7 kg cost?", "steps": [
+      "Find the cost of 1 kg: $60 \\div 4 = \\text{R}15$.",
+      "7 kg cost $7 \\times 15 = \\text{R}105$."
+    ], "answer": "R105" },
+    { "type": "example", "title": "Worked example 5: inverse proportion", "problem": "6 workers take 10 days to paint a school. How long would 4 workers take, working at the same rate?", "steps": [
+      "Fewer workers means more days, so this is inverse proportion.",
+      "Total work $= 6 \\times 10 = 60$ worker-days.",
+      "With 4 workers: $60 \\div 4 = 15$ days."
+    ], "answer": "15 days" },
+    { "type": "callout", "label": "Exam tip", "text": "Before calculating, ask: \"If one quantity goes up, does the other go up or down?\" Up and up means direct proportion (divide, then multiply). Up and down means inverse proportion (multiply to get the constant product, then divide)." },
+
+    { "type": "heading", "text": "Percentages, profit and loss" },
+    { "type": "paragraph", "text": "A percentage is a fraction out of 100. To find a percentage of an amount, multiply: $15\\%$ of R300 $= \\frac{15}{100} \\times 300 = \\text{R}45$. To write one amount as a percentage of another, divide and multiply by 100." },
+    { "type": "definition", "term": "Cost price and selling price", "text": "The **cost price** is what a trader pays for an item. The **selling price** is what the customer pays. If the selling price is higher, the trader makes a **profit**; if it is lower, the trader makes a **loss**." },
+    { "type": "formula", "latex": "\\text{percentage profit} = \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%", "caption": "Profit (or loss) is always a percentage of the cost price" },
+    { "type": "example", "title": "Worked example 6: profit", "problem": "A spaza shop owner buys a crate of cooldrinks for R250 and sells the cooldrinks for a total of R320. Calculate the profit and the percentage profit.", "steps": [
+      "Profit $= 320 - 250 = \\text{R}70$.",
+      "Percentage profit $= \\dfrac{70}{250} \\times 100\\% = 28\\%$."
+    ], "answer": "Profit R70, which is 28%" },
+
+    { "type": "heading", "text": "Discount and VAT" },
+    { "type": "paragraph", "text": "A **discount** is an amount taken off the marked price. **Value-added tax (VAT)** in South Africa is $15\\%$ and is added to the price of most goods and services." },
+    { "type": "example", "title": "Worked example 7: discount", "problem": "A jacket is marked R899. It is sold at a 20% discount. Calculate the sale price.", "steps": [
+      "Discount $= 20\\% \\times 899 = 0{,}2 \\times 899 = \\text{R}179{,}80$.",
+      "Sale price $= 899 - 179{,}80 = \\text{R}719{,}20$.",
+      "Shortcut: you pay $80\\%$, so $0{,}8 \\times 899 = \\text{R}719{,}20$."
+    ], "answer": "R719,20" },
+    { "type": "example", "title": "Worked example 8: VAT", "problem": "(a) A printer costs R400 excluding VAT. What is the price including VAT?\n(b) A pair of shoes costs R230 including VAT. What was the price before VAT?", "steps": [
+      "(a) VAT $= 15\\% \\times 400 = \\text{R}60$, so the price including VAT is $400 + 60 = \\text{R}460$. Shortcut: $400 \\times 1{,}15 = 460$.",
+      "(b) The price including VAT is $115\\%$ of the original price, so divide by $1{,}15$: $230 \\div 1{,}15 = \\text{R}200$."
+    ], "answer": "(a) R460  (b) R200" },
+    { "type": "callout", "label": "Common mistake", "text": "To remove VAT you may **not** subtract 15% of the VAT-inclusive price. $15\\%$ of R230 is R34,50, and $230 - 34{,}50 = \\text{R}195{,}50$, which is wrong. Divide by $1{,}15$ instead." },
+
+    { "type": "heading", "text": "Simple interest" },
+    { "type": "paragraph", "text": "When you invest or borrow money, **interest** is paid. With **simple interest**, the interest is calculated on the original amount (the **principal**) only, so you earn the same amount of interest every year." },
+    { "type": "formula", "latex": "\\text{SI} = P \\times i \\times n \\qquad A = P(1 + in)", "caption": "P = principal, i = interest rate per year as a decimal, n = number of years, A = final amount" },
+    { "type": "example", "title": "Worked example 9: simple interest", "problem": "Zanele invests R5 000 at 8% simple interest per year for 3 years. Calculate the interest and the final amount.", "steps": [
+      "$P = 5\\ 000$, $i = 0{,}08$, $n = 3$.",
+      "$\\text{SI} = 5\\ 000 \\times 0{,}08 \\times 3 = \\text{R}1\\ 200$.",
+      "$A = 5\\ 000 + 1\\ 200 = \\text{R}6\\ 200$."
+    ], "answer": "Interest R1 200; final amount R6 200" },
+
+    { "type": "heading", "text": "Hire purchase" },
+    { "type": "paragraph", "text": "**Hire purchase (HP)** lets you take an item home now and pay for it over time. You pay a **deposit** and then equal monthly **instalments**. You always pay more than the cash price, because interest is included in the instalments." },
+    { "type": "example", "title": "Worked example 10: hire purchase", "problem": "A TV has a cash price of R6 000. On hire purchase you pay a 10% deposit and then 12 monthly instalments of R520. How much more do you pay than the cash price?", "steps": [
+      "Deposit $= 10\\% \\times 6\\ 000 = \\text{R}600$.",
+      "Instalments $= 12 \\times 520 = \\text{R}6\\ 240$.",
+      "Total HP price $= 600 + 6\\ 240 = \\text{R}6\\ 840$.",
+      "Extra paid $= 6\\ 840 - 6\\ 000 = \\text{R}840$."
+    ], "answer": "R840 more than the cash price" },
+
+    { "type": "heading", "text": "Exchange rates" },
+    { "type": "paragraph", "text": "An **exchange rate** tells you how much one currency is worth in another. If $1$ US dollar $=$ R18,50, then to change dollars to rand you multiply by $18{,}50$, and to change rand to dollars you divide by $18{,}50$." },
+    { "type": "example", "title": "Worked example 11", "problem": "The exchange rate is US\\$1 = R18,50. (a) What does a US\\$40 game cost in rand? (b) How many dollars do you get for R1 000? Round to the nearest cent.", "steps": [
+      "(a) $40 \\times 18{,}50 = \\text{R}740$.",
+      "(b) $1\\ 000 \\div 18{,}50 = 54{,}054\\ldots \\approx$ US\\$54,05."
+    ], "answer": "(a) R740  (b) US\\$54,05" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "A ratio compares quantities in the same unit; simplify by dividing by the HCF. To share in a ratio, add the parts and find one part first.",
+      "A rate compares quantities in different units, such as km/h or R/kg. Use the price per unit to find the best buy.",
+      "Direct proportion: both quantities increase together (constant ratio). Inverse proportion: one increases as the other decreases (constant product).",
+      "Percentage profit or loss is calculated on the cost price.",
+      "Sale price $= (100\\% - \\text{discount}\\%)$ of the marked price. Add VAT by multiplying by $1{,}15$; remove VAT by dividing by $1{,}15$.",
+      "Simple interest: $\\text{SI} = Pin$ and $A = P(1 + in)$.",
+      "Hire purchase total = deposit + all instalments, which is more than the cash price."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "Simplify the ratio $45 : 60$.", "options": ["$9 : 12$", "$3 : 4$", "$4 : 3$", "$15 : 20$"], "answer": 1, "explanation": "The HCF of $45$ and $60$ is $15$: $45 \\div 15 = 3$ and $60 \\div 15 = 4$." },
+    { "id": "q2", "type": "numeric", "prompt": "Thabo and Lerato share R720 in the ratio $5 : 4$. How much does Thabo get?", "unit": "R", "answer": 400, "tolerance": 0, "explanation": "$5 + 4 = 9$ parts; one part $= 720 \\div 9 = \\text{R}80$; Thabo gets $5 \\times 80 = \\text{R}400$." },
+    { "id": "q3", "type": "numeric", "prompt": "A car travels 255 km in 3 hours. What is its average speed in km/h?", "unit": "km/h", "answer": 85, "tolerance": 0, "explanation": "Speed $= 255 \\div 3 = 85$ km/h." },
+    { "id": "q4", "type": "mcq", "prompt": "Which packet of mealie meal is the best buy?", "options": ["250 g for R13", "500 g for R24", "750 g for R33", "1 kg for R46"], "answer": 2, "explanation": "Compare the price per 100 g: R5,20; R4,80; R4,40; R4,60. The 750 g packet is cheapest per 100 g." },
+    { "id": "q5", "type": "truefalse", "prompt": "If 5 workers take 12 days to build a wall, then 10 workers working at the same rate will take 24 days.", "answer": false, "explanation": "This is inverse proportion: double the workers means half the time. $5 \\times 12 = 60$ worker-days, so 10 workers take $60 \\div 10 = 6$ days." },
+    { "id": "q6", "type": "numeric", "prompt": "Shoes are marked at R480. They are sold at a 25% discount. What is the sale price?", "unit": "R", "answer": 360, "tolerance": 0, "explanation": "You pay $75\\%$: $0{,}75 \\times 480 = \\text{R}360$." },
+    { "id": "q7", "type": "numeric", "prompt": "A cellphone costs R820 excluding VAT. Calculate the price including 15% VAT.", "unit": "R", "answer": 943, "tolerance": 0.01, "explanation": "$820 \\times 1{,}15 = \\text{R}943$." },
+    { "id": "q8", "type": "numeric", "prompt": "Calculate the simple interest earned on R3 000 invested at 7% per year for 4 years.", "unit": "R", "answer": 840, "tolerance": 0.01, "explanation": "$\\text{SI} = 3\\ 000 \\times 0{,}07 \\times 4 = \\text{R}840$." },
+    { "id": "q9", "type": "numeric", "prompt": "A vendor buys a hat for R40 and sells it for R50. Calculate the percentage profit.", "unit": "%", "answer": 25, "tolerance": 0, "explanation": "Profit $= \\text{R}10$; percentage profit $= \\frac{10}{40} \\times 100\\% = 25\\%$. Always divide by the cost price." },
+    { "id": "q10", "type": "match", "prompt": "Match each term with its meaning.", "marks": 5, "pairs": [
+      { "left": "Discount", "right": "An amount taken off the marked price" },
+      { "left": "VAT", "right": "A 15% tax added to most prices" },
+      { "left": "Principal", "right": "The amount invested or borrowed" },
+      { "left": "Deposit", "right": "The first payment on a hire purchase" },
+      { "left": "Exchange rate", "right": "The value of one currency in another" }
+    ], "explanation": "These are the key words of financial mathematics. Make sure you can use each one in a calculation." },
+    { "id": "q11", "type": "numeric", "prompt": "The exchange rate is €1 = R20. How many rand is €35?", "unit": "R", "answer": 700, "tolerance": 0, "explanation": "Euros to rand: multiply. $35 \\times 20 = \\text{R}700$." },
+    { "id": "q12", "type": "numeric", "prompt": "A school bag costs R575 including 15% VAT. What is the price excluding VAT?", "unit": "R", "answer": 500, "tolerance": 0.01, "explanation": "Divide by $1{,}15$: $575 \\div 1{,}15 = \\text{R}500$. (Subtracting 15% of R575 would be wrong.)" },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "A fridge has a cash price of R7 500. It can be bought on hire purchase with a 15% deposit and 18 monthly instalments of R450.\n(a) Calculate the deposit.  (1)\n(b) Calculate the total hire purchase price.  (2)\n(c) How much more than the cash price is paid?  (1)", "memo": "(a) $0{,}15 \\times 7\\ 500 = \\text{R}1\\ 125$ ✓ (1)\n(b) $18 \\times 450 = \\text{R}8\\ 100$ ✓; total $= 1\\ 125 + 8\\ 100 = \\text{R}9\\ 225$ ✓ (2)\n(c) $9\\ 225 - 7\\ 500 = \\text{R}1\\ 725$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "8 identical taps fill a water tank in 9 hours. How long would 6 of these taps take to fill the tank? State whether this is direct or inverse proportion.", "memo": "Inverse proportion (fewer taps, more time) ✓ (1)\n$8 \\times 9 = 72$ tap-hours ✓ (1)\n$72 \\div 6 = 12$ hours ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "A recipe for 6 people needs 450 g of mince and 3 onions. Mince costs R95 per kilogram.\n(a) How much mince and how many onions are needed for 10 people?  (2)\n(b) What will the mince for 10 people cost?  (2)", "memo": "(a) Mince: $450 \\div 6 \\times 10 = 750$ g ✓ (1); onions: $3 \\div 6 \\times 10 = 5$ ✓ (1)\n(b) $750\\ \\text{g} = 0{,}75\\ \\text{kg}$ ✓ (1); $0{,}75 \\times 95 = \\text{R}71{,}25$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 4, "prompt": "Sipho invests R8 000 at 6,5% simple interest per year.\n(a) How much interest does he earn in 5 years?  (2)\n(b) After how many years will his investment be worth R11 120?  (2)", "memo": "(a) $\\text{SI} = 8\\ 000 \\times 0{,}065 \\times 5$ ✓ $= \\text{R}2\\ 600$ ✓ (2)\n(b) Interest needed $= 11\\ 120 - 8\\ 000 = \\text{R}3\\ 120$; interest per year $= 8\\ 000 \\times 0{,}065 = \\text{R}520$ ✓ (1)\n$3\\ 120 \\div 520 = 6$ years ✓ (1)" }
+  ]
+}

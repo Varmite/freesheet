@@ -1,0 +1,54 @@
+{
+  "id": "trigonometry-two-dimensions",
+  "title": "Trigonometry: Problems in Two Dimensions",
+  "term": 3,
+  "summary": "Solve real-life problems with right-angled triangles, including angles of elevation and depression, and problems that need two triangles.",
+  "notes": [
+    { "type": "heading", "text": "Solving right-angled triangles" },
+    { "type": "paragraph", "text": "To **solve** a triangle means to find all unknown sides and angles. In a right-angled triangle, use the trigonometric ratios, the theorem of Pythagoras ($c^2 = a^2 + b^2$) and the angle sum ($180^\\circ$)." },
+    { "type": "list", "ordered": true, "items": [
+      "Draw a clear, labelled diagram.",
+      "Identify the right angle and the angle you are working with.",
+      "Label the sides opposite, adjacent and hypotenuse.",
+      "Choose the ratio that links the known and unknown values.",
+      "Solve, and round only at the end."
+    ] },
+    { "type": "heading", "text": "Angles of elevation and depression" },
+    { "type": "definition", "term": "Angle of elevation", "text": "The angle between the horizontal and the line of sight when you look **up** at an object." },
+    { "type": "definition", "term": "Angle of depression", "text": "The angle between the horizontal and the line of sight when you look **down** at an object." },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 180' font-family='sans-serif' font-size='11'><rect width='300' height='180' fill='white'/><line x1='20' y1='150' x2='280' y2='150' stroke='black' stroke-width='2'/><line x1='250' y1='150' x2='250' y2='40' stroke='black' stroke-width='3'/><line x1='40' y1='150' x2='250' y2='40' stroke='black'/><line x1='250' y1='40' x2='160' y2='40' stroke='black' stroke-dasharray='4 3'/><path d='M80,150 A40,40 0 0 0 76,131' fill='none' stroke='black'/><text x='84' y='143'>elevation</text><path d='M210,40 A40,40 0 0 0 214,59' fill='none' stroke='black'/><text x='160' y='60'>depression</text><text x='256' y='45'>top of tower</text><text x='20' y='168'>observer</text></svg>", "caption": "The angle of elevation from the observer equals the angle of depression from the top of the tower (alternate angles)" },
+    { "type": "callout", "label": "Remember", "text": "The angle of elevation from A to B is equal to the angle of depression from B to A, because they are **alternate angles** between parallel horizontal lines." },
+    { "type": "example", "title": "Worked example 1: elevation", "problem": "From a point 50 m from the foot of a building, the angle of elevation to the top is $38^\\circ$. How tall is the building? (Answer to one decimal place.)", "steps": [
+      "Opposite (height $h$) and adjacent (50 m) are involved, so use tangent.",
+      "$\\tan 38^\\circ = \\dfrac{h}{50}$",
+      "$h = 50\\tan 38^\\circ = 39{,}1$ m"
+    ], "answer": "About 39,1 m" },
+    { "type": "example", "title": "Worked example 2: depression", "problem": "A lighthouse keeper 60 m above sea level sees a boat at an angle of depression of $14^\\circ$. How far is the boat from the foot of the lighthouse?", "steps": [
+      "The angle of elevation from the boat is also $14^\\circ$ (alt ∠s).",
+      "$\\tan 14^\\circ = \\dfrac{60}{d}$",
+      "$d = \\dfrac{60}{\\tan 14^\\circ} = 240{,}6$ m"
+    ], "answer": "About 240,6 m" },
+    { "type": "heading", "text": "Problems with two triangles" },
+    { "type": "example", "title": "Worked example 3", "problem": "From point A on level ground the angle of elevation of the top T of a tower is $30^\\circ$. From point B, 40 m closer to the tower, the angle of elevation is $50^\\circ$. Find the height of the tower.", "steps": [
+      "Let the foot of the tower be F, height $h$ = TF and BF = $x$.",
+      "In △TBF: $\\tan 50^\\circ = \\dfrac{h}{x}$, so $x = \\dfrac{h}{\\tan 50^\\circ}$.",
+      "In △TAF: $\\tan 30^\\circ = \\dfrac{h}{x + 40}$, so $h = (x + 40)\\tan 30^\\circ$.",
+      "Substitute: $h = \\left(\\dfrac{h}{\\tan 50^\\circ} + 40\\right)\\tan 30^\\circ$",
+      "$h - \\dfrac{h\\tan 30^\\circ}{\\tan 50^\\circ} = 40\\tan 30^\\circ$, so $h(1 - 0{,}4845) = 23{,}094$",
+      "$h = 44{,}8$ m"
+    ], "answer": "About 44,8 m" },
+    { "type": "callout", "label": "Exam tip", "text": "Keep full calculator values in memory between steps; rounding too early can make your final answer wrong." }
+  ],
+  "questions": [
+    { "id": "elevation-def", "type": "mcq", "prompt": "The angle of elevation is measured…", "options": ["from the vertical, looking down", "from the horizontal, looking up", "from the horizontal, looking down", "between two vertical lines"], "answer": 1 },
+    { "id": "equal", "type": "truefalse", "prompt": "The angle of elevation from A to B equals the angle of depression from B to A.", "answer": true },
+    { "id": "tree", "type": "numeric", "prompt": "From 20 m away, the angle of elevation to the top of a tree is $42^\\circ$. Find the height of the tree, correct to one decimal place.", "answer": 18.0, "tolerance": 0.05, "unit": "m" },
+    { "id": "ramp", "type": "numeric", "prompt": "A ramp is 6 m long and rises 1,2 m. Find the angle the ramp makes with the ground, correct to one decimal place.", "answer": 11.5, "tolerance": 0.05, "unit": "°" },
+    { "id": "cliff", "type": "numeric", "prompt": "From the top of an 80 m cliff, the angle of depression to a boat is $25^\\circ$. How far is the boat from the foot of the cliff? Round to the nearest metre.", "answer": 172, "tolerance": 0.5, "unit": "m" },
+    { "id": "pythag", "type": "numeric", "prompt": "A rectangular field is 120 m by 50 m. How long is its diagonal?", "answer": 130, "tolerance": 0, "unit": "m" },
+    { "id": "kite", "type": "open", "marks": 3, "prompt": "A kite is flying on a 75 m string at an angle of elevation of $60^\\circ$. The string is held 1,5 m above the ground. How high is the kite above the ground?", "memo": "✓ $\\sin 60^\\circ = \\frac{h}{75}$ (1)\n✓ $h = 64{,}95$ m (1)\n✓ Height above ground $= 64{,}95 + 1{,}5 \\approx 66{,}5$ m (1)" },
+    { "id": "two-triangles", "type": "open", "marks": 4, "prompt": "Two observers are on opposite sides of a 30 m pole, in line with it. Their angles of elevation to the top are $35^\\circ$ and $50^\\circ$. How far apart are they? Round to one decimal place.", "memo": "✓ $d_1 = \\frac{30}{\\tan 35^\\circ} = 42{,}84$ m (1)\n✓ $d_2 = \\frac{30}{\\tan 50^\\circ} = 25{,}17$ m (1)\n✓ Total $= d_1 + d_2$ (1)\n✓ $\\approx 68{,}0$ m (1)" },
+    { "id": "steps", "type": "open", "marks": 2, "prompt": "Why should you avoid rounding answers in the middle of a multi-step trigonometry problem?", "memo": "✓ Rounding errors accumulate (1)\n✓ so the final answer can be inaccurate (1)" },
+    { "id": "ladder", "type": "numeric", "prompt": "A 7 m ladder makes an angle of $72^\\circ$ with the ground. How high up the wall does it reach? Round to two decimal places.", "answer": 6.66, "tolerance": 0.01, "unit": "m" }
+  ]
+}

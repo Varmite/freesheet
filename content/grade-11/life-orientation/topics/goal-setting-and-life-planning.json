@@ -1,0 +1,57 @@
+{
+  "id": "goal-setting-and-life-planning",
+  "title": "Goal Setting and Life Planning",
+  "term": 1,
+  "summary": "Setting SMART personal, academic and career goals, action plans and life plans, overcoming barriers, and the role of motivation, persistence and support networks.",
+  "notes": [
+    { "type": "heading", "text": "Why plan?" },
+    { "type": "paragraph", "text": "Grade 11 marks are often used for **provisional university admission**, so planning now is important. Goals give direction, motivation and a way to measure progress." },
+    { "type": "heading", "text": "SMART goals" },
+    { "type": "table", "headers": ["Letter", "Meaning", "Example"], "rows": [
+      ["S", "Specific", "Raise my Physical Sciences mark"],
+      ["M", "Measurable", "from 52% to 65%"],
+      ["A", "Achievable", "by doing extra practice and attending Saturday classes"],
+      ["R", "Realistic", "given my current workload"],
+      ["T", "Time-bound", "by the June examinations"]
+    ] },
+    { "type": "heading", "text": "Life planning" },
+    { "type": "list", "items": [
+      "**Personal goals**: health, relationships, character.",
+      "**Academic goals**: marks, subjects, study habits.",
+      "**Career goals**: qualifications, work experience, finances.",
+      "**Community goals**: volunteering, leadership."
+    ] },
+    { "type": "example", "title": "An action plan", "problem": "Goal: be accepted for a Diploma in IT at a university of technology for the year after matric.", "steps": [
+      "Research entry requirements (APS and minimum Mathematics mark) by March.",
+      "Improve Mathematics by 10% by June through weekly tutoring.",
+      "Apply for NSFAS and bursaries when applications open in Grade 12.",
+      "Gain experience: complete a free online coding course during the holidays."
+    ], "answer": "Each step has a deadline, resources and a way to measure success." },
+    { "type": "heading", "text": "Barriers and support" },
+    { "type": "table", "headers": ["Barrier", "Possible strategy"], "rows": [
+      ["Lack of money", "Bursaries, NSFAS, part-time work, free online resources"],
+      ["Lack of information", "Career centres, LO teacher, open days, websites"],
+      ["Low motivation", "Break goals into small steps, reward progress, find a mentor"],
+      ["Family responsibilities", "Time management, ask for support, community resources"],
+      ["Setbacks (failing a test)", "Learn from mistakes, adjust the plan, ask for help"]
+    ] },
+    { "type": "callout", "label": "Resilience", "text": "Successful people still face setbacks. **Resilience** (bouncing back), **persistence** and a strong **support network** of family, friends, mentors and teachers make the difference." }
+  ],
+  "questions": [
+    { "id": "smart-t", "type": "short", "prompt": "What does the T in SMART stand for?", "answers": ["time-bound", "time bound", "timely"] },
+    { "id": "provisional", "type": "truefalse", "prompt": "Grade 11 results are often used for provisional university admission.", "answer": true },
+    { "id": "types", "type": "match", "marks": 4, "prompt": "Classify each goal.", "pairs": [
+      { "left": "Run a 10 km race", "right": "Personal goal" },
+      { "left": "Pass Mathematics with 60%", "right": "Academic goal" },
+      { "left": "Qualify as an electrician", "right": "Career goal" },
+      { "left": "Tutor younger learners weekly", "right": "Community goal" }
+    ] },
+    { "id": "rewrite", "type": "open", "marks": 3, "prompt": "Rewrite the goal 'I want to do better at school' as a SMART goal.", "memo": "✓ Specific subject/target (1)\n✓ Measurable mark and method (1)\n✓ Time-bound deadline (1)" },
+    { "id": "barriers", "type": "open", "marks": 4, "prompt": "Name TWO barriers to achieving a career goal and suggest a strategy to overcome each.", "memo": "✓ Barrier 1 (1) ✓ strategy (1)\n✓ Barrier 2 (1) ✓ strategy (1)" },
+    { "id": "resilience", "type": "short", "prompt": "What is the ability to bounce back after setbacks called?", "answers": ["resilience"] },
+    { "id": "action", "type": "open", "marks": 3, "prompt": "What THREE elements should an action plan include?", "memo": "Any three (1 each): specific steps; deadlines; resources needed; people who can help; ways to measure progress" },
+    { "id": "support", "type": "open", "marks": 2, "prompt": "Why is a support network important when working towards long-term goals?", "memo": "✓ It provides encouragement and motivation (1)\n✓ and practical help, advice and information when facing setbacks (1)" },
+    { "id": "setback", "type": "open", "marks": 2, "prompt": "A learner fails a test after studying hard. Describe TWO constructive responses.", "memo": "Any two (1 each): analyse mistakes; ask the teacher for help; adjust study methods; set a new goal; avoid giving up" },
+    { "id": "mentor", "type": "mcq", "prompt": "A mentor is…", "options": ["a competitor", "an experienced person who guides and advises you", "a type of bursary", "a university course"], "answer": 1 }
+  ]
+}

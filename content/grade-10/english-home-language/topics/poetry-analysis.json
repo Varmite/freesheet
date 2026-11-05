@@ -1,0 +1,50 @@
+{
+  "id": "poetry-analysis",
+  "title": "Poetry: Figurative Language and Sound",
+  "term": 1,
+  "summary": "The building blocks of poetry: imagery, simile, metaphor, personification, hyperbole, sound devices, rhyme, rhythm and stanza form, applied to Wordsworth's 'I Wandered Lonely as a Cloud'.",
+  "notes": [
+    { "type": "heading", "text": "Figurative language" },
+    { "type": "table", "headers": ["Device", "Definition", "Example"], "rows": [
+      ["Simile", "Comparison using 'like' or 'as'", "'lonely as a cloud'"],
+      ["Metaphor", "Direct comparison: one thing IS another", "'Life is a journey'"],
+      ["Personification", "Human qualities given to non-human things", "'dancing in the breeze'"],
+      ["Hyperbole", "Deliberate exaggeration", "'Ten thousand saw I at a glance'"],
+      ["Symbol", "Something that stands for an idea", "A dove for peace"],
+      ["Imagery", "Language that appeals to the senses", "'golden daffodils'"]
+    ] },
+    { "type": "heading", "text": "Sound devices" },
+    { "type": "list", "items": [
+      "**Alliteration**: repeated initial consonant sounds: 'beside the lake, beneath the trees'.",
+      "**Assonance**: repeated vowel sounds: 'the l*o*nely r*o*ad'.",
+      "**Onomatopoeia**: words that imitate sounds: 'buzz', 'crash'.",
+      "**Rhyme scheme**: the pattern of end rhymes, labelled with letters (ABABCC).",
+      "**Rhythm**: the beat of the lines; **enjambment** runs a sentence over a line break; a **caesura** is a pause within a line."
+    ] },
+    { "type": "passage", "title": "I Wandered Lonely as a Cloud – William Wordsworth (1807; public domain)", "text": "I wandered lonely as a cloud\nThat floats on high o'er vales and hills,\nWhen all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.\n\nContinuous as the stars that shine\nAnd twinkle on the milky way,\nThey stretched in never-ending line\nAlong the margin of a bay:\nTen thousand saw I at a glance,\nTossing their heads in sprightly dance.\n\nThe waves beside them danced; but they\nOut-did the sparkling waves in glee:\nA poet could not but be gay,\nIn such a jocund company:\nI gazed—and gazed—but little thought\nWhat wealth the show to me had brought:\n\nFor oft, when on my couch I lie\nIn vacant or in pensive mood,\nThey flash upon that inward eye\nWhich is the bliss of solitude;\nAnd then my heart with pleasure fills,\nAnd dances with the daffodils." },
+    { "type": "heading", "text": "Notes on the poem" },
+    { "type": "list", "items": [
+      "**Form**: four six-line stanzas, rhyme scheme **ABABCC**, regular rhythm like a gentle dance.",
+      "**Stanzas 1–3**: the speaker, alone, sees a huge field of daffodils by a lake. They are personified as a joyful 'crowd' that dances.",
+      "**Stanza 4**: a shift in time to the present: later, at home, the memory ('that inward eye') brings him happiness.",
+      "**Theme**: the beauty of nature lifts the human spirit, and memories of it bring lasting joy. Solitude is transformed from loneliness into 'bliss'."
+    ] }
+  ],
+  "questions": [
+    { "id": "simile", "type": "mcq", "prompt": "Which line contains a simile?", "options": ["'A host, of golden daffodils'", "'I wandered lonely as a cloud'", "'Fluttering and dancing in the breeze'", "'They flash upon that inward eye'"], "answer": 1 },
+    { "id": "hyperbole", "type": "short", "prompt": "Name the figure of speech in 'Ten thousand saw I at a glance'.", "answers": ["hyperbole", "exaggeration"] },
+    { "id": "scheme", "type": "short", "prompt": "Give the rhyme scheme of each stanza using letters.", "answers": ["ababcc"] },
+    { "id": "stanza-lines", "type": "numeric", "prompt": "How many lines are there in each stanza?", "answer": 6, "tolerance": 0 },
+    { "id": "personify", "type": "truefalse", "prompt": "The daffodils are personified as dancers.", "answer": true },
+    { "id": "devices", "type": "match", "marks": 4, "prompt": "Match each device to its example.", "pairs": [
+      { "left": "Alliteration", "right": "'beside the lake, beneath the trees'" },
+      { "left": "Personification", "right": "'Tossing their heads in sprightly dance'" },
+      { "left": "Imagery of colour", "right": "'golden daffodils'" },
+      { "left": "Onomatopoeia", "right": "'The bees buzzed'" }
+    ] },
+    { "id": "crowd", "type": "open", "marks": 2, "prompt": "Why does the speaker call the daffodils 'a crowd'?", "memo": "✓ There are very many of them (1)\n✓ and it personifies them as lively company, contrasting with his loneliness (1)" },
+    { "id": "inward", "type": "open", "marks": 2, "prompt": "Explain 'that inward eye / Which is the bliss of solitude'.", "memo": "✓ The 'inward eye' is memory/imagination (1)\n✓ When he is alone, remembering the daffodils brings him great happiness (1)" },
+    { "id": "shift", "type": "open", "marks": 2, "prompt": "How does the final stanza differ from the first three?", "memo": "✓ It moves from the past (the walk) to the present (lying on his couch) (1)\n✓ It shows the lasting effect of the memory: his heart 'dances' (1)" },
+    { "id": "theme", "type": "open", "marks": 2, "prompt": "State the theme of the poem.", "memo": "✓ Nature's beauty brings joy (1)\n✓ and memories of it can comfort and uplift us later (1)" }
+  ]
+}

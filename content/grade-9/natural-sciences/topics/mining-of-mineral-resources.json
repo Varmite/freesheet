@@ -1,0 +1,61 @@
+{
+  "id": "mining-of-mineral-resources",
+  "title": "Mining of Mineral Resources",
+  "term": 4,
+  "summary": "South Africa's mineral resources, methods of mining, extracting and refining minerals, and the economic, social and environmental effects of mining.",
+  "notes": [
+    { "type": "heading", "text": "Minerals and ores" },
+    { "type": "definition", "term": "Mineral", "text": "A naturally occurring, solid, non-living substance with a definite chemical composition, found in the Earth's crust." },
+    { "type": "definition", "term": "Ore", "text": "Rock that contains enough of a valuable mineral to make it worth mining." },
+    { "type": "paragraph", "text": "South Africa is one of the world's richest countries in mineral resources. Minerals are **non-renewable**: once they are mined, they cannot be replaced." },
+    { "type": "table", "caption": "Important South African minerals", "headers": ["Mineral", "Where mined", "Main uses"], "rows": [
+      ["Gold", "Witwatersrand (Gauteng), Free State", "Jewellery, electronics, money reserves"],
+      ["Platinum", "Bushveld Complex (North West, Limpopo)", "Catalytic converters in cars, jewellery"],
+      ["Coal", "Mpumalanga, Limpopo", "Generating electricity, making steel, fuel"],
+      ["Diamonds", "Kimberley, Namaqualand coast", "Jewellery, cutting and drilling tools"],
+      ["Iron ore", "Northern Cape (Sishen)", "Making steel"],
+      ["Chrome and manganese", "Bushveld, Northern Cape", "Stainless steel and alloys"]
+    ] },
+    { "type": "heading", "text": "Methods of mining" },
+    { "type": "table", "headers": ["Method", "How it works", "Used for"], "rows": [
+      ["Open-cast (open-pit)", "Ore near the surface is dug out after removing the soil and rock above it, leaving a large pit", "Coal, iron ore, diamonds (the Big Hole in Kimberley)"],
+      ["Underground (shaft)", "Vertical shafts and horizontal tunnels reach deep ore bodies; some gold mines are over 3 km deep", "Gold, platinum, some coal"],
+      ["Alluvial", "Minerals are sieved from river gravels and beach sands", "Diamonds"],
+      ["Strip mining", "Long strips of overburden are removed and replaced after mining", "Coal"]
+    ] },
+    { "type": "heading", "text": "From ore to product" },
+    { "type": "list", "ordered": true, "items": [
+      "**Extraction**: ore is blasted and removed from the ground.",
+      "**Crushing and milling**: the ore is broken into small pieces or powder.",
+      "**Separation**: the mineral is separated from waste rock, for example with chemicals (cyanide is used to dissolve gold), flotation or magnets.",
+      "**Refining**: the metal is purified, often by heating to very high temperatures (smelting).",
+      "The waste rock is dumped as **mine dumps** and **tailings** (fine waste in slime dams)."
+    ] },
+    { "type": "heading", "text": "Effects of mining" },
+    { "type": "table", "headers": ["Positive effects", "Negative effects"], "rows": [
+      ["Creates jobs for hundreds of thousands of people", "Dangerous work: rock falls, underground fires, lung diseases such as silicosis and TB"],
+      ["Earns foreign exchange through exports", "Destroys habitats and scars the landscape"],
+      ["Raw materials for industries (steel, electricity)", "Acid mine drainage pollutes rivers and groundwater"],
+      ["Towns and infrastructure are built around mines", "Dust and toxic waste from dumps; air pollution from smelters"],
+      ["Taxes pay for government services", "Migrant labour separates families; towns may die when mines close"]
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "**Rehabilitation** means restoring land after mining: filling pits, replacing topsoil and replanting indigenous vegetation. South African law requires mining companies to plan and pay for rehabilitation." }
+  ],
+  "questions": [
+    { "id": "ore", "type": "short", "prompt": "What is rock that contains enough of a valuable mineral to be worth mining called?", "answers": ["ore", "an ore"] },
+    { "id": "renewable", "type": "truefalse", "prompt": "Minerals are renewable resources.", "answer": false },
+    { "id": "platinum", "type": "mcq", "prompt": "Platinum is mainly used in…", "options": ["catalytic converters", "electricity generation", "building bricks", "fertiliser"], "answer": 0 },
+    { "id": "big-hole", "type": "mcq", "prompt": "The Big Hole in Kimberley is an example of…", "options": ["underground mining", "alluvial mining", "open-pit mining", "strip mining"], "answer": 2 },
+    { "id": "coal-where", "type": "short", "prompt": "In which province is most of South Africa's coal mined?", "answers": ["mpumalanga"] },
+    { "id": "mineral-match", "type": "match", "marks": 4, "prompt": "Match each mineral to the place where it is mainly mined.", "pairs": [
+      { "left": "Gold", "right": "Witwatersrand" },
+      { "left": "Iron ore", "right": "Sishen" },
+      { "left": "Diamonds", "right": "Kimberley" },
+      { "left": "Platinum", "right": "Bushveld Complex" }
+    ] },
+    { "id": "drainage", "type": "open", "marks": 2, "prompt": "What is acid mine drainage and why is it a problem?", "memo": "✓ Water flowing through old mines and dumps becomes acidic and carries dissolved metals (1)\n✓ It pollutes rivers and groundwater, harming plants, animals and people who use the water (1)" },
+    { "id": "pros-cons", "type": "open", "marks": 4, "prompt": "Discuss TWO positive and TWO negative effects of mining on South Africa.", "memo": "Positive (1 each): jobs; exports/foreign income; raw materials; infrastructure; tax revenue\nNegative (1 each): dangerous work and lung disease; habitat destruction; water pollution; dust and dumps; migrant labour" },
+    { "id": "rehab", "type": "open", "marks": 2, "prompt": "Describe how mined land can be rehabilitated.", "memo": "Any two (1 each): fill in pits and level the land; replace topsoil; replant indigenous plants; clean up waste dumps and treat polluted water" },
+    { "id": "steps", "type": "open", "marks": 3, "prompt": "Name the steps, in order, by which a metal is obtained from its ore.", "memo": "✓ Extraction/mining (1)\n✓ Crushing and separating the mineral from waste rock (1)\n✓ Refining/smelting to purify the metal (1)" }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "drama",
+  "title": "Drama: Elements and Techniques",
+  "term": 3,
+  "summary": "How drama works: acts and scenes, stage directions, dialogue, monologue, soliloquy, aside, dramatic irony, foil and tragedy, with an extract from Shakespeare's Romeo and Juliet.",
+  "notes": [
+    { "type": "heading", "text": "Drama terms" },
+    { "type": "table", "headers": ["Term", "Meaning"], "rows": [
+      ["Act and scene", "Major and minor divisions of a play"],
+      ["Stage directions", "Instructions in italics or brackets for actors and staging"],
+      ["Dialogue", "Conversation between characters"],
+      ["Monologue", "A long speech by one character to others"],
+      ["Soliloquy", "A character alone on stage speaks private thoughts aloud"],
+      ["Aside", "A brief comment to the audience that other characters do not hear"],
+      ["Dramatic irony", "The audience knows something a character does not"],
+      ["Foil", "A character who contrasts with another, highlighting their traits"],
+      ["Comic relief", "A humorous scene that eases tension"]
+    ] },
+    { "type": "heading", "text": "Tragedy" },
+    { "type": "paragraph", "text": "In a **tragedy**, a central character (the **tragic hero**) suffers a downfall, often because of a **fatal flaw** (such as pride or impulsiveness), combined with fate or circumstance. The ending usually involves death and leaves the audience with a sense of loss and insight." },
+    { "type": "heading", "text": "Romeo and Juliet: background" },
+    { "type": "paragraph", "text": "Shakespeare's *Romeo and Juliet* (about 1595) is set in **Verona**. Romeo (a **Montague**) and Juliet (a **Capulet**) belong to feuding families. They fall in love, marry secretly, and die through a chain of hasty decisions and misunderstandings. The **Prologue** tells the audience from the start that they are 'star-cross'd lovers' who will die, which creates **dramatic irony**." },
+    { "type": "passage", "title": "Extract: Act 2, Scene 2 (the balcony scene; public domain)", "text": "JULIET: O Romeo, Romeo! wherefore art thou Romeo?\nDeny thy father and refuse thy name;\nOr, if thou wilt not, be but sworn my love,\nAnd I'll no longer be a Capulet.\n\nROMEO [Aside]: Shall I hear more, or shall I speak at this?\n\nJULIET: 'Tis but thy name that is my enemy;\nThou art thyself, though not a Montague.\n…\nWhat's in a name? that which we call a rose\nBy any other name would smell as sweet." },
+    { "type": "list", "items": [
+      "'**Wherefore**' means **why**, not where: Juliet asks why Romeo must be a Montague.",
+      "Romeo's line is an **aside**: Juliet does not know he is listening, which also creates dramatic irony.",
+      "The **rose metaphor** argues that names (family identity) do not change a person's true nature."
+    ] }
+  ],
+  "questions": [
+    { "id": "setting", "type": "short", "prompt": "In which city is Romeo and Juliet set?", "answers": ["verona"] },
+    { "id": "wherefore", "type": "mcq", "prompt": "In 'wherefore art thou Romeo?', 'wherefore' means…", "options": ["where", "why", "when", "how"], "answer": 1 },
+    { "id": "family", "type": "mcq", "prompt": "To which family does Juliet belong?", "options": ["Montague", "Capulet", "Verona", "Mercutio"], "answer": 1 },
+    { "id": "aside", "type": "truefalse", "prompt": "An aside is heard by the audience but not by other characters on stage.", "answer": true },
+    { "id": "soliloquy", "type": "short", "prompt": "What is a speech by a character alone on stage revealing private thoughts called?", "answers": ["soliloquy", "a soliloquy"] },
+    { "id": "terms", "type": "match", "marks": 4, "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Dramatic irony", "right": "The audience knows more than a character" },
+      { "left": "Foil", "right": "A contrasting character" },
+      { "left": "Stage directions", "right": "Instructions for actors and staging" },
+      { "left": "Comic relief", "right": "Humour that eases tension" }
+    ] },
+    { "id": "rose", "type": "open", "marks": 3, "prompt": "Explain the meaning of 'that which we call a rose / By any other name would smell as sweet'.", "memo": "✓ A rose would still be a rose if given another name (1)\n✓ Similarly, Romeo's name (Montague) does not change who he is (1)\n✓ Juliet argues that the family feud should not matter to their love (1)" },
+    { "id": "irony", "type": "open", "marks": 2, "prompt": "How does the Prologue create dramatic irony throughout the play?", "memo": "✓ It tells the audience the lovers will die (1)\n✓ so the audience watches their hopeful plans knowing they will end in tragedy (1)" },
+    { "id": "romeo-aside", "type": "open", "marks": 2, "prompt": "What does Romeo's aside reveal about his state of mind?", "memo": "✓ He is torn/uncertain whether to reveal himself (1)\n✓ and eager to hear more of Juliet's feelings (1)" },
+    { "id": "flaw", "type": "open", "marks": 2, "prompt": "Suggest a fatal flaw shared by Romeo and Juliet, and explain it.", "memo": "✓ Impulsiveness/haste (1)\n✓ e.g. they marry within a day of meeting, and act rashly at the end (1)" }
+  ]
+}

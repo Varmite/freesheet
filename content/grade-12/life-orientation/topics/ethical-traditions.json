@@ -1,0 +1,47 @@
+{
+  "id": "ethical-traditions",
+  "title": "Ethical Traditions and Religious Laws",
+  "term": 3,
+  "summary": "Ethical traditions and religious laws in South Africa, how they guide moral decisions, examples of ethical dilemmas, and the relationship between religious law, customary law and the Constitution.",
+  "notes": [
+    { "type": "heading", "text": "Ethics and morality" },
+    { "type": "definition", "term": "Ethics", "text": "Principles that help us decide what is right and wrong. Ethical traditions come from religions, cultures and philosophies." },
+    { "type": "heading", "text": "Ethical traditions" },
+    { "type": "table", "headers": ["Tradition", "Guiding ideas"], "rows": [
+      ["Christian ethics", "Love God and your neighbour; the Ten Commandments; forgiveness"],
+      ["Islamic ethics and Sharia", "Guidance from the Qur'an and Hadith on worship, family, business and charity (zakat)"],
+      ["Jewish law (Halakha)", "The Torah's commandments, e.g. honesty, Sabbath observance, dietary laws"],
+      ["Hindu ethics (dharma)", "Duty, non-violence (ahimsa), karma"],
+      ["African ethics (ubuntu)", "Respect for community, elders and ancestors; restoring relationships"],
+      ["Secular ethics", "Reason, human rights, fairness and the well-being of others"]
+    ] },
+    { "type": "callout", "label": "Shared values", "text": "Most traditions share core values: **honesty, respect for life, justice, compassion and care for the vulnerable**." },
+    { "type": "heading", "text": "Religious and customary law and the Constitution" },
+    { "type": "paragraph", "text": "South Africa recognises **customary law** and religious marriages, but the **Constitution is supreme**. Any law or practice that conflicts with the Bill of Rights (e.g. one that unfairly discriminates against women) is invalid. For example, the Constitutional Court has ruled that women and girls may inherit under customary law." },
+    { "type": "heading", "text": "Ethical dilemmas" },
+    { "type": "paragraph", "text": "An **ethical dilemma** is a situation where you must choose between two or more options, each involving a moral conflict." },
+    { "type": "example", "title": "Working through a dilemma", "problem": "Your best friend asks you to give them your exam answers. What should you do?", "steps": [
+      "Identify the conflict: loyalty to a friend vs honesty and fairness to others.",
+      "Consider consequences: both of you could be disqualified; trust is lost.",
+      "Consult your values and traditions: most value honesty and justice.",
+      "Decide and act: refuse, but offer to help your friend study."
+    ], "answer": "Choose the option that is honest and fair, and support your friend in another way." }
+  ],
+  "questions": [
+    { "id": "ethics", "type": "open", "marks": 2, "prompt": "Define ethics.", "memo": "✓ Principles (1)\n✓ that help us decide what is right and wrong (1)" },
+    { "id": "zakat", "type": "mcq", "prompt": "Zakat, giving to the poor, is an obligation in…", "options": ["Hinduism", "Islam", "Judaism", "Christianity"], "answer": 1 },
+    { "id": "ahimsa", "type": "short", "prompt": "What is the Hindu principle of non-violence called?", "answers": ["ahimsa"] },
+    { "id": "supreme", "type": "truefalse", "prompt": "Customary or religious law overrides the Constitution if they conflict.", "answer": false },
+    { "id": "traditions", "type": "match", "marks": 4, "prompt": "Match each tradition to a guiding idea.", "pairs": [
+      { "left": "Ubuntu", "right": "A person is a person through other people" },
+      { "left": "Halakha", "right": "Jewish law based on the Torah" },
+      { "left": "Dharma", "right": "Duty in Hindu ethics" },
+      { "left": "Secular ethics", "right": "Reason and human rights" }
+    ] },
+    { "id": "shared", "type": "open", "marks": 3, "prompt": "Name THREE values shared by most ethical traditions.", "memo": "Any three (1 each): honesty; respect for life; justice; compassion; care for the vulnerable; respect for others" },
+    { "id": "dilemma", "type": "open", "marks": 2, "prompt": "What is an ethical dilemma?", "memo": "✓ A situation where you must choose between options (1)\n✓ each involving a conflict of moral values (1)" },
+    { "id": "solve", "type": "open", "marks": 4, "prompt": "You find a wallet with R2 000 and an ID. Describe how you would work through this dilemma using FOUR steps.", "memo": "✓ Identify the conflict (temptation vs honesty) (1)\n✓ Consider consequences for you and the owner (1)\n✓ Consider your values/traditions (1)\n✓ Decide and act: return it via the police or contact the owner (1)" },
+    { "id": "inherit", "type": "open", "marks": 2, "prompt": "Why did the Constitutional Court allow women to inherit under customary law?", "memo": "✓ Excluding women was unfair discrimination based on gender (1)\n✓ which violates the right to equality in the Bill of Rights (1)" },
+    { "id": "ten", "type": "short", "prompt": "Which set of rules from the Bible guides Christian and Jewish ethics? (two words: the Ten …)", "answers": ["ten commandments", "commandments", "the ten commandments"] }
+  ]
+}

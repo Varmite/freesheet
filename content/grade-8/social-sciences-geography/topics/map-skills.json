@@ -1,0 +1,65 @@
+{
+  "id": "map-skills",
+  "title": "Map Skills: Scale, Direction and Topographic Maps",
+  "term": 1,
+  "summary": "The three types of scale, measuring and calculating distance, compass directions and bearings, map symbols, and showing height on topographic maps.",
+  "notes": [
+    { "type": "heading", "text": "Scale" },
+    { "type": "paragraph", "text": "**Scale** tells us how much smaller the map is than the real area. It shows the relationship between a distance on the map and the same distance on the ground." },
+    { "type": "table", "caption": "Three ways of showing scale", "headers": ["Type", "Example", "Meaning"], "rows": [
+      ["Word scale", "1 cm represents 500 m", "Written in words"],
+      ["Ratio (number) scale", "1 : 50 000", "1 unit on the map = 50 000 of the same units on the ground"],
+      ["Line (linear) scale", "A ruled line divided into kilometres", "Measure on the map and compare with the line"]
+    ] },
+    { "type": "example", "title": "Converting a ratio scale", "problem": "Write the scale 1 : 50 000 as a word scale in kilometres.", "steps": [
+      "1 cm on the map = 50 000 cm on the ground.",
+      "50 000 cm ÷ 100 = 500 m",
+      "500 m ÷ 1 000 = 0,5 km"
+    ], "answer": "1 cm represents 0,5 km" },
+    { "type": "example", "title": "Calculating real distance", "problem": "On a 1 : 50 000 map, two farms are 6,4 cm apart. What is the real distance?", "steps": [
+      "Real distance = map distance × scale",
+      "= 6,4 cm × 0,5 km",
+      "= 3,2 km"
+    ], "answer": "3,2 km" },
+    { "type": "callout", "label": "Remember", "text": "**Large-scale** maps (e.g. 1 : 10 000) show a small area in a lot of detail, like a town plan. **Small-scale** maps (e.g. 1 : 10 000 000) show a large area with little detail, like a map of Africa. To measure a curved road or river, lay a piece of string along it, then measure the string." },
+    { "type": "heading", "text": "Direction" },
+    { "type": "paragraph", "text": "There are **16 compass directions**: the four cardinal points (N, E, S, W), the four intermediate points (NE, SE, SW, NW) and eight more (NNE, ENE, ESE, SSE, SSW, WSW, WNW, NNW)." },
+    { "type": "definition", "term": "Bearing", "text": "The angle measured **clockwise from true north** to a line joining two points. Bearings are always written with three digits, from 000° to 360°, e.g. east = 090°." },
+    { "type": "table", "headers": ["Direction", "Bearing"], "rows": [
+      ["North", "000° or 360°"],
+      ["North-east", "045°"],
+      ["East", "090°"],
+      ["South-east", "135°"],
+      ["South", "180°"],
+      ["South-west", "225°"],
+      ["West", "270°"],
+      ["North-west", "315°"]
+    ] },
+    { "type": "heading", "text": "Symbols and the key" },
+    { "type": "paragraph", "text": "Maps use **symbols**, colours and abbreviations to show features. These are explained in the **key** (legend). On South African topographic maps, for example: blue for water features, green for cultivated land and orchards, brown for contour lines, red or black for roads, and black for buildings and railways." },
+    { "type": "heading", "text": "Showing height" },
+    { "type": "list", "items": [
+      "**Contour lines**: brown lines joining places of the same height above sea level. Lines close together show a **steep** slope; lines far apart show a **gentle** slope.",
+      "**Spot heights**: a dot with a number showing the exact height (e.g. • 1 425).",
+      "**Trigonometrical stations**: a triangle with a number, marking an accurately surveyed point, usually on a hilltop.",
+      "**Contour interval**: the vertical difference between two neighbouring contour lines, usually 20 m on 1 : 50 000 maps."
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 150\" font-family=\"sans-serif\" font-size=\"10\" fill=\"none\" stroke=\"#8b5a2b\"><ellipse cx=\"110\" cy=\"75\" rx=\"95\" ry=\"60\"/><ellipse cx=\"95\" cy=\"75\" rx=\"62\" ry=\"42\"/><ellipse cx=\"80\" cy=\"75\" rx=\"35\" ry=\"25\"/><ellipse cx=\"72\" cy=\"75\" rx=\"12\" ry=\"9\"/><g fill=\"black\" stroke=\"none\"><text x=\"190\" y=\"78\">1 000</text><text x=\"140\" y=\"78\">1 020</text><text x=\"104\" y=\"78\">1 040</text><text x=\"60\" y=\"60\">1 060</text><text x=\"215\" y=\"30\">gentle slope (east):</text><text x=\"215\" y=\"42\">lines far apart</text><text x=\"215\" y=\"120\">steep slope (west):</text><text x=\"215\" y=\"132\">lines close together</text></g></svg>", "caption": "Contour lines around a hill with a 20 m contour interval" }
+  ],
+  "questions": [
+    { "id": "ratio", "type": "mcq", "prompt": "Which type of scale is 1 : 50 000?", "options": ["Word scale", "Line scale", "Ratio scale", "Bearing"], "answer": 2 },
+    { "id": "distance", "type": "numeric", "prompt": "On a 1 : 50 000 map, a road is 8 cm long. What is its real length in km?", "answer": 4, "tolerance": 0, "unit": "km" },
+    { "id": "convert", "type": "numeric", "prompt": "On a 1 : 250 000 map, 1 cm represents how many kilometres?", "answer": 2.5, "tolerance": 0.01, "unit": "km" },
+    { "id": "bearing-west", "type": "numeric", "prompt": "What is the bearing of due west?", "answer": 270, "tolerance": 0, "unit": "°" },
+    { "id": "large-scale", "type": "truefalse", "prompt": "A large-scale map shows a small area in great detail.", "answer": true },
+    { "id": "steep", "type": "mcq", "prompt": "Contour lines that are very close together show…", "options": ["a gentle slope", "a steep slope", "flat land", "a river"], "answer": 1 },
+    { "id": "height", "type": "match", "marks": 3, "prompt": "Match each method of showing height to its description.", "pairs": [
+      { "left": "Contour line", "right": "Joins places of equal height" },
+      { "left": "Spot height", "right": "Dot with the exact height" },
+      { "left": "Trigonometrical station", "right": "Triangle marking a surveyed point" }
+    ] },
+    { "id": "key", "type": "short", "prompt": "What is the part of a map that explains its symbols called? (one word)", "answers": ["key", "legend"] },
+    { "id": "bearing-def", "type": "open", "marks": 2, "prompt": "Define a bearing.", "memo": "✓ An angle measured clockwise (1)\n✓ from true north to the line joining two points (1)" },
+    { "id": "curved", "type": "open", "marks": 2, "prompt": "Explain how you would measure the length of a winding river on a map.", "memo": "✓ Lay a piece of string along the river, following its bends (1)\n✓ Straighten the string, measure it with a ruler and use the scale to convert to real distance (1)" }
+  ]
+}

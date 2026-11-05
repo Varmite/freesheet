@@ -1,0 +1,59 @@
+{
+  "id": "geographic-information-systems",
+  "title": "Geographic Information Systems (GIS)",
+  "term": 1,
+  "summary": "What GIS is, its components, spatial and attribute data, layers, remote sensing, resolution, and how GIS is used to solve real problems.",
+  "notes": [
+    { "type": "heading", "text": "What is GIS?" },
+    { "type": "definition", "term": "Geographic Information System (GIS)", "text": "A computer-based system that captures, stores, analyses, manages and displays data that is linked to locations on the Earth's surface." },
+    { "type": "list", "items": [
+      "**Hardware**: computers, GPS devices, scanners, printers.",
+      "**Software**: programs that analyse and display the data (e.g. QGIS, ArcGIS, Google Earth).",
+      "**Data**: the information that is analysed.",
+      "**People**: trained users who ask questions and interpret the results.",
+      "**Methods**: the procedures used to collect and analyse data."
+    ] },
+    { "type": "heading", "text": "Types of data" },
+    { "type": "table", "headers": ["Type", "Meaning", "Example"], "rows": [
+      ["Spatial data", "WHERE something is: its location", "The coordinates of a school, the route of a river"],
+      ["Attribute data", "WHAT it is like: information about the feature", "The school's name, number of learners, number of teachers"]
+    ] },
+    { "type": "table", "caption": "Spatial data is shown as", "headers": ["Feature type", "Represents", "Example"], "rows": [
+      ["Point", "A single location", "A clinic, a borehole, a trig station"],
+      ["Line", "Something long and narrow", "A road, a river, a power line"],
+      ["Polygon (area)", "An area with a boundary", "A dam, a farm, a suburb, a province"]
+    ] },
+    { "type": "heading", "text": "Layers" },
+    { "type": "paragraph", "text": "In a GIS, different sets of data are stored as separate **layers**, for example roads, rivers, buildings, land use and population. Layers can be switched on and off and placed on top of each other (**overlay**) to show relationships, e.g. which houses lie inside a flood-risk area." },
+    { "type": "definition", "term": "Buffering", "text": "Drawing a zone of a set distance around a feature, e.g. a 100 m buffer along a river where no building is allowed." },
+    { "type": "heading", "text": "Remote sensing" },
+    { "type": "definition", "term": "Remote sensing", "text": "Collecting information about the Earth from a distance, using satellites, aircraft or drones, without being in contact with the area." },
+    { "type": "definition", "term": "Resolution", "text": "The smallest feature that can be seen on an image. High resolution shows small details such as individual cars; low resolution shows only large features." },
+    { "type": "heading", "text": "Uses of GIS" },
+    { "type": "list", "items": [
+      "**Disaster management**: mapping flood or fire risk and planning evacuation routes.",
+      "**Health**: mapping the spread of diseases such as cholera or COVID-19 to plan clinics.",
+      "**Town planning**: choosing sites for schools, clinics and housing.",
+      "**Farming**: monitoring crop health and drought from satellite images.",
+      "**Conservation**: tracking rhino or elephant movements to fight poaching.",
+      "**Navigation**: GPS and map apps for finding routes and delivery services."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "If asked whether data is spatial or attribute: if it tells you **where**, it is spatial; if it describes **what** the feature is like, it is attribute data." }
+  ],
+  "questions": [
+    { "id": "gis", "type": "short", "prompt": "What does GIS stand for?", "answers": ["geographic information system", "geographical information system", "geographic information systems", "geographical information systems"] },
+    { "id": "attribute", "type": "mcq", "prompt": "The number of beds in a hospital is an example of…", "options": ["spatial data", "attribute data", "a buffer", "remote sensing"], "answer": 1 },
+    { "id": "line", "type": "mcq", "prompt": "In a GIS, a river is usually shown as a…", "options": ["point", "line", "polygon", "pixel"], "answer": 1 },
+    { "id": "remote", "type": "short", "prompt": "What is collecting information about the Earth from satellites called?", "answers": ["remote sensing"] },
+    { "id": "resolution", "type": "truefalse", "prompt": "A high-resolution image shows more detail than a low-resolution image.", "answer": true },
+    { "id": "features", "type": "match", "marks": 3, "prompt": "Match each feature to how it is shown in a GIS.", "pairs": [
+      { "left": "A borehole", "right": "Point" },
+      { "left": "A railway", "right": "Line" },
+      { "left": "A municipal boundary", "right": "Polygon" }
+    ] },
+    { "id": "layers", "type": "open", "marks": 2, "prompt": "What are layers in a GIS and why are they useful?", "memo": "✓ Separate sets of data (e.g. roads, rivers, buildings) stored one above another (1)\n✓ They can be overlaid or switched off to compare and see relationships (1)" },
+    { "id": "buffer", "type": "open", "marks": 2, "prompt": "Explain what a buffer is, with an example.", "memo": "✓ A zone of a set distance drawn around a feature (1)\n✓ e.g. 100 m along a river where no building is allowed / 1 km around a factory (1)" },
+    { "id": "uses", "type": "open", "marks": 3, "prompt": "Explain THREE ways GIS can help a municipality.", "memo": "Any three (1 each): disaster risk/flood mapping; planning sites for schools and clinics; managing water and electricity networks; mapping crime; tracking disease; land-use planning" },
+    { "id": "components", "type": "open", "marks": 2, "prompt": "Name FOUR components of a GIS.", "memo": "✓✓ Any four (½ each, round up): hardware, software, data, people, methods" }
+  ]
+}

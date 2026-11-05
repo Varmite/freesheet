@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "grade": 9,
+  "id": "social-sciences-geography",
+  "name": "Social Sciences: Geography",
+  "description": "CAPS Grade 9 Geography: map calculations, topographic and orthophoto maps, GIS, resource use and sustainability, development and quality of life, and the surface forces that shape the Earth.",
+  "topics": [
+    { "id": "map-calculations", "title": "Map Skills: Calculations", "term": 1 },
+    { "id": "topographic-and-orthophoto-maps", "title": "Topographic and Orthophoto Maps", "term": 1 },
+    { "id": "geographic-information-systems", "title": "Geographic Information Systems (GIS)", "term": 1 },
+    { "id": "resource-use-and-sustainability", "title": "Resource Use and Sustainability", "term": 2 },
+    { "id": "development-and-quality-of-life", "title": "Development and Quality of Life", "term": 3 },
+    { "id": "development-strategies", "title": "Development Issues and Strategies", "term": 3 },
+    { "id": "weathering-and-erosion", "title": "Surface Forces: Weathering and Erosion", "term": 4 },
+    { "id": "landforms-and-mass-movement", "title": "Landforms, Mass Movement and Soil Erosion", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
+  ]
+}

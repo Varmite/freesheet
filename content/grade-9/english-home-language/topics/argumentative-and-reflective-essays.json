@@ -1,0 +1,55 @@
+{
+  "id": "argumentative-and-reflective-essays",
+  "title": "Argumentative, Discursive and Reflective Essays",
+  "term": 1,
+  "summary": "The differences between argumentative, discursive and reflective essays, structuring an argument with evidence, linking words, counter-arguments, and writing a reflective essay.",
+  "notes": [
+    { "type": "heading", "text": "Three types of essay" },
+    { "type": "table", "headers": ["Type", "Purpose", "Viewpoint", "Example topic"], "rows": [
+      ["Argumentative", "Persuade the reader to agree with ONE side", "One-sided; your opinion is clear throughout", "'School uniforms should be abolished.'"],
+      ["Discursive", "Discuss BOTH sides fairly before reaching a balanced conclusion", "Balanced; opinion only (if at all) in the conclusion", "'Social media: friend or foe?'"],
+      ["Reflective", "Think about a personal experience, feeling or idea and what you learned from it", "Personal, thoughtful, first person", "'A lesson I learned the hard way'"]
+    ] },
+    { "type": "heading", "text": "Structure of an argumentative essay" },
+    { "type": "list", "ordered": true, "items": [
+      "**Introduction**: introduce the topic and state your **thesis** (main position) clearly.",
+      "**Body paragraphs** (usually three): each paragraph makes **one point**, starting with a **topic sentence**, supported by **evidence** (facts, statistics, examples, expert opinion) and explanation.",
+      "**Counter-argument and rebuttal**: acknowledge an opposing view and show why it is weaker.",
+      "**Conclusion**: restate your position in new words and end with a strong final thought or call to action."
+    ] },
+    { "type": "callout", "label": "Remember", "text": "A useful pattern for body paragraphs is **PEEL**: **P**oint, **E**vidence, **E**xplanation, **L**ink (back to your thesis)." },
+    { "type": "heading", "text": "Linking words (discourse markers)" },
+    { "type": "table", "headers": ["Purpose", "Linking words"], "rows": [
+      ["Adding a point", "furthermore, moreover, in addition, also"],
+      ["Contrasting", "however, on the other hand, nevertheless, although"],
+      ["Giving examples", "for example, for instance, such as"],
+      ["Showing cause and effect", "therefore, as a result, consequently, because"],
+      ["Concluding", "in conclusion, to sum up, ultimately"]
+    ] },
+    { "type": "passage", "title": "Example argumentative paragraph (original)", "text": "Firstly, a longer school day would leave learners exhausted rather than educated. Research on adolescent sleep shows that teenagers already struggle to get the eight to ten hours they need. Adding another hour of lessons would mean less time for homework, chores and rest, so learners would arrive at school even more tired. Therefore, extending the school day is likely to harm, not help, learners' results." },
+    { "type": "heading", "text": "The reflective essay" },
+    { "type": "list", "items": [
+      "Written in the **first person**, often in the past tense for events and present tense for reflections.",
+      "Describes an experience, then **reflects** on it: How did I feel? Why? What did I learn? How have I changed?",
+      "Honest, thoughtful tone; may use figurative language.",
+      "The focus is on **insight**, not just on telling a story."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Grade 9 essays are usually **300 to 350 words**. Include a plan, give the essay a title, and make sure each paragraph has a clear focus." }
+  ],
+  "questions": [
+    { "id": "types", "type": "match", "marks": 3, "prompt": "Match each essay type to its purpose.", "pairs": [
+      { "left": "Argumentative", "right": "Persuade the reader to accept one side" },
+      { "left": "Discursive", "right": "Present both sides in a balanced way" },
+      { "left": "Reflective", "right": "Explore a personal experience and what you learned" }
+    ] },
+    { "id": "thesis", "type": "short", "prompt": "What is the statement of your main position in an argumentative essay called?", "answers": ["thesis", "thesis statement", "the thesis"] },
+    { "id": "peel", "type": "short", "prompt": "In PEEL, what does the first E stand for?", "answers": ["evidence"] },
+    { "id": "contrast", "type": "mcq", "prompt": "Which linking word shows contrast?", "options": ["Furthermore", "Therefore", "However", "For example"], "answer": 2 },
+    { "id": "counter", "type": "open", "marks": 2, "prompt": "Why should an argumentative essay include a counter-argument?", "memo": "✓ It shows you understand the opposing view (1)\n✓ and by rebutting it you make your own argument stronger and more convincing (1)" },
+    { "id": "discursive-view", "type": "truefalse", "prompt": "In a discursive essay, your personal opinion should dominate every paragraph.", "answer": false },
+    { "id": "topic-sentence", "type": "open", "marks": 1, "prompt": "Quote the topic sentence of the example argumentative paragraph.", "memo": "✓ 'Firstly, a longer school day would leave learners exhausted rather than educated.' (1)" },
+    { "id": "evidence", "type": "open", "marks": 2, "prompt": "What evidence is used in the example paragraph and why is it effective?", "memo": "✓ Research on adolescent sleep / teenagers need 8 to 10 hours (1)\n✓ It is factual and supports the point, making it more convincing than opinion alone (1)" },
+    { "id": "write-intro", "type": "open", "marks": 3, "prompt": "Write an introduction for an argumentative essay on 'Learners should be allowed to use cellphones in class.'", "memo": "✓ Introduces the topic (1)\n✓ Clear thesis stating one side (1)\n✓ Engaging opening / outline of arguments; formal register (1)" },
+    { "id": "reflective", "type": "open", "marks": 2, "prompt": "What is the difference between a narrative essay and a reflective essay?", "memo": "✓ A narrative essay mainly tells a story (1)\n✓ A reflective essay focuses on thinking about an experience and the insight or lesson gained (1)" }
+  ]
+}

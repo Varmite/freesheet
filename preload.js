@@ -13,4 +13,6 @@ contextBridge.exposeInMainWorld('api', {
   importProgress: () => ipcRenderer.invoke('progress:import'),
   openDataFolder: () => ipcRenderer.invoke('app:open-data-folder'),
   version: () => ipcRenderer.invoke('app:version'),
+  listAudio: (grade, subjectId, topicId) => ipcRenderer.invoke('audio:list', grade, subjectId, topicId),
+  getAudio: (grade, subjectId, topicId, id) => ipcRenderer.invoke('audio:get', grade, subjectId, topicId, id),
 });

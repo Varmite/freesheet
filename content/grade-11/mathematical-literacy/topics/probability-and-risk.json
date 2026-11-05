@@ -1,0 +1,39 @@
+{
+  "id": "probability-and-risk",
+  "title": "Probability and Risk",
+  "term": 4,
+  "summary": "Expressing and interpreting probability, two-way tables and tree diagrams, expected outcomes, and evaluating risk in games, insurance, health and weather predictions.",
+  "notes": [
+    { "type": "heading", "text": "Expressing probability" },
+    { "type": "paragraph", "text": "Probability can be written as a fraction, decimal or percentage, or as **odds**. A probability of $\\frac{1}{5}$ means 1 favourable outcome out of 5; the **odds** are 1 : 4 (1 for, 4 against)." },
+    { "type": "heading", "text": "Two-way (contingency) tables" },
+    { "type": "table", "caption": "Results of a medical test for 1 000 people", "headers": ["", "Test positive", "Test negative", "Total"], "rows": [
+      ["Has the disease", "45", "5", "50"],
+      ["Does not have the disease", "95", "855", "950"],
+      ["Total", "140", "860", "1 000"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Using the table, (a) what is the probability that a person has the disease? (b) If a person tests positive, what is the probability that they actually have the disease?", "steps": [
+      "(a) $\\frac{50}{1\\ 000} = 5\\%$",
+      "(b) Of the 140 who tested positive, 45 have the disease: $\\frac{45}{140} \\approx 32\\%$"
+    ], "answer": "(a) 5% (b) about 32%" },
+    { "type": "callout", "label": "Interpret carefully", "text": "Even a good test can produce many false positives when a disease is rare. This is why doctors confirm positive results with a second test." },
+    { "type": "heading", "text": "Tree diagrams" },
+    { "type": "example", "title": "Worked example 2", "problem": "The probability that a learner is late on any day is 0,1. Find the probability that over two days she is late on (a) both days (b) neither day.", "steps": ["(a) 0,1 × 0,1 = 0,01 (1%)", "(b) 0,9 × 0,9 = 0,81 (81%)"], "answer": "(a) 1% (b) 81%" },
+    { "type": "heading", "text": "Expected outcomes and risk" },
+    { "type": "formula", "latex": "\\text{expected number} = \\text{probability} \\times \\text{number of trials}" },
+    { "type": "example", "title": "Worked example 3: is the game fair?", "problem": "A game costs R5 to play. You roll a die and win R20 if you roll a 6. Over many games, do you expect to win or lose money?", "steps": ["P(6) = $\\frac{1}{6}$. In 60 games you pay 60 × R5 = R300.", "Expected wins: $\\frac{1}{6} \\times 60 = 10$ wins × R20 = R200.", "Expected loss: R300 − R200 = R100 (about R1,67 per game)."], "answer": "You expect to lose money; the game favours the organiser." },
+    { "type": "paragraph", "text": "**Insurance** companies use probability to set premiums: they collect small amounts from many people and pay out to the few who suffer a loss. **Risk** combines the probability of an event and its consequences." }
+  ],
+  "questions": [
+    { "id": "odds", "type": "mcq", "prompt": "The probability of an event is $\\frac{1}{4}$. What are the odds in favour?", "options": ["1 : 4", "1 : 3", "3 : 1", "4 : 1"], "answer": 1 },
+    { "id": "percent", "type": "numeric", "prompt": "Express a probability of $\\frac{3}{8}$ as a percentage.", "answer": 37.5, "tolerance": 0.01, "unit": "%" },
+    { "id": "table-p", "type": "numeric", "prompt": "Using the medical-test table, what is the probability (as a percentage) that a randomly chosen person tests negative?", "answer": 86, "tolerance": 0, "unit": "%" },
+    { "id": "expected", "type": "numeric", "prompt": "The probability that a seed germinates is 0,85. How many of 400 seeds would you expect to germinate?", "answer": 340, "tolerance": 0 },
+    { "id": "both", "type": "numeric", "prompt": "The probability of rain on a given day is 0,3. Assuming independence, what is the probability of rain on two particular days? (decimal)", "answer": 0.09, "tolerance": 0 },
+    { "id": "fair", "type": "truefalse", "prompt": "In a fair game, the expected winnings equal the cost of playing.", "answer": true },
+    { "id": "false-pos", "type": "open", "marks": 2, "prompt": "Using the medical-test table, how many people received a false positive result, and what does this mean?", "memo": "✓ 95 people (1)\n✓ They tested positive but do not have the disease (1)" },
+    { "id": "game", "type": "open", "marks": 4, "prompt": "A raffle sells 500 tickets at R20 each. There is one prize of R5 000. (a) What is the probability of winning with one ticket? (b) Calculate the organiser's profit if all tickets are sold.", "memo": "(a) ✓ $\\frac{1}{500}$ (1) ✓ = 0,2% (1)\n(b) ✓ Income 500 × R20 = R10 000 (1) ✓ Profit R5 000 (1)" },
+    { "id": "insurance", "type": "open", "marks": 2, "prompt": "Explain how probability helps an insurance company decide how much to charge.", "memo": "✓ It estimates how likely claims are, and how many it will pay out (1)\n✓ It sets premiums so that the money collected covers expected claims plus costs and profit (1)" },
+    { "id": "tree", "type": "open", "marks": 3, "prompt": "A traffic light is green 40% of the time. A taxi passes through two independent lights. Find the probability that it gets at least one green light.", "memo": "✓ P(no green) = 0,6 × 0,6 = 0,36 (1)\n✓ P(at least one green) = 1 − 0,36 (1)\n✓ = 0,64 (64%) (1)" }
+  ]
+}

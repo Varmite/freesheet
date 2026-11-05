@@ -1,0 +1,63 @@
+{
+  "id": "voice-and-reported-speech",
+  "title": "Active and Passive Voice, Direct and Reported Speech",
+  "term": 2,
+  "summary": "Changing sentences between active and passive voice in different tenses, and converting direct speech to reported (indirect) speech with changes to tense, pronouns and time words.",
+  "notes": [
+    { "type": "heading", "text": "Active and passive voice" },
+    { "type": "list", "items": [
+      "**Active voice**: the subject **does** the action. *The learners **cleaned** the classroom.*",
+      "**Passive voice**: the subject **receives** the action. *The classroom **was cleaned** by the learners.*"
+    ] },
+    { "type": "paragraph", "text": "To change active to passive: (1) the **object** becomes the new **subject**; (2) use the correct form of **to be** in the **same tense** + the **past participle**; (3) the old subject may follow 'by' (or be left out)." },
+    { "type": "table", "headers": ["Tense", "Active", "Passive"], "rows": [
+      ["Simple present", "Thabo writes the report.", "The report **is written** by Thabo."],
+      ["Simple past", "Thabo wrote the report.", "The report **was written** by Thabo."],
+      ["Present continuous", "Thabo is writing the report.", "The report **is being written** by Thabo."],
+      ["Past continuous", "Thabo was writing the report.", "The report **was being written** by Thabo."],
+      ["Present perfect", "Thabo has written the report.", "The report **has been written** by Thabo."],
+      ["Past perfect", "Thabo had written the report.", "The report **had been written** by Thabo."],
+      ["Simple future", "Thabo will write the report.", "The report **will be written** by Thabo."],
+      ["Modal", "Thabo must write the report.", "The report **must be written** by Thabo."]
+    ] },
+    { "type": "callout", "label": "When is the passive useful?", "text": "When the doer is unknown or unimportant (*My phone was stolen*), in scientific and formal writing (*The solution was heated*), and in news headlines. Too much passive voice makes writing dull, so prefer the active voice in most writing." },
+    { "type": "heading", "text": "Direct and reported speech" },
+    { "type": "paragraph", "text": "**Direct speech** gives the exact words spoken, in inverted commas: *'I am tired,' said Zola.* **Reported (indirect) speech** reports what was said without quoting: *Zola said that she was tired.*" },
+    { "type": "table", "caption": "Changes when the reporting verb is in the past tense", "headers": ["Direct", "Reported"], "rows": [
+      ["am / is / are", "was / were"],
+      ["simple present (walk)", "simple past (walked)"],
+      ["present continuous (am walking)", "past continuous (was walking)"],
+      ["simple past (walked) / present perfect (have walked)", "past perfect (had walked)"],
+      ["will / can / may", "would / could / might"],
+      ["this / these", "that / those"],
+      ["here", "there"],
+      ["now / today", "then / that day"],
+      ["tomorrow / yesterday", "the next day / the previous day (the day before)"],
+      ["ago", "before"]
+    ] },
+    { "type": "list", "items": [
+      "Remove the inverted commas and add **that** (for statements).",
+      "Change **pronouns** to suit the speaker: 'I' → he/she; 'my' → his/her; 'we' → they.",
+      "**Questions**: use *asked* + *if/whether* (yes/no questions) or the question word, and change to statement word order. *'Are you ready?' she asked.* → *She asked if I was ready.* *'Where do you live?' he asked.* → *He asked where I lived.*",
+      "**Commands**: use *told/ordered/asked* + *to*. *'Sit down,' said the teacher.* → *The teacher told us to sit down.*"
+    ] },
+    { "type": "example", "title": "Converting to reported speech", "problem": "'I will finish this project tomorrow,' said Ayanda.", "steps": ["Remove inverted commas; add 'that'.", "I → she; will → would; this → that; tomorrow → the next day."], "answer": "Ayanda said that she would finish that project the next day." }
+  ],
+  "questions": [
+    { "id": "identify", "type": "mcq", "prompt": "Which sentence is in the passive voice?", "options": ["The dog chased the cat.", "The cat was chased by the dog.", "The dog is chasing the cat.", "The cat ran away."], "answer": 1 },
+    { "id": "passive-past", "type": "open", "marks": 2, "prompt": "Change to the passive voice: 'The principal opened the new library.'", "memo": "✓ The new library was opened (1)\n✓ by the principal. (1)" },
+    { "id": "passive-continuous", "type": "open", "marks": 2, "prompt": "Change to the passive voice: 'The workers are building a new bridge.'", "memo": "✓ A new bridge is being built (1)\n✓ by the workers. (1)" },
+    { "id": "active", "type": "open", "marks": 2, "prompt": "Change to the active voice: 'The match will be won by our team.'", "memo": "✓ Our team (1)\n✓ will win the match. (1)" },
+    { "id": "will", "type": "short", "prompt": "In reported speech (after 'said'), what does 'will' usually become?", "answers": ["would"] },
+    { "id": "tomorrow", "type": "mcq", "prompt": "In reported speech, 'tomorrow' becomes…", "options": ["yesterday", "the next day", "today", "the previous day"], "answer": 1 },
+    { "id": "changes", "type": "match", "marks": 4, "prompt": "Match each direct-speech word to its reported-speech form.", "pairs": [
+      { "left": "here", "right": "there" },
+      { "left": "now", "right": "then" },
+      { "left": "can", "right": "could" },
+      { "left": "these", "right": "those" }
+    ] },
+    { "id": "reported-statement", "type": "open", "marks": 3, "prompt": "Change to reported speech: 'I am writing my exam today,' said Kabelo.", "memo": "✓ Kabelo said that he (1)\n✓ was writing his exam (1)\n✓ that day. (1)" },
+    { "id": "reported-question", "type": "open", "marks": 3, "prompt": "Change to reported speech: 'Have you seen my keys?' Mom asked me.", "memo": "✓ Mom asked me if/whether (1)\n✓ I had seen (1)\n✓ her keys. (1)" },
+    { "id": "command", "type": "open", "marks": 2, "prompt": "Change to reported speech: 'Hand in your books,' the teacher said to us.", "memo": "✓ The teacher told us (1)\n✓ to hand in our books. (1)" }
+  ]
+}

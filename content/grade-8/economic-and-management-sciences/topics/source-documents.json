@@ -1,0 +1,58 @@
+{
+  "id": "source-documents",
+  "title": "Source Documents",
+  "term": 2,
+  "summary": "Why source documents are needed, the main source documents for cash transactions (receipts, cash register rolls, deposit slips, cheque counterfoils, EFT notices) and the information they contain.",
+  "notes": [
+    { "type": "heading", "text": "What is a source document?" },
+    { "type": "definition", "term": "Source document", "text": "The original written or electronic proof that a transaction has taken place. It provides the information that is recorded in the journals." },
+    { "type": "list", "items": [
+      "It is **proof** of the transaction for the owner, auditors and SARS.",
+      "It gives the details needed for recording: date, amount, names and what was paid or received.",
+      "It helps prevent **fraud** and theft.",
+      "Businesses must keep source documents for at least **five years**."
+    ] },
+    { "type": "heading", "text": "Source documents for cash received" },
+    { "type": "table", "headers": ["Document", "When it is used", "Original / copy"], "rows": [
+      ["Receipt", "When the business receives money (cash or EFT) from someone, e.g. a client paying for services or the owner contributing capital", "The original goes to the payer; the business keeps the **duplicate** as its source document"],
+      ["Cash register roll (CRR)", "Records all cash sales or services for the day in a shop", "The business keeps the till roll"],
+      ["Bank deposit slip", "When cash received is deposited into the business's bank account", "The bank stamps the copy for the business"]
+    ] },
+    { "type": "heading", "text": "Source documents for cash paid" },
+    { "type": "table", "headers": ["Document", "When it is used"], "rows": [
+      ["Cheque counterfoil (stub)", "When the business pays by cheque; the counterfoil stays in the cheque book as a record. (Cheques are no longer used by most South African banks, but you may still see them in exercises.)"],
+      ["EFT payment notice / proof of payment", "When the business pays electronically by **Electronic Funds Transfer**"],
+      ["Bank statement", "Shows debit orders, bank charges and interest deducted by the bank"],
+      ["Cash slip / till slip", "Received when the business buys something with cash"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Each document is numbered. When a source document is entered in a journal, its **number** is written in the 'Doc' column, so that the entry can always be traced back." },
+    { "type": "heading", "text": "Information on a receipt" },
+    { "type": "passage", "title": "Example: Receipt no. 014", "text": "THANDI'S HAIR SALON\n12 Long Street, Mthatha\nReceipt no. 014                Date: 5 March 2025\nReceived from: N. Dlamini\nThe sum of: Four hundred and fifty rand only\nFor: Hair treatment\nAmount: R450,00\nSigned: T. Mbeki (owner)" },
+    { "type": "list", "items": [
+      "The name and address of the business",
+      "Receipt number and date",
+      "Who paid (Received from)",
+      "The amount in words and in figures",
+      "The reason for payment",
+      "Signature of the person receiving the money"
+    ] },
+    { "type": "example", "title": "Choosing the correct source document", "problem": "Which source document is used for each transaction? (a) The owner contributes R20 000 cash as capital. (b) The business pays the telephone account by EFT. (c) Cash for services rendered in a day is rung up on the till.", "steps": ["(a) Receipt (duplicate) issued to the owner.", "(b) EFT payment notice / proof of payment.", "(c) Cash register roll."], "answer": "Receipt; EFT notice; CRR" }
+  ],
+  "questions": [
+    { "id": "define", "type": "open", "marks": 2, "prompt": "What is a source document?", "memo": "✓ The original written or electronic proof (1)\n✓ that a transaction has taken place (1)" },
+    { "id": "receipt", "type": "mcq", "prompt": "Which source document is issued when a business receives money from a client?", "options": ["Cheque counterfoil", "Receipt", "EFT payment notice", "Bank statement"], "answer": 1 },
+    { "id": "crr", "type": "short", "prompt": "What does CRR stand for?", "answers": ["cash register roll"] },
+    { "id": "eft", "type": "short", "prompt": "What does EFT stand for?", "answers": ["electronic funds transfer", "electronic fund transfer"] },
+    { "id": "duplicate", "type": "truefalse", "prompt": "When a business issues a receipt, it keeps the original and gives the copy to the payer.", "answer": false, "explanation": "The original goes to the payer; the business keeps the duplicate." },
+    { "id": "keep-years", "type": "numeric", "prompt": "For at least how many years must source documents be kept?", "answer": 5, "tolerance": 0, "unit": "years" },
+    { "id": "match-docs", "type": "match", "marks": 4, "prompt": "Match each transaction to its source document.", "pairs": [
+      { "left": "Daily cash services in a shop", "right": "Cash register roll" },
+      { "left": "Paid rent electronically", "right": "EFT payment notice" },
+      { "left": "Bank charges deducted", "right": "Bank statement" },
+      { "left": "Owner deposited capital", "right": "Receipt" }
+    ] },
+    { "id": "why", "type": "open", "marks": 3, "prompt": "Give THREE reasons why source documents are important.", "memo": "Any three (1 each): proof of transactions; provide details for recording; prevent fraud/theft; needed by auditors and SARS; allow entries to be traced" },
+    { "id": "receipt-info", "type": "open", "marks": 3, "prompt": "Name THREE details that must appear on a receipt.", "memo": "Any three (1 each): business name/address; receipt number; date; received from; amount in words and figures; reason for payment; signature" },
+    { "id": "doc-column", "type": "open", "marks": 1, "prompt": "Why is the document number recorded in the journal?", "memo": "✓ So that the entry can be traced back to the source document (1)" }
+  ]
+}

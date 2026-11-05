@@ -1,0 +1,66 @@
+{
+  "id": "general-ledger",
+  "title": "The General Ledger",
+  "term": 3,
+  "summary": "The purpose of the General Ledger, debit and credit sides, the double-entry principle, posting CRJ and CPJ totals to ledger accounts, balancing the Bank account, and the Trial Balance.",
+  "notes": [
+    { "type": "heading", "text": "What is the General Ledger?" },
+    { "type": "paragraph", "text": "The **General Ledger** is the main book of the business. It contains a separate **account** for every item (Bank, Capital, Equipment, Current income, Wages and so on). Information from the journals is **posted** (transferred) to the ledger accounts, usually as monthly totals." },
+    { "type": "paragraph", "text": "Each account has two sides: the left side is the **debit (Dr)** side and the right side is the **credit (Cr)** side." },
+    { "type": "heading", "text": "The double-entry principle" },
+    { "type": "callout", "label": "Key rule", "text": "Every transaction is recorded in **two accounts**: once on the **debit** side of one account and once on the **credit** side of another, for the same amount. So total debits always equal total credits." },
+    { "type": "table", "caption": "Which side increases each type of account?", "headers": ["Type of account", "Increases on the", "Decreases on the", "Balance usually on the"], "rows": [
+      ["Assets (e.g. Bank, Equipment)", "Debit side", "Credit side", "Debit side"],
+      ["Expenses (e.g. Wages)", "Debit side", "Credit side", "Debit side"],
+      ["Drawings", "Debit side", "Credit side", "Debit side"],
+      ["Owner's equity (Capital)", "Credit side", "Debit side", "Credit side"],
+      ["Income (e.g. Current income)", "Credit side", "Debit side", "Credit side"],
+      ["Liabilities (e.g. Loan)", "Credit side", "Debit side", "Credit side"]
+    ] },
+    { "type": "callout", "label": "Memory aid", "text": "**DEAD CLIC**: **D**ebit increases **E**xpenses, **A**ssets and **D**rawings; **C**redit increases **L**iabilities, **I**ncome and **C**apital." },
+    { "type": "heading", "text": "Posting from the journals" },
+    { "type": "list", "items": [
+      "**CRJ**: the Bank total is **debited** to the Bank account (money comes in). Each other column total is **credited** to its account (e.g. Current income Cr). Each sundry item is credited separately (e.g. Capital Cr, Loan Cr).",
+      "**CPJ**: the Bank total is **credited** to the Bank account (money goes out). Each other column total is **debited** to its account (e.g. Wages Dr, Stationery Dr). Each sundry item is debited separately (e.g. Equipment Dr, Drawings Dr)."
+    ] },
+    { "type": "table", "caption": "Bank account (B1) of Thandi's Hair Salon, March 2025", "headers": ["Dr: Date", "Details", "Fol", "Amount", "Cr: Date", "Details", "Fol", "Amount"], "rows": [
+      ["Mar 31", "Total receipts", "CRJ3", "58 500", "Mar 31", "Total payments", "CPJ3", "15 000"],
+      ["", "", "", "", "31", "Balance", "c/d", "43 500"],
+      ["", "", "", "58 500", "", "", "", "58 500"],
+      ["Apr 1", "Balance", "b/d", "43 500", "", "", "", ""]
+    ] },
+    { "type": "paragraph", "text": "To **balance** an account, find the difference between the two sides, write it on the smaller side as 'Balance c/d' (carried down) so that both sides have the same total, then bring it down on the opposite side on the first day of the next month as 'Balance b/d' (brought down)." },
+    { "type": "heading", "text": "The Trial Balance" },
+    { "type": "paragraph", "text": "A **Trial Balance** lists the balances of all ledger accounts in two columns: **debit balances** and **credit balances**. If the double-entry was done correctly, the two totals are equal." },
+    { "type": "table", "caption": "Trial Balance of Thandi's Hair Salon on 31 March 2025", "headers": ["Account", "Debit (R)", "Credit (R)"], "rows": [
+      ["Capital", "", "40 000"],
+      ["Loan: Absa", "", "15 000"],
+      ["Equipment", "8 000", ""],
+      ["Bank", "43 500", ""],
+      ["Drawings", "1 000", ""],
+      ["Current income", "", "2 300"],
+      ["Rent income", "", "1 200"],
+      ["Wages", "5 000", ""],
+      ["Stationery", "320", ""],
+      ["Telephone", "680", ""],
+      ["Total", "58 500", "58 500"]
+    ] }
+  ],
+  "questions": [
+    { "id": "left", "type": "short", "prompt": "What is the left-hand side of a ledger account called?", "answers": ["debit", "debit side", "dr"] },
+    { "id": "capital-side", "type": "mcq", "prompt": "On which side of the Capital account is an increase recorded?", "options": ["Debit", "Credit", "Either side", "It is not recorded"], "answer": 1 },
+    { "id": "crj-bank", "type": "mcq", "prompt": "When the CRJ is posted, the Bank account is…", "options": ["debited with total receipts", "credited with total receipts", "not affected", "credited with current income"], "answer": 0 },
+    { "id": "double", "type": "truefalse", "prompt": "In double entry, every transaction is recorded on the debit side of one account and the credit side of another.", "answer": true },
+    { "id": "dead-clic", "type": "match", "marks": 4, "prompt": "Match each account to the side on which it increases.", "pairs": [
+      { "left": "Wages", "right": "Debit (expense)" },
+      { "left": "Loan: FNB", "right": "Credit (liability)" },
+      { "left": "Equipment", "right": "Debit (asset)" },
+      { "left": "Current income", "right": "Credit (income)" }
+    ] },
+    { "id": "balance", "type": "numeric", "prompt": "The debit side of the Bank account totals R24 000 and the credit side R17 500. What is the balance in rand?", "answer": 6500, "tolerance": 0, "unit": "rand" },
+    { "id": "cd-bd", "type": "open", "marks": 2, "prompt": "Explain what 'c/d' and 'b/d' mean when balancing an account.", "memo": "✓ c/d: carried down; the balance written on the smaller side to make both sides equal at month-end (1)\n✓ b/d: brought down; the balance shown on the opposite side at the start of the next month (1)" },
+    { "id": "post-cpj", "type": "open", "marks": 3, "prompt": "The CPJ shows Bank R9 000, Wages R6 000 and Sundry accounts: Equipment R3 000. Show how these totals are posted to the ledger.", "memo": "✓ Bank account credited R9 000 (1)\n✓ Wages account debited R6 000 (1)\n✓ Equipment account debited R3 000 (1)" },
+    { "id": "trial", "type": "open", "marks": 2, "prompt": "What is a Trial Balance and why is it drawn up?", "memo": "✓ A list of all ledger account balances in debit and credit columns (1)\n✓ to check that total debits equal total credits (double entry correct) (1)" },
+    { "id": "tb-side", "type": "mcq", "prompt": "In which column of the Trial Balance does Drawings appear?", "options": ["Debit", "Credit"], "answer": 0 }
+  ]
+}

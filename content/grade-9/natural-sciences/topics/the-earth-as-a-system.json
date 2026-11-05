@@ -1,0 +1,58 @@
+{
+  "id": "the-earth-as-a-system",
+  "title": "The Earth as a System",
+  "term": 4,
+  "summary": "The Earth's four spheres and how they interact, the structure of the Earth, the rock cycle and the three types of rock.",
+  "notes": [
+    { "type": "heading", "text": "The four spheres" },
+    { "type": "paragraph", "text": "The Earth is a **system** made up of four interacting parts, or **spheres**. A change in one sphere affects the others." },
+    { "type": "table", "headers": ["Sphere", "What it includes"], "rows": [
+      ["Lithosphere", "The solid rocky outer layer: the crust and the top of the mantle, rocks and soil"],
+      ["Hydrosphere", "All the water on Earth: oceans, rivers, lakes, groundwater, ice and water vapour"],
+      ["Atmosphere", "The layer of gases surrounding the Earth"],
+      ["Biosphere", "All living organisms and the places where they live"]
+    ] },
+    { "type": "example", "title": "Spheres interacting", "problem": "Explain how a volcanic eruption affects the other spheres.", "steps": [
+      "Lithosphere: lava and ash form new rock and land.",
+      "Atmosphere: gases and ash are released, which can block sunlight and cool the climate.",
+      "Hydrosphere: ash pollutes rivers; gases dissolve in rain to form acid rain.",
+      "Biosphere: plants and animals are killed or lose their habitats, but volcanic soil later becomes very fertile."
+    ], "answer": "One event in the lithosphere changes all four spheres." },
+    { "type": "callout", "label": "Remember", "text": "The **water cycle** links the spheres: water evaporates from the hydrosphere into the atmosphere, falls as rain on the lithosphere, and is used by the biosphere (plants transpire water back into the air)." },
+    { "type": "heading", "text": "The structure of the Earth" },
+    { "type": "table", "headers": ["Layer", "Description"], "rows": [
+      ["Crust", "Thin, solid outer layer of rock: 5 to 10 km thick under oceans, up to 70 km under mountains"],
+      ["Mantle", "Thick layer of hot rock; the upper part moves very slowly like a thick paste"],
+      ["Outer core", "Liquid iron and nickel; its movement produces the Earth's magnetic field"],
+      ["Inner core", "Solid iron and nickel at about 5 500 °C; solid because of the huge pressure"]
+    ] },
+    { "type": "paragraph", "text": "The crust and upper mantle are broken into large pieces called **tectonic plates**, which move a few centimetres per year. Earthquakes, volcanoes and mountain-building happen mainly along plate boundaries." },
+    { "type": "heading", "text": "The three types of rock" },
+    { "type": "table", "headers": ["Type", "How it forms", "Examples"], "rows": [
+      ["Igneous", "Molten rock (magma or lava) cools and hardens. Slow cooling underground gives large crystals; fast cooling at the surface gives small crystals.", "Granite (slow), basalt (fast)"],
+      ["Sedimentary", "Weathered fragments (sediments) are carried by water or wind, deposited in layers, compacted and cemented together", "Sandstone, shale, limestone; coal forms from plant remains"],
+      ["Metamorphic", "Existing rock is changed by great heat and pressure underground, without melting", "Marble (from limestone), slate (from shale), quartzite (from sandstone)"]
+    ] },
+    { "type": "paragraph", "text": "**Fossils**, the preserved remains or traces of ancient organisms, are found mostly in sedimentary rock. The Karoo is famous for fossils of reptiles and early mammal-like animals." },
+    { "type": "heading", "text": "The rock cycle" },
+    { "type": "paragraph", "text": "Rocks are constantly changed from one type into another over millions of years:\n\n**weathering and erosion → transport → deposition → compaction and cementation (sedimentary rock) → heat and pressure (metamorphic rock) → melting (magma) → cooling (igneous rock) → uplift and weathering again**" },
+    { "type": "definition", "term": "Weathering", "text": "The breaking down of rock in place by the weather, plant roots or chemicals." },
+    { "type": "definition", "term": "Erosion", "text": "The wearing away and carrying away of rock fragments by water, wind or ice." }
+  ],
+  "questions": [
+    { "id": "hydro", "type": "short", "prompt": "Which sphere includes all the water on Earth?", "answers": ["hydrosphere", "the hydrosphere"] },
+    { "id": "litho", "type": "mcq", "prompt": "Soil and rocks belong to the…", "options": ["atmosphere", "biosphere", "lithosphere", "hydrosphere"], "answer": 2 },
+    { "id": "inner-core", "type": "mcq", "prompt": "Why is the inner core solid even though it is extremely hot?", "options": ["It is made of rock", "The pressure is extremely high", "It is cooled by the mantle", "It is made of ice"], "answer": 1 },
+    { "id": "granite", "type": "short", "prompt": "What type of rock is granite?", "answers": ["igneous", "igneous rock"] },
+    { "id": "fossils", "type": "truefalse", "prompt": "Fossils are mainly found in sedimentary rocks.", "answer": true },
+    { "id": "rock-match", "type": "match", "marks": 3, "prompt": "Match each metamorphic rock to the rock it formed from.", "pairs": [
+      { "left": "Marble", "right": "Limestone" },
+      { "left": "Slate", "right": "Shale" },
+      { "left": "Quartzite", "right": "Sandstone" }
+    ] },
+    { "id": "crystals", "type": "open", "marks": 2, "prompt": "Explain why granite has large crystals but basalt has small crystals.", "memo": "✓ Granite forms from magma cooling slowly underground, giving crystals time to grow (1)\n✓ Basalt forms from lava cooling quickly at the surface, so crystals stay small (1)" },
+    { "id": "sedimentary", "type": "open", "marks": 3, "prompt": "Describe how sedimentary rock forms.", "memo": "✓ Rocks are weathered and eroded into small fragments (1)\n✓ The sediments are transported and deposited in layers (1)\n✓ Over time the layers are compacted and cemented together (1)" },
+    { "id": "interaction", "type": "open", "marks": 2, "prompt": "Give an example of the biosphere interacting with the lithosphere.", "memo": "✓✓ Any valid example with explanation, e.g. plant roots growing into cracks break rocks apart (biological weathering); earthworms mix soil; decomposers add nutrients to soil" },
+    { "id": "weather-erosion", "type": "open", "marks": 2, "prompt": "What is the difference between weathering and erosion?", "memo": "✓ Weathering breaks rock down where it is (1)\n✓ Erosion carries the broken pieces away (by water, wind or ice) (1)" }
+  ]
+}

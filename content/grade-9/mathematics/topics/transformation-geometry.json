@@ -1,0 +1,81 @@
+{
+  "id": "transformation-geometry",
+  "title": "Transformation Geometry",
+  "term": 3,
+  "summary": "Translate points and shapes, reflect them in the axes and in the line y = x, enlarge and reduce them through the origin, describe transformations with coordinate rules, and investigate their effect on lengths, angles and area.",
+  "notes": [
+    { "type": "heading", "text": "Transformation rules on the Cartesian plane" },
+    { "type": "paragraph", "text": "A transformation can be described by a **rule** that tells you what happens to the coordinates of every point $(x;\\ y)$." },
+    { "type": "table", "caption": "Coordinate rules", "headers": ["Transformation", "Rule", "Example: image of (2; −5)"], "rows": [
+      ["Translation $a$ right and $b$ up", "$(x;\\ y) \\to (x + a;\\ y + b)$", "3 left, 1 up: $(-1;\\ -4)$"],
+      ["Reflection in the $x$-axis", "$(x;\\ y) \\to (x;\\ -y)$", "$(2;\\ 5)$"],
+      ["Reflection in the $y$-axis", "$(x;\\ y) \\to (-x;\\ y)$", "$(-2;\\ -5)$"],
+      ["Reflection in the line $y = x$", "$(x;\\ y) \\to (y;\\ x)$", "$(-5;\\ 2)$"],
+      ["Enlargement through the origin, factor $k$", "$(x;\\ y) \\to (kx;\\ ky)$", "factor 3: $(6;\\ -15)$"]
+    ] },
+
+    { "type": "heading", "text": "Reflection in the line y = x" },
+    { "type": "paragraph", "text": "The line $y = x$ passes through the origin at $45^\\circ$, through points such as $(1;\\ 1)$ and $(-2;\\ -2)$. Reflecting in this line **swaps** the $x$- and $y$-coordinates." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" font-family=\"sans-serif\" font-size=\"12\"><g stroke=\"#ccc\" stroke-width=\"1\"><line x1=\"30\" y1=\"30\" x2=\"30\" y2=\"230\"/><line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"230\"/><line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"230\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"230\"/><line x1=\"110\" y1=\"30\" x2=\"110\" y2=\"230\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"230\"/><line x1=\"170\" y1=\"30\" x2=\"170\" y2=\"230\"/><line x1=\"190\" y1=\"30\" x2=\"190\" y2=\"230\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"230\"/><line x1=\"230\" y1=\"30\" x2=\"230\" y2=\"230\"/><line x1=\"30\" y1=\"30\" x2=\"230\" y2=\"30\"/><line x1=\"30\" y1=\"50\" x2=\"230\" y2=\"50\"/><line x1=\"30\" y1=\"70\" x2=\"230\" y2=\"70\"/><line x1=\"30\" y1=\"90\" x2=\"230\" y2=\"90\"/><line x1=\"30\" y1=\"110\" x2=\"230\" y2=\"110\"/><line x1=\"30\" y1=\"150\" x2=\"230\" y2=\"150\"/><line x1=\"30\" y1=\"170\" x2=\"230\" y2=\"170\"/><line x1=\"30\" y1=\"190\" x2=\"230\" y2=\"190\"/><line x1=\"30\" y1=\"210\" x2=\"230\" y2=\"210\"/><line x1=\"30\" y1=\"230\" x2=\"230\" y2=\"230\"/></g><g stroke=\"#000\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"20\" y1=\"130\" x2=\"244\" y2=\"130\"/><line x1=\"130\" y1=\"244\" x2=\"130\" y2=\"16\"/><polyline points=\"237,125 244,130 237,135\"/><polyline points=\"125,23 130,16 135,23\"/><line x1=\"30\" y1=\"230\" x2=\"232\" y2=\"28\" stroke-dasharray=\"6 4\"/></g><g stroke=\"#000\" stroke-width=\"2\"><polygon points=\"150,50 190,50 150,90\" fill=\"#ddd\"/><polygon points=\"210,110 210,70 170,110\" fill=\"none\" stroke-dasharray=\"4 3\"/></g><g fill=\"#000\"><text x=\"138\" y=\"46\">A</text><text x=\"192\" y=\"46\">B</text><text x=\"138\" y=\"98\">C</text><text x=\"214\" y=\"124\">A'</text><text x=\"214\" y=\"68\">B'</text><text x=\"160\" y=\"124\">C'</text><text x=\"200\" y=\"24\">y = x</text><text x=\"248\" y=\"134\">x</text><text x=\"134\" y=\"14\">y</text><text x=\"117\" y=\"144\">0</text></g></svg>", "caption": "Triangle ABC with A(1; 4), B(3; 4), C(1; 2) (shaded) and its reflection A'B'C' in the line y = x (dashed): A'(4; 1), B'(4; 3), C'(2; 1)." },
+    { "type": "callout", "label": "Common mistake", "text": "Reflecting in $y = x$ only swaps the coordinates; it does **not** change their signs. $(2;\\ -5) \\to (-5;\\ 2)$, not $(5;\\ -2)$." },
+
+    { "type": "heading", "text": "Enlargements and reductions through the origin" },
+    { "type": "paragraph", "text": "To enlarge a shape through the origin by scale factor $k$, multiply **both** coordinates of every vertex by $k$. If $k > 1$ the image is bigger and further from the origin; if $0 < k < 1$ it is a reduction and closer to the origin." },
+    { "type": "example", "title": "Worked example 1", "problem": "Rectangle $PQRS$ has vertices $P(1;\\ 1)$, $Q(3;\\ 1)$, $R(3;\\ 2)$ and $S(1;\\ 2)$. Enlarge it through the origin by a factor of 2 and compare the areas.", "steps": [
+      "Multiply every coordinate by 2: $P'(2;\\ 2)$, $Q'(6;\\ 2)$, $R'(6;\\ 4)$, $S'(2;\\ 4)$.",
+      "Original: $2 \\times 1 = 2$ square units. Image: $4 \\times 2 = 8$ square units.",
+      "The area is multiplied by $2^2 = 4$."
+    ], "answer": "Area 2 → 8 (× 4)" },
+    { "type": "table", "caption": "Effect of an enlargement by factor k", "headers": ["Property", "Effect"], "rows": [
+      ["Angles", "Unchanged"],
+      ["Side lengths", "Multiplied by $k$"],
+      ["Perimeter", "Multiplied by $k$"],
+      ["Area", "Multiplied by $k^2$"],
+      ["Shape", "Similar to the original"]
+    ] },
+
+    { "type": "heading", "text": "Combining and describing transformations" },
+    { "type": "example", "title": "Worked example 2: two transformations", "problem": "(a) Reflect $(2;\\ 3)$ in the $x$-axis and then in the $y$-axis. Which single transformation has the same effect?\n(b) $P(-4;\\ 6)$ is reduced through the origin by a factor $\\frac{1}{2}$ and then translated 3 units right. Find the final image.", "steps": [
+      "(a) $(2;\\ 3) \\to (2;\\ -3) \\to (-2;\\ -3)$. This is the same as a rotation of $180^\\circ$ about the origin: $(x;\\ y) \\to (-x;\\ -y)$.",
+      "(b) $(-4;\\ 6) \\to (-2;\\ 3) \\to (1;\\ 3)$."
+    ], "answer": "(a) Rotation of 180° about the origin  (b) $(1;\\ 3)$" },
+    { "type": "example", "title": "Worked example 3: identifying a transformation", "problem": "$A(2;\\ 5) \\to A'(5;\\ 2)$ and $B(-1;\\ 3) \\to B'(3;\\ -1)$. Describe the transformation.", "steps": [
+      "In both cases the coordinates are swapped: $(x;\\ y) \\to (y;\\ x)$.",
+      "This is a reflection in the line $y = x$."
+    ], "answer": "Reflection in the line y = x" },
+    { "type": "definition", "term": "Invariant point", "text": "A point that does not move under a transformation is **invariant**. Points on the $x$-axis, such as $(5;\\ 0)$, are invariant under a reflection in the $x$-axis; points on $y = x$ are invariant under a reflection in $y = x$." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Translation: $(x + a;\\ y + b)$. Reflections: $x$-axis $(x;\\ -y)$, $y$-axis $(-x;\\ y)$, line $y = x$: $(y;\\ x)$.",
+      "Enlargement through the origin by factor $k$: $(kx;\\ ky)$.",
+      "Translations and reflections give congruent images; enlargements give similar images.",
+      "Enlargement by $k$: lengths and perimeter × $k$; area × $k^2$; angles unchanged.",
+      "Reflecting in both axes is the same as rotating $180^\\circ$ about the origin."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "Reflect $(2;\\ -5)$ in the line $y = x$.", "options": ["$(-2;\\ 5)$", "$(5;\\ -2)$", "$(-5;\\ 2)$", "$(2;\\ 5)$"], "answer": 2, "explanation": "Swap the coordinates: $(x;\\ y) \\to (y;\\ x)$." },
+    { "id": "q2", "type": "mcq", "prompt": "Reflect $(-3;\\ 4)$ in the $y$-axis.", "options": ["$(3;\\ 4)$", "$(-3;\\ -4)$", "$(4;\\ -3)$", "$(3;\\ -4)$"], "answer": 0, "explanation": "$(x;\\ y) \\to (-x;\\ y)$." },
+    { "id": "q3", "type": "mcq", "prompt": "Enlarge $(2;\\ -1)$ through the origin by a factor of 3.", "options": ["$(5;\\ 2)$", "$(6;\\ -3)$", "$(6;\\ -1)$", "$(2;\\ -3)$"], "answer": 1, "explanation": "Multiply both coordinates by 3." },
+    { "id": "q4", "type": "truefalse", "prompt": "A reflection in the line $y = x$ maps $(a;\\ b)$ to $(b;\\ a)$.", "answer": true, "explanation": "The coordinates are swapped." },
+    { "id": "q5", "type": "numeric", "prompt": "A triangle with an area of 5 square units is enlarged through the origin by a factor of 3. What is the area of the image?", "unit": "units²", "answer": 45, "tolerance": 0, "explanation": "Area × $3^2 = 9$: $5 \\times 9 = 45$." },
+    { "id": "q6", "type": "mcq", "prompt": "Reduce $(8;\\ -6)$ through the origin by a factor of $\\frac{1}{2}$.", "options": ["$(16;\\ -12)$", "$(4;\\ -3)$", "$(-4;\\ 3)$", "$(4;\\ 3)$"], "answer": 1, "explanation": "Multiply both coordinates by $\\frac{1}{2}$." },
+    { "id": "q7", "type": "mcq", "prompt": "$(-1;\\ 2)$ is translated to $(3;\\ -1)$. What is the rule?", "options": ["$(x + 4;\\ y - 3)$", "$(x - 4;\\ y + 3)$", "$(x + 4;\\ y + 3)$", "$(x + 2;\\ y - 1)$"], "answer": 0, "explanation": "$x$: $-1 \\to 3$ is $+4$; $y$: $2 \\to -1$ is $-3$." },
+    { "id": "q8", "type": "mcq", "prompt": "Which point is invariant (does not move) under a reflection in the $x$-axis?", "options": ["$(0;\\ 5)$", "$(5;\\ 0)$", "$(5;\\ 5)$", "$(-5;\\ 5)$"], "answer": 1, "explanation": "Points on the mirror line ($y = 0$) stay where they are." },
+    { "id": "q9", "type": "match", "prompt": "Match each rule with the transformation it describes.", "marks": 5, "pairs": [
+      { "left": "$(x;\\ y) \\to (y;\\ x)$", "right": "Reflection in the line y = x" },
+      { "left": "$(x;\\ y) \\to (x;\\ -y)$", "right": "Reflection in the x-axis" },
+      { "left": "$(x;\\ y) \\to (-x;\\ -y)$", "right": "Rotation of 180° about the origin" },
+      { "left": "$(x;\\ y) \\to (3x;\\ 3y)$", "right": "Enlargement through the origin, factor 3" },
+      { "left": "$(x;\\ y) \\to (x - 2;\\ y + 5)$", "right": "Translation 2 left and 5 up" }
+    ], "explanation": "Test each rule with a point such as $(1;\\ 2)$ and sketch it." },
+    { "id": "q10", "type": "numeric", "prompt": "A shape with a perimeter of 12 cm is enlarged by a factor of 2,5. What is the perimeter of the image?", "unit": "cm", "answer": 30, "tolerance": 0, "explanation": "Perimeter × $k$: $12 \\times 2{,}5 = 30$ cm." },
+    { "id": "q11", "type": "truefalse", "prompt": "An enlargement keeps all the angles of a shape the same.", "answer": true, "explanation": "The image is similar to the object, so the angles are unchanged." },
+    { "id": "q12", "type": "mcq", "prompt": "$(2;\\ 3)$ is reflected in the $x$-axis and then in the $y$-axis. What is the final image?", "options": ["$(2;\\ -3)$", "$(-2;\\ 3)$", "$(-2;\\ -3)$", "$(3;\\ 2)$"], "answer": 2, "explanation": "$(2;\\ 3) \\to (2;\\ -3) \\to (-2;\\ -3)$, the same as a $180^\\circ$ rotation." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Triangle $ABC$ has vertices $A(1;\\ 4)$, $B(3;\\ 4)$ and $C(1;\\ 2)$. Write down the coordinates of its image after a reflection in the line $y = x$.", "memo": "$A'(4;\\ 1)$ ✓ (1)\n$B'(4;\\ 3)$ ✓ (1)\n$C'(2;\\ 1)$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Rectangle $PQRS$ has vertices $P(1;\\ 1)$, $Q(3;\\ 1)$, $R(3;\\ 2)$ and $S(1;\\ 2)$.\n(a) Give the vertices of its image after an enlargement through the origin by a factor of 2.  (2)\n(b) Compare the areas of $PQRS$ and its image.  (2)", "memo": "(a) $P'(2;\\ 2)$, $Q'(6;\\ 2)$ ✓; $R'(6;\\ 4)$, $S'(2;\\ 4)$ ✓ (2)\n(b) Areas 2 and 8 square units ✓; the image is 4 times as big ($2^2$) ✓ (2)" },
+    { "id": "q15", "type": "open", "marks": 2, "prompt": "$A(2;\\ 5)$ is mapped to $A'(5;\\ 2)$ and $B(-1;\\ 3)$ is mapped to $B'(3;\\ -1)$ by the same transformation. Describe it fully.", "memo": "The coordinates are swapped: $(x;\\ y) \\to (y;\\ x)$ ✓ (1)\nReflection in the line $y = x$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "$P(-4;\\ 6)$ is reduced through the origin by a factor of $\\frac{1}{2}$, and the image is then translated 3 units to the right. Find the coordinates after each step.", "memo": "After the reduction: $(-2;\\ 3)$ ✓✓ (2)\nAfter the translation: $(1;\\ 3)$ ✓ (1)" }
+  ]
+}

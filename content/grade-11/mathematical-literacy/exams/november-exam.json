@@ -1,0 +1,264 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper consists of FOUR questions. Answer ALL the questions.",
+    "Show ALL calculations clearly.",
+    "Round off answers to TWO decimal places, unless stated otherwise.",
+    "Units of measurement must be shown in final answers. The tax table used is illustrative."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Finance",
+      "context": [
+        {
+          "type": "table",
+          "caption": "ILLUSTRATIVE tax table",
+          "headers": [
+            "Taxable income (per year)",
+            "Rates of tax"
+          ],
+          "rows": [
+            [
+              "R1 – R240 000",
+              "18% of taxable income"
+            ],
+            [
+              "R240 001 – R375 000",
+              "R43 200 + 26% of taxable income above R240 000"
+            ],
+            [
+              "R375 001 – R520 000",
+              "R78 300 + 31% of taxable income above R375 000"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Primary rebate: R17 500 per year."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Thandeka's monthly taxable income is R26 000. Calculate her annual taxable income.",
+          "answer": 312000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q1-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Calculate Thandeka's annual income tax payable.",
+          "memo": "✓ R43 200 + 26% × (R312 000 − R240 000) (1)\n✓ = R43 200 + R18 720 = R61 920 (1)\n✓ − R17 500 (1)\n✓ = R44 420 (1)"
+        },
+        {
+          "id": "q1-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate her monthly PAYE (two decimals).",
+          "answer": 3701.67,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "q1-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "R12 000 is invested at 9% p.a. compound interest. Calculate its value after 3 years.",
+          "memo": "✓ Year 1: R13 080 (1)\n✓ Year 2: R14 257,20 (1)\n✓ Year 3: R15 540,35 (1)"
+        },
+        {
+          "id": "q1-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A washing machine costs R8 400 cash or R840 deposit plus 24 instalments of R420 on hire purchase. How much more does HP cost?",
+          "memo": "✓ Instalments 24 × R420 = R10 080 (1)\n✓ Total HP R10 920 (1)\n✓ Extra R2 520 (1)"
+        },
+        {
+          "id": "q1-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Inflation is 5,5% per year. A taxi fare is R22 now. What will it be in 2 years?",
+          "memo": "✓ R22 × 1,055 = R23,21 (1)\n✓ × 1,055 (1)\n✓ ≈ R24,49 (1)"
+        },
+        {
+          "id": "q1-7",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A salary increases from R14 200 to R15 052. Calculate the percentage increase.",
+          "answer": 6,
+          "tolerance": 0.01,
+          "unit": "%"
+        },
+        {
+          "id": "q1-8",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Bank X charges R65 per month plus R6,00 per transaction. Bank Y charges R125 per month with unlimited transactions. For how many transactions per month are the costs equal?",
+          "memo": "✓ 65 + 6t = 125 (1)\n✓ 6t = 60 (1)\n✓ t = 10 transactions (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Measurement",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A rectangular fish pond is 2,5 m long, 1,6 m wide and 0,8 m deep. Calculate its volume in litres, and how long a pump delivering 20 ℓ per minute will take to fill it.",
+          "memo": "✓ V = 2,5 × 1,6 × 0,8 = 3,2 m³ (1)\n✓ = 3 200 ℓ (1)\n✓ 3 200 ÷ 20 = 160 min (1)\n✓ = 2 h 40 min (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A cylindrical rain tank has a radius of 0,75 m and height of 1,8 m. Calculate its capacity in litres. Use $\\pi = 3{,}142$.",
+          "memo": "✓ V = 3,142 × 0,75² × 1,8 (2)\n✓ = 3,181 m³ (1)\n✓ ≈ 3 181 ℓ (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Convert 3,2 m² to cm².",
+          "answer": 32000,
+          "tolerance": 0,
+          "unit": "cm²"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Boxes measuring 20 cm × 15 cm × 10 cm are packed into a crate 80 cm × 60 cm × 50 cm (same orientation). How many boxes fit?",
+          "memo": "✓ 80 ÷ 20 = 4; 60 ÷ 15 = 4 (1)\n✓ 50 ÷ 10 = 5 (1)\n✓ 4 × 4 × 5 = 80 boxes (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A road sign shows 60 miles. Convert to km (1 mile = 1,609 km), to one decimal place.",
+          "answer": 96.5,
+          "tolerance": 0.05,
+          "unit": "km"
+        },
+        {
+          "id": "q2-6",
+          "type": "open",
+          "marks": 4,
+          "prompt": "The four walls of a room are each 4 m long and 2,6 m high. One litre of paint covers 9 m². Paint is sold in 5 ℓ tins at R420. Calculate the cost of painting all four walls with one coat (ignore doors and windows).",
+          "memo": "✓ Area 4 × 4 × 2,6 = 41,6 m² (1)\n✓ 41,6 ÷ 9 = 4,62 ℓ (1)\n✓ 1 tin (1)\n✓ R420 (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Maps, plans and models",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A model house is built to a scale of 1 : 75. The model's roof is 8 cm high. How high is the real roof, in metres?",
+          "answer": 6,
+          "tolerance": 0,
+          "unit": "m"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "On a 1 : 50 plan, a patio measures 9 cm by 6 cm. Paving costs R265 per m². Calculate the cost of paving the patio.",
+          "memo": "✓ Real: 4,5 m × 3 m (1)\n✓ Area 13,5 m² (1)\n✓ × R265 (1)\n✓ = R3 577,50 (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A bus leaves Cape Town at 06:45 and travels 400 km to Oudtshoorn at an average speed of 80 km/h, stopping for 30 minutes. At what time does it arrive?",
+          "memo": "✓ 400 ÷ 80 = 5 h (1)\n✓ + 30 min = 5 h 30 min (1)\n✓ 06:45 + 5 h 30 min (1)\n✓ = 12:15 (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is the difference between a floor plan and an elevation plan?",
+          "memo": "✓ A floor plan shows the layout from above (1)\n✓ An elevation shows the outside view from the front, back or side (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A 1 : 20 scale model of a water tank holds 0,25 ℓ. How many litres does the real tank hold? Explain your method.",
+          "memo": "✓ Volumes scale by $20^3$ (1)\n✓ = 8 000 (1)\n✓ 0,25 × 8 000 = 2 000 ℓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Data handling and probability",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Number of cars sold per week by a dealership over 11 weeks: 8; 12; 5; 9; 14; 7; 10; 6; 15; 9; 11"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the five-number summary of the data.",
+          "memo": "✓ Ordered: 5; 6; 7; 8; 9; 9; 10; 11; 12; 14; 15 (1)\n✓ Min 5, max 15 (1)\n✓ Median 9 (1)\n✓ $Q_1 = 7$, $Q_3 = 12$ (1)"
+        },
+        {
+          "id": "q4-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the interquartile range.",
+          "answer": 5,
+          "tolerance": 0
+        },
+        {
+          "id": "q4-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the mean (two decimals).",
+          "answer": 9.64,
+          "tolerance": 0.01
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "The dealer advertises 'Our sales have tripled!' by comparing week 3 (5 cars) with week 9 (15 cars). Explain why comparing only two weeks can be misleading.",
+          "memo": "✓ Two weeks are a very small sample (1)\n✓ Sales vary a lot from week to week, so a fair comparison should use averages over many weeks (1)"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A game costs R10 to play. You spin a spinner with 8 equal sections; landing on the single gold section wins R50. Over 80 games, how much do you expect to win or lose?",
+          "memo": "✓ P(gold) = $\\frac{1}{8}$ (1)\n✓ Expected wins: 10 × R50 = R500 (1)\n✓ Cost: 80 × R10 = R800 (1)\n✓ Expected loss R300 (1)"
+        },
+        {
+          "id": "q4-6",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why does a survey of only 20 customers at one branch give an unreliable picture of customer satisfaction for a national chain?",
+          "memo": "✓ The sample is too small (1)\n✓ and not representative of all branches/customers (1)"
+        },
+        {
+          "id": "q4-7",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Of 200 learners, 120 passed Maths Literacy and 90 of those also passed English; 60 learners passed English but failed Maths Literacy. If a learner who passed English is chosen at random, what is the probability that they also passed Maths Literacy?",
+          "memo": "✓ Passed English: 90 + 60 = 150 (1)\n✓ $\\frac{90}{150}$ (1)\n✓ = 0,6 (60%) (1)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "impact-of-technology",
+  "title": "The Impact of Technology",
+  "term": 4,
+  "summary": "Positive and negative impacts of technology on people, society and the environment, bias in technology, ethics, sustainability and evaluating products.",
+  "notes": [
+    { "type": "heading", "text": "Technology changes lives" },
+    { "type": "paragraph", "text": "Every technological product has **impacts**, both intended and unintended, on people, society, the economy and the environment. Technologists must think about these impacts when they design." },
+    { "type": "table", "headers": ["Technology", "Positive impacts", "Negative impacts"], "rows": [
+      ["Cellphones", "Instant communication, banking, learning and emergency help", "Cyberbullying, addiction, e-waste, distraction while driving"],
+      ["Motor vehicles", "Fast transport of people and goods", "Air pollution, accidents, traffic congestion, fossil-fuel use"],
+      ["Coal power stations", "Reliable electricity for homes and industry", "Air pollution, acid rain, greenhouse gases, water use"],
+      ["Plastic packaging", "Light, cheap, keeps food fresh", "Litter, ocean pollution, made from oil"],
+      ["Automation and robots", "Faster, safer and more accurate production", "Job losses for low-skilled workers"]
+    ] },
+    { "type": "heading", "text": "Bias in technology" },
+    { "type": "definition", "term": "Bias", "text": "When a product favours some groups of people over others, or excludes some groups, often without the designer intending it." },
+    { "type": "list", "items": [
+      "**Gender bias**: tools sized for men's hands; safety gear designed for male body shapes.",
+      "**Age bias**: small text and complex menus that older people find hard to use.",
+      "**Disability bias**: buildings without ramps; websites that cannot be read by screen readers.",
+      "**Cultural and language bias**: devices available only in English; facial recognition that works less accurately on darker skin.",
+      "**Economic bias**: expensive products that poorer communities cannot afford."
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "**Inclusive (universal) design** aims to make products usable by as many people as possible: for example ramps, braille on lift buttons, adjustable seats and apps in all official languages." },
+    { "type": "heading", "text": "Ethics and safety" },
+    { "type": "list", "items": [
+      "Should we build something just because we can? Examples: surveillance cameras and privacy, genetically modified crops, social media data collection.",
+      "Products must be **safe**: tested, with warnings and instructions, and must follow standards (in South Africa, the **SABS**, South African Bureau of Standards).",
+      "**Intellectual property**: designers' ideas are protected by patents, copyright and trademarks."
+    ] },
+    { "type": "heading", "text": "Sustainable design" },
+    { "type": "list", "items": [
+      "Use renewable energy (solar, wind) and energy-efficient designs.",
+      "Choose materials that are recycled, recyclable or biodegradable.",
+      "Design products to last longer and to be repaired.",
+      "Consider the whole **life cycle**: raw materials → manufacture → use → disposal or recycling."
+    ] },
+    { "type": "heading", "text": "Evaluating a product" },
+    { "type": "paragraph", "text": "When evaluating a product, ask: Does it meet the needs of the user? Is it safe? Is it affordable? Is it easy to use for different people? What are its environmental impacts? How could it be improved?" }
+  ],
+  "questions": [
+    { "id": "bias-def", "type": "open", "marks": 2, "prompt": "What is bias in technology?", "memo": "✓ When a product favours some groups of people (1)\n✓ or excludes/disadvantages others (1)" },
+    { "id": "sabs", "type": "short", "prompt": "Which South African organisation sets standards for product safety and quality? (abbreviation)", "answers": ["sabs", "south african bureau of standards"] },
+    { "id": "ramp", "type": "mcq", "prompt": "A ramp at the entrance of a building is an example of…", "options": ["gender bias", "inclusive design", "e-waste", "automation"], "answer": 1 },
+    { "id": "ewaste", "type": "truefalse", "prompt": "Old cellphones and computers that are thrown away are called e-waste.", "answer": true },
+    { "id": "bias-types", "type": "match", "marks": 4, "prompt": "Match each example to the type of bias.", "pairs": [
+      { "left": "A website without screen-reader support", "right": "Disability bias" },
+      { "left": "A tool only made for large hands", "right": "Gender bias" },
+      { "left": "An app only in English", "right": "Language bias" },
+      { "left": "A very expensive medical device", "right": "Economic bias" }
+    ] },
+    { "id": "cellphone", "type": "open", "marks": 4, "prompt": "Discuss TWO positive and TWO negative impacts of cellphones on society.", "memo": "Positive (1 each): communication; banking; learning; emergency help; jobs\nNegative (1 each): cyberbullying; addiction; e-waste; distraction/accidents; privacy" },
+    { "id": "life-cycle", "type": "open", "marks": 2, "prompt": "What is meant by the life cycle of a product?", "memo": "✓ All stages of the product's life (1)\n✓ from raw materials and manufacture to use and disposal/recycling (1)" },
+    { "id": "sustainable", "type": "open", "marks": 3, "prompt": "Suggest THREE ways a designer can make a product more sustainable.", "memo": "Any three (1 each): renewable energy; energy efficiency; recycled/recyclable materials; biodegradable materials; durable and repairable design; less packaging" },
+    { "id": "automation", "type": "open", "marks": 2, "prompt": "Give ONE advantage and ONE disadvantage of using robots in factories.", "memo": "✓ Advantage: faster / more accurate / safer for dangerous jobs / works continuously (1)\n✓ Disadvantage: job losses / expensive / maintenance (1)" },
+    { "id": "ethics", "type": "open", "marks": 2, "prompt": "Why might surveillance cameras in public places raise ethical questions?", "memo": "✓ They can reduce crime and help find criminals (1)\n✓ but they can invade people's privacy / data may be misused (1)" }
+  ]
+}

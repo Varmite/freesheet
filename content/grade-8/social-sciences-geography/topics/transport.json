@@ -1,0 +1,53 @@
+{
+  "id": "transport",
+  "title": "Transport Networks",
+  "term": 4,
+  "summary": "Types of transport and their advantages and disadvantages, transport networks and corridors in South Africa, and how transport affects development.",
+  "notes": [
+    { "type": "heading", "text": "Why transport matters" },
+    { "type": "paragraph", "text": "**Transport** moves people and goods from one place to another. Good transport links help farms, mines and factories get raw materials and send products to markets, and let people reach jobs, schools and hospitals. A **transport network** is the system of routes (roads, railways, air and sea routes) and the places (nodes) they connect." },
+    { "type": "table", "caption": "Comparing types of transport", "headers": ["Type", "Advantages", "Disadvantages", "Best for"], "rows": [
+      ["Road (cars, trucks, taxis, buses)", "Door-to-door; flexible routes and times", "Congestion; accidents; pollution; damages roads with heavy loads", "Short to medium distances; perishable goods"],
+      ["Rail", "Carries very heavy, bulky loads cheaply; less pollution per tonne", "Fixed routes and timetables; goods must be moved to and from stations", "Coal, iron ore, maize; commuters"],
+      ["Air", "Fastest over long distances", "Expensive; small loads; high fuel use and emissions", "People; light, valuable or perishable goods (flowers, medicine)"],
+      ["Sea (ships)", "Carries huge loads very cheaply over long distances", "Slow; needs harbours", "International trade: containers, oil, coal, cars"],
+      ["Pipelines", "Continuous flow; cheap once built", "Expensive to build; only liquids and gases", "Oil, petrol, natural gas, water"]
+    ] },
+    { "type": "heading", "text": "South Africa's transport network" },
+    { "type": "list", "items": [
+      "**National roads** (N1, N2, N3 and others) link the main cities. The **N3** between Durban and Johannesburg is one of the busiest freight routes in Africa.",
+      "**Railways** run by Transnet carry coal from Mpumalanga to **Richards Bay** and iron ore from Sishen to **Saldanha Bay**.",
+      "**Major ports**: Durban (the busiest container port in sub-Saharan Africa), Cape Town, Port Elizabeth (Gqeberha), Ngqura, East London, Richards Bay and Saldanha Bay.",
+      "**Airports**: O. R. Tambo International (Johannesburg), Cape Town International and King Shaka International (Durban).",
+      "The **Maputo Development Corridor** links Gauteng with the port of Maputo in Mozambique."
+    ] },
+    { "type": "definition", "term": "Development corridor", "text": "A transport route (road, rail and often pipelines and power lines) along which economic development is encouraged, linking areas of production with ports and markets." },
+    { "type": "heading", "text": "Transport and development" },
+    { "type": "paragraph", "text": "Places with good transport links attract industries and grow; isolated rural areas often remain poor because it is expensive to reach markets and services. Many South Africans depend on **minibus taxis**, which carry most commuters, followed by buses and trains." },
+    { "type": "table", "headers": ["Problem", "Possible solution"], "rows": [
+      ["Traffic congestion in cities", "Better public transport (BRT buses, Gautrain), carpooling"],
+      ["Road accidents", "Stricter law enforcement, road safety education, roadworthy vehicles"],
+      ["Too much freight on roads", "Move bulky goods back onto rail"],
+      ["Poor rural roads", "Government investment in rural infrastructure"],
+      ["Air pollution", "Cleaner fuels, electric vehicles, cycling and walking routes"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "When choosing the best type of transport for a product, think about **weight/bulk**, **value**, **how quickly it spoils**, **distance** and **cost**." }
+  ],
+  "questions": [
+    { "id": "bulky", "type": "mcq", "prompt": "Which is the cheapest way to move large amounts of coal over land?", "options": ["Air", "Road", "Rail", "Pipeline"], "answer": 2 },
+    { "id": "flowers", "type": "mcq", "prompt": "Fresh flowers exported to Europe are usually sent by…", "options": ["sea", "air", "rail", "pipeline"], "answer": 1, "explanation": "They are light, valuable and perishable." },
+    { "id": "busiest-port", "type": "short", "prompt": "Which South African port is the busiest container port?", "answers": ["durban", "port of durban"] },
+    { "id": "pipeline", "type": "truefalse", "prompt": "Pipelines can be used to transport petrol and natural gas.", "answer": true },
+    { "id": "ore-port", "type": "short", "prompt": "To which port is iron ore from Sishen exported by rail?", "answers": ["saldanha bay", "saldanha"] },
+    { "id": "match-transport", "type": "match", "marks": 4, "prompt": "Match each type of transport to an advantage.", "pairs": [
+      { "left": "Road", "right": "Door-to-door delivery" },
+      { "left": "Air", "right": "Fastest over long distances" },
+      { "left": "Sea", "right": "Cheapest for huge international loads" },
+      { "left": "Rail", "right": "Cheap for heavy loads over land" }
+    ] },
+    { "id": "corridor", "type": "open", "marks": 2, "prompt": "What is a development corridor? Give an example.", "memo": "✓ A transport route along which economic development is encouraged, linking producers with ports/markets (1)\n✓ Maputo Development Corridor / N3 Durban–Gauteng corridor (1)" },
+    { "id": "road-disadv", "type": "open", "marks": 3, "prompt": "Give THREE disadvantages of moving most freight by road.", "memo": "Any three (1 each): congestion; accidents; pollution; damage to roads; higher cost per tonne for bulky goods; fuel use" },
+    { "id": "rural", "type": "open", "marks": 2, "prompt": "Explain how poor transport keeps rural areas poor.", "memo": "✓ It is expensive and slow to get products to markets (1)\n✓ People cannot easily reach jobs, schools and clinics, and businesses do not invest there (1)" },
+    { "id": "commuters", "type": "short", "prompt": "Which form of public transport carries the most commuters in South Africa?", "answers": ["minibus taxis", "minibus taxi", "taxis", "taxi"] }
+  ]
+}

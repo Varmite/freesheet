@@ -1,0 +1,60 @@
+{
+  "id": "static-electricity",
+  "title": "Static Electricity",
+  "term": 3,
+  "summary": "How objects become charged by friction, how charges attract and repel, lightning and earthing, and everyday uses and dangers of static electricity.",
+  "notes": [
+    { "type": "heading", "text": "Charge and atoms" },
+    { "type": "paragraph", "text": "Atoms contain positive **protons** and negative **electrons**. A neutral object has equal numbers of each. Only **electrons** can move from one object to another; protons stay in the nucleus." },
+    { "type": "list", "items": [
+      "An object that **gains** electrons becomes **negatively** charged.",
+      "An object that **loses** electrons becomes **positively** charged.",
+      "Charge that builds up and stays on an object is called **static electricity** (static means not moving)."
+    ] },
+    { "type": "heading", "text": "Charging by friction" },
+    { "type": "paragraph", "text": "When two different insulating materials are rubbed together, electrons are transferred from one to the other. Both objects end up with **equal but opposite** charges." },
+    { "type": "example", "title": "Rubbing a plastic ruler with a woollen cloth", "problem": "A plastic ruler is rubbed with a woollen cloth and becomes negatively charged. Explain what happened and state the charge on the cloth.", "steps": [
+      "Friction transferred electrons from the wool to the plastic.",
+      "The ruler gained electrons, so it is negatively charged.",
+      "The cloth lost the same number of electrons, so it is positively charged."
+    ], "answer": "Electrons moved from the cloth to the ruler; the cloth is positive." },
+    { "type": "table", "caption": "The laws of electrostatics", "headers": ["Charges", "Force"], "rows": [
+      ["Positive and positive", "Repel (push apart)"],
+      ["Negative and negative", "Repel (push apart)"],
+      ["Positive and negative", "Attract (pull together)"],
+      ["Charged object and neutral object", "Attract"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "**Like charges repel, unlike charges attract.** A charged object can also attract small neutral objects such as pieces of paper, because it pulls the opposite charges in the paper slightly towards it." },
+    { "type": "paragraph", "text": "Static electricity builds up on **insulators** (plastic, rubber, glass, wool), because charges cannot move through them. On a **conductor** (metal), the charge flows away, especially if the conductor is connected to the ground." },
+    { "type": "heading", "text": "Discharge and lightning" },
+    { "type": "definition", "term": "Discharge", "text": "When static charge suddenly flows away, often as a spark, for example the small shock you feel after walking on a carpet and touching a metal door handle." },
+    { "type": "paragraph", "text": "In a thunderstorm, water droplets and ice crystals rub together inside clouds. The bottom of the cloud becomes negatively charged. When the charge is large enough, a huge spark jumps between the cloud and the ground: **lightning**. Lightning heats the air so quickly that it expands explosively, producing **thunder**." },
+    { "type": "list", "items": [
+      "**Lightning conductors**: metal rods on tall buildings connected by a thick copper strip to the ground, so lightning flows safely into the earth.",
+      "In a storm, stay indoors or in a car, away from tall trees, water, open fields and metal fences.",
+      "If caught outdoors, crouch low with your feet together. Do not lie flat."
+    ] },
+    { "type": "heading", "text": "Uses and dangers of static electricity" },
+    { "type": "table", "headers": ["Uses", "Dangers"], "rows": [
+      ["Photocopiers and laser printers attract toner powder to paper", "Sparks can ignite petrol vapour when refuelling cars or aircraft"],
+      ["Spray painting cars: charged paint droplets are attracted evenly to the car body", "Sparks can damage electronic components"],
+      ["Electrostatic filters remove smoke and dust from factory chimneys", "Lightning causes fires and deaths"]
+    ] },
+    { "type": "paragraph", "text": "**Earthing** prevents dangerous build-up: fuel tankers are connected to the ground with a wire before unloading, so any charge flows safely away." }
+  ],
+  "questions": [
+    { "id": "moves", "type": "mcq", "prompt": "Which particles move from one object to another when objects are charged by friction?", "options": ["Protons", "Neutrons", "Electrons", "Atoms"], "answer": 2 },
+    { "id": "gains", "type": "short", "prompt": "An object gains electrons. What type of charge does it now have?", "answers": ["negative", "negative charge", "negatively charged"] },
+    { "id": "like", "type": "truefalse", "prompt": "Two negatively charged balloons will attract each other.", "answer": false, "explanation": "Like charges repel." },
+    { "id": "insulator", "type": "mcq", "prompt": "Static electricity builds up most easily on…", "options": ["a copper wire", "a plastic comb", "a steel spoon", "an aluminium can"], "answer": 1, "explanation": "Charges cannot flow away through an insulator like plastic." },
+    { "id": "thunder", "type": "short", "prompt": "What is the sound caused by the rapid expansion of air heated by lightning?", "answers": ["thunder"] },
+    { "id": "laws", "type": "match", "marks": 3, "prompt": "Match each pair of objects to the force between them.", "pairs": [
+      { "left": "Two positively charged rods", "right": "Repel" },
+      { "left": "A positive rod and a negative rod", "right": "Attract" },
+      { "left": "A neutral rod and a neutral rod", "right": "No electrostatic force" }
+    ] },
+    { "id": "conductor-roof", "type": "open", "marks": 2, "prompt": "Explain how a lightning conductor protects a building.", "memo": "✓ It is a metal rod connected to the ground by a thick conducting strip (1)\n✓ It provides an easy path for the charge to flow safely into the ground instead of through the building (1)" },
+    { "id": "cloth", "type": "open", "marks": 3, "prompt": "A glass rod is rubbed with a silk cloth and becomes positively charged. Explain what happened to the electrons and state the charge on the silk.", "memo": "✓ Electrons were transferred from the glass rod to the silk by friction (1)\n✓ The rod lost electrons, so it is positive (1)\n✓ The silk gained electrons, so it is negatively charged (1)" },
+    { "id": "petrol", "type": "open", "marks": 2, "prompt": "Why are fuel tankers earthed with a wire before petrol is pumped out?", "memo": "✓ Friction of the flowing fuel can build up static charge (1)\n✓ A spark could ignite the petrol vapour; earthing lets the charge flow safely away (1)" }
+  ]
+}

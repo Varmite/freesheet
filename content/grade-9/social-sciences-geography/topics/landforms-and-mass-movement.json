@@ -1,0 +1,63 @@
+{
+  "id": "landforms-and-mass-movement",
+  "title": "Landforms, Mass Movement and Soil Erosion",
+  "term": 4,
+  "summary": "Landforms made by erosion and deposition, the stages of a river, types of mass movement, and the causes, effects and prevention of soil erosion.",
+  "notes": [
+    { "type": "heading", "text": "Landforms in horizontal rock layers" },
+    { "type": "paragraph", "text": "In the **Karoo**, layers of soft sedimentary rock are capped by hard **dolerite**. As the softer rock is eroded, the hard cap protects the land beneath it, forming flat-topped hills." },
+    { "type": "list", "ordered": true, "items": [
+      "**Plateau**: a large, high area with a flat top.",
+      "**Mesa**: a flat-topped hill with steep sides, wider than it is high (formed as a plateau is eroded).",
+      "**Butte**: a smaller hill, higher than it is wide.",
+      "**Conical hill**: when the cap rock is removed, the hill is worn into a cone shape."
+    ] },
+    { "type": "heading", "text": "The course of a river" },
+    { "type": "table", "headers": ["", "Upper course", "Middle course", "Lower course"], "rows": [
+      ["Gradient", "Steep", "Moderate", "Gentle, almost flat"],
+      ["Main process", "Vertical (downward) erosion", "Lateral (sideways) erosion and some deposition", "Deposition"],
+      ["Valley shape", "Narrow V-shaped valley", "Wider valley", "Wide, flat flood plain"],
+      ["Landforms", "Waterfalls, rapids, gorges, interlocking spurs", "Meanders, river cliffs, slip-off slopes", "Flood plains, oxbow lakes, levees, deltas"]
+    ] },
+    { "type": "definition", "term": "Meander", "text": "A bend in a river. Water flows fastest on the outside of the bend, eroding a river cliff; it is slowest on the inside, depositing a slip-off slope. Meanders can be cut off to form oxbow lakes." },
+    { "type": "definition", "term": "Delta", "text": "A fan-shaped area of deposited sediment at a river mouth, formed where the river slows down on entering the sea or a lake (e.g. the Nile Delta and the Okavango inland delta)." },
+    { "type": "heading", "text": "Mass movement" },
+    { "type": "definition", "term": "Mass movement", "text": "The downhill movement of rock and soil under the influence of gravity, often triggered by heavy rain, earthquakes or human activity." },
+    { "type": "table", "headers": ["Type", "Speed", "Description"], "rows": [
+      ["Soil creep", "Very slow", "Soil moves slowly downslope; shows as tilted fences, poles and trees"],
+      ["Mudflow", "Fast", "Saturated soil flows like a liquid after very heavy rain"],
+      ["Landslide", "Fast", "A mass of rock and soil slides down a slope along a slip plane"],
+      ["Rockfall", "Very fast", "Rocks break off a cliff and fall freely, often after frost action"]
+    ] },
+    { "type": "heading", "text": "Soil erosion" },
+    { "type": "paragraph", "text": "**Soil erosion** is the removal of fertile topsoil by water or wind faster than new soil can form. It is a serious problem in South Africa: in parts of the Eastern Cape and KwaZulu-Natal deep gullies called **dongas** have formed." },
+    { "type": "table", "headers": ["Causes", "Prevention"], "rows": [
+      ["Overgrazing", "Rotational grazing; fewer animals"],
+      ["Deforestation and removing vegetation", "Planting trees and grass; keeping vegetation cover"],
+      ["Ploughing up and down slopes", "**Contour ploughing** (ploughing along the contours) and **terracing**"],
+      ["Heavy rain on bare soil", "Cover crops, mulching, gabions (wire baskets of stones) in gullies"],
+      ["Poorly planned roads and paths", "Proper drainage channels"]
+    ] },
+    { "type": "list", "items": [
+      "**Effects**: loss of fertile soil and lower crop yields; dams and rivers silt up; increased flooding; food insecurity and poverty."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "On an orthophoto map, look for light-coloured, branching lines without vegetation on slopes: these are often dongas (gullies) caused by soil erosion." }
+  ],
+  "questions": [
+    { "id": "mesa", "type": "mcq", "prompt": "A flat-topped hill that is wider than it is high is a…", "options": ["butte", "mesa", "conical hill", "spur"], "answer": 1 },
+    { "id": "upper", "type": "mcq", "prompt": "Waterfalls and V-shaped valleys are typical of a river's…", "options": ["upper course", "middle course", "lower course", "delta"], "answer": 0 },
+    { "id": "creep", "type": "short", "prompt": "What is the very slow downslope movement of soil, shown by tilted fence posts?", "answers": ["soil creep", "creep"] },
+    { "id": "donga", "type": "short", "prompt": "What South African word describes a deep gully caused by soil erosion?", "answers": ["donga", "dongas"] },
+    { "id": "contour-plough", "type": "truefalse", "prompt": "Ploughing up and down a slope helps prevent soil erosion.", "answer": false, "explanation": "Contour ploughing, along the slope, slows water flow." },
+    { "id": "lower-course", "type": "match", "marks": 4, "prompt": "Match each landform to its course.", "pairs": [
+      { "left": "Gorge", "right": "Upper course" },
+      { "left": "Meander with river cliff", "right": "Middle course" },
+      { "left": "Oxbow lake", "right": "Lower course" },
+      { "left": "Delta", "right": "River mouth" }
+    ] },
+    { "id": "meander", "type": "open", "marks": 3, "prompt": "Explain how a meander changes shape over time.", "memo": "✓ Water flows fastest on the outside of the bend and erodes a river cliff (1)\n✓ Water is slowest on the inside and deposits sediment (slip-off slope) (1)\n✓ The bend becomes bigger and may be cut off to form an oxbow lake (1)" },
+    { "id": "soil-causes", "type": "open", "marks": 3, "prompt": "Give THREE causes of soil erosion.", "memo": "Any three (1 each): overgrazing; deforestation; ploughing down slopes; heavy rain on bare soil; poor road drainage; veld fires" },
+    { "id": "soil-prevent", "type": "open", "marks": 3, "prompt": "Suggest THREE ways farmers can prevent soil erosion.", "memo": "Any three (1 each): contour ploughing; terracing; rotational grazing; planting cover crops/trees; gabions; mulching" },
+    { "id": "mass-trigger", "type": "open", "marks": 2, "prompt": "Name TWO factors that can trigger a landslide.", "memo": "Any two (1 each): heavy rain; earthquakes; removing vegetation; building/cutting into slopes; mining; undercutting by rivers or waves" }
+  ]
+}

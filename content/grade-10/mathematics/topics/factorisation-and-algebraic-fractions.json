@@ -1,0 +1,415 @@
+{
+  "id": "factorisation-and-algebraic-fractions",
+  "title": "Factorisation and Algebraic Fractions",
+  "term": 1,
+  "summary": "Factorise expressions fully using common factors, the difference of squares, grouping, trinomials and cubes, then simplify and combine algebraic fractions and state their restrictions.",
+  "notes": [
+    { "type": "heading", "text": "What does it mean to factorise?" },
+    { "type": "paragraph", "text": "**Factorising** is the reverse of expanding. When you expand, you multiply brackets out: $3(x + 2) = 3x + 6$. When you factorise, you start with $3x + 6$ and write it as a **product** of factors: $3(x + 2)$.\n\nFactorising is one of the most important skills in Grade 10 to 12 Mathematics. You will use it to simplify fractions, solve equations and sketch graphs, so it is worth practising until it is automatic." },
+    { "type": "definition", "term": "Factor", "text": "An expression that divides exactly into another expression. In $x^2 - 9 = (x - 3)(x + 3)$, both $(x - 3)$ and $(x + 3)$ are factors." },
+    { "type": "definition", "term": "Factorise fully", "text": "Keep factorising until **no** factor can be factorised any further. $2x^2 - 8 = 2(x^2 - 4)$ is not fully factorised; $2(x - 2)(x + 2)$ is." },
+
+    { "type": "heading", "text": "Method 1: Taking out a common factor" },
+    { "type": "paragraph", "text": "Always look for a **highest common factor** (HCF) first. Find the HCF of the coefficients and the lowest power of each variable that appears in **every** term, then divide each term by it." },
+    {
+      "type": "example",
+      "title": "Worked example 1",
+      "problem": "Factorise $6x^2y - 9xy^2 + 3xy$.",
+      "steps": [
+        "HCF of $6$, $9$ and $3$ is $3$. Every term contains at least $x^1$ and $y^1$. So the HCF is $3xy$.",
+        "Divide each term by $3xy$: $\\dfrac{6x^2y}{3xy} = 2x$, $\\dfrac{-9xy^2}{3xy} = -3y$, $\\dfrac{3xy}{3xy} = 1$.",
+        "$6x^2y - 9xy^2 + 3xy = 3xy(2x - 3y + 1)$"
+      ],
+      "answer": "$3xy(2x - 3y + 1)$"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "When a whole term is taken out, a $1$ is left behind, not $0$. $3xy(2x - 3y)$ is wrong because expanding it does not give back the $+3xy$." },
+    { "type": "paragraph", "text": "The common factor can be a **bracket** (a binomial). Treat the whole bracket as a single factor." },
+    {
+      "type": "example",
+      "title": "Worked example 2: a binomial common factor",
+      "problem": "Factorise $3a(x - 2) + 5(x - 2)$.",
+      "steps": [
+        "Both terms contain the factor $(x - 2)$.",
+        "Take it out: $(x - 2)(3a + 5)$"
+      ],
+      "answer": "$(x - 2)(3a + 5)$"
+    },
+    { "type": "paragraph", "text": "Sometimes the brackets are **almost** the same but in the opposite order, e.g. $(y - 3)$ and $(3 - y)$. Use the sign change rule:" },
+    { "type": "formula", "latex": "a - b = -(b - a)", "caption": "Swapping the order of a subtraction changes the sign" },
+    {
+      "type": "example",
+      "title": "Worked example 3: a sign change",
+      "problem": "Factorise $2x(y - 3) - 5(3 - y)$.",
+      "steps": [
+        "Write $(3 - y) = -(y - 3)$.",
+        "$2x(y - 3) - 5 \\cdot [-(y - 3)] = 2x(y - 3) + 5(y - 3)$",
+        "Take out the common bracket: $(y - 3)(2x + 5)$"
+      ],
+      "answer": "$(y - 3)(2x + 5)$"
+    },
+
+    { "type": "heading", "text": "Method 2: Difference of two squares" },
+    { "type": "paragraph", "text": "An expression with **two** terms, both perfect squares, separated by a **minus** sign is a difference of two squares (often called **DOTS**). It factorises into a sum times a difference:" },
+    { "type": "formula", "latex": "a^2 - b^2 = (a - b)(a + b)", "caption": "Difference of two squares" },
+    {
+      "type": "example",
+      "title": "Worked example 4",
+      "problem": "Factorise fully: (a) $9x^2 - 16y^2$  (b) $2x^3 - 50x$  (c) $x^4 - 16$  (d) $(x + 1)^2 - 9$",
+      "steps": [
+        "(a) $9x^2 = (3x)^2$ and $16y^2 = (4y)^2$, so $9x^2 - 16y^2 = (3x - 4y)(3x + 4y)$.",
+        "(b) Common factor first: $2x(x^2 - 25)$. Then DOTS: $2x(x - 5)(x + 5)$.",
+        "(c) $x^4 = (x^2)^2$ and $16 = 4^2$: $(x^2 - 4)(x^2 + 4)$. The first bracket is again a DOTS: $(x - 2)(x + 2)(x^2 + 4)$.",
+        "(d) Here $a = (x + 1)$ and $b = 3$: $(x + 1 - 3)(x + 1 + 3) = (x - 2)(x + 4)$."
+      ],
+      "answer": "(a) $(3x - 4y)(3x + 4y)$  (b) $2x(x - 5)(x + 5)$  (c) $(x - 2)(x + 2)(x^2 + 4)$  (d) $(x - 2)(x + 4)$"
+    },
+    { "type": "callout", "label": "Remember", "text": "A **sum** of two squares, such as $x^2 + 4$ or $9a^2 + 1$, cannot be factorised using real numbers. Leave it as it is." },
+
+    { "type": "heading", "text": "Method 3: Grouping in pairs" },
+    { "type": "paragraph", "text": "When there are **four** terms and no common factor for all of them, group them in pairs that do have common factors. After factorising each pair, a common bracket should appear. If it does not, try grouping the terms differently." },
+    {
+      "type": "example",
+      "title": "Worked example 5",
+      "problem": "Factorise (a) $ax + ay + 3x + 3y$  (b) $2ab - 6a - b + 3$",
+      "steps": [
+        "(a) $(ax + ay) + (3x + 3y) = a(x + y) + 3(x + y) = (x + y)(a + 3)$",
+        "(b) $(2ab - 6a) + (-b + 3) = 2a(b - 3) - 1(b - 3)$. Take out $-1$ from the second pair so that the bracket matches.",
+        "$= (b - 3)(2a - 1)$"
+      ],
+      "answer": "(a) $(x + y)(a + 3)$  (b) $(b - 3)(2a - 1)$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 6: grouping followed by DOTS",
+      "problem": "Factorise fully $x^3 - 2x^2 - 9x + 18$.",
+      "steps": [
+        "Group: $x^2(x - 2) - 9(x - 2)$",
+        "Common bracket: $(x - 2)(x^2 - 9)$",
+        "$x^2 - 9$ is a DOTS: $(x - 2)(x - 3)(x + 3)$"
+      ],
+      "answer": "$(x - 2)(x - 3)(x + 3)$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 7: grouping three terms and one term",
+      "problem": "Factorise $x^2 - 6x + 9 - y^2$.",
+      "steps": [
+        "Pairs do not work here. Notice that the first three terms form a perfect square: $x^2 - 6x + 9 = (x - 3)^2$.",
+        "So the expression is $(x - 3)^2 - y^2$, a difference of two squares.",
+        "$= (x - 3 - y)(x - 3 + y)$"
+      ],
+      "answer": "$(x - 3 - y)(x - 3 + y)$"
+    },
+
+    { "type": "heading", "text": "Method 4: Trinomials of the form $x^2 + bx + c$" },
+    { "type": "paragraph", "text": "To factorise $x^2 + bx + c$, find two numbers that **multiply** to give $c$ and **add** to give $b$. If the numbers are $p$ and $q$, then $x^2 + bx + c = (x + p)(x + q)$." },
+    {
+      "type": "table",
+      "caption": "Using the signs to help",
+      "headers": ["Sign of $c$", "Sign of $b$", "Signs in the brackets", "Example"],
+      "rows": [
+        ["$+$", "$+$", "both $+$", "$x^2 + 7x + 12 = (x + 3)(x + 4)$"],
+        ["$+$", "$-$", "both $-$", "$x^2 - 9x + 20 = (x - 4)(x - 5)$"],
+        ["$-$", "$+$ or $-$", "one $+$, one $-$; the bigger number takes the sign of $b$", "$x^2 - 2x - 15 = (x - 5)(x + 3)$"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 8",
+      "problem": "Factorise $x^2 - 2x - 15$.",
+      "steps": [
+        "We need two numbers with product $-15$ and sum $-2$.",
+        "Factor pairs of $15$: $1 \\times 15$ and $3 \\times 5$. The pair $3$ and $5$ differ by $2$.",
+        "Because $c$ is negative the signs differ, and the bigger number takes the sign of $b$: $-5$ and $+3$. Check: $(-5)(3) = -15$ ✓ and $-5 + 3 = -2$ ✓.",
+        "$x^2 - 2x - 15 = (x - 5)(x + 3)$"
+      ],
+      "answer": "$(x - 5)(x + 3)$"
+    },
+
+    { "type": "heading", "text": "Method 5: Trinomials of the form $ax^2 + bx + c$ with $a \\neq 1$" },
+    { "type": "paragraph", "text": "First take out any common factor (and a $-1$ if $a$ is negative). Then use the **product-sum method**:" },
+    { "type": "list", "ordered": true, "items": [
+      "Multiply $a \\times c$.",
+      "Find two numbers that multiply to give $ac$ and add to give $b$.",
+      "Use them to split the middle term into two terms.",
+      "Factorise by grouping in pairs."
+    ] },
+    {
+      "type": "example",
+      "title": "Worked example 9",
+      "problem": "Factorise $6x^2 - x - 2$.",
+      "steps": [
+        "$a \\times c = 6 \\times (-2) = -12$. We need product $-12$ and sum $-1$: the numbers are $-4$ and $3$.",
+        "Split the middle term: $6x^2 - 4x + 3x - 2$",
+        "Group: $2x(3x - 2) + 1(3x - 2)$",
+        "$= (3x - 2)(2x + 1)$",
+        "Check by expanding: $6x^2 + 3x - 4x - 2 = 6x^2 - x - 2$ ✓"
+      ],
+      "answer": "$(3x - 2)(2x + 1)$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 10: common factor first",
+      "problem": "Factorise fully (a) $3x^2 - 3x - 18$  (b) $-x^2 + 5x - 6$",
+      "steps": [
+        "(a) Take out $3$: $3(x^2 - x - 6)$. Numbers with product $-6$ and sum $-1$: $-3$ and $2$. So $3(x - 3)(x + 2)$.",
+        "(b) Take out $-1$ so that the $x^2$ term is positive: $-(x^2 - 5x + 6)$. Product $6$, sum $-5$: $-2$ and $-3$. So $-(x - 2)(x - 3)$."
+      ],
+      "answer": "(a) $3(x - 3)(x + 2)$  (b) $-(x - 2)(x - 3)$"
+    },
+    { "type": "callout", "label": "Exam tip", "text": "You can also factorise $ax^2 + bx + c$ by trial and error (inspection): try factor pairs of $a$ for the first terms and of $c$ for the last terms, and check whether the inner and outer products add to $bx$. Whatever method you use, **always** check by expanding." },
+
+    { "type": "heading", "text": "Method 6: Sum and difference of two cubes" },
+    { "type": "paragraph", "text": "In the previous topic you saw that $(a + b)(a^2 - ab + b^2) = a^3 + b^3$. Reading these products backwards gives two factorisation rules:" },
+    { "type": "formula", "latex": "a^3 + b^3 = (a + b)(a^2 - ab + b^2)", "caption": "Sum of two cubes" },
+    { "type": "formula", "latex": "a^3 - b^3 = (a - b)(a^2 + ab + b^2)", "caption": "Difference of two cubes" },
+    { "type": "callout", "label": "Remember the signs", "text": "Use **SOAP** for the signs in the answer: **S**ame sign as the original in the binomial, **O**pposite sign for the middle term of the trinomial, **A**lways **P**ositive for the last term." },
+    {
+      "type": "example",
+      "title": "Worked example 11",
+      "problem": "Factorise fully (a) $x^3 + 27$  (b) $8a^3 - 125b^3$  (c) $2x^4 + 16x$",
+      "steps": [
+        "(a) $x^3 + 3^3$, so $a = x$, $b = 3$: $(x + 3)(x^2 - 3x + 9)$.",
+        "(b) $(2a)^3 - (5b)^3$, so the cube roots are $2a$ and $5b$: $(2a - 5b)\\big((2a)^2 + (2a)(5b) + (5b)^2\\big) = (2a - 5b)(4a^2 + 10ab + 25b^2)$.",
+        "(c) Common factor first: $2x(x^3 + 8)$. Then sum of cubes: $2x(x + 2)(x^2 - 2x + 4)$."
+      ],
+      "answer": "(a) $(x + 3)(x^2 - 3x + 9)$  (b) $(2a - 5b)(4a^2 + 10ab + 25b^2)$  (c) $2x(x + 2)(x^2 - 2x + 4)$"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "The trinomial factor in a sum or difference of cubes (such as $x^2 - 3x + 9$) does **not** factorise further. Do not try to split it. Also, the middle term is $ab$, not $2ab$." },
+
+    { "type": "heading", "text": "A strategy for factorising fully" },
+    { "type": "list", "ordered": true, "items": [
+      "Take out the **common factor** (HCF), including $-1$ if the leading term is negative.",
+      "Count the terms. **Two terms**: difference of squares, or sum/difference of cubes. **Three terms**: trinomial (or a perfect square). **Four terms**: grouping (2 and 2, or 3 and 1).",
+      "Look at every factor in your answer and check whether it can be factorised further.",
+      "Check by expanding your answer."
+    ] },
+
+    { "type": "heading", "text": "Algebraic fractions and restrictions" },
+    { "type": "definition", "term": "Algebraic fraction", "text": "A fraction with a variable in the numerator and/or the denominator, e.g. $\\dfrac{x + 2}{x^2 - 9}$." },
+    { "type": "definition", "term": "Restriction", "text": "A value of the variable that makes a denominator equal to zero. Division by zero is undefined, so these values are not allowed. Find them by setting each factor of **every** denominator equal to zero." },
+    { "type": "paragraph", "text": "For $\\dfrac{x + 2}{x^2 - 9} = \\dfrac{x + 2}{(x - 3)(x + 3)}$ the restrictions are $x \\neq 3$ and $x \\neq -3$ (written $x \\neq \\pm 3$). Always state restrictions using the **original** denominators, before you cancel anything." },
+
+    { "type": "heading", "text": "Simplifying algebraic fractions" },
+    { "type": "paragraph", "text": "Factorise the numerator and the denominator completely, then cancel **factors** that appear in both. You may only cancel factors (things that are multiplied), never terms (things that are added or subtracted)." },
+    { "type": "callout", "label": "Common mistake", "text": "$\\dfrac{x + 3}{3} \\neq x$ and $\\dfrac{x^2 + 4}{x + 2} \\neq x + 2$. In both cases the $3$ or the $x + 2$ is not a factor of the whole numerator, so nothing cancels." },
+    {
+      "type": "example",
+      "title": "Worked example 12",
+      "problem": "Simplify and state the restrictions: (a) $\\dfrac{12a^3b}{18ab^4}$  (b) $\\dfrac{x^2 - 9}{x^2 + x - 6}$  (c) $\\dfrac{2 - x}{x^2 - 4}$",
+      "steps": [
+        "(a) Divide $12$ and $18$ by $6$ and subtract exponents: $\\dfrac{2a^2}{3b^3}$, with $a \\neq 0$, $b \\neq 0$.",
+        "(b) $\\dfrac{(x - 3)(x + 3)}{(x + 3)(x - 2)}$. Restrictions from the original denominator: $x \\neq -3$, $x \\neq 2$. Cancel $(x + 3)$: $\\dfrac{x - 3}{x - 2}$.",
+        "(c) $\\dfrac{-(x - 2)}{(x - 2)(x + 2)}$ using $2 - x = -(x - 2)$. Restrictions: $x \\neq \\pm 2$. Cancel $(x - 2)$: $\\dfrac{-1}{x + 2}$."
+      ],
+      "answer": "(a) $\\dfrac{2a^2}{3b^3}$  (b) $\\dfrac{x - 3}{x - 2}$  (c) $-\\dfrac{1}{x + 2}$"
+    },
+
+    { "type": "heading", "text": "Multiplying and dividing algebraic fractions" },
+    { "type": "paragraph", "text": "**Multiplying:** factorise everything, cancel common factors from any numerator with any denominator, then multiply what is left.\n\n**Dividing:** multiply by the **reciprocal** of the second fraction (flip it upside down). When you flip it, its numerator becomes a denominator, so it also produces restrictions." },
+    {
+      "type": "example",
+      "title": "Worked example 13: multiplication",
+      "problem": "Simplify $\\dfrac{x^2 - 4}{x^2 + 5x + 6} \\times \\dfrac{x + 3}{x - 2}$.",
+      "steps": [
+        "Factorise: $\\dfrac{(x - 2)(x + 2)}{(x + 2)(x + 3)} \\times \\dfrac{x + 3}{x - 2}$",
+        "Restrictions: $x \\neq -2$, $x \\neq -3$, $x \\neq 2$.",
+        "Every factor cancels: $(x - 2)$, $(x + 2)$ and $(x + 3)$.",
+        "The answer is $1$."
+      ],
+      "answer": "$1$ (for $x \\neq -3;\\ -2;\\ 2$)"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 14: division",
+      "problem": "Simplify $\\dfrac{x^2 - x - 6}{x^2 - 9} \\div \\dfrac{x + 2}{x^2 + 3x}$.",
+      "steps": [
+        "Multiply by the reciprocal: $\\dfrac{x^2 - x - 6}{x^2 - 9} \\times \\dfrac{x^2 + 3x}{x + 2}$",
+        "Factorise: $\\dfrac{(x - 3)(x + 2)}{(x - 3)(x + 3)} \\times \\dfrac{x(x + 3)}{x + 2}$",
+        "Restrictions: $x \\neq \\pm 3$ (from $x^2 - 9$), $x \\neq 0$ (from $x^2 + 3x$) and $x \\neq -2$ (from $x + 2$, which is now a denominator).",
+        "Cancel $(x - 3)$, $(x + 2)$ and $(x + 3)$: the answer is $x$."
+      ],
+      "answer": "$x$"
+    },
+
+    { "type": "heading", "text": "Adding and subtracting algebraic fractions" },
+    { "type": "paragraph", "text": "Just like with ordinary fractions ($\\frac{1}{2} + \\frac{1}{3} = \\frac{3}{6} + \\frac{2}{6}$), you need a **lowest common denominator** (LCD)." },
+    { "type": "list", "ordered": true, "items": [
+      "Factorise every denominator.",
+      "The LCD contains every different factor, each to its highest power.",
+      "Rewrite each fraction with the LCD by multiplying its numerator by the factors it is missing.",
+      "Add or subtract the numerators. Put brackets around numerators that are being subtracted.",
+      "Simplify the numerator and factorise it if possible to see whether anything cancels."
+    ] },
+    {
+      "type": "example",
+      "title": "Worked example 15: monomial and binomial denominators",
+      "problem": "Simplify (a) $\\dfrac{2}{3x} - \\dfrac{1}{6x^2}$  (b) $\\dfrac{3}{x - 2} - \\dfrac{2}{x + 1}$",
+      "steps": [
+        "(a) LCD $= 6x^2$. $\\dfrac{2 \\times 2x}{6x^2} - \\dfrac{1}{6x^2} = \\dfrac{4x - 1}{6x^2}$, $x \\neq 0$.",
+        "(b) LCD $= (x - 2)(x + 1)$. $\\dfrac{3(x + 1) - 2(x - 2)}{(x - 2)(x + 1)}$",
+        "Expand the numerator carefully: $3x + 3 - 2x + 4 = x + 7$.",
+        "Answer: $\\dfrac{x + 7}{(x - 2)(x + 1)}$, $x \\neq 2;\\ -1$."
+      ],
+      "answer": "(a) $\\dfrac{4x - 1}{6x^2}$  (b) $\\dfrac{x + 7}{(x - 2)(x + 1)}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 16: a trinomial denominator",
+      "problem": "Simplify $\\dfrac{3}{x^2 - x - 2} + \\dfrac{1}{x + 1}$.",
+      "steps": [
+        "Factorise: $x^2 - x - 2 = (x - 2)(x + 1)$. Restrictions: $x \\neq 2;\\ -1$.",
+        "LCD $= (x - 2)(x + 1)$: $\\dfrac{3 + 1(x - 2)}{(x - 2)(x + 1)}$",
+        "Numerator: $3 + x - 2 = x + 1$, so we have $\\dfrac{x + 1}{(x - 2)(x + 1)}$.",
+        "Cancel $(x + 1)$: $\\dfrac{1}{x - 2}$"
+      ],
+      "answer": "$\\dfrac{1}{x - 2}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 17: a difference of cubes in the denominator",
+      "problem": "Simplify $\\dfrac{1}{x - 2} - \\dfrac{12}{x^3 - 8}$.",
+      "steps": [
+        "Factorise: $x^3 - 8 = (x - 2)(x^2 + 2x + 4)$. Restriction: $x \\neq 2$ (the trinomial is never zero).",
+        "LCD $= (x - 2)(x^2 + 2x + 4)$: $\\dfrac{(x^2 + 2x + 4) - 12}{(x - 2)(x^2 + 2x + 4)}$",
+        "Numerator: $x^2 + 2x - 8 = (x + 4)(x - 2)$",
+        "$\\dfrac{(x + 4)(x - 2)}{(x - 2)(x^2 + 2x + 4)} = \\dfrac{x + 4}{x^2 + 2x + 4}$"
+      ],
+      "answer": "$\\dfrac{x + 4}{x^2 + 2x + 4}$"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "When subtracting, the minus sign applies to the **whole** numerator: $-2(x - 2) = -2x + 4$, not $-2x - 4$. Writing the numerator in brackets before you expand prevents this mistake." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Always take out the highest common factor first; remember $a - b = -(b - a)$ when brackets are in the opposite order.",
+      "Difference of two squares: $a^2 - b^2 = (a - b)(a + b)$. A sum of two squares does not factorise.",
+      "Four terms: group in pairs (or 3 and 1) until a common bracket appears.",
+      "$x^2 + bx + c$: find two numbers with product $c$ and sum $b$. For $ax^2 + bx + c$ use the product $ac$ and split the middle term, or use inspection.",
+      "Cubes: $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$ and $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$ (SOAP).",
+      "Factorise fully: check every factor again, and check your answer by expanding.",
+      "Restrictions are the values that make any denominator zero; find them before cancelling (and include the divisor's numerator when dividing).",
+      "Cancel factors, never terms. To divide, multiply by the reciprocal. To add or subtract, use the LCD and bracket subtracted numerators."
+    ] }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Factorise fully: $12x^2y - 8xy$",
+      "options": ["$4(3x^2y - 2xy)$", "$4xy(3x - 2)$", "$2xy(6x - 4)$", "$4xy(3x - 2y)$"],
+      "answer": 1,
+      "explanation": "The HCF of $12x^2y$ and $8xy$ is $4xy$. Dividing gives $3x$ and $-2$. The answers $4(3x^2y - 2xy)$ and $2xy(6x - 4)$ still have a common factor inside the bracket, so they are not fully factorised."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "Factorise $x^2 - 49$.",
+      "options": ["$(x - 7)^2$", "$(x + 7)^2$", "$(x - 7)(x + 7)$", "$x(x - 49)$"],
+      "answer": 2,
+      "explanation": "$x^2 - 49 = x^2 - 7^2$ is a difference of two squares, so it equals $(x - 7)(x + 7)$."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "$5 - x = -(x - 5)$",
+      "answer": true,
+      "explanation": "$-(x - 5) = -x + 5 = 5 - x$. Swapping the order of a subtraction changes the sign."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "$x^2 + 16 = (x + 4)(x - 4)$",
+      "answer": false,
+      "explanation": "$(x + 4)(x - 4) = x^2 - 16$. A **sum** of two squares such as $x^2 + 16$ cannot be factorised over the real numbers."
+    },
+    {
+      "id": "q5",
+      "type": "match",
+      "prompt": "Match each trinomial with its factorised form.",
+      "marks": 4,
+      "pairs": [
+        { "left": "$x^2 - 5x + 6$", "right": "(x − 2)(x − 3)" },
+        { "left": "$x^2 + x - 6$", "right": "(x + 3)(x − 2)" },
+        { "left": "$x^2 - x - 6$", "right": "(x − 3)(x + 2)" },
+        { "left": "$x^2 + 5x + 6$", "right": "(x + 2)(x + 3)" }
+      ],
+      "explanation": "All four use the numbers $2$ and $3$. When the constant is $+6$ both signs are the same as the sign of $b$; when it is $-6$ the signs differ and the bigger number ($3$) takes the sign of $b$."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "Factorise $2x^2 - 5x - 3$.",
+      "options": ["$(2x - 1)(x + 3)$", "$(2x + 3)(x - 1)$", "$(2x - 3)(x + 1)$", "$(2x + 1)(x - 3)$"],
+      "answer": 3,
+      "explanation": "$ac = -6$; the numbers with product $-6$ and sum $-5$ are $-6$ and $1$. $2x^2 - 6x + x - 3 = 2x(x - 3) + 1(x - 3) = (2x + 1)(x - 3)$."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "prompt": "Factorise $x^3 - 64$.",
+      "options": ["$(x - 4)(x^2 + 4x + 16)$", "$(x - 4)(x^2 - 4x + 16)$", "$(x + 4)(x^2 - 4x + 16)$", "$(x - 4)(x + 4)^2$"],
+      "answer": 0,
+      "explanation": "$x^3 - 4^3 = (x - 4)(x^2 + 4x + 16)$. SOAP: same sign ($-$) in the binomial, opposite sign ($+$) for the middle term, last term always positive."
+    },
+    {
+      "id": "q8",
+      "type": "numeric",
+      "prompt": "Use factorisation (not a calculator) to calculate the exact value of $1\\,003^2 - 997^2$.",
+      "answer": 12000,
+      "tolerance": 0,
+      "explanation": "Difference of squares: $(1\\,003 - 997)(1\\,003 + 997) = 6 \\times 2\\,000 = 12\\,000$."
+    },
+    {
+      "id": "q9",
+      "type": "numeric",
+      "prompt": "For which value of $x$ is the expression $\\dfrac{x + 1}{2x - 6}$ undefined?",
+      "answer": 3,
+      "tolerance": 0,
+      "explanation": "The expression is undefined when the denominator is zero: $2x - 6 = 0$, so $x = 3$."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "Factorise fully: $54x^3 + 2y^3$",
+      "options": ["$2(3x + y)(9x^2 + 3xy + y^2)$", "$2(3x + y)(9x^2 - 3xy + y^2)$", "$2(3x - y)(9x^2 + 3xy + y^2)$", "$2(27x + y)(x^2 - xy + y^2)$"],
+      "answer": 1,
+      "explanation": "Common factor first: $2(27x^3 + y^3)$. Then $27x^3 + y^3 = (3x)^3 + y^3 = (3x + y)(9x^2 - 3xy + y^2)$."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "What are the restrictions on $x$ for the expression $\\dfrac{x + 1}{x^2 - 4x}$?",
+      "options": ["$x \\neq 4$ only", "$x \\neq -1$, $x \\neq 0$ and $x \\neq 4$", "$x \\neq 0$ and $x \\neq 4$", "$x \\neq 0$ and $x \\neq -4$"],
+      "answer": 2,
+      "explanation": "$x^2 - 4x = x(x - 4)$, which is zero when $x = 0$ or $x = 4$. The numerator may be zero, so $x = -1$ is allowed."
+    },
+    {
+      "id": "q12",
+      "type": "open",
+      "marks": 10,
+      "prompt": "Factorise fully:\n(a) $3x^3 - 12x$  (2)\n(b) $x^3 + 2x^2 - 4x - 8$  (3)\n(c) $6x^2 + 7x - 3$  (2)\n(d) $2x^2 - 2y^2 - x + y$  (3)",
+      "memo": "(a) $3x(x^2 - 4)$ ✓ $= 3x(x - 2)(x + 2)$ ✓ (2)\n(b) $x^2(x + 2) - 4(x + 2)$ ✓ $= (x + 2)(x^2 - 4)$ ✓ $= (x + 2)(x - 2)(x + 2) = (x + 2)^2(x - 2)$ ✓ (3)\n(c) $ac = -18$; numbers $9$ and $-2$: $6x^2 + 9x - 2x - 3 = 3x(2x + 3) - 1(2x + 3)$ ✓ $= (2x + 3)(3x - 1)$ ✓ (2)\n(d) $2(x^2 - y^2) - (x - y)$ ✓ $= 2(x - y)(x + y) - (x - y)$ ✓ $= (x - y)(2x + 2y - 1)$ ✓ (3)"
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Simplify and state the restrictions: $\\dfrac{x^2 - 2x - 8}{x^2 - 16} \\times \\dfrac{3x + 12}{x^2 + 2x}$",
+      "memo": "$x^2 - 2x - 8 = (x - 4)(x + 2)$ ✓ (1)\n$x^2 - 16 = (x - 4)(x + 4)$ ✓ (1)\n$3x + 12 = 3(x + 4)$ and $x^2 + 2x = x(x + 2)$ ✓ (1)\n$\\dfrac{(x - 4)(x + 2)}{(x - 4)(x + 4)} \\times \\dfrac{3(x + 4)}{x(x + 2)} = \\dfrac{3}{x}$ ✓ (1)\nRestrictions: $x \\neq 4;\\ -4;\\ 0;\\ -2$ ✓ (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Simplify: $\\dfrac{2}{x + 3} - \\dfrac{1}{x - 3} + \\dfrac{6}{x^2 - 9}$",
+      "memo": "$x^2 - 9 = (x - 3)(x + 3)$, so LCD $= (x - 3)(x + 3)$ ✓ (1)\n$= \\dfrac{2(x - 3) - (x + 3) + 6}{(x - 3)(x + 3)}$ ✓ (1)\n$= \\dfrac{2x - 6 - x - 3 + 6}{(x - 3)(x + 3)}$ ✓ (1)\n$= \\dfrac{x - 3}{(x - 3)(x + 3)}$ ✓ (1)\n$= \\dfrac{1}{x + 3}$, $x \\neq \\pm 3$ ✓ (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Simplify and state the restrictions: $\\dfrac{x^3 + 27}{2x^2 + 6x} \\div \\dfrac{x^2 - 3x + 9}{4x^2}$",
+      "memo": "$= \\dfrac{x^3 + 27}{2x^2 + 6x} \\times \\dfrac{4x^2}{x^2 - 3x + 9}$ ✓ (1) (reciprocal)\n$x^3 + 27 = (x + 3)(x^2 - 3x + 9)$ ✓ (1)\n$2x^2 + 6x = 2x(x + 3)$ ✓ (1)\n$\\dfrac{(x + 3)(x^2 - 3x + 9)}{2x(x + 3)} \\times \\dfrac{4x^2}{x^2 - 3x + 9} = 2x$ ✓ (1)\nRestrictions: $x \\neq 0$ and $x \\neq -3$ ($x^2 - 3x + 9$ is never zero) ✓ (1)"
+    }
+  ]
+}

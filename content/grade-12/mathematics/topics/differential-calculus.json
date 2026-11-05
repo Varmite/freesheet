@@ -1,0 +1,220 @@
+{
+  "id": "differential-calculus",
+  "title": "Differential Calculus",
+  "term": 2,
+  "summary": "Limits, the derivative from first principles, rules of differentiation, equations of tangents, sketching cubic graphs, concavity, and optimisation and rate-of-change problems.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "The derivative"
+    },
+    {
+      "type": "paragraph",
+      "text": "The **derivative** $f'(x)$ gives the **gradient of the tangent** to the curve at any point, i.e. the instantaneous rate of change. It is defined as a limit of average gradients:"
+    },
+    {
+      "type": "formula",
+      "latex": "f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}",
+      "caption": "The derivative from first principles"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1: first principles",
+      "problem": "Find $f'(x)$ from first principles if $f(x) = 2x^2$.",
+      "steps": [
+        "$f(x + h) = 2(x + h)^2 = 2x^2 + 4xh + 2h^2$",
+        "$\\dfrac{f(x + h) - f(x)}{h} = \\dfrac{4xh + 2h^2}{h} = 4x + 2h$",
+        "$f'(x) = \\lim_{h \\to 0}(4x + 2h) = 4x$"
+      ],
+      "answer": "$f'(x) = 4x$"
+    },
+    {
+      "type": "heading",
+      "text": "Rules of differentiation"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Rule",
+        "Example"
+      ],
+      "rows": [
+        [
+          "$\\dfrac{d}{dx}(k) = 0$",
+          "$\\dfrac{d}{dx}(7) = 0$"
+        ],
+        [
+          "$\\dfrac{d}{dx}(x^n) = nx^{n-1}$",
+          "$\\dfrac{d}{dx}(x^5) = 5x^4$"
+        ],
+        [
+          "$\\dfrac{d}{dx}(kx^n) = knx^{n-1}$",
+          "$\\dfrac{d}{dx}(3x^4) = 12x^3$"
+        ],
+        [
+          "Differentiate term by term",
+          "$\\dfrac{d}{dx}(x^3 - 2x) = 3x^2 - 2$"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2",
+      "problem": "Find $\\dfrac{dy}{dx}$ if $y = \\dfrac{x^3 - 4x}{x} + \\dfrac{2}{x^2}$.",
+      "steps": [
+        "Simplify first: $y = x^2 - 4 + 2x^{-2}$",
+        "$\\dfrac{dy}{dx} = 2x - 4x^{-3} = 2x - \\dfrac{4}{x^3}$"
+      ],
+      "answer": "$2x - \\frac{4}{x^3}$"
+    },
+    {
+      "type": "heading",
+      "text": "Equation of a tangent"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3",
+      "problem": "Find the equation of the tangent to $f(x) = x^3 - 3x$ at $x = 2$.",
+      "steps": [
+        "$f(2) = 2$, so the point is $(2; 2)$.",
+        "$f'(x) = 3x^2 - 3$, so $m = f'(2) = 9$.",
+        "$y - 2 = 9(x - 2)$, so $y = 9x - 16$."
+      ],
+      "answer": "$y = 9x - 16$"
+    },
+    {
+      "type": "heading",
+      "text": "Sketching cubic graphs"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "$y$-intercept: let $x = 0$.",
+        "$x$-intercepts: solve $f(x) = 0$ (factor theorem).",
+        "Stationary points: solve $f'(x) = 0$; find the $y$-values.",
+        "Point of inflection: solve $f''(x) = 0$ (concavity changes here).",
+        "Shape: $a > 0$ rises to the right; $a < 0$ falls to the right."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 4",
+      "problem": "Sketch $f(x) = x^3 - 3x^2$.",
+      "steps": [
+        "$y$-intercept $(0; 0)$; $x$-intercepts: $x^2(x - 3) = 0$ gives $(0; 0)$ and $(3; 0)$.",
+        "$f'(x) = 3x^2 - 6x = 3x(x - 2) = 0$: stationary points $(0; 0)$ (local maximum) and $(2; -4)$ (local minimum).",
+        "$f''(x) = 6x - 6 = 0$: point of inflection at $(1; -2)$."
+      ],
+      "answer": "See the graph"
+    },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260' font-family='sans-serif' font-size='10'><rect width='320' height='260' fill='white'/><line x1='18' y1='18' x2='18' y2='242' stroke='#e6e6e6'/><line x1='65.3' y1='18' x2='65.3' y2='242' stroke='#e6e6e6'/><line x1='112.7' y1='18' x2='112.7' y2='242' stroke='#e6e6e6'/><line x1='160' y1='18' x2='160' y2='242' stroke='#e6e6e6'/><line x1='207.3' y1='18' x2='207.3' y2='242' stroke='#e6e6e6'/><line x1='254.7' y1='18' x2='254.7' y2='242' stroke='#e6e6e6'/><line x1='302' y1='18' x2='302' y2='242' stroke='#e6e6e6'/><line x1='18' y1='242' x2='302' y2='242' stroke='#e6e6e6'/><line x1='18' y1='219.6' x2='302' y2='219.6' stroke='#e6e6e6'/><line x1='18' y1='197.2' x2='302' y2='197.2' stroke='#e6e6e6'/><line x1='18' y1='174.8' x2='302' y2='174.8' stroke='#e6e6e6'/><line x1='18' y1='152.4' x2='302' y2='152.4' stroke='#e6e6e6'/><line x1='18' y1='130' x2='302' y2='130' stroke='#e6e6e6'/><line x1='18' y1='107.6' x2='302' y2='107.6' stroke='#e6e6e6'/><line x1='18' y1='85.2' x2='302' y2='85.2' stroke='#e6e6e6'/><line x1='18' y1='62.8' x2='302' y2='62.8' stroke='#e6e6e6'/><line x1='18' y1='40.4' x2='302' y2='40.4' stroke='#e6e6e6'/><line x1='18' y1='18' x2='302' y2='18' stroke='#e6e6e6'/><line x1='12' y1='107.6' x2='310' y2='107.6' stroke='black'/><text x='310' y='103.6'>x</text><line x1='112.7' y1='248' x2='112.7' y2='10' stroke='black'/><text x='117.7' y='12'>y</text><text x='18' y='119.6' text-anchor='middle'>-2</text><text x='65.3' y='119.6' text-anchor='middle'>-1</text><text x='160' y='119.6' text-anchor='middle'>1</text><text x='207.3' y='119.6' text-anchor='middle'>2</text><text x='254.7' y='119.6' text-anchor='middle'>3</text><text x='302' y='119.6' text-anchor='middle'>4</text><text x='108.7' y='245' text-anchor='end'>-6</text><text x='108.7' y='222.6' text-anchor='end'>-5</text><text x='108.7' y='200.2' text-anchor='end'>-4</text><text x='108.7' y='177.8' text-anchor='end'>-3</text><text x='108.7' y='155.4' text-anchor='end'>-2</text><text x='108.7' y='133' text-anchor='end'>-1</text><text x='108.7' y='88.2' text-anchor='end'>1</text><text x='108.7' y='65.8' text-anchor='end'>2</text><text x='108.7' y='43.4' text-anchor='end'>3</text><text x='108.7' y='21' text-anchor='end'>4</text><text x='108.7' y='119.6' text-anchor='end'>0</text><clipPath id='c0'><rect x='18' y='18' width='284' height='224'/></clipPath><path d='M26.5,244L27.2,244L27.9,244L28.7,244L29.4,244L30.1,244L30.8,244L31.5,244L32.2,244L32.9,244L33.6,244L34.3,244L35,244L35.8,244L36.5,244L37.2,244L37.9,244L38.6,244L39.3,244L40,244L40.7,244L41.4,244L42.1,244L42.8,244L43.6,244L44.3,244L45,244L45.7,244L46.4,244L47.1,244L47.8,244L48.5,244L49.2,244L50,244L50.7,244L51.4,244L52.1,244L52.8,244L53.5,244L54.2,244L54.9,244L55.6,244L56.3,240.5L57.1,236.7L57.8,233L58.5,229.3L59.2,225.7L59.9,222.2L60.6,218.7L61.3,215.3L62,212L62.7,208.7L63.4,205.5L64.2,202.3L64.9,199.2L65.6,196.2L66.3,193.2L67,190.3L67.7,187.5L68.4,184.7L69.1,181.9L69.8,179.2L70.5,176.6L71.3,174.1L72,171.5L72.7,169.1L73.4,166.7L74.1,164.4L74.8,162.1L75.5,159.8L76.2,157.7L76.9,155.5L77.6,153.5L78.4,151.5L79.1,149.5L79.8,147.6L80.5,145.7L81.2,143.9L81.9,142.1L82.6,140.4L83.3,138.8L84,137.2L84.7,135.6L85.5,134.1L86.2,132.6L86.9,131.2L87.6,129.8L88.3,128.5L89,127.2L89.7,126L90.4,124.8L91.1,123.6L91.8,122.5L92.6,121.5L93.3,120.4L94,119.5L94.7,118.5L95.4,117.6L96.1,116.8L96.8,116L97.5,115.2L98.2,114.5L98.9,113.8L99.7,113.1L100.4,112.5L101.1,112L101.8,111.4L102.5,110.9L103.2,110.5L103.9,110L104.6,109.7L105.3,109.3L106,109L106.8,108.7L107.5,108.4L108.2,108.2L108.9,108L109.6,107.9L110.3,107.8L111,107.7L111.7,107.6L112.4,107.6L113.1,107.6L113.9,107.6L114.6,107.7L115.3,107.8L116,107.9L116.7,108.1L117.4,108.2L118.1,108.5L118.8,108.7L119.5,108.9L120.2,109.2L121,109.5L121.7,109.9L122.4,110.2L123.1,110.6L123.8,111L124.5,111.5L125.2,111.9L125.9,112.4L126.6,112.9L127.3,113.4L128.1,113.9L128.8,114.5L129.5,115.1L130.2,115.7L130.9,116.3L131.6,116.9L132.3,117.6L133,118.2L133.7,118.9L134.4,119.6L135.2,120.4L135.9,121.1L136.6,121.9L137.3,122.6L138,123.4L138.7,124.2L139.4,125L140.1,125.8L140.8,126.7L141.5,127.5L142.3,128.4L143,129.3L143.7,130.1L144.4,131L145.1,131.9L145.8,132.8L146.5,133.8L147.2,134.7L147.9,135.6L148.6,136.6L149.4,137.5L150.1,138.5L150.8,139.5L151.5,140.4L152.2,141.4L152.9,142.4L153.6,143.4L154.3,144.4L155,145.4L155.7,146.4L156.5,147.4L157.2,148.4L157.9,149.4L158.6,150.4L159.3,151.4L160,152.4L160.7,153.4L161.4,154.4L162.1,155.4L162.8,156.4L163.6,157.4L164.3,158.4L165,159.4L165.7,160.4L166.4,161.4L167.1,162.4L167.8,163.4L168.5,164.4L169.2,165.3L169.9,166.3L170.7,167.3L171.4,168.2L172.1,169.2L172.8,170.1L173.5,171L174.2,172L174.9,172.9L175.6,173.8L176.3,174.7L177,175.5L177.8,176.4L178.5,177.3L179.2,178.1L179.9,179L180.6,179.8L181.3,180.6L182,181.4L182.7,182.2L183.4,182.9L184.1,183.7L184.9,184.4L185.6,185.2L186.3,185.9L187,186.6L187.7,187.2L188.4,187.9L189.1,188.5L189.8,189.1L190.5,189.7L191.2,190.3L192,190.9L192.7,191.4L193.4,191.9L194.1,192.4L194.8,192.9L195.5,193.4L196.2,193.8L196.9,194.2L197.6,194.6L198.3,194.9L199.1,195.3L199.8,195.6L200.5,195.9L201.2,196.1L201.9,196.3L202.6,196.6L203.3,196.7L204,196.9L204.7,197L205.4,197.1L206.2,197.2L206.9,197.2L207.6,197.2L208.3,197.2L209,197.1L209.7,197L210.4,196.9L211.1,196.8L211.8,196.6L212.5,196.4L213.3,196.1L214,195.8L214.7,195.5L215.4,195.1L216.1,194.8L216.8,194.3L217.5,193.9L218.2,193.4L218.9,192.8L219.6,192.3L220.4,191.7L221.1,191L221.8,190.3L222.5,189.6L223.2,188.8L223.9,188L224.6,187.2L225.3,186.3L226,185.3L226.7,184.4L227.5,183.3L228.2,182.3L228.9,181.2L229.6,180L230.3,178.8L231,177.6L231.7,176.3L232.4,175L233.1,173.6L233.8,172.2L234.6,170.7L235.3,169.2L236,167.6L236.7,166L237.4,164.4L238.1,162.7L238.8,160.9L239.5,159.1L240.2,157.2L240.9,155.3L241.7,153.3L242.4,151.3L243.1,149.3L243.8,147.1L244.5,145L245.2,142.7L245.9,140.4L246.6,138.1L247.3,135.7L248,133.3L248.8,130.7L249.5,128.2L250.2,125.6L250.9,122.9L251.6,120.1L252.3,117.3L253,114.5L253.7,111.6L254.4,108.6L255.1,105.6L255.9,102.5L256.6,99.3L257.3,96.1L258,92.8L258.7,89.5L259.4,86.1L260.1,82.6L260.8,79.1L261.5,75.5L262.2,71.8L263,68.1L263.7,64.3L264.4,60.4L265.1,56.5L265.8,52.5L266.5,48.5L267.2,44.3L267.9,40.1L268.6,35.9L269.3,31.5L270.1,27.1L270.8,22.6L271.5,18.1L272.2,16L272.9,16L273.6,16L274.3,16L275,16L275.7,16L276.4,16L277.2,16L277.9,16L278.6,16L279.3,16L280,16L280.7,16L281.4,16L282.1,16L282.8,16L283.5,16L284.3,16L285,16L285.7,16L286.4,16L287.1,16L287.8,16L288.5,16L289.2,16L289.9,16L290.6,16L291.4,16L292.1,16L292.8,16L293.5,16L294.2,16L294.9,16L295.6,16L296.3,16L297,16L297.7,16' fill='none' stroke='black' stroke-width='1.8' clip-path='url(#c0)'/><text x='262.9' y='28.4' text-anchor='end' font-size='11' font-style='italic' paint-order='stroke' stroke='white' stroke-width='3'>f(x) = x³ − 3x²</text><circle cx='112.7' cy='107.6' r='3' fill='black'/><text x='117.7' y='102.6'>(0; 0)</text><circle cx='207.3' cy='197.2' r='3' fill='black'/><text x='212.3' y='192.2'>(2; −4)</text><circle cx='254.7' cy='107.6' r='3' fill='black'/><text x='259.7' y='102.6'>(3; 0)</text><circle cx='160' cy='152.4' r='3' fill='black'/><text x='165' y='147.4'>(1; −2)</text></svg>",
+      "caption": "The cubic f(x) = x³ − 3x² with turning points (0; 0) and (2; −4) and point of inflection (1; −2)"
+    },
+    {
+      "type": "heading",
+      "text": "Optimisation"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5",
+      "problem": "A farmer has 200 m of fencing to make a rectangular enclosure against a straight wall (the wall forms one side). Find the maximum area.",
+      "steps": [
+        "Let the sides perpendicular to the wall be $x$; the side parallel is $200 - 2x$.",
+        "$A = x(200 - 2x) = 200x - 2x^2$",
+        "$A'(x) = 200 - 4x = 0 \\Rightarrow x = 50$",
+        "$A = 50 \\times 100 = 5\\ 000$ m² (a maximum, since $A''(x) = -4 < 0$)"
+      ],
+      "answer": "5 000 m²"
+    },
+    {
+      "type": "callout",
+      "label": "Rates of change",
+      "text": "If $s(t)$ is displacement, then $s'(t)$ is velocity and $s''(t)$ is acceleration."
+    }
+  ],
+  "questions": [
+    {
+      "id": "power",
+      "type": "mcq",
+      "prompt": "If $f(x) = 4x^3$, then $f'(x) = $",
+      "options": [
+        "$12x^2$",
+        "$4x^2$",
+        "$12x^3$",
+        "$x^4$"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "constant",
+      "type": "numeric",
+      "prompt": "Find $\\dfrac{d}{dx}(15)$.",
+      "answer": 0,
+      "tolerance": 0
+    },
+    {
+      "id": "gradient",
+      "type": "numeric",
+      "prompt": "Find the gradient of the tangent to $y = x^2 - 5x$ at $x = 4$.",
+      "answer": 3,
+      "tolerance": 0
+    },
+    {
+      "id": "negative-power",
+      "type": "mcq",
+      "prompt": "If $y = \\dfrac{3}{x}$, then $\\dfrac{dy}{dx} = $",
+      "options": [
+        "$\\frac{3}{x^2}$",
+        "$-\\frac{3}{x^2}$",
+        "$3$",
+        "$-3x$"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "stationary",
+      "type": "numeric",
+      "prompt": "At what value of $x$ does $f(x) = x^2 - 8x + 3$ have a stationary point?",
+      "answer": 4,
+      "tolerance": 0
+    },
+    {
+      "id": "inflection",
+      "type": "numeric",
+      "prompt": "Find the $x$-coordinate of the point of inflection of $f(x) = x^3 - 6x^2 + 2$.",
+      "answer": 2,
+      "tolerance": 0
+    },
+    {
+      "id": "first-principles",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Determine $f'(x)$ from first principles if $f(x) = x^2 - 3x$.",
+      "memo": "✓ $f(x + h) = x^2 + 2xh + h^2 - 3x - 3h$ (1)\n✓ $f(x + h) - f(x) = 2xh + h^2 - 3h$ (1)\n✓ $\\frac{2xh + h^2 - 3h}{h} = 2x + h - 3$ (1)\n✓ $\\lim_{h \\to 0}$ (1)\n✓ $f'(x) = 2x - 3$ (1)"
+    },
+    {
+      "id": "tangent",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Determine the equation of the tangent to $g(x) = 2x^3 - x$ at the point where $x = 1$.",
+      "memo": "✓ $g(1) = 1$ (1)\n✓ $g'(x) = 6x^2 - 1$ (1)\n✓ $m = 5$ (1)\n✓ $y = 5x - 4$ (1)"
+    },
+    {
+      "id": "turning",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Find the turning points of $f(x) = x^3 - 12x + 1$ and say which is a maximum.",
+      "memo": "✓ $f'(x) = 3x^2 - 12 = 0$ (1)\n✓ $x = \\pm 2$ (1)\n✓ $(-2; 17)$ maximum (1)\n✓ $(2; -15)$ minimum (1)"
+    },
+    {
+      "id": "box",
+      "type": "open",
+      "marks": 5,
+      "prompt": "An open box with a square base must have a volume of 32 000 cm³. Find the dimensions that minimise the amount of material (surface area $A = x^2 + \\frac{128\\ 000}{x}$, where $x$ is the base side).",
+      "memo": "✓ $A'(x) = 2x - \\frac{128\\ 000}{x^2}$ (2)\n✓ $2x^3 = 128\\ 000$ (1)\n✓ $x = 40$ cm (1)\n✓ Height $= \\frac{32\\ 000}{1\\ 600} = 20$ cm (1)"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "switches-and-logic",
+  "title": "Switches and Logic Circuits",
+  "term": 3,
+  "summary": "Types of switches, AND and OR logic circuits built with switches, truth tables, and how logic is used in everyday control systems.",
+  "notes": [
+    { "type": "heading", "text": "Types of switches" },
+    { "type": "table", "headers": ["Switch", "How it works", "Example"], "rows": [
+      ["Push-to-make (push button)", "Closes the circuit only while it is pressed", "Doorbell, keyboard keys"],
+      ["Push-to-break", "Opens the circuit while it is pressed", "Fridge light switch (door closed presses it)"],
+      ["Toggle / rocker switch (SPST)", "Stays on or off until moved", "Light switch"],
+      ["Slide switch", "Slides between on and off", "Torch, toys"],
+      ["Reed switch", "Closes when a magnet comes near", "Burglar alarm on a door"],
+      ["Tilt switch", "Closes when tilted", "Alarm on a car or a falling heater"],
+      ["Micro-switch", "A small lever switch operated by slight movement", "Microwave door, lift doors"]
+    ] },
+    { "type": "heading", "text": "Logic circuits" },
+    { "type": "paragraph", "text": "Switches can be arranged so that a circuit responds to certain **conditions**. In logic we use **1** for ON (switch closed / output working) and **0** for OFF (switch open / output not working)." },
+    { "type": "heading", "text": "AND logic: switches in series" },
+    { "type": "paragraph", "text": "When two switches are connected in **series**, the output works only when switch A **AND** switch B are both closed." },
+    { "type": "table", "caption": "AND truth table", "headers": ["Switch A", "Switch B", "Output (bulb)"], "rows": [
+      ["0", "0", "0"],
+      ["0", "1", "0"],
+      ["1", "0", "0"],
+      ["1", "1", "1"]
+    ] },
+    { "type": "list", "items": [
+      "**Examples**: a washing machine runs only if the door is closed AND the start button is pressed; a guillotine works only when both hands press buttons (for safety); a bank vault opens only if two managers each turn a key."
+    ] },
+    { "type": "heading", "text": "OR logic: switches in parallel" },
+    { "type": "paragraph", "text": "When two switches are connected in **parallel**, the output works when switch A **OR** switch B (or both) is closed." },
+    { "type": "table", "caption": "OR truth table", "headers": ["Switch A", "Switch B", "Output (bulb)"], "rows": [
+      ["0", "0", "0"],
+      ["0", "1", "1"],
+      ["1", "0", "1"],
+      ["1", "1", "1"]
+    ] },
+    { "type": "list", "items": [
+      "**Examples**: a car's interior light comes on when the driver's door OR the passenger's door is opened; a bus bell rings when any one of several buttons is pressed; a burglar alarm sounds if any window OR door is opened."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "**Series = AND** (all must be on). **Parallel = OR** (any one can be on). Always check the truth table against the circuit." },
+    { "type": "heading", "text": "Two-way switching" },
+    { "type": "paragraph", "text": "Staircase lights use **two-way switches** (SPDT), so the light can be switched on at the bottom of the stairs and off at the top, or the other way round." }
+  ],
+  "questions": [
+    { "id": "and-series", "type": "mcq", "prompt": "Two switches in series form which logic circuit?", "options": ["AND", "OR", "NOT", "Two-way"], "answer": 0 },
+    { "id": "or-parallel", "type": "mcq", "prompt": "Two switches in parallel form which logic circuit?", "options": ["AND", "OR", "NOT", "Series"], "answer": 1 },
+    { "id": "and-output", "type": "numeric", "prompt": "In an AND circuit, switch A = 1 and switch B = 0. What is the output (0 or 1)?", "answer": 0, "tolerance": 0 },
+    { "id": "or-output", "type": "numeric", "prompt": "In an OR circuit, switch A = 0 and switch B = 1. What is the output (0 or 1)?", "answer": 1, "tolerance": 0 },
+    { "id": "reed", "type": "short", "prompt": "Which switch closes when a magnet is brought near it?", "answers": ["reed switch", "reed", "a reed switch"] },
+    { "id": "bus", "type": "truefalse", "prompt": "A bus bell that rings when any one of several buttons is pressed uses OR logic.", "answer": true },
+    { "id": "switches", "type": "match", "marks": 4, "prompt": "Match each switch to a use.", "pairs": [
+      { "left": "Push-to-make", "right": "Doorbell" },
+      { "left": "Push-to-break", "right": "Fridge light" },
+      { "left": "Tilt switch", "right": "Heater that switches off if knocked over" },
+      { "left": "Two-way switch", "right": "Staircase light" }
+    ] },
+    { "id": "guillotine", "type": "open", "marks": 2, "prompt": "Why does a paper guillotine have two buttons that must be pressed at the same time? Which logic does this use?", "memo": "✓ So that both of the operator's hands are away from the blade (safety) (1)\n✓ AND logic (1)" },
+    { "id": "and-table", "type": "open", "marks": 2, "prompt": "Explain in words how an AND circuit works.", "memo": "✓ The output is on only when both switch A and switch B are on (1)\n✓ If either or both switches are off, the output is off (1)" },
+    { "id": "design", "type": "open", "marks": 3, "prompt": "A buzzer must sound if the front door OR the back door of a house is opened. Describe how you would connect the switches and say which type of switch you could use.", "memo": "✓ Connect the two door switches in parallel (1)\n✓ in series with the battery and buzzer (1)\n✓ Use reed switches / push-to-break / micro-switches on the doors (1)" }
+  ]
+}

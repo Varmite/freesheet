@@ -1,0 +1,52 @@
+{
+  "id": "essay-writing",
+  "title": "Essay Writing: Narrative, Descriptive and Argumentative",
+  "term": 3,
+  "summary": "The writing process and the features of narrative, descriptive and argumentative essays, with paragraphing, openings and the Grade 10 length of 250–300 words.",
+  "notes": [
+    { "type": "heading", "text": "The writing process" },
+    { "type": "list", "ordered": true, "items": [
+      "**Plan**: brainstorm or mind-map ideas; decide on purpose and audience.",
+      "**Draft**: write the essay in paragraphs.",
+      "**Revise**: improve content, structure and word choice.",
+      "**Edit and proofread**: correct spelling, grammar and punctuation.",
+      "**Final copy**: give it a title and write neatly."
+    ] },
+    { "type": "callout", "label": "Length", "text": "A Grade 10 Home Language essay is usually **250–300 words**. Show your planning; it is part of the process." },
+    { "type": "heading", "text": "Essay types" },
+    { "type": "table", "headers": ["Type", "Purpose", "Key features"], "rows": [
+      ["Narrative", "Tell a story", "Plot with conflict and climax; characters; dialogue; usually past tense"],
+      ["Descriptive", "Paint a picture in words", "Sensory details (sight, sound, smell, taste, touch); figurative language; little or no plot"],
+      ["Argumentative", "Argue ONE side", "Clear stance in the introduction; reasons with evidence; counter-argument rebutted; strong conclusion"],
+      ["Discursive", "Present BOTH sides fairly", "Balanced arguments; conclusion may give a reasoned view"],
+      ["Reflective", "Think about an experience or idea", "First person; personal insight and growth"]
+    ] },
+    { "type": "heading", "text": "Strong openings" },
+    { "type": "list", "items": [
+      "Start in the middle of the action: 'The glass shattered before I could scream.'",
+      "Use dialogue: '\"Don't look down,\" my brother whispered.'",
+      "Ask a question (argumentative): 'Should cellphones be allowed in class?'",
+      "Use a vivid image (descriptive): 'The market smelled of cinnamon and diesel.'"
+    ] },
+    { "type": "heading", "text": "Paragraphing" },
+    { "type": "paragraph", "text": "Each paragraph has one main idea in a **topic sentence**, supported by details. Use **transition words**: 'firstly', 'however', 'as a result', 'meanwhile', 'in conclusion'. In narratives, start a new paragraph for a new speaker, a new time or a new place." },
+    { "type": "callout", "label": "Show, don't tell", "text": "Instead of 'I was nervous', write 'My palms were damp and I read the same line four times.'" }
+  ],
+  "questions": [
+    { "id": "length", "type": "mcq", "prompt": "How long should a Grade 10 HL essay usually be?", "options": ["100–150 words", "250–300 words", "500–600 words", "1 000 words"], "answer": 1 },
+    { "id": "argument", "type": "mcq", "prompt": "Which essay type presents BOTH sides of an issue fairly?", "options": ["Narrative", "Argumentative", "Discursive", "Descriptive"], "answer": 2 },
+    { "id": "senses", "type": "short", "prompt": "Which essay type relies most on sensory details?", "answers": ["descriptive", "descriptive essay", "a descriptive essay"] },
+    { "id": "topic", "type": "short", "prompt": "What is the sentence that states the main idea of a paragraph called?", "answers": ["topic sentence", "the topic sentence", "a topic sentence"] },
+    { "id": "dialogue", "type": "truefalse", "prompt": "In a narrative, you should start a new paragraph when a new character speaks.", "answer": true },
+    { "id": "process", "type": "match", "marks": 4, "prompt": "Match each stage of the writing process to its activity.", "pairs": [
+      { "left": "Plan", "right": "Brainstorm ideas" },
+      { "left": "Draft", "right": "Write a first version" },
+      { "left": "Revise", "right": "Improve content and structure" },
+      { "left": "Proofread", "right": "Correct spelling and punctuation" }
+    ] },
+    { "id": "show", "type": "open", "marks": 2, "prompt": "Rewrite to 'show, not tell': 'The room was scary.'", "memo": "✓✓ Uses specific sensory detail to create fear, e.g. 'Shadows crawled across the peeling walls and the floorboards groaned beneath my feet.' (2)" },
+    { "id": "opening", "type": "open", "marks": 2, "prompt": "Write an effective opening sentence for a narrative essay titled 'The Storm'.", "memo": "✓ Engaging hook (action, dialogue or vivid image) (1)\n✓ Linked to the title, correct language (1)" },
+    { "id": "counter", "type": "open", "marks": 2, "prompt": "Why should an argumentative essay mention and rebut a counter-argument?", "memo": "✓ It shows the writer has considered other views (1)\n✓ and strengthens the argument by showing why the opposing view is weaker (1)" },
+    { "id": "plan", "type": "open", "marks": 3, "prompt": "Plan an argumentative essay on 'School uniforms should be abolished': state your stance and give TWO reasons.", "memo": "✓ Clear stance (1)\n✓✓ Two relevant, distinct reasons (2)" }
+  ]
+}

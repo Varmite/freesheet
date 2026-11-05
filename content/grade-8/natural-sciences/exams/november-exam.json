@@ -1,0 +1,380 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This question paper consists of FIVE questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show all working in calculations and include units in your answers.",
+    "Write neatly and legibly."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Multiple choice",
+      "instructions": "Choose the correct answer.",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "Which gas is released during photosynthesis?",
+          "options": [
+            "Carbon dioxide",
+            "Oxygen",
+            "Nitrogen",
+            "Water vapour"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "An organism that breaks down dead plant and animal material is a…",
+          "options": [
+            "producer",
+            "herbivore",
+            "decomposer",
+            "carnivore"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "Which disease is caused by a virus?",
+          "options": [
+            "Tuberculosis",
+            "Cholera",
+            "Malaria",
+            "Influenza"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "The atomic number of an element is the number of…",
+          "options": [
+            "neutrons",
+            "protons",
+            "electrons and neutrons",
+            "molecules"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-5",
+          "type": "mcq",
+          "prompt": "Which of the following is a mixture?",
+          "options": [
+            "Carbon dioxide",
+            "Sea water",
+            "Iron",
+            "Table salt"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-6",
+          "type": "mcq",
+          "prompt": "In which state of matter do particles move fastest and furthest apart?",
+          "options": [
+            "Solid",
+            "Liquid",
+            "Gas"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-7",
+          "type": "mcq",
+          "prompt": "A balloon rubbed on hair becomes negatively charged because it…",
+          "options": [
+            "gained protons",
+            "lost electrons",
+            "gained electrons",
+            "lost protons"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-8",
+          "type": "mcq",
+          "prompt": "Which instrument is connected in series to measure current?",
+          "options": [
+            "Voltmeter",
+            "Ammeter",
+            "Thermometer",
+            "Switch"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-9",
+          "type": "mcq",
+          "prompt": "Which colour of light is bent the most by a prism?",
+          "options": [
+            "Red",
+            "Yellow",
+            "Green",
+            "Violet"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "q1-10",
+          "type": "mcq",
+          "prompt": "Which planet is known as the red planet?",
+          "options": [
+            "Venus",
+            "Mars",
+            "Jupiter",
+            "Mercury"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Life and Living",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "Study this food web from a grassland ecosystem:\n\ngrass → grasshopper → frog → snake\ngrass → mouse → snake\nmouse → owl\ngrasshopper → bird → owl"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Name the producer in the food web.",
+          "answers": [
+            "grass"
+          ]
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down one food chain from the web that has FOUR organisms.",
+          "memo": "✓✓ grass → grasshopper → frog → snake OR grass → grasshopper → bird → owl (correct organisms 1, correct arrows 1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Disease kills most of the mice. Predict what will happen to the owls and the grasshoppers. Explain.",
+          "memo": "✓ Owls will decrease because they have less food (1)\n✓ Owls / snakes will eat more birds, frogs or grasshoppers instead (1)\n✓ Grasshoppers may decrease because predators eat more of them, OR increase because there is more grass (any reasonable explained answer) (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Write the word equation for photosynthesis.",
+          "memo": "✓ carbon dioxide + water (1)\n✓ → glucose + oxygen (1)\n✓ light energy / chlorophyll written over the arrow (1)"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give FOUR steps you would follow to test a leaf for starch.",
+          "memo": "✓ Boil the leaf in water (1)\n✓ Place it in warm ethanol in a water bath to remove chlorophyll (1)\n✓ Rinse it in water (1)\n✓ Add iodine solution; blue-black shows starch (1)"
+        },
+        {
+          "id": "q2-6",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Name TWO useful and TWO harmful effects of micro-organisms.",
+          "memo": "Useful, any two (1 each): making bread/yoghurt/cheese; decomposition; antibiotics/vaccines; digestion; sewage treatment\nHarmful, any two (1 each): cause disease (named); spoil food; cause tooth decay; damage crops"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Matter and Materials",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each sub-atomic particle to its charge.",
+          "pairs": [
+            {
+              "left": "Proton",
+              "right": "Positive"
+            },
+            {
+              "left": "Electron",
+              "right": "Negative"
+            },
+            {
+              "left": "Neutron",
+              "right": "Neutral"
+            }
+          ]
+        },
+        {
+          "id": "q3-2",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "How many atoms are there in one molecule of CO₂?",
+          "answer": 3,
+          "tolerance": 0
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Use the particle model to explain what happens when ice melts.",
+          "memo": "✓ Heat energy is absorbed by the particles (1)\n✓ The particles vibrate faster (1)\n✓ They overcome the strong forces holding them in fixed positions and start to move past each other (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A piece of metal has a mass of 158 g and a volume of 20 cm³. Calculate its density in g/cm³.",
+          "answer": 7.9,
+          "tolerance": 0.01,
+          "unit": "g/cm³"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO observations that show a chemical reaction has taken place.",
+          "memo": "Any two (1 each): gas given off; permanent colour change; precipitate forms; heat or light given off; new smell"
+        },
+        {
+          "id": "q3-6",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "24 g of magnesium reacts completely with oxygen to form 40 g of magnesium oxide. What mass of oxygen reacted?",
+          "answer": 16,
+          "tolerance": 0,
+          "unit": "g"
+        },
+        {
+          "id": "q3-7",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Iron filings and sulfur powder are mixed. The mixture is then heated strongly. (a) How could you separate the iron from the sulfur before heating? (b) Explain why this method no longer works after heating.",
+          "memo": "(a) ✓ Use a magnet to attract the iron filings (1)\n(b) ✓ Heating causes a chemical reaction (1)\n✓ A new compound, iron sulfide, forms (1)\n✓ The compound has different properties and is not attracted by a magnet / can only be separated chemically (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Energy and Change",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "truefalse",
+          "marks": 1,
+          "prompt": "Like charges attract each other.",
+          "answer": false
+        },
+        {
+          "id": "q4-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how a thundercloud becomes charged and how lightning forms.",
+          "memo": "✓ Ice crystals and water droplets rub together in the cloud (friction) (1)\n✓ Charge builds up, with negative charge at the bottom of the cloud (1)\n✓ When the charge is large enough it discharges as a giant spark to the ground or another cloud (1)"
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Two identical bulbs are connected (a) in series and (b) in parallel to the same battery. In which circuit are the bulbs brighter, and what happens in each circuit if one bulb blows? ",
+          "memo": "✓ Bulbs are brighter in the parallel circuit (1)\n✓ Series: if one blows, the other goes out (1)\n✓ because the only path is broken (1)\n✓ Parallel: the other bulb stays on because its branch is still complete (1)"
+        },
+        {
+          "id": "q4-4",
+          "type": "short",
+          "marks": 1,
+          "prompt": "What is the main useful energy output of a buzzer?",
+          "answers": [
+            "sound",
+            "sound energy"
+          ]
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Draw a ray diagram, or describe in words, to show the law of reflection. Label the normal, the angle of incidence and the angle of reflection.",
+          "memo": "✓ Normal drawn perpendicular to the mirror at the point of incidence (1)\n✓ Incident and reflected rays with arrows (1)\n✓ Angles measured from the normal and shown equal (1)"
+        },
+        {
+          "id": "q4-6",
+          "type": "open",
+          "marks": 4,
+          "prompt": "(a) What colour does a white shirt appear in red light? (b) What colour does a blue shirt appear in red light? Explain each answer.",
+          "memo": "(a) ✓ Red (1) ✓ it reflects all colours, so it reflects the red light (1)\n(b) ✓ Black (1) ✓ it can only reflect blue, so it absorbs the red light (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Planet Earth and Beyond",
+      "questions": [
+        {
+          "id": "q5-1",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each term to its description.",
+          "pairs": [
+            {
+              "left": "Galaxy",
+              "right": "Billions of stars held together by gravity"
+            },
+            {
+              "left": "Light year",
+              "right": "Distance light travels in a year"
+            },
+            {
+              "left": "Comet",
+              "right": "Ball of ice and dust with a long tail"
+            },
+            {
+              "left": "Orbit",
+              "right": "Path of one body around another"
+            }
+          ]
+        },
+        {
+          "id": "q5-2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give the order of the sun, Earth and moon during a solar eclipse, and say at which moon phase it can happen.",
+          "memo": "✓ Sun – Moon – Earth (1)\n✓ New moon (1)"
+        },
+        {
+          "id": "q5-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "State the difference between the Earth's rotation and its revolution, and give the result of each.",
+          "memo": "✓ Rotation is spinning on its axis, revolution is orbiting the sun (1)\n✓ Rotation (24 h) causes day and night (1)\n✓ Revolution (365¼ days) gives a year / with the tilt, the seasons (1)"
+        },
+        {
+          "id": "q5-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO telescopes in South Africa and say what type each one is.",
+          "memo": "✓ SALT: optical telescope (1)\n✓ MeerKAT / SKA: radio telescope (1)"
+        },
+        {
+          "id": "q5-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is Venus hotter than Mercury, even though Mercury is closer to the sun?",
+          "memo": "✓ Venus has a very thick atmosphere of carbon dioxide (1)\n✓ which traps heat (greenhouse effect) (1)"
+        },
+        {
+          "id": "q5-6",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What causes tides on Earth, and how many high tides do most coasts have each day?",
+          "memo": "✓ Mainly the gravitational pull of the moon on the oceans (1)\n✓ Two high tides a day (1)"
+        }
+      ]
+    }
+  ]
+}

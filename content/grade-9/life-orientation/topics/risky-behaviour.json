@@ -1,0 +1,60 @@
+{
+  "id": "risky-behaviour",
+  "title": "Risky Behaviour: Substances and Road Safety",
+  "term": 2,
+  "summary": "What risky behaviour is, factors that increase or reduce risk, the link between substance use and other risks, road safety for pedestrians, cyclists and passengers, and making safer choices.",
+  "notes": [
+    { "type": "heading", "text": "What is risky behaviour?" },
+    { "type": "definition", "term": "Risky behaviour", "text": "Behaviour that could harm your health, safety or future, or that of others." },
+    { "type": "list", "items": [
+      "Using alcohol, tobacco, vapes or drugs.",
+      "Unprotected or early sexual activity.",
+      "Unsafe road use: not wearing seat belts, riding with a drunk driver, texting while crossing the road.",
+      "Carrying weapons, gang involvement, violence.",
+      "Unsafe online behaviour: meeting strangers from the internet, sharing private information."
+    ] },
+    { "type": "heading", "text": "Risk factors and protective factors" },
+    { "type": "table", "headers": ["Risk factors (increase risk)", "Protective factors (reduce risk)"], "rows": [
+      ["Negative peer pressure", "Supportive family and friends"],
+      ["Low self-esteem", "Healthy self-esteem and clear values"],
+      ["Easy access to alcohol and drugs", "Involvement in sport, arts and clubs"],
+      ["Boredom and lack of supervision", "Clear goals for the future"],
+      ["Exposure to violence", "Good decision-making and refusal skills"]
+    ] },
+    { "type": "heading", "text": "How risks are linked" },
+    { "type": "paragraph", "text": "One risky behaviour often leads to another. **Alcohol and drugs** affect judgement, so people under the influence are more likely to have unprotected sex, get into fights, become victims of crime or be involved in road accidents. Mixing alcohol with medicines or other drugs is especially dangerous." },
+    { "type": "heading", "text": "Road safety" },
+    { "type": "paragraph", "text": "Many road deaths in South Africa are **pedestrians**, and alcohol is a factor in a large share of fatal crashes." },
+    { "type": "table", "headers": ["Road user", "Safety rules"], "rows": [
+      ["Pedestrian", "Cross at pedestrian crossings or robots; look right, left, right again; never use your phone while crossing; wear bright or reflective clothes at night; walk facing oncoming traffic where there is no pavement"],
+      ["Cyclist", "Wear a helmet; use lights and reflectors at night; ride on the left with the traffic; signal before turning"],
+      ["Passenger", "Always wear a seat belt, also in the back seat and in taxis; never get into a car with a driver who has been drinking; do not distract the driver"]
+    ] },
+    { "type": "callout", "label": "The law", "text": "The legal blood-alcohol limit for ordinary drivers is **0,05 g per 100 ml** of blood (0,02 g for professional drivers). It is illegal to use a hand-held phone while driving, and all occupants must wear seat belts." },
+    { "type": "heading", "text": "Making safer choices" },
+    { "type": "list", "items": [
+      "Think about the consequences before acting.",
+      "Plan ahead: arrange a safe lift home before you go out.",
+      "Stick with friends who look out for you.",
+      "Say no assertively and walk away from danger.",
+      "Ask for help: Substance Abuse Helpline **0800 12 13 14**; emergency services **10177** (ambulance) and **10111** (police); from a cellphone, **112**."
+    ] }
+  ],
+  "questions": [
+    { "id": "define", "type": "open", "marks": 2, "prompt": "What is risky behaviour?", "memo": "✓ Behaviour that could harm (1)\n✓ your own or other people's health, safety or future (1)" },
+    { "id": "protective", "type": "mcq", "prompt": "Which is a PROTECTIVE factor?", "options": ["Boredom", "Easy access to alcohol", "Belonging to a sports club", "Negative peer pressure"], "answer": 2 },
+    { "id": "limit", "type": "numeric", "prompt": "What is the legal blood-alcohol limit (in g per 100 ml) for ordinary drivers in South Africa?", "answer": 0.05, "tolerance": 0.001, "unit": "g/100 ml" },
+    { "id": "seatbelt", "type": "truefalse", "prompt": "Passengers in the back seat do not need to wear seat belts.", "answer": false },
+    { "id": "police", "type": "short", "prompt": "What is the emergency number for the police (SAPS)?", "answers": ["10111"] },
+    { "id": "factors", "type": "match", "marks": 4, "prompt": "Classify each factor.", "pairs": [
+      { "left": "Clear goals for the future", "right": "Protective factor" },
+      { "left": "Friends who use drugs", "right": "Risk factor" },
+      { "left": "Supportive parents", "right": "Protective factor (family)" },
+      { "left": "No adult supervision", "right": "Risk factor (supervision)" }
+    ] },
+    { "id": "link", "type": "open", "marks": 3, "prompt": "Explain how alcohol use can lead to other risky behaviours.", "memo": "✓ Alcohol affects judgement and self-control (1)\n✓ People are more likely to have unprotected sex / get into fights (1)\n✓ or be involved in road accidents / become victims of crime (1)" },
+    { "id": "pedestrian", "type": "open", "marks": 3, "prompt": "Give THREE safety rules for pedestrians.", "memo": "Any three (1 each): use crossings; look right, left, right; no phone while crossing; bright clothes at night; walk facing traffic; do not walk on highways" },
+    { "id": "party", "type": "open", "marks": 2, "prompt": "Your friend's older brother has been drinking and offers you a lift home. What should you do and why?", "memo": "✓ Refuse the lift; arrange another safe way home / call a parent (1)\n✓ Alcohol impairs driving and greatly increases the risk of a crash (1)" },
+    { "id": "cyclist", "type": "open", "marks": 2, "prompt": "Give TWO safety rules for cyclists.", "memo": "Any two (1 each): helmet; lights and reflectors; ride on the left with traffic; signal; obey road signs" }
+  ]
+}

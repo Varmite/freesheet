@@ -1,0 +1,50 @@
+{
+  "id": "the-novel",
+  "title": "The Novel: Plot, Character and Narration",
+  "term": 2,
+  "summary": "Elements of the novel: plot structure, conflict, characterisation, setting, narrative point of view, theme and symbol, with an original extract for practice.",
+  "notes": [
+    { "type": "heading", "text": "Plot structure" },
+    { "type": "list", "ordered": true, "items": [
+      "**Exposition**: introduces characters, setting and situation.",
+      "**Rising action**: complications build the conflict.",
+      "**Climax**: the turning point of greatest tension.",
+      "**Falling action**: the consequences of the climax.",
+      "**Resolution (denouement)**: the conflict is resolved or the story closes."
+    ] },
+    { "type": "heading", "text": "Conflict" },
+    { "type": "table", "headers": ["Type", "Example"], "rows": [
+      ["Internal (character vs self)", "A boy struggles with guilt over a lie"],
+      ["Character vs character", "Two rivals compete for the captaincy"],
+      ["Character vs society", "A girl defies her community's expectations"],
+      ["Character vs nature", "Survivors face a flood"]
+    ] },
+    { "type": "heading", "text": "Characterisation" },
+    { "type": "paragraph", "text": "Writers reveal character **directly** (the narrator tells us: 'She was generous') and **indirectly** through speech, actions, thoughts, appearance and how others react. A **protagonist** is the main character; the **antagonist** opposes them. **Round** characters are complex and change (**dynamic**); **flat** characters are simple and stay the same (**static**)." },
+    { "type": "heading", "text": "Narrative point of view" },
+    { "type": "list", "items": [
+      "**First person** ('I'): we see only what the narrator knows; may be **unreliable**.",
+      "**Third person limited**: follows one character's thoughts.",
+      "**Third person omniscient**: an all-knowing narrator who can enter any character's mind."
+    ] },
+    { "type": "passage", "title": "Practice extract (written for FreeSheet)", "text": "Ayanda had promised herself she would not cry at the station. She kept the promise until the train began to move and she saw her grandmother on the platform, small in her blue coat, waving a handkerchief as though she were directing traffic. Then the tears came, hot and embarrassing, and the man opposite pretended to read his newspaper.\n\nShe had never been further than Mthatha. Now she was going to Johannesburg, to a school with a library bigger than her whole village, and she did not know a single person there. She touched the envelope in her pocket: her grandmother's letter, which she had been told not to open until she arrived." },
+    { "type": "callout", "label": "Exam tip", "text": "In contextual questions, refer to the extract AND to the rest of the novel. When asked about character, give the trait (an adjective) and then the evidence." }
+  ],
+  "questions": [
+    { "id": "climax", "type": "short", "prompt": "What is the turning point of greatest tension in a plot called?", "answers": ["climax", "the climax"] },
+    { "id": "pov", "type": "mcq", "prompt": "From which point of view is the practice extract told?", "options": ["First person", "Second person", "Third person", "Omniscient first person"], "answer": 2 },
+    { "id": "conflict", "type": "mcq", "prompt": "Ayanda's struggle not to cry is an example of…", "options": ["internal conflict", "character vs nature", "character vs society", "no conflict"], "answer": 0 },
+    { "id": "dynamic", "type": "truefalse", "prompt": "A dynamic character changes during the story.", "answer": true },
+    { "id": "omniscient", "type": "truefalse", "prompt": "An omniscient narrator can only report one character's thoughts.", "answer": false },
+    { "id": "plot", "type": "match", "marks": 4, "prompt": "Match each plot stage to its description.", "pairs": [
+      { "left": "Exposition", "right": "Introduces characters and setting" },
+      { "left": "Rising action", "right": "Complications build tension" },
+      { "left": "Falling action", "right": "Consequences of the turning point" },
+      { "left": "Resolution", "right": "The conflict is resolved" }
+    ] },
+    { "id": "grandmother", "type": "open", "marks": 2, "prompt": "What does the simile 'as though she were directing traffic' suggest about the grandmother?", "memo": "✓ She waves energetically/vigorously (1)\n✓ suggesting her strong love and determination, even humour in a sad moment (1)" },
+    { "id": "man", "type": "open", "marks": 2, "prompt": "Why does the man opposite 'pretend to read his newspaper'?", "memo": "✓ He notices Ayanda crying (1)\n✓ and pretends not to, to spare her embarrassment (1)" },
+    { "id": "library", "type": "open", "marks": 2, "prompt": "What does 'a library bigger than her whole village' show about Ayanda's new life?", "memo": "✓ Hyperbole/contrast (1)\n✓ showing how different and overwhelming the city school will be compared with home (1)" },
+    { "id": "letter", "type": "open", "marks": 2, "prompt": "How does the writer create suspense at the end of the extract?", "memo": "✓ The unopened letter (1)\n✓ makes the reader wonder what the grandmother has written (1)" }
+  ]
+}

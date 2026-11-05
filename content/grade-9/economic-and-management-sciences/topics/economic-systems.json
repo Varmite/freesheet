@@ -1,0 +1,52 @@
+{
+  "id": "economic-systems",
+  "title": "Economic Systems",
+  "term": 1,
+  "summary": "The basic economic problem of scarcity, the three economic questions, and how traditional, command, market and mixed economies answer them.",
+  "notes": [
+    { "type": "heading", "text": "The basic economic problem" },
+    { "type": "paragraph", "text": "People have **unlimited wants**, but the resources to satisfy them are **limited** (scarce). This is the **basic economic problem**. Because of scarcity, every society must make choices about how to use its resources." },
+    { "type": "definition", "term": "Opportunity cost", "text": "The value of the next best alternative that is given up when a choice is made. If you spend R200 on a concert ticket instead of a book, the book is your opportunity cost." },
+    { "type": "heading", "text": "The three economic questions" },
+    { "type": "list", "ordered": true, "items": [
+      "**What** goods and services should be produced, and how much of each?",
+      "**How** should they be produced (with many workers or with machines)?",
+      "**For whom** should they be produced (who gets them)?"
+    ] },
+    { "type": "paragraph", "text": "An **economic system** is the way a country organises the production and distribution of goods and services to answer these questions." },
+    { "type": "heading", "text": "Types of economic systems" },
+    { "type": "table", "headers": ["System", "How decisions are made", "Advantages", "Disadvantages"], "rows": [
+      ["Traditional economy", "By custom, tradition and the elders; people produce what their ancestors did, mostly for their own use (subsistence)", "Stable, everyone knows their role, strong community", "Little growth or new technology; low standard of living"],
+      ["Command (centrally planned) economy", "The **government** owns most resources and decides what, how and for whom (e.g. the former USSR, North Korea, Cuba)", "Less inequality; basic needs and jobs guaranteed", "Shortages and poor quality; little choice; no incentive to work hard; no economic freedom"],
+      ["Market (free-market, capitalist) economy", "**Private** individuals and businesses own resources; decisions are made through **supply and demand** and the **price mechanism**; profit motive", "Choice, competition, efficiency, innovation", "Large inequality; public goods may not be provided; possible exploitation and pollution"],
+      ["Mixed economy", "A combination: private businesses produce most goods, but the **government** provides public services, regulates markets and redistributes income", "Combines freedom and choice with protection for the poor", "High taxes; possible government inefficiency or corruption"]
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "**South Africa has a mixed economy.** Most businesses are privately owned, but the government provides schools, hospitals, social grants and infrastructure, owns state-owned enterprises such as Eskom and Transnet, and makes laws to protect workers and consumers." },
+    { "type": "heading", "text": "Features of the market economy" },
+    { "type": "list", "items": [
+      "**Private ownership** of property and businesses.",
+      "**Freedom of choice** for consumers and producers.",
+      "**Profit motive** encourages people to start businesses.",
+      "**Competition** between businesses leads to better quality and lower prices.",
+      "**The price mechanism**: prices, set by demand and supply, signal what to produce."
+    ] },
+    { "type": "example", "title": "Opportunity cost", "problem": "A farmer can plant either maize or sunflowers on a field. She plants maize, which earns R40 000. Sunflowers would have earned R35 000. What is her opportunity cost?", "steps": ["The next best alternative given up is the sunflower crop."], "answer": "R35 000 worth of sunflowers" }
+  ],
+  "questions": [
+    { "id": "basic-problem", "type": "open", "marks": 2, "prompt": "What is the basic economic problem?", "memo": "✓ People's wants are unlimited (1)\n✓ but resources are limited/scarce (1)" },
+    { "id": "opp-cost", "type": "short", "prompt": "What is the value of the next best alternative given up called?", "answers": ["opportunity cost"] },
+    { "id": "three-q", "type": "open", "marks": 3, "prompt": "Name the THREE basic economic questions.", "memo": "✓ What to produce (1)\n✓ How to produce (1)\n✓ For whom to produce (1)" },
+    { "id": "command", "type": "mcq", "prompt": "In which economic system does the government make most economic decisions?", "options": ["Traditional", "Command", "Market", "Mixed"], "answer": 1 },
+    { "id": "sa-system", "type": "mcq", "prompt": "What type of economic system does South Africa have?", "options": ["Traditional", "Command", "Pure market", "Mixed"], "answer": 3 },
+    { "id": "profit", "type": "truefalse", "prompt": "The profit motive is an important feature of a market economy.", "answer": true },
+    { "id": "systems", "type": "match", "marks": 4, "prompt": "Match each description to the economic system.", "pairs": [
+      { "left": "Decisions based on custom and elders", "right": "Traditional economy" },
+      { "left": "Government owns and plans everything", "right": "Command economy" },
+      { "left": "Supply and demand set prices", "right": "Market economy" },
+      { "left": "Private business with government services", "right": "Mixed economy" }
+    ] },
+    { "id": "market-adv", "type": "open", "marks": 4, "prompt": "Give TWO advantages and TWO disadvantages of a market economy.", "memo": "Advantages (1 each): choice; competition; efficiency; innovation; economic freedom\nDisadvantages (1 each): inequality; public goods not provided; exploitation of workers; pollution; monopolies" },
+    { "id": "sa-mixed", "type": "open", "marks": 2, "prompt": "Give TWO examples that show South Africa has a mixed economy.", "memo": "✓ Most businesses are privately owned (e.g. shops, banks) (1)\n✓ The government provides services / owns Eskom and Transnet / pays grants / regulates (1)" },
+    { "id": "opp-example", "type": "open", "marks": 2, "prompt": "You have R150. You can buy a T-shirt or go to the movies with friends. You choose the movies. Explain your opportunity cost.", "memo": "✓ The opportunity cost is the T-shirt (1)\n✓ because it is the next best alternative you gave up (1)" }
+  ]
+}

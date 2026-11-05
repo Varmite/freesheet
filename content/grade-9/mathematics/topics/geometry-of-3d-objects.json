@@ -1,0 +1,78 @@
+{
+  "id": "geometry-of-3d-objects",
+  "title": "Geometry of 3D Objects",
+  "term": 3,
+  "summary": "Describe polyhedra, the Platonic solids, spheres, cylinders and cones, use Euler's formula and nets, and draw and interpret the front, side and top views of objects built from solids.",
+  "notes": [
+    { "type": "heading", "text": "Polyhedra and the Platonic solids (revision)" },
+    { "type": "paragraph", "text": "A polyhedron has only flat polygon faces. Prisms and pyramids are polyhedra, and so are the five **Platonic solids**, whose faces are identical regular polygons with the same number meeting at each vertex." },
+    { "type": "table", "caption": "The Platonic solids", "headers": ["Solid", "Face shape", "F", "V", "E", "Faces at each vertex"], "rows": [
+      ["Tetrahedron", "Equilateral triangle", "4", "4", "6", "3"],
+      ["Cube", "Square", "6", "8", "12", "3"],
+      ["Octahedron", "Equilateral triangle", "8", "6", "12", "4"],
+      ["Dodecahedron", "Regular pentagon", "12", "20", "30", "3"],
+      ["Icosahedron", "Equilateral triangle", "20", "12", "30", "5"]
+    ] },
+    { "type": "formula", "latex": "F + V - E = 2", "caption": "Euler's formula for polyhedra" },
+    { "type": "example", "title": "Worked example 1: general prisms and pyramids", "problem": "A pyramid has an $n$-sided base. Write $F$, $V$ and $E$ in terms of $n$ and show that Euler's formula holds.", "steps": [
+      "Faces: the base plus $n$ triangles, $F = n + 1$.",
+      "Vertices: $n$ around the base plus the apex, $V = n + 1$.",
+      "Edges: $n$ around the base plus $n$ up to the apex, $E = 2n$.",
+      "$F + V - E = (n + 1) + (n + 1) - 2n = 2$ ✓"
+    ], "answer": "$F = n + 1$, $V = n + 1$, $E = 2n$" },
+
+    { "type": "heading", "text": "Spheres, cylinders and cones" },
+    { "type": "paragraph", "text": "These solids have **curved** surfaces, so they are not polyhedra, and Euler's formula does not apply to them." },
+    { "type": "table", "caption": "Solids with curved surfaces", "headers": ["Solid", "Surfaces", "Edges", "Vertices", "Net"], "rows": [
+      ["Sphere", "1 curved surface", "0", "0", "No flat net is possible"],
+      ["Cylinder", "2 flat circles, 1 curved surface", "2 (curved)", "0", "2 circles and a rectangle"],
+      ["Cone", "1 flat circle, 1 curved surface", "1 (curved)", "1 (apex)", "A circle and a sector of a larger circle"]
+    ] },
+    { "type": "definition", "term": "Sphere", "text": "A **sphere** is the set of all points in space at the same distance (the radius) from a fixed point (the centre). Every cross-section of a sphere is a circle." },
+
+    { "type": "heading", "text": "Views of 3D objects" },
+    { "type": "paragraph", "text": "Architects and engineers show a 3D object with flat drawings called **views**. The **front view** (front elevation) is what you see looking straight at the front, the **side view** (side elevation) is what you see from the side, and the **top view** (plan) is what you see looking straight down from above." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 150\" font-family=\"sans-serif\" font-size=\"12\"><g fill=\"#eee\" stroke=\"#000\" stroke-width=\"1.8\"><rect x=\"20\" y=\"95\" width=\"25\" height=\"25\"/><rect x=\"45\" y=\"95\" width=\"25\" height=\"25\"/><rect x=\"70\" y=\"95\" width=\"25\" height=\"25\"/><rect x=\"20\" y=\"70\" width=\"25\" height=\"25\"/><rect x=\"140\" y=\"95\" width=\"25\" height=\"25\"/><rect x=\"165\" y=\"95\" width=\"25\" height=\"25\"/><rect x=\"190\" y=\"95\" width=\"25\" height=\"25\"/><rect x=\"265\" y=\"95\" width=\"25\" height=\"25\"/><rect x=\"265\" y=\"70\" width=\"25\" height=\"25\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"58\" y=\"140\">Front view</text><text x=\"178\" y=\"140\">Top view</text><text x=\"278\" y=\"140\">Right side view</text><text x=\"170\" y=\"20\">Solid: 3 cubes in a row, with a 4th cube</text><text x=\"170\" y=\"36\">on top of the left-hand cube</text></g></svg>", "caption": "Views of a solid made of four cubes: three in a row with one more on top of the cube on the left." },
+    { "type": "callout", "label": "Exam tip", "text": "In a view, you see the outline of everything in that direction, but not how deep it is. From the right side, the top cube is behind the others, yet it still appears as a square on top, because it sticks up above them." },
+    { "type": "example", "title": "Worked example 2: from views to the object", "problem": "The front view of a solid is a rectangle, the side view is a rectangle and the top view is a circle. What is the solid?", "steps": [
+      "From above it looks round, so its cross-section is a circle.",
+      "From the front and side it looks rectangular, so it has straight vertical sides and flat ends."
+    ], "answer": "A cylinder (standing upright)" },
+
+    { "type": "heading", "text": "Combinations of solids" },
+    { "type": "paragraph", "text": "Many real objects are combinations of solids: a rocket is a cone on a cylinder; a house can be a triangular prism (roof) on a rectangular prism; a silo is a hemisphere (half sphere) on a cylinder. To describe such an object, list the surfaces that are still visible after the solids are joined. The faces where two solids touch are hidden." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Know $F$, $V$ and $E$ for the five Platonic solids, and Euler's formula $F + V - E = 2$ for polyhedra.",
+      "Prism with an $n$-sided base: $F = n + 2$, $V = 2n$, $E = 3n$. Pyramid: $F = n + 1$, $V = n + 1$, $E = 2n$.",
+      "Spheres, cylinders and cones have curved surfaces and are not polyhedra.",
+      "A cylinder's net is two circles and a rectangle; a cone's net is a circle and a sector.",
+      "Front, side and top views show an object from three directions."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "How many edges and vertices does a sphere have?", "options": ["1 edge and 1 vertex", "0 edges and 0 vertices", "2 edges and 0 vertices", "0 edges and 1 vertex"], "answer": 1, "explanation": "A sphere has one smooth curved surface with no edges or corners." },
+    { "id": "q2", "type": "numeric", "prompt": "How many vertices does an icosahedron have?", "answer": 12, "tolerance": 0, "explanation": "Icosahedron: $F = 20$, $V = 12$, $E = 30$." },
+    { "id": "q3", "type": "mcq", "prompt": "What does the net of a closed cylinder consist of?", "options": ["Two rectangles and a circle", "Two circles and a rectangle", "One circle and a sector", "Three circles"], "answer": 1, "explanation": "The two circular ends and the curved surface, which unrolls into a rectangle." },
+    { "id": "q4", "type": "truefalse", "prompt": "A cylinder has 2 curved edges and no vertices.", "answer": true, "explanation": "The two circular rims are edges where the flat faces meet the curved surface; there are no corners." },
+    { "id": "q5", "type": "numeric", "prompt": "An icosahedron has 20 faces and 12 vertices. Use Euler's formula to find the number of edges.", "answer": 30, "tolerance": 0, "explanation": "$20 + 12 - E = 2$, so $E = 30$." },
+    { "id": "q6", "type": "mcq", "prompt": "Which view of an object is also called the plan?", "options": ["Front view", "Side view", "Top view", "Back view"], "answer": 2, "explanation": "The plan is the view from directly above." },
+    { "id": "q7", "type": "mcq", "prompt": "A solid is made of three cubes in a row with a fourth cube on top of the left-hand cube. What does its front view look like?", "options": ["Three squares in a row", "An L-shape of four squares", "Two squares stacked", "A single square"], "answer": 1, "explanation": "From the front you see the bottom row of three squares and one square above the left one." },
+    { "id": "q8", "type": "numeric", "prompt": "How many faces does an octagonal prism have?", "answer": 10, "tolerance": 0, "explanation": "$n + 2 = 8 + 2 = 10$: two octagons and eight rectangles." },
+    { "id": "q9", "type": "match", "prompt": "Match each solid with its description.", "marks": 5, "pairs": [
+      { "left": "Sphere", "right": "One curved surface, no edges or vertices" },
+      { "left": "Cylinder", "right": "Two flat circles and one curved surface" },
+      { "left": "Cone", "right": "One flat circle, one curved surface and an apex" },
+      { "left": "Cube", "right": "Six square faces" },
+      { "left": "Tetrahedron", "right": "Four triangular faces" }
+    ], "explanation": "Describe solids by their faces (or surfaces), edges and vertices." },
+    { "id": "q10", "type": "numeric", "prompt": "How many edges does a pentagonal pyramid have?", "answer": 10, "tolerance": 0, "explanation": "$2n = 2 \\times 5 = 10$." },
+    { "id": "q11", "type": "truefalse", "prompt": "Euler's formula $F + V - E = 2$ applies to a cylinder.", "answer": false, "explanation": "Euler's formula is for polyhedra; a cylinder has curved surfaces and is not a polyhedron." },
+    { "id": "q12", "type": "mcq", "prompt": "Which Platonic solid has regular pentagons as faces?", "options": ["Tetrahedron", "Octahedron", "Dodecahedron", "Icosahedron"], "answer": 2, "explanation": "The dodecahedron has 12 regular pentagonal faces." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "A solid is made of three cubes in a row, with a fourth cube on top of the left-hand cube. Describe (or sketch) its front view, top view and right side view.", "memo": "Front view: an L-shape, three squares in a row with one square on top of the left one ✓ (1)\nTop view: three squares in a row ✓ (1)\nRight side view: two squares stacked one on top of the other ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "(a) Write down $F$, $V$ and $E$ for a hexagonal prism and for an octahedron.  (2)\n(b) Show that Euler's formula holds for both.  (2)", "memo": "(a) Hexagonal prism: $F = 8$, $V = 12$, $E = 18$ ✓ (1)\nOctahedron: $F = 8$, $V = 6$, $E = 12$ ✓ (1)\n(b) $8 + 12 - 18 = 2$ ✓; $8 + 6 - 12 = 2$ ✓ (2)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "A pyramid has a base with $n$ sides. Write expressions for $F$, $V$ and $E$, and show that $F + V - E = 2$.", "memo": "$F = n + 1$ and $V = n + 1$ ✓ (1)\n$E = 2n$ ✓ (1)\n$(n + 1) + (n + 1) - 2n = 2$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "A toy rocket is made of a cone fixed on top of a cylinder of the same radius. List the surfaces of the rocket that you can see.", "memo": "One flat circle at the bottom and the curved surface of the cylinder ✓ (1)\nThe curved surface of the cone, ending at the apex (the circle where they join is hidden) ✓ (1)" }
+  ]
+}

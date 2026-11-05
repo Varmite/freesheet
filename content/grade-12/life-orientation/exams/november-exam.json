@@ -1,0 +1,196 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of THREE questions. Answer ALL the questions.",
+    "Read the case study carefully before answering Question 2.",
+    "Write in full sentences where explanations are required."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "Which conflict-handling style aims for a win–win outcome?",
+          "options": [
+            "Avoiding",
+            "Competing",
+            "Collaborating",
+            "Accommodating"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "Which Act sets the maximum number of ordinary working hours?",
+          "options": [
+            "Labour Relations Act",
+            "Basic Conditions of Employment Act",
+            "Employment Equity Act",
+            "Constitution"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "A high salt intake is a major risk factor for…",
+          "options": [
+            "hypertension",
+            "TB",
+            "flu",
+            "HIV"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "q1-4",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Ethical dilemma",
+              "right": "A choice between conflicting moral options"
+            },
+            {
+              "left": "Eustress",
+              "right": "Positive stress that improves performance"
+            },
+            {
+              "left": "CCMA",
+              "right": "Body that resolves labour disputes"
+            },
+            {
+              "left": "STAR method",
+              "right": "Structure for answering interview questions"
+            },
+            {
+              "left": "Retrieval practice",
+              "right": "Testing yourself without notes"
+            }
+          ]
+        },
+        {
+          "id": "q1-5",
+          "type": "truefalse",
+          "prompt": "The Constitution is supreme over customary and religious law.",
+          "answer": true
+        },
+        {
+          "id": "q1-6",
+          "type": "truefalse",
+          "prompt": "A CV should list family members as references.",
+          "answer": false
+        },
+        {
+          "id": "q1-7",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the BMI of a person with a mass of 90 kg and height 1,80 m (BMI = mass ÷ height²), to one decimal place.",
+          "answer": 27.8,
+          "tolerance": 0.05
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Case study",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Case study: Lwazi after matric",
+          "text": "Lwazi (18) finished matric last year but has not found work. He spends his days at home, feels hopeless and has started drinking with friends. His mother works long hours as a domestic worker and has been told she must work on Sundays without extra pay. Lwazi is good at fixing cellphones and his neighbours often ask for his help."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Identify THREE effects of unemployment on Lwazi.",
+          "memo": "Any three (1 each): hopelessness; boredom; alcohol use; no income; loss of confidence; strain on the family"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain how Lwazi could turn his skill into a small business. Give FOUR steps.",
+          "memo": "✓ Identify demand from neighbours/market research (1)\n✓ Write a simple business plan with costs and prices (1)\n✓ Seek funding/support, e.g. NYDA (1)\n✓ Register the business and start small, advertising locally (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Which labour rights of Lwazi's mother may be violated, and where could she get help?",
+          "memo": "✓ Sunday work without extra pay may violate the BCEA (overtime/Sunday pay) (2)\n✓ She can approach the Department of Employment and Labour or the CCMA (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Suggest THREE healthy ways Lwazi could cope with his feelings of hopelessness.",
+          "memo": "Any three (1 each): talk to someone/counselling; SADAG helpline; exercise; set small goals; volunteer; limit alcohol; join a youth programme"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why could volunteering help Lwazi find work?",
+          "memo": "✓ It builds experience and skills for his CV (1)\n✓ and creates contacts and references (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Citizenship, ethics and careers",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Discuss TWO human rights violations in South Africa and say which right each violates.",
+          "memo": "✓ Violation 1 (1) ✓ right violated (1)\n✓ Violation 2 (1) ✓ right violated (1)"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe how you would resolve the ethical dilemma of seeing a friend shoplift.",
+          "memo": "✓ Identify the conflict: loyalty vs honesty and the law (1)\n✓ Consider consequences (1)\n✓ Consider your values (1)\n✓ Decide and act (e.g. talk to the friend, encourage returning the item) (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 4,
+          "prompt": "List FOUR sections of a CV and what each should contain.",
+          "memo": "Any four (1 each): personal details; profile; education; experience; skills; references"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain THREE lifestyle changes that reduce the risk of type 2 diabetes.",
+          "memo": "Any three (1 each): cut sugary drinks/foods; regular exercise; healthy weight; more fibre/vegetables; regular screening"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE effective strategies for preparing for the final matric exams.",
+          "memo": "Any three (1 each): study timetable; spaced revision; past papers; retrieval practice; enough sleep; ask for help"
+        },
+        {
+          "id": "q3-6",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Lwazi is invited to a job interview at a cellphone repair shop. Give FIVE pieces of advice for before and during the interview.",
+          "memo": "Any five (1 each): research the shop; prepare answers using STAR; dress neatly; arrive early; bring CV and certificates; greet politely and make eye contact; listen carefully; give examples of his repair work; ask a question at the end; send a thank-you message"
+        }
+      ]
+    }
+  ]
+}

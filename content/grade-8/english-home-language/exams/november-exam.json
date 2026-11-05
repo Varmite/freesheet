@@ -1,0 +1,301 @@
+{
+  "id": "november-exam",
+  "title": "November Examination: Language in Context",
+  "durationMinutes": 90,
+  "totalMarks": 70,
+  "instructions": [
+    "This paper consists of FOUR sections. Answer ALL the questions.",
+    "Read the passages carefully before answering.",
+    "Answer in full sentences unless you are asked for one word or a quotation.",
+    "Use your own words unless you are asked to quote."
+  ],
+  "sections": [
+    {
+      "title": "SECTION A: Comprehension",
+      "context": [
+        {
+          "type": "passage",
+          "title": "The Boy Who Planted Trees (an original text written for this exam)",
+          "text": "When Lwazi was eleven, the hill behind his school was bare and brown. Every summer, storms washed the soil down into the river, and every winter the wind blew red dust into the classrooms.\n\nLwazi's grandmother told him that when she was a girl, the hill had been covered in trees. 'The trees held the hill together,' she said, 'like stitches in a blanket.'\n\nSo Lwazi started collecting seeds. He gathered acacia pods from the roadside and marula stones from the market, and he planted them in old yoghurt tubs on his windowsill. Many of them died. His friends laughed at him and called him 'the forest king'.\n\nBut Lwazi did not give up. He learned to soak the seeds overnight and to water the seedlings in the evening, when the sun would not steal the water. After a year, he had forty small trees. He asked the principal for permission to plant them on the hill, and on Arbor Day the whole school helped.\n\nToday Lwazi is twenty-three and studying environmental science. The hill behind his old school is green, the river runs clear, and the learners eat their lunch in the shade. Nobody laughs at the forest king any more."
+        }
+      ],
+      "questions": [
+        {
+          "id": "a1",
+          "type": "short",
+          "marks": 1,
+          "prompt": "How old was Lwazi when he started planting trees?",
+          "answers": [
+            "eleven",
+            "11",
+            "eleven years old",
+            "11 years old"
+          ]
+        },
+        {
+          "id": "a2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO problems caused by the bare hill.",
+          "memo": "✓ Soil washed into the river during storms (1)\n✓ Red dust blew into the classrooms in winter (1)"
+        },
+        {
+          "id": "a3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Identify and explain the figure of speech in 'The trees held the hill together, like stitches in a blanket.'",
+          "memo": "✓ Simile (1)\n✓ The trees are compared to stitches that hold a blanket together (1)\n✓ It shows that tree roots bind the soil and prevent erosion (1)"
+        },
+        {
+          "id": "a4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why did Lwazi's friends call him 'the forest king'? What does this tell us about their attitude?",
+          "memo": "✓ They were mocking him for trying to grow a forest from seeds in yoghurt tubs (1)\n✓ They did not believe he could succeed / did not take him seriously (1)"
+        },
+        {
+          "id": "a5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the personification in 'the sun would not steal the water'.",
+          "memo": "✓ The sun is given the human action of stealing (1)\n✓ It shows that the hot sun evaporates the water before the seedlings can use it (1)"
+        },
+        {
+          "id": "a6",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "How many trees did Lwazi have after a year?",
+          "answer": 40,
+          "tolerance": 0
+        },
+        {
+          "id": "a7",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO character traits of Lwazi, with evidence.",
+          "memo": "✓ Persistent/determined: did not give up when seeds died and friends laughed (1)\n✓ Caring about nature / responsible / respectful: learned better methods, asked permission (1)"
+        },
+        {
+          "id": "a8",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the irony in the last sentence of the passage.",
+          "memo": "✓ The nickname 'forest king' was once used to mock him (1)\n✓ Now he has really created a forest, so the nickname has become true and respectful (1)"
+        },
+        {
+          "id": "a9",
+          "type": "open",
+          "marks": 3,
+          "prompt": "What lesson can young people learn from Lwazi's story? Give reasons.",
+          "memo": "✓ A clear lesson, e.g. small, persistent actions can make a big difference (1)\n✓✓ Reasons from the text: he started with seeds, failed at first, kept learning, and changed the hill and river (2)"
+        },
+        {
+          "id": "a10",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why do you think Lwazi watered the seedlings in the evening?",
+          "memo": "✓ The sun is weaker in the evening (1)\n✓ so less water evaporates and the seedlings can absorb more (1)"
+        },
+        {
+          "id": "a11",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Quote TWO details from the last paragraph that show the hill has recovered.",
+          "memo": "Any two (1 each): ‘The hill behind his old school is green’; ‘the river runs clear’; ‘the learners eat their lunch in the shade’"
+        }
+      ]
+    },
+    {
+      "title": "SECTION B: Summary",
+      "instructions": "Use the passage in Section A.",
+      "questions": [
+        {
+          "id": "b1",
+          "type": "open",
+          "marks": 7,
+          "prompt": "List, in point form and in your own words, SEVEN steps or actions that led to the hill becoming green again.",
+          "memo": "Any seven (1 each): his grandmother told him the hill once had trees; he collected seeds; he planted them in tubs; he kept going when many died; he soaked seeds overnight; he watered in the evening; he grew forty trees; he asked the principal's permission; the school helped plant them on Arbor Day"
+        }
+      ]
+    },
+    {
+      "title": "SECTION C: Visual literacy",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Described advertisement (original)",
+          "text": "A large photo shows a family laughing around a braai in a green garden. A solar panel shines on the roof of their house behind them. The headline reads: LOAD-SHEDDING? NOT IN THIS HOUSE. Below: 'SunPower Home Kits – clean energy from R399 a month. Join over 50 000 happy South African families.' The slogan at the bottom says: 'SunPower. Light that lasts.'"
+        }
+      ],
+      "questions": [
+        {
+          "id": "c1",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Who is the target audience of the advertisement? Give a reason.",
+          "memo": "✓ Homeowners / families (1)\n✓ The image shows a family at home and refers to load-shedding at home (1)"
+        },
+        {
+          "id": "c2",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Identify the rhetorical question in the headline and explain why it is used.",
+          "memo": "✓ 'Load-shedding?' (1)\n✓ It grabs attention by referring to a problem readers know well (1)"
+        },
+        {
+          "id": "c3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name and explain the persuasive technique in 'Join over 50 000 happy South African families.'",
+          "memo": "✓ Bandwagon (1)\n✓ It suggests many people already use it, so the reader should too (1)"
+        },
+        {
+          "id": "c4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how the image supports the message of the advertisement.",
+          "memo": "✓ The family is happy and relaxed (1)\n✓ the solar panel is clearly visible on the roof (1)\n✓ suggesting that solar power brings comfort and happiness even during load-shedding (1)"
+        },
+        {
+          "id": "c5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the double meaning (pun) in the slogan 'Light that lasts'.",
+          "memo": "✓ Literally, the lights stay on during load-shedding (1)\n✓ It also suggests the product is durable / lasts for many years (1)"
+        },
+        {
+          "id": "c6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Do you think this advertisement is effective? Give THREE reasons.",
+          "memo": "✓✓✓ Three reasons, e.g. addresses a real problem (load-shedding); attractive happy image; affordable price stated; bandwagon appeal; memorable slogan (1 each). Accept a well-argued negative view."
+        }
+      ]
+    },
+    {
+      "title": "SECTION D: Language structures and conventions",
+      "questions": [
+        {
+          "id": "d1",
+          "type": "mcq",
+          "prompt": "Identify the part of speech of 'quickly' in: 'The seedlings grew quickly.'",
+          "options": [
+            "Adjective",
+            "Adverb",
+            "Verb",
+            "Noun"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "d2",
+          "type": "mcq",
+          "prompt": "Which word is an abstract noun?",
+          "options": [
+            "hill",
+            "seed",
+            "courage",
+            "river"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "d3",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Give the plural of 'tree'.",
+          "answers": [
+            "trees"
+          ]
+        },
+        {
+          "id": "d4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Combine into ONE complex sentence: 'Many seeds died. Lwazi kept trying.'",
+          "memo": "✓✓ e.g. 'Although many seeds died, Lwazi kept trying.' (2)"
+        },
+        {
+          "id": "d5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Insert the missing punctuation: lwazis grandmother said the hill was once green",
+          "memo": "✓ Capital L and apostrophe: Lwazi's (1)\n✓ Comma/quotation marks or correct full stop, e.g. Lwazi's grandmother said, 'The hill was once green.' (1)"
+        },
+        {
+          "id": "d6",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Give the superlative form of 'green'.",
+          "answers": [
+            "greenest",
+            "the greenest"
+          ]
+        },
+        {
+          "id": "d7",
+          "type": "mcq",
+          "prompt": "Choose the correct word: 'The school planted ___ trees than last year.'",
+          "options": [
+            "less",
+            "fewer",
+            "lesser",
+            "least"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "d8",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Identify the figure of speech.",
+          "pairs": [
+            {
+              "left": "The wind howled all night.",
+              "right": "Personification"
+            },
+            {
+              "left": "I have a mountain of homework.",
+              "right": "Hyperbole"
+            },
+            {
+              "left": "The tap went drip, drip, drip.",
+              "right": "Onomatopoeia"
+            },
+            {
+              "left": "Busy bees buzz by.",
+              "right": "Alliteration"
+            }
+          ]
+        },
+        {
+          "id": "d9",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Correct the error: 'Its important that the learners water there trees.'",
+          "memo": "✓ It's (1)\n✓ their (1)"
+        },
+        {
+          "id": "d10",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite as a compound sentence using a coordinating conjunction: 'The river runs clear. The hill is green.'",
+          "memo": "✓✓ e.g. 'The river runs clear, and the hill is green.' (2)"
+        }
+      ]
+    },
+    {
+      "title": "SECTION E: Transactional writing",
+      "instructions": "Write about 120 to 150 words.",
+      "questions": [
+        {
+          "id": "e1",
+          "type": "open",
+          "marks": 10,
+          "prompt": "Imagine you are Lwazi on the evening of Arbor Day, when the school helped plant the trees. Write TWO diary entries: one for that evening and one written a year later, when the trees have started to grow.",
+          "memo": "Format (2): dates for both entries; ‘Dear Diary’ or similar; first person\nContent (5): describes the planting day and feelings; reflects on friends who once laughed; second entry shows growth and changed feelings; suitable details from the story\nLanguage (3): informal, reflective tone; correct tenses; accurate spelling and punctuation"
+        }
+      ]
+    }
+  ]
+}

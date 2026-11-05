@@ -1,0 +1,63 @@
+{
+  "id": "industrial-revolution-in-britain",
+  "title": "The Industrial Revolution in Britain",
+  "term": 1,
+  "summary": "Why industrialisation started in Britain, the key inventions, the factory system, working and living conditions, and how workers organised to improve their lives.",
+  "notes": [
+    { "type": "heading", "text": "What was the Industrial Revolution?" },
+    { "type": "paragraph", "text": "The **Industrial Revolution** was a period of rapid change, starting in Britain from about **1750** and spreading to Europe and North America in the 1800s. Goods that had been made by hand at home (the **domestic system**) were now made by **machines** in **factories**. People moved from farms to towns to find work, a process called **urbanisation**." },
+    { "type": "heading", "text": "Why Britain was first" },
+    { "type": "list", "items": [
+      "**Natural resources**: plenty of coal (for steam power) and iron ore (for machines).",
+      "**Capital**: wealthy merchants and landowners had money from trade and the colonies to invest.",
+      "**Colonies and trade**: an empire supplied raw materials such as cotton and bought finished goods.",
+      "**Labour**: the Agricultural Revolution and enclosures pushed many farm workers off the land, so they needed work in towns.",
+      "**Transport**: rivers, canals and later railways moved heavy goods cheaply; Britain had many good ports.",
+      "**Stable government** and banks that encouraged business and invention."
+    ] },
+    { "type": "heading", "text": "Key inventions" },
+    { "type": "table", "headers": ["Year", "Inventor", "Invention", "Importance"], "rows": [
+      ["1764", "James Hargreaves", "Spinning jenny", "One worker could spin many threads at once"],
+      ["1769", "Richard Arkwright", "Water frame", "Water-powered spinning; led to the first factories"],
+      ["1769–1776", "James Watt", "Improved steam engine", "Reliable power for factories, mines and later trains"],
+      ["1785", "Edmund Cartwright", "Power loom", "Mechanised weaving"],
+      ["1825", "George Stephenson", "Locomotive on the Stockton–Darlington railway", "Fast, cheap transport of goods and people"]
+    ] },
+    { "type": "heading", "text": "Working conditions" },
+    { "type": "list", "items": [
+      "Shifts of 12 to 16 hours a day, six days a week, for very low wages.",
+      "Dangerous, unguarded machines caused injuries and deaths; there was no compensation.",
+      "**Child labour**: children as young as five worked in mills and mines, crawling under machines or pulling coal carts in narrow tunnels.",
+      "Workers were fined or beaten for being late or talking.",
+      "Women and children were paid much less than men."
+    ] },
+    { "type": "heading", "text": "Living conditions in industrial towns" },
+    { "type": "paragraph", "text": "Towns such as Manchester grew very quickly. Workers lived in overcrowded, cheaply built **slums** with no clean water, sewers or rubbish removal. Smoke from factories polluted the air. Diseases such as **cholera** and typhoid spread easily, and life expectancy for workers in some towns was under 30 years." },
+    { "type": "passage", "title": "Source A: A mill worker's evidence (a composite based on testimony to the 1832 Sadler Committee)", "text": "I went to the mill when I was eight years old. We worked from five in the morning until nine at night. When I was too tired, the overlooker beat me with a strap. My knees became bent from standing so long at the machine." },
+    { "type": "heading", "text": "Responses and reforms" },
+    { "type": "list", "items": [
+      "**Luddites** (1811–1816) smashed machines they believed were taking their jobs.",
+      "**Trade unions** were formed so that workers could bargain together for better pay and conditions; they were at first illegal.",
+      "**Factory Acts**: the 1833 Act banned children under 9 from working in textile mills and limited hours for older children; the 1842 Mines Act banned women and children under 10 from working underground.",
+      "Public health laws (1848 and 1875) led to sewers, clean water and better housing."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "When using a source, say who wrote it, when, and why. A worker's testimony to a committee investigating child labour is very useful but may focus on the worst experiences." }
+  ],
+  "questions": [
+    { "id": "where-start", "type": "short", "prompt": "In which country did the Industrial Revolution begin?", "answers": ["britain", "great britain", "england", "united kingdom", "uk"] },
+    { "id": "watt", "type": "mcq", "prompt": "Who improved the steam engine so that it could power factories?", "options": ["George Stephenson", "James Watt", "Richard Arkwright", "James Hargreaves"], "answer": 1 },
+    { "id": "urbanisation", "type": "short", "prompt": "What is the movement of people from rural areas to towns and cities called?", "answers": ["urbanisation", "urbanization"] },
+    { "id": "domestic", "type": "truefalse", "prompt": "Before the Industrial Revolution, most cloth was made at home by hand.", "answer": true },
+    { "id": "inventions", "type": "match", "marks": 4, "prompt": "Match each inventor to the invention.", "pairs": [
+      { "left": "James Hargreaves", "right": "Spinning jenny" },
+      { "left": "Edmund Cartwright", "right": "Power loom" },
+      { "left": "George Stephenson", "right": "Steam locomotive" },
+      { "left": "Richard Arkwright", "right": "Water frame" }
+    ] },
+    { "id": "luddites", "type": "mcq", "prompt": "Who were the Luddites?", "options": ["Factory owners who built mills", "Workers who smashed machines", "Members of parliament who passed Factory Acts", "Inventors of the steam engine"], "answer": 1 },
+    { "id": "why-britain", "type": "open", "marks": 4, "prompt": "Give FOUR reasons why the Industrial Revolution started in Britain.", "memo": "Any four (1 each): coal and iron; capital to invest; colonies for raw materials and markets; available labour after enclosures; good transport/canals/ports; stable government and banks" },
+    { "id": "source-a", "type": "open", "marks": 3, "prompt": "Read Source A. (a) How old was the witness when he started work? (b) How many hours did he work each day? (c) What does the source tell us about how children were treated?", "memo": "(a) ✓ Eight years old (1)\n(b) ✓ 16 hours (5 a.m. to 9 p.m.) (1)\n(c) ✓ They were overworked, beaten and physically harmed (1)" },
+    { "id": "slums", "type": "open", "marks": 3, "prompt": "Describe THREE problems of living in industrial towns in the 1800s.", "memo": "Any three (1 each): overcrowded slums; no clean water; no sewers/rubbish removal; air pollution; disease such as cholera; low life expectancy" },
+    { "id": "unions", "type": "open", "marks": 2, "prompt": "Why did workers form trade unions?", "memo": "✓ To act together / bargain collectively with employers (1)\n✓ for higher wages, shorter hours and safer conditions (1)" }
+  ]
+}

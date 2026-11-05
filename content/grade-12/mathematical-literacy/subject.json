@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "grade": 12,
+  "id": "mathematical-literacy",
+  "name": "Mathematical Literacy",
+  "description": "CAPS Grade 12 Mathematical Literacy: business finance and break-even analysis, taxation, investments, loans and inflation, exchange rates, measurement and packaging, maps, plans and models, data interpretation, and probability and risk.",
+  "topics": [
+    { "id": "business-finance-and-break-even", "title": "Finance: Business Costs, Income and Break-even", "term": 1 },
+    { "id": "taxation", "title": "Finance: Taxation", "term": 1 },
+    { "id": "investments-loans-and-inflation", "title": "Finance: Investments, Loans and Inflation", "term": 2 },
+    { "id": "exchange-rates", "title": "Finance: Exchange Rates", "term": 2 },
+    { "id": "measurement-and-packaging", "title": "Measurement: Packaging and Optimisation", "term": 2 },
+    { "id": "maps-plans-and-models", "title": "Maps, Plans and Models", "term": 3 },
+    { "id": "data-interpretation", "title": "Data Handling: Interpretation and Critical Analysis", "term": 3 },
+    { "id": "probability-and-risk", "title": "Probability and Risk", "term": 3 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 90, "totalMarks": 75 }
+  ]
+}

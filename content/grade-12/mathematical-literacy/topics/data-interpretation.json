@@ -1,0 +1,49 @@
+{
+  "id": "data-interpretation",
+  "title": "Data Handling: Interpretation and Critical Analysis",
+  "term": 3,
+  "summary": "Interpreting real-world data and graphs, comparing groups with measures of centre and spread, box-and-whisker plots, scatter plots and trends, and critically evaluating claims and misleading representations.",
+  "notes": [
+    { "type": "heading", "text": "Choosing the right summary" },
+    { "type": "table", "headers": ["Question", "Use"], "rows": [
+      ["What is typical?", "Mean (no outliers) or median (outliers present)"],
+      ["How consistent is it?", "Range or interquartile range (IQR)"],
+      ["How do two groups compare?", "Compare medians and IQRs, or draw two box-and-whisker plots"],
+      ["Is there a relationship between two variables?", "Scatter plot and trend line"]
+    ] },
+    { "type": "heading", "text": "Percentiles" },
+    { "type": "paragraph", "text": "A **percentile** tells you the percentage of data values below a value. A baby at the **75th percentile** for mass is heavier than 75% of babies of the same age. $Q_1$ is the 25th percentile and $Q_3$ the 75th." },
+    { "type": "heading", "text": "Scatter plots and trends" },
+    { "type": "paragraph", "text": "A **scatter plot** shows pairs of values. A **trend line** (line of best fit) summarises the relationship and can be used to make predictions within the range of the data." },
+    { "type": "example", "title": "Worked example 1", "problem": "A scatter plot of hours of TV watched per day against test marks for 30 learners shows points falling from left to right. Describe the relationship and comment on a claim that 'TV makes you fail'.", "steps": [
+      "There is a negative relationship: learners who watch more TV tend to get lower marks.",
+      "However, correlation does not prove causation: other factors (study time, sleep, home support) may explain both.",
+      "A sample of 30 learners is small and may not represent all learners."
+    ], "answer": "Negative correlation, but the claim is not proven." },
+    { "type": "heading", "text": "Thinking critically" },
+    { "type": "list", "items": [
+      "**Who** collected the data and **why**? Could they be biased (e.g. a company reporting on its own product)?",
+      "**How big** and **how representative** was the sample?",
+      "Are **percentages** given without the **actual numbers**?",
+      "Do the **axes** start at zero? Are the intervals equal?",
+      "Is a **trend** being extrapolated too far into the future?"
+    ] },
+    { "type": "example", "title": "Worked example 2: comparing averages", "problem": "Company A advertises 'average salary R32 000'. Salaries: 12 staff at R14 000, 3 managers at R45 000 and the owner at R190 000. Is the advert fair?", "steps": [
+      "Mean = (12 × 14 000 + 3 × 45 000 + 190 000) ÷ 16 = R30 812,50",
+      "Median = R14 000 (most staff earn this)",
+      "The mean is pulled up by a few high earners, so the advert is misleading."
+    ], "answer": "Not fair: the median R14 000 is more typical." }
+  ],
+  "questions": [
+    { "id": "percentile", "type": "mcq", "prompt": "A learner's mark is at the 90th percentile. This means…", "options": ["she scored 90%", "she did better than about 90% of learners", "90 learners did better than her", "she is in the bottom 10%"], "answer": 1 },
+    { "id": "q1", "type": "mcq", "prompt": "The lower quartile is the same as the…", "options": ["10th percentile", "25th percentile", "50th percentile", "75th percentile"], "answer": 1 },
+    { "id": "negative", "type": "truefalse", "prompt": "In a negative relationship, as one variable increases the other tends to decrease.", "answer": true },
+    { "id": "median", "type": "numeric", "prompt": "Monthly rents in a block of flats: R4 200; R4 500; R4 500; R4 800; R5 100; R12 000. Find the median rent.", "answer": 4650, "tolerance": 0, "unit": "rand" },
+    { "id": "mean", "type": "numeric", "prompt": "Find the mean rent for the same data (two decimals).", "answer": 5850, "tolerance": 0.01, "unit": "rand" },
+    { "id": "typical", "type": "open", "marks": 2, "prompt": "Which average (mean or median) better describes a typical rent in the block of flats above? Explain.", "memo": "✓ The median (1)\n✓ The R12 000 penthouse is an outlier that raises the mean (1)" },
+    { "id": "compare", "type": "open", "marks": 4, "prompt": "School A: median 58%, IQR 24. School B: median 63%, IQR 10. Compare the two schools' results.", "memo": "✓ School B performed better on average (higher median) (2)\n✓ School B's results are more consistent (smaller IQR) (1)\n✓ School A has a wider spread of marks (1)" },
+    { "id": "critical", "type": "open", "marks": 3, "prompt": "A cool-drink company's survey of 50 of its customers finds that '9 out of 10 people prefer our drink'. Give THREE reasons to question this claim.", "memo": "Any three (1 each): sample is small; only the company's own customers (biased); company has an interest in the result; question wording unknown; no actual numbers/methods given" },
+    { "id": "extrapolate", "type": "open", "marks": 2, "prompt": "A trend line shows the population of a town growing by 2 000 people per year from 2015 to 2024. Why is it risky to use it to predict the population in 2060?", "memo": "✓ 2060 is far outside the data range (extrapolation) (1)\n✓ Growth rates can change because of economic, social or migration factors (1)" },
+    { "id": "axes", "type": "open", "marks": 2, "prompt": "Give TWO ways a graph can be made to look misleading.", "memo": "Any two (1 each): vertical axis not starting at zero; uneven scales; 3D effects; missing labels; cherry-picked time period" }
+  ]
+}

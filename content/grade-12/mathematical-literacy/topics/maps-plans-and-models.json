@@ -1,0 +1,39 @@
+{
+  "id": "maps-plans-and-models",
+  "title": "Maps, Plans and Models",
+  "term": 3,
+  "summary": "Using scale to measure maps and plans, interpreting elevation and floor plans, route planning with distance, speed, time and fuel cost, and building scale models.",
+  "notes": [
+    { "type": "heading", "text": "Working with scale" },
+    { "type": "list", "items": [
+      "**Number scale** 1 : 200 000: 1 cm on the map = 200 000 cm = 2 km.",
+      "**Bar scale**: measure the bar with a ruler first, e.g. if 3 cm on the bar = 5 km, then 1 cm = 1,67 km.",
+      "**Finding the scale**: map distance : real distance, in the **same units**, simplified to 1 : …"
+    ] },
+    { "type": "example", "title": "Worked example 1: using a bar scale", "problem": "On a map, the bar scale shows 4 cm = 10 km. Two towns are 13,2 cm apart on the map. What is the real distance?", "steps": ["1 cm = 10 ÷ 4 = 2,5 km", "13,2 × 2,5 = 33 km"], "answer": "33 km" },
+    { "type": "heading", "text": "Route planning" },
+    { "type": "example", "title": "Worked example 2: a road trip", "problem": "A family drives 1 400 km from Johannesburg to Cape Town at an average of 100 km/h. Their car uses 8,2 ℓ/100 km and petrol costs R23,60/ℓ. Calculate the driving time and fuel cost.", "steps": [
+      "Time: 1 400 ÷ 100 = 14 hours",
+      "Fuel: 1 400 ÷ 100 × 8,2 = 114,8 ℓ",
+      "Cost: 114,8 × R23,60 = R2 709,28"
+    ], "answer": "14 h of driving; R2 709,28 for fuel" },
+    { "type": "callout", "label": "Exam tip", "text": "Remember to add stops, toll fees and the return trip if the question mentions them. Convert decimal hours to hours and minutes: 0,75 h = 45 min." },
+    { "type": "heading", "text": "Elevation and floor plans" },
+    { "type": "paragraph", "text": "Floor plans give lengths and widths; elevation plans give heights. Combine them to find areas of walls (for paint or bricks) and volumes of rooms (for air-conditioning or heating)." },
+    { "type": "example", "title": "Worked example 3", "problem": "A classroom is 9 m × 7 m (floor plan) and 3 m high (elevation). An air-conditioner is rated for 200 m³. Is it large enough?", "steps": ["Volume = 9 × 7 × 3 = 189 m³", "189 < 200"], "answer": "Yes, it is large enough." },
+    { "type": "heading", "text": "Scale models" },
+    { "type": "paragraph", "text": "To build a scale model, divide every real measurement by the scale factor. A 1 : 50 model of a 12 m × 8 m hall has a base of 24 cm × 16 cm." }
+  ],
+  "questions": [
+    { "id": "number-scale", "type": "numeric", "prompt": "On a 1 : 250 000 map, a road is 6,4 cm long. What is its real length in km?", "answer": 16, "tolerance": 0, "unit": "km" },
+    { "id": "bar-scale", "type": "numeric", "prompt": "A bar scale shows 2 cm = 5 km. Two places are 9 cm apart on the map. What is the real distance?", "answer": 22.5, "tolerance": 0, "unit": "km" },
+    { "id": "find-scale", "type": "mcq", "prompt": "A 15 m wall is drawn as 10 cm on a plan. What is the scale?", "options": ["1 : 15", "1 : 150", "1 : 1 500", "1 : 15 000"], "answer": 1 },
+    { "id": "time", "type": "numeric", "prompt": "A truck travels 630 km at an average speed of 84 km/h. How many hours does the trip take?", "answer": 7.5, "tolerance": 0, "unit": "hours" },
+    { "id": "model", "type": "numeric", "prompt": "A 1 : 40 scale model of a 6 m long bus is built. How long is the model, in cm?", "answer": 15, "tolerance": 0, "unit": "cm" },
+    { "id": "convert-time", "type": "truefalse", "prompt": "3,4 hours is the same as 3 hours 40 minutes.", "answer": false, "explanation": "0,4 h = 24 minutes, so 3,4 h = 3 h 24 min." },
+    { "id": "fuel", "type": "open", "marks": 4, "prompt": "A taxi owner drives 85 km each way to work, 22 days a month. The taxi uses 11 ℓ/100 km and diesel costs R22,90/ℓ. Calculate the monthly fuel cost.", "memo": "✓ Distance: 85 × 2 × 22 = 3 740 km (1)\n✓ Fuel: 3 740 ÷ 100 × 11 = 411,4 ℓ (1)\n✓ × R22,90 (1)\n✓ = R9 421,06 (1)" },
+    { "id": "arrival", "type": "open", "marks": 3, "prompt": "A bus leaves Durban at 21:30 and travels 600 km to Johannesburg at an average of 75 km/h, with a 40-minute stop. When does it arrive?", "memo": "✓ 600 ÷ 75 = 8 h (1)\n✓ + 40 min = 8 h 40 min (1)\n✓ Arrives 06:10 the next day (1)" },
+    { "id": "volume", "type": "open", "marks": 3, "prompt": "A hall is 20 m long, 12 m wide and 4,5 m high. A heater is rated for 900 m³. Is it suitable? Show working.", "memo": "✓ 20 × 12 × 4,5 (1)\n✓ = 1 080 m³ (1)\n✓ No, 1 080 m³ is more than 900 m³ (1)" },
+    { "id": "plan-use", "type": "open", "marks": 2, "prompt": "Why are both a floor plan and an elevation plan needed to calculate how much paint is needed for the walls of a room?", "memo": "✓ The floor plan gives the lengths of the walls (1)\n✓ The elevation plan gives the heights, so the wall area can be calculated (1)" }
+  ]
+}

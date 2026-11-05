@@ -1,0 +1,67 @@
+{
+  "id": "photosynthesis-and-respiration",
+  "title": "Photosynthesis and Respiration",
+  "term": 1,
+  "summary": "How green plants make food from carbon dioxide and water using light energy, and how all living things release energy from food by respiration.",
+  "notes": [
+    { "type": "heading", "text": "Photosynthesis: how plants make food" },
+    { "type": "paragraph", "text": "Green plants are **producers**: they make their own food. In the leaves, the green pigment **chlorophyll** (found in **chloroplasts**) traps energy from sunlight. The plant uses this energy to turn **carbon dioxide** from the air and **water** from the soil into **glucose** (a sugar). **Oxygen** is given off as a by-product." },
+    { "type": "formula", "latex": "\\text{carbon dioxide} + \\text{water} \\xrightarrow[\\text{chlorophyll}]{\\text{light energy}} \\text{glucose} + \\text{oxygen}", "caption": "Word equation for photosynthesis" },
+    { "type": "formula", "latex": "6\\text{CO}_2 + 6\\text{H}_2\\text{O} \\rightarrow \\text{C}_6\\text{H}_{12}\\text{O}_6 + 6\\text{O}_2", "caption": "Balanced chemical equation" },
+    { "type": "table", "caption": "What photosynthesis needs and where it comes from", "headers": ["Requirement", "Source", "How it reaches the leaf"], "rows": [
+      ["Carbon dioxide", "The air", "Enters through tiny pores called **stomata** on the underside of the leaf"],
+      ["Water", "The soil", "Absorbed by root hairs and carried up the stem in **xylem** vessels"],
+      ["Light energy", "The sun", "Absorbed by chlorophyll in the chloroplasts"],
+      ["Chlorophyll", "Made by the plant", "Found in chloroplasts, mostly in leaf cells"]
+    ] },
+    { "type": "heading", "text": "What plants do with glucose" },
+    { "type": "list", "items": [
+      "Used immediately in **respiration** to release energy for growth and repair.",
+      "Changed into **starch** and stored in leaves, roots (carrots, sweet potatoes), stems (potatoes) and seeds.",
+      "Changed into **cellulose** to build cell walls.",
+      "Combined with nutrients from the soil to make proteins and oils."
+    ] },
+    { "type": "example", "title": "Testing a leaf for starch", "problem": "How can you show that a leaf has made starch by photosynthesis?", "steps": [
+      "Boil the leaf in water for about a minute to kill it and soften the cells.",
+      "Place it in warm ethanol (in a water bath, never over a flame) to remove the chlorophyll; the leaf turns pale.",
+      "Rinse the leaf in water to soften it.",
+      "Add a few drops of **iodine solution**. A blue-black colour shows that starch is present; brown-orange means no starch."
+    ], "answer": "Iodine turns blue-black where starch is present." },
+    { "type": "callout", "label": "Remember", "text": "To prove that light is needed, keep a plant in the dark for two days (to use up its starch) and then cover part of one leaf with foil before putting it in the light. Only the uncovered part tests positive for starch." },
+    { "type": "heading", "text": "Respiration: releasing energy from food" },
+    { "type": "paragraph", "text": "**Cellular respiration** happens in the **mitochondria** of every living cell, in plants and animals, day and night. Glucose reacts with oxygen to release **energy**, which the organism uses to move, grow, keep warm and repair itself." },
+    { "type": "formula", "latex": "\\text{glucose} + \\text{oxygen} \\rightarrow \\text{carbon dioxide} + \\text{water} + \\text{energy}", "caption": "Word equation for aerobic respiration" },
+    { "type": "definition", "term": "Aerobic respiration", "text": "Respiration that uses oxygen. It releases a large amount of energy." },
+    { "type": "definition", "term": "Anaerobic respiration", "text": "Respiration without oxygen. Yeast makes alcohol and carbon dioxide (fermentation); hard-working muscles make lactic acid, which causes cramps." },
+    { "type": "table", "caption": "Comparing photosynthesis and respiration", "headers": ["Feature", "Photosynthesis", "Respiration"], "rows": [
+      ["Where", "Chloroplasts (green plant cells only)", "Mitochondria (all living cells)"],
+      ["When", "Only in light", "All the time"],
+      ["Uses", "Carbon dioxide and water", "Glucose and oxygen"],
+      ["Produces", "Glucose and oxygen", "Carbon dioxide, water and energy"],
+      ["Energy", "Stored (light energy into chemical energy)", "Released (chemical energy for life processes)"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "Plants do NOT only photosynthesise while animals respire. Plants respire all the time too. In bright light, photosynthesis is faster than respiration, so a plant gives off more oxygen than it uses." },
+    { "type": "heading", "text": "Why photosynthesis matters" },
+    { "type": "list", "items": [
+      "It is the start of almost every food chain: all food energy comes from the sun through plants.",
+      "It replaces the oxygen in the air that living things use up.",
+      "It removes carbon dioxide from the air, helping to slow global warming."
+    ] }
+  ],
+  "questions": [
+    { "id": "pigment", "type": "short", "prompt": "Name the green pigment that traps light energy in leaves.", "answers": ["chlorophyll"], "explanation": "Chlorophyll is found in the chloroplasts." },
+    { "id": "gas-in", "type": "mcq", "prompt": "Which gas do plants take in for photosynthesis?", "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"], "answer": 2, "explanation": "Carbon dioxide enters through the stomata." },
+    { "id": "products", "type": "mcq", "prompt": "What are the products of photosynthesis?", "options": ["Carbon dioxide and water", "Glucose and oxygen", "Starch and carbon dioxide", "Water and energy"], "answer": 1 },
+    { "id": "iodine", "type": "short", "prompt": "Which chemical is used to test for starch?", "answers": ["iodine", "iodine solution"], "explanation": "Iodine turns blue-black when starch is present." },
+    { "id": "resp-all", "type": "truefalse", "prompt": "Plants respire only at night.", "answer": false, "explanation": "Plants respire all the time, day and night." },
+    { "id": "organelles", "type": "match", "marks": 3, "prompt": "Match each term to its description.", "pairs": [
+      { "left": "Chloroplast", "right": "Where photosynthesis takes place" },
+      { "left": "Mitochondrion", "right": "Where respiration takes place" },
+      { "left": "Stomata", "right": "Pores that let gases in and out of a leaf" }
+    ] },
+    { "id": "anaerobic", "type": "mcq", "prompt": "What does yeast produce during anaerobic respiration?", "options": ["Lactic acid", "Oxygen and glucose", "Alcohol and carbon dioxide", "Starch"], "answer": 2 },
+    { "id": "ethanol", "type": "open", "marks": 2, "prompt": "In the starch test, why is the leaf placed in warm ethanol, and why must the ethanol never be heated over a flame?", "memo": "✓ The ethanol removes the chlorophyll so the colour change can be seen clearly (1)\n✓ Ethanol is flammable and could catch fire (1)" },
+    { "id": "compare", "type": "open", "marks": 4, "prompt": "Give TWO differences between photosynthesis and respiration.", "memo": "Any two, 2 marks each (both sides of the difference):\n✓✓ Photosynthesis uses CO₂ and water; respiration uses glucose and oxygen\n✓✓ Photosynthesis happens only in light; respiration happens all the time\n✓✓ Photosynthesis takes place in chloroplasts; respiration in mitochondria\n✓✓ Photosynthesis stores energy; respiration releases energy" },
+    { "id": "importance", "type": "open", "marks": 2, "prompt": "Explain why photosynthesis is important for animals, even though animals do not photosynthesise.", "memo": "✓ Plants are the start of food chains, so animals get their food energy from plants (directly or indirectly) (1)\n✓ Photosynthesis releases the oxygen animals need for respiration (1)" }
+  ]
+}

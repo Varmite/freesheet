@@ -1,0 +1,45 @@
+{
+  "id": "reading-for-comprehension",
+  "title": "Reading for Comprehension",
+  "term": 1,
+  "summary": "Reading complex texts: identifying the writer's argument, purpose, tone and intended audience, analysing style and structure, and answering higher-order questions.",
+  "notes": [
+    { "type": "heading", "text": "Reading for argument" },
+    { "type": "list", "items": [
+      "**Main argument (thesis)**: what the writer wants you to believe, often stated in the introduction or conclusion.",
+      "**Supporting points**: evidence, examples, anecdotes, statistics, expert opinion.",
+      "**Purpose**: to inform, persuade, entertain, criticise or reflect.",
+      "**Audience**: who the text is written for, shown by vocabulary, examples and register."
+    ] },
+    { "type": "heading", "text": "Tone" },
+    { "type": "table", "headers": ["Tone word", "Meaning"], "rows": [
+      ["Sardonic", "Mocking and cynical"],
+      ["Wistful", "Gently sad and longing"],
+      ["Indignant", "Angry at unfairness"],
+      ["Conciliatory", "Trying to calm or make peace"],
+      ["Didactic", "Intending to teach a lesson"],
+      ["Ambivalent", "Having mixed feelings"]
+    ] },
+    { "type": "heading", "text": "Style and structure" },
+    { "type": "paragraph", "text": "Writers use **anecdotes** to engage readers, **short sentences** for emphasis, **rhetorical questions** to involve readers, **contrast** to make a point, and a **circular structure** (ending where they began) to give a sense of completeness." },
+    { "type": "passage", "title": "Practice passage: The Tyranny of the Five-Star Review (written for FreeSheet)", "text": "[1] Last month I ate at a small restaurant in Bloemfontein that served the best lamb curry I have ever tasted. The owner, a cheerful woman called Mrs Pillay, asked me as I left whether I would 'please, please' leave a review. Not a good review, I noticed. A five-star review. Anything less, she explained, and her restaurant would sink beneath the hundreds of others on the app.\n\n[2] We now live in a world where everything is rated: our taxi drivers, our plumbers, our dentists, even the people who deliver our groceries. On the surface this is democratic. Why should a restaurant critic's opinion matter more than mine? But the system has a cruel flaw. When every rating is expected to be perfect, four stars, which once meant 'very good', has come to mean 'something went wrong'.\n\n[3] The result is a strange kind of dishonesty. We give five stars because we feel sorry for the driver, or because we are afraid of seeming mean. The ratings stop telling us anything at all. And the people being rated, who often depend on them for their income, live in constant fear of a single bad day.\n\n[4] I gave Mrs Pillay five stars. She deserved them. But I wonder how many of her neighbours deserved four, and are now out of business." },
+    { "type": "callout", "label": "Exam tip", "text": "For 'discuss' or 'critically comment' questions (3–4 marks), make a point, support it with a quotation or reference, and explain its effect or significance." }
+  ],
+  "questions": [
+    { "id": "city", "type": "short", "prompt": "In which city is the restaurant in the passage?", "answers": ["bloemfontein"] },
+    { "id": "flaw", "type": "mcq", "prompt": "According to paragraph 2, what is the 'cruel flaw' in rating systems?", "options": ["Critics are ignored", "Anything less than perfect is seen as failure", "Restaurants pay for reviews", "Apps are expensive"], "answer": 1 },
+    { "id": "tone", "type": "mcq", "prompt": "Which word best describes the tone of the final paragraph?", "options": ["Joyful", "Wistful and troubled", "Indignant and aggressive", "Sarcastic"], "answer": 1 },
+    { "id": "democratic", "type": "truefalse", "prompt": "The writer concedes that rating systems seem democratic at first.", "answer": true },
+    { "id": "tones", "type": "match", "marks": 4, "prompt": "Match each tone word to its meaning.", "pairs": [
+      { "left": "Indignant", "right": "Angry at unfairness" },
+      { "left": "Ambivalent", "right": "Having mixed feelings" },
+      { "left": "Didactic", "right": "Intending to teach" },
+      { "left": "Conciliatory", "right": "Trying to make peace" }
+    ] },
+    { "id": "anecdote", "type": "open", "marks": 2, "prompt": "Why does the writer begin with an anecdote about Mrs Pillay?", "memo": "✓ It engages the reader with a real, relatable story (1)\n✓ and introduces the problem of pressure for five-star reviews in a personal way (1)" },
+    { "id": "stars", "type": "open", "marks": 2, "prompt": "Explain how the meaning of four stars has changed, according to the writer.", "memo": "✓ It once meant 'very good' (1)\n✓ but now suggests something went wrong, because perfection is expected (1)" },
+    { "id": "dishonesty", "type": "open", "marks": 3, "prompt": "Discuss what the writer means by 'a strange kind of dishonesty' (paragraph 3).", "memo": "✓ People give five stars out of pity or fear of seeming mean (1)\n✓ not because the service was perfect (1)\n✓ so the ratings become meaningless (1)" },
+    { "id": "structure", "type": "open", "marks": 2, "prompt": "Comment on the structure of the passage, referring to its beginning and ending.", "memo": "✓ It is circular: it starts and ends with Mrs Pillay (1)\n✓ The ending adds a thought-provoking twist about the neighbours who went out of business (1)" },
+    { "id": "evaluate", "type": "open", "marks": 3, "prompt": "Do you agree that rating systems do more harm than good? Justify your view.", "memo": "✓ Clear stance (1)\n✓✓ Two well-supported reasons (2)" }
+  ]
+}

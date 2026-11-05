@@ -1,0 +1,62 @@
+{
+  "id": "weathering-and-erosion",
+  "title": "Surface Forces: Weathering and Erosion",
+  "term": 4,
+  "summary": "Internal and external forces that shape the land, physical, chemical and biological weathering, and erosion by water, wind, ice and the sea.",
+  "notes": [
+    { "type": "heading", "text": "Forces that shape the Earth" },
+    { "type": "paragraph", "text": "The Earth's surface is shaped by two groups of forces. **Internal forces** (from inside the Earth), such as folding, faulting, earthquakes and volcanoes, **build up** the land. **External (surface) forces**, mainly weathering and erosion, **wear down** the land." },
+    { "type": "table", "headers": ["Process", "Meaning"], "rows": [
+      ["Weathering", "The breaking down of rock in place (it does not move)"],
+      ["Erosion", "The wearing away and removal of rock and soil by an agent such as water, wind or ice"],
+      ["Transport", "The carrying of eroded material"],
+      ["Deposition", "The dropping of material when the agent loses energy"]
+    ] },
+    { "type": "heading", "text": "Physical (mechanical) weathering" },
+    { "type": "paragraph", "text": "Rock is broken into smaller pieces without any change in its chemical make-up." },
+    { "type": "list", "items": [
+      "**Frost action (freeze–thaw)**: water enters cracks, freezes and expands by about 9%, widening the crack. Repeated freezing and thawing breaks the rock. Common in the Drakensberg in winter.",
+      "**Exfoliation (onion-skin weathering)**: in hot deserts, rock surfaces heat up by day and cool at night. The outer layers expand and contract more than the inside and peel off in sheets, leaving rounded rocks.",
+      "**Pressure release**: when overlying rock is eroded, the rock beneath expands and cracks in layers.",
+      "**Salt crystal growth**: salt water evaporates in cracks, and the growing crystals push the rock apart (common on coasts)."
+    ] },
+    { "type": "heading", "text": "Chemical weathering" },
+    { "type": "paragraph", "text": "Minerals in the rock react with water, oxygen or acids and change into new substances, weakening the rock. It is fastest in **hot, wet** climates." },
+    { "type": "list", "items": [
+      "**Carbonation**: rainwater containing carbon dioxide forms a weak acid that dissolves limestone, forming caves such as the Sudwala Caves and the Cango Caves.",
+      "**Oxidation**: iron minerals react with oxygen and water to form rust-coloured iron oxide, making rocks red-brown and crumbly.",
+      "**Hydrolysis**: water reacts with minerals such as feldspar in granite, changing them into clay."
+    ] },
+    { "type": "heading", "text": "Biological weathering" },
+    { "type": "list", "items": [
+      "Plant **roots** grow into cracks and force them open.",
+      "Burrowing animals and **earthworms** expose rock to more weathering.",
+      "**Lichens** and decaying plants produce acids that break down rock."
+    ] },
+    { "type": "heading", "text": "Agents of erosion" },
+    { "type": "table", "headers": ["Agent", "How it erodes", "Landforms"], "rows": [
+      ["Running water (rivers)", "Fast-flowing rivers carry rocks that grind the bed and banks; most important agent in South Africa", "V-shaped valleys, waterfalls, gorges; deposition forms flood plains and deltas"],
+      ["Wind", "Blows away loose sand and dust; sand blasting shapes rocks; strongest in dry areas", "Sand dunes, mushroom (pedestal) rocks"],
+      ["Ice (glaciers)", "Moving ice plucks and grinds rock", "U-shaped valleys (not in South Africa today)"],
+      ["The sea (waves)", "Waves pound and wear away the coast", "Cliffs, caves, arches, stacks; deposition forms beaches and spits"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Climate determines the main type of weathering: **physical** weathering dominates in **dry and cold** areas (deserts, mountains), and **chemical** weathering dominates in **hot and wet** areas (tropics, KZN coast)." }
+  ],
+  "questions": [
+    { "id": "weather-def", "type": "short", "prompt": "What is the breaking down of rock in place called?", "answers": ["weathering"] },
+    { "id": "frost", "type": "mcq", "prompt": "Frost action is a type of…", "options": ["chemical weathering", "physical weathering", "biological weathering", "deposition"], "answer": 1 },
+    { "id": "carbonation", "type": "short", "prompt": "Which type of chemical weathering dissolves limestone to form caves?", "answers": ["carbonation"] },
+    { "id": "exfoliation", "type": "mcq", "prompt": "Onion-skin weathering (exfoliation) is most common in…", "options": ["hot deserts", "tropical rainforests", "the ocean", "polar ice caps"], "answer": 0 },
+    { "id": "hot-wet", "type": "truefalse", "prompt": "Chemical weathering is fastest in hot, wet climates.", "answer": true },
+    { "id": "agents", "type": "match", "marks": 4, "prompt": "Match each landform to the agent that formed it.", "pairs": [
+      { "left": "V-shaped valley", "right": "River" },
+      { "left": "Sand dune", "right": "Wind" },
+      { "left": "Sea arch", "right": "Waves" },
+      { "left": "U-shaped valley", "right": "Glacier" }
+    ] },
+    { "id": "freeze-thaw", "type": "open", "marks": 3, "prompt": "Explain how freeze–thaw weathering breaks rocks.", "memo": "✓ Water enters cracks in the rock (1)\n✓ At night it freezes and expands, widening the crack (1)\n✓ Repeated freezing and thawing eventually breaks the rock apart (1)" },
+    { "id": "difference", "type": "open", "marks": 2, "prompt": "What is the difference between weathering and erosion?", "memo": "✓ Weathering breaks rock down where it is (1)\n✓ Erosion removes and carries the material away (1)" },
+    { "id": "roots", "type": "open", "marks": 2, "prompt": "Explain ONE way in which living things weather rocks.", "memo": "✓✓ e.g. plant roots grow in cracks and push them apart / lichens produce acids / animals burrow and expose rock (2 for a clear explanation)" },
+    { "id": "internal", "type": "open", "marks": 2, "prompt": "How do internal and external forces have opposite effects on the land?", "memo": "✓ Internal forces such as folding, faulting and volcanoes build up the land (1)\n✓ External forces such as weathering and erosion wear it down (1)" }
+  ]
+}

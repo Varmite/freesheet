@@ -1,0 +1,51 @@
+{
+  "id": "sine-cosine-and-area-rules",
+  "title": "Trigonometry: Sine, Cosine and Area Rules",
+  "term": 3,
+  "summary": "Use the sine rule, the cosine rule and the area rule to solve any triangle, and apply them to problems in two dimensions.",
+  "notes": [
+    { "type": "heading", "text": "Labelling a triangle" },
+    { "type": "paragraph", "text": "In △ABC, the side opposite angle $A$ is $a$, the side opposite $B$ is $b$ and the side opposite $C$ is $c$. These rules work in **any** triangle, not only right-angled ones." },
+    { "type": "heading", "text": "The sine rule" },
+    { "type": "formula", "latex": "\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} \\qquad \\text{or} \\qquad \\frac{\\sin A}{a} = \\frac{\\sin B}{b} = \\frac{\\sin C}{c}" },
+    { "type": "paragraph", "text": "Use the sine rule when you know a **side and its opposite angle**, plus one more side or angle." },
+    { "type": "example", "title": "Worked example 1", "problem": "In △ABC, $\\hat{A} = 48^\\circ$, $\\hat{B} = 71^\\circ$ and $a = 15$ cm. Find $b$.", "steps": [
+      "$\\dfrac{b}{\\sin 71^\\circ} = \\dfrac{15}{\\sin 48^\\circ}$",
+      "$b = \\dfrac{15\\sin 71^\\circ}{\\sin 48^\\circ} = 19{,}08$ cm"
+    ], "answer": "$b \\approx 19{,}08$ cm" },
+    { "type": "callout", "label": "The ambiguous case", "text": "When you use the sine rule to find an **angle**, there may be two possible answers, because $\\sin\\theta = \\sin(180^\\circ - \\theta)$. Check whether the obtuse answer is possible (the angles must add up to less than $180^\\circ$)." },
+    { "type": "heading", "text": "The cosine rule" },
+    { "type": "formula", "latex": "a^2 = b^2 + c^2 - 2bc\\cos A \\qquad \\cos A = \\frac{b^2 + c^2 - a^2}{2bc}" },
+    { "type": "paragraph", "text": "Use the cosine rule when you know **two sides and the included angle** (to find the third side), or **all three sides** (to find an angle)." },
+    { "type": "example", "title": "Worked example 2", "problem": "In △PQR, $q = 8$ cm, $r = 11$ cm and $\\hat{P} = 40^\\circ$. Find $p$.", "steps": [
+      "$p^2 = 8^2 + 11^2 - 2(8)(11)\\cos 40^\\circ$",
+      "$p^2 = 185 - 134{,}83 = 50{,}17$",
+      "$p = 7{,}08$ cm"
+    ], "answer": "$p \\approx 7{,}08$ cm" },
+    { "type": "example", "title": "Worked example 3: finding an angle", "problem": "A triangle has sides 7 cm, 9 cm and 12 cm. Find the largest angle.", "steps": [
+      "The largest angle is opposite the longest side (12 cm).",
+      "$\\cos\\theta = \\dfrac{7^2 + 9^2 - 12^2}{2(7)(9)} = \\dfrac{-14}{126}$",
+      "$\\theta = 96{,}38^\\circ$"
+    ], "answer": "About $96{,}38^\\circ$" },
+    { "type": "heading", "text": "The area rule" },
+    { "type": "formula", "latex": "\\text{Area of } \\triangle ABC = \\frac{1}{2}ab\\sin C = \\frac{1}{2}bc\\sin A = \\frac{1}{2}ac\\sin B", "caption": "Half the product of two sides and the sine of the included angle" },
+    { "type": "example", "title": "Worked example 4", "problem": "Find the area of a triangle with sides 10 m and 14 m and an included angle of $35^\\circ$.", "steps": ["Area $= \\frac{1}{2}(10)(14)\\sin 35^\\circ = 40{,}15$ m²"], "answer": "About 40,15 m²" },
+    { "type": "table", "caption": "Which rule?", "headers": ["You know…", "Use"], "rows": [
+      ["Two angles and a side, or two sides and a non-included angle", "Sine rule"],
+      ["Two sides and the included angle, or three sides", "Cosine rule"],
+      ["Two sides and the included angle, and you need the area", "Area rule"]
+    ] }
+  ],
+  "questions": [
+    { "id": "which", "type": "mcq", "prompt": "You know all three sides of a triangle and want an angle. Which rule should you use?", "options": ["Sine rule", "Cosine rule", "Area rule", "SOH CAH TOA"], "answer": 1 },
+    { "id": "sine-side", "type": "numeric", "prompt": "In △ABC, $\\hat{A} = 30^\\circ$, $\\hat{B} = 45^\\circ$, $a = 10$. Find $b$, correct to two decimal places.", "answer": 14.14, "tolerance": 0.01 },
+    { "id": "cos-side", "type": "numeric", "prompt": "In △ABC, $b = 5$, $c = 7$ and $\\hat{A} = 60^\\circ$. Find $a$, correct to two decimal places.", "answer": 6.24, "tolerance": 0.01 },
+    { "id": "cos-angle", "type": "numeric", "prompt": "A triangle has sides $a = 6$, $b = 8$, $c = 10$. Find $\\hat{C}$.", "answer": 90, "tolerance": 0.01, "unit": "°" },
+    { "id": "area", "type": "numeric", "prompt": "Find the area of △PQR with $p = 9$ cm, $q = 12$ cm and $\\hat{R} = 50^\\circ$, correct to two decimal places.", "answer": 41.37, "tolerance": 0.01, "unit": "cm²" },
+    { "id": "ambiguous", "type": "truefalse", "prompt": "When using the sine rule to find an angle, there may be two possible triangles.", "answer": true },
+    { "id": "largest", "type": "mcq", "prompt": "In any triangle, the largest angle is opposite…", "options": ["the shortest side", "the longest side", "the base", "any side"], "answer": 1 },
+    { "id": "field", "type": "open", "marks": 4, "prompt": "A triangular field has sides 80 m and 120 m with an included angle of $65^\\circ$. Find the length of the third side and the area of the field.", "memo": "✓ $c^2 = 80^2 + 120^2 - 2(80)(120)\\cos 65^\\circ$ (1)\n✓ $c \\approx 112{,}63$ m (1)\n✓ Area $= \\frac{1}{2}(80)(120)\\sin 65^\\circ$ (1)\n✓ $\\approx 4\\ 350{,}28$ m² (1)" },
+    { "id": "ships", "type": "open", "marks": 4, "prompt": "Two ships leave a harbour at the same time. One sails 30 km on a bearing of $040^\\circ$ and the other 45 km on a bearing of $110^\\circ$. How far apart are they?", "memo": "✓ Angle between paths $= 70^\\circ$ (1)\n✓ $d^2 = 30^2 + 45^2 - 2(30)(45)\\cos 70^\\circ$ (1)\n✓ $d^2 \\approx 2\\ 001{,}6$ (1)\n✓ $d \\approx 44{,}7$ km (1)" },
+    { "id": "sine-angle", "type": "open", "marks": 3, "prompt": "In △ABC, $a = 12$, $b = 9$ and $\\hat{A} = 80^\\circ$. Find $\\hat{B}$.", "memo": "✓ $\\frac{\\sin B}{9} = \\frac{\\sin 80^\\circ}{12}$ (1)\n✓ $\\sin B = 0{,}7386$ (1)\n✓ $\\hat{B} \\approx 47{,}6^\\circ$ (obtuse option impossible since $80^\\circ + 132{,}4^\\circ > 180^\\circ$) (1)" }
+  ]
+}

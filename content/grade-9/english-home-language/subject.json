@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "grade": 9,
+  "id": "english-home-language",
+  "name": "English Home Language",
+  "description": "CAPS Grade 9 English Home Language: critical reading, tenses and concord, argumentative and reflective essays, poetry analysis, active and passive voice and reported speech, formal writing, the novel and short story, summary writing, drama and critical language awareness.",
+  "topics": [
+    { "id": "critical-reading", "title": "Reading for Comprehension and Critical Reading", "term": 1 },
+    { "id": "tenses-and-concord", "title": "Tenses and Concord", "term": 1 },
+    { "id": "argumentative-and-reflective-essays", "title": "Argumentative, Discursive and Reflective Essays", "term": 1 },
+    { "id": "poetry-analysis", "title": "Poetry Analysis", "term": 2 },
+    { "id": "voice-and-reported-speech", "title": "Active and Passive Voice, Direct and Reported Speech", "term": 2 },
+    { "id": "speeches-reports-and-formal-letters", "title": "Speeches, Reports and Formal Letters", "term": 2 },
+    { "id": "the-novel-and-short-story", "title": "The Novel and the Short Story", "term": 3 },
+    { "id": "summary-writing", "title": "Summary Writing", "term": 3 },
+    { "id": "drama", "title": "Drama", "term": 4 },
+    { "id": "critical-language-awareness", "title": "Critical Language Awareness", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination: Language in Context", "durationMinutes": 120, "totalMarks": 80 }
+  ]
+}

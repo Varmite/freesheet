@@ -1,0 +1,55 @@
+{
+  "id": "goal-setting-and-decision-making",
+  "title": "Goal Setting and Decision-Making",
+  "term": 1,
+  "summary": "Short-, medium- and long-term goals, SMART goals and action plans, overcoming obstacles, and a step-by-step decision-making model with values and consequences.",
+  "notes": [
+    { "type": "heading", "text": "Why set goals?" },
+    { "type": "paragraph", "text": "A **goal** is something you want to achieve. Goals give direction and motivation, help you use your time well and build self-confidence when you reach them." },
+    { "type": "table", "headers": ["Type of goal", "Time frame", "Example"], "rows": [
+      ["Short-term", "Days to a few weeks", "Finish my History project by Friday"],
+      ["Medium-term", "A few months to a year", "Pass Grade 9 with at least 60% in Mathematics"],
+      ["Long-term", "Several years", "Qualify as an electrician / study nursing after matric"]
+    ] },
+    { "type": "heading", "text": "SMART goals" },
+    { "type": "table", "headers": ["Letter", "Meaning", "Question to ask"], "rows": [
+      ["S", "Specific", "Exactly what do I want to achieve?"],
+      ["M", "Measurable", "How will I know I have achieved it?"],
+      ["A", "Achievable", "Do I have the skills and resources?"],
+      ["R", "Realistic (relevant)", "Is it sensible for me now?"],
+      ["T", "Time-bound", "By when will I achieve it?"]
+    ] },
+    { "type": "example", "title": "Turning a vague goal into a SMART goal", "problem": "Vague goal: 'I want to be fitter.' Rewrite it as a SMART goal.", "steps": ["Specific: run 3 km without stopping.", "Measurable: time myself and record progress.", "Achievable and realistic: start with 1 km and add a little each week.", "Time-bound: by the end of Term 2."], "answer": "'I will run 3 km without stopping by the end of Term 2 by jogging three times a week and adding 250 m each week.'" },
+    { "type": "heading", "text": "Action plans and obstacles" },
+    { "type": "paragraph", "text": "An **action plan** breaks a goal into small steps with deadlines, the resources needed and people who can help. **Obstacles** (barriers) such as lack of money, time, support or motivation can be overcome by planning ahead, asking for help, adjusting the plan and staying positive." },
+    { "type": "heading", "text": "Decision-making" },
+    { "type": "list", "ordered": true, "items": [
+      "**Identify** the decision to be made.",
+      "**Gather information** about the situation.",
+      "**List the options** (alternatives).",
+      "**Weigh up** the consequences (advantages and disadvantages) of each option, for yourself and others.",
+      "Consider your **values** and long-term goals.",
+      "**Choose** the best option and act on it.",
+      "**Evaluate** the decision: what did you learn?"
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Decisions made in a hurry, under peer pressure or under the influence of alcohol or drugs are often poor decisions. Take time, think about the consequences and talk to someone you trust." },
+    { "type": "heading", "text": "Values" },
+    { "type": "paragraph", "text": "**Values** are the beliefs and principles that are important to you, such as honesty, respect, responsibility, family, faith, education and kindness. They act like a compass when you make decisions." }
+  ],
+  "questions": [
+    { "id": "long-term", "type": "mcq", "prompt": "'Become a qualified engineer' is an example of a…", "options": ["short-term goal", "medium-term goal", "long-term goal", "value"], "answer": 2 },
+    { "id": "smart-m", "type": "short", "prompt": "What does the M in SMART stand for?", "answers": ["measurable"] },
+    { "id": "action-plan", "type": "open", "marks": 2, "prompt": "What is an action plan?", "memo": "✓ A plan that breaks a goal into small steps (1)\n✓ with deadlines, resources and people who can help (1)" },
+    { "id": "pressure", "type": "truefalse", "prompt": "Decisions made under peer pressure are usually well thought through.", "answer": false },
+    { "id": "types", "type": "match", "marks": 3, "prompt": "Match each goal to its type.", "pairs": [
+      { "left": "Finish my essay by tomorrow", "right": "Short-term" },
+      { "left": "Pass Grade 9 this year", "right": "Medium-term" },
+      { "left": "Open my own business one day", "right": "Long-term" }
+    ] },
+    { "id": "smart-rewrite", "type": "open", "marks": 3, "prompt": "Rewrite the goal 'I want better marks' as a SMART goal.", "memo": "✓ Specific subject and target mark (1)\n✓ How it will be measured / achieved (study plan) (1)\n✓ A time limit (1)" },
+    { "id": "steps", "type": "open", "marks": 4, "prompt": "List FOUR steps in the decision-making process.", "memo": "Any four in a sensible order (1 each): identify the decision; gather information; list options; weigh up consequences; consider values; choose and act; evaluate" },
+    { "id": "obstacles", "type": "open", "marks": 2, "prompt": "Give TWO obstacles that could prevent a learner from reaching a goal, and how to overcome one of them.", "memo": "✓ Two obstacles, e.g. no money / no time / no support / lack of motivation (1)\n✓ A realistic way to overcome one (1)" },
+    { "id": "values", "type": "open", "marks": 2, "prompt": "What are values and how do they help in decision-making?", "memo": "✓ Beliefs and principles that are important to you (1)\n✓ They guide you to choose options that match what you believe is right (1)" },
+    { "id": "consequences", "type": "open", "marks": 2, "prompt": "Why is it important to consider consequences before making a decision?", "memo": "✓ Decisions have effects on you and others (1)\n✓ Thinking ahead helps you avoid harmful outcomes and choose the best option (1)" }
+  ]
+}

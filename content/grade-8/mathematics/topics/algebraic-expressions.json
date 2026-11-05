@@ -1,0 +1,107 @@
+{
+  "id": "algebraic-expressions",
+  "title": "Algebraic Expressions",
+  "term": 1,
+  "summary": "Use algebraic vocabulary, add and subtract like terms, multiply and divide by monomials, find squares, cubes and roots of terms, and substitute values into expressions.",
+  "notes": [
+    { "type": "heading", "text": "The language of algebra" },
+    { "type": "paragraph", "text": "In algebra we use letters to stand for numbers. This lets us write general rules and work with quantities we do not yet know." },
+    { "type": "table", "caption": "Algebraic vocabulary, using the expression $5x^2 - 3x + 7$", "headers": ["Word", "Meaning", "In $5x^2 - 3x + 7$"], "rows": [
+      ["Variable", "A letter that can stand for different numbers", "$x$"],
+      ["Term", "Parts of an expression separated by + or −", "$5x^2$, $-3x$ and $7$ (3 terms)"],
+      ["Coefficient", "The number multiplied by the variable (with its sign)", "$5$ is the coefficient of $x^2$; $-3$ is the coefficient of $x$"],
+      ["Constant", "A term with no variable", "$7$"],
+      ["Exponent", "The power of a variable", "$2$ in $x^2$"]
+    ] },
+    { "type": "definition", "term": "Monomial, binomial, trinomial", "text": "An expression with **one** term is a monomial ($4ab$), with **two** terms a binomial ($3x - 5$) and with **three** terms a trinomial ($x^2 + 2x + 1$)." },
+    { "type": "callout", "label": "Remember", "text": "The sign in front of a term belongs to that term. In $5x^2 - 3x + 7$ the coefficient of $x$ is $-3$, not $3$. If no number is written, the coefficient is $1$: in $x^2$ the coefficient is $1$, and in $-y$ it is $-1$." },
+
+    { "type": "heading", "text": "Like terms" },
+    { "type": "definition", "term": "Like terms", "text": "**Like terms** have exactly the same variables with exactly the same exponents. $3x$ and $-7x$ are like terms; $4a^2b$ and $a^2b$ are like terms. $x^2$ and $x^3$ are **not** like terms; neither are $2a$ and $2b$." },
+    { "type": "paragraph", "text": "You can only add or subtract **like** terms. Add or subtract the coefficients and keep the variable part the same." },
+    { "type": "example", "title": "Worked example 1", "problem": "Simplify: (a) $3x + 5y - x + 2y$  (b) $4a^2 - 3a + 2a^2 + 7a - 5$  (c) $6pq - 2qp + p$", "steps": [
+      "(a) Group like terms: $(3x - x) + (5y + 2y) = 2x + 7y$.",
+      "(b) $(4a^2 + 2a^2) + (-3a + 7a) - 5 = 6a^2 + 4a - 5$.",
+      "(c) $pq$ and $qp$ are like terms (multiplication is commutative): $4pq + p$."
+    ], "answer": "(a) $2x + 7y$  (b) $6a^2 + 4a - 5$  (c) $4pq + p$" },
+    { "type": "callout", "label": "Common mistake", "text": "$2a + 3b \\neq 5ab$, and $x^2 + x^3 \\neq x^5$. Unlike terms cannot be combined; the answer stays as it is." },
+
+    { "type": "heading", "text": "Multiplying terms" },
+    { "type": "paragraph", "text": "To multiply monomials, multiply the coefficients and use the exponent law (add the exponents of the same variable)." },
+    { "type": "example", "title": "Worked example 2", "problem": "Simplify: (a) $3a \\times 4b$  (b) $-2x^2 \\times 5x^3$  (c) $(-3ab)(-2a^2b)$", "steps": [
+      "(a) $12ab$",
+      "(b) $-10x^5$",
+      "(c) $6a^3b^2$ (negative × negative = positive)."
+    ], "answer": "(a) $12ab$  (b) $-10x^5$  (c) $6a^3b^2$" },
+    { "type": "paragraph", "text": "To multiply a monomial by a binomial or trinomial, use the **distributive property**: multiply the term outside the bracket by **every** term inside." },
+    { "type": "formula", "latex": "a(b + c) = ab + ac", "caption": "The distributive property" },
+    { "type": "example", "title": "Worked example 3", "problem": "Expand: (a) $-3x(2x - 4)$  (b) $2a(3a^2 - a + 4)$", "steps": [
+      "(a) $-3x \\times 2x = -6x^2$ and $-3x \\times (-4) = +12x$. Answer: $-6x^2 + 12x$.",
+      "(b) $2a \\times 3a^2 = 6a^3$, $2a \\times (-a) = -2a^2$, $2a \\times 4 = 8a$. Answer: $6a^3 - 2a^2 + 8a$."
+    ], "answer": "(a) $-6x^2 + 12x$  (b) $6a^3 - 2a^2 + 8a$" },
+    { "type": "callout", "label": "Common mistake", "text": "A negative sign in front of a bracket changes the sign of **every** term inside: $-(x - 5) = -x + 5$, not $-x - 5$." },
+    { "type": "example", "title": "Worked example 4: expanding and simplifying", "problem": "Simplify $2(3x - 4) - 3(x - 5)$.", "steps": [
+      "Expand both brackets: $6x - 8 - 3x + 15$.",
+      "Collect like terms: $3x + 7$."
+    ], "answer": "$3x + 7$" },
+
+    { "type": "heading", "text": "Dividing by a monomial" },
+    { "type": "paragraph", "text": "Divide the coefficients and subtract the exponents. When dividing a binomial or trinomial by a monomial, divide **every** term." },
+    { "type": "example", "title": "Worked example 5", "problem": "Simplify: (a) $\\dfrac{18x^5y^2}{6x^2y}$  (b) $\\dfrac{12x^3 - 8x^2}{4x}$  (c) $\\dfrac{15a^2b - 10ab^2 + 5ab}{5ab}$", "steps": [
+      "(a) $3x^3y$",
+      "(b) $\\dfrac{12x^3}{4x} - \\dfrac{8x^2}{4x} = 3x^2 - 2x$",
+      "(c) $\\dfrac{15a^2b}{5ab} - \\dfrac{10ab^2}{5ab} + \\dfrac{5ab}{5ab} = 3a - 2b + 1$"
+    ], "answer": "(a) $3x^3y$  (b) $3x^2 - 2x$  (c) $3a - 2b + 1$" },
+    { "type": "callout", "label": "Common mistake", "text": "In part (c), the last term is $\\dfrac{5ab}{5ab} = 1$, not $0$. Anything divided by itself is $1$." },
+
+    { "type": "heading", "text": "Squares, cubes and roots of terms" },
+    { "type": "list", "items": [
+      "Square a term: square the coefficient and double each exponent. $(3x^2)^2 = 9x^4$.",
+      "Cube a term: cube the coefficient and multiply each exponent by 3. $(-2a^3)^3 = -8a^9$.",
+      "Square root: take the root of the coefficient and halve each exponent. $\\sqrt{16x^4} = 4x^2$.",
+      "Cube root: take the cube root of the coefficient and divide each exponent by 3. $\\sqrt[3]{27a^6} = 3a^2$."
+    ] },
+
+    { "type": "heading", "text": "Substitution" },
+    { "type": "paragraph", "text": "To **evaluate** an expression, replace each variable with its value, using brackets, and then follow the order of operations." },
+    { "type": "example", "title": "Worked example 6", "problem": "If $a = 2$ and $b = -3$, calculate: (a) $a^2 - 2ab$  (b) $3b^2$  (c) $\\dfrac{(a - b)^2}{a + b}$", "steps": [
+      "(a) $(2)^2 - 2(2)(-3) = 4 + 12 = 16$.",
+      "(b) $3(-3)^2 = 3 \\times 9 = 27$. Square first, then multiply.",
+      "(c) $a - b = 2 - (-3) = 5$ and $a + b = -1$, so $\\dfrac{25}{-1} = -25$."
+    ], "answer": "(a) $16$  (b) $27$  (c) $-25$" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Know the words: variable, term, coefficient (with its sign), constant, exponent.",
+      "Only like terms (same variables, same exponents) can be added or subtracted.",
+      "Multiply: multiply coefficients, add exponents. Divide: divide coefficients, subtract exponents.",
+      "Distributive property: multiply the outside term by every term in the bracket; watch the signs.",
+      "When dividing by a monomial, divide every term.",
+      "Substitute with brackets and follow the order of operations."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "What is the coefficient of $x$ in $5x^2 - 3x + 7$?", "options": ["$5$", "$3$", "$-3$", "$7$"], "answer": 2, "explanation": "The sign belongs to the term: the term is $-3x$, so the coefficient is $-3$." },
+    { "id": "q2", "type": "numeric", "prompt": "How many terms are in the expression $4a + 3b - 2c + 9$?", "answer": 4, "tolerance": 0, "explanation": "Terms are separated by $+$ and $-$: $4a$, $3b$, $-2c$ and $9$." },
+    { "id": "q3", "type": "mcq", "prompt": "Simplify $3x + 5y - x + 2y$.", "options": ["$9xy$", "$2x + 7y$", "$4x + 7y$", "$2x + 3y$"], "answer": 1, "explanation": "$3x - x = 2x$ and $5y + 2y = 7y$." },
+    { "id": "q4", "type": "truefalse", "prompt": "$2a + 3b = 5ab$", "answer": false, "explanation": "$2a$ and $3b$ are unlike terms, so they cannot be added. $2a + 3b$ is already fully simplified." },
+    { "id": "q5", "type": "mcq", "prompt": "Expand $-3x(2x - 4)$.", "options": ["$-6x^2 - 12x$", "$-6x^2 + 12x$", "$-6x - 4$", "$6x^2 + 12x$"], "answer": 1, "explanation": "$-3x \\times 2x = -6x^2$ and $-3x \\times (-4) = +12x$." },
+    { "id": "q6", "type": "numeric", "prompt": "If $a = 2$ and $b = -3$, calculate $a^2 - 2ab$.", "answer": 16, "tolerance": 0, "explanation": "$4 - 2(2)(-3) = 4 + 12 = 16$." },
+    { "id": "q7", "type": "mcq", "prompt": "Simplify $\\dfrac{12x^3 - 8x^2}{4x}$.", "options": ["$3x^2 - 8x^2$", "$3x^2 - 2x$", "$3x^3 - 2x^2$", "$x$"], "answer": 1, "explanation": "Divide every term: $12x^3 \\div 4x = 3x^2$ and $8x^2 \\div 4x = 2x$." },
+    { "id": "q8", "type": "truefalse", "prompt": "$x^2$ and $x^3$ are like terms.", "answer": false, "explanation": "Like terms need the same exponents. $x^2$ and $x^3$ have different exponents." },
+    { "id": "q9", "type": "match", "prompt": "Match each expression with its simplified form.", "marks": 5, "pairs": [
+      { "left": "$\\sqrt{16x^4}$", "right": "4x²" },
+      { "left": "$\\sqrt[3]{27a^6}$", "right": "3a²" },
+      { "left": "$(2y^3)^2$", "right": "4y⁶" },
+      { "left": "$(-a^2)^3$", "right": "-a⁶" },
+      { "left": "$\\sqrt{25m^2}$", "right": "5m" }
+    ], "explanation": "Roots: root of the coefficient, divide the exponent (by 2 for square roots, by 3 for cube roots). Powers: power of the coefficient, multiply the exponent. An odd power of a negative is negative." },
+    { "id": "q10", "type": "numeric", "prompt": "Calculate the value of $3x^2$ when $x = -2$.", "answer": 12, "tolerance": 0, "explanation": "Square first: $(-2)^2 = 4$, then $3 \\times 4 = 12$." },
+    { "id": "q11", "type": "mcq", "prompt": "Expand $2a(3a^2 - a + 4)$.", "options": ["$6a^3 - 2a^2 + 8a$", "$6a^2 - 2a + 8$", "$6a^3 - a + 4$", "$5a^3 - 2a^2 + 8a$"], "answer": 0, "explanation": "$2a \\times 3a^2 = 6a^3$; $2a \\times (-a) = -2a^2$; $2a \\times 4 = 8a$." },
+    { "id": "q12", "type": "short", "prompt": "In the expression $7y + 2$, what is the term $2$ called?", "answers": ["constant", "a constant", "the constant", "constant term"], "explanation": "A term without a variable is a **constant**; its value never changes." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Simplify: $2(3x - 4) - 3(x - 5)$", "memo": "$6x - 8$ ✓ (1)\n$-3x + 15$ ✓ (sign change) (1)\n$3x + 7$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "Simplify: $\\dfrac{15a^2b - 10ab^2 + 5ab}{5ab}$", "memo": "$3a$ ✓ (1)\n$-2b$ ✓ (1)\n$+1$ ✓ (1)\nAnswer: $3a - 2b + 1$" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "A rectangle has length $3x$ and width $x + 4$.\n(a) Write an expression for its perimeter, in simplest form.  (2)\n(b) Write an expression for its area.  (1)\n(c) Calculate the area when $x = 2$.  (1)", "memo": "(a) $2(3x) + 2(x + 4)$ ✓ $= 8x + 8$ ✓ (2)\n(b) $3x(x + 4) = 3x^2 + 12x$ ✓ (1)\n(c) $3(4) + 12(2) = 12 + 24 = 36$ square units ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "If $a = 5$ and $b = -3$, calculate $\\dfrac{(a - b)^2}{a + b}$.", "memo": "$a - b = 5 - (-3) = 8$ ✓ (1)\n$a + b = 2$ ✓ (1)\n$\\dfrac{64}{2} = 32$ ✓ (1)" }
+  ]
+}

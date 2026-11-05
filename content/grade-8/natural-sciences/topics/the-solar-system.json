@@ -1,0 +1,59 @@
+{
+  "id": "the-solar-system",
+  "title": "The Solar System",
+  "term": 4,
+  "summary": "The sun, the eight planets and other bodies in the solar system, gravity and orbits, the Earth–Moon system, phases of the moon, eclipses and tides.",
+  "notes": [
+    { "type": "heading", "text": "The sun and its family" },
+    { "type": "paragraph", "text": "The **solar system** is made up of the **sun** and everything that orbits it: eight planets and their moons, dwarf planets such as Pluto, asteroids, comets and meteoroids. The sun is a **star**: a huge ball of hot hydrogen and helium gas that produces energy by **nuclear fusion**. It contains more than 99% of the mass of the solar system." },
+    { "type": "heading", "text": "The eight planets" },
+    { "type": "table", "caption": "Planets in order from the sun", "headers": ["Planet", "Type", "Interesting fact"], "rows": [
+      ["Mercury", "Rocky (inner)", "Smallest planet; closest to the sun; no moons"],
+      ["Venus", "Rocky (inner)", "Hottest planet because its thick carbon dioxide atmosphere traps heat"],
+      ["Earth", "Rocky (inner)", "Only known planet with liquid water on the surface and life"],
+      ["Mars", "Rocky (inner)", "The red planet, coloured by iron oxide dust; two small moons"],
+      ["Jupiter", "Gas giant (outer)", "Largest planet; the Great Red Spot is a giant storm"],
+      ["Saturn", "Gas giant (outer)", "Famous for its bright rings of ice and rock"],
+      ["Uranus", "Ice giant (outer)", "Spins on its side"],
+      ["Neptune", "Ice giant (outer)", "Furthest from the sun; strongest winds in the solar system"]
+    ] },
+    { "type": "callout", "label": "Memory aid", "text": "**M**y **V**ery **E**ager **M**other **J**ust **S**erved **U**s **N**achos: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune." },
+    { "type": "paragraph", "text": "The **asteroid belt**, a ring of rocky bodies, lies between Mars and Jupiter and separates the inner rocky planets from the outer giant planets." },
+    { "type": "list", "items": [
+      "**Comets**: balls of ice and dust with long, very elliptical orbits; near the sun they form a glowing tail that points away from the sun.",
+      "**Meteoroids**: small pieces of rock in space. A **meteor** (shooting star) is one burning up in our atmosphere; a **meteorite** is one that reaches the ground."
+    ] },
+    { "type": "heading", "text": "Gravity and orbits" },
+    { "type": "paragraph", "text": "**Gravity** is the force of attraction between all objects with mass. The sun's gravity keeps the planets moving in almost circular paths called **orbits**. The Earth's gravity keeps the moon in orbit around the Earth and pulls objects towards the ground." },
+    { "type": "table", "headers": ["Motion", "Time taken", "Effect"], "rows": [
+      ["Earth spins (rotates) on its axis", "About 24 hours", "Day and night"],
+      ["Earth orbits (revolves around) the sun", "About 365¼ days", "One year; together with the tilt of the axis, the seasons"],
+      ["Moon orbits the Earth", "About 27,3 days (29,5 days from one full moon to the next)", "Phases of the moon"]
+    ] },
+    { "type": "heading", "text": "Phases of the moon" },
+    { "type": "paragraph", "text": "The moon does not produce its own light; it reflects light from the sun. Half of the moon is always lit by the sun, but as it orbits the Earth we see different amounts of the lit half. The sequence is: new moon → waxing crescent → first quarter → waxing gibbous → **full moon** → waning gibbous → last quarter → waning crescent → new moon." },
+    { "type": "callout", "label": "Remember", "text": "The same side of the moon always faces the Earth, because the moon spins once on its axis in the same time that it takes to orbit the Earth once." },
+    { "type": "heading", "text": "Eclipses and tides" },
+    { "type": "table", "headers": ["Event", "Order in line", "What we see"], "rows": [
+      ["Solar eclipse", "Sun – Moon – Earth", "The moon's shadow falls on Earth and blocks the sun (at new moon). Never look directly at the sun."],
+      ["Lunar eclipse", "Sun – Earth – Moon", "The Earth's shadow falls on the moon, which may look dark red (at full moon)."]
+    ] },
+    { "type": "paragraph", "text": "**Tides** are the regular rise and fall of the sea, caused mainly by the moon's gravity pulling on the oceans. Most coasts have two high tides and two low tides each day. **Spring tides** (biggest range) happen at new and full moon, when the sun and moon pull in a line; **neap tides** (smallest range) happen at the quarter moons." }
+  ],
+  "questions": [
+    { "id": "star", "type": "truefalse", "prompt": "The sun is a star.", "answer": true },
+    { "id": "largest", "type": "short", "prompt": "Name the largest planet in the solar system.", "answers": ["jupiter"] },
+    { "id": "hottest", "type": "mcq", "prompt": "Which planet is the hottest?", "options": ["Mercury", "Venus", "Mars", "Jupiter"], "answer": 1, "explanation": "Venus's thick carbon dioxide atmosphere traps heat, so it is hotter than Mercury." },
+    { "id": "belt", "type": "mcq", "prompt": "Between which two planets is the asteroid belt?", "options": ["Earth and Mars", "Mars and Jupiter", "Jupiter and Saturn", "Venus and Earth"], "answer": 1 },
+    { "id": "day-night", "type": "mcq", "prompt": "What causes day and night?", "options": ["The Earth orbiting the sun", "The moon orbiting the Earth", "The Earth rotating on its axis", "The tilt of the Earth's axis"], "answer": 2 },
+    { "id": "meteorite", "type": "short", "prompt": "What is a piece of space rock that reaches the Earth's surface called?", "answers": ["meteorite", "a meteorite"] },
+    { "id": "eclipse-match", "type": "match", "marks": 3, "prompt": "Match each term to its description.", "pairs": [
+      { "left": "Solar eclipse", "right": "Moon blocks the sun's light from Earth" },
+      { "left": "Lunar eclipse", "right": "Earth's shadow falls on the moon" },
+      { "left": "Spring tide", "right": "Very high and very low tides at full and new moon" }
+    ] },
+    { "id": "order-planets", "type": "numeric", "prompt": "Counting from the sun, what position (1st, 2nd, 3rd …) is Saturn? Give the number only.", "answer": 6, "tolerance": 0 },
+    { "id": "moon-light", "type": "open", "marks": 2, "prompt": "Explain why we can see the moon at night even though it is not luminous.", "memo": "✓ The moon reflects light from the sun (1)\n✓ and some of this reflected light reaches our eyes (1)" },
+    { "id": "phases", "type": "open", "marks": 2, "prompt": "Explain why the moon appears to change shape during the month.", "memo": "✓ Half of the moon is always lit by the sun (1)\n✓ As the moon orbits the Earth, we see different amounts of the lit half (1)" }
+  ]
+}

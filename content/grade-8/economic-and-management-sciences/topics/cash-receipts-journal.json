@@ -1,0 +1,50 @@
+{
+  "id": "cash-receipts-journal",
+  "title": "The Cash Receipts Journal",
+  "term": 2,
+  "summary": "The purpose and layout of the Cash Receipts Journal (CRJ) of a service business, recording receipts in the correct columns, using the Sundry accounts column and totalling the journal.",
+  "notes": [
+    { "type": "heading", "text": "What is the CRJ?" },
+    { "type": "paragraph", "text": "The **Cash Receipts Journal (CRJ)** is a book of first entry in which all **money received** by the business is recorded, from source documents such as **duplicate receipts** and **cash register rolls**. All money received is deposited in the bank, so every entry appears in the **Bank** column." },
+    { "type": "heading", "text": "Layout of the CRJ (service business)" },
+    { "type": "table", "caption": "Cash Receipts Journal of Thandi's Hair Salon, March 2025 (CRJ 3)", "headers": ["Doc", "Day", "Details", "Fol", "Analysis of receipts", "Bank", "Current income", "Sundry accounts: Amount", "Sundry accounts: Details"], "rows": [
+      ["R01", "1", "T. Mbeki", "", "", "40 000", "", "40 000", "Capital"],
+      ["CRR", "5", "Cash services", "", "1 850", "", "1 850", "", ""],
+      ["R02", "5", "N. Dlamini", "", "450", "2 300", "450", "", ""],
+      ["R03", "12", "Absa Bank", "", "", "15 000", "", "15 000", "Loan: Absa"],
+      ["R04", "20", "S. Naidoo (rent of room)", "", "", "1 200", "", "1 200", "Rent income"],
+      ["", "31", "", "", "", "58 500", "2 300", "56 200", ""]
+    ] },
+    { "type": "list", "items": [
+      "**Doc**: number of the source document (R = receipt, CRR = cash register roll).",
+      "**Day**: date of the transaction. The month is written once at the top.",
+      "**Details**: name of the person or organisation who paid.",
+      "**Analysis of receipts**: lists separate amounts received on the same day, so their total can be deposited together.",
+      "**Bank**: the total amount deposited each day. All receipts end up here.",
+      "**Current income**: money earned from the business's main services.",
+      "**Sundry accounts**: receipts that do not have their own column, such as capital, loans or rent income. The account name is written in the details column next to it."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "On 5 March, R1 850 (CRR) + R450 (receipt R02) = R2 300 was deposited together. That is why R2 300 is written in the Bank column on the last line of that day, while R1 850 and R450 appear in the Analysis of receipts column." },
+    { "type": "heading", "text": "Totalling and checking" },
+    { "type": "paragraph", "text": "At the end of the month all columns are **totalled**. To check: the total of the **Bank** column must equal the totals of all the other money columns added together (except the analysis column)." },
+    { "type": "example", "title": "Checking the totals", "problem": "Check that the CRJ above balances.", "steps": ["Current income + Sundry accounts = 2 300 + 56 200", "= 58 500", "Bank column total = 58 500 ✓"], "answer": "The journal balances." },
+    { "type": "callout", "label": "Common mistake", "text": "Do not record capital or a loan in the Current income column. They are **not income**. Capital and loans go in the Sundry accounts column." }
+  ],
+  "questions": [
+    { "id": "purpose", "type": "open", "marks": 1, "prompt": "What is recorded in the Cash Receipts Journal?", "memo": "✓ All money received by the business (1)" },
+    { "id": "doc", "type": "mcq", "prompt": "Which source document is used for daily cash services rung up on the till?", "options": ["Receipt", "Cash register roll", "EFT notice", "Cheque counterfoil"], "answer": 1 },
+    { "id": "loan-column", "type": "mcq", "prompt": "In which column of the CRJ is a loan received from a bank recorded (other than Bank)?", "options": ["Current income", "Sundry accounts", "Analysis of receipts", "It is not recorded"], "answer": 1 },
+    { "id": "services", "type": "short", "prompt": "In which column is money received for services rendered recorded, besides the Bank column?", "answers": ["current income", "current income column"] },
+    { "id": "all-bank", "type": "truefalse", "prompt": "Every amount received is eventually recorded in the Bank column.", "answer": true },
+    { "id": "total", "type": "numeric", "prompt": "In a CRJ, Current income totals R8 400 and Sundry accounts total R25 000. What must the Bank column total be?", "answer": 33400, "tolerance": 0, "unit": "rand" },
+    { "id": "analysis", "type": "numeric", "prompt": "On one day a business received R620 (receipt) and R1 380 (CRR), deposited together. What amount is written in the Bank column for that day?", "answer": 2000, "tolerance": 0, "unit": "rand" },
+    { "id": "columns", "type": "match", "marks": 4, "prompt": "Match each receipt to the second column it is recorded in.", "pairs": [
+      { "left": "Owner contributes capital", "right": "Sundry accounts: Capital" },
+      { "left": "Client pays for services", "right": "Current income" },
+      { "left": "Tenant pays rent", "right": "Sundry accounts: Rent income" },
+      { "left": "Loan received from bank", "right": "Sundry accounts: Loan" }
+    ] },
+    { "id": "record", "type": "open", "marks": 4, "prompt": "Show how this transaction is recorded in the CRJ: '8 April: Received R750 from P. Khumalo for services rendered, receipt 017.' Give the Doc, Day, Details and the columns and amounts used.", "memo": "✓ Doc: 017 / R017 (1)\n✓ Day: 8, Details: P. Khumalo (1)\n✓ Bank: R750 (1)\n✓ Current income: R750 (1)" },
+    { "id": "capital-wrong", "type": "open", "marks": 2, "prompt": "A learner recorded capital of R30 000 in the Current income column. Explain the error.", "memo": "✓ Capital is the owner's contribution, not income earned (1)\n✓ It should be recorded in the Sundry accounts column with 'Capital' in the details (1)" }
+  ]
+}

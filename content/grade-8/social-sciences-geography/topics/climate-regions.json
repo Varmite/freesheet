@@ -1,0 +1,59 @@
+{
+  "id": "climate-regions",
+  "title": "Climate Regions of the World",
+  "term": 2,
+  "summary": "The main world climate regions, their temperature, rainfall and natural vegetation, how people live in them, and the climate regions of South Africa.",
+  "notes": [
+    { "type": "heading", "text": "Climate regions" },
+    { "type": "paragraph", "text": "A **climate region** is a large area with a similar pattern of temperature and rainfall. Similar climates produce similar natural vegetation (**biomes**), so the vegetation of a region often reflects its climate." },
+    { "type": "table", "caption": "Main world climate regions", "headers": ["Region", "Where", "Climate", "Vegetation"], "rows": [
+      ["Tropical rainforest (equatorial)", "Near the equator: Congo Basin, Amazon", "Hot all year (about 27 °C); heavy rain every month (over 2 000 mm)", "Dense, tall evergreen forest with layers"],
+      ["Tropical savanna", "Between the rainforests and deserts: much of southern and East Africa", "Hot; wet summer, dry winter", "Grassland with scattered trees (e.g. acacia, baobab)"],
+      ["Hot desert", "Around the tropics: Sahara, Namib, Kalahari", "Very hot days, cold nights; less than 250 mm rain a year", "Very little; plants adapted to store water (succulents)"],
+      ["Mediterranean", "West coasts at about 30° to 40°: Western Cape, California, Mediterranean Sea", "Hot, dry summers; mild, wet winters", "Shrubs with small, hard leaves (fynbos)"],
+      ["Temperate grassland", "Interiors of continents: Highveld, prairies of North America", "Warm summers with rain; cold, dry winters with frost", "Grasses; few trees"],
+      ["Temperate (oceanic)", "Western Europe", "Mild all year; rain in all seasons", "Deciduous forest"],
+      ["Polar and tundra", "Near the poles", "Very cold; little precipitation", "Mosses, lichens, small shrubs; ice sheets"]
+    ] },
+    { "type": "heading", "text": "People and climate" },
+    { "type": "example", "title": "Living in a hot desert", "problem": "How have people adapted to life in hot deserts, such as the Kalahari?", "steps": [
+      "Clothing: loose, light-coloured clothes covering the body to protect against the sun and keep cool.",
+      "Water: people traditionally knew where to find water in roots, melons and underground sources; today boreholes are used.",
+      "Movement: traditional San hunter-gatherers and pastoralists moved with the seasons to find food and water.",
+      "Housing: thick walls or temporary shelters that keep out the heat."
+    ], "answer": "People adapt clothing, water use, movement and housing to the extreme heat and dryness." },
+    { "type": "list", "items": [
+      "In the **tropical rainforest**, people practise shifting cultivation; today logging, mining and farming destroy the forest.",
+      "In the **savanna**, many people keep cattle and grow crops in the wet season; it is also home to large game reserves.",
+      "The **Mediterranean** climate is ideal for growing grapes, citrus and wheat, as in the Western Cape."
+    ] },
+    { "type": "heading", "text": "South Africa's climate regions" },
+    { "type": "table", "headers": ["Region", "Climate", "Biome"], "rows": [
+      ["South-western Cape", "Winter rainfall (Mediterranean)", "Fynbos"],
+      ["Southern Cape coast (Garden Route)", "Rain all year", "Forest"],
+      ["KwaZulu-Natal coast", "Hot, humid, summer rain (subtropical)", "Coastal forest and savanna"],
+      ["Highveld (interior plateau)", "Summer rain; cold, frosty winters", "Grassland"],
+      ["Lowveld and Limpopo", "Hot, summer rain", "Savanna"],
+      ["Karoo and Northern Cape", "Semi-desert; very little rain", "Nama Karoo and Succulent Karoo"],
+      ["West coast (Namaqualand)", "Desert; cold Benguela Current, fog", "Succulent Karoo (spring flowers)"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "When describing a climate graph, always mention the **temperature** (hot or cold; the range), the **total rainfall**, and **when** the rain falls (summer, winter or all year). Then name the climate region." }
+  ],
+  "questions": [
+    { "id": "rainforest", "type": "mcq", "prompt": "Which climate region is hot and wet all year?", "options": ["Savanna", "Mediterranean", "Tropical rainforest", "Temperate grassland"], "answer": 2 },
+    { "id": "desert-rain", "type": "numeric", "prompt": "Hot deserts receive less than how many millimetres of rain a year?", "answer": 250, "tolerance": 0, "unit": "mm" },
+    { "id": "fynbos", "type": "short", "prompt": "What is the natural vegetation of the Mediterranean climate region in the Western Cape?", "answers": ["fynbos"] },
+    { "id": "highveld", "type": "mcq", "prompt": "The Highveld has…", "options": ["winter rainfall", "summer rainfall and frosty winters", "rain all year and no frost", "almost no rain"], "answer": 1 },
+    { "id": "savanna-trees", "type": "truefalse", "prompt": "Savanna vegetation is grassland with scattered trees.", "answer": true },
+    { "id": "regions-match", "type": "match", "marks": 4, "prompt": "Match each place to its climate region.", "pairs": [
+      { "left": "Congo Basin", "right": "Tropical rainforest" },
+      { "left": "Sahara", "right": "Hot desert" },
+      { "left": "Cape Town", "right": "Mediterranean" },
+      { "left": "Kruger National Park", "right": "Savanna" }
+    ] },
+    { "id": "describe", "type": "open", "marks": 3, "prompt": "A climate graph shows temperatures of 20–28 °C all year, rain mainly from November to March, and a dry winter. Name the climate region and explain your answer.", "memo": "✓ Tropical savanna (1)\n✓ Hot all year (1)\n✓ Summer rainfall with a dry winter season (1)" },
+    { "id": "desert-adapt", "type": "open", "marks": 3, "prompt": "Describe THREE ways people adapt to living in a hot desert.", "memo": "Any three (1 each): loose, light clothing; covering head/body from sun; finding/storing water; boreholes; moving with seasons; thick-walled houses" },
+    { "id": "mediterranean-farm", "type": "open", "marks": 2, "prompt": "Why is the Western Cape suitable for growing grapes?", "memo": "✓ It has a Mediterranean climate (1)\n✓ Hot, dry summers ripen the grapes, and winter rain provides water (1)" },
+    { "id": "karoo", "type": "short", "prompt": "Name the semi-desert region in the interior of the Western, Eastern and Northern Cape.", "answers": ["karoo", "the karoo", "nama karoo", "great karoo"] }
+  ]
+}

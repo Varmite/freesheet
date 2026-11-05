@@ -1,0 +1,395 @@
+{
+  "id": "articles-dialogues-interviews-and-minutes",
+  "title": "Articles, Dialogues, Interviews and Minutes",
+  "term": 3,
+  "summary": "Master the format, style and register of newspaper and magazine articles, columns, dialogues, interviews, agendas and minutes, diary entries and written instructions for Paper 3 Section B.",
+  "notes": [
+    { "type": "heading", "text": "Transactional texts in Paper 3 Section B" },
+    { "type": "paragraph", "text": "In **Section B** of Paper 3 (Home Language) you write **two transactional texts** from a choice of topics. Each text is worth **25 marks** and should be **180–200 words** long (aim for this length in the body of the text). Transactional texts are written for a real-world purpose and audience, so **format, register and tone** matter as much as ideas.\n\nThis topic covers newspaper articles and columns, magazine articles, dialogues, interviews, agendas and minutes, diary entries and written instructions. Letters, speeches, reports and reviews are covered in other topics." },
+    {
+      "type": "table",
+      "caption": "The CAPS transactional text rubric (Home Language, 25 marks)",
+      "headers": ["Criterion", "Marks", "What the marker looks for"],
+      "rows": [
+        ["Content, planning and format", "15", "Relevant, well-developed content that fulfils the task; awareness of purpose and audience; the correct format and features of the text type; evidence of planning"],
+        ["Language, style and editing", "10", "Register and tone suited to the audience and purpose; precise vocabulary; correct grammar, spelling and punctuation"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Format is assessed under **Content, planning and format**, the 15-mark criterion. A lively text in the wrong format cannot score highly. Before you write, identify the **TAP**: Text type, Audience and Purpose. These decide your format, register and tone." },
+    { "type": "definition", "term": "Register", "text": "The level of formality of language chosen for a particular audience and situation, for example formal (minutes), semi-formal (a magazine article) or informal (a diary entry or a dialogue between friends)." },
+
+    { "type": "heading", "text": "The newspaper article" },
+    { "type": "paragraph", "text": "A newspaper article **reports** a recent event to the public. It is **factual, objective and written in the third person**. The journalist does not give a personal opinion; opinions appear only in quotations from the people involved." },
+    { "type": "definition", "term": "Headline", "text": "The short, eye-catching title of a newspaper article. It usually uses the present tense for past events, leaves out small words such as ‘a’ and ‘the’, has no full stop, and may use alliteration or a pun." },
+    { "type": "definition", "term": "By-line", "text": "The line below the headline that names the writer, e.g. ‘By Lindiwe Mokoena’ or ‘By Staff Reporter’." },
+    { "type": "definition", "term": "Lead paragraph", "text": "The first paragraph of a news article (one or two sentences) that sums up the story by answering the key questions: who, what, when, where, why and how (the 5 Ws and H)." },
+    { "type": "definition", "term": "Inverted pyramid", "text": "The structure of a news article in which the most important information comes first and the details become less important as the article continues, so that an editor can cut from the bottom without losing the main facts." },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 280\" font-family=\"sans-serif\"><rect width=\"520\" height=\"280\" fill=\"white\"/><polygon points=\"20,20 380,20 200,260\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"/><line x1=\"80\" y1=\"100\" x2=\"320\" y2=\"100\" stroke=\"black\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"180\" x2=\"260\" y2=\"180\" stroke=\"black\" stroke-width=\"1.5\"/><text x=\"200\" y=\"52\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">LEAD PARAGRAPH</text><text x=\"200\" y=\"74\" font-size=\"13\" text-anchor=\"middle\">who, what, when, where, why, how</text><text x=\"200\" y=\"132\" font-size=\"13\" text-anchor=\"middle\">Important details</text><text x=\"200\" y=\"150\" font-size=\"13\" text-anchor=\"middle\">and quotations</text><text x=\"200\" y=\"204\" font-size=\"12\" text-anchor=\"middle\">Background</text><line x1=\"460\" y1=\"40\" x2=\"460\" y2=\"235\" stroke=\"black\" stroke-width=\"2\"/><polygon points=\"452,225 468,225 460,242\" fill=\"black\"/><text x=\"460\" y=\"30\" font-size=\"12\" text-anchor=\"middle\">Most important</text><text x=\"460\" y=\"260\" font-size=\"12\" text-anchor=\"middle\">Least important</text></svg>",
+      "caption": "The inverted pyramid: news articles start with the most important facts."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Headline**, then **by-line**; often a **place line** (dateline) at the start of the first paragraph, e.g. ‘SESHEGO –’.",
+        "**Lead paragraph** answering the 5 Ws and H.",
+        "**Short paragraphs** of one to three sentences, arranged in **inverted-pyramid** order.",
+        "**Third person** and mostly **past tense** for the events.",
+        "**Formal, objective** register: facts, figures, names and ages (e.g. ‘Kgothatso Mahlangu (17)’).",
+        "**Quotations** from witnesses or officials in inverted commas, with attribution (‘…,’ she said).",
+        "A final paragraph that looks ahead (what will happen next) rather than a personal conclusion."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1: checking a lead paragraph for the 5 Ws and H",
+      "problem": "Lead: ‘About 200 volunteers, among them learners from three Durban high schools, removed nearly 500 kg of plastic from Addington Beach on Saturday during a clean-up organised by a local surf club to protect marine life before the summer holidays.’",
+      "steps": [
+        "**Who?** About 200 volunteers, including learners from three Durban high schools.",
+        "**What?** Removed nearly 500 kg of plastic.",
+        "**When?** On Saturday.",
+        "**Where?** Addington Beach, Durban.",
+        "**Why?** To protect marine life before the summer holidays.",
+        "**How?** Through a clean-up organised by a local surf club.",
+        "**Style check**: one sentence, third person, past tense, specific facts, no opinion words such as ‘amazing’."
+      ],
+      "answer": "All six questions are answered in a single, objective sentence, so this is an effective lead paragraph."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: turning a sentence into a headline",
+      "problem": "Sentence: ‘The learners of a high school in Seshego have turned an illegal dumpsite into a food garden.’",
+      "steps": [
+        "**Remove small words** (‘the’, ‘of a’, ‘have’): learners Seshego turned illegal dumpsite into food garden.",
+        "**Use the present tense** for impact: learners turn dumpsite into food garden.",
+        "**Keep the most newsworthy words** and add who they are: Matric learners turn dumpsite into food garden.",
+        "**No full stop.** Optionally add sound effects such as alliteration: ‘From Dumpsite to Dinner Plate’."
+      ],
+      "answer": "‘Matric learners turn dumpsite into food garden’"
+    },
+    { "type": "passage", "title": "Model newspaper article (written for this guide)", "text": "MATRIC LEARNERS TURN DUMPSITE INTO FOOD GARDEN\nBy Lindiwe Mokoena\n\nSESHEGO – Fifteen Grade 12 learners from Tshepo Secondary School in Seshego, Limpopo, harvested their first crop last Friday from a vegetable garden they built on an illegal dumpsite next to their school.\n\nSince February the learners have spent every Saturday clearing more than two tonnes of rubbish by hand, with help from parents and the local municipality, which donated skips and a water tank.\n\nProject leader Kgothatso Mahlangu (17) said the idea grew out of frustration. ‘Every day we walked past the rubbish and smelt it in our classrooms. We decided to stop complaining and do something about it,’ she said.\n\nThe first harvest of spinach, cabbage and beetroot was handed to the school kitchen, which prepares meals for about 300 learners every day.\n\nThe principal, Mr Joseph Ngobeni, praised the group’s commitment. ‘They have shown that leadership is not about a title. It is about getting your hands dirty,’ he said.\n\nThe learners now plan to sell surplus vegetables to raise funds for their matric farewell.\n\nThe school will hold an open day on 14 September for residents who would like to start food gardens of their own." },
+
+    { "type": "heading", "text": "The newspaper column" },
+    { "type": "paragraph", "text": "A **column** is a regular feature written by the same writer (a **columnist**), usually under a fixed column name. Unlike a news article, a column is **subjective**: the columnist shares a personal view on a current issue, often with humour, anecdotes and a distinctive voice. Columns are usually written in the **first person**." },
+    {
+      "type": "table",
+      "caption": "Newspaper article versus newspaper column",
+      "headers": ["Feature", "News article", "Column"],
+      "rows": [
+        ["Purpose", "To inform readers of facts", "To share an opinion and provoke thought"],
+        ["Point of view", "Third person, objective", "First person, subjective"],
+        ["Heading", "Headline and by-line", "Column name, columnist’s name (often a photo) and a title for that week’s piece"],
+        ["Structure", "Inverted pyramid", "Hook, developed opinion with examples, memorable ending"],
+        ["Tone", "Neutral, factual", "Personal: may be humorous, ironic, passionate or warm"]
+      ]
+    },
+    { "type": "passage", "title": "Opening of a model column (written for this guide)", "text": "SIPHO SPEAKS\nThis week: In defence of the humble taxi queue\n\nI have stood in a lot of queues in my life, but none has taught me more about South Africa than the queue at Bree Street taxi rank at half past five on a Friday. Strangers share umbrellas. A gogo keeps your place while you buy a vetkoek. Nobody pushes, because everyone is equally tired. If our politicians want to learn about patience and fairness, I suggest they start here…" },
+
+    { "type": "heading", "text": "The magazine article" },
+    { "type": "paragraph", "text": "A magazine article is longer-lasting than news. It **informs and entertains** a specific readership (teenagers, sports fans, parents), so its style is **conversational yet informative**." },
+    {
+      "type": "list",
+      "items": [
+        "A **catchy title** (often with a pun, question or alliteration), optionally a **subtitle** (strapline) that explains the topic, and the writer’s name.",
+        "An **introduction that hooks** the reader: a question, a surprising fact or an anecdote.",
+        "**Subheadings** or numbered points to organise the body.",
+        "Direct address (‘you’), contractions and **rhetorical questions** to create a chatty, friendly tone, while still using correct, standard English.",
+        "Facts, examples or advice that make it **informative**.",
+        "A **memorable conclusion** that sums up or gives a final piece of advice."
+      ]
+    },
+    { "type": "passage", "title": "Model magazine article for a teen magazine (written for this guide)", "text": "Matric Without the Meltdown\nFive habits that actually work\nBy Naledi Dube\n\nLet’s be honest: by the third term of matric, most of us are running on coffee, panic and very little sleep. If that sounds like you, take a breath. You don’t need a miracle. You need a few better habits.\n\n1. Sleep is not the enemy\nIt’s tempting to study until two in the morning, but your brain stores what you learnt while you sleep. Eight hours is not lazy; it’s strategic.\n\n2. Study in short bursts\nTry forty minutes of focused work followed by a ten-minute break. Put your phone in another room. Yes, really.\n\n3. Test yourself\nRe-reading your notes feels productive, but answering past questions shows you what you actually know.\n\n4. Move your body\nA walk around the block or a quick game of soccer lowers stress and clears your head.\n\n5. Talk to someone\nIf the pressure becomes too much, speak to a parent, teacher or friend. Asking for help is a sign of strength, not weakness.\n\nMatric is a marathon, not a sprint. Look after yourself, and you’ll cross the finish line in one piece." },
+    { "type": "callout", "label": "Common mistake", "text": "Do not write a magazine article like a news report (dry and impersonal) or like a letter (‘Dear readers’ and ‘Yours faithfully’). A magazine article has a title, a lively hook and a chatty but correct style." },
+
+    { "type": "heading", "text": "The dialogue" },
+    { "type": "paragraph", "text": "A dialogue is a **written conversation** between two or more people, set out like a play script. It must reveal the speakers’ personalities and develop a clear purpose (resolving a disagreement, making a plan, giving advice)." },
+    {
+      "type": "list",
+      "items": [
+        "Begin with a short **context or setting** in brackets, e.g. ‘(The school library during break. Ayanda is reading a prospectus.)’.",
+        "Write each **speaker’s name on the left margin**, followed by a **colon**.",
+        "Start a **new line** for each new speaker.",
+        "**No inverted commas** and no ‘he said’ or ‘she replied’.",
+        "**Stage directions in brackets** (in the present tense) show actions or tone of voice, e.g. ‘(nervously)’, ‘(slamming the door)’.",
+        "The **register** suits the characters and their relationship: friends may be informal, a learner speaking to a principal should be more respectful. Spelling and grammar must still be correct.",
+        "The conversation should **build to a conclusion**, not just stop."
+      ]
+    },
+    { "type": "passage", "title": "Model dialogue (written for this guide)", "text": "(The kitchen on a Sunday evening. Ayanda is washing dishes. Her father, Mr Zulu, is reading the newspaper at the table.)\n\nAyanda: (drying her hands nervously) Baba, can I talk to you about next year?\nMr Zulu: (lowering the newspaper) That sounds serious. Sit down, my girl.\nAyanda: I’ve been thinking about taking a gap year before university.\nMr Zulu: (frowning) A gap year? Your mother and I have been saving for your fees since you were in Grade 1.\nAyanda: I know, and I’m grateful. But I’m not sure I really want to study accounting, and I don’t want to waste your money on a course I might drop.\nMr Zulu: So what would you do for a whole year?\nAyanda: (taking out a folded page) Aunt Thembi says I can work at her bakery. I’d save half my wages and do a short online bookkeeping course to see whether I enjoy it.\nMr Zulu: (studying the page in silence) You have planned this properly.\nAyanda: I have. I just need you to trust me.\nMr Zulu: (sighing, then smiling) Let’s speak to your mother tonight. If she agrees, we’ll try it, but you must still apply to university so that a place is waiting for you.\nAyanda: (hugging him) Thank you, Baba! I won’t let you down." },
+    { "type": "callout", "label": "Common mistake", "text": "Writing a dialogue as a story (‘ “I’m tired,” said Thandi angrily.’) loses format marks. In a dialogue the tone goes into the stage direction: ‘Thandi: (angrily) I’m tired!’" },
+
+    { "type": "heading", "text": "The interview" },
+    { "type": "paragraph", "text": "An interview is a **question-and-answer conversation** in which an interviewer gathers information or opinions from an interviewee, usually for a newspaper, magazine, school newsletter, radio or television. It is set out like a dialogue." },
+    {
+      "type": "list",
+      "items": [
+        "A short **introduction** in brackets or italics: who is interviewing whom, why, and where it will be published or broadcast.",
+        "The **names** (or ‘Interviewer’ and the interviewee’s name) on the left, followed by a **colon**; no inverted commas.",
+        "The interviewer **opens** politely, asks well-prepared questions and **closes** by thanking the interviewee.",
+        "Mostly **open questions** (‘How…?’, ‘Why…?’, ‘What…?’, ‘Tell us about…’) that invite detailed answers, with **follow-up questions** that respond to what was said.",
+        "The interviewee’s answers carry most of the content and reveal their personality.",
+        "Register is usually **semi-formal**: polite and respectful, but natural."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "Closed and open questions",
+      "headers": ["Closed question (avoid)", "Open question (use)"],
+      "rows": [
+        ["Did you enjoy the competition?", "What was the most memorable moment of the competition?"],
+        ["Was it hard?", "What was the biggest challenge you faced, and how did you overcome it?"],
+        ["Do you have advice for learners?", "What advice would you give a Grade 10 learner who wants to follow your path?"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: improving interview questions",
+      "problem": "An interviewer plans to ask a young Comrades Marathon finisher: ‘Did you train a lot?’ Improve the question and add a follow-up.",
+      "steps": [
+        "**Identify the problem**: it is a closed question; the answer could simply be ‘yes’.",
+        "**Open it up** with ‘how’ or ‘what’: ‘How did you prepare your body and mind for almost 90 kilometres?’",
+        "**Plan a follow-up** that digs deeper into the likely answer: ‘You mentioned running at five every morning. What kept you going on the days you wanted to give up?’"
+      ],
+      "answer": "Open questions and follow-ups produce detailed, personal answers that make an interview worth reading."
+    },
+    { "type": "passage", "title": "Model interview for a school newsletter (written for this guide)", "text": "(Lerato Mokoena, editor of the school newsletter, interviews Grade 12 learner Ethan Pillay, whose team has just won gold at a national robotics competition.)\n\nLerato: Congratulations, Ethan! Tell us how you first became interested in robotics.\nEthan: Thank you! In Grade 9 our Maths teacher started an after-school robotics club. I joined because my friends did, but I stayed because I loved making things move.\nLerato: What did your winning robot do?\nEthan: It sorts recycling. A camera identifies plastic, glass and cans, and an arm drops each item into the correct bin.\nLerato: What was the biggest challenge you faced while building it?\nEthan: (laughing) Honestly, load-shedding. We lost hours of programming time, so we started working on laptops charged by a small solar panel.\nLerato: How do you balance robotics with your matric workload?\nEthan: I keep a strict timetable. Robotics is my reward once I’ve finished studying each day.\nLerato: What advice would you give learners who want to try robotics?\nEthan: Start small and don’t be afraid of failing. Our first robot could barely drive in a straight line!\nLerato: Thank you for your time, Ethan, and good luck with your final exams.\nEthan: Thanks, Lerato. It was a pleasure." },
+
+    { "type": "heading", "text": "The agenda and minutes of a meeting" },
+    { "type": "definition", "term": "Agenda", "text": "A list, sent out before a meeting, of the items to be discussed, in the order in which they will be discussed. It also gives the date, time and venue of the meeting." },
+    { "type": "definition", "term": "Minutes", "text": "The official written record of what was discussed and decided at a meeting, written by the secretary after the meeting and approved at the next meeting." },
+    { "type": "definition", "term": "Matters arising", "text": "Issues from the minutes of the previous meeting that need a follow-up report or further discussion." },
+    { "type": "definition", "term": "Resolution", "text": "A formal decision taken at a meeting, often after a proposal has been seconded and voted on, e.g. ‘It was resolved that the hall would be used.’" },
+    { "type": "passage", "title": "Model agenda (written for this guide)", "text": "SIYAKHULA HIGH SCHOOL MATRIC FAREWELL COMMITTEE\n\nAGENDA\n\nNotice is hereby given of a meeting of the Matric Farewell Committee to be held on Tuesday, 4 August 2026 at 14:00 in Room 12.\n\n1. Welcome and opening\n2. Attendance and apologies\n3. Minutes of the previous meeting\n4. Matters arising\n5. New matters\n   5.1 Venue\n   5.2 Ticket prices\n   5.3 Theme and decorations\n6. General\n7. Date of next meeting\n8. Closure\n\nT. Khumalo (Secretary)" },
+    { "type": "passage", "title": "Model minutes (written for this guide)", "text": "SIYAKHULA HIGH SCHOOL MATRIC FAREWELL COMMITTEE\nMinutes of the meeting held on Tuesday, 4 August 2026 at 14:00 in Room 12\n\nPresent: N. Dlamini (Chairperson), T. Khumalo (Secretary), Ms R. Pillay (teacher), J. van Wyk, A. Mthembu, K. Mokoena\nApologies: S. Naidoo\n\n1. Welcome and opening: The chairperson welcomed members and opened the meeting at 14:05.\n2. Minutes of the previous meeting: The minutes of the meeting held on 21 July 2026 were read and accepted.\nProposed: J. van Wyk; seconded: A. Mthembu.\n3. Matters arising: Ms Pillay reported that the principal had approved Saturday, 24 October as the date of the farewell.\n4. New matters\n4.1 Venue: Two quotations were considered. It was resolved that the school hall would be used, as it was R8 000 cheaper than the hotel.\n4.2 Ticket prices: After discussion, members agreed on R350 per learner and R250 per partner. K. Mokoena would design the tickets by 15 August.\n4.3 Theme and decorations: A. Mthembu proposed a ‘Starry Night’ theme. The proposal was accepted unanimously.\n5. General: Members were reminded to collect deposits by the end of August.\n6. Date of next meeting: Tuesday, 18 August 2026 at 14:00 in Room 12.\n7. Closure: The meeting closed at 15:10.\n\n________________ Chairperson     ________________ Secretary" },
+    {
+      "type": "table",
+      "caption": "Agenda versus minutes",
+      "headers": ["", "Agenda", "Minutes"],
+      "rows": [
+        ["When written", "Before the meeting", "After the meeting"],
+        ["Purpose", "To tell members what will be discussed, and when and where", "To record attendance, discussions and decisions"],
+        ["Style", "Numbered items in note form", "Full sentences, past tense, reported speech, third person"],
+        ["Key sections", "Date, time and venue; numbered items", "Present, apologies, previous minutes, matters arising, new matters with resolutions, next meeting, closure, signatures"]
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Minutes are not a script of who said what. Do not write ‘Thabo: I think we should…’. Instead use reported speech in the past tense: ‘T. Mabaso suggested that the committee should…’. Always record **decisions** (resolutions) and **who is responsible** for each action." },
+
+    { "type": "heading", "text": "The diary entry" },
+    { "type": "paragraph", "text": "A diary entry is a **private, personal record** of events, thoughts and feelings. It is a shorter transactional text that you should be able to write for class tasks and tests." },
+    {
+      "type": "list",
+      "items": [
+        "The **date** (and often the time) at the top; ‘Dear Diary’ is optional.",
+        "**First person**, **informal** and honest register (but still correct spelling and grammar).",
+        "Past tense for the day’s events; present and future tense for current feelings and plans.",
+        "Focus on **feelings and reactions**, not only events.",
+        "May end with a sign-off (first name) or simply a closing thought."
+      ]
+    },
+    { "type": "passage", "title": "Model diary entry (written for this guide)", "text": "Thursday, 10 September 2026, 21:30\n\nDear Diary\n\nToday was the day I had been dreading all week: our Life Sciences trial results came back. I had convinced myself that I had failed, so when Mrs Ndlovu handed back my script I could hardly look at it. Sixty-eight per cent! My hands were actually shaking.\n\nThen I saw Kayla’s face. She has been studying with me every afternoon, and she got thirty-nine. She smiled and said ‘well done’, but I could see she was trying not to cry. I didn’t know whether to celebrate or to comfort her, so I did neither, and I have felt guilty all evening.\n\nTomorrow I am going to ask her if we can go through the paper together. I want her to know that we are still a team.\n\nRight now, though, I’m going to sleep. Properly, for once.\n\nLwazi" },
+
+    { "type": "heading", "text": "Written instructions" },
+    { "type": "paragraph", "text": "Written instructions tell the reader **how to do something** step by step. They must be so clear that a person who has never done the task can follow them." },
+    {
+      "type": "list",
+      "items": [
+        "A clear **title** (often ‘How to…’).",
+        "A list of **what you will need** (materials, tools or documents).",
+        "**Numbered steps** in the correct, logical order.",
+        "Each step begins with an **imperative verb** (‘Loosen…’, ‘Water…’, ‘Place…’).",
+        "**Short, precise** sentences with exact quantities, times and distances where needed.",
+        "**Safety warnings** or tips where relevant."
+      ]
+    },
+    { "type": "passage", "title": "Model written instructions (written for this guide)", "text": "How to plant vegetable seedlings\n\nYou will need: seedlings in a tray, a garden fork, compost, a trowel, a watering can and gardening gloves.\n\n1. Choose a spot that gets at least six hours of sunlight a day.\n2. Loosen the soil to a depth of about 30 cm with the garden fork.\n3. Mix a few spadefuls of compost into the soil.\n4. Water the seedlings in their tray an hour before planting.\n5. Dig a hole slightly larger than the roots of each seedling.\n6. Ease each seedling out of the tray, holding it by a leaf rather than by its delicate stem.\n7. Place it in the hole at the same depth it grew in the tray and press the soil firmly around it.\n8. Space the seedlings as recommended on the seed packet.\n9. Water them well immediately, and then every day for the first week.\n\nSafety tip: Wear gloves when handling compost and wash your hands afterwards." },
+
+    { "type": "heading", "text": "Planning any transactional text" },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Read the topic twice.** Underline the text type, the audience, the purpose and every point you are asked to include.",
+        "**Decide on format, register and tone** from the TAP.",
+        "**Brainstorm** the content and put it in a logical order (inverted pyramid, agenda items, numbered steps, a conversation that builds to a decision).",
+        "**Write** 180–200 words, using the correct format from the first line.",
+        "**Edit and proofread**: check format features, tense (especially past tense in minutes), punctuation (no inverted commas in a dialogue) and spelling."
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Use details from the topic and invent realistic South African specifics (names, ages, places, amounts in rand). Specific details make a text convincing and earn content marks, but they must suit the purpose: no personal opinions in a news report, no jokes in minutes." },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "Section B: two transactional texts, 25 marks each (Content, planning and format 15; Language, style and editing 10), 180–200 words each.",
+        "Newspaper article: headline, by-line, lead paragraph answering who, what, when, where, why and how; inverted pyramid; short paragraphs; third person; objective; quotations from people involved.",
+        "Column: regular feature by a named columnist; first person; personal opinion and distinctive voice.",
+        "Magazine article: catchy title, hooking introduction, subheadings, conversational yet informative style aimed at a specific readership.",
+        "Dialogue: context in brackets, names on the left followed by a colon, a new line for each speaker, stage directions in brackets, no inverted commas.",
+        "Interview: introduction, interviewer and interviewee labelled like a dialogue, open and follow-up questions, polite opening and closing.",
+        "Agenda: before the meeting; date, time, venue and numbered items in note form. Minutes: after the meeting; present, apologies, previous minutes, matters arising, new matters with resolutions, next meeting, closure, signatures; past tense and reported speech.",
+        "Diary entry: date, first person, informal and personal, focused on feelings. Written instructions: title, requirements, numbered steps starting with imperative verbs."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which of the following is the most effective **newspaper headline**?",
+      "options": [
+        "The learners of a school in Durban who cleaned a beach on Saturday morning.",
+        "A beach was cleaned.",
+        "Dear readers, a beach has been cleaned!",
+        "Durban learners clear 500 kg of plastic from beach"
+      ],
+      "answer": 3,
+      "explanation": "A headline is short and specific, uses the present tense and an active verb, leaves out small words and has no full stop."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "What should the lead (first) paragraph of a newspaper article do?",
+      "options": [
+        "Answer the key questions: who, what, when, where, why and how",
+        "Give the journalist’s personal opinion of the event",
+        "Provide the background history before mentioning the event",
+        "Thank readers for buying the newspaper"
+      ],
+      "answer": 0,
+      "explanation": "The lead sums up the story by answering the 5 Ws and H. A news article is objective, and background comes later in the inverted pyramid."
+    },
+    {
+      "id": "q3",
+      "type": "short",
+      "prompt": "What is the name of the news-writing structure in which the most important information comes first and less important details follow?",
+      "answers": ["inverted pyramid", "the inverted pyramid", "inverted-pyramid", "inverted triangle", "the inverted triangle", "inverted pyramid structure"],
+      "explanation": "The inverted pyramid puts the key facts at the top so that the story still makes sense if the end is cut."
+    },
+    {
+      "id": "q4",
+      "type": "short",
+      "prompt": "What is the line below a newspaper headline that names the writer of the article called?",
+      "answers": ["by-line", "byline", "by line", "the by-line", "the byline"],
+      "explanation": "The by-line, e.g. ‘By Lindiwe Mokoena’, tells readers who wrote the article."
+    },
+    {
+      "id": "q5",
+      "type": "truefalse",
+      "prompt": "In a dialogue, each speaker’s words are placed in inverted commas.",
+      "answer": false,
+      "explanation": "A dialogue is set out like a script: the speaker’s name, a colon and then the words, with no inverted commas."
+    },
+    {
+      "id": "q6",
+      "type": "truefalse",
+      "prompt": "Minutes of a meeting are usually written in the past tense, in the third person, using reported speech.",
+      "answer": true,
+      "explanation": "Minutes are a formal record written after the meeting, e.g. ‘Ms Pillay reported that the principal had approved the date.’"
+    },
+    {
+      "id": "q7",
+      "type": "match",
+      "prompt": "Match each feature with the text type it belongs to.",
+      "marks": 6,
+      "pairs": [
+        { "left": "Apologies, matters arising and resolutions", "right": "Minutes" },
+        { "left": "Lead paragraph and inverted-pyramid structure", "right": "Newspaper article" },
+        { "left": "Catchy title, subheadings and a chatty tone that addresses readers as ‘you’", "right": "Magazine article" },
+        { "left": "Date at the top, first person and private feelings", "right": "Diary entry" },
+        { "left": "Numbered steps beginning with imperative verbs", "right": "Written instructions" },
+        { "left": "Prepared open questions put to a person, with a polite opening and thanks at the end", "right": "Interview" }
+      ],
+      "explanation": "Each text type has signature features: minutes record procedure and decisions; news uses a lead and inverted pyramid; magazine articles are chatty; diaries are private and dated; instructions use imperatives; interviews are built on open questions."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "You are interviewing a learner who has just been selected for the national netball team. Which question will produce the most useful answer?",
+      "options": [
+        "Did you enjoy the trials?",
+        "Are you from Kimberley?",
+        "What challenges did you face during the selection process, and how did you overcome them?",
+        "Is it true that you are eighteen?"
+      ],
+      "answer": 2,
+      "explanation": "It is an open question that invites a detailed, personal answer. The others are closed questions that can be answered with ‘yes’ or ‘no’."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "Which line is correctly formatted for a **dialogue**?",
+      "options": [
+        "‘I can’t believe it,’ said Thandi angrily.",
+        "Thandi: (angrily) I can’t believe it!",
+        "Thandi said: ‘I can’t believe it!’",
+        "THANDI ANGRILY – ‘I can’t believe it!’"
+      ],
+      "answer": 1,
+      "explanation": "Name on the left, a colon, the stage direction in brackets and the words without inverted commas."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "In the minutes of a meeting, under which heading would the secretary record a follow-up report on an issue raised at the **previous** meeting?",
+      "options": ["Apologies", "Closure", "Attendance", "Matters arising"],
+      "answer": 3,
+      "explanation": "‘Matters arising’ deals with issues from the previous minutes that need a report back or further discussion."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "How does a newspaper **column** differ from a newspaper **article**?",
+      "options": [
+        "A column is a regular feature in which a named columnist gives a personal opinion in a distinctive voice, while an article reports facts objectively.",
+        "A column always uses the inverted pyramid, while an article never does.",
+        "A column is written in the third person and never contains the writer’s opinion.",
+        "A column is the headline printed above an article."
+      ],
+      "answer": 0,
+      "explanation": "Columns are subjective, usually in the first person and appear regularly under the columnist’s name. News articles are objective reports."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "Which sentence is written correctly for the **minutes** of a meeting?",
+      "options": [
+        "We will definitely sort out the DJ next week!",
+        "I think the DJ is way too expensive, guys.",
+        "Ms Pillay reported that the DJ had been booked for R2 500.",
+        "Book the DJ now."
+      ],
+      "answer": 2,
+      "explanation": "Minutes use formal language, the past tense, the third person and reported speech."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 5,
+      "prompt": "A learner began a news report like this: ‘It was a really nice Saturday and lots of people came to the beach. Everyone had fun and it was a great day.’\n\nUse the facts below to write an effective **lead paragraph** (one or two sentences).\n\nFacts: Saturday, 5 September; Addington Beach, Durban; about 200 volunteers, including learners from three high schools; nearly 500 kg of plastic removed; organised by a local surf club; aim: to protect marine life before the summer holidays.",
+      "memo": "Model answer:\n‘About 200 volunteers, among them learners from three Durban high schools, removed nearly 500 kg of plastic from Addington Beach on Saturday, 5 September, during a clean-up organised by a local surf club to protect marine life before the summer holidays.’\n\nMark allocation:\n✓ Who: about 200 volunteers, including learners from three high schools (1)\n✓ What: removed nearly 500 kg of plastic (1)\n✓ When and where: Saturday, 5 September, at Addington Beach, Durban (1)\n✓ Why and how: to protect marine life; a clean-up organised by a surf club (1)\n✓ Style: concise (one or two sentences), third person, past tense, objective, with no opinion words such as ‘nice’ or ‘great’ (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 25,
+      "prompt": "Last weekend learners at your school organised a 5 km fun run to raise money for a Grade 10 learner whose family lost their home in a fire. Write a **newspaper article** of 180–200 words for your local community newspaper reporting on the event. Include a headline and a by-line.",
+      "memo": "Model answer:\n\nFUN RUN RAISES R42 000 FOR FIRE-HIT FAMILY\nBy Thabo Mabaso\n\nMAKHANDA – More than 600 runners, walkers and supporters took part in a 5 km fun run organised by learners of Rhodes Park High School on Saturday to raise money for a Grade 10 learner whose family lost their home in a fire.\n\nThe event raised R42 000, which will help the Ngcobo family to rebuild their house in Joza township. The fire, believed to have been caused by a faulty paraffin heater, destroyed the family’s home and belongings two weeks ago.\n\nLearner Representative Council president Amahle Sityana (18) said the school had wanted to act immediately. ‘Sinethemba is one of us. We could not just send our sympathy; we had to do something practical,’ she said.\n\nLocal businesses donated water, fruit and medals, and members of the traffic department closed roads along the route.\n\nSinethemba Ngcobo (16) thanked the community. ‘I didn’t know so many people cared about us. This has given my family hope,’ he said.\n\nThe school will hand over the money at a short ceremony next Friday. Donations of clothing and school uniforms are still being accepted at the school office.\n\nMark allocation (approximate guide; markers use the CAPS rubric):\nContent, planning and format (15):\n✓ Headline: short, present tense, no full stop; by-line included (2)\n✓ Lead paragraph answers who, what, when, where, why and how (3)\n✓ Inverted-pyramid order: key facts first, then details, then what happens next (3)\n✓ Relevant, specific and convincing details (amount raised, names, ages, places) (3)\n✓ At least one relevant quotation, correctly punctuated and attributed (2)\n✓ Third person and objective throughout; about 180–200 words (2)\nLanguage, style and editing (10):\n✓ Formal, factual register with no personal opinion from the journalist; short paragraphs; varied, precise vocabulary; correct grammar, spelling, tense and punctuation (10)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 25,
+      "prompt": "You and your friend disagree about whether to attend a big party on the Saturday before your final examinations begin. Write the **dialogue** (180–200 words) between the two of you, in which you reach a decision.",
+      "memo": "Model answer:\n\n(Thursday afternoon. Karabo and Jordan are walking home from school. Karabo is scrolling through messages on her phone.)\n\nKarabo: (excitedly) Jordan, Zinhle’s party is confirmed for Saturday night. Everyone is going!\nJordan: (stopping) Saturday? Our English Paper 1 is on Monday morning.\nKarabo: Exactly. One night of fun before three weeks of misery. We deserve it.\nJordan: I’d love to go, but you know how these parties end. We won’t get home before two, and then Sunday is wasted.\nKarabo: (rolling her eyes) You sound like my mother.\nJordan: (laughing) Your mother is a clever woman. Look, I’m not saying never. I’m saying not this weekend.\nKarabo: So we just sit at home while everyone else has fun?\nJordan: Not at home. What if we study at my place on Saturday, and on the last day of exams we organise our own celebration? A proper braai, with everyone.\nKarabo: (thinking for a moment) A braai when we’re actually free… that does sound better than worrying about Monday the whole night.\nJordan: And your mother will be impressed.\nKarabo: (smiling and putting her phone away) Fine. But you’re bringing the boerewors.\nJordan: Deal!\n\nMark allocation (approximate guide; markers use the CAPS rubric):\nContent, planning and format (15):\n✓ Brief context or setting in brackets at the start (2)\n✓ Names on the left followed by a colon; a new line for each speaker; no inverted commas (3)\n✓ Stage directions in brackets that show tone or action (2)\n✓ Both points of view are developed with convincing reasons (4)\n✓ The conversation builds to a clear decision or resolution (2)\n✓ About 180–200 words (2)\nLanguage, style and editing (10):\n✓ Natural, informal register suited to two friends, with distinct voices; correct spelling, grammar and punctuation despite the informal tone (10)"
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 25,
+      "prompt": "You are the secretary of your school’s Representative Council of Learners (RCL). The RCL met to plan an anti-litter campaign. Write the **agenda** for the meeting and the **minutes** of the meeting (about 180–200 words in total).",
+      "memo": "Model answer:\n\nMARULA HIGH SCHOOL REPRESENTATIVE COUNCIL OF LEARNERS\nAGENDA\nA meeting of the RCL will be held on Tuesday, 12 May 2026 at 13:30 in the library.\n1. Welcome and opening\n2. Attendance and apologies\n3. Minutes of the previous meeting\n4. Matters arising\n5. Anti-litter campaign\n6. General\n7. Date of next meeting\n8. Closure\n\nMINUTES of the RCL meeting held on Tuesday, 12 May 2026 at 13:30 in the library\nPresent: P. Mahlaba (Chairperson), L. Botha (Secretary), Mr D. Moodley (teacher liaison), S. Khoza, R. Adams, M. Sithole\nApologies: T. Nel\n1. The chairperson welcomed members and opened the meeting at 13:35.\n2. The minutes of the meeting of 28 April 2026 were read and accepted.\n3. Matters arising: Mr Moodley reported that the principal had approved the campaign.\n4. Anti-litter campaign: S. Khoza reported that litter around the tuck shop had increased. It was resolved that each grade would clean one area of the school on Fridays and that R. Adams would ask the municipality for extra bins.\n5. General: No matters were raised.\n6. The next meeting will be held on 26 May 2026 at 13:30 in the library.\n7. The meeting closed at 14:10.\nSigned: ____________ (Chairperson) ____________ (Secretary)\n\nMark allocation (approximate guide; markers use the CAPS rubric):\nContent, planning and format (15):\n✓ Agenda: name of the organisation, date, time and venue; numbered items in note form in the correct order (4)\n✓ Minutes: heading with date, time and venue; present and apologies (3)\n✓ Previous minutes accepted; matters arising (2)\n✓ Discussion of the campaign with clear resolutions and people responsible for actions (3)\n✓ Date of next meeting, closure and signatures (2)\n✓ About 180–200 words (1)\nLanguage, style and editing (10):\n✓ Formal register; past tense, third person and reported speech in the minutes; concise, precise wording; correct spelling, grammar and punctuation (10)"
+    }
+  ]
+}

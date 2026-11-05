@@ -1,0 +1,63 @@
+{
+  "id": "trigonometric-ratios",
+  "title": "Trigonometric Ratios",
+  "term": 1,
+  "summary": "Define sine, cosine and tangent in right-angled triangles, use reciprocal ratios, special angles, the Cartesian plane, and solve simple trigonometric equations.",
+  "notes": [
+    { "type": "heading", "text": "The three ratios" },
+    { "type": "paragraph", "text": "In a right-angled triangle, the sides are named relative to an acute angle $\\theta$: the **hypotenuse** (opposite the right angle, the longest side), the **opposite** side (across from $\\theta$) and the **adjacent** side (next to $\\theta$)." },
+    { "type": "formula", "latex": "\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} \\qquad \\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} \\qquad \\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}" },
+    { "type": "callout", "label": "Memory aid", "text": "**SOH CAH TOA**: Sin = Opposite / Hypotenuse, Cos = Adjacent / Hypotenuse, Tan = Opposite / Adjacent." },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 170' font-family='sans-serif' font-size='12'><rect width='260' height='170' fill='white'/><polygon points='30,140 220,140 220,30' fill='none' stroke='black' stroke-width='2'/><polyline points='208,140 208,128 220,128' fill='none' stroke='black'/><path d='M62,140 A32,32 0 0 0 58,124' fill='none' stroke='black'/><text x='66' y='134'>θ</text><text x='110' y='158'>adjacent</text><text x='226' y='90'>opposite</text><text x='70' y='76' transform='rotate(-30 110 80)'>hypotenuse</text></svg>", "caption": "Naming the sides of a right-angled triangle relative to the angle θ" },
+    { "type": "heading", "text": "Reciprocal ratios" },
+    { "type": "formula", "latex": "\\csc\\theta = \\frac{1}{\\sin\\theta} = \\frac{\\text{hyp}}{\\text{opp}} \\qquad \\sec\\theta = \\frac{1}{\\cos\\theta} = \\frac{\\text{hyp}}{\\text{adj}} \\qquad \\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{\\text{adj}}{\\text{opp}}", "caption": "Cosecant, secant and cotangent" },
+    { "type": "heading", "text": "Calculating sides and angles" },
+    { "type": "example", "title": "Worked example 1: finding a side", "problem": "In $\\triangle ABC$, $\\hat{B} = 90^\\circ$, $\\hat{A} = 35^\\circ$ and $AC = 12$ cm. Calculate $BC$, correct to two decimal places.", "steps": [
+      "$BC$ is opposite $\\hat{A}$ and $AC$ is the hypotenuse, so use sine.",
+      "$\\sin 35^\\circ = \\dfrac{BC}{12}$",
+      "$BC = 12\\sin 35^\\circ = 6{,}88$ cm"
+    ], "answer": "$BC \\approx 6{,}88$ cm" },
+    { "type": "example", "title": "Worked example 2: finding an angle", "problem": "A ladder 5 m long leans against a wall. Its foot is 1,8 m from the wall. Find the angle between the ladder and the ground.", "steps": [
+      "Adjacent = 1,8 m, hypotenuse = 5 m, so use cosine.",
+      "$\\cos\\theta = \\dfrac{1{,}8}{5} = 0{,}36$",
+      "$\\theta = \\cos^{-1}(0{,}36) = 68{,}9^\\circ$"
+    ], "answer": "$\\theta \\approx 68{,}9^\\circ$" },
+    { "type": "heading", "text": "Special angles" },
+    { "type": "table", "caption": "Exact values (learn these without a calculator)", "headers": ["", "$0^\\circ$", "$30^\\circ$", "$45^\\circ$", "$60^\\circ$", "$90^\\circ$"], "rows": [
+      ["$\\sin$", "$0$", "$\\frac{1}{2}$", "$\\frac{\\sqrt{2}}{2}$", "$\\frac{\\sqrt{3}}{2}$", "$1$"],
+      ["$\\cos$", "$1$", "$\\frac{\\sqrt{3}}{2}$", "$\\frac{\\sqrt{2}}{2}$", "$\\frac{1}{2}$", "$0$"],
+      ["$\\tan$", "$0$", "$\\frac{\\sqrt{3}}{3}$", "$1$", "$\\sqrt{3}$", "undefined"]
+    ] },
+    { "type": "example", "title": "Worked example 3: without a calculator", "problem": "Calculate $\\dfrac{\\sin 60^\\circ \\cdot \\tan 30^\\circ}{\\cos 45^\\circ \\cdot \\cos 45^\\circ}$", "steps": [
+      "$= \\dfrac{\\frac{\\sqrt{3}}{2} \\cdot \\frac{\\sqrt{3}}{3}}{\\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{2}}{2}} = \\dfrac{\\frac{3}{6}}{\\frac{2}{4}}$",
+      "$= \\dfrac{1}{2} \\div \\dfrac{1}{2} = 1$"
+    ], "answer": "$1$" },
+    { "type": "heading", "text": "Trigonometry in the Cartesian plane" },
+    { "type": "paragraph", "text": "For a point $P(x; y)$ on the terminal arm of angle $\\theta$, measured anticlockwise from the positive $x$-axis, with $r = \\sqrt{x^2 + y^2}$:" },
+    { "type": "formula", "latex": "\\sin\\theta = \\frac{y}{r} \\qquad \\cos\\theta = \\frac{x}{r} \\qquad \\tan\\theta = \\frac{y}{x}" },
+    { "type": "callout", "label": "CAST rule", "text": "The ratios that are **positive** in each quadrant: Quadrant 1 **A**ll; Quadrant 2 **S**in; Quadrant 3 **T**an; Quadrant 4 **C**os." },
+    { "type": "example", "title": "Worked example 4: using a point", "problem": "If $P(-3; 4)$ lies on the terminal arm of $\\theta$, find $\\sin\\theta$, $\\cos\\theta$ and $\\tan\\theta$.", "steps": [
+      "$r = \\sqrt{(-3)^2 + 4^2} = 5$",
+      "$\\sin\\theta = \\dfrac{4}{5}$, $\\cos\\theta = -\\dfrac{3}{5}$, $\\tan\\theta = -\\dfrac{4}{3}$",
+      "$\\theta$ is in quadrant 2, where only sine is positive ✓"
+    ], "answer": "$\\frac{4}{5}$; $-\\frac{3}{5}$; $-\\frac{4}{3}$" },
+    { "type": "heading", "text": "Simple trigonometric equations" },
+    { "type": "example", "title": "Worked example 5", "problem": "Solve for $x$ if $0^\\circ \\leq x \\leq 90^\\circ$: $2\\sin(x + 10^\\circ) = 1{,}2$", "steps": [
+      "$\\sin(x + 10^\\circ) = 0{,}6$",
+      "$x + 10^\\circ = \\sin^{-1}(0{,}6) = 36{,}87^\\circ$",
+      "$x = 26{,}87^\\circ$"
+    ], "answer": "$x \\approx 26{,}87^\\circ$" }
+  ],
+  "questions": [
+    { "id": "soh", "type": "mcq", "prompt": "In a right-angled triangle, $\\tan\\theta$ equals…", "options": ["$\\dfrac{\\text{opp}}{\\text{hyp}}$", "$\\dfrac{\\text{adj}}{\\text{hyp}}$", "$\\dfrac{\\text{opp}}{\\text{adj}}$", "$\\dfrac{\\text{hyp}}{\\text{opp}}$"], "answer": 2 },
+    { "id": "sec", "type": "short", "prompt": "Which reciprocal ratio is equal to $\\dfrac{1}{\\cos\\theta}$? (name it in one word)", "answers": ["secant", "sec"] },
+    { "id": "side", "type": "numeric", "prompt": "In right-angled $\\triangle PQR$ with $\\hat{Q} = 90^\\circ$, $\\hat{P} = 40^\\circ$ and $PQ = 10$ cm, calculate $QR$ correct to two decimal places.", "answer": 8.39, "tolerance": 0.01, "unit": "cm" },
+    { "id": "angle", "type": "numeric", "prompt": "Solve for $\\theta$ (acute), correct to one decimal place: $\\tan\\theta = 2{,}5$", "answer": 68.2, "tolerance": 0.05, "unit": "°" },
+    { "id": "special", "type": "mcq", "prompt": "What is the exact value of $\\cos 60^\\circ$?", "options": ["$\\frac{\\sqrt{3}}{2}$", "$\\frac{1}{2}$", "$1$", "$\\frac{\\sqrt{2}}{2}$"], "answer": 1 },
+    { "id": "cast", "type": "mcq", "prompt": "In which quadrant are both sine and cosine negative?", "options": ["Quadrant 1", "Quadrant 2", "Quadrant 3", "Quadrant 4"], "answer": 2 },
+    { "id": "point", "type": "open", "marks": 3, "prompt": "$P(5; -12)$ lies on the terminal arm of $\\theta$. Calculate $r$ and hence $\\sin\\theta$ and $\\cos\\theta$.", "memo": "✓ $r = 13$ (1)\n✓ $\\sin\\theta = -\\frac{12}{13}$ (1)\n✓ $\\cos\\theta = \\frac{5}{13}$ (1)" },
+    { "id": "no-calc", "type": "open", "marks": 3, "prompt": "Without a calculator, evaluate $\\sin^2 45^\\circ + \\tan 45^\\circ - \\cos^2 30^\\circ$.", "memo": "✓ $\\left(\\frac{\\sqrt{2}}{2}\\right)^2 = \\frac{1}{2}$ (1)\n✓ $1 - \\frac{3}{4}$ (1)\n✓ $\\frac{1}{2} + 1 - \\frac{3}{4} = \\frac{3}{4}$ (1)" },
+    { "id": "equation", "type": "numeric", "prompt": "Solve for $x$ ($0^\\circ \\leq x \\leq 90^\\circ$), correct to one decimal place: $3\\cos x = 2$", "answer": 48.2, "tolerance": 0.05, "unit": "°" },
+    { "id": "ladder", "type": "open", "marks": 3, "prompt": "A kite string 40 m long makes an angle of $52^\\circ$ with the ground. How high is the kite? Give your answer correct to one decimal place.", "memo": "✓ $\\sin 52^\\circ = \\frac{h}{40}$ (1)\n✓ $h = 40\\sin 52^\\circ$ (1)\n✓ $h \\approx 31{,}5$ m (1)" }
+  ]
+}

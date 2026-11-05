@@ -1,0 +1,450 @@
+{
+  "id": "reading-for-comprehension",
+  "title": "Reading for Comprehension",
+  "term": 1,
+  "summary": "Read closely using the right strategies, recognise the five cognitive levels of comprehension questions and answer Paper 1 Question 1 with precise, well-supported responses.",
+  "notes": [
+    { "type": "heading", "text": "Where comprehension fits in Paper 1" },
+    { "type": "paragraph", "text": "Paper 1 (Language in Context) is a two-hour paper worth **70 marks**. Question 1, the comprehension, is the biggest single question: **30 marks**, nearly half the paper. You are given a written passage (**Text A**), usually a feature article, opinion piece, extract from a speech or a piece of non-fiction, and often a visual text (**Text B**) such as a cartoon, photograph, infographic or poster that is linked to the topic of Text A." },
+    {
+      "type": "table",
+      "caption": "The structure of Paper 1 (Home Language)",
+      "headers": ["Section", "Question", "Marks", "Suggested time"],
+      "rows": [
+        ["A: Comprehension", "Question 1: Text A (passage) and Text B (visual)", "30", "about 50 minutes"],
+        ["B: Summary", "Question 2: summary in no more than 90 words", "10", "about 20 minutes"],
+        ["C: Language structures and conventions", "Questions 3 to 5: advertisement, cartoon, language and editing", "30", "about 50 minutes"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Marks in the comprehension are lost far more often through **careless reading of the question** than through not understanding the passage. Underline the instruction word, the paragraph reference and the mark allocation before you write anything." },
+
+    { "type": "heading", "text": "Reading strategies" },
+    { "type": "paragraph", "text": "Good readers do not read everything in the same way. They change their speed and depth of reading depending on what they need. In the exam you will use all three of the strategies below." },
+    { "type": "definition", "term": "Skimming", "text": "Reading quickly to get the **gist** (general idea) of a text: the topic, the writer's main argument and the overall tone. Look at the title, the first and last paragraphs and the first sentence of each paragraph." },
+    { "type": "definition", "term": "Scanning", "text": "Searching a text quickly for **specific information**, such as a name, a date, a number or a key word, without reading every sentence. Your eyes move down the page looking only for the target." },
+    { "type": "definition", "term": "Intensive (close) reading", "text": "Reading slowly and carefully, sentence by sentence, to understand exact meanings, implied ideas, word choice and the writer's techniques. This is the strategy you use once you have found the part of the text a question refers to." },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Skim** the title, Text A and Text B once to grasp the topic, the writer's purpose and the overall tone. Do not stop at difficult words yet.",
+        "**Read the questions** so that you know what to look for.",
+        "**Read Text A intensively** a second time, underlining key ideas and noting the main point of each paragraph in the margin.",
+        "For each question, **scan** for the paragraph referred to, then **read that section intensively** before answering.",
+        "Use **context clues** (the words around an unfamiliar word) to work out its meaning: look for synonyms, contrasts, examples and the tone of the sentence.",
+        "**Check** each answer against the mark allocation and the instruction word before moving on."
+      ]
+    },
+
+    { "type": "heading", "text": "The five cognitive levels of questions" },
+    { "type": "paragraph", "text": "CAPS requires comprehension papers to test different levels of thinking, based on **Barrett's taxonomy**. In Home Language papers, roughly 40% of the marks test levels 1 and 2, about 40% test level 3, and about 20% test levels 4 and 5. Recognising the level of a question tells you what kind of answer the examiner expects." },
+    {
+      "type": "table",
+      "caption": "Barrett's taxonomy as used in CAPS comprehension",
+      "headers": ["Level", "What it tests", "Typical question words", "What a good answer does"],
+      "rows": [
+        ["1. Literal", "Information stated directly in the text", "Name, state, list, identify, quote, who, what, when, where", "Finds the exact fact or words in the text"],
+        ["2. Reorganisation", "Organising, classifying or summarising stated information", "Summarise, group, compare, contrast, outline, sequence", "Brings together facts from different parts of the text in a new arrangement"],
+        ["3. Inference", "Meaning that is suggested but not stated", "Explain, what does ... suggest/imply, why do you think, account for, what is meant by", "Reads between the lines and explains the hidden meaning, using the text as support"],
+        ["4. Evaluation", "Judging the text: its ideas, accuracy, fairness, effectiveness", "Do you agree, is it valid, comment on, critically discuss, how effective, is it fair", "Takes a clear stance and justifies it with reasons and textual evidence"],
+        ["5. Appreciation", "Emotional and aesthetic response to the text and the writer's craft", "How does the writer make you feel, discuss the effect of the style, comment on the imagery", "Explains the effect of language choices on the reader and on the meaning"]
+      ]
+    },
+    { "type": "callout", "label": "Remember", "text": "Level 4 and 5 questions have **no single correct answer**. You can agree or disagree, but an unsupported opinion earns nothing. The marks are for your **justification**: a reason linked to specific evidence from the text." },
+
+    { "type": "heading", "text": "Instruction words: what the question wants" },
+    {
+      "type": "table",
+      "caption": "Common instruction words in comprehension questions",
+      "headers": ["Instruction", "What you must do"],
+      "rows": [
+        ["Quote", "Copy the exact words from the text, in quotation marks. Do not change, add or leave out words."],
+        ["Identify / Name / State", "Give a brief, direct answer. No explanation is needed unless the mark allocation suggests it."],
+        ["Explain", "Make the meaning or reason clear. Show **why** or **how**, usually in your own words."],
+        ["In your own words", "Paraphrase. Copying the text's key words earns no marks."],
+        ["Discuss", "Examine the idea from more than one angle and develop your points with evidence."],
+        ["Comment on", "Give an informed opinion or interpretation, supported by the text."],
+        ["Critically discuss / Critically comment", "Evaluate strengths and weaknesses; judge how valid, fair or effective something is."],
+        ["Do you agree? / Is it fair?", "Take a clear position (yes, no, or partly) and justify it with reasons and evidence."],
+        ["Account for", "Give the reasons or causes for something."],
+        ["Suggest", "Offer a reasonable interpretation that the text supports, even if it is not stated."]
+      ]
+    },
+
+    { "type": "heading", "text": "Let the marks guide your answer" },
+    { "type": "paragraph", "text": "The mark allocation is a clue to the length and number of points needed. As a rough guide: **1 mark** means one fact, word or quotation; **2 marks** means two distinct points, or one point plus a clear explanation; **3 marks** usually means a point, evidence from the text and an explanation of its effect or significance (or a stance plus two developed reasons). Write in full sentences for anything worth 2 marks or more, unless you are asked to quote or list." },
+    {
+      "type": "example",
+      "title": "Worked analysis: one point is not enough",
+      "problem": "Question (2 marks): Why did the writer's family move to Polokwane? Text: “After the factory closed and my father lost his job, my uncle offered him work in his hardware shop in Polokwane.”",
+      "steps": [
+        "Weak answer: “Because the factory closed.” This gives only one reason and earns 1 mark.",
+        "Count the ideas linked to the question: the father lost his job when the factory closed (reason 1) and an uncle offered him work in Polokwane (reason 2).",
+        "Strong answer: “The factory where the writer's father worked closed and he became unemployed ✓; his uncle then offered him a job at his hardware shop in Polokwane ✓.”"
+      ],
+      "answer": "Two separate points for two marks."
+    },
+
+    { "type": "heading", "text": "Quoting versus using your own words" },
+    { "type": "paragraph", "text": "Some questions want the text's exact words; others forbid them. Mixing these up is one of the most common ways to lose marks." },
+    {
+      "type": "list",
+      "items": [
+        "**Quote ONE word**: give exactly one word, in quotation marks. If you write a phrase, you lose the mark even if the correct word is inside it.",
+        "**Quote a phrase** or **quote consecutive words**: give a short group of words that appear next to each other in the text. Do not write the whole sentence.",
+        "**Use your own words**: rephrase the idea. You may keep small words and terms that have no synonym (such as names or “water”), but not the key descriptive words.",
+        "When you quote as **evidence** in a longer answer, keep the quotation short and then explain it. A quotation alone is not an explanation."
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Writing “In paragraph 3 it says that…” and then copying a whole sentence. This shows that you have found the right place, but not that you understand it. Examiners give marks for **interpretation**, not copying." },
+
+    { "type": "heading", "text": "Tone, mood, attitude, purpose and audience" },
+    { "type": "definition", "term": "Tone", "text": "The writer's or speaker's **attitude** towards the subject or the reader, shown through word choice, sentence structure and punctuation (e.g. sarcastic, sympathetic, angry, admiring). Think of it as the “tone of voice” in which the text would be read aloud." },
+    { "type": "definition", "term": "Mood", "text": "The **atmosphere** or feeling created in the text and experienced by the reader (e.g. tense, gloomy, festive, peaceful). Tone belongs to the writer; mood belongs to the reader's experience." },
+    { "type": "definition", "term": "Purpose", "text": "Why the text was written: to inform, persuade, entertain, instruct, warn, criticise, inspire or reflect. Many texts have more than one purpose, but one is usually dominant." },
+    { "type": "definition", "term": "Intended audience (target audience)", "text": "The readers the writer has in mind. Clues include the publication, vocabulary level, references (to places, age groups or interests) and whether the writer addresses the reader as “you” or “we”." },
+    {
+      "type": "table",
+      "caption": "Useful tone words (learn exactly what each one means)",
+      "headers": ["Tone", "Meaning"],
+      "rows": [
+        ["Sarcastic", "Mocking; saying the opposite of what is meant in order to hurt or ridicule"],
+        ["Ironic", "Highlighting a gap between what is said or expected and what is really the case"],
+        ["Critical / reproachful", "Finding fault; expressing disapproval or blame"],
+        ["Sympathetic / compassionate", "Showing understanding of someone's suffering"],
+        ["Nostalgic", "Longing affectionately for the past"],
+        ["Admiring / reverent", "Showing respect and high regard"],
+        ["Urgent", "Stressing that something must be done immediately"],
+        ["Indignant", "Angry at something that seems unfair"],
+        ["Objective / neutral", "Factual, without personal feelings"],
+        ["Optimistic / hopeful", "Expecting a good outcome"],
+        ["Humorous / light-hearted", "Amusing, not serious"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "A tone answer usually has three parts: **name** the tone with a precise adjective, **quote** the words that show it, and **explain** how those words create it. “The tone is happy” is too vague for Grade 12; try “jubilant”, “relieved” or “gently amused”." },
+
+    { "type": "heading", "text": "The effect of diction and rhetorical devices" },
+    { "type": "paragraph", "text": "**Diction** means the writer's choice of words. When asked about diction, look at **connotations** (the feelings and associations a word carries beyond its dictionary meaning). “Thrifty” and “stingy” both describe someone who does not spend much money, but the first is positive and the second negative. Ask: why this word and not a neutral one?" },
+    {
+      "type": "table",
+      "caption": "Rhetorical and stylistic devices often tested in comprehension",
+      "headers": ["Device", "Example", "Typical effect"],
+      "rows": [
+        ["Rhetorical question", "“Can we really afford to waste another drop?”", "Involves the reader and leads them to the writer's conclusion"],
+        ["Repetition / anaphora", "“We waited. We hoped. We waited again.”", "Emphasises an idea and creates rhythm"],
+        ["Tricolon (rule of three)", "“Fix it, report it, respect it.”", "Memorable, balanced and persuasive"],
+        ["Inclusive language", "“we”, “us”, “our country”", "Creates a sense of shared responsibility with the reader"],
+        ["Direct address", "“You know this feeling.”", "Makes the text personal and engaging"],
+        ["Hyperbole", "“A million taxis hooted at once.”", "Exaggerates for emphasis or humour"],
+        ["Anecdote", "A short personal story", "Makes an argument concrete and emotionally appealing"],
+        ["Statistics / expert opinion", "“Studies show that…”", "Lends authority and credibility"],
+        ["Contrast / juxtaposition", "“Gleaming malls beside shacks without taps”", "Highlights inequality or difference"],
+        ["Emotive language", "“heartbreaking”, “shameful”", "Stirs the reader's feelings to persuade"]
+      ]
+    },
+
+    { "type": "heading", "text": "Structure and punctuation" },
+    { "type": "paragraph", "text": "Questions often ask why a writer has used a particular punctuation mark, a very short sentence or a one-line paragraph. Always explain the **function** of the device in that specific context, not just its general rule." },
+    {
+      "type": "table",
+      "caption": "Punctuation and structure: functions to know",
+      "headers": ["Feature", "Possible functions in context"],
+      "rows": [
+        ["Dash ( — )", "Introduces an explanation, elaboration or dramatic afterthought; a pair of dashes encloses extra information (parenthesis); can mark a sudden shift or interruption"],
+        ["Colon ( : )", "Introduces a list, an explanation, a result or a quotation"],
+        ["Semicolon ( ; )", "Links two closely related independent clauses; balances contrasting ideas"],
+        ["Ellipsis ( … )", "Shows omitted words; suggests a pause, hesitation, suspense or an unfinished thought"],
+        ["Inverted commas", "Show direct speech or a quotation; as “scare quotes” they show that the writer doubts or mocks a word, or that it is slang or a coined term"],
+        ["Brackets", "Add extra information, an aside or a personal comment"],
+        ["Exclamation mark", "Shows strong emotion, surprise, sarcasm or emphasis"],
+        ["Italics or capital letters", "Emphasise a word, or indicate a title or a foreign word"],
+        ["Short sentence or one-line paragraph", "Creates emphasis, a dramatic pause or a turning point in the argument"],
+        ["Opening anecdote and closing return to it (circular structure)", "Hooks the reader, then gives a sense of completeness"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked analysis: scare quotes",
+      "problem": "Explain the use of the inverted commas in: The municipality announced “temporary interruptions” to the water supply, which lasted eleven days. (2)",
+      "steps": [
+        "Identify the type: these are not direct speech; they quote the official phrase the municipality used.",
+        "Link to context: eleven days is not what most people would call “temporary”, so the writer is mocking the phrase.",
+        "Model answer: The inverted commas show that the writer is quoting the municipality's official wording ✓ and suggest sarcastically that the phrase is a misleading understatement, since the interruption lasted eleven days ✓."
+      ]
+    },
+
+    { "type": "heading", "text": "Building a strong answer: point, evidence, explanation" },
+    { "type": "paragraph", "text": "For inferential, evaluative and appreciation questions, use a three-step pattern: make your **point** (answer the question directly), give **evidence** (a short quotation or reference) and **explain** how the evidence supports your point or what effect it has on the reader. This pattern fits most 3-mark questions." },
+    {
+      "type": "example",
+      "title": "Worked analysis: the effect of diction",
+      "problem": "Comment on the writer's choice of the word “invaded” in: Tourists invaded the small fishing village every December. (3)",
+      "steps": [
+        "Point: The word suggests that the writer resents the tourists and sees them as a hostile force.",
+        "Evidence: “invaded” is a military word, normally used for armies taking over territory by force.",
+        "Explanation: Using it for holiday-makers implies that they arrive in overwhelming numbers, take over the village and disrupt the lives of the local people; it creates a critical tone towards tourism."
+      ],
+      "answer": "The diction “invaded” ✓ carries military connotations of a forceful takeover ✓, suggesting that the tourists overwhelm and disrupt the village, which conveys the writer's resentful/critical attitude ✓."
+    },
+
+    { "type": "heading", "text": "Responding to a visual text (Text B)" },
+    { "type": "paragraph", "text": "Text B is usually worth 3 to 6 marks. Read it as carefully as a passage. Questions ask you to interpret the visual and verbal elements and, very often, to **link Text B to Text A**." },
+    {
+      "type": "list",
+      "items": [
+        "**Visual elements**: the main image and what it symbolises, facial expressions and body language, size and position of objects (the largest or central item is usually the most important), layout, font size and style, contrast, and colour if it is described.",
+        "**Verbal elements**: the headline or caption, slogans, labels, speech bubbles, statistics and small print. Look for puns, imperatives, rhetorical questions and tricolons.",
+        "**Linking questions**: “How does Text B support, reinforce or contradict the views in Text A?” Name a specific idea from Text A, then show which visual and verbal element of Text B echoes or challenges it.",
+        "**Evaluation**: “Is the visual effective?” Give a stance and justify it with reference to both the image and the words."
+      ]
+    },
+
+    { "type": "heading", "text": "Model passage with worked answers" },
+    { "type": "paragraph", "text": "Read the original passage below and study how each type of question is answered. The ticks (✓) show where marks are earned." },
+    {
+      "type": "passage",
+      "title": "Model passage: Noise, hope and the 6:15 to Soweto",
+      "text": "[1] At a quarter past six every morning, the taxi rank in the centre of Johannesburg wakes up like a giant clearing its throat. Hooters blare. Marshals bellow destinations — “Soweto! Bara! Noord!” — while vendors balance trays of boiled eggs and vetkoek between the idling minibuses. To a stranger, it is chaos. To the thousands of people who pass through it each day, it is simply the way to work.\n\n[2] Critics are quick to complain about minibus taxis: the reckless overtaking, the deafening music, the fare increases announced without warning. Some of these complaints are fair. Yet the critics seldom mention that most South Africans who use public transport travel by taxi, or that the industry was built, almost from nothing, largely by black entrepreneurs in the 1970s and 1980s, when public transport for black South Africans was badly neglected.\n\n[3] Watch for a while and a hidden order emerges. Passengers fold their notes and pass them forward, hand to hand, without a word; the change travels back the same way, rarely a cent missing. Strangers become accountants. Is there any other place where so many people trust one another with their money before breakfast?\n\n[4] The taxi rank is not perfect. But it is ours — loud, stubborn, inventive — and it keeps a nation moving."
+    },
+    {
+      "type": "example",
+      "title": "Level 1 (literal)",
+      "problem": "State TWO complaints that critics make about minibus taxis, according to paragraph 2. (2)",
+      "steps": [
+        "Scan paragraph 2 for the colon after “complain about minibus taxis”: the complaints are listed after it.",
+        "Choose any two and write them briefly."
+      ],
+      "answer": "Reckless overtaking ✓; deafening/loud music ✓ (or fare increases announced without warning). Any TWO."
+    },
+    {
+      "type": "example",
+      "title": "Level 2 (reorganisation)",
+      "problem": "Contrast how a stranger and a regular commuter view the taxi rank (paragraph 1). (2)",
+      "steps": [
+        "Find both views: “To a stranger, it is chaos” and “To the thousands of people… it is simply the way to work.”",
+        "Put them side by side in your own words."
+      ],
+      "answer": "A stranger sees the rank as disorderly and confusing ✓, whereas commuters see it as an ordinary, normal part of their daily routine ✓."
+    },
+    {
+      "type": "example",
+      "title": "Level 3 (inference)",
+      "problem": "Explain what the writer means by “Strangers become accountants” (paragraph 3). (2)",
+      "steps": [
+        "The literal meaning is impossible: passengers do not literally become professional accountants. It is a metaphor.",
+        "Link it to the context: passengers pass fares forward and the change back, handling other people's money and calculating it correctly.",
+        "Say what it reveals: it shows co-operation and trust."
+      ],
+      "answer": "Passengers who do not know one another take responsibility for collecting, counting and passing on each other's fares and change ✓, which shows the honesty, co-operation and trust that exist among commuters ✓."
+    },
+    {
+      "type": "example",
+      "title": "Level 5 (appreciation): rhetorical question",
+      "problem": "Discuss the effect of the rhetorical question at the end of paragraph 3. (2)",
+      "steps": [
+        "Identify: “Is there any other place where so many people trust one another with their money before breakfast?”",
+        "The question does not need an answer; the implied answer is “No”.",
+        "Effect: it makes the reader reflect and agree that the trust shown at the rank is remarkable, challenging the negative image from paragraph 2."
+      ],
+      "answer": "The question invites the reader to reflect and leads them to the implied answer that nowhere else shows such trust ✓; this emphasises how remarkable the commuters' honesty is and counters the critics' negative view of the taxi industry ✓."
+    },
+    {
+      "type": "example",
+      "title": "Tone and punctuation",
+      "problem": "Refer to paragraph 4. (a) Identify the writer's tone. (b) Explain the use of the dashes. (3)",
+      "steps": [
+        "(a) Look at the diction: “it is ours” is possessive and warm; “keeps a nation moving” is proud. The writer admits faults (“not perfect”) but is affectionate.",
+        "(b) The pair of dashes encloses three adjectives that describe the rank. They expand on “ours” and set the description apart for emphasis."
+      ],
+      "answer": "(a) Affectionate/proud ✓. (b) The dashes enclose a list of three adjectives ✓ that elaborate on what “ours” means, emphasising the rank's lively, determined and creative character ✓."
+    },
+    {
+      "type": "example",
+      "title": "Level 4 (evaluation)",
+      "problem": "Do you think the simile in the opening sentence is an effective way to begin the passage? Justify your answer. (3)",
+      "steps": [
+        "Take a stance: Yes (you could also argue No, if you justify it).",
+        "Explain the comparison: the rank is compared to “a giant clearing its throat”; the noise of hooters and voices resembles a huge throat-clearing sound.",
+        "Evaluate its effect on the reader and on the passage as a whole."
+      ],
+      "answer": "Yes ✓. The comparison to a giant clearing its throat vividly captures the enormous, rough noise of the rank as it starts the day ✓, and it personifies the rank as a single living being, which hooks the reader and prepares for the writer's view that the rank has its own character and order ✓."
+    },
+
+    { "type": "heading", "text": "Common mistakes to avoid" },
+    {
+      "type": "list",
+      "items": [
+        "Answering from general knowledge instead of from the text.",
+        "Giving one point for a two-mark question.",
+        "Quoting when asked for your own words, or paraphrasing when asked to quote.",
+        "Writing “Yes” or “No” for an evaluation question without a reason.",
+        "Naming a device (e.g. “It is a metaphor”) without explaining its effect when the question asks for the effect.",
+        "Using vague tone words such as “nice”, “bad” or “emotional”.",
+        "Spending too long on one question; keep to about 50 minutes for the whole of Question 1."
+      ]
+    },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "Question 1 of Paper 1 is worth 30 marks and includes a written Text A and usually a visual Text B.",
+        "Skim for the gist, scan for specific details and read intensively to answer.",
+        "Barrett's five levels are literal, reorganisation, inference, evaluation and appreciation; levels 4 and 5 need a justified opinion.",
+        "Instruction words and mark allocations tell you what and how much to write.",
+        "Quote exactly when asked to quote; paraphrase when asked for your own words.",
+        "Tone is the writer's attitude; mood is the atmosphere; always support them with evidence.",
+        "Explain the effect of diction, rhetorical devices, punctuation and structure in context.",
+        "For Text B, interpret both visual and verbal elements and link them clearly to Text A."
+      ]
+    },
+
+    { "type": "heading", "text": "Practice texts for the Questions tab" },
+    { "type": "paragraph", "text": "The questions for this topic refer to Text A and Text B below. Each question also quotes the relevant paragraph, but read both texts in full first, as you would in the exam." },
+    {
+      "type": "passage",
+      "title": "TEXT A: Every drop a story",
+      "text": "[1] My grandmother, uMaZulu, never trusted a tap. In her yard in Makhanda stood three green rainwater tanks, a row of plastic drums and, beside the kitchen door, an enamel basin that caught the water from every rinse of every pot. As a child visiting from Johannesburg, I thought her habits were quaint, even a little embarrassing. Why, I wondered, would anyone carry a basin of greasy water to the vegetable garden when there was a perfectly good tap a few metres away? Water, I believed, simply arrived. You turned a handle and the world obliged.\n\n[2] That belief did not survive the summer I turned fifteen. The municipality announced “temporary interruptions”, a phrase that turned out to mean eleven days without a drop from the taps. While neighbours queued at a borehole with buckets and wheelbarrows, my grandmother calmly ladled water from her tanks, boiled it and shared it with anyone who knocked. Old Mr Botha from next door, who had once laughed at her drums, arrived at her gate on the third morning, hat in hand. “Water is not a service,” she told me, handing a full bucket to a woman she had never met. “It is a relationship.”\n\n[3] I have thought about those words often. South Africa is a water-scarce country: our average annual rainfall is roughly half the global average, and much of what falls evaporates before it ever reaches a river or a dam. Yet many of us live as though we were in a rainforest. We hose down driveways, leave taps running while we brush our teeth and fill swimming pools in the middle of a drought. We are, in short, spending an inheritance we did not earn.\n\n[4] Cape Town learnt this lesson the hard way. In early 2018 the city came frighteningly close to “Day Zero”, the day on which the taps in most homes would have been switched off and residents would have queued for a daily ration at collection points. What saved the city was not a miracle but millions of small decisions: shorter showers, buckets catching the water in the shower, toilets flushed only when necessary. Within months, the city had roughly halved its daily water use. The crisis proved something remarkable — ordinary people, acting together, can change the course of a disaster.\n\n[5] Unfortunately, memory is short. Once the dams filled again, many old habits came creeping back, like weeds after rain. Engineers warn that leaking pipes, ageing infrastructure and a growing population mean that the next crisis is not a question of if, but when. A large share of the water that municipalities clean and pump is lost to leaks before it ever reaches a home. Every burst pipe left unrepaired for a week is a small Day Zero of its own. We pour clean water into broken pipes and then wonder why our taps run dry.\n\n[6] Of course, it would be unfair to place the entire burden on individuals. Government must repair crumbling pipes, act against illegal connections and invest in new sources of water, such as desalination plants and the recycling of wastewater. Agriculture, which uses the largest share of the country's water, and industry must account for every litre. But blaming others is easy; it asks nothing of us. My grandmother could not fix the municipal pipes, yet her tanks carried an entire street through eleven dry days.\n\n[7] What would it look like if each of us treated water as a relationship rather than a service? It might mean fixing the dripping tap we have ignored for months; a tap that drips steadily can waste thousands of litres in a year. It might mean installing a rainwater tank, planting an indigenous garden that needs little watering, or using the water from the washing machine on the lawn. It might mean asking our schools to collect the rain that runs off their roofs. It might mean teaching our younger brothers and sisters that a running tap is not a sign of wealth but of carelessness. None of these acts is heroic. All of them matter.\n\n[8] My grandmother passed away last winter. At her funeral, the minister spoke about her faith, her laughter and her famous umphokoqo. But what I remember most is the line of neighbours who arrived early that morning, each carrying a bucket of water from their own homes, to fill the drums she had always kept for others. Nobody had organised it. Nobody needed to. They simply understood, as she had always understood, that water — like kindness — is only ever borrowed, and must be passed on."
+    },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"412\" height=\"292\" fill=\"#fff\" stroke=\"#000\" stroke-width=\"2\"/><text x=\"210\" y=\"44\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"bold\">ONE DRIP.</text><rect x=\"40\" y=\"80\" width=\"130\" height=\"20\" fill=\"#fff\" stroke=\"#000\" stroke-width=\"2\"/><rect x=\"150\" y=\"100\" width=\"20\" height=\"28\" fill=\"#fff\" stroke=\"#000\" stroke-width=\"2\"/><rect x=\"85\" y=\"64\" width=\"36\" height=\"16\" fill=\"#fff\" stroke=\"#000\" stroke-width=\"2\"/><line x1=\"103\" y1=\"64\" x2=\"103\" y2=\"54\" stroke=\"#000\" stroke-width=\"2\"/><line x1=\"88\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#000\" stroke-width=\"3\"/><path d=\"M160 140 C160 140 140 170 140 182 A20 20 0 0 0 180 182 C180 170 160 140 160 140 Z\" fill=\"#fff\" stroke=\"#000\" stroke-width=\"2\"/><text x=\"300\" y=\"100\" text-anchor=\"middle\" font-size=\"15\">A tap that drips</text><text x=\"300\" y=\"122\" text-anchor=\"middle\" font-size=\"15\">all day, every day,</text><text x=\"300\" y=\"144\" text-anchor=\"middle\" font-size=\"15\">can waste</text><text x=\"300\" y=\"172\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\">THOUSANDS</text><text x=\"300\" y=\"194\" text-anchor=\"middle\" font-size=\"15\">of litres a year.</text><line x1=\"20\" y1=\"222\" x2=\"400\" y2=\"222\" stroke=\"#000\" stroke-width=\"1\"/><text x=\"210\" y=\"254\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\">Fix it. Report it. Respect it.</text><text x=\"210\" y=\"282\" text-anchor=\"middle\" font-size=\"11\">Report leaking pipes to your municipality. A Water Wise community campaign.</text></svg>",
+      "caption": "TEXT B: A water-saving poster. A single large drop falls from a tap under the headline “ONE DRIP.” The text beside it reads “A tap that drips all day, every day, can waste THOUSANDS of litres a year.” The slogan at the bottom reads “Fix it. Report it. Respect it.”"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "You need to find the year in which Cape Town nearly reached “Day Zero” in a long article, and you have very little time. Which reading strategy is most suitable?",
+      "options": ["Intensive reading", "Skimming", "Scanning", "Reading the article aloud"],
+      "answer": 2,
+      "explanation": "Scanning means moving your eyes quickly over the text looking only for a specific detail, such as a date or a number."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "Which cognitive level does this question test? “Do you agree that the writer's grandmother was wiser than her neighbours? Justify your answer.”",
+      "options": ["Literal", "Reorganisation", "Inference", "Evaluation"],
+      "answer": 3,
+      "explanation": "“Do you agree…? Justify” asks you to make and support a judgement, which is evaluation (level 4)."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "If a question says “in your own words”, a well-chosen quotation from the passage will still earn full marks.",
+      "answer": false,
+      "explanation": "An own-words question tests whether you understand the idea well enough to rephrase it. Copying the key words from the text earns no marks."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "Tone refers to the writer's attitude, whereas mood refers to the atmosphere that the reader experiences.",
+      "answer": true,
+      "explanation": "Tone belongs to the writer or speaker (their attitude); mood is the feeling or atmosphere created for the reader."
+    },
+    {
+      "id": "q5",
+      "type": "match",
+      "prompt": "Match each question about Text A with the cognitive level it tests.",
+      "marks": 5,
+      "pairs": [
+        { "left": "Name the town where the writer's grandmother lived.", "right": "Literal" },
+        { "left": "List, in order, the three changes the writer suggests in paragraph 7.", "right": "Reorganisation" },
+        { "left": "What does the phrase “spending an inheritance we did not earn” suggest?", "right": "Inference" },
+        { "left": "Is the writer's argument in paragraph 6 convincing? Justify your view.", "right": "Evaluation" },
+        { "left": "How does the description of the funeral make you feel? Refer to the writer's style.", "right": "Appreciation" }
+      ],
+      "explanation": "Literal questions find stated facts; reorganisation arranges stated facts; inference finds implied meaning; evaluation judges; appreciation responds to the writer's craft and its emotional effect."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "Refer to paragraph 1 of Text A, which begins: “My grandmother, uMaZulu, never trusted a tap.” Why is this an effective opening sentence?",
+      "options": [
+        "It states the writer's main argument directly, using a statistic.",
+        "It is a surprising, personal statement that arouses curiosity and introduces the subject of water.",
+        "It shows that the writer was ashamed of the grandmother throughout his or her life.",
+        "It explains how the municipal water supply in Makhanda works."
+      ],
+      "answer": 1,
+      "explanation": "The idea of distrusting a tap is unusual, so it hooks the reader, and it introduces both the grandmother (whose story frames the article) and the topic of water. The embarrassment was only in childhood, and no statistic is given."
+    },
+    {
+      "id": "q7",
+      "type": "short",
+      "prompt": "Refer to paragraph 2: “While neighbours queued at a borehole with buckets and wheelbarrows, my grandmother calmly ladled water from her tanks, boiled it and shared it with anyone who knocked.” Quote ONE word which shows that the grandmother stayed composed during the water cuts.",
+      "answers": ["calmly"],
+      "explanation": "“Calmly” shows that she was unworried and in control, because she had prepared for such a crisis."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "Refer to paragraph 3: “We hose down driveways, leave taps running while we brush our teeth and fill swimming pools in the middle of a drought. We are, in short, spending an inheritance we did not earn.” Which word best describes the writer's tone here?",
+      "options": ["Reproachful", "Nostalgic", "Admiring", "Indifferent"],
+      "answer": 0,
+      "explanation": "The writer lists wasteful habits and compares them to squandering an unearned inheritance, which expresses disapproval and blame: a reproachful tone. Note the inclusive “we”: the writer includes himself or herself in the criticism."
+    },
+    {
+      "id": "q9",
+      "type": "short",
+      "prompt": "Refer to paragraph 5: “Once the dams filled again, many old habits came creeping back, like weeds after rain.” Name the figure of speech in “like weeds after rain”.",
+      "answers": ["simile"],
+      "explanation": "It is a simile because it compares the habits to weeds using “like”. Weeds return quickly and unwanted, just as the wasteful habits did."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "Refer to paragraph 4: “The crisis proved something remarkable — ordinary people, acting together, can change the course of a disaster.” What is the function of the dash in this sentence?",
+      "options": [
+        "It shows that words have been left out.",
+        "It marks an interruption in someone's speech.",
+        "It introduces an elaboration that explains what the “something remarkable” is.",
+        "It separates the items in a list."
+      ],
+      "answer": 2,
+      "explanation": "The words after the dash explain and expand on “something remarkable”. The pause it creates also gives the idea dramatic emphasis."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "What is the main purpose of Text A?",
+      "options": [
+        "To entertain readers with a humorous family story",
+        "To inform readers about how desalination plants work",
+        "To criticise the City of Cape Town for poor planning",
+        "To persuade ordinary South Africans to value and conserve water"
+      ],
+      "answer": 3,
+      "explanation": "The personal story, the facts and the suggestions in paragraph 7 all work to persuade readers to change how they treat water. Desalination is mentioned only briefly, and Cape Town's residents are praised, not criticised."
+    },
+    {
+      "id": "q12",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Refer to paragraph 4: “What saved the city was not a miracle but millions of small decisions.” Explain, in your own words, what the writer means.",
+      "memo": "The city did not avoid disaster because of luck or a sudden outside solution (such as unexpected rain) ✓.\nIt was saved because a very large number of residents each made small, everyday changes to save water, and together these had a huge effect ✓.\n\nAward 0 for an answer that only repeats “millions of small decisions” without explaining it. (2)"
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Refer to paragraph 5: “We pour clean water into broken pipes and then wonder why our taps run dry.” Comment on the effectiveness of this sentence in conveying the writer's point of view.",
+      "memo": "Any THREE of the following, or other valid, well-supported points:\n✓ The sentence highlights the irony/foolishness of wasting a precious, carefully cleaned resource (“clean water”) by sending it through “broken pipes”.\n✓ The word “wonder” suggests that people are naive or unwilling to see that they are causing their own problem.\n✓ The inclusive “we” makes all South Africans (including the writer) share responsibility, so the criticism feels fair rather than preachy.\n✓ Coming at the end of the paragraph, the short, pointed sentence sums up the paragraph's argument memorably, conveying a frustrated/exasperated tone.\n\nA candidate who only says “it is effective” without explanation gets 0. (3)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Refer to paragraph 6. Do you agree with the writer that individuals, and not only government and big water users, must take responsibility for saving water? Justify your answer with reference to the text.",
+      "memo": "Open-ended. Award marks for a clear stance supported by reasons linked to the text.\n\nAgree: ✓ The writer is fair, because he or she acknowledges that government, agriculture and industry carry a large share of responsibility. ✓ However, individuals can control their own behaviour, while blaming others “asks nothing of us”. ✓ The grandmother's tanks “carried an entire street” and Cape Town residents halved water use, which proves that individual action makes a real difference.\n\nDisagree / partly agree: ✓ Agriculture uses the largest share of water, so the impact of individuals is small in comparison. ✓ Leaks waste a large share of municipal water, which individuals cannot fix. ✓ Placing the burden on households may let the authorities avoid accountability.\n\nStance alone = 0. A stance with one developed, text-based reason = 2. A stance with two developed reasons, or one fully developed with clear reference to the text = 3. (3)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Refer to Text B (the poster at the end of the notes) and paragraph 7 of Text A. Discuss how the visual and verbal elements of Text B reinforce the message of paragraph 7.",
+      "memo": "✓ Visual: the single, large drop falling from the tap is the focal point; its exaggerated size suggests that even one drop matters, echoing the writer's call to fix “the dripping tap we have ignored”.\n✓ Verbal: the statement that a dripping tap can waste “THOUSANDS of litres a year” repeats the fact in paragraph 7, and the capital letters emphasise the scale of the waste caused by something small.\n✓ The slogan “Fix it. Report it. Respect it.” is a tricolon of short imperatives that turns the writer's suggestions into a direct call to action; “Respect it” reflects the idea of treating water as a relationship rather than a service.\n\nAward 1 mark for each well-explained point; a candidate must refer to both visual and verbal elements for full marks. (3)"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "debtors-journal",
+  "title": "Credit Transactions: The Debtors Journal",
+  "term": 2,
+  "summary": "Selling on credit, debtors and the risk of bad debts, the invoice as source document, recording credit sales in the Debtors Journal, receiving payment from debtors, and posting to the ledger.",
+  "notes": [
+    { "type": "heading", "text": "Selling on credit" },
+    { "type": "paragraph", "text": "Many businesses allow trusted customers to buy goods now and pay later. This is a **credit sale**. A customer who owes the business money is a **debtor**. Debtors are an **asset**, because the business expects to receive the money." },
+    { "type": "table", "headers": ["Advantages of selling on credit", "Disadvantages"], "rows": [
+      ["Attracts more customers and increases sales", "Some debtors may never pay (**bad debts**)"],
+      ["Builds customer loyalty", "The business waits for its money, which can cause cash-flow problems"],
+      ["Competes with other shops that offer credit", "Extra administration: statements, reminders, collecting payments"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Before allowing credit, a business should check the customer's **creditworthiness** (ability and willingness to pay), set a **credit limit** and agree on **payment terms**, e.g. 30 days." },
+    { "type": "heading", "text": "The source document: the invoice" },
+    { "type": "paragraph", "text": "When goods are sold on credit, the business issues an **invoice** (the original goes to the customer and the business keeps a **duplicate**). The invoice shows the invoice number, date, customer's name, a description of the goods, quantity, price and total amount owed." },
+    { "type": "heading", "text": "The Debtors Journal (DJ)" },
+    { "type": "table", "caption": "Debtors Journal of Kasi Fashions, March 2025 (mark-up 50% on cost)", "headers": ["Doc", "Day", "Debtor", "Fol", "Sales", "Cost of sales"], "rows": [
+      ["Inv 101", "4", "L. Mokoena", "D1", "1 500", "1 000"],
+      ["Inv 102", "11", "P. Sithole", "D2", "2 400", "1 600"],
+      ["Inv 103", "22", "L. Mokoena", "D1", "900", "600"],
+      ["", "31", "", "", "4 800", "3 200"]
+    ] },
+    { "type": "paragraph", "text": "No money is received when goods are sold on credit, so there is **no Bank column**." },
+    { "type": "heading", "text": "Posting the Debtors Journal" },
+    { "type": "table", "headers": ["Column total", "Account debited", "Account credited"], "rows": [
+      ["Sales R4 800", "Debtors control", "Sales"],
+      ["Cost of sales R3 200", "Cost of sales", "Trading stock"]
+    ] },
+    { "type": "paragraph", "text": "Each invoice is also posted to the individual debtor's account in the **Debtors Ledger** (a subsidiary ledger), so the business knows how much each person owes. The total of all individual debtors' balances must equal the balance of the **Debtors control** account in the General Ledger." },
+    { "type": "heading", "text": "When debtors pay" },
+    { "type": "paragraph", "text": "When a debtor pays, a **receipt** is issued and the payment is recorded in the **CRJ**: in the Bank column and in the **Debtors control** column. It is NOT recorded as sales again." },
+    { "type": "example", "title": "A debtor's balance", "problem": "L. Mokoena owed R0 on 1 March. She bought goods on credit for R1 500 (4 March) and R900 (22 March), and paid R1 000 on 28 March. What does she owe on 31 March?", "steps": ["Total bought on credit: 1 500 + 900 = R2 400", "Less payment: 2 400 − 1 000 = R1 400"], "answer": "R1 400" }
+  ],
+  "questions": [
+    { "id": "debtor", "type": "short", "prompt": "What is a customer who owes the business money called?", "answers": ["debtor", "a debtor"] },
+    { "id": "debtor-type", "type": "mcq", "prompt": "Debtors are classified as…", "options": ["liabilities", "assets", "expenses", "owner's equity"], "answer": 1 },
+    { "id": "invoice", "type": "mcq", "prompt": "Which source document is used for a credit sale?", "options": ["Receipt", "Duplicate invoice", "Cash register roll", "EFT notice"], "answer": 1 },
+    { "id": "no-bank", "type": "truefalse", "prompt": "The Debtors Journal has a Bank column.", "answer": false },
+    { "id": "cos", "type": "numeric", "prompt": "Goods were sold on credit for R3 000 with a mark-up of 50% on cost. What amount is recorded in the Cost of sales column?", "answer": 2000, "tolerance": 0, "unit": "rand" },
+    { "id": "balance", "type": "numeric", "prompt": "A debtor bought goods for R2 500 and R1 200 on credit and paid R1 800. How much does the debtor still owe?", "answer": 1900, "tolerance": 0, "unit": "rand" },
+    { "id": "posting", "type": "match", "marks": 4, "prompt": "Complete the double entry for the DJ totals.", "pairs": [
+      { "left": "Sales total: debit", "right": "Debtors control" },
+      { "left": "Sales total: credit", "right": "Sales" },
+      { "left": "Cost of sales total: debit", "right": "Cost of sales" },
+      { "left": "Cost of sales total: credit", "right": "Trading stock" }
+    ] },
+    { "id": "pay-crj", "type": "open", "marks": 2, "prompt": "In which journal and columns is a payment from a debtor recorded?", "memo": "✓ Cash Receipts Journal (1)\n✓ Bank column and Debtors control column (1)" },
+    { "id": "adv-disadv", "type": "open", "marks": 4, "prompt": "Give TWO advantages and TWO disadvantages of selling on credit.", "memo": "Advantages (1 each): more customers/sales; loyalty; competitiveness\nDisadvantages (1 each): bad debts; cash-flow problems; extra administration" },
+    { "id": "credit-check", "type": "open", "marks": 2, "prompt": "Give TWO things a business should do before allowing a customer to buy on credit.", "memo": "Any two (1 each): check creditworthiness/credit history; check income/employment; set a credit limit; agree on payment terms; get references" }
+  ]
+}

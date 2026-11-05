@@ -1,0 +1,101 @@
+{
+  "id": "geometry-of-2d-shapes",
+  "title": "Geometry of 2D Shapes",
+  "term": 2,
+  "summary": "Classify triangles and quadrilaterals by their properties, use the angle sums of triangles and quadrilaterals and the exterior angle of a triangle, and recognise congruent and similar figures.",
+  "notes": [
+    { "type": "heading", "text": "Classifying triangles" },
+    { "type": "paragraph", "text": "Triangles can be classified by their **sides** and by their **angles**. Equal sides are shown on diagrams by the same number of small marks (dashes) on each side." },
+    { "type": "table", "caption": "Types of triangles", "headers": ["Classified by", "Type", "Property"], "rows": [
+      ["Sides", "Equilateral", "All three sides equal; all three angles $60^\\circ$"],
+      ["Sides", "Isosceles", "Two sides equal; the angles opposite them (base angles) are equal"],
+      ["Sides", "Scalene", "No sides equal; no angles equal"],
+      ["Angles", "Acute-angled", "All three angles less than $90^\\circ$"],
+      ["Angles", "Right-angled", "One angle equal to $90^\\circ$; the side opposite it is the hypotenuse"],
+      ["Angles", "Obtuse-angled", "One angle greater than $90^\\circ$"]
+    ] },
+
+    { "type": "heading", "text": "The angles of a triangle" },
+    { "type": "formula", "latex": "\\hat{A} + \\hat{B} + \\hat{C} = 180^\\circ", "caption": "The interior angles of a triangle add up to 180° (reason: ∠ sum of Δ)" },
+    { "type": "paragraph", "text": "You can check this by cutting out a paper triangle, tearing off the three corners and placing them next to each other: they always form a straight line ($180^\\circ$)." },
+    { "type": "definition", "term": "Exterior angle", "text": "If one side of a triangle is extended, the angle formed outside the triangle is an **exterior angle**. It equals the **sum of the two interior opposite angles** (reason: ext ∠ of Δ)." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><polygon points=\"30,160 210,160 110,30\"/><line x1=\"210\" y1=\"160\" x2=\"320\" y2=\"160\"/><path d=\"M240 160 A30 30 0 0 0 192 136\"/></g><g fill=\"#000\"><text x=\"14\" y=\"176\">A</text><text x=\"205\" y=\"180\">B</text><text x=\"104\" y=\"22\">C</text><text x=\"312\" y=\"180\">D</text><text x=\"50\" y=\"152\">50°</text><text x=\"100\" y=\"76\">70°</text><text x=\"238\" y=\"140\">x</text></g></svg>", "caption": "AB is extended to D. The exterior angle CBD = x equals the sum of the interior opposite angles at A and C: x = 50° + 70° = 120°." },
+    { "type": "example", "title": "Worked example 1: angles in triangles", "problem": "(a) Two angles of a triangle are $47^\\circ$ and $68^\\circ$. Find the third angle.\n(b) In the diagram above, calculate $x$ in two different ways.", "steps": [
+      "(a) $180^\\circ - 47^\\circ - 68^\\circ = 65^\\circ$ (∠ sum of Δ).",
+      "(b) Method 1: $x = 50^\\circ + 70^\\circ = 120^\\circ$ (ext ∠ of Δ).",
+      "Method 2: $\\hat{B}_{\\text{interior}} = 180^\\circ - 50^\\circ - 70^\\circ = 60^\\circ$ (∠ sum of Δ), so $x = 180^\\circ - 60^\\circ = 120^\\circ$ (∠s on a straight line)."
+    ], "answer": "(a) $65^\\circ$  (b) $x = 120^\\circ$" },
+    { "type": "example", "title": "Worked example 2: an isosceles triangle", "problem": "In $\\triangle ABC$, $AB = AC$ and $\\hat{A} = 40^\\circ$. Calculate $\\hat{B}$ and $\\hat{C}$.", "steps": [
+      "$\\hat{B} = \\hat{C}$ (∠s opposite equal sides).",
+      "$\\hat{B} + \\hat{C} = 180^\\circ - 40^\\circ = 140^\\circ$ (∠ sum of Δ).",
+      "$\\hat{B} = \\hat{C} = 70^\\circ$."
+    ], "answer": "$\\hat{B} = \\hat{C} = 70^\\circ$" },
+    { "type": "callout", "label": "Exam tip", "text": "In geometry, every statement needs a **reason** in brackets, e.g. (∠ sum of Δ) or (∠s opp equal sides). An answer without reasons will not get full marks." },
+
+    { "type": "heading", "text": "Quadrilaterals" },
+    { "type": "paragraph", "text": "A quadrilateral is a closed shape with four straight sides. Its interior angles add up to $360^\\circ$, because a diagonal divides it into two triangles: $2 \\times 180^\\circ = 360^\\circ$." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 120\" font-family=\"sans-serif\" font-size=\"12\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><polygon points=\"10,80 90,80 110,30 30,30\"/><polygon points=\"130,55 165,20 200,55 165,90\"/><polygon points=\"240,55 265,20 290,55 265,95\"/><polygon points=\"320,80 430,80 400,30 345,30\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"60\" y=\"113\">Parallelogram</text><text x=\"165\" y=\"113\">Rhombus</text><text x=\"265\" y=\"113\">Kite</text><text x=\"375\" y=\"113\">Trapezium</text></g></svg>", "caption": "Four quadrilaterals: a parallelogram, a rhombus, a kite and a trapezium." },
+    { "type": "table", "caption": "Properties of quadrilaterals", "headers": ["Quadrilateral", "Sides", "Angles", "Diagonals"], "rows": [
+      ["Parallelogram", "Both pairs of opposite sides parallel and equal", "Opposite angles equal", "Bisect each other"],
+      ["Rectangle", "Opposite sides parallel and equal", "All angles $90^\\circ$", "Bisect each other and are equal"],
+      ["Rhombus", "All four sides equal; opposite sides parallel", "Opposite angles equal", "Bisect each other at $90^\\circ$; bisect the angles"],
+      ["Square", "All four sides equal; opposite sides parallel", "All angles $90^\\circ$", "Equal, bisect each other at $90^\\circ$, bisect the angles"],
+      ["Trapezium", "Exactly one pair of opposite sides parallel", "—", "—"],
+      ["Kite", "Two pairs of adjacent sides equal", "One pair of opposite angles equal", "Perpendicular; the long diagonal bisects the short one"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "A square is a special rectangle **and** a special rhombus, and all of these are special parallelograms. So \"every square is a rectangle\" is true, but \"every rectangle is a square\" is false." },
+    { "type": "example", "title": "Worked example 3", "problem": "The angles of a quadrilateral are $x$, $2x$, $x + 30^\\circ$ and $90^\\circ$. Find $x$ and all the angles.", "steps": [
+      "$x + 2x + x + 30^\\circ + 90^\\circ = 360^\\circ$ (∠ sum of quad).",
+      "$4x + 120^\\circ = 360^\\circ$, so $4x = 240^\\circ$ and $x = 60^\\circ$.",
+      "The angles are $60^\\circ$, $120^\\circ$, $90^\\circ$ and $90^\\circ$. Check: they add to $360^\\circ$ ✓"
+    ], "answer": "$x = 60^\\circ$" },
+
+    { "type": "heading", "text": "Congruent figures" },
+    { "type": "definition", "term": "Congruent", "text": "Figures are **congruent** if they have exactly the **same shape and the same size**. One fits exactly on top of the other. We write $\\triangle ABC \\equiv \\triangle DEF$." },
+    { "type": "paragraph", "text": "In congruent triangles, all corresponding sides are equal and all corresponding angles are equal. The order of the letters matters: $\\triangle ABC \\equiv \\triangle DEF$ means $A$ matches $D$, $B$ matches $E$ and $C$ matches $F$, so $AB = DE$, $BC = EF$ and $\\hat{A} = \\hat{D}$. Two triangles are congruent if they match by SSS, SAS, ASA (or AAS) or RHS." },
+
+    { "type": "heading", "text": "Similar figures" },
+    { "type": "definition", "term": "Similar", "text": "Figures are **similar** if they have the **same shape** but not necessarily the same size. One is an enlargement or reduction of the other. We write $\\triangle ABC\\ |||\\ \\triangle DEF$." },
+    { "type": "paragraph", "text": "In similar triangles, corresponding **angles are equal** and corresponding **sides are in the same ratio** (in proportion)." },
+    { "type": "example", "title": "Worked example 4: similar triangles", "problem": "$\\triangle ABC\\ |||\\ \\triangle PQR$ with $AB = 6$, $BC = 8$, $AC = 10$ and $PQ = 9$. Calculate $QR$ and $PR$.", "steps": [
+      "$AB$ corresponds to $PQ$, so the scale factor is $\\dfrac{9}{6} = 1{,}5$.",
+      "$QR = 1{,}5 \\times BC = 1{,}5 \\times 8 = 12$.",
+      "$PR = 1{,}5 \\times AC = 1{,}5 \\times 10 = 15$."
+    ], "answer": "$QR = 12$ and $PR = 15$" },
+    { "type": "callout", "label": "Common mistake", "text": "Congruent means same shape **and** same size; similar means same shape only. All congruent triangles are similar, but similar triangles are not always congruent." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Triangles: equilateral, isosceles, scalene (sides); acute, right, obtuse (angles).",
+      "Angles of a triangle add to $180^\\circ$; an exterior angle equals the sum of the interior opposite angles.",
+      "Isosceles triangle: the angles opposite the equal sides are equal.",
+      "Angles of a quadrilateral add to $360^\\circ$. Know the side, angle and diagonal properties of each special quadrilateral.",
+      "Congruent ($\\equiv$): same shape and size. Similar ($|||$): same shape, equal angles, sides in proportion.",
+      "Give a reason for every statement in a geometry calculation."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "A triangle has sides 5 cm, 5 cm and 8 cm. What type of triangle is it?", "options": ["Equilateral", "Isosceles", "Scalene", "Right-angled"], "answer": 1, "explanation": "Exactly two sides are equal, so it is isosceles." },
+    { "id": "q2", "type": "numeric", "prompt": "Two angles of a triangle are $47^\\circ$ and $68^\\circ$. Calculate the third angle, in degrees.", "unit": "°", "answer": 65, "tolerance": 0, "explanation": "$180 - 47 - 68 = 65$ (∠ sum of Δ)." },
+    { "id": "q3", "type": "truefalse", "prompt": "Every square is a rectangle.", "answer": true, "explanation": "A rectangle has opposite sides equal and parallel and four right angles. A square has all of these properties (and more), so it is a special rectangle." },
+    { "id": "q4", "type": "mcq", "prompt": "A quadrilateral has four equal sides, and its diagonals bisect each other at right angles but are not equal in length. What is it?", "options": ["Square", "Rectangle", "Rhombus", "Kite"], "answer": 2, "explanation": "Four equal sides with perpendicular diagonals: rhombus. A square would also have equal diagonals." },
+    { "id": "q5", "type": "numeric", "prompt": "The two interior opposite angles of an exterior angle of a triangle are $55^\\circ$ and $65^\\circ$. Calculate the exterior angle, in degrees.", "unit": "°", "answer": 120, "tolerance": 0, "explanation": "Exterior angle $= 55 + 65 = 120$ (ext ∠ of Δ)." },
+    { "id": "q6", "type": "numeric", "prompt": "In an isosceles triangle the angle between the two equal sides is $40^\\circ$. Calculate the size of one base angle, in degrees.", "unit": "°", "answer": 70, "tolerance": 0, "explanation": "The base angles are equal: $(180 - 40) \\div 2 = 70$." },
+    { "id": "q7", "type": "numeric", "prompt": "Three angles of a quadrilateral are $90^\\circ$, $110^\\circ$ and $75^\\circ$. Calculate the fourth angle, in degrees.", "unit": "°", "answer": 85, "tolerance": 0, "explanation": "$360 - 90 - 110 - 75 = 85$ (∠ sum of quad)." },
+    { "id": "q8", "type": "match", "prompt": "Match each quadrilateral with a property that describes it.", "marks": 5, "pairs": [
+      { "left": "Rectangle", "right": "Diagonals are equal in length" },
+      { "left": "Rhombus", "right": "All four sides are equal" },
+      { "left": "Kite", "right": "Two pairs of adjacent sides are equal" },
+      { "left": "Trapezium", "right": "Exactly one pair of parallel sides" },
+      { "left": "Parallelogram", "right": "Both pairs of opposite sides parallel" }
+    ], "explanation": "Learn the properties table: sides, angles and diagonals for each quadrilateral." },
+    { "id": "q9", "type": "truefalse", "prompt": "Congruent triangles have the same shape and the same size.", "answer": true, "explanation": "That is the definition of congruent. Similar triangles have the same shape only." },
+    { "id": "q10", "type": "mcq", "prompt": "$\\triangle ABC\\ |||\\ \\triangle DEF$. $AB = 4$, $DE = 8$ and $BC = 5$. What is $EF$?", "options": ["$9$", "$10$", "$2{,}5$", "$20$"], "answer": 1, "explanation": "Scale factor $= 8 \\div 4 = 2$, so $EF = 2 \\times 5 = 10$." },
+    { "id": "q11", "type": "numeric", "prompt": "One acute angle of a right-angled triangle is $35^\\circ$. Calculate the other acute angle, in degrees.", "unit": "°", "answer": 55, "tolerance": 0, "explanation": "$180 - 90 - 35 = 55$." },
+    { "id": "q12", "type": "short", "prompt": "What do we call a triangle that has one angle greater than $90^\\circ$?", "answers": ["obtuse", "obtuse-angled", "obtuse angled", "obtuse triangle", "obtuse-angled triangle", "an obtuse-angled triangle"], "explanation": "An angle greater than $90^\\circ$ (and less than $180^\\circ$) is obtuse, so the triangle is obtuse-angled." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "The angles of a triangle are $x$, $2x$ and $3x$. Calculate $x$ and the size of each angle. What type of triangle is it?", "memo": "$x + 2x + 3x = 180^\\circ$ (∠ sum of Δ) ✓ (1)\n$6x = 180^\\circ$, $x = 30^\\circ$; angles $30^\\circ$, $60^\\circ$, $90^\\circ$ ✓ (1)\nRight-angled (and scalene) triangle ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "In $\\triangle ABC$, $AB = AC$ and $\\hat{A} = 50^\\circ$. $BC$ is extended to $D$. Calculate $\\hat{ACD}$, giving reasons.", "memo": "$\\hat{B} = \\hat{ACB}$ (∠s opp equal sides) ✓ (1)\n$\\hat{B} = \\hat{ACB} = \\dfrac{180^\\circ - 50^\\circ}{2} = 65^\\circ$ (∠ sum of Δ) ✓ (1)\n$\\hat{ACD} = 180^\\circ - 65^\\circ$ (∠s on a str line) ✓ (1)\n$= 115^\\circ$ ✓ (1)\n(Or: $\\hat{ACD} = \\hat{A} + \\hat{B} = 115^\\circ$, ext ∠ of Δ)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "The angles of a quadrilateral are $x$, $2x$, $x + 30^\\circ$ and $90^\\circ$. Calculate $x$, giving a reason.", "memo": "$x + 2x + x + 30^\\circ + 90^\\circ = 360^\\circ$ (∠ sum of quad) ✓ (1)\n$4x = 240^\\circ$ ✓ (1)\n$x = 60^\\circ$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "$\\triangle ABC\\ |||\\ \\triangle PQR$ with $AB = 6$ cm, $BC = 8$ cm, $AC = 10$ cm and $PQ = 9$ cm. Calculate the lengths of $QR$ and $PR$.", "memo": "Scale factor $= \\dfrac{9}{6} = 1{,}5$ ✓ (1)\n$QR = 1{,}5 \\times 8 = 12$ cm ✓ (1)\n$PR = 1{,}5 \\times 10 = 15$ cm ✓ (1)" }
+  ]
+}

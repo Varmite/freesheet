@@ -1,0 +1,55 @@
+{
+  "id": "diaries-dialogues-and-reviews",
+  "title": "Diaries, Dialogues and Reviews",
+  "term": 4,
+  "summary": "Format and language features of diary entries, dialogues and reviews (of books, films or restaurants), with original examples and checklists.",
+  "notes": [
+    { "type": "heading", "text": "Diary entries" },
+    { "type": "paragraph", "text": "A **diary** is a private, personal record of events, thoughts and feelings. It is written in the **first person** ('I'), usually in the **past tense** for events and the present tense for current feelings, in an **informal**, honest tone." },
+    { "type": "list", "items": [
+      "Start with the **date** (and sometimes the time).",
+      "You may begin with 'Dear Diary'.",
+      "Describe what happened **and** how you felt about it, reflecting on events.",
+      "Usually 2 or 3 entries are written on different days to show how feelings change."
+    ] },
+    { "type": "passage", "title": "Example diary entry (original)", "text": "Friday, 7 June\n\nDear Diary\n\nI can't believe it. I forgot my lines in the middle of the school play! The whole hall went silent and all I could hear was my heart thumping. Then Kagiso whispered the next line from behind the curtain and somehow I carried on.\n\nAfterwards, Mom hugged me and said nobody even noticed. I'm not sure that's true, but I feel a bit better. Tomorrow I'm going to thank Kagiso properly. Maybe I'll even try out for next year's play." },
+    { "type": "heading", "text": "Dialogues" },
+    { "type": "paragraph", "text": "A **dialogue** is a conversation between two or more people written in **script form** (like a play)." },
+    { "type": "list", "items": [
+      "Give a short **context** at the top (who, where, what is happening).",
+      "Write the **speaker's name** on the left, followed by a **colon**.",
+      "**No inverted commas** are used.",
+      "Put **stage directions** (how something is said or done) in **brackets** in the present tense.",
+      "Start a new line for each speaker.",
+      "The conversation should sound natural and suit the characters and situation."
+    ] },
+    { "type": "passage", "title": "Example dialogue (original)", "text": "[Context: Neo and his older sister Palesa are in the kitchen. Neo wants to borrow her laptop.]\n\nNEO: (smiling sweetly) Palesa, you know you're my favourite sister?\nPALESA: I'm your only sister. What do you want?\nNEO: Just your laptop. For an hour. It's for a school project, I promise.\nPALESA: (folding her arms) Last time it was 'for a school project', I found a game on my desktop.\nNEO: That was research!\nPALESA: (laughing) Fine. One hour. And you wash the dishes tonight.\nNEO: Deal! (grabs the laptop and runs off)" },
+    { "type": "heading", "text": "Reviews" },
+    { "type": "paragraph", "text": "A **review** gives a **personal, informed opinion** about a book, film, game, restaurant or event, to help others decide whether it is worth their time or money." },
+    { "type": "table", "headers": ["Section", "Content"], "rows": [
+      ["Heading", "Title of the work and often a rating (e.g. ★★★★☆)"],
+      ["Introduction", "Name, type (genre), author/director, main actors or place"],
+      ["Brief summary", "What it is about, without giving away the ending (no spoilers)"],
+      ["Evaluation", "Strengths and weaknesses with examples: characters, plot, acting, music, service, value for money"],
+      ["Conclusion", "Your overall opinion and a recommendation: who would enjoy it?"]
+    ] },
+    { "type": "callout", "label": "Language tip", "text": "Use a variety of descriptive adjectives (gripping, predictable, hilarious, mouth-watering, overpriced) and justify every opinion with a reason or example." }
+  ],
+  "questions": [
+    { "id": "diary-person", "type": "mcq", "prompt": "In which person is a diary usually written?", "options": ["First person", "Second person", "Third person"], "answer": 0 },
+    { "id": "no-quotes", "type": "truefalse", "prompt": "Inverted commas are used around each character's words in a dialogue.", "answer": false },
+    { "id": "stage", "type": "short", "prompt": "In a dialogue, in what are stage directions placed?", "answers": ["brackets", "in brackets", "parentheses"] },
+    { "id": "spoiler", "type": "short", "prompt": "What is it called when a review gives away the ending of a story?", "answers": ["spoiler", "a spoiler", "spoilers"] },
+    { "id": "review-purpose", "type": "mcq", "prompt": "The main purpose of a review is to…", "options": ["tell a made-up story", "give an informed opinion and recommendation", "give instructions", "record private feelings"], "answer": 1 },
+    { "id": "formats", "type": "match", "marks": 4, "prompt": "Match each feature to the text type.", "pairs": [
+      { "left": "Speaker's name followed by a colon", "right": "Dialogue" },
+      { "left": "Date and private feelings", "right": "Diary" },
+      { "left": "Star rating and recommendation", "right": "Review" },
+      { "left": "Stage directions in brackets", "right": "Dialogue (script)" }
+    ] },
+    { "id": "diary-feelings", "type": "open", "marks": 2, "prompt": "In the example diary entry, how do the writer's feelings change from the beginning to the end?", "memo": "✓ At first embarrassed/panicked about forgetting lines (1)\n✓ At the end relieved, grateful and even hopeful about next year (1)" },
+    { "id": "palesa", "type": "open", "marks": 2, "prompt": "What does the dialogue reveal about Palesa's character?", "memo": "✓ She is suspicious / sensible (reminds Neo of the game) (1)\n✓ but kind and humorous, as she agrees and laughs (1)" },
+    { "id": "write-dialogue", "type": "open", "marks": 4, "prompt": "Write a short dialogue (4 to 6 lines) between a learner and a teacher about a late assignment.", "memo": "✓ Context given (1)\n✓ Correct format: names, colons, no inverted commas (1)\n✓ At least one stage direction in brackets (1)\n✓ Natural, suitable register for each speaker (1)" },
+    { "id": "review-sections", "type": "open", "marks": 3, "prompt": "Name THREE things that should be included in a film review.", "memo": "Any three (1 each): title/genre/director/actors; brief summary without spoilers; strengths and weaknesses; rating; recommendation" }
+  ]
+}

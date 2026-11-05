@@ -1,0 +1,63 @@
+{
+  "id": "human-body-systems",
+  "title": "Systems in the Human Body",
+  "term": 1,
+  "summary": "The structure and functions of the digestive, respiratory, circulatory, excretory and nervous systems, and how they work together.",
+  "notes": [
+    { "type": "heading", "text": "Organ systems work together" },
+    { "type": "paragraph", "text": "The human body has several **organ systems**. Each has its own job, but they depend on each other. For example, the digestive system supplies glucose and the respiratory system supplies oxygen; the circulatory system carries both to every cell for respiration." },
+    { "type": "heading", "text": "The digestive system" },
+    { "type": "paragraph", "text": "Digestion breaks large food molecules into small, soluble molecules that can be absorbed into the blood. **Mechanical digestion** is the physical breaking up of food (chewing, churning); **chemical digestion** uses **enzymes**." },
+    { "type": "table", "headers": ["Organ", "Function"], "rows": [
+      ["Mouth", "Teeth chew food; saliva contains an enzyme that starts digesting starch"],
+      ["Oesophagus", "Muscular tube that moves food to the stomach by peristalsis (waves of muscle contraction)"],
+      ["Stomach", "Churns food; acid kills germs; enzymes start digesting protein"],
+      ["Liver", "Makes bile, which breaks fats into small droplets"],
+      ["Small intestine", "Completes digestion; villi absorb nutrients into the blood"],
+      ["Large intestine", "Absorbs water; forms faeces"],
+      ["Rectum and anus", "Store and remove faeces (egestion)"]
+    ] },
+    { "type": "heading", "text": "The respiratory system" },
+    { "type": "paragraph", "text": "Air enters through the **nose** (where it is warmed, moistened and filtered), passes down the **trachea** (windpipe), into two **bronchi**, then smaller **bronchioles**, and finally reaches millions of tiny air sacs called **alveoli**. In the alveoli, **gaseous exchange** takes place: oxygen diffuses into the blood and carbon dioxide diffuses out." },
+    { "type": "table", "caption": "Breathing", "headers": ["", "Inhaling (breathing in)", "Exhaling (breathing out)"], "rows": [
+      ["Diaphragm", "Contracts and flattens", "Relaxes and domes upwards"],
+      ["Rib muscles", "Contract; ribs move up and out", "Relax; ribs move down and in"],
+      ["Chest volume", "Increases", "Decreases"],
+      ["Air pressure in lungs", "Decreases, so air rushes in", "Increases, so air is pushed out"]
+    ] },
+    { "type": "heading", "text": "The circulatory system" },
+    { "type": "paragraph", "text": "The **heart** pumps **blood** through **blood vessels** to every part of the body. Humans have a **double circulation**: the right side of the heart pumps blood to the lungs to collect oxygen, and the left side pumps oxygen-rich blood to the rest of the body." },
+    { "type": "table", "headers": ["Blood vessel", "Carries blood", "Features"], "rows": [
+      ["Artery", "Away from the heart (usually oxygenated)", "Thick, muscular, elastic walls; high pressure"],
+      ["Vein", "Towards the heart (usually deoxygenated)", "Thinner walls; valves stop backflow; low pressure"],
+      ["Capillary", "Between arteries and veins, through tissues", "Walls one cell thick, so substances can diffuse in and out"]
+    ] },
+    { "type": "list", "items": [
+      "**Red blood cells** carry oxygen (using haemoglobin).",
+      "**White blood cells** fight infection.",
+      "**Platelets** help blood to clot.",
+      "**Plasma** is the liquid part; it carries dissolved food, carbon dioxide, hormones and waste."
+    ] },
+    { "type": "heading", "text": "Excretion and the nervous system" },
+    { "type": "paragraph", "text": "**Excretion** is the removal of waste made by the body's cells. The **kidneys** filter urea and excess water from the blood to make urine; the **lungs** excrete carbon dioxide; the **skin** removes some water and salts in sweat." },
+    { "type": "paragraph", "text": "The **nervous system** (brain, spinal cord and nerves) receives information from the sense organs and coordinates responses. A **reflex action**, such as pulling your hand away from a hot stove, is fast and automatic because the message goes through the spinal cord without waiting for the brain." },
+    { "type": "callout", "label": "Common mistake", "text": "Excretion (removing waste made by cells, such as urea and CO₂) is not the same as egestion (removing undigested food as faeces)." }
+  ],
+  "questions": [
+    { "id": "alveoli", "type": "short", "prompt": "In which tiny air sacs does gaseous exchange take place in the lungs?", "answers": ["alveoli", "alveolus", "the alveoli"] },
+    { "id": "absorb", "type": "mcq", "prompt": "Where are most digested nutrients absorbed into the blood?", "options": ["Stomach", "Large intestine", "Small intestine", "Oesophagus"], "answer": 2 },
+    { "id": "artery", "type": "mcq", "prompt": "Which blood vessels carry blood away from the heart?", "options": ["Veins", "Arteries", "Capillaries", "Valves"], "answer": 1 },
+    { "id": "diaphragm", "type": "truefalse", "prompt": "When you breathe in, the diaphragm contracts and flattens.", "answer": true },
+    { "id": "kidney", "type": "short", "prompt": "Which organs filter urea from the blood?", "answers": ["kidneys", "kidney", "the kidneys"] },
+    { "id": "blood-parts", "type": "match", "marks": 4, "prompt": "Match each part of the blood to its function.", "pairs": [
+      { "left": "Red blood cells", "right": "Carry oxygen" },
+      { "left": "White blood cells", "right": "Fight infection" },
+      { "left": "Platelets", "right": "Help blood to clot" },
+      { "left": "Plasma", "right": "Liquid that carries dissolved substances" }
+    ] },
+    { "id": "peristalsis", "type": "short", "prompt": "What are the waves of muscle contraction that push food along the gut called?", "answers": ["peristalsis"] },
+    { "id": "capillary", "type": "open", "marks": 2, "prompt": "Explain how capillaries are adapted for the exchange of substances.", "memo": "✓ Their walls are only one cell thick (1)\n✓ so substances such as oxygen and glucose can diffuse easily between the blood and the cells (1)" },
+    { "id": "together", "type": "open", "marks": 3, "prompt": "Explain how the digestive, respiratory and circulatory systems work together so that muscle cells can release energy.", "memo": "✓ The digestive system digests food and absorbs glucose into the blood (1)\n✓ The respiratory system takes oxygen into the blood in the lungs (1)\n✓ The circulatory system transports glucose and oxygen to the muscle cells for respiration (1)" },
+    { "id": "reflex", "type": "open", "marks": 2, "prompt": "Why is a reflex action faster than a normal response?", "memo": "✓ The message travels through the spinal cord (1)\n✓ It does not have to go to the brain for a decision first / it is automatic (1)" }
+  ]
+}

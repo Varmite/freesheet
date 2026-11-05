@@ -1,0 +1,68 @@
+{
+  "id": "particle-model-of-matter",
+  "title": "The Particle Model of Matter",
+  "term": 2,
+  "summary": "Use the particle model to explain the three states of matter, changes of state, diffusion, expansion and contraction, density and pressure.",
+  "notes": [
+    { "type": "heading", "text": "The particle model" },
+    { "type": "paragraph", "text": "The **particle model of matter** is a scientific model that explains how matter behaves. It states that:" },
+    { "type": "list", "ordered": true, "items": [
+      "All matter is made of tiny particles (atoms or molecules).",
+      "There are empty spaces between the particles.",
+      "The particles are always moving. The higher the temperature, the faster they move.",
+      "There are forces of attraction between particles. The closer they are, the stronger the forces."
+    ] },
+    { "type": "table", "caption": "The three states of matter", "headers": ["Property", "Solid", "Liquid", "Gas"], "rows": [
+      ["Arrangement", "Closely packed in a regular pattern", "Close together, but not in a pattern", "Far apart, random"],
+      ["Movement", "Vibrate in fixed positions", "Move around and slide past each other", "Move fast in all directions"],
+      ["Forces of attraction", "Very strong", "Fairly strong", "Very weak"],
+      ["Shape", "Fixed", "Takes the shape of its container", "Fills the whole container"],
+      ["Volume", "Fixed", "Fixed", "Not fixed; can be compressed"]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 120\" font-family=\"sans-serif\" font-size=\"12\"><rect x=\"5\" y=\"5\" width=\"100\" height=\"90\" fill=\"none\" stroke=\"black\"/><rect x=\"115\" y=\"5\" width=\"100\" height=\"90\" fill=\"none\" stroke=\"black\"/><rect x=\"225\" y=\"5\" width=\"100\" height=\"90\" fill=\"none\" stroke=\"black\"/><g fill=\"#999\" stroke=\"black\"><circle cx=\"25\" cy=\"55\" r=\"9\"/><circle cx=\"45\" cy=\"55\" r=\"9\"/><circle cx=\"65\" cy=\"55\" r=\"9\"/><circle cx=\"85\" cy=\"55\" r=\"9\"/><circle cx=\"25\" cy=\"75\" r=\"9\"/><circle cx=\"45\" cy=\"75\" r=\"9\"/><circle cx=\"65\" cy=\"75\" r=\"9\"/><circle cx=\"85\" cy=\"75\" r=\"9\"/><circle cx=\"25\" cy=\"35\" r=\"9\"/><circle cx=\"45\" cy=\"35\" r=\"9\"/><circle cx=\"65\" cy=\"35\" r=\"9\"/><circle cx=\"85\" cy=\"35\" r=\"9\"/><circle cx=\"130\" cy=\"84\" r=\"9\"/><circle cx=\"150\" cy=\"80\" r=\"9\"/><circle cx=\"172\" cy=\"84\" r=\"9\"/><circle cx=\"195\" cy=\"82\" r=\"9\"/><circle cx=\"140\" cy=\"62\" r=\"9\"/><circle cx=\"163\" cy=\"62\" r=\"9\"/><circle cx=\"190\" cy=\"62\" r=\"9\"/><circle cx=\"150\" cy=\"44\" r=\"9\"/><circle cx=\"245\" cy=\"25\" r=\"9\"/><circle cx=\"300\" cy=\"40\" r=\"9\"/><circle cx=\"260\" cy=\"75\" r=\"9\"/><circle cx=\"310\" cy=\"80\" r=\"9\"/></g><text x=\"55\" y=\"113\" text-anchor=\"middle\">solid</text><text x=\"165\" y=\"113\" text-anchor=\"middle\">liquid</text><text x=\"275\" y=\"113\" text-anchor=\"middle\">gas</text></svg>", "caption": "Particle arrangement in a solid, a liquid and a gas" },
+    { "type": "heading", "text": "Changes of state" },
+    { "type": "table", "headers": ["Change", "From → to", "Energy"], "rows": [
+      ["Melting", "Solid → liquid", "Heat absorbed"],
+      ["Evaporation / boiling", "Liquid → gas", "Heat absorbed"],
+      ["Condensation", "Gas → liquid", "Heat released"],
+      ["Freezing (solidifying)", "Liquid → solid", "Heat released"],
+      ["Sublimation", "Solid → gas directly (e.g. dry ice, iodine)", "Heat absorbed"]
+    ] },
+    { "type": "paragraph", "text": "When a solid is heated, its particles gain energy and vibrate faster. At the **melting point** they vibrate so much that they break free of their fixed positions. Pure water melts at **0 °C** and boils at **100 °C** at sea level. During a change of state the temperature stays constant, because the energy is used to overcome the forces between particles." },
+    { "type": "heading", "text": "Diffusion" },
+    { "type": "definition", "term": "Diffusion", "text": "The spreading out of particles from an area of high concentration to an area of low concentration, caused by their random movement." },
+    { "type": "paragraph", "text": "Diffusion explains why you can smell perfume across a room, or why a drop of food colouring spreads through water. It is fastest in gases, slower in liquids, and happens faster at higher temperatures." },
+    { "type": "heading", "text": "Expansion and contraction" },
+    { "type": "paragraph", "text": "When a substance is heated, its particles move faster and further apart, so the substance **expands** (its volume increases). When it cools it **contracts**. The particles themselves do NOT get bigger." },
+    { "type": "list", "items": [
+      "Gaps are left between sections of railway lines and bridges so that they can expand on hot days.",
+      "A liquid-in-glass thermometer works because the liquid expands up the tube when heated.",
+      "A tight metal jar lid can be loosened by running hot water over it."
+    ] },
+    { "type": "heading", "text": "Density and pressure" },
+    { "type": "formula", "latex": "\\text{density} = \\frac{\\text{mass}}{\\text{volume}}", "caption": "Density is measured in g/cm³ or kg/m³" },
+    { "type": "example", "title": "Calculating density", "problem": "A block of wood has a mass of 120 g and a volume of 200 cm³. Calculate its density. Will it float on water (density 1 g/cm³)?", "steps": [
+      "density = mass ÷ volume = 120 ÷ 200",
+      "= 0,6 g/cm³",
+      "0,6 g/cm³ is less than 1 g/cm³, so the wood floats."
+    ], "answer": "0,6 g/cm³; it floats" },
+    { "type": "paragraph", "text": "Solids are usually the densest state, because their particles are packed most closely. **Gas pressure** is caused by gas particles colliding with the walls of their container. Heating a gas in a closed container increases the pressure, because the particles move faster and hit the walls more often and harder." }
+  ],
+  "questions": [
+    { "id": "vibrate", "type": "mcq", "prompt": "In which state do particles only vibrate in fixed positions?", "options": ["Solid", "Liquid", "Gas", "All three"], "answer": 0 },
+    { "id": "compress", "type": "mcq", "prompt": "Which state of matter can be compressed easily?", "options": ["Solid", "Liquid", "Gas"], "answer": 2, "explanation": "Gas particles have large spaces between them." },
+    { "id": "condense", "type": "short", "prompt": "What is the change of state from gas to liquid called?", "answers": ["condensation", "condensing"] },
+    { "id": "diffusion", "type": "short", "prompt": "What is the name for the spreading of particles from a high to a low concentration?", "answers": ["diffusion"] },
+    { "id": "bigger", "type": "truefalse", "prompt": "When a metal rod expands, its particles become bigger.", "answer": false, "explanation": "The particles move further apart; they do not change size." },
+    { "id": "density", "type": "numeric", "prompt": "A stone has a mass of 270 g and a volume of 100 cm³. Calculate its density.", "answer": 2.7, "tolerance": 0.01, "unit": "g/cm³" },
+    { "id": "changes", "type": "match", "marks": 4, "prompt": "Match each change of state to what happens.", "pairs": [
+      { "left": "Melting", "right": "Solid to liquid" },
+      { "left": "Freezing", "right": "Liquid to solid" },
+      { "left": "Evaporation", "right": "Liquid to gas" },
+      { "left": "Sublimation", "right": "Solid to gas" }
+    ] },
+    { "id": "rail-gaps", "type": "open", "marks": 3, "prompt": "Use the particle model to explain why gaps are left between sections of a railway line.", "memo": "✓ On hot days the particles in the steel gain energy and move/vibrate faster (1)\n✓ They move further apart, so the steel expands (1)\n✓ Without gaps the rails would push against each other and buckle (1)" },
+    { "id": "perfume", "type": "open", "marks": 2, "prompt": "Explain why perfume sprayed in one corner of a room can soon be smelt in the opposite corner.", "memo": "✓ Perfume particles evaporate and move randomly through the air (1)\n✓ They diffuse from where they are concentrated to where there are few of them (1)" },
+    { "id": "pressure", "type": "open", "marks": 2, "prompt": "Why does the air pressure inside a closed bottle increase when the bottle is left in the hot sun?", "memo": "✓ The gas particles gain energy and move faster (1)\n✓ so they collide with the walls more often and with more force (1)" }
+  ]
+}

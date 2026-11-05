@@ -1,0 +1,55 @@
+{
+  "id": "democracy-and-citizenship",
+  "title": "Democracy and Citizenship",
+  "term": 3,
+  "summary": "What democracy is, the features of South Africa's constitutional democracy, elections and the IEC, ways citizens can participate, and responsible citizenship and volunteering.",
+  "notes": [
+    { "type": "heading", "text": "What is democracy?" },
+    { "type": "definition", "term": "Democracy", "text": "A system of government in which power belongs to the people, who choose their leaders in free and fair elections. The word comes from Greek: *demos* (people) and *kratos* (rule)." },
+    { "type": "paragraph", "text": "South Africa became a **constitutional democracy** in **1994**. This means the Constitution is the highest law, and even the government must obey it." },
+    { "type": "heading", "text": "Features of a democracy" },
+    { "type": "list", "items": [
+      "**Free and fair elections** held regularly; every citizen aged **18 and older** may vote.",
+      "**Multi-party system**: people can form and join political parties.",
+      "**Human rights** are protected by a Bill of Rights.",
+      "**Separation of powers** between the legislature, executive and judiciary.",
+      "**Independent courts** and the **rule of law**: everyone, including leaders, is equal before the law.",
+      "**Free media** and freedom of expression.",
+      "**Accountability and transparency**: leaders must explain their actions to the people."
+    ] },
+    { "type": "heading", "text": "Elections" },
+    { "type": "paragraph", "text": "The **Independent Electoral Commission (IEC)** runs national, provincial and local (municipal) elections and makes sure they are free and fair. To vote, you must be a South African citizen aged 18 or older, be **registered** on the voters' roll and have a valid ID. You can register from age **16**, and then you are ready to vote when you turn 18." },
+    { "type": "table", "headers": ["Election", "Chooses"], "rows": [
+      ["National and provincial (every 5 years)", "Members of Parliament (the National Assembly elects the President) and provincial legislatures"],
+      ["Local government (every 5 years)", "Ward councillors and municipal councils"]
+    ] },
+    { "type": "heading", "text": "Participating as a citizen" },
+    { "type": "table", "headers": ["Way to participate", "Example"], "rows": [
+      ["Voting", "Voting in elections from age 18"],
+      ["Contacting representatives", "Writing to a ward councillor about potholes"],
+      ["Public participation", "Attending ward committee meetings or commenting on draft laws"],
+      ["Peaceful protest and petitions", "Signing a petition or marching for safer schools"],
+      ["Joining organisations", "Representative Council of Learners (RCL), youth clubs, NGOs"],
+      ["Volunteering", "Helping at a soup kitchen, cleaning up a park, tutoring younger learners"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Protest is a right, but it must be **peaceful and unarmed** (section 17 of the Constitution). Burning schools, clinics or libraries harms the community and is a crime." },
+    { "type": "heading", "text": "Responsible citizenship" },
+    { "type": "paragraph", "text": "Good citizens obey the law, pay for services, respect others' rights, look after public property and the environment, stay informed and take part in community life. The **Representative Council of Learners (RCL)** gives learners a democratic voice in school governance." }
+  ],
+  "questions": [
+    { "id": "demos", "type": "short", "prompt": "The word 'democracy' comes from Greek. What does 'demos' mean?", "answers": ["people", "the people"] },
+    { "id": "vote-age", "type": "numeric", "prompt": "At what age can South African citizens vote?", "answer": 18, "tolerance": 0, "unit": "years" },
+    { "id": "register-age", "type": "numeric", "prompt": "From what age can you register as a voter?", "answer": 16, "tolerance": 0, "unit": "years" },
+    { "id": "iec", "type": "short", "prompt": "Which organisation runs elections in South Africa? (abbreviation)", "answers": ["iec", "independent electoral commission"] },
+    { "id": "peaceful", "type": "truefalse", "prompt": "The Constitution protects the right to protest peacefully and unarmed.", "answer": true },
+    { "id": "rcl", "type": "mcq", "prompt": "The RCL is…", "options": ["a political party", "a learners' representative council at school", "a court", "the police"], "answer": 1 },
+    { "id": "features", "type": "open", "marks": 4, "prompt": "Name FOUR features of a democracy.", "memo": "Any four (1 each): free and fair elections; multi-party system; human rights; separation of powers; independent courts/rule of law; free media; accountability" },
+    { "id": "participate", "type": "open", "marks": 3, "prompt": "Describe THREE ways in which a Grade 9 learner can participate in democracy.", "memo": "Any three (1 each): join/vote for the RCL; sign petitions; peaceful protest; contact the ward councillor; volunteer; register at 16 to vote later; stay informed" },
+    { "id": "damage", "type": "open", "marks": 2, "prompt": "Why is it wrong to burn a library during a protest about service delivery?", "memo": "✓ It is a crime and the protest is no longer peaceful (1)\n✓ It destroys a service the community needs, harming the people it was meant to help (1)" },
+    { "id": "elections", "type": "match", "marks": 3, "prompt": "Match each election-related term to its meaning.", "pairs": [
+      { "left": "Voters' roll", "right": "List of registered voters" },
+      { "left": "Ward councillor", "right": "Elected in local government elections" },
+      { "left": "National Assembly", "right": "Elects the President" }
+    ] }
+  ]
+}

@@ -1,2 +1,8 @@
 node_modules/
 dist/
+build/
+
+# Text-to-speech: Python environment and job list (rebuild audio with npm run tts).
+# The generated audio/ is committed so builds on GitHub Actions include read-aloud.
+tts/.venv/
+tts/jobs.json

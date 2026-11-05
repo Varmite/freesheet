@@ -1,0 +1,44 @@
+{
+  "id": "summary-writing",
+  "title": "Summary Writing",
+  "term": 1,
+  "summary": "Summarising longer and more complex texts: separating relevant from irrelevant information, paraphrasing, condensing and writing a coherent paragraph within 90 words.",
+  "notes": [
+    { "type": "heading", "text": "The challenge at Grade 11" },
+    { "type": "paragraph", "text": "Grade 11 summary texts are longer and mix relevant and irrelevant information, such as **causes and effects**, **advantages and disadvantages**, or **problems and solutions**. You must choose only what the question asks for." },
+    { "type": "heading", "text": "Paraphrasing techniques" },
+    { "type": "table", "headers": ["Technique", "Original", "Paraphrase"], "rows": [
+      ["Synonyms", "Residents are concerned", "People who live there are worried"],
+      ["Change word class", "The decision to relocate", "They decided to move"],
+      ["Change voice", "The rules were broken by learners", "Learners broke the rules"],
+      ["Generalise", "Lions, elephants and rhinos", "Large wild animals"],
+      ["Nominalise", "Prices rose quickly", "The rapid price increase"]
+    ] },
+    { "type": "heading", "text": "Writing the summary" },
+    { "type": "list", "ordered": true, "items": [
+      "Underline the focus words in the question (e.g. 'the EFFECTS of drought').",
+      "Make a list of seven points in note form.",
+      "Rephrase each point; combine related points.",
+      "Write one fluent paragraph with linking words: 'furthermore', 'as a result', 'in addition', 'consequently'.",
+      "Count the words (90 maximum) and record the number in brackets."
+    ] },
+    { "type": "callout", "label": "Common mistakes", "text": "Including the writer's opinions or examples; writing more than 90 words; copying whole phrases; mixing in points about causes when the question asks for effects." },
+    { "type": "passage", "title": "Practice text: Drought in the Karoo (written for FreeSheet)", "text": "The Karoo has always been dry, but the drought that began in 2015 was the worst in living memory. Scientists link it to changing rainfall patterns. For farmers the effects were devastating. Dams dried up, and many were forced to sell their sheep at low prices or watch them die. Farm workers lost their jobs as farms cut costs. Small towns that depend on farmers' spending saw shops close. Some families left the land their grandparents had farmed. The drought also damaged the veld, as overgrazed land turned to dust and blew away. Some farmers have since turned to drought-resistant plants and better water storage, which may help in future." }
+  ],
+  "questions": [
+    { "id": "limit", "type": "numeric", "prompt": "What is the maximum number of words for the Grade 11 Paper 1 summary?", "answer": 90, "tolerance": 0 },
+    { "id": "relevant", "type": "mcq", "prompt": "If asked for the EFFECTS of the drought, which point should be left out?", "options": ["Farm workers lost their jobs", "Scientists link it to changing rainfall patterns", "Shops in small towns closed", "The veld was damaged"], "answer": 1 },
+    { "id": "solution", "type": "mcq", "prompt": "'Some farmers turned to drought-resistant plants' is…", "options": ["an effect", "a solution / response", "a cause", "an example of hyperbole"], "answer": 1 },
+    { "id": "generalise", "type": "short", "prompt": "Generalise: 'dams, rivers, boreholes and reservoirs'.", "answers": ["water sources", "sources of water", "water supplies"] },
+    { "id": "opinion", "type": "truefalse", "prompt": "You may include your own opinion in a summary.", "answer": false },
+    { "id": "techniques", "type": "match", "marks": 3, "prompt": "Match each paraphrasing technique to an example.", "pairs": [
+      { "left": "Change voice", "right": "Learners broke the rules" },
+      { "left": "Synonym", "right": "worried for 'concerned'" },
+      { "left": "Generalise", "right": "large wild animals" }
+    ] },
+    { "id": "paraphrase", "type": "open", "marks": 2, "prompt": "Paraphrase: 'Many were forced to sell their sheep at low prices or watch them die.'", "memo": "✓✓ e.g. 'Farmers lost livestock or had to sell it cheaply.' (meaning kept, own words, concise) (2)" },
+    { "id": "effects", "type": "open", "marks": 6, "prompt": "List SIX effects of the drought from the practice text, in your own words and in note form.", "memo": "✓ Dams/water ran out (1)\n✓ Farmers sold sheep cheaply or lost them (1)\n✓ Farm workers became unemployed (1)\n✓ Shops in small towns closed (1)\n✓ Families left their farms (1)\n✓ The veld was damaged/soil eroded (1)" },
+    { "id": "linking", "type": "open", "marks": 2, "prompt": "Combine using a suitable linking word: 'Farms cut costs. Farm workers lost their jobs.'", "memo": "✓✓ e.g. 'As farms cut costs, workers lost their jobs.' / 'Farms cut costs; consequently, workers lost their jobs.' (2)" },
+    { "id": "mistake", "type": "open", "marks": 2, "prompt": "Name TWO common mistakes in summary writing.", "memo": "Any two: ✓ exceeding the word limit ✓ including examples/opinions ✓ copying from the text ✓ including irrelevant points ✓ point form (2)" }
+  ]
+}

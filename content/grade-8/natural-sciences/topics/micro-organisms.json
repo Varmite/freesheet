@@ -1,0 +1,64 @@
+{
+  "id": "micro-organisms",
+  "title": "Micro-organisms",
+  "term": 1,
+  "summary": "The four groups of micro-organisms, how they help and harm people, how diseases spread, and how we prevent and treat infections.",
+  "notes": [
+    { "type": "heading", "text": "What are micro-organisms?" },
+    { "type": "paragraph", "text": "**Micro-organisms** (microbes) are living things too small to see without a **microscope**. They are found almost everywhere: in soil, water, air, food and inside our bodies." },
+    { "type": "table", "caption": "The four groups of micro-organisms", "headers": ["Group", "Features", "Examples"], "rows": [
+      ["Viruses", "The smallest; not made of cells; can only reproduce inside a living host cell", "Influenza, HIV, measles, COVID-19"],
+      ["Bacteria", "Single cells with no nucleus; reproduce quickly by splitting in two", "Bacteria in yoghurt; bacteria that cause TB and cholera"],
+      ["Protists", "Single cells with a nucleus; many live in water", "Amoeba; the protist that causes malaria"],
+      ["Fungi", "Some single-celled (yeast), others form threads (moulds); feed on dead or living material", "Yeast, bread mould, athlete's foot fungus"]
+    ] },
+    { "type": "heading", "text": "Useful micro-organisms" },
+    { "type": "list", "items": [
+      "**Food**: yeast makes bread rise and is used to make beer; bacteria turn milk into yoghurt, cheese and amasi.",
+      "**Decomposition**: bacteria and fungi break down dead plants and animals, returning nutrients to the soil.",
+      "**Medicine**: the antibiotic penicillin comes from a mould; vaccines are made from weakened or killed microbes.",
+      "**Digestion**: bacteria in the gut help us digest food and make some vitamins.",
+      "**Sewage treatment**: bacteria break down human waste so that water can be cleaned."
+    ] },
+    { "type": "example", "title": "Yeast and bread", "problem": "Explain why bread dough rises when yeast is added and the dough is left in a warm place.", "steps": [
+      "Yeast is a fungus that feeds on the sugar in the dough.",
+      "It respires and produces carbon dioxide gas.",
+      "Bubbles of carbon dioxide are trapped in the dough, so it swells (rises).",
+      "Warmth helps, because yeast is most active at about 25 to 35 °C."
+    ], "answer": "Yeast produces carbon dioxide gas, which is trapped as bubbles in the dough." },
+    { "type": "heading", "text": "Harmful micro-organisms" },
+    { "type": "paragraph", "text": "Micro-organisms that cause disease are called **pathogens** (germs). Some also spoil food: mould on bread or bacteria that make milk go sour." },
+    { "type": "table", "caption": "How diseases spread", "headers": ["Route", "Example diseases", "Prevention"], "rows": [
+      ["Droplets in the air (coughs and sneezes)", "Flu, TB, COVID-19", "Cover coughs, ventilate rooms, wear masks"],
+      ["Contaminated water and food", "Cholera, typhoid, diarrhoea", "Boil or treat water, wash hands, cook food well"],
+      ["Body fluids (blood, sexual contact)", "HIV", "Avoid contact with blood, use condoms, never share needles"],
+      ["Animal vectors", "Malaria (mosquitoes)", "Mosquito nets, insect repellent, remove standing water"],
+      ["Direct contact", "Athlete's foot, ringworm", "Keep skin dry, do not share towels"]
+    ] },
+    { "type": "heading", "text": "Preventing and treating disease" },
+    { "type": "definition", "term": "Vaccine", "text": "A substance containing weakened, dead or partial microbes that trains the immune system to recognise a pathogen, so the body can fight it quickly if infected later." },
+    { "type": "definition", "term": "Antibiotic", "text": "A medicine that kills bacteria or stops them from growing. Antibiotics do NOT work against viruses." },
+    { "type": "callout", "label": "Remember", "text": "Always finish a full course of antibiotics. Stopping early lets the strongest bacteria survive and multiply, which leads to **antibiotic resistance**." },
+    { "type": "list", "items": [
+      "Food is preserved by keeping microbes from growing: refrigeration (cold), freezing, drying, salting, adding sugar or vinegar, canning and pasteurisation (heating milk to kill bacteria).",
+      "Personal hygiene, clean water and proper sanitation prevent many diseases."
+    ] }
+  ],
+  "questions": [
+    { "id": "smallest", "type": "mcq", "prompt": "Which group of micro-organisms is the smallest and can only reproduce inside a host cell?", "options": ["Bacteria", "Fungi", "Viruses", "Protists"], "answer": 2 },
+    { "id": "pathogen", "type": "short", "prompt": "What is the scientific name for a micro-organism that causes disease?", "answers": ["pathogen", "a pathogen", "pathogens"] },
+    { "id": "antibiotic-virus", "type": "truefalse", "prompt": "Antibiotics can be used to cure flu, which is caused by a virus.", "answer": false, "explanation": "Antibiotics only work against bacteria." },
+    { "id": "malaria", "type": "mcq", "prompt": "How is malaria spread?", "options": ["Contaminated water", "Coughing and sneezing", "Mosquito bites", "Shaking hands"], "answer": 2 },
+    { "id": "match-microbe", "type": "match", "marks": 4, "prompt": "Match each example to its group.", "pairs": [
+      { "left": "Yeast", "right": "Fungus" },
+      { "left": "HIV", "right": "Virus" },
+      { "left": "Amoeba", "right": "Protist" },
+      { "left": "Microbe that sours milk", "right": "Bacterium" }
+    ] },
+    { "id": "penicillin", "type": "short", "prompt": "Name the first antibiotic, which was discovered in a mould.", "answers": ["penicillin"] },
+    { "id": "pasteurise", "type": "mcq", "prompt": "Pasteurisation preserves milk by…", "options": ["adding salt", "heating it to kill bacteria", "adding yeast", "drying it"], "answer": 1 },
+    { "id": "bread-rise", "type": "open", "marks": 3, "prompt": "Explain why bread dough rises when yeast is added.", "memo": "✓ Yeast feeds on sugar in the dough / respires (1)\n✓ It produces carbon dioxide gas (1)\n✓ The gas is trapped as bubbles, making the dough expand (1)" },
+    { "id": "useful", "type": "open", "marks": 3, "prompt": "Give THREE ways in which micro-organisms are useful to people.", "memo": "Any three (1 each):\n✓ making food (bread, yoghurt, cheese, amasi)\n✓ decomposing dead material / recycling nutrients\n✓ making medicines (antibiotics, vaccines)\n✓ helping digestion\n✓ treating sewage" },
+    { "id": "course", "type": "open", "marks": 2, "prompt": "Why should a patient finish the whole course of antibiotics even after feeling better?", "memo": "✓ Some bacteria may still be alive (the strongest survive) (1)\n✓ They can multiply and become resistant to the antibiotic (1)" }
+  ]
+}

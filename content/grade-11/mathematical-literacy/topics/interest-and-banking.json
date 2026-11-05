@@ -1,0 +1,39 @@
+{
+  "id": "interest-and-banking",
+  "title": "Finance: Interest, Banking and Loans",
+  "term": 1,
+  "summary": "Simple and compound interest, interest rates on savings and loans, bank fees and account types, hire purchase, and comparing loan options.",
+  "notes": [
+    { "type": "heading", "text": "Simple and compound interest" },
+    { "type": "table", "headers": ["", "Simple interest", "Compound interest"], "rows": [
+      ["Interest is calculated on…", "the original amount only", "the original amount plus interest already earned"],
+      ["Growth", "Grows by the same amount each year (linear)", "Grows faster over time (exponential)"],
+      ["Example: R10 000 at 8% for 3 years", "R10 000 + 3 × R800 = R12 400", "R10 000 → R10 800 → R11 664 → R12 597,12"]
+    ] },
+    { "type": "paragraph", "text": "In Mathematical Literacy, compound interest is usually calculated year by year in a table, although the formula $A = P(1 + i)^n$ gives the same answer." },
+    { "type": "heading", "text": "Bank accounts and fees" },
+    { "type": "list", "items": [
+      "**Savings account**: earns interest; few transactions.",
+      "**Cheque or current account**: for everyday transactions, debit orders and card payments; monthly fees.",
+      "**Fixed deposit**: money is locked away for a set time at a higher interest rate.",
+      "Fees may be **pay-as-you-use** (a fee per transaction) or a **fixed monthly bundle**."
+    ] },
+    { "type": "example", "title": "Worked example 1: comparing bank fees", "problem": "Bank A charges R5,50 per withdrawal and R60 per month. Bank B charges R110 per month with unlimited transactions. For how many withdrawals per month are they equal?", "steps": ["60 + 5,5w = 110", "5,5w = 50, so w ≈ 9,1"], "answer": "About 9 withdrawals; for more than 9, Bank B is cheaper." },
+    { "type": "heading", "text": "Loans and hire purchase" },
+    { "type": "paragraph", "text": "**Hire purchase (HP)** lets you take goods home after paying a **deposit**, and pay off the rest in monthly instalments that include interest. Buying on credit always costs more than paying cash." },
+    { "type": "example", "title": "Worked example 2: hire purchase", "problem": "A lounge suite costs R12 000 cash. On HP, you pay a 10% deposit and 24 instalments of R620. How much extra does HP cost?", "steps": ["Deposit: R1 200", "Instalments: 24 × R620 = R14 880", "Total HP price: R16 080", "Extra cost: R16 080 − R12 000 = R4 080"], "answer": "R4 080 more than cash" },
+    { "type": "callout", "label": "Be careful with credit", "text": "Store cards and personal loans often have very high interest rates. Missing payments damages your **credit record**, which makes future loans harder and more expensive to get." }
+  ],
+  "questions": [
+    { "id": "simple", "type": "numeric", "prompt": "Calculate the simple interest on R6 000 at 7% p.a. for 4 years.", "answer": 1680, "tolerance": 0, "unit": "rand" },
+    { "id": "compound", "type": "numeric", "prompt": "R5 000 is invested at 10% p.a. compound interest. What is it worth after 2 years?", "answer": 6050, "tolerance": 0, "unit": "rand" },
+    { "id": "more", "type": "truefalse", "prompt": "For the same rate and time, compound interest earns more than simple interest.", "answer": true },
+    { "id": "fixed-deposit", "type": "mcq", "prompt": "Which account usually earns the highest interest rate?", "options": ["Cheque account", "Savings account", "Fixed deposit", "Credit card account"], "answer": 2 },
+    { "id": "hp", "type": "numeric", "prompt": "A TV costs R7 500 cash. On HP: R750 deposit plus 18 payments of R480. How much more than the cash price is paid on HP?", "answer": 1890, "tolerance": 0, "unit": "rand" },
+    { "id": "fees", "type": "open", "marks": 3, "prompt": "A pay-as-you-use account charges R4,50 per transaction plus R45 a month. A bundle account costs R99 per month. Which is cheaper for a customer who makes 15 transactions a month?", "memo": "✓ PAYU: R45 + 15 × R4,50 = R112,50 (1)\n✓ Bundle: R99 (1)\n✓ The bundle is cheaper (1)" },
+    { "id": "table", "type": "open", "marks": 3, "prompt": "Complete a table showing the value of R8 000 invested at 6% p.a. compound interest for 3 years.", "memo": "✓ Year 1: R8 480 (1)\n✓ Year 2: R8 988,80 (1)\n✓ Year 3: R9 528,13 (1)" },
+    { "id": "credit", "type": "open", "marks": 2, "prompt": "Give TWO reasons to be careful when buying on credit.", "memo": "Any two (1 each): you pay more than the cash price; high interest; debt can grow; missed payments damage your credit record; repossession" },
+    { "id": "loan-total", "type": "numeric", "prompt": "A loan is repaid with 36 monthly instalments of R1 250. What is the total amount repaid?", "answer": 45000, "tolerance": 0, "unit": "rand" },
+    { "id": "interest-paid", "type": "open", "marks": 2, "prompt": "A person borrows R20 000 and repays R26 400 in total. How much interest was paid, and what percentage of the loan is this?", "memo": "✓ Interest R6 400 (1)\n✓ 6 400 ÷ 20 000 × 100 = 32% (1)" }
+  ]
+}

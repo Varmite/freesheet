@@ -1,0 +1,100 @@
+{
+  "id": "geometry-of-straight-lines",
+  "title": "Geometry of Straight Lines",
+  "term": 2,
+  "summary": "Recognise angle pairs formed by intersecting and parallel lines (adjacent, vertically opposite, corresponding, alternate and co-interior angles) and use them, with reasons, to calculate unknown angles.",
+  "notes": [
+    { "type": "heading", "text": "Types of angles" },
+    { "type": "table", "caption": "Angles classified by size", "headers": ["Type", "Size"], "rows": [
+      ["Acute angle", "between $0^\\circ$ and $90^\\circ$"],
+      ["Right angle", "exactly $90^\\circ$"],
+      ["Obtuse angle", "between $90^\\circ$ and $180^\\circ$"],
+      ["Straight angle", "exactly $180^\\circ$"],
+      ["Reflex angle", "between $180^\\circ$ and $360^\\circ$"],
+      ["Revolution", "exactly $360^\\circ$"]
+    ] },
+    { "type": "definition", "term": "Complementary and supplementary angles", "text": "Two angles are **complementary** if they add up to $90^\\circ$ (e.g. $37^\\circ$ and $53^\\circ$). Two angles are **supplementary** if they add up to $180^\\circ$ (e.g. $112^\\circ$ and $68^\\circ$)." },
+    { "type": "definition", "term": "Adjacent angles", "text": "**Adjacent** angles share a vertex and a common arm, and lie on opposite sides of that arm (next to each other)." },
+    { "type": "definition", "term": "Perpendicular lines", "text": "Lines that meet at $90^\\circ$ are **perpendicular**. We write $AB \\perp CD$." },
+
+    { "type": "heading", "text": "Angles formed by intersecting lines" },
+    { "type": "list", "items": [
+      "**Angles on a straight line** add up to $180^\\circ$. Reason: (∠s on a str line).",
+      "**Angles around a point** add up to $360^\\circ$. Reason: (∠s round a pt).",
+      "**Vertically opposite angles** are equal. Reason: (vert opp ∠s)."
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" font-family=\"sans-serif\" font-size=\"15\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"40\" y1=\"40\" x2=\"260\" y2=\"160\"/><line x1=\"40\" y1=\"160\" x2=\"260\" y2=\"40\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"150\" y=\"80\">1</text><text x=\"184\" y=\"105\">2</text><text x=\"150\" y=\"130\">3</text><text x=\"116\" y=\"105\">4</text></g></svg>", "caption": "Two intersecting lines. Angles 1 and 3 are vertically opposite (equal); so are angles 2 and 4. Adjacent angles such as 1 and 2 lie on a straight line and add up to 180°." },
+    { "type": "paragraph", "text": "**Why are vertically opposite angles equal?** In the diagram, $\\hat{1} + \\hat{2} = 180^\\circ$ and $\\hat{2} + \\hat{3} = 180^\\circ$ (both ∠s on a str line). So $\\hat{1} = 180^\\circ - \\hat{2} = \\hat{3}$." },
+    { "type": "example", "title": "Worked example 1", "problem": "(a) Angles $x$ and $3x$ lie next to each other on a straight line. Find $x$.\n(b) Three angles around a point are $120^\\circ$, $95^\\circ$ and $y$. Find $y$.\n(c) Two lines intersect. One angle is $3x + 10^\\circ$ and the vertically opposite angle is $5x - 30^\\circ$. Find $x$.", "steps": [
+      "(a) $x + 3x = 180^\\circ$ (∠s on a str line), so $4x = 180^\\circ$ and $x = 45^\\circ$.",
+      "(b) $y = 360^\\circ - 120^\\circ - 95^\\circ = 145^\\circ$ (∠s round a pt).",
+      "(c) $3x + 10^\\circ = 5x - 30^\\circ$ (vert opp ∠s), so $40^\\circ = 2x$ and $x = 20^\\circ$. Each angle is $70^\\circ$."
+    ], "answer": "(a) $45^\\circ$  (b) $145^\\circ$  (c) $x = 20^\\circ$" },
+
+    { "type": "heading", "text": "Parallel lines and a transversal" },
+    { "type": "paragraph", "text": "**Parallel lines** never meet; they are always the same distance apart. On diagrams they are marked with matching arrows, and we write $AB \\parallel CD$. A **transversal** is a line that crosses two or more other lines. It forms eight angles, four at each intersection." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 345 210\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"20\" y1=\"60\" x2=\"320\" y2=\"60\"/><line x1=\"20\" y1=\"150\" x2=\"320\" y2=\"150\"/><line x1=\"90\" y1=\"200\" x2=\"250\" y2=\"10\"/><polyline points=\"75,54 83,60 75,66\"/><polyline points=\"75,144 83,150 75,156\"/></g><g fill=\"#000\"><text x=\"4\" y=\"65\">A</text><text x=\"326\" y=\"65\">B</text><text x=\"4\" y=\"155\">C</text><text x=\"326\" y=\"155\">D</text><text x=\"224\" y=\"54\">a</text><text x=\"194\" y=\"48\">b</text><text x=\"178\" y=\"80\">c</text><text x=\"216\" y=\"82\">d</text><text x=\"148\" y=\"144\">e</text><text x=\"118\" y=\"138\">f</text><text x=\"102\" y=\"170\">g</text><text x=\"140\" y=\"172\">h</text></g></svg>", "caption": "AB ∥ CD, cut by a transversal. At the top intersection the angles are a (top right), b (top left), c (bottom left) and d (bottom right); at the bottom intersection they are e, f, g and h in the same positions." },
+    { "type": "table", "caption": "Angle pairs formed by parallel lines (AB ∥ CD in the diagram)", "headers": ["Pair", "Position", "Examples", "Relationship", "Reason"], "rows": [
+      ["Corresponding angles", "Same position at each intersection (an F shape)", "$a$ and $e$; $c$ and $g$", "Equal", "corresp ∠s; $AB \\parallel CD$"],
+      ["Alternate angles", "Between the parallel lines, on opposite sides of the transversal (a Z shape)", "$c$ and $e$; $d$ and $f$", "Equal", "alt ∠s; $AB \\parallel CD$"],
+      ["Co-interior angles", "Between the parallel lines, on the same side of the transversal (a C or U shape)", "$d$ and $e$; $c$ and $f$", "Add up to $180^\\circ$", "co-int ∠s; $AB \\parallel CD$"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "These relationships are only true if the lines are **parallel**. If the lines are not parallel, corresponding and alternate angles are not equal. Always include \"$AB \\parallel CD$\" in your reason." },
+    { "type": "example", "title": "Worked example 2", "problem": "In the diagram, $AB \\parallel CD$ and $a = 50^\\circ$. Find $b$, $c$, $e$ and $h$, giving reasons.", "steps": [
+      "$b = 180^\\circ - 50^\\circ = 130^\\circ$ (∠s on a str line).",
+      "$c = a = 50^\\circ$ (vert opp ∠s).",
+      "$e = a = 50^\\circ$ (corresp ∠s; $AB \\parallel CD$).",
+      "$d = b = 130^\\circ$ (vert opp ∠s), so $h = d = 130^\\circ$ (corresp ∠s; $AB \\parallel CD$)."
+    ], "answer": "$b = 130^\\circ$, $c = 50^\\circ$, $e = 50^\\circ$, $h = 130^\\circ$" },
+    { "type": "callout", "label": "Exam tip", "text": "In a figure with parallel lines, every angle is either equal to the acute angle or equal to the obtuse angle, and acute + obtuse $= 180^\\circ$. Use this to check your answers." },
+    { "type": "example", "title": "Worked example 3: using algebra", "problem": "Two co-interior angles between parallel lines are $2x + 20^\\circ$ and $x + 40^\\circ$. Find $x$ and the two angles.", "steps": [
+      "$2x + 20^\\circ + x + 40^\\circ = 180^\\circ$ (co-int ∠s; lines ∥).",
+      "$3x + 60^\\circ = 180^\\circ$, so $3x = 120^\\circ$ and $x = 40^\\circ$.",
+      "The angles are $100^\\circ$ and $80^\\circ$."
+    ], "answer": "$x = 40^\\circ$; angles $100^\\circ$ and $80^\\circ$" },
+
+    { "type": "heading", "text": "Proving that lines are parallel" },
+    { "type": "paragraph", "text": "The relationships also work in reverse. Two lines cut by a transversal are parallel if **any one** of these is true:" },
+    { "type": "list", "items": [
+      "a pair of corresponding angles is equal (reason: corresp ∠s =);",
+      "a pair of alternate angles is equal (reason: alt ∠s =);",
+      "a pair of co-interior angles adds up to $180^\\circ$ (reason: co-int ∠s supp)."
+    ] },
+    { "type": "example", "title": "Worked example 4", "problem": "A transversal cuts lines $PQ$ and $RS$. Two alternate angles are both $72^\\circ$. Are $PQ$ and $RS$ parallel?", "steps": [
+      "The alternate angles are equal, so $PQ \\parallel RS$ (alt ∠s =)."
+    ], "answer": "Yes, $PQ \\parallel RS$." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Complementary: add to $90^\\circ$. Supplementary: add to $180^\\circ$.",
+      "Angles on a straight line add to $180^\\circ$; angles around a point add to $360^\\circ$; vertically opposite angles are equal.",
+      "With parallel lines: corresponding angles are equal (F), alternate angles are equal (Z), co-interior angles add to $180^\\circ$ (C).",
+      "Equal corresponding or alternate angles, or supplementary co-interior angles, prove that lines are parallel.",
+      "Always write a reason, and say which lines are parallel."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "What type of angle is $215^\\circ$?", "options": ["Obtuse", "Straight", "Reflex", "Revolution"], "answer": 2, "explanation": "An angle between $180^\\circ$ and $360^\\circ$ is reflex." },
+    { "id": "q2", "type": "numeric", "prompt": "What is the complement of $37^\\circ$, in degrees?", "unit": "°", "answer": 53, "tolerance": 0, "explanation": "Complementary angles add to $90^\\circ$: $90 - 37 = 53$." },
+    { "id": "q3", "type": "numeric", "prompt": "What is the supplement of $112^\\circ$, in degrees?", "unit": "°", "answer": 68, "tolerance": 0, "explanation": "Supplementary angles add to $180^\\circ$: $180 - 112 = 68$." },
+    { "id": "q4", "type": "truefalse", "prompt": "Vertically opposite angles add up to $180^\\circ$.", "answer": false, "explanation": "Vertically opposite angles are **equal**. It is adjacent angles on a straight line that add up to $180^\\circ$." },
+    { "id": "q5", "type": "numeric", "prompt": "Angles $x$ and $3x$ lie next to each other on a straight line. Calculate $x$, in degrees.", "unit": "°", "answer": 45, "tolerance": 0, "explanation": "$4x = 180$, so $x = 45$ (∠s on a str line)." },
+    { "id": "q6", "type": "numeric", "prompt": "Three angles around a point are $120^\\circ$, $95^\\circ$ and $y$. Calculate $y$, in degrees.", "unit": "°", "answer": 145, "tolerance": 0, "explanation": "$360 - 120 - 95 = 145$ (∠s round a pt)." },
+    { "id": "q7", "type": "mcq", "prompt": "In the parallel-lines diagram in the notes, what are angles $a$ and $e$ called?", "options": ["Alternate angles", "Corresponding angles", "Co-interior angles", "Vertically opposite angles"], "answer": 1, "explanation": "$a$ and $e$ are both in the top-right position at their intersections: corresponding angles (F shape)." },
+    { "id": "q8", "type": "mcq", "prompt": "In the parallel-lines diagram in the notes, what are angles $c$ and $e$ called?", "options": ["Alternate angles", "Corresponding angles", "Co-interior angles", "Adjacent angles"], "answer": 0, "explanation": "They are between the parallel lines, on opposite sides of the transversal (Z shape): alternate angles." },
+    { "id": "q9", "type": "numeric", "prompt": "Lines $AB$ and $CD$ are parallel. Two co-interior angles are formed; one of them is $130^\\circ$. Calculate the other, in degrees.", "unit": "°", "answer": 50, "tolerance": 0, "explanation": "Co-interior angles between parallel lines add to $180^\\circ$: $180 - 130 = 50$." },
+    { "id": "q10", "type": "match", "prompt": "Match each angle size with its type.", "marks": 5, "pairs": [
+      { "left": "$90^\\circ$", "right": "Right angle" },
+      { "left": "$180^\\circ$", "right": "Straight angle" },
+      { "left": "$360^\\circ$", "right": "Revolution" },
+      { "left": "$47^\\circ$", "right": "Acute angle" },
+      { "left": "$130^\\circ$", "right": "Obtuse angle" }
+    ], "explanation": "Acute: less than $90^\\circ$; right: $90^\\circ$; obtuse: between $90^\\circ$ and $180^\\circ$; straight: $180^\\circ$; revolution: $360^\\circ$." },
+    { "id": "q11", "type": "truefalse", "prompt": "Co-interior angles between parallel lines add up to $180^\\circ$.", "answer": true, "explanation": "Co-interior angles are supplementary when the lines are parallel." },
+    { "id": "q12", "type": "short", "prompt": "What word describes two angles that add up to $90^\\circ$?", "answers": ["complementary", "complementary angles"], "explanation": "Complementary: $90^\\circ$. (Supplementary: $180^\\circ$.)" },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Two straight lines intersect. One angle is $3x + 10^\\circ$ and the vertically opposite angle is $5x - 30^\\circ$. Calculate $x$ and the size of the angles.", "memo": "$3x + 10^\\circ = 5x - 30^\\circ$ (vert opp ∠s) ✓ (1)\n$2x = 40^\\circ$, $x = 20^\\circ$ ✓ (1)\nEach angle $= 70^\\circ$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "In the parallel-lines diagram in the notes, $AB \\parallel CD$ and $a = 50^\\circ$. Calculate $b$, $c$, $e$ and $h$. Give a reason for each.", "memo": "$b = 130^\\circ$ (∠s on a str line) ✓ (1)\n$c = 50^\\circ$ (vert opp ∠s) ✓ (1)\n$e = 50^\\circ$ (corresp ∠s; $AB \\parallel CD$) ✓ (1)\n$h = 130^\\circ$ ($h = d = b$; corresp ∠s and vert opp ∠s) ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 2, "prompt": "A transversal cuts lines $PQ$ and $RS$. Two alternate angles both measure $72^\\circ$. What can you conclude about $PQ$ and $RS$? Give a reason.", "memo": "$PQ \\parallel RS$ ✓ (1)\nReason: alternate angles are equal (alt ∠s =) ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "Two co-interior angles between parallel lines are $2x + 20^\\circ$ and $x + 40^\\circ$. Calculate $x$ and the size of each angle.", "memo": "$2x + 20^\\circ + x + 40^\\circ = 180^\\circ$ (co-int ∠s; lines ∥) ✓ (1)\n$3x = 120^\\circ$, $x = 40^\\circ$ ✓ (1)\nAngles: $100^\\circ$ and $80^\\circ$ ✓ (1)" }
+  ]
+}

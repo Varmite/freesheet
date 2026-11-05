@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "grade": 8,
+  "id": "technology",
+  "name": "Technology",
+  "description": "CAPS Grade 8 Technology: the design process, graphic communication, structures and forces, levers, gears and pulleys, electrical circuits and logic, and processing materials.",
+  "topics": [
+    { "id": "the-design-process", "title": "The Design Process", "term": 1 },
+    { "id": "graphic-communication", "title": "Graphic Communication", "term": 1 },
+    { "id": "structures-and-forces", "title": "Structures and Forces", "term": 1 },
+    { "id": "strengthening-structures", "title": "Strengthening Structures", "term": 1 },
+    { "id": "levers-and-linkages", "title": "Mechanical Systems: Levers and Linkages", "term": 2 },
+    { "id": "gears-and-pulleys", "title": "Mechanical Systems: Gears and Pulleys", "term": 2 },
+    { "id": "electrical-circuits", "title": "Electrical Systems: Circuits and Components", "term": 3 },
+    { "id": "switches-and-logic", "title": "Switches and Logic Circuits", "term": 3 },
+    { "id": "processing-materials", "title": "Processing Materials", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 75, "totalMarks": 60 }
+  ]
+}

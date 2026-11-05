@@ -1,0 +1,44 @@
+{
+  "id": "finance-annuities-and-loans",
+  "title": "Finance: Annuities and Loans",
+  "term": 1,
+  "summary": "Future value and present value annuities, sinking funds, loan repayments, outstanding balances, and analysing investment and loan options.",
+  "notes": [
+    { "type": "heading", "text": "Annuities" },
+    { "type": "paragraph", "text": "An **annuity** is a series of equal payments made at regular intervals. In each formula, $x$ is the payment, $i$ the interest rate per period and $n$ the number of payments." },
+    { "type": "formula", "latex": "F = \\frac{x\\left[(1 + i)^n - 1\\right]}{i}", "caption": "Future value: the amount saved by regular payments (e.g. a retirement annuity or sinking fund)" },
+    { "type": "formula", "latex": "P = \\frac{x\\left[1 - (1 + i)^{-n}\\right]}{i}", "caption": "Present value: the value now of future payments (e.g. a loan or bond)" },
+    { "type": "example", "title": "Worked example 1: future value", "problem": "Sipho saves R1 500 at the end of every month for 5 years at 8% p.a. compounded monthly. How much will he have?", "steps": [
+      "$x = 1\\ 500$, $i = \\dfrac{0{,}08}{12}$, $n = 60$",
+      "$F = \\dfrac{1\\ 500\\left[(1 + \\frac{0{,}08}{12})^{60} - 1\\right]}{\\frac{0{,}08}{12}} = R110\\ 215{,}28$"
+    ], "answer": "About R110 215,28" },
+    { "type": "example", "title": "Worked example 2: loan repayment", "problem": "A car loan of R200 000 is repaid in equal monthly instalments over 5 years at 11% p.a. compounded monthly, starting one month after the loan is granted. Find the instalment.", "steps": [
+      "$P = 200\\ 000$, $i = \\dfrac{0{,}11}{12}$, $n = 60$",
+      "$200\\ 000 = \\dfrac{x\\left[1 - (1 + \\frac{0{,}11}{12})^{-60}\\right]}{\\frac{0{,}11}{12}}$",
+      "$x = R4\\ 348{,}48$"
+    ], "answer": "About R4 348,48 per month" },
+    { "type": "heading", "text": "Outstanding balance" },
+    { "type": "paragraph", "text": "The **outstanding balance** on a loan after some payments is the present value of the payments that remain." },
+    { "type": "example", "title": "Worked example 3", "problem": "Using worked example 2, what is the balance outstanding after 3 years (36 payments)?", "steps": ["Remaining payments: $n = 24$", "$P = \\dfrac{4\\ 348{,}48\\left[1 - (1 + \\frac{0{,}11}{12})^{-24}\\right]}{\\frac{0{,}11}{12}} \\approx R93\\ 299{,}43$"], "answer": "About R93 299" },
+    { "type": "heading", "text": "Sinking funds" },
+    { "type": "paragraph", "text": "A **sinking fund** is a savings plan to replace an asset in the future. Find the future cost (allowing for inflation), subtract the scrap value of the old asset, and use the future value formula to find the monthly payment." },
+    { "type": "callout", "label": "Exam tip", "text": "Decide first: is the money being **saved** for the future (future value) or **borrowed/withdrawn** now (present value)? Then make sure $n$ and $i$ use the same period (months with monthly payments)." },
+    { "type": "example", "title": "Worked example 4: how long?", "problem": "How many monthly payments of R3 000 are needed to repay a loan of R100 000 at 12% p.a. compounded monthly?", "steps": [
+      "$100\\ 000 = \\dfrac{3\\ 000\\left[1 - (1{,}01)^{-n}\\right]}{0{,}01}$, so $1 - (1{,}01)^{-n} = \\dfrac{1}{3}$",
+      "$(1{,}01)^{-n} = \\dfrac{2}{3}$, so $-n\\log 1{,}01 = \\log\\frac{2}{3}$",
+      "$n \\approx 40{,}75$: 40 full payments and a smaller final payment."
+    ], "answer": "About 41 payments" }
+  ],
+  "questions": [
+    { "id": "which-formula", "type": "mcq", "prompt": "To calculate the monthly repayment on a home loan, you use…", "options": ["the future value formula", "the present value formula", "simple interest", "straight-line depreciation"], "answer": 1 },
+    { "id": "n-value", "type": "numeric", "prompt": "Monthly payments for 20 years: what is $n$?", "answer": 240, "tolerance": 0 },
+    { "id": "fv", "type": "numeric", "prompt": "R800 is deposited at the end of every month for 3 years at 6% p.a. compounded monthly. Find the future value, to the nearest rand.", "answer": 31469, "tolerance": 1, "unit": "rand" },
+    { "id": "pv", "type": "numeric", "prompt": "Find the present value of 48 monthly payments of R2 500 at 9% p.a. compounded monthly, to the nearest rand.", "answer": 100462, "tolerance": 1, "unit": "rand" },
+    { "id": "sinking", "type": "truefalse", "prompt": "A sinking fund is used to save for the replacement of an asset.", "answer": true },
+    { "id": "instalment", "type": "open", "marks": 4, "prompt": "A loan of R50 000 is repaid over 2 years with equal monthly payments at 15% p.a. compounded monthly. Calculate the monthly payment.", "memo": "✓ $i = 0{,}0125$, $n = 24$ (1)\n✓ $50\\ 000 = \\frac{x[1 - (1{,}0125)^{-24}]}{0{,}0125}$ (2)\n✓ $x \\approx R2\\ 424{,}33$ (1)" },
+    { "id": "balance", "type": "open", "marks": 3, "prompt": "Explain how to calculate the outstanding balance on a loan after a number of payments have been made.", "memo": "✓ Find the number of payments still to be made (1)\n✓ Use the present value formula with those payments (1)\n✓ The answer is the balance owed at that time (1)" },
+    { "id": "retire", "type": "open", "marks": 4, "prompt": "Lerato wants R1 million in 25 years. How much must she save at the end of each month at 10% p.a. compounded monthly?", "memo": "✓ $i = \\frac{0{,}1}{12}$, $n = 300$ (1)\n✓ $1\\ 000\\ 000 = \\frac{x[(1 + \\frac{0{,}1}{12})^{300} - 1]}{\\frac{0{,}1}{12}}$ (2)\n✓ $x \\approx R753{,}67$ (1)" },
+    { "id": "total-interest", "type": "open", "marks": 2, "prompt": "In worked example 2, how much interest is paid in total over the 5 years?", "memo": "✓ Total paid $= 60 \\times 4\\ 348{,}48 = R260\\ 908{,}80$ (1)\n✓ Interest $= R60\\ 908{,}80$ (1)" },
+    { "id": "how-many", "type": "open", "marks": 4, "prompt": "How many monthly payments of R5 000 are needed to pay off R150 000 at 9% p.a. compounded monthly?", "memo": "✓ $150\\ 000 = \\frac{5\\ 000[1 - (1{,}0075)^{-n}]}{0{,}0075}$ (1)\n✓ $(1{,}0075)^{-n} = 0{,}775$ (1)\n✓ $n = -\\frac{\\log 0{,}775}{\\log 1{,}0075} \\approx 34{,}1$ (1)\n✓ 35 payments (34 full and a smaller final one) (1)" }
+  ]
+}

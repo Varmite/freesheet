@@ -1,0 +1,36 @@
+{
+  "id": "maps-plans-and-models",
+  "title": "Maps, Plans and Models",
+  "term": 3,
+  "summary": "Floor plans and elevation plans, scale drawings and scale models, route planning with distance and time, and estimating costs from plans.",
+  "notes": [
+    { "type": "heading", "text": "Types of plans" },
+    { "type": "table", "headers": ["Plan", "Shows"], "rows": [
+      ["Floor plan", "The layout of rooms from above"],
+      ["Elevation plan", "The view of the outside of a building from the front, back or sides, showing heights of walls, doors, windows and the roof"],
+      ["Design / assembly plan", "How to put an object together (e.g. flat-pack furniture)"],
+      ["Strip chart / route map", "A route between places, with distances"]
+    ] },
+    { "type": "heading", "text": "Scale models" },
+    { "type": "paragraph", "text": "A **scale model** is a 3D copy of an object, made smaller or larger by a scale factor. A model car built to scale 1 : 24 is 24 times smaller in every length." },
+    { "type": "example", "title": "Worked example 1", "problem": "A model of a building is made to a scale of 1 : 150. The model is 24 cm tall. How tall is the real building?", "steps": ["Real height = 24 × 150 = 3 600 cm", "= 36 m"], "answer": "36 m" },
+    { "type": "callout", "label": "Remember", "text": "Lengths scale by the scale factor $k$, but areas scale by $k^2$ and volumes by $k^3$. A 1 : 10 model has $\\frac{1}{100}$ of the real area and $\\frac{1}{1\\ 000}$ of the real volume." },
+    { "type": "heading", "text": "Route planning" },
+    { "type": "formula", "latex": "\\text{time} = \\frac{\\text{distance}}{\\text{speed}} \\qquad \\text{speed} = \\frac{\\text{distance}}{\\text{time}}" },
+    { "type": "example", "title": "Worked example 2", "problem": "A family drives from Johannesburg to Durban, 568 km, at an average of 95 km/h, with a 45-minute stop. If they leave at 07:30, when will they arrive?", "steps": ["Driving time: 568 ÷ 95 = 5,98 h ≈ 5 h 59 min", "Total: 5 h 59 min + 45 min = 6 h 44 min", "07:30 + 6 h 44 min = 14:14"], "answer": "About 14:14" },
+    { "type": "heading", "text": "Using plans to estimate costs" },
+    { "type": "example", "title": "Worked example 3", "problem": "On a 1 : 50 elevation plan, a wall measures 12 cm long and 5,4 cm high, with a door of 1,8 cm by 4 cm. Bricks: 50 per m². How many bricks are needed?", "steps": ["Real wall: 6 m by 2,7 m = 16,2 m²", "Door: 0,9 m by 2 m = 1,8 m²", "Brick area: 14,4 m² × 50 = 720 bricks"], "answer": "720 bricks (plus extra for breakages)" }
+  ],
+  "questions": [
+    { "id": "elevation", "type": "mcq", "prompt": "Which plan shows the outside of a house from the front?", "options": ["Floor plan", "Elevation plan", "Route map", "Assembly plan"], "answer": 1 },
+    { "id": "model", "type": "numeric", "prompt": "A model train is built to a scale of 1 : 87. The model is 23 cm long. How long is the real train, in metres? (two decimals)", "answer": 20.01, "tolerance": 0.01, "unit": "m" },
+    { "id": "scale-down", "type": "numeric", "prompt": "A real car is 4,5 m long. How long is a 1 : 18 scale model, in cm?", "answer": 25, "tolerance": 0, "unit": "cm" },
+    { "id": "area-scale", "type": "truefalse", "prompt": "If a model is built at a scale of 1 : 10, its area is $\\frac{1}{100}$ of the real area.", "answer": true },
+    { "id": "time", "type": "numeric", "prompt": "A bus travels 240 km at 80 km/h. How long does the trip take, in hours?", "answer": 3, "tolerance": 0, "unit": "hours" },
+    { "id": "speed", "type": "numeric", "prompt": "A cyclist rides 45 km in 2 h 15 min. Calculate the average speed.", "answer": 20, "tolerance": 0, "unit": "km/h" },
+    { "id": "arrive", "type": "open", "marks": 3, "prompt": "A taxi leaves Bloemfontein at 06:15 and travels 175 km to Kimberley at an average speed of 70 km/h. At what time does it arrive?", "memo": "✓ 175 ÷ 70 = 2,5 h (1)\n✓ = 2 h 30 min (1)\n✓ Arrives at 08:45 (1)" },
+    { "id": "tiles", "type": "open", "marks": 4, "prompt": "On a 1 : 100 floor plan, a bathroom measures 2,4 cm by 1,8 cm. Floor tiles are sold in boxes covering 1,5 m² at R215 per box. Calculate the cost of tiling the floor.", "memo": "✓ Real size 2,4 m × 1,8 m = 4,32 m² (1)\n✓ 4,32 ÷ 1,5 = 2,88 (1)\n✓ 3 boxes (1)\n✓ R645 (1)" },
+    { "id": "volume-scale", "type": "open", "marks": 2, "prompt": "A model of a water tank is built at a scale of 1 : 20. If the model holds 0,5 ℓ, how much does the real tank hold?", "memo": "✓ Volume scale factor $20^3 = 8\\ 000$ (1)\n✓ 0,5 × 8 000 = 4 000 ℓ (1)" },
+    { "id": "plans-use", "type": "open", "marks": 2, "prompt": "Give TWO reasons why builders use scale drawings.", "memo": "Any two (1 each): to plan the layout accurately; to calculate quantities and costs; to get building approval; to communicate the design to workers" }
+  ]
+}

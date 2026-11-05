@@ -3,7 +3,29 @@
   "grade": 10,
   "id": "mathematics",
   "name": "Mathematics",
-  "description": "Algebra, functions, trigonometry, geometry, probability and statistics for Grade 10.",
-  "topics": [ { "id": "exponents", "title": "Exponents", "term": 1 } ],
-  "exams": [ { "id": "sample-test", "title": "Sample Test: Exponents", "durationMinutes": 30, "totalMarks": 14 } ]
+  "description": "CAPS Grade 10 Mathematics: algebra, exponents, number patterns, equations, functions, finance, probability, trigonometry, analytical and Euclidean geometry, measurement and statistics.",
+  "topics": [
+    { "id": "algebraic-expressions", "title": "Algebraic Expressions", "term": 1 },
+    { "id": "factorisation-and-algebraic-fractions", "title": "Factorisation and Algebraic Fractions", "term": 1 },
+    { "id": "exponents", "title": "Exponents", "term": 1 },
+    { "id": "number-patterns", "title": "Number Patterns", "term": 1 },
+    { "id": "equations-and-inequalities", "title": "Equations and Inequalities", "term": 1 },
+    { "id": "trigonometric-ratios", "title": "Trigonometric Ratios", "term": 1 },
+    { "id": "functions-straight-line", "title": "Functions: The Straight Line", "term": 2 },
+    { "id": "functions-parabola", "title": "Functions: The Parabola", "term": 2 },
+    { "id": "functions-hyperbola", "title": "Functions: The Hyperbola", "term": 2 },
+    { "id": "functions-exponential", "title": "Functions: The Exponential Graph", "term": 2 },
+    { "id": "trigonometric-functions", "title": "Trigonometric Functions", "term": 2 },
+    { "id": "euclidean-geometry", "title": "Euclidean Geometry", "term": 2 },
+    { "id": "analytical-geometry", "title": "Analytical Geometry", "term": 3 },
+    { "id": "finance-and-growth", "title": "Finance and Growth", "term": 3 },
+    { "id": "statistics", "title": "Statistics", "term": 3 },
+    { "id": "trigonometry-two-dimensions", "title": "Trigonometry: Problems in Two Dimensions", "term": 3 },
+    { "id": "measurement", "title": "Measurement", "term": 3 },
+    { "id": "probability", "title": "Probability", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-paper-1", "title": "November Examination: Paper 1", "durationMinutes": 120, "totalMarks": 100 },
+    { "id": "november-paper-2", "title": "November Examination: Paper 2", "durationMinutes": 120, "totalMarks": 100 }
+  ]
 }

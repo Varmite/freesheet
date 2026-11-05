@@ -1,0 +1,113 @@
+{
+  "id": "november-exam",
+  "title": "November Examination: Paper 1 (Language in Context)",
+  "durationMinutes": 120,
+  "totalMarks": 70,
+  "instructions": [
+    "This question paper consists of THREE sections: SECTION A: Comprehension (30 marks); SECTION B: Summary (10 marks); SECTION C: Language structures and conventions (30 marks).",
+    "Answer ALL the questions.",
+    "Read ALL the texts carefully before you answer.",
+    "Answer in full sentences unless you are asked to quote or give a single word. Use your own words unless asked to quote.",
+    "For open questions, write your answer in your workbook, then compare it with the memorandum and mark it honestly.",
+    "All texts in this paper were written for this paper. All names are fictional."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Reading for Meaning and Understanding",
+      "instructions": "SECTION A: COMPREHENSION. Read TEXT A and answer the questions. The paragraphs are numbered.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT A: In Praise of Boredom (an essay written for this paper)",
+          "text": "[1] When I was ten, my family spent December in a borrowed cottage near Hogsback. There was no television, no signal and, as far as I could tell, nothing to do. For the first three days I complained loudly to anyone who would listen. On the fourth day, out of sheer desperation, I picked up a stick and began to dig a canal from the stream to the vegetable patch. By the end of the holiday I had built a system of dams, sluices and tunnels that my father still describes, with some exaggeration, as 'an engineering marvel'.\n\n[2] I think about that canal often, because I suspect that today's ten-year-olds would never dig it. They would never need to. Boredom, that empty, itchy feeling that once drove children outdoors and adults to invent things, has been all but abolished. Every queue, every bus ride, every pause between tasks can now be filled with a swipe.\n\n[3] This sounds like progress. Who, after all, wants to be bored? Yet psychologists have begun to suggest that boredom serves a purpose. It is the mind's way of telling us that what we are doing is not enough, and of pushing us to look for something better. In one widely reported experiment, people who had first completed a dull task, copying numbers from a telephone directory, came up with more creative ideas afterwards than those who had not. Boredom, it seems, is where imagination begins.\n\n[4] There is a darker side to our flight from boredom, too. If we never sit quietly with our own thoughts, we never learn to. Many of us now find even a few minutes of silence unbearable. We reach for our phones not because there is anything worth seeing, but because the alternative, being alone with ourselves, has become frightening.\n\n[5] I am not suggesting that we throw our devices into the sea. But we might try, occasionally, to leave a gap unfilled: to wait in a queue and simply wait, to sit on a bus and look out of the window. We might, if we are lucky, feel the old familiar itch. And then, who knows? We might pick up a stick."
+        }
+      ],
+      "questions": [
+        { "id": "q1-1", "type": "short", "marks": 1, "prompt": "1.1 Where did the writer's family spend December?", "answers": ["hogsback", "near hogsback", "in a cottage near hogsback", "a borrowed cottage near hogsback"] },
+        { "id": "q1-2", "type": "open", "marks": 2, "prompt": "1.2 Why did the writer begin digging the canal (paragraph 1)?", "memo": "✓ There was nothing to do; no television or signal (1)\n✓ Out of desperation/boredom (1)" },
+        { "id": "q1-3", "type": "open", "marks": 2, "prompt": "1.3 What does the phrase 'with some exaggeration' suggest about the father's description?", "memo": "✓ The canal was not really an engineering marvel (1)\n✓ The father speaks with pride/affection, and the writer is being modest/humorous (1)" },
+        { "id": "q1-4", "type": "open", "marks": 2, "prompt": "1.4 Why does the writer believe that today's ten-year-olds 'would never need to' dig such a canal?", "memo": "✓ They would never be bored (1)\n✓ because devices fill every empty moment (1)" },
+        { "id": "q1-5", "type": "open", "marks": 2, "prompt": "1.5 Comment on the writer's description of boredom as 'that empty, itchy feeling'.", "memo": "✓ 'Empty' suggests a lack of stimulation (1)\n✓ 'Itchy' suggests restlessness that demands action, which is why boredom drives creativity (1)" },
+        { "id": "q1-6", "type": "mcq", "marks": 1, "prompt": "1.6 The question 'Who, after all, wants to be bored?' is an example of…", "options": ["hyperbole", "a rhetorical question", "an oxymoron", "onomatopoeia"], "answer": 1 },
+        { "id": "q1-7", "type": "open", "marks": 3, "prompt": "1.7 Explain the purpose of boredom, according to paragraph 3.", "memo": "✓ It signals that what we are doing is not enough/satisfying (1)\n✓ It pushes us to seek something better (1)\n✓ It stimulates creativity/imagination (1)" },
+        { "id": "q1-8", "type": "open", "marks": 3, "prompt": "1.8 How does the experiment described in paragraph 3 support the writer's argument?", "memo": "✓ People did a dull task first (1)\n✓ and afterwards were more creative than others (1)\n✓ which supports the claim that boredom leads to imagination (1)" },
+        { "id": "q1-9", "type": "truefalse", "marks": 1, "prompt": "1.9 The writer argues that people should get rid of their devices entirely.", "answer": false },
+        { "id": "q1-10", "type": "open", "marks": 3, "prompt": "1.10 Discuss the 'darker side' of avoiding boredom, as described in paragraph 4.", "memo": "✓ We never learn to sit quietly with our thoughts (1)\n✓ Silence becomes unbearable (1)\n✓ Being alone with ourselves becomes frightening, so we reach for phones compulsively (1)" },
+        { "id": "q1-11", "type": "short", "marks": 1, "prompt": "1.11 Quote ONE word from paragraph 4 that shows how difficult silence has become for many people.", "answers": ["unbearable", "frightening"] },
+        { "id": "q1-12", "type": "open", "marks": 2, "prompt": "1.12 What does the writer suggest we do in paragraph 5?", "memo": "✓ Occasionally leave empty moments unfilled (1)\n✓ e.g. simply wait in a queue or look out of a bus window (1)" },
+        { "id": "q1-13", "type": "open", "marks": 3, "prompt": "1.13 Discuss the effectiveness of the final sentence, 'We might pick up a stick.'", "memo": "✓ It links back to the opening anecdote (circular structure) (1)\n✓ The stick symbolises creativity/imagination (1)\n✓ The short sentence ends on a hopeful, memorable note (1)" },
+        { "id": "q1-14", "type": "mcq", "marks": 1, "prompt": "1.14 Which word best describes the writer's tone in paragraph 5?", "options": ["Aggressive", "Gently persuasive", "Despairing", "Sarcastic"], "answer": 1 },
+        { "id": "q1-15", "type": "open", "marks": 3, "prompt": "1.15 Do you agree that boredom is 'where imagination begins'? Discuss, referring to your own experience.", "memo": "✓ Clear stance (1)\n✓✓ Two supported reasons or examples (2)" }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Summary",
+      "instructions": "SECTION B: SUMMARY. Read TEXT B and answer the question.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT B: The Hidden Costs of Fast Fashion (written for this paper)",
+          "text": "Cheap clothing has never been easier to buy. Online stores release thousands of new styles every week, and a T-shirt can cost less than a cup of coffee. Shoppers love the low prices, and the industry employs millions of people worldwide. But fast fashion comes at a price. Making clothes uses enormous amounts of water: a single pair of jeans can need thousands of litres. Factories release dyes and chemicals into rivers, poisoning fish and drinking water. Many garments are made from plastic-based fibres that shed tiny particles into the sea each time they are washed. Because the clothes are poorly made, they wear out quickly and are thrown away, and most end up in landfill. Workers in some factories earn very little and work in unsafe conditions. Finally, the constant pressure to buy new trends encourages people to waste money on clothes they hardly wear."
+        }
+      ],
+      "questions": [
+        { "id": "q2", "type": "open", "marks": 10, "prompt": "Summarise the NEGATIVE effects of fast fashion, as described in TEXT B.\n\nNOTE:\n1. Write a fluent paragraph, NOT point form.\n2. Include SEVEN points and do NOT exceed 90 words.\n3. Write the number of words in brackets at the end.", "memo": "CONTENT (7 marks):\n✓ Production uses huge amounts of water. (1)\n✓ Factory dyes/chemicals pollute rivers. (1)\n✓ This harms fish and drinking water. (1)\n✓ Plastic-based fibres release microparticles into the sea when washed. (1)\n✓ Poor-quality clothes wear out quickly. (1)\n✓ Most discarded clothing ends up in landfill. (1)\n✓ Factory workers are poorly paid and work in unsafe conditions. (1)\n✓ Consumers are encouraged to waste money on clothes they rarely wear. (1)\nDo NOT credit: low prices, employment, the number of styles (these are not negative effects).\n\nLANGUAGE (3 marks): fluent paragraph, own words, few errors = 3; partly copied or several errors = 2; mostly copied = 1; point form = 0.\n\nMODEL: Fast fashion uses vast quantities of water, and factory chemicals pollute rivers, harming wildlife and drinking supplies. Synthetic fibres release tiny plastic particles into the ocean during washing. The cheaply made garments soon wear out and are mostly dumped in landfills. Many factory workers receive low wages and face dangerous conditions. Furthermore, the pressure to follow trends causes shoppers to waste money on rarely worn clothes. (67 words)\n\nTotal: (10)" }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Analysing an Advertisement",
+      "instructions": "SECTION C. Read the description of the advertisement (TEXT C) and answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT C: Advertisement (described)",
+          "text": "The advertisement is mostly black. In the centre, a single candle burns, lighting the face of an elderly woman reading a letter. HEADLINE (small, white): 'Some words are worth keeping.' BODY COPY: 'In a world of disappearing messages, give someone something they can hold. Inkwell writing paper and pens. Made in South Africa since 1952.' LOGO: a quill pen dipped in an inkwell. SLOGAN: 'Inkwell. Write it to remember it.'"
+        }
+      ],
+      "questions": [
+        { "id": "q3-1", "type": "open", "marks": 2, "prompt": "3.1 Identify the target audience of the advertisement and give a reason.", "memo": "✓ e.g. adults who value tradition/sentimental people/older people (1)\n✓ Reason, e.g. the elderly woman, the emphasis on keeping letters, 'since 1952' (1)" },
+        { "id": "q3-2", "type": "open", "marks": 3, "prompt": "3.2 Discuss how the black background and the candle create a particular mood.", "memo": "✓ The darkness creates an intimate/quiet/reflective atmosphere (1)\n✓ The candle focuses attention on the woman and the letter (1)\n✓ It suggests warmth, memory and nostalgia (1)" },
+        { "id": "q3-3", "type": "open", "marks": 2, "prompt": "3.3 Explain what 'a world of disappearing messages' refers to and why the advertiser mentions it.", "memo": "✓ Digital messages (texts, social media) that are deleted or forgotten (1)\n✓ It contrasts them with letters, which last, making the product seem more valuable (1)" },
+        { "id": "q3-4", "type": "short", "marks": 1, "prompt": "3.4 Which type of persuasive appeal is mainly used: ethos, pathos or logos?", "answers": ["pathos"] },
+        { "id": "q3-5", "type": "open", "marks": 2, "prompt": "3.5 Why does the advertiser include 'Made in South Africa since 1952'?", "memo": "✓ It suggests tradition, reliability and experience (1)\n✓ and appeals to national pride / supporting local products (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Analysing a Cartoon",
+      "instructions": "Read the description of the cartoon (TEXT D) and answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT D: Cartoon (described)",
+          "text": "Frame 1: A large sign reads 'TOWN COUNCIL: WE ARE FIXING YOUR ROADS!' A smiling councillor in a suit cuts a ribbon in front of a single, freshly filled pothole.\nFrame 2: A wide shot reveals the rest of the road: it is covered in dozens of enormous potholes. A small car has fallen into one; only its wheels are visible.\nFrame 3: The councillor, still smiling, speaks to a reporter: 'As you can see, progress is well under way.'"
+        }
+      ],
+      "questions": [
+        { "id": "q4-1", "type": "open", "marks": 2, "prompt": "4.1 How does the cartoonist use the change from frame 1 to frame 2 to create humour?", "memo": "✓ Frame 1 shows only one repaired pothole, suggesting success (1)\n✓ Frame 2's wide shot reveals the road is ruined, which is unexpected/ironic (1)" },
+        { "id": "q4-2", "type": "open", "marks": 2, "prompt": "4.2 What does the exaggerated detail of the car in the pothole suggest?", "memo": "✓ The potholes are dangerously large (1)\n✓ The council's work is completely inadequate (1)" },
+        { "id": "q4-3", "type": "open", "marks": 2, "prompt": "4.3 Why is the councillor 'still smiling' in frame 3?", "memo": "✓ He is pretending everything is fine / is out of touch (1)\n✓ which mocks politicians who use publicity instead of solving problems (1)" },
+        { "id": "q4-4", "type": "short", "marks": 1, "prompt": "4.4 Name the type of irony in the councillor's words in frame 3.", "answers": ["verbal irony", "verbal", "situational irony"] },
+        { "id": "q4-5", "type": "open", "marks": 3, "prompt": "4.5 Discuss the cartoonist's message and say whether you think the cartoon conveys it effectively.", "memo": "✓ Message: officials make token gestures for publicity while real problems are ignored (1)\n✓ Clear opinion (1)\n✓ Supported by a visual or verbal detail (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Language and Editing Skills",
+      "instructions": "Read TEXT E, which contains deliberate errors, and answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT E",
+          "text": "(a) Neither the coach nor the players was happy with the result.\n(b) Running for the bus, my phone fell out of my pocket.\n(c) The committee will discuss the matter tomorrow.\n(d) If I would have known, I would have helped.\n(e) My sister who lives in Durban is a doctor. (I have only one sister.)\n(f) \"Have you finished your project?\" the teacher asked Zanele."
+        }
+      ],
+      "questions": [
+        { "id": "q5-1", "type": "open", "marks": 1, "prompt": "5.1 Correct the concord error in sentence (a).", "memo": "✓ '…nor the players **were** happy…' (the verb agrees with the nearer subject) (1)" },
+        { "id": "q5-2", "type": "open", "marks": 2, "prompt": "5.2 Identify the error in sentence (b) and correct it.", "memo": "✓ Dangling modifier: it says the phone was running (1)\n✓ e.g. 'While I was running for the bus, my phone fell out of my pocket.' (1)" },
+        { "id": "q5-3", "type": "open", "marks": 2, "prompt": "5.3 Rewrite sentence (c) in the passive voice.", "memo": "✓ The matter will be discussed (1)\n✓ by the committee tomorrow. (1)" },
+        { "id": "q5-4", "type": "open", "marks": 1, "prompt": "5.4 Correct sentence (d).", "memo": "✓ 'If I had known, I would have helped.' (1)" },
+        { "id": "q5-5", "type": "open", "marks": 1, "prompt": "5.5 Punctuate sentence (e) correctly.", "memo": "✓ 'My sister, who lives in Durban, is a doctor.' (non-defining clause needs commas) (1)" },
+        { "id": "q5-6", "type": "open", "marks": 3, "prompt": "5.6 Rewrite sentence (f) in reported speech.", "memo": "✓ The teacher asked Zanele (1)\n✓ whether/if she had finished (1)\n✓ her project. (no question mark) (1)" }
+      ]
+    }
+  ]
+}

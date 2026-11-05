@@ -1,0 +1,53 @@
+{
+  "id": "higher-education-and-careers",
+  "title": "Higher Education and Career Planning",
+  "term": 4,
+  "summary": "Post-school options (universities, universities of technology, TVET colleges, learnerships, work), admission requirements and the APS, funding, application timelines, and trends in the world of work.",
+  "notes": [
+    { "type": "heading", "text": "Post-school options" },
+    { "type": "table", "headers": ["Option", "Qualifications", "Typical requirement"], "rows": [
+      ["Traditional university", "Degrees (e.g. BA, BSc, BCom, MBChB)", "Bachelor's pass plus faculty requirements and APS"],
+      ["University of technology", "Diplomas and degrees with a practical focus", "Diploma or bachelor's pass"],
+      ["TVET college", "NC(V), N1–N6 and occupational qualifications", "Grade 9 or matric, depending on the programme"],
+      ["Learnership / apprenticeship", "Occupational qualification while working", "Varies; often matric"],
+      ["Entrepreneurship or employment", "Experience; short courses", "Varies"]
+    ] },
+    { "type": "heading", "text": "The Admission Point Score (APS)" },
+    { "type": "table", "caption": "A common APS scale (each institution may differ)", "headers": ["Mark", "Points"], "rows": [
+      ["80–100%", "7"], ["70–79%", "6"], ["60–69%", "5"], ["50–59%", "4"], ["40–49%", "3"], ["30–39%", "2"], ["0–29%", "1"]
+    ] },
+    { "type": "example", "title": "Worked example: calculating an APS", "problem": "A learner's marks for six subjects (excluding LO): English 72%, Maths 65%, Physical Sciences 58%, Life Sciences 74%, Geography 61%, isiZulu 81%. Calculate her APS.", "steps": ["Points: 6 + 5 + 4 + 6 + 5 + 7", "APS = 33"], "answer": "33" },
+    { "type": "callout", "label": "Apply early", "text": "Applications for most universities open in **Grade 12, around April to September**, and close earlier for popular courses (e.g. medicine). Use **Grade 11 final results** to apply. Apply to several institutions and courses." },
+    { "type": "heading", "text": "Funding" },
+    { "type": "list", "items": [
+      "**NSFAS** (National Student Financial Aid Scheme) for students from low-income households at public universities and TVET colleges.",
+      "Bursaries from companies, government departments and SETAs.",
+      "Merit scholarships from universities.",
+      "Student loans from banks."
+    ] },
+    { "type": "heading", "text": "The changing world of work" },
+    { "type": "list", "items": [
+      "Technology and automation are changing many jobs; digital skills are increasingly important.",
+      "**Scarce skills** in South Africa include engineering, artisans, ICT, health professions and teaching (Maths and Science).",
+      "Many people now work in the **gig economy** (short-term or freelance work) and need entrepreneurship skills.",
+      "**Soft skills** (communication, teamwork, problem-solving, adaptability) are valued by all employers."
+    ] }
+  ],
+  "questions": [
+    { "id": "aps-mark", "type": "numeric", "prompt": "Using the APS table, how many points does a mark of 68% earn?", "answer": 5, "tolerance": 0 },
+    { "id": "aps-calc", "type": "numeric", "prompt": "Calculate the APS for marks of 85%, 72%, 64%, 55%, 48% and 77%.", "answer": 31, "tolerance": 0 },
+    { "id": "nsfas", "type": "short", "prompt": "What does NSFAS stand for?", "answers": ["national student financial aid scheme"] },
+    { "id": "uot", "type": "mcq", "prompt": "Which institution focuses on career-oriented diplomas and practical degrees?", "options": ["Traditional university", "University of technology", "Primary school", "SETA"], "answer": 1 },
+    { "id": "grade11", "type": "truefalse", "prompt": "Grade 11 final results are often used for applications to universities.", "answer": true },
+    { "id": "options", "type": "match", "marks": 4, "prompt": "Match each option to its description.", "pairs": [
+      { "left": "TVET college", "right": "Vocational programmes such as N1–N6" },
+      { "left": "Learnership", "right": "Study while working towards a qualification" },
+      { "left": "Traditional university", "right": "Academic degrees such as BSc" },
+      { "left": "Gig economy", "right": "Short-term or freelance work" }
+    ] },
+    { "id": "funding", "type": "open", "marks": 3, "prompt": "Name THREE ways to fund post-school studies.", "memo": "Any three (1 each): NSFAS; bursaries; scholarships; SETA funding; student loans; part-time work; family savings" },
+    { "id": "soft", "type": "open", "marks": 3, "prompt": "Name THREE soft skills employers value and explain why one of them is important.", "memo": "✓✓ Two or three soft skills, e.g. communication, teamwork, problem-solving, adaptability (2)\n✓ Explanation of why one matters (1)" },
+    { "id": "timeline", "type": "open", "marks": 2, "prompt": "Why should learners apply to more than one institution?", "memo": "✓ Places are limited and competitive (1)\n✓ so applying widely increases the chance of being accepted somewhere (1)" },
+    { "id": "automation", "type": "open", "marks": 2, "prompt": "How might automation affect future careers? Give ONE threat and ONE opportunity.", "memo": "✓ Threat: routine jobs may be replaced by machines (1)\n✓ Opportunity: new jobs in technology, maintenance, data and design (1)" }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "id": "algebraic-expressions",
+  "title": "Algebraic Expressions",
+  "term": 1,
+  "summary": "Classify real numbers, convert recurring decimals to fractions, round off and estimate surds, and multiply out algebraic expressions including binomial-by-trinomial products.",
+  "notes": [
+    { "type": "heading", "text": "The real number system" },
+    { "type": "paragraph", "text": "Every number you use in Grade 10 belongs to one or more **sets** (groups) of numbers. Knowing which set a number belongs to helps you understand what you can and cannot do with it. The sets fit inside each other, a bit like a learner who is part of a class, which is part of a grade, which is part of a school." },
+    { "type": "definition", "term": "Natural numbers ($\\mathbb{N}$)", "text": "The counting numbers: $\\mathbb{N} = \\{1;\\ 2;\\ 3;\\ 4;\\ \\ldots\\}$." },
+    { "type": "definition", "term": "Whole numbers ($\\mathbb{N}_0$)", "text": "The natural numbers together with zero: $\\mathbb{N}_0 = \\{0;\\ 1;\\ 2;\\ 3;\\ \\ldots\\}$." },
+    { "type": "definition", "term": "Integers ($\\mathbb{Z}$)", "text": "The whole numbers and their negatives: $\\mathbb{Z} = \\{\\ldots;\\ -3;\\ -2;\\ -1;\\ 0;\\ 1;\\ 2;\\ 3;\\ \\ldots\\}$." },
+    { "type": "definition", "term": "Rational numbers ($\\mathbb{Q}$)", "text": "Any number that can be written as a fraction $\\dfrac{a}{b}$ where $a$ and $b$ are integers and $b \\neq 0$. As decimals, rational numbers either **terminate** (end), e.g. $0{,}75$, or **recur** (repeat a pattern forever), e.g. $0{,}333\\ldots$. Every integer is rational, because, for example, $-4 = \\dfrac{-4}{1}$." },
+    { "type": "definition", "term": "Irrational numbers ($\\mathbb{Q}'$)", "text": "Numbers that **cannot** be written as a fraction of two integers. Their decimals go on forever **without** a repeating pattern. Examples: $\\pi = 3{,}14159\\ldots$, $\\sqrt{2} = 1{,}41421\\ldots$, $\\sqrt{7}$ and $\\sqrt[3]{5}$." },
+    { "type": "definition", "term": "Real numbers ($\\mathbb{R}$)", "text": "All the rational and irrational numbers together. Every real number has a place on the number line." },
+    { "type": "definition", "term": "Non-real numbers", "text": "Numbers that are not on the real number line, such as the square root of a negative number, e.g. $\\sqrt{-4}$. No real number multiplied by itself gives $-4$, because a positive times a positive and a negative times a negative are both positive. You only need to recognise the term in Grade 10." },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 262' font-family='sans-serif' font-size='13'><rect x='5' y='5' width='470' height='252' fill='white' stroke='black' stroke-width='1.5'/><text x='15' y='24' font-weight='bold'>Real numbers ℝ</text><rect x='20' y='35' width='290' height='212' fill='none' stroke='black'/><text x='30' y='54'>Rational numbers ℚ</text><text x='30' y='71' font-size='11'>e.g. 3/4;  −0,5;  0,333...</text><rect x='35' y='82' width='260' height='155' fill='none' stroke='black'/><text x='45' y='101'>Integers ℤ</text><text x='45' y='117' font-size='11'>e.g. −7;  −1</text><rect x='50' y='127' width='230' height='100' fill='none' stroke='black'/><text x='60' y='146'>Whole numbers ℕ₀</text><text x='60' y='162' font-size='11'>0</text><rect x='65' y='172' width='200' height='45' fill='none' stroke='black'/><text x='75' y='191'>Natural numbers ℕ</text><text x='75' y='207' font-size='11'>1;  2;  3; ...</text><rect x='325' y='35' width='140' height='212' fill='none' stroke='black'/><text x='335' y='54'>Irrational ℚ′</text><text x='335' y='80' font-size='11'>√2;  √7;  π</text><text x='335' y='98' font-size='11'>1,41421356...</text></svg>",
+      "caption": "Each set of numbers fits inside the next one. Rational and irrational numbers together make up the real numbers."
+    },
+    {
+      "type": "table",
+      "caption": "Classifying numbers (✓ = belongs to the set)",
+      "headers": ["Number", "$\\mathbb{N}$", "$\\mathbb{N}_0$", "$\\mathbb{Z}$", "$\\mathbb{Q}$", "$\\mathbb{Q}'$", "$\\mathbb{R}$"],
+      "rows": [
+        ["$7$", "✓", "✓", "✓", "✓", "–", "✓"],
+        ["$0$", "–", "✓", "✓", "✓", "–", "✓"],
+        ["$-4$", "–", "–", "✓", "✓", "–", "✓"],
+        ["$\\frac{2}{5}$ and $-2{,}75$", "–", "–", "–", "✓", "–", "✓"],
+        ["$\\sqrt{9} = 3$", "✓", "✓", "✓", "✓", "–", "✓"],
+        ["$\\sqrt{11}$ and $\\pi$", "–", "–", "–", "–", "✓", "✓"],
+        ["$\\sqrt{-4}$ (non-real)", "–", "–", "–", "–", "–", "–"]
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "$\\dfrac{22}{7}$ is **rational** (it is a fraction of integers), but $\\pi$ is **irrational**. $\\dfrac{22}{7}$ is only an approximation of $\\pi$. Also, a square root is not automatically irrational: $\\sqrt{9} = 3$ and $\\sqrt{\\frac{1}{4}} = \\frac{1}{2}$ are rational. Remember too that division by zero is **undefined**, so $\\dfrac{5}{0}$ is not a number at all." },
+
+    { "type": "heading", "text": "Converting recurring decimals to common fractions" },
+    { "type": "paragraph", "text": "A **recurring decimal** repeats a digit or a block of digits forever. We show this with dots above the repeating digits: $0{,}\\dot{3}$ means $0{,}333\\ldots$ and $0{,}\\dot{1}\\dot{2}$ means $0{,}121212\\ldots$ (the dots go above the **first** and **last** digit of the repeating block). Some books use a bar instead: $0{,}\\overline{12}$.\n\nBecause recurring decimals are rational, we can always write them as a fraction. The trick is to multiply so that the repeating parts line up, and then subtract to make them disappear." },
+    { "type": "list", "ordered": true, "items": [
+      "Let $x$ equal the recurring decimal. Write out a few repeats.",
+      "Multiply by $10$ if **one** digit repeats, by $100$ if **two** digits repeat, by $1\\,000$ if **three** digits repeat.",
+      "Subtract the original equation so that the repeating tails cancel.",
+      "Solve for $x$ and simplify the fraction."
+    ] },
+    {
+      "type": "example",
+      "title": "Worked example 1: one repeating digit",
+      "problem": "Write $0{,}\\dot{3}$ as a common fraction.",
+      "steps": [
+        "Let $x = 0{,}333\\ldots$ ... (1)",
+        "One digit repeats, so multiply by $10$: $10x = 3{,}333\\ldots$ ... (2)",
+        "Subtract (1) from (2): $10x - x = 3{,}333\\ldots - 0{,}333\\ldots$, so $9x = 3$.",
+        "$x = \\dfrac{3}{9} = \\dfrac{1}{3}$"
+      ],
+      "answer": "$0{,}\\dot{3} = \\dfrac{1}{3}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: two repeating digits",
+      "problem": "Write $0{,}\\dot{1}\\dot{2}$ as a common fraction in simplest form.",
+      "steps": [
+        "Let $x = 0{,}121212\\ldots$ ... (1)",
+        "Two digits repeat, so multiply by $100$: $100x = 12{,}121212\\ldots$ ... (2)",
+        "(2) − (1): $99x = 12$",
+        "$x = \\dfrac{12}{99} = \\dfrac{4}{33}$ (divide top and bottom by $3$)"
+      ],
+      "answer": "$0{,}\\dot{1}\\dot{2} = \\dfrac{4}{33}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: a digit before the repeating part",
+      "problem": "Write $0{,}1\\dot{6}$ (that is, $0{,}1666\\ldots$) as a common fraction.",
+      "steps": [
+        "Let $x = 0{,}1666\\ldots$",
+        "Move the decimal comma past the non-repeating digit: $10x = 1{,}666\\ldots$ ... (1)",
+        "Move it one more place (one repeating digit): $100x = 16{,}666\\ldots$ ... (2)",
+        "(2) − (1): $90x = 15$",
+        "$x = \\dfrac{15}{90} = \\dfrac{1}{6}$"
+      ],
+      "answer": "$0{,}1\\dot{6} = \\dfrac{1}{6}$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 4: a number greater than 1",
+      "problem": "Write $2{,}\\dot{4}\\dot{5}$ as a fraction.",
+      "steps": [
+        "Let $x = 2{,}4545\\ldots$ ... (1)",
+        "$100x = 245{,}4545\\ldots$ ... (2)",
+        "(2) − (1): $99x = 243$",
+        "$x = \\dfrac{243}{99} = \\dfrac{27}{11}$ (divide top and bottom by $9$)"
+      ],
+      "answer": "$2{,}\\dot{4}\\dot{5} = \\dfrac{27}{11} = 2\\tfrac{5}{11}$"
+    },
+    { "type": "callout", "label": "Exam tip", "text": "You must show the algebraic method (let $x = \\ldots$, multiply, subtract). Writing only the answer from a calculator earns very few marks. Check your answer by dividing on a calculator: $27 \\div 11 = 2{,}454545\\ldots$ ✓" },
+
+    { "type": "heading", "text": "Rounding off real numbers" },
+    { "type": "paragraph", "text": "Irrational numbers and long decimals are often **rounded off** to a given number of decimal places. Look only at the digit **immediately after** the last digit you want to keep:\n\n• If it is $5$ or more ($5;\\ 6;\\ 7;\\ 8;\\ 9$), round **up** (add $1$ to the last kept digit).\n• If it is less than $5$ ($0;\\ 1;\\ 2;\\ 3;\\ 4$), round **down** (leave the last kept digit as it is).\n\nThen drop all the digits after the last kept one." },
+    {
+      "type": "example",
+      "title": "Worked example 5: rounding",
+      "problem": "Round off (a) $\\pi = 3{,}14159\\ldots$ to two and to three decimal places, (b) $12{,}6973$ to two decimal places, (c) $0{,}04449$ to three decimal places.",
+      "steps": [
+        "(a) Two decimal places: keep $3{,}14$; the next digit is $1$ (less than $5$), so $\\pi \\approx 3{,}14$. Three decimal places: keep $3{,}141$; the next digit is $5$, so round up: $\\pi \\approx 3{,}142$.",
+        "(b) Keep $12{,}69$; the next digit is $7$, so round up. $69$ hundredths becomes $70$ hundredths: $12{,}70$. Keep the final zero, because the question asks for two decimal places.",
+        "(c) Keep $0{,}044$; the next digit is $4$, so round down: $0{,}044$."
+      ],
+      "answer": "(a) $3{,}14$ and $3{,}142$  (b) $12{,}70$  (c) $0{,}044$"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Do not round in stages. Rounding $0{,}04449$ first to $0{,}0445$ and then to $0{,}045$ is **wrong**; only the digit straight after the required place counts. Also, in a long calculation keep all the digits in your calculator and round **only the final answer**." },
+
+    { "type": "heading", "text": "Estimating surds" },
+    { "type": "paragraph", "text": "A **surd** is a root that cannot be simplified to a rational number, such as $\\sqrt{30}$ or $\\sqrt[3]{50}$. Without a calculator you can still say which two **consecutive integers** (whole numbers next to each other) a surd lies between. To do this you need to know your perfect squares and perfect cubes." },
+    {
+      "type": "table",
+      "caption": "Perfect squares and cubes worth knowing",
+      "headers": ["$n$", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
+      "rows": [
+        ["$n^2$", "1", "4", "9", "16", "25", "36", "49", "64", "81", "100", "121", "144", "169", "196", "225"],
+        ["$n^3$", "1", "8", "27", "64", "125", "216", "343", "512", "729", "1 000", "–", "–", "–", "–", "–"]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 6: square roots",
+      "problem": "Between which two consecutive integers does $\\sqrt{30}$ lie?",
+      "steps": [
+        "Find the perfect squares on either side of $30$: $25 < 30 < 36$.",
+        "Take the square root of each part: $\\sqrt{25} < \\sqrt{30} < \\sqrt{36}$.",
+        "So $5 < \\sqrt{30} < 6$. Since $30$ is much closer to $25$ than to $36$, $\\sqrt{30}$ is closer to $5$ (a calculator gives $5{,}477\\ldots$)."
+      ],
+      "answer": "$\\sqrt{30}$ lies between $5$ and $6$."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 7: cube roots and negative surds",
+      "problem": "Between which two consecutive integers do (a) $\\sqrt[3]{50}$ and (b) $-\\sqrt{45}$ lie?",
+      "steps": [
+        "(a) Perfect cubes: $27 < 50 < 64$, so $\\sqrt[3]{27} < \\sqrt[3]{50} < \\sqrt[3]{64}$, giving $3 < \\sqrt[3]{50} < 4$.",
+        "(b) First estimate $\\sqrt{45}$: $36 < 45 < 49$, so $6 < \\sqrt{45} < 7$.",
+        "Multiplying by $-1$ reverses the inequality signs: $-7 < -\\sqrt{45} < -6$."
+      ],
+      "answer": "(a) between $3$ and $4$  (b) between $-7$ and $-6$"
+    },
+
+    { "type": "heading", "text": "Algebraic language" },
+    { "type": "paragraph", "text": "Before multiplying expressions, make sure you know the vocabulary. In the expression $3x^2 - 5xy + 7$:" },
+    { "type": "list", "items": [
+      "**Terms** are separated by $+$ and $-$ signs: $3x^2$, $-5xy$ and $7$.",
+      "The **coefficient** is the number in front of the variable(s): the coefficient of $x^2$ is $3$ and the coefficient of $xy$ is $-5$.",
+      "A **constant** is a term with no variable: $7$.",
+      "**Like terms** have exactly the same variables with the same exponents, e.g. $4a^2b$ and $-9a^2b$. $x^2$ and $x^3$ are **not** like terms.",
+      "A **monomial** has one term ($-6p^3$), a **binomial** has two terms ($2x + 5$) and a **trinomial** has three terms ($x^2 + 4x - 1$)."
+    ] },
+    { "type": "paragraph", "text": "To **add or subtract**, collect only like terms: add or subtract the coefficients and keep the variable part the same." },
+    {
+      "type": "example",
+      "title": "Worked example 8: like terms and monomials",
+      "problem": "Simplify (a) $3x^2 - 5x + 2x^2 + 7x - 4$, (b) $(-2x^2y)(5xy^3)$, (c) $-3a(2a - 5b)$.",
+      "steps": [
+        "(a) Group like terms: $(3x^2 + 2x^2) + (-5x + 7x) - 4 = 5x^2 + 2x - 4$.",
+        "(b) Multiply the coefficients and add the exponents of each variable: $(-2)(5)\\,x^{2+1}\\,y^{1+3} = -10x^3y^4$.",
+        "(c) Use the **distributive law** $a(b + c) = ab + ac$: $(-3a)(2a) + (-3a)(-5b) = -6a^2 + 15ab$."
+      ],
+      "answer": "(a) $5x^2 + 2x - 4$  (b) $-10x^3y^4$  (c) $-6a^2 + 15ab$"
+    },
+
+    { "type": "heading", "text": "Multiplying two binomials" },
+    { "type": "paragraph", "text": "Each term in the first bracket multiplies each term in the second bracket. A useful memory aid is **FOIL**: **F**irst, **O**uter, **I**nner, **L**ast. Then collect like terms." },
+    {
+      "type": "example",
+      "title": "Worked example 9",
+      "problem": "Expand and simplify $(2x + 3)(x - 4)$.",
+      "steps": [
+        "F: $2x \\times x = 2x^2$;  O: $2x \\times (-4) = -8x$;  I: $3 \\times x = 3x$;  L: $3 \\times (-4) = -12$",
+        "$= 2x^2 - 8x + 3x - 12$",
+        "$= 2x^2 - 5x - 12$"
+      ],
+      "answer": "$2x^2 - 5x - 12$"
+    },
+    { "type": "paragraph", "text": "**Squaring a binomial** means multiplying it by itself. Two patterns come up so often that you should know them by heart:" },
+    { "type": "formula", "latex": "(a + b)^2 = a^2 + 2ab + b^2 \\qquad (a - b)^2 = a^2 - 2ab + b^2", "caption": "The square of a binomial" },
+    { "type": "formula", "latex": "(a + b)(a - b) = a^2 - b^2", "caption": "Sum times difference: the middle terms cancel" },
+    { "type": "callout", "label": "Common mistake", "text": "$(a + b)^2 \\neq a^2 + b^2$. Test it with numbers: $(3 + 4)^2 = 49$, but $3^2 + 4^2 = 25$. The missing $2ab = 24$ is the middle term." },
+    {
+      "type": "example",
+      "title": "Worked example 10",
+      "problem": "Expand (a) $(3x - 2y)^2$ and (b) $(5 + 2p)(5 - 2p)$.",
+      "steps": [
+        "(a) Use $(a - b)^2 = a^2 - 2ab + b^2$ with $a = 3x$ and $b = 2y$: $(3x)^2 - 2(3x)(2y) + (2y)^2 = 9x^2 - 12xy + 4y^2$.",
+        "(b) Sum times difference: $5^2 - (2p)^2 = 25 - 4p^2$."
+      ],
+      "answer": "(a) $9x^2 - 12xy + 4y^2$  (b) $25 - 4p^2$"
+    },
+
+    { "type": "heading", "text": "Multiplying a binomial by a trinomial" },
+    { "type": "paragraph", "text": "The method is the same: multiply **each** term of the binomial by **every** term of the trinomial. That gives $2 \\times 3 = 6$ products. Write them in order of descending powers, then collect like terms. Working in two lines (one line for each term of the binomial) keeps you organised." },
+    {
+      "type": "example",
+      "title": "Worked example 11",
+      "problem": "Expand and simplify $(3x - 1)(x^2 - 2x + 5)$.",
+      "steps": [
+        "Multiply by $3x$: $3x^3 - 6x^2 + 15x$",
+        "Multiply by $-1$: $-x^2 + 2x - 5$",
+        "Add and collect like terms: $3x^3 + (-6x^2 - x^2) + (15x + 2x) - 5$",
+        "$= 3x^3 - 7x^2 + 17x - 5$"
+      ],
+      "answer": "$3x^3 - 7x^2 + 17x - 5$"
+    },
+    { "type": "heading", "text": "Two special products: sum and difference of cubes" },
+    { "type": "paragraph", "text": "When a binomial is multiplied by a particular trinomial, all the middle terms cancel and only two cubes are left. These products are the starting point for factorising cubes in the next topic." },
+    { "type": "formula", "latex": "(a + b)(a^2 - ab + b^2) = a^3 + b^3", "caption": "Sum of two cubes" },
+    { "type": "formula", "latex": "(a - b)(a^2 + ab + b^2) = a^3 - b^3", "caption": "Difference of two cubes" },
+    {
+      "type": "example",
+      "title": "Worked example 12",
+      "problem": "Expand (a) $(x + 2)(x^2 - 2x + 4)$ and (b) $(3a - b)(9a^2 + 3ab + b^2)$.",
+      "steps": [
+        "(a) $x \\cdot x^2 - x \\cdot 2x + x \\cdot 4 + 2 \\cdot x^2 - 2 \\cdot 2x + 2 \\cdot 4 = x^3 - 2x^2 + 4x + 2x^2 - 4x + 8$",
+        "The $x^2$ terms cancel and the $x$ terms cancel: $x^3 + 8$. (This matches $a^3 + b^3$ with $a = x$, $b = 2$.)",
+        "(b) $27a^3 + 9a^2b + 3ab^2 - 9a^2b - 3ab^2 - b^3$",
+        "The middle terms cancel: $27a^3 - b^3$. (Check: $(3a)^3 = 27a^3$.)"
+      ],
+      "answer": "(a) $x^3 + 8$  (b) $27a^3 - b^3$"
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Look at the trinomial: its middle term is the **opposite sign** of the binomial's sign, and its last term is the **square** of the binomial's second term. If you spot $(x - 5)(x^2 + 5x + 25)$ you can write $x^3 - 125$ straight away, but show at least one line of working in a test." },
+
+    { "type": "heading", "text": "Simplifying longer expressions" },
+    { "type": "paragraph", "text": "Many exam questions combine several products. Expand each part separately inside brackets, then remove the brackets carefully. A minus sign in front of a bracket changes the sign of **every** term inside." },
+    {
+      "type": "example",
+      "title": "Worked example 13",
+      "problem": "Simplify $(x - 2)^2 - (x + 3)(x - 3)$.",
+      "steps": [
+        "Expand each product in brackets: $(x^2 - 4x + 4) - (x^2 - 9)$",
+        "Remove the brackets; the minus changes both signs: $x^2 - 4x + 4 - x^2 + 9$",
+        "Collect like terms: $-4x + 13$"
+      ],
+      "answer": "$-4x + 13$"
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Writing $(x - 2)^2 - (x + 3)(x - 3) = x^2 - 4x + 4 - x^2 - 9$ is wrong. The $-9$ inside the second bracket becomes $+9$ when the bracket is subtracted." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "$\\mathbb{N} \\subset \\mathbb{N}_0 \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$; irrational numbers ($\\mathbb{Q}'$) are real but not rational. Square roots of negative numbers are non-real.",
+      "Rational numbers can be written as $\\frac{a}{b}$ ($a, b \\in \\mathbb{Z}$, $b \\neq 0$); their decimals terminate or recur. Irrational decimals never end and never repeat.",
+      "To convert a recurring decimal: let $x = $ the decimal, multiply by $10$, $100$ or $1\\,000$, subtract to cancel the repeating tail, solve and simplify.",
+      "To round off, look at the next digit only: $5$ or more rounds up, less than $5$ rounds down. Round only the final answer.",
+      "Estimate a surd using the perfect squares (or cubes) on either side of it, e.g. $5 < \\sqrt{30} < 6$.",
+      "Collect only like terms. Multiply each term of one bracket by every term of the other.",
+      "$(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ and $(a + b)(a - b) = a^2 - b^2$.",
+      "$(a + b)(a^2 - ab + b^2) = a^3 + b^3$ and $(a - b)(a^2 + ab + b^2) = a^3 - b^3$.",
+      "A minus sign in front of a bracket changes the sign of every term inside it."
+    ] }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which one of the following numbers is **irrational**?",
+      "options": ["$\\sqrt{16}$", "$0{,}\\dot{7}$", "$\\sqrt{7}$", "$\\dfrac{22}{7}$"],
+      "answer": 2,
+      "explanation": "$\\sqrt{16} = 4$, $0{,}\\dot{7} = \\frac{7}{9}$ and $\\frac{22}{7}$ are all fractions of integers, so they are rational. $7$ is not a perfect square, so $\\sqrt{7} = 2{,}6457\\ldots$ never ends or repeats."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "To which one of these sets does $-5$ belong?",
+      "options": ["Integers", "Natural numbers", "Whole numbers", "Irrational numbers"],
+      "answer": 0,
+      "explanation": "Natural and whole numbers are never negative. $-5 = \\frac{-5}{1}$ is rational, not irrational. It is an integer."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "$\\sqrt{-9}$ is a non-real number.",
+      "answer": true,
+      "explanation": "No real number squared gives a negative answer: $3^2 = 9$ and $(-3)^2 = 9$. So $\\sqrt{-9}$ is non-real."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "$0{,}\\dot{1}\\dot{2}$ is irrational because its decimal digits never end.",
+      "answer": false,
+      "explanation": "The digits never end, but they **repeat**, so the number is rational: $0{,}\\dot{1}\\dot{2} = \\frac{12}{99} = \\frac{4}{33}$. Irrational decimals never end **and** never repeat."
+    },
+    {
+      "id": "q5",
+      "type": "match",
+      "prompt": "Match each number with the description that fits it best.",
+      "marks": 5,
+      "pairs": [
+        { "left": "$\\pi$", "right": "Irrational number" },
+        { "left": "$0$", "right": "Whole number, but not a natural number" },
+        { "left": "$-\\sqrt{25}$", "right": "Integer, but not a whole number" },
+        { "left": "$\\dfrac{3}{8}$", "right": "Rational, but not an integer" },
+        { "left": "$\\sqrt{-4}$", "right": "Non-real number" }
+      ],
+      "explanation": "$0$ is in $\\mathbb{N}_0$ but not $\\mathbb{N}$; $-\\sqrt{25} = -5$ is an integer; $\\frac{3}{8} = 0{,}375$ terminates so it is rational; $\\pi$ never ends or repeats; the square root of a negative number is non-real."
+    },
+    {
+      "id": "q6",
+      "type": "numeric",
+      "prompt": "Round off $7{,}4865$ correct to **two** decimal places.",
+      "answer": 7.49,
+      "tolerance": 0.0001,
+      "explanation": "Keep $7{,}48$. The next digit is $6$ ($5$ or more), so round up: $7{,}49$."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "prompt": "Without using a calculator, between which two consecutive integers does $\\sqrt{75}$ lie?",
+      "options": ["$7$ and $8$", "$8$ and $9$", "$37$ and $38$", "$9$ and $10$"],
+      "answer": 1,
+      "explanation": "$64 < 75 < 81$, so $\\sqrt{64} < \\sqrt{75} < \\sqrt{81}$, i.e. $8 < \\sqrt{75} < 9$."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "Between which two consecutive integers does $\\sqrt[3]{100}$ lie?",
+      "options": ["$9$ and $10$", "$3$ and $4$", "$4$ and $5$", "$5$ and $6$"],
+      "answer": 2,
+      "explanation": "Use perfect cubes: $4^3 = 64$ and $5^3 = 125$. Since $64 < 100 < 125$, $4 < \\sqrt[3]{100} < 5$."
+    },
+    {
+      "id": "q9",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Use an algebraic method to write $0{,}\\dot{2}\\dot{7}$ as a common fraction in its simplest form.",
+      "memo": "Let $x = 0{,}2727\\ldots$ ... (1) and $100x = 27{,}2727\\ldots$ ... (2) ✓ (1)\n(2) − (1): $99x = 27$ ✓ (1)\n$x = \\dfrac{27}{99} = \\dfrac{3}{11}$ ✓ (1)\n[Answer only without the algebraic method: maximum 1 mark]"
+    },
+    {
+      "id": "q10",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Sipho says that $0{,}\\dot{9}$ is slightly less than $1$. Use algebra to show that $0{,}\\dot{9} = 1$.",
+      "memo": "Let $x = 0{,}999\\ldots$ ... (1)\n$10x = 9{,}999\\ldots$ ... (2) ✓ (1)\n(2) − (1): $9x = 9$ ✓ (1)\n$x = 1$, so $0{,}\\dot{9} = 1$ and Sipho is incorrect ✓ (1)"
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "Expand $(x - 5)^2$.",
+      "options": ["$x^2 - 10x + 25$", "$x^2 - 25$", "$x^2 + 25$", "$x^2 - 10x - 25$"],
+      "answer": 0,
+      "explanation": "$(x - 5)^2 = (x - 5)(x - 5) = x^2 - 5x - 5x + 25 = x^2 - 10x + 25$. The last term is $(-5)^2 = +25$."
+    },
+    {
+      "id": "q12",
+      "type": "numeric",
+      "prompt": "Expand and simplify $(3x - 2)(2x + 5)$. What is the coefficient of $x$ in your answer?",
+      "answer": 11,
+      "tolerance": 0,
+      "explanation": "$(3x - 2)(2x + 5) = 6x^2 + 15x - 4x - 10 = 6x^2 + 11x - 10$. The coefficient of $x$ is $11$."
+    },
+    {
+      "id": "q13",
+      "type": "numeric",
+      "prompt": "The product $(x + 3)(x^2 - 3x + 9)$ simplifies to $x^3 + k$. Find the value of $k$.",
+      "answer": 27,
+      "tolerance": 0,
+      "explanation": "$x^3 - 3x^2 + 9x + 3x^2 - 9x + 27 = x^3 + 27$. This is the sum of cubes $a^3 + b^3$ with $b = 3$, so $k = 3^3 = 27$."
+    },
+    {
+      "id": "q14",
+      "type": "mcq",
+      "prompt": "Expand and simplify $(x - 2)(x^2 + 3x - 4)$.",
+      "options": ["$x^3 + 5x^2 + 2x + 8$", "$x^3 + x^2 - 2x - 8$", "$x^3 + x^2 + 10x - 8$", "$x^3 + x^2 - 10x + 8$"],
+      "answer": 3,
+      "explanation": "$x(x^2 + 3x - 4) = x^3 + 3x^2 - 4x$ and $-2(x^2 + 3x - 4) = -2x^2 - 6x + 8$. Adding: $x^3 + x^2 - 10x + 8$."
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Simplify fully: $(2a - 3)^2 - (a + 3)(a - 3) - 3a(a - 4)$",
+      "memo": "$(2a - 3)^2 = 4a^2 - 12a + 9$ ✓ (1)\n$(a + 3)(a - 3) = a^2 - 9$ ✓ (1)\n$= 4a^2 - 12a + 9 - a^2 + 9 - 3a^2 + 12a$ ✓ (1) (correct signs after removing brackets)\n$= 18$ ✓ (1)"
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Expand and simplify: $(3x - 2)(2x^2 - x + 4) - 2x(x - 1)^2$",
+      "memo": "$(3x - 2)(2x^2 - x + 4) = 6x^3 - 3x^2 + 12x - 4x^2 + 2x - 8$ ✓ (1)\n$= 6x^3 - 7x^2 + 14x - 8$ ✓ (1)\n$(x - 1)^2 = x^2 - 2x + 1$ ✓ (1)\n$2x(x^2 - 2x + 1) = 2x^3 - 4x^2 + 2x$ ✓ (1)\n$6x^3 - 7x^2 + 14x - 8 - 2x^3 + 4x^2 - 2x = 4x^3 - 3x^2 + 12x - 8$ ✓ (1)"
+    }
+  ]
+}

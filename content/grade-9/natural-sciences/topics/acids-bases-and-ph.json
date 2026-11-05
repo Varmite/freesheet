@@ -1,0 +1,70 @@
+{
+  "id": "acids-bases-and-ph",
+  "title": "Acids, Bases and pH",
+  "term": 2,
+  "summary": "Properties of acids and bases, the pH scale and indicators, neutralisation, and the reactions of acids with metals, metal oxides and carbonates.",
+  "notes": [
+    { "type": "heading", "text": "Acids and bases" },
+    { "type": "table", "headers": ["", "Acids", "Bases"], "rows": [
+      ["Taste (never taste in the lab!)", "Sour", "Bitter"],
+      ["Feel", "May sting or burn", "Slippery, soapy"],
+      ["pH", "Less than 7", "More than 7"],
+      ["Litmus", "Turns blue litmus red", "Turns red litmus blue"],
+      ["Examples", "Vinegar, lemon juice, hydrochloric acid (HCl), sulfuric acid (H₂SO₄)", "Baking soda, soap, toothpaste, sodium hydroxide (NaOH)"]
+    ] },
+    { "type": "definition", "term": "Alkali", "text": "A base that dissolves in water, such as sodium hydroxide." },
+    { "type": "heading", "text": "The pH scale" },
+    { "type": "paragraph", "text": "The **pH scale** runs from **0 to 14** and measures how acidic or basic a solution is. **pH 7 is neutral** (pure water). The lower the pH, the stronger the acid; the higher the pH, the stronger the base." },
+    { "type": "table", "headers": ["pH", "Example", "Description"], "rows": [
+      ["1", "Stomach acid", "Strong acid"],
+      ["3", "Vinegar, cola", "Weak acid"],
+      ["7", "Pure water", "Neutral"],
+      ["8", "Baking soda solution", "Weak base"],
+      ["11", "Ammonia cleaner", "Base"],
+      ["14", "Drain cleaner (NaOH)", "Strong base"]
+    ] },
+    { "type": "paragraph", "text": "**Indicators** change colour depending on pH. **Universal indicator** shows a range of colours: red (strong acid), orange/yellow (weak acid), green (neutral), blue (weak base) and purple (strong base). Natural indicators can be made from red cabbage or beetroot juice." },
+    { "type": "heading", "text": "Neutralisation" },
+    { "type": "formula", "latex": "\\text{acid} + \\text{base} \\rightarrow \\text{salt} + \\text{water}", "caption": "Neutralisation" },
+    { "type": "example", "title": "Naming the salt", "problem": "Hydrochloric acid reacts with sodium hydroxide. Name the products.", "steps": [
+      "The salt takes its first name from the metal in the base: sodium.",
+      "Its second name comes from the acid: hydrochloric acid → chloride.",
+      "HCl + NaOH → NaCl + H₂O"
+    ], "answer": "Sodium chloride and water" },
+    { "type": "table", "caption": "Naming salts", "headers": ["Acid", "Salt ending"], "rows": [
+      ["Hydrochloric acid (HCl)", "-chloride"],
+      ["Sulfuric acid (H₂SO₄)", "-sulfate"],
+      ["Nitric acid (HNO₃)", "-nitrate"]
+    ] },
+    { "type": "list", "items": [
+      "Indigestion tablets (antacids) neutralise excess stomach acid.",
+      "Farmers spread lime (a base) on acidic soil.",
+      "Bee stings (acidic) can be treated with baking soda; wasp stings (basic) with vinegar.",
+      "Toothpaste neutralises acid made by bacteria on teeth."
+    ] },
+    { "type": "heading", "text": "Other reactions of acids" },
+    { "type": "table", "headers": ["Reaction", "General equation", "Test for the gas"], "rows": [
+      ["Acid + metal", "acid + metal → salt + hydrogen", "Lit splint: squeaky pop"],
+      ["Acid + metal oxide", "acid + metal oxide → salt + water", "No gas"],
+      ["Acid + metal carbonate", "acid + metal carbonate → salt + water + carbon dioxide", "Limewater turns milky"]
+    ] },
+    { "type": "example", "title": "Acid and a carbonate", "problem": "Write a word equation for hydrochloric acid reacting with calcium carbonate.", "steps": ["acid + carbonate → salt + water + carbon dioxide", "The salt is calcium chloride."], "answer": "hydrochloric acid + calcium carbonate → calcium chloride + water + carbon dioxide" },
+    { "type": "callout", "label": "Safety", "text": "Always add **acid to water**, never water to concentrated acid, because the heat released can make it spit. Wear safety glasses and rinse any spills with plenty of water." }
+  ],
+  "questions": [
+    { "id": "neutral", "type": "numeric", "prompt": "What is the pH of a neutral solution?", "answer": 7, "tolerance": 0 },
+    { "id": "litmus", "type": "mcq", "prompt": "An acid turns blue litmus…", "options": ["red", "green", "purple", "it stays blue"], "answer": 0 },
+    { "id": "strongest", "type": "mcq", "prompt": "Which pH shows the strongest acid?", "options": ["pH 1", "pH 5", "pH 7", "pH 13"], "answer": 0 },
+    { "id": "products", "type": "short", "prompt": "An acid reacts with a base to form a salt and…", "answers": ["water"] },
+    { "id": "salt-name", "type": "short", "prompt": "Name the salt formed when sulfuric acid reacts with magnesium oxide.", "answers": ["magnesium sulfate", "magnesium sulphate"] },
+    { "id": "metal-gas", "type": "mcq", "prompt": "Which gas is produced when zinc reacts with hydrochloric acid?", "options": ["Oxygen", "Carbon dioxide", "Hydrogen", "Chlorine"], "answer": 2 },
+    { "id": "uses", "type": "match", "marks": 3, "prompt": "Match each use to the substance that does the neutralising.", "pairs": [
+      { "left": "Treating acidic soil", "right": "Lime" },
+      { "left": "Curing indigestion", "right": "Antacid tablet" },
+      { "left": "Easing a bee sting", "right": "Baking soda" }
+    ] },
+    { "id": "indicator", "type": "open", "marks": 2, "prompt": "Universal indicator is added to a solution and turns purple. What can you say about the solution? Give a likely pH.", "memo": "✓ It is a strong base (1)\n✓ pH about 12 to 14 (1)" },
+    { "id": "carbonate", "type": "open", "marks": 3, "prompt": "Write a word equation for the reaction between nitric acid and sodium carbonate, and describe a test for the gas produced.", "memo": "✓ nitric acid + sodium carbonate → sodium nitrate + water + carbon dioxide (2)\n✓ Bubble the gas through limewater; it turns milky (1)" },
+    { "id": "water-acid", "type": "truefalse", "prompt": "When diluting a concentrated acid, you should add the acid slowly to water.", "answer": true }
+  ]
+}

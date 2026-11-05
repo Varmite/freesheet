@@ -1,0 +1,52 @@
+{
+  "id": "taxation",
+  "title": "Finance: Taxation",
+  "term": 1,
+  "summary": "Income tax with deductions, tax tables and rebates for different ages, medical tax credits, UIF, VAT, and interpreting payslips and tax certificates.",
+  "notes": [
+    { "type": "heading", "text": "Taxable income" },
+    { "type": "formula", "latex": "\\text{taxable income} = \\text{annual gross income} - \\text{allowable deductions}", "caption": "Deductions include contributions to pension and retirement annuity funds (up to limits)" },
+    { "type": "table", "caption": "ILLUSTRATIVE tax table for practice", "headers": ["Taxable income (per year)", "Rates of tax"], "rows": [
+      ["R1 – R240 000", "18% of taxable income"],
+      ["R240 001 – R375 000", "R43 200 + 26% of taxable income above R240 000"],
+      ["R375 001 – R520 000", "R78 300 + 31% of taxable income above R375 000"],
+      ["R520 001 – R680 000", "R123 250 + 36% of taxable income above R520 000"]
+    ] },
+    { "type": "table", "caption": "ILLUSTRATIVE rebates and medical tax credits", "headers": ["Item", "Amount"], "rows": [
+      ["Primary rebate (all taxpayers)", "R17 500 per year"],
+      ["Secondary rebate (65 and older)", "R9 500 per year"],
+      ["Tertiary rebate (75 and older)", "R3 200 per year"],
+      ["Medical tax credit: main member", "R364 per month"],
+      ["Medical tax credit: first dependant", "R364 per month"],
+      ["Medical tax credit: each additional dependant", "R246 per month"]
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Mr Naidoo (aged 52) earns R38 500 per month and contributes R2 600 per month to a pension fund. He belongs to a medical aid with his wife and one child. Using the illustrative tables, calculate his annual tax.", "steps": [
+      "Annual income: 12 × R38 500 = R462 000",
+      "Pension deduction: 12 × R2 600 = R31 200; taxable income = R430 800",
+      "Tax: R78 300 + 31% × (R430 800 − R375 000) = R78 300 + R17 298 = R95 598",
+      "Less primary rebate: R95 598 − R17 500 = R78 098",
+      "Medical credits: (R364 + R364 + R246) × 12 = R11 688",
+      "Tax payable: R78 098 − R11 688 = R66 410"
+    ], "answer": "R66 410 per year (about R5 534,17 per month)" },
+    { "type": "callout", "label": "Exam tip", "text": "Follow the order: annual income → subtract deductions → find the bracket → calculate tax → subtract rebates → subtract medical credits → divide by 12 if a monthly amount is required." },
+    { "type": "heading", "text": "Other taxes" },
+    { "type": "list", "items": [
+      "**VAT**: 15% on most goods and services; basic foods are zero-rated.",
+      "**UIF**: 1% of gross pay from the employee, matched by the employer (up to a maximum).",
+      "**Fuel levy**, **excise duties** (on alcohol and tobacco) and **property rates** (paid to municipalities)."
+    ] },
+    { "type": "paragraph", "text": "An **IRP5** tax certificate from the employer shows the year's income and the tax deducted. Taxpayers use it to complete their annual tax return with SARS." }
+  ],
+  "questions": [
+    { "id": "taxable", "type": "numeric", "prompt": "Annual gross income is R280 000 and pension contributions are R21 000. What is the taxable income?", "answer": 259000, "tolerance": 0, "unit": "rand" },
+    { "id": "bracket1", "type": "numeric", "prompt": "Using the illustrative table, calculate tax (before rebates) on a taxable income of R200 000.", "answer": 36000, "tolerance": 0, "unit": "rand" },
+    { "id": "rebate", "type": "numeric", "prompt": "A 70-year-old receives which total of rebates per year (primary + secondary) under the illustrative table?", "answer": 27000, "tolerance": 0, "unit": "rand" },
+    { "id": "medical", "type": "numeric", "prompt": "Calculate the monthly medical tax credit for a member with 3 dependants (illustrative table).", "answer": 1220, "tolerance": 0, "unit": "rand" },
+    { "id": "irp5", "type": "mcq", "prompt": "Which document shows an employee's annual income and the tax deducted by the employer?", "options": ["Bank statement", "IRP5", "Invoice", "Till slip"], "answer": 1 },
+    { "id": "order", "type": "truefalse", "prompt": "Rebates are subtracted from taxable income before using the tax table.", "answer": false, "explanation": "Rebates are subtracted from the tax calculated, not from income." },
+    { "id": "full", "type": "open", "marks": 5, "prompt": "Ms Khumalo (aged 41) has a taxable income of R285 000 and a medical aid covering herself only. Using the illustrative tables, calculate her annual tax payable.", "memo": "✓ R43 200 + 26% × (R285 000 − R240 000) (1)\n✓ = R43 200 + R11 700 = R54 900 (1)\n✓ − R17 500 = R37 400 (1)\n✓ Medical credits R364 × 12 = R4 368 (1)\n✓ Tax payable R33 032 (1)" },
+    { "id": "monthly", "type": "numeric", "prompt": "Using the worked example, calculate Mr Naidoo's monthly tax, to the nearest cent.", "answer": 5534.17, "tolerance": 0.01, "unit": "rand" },
+    { "id": "uif", "type": "open", "marks": 2, "prompt": "Calculate the total monthly UIF paid into the fund (employee plus employer) for a worker earning R9 800.", "memo": "✓ Employee 1% = R98 (1)\n✓ Total with employer R196 (1)" },
+    { "id": "pension-effect", "type": "open", "marks": 2, "prompt": "Explain how contributing to a pension fund can reduce the tax a person pays.", "memo": "✓ Pension contributions are deducted from income (1)\n✓ so the taxable income, and therefore the tax, is lower (1)" }
+  ]
+}

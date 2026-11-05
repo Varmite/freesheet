@@ -1,0 +1,52 @@
+{
+  "id": "the-discovery-of-diamonds",
+  "title": "The Mineral Revolution: Diamonds",
+  "term": 2,
+  "summary": "The discovery of diamonds near Kimberley, the dispute over Griqualand West, the growth of Kimberley, Cecil Rhodes and De Beers, the compound system and the effects on southern Africa.",
+  "notes": [
+    { "type": "heading", "text": "The discovery" },
+    { "type": "paragraph", "text": "In **1867** a child found a shiny stone on a farm near Hopetown on the Orange River; it was a 21-carat diamond, later called the **Eureka**. In 1869 the much larger **Star of South Africa** was found. In **1871** rich diamond deposits were found on the farm of the De Beer brothers, where the town of **Kimberley** grew up around the 'Big Hole'." },
+    { "type": "heading", "text": "Who owned the diamond fields?" },
+    { "type": "paragraph", "text": "The area was claimed by the **Griqua** under Nicolaas Waterboer, the **Orange Free State**, the **South African Republic (Transvaal)** and the **Batlhaping** (Tswana). In 1871 a British-appointed judge, Lieutenant-Governor **Keate**, awarded the land to Waterboer, who then asked for British protection. Britain annexed the area as **Griqualand West**, gaining control of the world's richest diamond fields. The Free State was later paid £90 000 in compensation." },
+    { "type": "callout", "label": "Key idea", "text": "The **Mineral Revolution** is the name for the huge economic and social changes that followed the discovery of diamonds (1867) and gold (1886). South Africa changed from a farming economy to an industrial, mining economy." },
+    { "type": "heading", "text": "From diggers to companies" },
+    { "type": "list", "ordered": true, "items": [
+      "At first thousands of individual **diggers** of all races worked small claims with picks and shovels.",
+      "As the pits went deeper, claims collapsed and flooded; expensive steam pumps and machinery were needed.",
+      "Small diggers sold out to companies that could afford the machinery.",
+      "**Cecil John Rhodes** bought up claims and formed **De Beers Consolidated Mines** in **1888**, after buying out his rival Barney Barnato. De Beers controlled almost all diamond production in the world."
+    ] },
+    { "type": "heading", "text": "Labour and the compound system" },
+    { "type": "paragraph", "text": "Mining needed thousands of workers. Black men came from across southern Africa, including Basotho, Bapedi, Tsonga and others, often to earn money to buy **guns**, cattle or to pay taxes. From the 1880s, black workers were forced to live in closed **compounds**: fenced, guarded barracks near the mines." },
+    { "type": "table", "headers": ["Reason given by mine owners", "Effect on workers"], "rows": [
+      ["To stop diamond theft (illicit diamond buying)", "Workers could not leave the compound for the length of their contract, often months"],
+      ["To control workers and prevent strikes", "Workers were strip-searched; they could buy food only at company stores"],
+      ["To keep labour cheap", "Men lived away from their families; wages stayed low"]
+    ] },
+    { "type": "paragraph", "text": "White workers were not placed in compounds and were given skilled, better-paid jobs. This **racial division of labour** became the pattern for later mining and industry in South Africa." },
+    { "type": "heading", "text": "Effects of the diamond discoveries" },
+    { "type": "list", "items": [
+      "Kimberley grew into the second-largest town in southern Africa, with the first electric street lights in the southern hemisphere (1882).",
+      "Railways were built from the coast to Kimberley.",
+      "Britain became more interested in controlling the interior, leading to wars against African kingdoms and the Boer republics.",
+      "Migrant labour and the compound system weakened African farming societies.",
+      "Mining profits made people like Rhodes very rich and powerful."
+    ] }
+  ],
+  "questions": [
+    { "id": "year", "type": "numeric", "prompt": "In which year was the first diamond (the Eureka) found near Hopetown?", "answer": 1867, "tolerance": 0 },
+    { "id": "town", "type": "short", "prompt": "Which town grew up around the Big Hole?", "answers": ["kimberley"] },
+    { "id": "griqua", "type": "mcq", "prompt": "Which leader was awarded the diamond fields by the Keate Award?", "options": ["Paul Kruger", "Nicolaas Waterboer", "Moshoeshoe", "Cecil Rhodes"], "answer": 1 },
+    { "id": "debeers", "type": "short", "prompt": "Name the company formed by Cecil Rhodes in 1888 to control diamond mining.", "answers": ["de beers", "de beers consolidated mines", "de beers consolidated"] },
+    { "id": "compound-white", "type": "truefalse", "prompt": "White mine workers in Kimberley also had to live in closed compounds.", "answer": false },
+    { "id": "mineral-revolution", "type": "open", "marks": 2, "prompt": "Explain what is meant by the Mineral Revolution.", "memo": "✓ The huge economic and social changes after diamonds (1867) and gold (1886) were discovered (1)\n✓ South Africa changed from a mainly farming economy to a mining and industrial economy (1)" },
+    { "id": "small-diggers", "type": "open", "marks": 3, "prompt": "Why did small diggers sell their claims to large companies?", "memo": "✓ The mines became deeper and more dangerous (1)\n✓ Claims flooded and collapsed (1)\n✓ Expensive machinery was needed that only large companies could afford (1)" },
+    { "id": "compounds", "type": "open", "marks": 4, "prompt": "Give TWO reasons why mine owners introduced compounds and TWO effects of compounds on black workers.", "memo": "Reasons (1 each): prevent diamond theft; control workers / prevent strikes; keep labour cheap\nEffects (1 each): could not leave; strip-searched; separated from families; had to buy from company stores; low wages" },
+    { "id": "claims", "type": "match", "marks": 3, "prompt": "Match each person to their role.", "pairs": [
+      { "left": "Cecil Rhodes", "right": "Founder of De Beers" },
+      { "left": "Barney Barnato", "right": "Rival bought out by Rhodes" },
+      { "left": "Nicolaas Waterboer", "right": "Griqua leader" }
+    ] },
+    { "id": "migrants", "type": "mcq", "prompt": "Why did many African men first go to work on the diamond fields?", "options": ["To buy guns, cattle and pay taxes", "Because they were forced by the Free State", "To become mine owners", "Because they had no families"], "answer": 0 }
+  ]
+}

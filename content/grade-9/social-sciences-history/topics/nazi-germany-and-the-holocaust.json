@@ -1,0 +1,58 @@
+{
+  "id": "nazi-germany-and-the-holocaust",
+  "title": "Nazi Germany and the Holocaust",
+  "term": 1,
+  "summary": "How Hitler came to power, Nazi racial ideology and propaganda, the persecution of Jews and other groups, the Holocaust, and lessons for human rights today.",
+  "notes": [
+    { "type": "heading", "text": "Hitler's rise to power" },
+    { "type": "paragraph", "text": "After World War I, Germany became a democracy called the **Weimar Republic**. It faced economic crises, especially after 1929, when unemployment reached six million. **Adolf Hitler**, leader of the **National Socialist (Nazi) Party**, promised jobs, national pride and to overturn the Treaty of Versailles. In **January 1933** he became Chancellor. Within months he turned Germany into a **dictatorship**." },
+    { "type": "list", "items": [
+      "After the Reichstag (parliament) fire in 1933, the **Enabling Act** gave Hitler power to make laws without parliament.",
+      "All other political parties and trade unions were banned.",
+      "The **Gestapo** (secret police) and the **SS** arrested opponents and sent them to concentration camps.",
+      "Joseph Goebbels ran **propaganda**: radio, films, posters and rallies glorified Hitler and spread hatred of Jews.",
+      "Books by Jewish and anti-Nazi writers were burned; young people joined the **Hitler Youth**."
+    ] },
+    { "type": "heading", "text": "Nazi racial ideology" },
+    { "type": "paragraph", "text": "The Nazis believed in a false theory of a 'master race' of so-called **Aryans** (white, northern Europeans) and taught that other groups were inferior. They blamed **Jews** for Germany's problems. This **pseudo-science** (false science) about 'race' was used to justify discrimination and murder." },
+    { "type": "definition", "term": "Antisemitism", "text": "Prejudice, hatred or discrimination against Jewish people." },
+    { "type": "heading", "text": "Persecution step by step" },
+    { "type": "table", "headers": ["Year", "Action against Jews"], "rows": [
+      ["1933", "Boycott of Jewish shops; Jews dismissed from government jobs"],
+      ["1935", "**Nuremberg Laws**: Jews lost German citizenship and could not marry non-Jews"],
+      ["1938", "**Kristallnacht** ('Night of Broken Glass'): synagogues burned, Jewish shops smashed, about 30 000 Jewish men sent to camps"],
+      ["1939–1941", "Jews in occupied Poland forced into overcrowded **ghettos**, such as Warsaw; mobile killing squads shot Jews in the USSR"],
+      ["1942", "**Wannsee Conference**: Nazi leaders planned the 'Final Solution', the murder of all Jews in Europe"],
+      ["1942–1945", "**Extermination camps** such as Auschwitz-Birkenau and Treblinka; most victims were murdered in gas chambers on arrival"]
+    ] },
+    { "type": "heading", "text": "The Holocaust" },
+    { "type": "definition", "term": "The Holocaust", "text": "The systematic, state-organised murder of about **six million Jews** by Nazi Germany and its collaborators between 1941 and 1945." },
+    { "type": "paragraph", "text": "Other groups were also persecuted and murdered: **Roma and Sinti** people, people with disabilities, Polish and Soviet civilians and prisoners of war, gay men, Jehovah's Witnesses and political opponents." },
+    { "type": "definition", "term": "Genocide", "text": "Acts committed with the intention of destroying, in whole or in part, a national, ethnic, racial or religious group." },
+    { "type": "heading", "text": "Resistance and rescue" },
+    { "type": "list", "items": [
+      "Jewish fighters rose up in the **Warsaw Ghetto Uprising** (1943).",
+      "Some non-Jews risked their lives to hide or rescue Jews, for example **Oskar Schindler**, who saved about 1 200 workers. Such people are honoured as the 'Righteous Among the Nations'.",
+      "The young German students of the **White Rose** group distributed leaflets against the Nazis and were executed."
+    ] },
+    { "type": "passage", "title": "Source F: Words attributed to Pastor Martin Niemöller (adapted)", "text": "First they came for the communists, and I did not speak out, because I was not a communist.\nThen they came for the trade unionists, and I did not speak out, because I was not a trade unionist.\nThen they came for the Jews, and I did not speak out, because I was not a Jew.\nThen they came for me, and there was no one left to speak for me." },
+    { "type": "callout", "label": "Lessons for today", "text": "The Holocaust shows where racism, propaganda and the loss of human rights can lead. After the war, Nazi leaders were tried at the **Nuremberg Trials** for crimes against humanity, and the UN adopted the **Universal Declaration of Human Rights** (1948). South Africa's Constitution also protects human dignity and equality. The Cape Town, Durban and Johannesburg Holocaust & Genocide Centres teach these lessons." }
+  ],
+  "questions": [
+    { "id": "chancellor", "type": "numeric", "prompt": "In which year did Hitler become Chancellor of Germany?", "answer": 1933, "tolerance": 0 },
+    { "id": "antisemitism", "type": "short", "prompt": "What word means prejudice or hatred against Jewish people?", "answers": ["antisemitism", "anti-semitism"] },
+    { "id": "nuremberg-laws", "type": "mcq", "prompt": "What did the Nuremberg Laws of 1935 do?", "options": ["Set up extermination camps", "Took away German citizenship from Jews", "Started World War II", "Banned the Hitler Youth"], "answer": 1 },
+    { "id": "kristallnacht", "type": "short", "prompt": "What name is given to the night in November 1938 when synagogues and Jewish shops were attacked?", "answers": ["kristallnacht", "night of broken glass", "the night of broken glass"] },
+    { "id": "six-million", "type": "numeric", "prompt": "About how many million Jews were murdered in the Holocaust?", "answer": 6, "tolerance": 0, "unit": "million" },
+    { "id": "auschwitz", "type": "truefalse", "prompt": "Auschwitz-Birkenau was an extermination camp.", "answer": true },
+    { "id": "terms", "type": "match", "marks": 4, "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Ghetto", "right": "Overcrowded area where Jews were forced to live" },
+      { "left": "Propaganda", "right": "Biased information used to influence people" },
+      { "left": "Genocide", "right": "Intent to destroy a whole group of people" },
+      { "left": "Gestapo", "right": "Nazi secret police" }
+    ] },
+    { "id": "control", "type": "open", "marks": 3, "prompt": "Describe THREE ways the Nazis controlled the German people.", "memo": "Any three (1 each): banned other parties/unions; Gestapo and SS terror; concentration camps; propaganda; censorship/book burning; Hitler Youth" },
+    { "id": "source-f", "type": "open", "marks": 3, "prompt": "Read Source F. (a) What is the message of the poem? (b) How is this message relevant to South Africa today?", "memo": "(a) ✓ If people stay silent when others are persecuted (1) ✓ eventually no one will be left to defend them (1)\n(b) ✓ Any relevant link, e.g. we must speak out against racism, xenophobia or human rights abuses (1)" },
+    { "id": "other-victims", "type": "open", "marks": 2, "prompt": "Name TWO groups, other than Jews, who were persecuted by the Nazis.", "memo": "Any two (1 each): Roma and Sinti; people with disabilities; political opponents/communists; gay men; Jehovah's Witnesses; Slavs/Poles/Soviet prisoners" }
+  ]
+}

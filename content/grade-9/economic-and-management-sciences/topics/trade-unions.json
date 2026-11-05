@@ -1,0 +1,67 @@
+{
+  "id": "trade-unions",
+  "title": "Trade Unions",
+  "term": 3,
+  "summary": "What trade unions are, their history and role in South Africa, collective bargaining, workers' rights under labour laws, and the advantages and disadvantages of unions.",
+  "notes": [
+    { "type": "heading", "text": "What is a trade union?" },
+    { "type": "definition", "term": "Trade union", "text": "An organisation of workers who join together to protect and improve their wages, working conditions and rights." },
+    { "type": "paragraph", "text": "One worker on their own has little power when negotiating with an employer. Workers in a union act **together**, which gives them much more bargaining power. Members pay a monthly **membership fee (subscription)**, and elect **shop stewards** to represent them at the workplace." },
+    { "type": "heading", "text": "Trade unions in South African history" },
+    { "type": "list", "items": [
+      "In 1919 **Clements Kadalie** founded the **Industrial and Commercial Workers' Union (ICU)**, one of the first large black trade unions in Africa.",
+      "During apartheid, black unions were not legally recognised until **1979**, after the Wiehahn Commission, although workers organised major strikes, such as the 1973 Durban strikes.",
+      "**COSATU** (Congress of South African Trade Unions), formed in **1985**, played a major role in the struggle against apartheid.",
+      "Today major federations include COSATU, FEDUSA, NACTU and SAFTU. Large unions include NUM (mineworkers), SADTU (teachers), NUMSA (metalworkers) and NEHAWU (health and public servants)."
+    ] },
+    { "type": "heading", "text": "The functions of trade unions" },
+    { "type": "list", "items": [
+      "**Collective bargaining**: negotiating with employers about wages, hours, leave and benefits.",
+      "Protecting members from **unfair dismissal** and discrimination.",
+      "Improving **health and safety** at work.",
+      "Representing members in **disciplinary hearings** and disputes.",
+      "Educating members about their rights.",
+      "Influencing government policy on labour and economic issues."
+    ] },
+    { "type": "heading", "text": "Workers' rights and labour laws" },
+    { "type": "table", "headers": ["Law", "What it does"], "rows": [
+      ["The Constitution (section 23)", "Every worker has the right to fair labour practices, to form and join a trade union, and to strike"],
+      ["Labour Relations Act (1995)", "Sets rules for collective bargaining, strikes and dispute resolution; established the **CCMA** (Commission for Conciliation, Mediation and Arbitration)"],
+      ["Basic Conditions of Employment Act (1997)", "Sets minimum conditions: working hours (45 hours a week), overtime, annual leave, sick leave, maternity leave"],
+      ["Employment Equity Act (1998)", "Prohibits unfair discrimination and promotes equal opportunities"],
+      ["National Minimum Wage Act (2018)", "Sets a minimum hourly wage for most workers"]
+    ] },
+    { "type": "heading", "text": "Collective bargaining and strikes" },
+    { "type": "list", "ordered": true, "items": [
+      "The union presents its demands (e.g. a 9% wage increase).",
+      "Employers make an offer (e.g. 5%).",
+      "The two sides negotiate to reach a compromise.",
+      "If they cannot agree, a **dispute** is declared and referred to the CCMA or a bargaining council for **conciliation**.",
+      "If conciliation fails, workers may go on a **protected (legal) strike** after giving notice. Employers may respond with a **lock-out**."
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Strikes must be **peaceful**. Violence, intimidation and damage to property are illegal and can harm workers, businesses and the economy." },
+    { "type": "table", "headers": ["Advantages of trade unions", "Disadvantages"], "rows": [
+      ["Better wages and working conditions", "Strikes cause lost wages and production"],
+      ["Protection against unfair treatment", "Violence during some strikes"],
+      ["Workers have a stronger voice", "Very high wage demands may lead businesses to cut jobs or use machines"],
+      ["Improved safety", "Membership fees"]
+    ] }
+  ],
+  "questions": [
+    { "id": "define", "type": "open", "marks": 2, "prompt": "What is a trade union?", "memo": "✓ An organisation of workers (1)\n✓ formed to protect and improve their wages, working conditions and rights (1)" },
+    { "id": "cosatu", "type": "numeric", "prompt": "In which year was COSATU formed?", "answer": 1985, "tolerance": 0 },
+    { "id": "kadalie", "type": "short", "prompt": "Which union was founded by Clements Kadalie in 1919? (abbreviation)", "answers": ["icu", "industrial and commercial workers' union", "industrial and commercial workers union"] },
+    { "id": "ccma", "type": "mcq", "prompt": "What does the CCMA do?", "options": ["Collects taxes", "Helps resolve labour disputes", "Sets the price of goods", "Registers companies"], "answer": 1 },
+    { "id": "hours", "type": "numeric", "prompt": "According to the Basic Conditions of Employment Act, what is the maximum number of ordinary working hours per week?", "answer": 45, "tolerance": 0, "unit": "hours" },
+    { "id": "steward", "type": "short", "prompt": "What is the elected union representative at a workplace called?", "answers": ["shop steward", "a shop steward"] },
+    { "id": "violence", "type": "truefalse", "prompt": "The right to strike includes the right to damage property.", "answer": false },
+    { "id": "laws", "type": "match", "marks": 4, "prompt": "Match each law to what it does.", "pairs": [
+      { "left": "Labour Relations Act", "right": "Rules for bargaining and strikes; set up the CCMA" },
+      { "left": "Basic Conditions of Employment Act", "right": "Working hours and leave" },
+      { "left": "Employment Equity Act", "right": "Prohibits unfair discrimination" },
+      { "left": "National Minimum Wage Act", "right": "Sets the lowest legal hourly wage" }
+    ] },
+    { "id": "functions", "type": "open", "marks": 3, "prompt": "Explain THREE functions of trade unions.", "memo": "Any three (1 each): collective bargaining; protection from unfair dismissal; health and safety; representing members in hearings; educating members; influencing policy" },
+    { "id": "pros-cons", "type": "open", "marks": 4, "prompt": "Discuss TWO advantages and TWO disadvantages of trade unions for the economy.", "memo": "Advantages (1 each): better wages increase spending; safer workplaces; stability through bargaining\nDisadvantages (1 each): strikes reduce production; job losses from high wage demands; violence scares investors" }
+  ]
+}

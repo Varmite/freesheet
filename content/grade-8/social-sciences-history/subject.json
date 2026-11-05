@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "grade": 8,
+  "id": "social-sciences-history",
+  "name": "Social Sciences: History",
+  "description": "CAPS Grade 8 History: the Industrial Revolution in Britain and southern Africa, the Mineral Revolution, the Scramble for Africa and World War I.",
+  "topics": [
+    { "id": "industrial-revolution-in-britain", "title": "The Industrial Revolution in Britain", "term": 1 },
+    { "id": "industrialisation-in-southern-africa", "title": "Industrialisation in Southern Africa: Sugar and Indentured Labour", "term": 1 },
+    { "id": "the-discovery-of-diamonds", "title": "The Mineral Revolution: Diamonds", "term": 2 },
+    { "id": "the-discovery-of-gold", "title": "The Mineral Revolution: Gold and Migrant Labour", "term": 2 },
+    { "id": "the-scramble-for-africa", "title": "The Scramble for Africa", "term": 3 },
+    { "id": "colonialism-case-studies", "title": "Colonial Rule: Case Studies from the Congo and Ghana", "term": 3 },
+    { "id": "causes-of-world-war-one", "title": "The Causes of World War I", "term": 4 },
+    { "id": "world-war-one-and-south-africa", "title": "World War I: Trench Warfare and South Africa", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
+  ]
+}

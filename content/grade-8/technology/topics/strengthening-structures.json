@@ -1,0 +1,59 @@
+{
+  "id": "strengthening-structures",
+  "title": "Strengthening Structures",
+  "term": 1,
+  "summary": "How triangulation, struts and ties, folding, tubes, arches, beams and good foundations make structures strong, stable and rigid, and the properties of materials used.",
+  "notes": [
+    { "type": "heading", "text": "Strong, stable and rigid" },
+    { "type": "list", "items": [
+      "**Strength**: the ability to carry a load without breaking.",
+      "**Stability**: the ability to stay upright and not fall over. A **low centre of gravity** and a **wide base** make a structure more stable.",
+      "**Rigidity**: the ability to keep its shape without bending, twisting or collapsing."
+    ] },
+    { "type": "heading", "text": "Triangulation" },
+    { "type": "paragraph", "text": "A square frame made of four strips joined at the corners can easily be pushed into a parallelogram. Adding a diagonal member divides it into two **triangles**, and a triangle cannot change shape unless one of its sides breaks or bends. This is called **triangulation**. It is used in roof trusses, cranes, pylons and bridges." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 110\" font-family=\"sans-serif\" font-size=\"11\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"><rect x=\"20\" y=\"20\" width=\"60\" height=\"60\"/><polygon points=\"110,80 170,80 190,20 130,20\"/><rect x=\"220\" y=\"20\" width=\"60\" height=\"60\"/><line x1=\"220\" y1=\"80\" x2=\"280\" y2=\"20\"/><g fill=\"black\" stroke=\"none\"><text x=\"20\" y=\"100\">square</text><text x=\"105\" y=\"100\">pushed out of shape</text><text x=\"215\" y=\"100\">triangulated: rigid</text></g></svg>", "caption": "A diagonal brace turns a square into two rigid triangles" },
+    { "type": "heading", "text": "Struts and ties" },
+    { "type": "table", "headers": ["Member", "Force in it", "Example"], "rows": [
+      ["Strut", "Compression (it is pushed)", "The diagonal brace under a shelf that pushes up"],
+      ["Tie", "Tension (it is pulled)", "A wire or cable holding up a pole or a gate"]
+    ] },
+    { "type": "heading", "text": "Other methods of strengthening" },
+    { "type": "table", "headers": ["Method", "How it helps", "Example"], "rows": [
+      ["Folding / corrugating", "Folds make thin sheets much stiffer", "Corrugated iron roofs, cardboard boxes"],
+      ["Tubes", "Hollow tubes are strong and light", "Bicycle frames, scaffolding, plant stems"],
+      ["Arches", "Spread the load outwards and down to the supports; the arch is in compression", "Bridges, doorways, dams"],
+      ["Beams (I-beams, L-sections)", "Shaped to resist bending with little material", "Steel beams in buildings and bridges"],
+      ["Gussets", "Triangular plates at joints make corners stronger", "Joints in roof trusses"],
+      ["Reinforced concrete", "Steel rods (in tension) inside concrete (strong in compression)", "Bridges, high-rise buildings"],
+      ["Foundations", "Spread the weight into the ground so the structure does not sink or topple", "Concrete footings under walls"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Concrete is strong in **compression** but weak in **tension**. Steel is strong in **tension**. That is why steel rods are placed in the parts of a concrete beam that are stretched." },
+    { "type": "heading", "text": "Properties of materials" },
+    { "type": "list", "items": [
+      "**Strength**: steel, hardwood.",
+      "**Light weight**: aluminium, balsa wood, plastic.",
+      "**Flexibility / elasticity**: rubber, spring steel.",
+      "**Hardness** (resists scratching and dents): steel, glass.",
+      "**Durability** (lasts a long time and resists weather): stainless steel, treated timber, brick.",
+      "**Cost** and **availability** are also important when choosing materials."
+    ] }
+  ],
+  "questions": [
+    { "id": "triangle", "type": "short", "prompt": "What is the method of adding diagonal members to make a frame rigid called?", "answers": ["triangulation"] },
+    { "id": "stable", "type": "mcq", "prompt": "Which makes a structure more stable?", "options": ["A high centre of gravity and narrow base", "A low centre of gravity and wide base", "Using thinner materials", "Removing foundations"], "answer": 1 },
+    { "id": "strut", "type": "mcq", "prompt": "A member in compression is called a…", "options": ["tie", "strut", "cable", "gusset"], "answer": 1 },
+    { "id": "concrete", "type": "truefalse", "prompt": "Concrete is strong in tension but weak in compression.", "answer": false },
+    { "id": "corrugated", "type": "short", "prompt": "Why are iron roof sheets corrugated? Give the property gained (one word).", "answers": ["stiffness", "strength", "rigidity", "stiffer", "stronger"] },
+    { "id": "methods", "type": "match", "marks": 4, "prompt": "Match each method to an example.", "pairs": [
+      { "left": "Arch", "right": "Stone bridge over a river" },
+      { "left": "Tube", "right": "Bicycle frame" },
+      { "left": "Gusset", "right": "Triangular plate at a roof joint" },
+      { "left": "Tie", "right": "Wire holding up a tent pole" }
+    ] },
+    { "id": "definitions", "type": "open", "marks": 3, "prompt": "Define strength, stability and rigidity.", "memo": "✓ Strength: ability to carry a load without breaking (1)\n✓ Stability: ability to stay upright/not topple (1)\n✓ Rigidity: ability to keep its shape (1)" },
+    { "id": "reinforced", "type": "open", "marks": 2, "prompt": "Explain why steel rods are placed in concrete beams.", "memo": "✓ Concrete is weak in tension (1)\n✓ Steel is strong in tension, so it resists stretching in the beam (1)" },
+    { "id": "foundations", "type": "open", "marks": 2, "prompt": "Why do buildings need foundations?", "memo": "✓ They spread the weight of the building into the ground (1)\n✓ so it does not sink, crack or topple (1)" },
+    { "id": "materials", "type": "open", "marks": 2, "prompt": "Name TWO properties you would look for in a material for an outdoor bench.", "memo": "Any two (1 each): strong; durable/weather-resistant; does not rust or rot; hard; affordable; comfortable/safe" }
+  ]
+}

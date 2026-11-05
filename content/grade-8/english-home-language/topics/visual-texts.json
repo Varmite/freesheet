@@ -1,0 +1,65 @@
+{
+  "id": "visual-texts",
+  "title": "Visual Texts: Advertisements and Cartoons",
+  "term": 4,
+  "summary": "How advertisements persuade (target audience, slogans, persuasive techniques, images and layout) and how cartoons create humour and make a point, using described examples.",
+  "notes": [
+    { "type": "heading", "text": "Advertisements" },
+    { "type": "paragraph", "text": "An **advertisement** aims to **persuade** people to buy a product, use a service or support an idea. Advertisers think carefully about their **target audience**: the group of people they want to reach (by age, gender, interests or income)." },
+    { "type": "table", "caption": "Parts of an advertisement", "headers": ["Part", "Purpose"], "rows": [
+      ["Headline", "Large text that grabs attention"],
+      ["Image / visual", "Shows the product or creates an attractive feeling"],
+      ["Body copy", "Gives more information about the product"],
+      ["Slogan", "A short, catchy, memorable phrase linked to the brand"],
+      ["Logo", "The brand's symbol"],
+      ["Contact details / call to action", "Tells the reader what to do: 'Buy now!', 'Visit our website'"]
+    ] },
+    { "type": "heading", "text": "Persuasive techniques" },
+    { "type": "table", "headers": ["Technique", "Example"], "rows": [
+      ["Emotive language", "'Give your family the love they deserve.'"],
+      ["Direct address (you)", "'You deserve a break.'"],
+      ["Imperatives (commands)", "'Try it today!'"],
+      ["Superlatives and exaggeration", "'The best taste in Africa!'"],
+      ["Rhetorical questions", "'Tired of slow internet?'"],
+      ["Bandwagon", "'Join the millions who already switched.'"],
+      ["Celebrity endorsement", "A famous athlete using the product"],
+      ["Scientific claims and statistics", "'9 out of 10 dentists recommend…'"],
+      ["Special offers", "'Buy one, get one free!' 'Limited time only'"],
+      ["Puns and wordplay", "A cereal advert: 'Start your day the grain way.'"]
+    ] },
+    { "type": "passage", "title": "Described advertisement (original)", "text": "The advert shows a smiling teenage girl in a school uniform drinking from a bright green bottle, with sunlight behind her. The headline in large yellow letters reads: STAY FRESH. STAY FOCUSED. Below it: 'ZING Energy Water: packed with vitamins to power you through every test.' In the bottom corner is a small logo of a lightning bolt and the slogan 'ZING. Think fast.' Tiny print at the very bottom says: 'Contains caffeine. Not recommended for children under 16.'" },
+    { "type": "callout", "label": "Think critically", "text": "Always ask: What is the advert **not** telling me? In the ZING advert, the warning about caffeine is in tiny print, although the advert shows a learner who may be under 16." },
+    { "type": "heading", "text": "Cartoons" },
+    { "type": "paragraph", "text": "A **cartoon** uses drawings, often with speech bubbles, to entertain or to make a point about an issue. Cartoons create humour through **exaggeration**, **irony**, **puns** and unexpected situations." },
+    { "type": "list", "items": [
+      "**Speech bubbles**: words spoken by a character.",
+      "**Thought bubbles** (cloud shapes): a character's thoughts.",
+      "**Body language and facial expressions**: show feelings such as anger, surprise or embarrassment.",
+      "**Font**: bold or large letters show shouting or emphasis.",
+      "**Frames**: a comic strip tells a story in a sequence of frames."
+    ] },
+    { "type": "passage", "title": "Described cartoon (original)", "text": "Frame 1: A father sits on the couch, staring at his cellphone. His son says, 'Dad, can we talk?' The father answers, without looking up, 'Not now, I'm busy.'\nFrame 2: The son sits down and sends a message on his own phone.\nFrame 3: The father's phone buzzes. He reads: 'Dad, can we talk?' He looks shocked, his eyes wide." },
+    { "type": "example", "title": "Explaining the humour", "problem": "Explain the humour and message of the cartoon.", "steps": [
+      "Humour: it is ironic that the son, sitting right next to his father, can only get his attention by sending a text message.",
+      "The father's wide eyes in frame 3 show his shock at realising this.",
+      "Message: people (even parents) spend so much time on their phones that they neglect face-to-face communication with their families."
+    ], "answer": "The humour comes from irony; the message criticises phone addiction." }
+  ],
+  "questions": [
+    { "id": "slogan", "type": "short", "prompt": "What is a short, catchy phrase linked to a brand called?", "answers": ["slogan", "a slogan"] },
+    { "id": "target", "type": "mcq", "prompt": "Who is the target audience of the ZING advertisement?", "options": ["Pensioners", "Teenage learners", "Babies", "Farmers"], "answer": 1 },
+    { "id": "bandwagon", "type": "mcq", "prompt": "'Join the thousands of learners who already use our app!' Which technique is used?", "options": ["Celebrity endorsement", "Bandwagon", "Rhetorical question", "Pun"], "answer": 1 },
+    { "id": "imperative", "type": "short", "prompt": "Quote the imperative (command) in the ZING headline. (two words)", "answers": ["stay fresh", "stay focused", "stay fresh. stay focused."] },
+    { "id": "small-print", "type": "open", "marks": 2, "prompt": "Why do you think the caffeine warning in the ZING advert is in tiny print?", "memo": "✓ The advertisers do not want people to notice it (1)\n✓ because it might stop people, especially the young learners shown, from buying the drink (1)" },
+    { "id": "techniques", "type": "match", "marks": 4, "prompt": "Match each example to the persuasive technique.", "pairs": [
+      { "left": "Tired of pimples?", "right": "Rhetorical question" },
+      { "left": "The best pizza in town!", "right": "Superlative" },
+      { "left": "Buy now and save 50%!", "right": "Special offer" },
+      { "left": "A rugby star holding the drink", "right": "Celebrity endorsement" }
+    ] },
+    { "id": "ethical", "type": "open", "marks": 3, "prompt": "Is the ZING advertisement responsible? Discuss with reference to the image and the small print.", "memo": "✓ Opinion (1)\n✓ The image shows a schoolgirl who may be under 16, so it targets young people (1)\n✓ but the warning says it is not recommended for under-16s and is hidden in tiny print, so it is misleading (1)" },
+    { "id": "cartoon-humour", "type": "open", "marks": 2, "prompt": "Explain why the father's reaction in frame 3 is funny.", "memo": "✓ He only pays attention once he receives a text message (1)\n✓ although his son was sitting next to him the whole time; his wide eyes show his shock at this realisation (irony) (1)" },
+    { "id": "message", "type": "open", "marks": 2, "prompt": "What serious message does the cartoon convey?", "memo": "✓ People spend too much time on their phones (1)\n✓ and neglect face-to-face communication with their families (1)" },
+    { "id": "thought", "type": "truefalse", "prompt": "In cartoons, a thought bubble usually has a cloud shape.", "answer": true }
+  ]
+}

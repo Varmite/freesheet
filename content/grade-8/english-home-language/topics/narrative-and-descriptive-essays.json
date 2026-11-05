@@ -1,0 +1,60 @@
+{
+  "id": "narrative-and-descriptive-essays",
+  "title": "Narrative and Descriptive Essays",
+  "term": 1,
+  "summary": "Features of narrative and descriptive essays, the writing process, planning with a mind map, strong openings and endings, using the senses and figurative language, and how essays are assessed.",
+  "notes": [
+    { "type": "heading", "text": "Two kinds of creative essay" },
+    { "type": "table", "headers": ["", "Narrative essay", "Descriptive essay"], "rows": [
+      ["Purpose", "Tells a story", "Paints a picture in words of a person, place, object or event"],
+      ["Structure", "Plot: introduction (setting and characters), rising action, climax, falling action, resolution", "Organised by space (near to far), time, or senses; little or no plot"],
+      ["Tense", "Usually past tense", "Usually present or past tense, used consistently"],
+      ["Key features", "Characters, conflict, dialogue, suspense", "Sensory details, figurative language, mood"],
+      ["Example topic", "'The day I got lost'", "'A busy taxi rank at five o'clock'"]
+    ] },
+    { "type": "heading", "text": "The writing process" },
+    { "type": "list", "ordered": true, "items": [
+      "**Planning**: choose a topic, brainstorm ideas with a mind map, decide on the main idea and order your paragraphs.",
+      "**Drafting**: write the first draft without worrying too much about mistakes.",
+      "**Revising**: improve content, structure, word choice and paragraphing.",
+      "**Editing and proofreading**: correct spelling, punctuation and grammar.",
+      "**Final version**: write or type it neatly, with a title."
+    ] },
+    { "type": "heading", "text": "Narrative techniques" },
+    { "type": "list", "items": [
+      "**Hook the reader** in the first sentence: start with dialogue, action, a question or a surprising statement. 'The ground shook twice before anyone screamed.'",
+      "**Show, don't tell**: instead of 'She was nervous', write 'Her hands trembled as she reached for the door handle.'",
+      "Use **dialogue** to reveal character and move the story forward (start a new paragraph for each new speaker).",
+      "Build **suspense** with short sentences and by delaying information.",
+      "End with a **satisfying resolution** or a twist; avoid 'and then I woke up and it was all a dream'."
+    ] },
+    { "type": "heading", "text": "Descriptive techniques" },
+    { "type": "list", "items": [
+      "Appeal to all **five senses**: sight, sound, smell, taste and touch.",
+      "Use **precise vocabulary**: 'the scent of wet earth' rather than 'a nice smell'.",
+      "Use **figurative language**: similes, metaphors and personification.",
+      "Create a clear **mood** (atmosphere): peaceful, tense, joyful, gloomy."
+    ] },
+    { "type": "passage", "title": "Example paragraph: The market at dawn (original)", "text": "The market wakes before the sun. Gas burners hiss into life beneath dented pots, and the smell of frying vetkoek drifts between the stalls like a lazy cat. A vendor slaps a crate of tomatoes onto her table, each one as red and shiny as a fire engine. Somewhere a radio crackles with morning news, competing with the rattle of a trolley over uneven paving stones. My fingers, still cold, wrap gratefully around a paper cup of sweet, milky tea." },
+    { "type": "heading", "text": "Length and assessment" },
+    { "type": "paragraph", "text": "In Grade 8, an essay is usually **250 to 300 words**. It is assessed on **content and planning** (ideas, creativity, relevance), **language, style and editing** (vocabulary, sentence variety, grammar, spelling) and **structure** (paragraphing, logical flow, introduction and conclusion)." },
+    { "type": "callout", "label": "Exam tip", "text": "Always hand in your plan (mind map) with the essay, keep to the topic, and leave five minutes to proofread." }
+  ],
+  "questions": [
+    { "id": "narrative", "type": "mcq", "prompt": "The main purpose of a narrative essay is to…", "options": ["argue a point", "tell a story", "give instructions", "describe a process"], "answer": 1 },
+    { "id": "climax", "type": "short", "prompt": "What is the turning point or most exciting moment in a plot called?", "answers": ["climax", "the climax"] },
+    { "id": "senses", "type": "numeric", "prompt": "How many senses should a good descriptive essay appeal to?", "answer": 5, "tolerance": 0 },
+    { "id": "dialogue", "type": "truefalse", "prompt": "When writing dialogue, you should start a new paragraph each time a new character speaks.", "answer": true },
+    { "id": "process", "type": "match", "marks": 4, "prompt": "Match each stage of the writing process to what happens.", "pairs": [
+      { "left": "Planning", "right": "Brainstorm ideas with a mind map" },
+      { "left": "Drafting", "right": "Write the first version" },
+      { "left": "Revising", "right": "Improve content and structure" },
+      { "left": "Proofreading", "right": "Correct spelling and punctuation" }
+    ] },
+    { "id": "show-tell", "type": "open", "marks": 2, "prompt": "Rewrite this sentence to 'show, not tell': 'The boy was very angry.'", "memo": "✓✓ Any sentence showing anger through actions/description, e.g. 'The boy slammed his fist on the desk, his face burning red.' (2)" },
+    { "id": "hook", "type": "open", "marks": 2, "prompt": "Write an opening sentence that hooks the reader for the topic 'The storm'.", "memo": "✓✓ An original, engaging opening using action, dialogue, a question or a surprising statement (2)" },
+    { "id": "senses-example", "type": "open", "marks": 3, "prompt": "Find THREE different senses that are used in the example paragraph 'The market at dawn'. Quote an example of each.", "memo": "Any three (1 each): sound ('Gas burners hiss'/'radio crackles'); smell ('the smell of frying vetkoek'); sight ('as red and shiny as a fire engine'); touch ('My fingers, still cold'); taste ('sweet, milky tea')" },
+    { "id": "simile", "type": "open", "marks": 2, "prompt": "Identify the simile in 'the smell of frying vetkoek drifts between the stalls like a lazy cat' and explain it.", "memo": "✓ The smell is compared to a lazy cat using 'like' (1)\n✓ It suggests the smell moves slowly and gently around the stalls (1)" },
+    { "id": "ending", "type": "open", "marks": 2, "prompt": "Why should you avoid ending a story with 'and then I woke up and it was all a dream'?", "memo": "✓ It is a cliché / overused (1)\n✓ It cancels the story's events and disappoints the reader instead of giving a real resolution (1)" }
+  ]
+}

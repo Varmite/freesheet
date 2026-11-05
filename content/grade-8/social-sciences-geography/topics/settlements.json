@@ -1,0 +1,65 @@
+{
+  "id": "settlements",
+  "title": "Settlements: Rural and Urban",
+  "term": 3,
+  "summary": "What settlements are, factors in choosing a site, rural and urban settlements, settlement shapes and functions, and the hierarchy of settlements.",
+  "notes": [
+    { "type": "heading", "text": "What is a settlement?" },
+    { "type": "definition", "term": "Settlement", "text": "A place where people live, work and interact, ranging from a single farmhouse to a large city." },
+    { "type": "definition", "term": "Site", "text": "The actual piece of land on which a settlement is built." },
+    { "type": "definition", "term": "Situation", "text": "The position of a settlement in relation to its surroundings: rivers, routes, other towns and resources." },
+    { "type": "heading", "text": "Choosing a site" },
+    { "type": "table", "caption": "Site factors in the past", "headers": ["Factor", "Why it mattered"], "rows": [
+      ["Water supply", "A reliable spring, river or well for drinking, cooking and farming (a **wet-point** site)"],
+      ["Dry, flat land", "Above the flood level of rivers (a **dry-point** site); easy to build on"],
+      ["Fertile soil", "For growing crops and grazing animals"],
+      ["Defence", "A hilltop or river bend that was easy to defend"],
+      ["Building materials and fuel", "Nearby wood, stone, clay and thatching grass"],
+      ["Shelter", "Protection from strong winds and cold, e.g. a north-facing slope in the southern hemisphere gets more sun"],
+      ["Routes", "River crossings (bridging points), passes, natural harbours and crossroads encouraged trade"]
+    ] },
+    { "type": "paragraph", "text": "Today, other factors are also important: **jobs**, **transport links**, **services** (schools, hospitals) and mineral resources. Johannesburg grew because of gold, not because of water." },
+    { "type": "heading", "text": "Rural and urban settlements" },
+    { "type": "table", "headers": ["", "Rural settlements", "Urban settlements"], "rows": [
+      ["Size and population", "Small; few people; low population density", "Large; many people; high density"],
+      ["Main activities", "**Primary** activities: farming, forestry, fishing, mining", "**Secondary** (manufacturing) and **tertiary** (services, trade) activities"],
+      ["Examples", "Farms, villages, homesteads", "Towns and cities"],
+      ["Services", "Few; people travel to towns for shops, hospitals, banks", "Many services and specialised shops"]
+    ] },
+    { "type": "heading", "text": "Shapes of rural settlements" },
+    { "type": "list", "items": [
+      "**Nucleated (clustered)**: buildings grouped close together, often around a water source, a crossroads or for defence. Many traditional villages are nucleated.",
+      "**Dispersed (scattered)**: buildings spread out over a wide area, as on commercial farms in the Free State.",
+      "**Linear**: buildings in a line along a road, river or valley."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "On a topographic map, look at the pattern of black building symbols. Clusters suggest a nucleated village; buildings far apart suggest dispersed farms; a line of buildings along a road suggests a linear settlement." },
+    { "type": "heading", "text": "Functions and hierarchy" },
+    { "type": "paragraph", "text": "The **function** of a settlement is its main economic activity or purpose, for example a **mining town** (Rustenburg), a **port** (Durban, Richards Bay), a **holiday resort** (Plettenberg Bay), an **administrative centre** (Pretoria) or a **market town** that serves surrounding farms." },
+    { "type": "table", "caption": "Settlement hierarchy (from smallest to largest)", "headers": ["Level", "Approximate population", "Services"], "rows": [
+      ["Isolated dwelling / farm", "A few people", "None"],
+      ["Hamlet", "Up to a few hundred", "Perhaps a small shop"],
+      ["Village", "Hundreds to a few thousand", "Shop, school, clinic, church"],
+      ["Town", "Thousands to tens of thousands", "Shops, banks, high schools, hospital, police station"],
+      ["City", "Hundreds of thousands", "Specialised shops, universities, large hospitals"],
+      ["Metropolis / conurbation", "Millions", "International airport, head offices, stock exchange"]
+    ] },
+    { "type": "paragraph", "text": "Higher-order settlements have more **high-order services** (such as specialist hospitals) and serve a larger area called their **sphere of influence**." }
+  ],
+  "questions": [
+    { "id": "site-def", "type": "short", "prompt": "What word describes the actual land on which a settlement is built?", "answers": ["site", "the site"] },
+    { "id": "wet-point", "type": "mcq", "prompt": "A settlement built near a reliable spring has a…", "options": ["dry-point site", "wet-point site", "defensive site", "bridging point"], "answer": 1 },
+    { "id": "rural-activity", "type": "mcq", "prompt": "Which economic activity is typical of rural areas?", "options": ["Manufacturing cars", "Banking", "Farming", "Retail shopping malls"], "answer": 2 },
+    { "id": "dispersed", "type": "truefalse", "prompt": "In a dispersed settlement the buildings are grouped closely together.", "answer": false },
+    { "id": "hierarchy", "type": "mcq", "prompt": "Which is the correct order from smallest to largest?", "options": ["Village, hamlet, town, city", "Hamlet, village, town, city", "Town, village, city, hamlet", "Hamlet, town, village, city"], "answer": 1 },
+    { "id": "functions", "type": "match", "marks": 4, "prompt": "Match each town to its main function.", "pairs": [
+      { "left": "Richards Bay", "right": "Port" },
+      { "left": "Rustenburg", "right": "Mining town" },
+      { "left": "Pretoria", "right": "Administrative centre" },
+      { "left": "Plettenberg Bay", "right": "Holiday resort" }
+    ] },
+    { "id": "site-factors", "type": "open", "marks": 4, "prompt": "Give FOUR factors that early settlers considered when choosing a site.", "memo": "Any four (1 each): water; flat, dry land; fertile soil; defence; building materials/fuel; shelter/aspect; routes" },
+    { "id": "shapes", "type": "open", "marks": 2, "prompt": "Explain why some rural settlements are linear.", "memo": "✓ Buildings follow a feature such as a road, river or valley (1)\n✓ for access to transport or water / because the flat land is narrow (1)" },
+    { "id": "rural-urban", "type": "open", "marks": 2, "prompt": "Give TWO differences between rural and urban settlements.", "memo": "Any two (1 each): size/population; density; primary vs secondary/tertiary activities; fewer vs more services" },
+    { "id": "sphere", "type": "short", "prompt": "What is the area served by a settlement's shops and services called?", "answers": ["sphere of influence", "the sphere of influence", "hinterland", "catchment area"] }
+  ]
+}

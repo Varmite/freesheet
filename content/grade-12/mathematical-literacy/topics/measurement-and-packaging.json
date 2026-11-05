@@ -1,0 +1,38 @@
+{
+  "id": "measurement-and-packaging",
+  "title": "Measurement: Packaging and Optimisation",
+  "term": 2,
+  "summary": "Surface area and volume of packaging, comparing package designs, packing arrangements, cost of materials, and using conversions and formulas in practical problems.",
+  "notes": [
+    { "type": "heading", "text": "Why packaging matters" },
+    { "type": "paragraph", "text": "Businesses choose packaging that holds the product, uses little material (lower cost and less waste), stacks and packs efficiently into boxes and trucks, and looks attractive." },
+    { "type": "table", "headers": ["Shape", "Volume", "Surface area"], "rows": [
+      ["Rectangular box", "$l \\times b \\times h$", "$2(lb + lh + bh)$"],
+      ["Cylinder (closed)", "$\\pi r^2 h$", "$2\\pi r^2 + 2\\pi r h$"],
+      ["Triangular prism", "$\\frac{1}{2} b h_\\triangle \\times l$", "2 triangles + 3 rectangles"]
+    ] },
+    { "type": "example", "title": "Worked example 1: comparing two designs", "problem": "A juice company needs a 1 ℓ (1 000 cm³) container. Design A: a box 10 cm × 10 cm × 10 cm. Design B: a cylinder with radius 5,5 cm and height 10,5 cm. Which uses less material? Use $\\pi = 3{,}142$.", "steps": [
+      "A: volume 1 000 cm³; surface area = 6 × 100 = 600 cm²",
+      "B: volume = 3,142 × 5,5² × 10,5 = 997,9 cm³; surface area = 2 × 3,142 × 5,5² + 2 × 3,142 × 5,5 × 10,5 = 190,1 + 362,9 = 553,0 cm²",
+      "B holds about the same volume with less material."
+    ], "answer": "The cylinder uses about 47 cm² less material" },
+    { "type": "callout", "label": "But…", "text": "Cylinders waste space when packed into rectangular boxes. In a square arrangement, circles cover only about 79% of the floor of the box, so boxes may need to be bigger." },
+    { "type": "heading", "text": "Packing arrangements" },
+    { "type": "example", "title": "Worked example 2", "problem": "Cans with diameter 7 cm and height 12 cm are packed upright in a box 42 cm × 28 cm × 24 cm. How many cans fit?", "steps": ["Length: 42 ÷ 7 = 6; width: 28 ÷ 7 = 4", "Height: 24 ÷ 12 = 2 layers", "Total: 6 × 4 × 2 = 48 cans"], "answer": "48 cans" },
+    { "type": "heading", "text": "Cost of materials" },
+    { "type": "example", "title": "Worked example 3", "problem": "Cardboard costs R0,04 per 100 cm². A company makes 25 000 boxes of 600 cm² each. What is the cost of cardboard?", "steps": ["Total area: 25 000 × 600 = 15 000 000 cm²", "Units of 100 cm²: 150 000", "Cost: 150 000 × R0,04 = R6 000"], "answer": "R6 000" },
+    { "type": "callout", "label": "Exam tip", "text": "In ML exams, formulas and conversions are usually given. Write the formula, substitute carefully (with units), and check whether the question asks for cm², m², cm³ or litres." }
+  ],
+  "questions": [
+    { "id": "box-vol", "type": "numeric", "prompt": "Find the volume of a box 25 cm × 20 cm × 8 cm, in litres.", "answer": 4, "tolerance": 0, "unit": "ℓ" },
+    { "id": "box-sa", "type": "numeric", "prompt": "Find the surface area of a closed box 10 cm × 6 cm × 4 cm.", "answer": 248, "tolerance": 0, "unit": "cm²" },
+    { "id": "cyl-vol", "type": "numeric", "prompt": "A tin has radius 4 cm and height 11 cm. Calculate its volume in cm³ using $\\pi = 3{,}142$, to one decimal place.", "answer": 553, "tolerance": 0.05, "unit": "cm³" },
+    { "id": "pack", "type": "numeric", "prompt": "Boxes 12 cm × 8 cm × 5 cm are packed into a carton 48 cm × 32 cm × 30 cm (same orientation). How many fit?", "answer": 96, "tolerance": 0 },
+    { "id": "waste", "type": "truefalse", "prompt": "Cylinders packed in a rectangular box leave empty space between them.", "answer": true },
+    { "id": "label", "type": "open", "marks": 3, "prompt": "A label wraps around a can of radius 3,5 cm and height 10 cm, with a 1 cm overlap. Calculate the length and area of the label. Use $\\pi = 3{,}142$.", "memo": "✓ Circumference 2 × 3,142 × 3,5 = 21,99 cm (1)\n✓ Length with overlap 22,99 cm (1)\n✓ Area ≈ 229,9 cm² (1)" },
+    { "id": "cost", "type": "open", "marks": 3, "prompt": "Plastic for bottles costs R1,20 per 1 000 cm². Each bottle needs 450 cm². What does the plastic cost for 10 000 bottles?", "memo": "✓ 10 000 × 450 = 4 500 000 cm² (1)\n✓ ÷ 1 000 = 4 500 units (1)\n✓ × R1,20 = R5 400 (1)" },
+    { "id": "design", "type": "open", "marks": 2, "prompt": "Give TWO reasons why a company might choose a rectangular box rather than a cylinder for cereal.", "memo": "Any two (1 each): packs without wasted space; stacks easily on shelves; large flat surfaces for advertising; easy to make from cardboard" },
+    { "id": "convert", "type": "numeric", "prompt": "A container holds 2 500 cm³. How many litres is this?", "answer": 2.5, "tolerance": 0, "unit": "ℓ" },
+    { "id": "fill", "type": "open", "marks": 3, "prompt": "How many 330 mℓ cans can be filled from a 50 ℓ drum of cool drink? How much is left over?", "memo": "✓ 50 000 mℓ ÷ 330 = 151,5 (1)\n✓ 151 full cans (1)\n✓ 50 000 − 49 830 = 170 mℓ left over (1)" }
+  ]
+}

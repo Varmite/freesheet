@@ -1,0 +1,39 @@
+{
+  "id": "counting-and-probability",
+  "title": "Counting Principles and Probability",
+  "term": 3,
+  "summary": "The fundamental counting principle, factorial notation, arrangements with and without repetition, arrangements with conditions and identical items, and using counting to find probabilities.",
+  "notes": [
+    { "type": "heading", "text": "The fundamental counting principle" },
+    { "type": "paragraph", "text": "If one choice can be made in $m$ ways and a second independent choice in $n$ ways, the two together can be made in $m \\times n$ ways." },
+    { "type": "example", "title": "Worked example 1", "problem": "A menu has 3 starters, 5 main meals and 2 desserts. How many different three-course meals are possible?", "steps": ["$3 \\times 5 \\times 2 = 30$"], "answer": "30 meals" },
+    { "type": "heading", "text": "Factorial notation" },
+    { "type": "formula", "latex": "n! = n \\times (n - 1) \\times (n - 2) \\times \\ldots \\times 2 \\times 1 \\qquad 0! = 1", "caption": "$n$ different objects can be arranged in a row in $n!$ ways" },
+    { "type": "example", "title": "Worked example 2", "problem": "In how many ways can 6 learners stand in a line?", "steps": ["$6! = 720$"], "answer": "720" },
+    { "type": "heading", "text": "Repetition allowed or not" },
+    { "type": "table", "headers": ["Situation", "Number of arrangements", "Example"], "rows": [
+      ["$r$ positions, $n$ choices each, repetition allowed", "$n^r$", "4-digit PINs: $10^4 = 10\\ 000$"],
+      ["$r$ of $n$ different objects, no repetition", "$\\dfrac{n!}{(n - r)!}$", "Gold, silver, bronze from 8 runners: $8 \\times 7 \\times 6 = 336$"]
+    ] },
+    { "type": "heading", "text": "Arrangements with conditions" },
+    { "type": "example", "title": "Worked example 3: items kept together", "problem": "In how many ways can the letters of the word FRIENDS be arranged if the vowels (I and E) must stay together?", "steps": ["Treat 'IE' as one unit: 6 units can be arranged in $6!$ ways.", "The vowels can be arranged within their unit in $2!$ ways.", "$6! \\times 2! = 1\\ 440$"], "answer": "1 440" },
+    { "type": "heading", "text": "Identical items" },
+    { "type": "formula", "latex": "\\frac{n!}{a! \\, b! \\, \\ldots}", "caption": "Arrangements of $n$ objects where $a$ are identical, $b$ are identical, and so on" },
+    { "type": "example", "title": "Worked example 4", "problem": "How many different arrangements are there of the letters of the word BANANA?", "steps": ["6 letters: A appears 3 times, N twice.", "$\\dfrac{6!}{3! \\, 2!} = \\dfrac{720}{12} = 60$"], "answer": "60" },
+    { "type": "heading", "text": "Probability with counting" },
+    { "type": "formula", "latex": "P(E) = \\frac{\\text{number of arrangements in which } E \\text{ happens}}{\\text{total number of arrangements}}" },
+    { "type": "example", "title": "Worked example 5", "problem": "The letters of the word MATHS are arranged randomly. Find the probability that the arrangement starts with a vowel.", "steps": ["Total arrangements: $5! = 120$", "Starting with A (the only vowel): $1 \\times 4! = 24$", "$P = \\dfrac{24}{120} = \\dfrac{1}{5}$"], "answer": "$\\frac{1}{5}$" }
+  ],
+  "questions": [
+    { "id": "outfits", "type": "numeric", "prompt": "A learner has 4 shirts, 3 pairs of trousers and 2 pairs of shoes. How many different outfits are possible?", "answer": 24, "tolerance": 0 },
+    { "id": "factorial", "type": "numeric", "prompt": "Evaluate $\\dfrac{7!}{5!}$.", "answer": 42, "tolerance": 0 },
+    { "id": "zero", "type": "numeric", "prompt": "What is $0!$?", "answer": 1, "tolerance": 0 },
+    { "id": "pins", "type": "numeric", "prompt": "How many 5-digit codes can be made from the digits 0 to 9 if digits may be repeated?", "answer": 100000, "tolerance": 0 },
+    { "id": "no-repeat", "type": "numeric", "prompt": "How many 3-letter arrangements can be made from the letters A, B, C, D, E, F if no letter may be repeated?", "answer": 120, "tolerance": 0 },
+    { "id": "identical", "type": "numeric", "prompt": "How many different arrangements are there of the letters of the word LETTER?", "answer": 180, "tolerance": 0 },
+    { "id": "together", "type": "open", "marks": 3, "prompt": "In how many ways can 5 boys and 3 girls sit in a row if the girls must sit together?", "memo": "✓ Treat girls as one unit: $6!$ (1)\n✓ Girls among themselves: $3!$ (1)\n✓ $720 \\times 6 = 4\\ 320$ (1)" },
+    { "id": "ends", "type": "open", "marks": 3, "prompt": "The letters of the word NUMBERS are arranged. How many arrangements begin and end with a consonant?", "memo": "✓ Consonants: N, M, B, R, S (5) (1)\n✓ First and last: $5 \\times 4 = 20$ (1)\n✓ Middle: $5! = 120$, total $2\\ 400$ (1)" },
+    { "id": "prob", "type": "open", "marks": 4, "prompt": "A 4-digit code is formed using the digits 1 to 9 without repetition. What is the probability that the code is an even number?", "memo": "✓ Total: $9 \\times 8 \\times 7 \\times 6 = 3\\ 024$ (1)\n✓ Last digit even: 4 choices (2, 4, 6, 8) (1)\n✓ Even codes: $4 \\times 8 \\times 7 \\times 6 = 1\\ 344$ (1)\n✓ $P = \\frac{1\\ 344}{3\\ 024} = \\frac{4}{9}$ (1)" },
+    { "id": "not-together", "type": "open", "marks": 3, "prompt": "In how many ways can the letters of the word PENCIL be arranged so that the vowels are NOT next to each other?", "memo": "✓ Total $6! = 720$ (1)\n✓ Vowels together: $5! \\times 2! = 240$ (1)\n✓ Not together: $720 - 240 = 480$ (1)" }
+  ]
+}

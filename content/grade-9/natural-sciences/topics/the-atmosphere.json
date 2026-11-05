@@ -1,0 +1,65 @@
+{
+  "id": "the-atmosphere",
+  "title": "The Atmosphere",
+  "term": 4,
+  "summary": "The composition and layers of the atmosphere, the ozone layer, the greenhouse effect and global warming, and how to reduce our impact.",
+  "notes": [
+    { "type": "heading", "text": "What is the atmosphere?" },
+    { "type": "paragraph", "text": "The **atmosphere** is the blanket of gases held around the Earth by gravity. It provides the oxygen we breathe and carbon dioxide for photosynthesis, protects us from harmful radiation and meteoroids, and keeps the Earth warm enough for life." },
+    { "type": "table", "caption": "Composition of dry air", "headers": ["Gas", "Approximate percentage"], "rows": [
+      ["Nitrogen (N₂)", "78%"],
+      ["Oxygen (O₂)", "21%"],
+      ["Argon (Ar)", "0,9%"],
+      ["Carbon dioxide (CO₂)", "about 0,04%"],
+      ["Water vapour and other gases", "Varies"]
+    ] },
+    { "type": "heading", "text": "Layers of the atmosphere" },
+    { "type": "table", "headers": ["Layer", "Height (approx.)", "Features"], "rows": [
+      ["Troposphere", "0 to 12 km", "Contains most of the air and water vapour; all weather happens here; temperature decreases with height"],
+      ["Stratosphere", "12 to 50 km", "Contains the ozone layer; temperature increases with height; jet aircraft fly in the lower part"],
+      ["Mesosphere", "50 to 80 km", "Coldest layer; meteors burn up here"],
+      ["Thermosphere", "80 km upwards", "Very thin air; temperature rises very high; auroras; the International Space Station orbits here"]
+    ] },
+    { "type": "callout", "label": "Memory aid", "text": "From the ground up: **T**ired **S**tudents **M**ake **T**oast: Troposphere, Stratosphere, Mesosphere, Thermosphere." },
+    { "type": "heading", "text": "The ozone layer" },
+    { "type": "paragraph", "text": "**Ozone** (O₃) in the stratosphere absorbs most of the sun's harmful **ultraviolet (UV) radiation**, which causes sunburn, skin cancer and eye damage. Chemicals called **CFCs**, once used in fridges and aerosol sprays, destroyed ozone and created a 'hole' over Antarctica. After CFCs were banned by the **Montreal Protocol** (1987), the ozone layer has slowly begun to recover." },
+    { "type": "heading", "text": "The greenhouse effect" },
+    { "type": "list", "ordered": true, "items": [
+      "Energy from the sun passes through the atmosphere and warms the Earth's surface.",
+      "The warm surface gives off heat (infrared radiation).",
+      "**Greenhouse gases** (carbon dioxide, methane, water vapour, nitrous oxide) absorb some of this heat and send it back to the surface.",
+      "This natural greenhouse effect keeps Earth's average temperature at about 15 °C instead of about −18 °C."
+    ] },
+    { "type": "definition", "term": "Enhanced greenhouse effect", "text": "Extra greenhouse gases released by human activities trap more heat, causing **global warming**: a rise in the Earth's average temperature." },
+    { "type": "table", "headers": ["Human cause", "Gas released"], "rows": [
+      ["Burning coal, oil and petrol", "Carbon dioxide"],
+      ["Cutting down and burning forests", "Carbon dioxide (and fewer trees to absorb it)"],
+      ["Cattle farming and rubbish dumps", "Methane"],
+      ["Fertilisers", "Nitrous oxide"]
+    ] },
+    { "type": "paragraph", "text": "Effects of **climate change** include more frequent droughts and floods, stronger storms, melting ice and rising sea levels, changing rainfall patterns that affect farming, and loss of species." },
+    { "type": "list", "items": [
+      "Use less electricity and switch to renewable energy.",
+      "Walk, cycle or use public transport.",
+      "Plant indigenous trees; avoid burning rubbish.",
+      "Reduce, reuse and recycle; compost food waste to reduce methane from dumps."
+    ] }
+  ],
+  "questions": [
+    { "id": "most-gas", "type": "mcq", "prompt": "Which gas makes up most of the atmosphere?", "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"], "answer": 2 },
+    { "id": "oxygen-pc", "type": "numeric", "prompt": "About what percentage of the air is oxygen?", "answer": 21, "tolerance": 1, "unit": "%" },
+    { "id": "weather", "type": "short", "prompt": "In which layer of the atmosphere does weather occur?", "answers": ["troposphere", "the troposphere"] },
+    { "id": "ozone-layer", "type": "mcq", "prompt": "In which layer is the ozone layer found?", "options": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"], "answer": 1 },
+    { "id": "uv", "type": "short", "prompt": "Which harmful radiation from the sun does the ozone layer absorb?", "answers": ["uv", "ultraviolet", "ultraviolet radiation", "uv radiation"] },
+    { "id": "natural", "type": "truefalse", "prompt": "Without any greenhouse effect, the Earth would be too cold for most life.", "answer": true },
+    { "id": "layers", "type": "match", "marks": 4, "prompt": "Match each layer to its feature.", "pairs": [
+      { "left": "Troposphere", "right": "All weather occurs here" },
+      { "left": "Stratosphere", "right": "Contains the ozone layer" },
+      { "left": "Mesosphere", "right": "Meteors burn up here" },
+      { "left": "Thermosphere", "right": "Auroras and the space station" }
+    ] },
+    { "id": "greenhouse", "type": "open", "marks": 3, "prompt": "Explain how the greenhouse effect warms the Earth.", "memo": "✓ The sun's energy passes through the atmosphere and heats the surface (1)\n✓ The surface gives off heat (infrared radiation) (1)\n✓ Greenhouse gases absorb this heat and re-radiate it back to Earth (1)" },
+    { "id": "causes", "type": "open", "marks": 2, "prompt": "Name TWO human activities that increase the amount of greenhouse gases in the atmosphere.", "memo": "Any two (1 each): burning fossil fuels; deforestation; cattle farming; landfill/rubbish dumps; fertiliser use" },
+    { "id": "effects", "type": "open", "marks": 2, "prompt": "Give TWO possible effects of global warming on South Africa.", "memo": "Any two (1 each): more droughts; floods/stronger storms; water shortages; crop failure; rising sea levels on the coast; loss of species/biomes" }
+  ]
+}

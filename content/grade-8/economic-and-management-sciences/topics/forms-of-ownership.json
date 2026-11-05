@@ -1,0 +1,61 @@
+{
+  "id": "forms-of-ownership",
+  "title": "Forms of Ownership",
+  "term": 4,
+  "summary": "Sole traders, partnerships, companies and other forms of business ownership, limited and unlimited liability, and the advantages and disadvantages of each.",
+  "notes": [
+    { "type": "heading", "text": "Why the form of ownership matters" },
+    { "type": "paragraph", "text": "When starting a business, an entrepreneur must choose a **form of ownership**. This decides who owns and controls the business, how much capital can be raised, who shares the profit, and who is responsible for the business's debts." },
+    { "type": "definition", "term": "Unlimited liability", "text": "The owners are personally responsible for all the debts of the business. If the business cannot pay, the owners' personal possessions (house, car) can be sold to pay the creditors." },
+    { "type": "definition", "term": "Limited liability", "text": "The owners can lose only the money they invested in the business; their personal possessions are protected." },
+    { "type": "definition", "term": "Legal personality", "text": "A business with legal personality exists separately from its owners in law: it can own property, sign contracts, sue and be sued in its own name, and continues even if owners change (continuity)." },
+    { "type": "heading", "text": "The main forms of ownership" },
+    { "type": "table", "headers": ["Form", "Owners", "Liability", "Legal personality"], "rows": [
+      ["Sole trader (sole proprietor)", "One person", "Unlimited", "No"],
+      ["Partnership", "2 or more partners who share profits according to an agreement", "Unlimited (partners are jointly responsible)", "No"],
+      ["Private company (Pty) Ltd", "One or more shareholders; shares not sold to the public", "Limited", "Yes"],
+      ["Public company Ltd", "Shareholders; shares sold to the public, often on the Johannesburg Stock Exchange (JSE)", "Limited", "Yes"],
+      ["Co-operative", "Members with a common need (e.g. small farmers) who own and control it democratically", "Limited", "Yes"],
+      ["Non-profit company (NPC)", "Run for a public benefit, not to make profits for owners", "Limited", "Yes"]
+    ] },
+    { "type": "heading", "text": "Sole trader" },
+    { "type": "table", "headers": ["Advantages", "Disadvantages"], "rows": [
+      ["Easy and cheap to start; few legal requirements", "Unlimited liability"],
+      ["Owner makes all decisions quickly", "Limited capital: only the owner's savings and loans"],
+      ["Owner keeps all the profit", "Owner carries all the risk and workload"],
+      ["Close contact with customers", "No continuity: the business may end if the owner dies or retires"]
+    ] },
+    { "type": "heading", "text": "Partnership" },
+    { "type": "table", "headers": ["Advantages", "Disadvantages"], "rows": [
+      ["More capital from several partners", "Unlimited liability; partners are responsible for each other's business decisions"],
+      ["Partners share the workload and bring different skills", "Profits must be shared"],
+      ["Easy to set up with a partnership agreement", "Disagreements between partners"],
+      ["Losses are shared", "No continuity: a change of partners ends the old partnership"]
+    ] },
+    { "type": "heading", "text": "Companies" },
+    { "type": "table", "headers": ["Advantages", "Disadvantages"], "rows": [
+      ["Limited liability for shareholders", "Expensive and complicated to register with CIPC (Companies and Intellectual Property Commission)"],
+      ["Large amounts of capital can be raised by selling shares", "Must follow many legal rules; public companies must publish financial statements"],
+      ["Continuity: the company continues if shareholders change", "Decision-making can be slow"],
+      ["Can employ professional managers", "Profits are shared as dividends and the company pays company tax"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Look at the name of a business: **(Pty) Ltd** = private company; **Ltd** = public company; **NPC** = non-profit company; **Inc.** = personal liability company (used by professionals such as attorneys)." }
+  ],
+  "questions": [
+    { "id": "one-owner", "type": "short", "prompt": "What is a business owned by one person called?", "answers": ["sole trader", "sole proprietor", "sole proprietorship", "a sole trader"] },
+    { "id": "unlimited", "type": "open", "marks": 2, "prompt": "Explain unlimited liability.", "memo": "✓ The owners are personally responsible for all the debts of the business (1)\n✓ Their personal possessions may be sold to pay creditors (1)" },
+    { "id": "limited", "type": "mcq", "prompt": "Which form of ownership has limited liability?", "options": ["Sole trader", "Partnership", "Private company", "All of these"], "answer": 2 },
+    { "id": "pty", "type": "mcq", "prompt": "A business called 'Mokoena Builders (Pty) Ltd' is a…", "options": ["sole trader", "partnership", "private company", "public company"], "answer": 2 },
+    { "id": "continuity", "type": "truefalse", "prompt": "A company continues to exist even if its shareholders change.", "answer": true },
+    { "id": "jse", "type": "short", "prompt": "On which stock exchange are the shares of many South African public companies traded? (abbreviation)", "answers": ["jse", "johannesburg stock exchange"] },
+    { "id": "forms", "type": "match", "marks": 4, "prompt": "Match each description to the form of ownership.", "pairs": [
+      { "left": "Owned by members with a common need", "right": "Co-operative" },
+      { "left": "Two to many partners share profits", "right": "Partnership" },
+      { "left": "Shares are sold to the public", "right": "Public company" },
+      { "left": "Run for public benefit, not profit", "right": "Non-profit company" }
+    ] },
+    { "id": "sole-adv", "type": "open", "marks": 4, "prompt": "Give TWO advantages and TWO disadvantages of a sole trader.", "memo": "Advantages (1 each): easy and cheap to start; quick decisions; keeps all profit; personal contact\nDisadvantages (1 each): unlimited liability; limited capital; all risk and workload; no continuity" },
+    { "id": "partner-disadv", "type": "open", "marks": 2, "prompt": "Why can a partnership be risky for its partners?", "memo": "✓ Partners have unlimited liability (1)\n✓ and are responsible for debts caused by the decisions of the other partners / disagreements can arise (1)" },
+    { "id": "company-capital", "type": "open", "marks": 2, "prompt": "Why can a public company raise more capital than a sole trader?", "memo": "✓ It can sell shares to the public (1)\n✓ to many investors, who are attracted by limited liability (1)" }
+  ]
+}

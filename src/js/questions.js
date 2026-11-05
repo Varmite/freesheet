@@ -185,7 +185,8 @@
           if (q.type === 'mcq') setResp(Number(b.dataset.i), true);
           else setResp(b.dataset.v === 'true', true);
           const again = el.querySelector(`.opt[data-${q.type === 'mcq' ? 'i' : 'v'}="${q.type === 'mcq' ? b.dataset.i : b.dataset.v}"]`);
-          if (again) again.focus();
+          if (again) { again.focus(); if (window.Motion) Motion.press(again); }
+          if (window.Sound) Sound.play('select');
         }));
         const txt = el.querySelector('.text-in');
         if (txt) {
@@ -209,6 +210,9 @@
         ctx.selfMark = Number(b.dataset.mark);
         if (ctx.onSelfMark) ctx.onSelfMark(ctx.selfMark);
         draw();
+        const picked = el.querySelector(`.mark-btn[data-mark="${b.dataset.mark}"]`);
+        if (picked && window.Motion) Motion.press(picked);
+        if (window.Sound) Sound.mark(ctx.selfMark, K.marksOf(q));
       }));
       const mi = el.querySelector('.mark-in');
       if (mi) mi.addEventListener('change', () => {

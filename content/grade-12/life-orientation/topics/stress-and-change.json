@@ -1,0 +1,51 @@
+{
+  "id": "stress-and-change",
+  "title": "Life Skills: Stress, Conflict and Change",
+  "term": 1,
+  "summary": "Causes, symptoms and effects of stress, healthy coping strategies, conflict-resolution styles and skills, and adapting to the changes that come with finishing school.",
+  "notes": [
+    { "type": "heading", "text": "Stress" },
+    { "type": "paragraph", "text": "**Stress** is the body's response to pressure. Short-term stress can sharpen focus (**eustress**), but long-term or overwhelming stress (**distress**) harms health, relationships and performance." },
+    { "type": "table", "headers": ["Causes in Grade 12", "Symptoms"], "rows": [
+      ["Final examinations and university applications", "Headaches, tense muscles, fatigue"],
+      ["Uncertainty about the future", "Poor sleep, irritability, anxiety"],
+      ["Family or financial problems", "Changes in appetite, poor concentration"],
+      ["Relationship problems", "Withdrawal, substance use, feeling hopeless"]
+    ] },
+    { "type": "heading", "text": "Coping strategies" },
+    { "type": "table", "headers": ["Healthy", "Unhealthy"], "rows": [
+      ["Time management and planning", "Procrastination"],
+      ["Exercise, sleep, healthy food", "Alcohol, drugs, overeating"],
+      ["Talking to someone, counselling", "Isolation, bottling up feelings"],
+      ["Relaxation, breathing, hobbies", "Aggression or self-harm"]
+    ] },
+    { "type": "heading", "text": "Conflict" },
+    { "type": "table", "caption": "Conflict-handling styles", "headers": ["Style", "Approach", "Outcome"], "rows": [
+      ["Avoiding", "Ignoring the problem", "Lose–lose; the problem remains"],
+      ["Competing", "Forcing your own way", "Win–lose"],
+      ["Accommodating", "Giving in to keep the peace", "Lose–win"],
+      ["Compromising", "Each side gives up something", "Partial win for both"],
+      ["Collaborating", "Working together to find a solution that meets both needs", "Win–win"]
+    ] },
+    { "type": "list", "ordered": true, "items": ["Stay calm and choose a good time to talk.", "Listen actively and let each person explain.", "Use I-statements, not blame.", "Identify the real problem and shared interests.", "Brainstorm solutions and agree on one.", "Follow up."] },
+    { "type": "heading", "text": "Change after school" },
+    { "type": "paragraph", "text": "Leaving school brings new independence, responsibilities, places and relationships. Planning ahead, building a support network, managing money and keeping healthy routines make the transition easier." }
+  ],
+  "questions": [
+    { "id": "eustress", "type": "short", "prompt": "What is positive, short-term stress that improves performance called?", "answers": ["eustress"] },
+    { "id": "win-win", "type": "mcq", "prompt": "Which conflict style aims for a win–win outcome?", "options": ["Avoiding", "Competing", "Collaborating", "Accommodating"], "answer": 2 },
+    { "id": "styles", "type": "match", "marks": 4, "prompt": "Match each conflict style to its outcome.", "pairs": [
+      { "left": "Competing", "right": "Win–lose" },
+      { "left": "Accommodating", "right": "Lose–win" },
+      { "left": "Avoiding", "right": "Lose–lose" },
+      { "left": "Collaborating", "right": "Win–win" }
+    ] },
+    { "id": "symptoms", "type": "open", "marks": 3, "prompt": "Name THREE symptoms of distress.", "memo": "Any three (1 each): headaches; fatigue; poor sleep; irritability; anxiety; appetite changes; poor concentration; withdrawal" },
+    { "id": "coping", "type": "open", "marks": 4, "prompt": "Contrast TWO healthy and TWO unhealthy ways of coping with exam stress.", "memo": "Healthy (1 each): time management; exercise; sleep; talking; relaxation\nUnhealthy (1 each): procrastination; substances; isolation; aggression" },
+    { "id": "steps", "type": "open", "marks": 3, "prompt": "Describe THREE steps in resolving a conflict with a family member.", "memo": "Any three (1 each): stay calm; listen actively; use I-statements; identify the real problem; brainstorm solutions; agree and follow up" },
+    { "id": "transition", "type": "open", "marks": 3, "prompt": "Suggest THREE ways to prepare for the change from school to university or work.", "memo": "Any three (1 each): plan finances; build a support network; research the institution/workplace; develop independence skills; keep healthy routines" },
+    { "id": "bottle", "type": "truefalse", "prompt": "Bottling up feelings is a healthy long-term way to deal with stress.", "answer": false },
+    { "id": "i-statement", "type": "open", "marks": 2, "prompt": "Rewrite as an I-statement: 'You never let me go out with my friends!'", "memo": "✓✓ e.g. 'I feel frustrated when I'm not allowed to go out, because I want to spend time with my friends. Could we agree on some rules?' (feeling, situation, reason/request) (2)" },
+    { "id": "long-term", "type": "open", "marks": 2, "prompt": "Give TWO effects of long-term stress on health.", "memo": "Any two (1 each): weakened immune system; high blood pressure; depression/anxiety; sleep problems; heart disease; digestive problems" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "sequences-and-series",
+  "title": "Number Patterns: Sequences and Series",
+  "term": 1,
+  "summary": "Arithmetic and geometric sequences and series, sigma notation, the sum to infinity of a convergent geometric series, and solving problems with patterns.",
+  "notes": [
+    { "type": "heading", "text": "Arithmetic sequences" },
+    { "type": "paragraph", "text": "An **arithmetic** sequence has a constant **common difference** $d$. First term $a$." },
+    { "type": "formula", "latex": "T_n = a + (n - 1)d \\qquad S_n = \\frac{n}{2}\\left[2a + (n - 1)d\\right] = \\frac{n}{2}(a + l)", "caption": "General term and sum of the first $n$ terms ($l$ = last term)" },
+    { "type": "example", "title": "Worked example 1", "problem": "For $5; 9; 13; \\ldots$ find $T_{40}$ and $S_{40}$.", "steps": ["$a = 5$, $d = 4$", "$T_{40} = 5 + 39(4) = 161$", "$S_{40} = \\dfrac{40}{2}(5 + 161) = 3\\ 320$"], "answer": "$T_{40} = 161$; $S_{40} = 3\\ 320$" },
+    { "type": "heading", "text": "Geometric sequences" },
+    { "type": "paragraph", "text": "A **geometric** sequence has a constant **common ratio** $r = \\dfrac{T_2}{T_1} = \\dfrac{T_3}{T_2}$." },
+    { "type": "formula", "latex": "T_n = ar^{n-1} \\qquad S_n = \\frac{a(r^n - 1)}{r - 1} \\quad (r \\neq 1)", "caption": "General term and sum of the first $n$ terms" },
+    { "type": "example", "title": "Worked example 2", "problem": "For $3; 6; 12; \\ldots$ find $T_8$ and $S_8$.", "steps": ["$a = 3$, $r = 2$", "$T_8 = 3(2)^7 = 384$", "$S_8 = \\dfrac{3(2^8 - 1)}{2 - 1} = 765$"], "answer": "$T_8 = 384$; $S_8 = 765$" },
+    { "type": "heading", "text": "Sigma notation" },
+    { "type": "formula", "latex": "\\sum_{k=1}^{n} T_k = T_1 + T_2 + \\ldots + T_n" },
+    { "type": "example", "title": "Worked example 3", "problem": "Evaluate $\\displaystyle\\sum_{k=1}^{20}(3k - 1)$", "steps": ["Terms: $2; 5; 8; \\ldots; 59$ (arithmetic, 20 terms)", "$S_{20} = \\dfrac{20}{2}(2 + 59) = 610$"], "answer": "$610$" },
+    { "type": "callout", "label": "Number of terms", "text": "$\\sum_{k=p}^{q}$ has $q - p + 1$ terms. For $\\sum_{k=3}^{10}$ there are $10 - 3 + 1 = 8$ terms." },
+    { "type": "heading", "text": "Sum to infinity" },
+    { "type": "paragraph", "text": "A geometric series **converges** (has a finite sum to infinity) only if $-1 < r < 1$, $r \\neq 0$." },
+    { "type": "formula", "latex": "S_\\infty = \\frac{a}{1 - r} \\qquad (-1 < r < 1)" },
+    { "type": "example", "title": "Worked example 4", "problem": "Find the sum to infinity of $24 + 12 + 6 + \\ldots$", "steps": ["$r = \\frac{1}{2}$, which lies between $-1$ and $1$, so the series converges.", "$S_\\infty = \\dfrac{24}{1 - \\frac{1}{2}} = 48$"], "answer": "$48$" },
+    { "type": "example", "title": "Worked example 5: convergence", "problem": "For which values of $x$ does $\\displaystyle\\sum_{k=1}^{\\infty}(2x - 1)^k$ converge?", "steps": ["$r = 2x - 1$, so we need $-1 < 2x - 1 < 1$.", "$0 < 2x < 2$, so $0 < x < 1$ (and $x \\neq \\frac{1}{2}$, since then $r = 0$)."], "answer": "$0 < x < 1$, $x \\neq \\frac{1}{2}$" }
+  ],
+  "questions": [
+    { "id": "arith-t", "type": "numeric", "prompt": "Find $T_{25}$ of the arithmetic sequence $7; 12; 17; \\ldots$", "answer": 127, "tolerance": 0 },
+    { "id": "arith-s", "type": "numeric", "prompt": "Find the sum of the first 30 terms of $2; 5; 8; \\ldots$", "answer": 1365, "tolerance": 0 },
+    { "id": "geo-r", "type": "numeric", "prompt": "Find the common ratio of $81; 27; 9; \\ldots$ (decimal, 4 places if needed, or as a fraction like 1/3)", "answer": 0.3333, "tolerance": 0.001 },
+    { "id": "geo-t", "type": "numeric", "prompt": "Find $T_6$ of $2; -6; 18; \\ldots$", "answer": -486, "tolerance": 0 },
+    { "id": "infinity", "type": "numeric", "prompt": "Find $S_\\infty$ of $10 + 5 + 2{,}5 + \\ldots$", "answer": 20, "tolerance": 0 },
+    { "id": "converge", "type": "truefalse", "prompt": "The geometric series $1 + 3 + 9 + 27 + \\ldots$ has a sum to infinity.", "answer": false },
+    { "id": "terms-count", "type": "numeric", "prompt": "How many terms are in $\\displaystyle\\sum_{k=4}^{19} 2^k$?", "answer": 16, "tolerance": 0 },
+    { "id": "sigma", "type": "open", "marks": 3, "prompt": "Evaluate $\\displaystyle\\sum_{k=1}^{6} 3(2)^{k-1}$", "memo": "✓ $a = 3$, $r = 2$, $n = 6$ (1)\n✓ $S_6 = \\frac{3(2^6 - 1)}{1}$ (1)\n✓ $= 189$ (1)" },
+    { "id": "which-n", "type": "open", "marks": 4, "prompt": "How many terms of $4; 7; 10; \\ldots$ must be added to give a sum of $650$?", "memo": "✓ $\\frac{n}{2}[8 + 3(n - 1)] = 650$ (1)\n✓ $3n^2 + 5n - 1\\ 300 = 0$ (1)\n✓ $(3n + 65)(n - 20) = 0$ (1)\n✓ $n = 20$ (1)" },
+    { "id": "convergence-x", "type": "open", "marks": 3, "prompt": "For which values of $x$ will $\\displaystyle\\sum_{k=1}^{\\infty}\\left(\\frac{x}{3}\\right)^k$ converge?", "memo": "✓ $-1 < \\frac{x}{3} < 1$ (1)\n✓ $-3 < x < 3$ (1)\n✓ $x \\neq 0$ (1)" }
+  ]
+}

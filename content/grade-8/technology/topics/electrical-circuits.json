@@ -1,0 +1,67 @@
+{
+  "id": "electrical-circuits",
+  "title": "Electrical Systems: Circuits and Components",
+  "term": 3,
+  "summary": "Circuit components and symbols, series and parallel circuits, conductors and insulators, Ohm's law, and the systems approach of input, process and output.",
+  "notes": [
+    { "type": "heading", "text": "The systems approach" },
+    { "type": "paragraph", "text": "Technological systems can be described as **input → process → output**. In an electrical circuit:" },
+    { "type": "table", "headers": ["Part", "Example"], "rows": [
+      ["Input (energy source or control)", "Cell, battery, switch, sensor"],
+      ["Process (control)", "Wires, resistors, switches controlling the current"],
+      ["Output (does useful work)", "Bulb, LED, buzzer, motor, heating element"]
+    ] },
+    { "type": "heading", "text": "Components and symbols" },
+    { "type": "table", "headers": ["Component", "Function", "Symbol description"], "rows": [
+      ["Cell", "Source of electrical energy", "Long thin line (+) and short thick line (−)"],
+      ["Battery", "Two or more cells", "Several cell symbols joined"],
+      ["Switch (SPST)", "Opens and closes the circuit", "A break with a hinged line"],
+      ["Bulb (lamp)", "Gives light", "Circle with a cross"],
+      ["LED (light-emitting diode)", "Gives light using little energy; current flows one way only", "Triangle with a bar and two arrows pointing out"],
+      ["Resistor", "Limits current", "Rectangle"],
+      ["Motor", "Gives rotary movement", "Circle with M"],
+      ["Buzzer", "Gives sound", "Semicircle on a line"],
+      ["Fuse", "Melts to protect a circuit from too much current", "Rectangle with a line through it"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "An **LED** must always be connected the right way round and usually needs a **resistor** in series to stop too much current from damaging it." },
+    { "type": "heading", "text": "Series and parallel circuits" },
+    { "type": "table", "headers": ["", "Series", "Parallel"], "rows": [
+      ["Number of paths", "One", "Two or more branches"],
+      ["Adding more bulbs", "All bulbs become dimmer", "Bulbs stay equally bright"],
+      ["If one bulb fails", "All go out", "The others keep working"],
+      ["Battery lasts", "Longer (less current)", "Shorter (more current)"]
+    ] },
+    { "type": "heading", "text": "Current, voltage and resistance" },
+    { "type": "table", "headers": ["Quantity", "Symbol", "Unit", "Measured with"], "rows": [
+      ["Current", "I", "Ampere (A)", "Ammeter (in series)"],
+      ["Voltage (potential difference)", "V", "Volt (V)", "Voltmeter (in parallel)"],
+      ["Resistance", "R", "Ohm (Ω)", "Ohmmeter / multimeter"]
+    ] },
+    { "type": "formula", "latex": "V = I \\times R", "caption": "Ohm's law" },
+    { "type": "example", "title": "Using Ohm's law", "problem": "A 9 V battery is connected to a 450 Ω resistor. Calculate the current.", "steps": ["I = V ÷ R = 9 ÷ 450", "= 0,02 A (20 mA)"], "answer": "0,02 A" },
+    { "type": "heading", "text": "Conductors, insulators and safety" },
+    { "type": "list", "items": [
+      "**Conductors**: copper, aluminium, graphite; used for wires and connections.",
+      "**Insulators**: plastic, rubber, glass, dry wood; used to cover wires and make handles.",
+      "Never touch mains electricity (230 V). Keep water away from electrical appliances. Do not overload plugs.",
+      "A **short circuit** (current bypassing the components) causes wires to overheat and can start a fire."
+    ] }
+  ],
+  "questions": [
+    { "id": "output", "type": "mcq", "prompt": "Which is an OUTPUT device?", "options": ["Battery", "Switch", "Buzzer", "Wire"], "answer": 2 },
+    { "id": "led", "type": "short", "prompt": "What does LED stand for?", "answers": ["light-emitting diode", "light emitting diode"] },
+    { "id": "ohms-law", "type": "short", "prompt": "Complete Ohm's law: V = I × …", "answers": ["r", "resistance"] },
+    { "id": "current-calc", "type": "numeric", "prompt": "A 12 V supply is connected to a 6 Ω resistor. Calculate the current.", "answer": 2, "tolerance": 0, "unit": "A" },
+    { "id": "voltage-calc", "type": "numeric", "prompt": "A current of 0,5 A flows through a 20 Ω resistor. Calculate the voltage across it.", "answer": 10, "tolerance": 0, "unit": "V" },
+    { "id": "parallel", "type": "truefalse", "prompt": "In a parallel circuit, if one bulb blows the others go out.", "answer": false },
+    { "id": "ips", "type": "match", "marks": 4, "prompt": "Classify each component in a torch.", "pairs": [
+      { "left": "Batteries", "right": "Input (energy source)" },
+      { "left": "Switch", "right": "Process (control)" },
+      { "left": "Bulb", "right": "Output" },
+      { "left": "Metal strip", "right": "Conductor" }
+    ] },
+    { "id": "resistor-led", "type": "open", "marks": 2, "prompt": "Why is a resistor usually connected in series with an LED?", "memo": "✓ It limits the current (1)\n✓ so that too much current does not damage/burn out the LED (1)" },
+    { "id": "series-adv", "type": "open", "marks": 2, "prompt": "Give ONE advantage and ONE disadvantage of a series circuit.", "memo": "✓ Advantage: simple / uses less current, so the battery lasts longer (1)\n✓ Disadvantage: if one component fails all stop / bulbs dimmer (1)" },
+    { "id": "short", "type": "open", "marks": 2, "prompt": "What is a short circuit and why is it dangerous?", "memo": "✓ Current takes a path of very low resistance, bypassing the components (1)\n✓ A very large current flows and overheats the wires, which can cause a fire (1)" }
+  ]
+}

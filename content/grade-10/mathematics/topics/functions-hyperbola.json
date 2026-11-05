@@ -1,0 +1,326 @@
+{
+  "id": "functions-hyperbola",
+  "title": "Functions: The Hyperbola",
+  "term": 2,
+  "summary": "Sketch and interpret the hyperbola y = a/x + q: asymptotes, intercepts, domain and range, the effects of a and q, and finding the equation from given information.",
+  "notes": [
+    { "type": "heading", "text": "What is a hyperbola?" },
+    { "type": "paragraph", "text": "In Grade 10 you study four types of functions: the straight line, the parabola, the **hyperbola** and the exponential graph. The hyperbola is the graph of a function where $x$ is in the **denominator**, such as $y = \\dfrac{2}{x}$. Its graph has two separate curves called **branches**.\n\nHyperbolas describe **inverse proportion**: when one quantity doubles, the other halves. For example, a school hires a bus for an outing to the Cradle of Humankind at a fixed cost of R3 600. If $n$ learners share the cost equally, each pays $C = \\dfrac{3\\,600}{n}$ rand. With 20 learners each pays R180; with 40 learners each pays R90. The more learners there are, the less each one pays, but the cost per learner never reaches R0." },
+    { "type": "definition", "term": "Hyperbolic function", "text": "A function of the form $y = \\dfrac{a}{x} + q$, where $a$ and $q$ are real numbers, $a \\neq 0$ and $x \\neq 0$. Its graph is called a hyperbola." },
+    { "type": "formula", "latex": "y = \\frac{a}{x} + q, \\qquad a \\neq 0,\\; x \\neq 0", "caption": "The Grade 10 hyperbola (no horizontal shift)" },
+    { "type": "callout", "label": "Remember", "text": "In function notation we also write $f(x) = \\dfrac{a}{x} + q$. Writing $\\dfrac{a}{x}$ is the same as $a \\div x$, so $f(-4)$ for $f(x) = \\dfrac{8}{x}$ is $8 \\div (-4) = -2$." },
+
+    { "type": "heading", "text": "The basic graph $y = \\frac{2}{x}$" },
+    { "type": "paragraph", "text": "Start with a table of values. Choose positive and negative values of $x$, including fractions close to $0$. We may **not** use $x = 0$, because division by zero is undefined." },
+    {
+      "type": "table",
+      "caption": "Table of values for $y = \\frac{2}{x}$",
+      "headers": ["$x$", "$-4$", "$-2$", "$-1$", "$-\\frac{1}{2}$", "$0$", "$\\frac{1}{2}$", "$1$", "$2$", "$4$"],
+      "rows": [
+        ["$y$", "$-\\frac{1}{2}$", "$-1$", "$-2$", "$-4$", "undefined", "$4$", "$2$", "$1$", "$\\frac{1}{2}$"]
+      ]
+    },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260' font-family='sans-serif' font-size='11'><rect width='320' height='260' fill='white'/><line x1='5' y1='130' x2='315' y2='130' stroke='black'/><line x1='160' y1='255' x2='160' y2='5' stroke='black'/><text x='308' y='125'>x</text><text x='165' y='13'>y</text><line x1='44' y1='127' x2='44' y2='133' stroke='black'/><text x='44' y='144' text-anchor='middle' font-size='10'>-4</text><line x1='102' y1='127' x2='102' y2='133' stroke='black'/><text x='102' y='144' text-anchor='middle' font-size='10'>-2</text><line x1='218' y1='127' x2='218' y2='133' stroke='black'/><text x='218' y='144' text-anchor='middle' font-size='10'>2</text><line x1='276' y1='127' x2='276' y2='133' stroke='black'/><text x='276' y='144' text-anchor='middle' font-size='10'>4</text><line x1='157' y1='222' x2='163' y2='222' stroke='black'/><text x='155' y='226' text-anchor='end' font-size='10'>-4</text><line x1='157' y1='176' x2='163' y2='176' stroke='black'/><text x='155' y='180' text-anchor='end' font-size='10'>-2</text><line x1='157' y1='84' x2='163' y2='84' stroke='black'/><text x='155' y='88' text-anchor='end' font-size='10'>2</text><line x1='157' y1='38' x2='163' y2='38' stroke='black'/><text x='155' y='42' text-anchor='end' font-size='10'>4</text><polyline points='15,139 19,139 20,140 32,140 33,141 44,141 44,142 53,142 54,143 61,143 61,144 68,144 69,145 73,145 74,146 79,146 79,147 83,147 84,148 95,150 95,151 103,153 103,154 105,154 119,162 128,171 134,180 134,182 140,195 140,198 144,211 144,215 146,223 149,251' fill='none' stroke='black' stroke-width='2'/><polyline points='171,9 174,37 176,45 176,49 180,62 180,65 186,78 186,80 192,89 201,98 207,101 207,102 215,106 217,106 217,107 225,109 225,110 228,110 229,111 232,111 237,113 241,113 241,114 246,114 247,115 251,115 252,116 259,116 259,117 266,117 267,118 276,118 276,119 287,119 288,120 300,120 301,121 305,121' fill='none' stroke='black' stroke-width='2'/><circle cx='189' cy='84' r='3' fill='black'/><text x='195' y='80' font-size='10'>(1; 2)</text><circle cx='131' cy='176' r='3' fill='black'/><text x='125' y='190' font-size='10' text-anchor='end'>(-1; -2)</text><text x='253' y='93'>y = 2/x</text></svg>", "caption": "The graph of $y = \\frac{2}{x}$: two branches in quadrants I and III that get closer and closer to the axes but never touch them." },
+    {
+      "type": "list",
+      "items": [
+        "As $x$ gets larger (e.g. $x = 100$ gives $y = 0{,}02$), $y$ gets closer and closer to $0$ but never equals $0$.",
+        "As $x$ gets closer to $0$ from the positive side (e.g. $x = 0{,}01$ gives $y = 200$), $y$ becomes very large.",
+        "As $x$ gets closer to $0$ from the negative side, $y$ becomes very large and **negative**.",
+        "The graph never touches the $x$-axis or the $y$-axis. These axes are the **asymptotes** of $y = \\frac{2}{x}$."
+      ]
+    },
+    { "type": "definition", "term": "Asymptote", "text": "A line that a graph approaches more and more closely but never touches. On a sketch, asymptotes are drawn as broken (dotted) lines and their equations are labelled." },
+
+    { "type": "heading", "text": "The effect of a" },
+    { "type": "paragraph", "text": "The **sign** of $a$ decides which quadrants the branches lie in (when $q = 0$). The **size** of $a$ decides how far the branches are from the asymptotes." },
+    {
+      "type": "table",
+      "caption": "The sign of a in y = a/x",
+      "headers": ["Feature", "$a > 0$", "$a < 0$"],
+      "rows": [
+        ["Example", "$y = \\frac{3}{x}$", "$y = -\\frac{3}{x}$"],
+        ["Quadrants of the branches", "I and III", "II and IV"],
+        ["Point where $x = 1$", "$(1; 3)$, above the $x$-axis", "$(1; -3)$, below the $x$-axis"],
+        ["As $x$ increases on each branch", "$y$ decreases", "$y$ increases"]
+      ]
+    },
+    { "type": "paragraph", "text": "The bigger $|a|$ is, the further the branches are from the asymptotes. Compare the points where $x = 1$: on $y = \\frac{1}{x}$ the point is $(1; 1)$, on $y = \\frac{4}{x}$ it is $(1; 4)$ and on $y = \\frac{9}{x}$ it is $(1; 9)$. The curves 'bend' further and further away from the corner where the asymptotes meet." },
+    { "type": "callout", "label": "Quick check", "text": "Substitute $x = 1$ into $y = \\dfrac{a}{x} + q$ to get the point $(1; a + q)$, and $x = -1$ to get $(-1; -a + q)$. These two points tell you immediately where the branches are." },
+
+    { "type": "heading", "text": "The effect of q" },
+    { "type": "paragraph", "text": "Adding $q$ moves the whole graph **vertically**: up by $q$ units if $q > 0$ and down by $|q|$ units if $q < 0$. The horizontal asymptote moves with it and becomes the line $y = q$. The vertical asymptote stays the $y$-axis ($x = 0$), because there is no horizontal shift in Grade 10." },
+    {
+      "type": "table",
+      "caption": "Moving y = 2/x up and down",
+      "headers": ["Function", "Vertical asymptote", "Horizontal asymptote", "Point where $x = 1$"],
+      "rows": [
+        ["$y = \\frac{2}{x}$", "$x = 0$", "$y = 0$", "$(1; 2)$"],
+        ["$y = \\frac{2}{x} + 3$", "$x = 0$", "$y = 3$", "$(1; 5)$"],
+        ["$y = \\frac{2}{x} - 1$", "$x = 0$", "$y = -1$", "$(1; 1)$"]
+      ]
+    },
+
+    { "type": "heading", "text": "Asymptotes, domain and range" },
+    {
+      "type": "list",
+      "items": [
+        "**Vertical asymptote:** always $x = 0$ (the $y$-axis), because $x$ cannot be $0$.",
+        "**Horizontal asymptote:** $y = q$, because $\\frac{a}{x}$ can never equal $0$, so $y$ can never equal $q$.",
+        "**Domain:** $x \\in \\mathbb{R},\\ x \\neq 0$ (every real number except $0$).",
+        "**Range:** $y \\in \\mathbb{R},\\ y \\neq q$ (every real number except $q$)."
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Do not write the range of a hyperbola as $y > q$. One branch lies **above** the asymptote $y = q$ and the other lies **below** it, so $y$ can be any real number except $q$." },
+
+    { "type": "heading", "text": "Intercepts" },
+    { "type": "paragraph", "text": "**y-intercept:** there is none. To find a $y$-intercept you substitute $x = 0$, but $\\frac{a}{0}$ is undefined, so the graph never cuts the $y$-axis.\n\n**x-intercept:** substitute $y = 0$ and solve for $x$. If $q = 0$ there is no $x$-intercept either, because $\\frac{a}{x}$ is never $0$." },
+    {
+      "type": "example",
+      "title": "Worked example 1: finding the x-intercept",
+      "problem": "Find the $x$-intercept of $f(x) = -\\dfrac{6}{x} + 3$.",
+      "steps": [
+        "Let $f(x) = 0$: $\\;0 = -\\dfrac{6}{x} + 3$.",
+        "Rearrange: $\\dfrac{6}{x} = 3$.",
+        "Multiply both sides by $x$ (allowed, since $x \\neq 0$): $6 = 3x$.",
+        "Solve: $x = 2$."
+      ],
+      "answer": "The $x$-intercept is $(2; 0)$."
+    },
+
+    { "type": "heading", "text": "Sketching a hyperbola" },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Draw the asymptotes as broken lines: $x = 0$ (the $y$-axis) and $y = q$.",
+        "Use the sign of $a$ to decide where the branches go: for $a > 0$ they are top-right and bottom-left of the point $(0; q)$ where the asymptotes meet; for $a < 0$ they are top-left and bottom-right.",
+        "Calculate the $x$-intercept (if there is one).",
+        "Calculate at least one point on each branch, e.g. at $x = 1$ and $x = -1$.",
+        "Draw two smooth curves that approach the asymptotes but never touch them.",
+        "Label the graph, the asymptotes, the intercept and the points you used."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: a complete sketch",
+      "problem": "Sketch $f(x) = \\dfrac{4}{x} - 2$. Show the asymptotes, the $x$-intercept and one point on each branch. Write down the domain and range.",
+      "steps": [
+        "Asymptotes: $x = 0$ and $y = -2$.",
+        "$a = 4 > 0$, so the branches are top-right and bottom-left of $(0; -2)$.",
+        "$x$-intercept: $0 = \\dfrac{4}{x} - 2 \\Rightarrow \\dfrac{4}{x} = 2 \\Rightarrow 4 = 2x \\Rightarrow x = 2$, giving $(2; 0)$.",
+        "Points: $f(1) = 4 - 2 = 2$, giving $(1; 2)$; $f(-2) = -2 - 2 = -4$, giving $(-2; -4)$; also $f(4) = 1 - 2 = -1$.",
+        "Draw the right-hand branch through $(1; 2)$, $(2; 0)$ and $(4; -1)$, approaching $y = -2$; draw the left-hand branch through $(-2; -4)$, below $y = -2$."
+      ],
+      "answer": "Domain: $x \\in \\mathbb{R},\\ x \\neq 0$. Range: $y \\in \\mathbb{R},\\ y \\neq -2$."
+    },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260' font-family='sans-serif' font-size='11'><rect width='320' height='260' fill='white'/><line x1='5' y1='103' x2='315' y2='103' stroke='black'/><line x1='160' y1='255' x2='160' y2='5' stroke='black'/><text x='308' y='98'>x</text><text x='165' y='13'>y</text><line x1='77' y1='100' x2='77' y2='106' stroke='black'/><text x='77' y='117' text-anchor='middle' font-size='10'>-4</text><line x1='243' y1='100' x2='243' y2='106' stroke='black'/><text x='243' y='117' text-anchor='middle' font-size='10'>4</text><line x1='157' y1='174' x2='163' y2='174' stroke='black'/><text x='155' y='178' text-anchor='end' font-size='10'>-4</text><line x1='157' y1='68' x2='163' y2='68' stroke='black'/><text x='155' y='72' text-anchor='end' font-size='10'>2</text><line x1='5' y1='139' x2='315' y2='139' stroke='black' stroke-dasharray='5 4'/><text x='19' y='135' font-size='10'>y = -2</text><polyline points='15,149 22,149 22,150 34,150 35,151 44,151 45,152 52,152 53,153 59,153 60,154 66,154 67,155 72,155 72,156 77,156 78,157 85,158 86,159 92,160 92,161 95,161 96,162 98,162 98,163 103,164 103,165 105,165 105,166 109,167 109,168 112,169 115,171 115,172 119,174 119,175 121,176 124,180 125,180 131,189 138,204 144,228 147,251' fill='none' stroke='black' stroke-width='2'/><polyline points='172,21 178,59 184,79 188,87 190,89 190,91 194,95 198,101 204,105 204,106 210,109 210,110 212,110 212,111 214,111 214,112 218,113 218,114 220,114 223,116 225,116 232,119 239,120 240,121 244,121 245,122 249,122 250,123 255,123 256,124 262,124 263,125 269,125 270,126 289,127 290,128 302,128 302,129 305,129' fill='none' stroke='black' stroke-width='2'/><circle cx='201' cy='103' r='3' fill='black'/><text x='205' y='97' font-size='10'>(2; 0)</text><circle cx='181' cy='68' r='3' fill='black'/><text x='187' y='63' font-size='10'>(1; 2)</text><circle cx='119' cy='174' r='3' fill='black'/><text x='113' y='188' font-size='10' text-anchor='end'>(-2; -4)</text><text x='247' y='82'>f(x) = 4/x - 2</text></svg>", "caption": "Sketch of $f(x) = \\frac{4}{x} - 2$ with asymptotes $x = 0$ (the $y$-axis) and $y = -2$ (broken line)." },
+
+    { "type": "heading", "text": "Axes of symmetry (extension)" },
+    { "type": "paragraph", "text": "A hyperbola $y = \\dfrac{a}{x} + q$ is symmetrical about two straight lines that pass through the point $(0; q)$ where the asymptotes meet. One has gradient $1$ and the other gradient $-1$:" },
+    { "type": "formula", "latex": "y = x + q \\qquad \\text{and} \\qquad y = -x + q", "caption": "Axes of symmetry of y = a/x + q" },
+    { "type": "paragraph", "text": "If $a > 0$ the line $y = x + q$ cuts through both branches; if $a < 0$ it is the line $y = -x + q$ that cuts through both branches. Either way, both lines are axes of symmetry." },
+    {
+      "type": "example",
+      "title": "Worked example 3: using symmetry",
+      "problem": "Write down the axes of symmetry of $f(x) = \\dfrac{4}{x} - 2$ and use one of them to find the image of the point $(1; 2)$.",
+      "steps": [
+        "Here $q = -2$, so the axes of symmetry are $y = x - 2$ and $y = -x - 2$.",
+        "Reflecting a point $(x; y)$ in the line $y = x + q$ gives the point $(y - q;\\ x + q)$. With $q = -2$: $(1; 2) \\rightarrow (2 + 2;\\ 1 - 2) = (4; -1)$.",
+        "Check: $f(4) = \\dfrac{4}{4} - 2 = -1$, so $(4; -1)$ is on the graph."
+      ],
+      "answer": "Axes of symmetry: $y = x - 2$ and $y = -x - 2$. The point $(4; -1)$ is the mirror image of $(1; 2)$."
+    },
+
+    { "type": "heading", "text": "Increasing and decreasing" },
+    { "type": "paragraph", "text": "Read a graph from left to right. If $a > 0$, $y$ **decreases** as $x$ increases on each branch (for $x < 0$ and for $x > 0$). If $a < 0$, $y$ **increases** as $x$ increases on each branch. The value of $q$ does not change this." },
+    { "type": "callout", "label": "Exam tip", "text": "Always describe the hyperbola branch by branch: '$f$ decreases for $x < 0$ and for $x > 0$'. Do not say '$f$ decreases for all $x$': the graph jumps at $x = 0$, where it is not defined." },
+
+    { "type": "heading", "text": "Determining the equation of a hyperbola" },
+    { "type": "paragraph", "text": "To find $y = \\dfrac{a}{x} + q$ from a sketch you need two pieces of information. Usually the horizontal asymptote gives $q$ directly, and then one point on the graph gives $a$. If you are given two points instead, substitute both and solve the two equations simultaneously." },
+    {
+      "type": "example",
+      "title": "Worked example 4: asymptote and one point",
+      "problem": "A hyperbola $y = \\dfrac{a}{x} + q$ has horizontal asymptote $y = 3$ and passes through $(2; 1)$. Find its equation.",
+      "steps": [
+        "The asymptote is $y = 3$, so $q = 3$ and $y = \\dfrac{a}{x} + 3$.",
+        "Substitute $(2; 1)$: $1 = \\dfrac{a}{2} + 3$.",
+        "$\\dfrac{a}{2} = -2$, so $a = -4$."
+      ],
+      "answer": "$y = -\\dfrac{4}{x} + 3$"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5: two points",
+      "problem": "The graph of $y = \\dfrac{a}{x} + q$ passes through $(-1; 5)$ and $(2; -1)$. Find $a$ and $q$.",
+      "steps": [
+        "Substitute $(-1; 5)$: $5 = \\dfrac{a}{-1} + q$, so $-a + q = 5$ ... (1)",
+        "Substitute $(2; -1)$: $-1 = \\dfrac{a}{2} + q$ ... (2)",
+        "(1) $-$ (2): $-a - \\dfrac{a}{2} = 6$, so $-\\dfrac{3a}{2} = 6$ and $a = -4$.",
+        "From (1): $q = 5 + a = 5 + (-4) = 1$.",
+        "Check with $(2; -1)$: $\\dfrac{-4}{2} + 1 = -1$ ✓"
+      ],
+      "answer": "$a = -4$ and $q = 1$, so $y = -\\dfrac{4}{x} + 1$."
+    },
+
+    { "type": "heading", "text": "Where a hyperbola meets a straight line" },
+    { "type": "paragraph", "text": "At a point of intersection both graphs have the same $y$-value, so set the two equations equal. Multiply every term by $x$ (allowed because $x \\neq 0$) to get a quadratic equation, then factorise. From a graph, $f(x) > g(x)$ wherever the graph of $f$ lies **above** the graph of $g$." },
+    {
+      "type": "example",
+      "title": "Worked example 6: intersection and inequality",
+      "problem": "Given $f(x) = \\dfrac{2}{x}$ and $g(x) = x + 1$. (a) Find the points of intersection of $f$ and $g$. (b) For which values of $x$ is $f(x) > g(x)$?",
+      "steps": [
+        "(a) $\\dfrac{2}{x} = x + 1$. Multiply by $x$: $2 = x^2 + x$.",
+        "$x^2 + x - 2 = 0 \\Rightarrow (x + 2)(x - 1) = 0 \\Rightarrow x = -2$ or $x = 1$.",
+        "$g(-2) = -1$ and $g(1) = 2$, so the points are $(-2; -1)$ and $(1; 2)$.",
+        "(b) Test a value in each interval: $x = -3$: $f = -\\frac{2}{3}$, $g = -2$, so $f > g$ ✓. $x = -1$: $f = -2$, $g = 0$, so $f < g$. $x = \\frac{1}{2}$: $f = 4$, $g = 1{,}5$, so $f > g$ ✓. $x = 2$: $f = 1$, $g = 3$, so $f < g$.",
+        "Remember that $x = 0$ is excluded because $f$ is not defined there."
+      ],
+      "answer": "(a) $(-2; -1)$ and $(1; 2)$. (b) $x < -2$ or $0 < x < 1$."
+    },
+    { "type": "callout", "label": "Exam tip", "text": "When you read an inequality off a sketch, look at the $x$-values of the intersection points and the vertical asymptote $x = 0$. These are the only places where the answer can change." },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "The Grade 10 hyperbola is $y = \\dfrac{a}{x} + q$ with $a \\neq 0$ and $x \\neq 0$.",
+        "Asymptotes: $x = 0$ and $y = q$. Draw them as broken lines.",
+        "$a > 0$: branches top-right and bottom-left of $(0; q)$, decreasing on each branch. $a < 0$: branches top-left and bottom-right, increasing on each branch.",
+        "Larger $|a|$ means the branches lie further from the asymptotes.",
+        "$q$ shifts the graph vertically and gives the horizontal asymptote $y = q$.",
+        "Domain: $x \\in \\mathbb{R},\\ x \\neq 0$. Range: $y \\in \\mathbb{R},\\ y \\neq q$.",
+        "There is no $y$-intercept. Find the $x$-intercept by solving $\\frac{a}{x} + q = 0$.",
+        "Axes of symmetry (extension): $y = x + q$ and $y = -x + q$.",
+        "To find the equation, read $q$ from the asymptote and substitute a point to find $a$.",
+        "Intersection with a line: set the equations equal, multiply by $x$ and solve the quadratic."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "What is the equation of the horizontal asymptote of $y = \\dfrac{3}{x} - 4$?",
+      "options": ["$x = -4$", "$y = 3$", "$y = -4$", "$x = 3$"],
+      "answer": 2,
+      "explanation": "For $y = \\frac{a}{x} + q$ the horizontal asymptote is $y = q$. Here $q = -4$, so the asymptote is $y = -4$."
+    },
+    {
+      "id": "q2",
+      "type": "short",
+      "prompt": "What is the name of a line that a graph gets closer and closer to but never touches?",
+      "answers": ["asymptote", "an asymptote", "asymptotes"],
+      "explanation": "Such a line is called an asymptote. A hyperbola $y = \\frac{a}{x} + q$ has two: $x = 0$ and $y = q$."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "The graph of $y = -\\dfrac{5}{x}$ lies in quadrants II and IV.",
+      "answer": true,
+      "explanation": "$a = -5 < 0$. For $x > 0$, $y$ is negative (quadrant IV) and for $x < 0$, $y$ is positive (quadrant II)."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "The graph of $y = \\dfrac{2}{x} + 3$ has a $y$-intercept at $(0; 3)$.",
+      "answer": false,
+      "explanation": "A hyperbola has no $y$-intercept, because substituting $x = 0$ gives $\\frac{2}{0}$, which is undefined. The line $y = 3$ is the horizontal asymptote."
+    },
+    {
+      "id": "q5",
+      "type": "numeric",
+      "prompt": "Given $f(x) = \\dfrac{8}{x} + 1$, calculate $f(-4)$. Give the exact value.",
+      "answer": -1,
+      "tolerance": 0.001,
+      "explanation": "$f(-4) = \\frac{8}{-4} + 1 = -2 + 1 = -1$."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "What is the range of $y = -\\dfrac{2}{x} + 1$?",
+      "options": ["$y \\in \\mathbb{R},\\ y \\neq 1$", "$y \\in \\mathbb{R},\\ y \\neq -2$", "$y > 1$", "$y \\in \\mathbb{R},\\ y \\neq 0$"],
+      "answer": 0,
+      "explanation": "The horizontal asymptote is $y = q = 1$. One branch lies above it and one below, so $y$ can be any real number except $1$."
+    },
+    {
+      "id": "q7",
+      "type": "numeric",
+      "prompt": "Calculate the $x$-coordinate of the $x$-intercept of $y = \\dfrac{6}{x} - 3$. Give the exact value.",
+      "answer": 2,
+      "tolerance": 0.001,
+      "explanation": "Let $y = 0$: $\\frac{6}{x} = 3$, so $6 = 3x$ and $x = 2$."
+    },
+    {
+      "id": "q8",
+      "type": "match",
+      "prompt": "Match each function with the correct description of its graph.",
+      "marks": 4,
+      "pairs": [
+        { "left": "$y = \\frac{3}{x}$", "right": "Quadrants I and III, asymptote y = 0" },
+        { "left": "$y = -\\frac{3}{x}$", "right": "Quadrants II and IV, asymptote y = 0" },
+        { "left": "$y = \\frac{3}{x} + 2$", "right": "Shifted up 2 units, asymptote y = 2" },
+        { "left": "$y = \\frac{3}{x} - 2$", "right": "Shifted down 2 units, asymptote y = -2" }
+      ],
+      "explanation": "The sign of $a$ decides the quadrants when $q = 0$; the value of $q$ shifts the graph vertically and gives the horizontal asymptote $y = q$."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "Compared with the graph of $y = \\dfrac{2}{x}$, the branches of $y = \\dfrac{8}{x}$ are:",
+      "options": ["closer to the asymptotes", "further from the asymptotes", "in quadrants II and IV", "shifted up by 6 units"],
+      "answer": 1,
+      "explanation": "A larger $|a|$ moves the branches further from the asymptotes. For example, at $x = 1$ the points are $(1; 2)$ and $(1; 8)$. Both graphs stay in quadrants I and III with asymptote $y = 0$."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "Which statement about $y = -\\dfrac{4}{x}$ is true?",
+      "options": [
+        "$y$ decreases as $x$ increases, for $x < 0$ and for $x > 0$",
+        "$y$ increases as $x$ increases, for $x < 0$ and for $x > 0$",
+        "$y$ increases for $x < 0$ and decreases for $x > 0$",
+        "The graph has a turning point at the origin"
+      ],
+      "answer": 1,
+      "explanation": "When $a < 0$ each branch rises from left to right. Check: for $x > 0$, $x = 1$ gives $-4$ and $x = 2$ gives $-2$ (increasing); for $x < 0$, $x = -2$ gives $2$ and $x = -1$ gives $4$ (increasing). A hyperbola has no turning point."
+    },
+    {
+      "id": "q11",
+      "type": "numeric",
+      "prompt": "The graph of $y = \\dfrac{a}{x} + 2$ passes through the point $(3; -1)$. Calculate the value of $a$.",
+      "answer": -9,
+      "tolerance": 0.001,
+      "explanation": "$-1 = \\frac{a}{3} + 2$, so $\\frac{a}{3} = -3$ and $a = -9$."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "Which line is an axis of symmetry of $y = \\dfrac{2}{x} - 3$?",
+      "options": ["$y = x + 3$", "$y = -x + 3$", "$x = -3$", "$y = x - 3$"],
+      "answer": 3,
+      "explanation": "The axes of symmetry of $y = \\frac{a}{x} + q$ are $y = x + q$ and $y = -x + q$. With $q = -3$ these are $y = x - 3$ and $y = -x - 3$."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 6,
+      "prompt": "Given $f(x) = -\\dfrac{6}{x} + 2$.\n(a) Write down the equations of the asymptotes of $f$. (2)\n(b) Calculate the coordinates of the $x$-intercept. (1)\n(c) Sketch the graph of $f$, showing the asymptotes, the intercept and one other point on each branch. (1)\n(d) Write down the domain and range of $f$. (2)",
+      "memo": "(a) $x = 0$ ✓ (1)\n$y = 2$ ✓ (1)\n(b) $0 = -\\frac{6}{x} + 2 \\Rightarrow \\frac{6}{x} = 2 \\Rightarrow x = 3$, so $(3; 0)$ ✓ (1)\n(c) $a = -6 < 0$, so the branches lie top-left and bottom-right of $(0; 2)$. Correct shape approaching both asymptotes, through $(3; 0)$ and e.g. $(1; -4)$ and $(-3; 4)$ ✓ (1)\n[$f(1) = -6 + 2 = -4$; $f(-3) = 2 + 2 = 4$]\n(d) Domain: $x \\in \\mathbb{R},\\ x \\neq 0$ ✓ (1)\nRange: $y \\in \\mathbb{R},\\ y \\neq 2$ ✓ (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 4,
+      "prompt": "The graph of $y = \\dfrac{a}{x} + q$ passes through the points $(1; 4)$ and $(-2; -5)$. Determine the values of $a$ and $q$. Show all your working.",
+      "memo": "Substitute $(1; 4)$: $a + q = 4$ ✓ (1)\nSubstitute $(-2; -5)$: $-\\frac{a}{2} + q = -5$ ✓ (1)\nSubtract: $a + \\frac{a}{2} = 9 \\Rightarrow \\frac{3a}{2} = 9 \\Rightarrow a = 6$ ✓ (1)\n$q = 4 - 6 = -2$, so $y = \\frac{6}{x} - 2$ ✓ (1)\n[Check: $\\frac{6}{-2} - 2 = -5$]"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 7,
+      "prompt": "Given $f(x) = \\dfrac{3}{x}$ and $g(x) = x + 2$.\n(a) Calculate the coordinates of the points where the graphs of $f$ and $g$ intersect. (5)\n(b) Hence write down the values of $x$ for which $f(x) > g(x)$. (2)",
+      "memo": "(a) $\\frac{3}{x} = x + 2$ ✓\n$3 = x^2 + 2x$ (multiply by $x$, $x \\neq 0$)\n$x^2 + 2x - 3 = 0$ ✓\n$(x + 3)(x - 1) = 0$ ✓\n$x = -3$ or $x = 1$ ✓\nPoints: $(-3; -1)$ and $(1; 3)$ ✓ (5)\n(b) $x < -3$ ✓ or $0 < x < 1$ ✓ (2)\n[Test values: $x = -4$: $f = -0{,}75 > g = -2$; $x = \\frac{1}{2}$: $f = 6 > g = 2{,}5$; $x = -1$ and $x = 2$ give $f < g$.]"
+    }
+  ]
+}

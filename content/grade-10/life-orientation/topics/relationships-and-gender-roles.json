@@ -1,0 +1,54 @@
+{
+  "id": "relationships-and-gender-roles",
+  "title": "Relationships, Gender Roles and Power",
+  "term": 1,
+  "summary": "Types of relationships, how gender roles are shaped by society, power imbalances and abuse in relationships, consent, and building healthy, respectful relationships.",
+  "notes": [
+    { "type": "heading", "text": "Types of relationships" },
+    { "type": "list", "items": [
+      "Family relationships (parents, siblings, extended family).",
+      "Friendships and peer relationships.",
+      "Romantic relationships.",
+      "Relationships at school and in the community (teachers, coaches, neighbours)."
+    ] },
+    { "type": "heading", "text": "Gender roles" },
+    { "type": "definition", "term": "Gender role", "text": "The behaviour, tasks and responsibilities that a society expects of people because of their gender. Gender roles are **learned** from family, culture, religion, media and peers, and they change over time." },
+    { "type": "table", "headers": ["Stereotyped expectation", "Possible effect"], "rows": [
+      ["'Men must be tough and never cry'", "Boys may hide emotions, avoid seeking help and turn to anger"],
+      ["'Women should do the housework and childcare'", "Unequal workloads; women's careers held back"],
+      ["'Boys are better at Maths and Science'", "Girls may avoid STEM subjects and careers"],
+      ["'Men should be the decision-makers'", "Power imbalance in relationships, which can lead to control or abuse"]
+    ] },
+    { "type": "heading", "text": "Power in relationships" },
+    { "type": "paragraph", "text": "In a **healthy** relationship, power is shared: both people's opinions, choices and boundaries are respected. **Unhealthy** relationships involve one person controlling the other through money, threats, jealousy, isolation or violence." },
+    { "type": "list", "items": [
+      "**Warning signs**: checking your phone, controlling who you see, constant criticism, threats, forced sex or pressure to share images.",
+      "**Consent** must be freely given, specific and can be withdrawn at any time. Silence or being drunk is not consent."
+    ] },
+    { "type": "callout", "label": "Get help", "text": "GBV Command Centre: **0800 428 428**. Childline: **116**. A trusted adult, teacher or counsellor can also help. Abuse is never the victim's fault." },
+    { "type": "heading", "text": "Skills for healthy relationships" },
+    { "type": "list", "items": [
+      "Assertive communication and I-statements.",
+      "Active listening.",
+      "Setting and respecting boundaries.",
+      "Resolving conflict without violence.",
+      "Trust, honesty and mutual respect."
+    ] }
+  ],
+  "questions": [
+    { "id": "gender-role", "type": "open", "marks": 2, "prompt": "What is a gender role?", "memo": "✓ The behaviour, tasks and responsibilities expected of people (1)\n✓ because of their gender, learned from society (1)" },
+    { "id": "learned", "type": "truefalse", "prompt": "Gender roles are learned and can change over time.", "answer": true },
+    { "id": "influence", "type": "mcq", "prompt": "Which is NOT usually an influence on gender roles?", "options": ["Family", "Media", "Blood type", "Culture"], "answer": 2 },
+    { "id": "consent", "type": "mcq", "prompt": "Which statement about consent is correct?", "options": ["Silence means yes", "Consent can be withdrawn at any time", "Being in a relationship means consent is permanent", "A drunk person can give consent"], "answer": 1 },
+    { "id": "gbv-line", "type": "short", "prompt": "What is the toll-free number of the GBV Command Centre?", "answers": ["0800 428 428", "0800428428"] },
+    { "id": "signs", "type": "open", "marks": 3, "prompt": "Name THREE warning signs of an unhealthy, controlling relationship.", "memo": "Any three (1 each): checking phone; controlling friends/movements; jealousy; constant criticism; threats; pressure for sex or images; violence" },
+    { "id": "stereotype-effect", "type": "open", "marks": 3, "prompt": "Explain how the stereotype 'men must be tough and never cry' can harm boys and men.", "memo": "✓ They may hide emotions (1)\n✓ avoid seeking help for stress or depression (1)\n✓ and express feelings through anger or violence (1)" },
+    { "id": "power", "type": "open", "marks": 2, "prompt": "What is meant by shared power in a relationship?", "memo": "✓ Both partners' opinions and decisions count equally (1)\n✓ and each respects the other's boundaries and choices (1)" },
+    { "id": "skills", "type": "match", "marks": 3, "prompt": "Match each skill to its description.", "pairs": [
+      { "left": "Active listening", "right": "Paying full attention and checking understanding" },
+      { "left": "Setting boundaries", "right": "Making clear what is and is not acceptable to you" },
+      { "left": "Assertiveness", "right": "Expressing needs honestly and respectfully" }
+    ] },
+    { "id": "challenge", "type": "open", "marks": 2, "prompt": "Suggest TWO ways young people can challenge harmful gender stereotypes.", "memo": "Any two (1 each): share chores equally; encourage everyone in all subjects/sports; speak out against sexist jokes; support friends who break stereotypes" }
+  ]
+}

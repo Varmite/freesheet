@@ -1,0 +1,58 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of THREE questions. Answer ALL the questions.",
+    "Read the sources carefully before answering the questions about them.",
+    "Use your own words unless you are asked to quote from a source.",
+    "Write in full sentences where explanations are required."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Knowledge and understanding",
+      "questions": [
+        { "id": "q1-1", "type": "mcq", "prompt": "The power loom was invented by…", "options": ["James Watt", "Edmund Cartwright", "George Stephenson", "Richard Arkwright"], "answer": 1 },
+        { "id": "q1-2", "type": "mcq", "prompt": "The first indentured labourers from India arrived in Natal in…", "options": ["1843", "1860", "1867", "1886"], "answer": 1 },
+        { "id": "q1-3", "type": "mcq", "prompt": "Closed, guarded barracks for black mine workers were called…", "options": ["locations", "compounds", "reserves", "plantations"], "answer": 1 },
+        { "id": "q1-4", "type": "mcq", "prompt": "The Berlin Conference was hosted by…", "options": ["Leopold II", "Cecil Rhodes", "Otto von Bismarck", "Kaiser Wilhelm II"], "answer": 2 },
+        { "id": "q1-5", "type": "mcq", "prompt": "The immediate cause of World War I was…", "options": ["the sinking of the Mendi", "the assassination of Franz Ferdinand", "the Battle of the Somme", "the Treaty of Versailles"], "answer": 1 },
+        { "id": "q1-6", "type": "match", "marks": 5, "prompt": "Match each term to its meaning.", "pairs": [
+          { "left": "Urbanisation", "right": "Movement of people to towns" },
+          { "left": "Uitlanders", "right": "Foreign miners in the Transvaal" },
+          { "left": "Effective occupation", "right": "Real control of land claimed in Africa" },
+          { "left": "Militarism", "right": "Build-up of armed forces" },
+          { "left": "Reparations", "right": "Payments for war damage" }
+        ] },
+        { "id": "q1-7", "type": "truefalse", "prompt": "Ethiopia remained independent after defeating Italy at Adwa in 1896.", "answer": true },
+        { "id": "q1-8", "type": "truefalse", "prompt": "Gold was discovered on the Witwatersrand in 1867.", "answer": false },
+        { "id": "q1-9", "type": "short", "marks": 1, "prompt": "Who formed De Beers Consolidated Mines in 1888?", "answers": ["cecil rhodes", "rhodes", "cecil john rhodes"] },
+        { "id": "q1-10", "type": "short", "marks": 1, "prompt": "Name the Queen Mother who led the Asante uprising in 1900.", "answers": ["yaa asantewaa"] },
+        { "id": "q1-11", "type": "short", "marks": 1, "prompt": "On which day and month in 1918 was the armistice signed? (e.g. 1 May)", "answers": ["11 november", "11th november", "november 11"] }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Source-based questions",
+      "context": [
+        { "type": "passage", "title": "Source A: A mine worker remembers the compounds (a composite account written for this exam)", "text": "When we arrived in Kimberley we were taken into the compound and the gates were locked behind us. For six months we did not see the town. At the end of our contract we were searched, even our mouths, in case we had hidden a diamond. We bought our mealie meal at the company store, where the prices were high." },
+        { "type": "passage", "title": "Source B: A historian's view of the migrant labour system (written for this exam)", "text": "The migrant labour system kept wages low because mine owners argued that the worker's family could live off the land at home. In reality, as men left, the rural areas grew poorer, and families became dependent on the small wages sent home." }
+      ],
+      "questions": [
+        { "id": "q2-1", "type": "numeric", "marks": 1, "prompt": "According to Source A, for how many months did the worker stay inside the compound?", "answer": 6, "tolerance": 0 },
+        { "id": "q2-2", "type": "open", "marks": 2, "prompt": "Why were workers searched at the end of their contracts (Source A)?", "memo": "✓ Mine owners wanted to prevent diamond theft (1)\n✓ Workers might hide diamonds in their bodies/mouths (1)" },
+        { "id": "q2-3", "type": "open", "marks": 2, "prompt": "How did the company store benefit the mine owners?", "memo": "✓ Workers had to buy from the company at high prices (1)\n✓ so much of their wages went back to the company (1)" },
+        { "id": "q2-4", "type": "open", "marks": 3, "prompt": "According to Source B, how did mine owners justify paying low wages, and was this argument true?", "memo": "✓ They argued the family could live off the land at home (1)\n✓ It was not true (1)\n✓ The rural areas grew poorer as men left, so families depended on the wages (1)" },
+        { "id": "q2-5", "type": "open", "marks": 4, "prompt": "Compare Sources A and B. How does each help a historian understand the experience of migrant workers? Which type of source is each?", "memo": "✓ Source A is a primary source / eyewitness account (1)\n✓ It shows personal experience of compound life (1)\n✓ Source B is a secondary source written by a historian (1)\n✓ It explains the wider economic effects / gives an overview (1)" },
+        { "id": "q2-6", "type": "open", "marks": 8, "prompt": "Using the sources and your own knowledge, write a paragraph of about 8 to 10 lines explaining how the discovery of minerals changed the lives of black South Africans.", "memo": "Award marks for relevant points, use of sources and structure:\n✓ Migrant labour system; men left home for long contracts (1)\n✓ Compounds and searches (Source A) (1)\n✓ Low wages and company stores (1)\n✓ Rural poverty and dependence on wages (Source B) (1)\n✓ Pass laws controlled movement (1)\n✓ Dangerous work and disease (1)\n✓ Family life broken up (1)\n✓ Paragraph is well organised with an introduction and conclusion (1)" }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Extended writing",
+      "instructions": "Answer the question in about one page.",
+      "questions": [
+        { "id": "q3-1", "type": "open", "marks": 15, "prompt": "'The Scramble for Africa was driven by Europe's need for raw materials and markets.' Do you agree? Write an essay in which you discuss the reasons for the Scramble for Africa, the Berlin Conference, and the effects on African people, using at least ONE case study (the Congo or the Asante).", "memo": "Introduction stating a clear argument (2)\nReasons: economic (raw materials, markets), political rivalry, strategic, missionary, technology (4)\nBerlin Conference: no Africans present, effective occupation, borders drawn on maps (3)\nCase study with specific evidence, e.g. Congo rubber quotas, hostages, Force Publique, population decline; or Asante wars, Golden Stool, Yaa Asantewaa (4)\nConclusion that answers the question (2)" }
+      ]
+    }
+  ]
+}

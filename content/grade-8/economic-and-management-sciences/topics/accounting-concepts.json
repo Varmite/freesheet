@@ -1,0 +1,62 @@
+{
+  "id": "accounting-concepts",
+  "title": "Accounting Concepts and the Accounting Equation",
+  "term": 1,
+  "summary": "Basic accounting terms, the accounting cycle, assets, liabilities and owner's equity, the accounting equation, and analysing transactions for a sole trader.",
+  "notes": [
+    { "type": "heading", "text": "What is accounting?" },
+    { "type": "paragraph", "text": "**Accounting** is the process of recording, classifying, summarising and reporting the financial transactions of a business, so that the owner can see whether the business is making a profit and is financially healthy. A **transaction** is any event that involves money or the exchange of goods and services, for example buying stationery or receiving payment for services." },
+    { "type": "heading", "text": "The accounting cycle" },
+    { "type": "list", "ordered": true, "items": [
+      "**Transaction** takes place.",
+      "A **source document** is drawn up as proof (e.g. a receipt, cheque counterfoil, invoice).",
+      "The transaction is recorded in a **journal** (e.g. the Cash Receipts Journal or Cash Payments Journal).",
+      "Journal totals are **posted** to the **General Ledger**.",
+      "A **Trial Balance** is drawn up to check the ledger.",
+      "**Financial statements** are prepared."
+    ] },
+    { "type": "heading", "text": "Key terms" },
+    { "type": "table", "headers": ["Term", "Meaning", "Examples"], "rows": [
+      ["Assets", "Possessions of the business that have value", "Equipment, vehicles, land and buildings, bank (if positive), cash, trading stock"],
+      ["Liabilities", "Debts the business owes to outsiders", "Loans, bank overdraft, creditors"],
+      ["Owner's equity", "The owner's interest in the business: what the business owes the owner", "Capital, plus net profit, minus drawings"],
+      ["Capital", "What the owner contributes to start or expand the business", "Cash, a vehicle or equipment the owner brings in"],
+      ["Drawings", "What the owner takes out of the business for personal use", "Cash, goods"],
+      ["Income", "Money earned by the business; increases owner's equity", "Current income (fees for services), rent income, interest income"],
+      ["Expenses", "Costs of running the business; decrease owner's equity", "Wages, telephone, water and electricity, stationery, rent expense"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "The business and the owner are treated as **two separate entities** (the separate entity concept). The owner's personal car is not an asset of the business unless the owner contributes it as capital." },
+    { "type": "heading", "text": "The accounting equation" },
+    { "type": "formula", "latex": "\\text{Assets} = \\text{Owner's equity} + \\text{Liabilities}", "caption": "A = OE + L: everything the business owns is financed either by the owner or by outsiders" },
+    { "type": "example", "title": "Using the equation", "problem": "A business has assets of R180 000 and liabilities of R45 000. Calculate the owner's equity.", "steps": ["OE = A − L", "= R180 000 − R45 000"], "answer": "R135 000" },
+    { "type": "heading", "text": "Analysing transactions" },
+    { "type": "paragraph", "text": "Every transaction affects **at least two accounts**, and the equation always stays in balance. Example: Thandi's Hair Salon." },
+    { "type": "table", "headers": ["Transaction", "Assets", "Owner's equity", "Liabilities", "Reason"], "rows": [
+      ["Thandi deposited R50 000 as capital", "+50 000 (bank)", "+50 000 (capital)", "0", "Owner contributes capital"],
+      ["Bought equipment, paid by EFT, R8 000", "+8 000 (equipment)\n−8 000 (bank)", "0", "0", "One asset increases, another decreases"],
+      ["Received R1 200 for hairdressing services", "+1 200 (bank)", "+1 200 (current income)", "0", "Income increases OE"],
+      ["Paid wages, R2 500", "−2 500 (bank)", "−2 500 (wages)", "0", "Expenses decrease OE"],
+      ["Thandi withdrew R1 000 for personal use", "−1 000 (bank)", "−1 000 (drawings)", "0", "Drawings decrease OE"],
+      ["Took a loan of R20 000 from ABC Bank", "+20 000 (bank)", "0", "+20 000 (loan)", "A liability finances the asset"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "**Income increases** owner's equity; **expenses** and **drawings decrease** owner's equity. Capital is NOT income: it is the owner's contribution." }
+  ],
+  "questions": [
+    { "id": "asset", "type": "mcq", "prompt": "Which of the following is an asset?", "options": ["Loan from a bank", "Equipment", "Wages", "Drawings"], "answer": 1 },
+    { "id": "liability", "type": "short", "prompt": "What do we call a debt that the business owes to outsiders?", "answers": ["liability", "a liability", "liabilities"] },
+    { "id": "equation", "type": "short", "prompt": "Complete the accounting equation: Assets = Owner's equity + …", "answers": ["liabilities", "liability"] },
+    { "id": "oe-calc", "type": "numeric", "prompt": "Assets are R240 000 and liabilities are R60 000. Calculate owner's equity in rand.", "answer": 180000, "tolerance": 0, "unit": "rand" },
+    { "id": "capital-income", "type": "truefalse", "prompt": "Capital contributed by the owner is a type of income.", "answer": false },
+    { "id": "classify", "type": "match", "marks": 5, "prompt": "Classify each item.", "pairs": [
+      { "left": "Vehicles", "right": "Asset" },
+      { "left": "Loan: Absa Bank", "right": "Liability" },
+      { "left": "Telephone account paid", "right": "Expense" },
+      { "left": "Fees earned for services", "right": "Income" },
+      { "left": "Cash taken by the owner", "right": "Drawings" }
+    ] },
+    { "id": "wages-effect", "type": "mcq", "prompt": "How does paying wages by EFT affect the accounting equation?", "options": ["Assets −, Owner's equity −", "Assets +, Owner's equity +", "Assets −, Liabilities −", "No effect"], "answer": 0 },
+    { "id": "analyse-loan", "type": "open", "marks": 3, "prompt": "Analyse the transaction 'Borrowed R30 000 from FNB' using the accounting equation.", "memo": "✓ Assets +30 000 (bank) (1)\n✓ Liabilities +30 000 (loan) (1)\n✓ Owner's equity: no effect (1)" },
+    { "id": "cycle", "type": "open", "marks": 3, "prompt": "Give the first THREE steps of the accounting cycle in order.", "memo": "✓ Transaction (1)\n✓ Source document (1)\n✓ Journal (1)" },
+    { "id": "entity", "type": "open", "marks": 2, "prompt": "Explain the separate entity concept.", "memo": "✓ The business and the owner are treated as two separate units (1)\n✓ so the owner's personal assets and expenses are not recorded in the business's books (1)" }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "id": "november-paper-2",
+  "title": "November Examination: Paper 2 (Literature)",
+  "durationMinutes": 150,
+  "totalMarks": 80,
+  "instructions": [
+    "This question paper consists of THREE sections: SECTION A: Poetry (30 marks), SECTION B: Novel (25 marks) and SECTION C: Drama (25 marks).",
+    "This paper is adapted from the NSC Paper 2 format for practice. The national paper offers choices; in this paper you must answer ALL the questions. As in the national paper, you write one essay and one set of contextual questions across Sections B and C: an essay on the novel and contextual questions on the drama.",
+    "Read all the questions carefully before you begin. Number your answers exactly as the questions are numbered.",
+    "The length of your answers should be in proportion to the marks allocated. Use quotations from the texts to support your answers where required.",
+    "Essay questions: the poetry essay should be 250-300 words (about one page). The novel essay should be 400-450 words (about 2-2½ pages).",
+    "Contextual questions: answer in full sentences unless you are asked to give a single word or choose an option. Do not simply retell the story.",
+    "Suggested time management: SECTION A: about 40 minutes; SECTION B: about 55 minutes; SECTION C: about 55 minutes.",
+    "Write neatly and legibly. Pay attention to spelling, punctuation and sentence construction."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Poetry (Contextual): 'That time of year thou mayst in me behold' (Sonnet 73)",
+      "instructions": "SECTION A: POETRY. Read the poem below carefully and then answer the questions that follow.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Sonnet 73 – William Shakespeare",
+          "text": "That time of year thou mayst in me behold\nWhen yellow leaves, or none, or few, do hang\nUpon those boughs which shake against the cold,\nBare ruin'd choirs, where late the sweet birds sang.\nIn me thou see'st the twilight of such day\nAs after sunset fadeth in the west,\nWhich by and by black night doth take away,\nDeath's second self, that seals up all in rest.\nIn me thou see'st the glowing of such fire\nThat on the ashes of his youth doth lie,\nAs the death-bed whereon it must expire,\nConsum'd with that which it was nourish'd by.\n   This thou perceiv'st, which makes thy love more strong,\n   To love that well which thou must leave ere long."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Glossary:** *choirs*: the part of a church or abbey where the choir sits and sings; *late*: recently; *by and by*: soon; *ere long*: before long."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "short",
+          "prompt": "This poem consists of three quatrains and a final rhyming couplet, rhyming abab cdcd efef gg. Name this type of sonnet.",
+          "marks": 1,
+          "answers": ["Shakespearean", "Shakespearean sonnet", "a Shakespearean sonnet", "Shakespearian", "Shakespearian sonnet", "a Shakespearian sonnet", "English", "English sonnet", "an English sonnet", "Elizabethan", "Elizabethan sonnet", "an Elizabethan sonnet"],
+          "explanation": "A Shakespearean (English or Elizabethan) sonnet has fourteen lines arranged as three quatrains and a couplet, rhyming abab cdcd efef gg. The Petrarchan (Italian) sonnet has an octave and a sestet instead."
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "In line 8, the phrase 'Death's second self' refers to:",
+          "marks": 1,
+          "options": ["the sunset", "the glowing fire", "black night", "the speaker's beloved"],
+          "answer": 2,
+          "explanation": "The phrase stands in apposition to 'black night' in line 7. Night is like a twin of death because it brings darkness and stillness and 'seals up all in rest', as death does."
+        },
+        {
+          "id": "q1-3",
+          "type": "open",
+          "prompt": "Refer to line 4: 'Bare ruin'd choirs, where late the sweet birds sang.' Explain the metaphor in this line and what it suggests about the speaker.",
+          "marks": 2,
+          "memo": "✓ The bare branches of the autumn trees are compared to the ruined, empty choir stalls of a church or abbey where choirs once sang; the birds that sang there have gone, as the choristers have gone. (1)\n✓ This suggests the speaker's own decay: his youth, vitality and joy (perhaps his 'song' or creativity) have departed, leaving him old, empty and desolate. (1)\n\nAward the second mark only if the image is linked to the speaker's ageing or loss."
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "The images in the three quatrains move from a season (autumn), to the end of a day (twilight), to the last glow of a dying fire. What does this progression most strongly suggest?",
+          "marks": 1,
+          "options": [
+            "The speaker is slowly recovering his strength as the seasons pass.",
+            "The speaker's remaining time is shrinking, so death seems ever nearer.",
+            "The speaker has come to prefer the peace of night to the activity of day.",
+            "The beloved is ageing more quickly than the speaker is ageing."
+          ],
+          "answer": 1,
+          "explanation": "Each metaphor covers a shorter span of time: a season lasts months, twilight lasts minutes and a dying ember may go out at any moment. The narrowing time spans create a growing sense of urgency as the speaker's death approaches."
+        },
+        {
+          "id": "q1-5",
+          "type": "open",
+          "prompt": "Refer to lines 9-12. Explain the paradox in line 12: 'Consum'd with that which it was nourish'd by.'",
+          "marks": 2,
+          "memo": "✓ The fire is smothered and put out by its own ashes, the remains of the very fuel (wood) that once fed and sustained it. (1)\n✓ In the same way, the speaker's youth, energy and passions, which once kept him alive and burning brightly, have used him up and now bring about his decline and death; life itself leads to death. (1)"
+        },
+        {
+          "id": "q1-6",
+          "type": "open",
+          "prompt": "Critically comment on the effectiveness of the final couplet (lines 13-14) as a conclusion to the poem.",
+          "marks": 3,
+          "memo": "✓ The couplet marks a turn (volta): the focus shifts from the speaker's own ageing in the quatrains to the beloved ('thou') and the beloved's love. (1)\n✓ The speaker suggests that seeing his decline makes the beloved love him 'more strong', precisely because the beloved will soon lose him ('leave ere long'); awareness of mortality intensifies love. (1)\n✓ Evaluation: the couplet is effective because it draws the three images together and offers consolation after the gloom of the quatrains, ending on love rather than death. OR: a candidate may argue that the consolation is uncertain or wistful, since the speaker may only be hoping that the beloved feels this way; the ending is bittersweet rather than triumphant. (1)\n\nAccept any well-substantiated evaluation. The third mark must be for a clear judgement that is justified."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Poetry (Essay): 'Dulce et Decorum Est'",
+      "instructions": "Read the poem below carefully and then answer the essay question that follows.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Dulce et Decorum Est – Wilfred Owen",
+          "text": "Bent double, like old beggars under sacks,\nKnock-kneed, coughing like hags, we cursed through sludge,\nTill on the haunting flares we turned our backs\nAnd towards our distant rest began to trudge.\nMen marched asleep. Many had lost their boots\nBut limped on, blood-shod. All went lame; all blind;\nDrunk with fatigue; deaf even to the hoots\nOf tired, outstripped Five-Nines that dropped behind.\n\nGas! GAS! Quick, boys!—An ecstasy of fumbling,\nFitting the clumsy helmets just in time;\nBut someone still was yelling out and stumbling,\nAnd flound'ring like a man in fire or lime . . .\nDim, through the misty panes and thick green light,\nAs under a green sea, I saw him drowning.\n\nIn all my dreams, before my helpless sight,\nHe plunges at me, guttering, choking, drowning.\n\nIf in some smothering dreams you too could pace\nBehind the wagon that we flung him in,\nAnd watch the white eyes writhing in his face,\nHis hanging face, like a devil's sick of sin;\nIf you could hear, at every jolt, the blood\nCome gargling from the froth-corrupted lungs,\nObscene as cancer, bitter as the cud\nOf vile, incurable sores on innocent tongues,—\nMy friend, you would not tell with such high zest\nTo children ardent for some desperate glory,\nThe old Lie: Dulce et decorum est\nPro patria mori."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Glossary:** *Dulce et decorum est pro patria mori* (Latin, from the Roman poet Horace): 'It is sweet and fitting to die for one's country'; *Five-Nines*: German 5,9-inch artillery shells; *lime*: quicklime, a substance that burns the skin; *misty panes*: the glass eyepieces of a gas mask; *cud*: partly digested food that cattle bring up and chew again; *ardent*: eager, passionate."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "prompt": "Owen's poem exposes the reality of war in order to attack the 'old Lie' that it is glorious to die for one's country.\n\nIn a well-constructed essay of 250-300 words (about ONE page), discuss how Owen uses **diction**, **imagery** and **structure** to convey his message about war.",
+          "marks": 10,
+          "memo": "Candidates should present a clear line of argument (an introduction stating their response to the topic, a body that develops it and a conclusion) and support it with close reference to and brief quotation from the poem. Do not reward retelling of the poem. The following points are a guide; accept other well-supported interpretations.\n\n**Diction and imagery**\n• Stanza 1: the soldiers are dehumanised and prematurely aged. The similes 'like old beggars under sacks' and 'coughing like hags' show young men reduced to broken, diseased figures, the opposite of the heroic soldier of propaganda.\n• Harsh, heavy diction ('cursed through sludge', 'trudge', 'limped on') and the hyperbole 'All went lame; all blind' convey exhaustion and misery. 'blood-shod' suggests they wear blood instead of boots; 'Drunk with fatigue' and 'Men marched asleep' show they are numb to danger.\n• Stanza 2: the sudden exclamations 'Gas! GAS! Quick, boys!' create panic and immediacy. The oxymoron 'ecstasy of fumbling' captures the frantic, clumsy struggle to put on masks.\n• The simile 'like a man in fire or lime' and the underwater imagery 'As under a green sea, I saw him drowning' present a horrifying, slow death seen through the gas mask, stripped of all glory.\n• Stanza 3: the speaker is haunted ('In all my dreams'); the present tense 'plunges' and the participles 'guttering, choking, drowning' show the lasting psychological trauma of war.\n• Stanza 4: graphic imagery ('white eyes writhing', 'hanging face, like a devil's sick of sin', blood 'gargling from the froth-corrupted lungs') and the similes 'Obscene as cancer, bitter as the cud' force the reader to confront physical horror. Disease imagery shows war as corrupting; 'innocent tongues' stresses the waste of young lives.\n• The bitter, sarcastic tone of 'such high zest' and 'children ardent for some desperate glory' attacks those who glorify war to the young; calling Horace's line 'The old Lie' (with a capital L, as if it were a title or a well-known slogan) rejects it directly and bluntly.\n\n**Structure**\n• Stanzas 1 and 2 together make up fourteen lines (eight plus six), like the octave and sestet of a sonnet, in iambic pentameter with alternating rhyme; but this traditional, orderly form is broken up and then abandoned (the isolated stanza 3, the long final stanza and the short last line), mirroring the disorder of war and the breakdown of traditional ideas of heroism.\n• The slow, heavy rhythm and caesurae of stanza 1 ('Men marched asleep. Many had lost their boots') give way to the fast, fragmented rhythm of stanza 2, matching the sudden gas attack.\n• The isolated two-line stanza 3 stands apart, emphasising the speaker's helpless, recurring nightmare.\n• Stanza 4 is one long, building conditional sentence ('If ... If ...') addressed directly to 'you'/'My friend', drawing the reader in and leading to the climax of 'The old Lie'.\n• The final line, 'Pro patria mori', is cut short, so the poem ends abruptly on the word 'die' (mori), undercutting the noble-sounding Latin.\n\n**Marking rubric (10 marks): Content 6 + Structure and language 4**\nContent (6):\n• 5-6 (Exceptional): outstanding, in-depth response; insightful interpretation of diction, imagery and structure fully linked to the message; excellent use of textual evidence.\n• 4 (Skilful): clear, well-developed response; sound interpretation of most of the aspects; good supporting evidence.\n• 3 (Moderate): adequate response; some aspects discussed with reasonable understanding; some retelling.\n• 2 (Elementary): limited understanding; superficial discussion; little evidence; mostly retelling.\n• 0-1 (Inadequate): little or no understanding of the topic or poem.\nStructure and language (4):\n• 4 (Exceptional): coherent, logically sequenced argument with a clear introduction, body and conclusion; fluent, accurate language; appropriate literary register.\n• 3 (Skilful): well organised; language mostly accurate and appropriate.\n• 2 (Moderate): some organisation; language understandable with some errors.\n• 1 (Elementary): poorly structured; frequent language errors.\n• 0 (Inadequate): no evident structure; language errors impede meaning.\n\nNote: there should not be more than two categories' difference between the content mark and the structure-and-language mark. An essay that ignores structure entirely or discusses only one of the three aspects should not score above 3 for content. An essay far shorter than the required length is penalised in the content mark."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Unseen Poetry: 'The Lake Isle of Innisfree'",
+      "instructions": "Read the poem below carefully and then answer the questions that follow.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "The Lake Isle of Innisfree – W. B. Yeats",
+          "text": "I will arise and go now, and go to Innisfree,\nAnd a small cabin build there, of clay and wattles made;\nNine bean-rows will I have there, a hive for the honey-bee,\nAnd live alone in the bee-loud glade.\n\nAnd I shall have some peace there, for peace comes dropping slow,\nDropping from the veils of the morning to where the cricket sings;\nThere midnight's all a glimmer, and noon a purple glow,\nAnd evening full of the linnet's wings.\n\nI will arise and go now, for always night and day\nI hear lake water lapping with low sounds by the shore;\nWhile I stand on the roadway, or on the pavements grey,\nI hear it in the deep heart's core."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Glossary:** *Innisfree*: a small, uninhabited island in Lough Gill, a lake in County Sligo in the north-west of Ireland; *wattles*: sticks woven together to make walls (not the acacia tree known in South Africa by the same name); *glade*: an open space in a wood; *linnet*: a small songbird."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "mcq",
+          "prompt": "Which of the following best describes the speaker's tone in line 1?",
+          "marks": 1,
+          "options": ["bitter and resentful", "calm and indifferent", "mocking and sarcastic", "resolute and filled with longing"],
+          "answer": 3,
+          "explanation": "'I will arise and go now' is a firm statement of intention (resolute), and the rest of the poem shows how deeply he yearns for Innisfree (longing). Nothing in the line is bitter, indifferent or mocking."
+        },
+        {
+          "id": "q3-2",
+          "type": "short",
+          "prompt": "Refer to line 10: 'I hear lake water lapping with low sounds by the shore'. Name the sound device created by the repeated 'l' sound.",
+          "marks": 1,
+          "answers": ["alliteration", "liquid alliteration", "consonance"],
+          "explanation": "The repeated 'l' at the start of 'lake', 'lapping' and 'low' is alliteration. The soft, liquid 'l' sound imitates the gentle, rhythmic lapping of the water."
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "prompt": "Refer to stanza 1. What do the details of the cabin, the 'Nine bean-rows' and the 'hive for the honey-bee' suggest about the kind of life the speaker longs for?",
+          "marks": 2,
+          "memo": "✓ He longs for a simple, self-sufficient life: he will build his own humble cabin from natural materials and grow and gather his own food (beans and honey). (1)\n✓ He wants to live in harmony with nature and in solitude ('live alone in the bee-loud glade'), away from the complications of modern society. (1)"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "prompt": "Refer to lines 5-6: 'for peace comes dropping slow, / Dropping from the veils of the morning to where the cricket sings'. Explain the image the speaker uses to describe peace.",
+          "marks": 2,
+          "memo": "✓ Peace is described as if it were something physical that falls or drips gently, like dew or soft rain, from the morning mist ('veils of the morning'). (1)\n✓ This suggests that peace comes gradually and quietly and settles over the whole day, from the misty dawn until evening or night when the cricket sings; it is gentle, natural and all-embracing. (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "mcq",
+          "prompt": "Line 11, 'While I stand on the roadway, or on the pavements grey', reveals that:",
+          "marks": 1,
+          "options": [
+            "the speaker is in a city far from Innisfree, a dull place that contrasts with the island",
+            "the speaker has already arrived at Innisfree and is walking along its paths",
+            "the speaker has come to prefer the busy roads of the city to the quiet island",
+            "the speaker is standing on the road beside the lake, looking across at the island"
+          ],
+          "answer": 0,
+          "explanation": "'Roadway' and 'pavements' place the speaker in an urban setting. The dull 'grey' contrasts sharply with the 'purple glow' and 'glimmer' of Innisfree, showing that he can only imagine the island. He has not yet left (he still says 'I will arise and go'), he hears the lake only 'in the deep heart's core', not with his ears, and nothing suggests that he prefers the city."
+        },
+        {
+          "id": "q3-6",
+          "type": "truefalse",
+          "prompt": "The phrase 'in the deep heart's core' (line 12) suggests that the speaker's longing for Innisfree is shallow and passing.",
+          "marks": 1,
+          "answer": false,
+          "explanation": "False. The 'core' is the very centre, and 'deep' stresses how profound it is. The longing is part of his innermost being; he hears the water 'always night and day'."
+        },
+        {
+          "id": "q3-7",
+          "type": "open",
+          "prompt": "The speaker repeats 'I will arise and go now' at the start of stanza 3. Critically comment on whether the poem convinces you that the speaker will actually make the journey to Innisfree.",
+          "marks": 2,
+          "memo": "✓ The repetition of 'I will arise and go now' works like a refrain: it stresses his determination and the urgency of his desire, so it seems that he is resolved to leave. (1)\n✓ Evaluation: however, the final stanza shows him still standing on the 'pavements grey', only hearing the lake 'in the deep heart's core', so Innisfree may remain an idealised dream that comforts him rather than a real plan; the poem is more about yearning than action. (1)\n\nAccept a well-substantiated argument either way. The second mark is for a justified judgement."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Novel (Essay): The Picture of Dorian Gray – Oscar Wilde",
+      "instructions": "SECTION B: NOVEL. Answer the essay question below. Your essay should be 400-450 words (about 2-2½ pages). Plan your essay before you begin and support your argument with close reference to the novel.",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "open",
+          "prompt": "*The Picture of Dorian Gray* suggests that a life devoted entirely to beauty and pleasure, without moral restraint, ends inevitably in destruction.\n\nCritically discuss the validity of this statement in an essay of 400-450 words (2-2½ pages).",
+          "marks": 25,
+          "memo": "Candidates may agree, disagree or partly agree with the statement, provided the argument is well substantiated with close reference to the novel. A balanced response that recognises complications (especially Lord Henry) shows insight. The following key points are a guide; accept other relevant, well-supported points.\n\n**Introduction**\n• States a clear stance, for example: the statement is largely valid, since Dorian's pursuit of beauty and pleasure, encouraged by Lord Henry's 'new Hedonism', destroys him and those close to him; yet the novel complicates a simple moral reading.\n\n**Body: key points per paragraph**\n• **The beginning of corruption:** In Basil's studio, Lord Henry tells Dorian that youth and beauty are all that matter and that 'The only way to get rid of a temptation is to yield to it'. Dorian wishes that the portrait would grow old instead of him. Because the picture bears the marks of his sins, he is freed from visible consequences and therefore from moral restraint.\n• **Sibyl Vane:** Dorian loves Sibyl's art and beauty rather than Sibyl herself. When love makes her act badly, he rejects her cruelly and she takes her own life. The first sign of change appears in the portrait (a touch of cruelty about the mouth). Lord Henry persuades him to see her death as an artistic experience, and Dorian chooses pleasure over conscience. Destruction spreads to others as well as to Dorian's soul.\n• **Years of moral decay:** Influenced by the 'yellow book' Lord Henry gives him, Dorian leads a double life, collecting sensations and visiting opium dens. Dark rumours spread, and Basil later confronts him with a list of young men, such as Adrian Singleton and Sir Henry Ashton, whose lives or reputations were ruined after their friendship with him; Dorian has also broken off his friendship with Alan Campbell. The portrait becomes increasingly hideous while Dorian remains outwardly beautiful; the pursuit of pleasure brings him not happiness but boredom, fear and secrecy.\n• **Crimes and their consequences:** When Basil, the novel's moral conscience, sees the corrupted portrait and urges Dorian to pray, Dorian murders him. He blackmails Alan Campbell into destroying the body, and Campbell later kills himself. James Vane hunts Dorian, who lives in terror until James is accidentally shot. Each attempt to escape consequences leads to further destruction.\n• **The ending:** Dorian's 'good' act of sparing Hetty Merton only adds a look of cunning and hypocrisy to the portrait, showing that vanity, not genuine repentance, drives him. He stabs the portrait to destroy the evidence of his conscience and in doing so kills himself; he is found withered and loathsome while the portrait regains its beauty. The ending supports the statement: the corruption of the soul cannot be hidden forever.\n• **Counter-argument / complication:** Lord Henry, the chief spokesman for hedonism, is not destroyed: he talks about sin but seldom acts on his theories, and although his wife leaves him he remains comfortable and witty. Wilde's Preface ('There is no such thing as a moral or an immoral book') warns against reading the novel as a simple sermon. It may be argued that what destroys Dorian is not pleasure alone but his attempt to separate his beauty from his soul and to escape all responsibility, and his ruthless use of other people.\n\n**Conclusion**\n• Restates the stance convincingly, e.g. the novel largely validates the statement through Dorian's fate and the trail of ruined lives he leaves, while suggesting that the real cause of destruction is the denial of conscience and responsibility.\n\n**Marking rubric (25 marks): Content 15 + Structure and language 10**\nContent (15):\n• 12-15 (Exceptional): in-depth, insightful interpretation of the topic; excellent understanding of the novel; argument fully and convincingly supported by relevant evidence.\n• 9-11 (Skilful): clear, well-developed interpretation; good understanding; argument well supported.\n• 6-8 (Moderate): adequate interpretation; some understanding; argument partly supported; some retelling of the plot.\n• 4-5 (Elementary): limited interpretation; superficial; little relevant evidence; largely plot summary.\n• 0-3 (Inadequate): little or no understanding of the topic or novel; irrelevant or no argument.\nStructure and language (10):\n• 8-10 (Exceptional): coherent, logically developed essay with an effective introduction, well-linked paragraphs and a convincing conclusion; fluent, accurate language; appropriate formal literary register.\n• 6-7 (Skilful): well structured; paragraphs mostly linked; language mostly accurate and appropriate.\n• 4-5 (Moderate): some structure; paragraphing adequate; language understandable with some errors.\n• 2-3 (Elementary): poorly structured; weak paragraphing; frequent errors that affect clarity.\n• 0-1 (Inadequate): no evident structure; language errors seriously impede meaning.\n\nNote: there should not be more than two categories' difference between the content mark and the structure-and-language mark. An essay that merely retells the plot cannot score above the Moderate category for content."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Drama (Contextual): Hamlet – William Shakespeare",
+      "instructions": "SECTION C: DRAMA. Read Extract A and Extract B below carefully and answer the questions that follow. Questions on Extract A come first (about 12 marks), followed by questions on Extract B (about 13 marks). Each question states which extract it refers to.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "EXTRACT A [Act 1, Scene 2]",
+          "text": "HAMLET:\nO, that this too too solid flesh would melt,\nThaw and resolve itself into a dew!\nOr that the Everlasting had not fix'd\nHis canon 'gainst self-slaughter! O God! God!\nHow weary, stale, flat and unprofitable,\nSeem to me all the uses of this world!\nFie on't! ah fie! 'tis an unweeded garden,\nThat grows to seed; things rank and gross in nature\nPossess it merely. That it should come to this!\nBut two months dead: nay, not so much, not two:\nSo excellent a king; that was, to this,\nHyperion to a satyr; so loving to my mother\nThat he might not beteem the winds of heaven\nVisit her face too roughly. Heaven and earth!\nMust I remember? why, she would hang on him,\nAs if increase of appetite had grown\nBy what it fed on: and yet, within a month—\nLet me not think on't—Frailty, thy name is woman!—\nA little month, or ere those shoes were old\nWith which she follow'd my poor father's body,\nLike Niobe, all tears:—why she, even she—\nO, God! a beast, that wants discourse of reason,\nWould have mourn'd longer—married with my uncle,\nMy father's brother, but no more like my father\nThan I to Hercules: within a month:\nEre yet the salt of most unrighteous tears\nHad left the flushing in her galled eyes,\nShe married. O, most wicked speed, to post\nWith such dexterity to incestuous sheets!\nIt is not nor it cannot come to good:\nBut break, my heart; for I must hold my tongue."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Glossary (Extract A):** *canon*: law; *merely*: completely; *Hyperion*: the sun god of Greek mythology; *satyr*: a lustful creature, half man and half goat; *beteem*: allow; *Niobe*: a woman in Greek myth who wept endlessly for her dead children; *wants discourse of reason*: lacks the ability to reason; *post*: hurry."
+        },
+        {
+          "type": "passage",
+          "title": "EXTRACT B [Act 3, Scene 3]",
+          "text": "KING CLAUDIUS:\nHelp, angels! Make assay!\nBow, stubborn knees; and, heart with strings of steel,\nBe soft as sinews of the newborn babe!\nAll may be well.\n[Retires and kneels. Enter HAMLET]\n\nHAMLET:\nNow might I do it pat, now he is praying;\nAnd now I'll do't. And so he goes to heaven;\nAnd so am I revenged. That would be scann'd:\nA villain kills my father; and for that,\nI, his sole son, do this same villain send\nTo heaven.\nO, this is hire and salary, not revenge.\nHe took my father grossly, full of bread;\nWith all his crimes broad blown, as flush as May;\nAnd how his audit stands who knows save heaven?\nBut in our circumstance and course of thought,\n'Tis heavy with him: and am I then revenged,\nTo take him in the purging of his soul,\nWhen he is fit and season'd for his passage?\nNo!\nUp, sword; and know thou a more horrid hent:\nWhen he is drunk asleep, or in his rage,\nOr in the incestuous pleasure of his bed;\nAt gaming, swearing, or about some act\nThat has no relish of salvation in't;\nThen trip him, that his heels may kick at heaven,\nAnd that his soul may be as damn'd and black\nAs hell, whereto it goes. My mother stays:\nThis physic but prolongs thy sickly days.\n[Exit]\n\nKING CLAUDIUS:\n[Rising] My words fly up, my thoughts remain below:\nWords without thoughts never to heaven go.\n[Exit]"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Glossary (Extract B):** *assay*: an attempt; *pat*: conveniently; *scann'd*: examined carefully; *full of bread*: in a state of worldly enjoyment, without having fasted or confessed; *broad blown*: in full bloom; *audit*: account (of sins); *season'd*: prepared; *relish*: trace; *physic*: medicine (here, Claudius's prayer, or Hamlet's postponement of the killing, which only delays Claudius's death)."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q5-1",
+          "type": "mcq",
+          "prompt": "Refer to Extract A. Which of the following has happened immediately before Hamlet speaks this soliloquy?",
+          "marks": 1,
+          "options": [
+            "Hamlet has seen his father's Ghost for the first time.",
+            "Hamlet has watched the players perform *The Murder of Gonzago*.",
+            "Claudius and Gertrude have urged Hamlet to end his mourning and asked him not to return to university in Wittenberg.",
+            "Hamlet has been ordered to sail to England."
+          ],
+          "answer": 2,
+          "explanation": "In Act 1, Scene 2 Claudius and Gertrude tell Hamlet that his prolonged grief is unnatural and ask him to stay in Denmark rather than return to Wittenberg. Left alone, he speaks this soliloquy. Horatio only tells him about the Ghost after it, and the play and the voyage to England come much later."
+        },
+        {
+          "id": "q5-2",
+          "type": "short",
+          "prompt": "Refer to Extract A. In the line 'Hyperion to a satyr', who is compared to Hyperion?",
+          "marks": 1,
+          "answers": ["Old Hamlet", "King Hamlet", "Hamlet's father", "his father", "Hamlet's dead father", "his dead father", "his late father", "Hamlet's late father", "the late king", "the dead king", "the old king", "the former king", "Old King Hamlet", "King Hamlet senior", "Hamlet senior", "the Ghost", "his father, Old Hamlet", "his father, King Hamlet"],
+          "explanation": "Hamlet compares his dead father to Hyperion, the noble and radiant sun god, and Claudius to a satyr, a lustful half-beast. The contrast shows how he idolises his father and despises his uncle."
+        },
+        {
+          "id": "q5-3",
+          "type": "open",
+          "prompt": "Refer to Extract A: ''tis an unweeded garden, / That grows to seed; things rank and gross in nature / Possess it merely.' Explain the image Hamlet uses to describe the world.",
+          "marks": 2,
+          "memo": "✓ Hamlet compares the world (and Denmark/the court) to a neglected garden that has been left untended and is overrun by coarse, foul-smelling ('rank and gross') weeds. (1)\n✓ The image suggests that corruption, decay and moral disorder have taken over completely since his father's death and his mother's hasty remarriage; it anticipates the theme of rottenness in the state of Denmark. (1)"
+        },
+        {
+          "id": "q5-4",
+          "type": "open",
+          "prompt": "Refer to Extract A. Discuss what this soliloquy reveals about Hamlet's state of mind at this point in the play. Refer to THREE aspects and support each with reference to the extract.",
+          "marks": 3,
+          "memo": "Any THREE of the following, each supported by reference to the extract:\n✓ He is deeply depressed, even suicidal: he wishes his 'too too solid flesh would melt' and regrets that God has forbidden 'self-slaughter'. (1)\n✓ He is world-weary and disillusioned: life seems 'weary, stale, flat and unprofitable'. (1)\n✓ He is disgusted and angry at his mother's hasty, 'incestuous' remarriage 'within a month', and generalises bitterly about women ('Frailty, thy name is woman!'). (1)\n✓ He idealises his dead father ('So excellent a king', 'Hyperion') and despises Claudius ('a satyr'). (1)\n✓ He feels trapped and powerless, unable to speak out: 'But break, my heart; for I must hold my tongue.' (1)\n\nMaximum 3 marks. Do not award a mark for a state of mind that is not supported by the extract."
+        },
+        {
+          "id": "q5-5",
+          "type": "open",
+          "prompt": "Refer to Extract A: 'But break, my heart; for I must hold my tongue.' Explain why this line is significant, and why the soliloquy is an effective dramatic device at this point.",
+          "marks": 2,
+          "memo": "✓ The line shows that Hamlet must hide his true feelings in public: he cannot openly criticise the king and queen at court, so his grief and anger are suppressed. This foreshadows the gap between appearance and reality and his later concealment behind an 'antic disposition'. (1)\n✓ The soliloquy is effective because, alone on stage, Hamlet reveals his innermost thoughts directly to the audience, who therefore understand his inner conflict and sympathise with him, although the other characters do not know what he feels. (1)"
+        },
+        {
+          "id": "q5-6",
+          "type": "open",
+          "prompt": "Refer to Extract A and to the play as a whole. Hamlet exclaims, 'Frailty, thy name is woman!' In your view, is Hamlet's judgement of Gertrude fair? Critically discuss.",
+          "marks": 3,
+          "memo": "Accept a well-substantiated response that agrees, disagrees or partly agrees. Mark allocation:\n✓ A clear, justified judgement on whether the accusation is fair (1)\n✓✓ TWO valid points that support the judgement, with reference to the extract and/or the play as a whole (2)\n\nPoints suggesting the judgement is FAIR (at least in part):\n• Gertrude remarried 'within a month' of her husband's death, before 'those shoes were old', and married his brother, which in the world of the play is regarded as incestuous; this shows a lack of loyalty and decorum, so Hamlet's shock is understandable.\n• Her grief ('Like Niobe, all tears') seems to have been shallow or for show, since it was so quickly forgotten.\n\nPoints suggesting the judgement is UNFAIR:\n• Hamlet condemns all women ('woman') on the basis of one woman's conduct; this bitter generalisation later poisons his treatment of Ophelia ('Get thee to a nunnery').\n• There is no clear evidence that Gertrude knew about the murder: she seems genuinely shocked in the closet scene when Hamlet speaks of killing a king.\n• She shows real love and concern for Hamlet, and in the final scene she drinks from the poisoned cup to toast his success; her 'frailty' may be weakness or dependence rather than wickedness.\n\nTotal: 3 marks."
+        },
+        {
+          "id": "q5-7",
+          "type": "mcq",
+          "prompt": "Refer to Extract B. Which event, immediately before this scene, has convinced Hamlet that Claudius is guilty of murdering his father?",
+          "marks": 1,
+          "options": [
+            "Claudius's reaction to the play-within-a-play, *The Murder of Gonzago* (*The Mousetrap*)",
+            "Polonius's report that Hamlet is mad because of his love for Ophelia",
+            "The news that Ophelia has drowned",
+            "The Ghost's appearance in Gertrude's closet"
+          ],
+          "answer": 0,
+          "explanation": "Hamlet stages a play that re-enacts the murder. Claudius rises in alarm and stops the performance (Act 3, Scene 2), which convinces Hamlet that the Ghost spoke the truth. Ophelia's death and the Ghost's appearance in the closet happen later, and Polonius's theory about love comes earlier and proves nothing."
+        },
+        {
+          "id": "q5-8",
+          "type": "truefalse",
+          "prompt": "Refer to Extract B. At this point in the play Claudius has already arranged to send Hamlet to England.",
+          "marks": 1,
+          "answer": true,
+          "explanation": "True. Claudius first decides to send Hamlet to England after overhearing the 'nunnery' scene (Act 3, Scene 1). At the beginning of Act 3, Scene 3, before this extract, he tells Rosencrantz and Guildenstern that Hamlet will go with them to England, because after the play he sees Hamlet as a dangerous threat."
+        },
+        {
+          "id": "q5-9",
+          "type": "open",
+          "prompt": "Refer to Extract B. Explain why Hamlet decides NOT to kill Claudius at this moment.",
+          "marks": 2,
+          "memo": "✓ Hamlet believes that Claudius is praying and repenting ('in the purging of his soul'); if he kills him now, Claudius's soul will go to heaven. (1)\n✓ Claudius killed Old Hamlet without giving him the chance to confess ('full of bread', 'With all his crimes broad blown'), so his father suffers in purgatory; killing Claudius now would be a reward ('hire and salary, not revenge'). Hamlet wants to kill him when he is sinning so that his soul will be damned. (1)"
+        },
+        {
+          "id": "q5-10",
+          "type": "open",
+          "prompt": "Refer to Extract B. Identify and explain the dramatic irony in this extract.",
+          "marks": 2,
+          "memo": "✓ Claudius's final couplet ('My words fly up, my thoughts remain below') reveals to the audience that he has not been able to pray sincerely or repent at all. (1)\n✓ Hamlet does not know this: he spares Claudius because he wrongly believes that Claudius's soul is being purified. The audience realises that Hamlet has missed a perfect opportunity for a reason that is false, and this delay leads to further tragedy (e.g. the killing of Polonius in the next scene). (1)"
+        },
+        {
+          "id": "q5-11",
+          "type": "mcq",
+          "prompt": "Refer to Extract B: 'Up, sword; and know thou a more horrid hent'. In this line, 'a more horrid hent' means:",
+          "marks": 1,
+          "options": [
+            "a heavier, sharper blade",
+            "a holy blessing from heaven",
+            "a hidden place to rest",
+            "a more dreadful occasion (opportunity) to be grasped"
+          ],
+          "answer": 3,
+          "explanation": "'Hent' means a grasp or grip, and so the occasion when the sword will be seized and used. Hamlet tells his sword to wait for a more terrible opportunity, when Claudius is sinning and can be damned."
+        },
+        {
+          "id": "q5-12",
+          "type": "open",
+          "prompt": "Refer to Extract B: 'Then trip him, that his heels may kick at heaven, / And that his soul may be as damn'd and black / As hell, whereto it goes.' Discuss what this imagery reveals about Hamlet's attitude to revenge.",
+          "marks": 2,
+          "memo": "✓ The image is of Claudius being tripped and falling headfirst into hell with his heels kicking up towards heaven, a picture of defiance and humiliation; the colour imagery 'damn'd and black / As hell' links his soul with sin, evil and eternal punishment. (1)\n✓ It shows that Hamlet's desire for revenge has become savage and extreme: he wants not merely Claudius's death but his eternal damnation, which goes beyond justice and makes Hamlet himself seem cruel (or reveals his tendency to delay by planning the 'perfect' revenge). (1)"
+        },
+        {
+          "id": "q5-13",
+          "type": "short",
+          "prompt": "Refer to Extract B. Claudius ends the extract with two consecutive lines that rhyme. Give the term for two consecutive rhyming lines.",
+          "marks": 1,
+          "answers": ["rhyming couplet", "a rhyming couplet", "rhymed couplet", "a rhymed couplet", "couplet", "a couplet", "heroic couplet", "a heroic couplet"],
+          "explanation": "Two consecutive rhyming lines form a (rhyming) couplet. Shakespeare often ends a scene with a couplet to give a sense of finality; here it neatly sums up Claudius's failure to repent."
+        },
+        {
+          "id": "q5-14",
+          "type": "open",
+          "prompt": "Refer to Extract B and to the play as a whole. 'Hamlet's delay in taking revenge is caused by moral and religious scruples rather than by cowardice.' Critically discuss the validity of this statement.",
+          "marks": 3,
+          "memo": "Accept a well-substantiated response that agrees, disagrees or partly agrees. Mark allocation:\n✓ A clear, justified evaluation of the validity of the statement (1)\n✓✓ TWO valid points that support the evaluation, with reference to Extract B and to the play as a whole (2)\n\nPoints that SUPPORT the statement:\n• In this extract the delay has a religious motive: Hamlet refuses to kill Claudius at prayer because he does not want to send his soul to heaven; this suggests calculation rather than fear.\n• Elsewhere he delays for moral and rational reasons: he fears that the Ghost may be a devil sent to tempt him ('The spirit that I have seen / May be the devil') and so stages *The Mousetrap* to obtain proof before he acts.\n• He is not physically cowardly: he follows the Ghost despite warnings, kills Polonius without hesitation and boards the pirate ship alone.\n\nPoints that CHALLENGE or COMPLICATE the statement:\n• Hamlet himself questions his courage, calling himself 'a rogue and peasant slave' and 'pigeon-liver'd', and admits that 'conscience does make cowards of us all' and that he thinks 'too precisely on the event'.\n• His reasoning in this extract may be an excuse for delay: melancholy and overthinking, rather than genuine scruples, may explain his inaction.\n• When he finally acts, it is on impulse (killing Polonius; killing Claudius only after the poisoning is revealed), not after moral deliberation.\n\nTotal: 3 marks. Quotations need not be exact."
+        }
+      ]
+    }
+  ]
+}

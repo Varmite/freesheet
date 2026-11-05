@@ -1,0 +1,50 @@
+{
+  "id": "democracy-and-civil-society",
+  "title": "Democracy, Civil Society and the Media",
+  "term": 2,
+  "summary": "The role of civil society organisations in a democracy, the media as a watchdog, freedom of the press and its limits, responsible media use, and youth participation in community and national issues.",
+  "notes": [
+    { "type": "heading", "text": "Civil society" },
+    { "type": "definition", "term": "Civil society", "text": "Organisations and groups outside government and business that represent the interests of citizens: NGOs, community-based organisations, trade unions, faith groups, student and youth organisations." },
+    { "type": "table", "headers": ["Organisation (example)", "Focus"], "rows": [
+      ["Treatment Action Campaign (TAC)", "Access to HIV treatment and health services"],
+      ["Equal Education", "Quality education and school infrastructure"],
+      ["Gift of the Givers", "Disaster relief and humanitarian aid"],
+      ["Corruption Watch", "Exposing and reporting corruption"],
+      ["Trade unions (e.g. COSATU affiliates)", "Workers' rights"]
+    ] },
+    { "type": "list", "items": [
+      "Civil society holds government **accountable**.",
+      "It gives a **voice** to people who might be ignored.",
+      "It provides **services** (care, food, education) where needed.",
+      "It can take issues to **court**, e.g. TAC's case that led to the national programme to prevent mother-to-child transmission of HIV."
+    ] },
+    { "type": "heading", "text": "The media in a democracy" },
+    { "type": "paragraph", "text": "Section 16 of the Constitution protects **freedom of expression**, including freedom of the press. The media **inform** the public, **expose** wrongdoing (the watchdog role), and allow **debate**. Freedom of expression is limited: it excludes propaganda for war, incitement of imminent violence and hate speech." },
+    { "type": "callout", "label": "Responsible media use", "text": "Check sources before sharing, recognise bias and fake news, respect others' privacy and dignity online, and remember that posts can have legal consequences (defamation, the Cybercrimes Act)." },
+    { "type": "heading", "text": "Youth participation" },
+    { "type": "list", "items": [
+      "Register to vote (from 16) and vote (from 18).",
+      "Join school governing bodies (as RCL members), youth councils and community forums.",
+      "Volunteer with NGOs or start a campaign on an issue you care about.",
+      "Use social media responsibly to raise awareness and mobilise peacefully.",
+      "Remember **16 June** (Youth Day): young people have shaped South Africa's history."
+    ] }
+  ],
+  "questions": [
+    { "id": "civil", "type": "open", "marks": 2, "prompt": "What is civil society?", "memo": "✓ Organisations outside government and business (1)\n✓ that represent citizens' interests, e.g. NGOs, unions, faith groups (1)" },
+    { "id": "watchdog", "type": "mcq", "prompt": "When journalists expose corruption, the media is acting as a…", "options": ["censor", "watchdog", "regulator", "court"], "answer": 1 },
+    { "id": "s16", "type": "numeric", "prompt": "Which section of the Constitution protects freedom of expression?", "answer": 16, "tolerance": 0 },
+    { "id": "tac", "type": "short", "prompt": "Which organisation campaigned successfully for access to HIV treatment? (abbreviation)", "answers": ["tac", "treatment action campaign"] },
+    { "id": "limit", "type": "truefalse", "prompt": "Freedom of expression includes the right to incite imminent violence.", "answer": false },
+    { "id": "orgs", "type": "match", "marks": 3, "prompt": "Match each organisation to its focus.", "pairs": [
+      { "left": "Equal Education", "right": "Quality schooling" },
+      { "left": "Gift of the Givers", "right": "Disaster relief" },
+      { "left": "Corruption Watch", "right": "Exposing corruption" }
+    ] },
+    { "id": "roles", "type": "open", "marks": 3, "prompt": "Explain THREE roles of civil society in a democracy.", "memo": "Any three (1 each): hold government accountable; give a voice to the marginalised; provide services; take issues to court; educate the public; mobilise citizens" },
+    { "id": "responsible", "type": "open", "marks": 3, "prompt": "Give THREE ways young people can use social media responsibly.", "memo": "Any three (1 each): check facts before sharing; avoid hate speech and bullying; respect privacy; report harmful content; use it to raise awareness peacefully" },
+    { "id": "youth", "type": "open", "marks": 2, "prompt": "Suggest TWO ways Grade 11 learners can participate in community issues.", "memo": "Any two (1 each): volunteer; join youth councils/forums; start a campaign; attend ward meetings; register to vote" },
+    { "id": "defamation", "type": "open", "marks": 2, "prompt": "Why can posting false accusations about someone online have legal consequences?", "memo": "✓ It can be defamation (damaging someone's reputation with false statements) (1)\n✓ and the person may sue, or it may be a crime under cybercrime laws (1)" }
+  ]
+}

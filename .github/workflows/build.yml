@@ -1,0 +1,48 @@
+# Builds FreeSheet for Windows, macOS and Linux on real machines.
+# Run it from the Actions tab ("Run workflow"), or push a tag like v1.0.0.
+# Download the installers from the run's "Artifacts" section.
+name: Build installers
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            platform: win
+          - os: macos-latest
+            platform: mac
+          - os: ubuntu-latest
+            platform: linux
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node node_modules/electron/install.js
+      - run: npm test
+      - run: node scripts/build.js --${{ matrix.platform }} --no-validate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FreeSheet-${{ matrix.platform }}
+          path: |
+            build/*.exe
+            build/*.msi
+            build/*.dmg
+            build/*.zip
+            build/*.AppImage
+            build/*.deb
+            build/*.tar.gz
+          if-no-files-found: error

@@ -1,0 +1,98 @@
+{
+  "id": "algebraic-equations",
+  "title": "Algebraic Equations",
+  "term": 1,
+  "summary": "Solve linear equations (including those with fractions), equations in which a product of factors equals zero, simple quadratic and exponential equations, change the subject of a formula, and solve word problems.",
+  "notes": [
+    { "type": "heading", "text": "Linear equations (revision and extension)" },
+    { "type": "paragraph", "text": "To solve a linear equation: remove brackets, clear fractions by multiplying **every term** by the LCD, collect the variable terms on one side and the constants on the other, and divide by the coefficient. Check by substituting." },
+    { "type": "example", "title": "Worked example 1", "problem": "Solve: (a) $3(x - 4) = 2x + 1$  (b) $\\dfrac{x}{2} + \\dfrac{x}{3} = 10$  (c) $\\dfrac{x + 3}{4} - \\dfrac{x - 1}{3} = 1$", "steps": [
+      "(a) $3x - 12 = 2x + 1$, so $x = 13$.",
+      "(b) Multiply by the LCD $6$: $3x + 2x = 60$, so $5x = 60$ and $x = 12$.",
+      "(c) Multiply by $12$: $3(x + 3) - 4(x - 1) = 12$.",
+      "$3x + 9 - 4x + 4 = 12$, so $-x + 13 = 12$ and $x = 1$."
+    ], "answer": "(a) $13$  (b) $12$  (c) $1$" },
+    { "type": "callout", "label": "Common mistake", "text": "When you multiply by the LCD, put brackets around each numerator. $-4(x - 1) = -4x + 4$, not $-4x - 4$. The minus sign in front of a fraction applies to the whole numerator." },
+
+    { "type": "heading", "text": "When a product equals zero" },
+    { "type": "paragraph", "text": "If two numbers multiply to give $0$, at least one of them must be $0$. This is the key to solving equations that can be factorised." },
+    { "type": "formula", "latex": "a \\times b = 0 \\;\\Rightarrow\\; a = 0 \\ \\text{ or } \\ b = 0", "caption": "The zero-product rule" },
+    { "type": "example", "title": "Worked example 2", "problem": "Solve: (a) $x(x - 3) = 0$  (b) $(x + 2)(x - 5) = 0$  (c) $(2x - 1)(x + 4) = 0$", "steps": [
+      "(a) $x = 0$ or $x - 3 = 0$, so $x = 0$ or $x = 3$.",
+      "(b) $x + 2 = 0$ or $x - 5 = 0$, so $x = -2$ or $x = 5$.",
+      "(c) $2x - 1 = 0$ or $x + 4 = 0$, so $x = \\frac{1}{2}$ or $x = -4$."
+    ], "answer": "(a) $0;\\ 3$  (b) $-2;\\ 5$  (c) $\\frac{1}{2};\\ -4$" },
+
+    { "type": "heading", "text": "Simple quadratic equations" },
+    { "type": "list", "ordered": true, "items": [
+      "Get everything on one side so that the other side is $0$.",
+      "Factorise.",
+      "Set each factor equal to $0$ and solve."
+    ] },
+    { "type": "example", "title": "Worked example 3", "problem": "Solve: (a) $x^2 - 7x + 12 = 0$  (b) $x^2 = 4x$  (c) $x^2 - 25 = 0$", "steps": [
+      "(a) $(x - 3)(x - 4) = 0$, so $x = 3$ or $x = 4$.",
+      "(b) $x^2 - 4x = 0$, so $x(x - 4) = 0$ and $x = 0$ or $x = 4$.",
+      "(c) $(x - 5)(x + 5) = 0$, so $x = 5$ or $x = -5$."
+    ], "answer": "(a) $3;\\ 4$  (b) $0;\\ 4$  (c) $\\pm 5$" },
+    { "type": "callout", "label": "Common mistake", "text": "Never divide both sides of $x^2 = 4x$ by $x$. That loses the solution $x = 0$. Move everything to one side and factorise instead." },
+
+    { "type": "heading", "text": "Exponential equations" },
+    { "type": "paragraph", "text": "Write both sides as powers of the same base and equate the exponents. For example, $2^{x + 3} = 32 = 2^5$, so $x + 3 = 5$ and $x = 2$." },
+
+    { "type": "heading", "text": "Changing the subject of a formula" },
+    { "type": "paragraph", "text": "A formula can be rearranged to make a different variable the subject, using the same inverse operations as for solving equations." },
+    { "type": "example", "title": "Worked example 4", "problem": "(a) Make $r$ the subject of $C = 2\\pi r$.\n(b) Make $t$ the subject of $v = u + at$.\n(c) The area of a trapezium is $A = \\frac{1}{2}(a + b)h$. Make $h$ the subject, and find $h$ when $A = 36$, $a = 5$ and $b = 7$.", "steps": [
+      "(a) Divide both sides by $2\\pi$: $r = \\dfrac{C}{2\\pi}$.",
+      "(b) Subtract $u$: $v - u = at$. Divide by $a$: $t = \\dfrac{v - u}{a}$.",
+      "(c) Multiply by 2: $2A = (a + b)h$, so $h = \\dfrac{2A}{a + b}$.",
+      "$h = \\dfrac{72}{12} = 6$."
+    ], "answer": "(a) $r = \\frac{C}{2\\pi}$  (b) $t = \\frac{v - u}{a}$  (c) $h = \\frac{2A}{a + b} = 6$" },
+
+    { "type": "heading", "text": "Word problems" },
+    { "type": "example", "title": "Worked example 5: a rectangle", "problem": "The length of a rectangle is 3 cm more than twice its breadth. Its perimeter is 36 cm. Find its dimensions.", "steps": [
+      "Let the breadth be $b$; the length is $2b + 3$.",
+      "$2b + 2(2b + 3) = 36$, so $6b + 6 = 36$ and $b = 5$.",
+      "Length $= 2(5) + 3 = 13$ cm."
+    ], "answer": "5 cm by 13 cm" },
+    { "type": "example", "title": "Worked example 6: a quadratic word problem", "problem": "The sum of a number and its square is 30. Find the number.", "steps": [
+      "$x^2 + x = 30$, so $x^2 + x - 30 = 0$.",
+      "$(x + 6)(x - 5) = 0$, so $x = -6$ or $x = 5$.",
+      "Check: $25 + 5 = 30$ ✓ and $36 - 6 = 30$ ✓"
+    ], "answer": "$5$ or $-6$" },
+    { "type": "callout", "label": "Exam tip", "text": "In a word problem, check whether both solutions make sense. A length or a number of people cannot be negative, so reject negative answers in those cases." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Linear equations: expand, clear fractions with the LCD (using brackets), collect terms, solve, check.",
+      "Zero-product rule: if $ab = 0$, then $a = 0$ or $b = 0$.",
+      "Quadratic equations: make one side zero, factorise, solve each factor. Do not divide by $x$.",
+      "Exponential equations: same base, equate exponents.",
+      "Change the subject of a formula with inverse operations.",
+      "Word problems: define the variable, set up an equation, solve and check that the answer makes sense."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "Solve for $x$: $3(x - 4) = 2x + 1$", "answer": 13, "tolerance": 0, "explanation": "$3x - 12 = 2x + 1$, so $x = 13$." },
+    { "id": "q2", "type": "numeric", "prompt": "Solve for $x$: $\\dfrac{x}{2} + \\dfrac{x}{3} = 10$", "answer": 12, "tolerance": 0, "explanation": "Multiply by 6: $3x + 2x = 60$, so $x = 12$." },
+    { "id": "q3", "type": "mcq", "prompt": "Solve for $x$: $x(x - 3) = 0$", "options": ["$x = 3$ only", "$x = 0$ or $x = 3$", "$x = 0$ or $x = -3$", "$x = -3$ only"], "answer": 1, "explanation": "Either $x = 0$ or $x - 3 = 0$." },
+    { "id": "q4", "type": "mcq", "prompt": "Solve for $x$: $(x + 2)(x - 5) = 0$", "options": ["$x = 2$ or $x = -5$", "$x = -2$ or $x = 5$", "$x = -10$", "$x = 3$"], "answer": 1, "explanation": "$x + 2 = 0$ gives $-2$; $x - 5 = 0$ gives $5$." },
+    { "id": "q5", "type": "mcq", "prompt": "Solve for $x$: $x^2 - 7x + 12 = 0$", "options": ["$x = 3$ or $x = 4$", "$x = -3$ or $x = -4$", "$x = 2$ or $x = 6$", "$x = 12$"], "answer": 0, "explanation": "$(x - 3)(x - 4) = 0$." },
+    { "id": "q6", "type": "truefalse", "prompt": "The only solution of $x^2 = 4x$ is $x = 4$.", "answer": false, "explanation": "$x^2 - 4x = 0$ gives $x(x - 4) = 0$, so $x = 0$ is also a solution." },
+    { "id": "q7", "type": "numeric", "prompt": "Solve for $x$: $\\dfrac{2x - 1}{3} = \\dfrac{x + 4}{2}$", "answer": 14, "tolerance": 0, "explanation": "$2(2x - 1) = 3(x + 4)$, so $4x - 2 = 3x + 12$ and $x = 14$." },
+    { "id": "q8", "type": "mcq", "prompt": "Make $r$ the subject of $C = 2\\pi r$.", "options": ["$r = C - 2\\pi$", "$r = \\dfrac{C}{2\\pi}$", "$r = 2\\pi C$", "$r = \\dfrac{2\\pi}{C}$"], "answer": 1, "explanation": "Divide both sides by $2\\pi$." },
+    { "id": "q9", "type": "match", "prompt": "Match each equation with its solution.", "marks": 5, "pairs": [
+      { "left": "$2x + 5 = 1$", "right": "-2" },
+      { "left": "$\\frac{x}{4} - 1 = 2$", "right": "12" },
+      { "left": "$3^x = 81$", "right": "4" },
+      { "left": "$5 - x = 9$", "right": "-4" },
+      { "left": "$2(x + 1) = x + 7$", "right": "5" }
+    ], "explanation": "Solve each and check by substitution." },
+    { "id": "q10", "type": "numeric", "prompt": "The length of a rectangle is 3 cm more than twice its breadth, and its perimeter is 36 cm. Find the breadth.", "unit": "cm", "answer": 5, "tolerance": 0, "explanation": "$2b + 2(2b + 3) = 36$, so $6b = 30$ and $b = 5$." },
+    { "id": "q11", "type": "numeric", "prompt": "Solve for $x$: $2^{x + 3} = 32$", "answer": 2, "tolerance": 0, "explanation": "$32 = 2^5$, so $x + 3 = 5$ and $x = 2$." },
+    { "id": "q12", "type": "mcq", "prompt": "Make $t$ the subject of $v = u + at$.", "options": ["$t = \\dfrac{v - u}{a}$", "$t = \\dfrac{v}{a} - u$", "$t = v - u - a$", "$t = \\dfrac{a}{v - u}$"], "answer": 0, "explanation": "Subtract $u$, then divide by $a$." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Solve for $x$: $x^2 - x - 20 = 0$", "memo": "$(x - 5)(x + 4) = 0$ ✓✓ (2)\n$x = 5$ or $x = -4$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Solve for $x$: $\\dfrac{x + 3}{4} - \\dfrac{x - 1}{3} = 1$", "memo": "Multiply by 12: $3(x + 3) - 4(x - 1) = 12$ ✓ (1)\n$3x + 9 - 4x + 4 = 12$ ✓ (1)\n$-x = -1$ ✓ (1)\n$x = 1$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "The sum of a number and its square is 30. Write an equation and solve it to find the possible numbers.", "memo": "$x^2 + x = 30$ ✓ (1)\n$x^2 + x - 30 = 0$ ✓ (1)\n$(x + 6)(x - 5) = 0$ ✓ (1)\n$x = 5$ or $x = -6$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "The area of a trapezium is $A = \\frac{1}{2}(a + b)h$.\n(a) Make $h$ the subject of the formula.  (2)\n(b) Find $h$ when $A = 36$, $a = 5$ and $b = 7$.  (1)", "memo": "(a) $2A = (a + b)h$ ✓; $h = \\dfrac{2A}{a + b}$ ✓ (2)\n(b) $h = \\dfrac{72}{12} = 6$ ✓ (1)" }
+  ]
+}

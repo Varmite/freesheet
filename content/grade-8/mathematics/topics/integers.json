@@ -1,0 +1,113 @@
+{
+  "id": "integers",
+  "title": "Integers",
+  "term": 1,
+  "summary": "Compare, order and calculate with positive and negative integers, including squares, cubes and roots, and solve problems about temperature, height and money.",
+  "notes": [
+    { "type": "heading", "text": "What are integers?" },
+    { "type": "paragraph", "text": "**Integers** are the whole numbers together with their negatives. Negative numbers describe values below zero: temperatures below freezing, depths below sea level, or money you owe." },
+    { "type": "formula", "latex": "\\mathbb{Z} = \\{\\ldots;\\ -3;\\ -2;\\ -1;\\ 0;\\ 1;\\ 2;\\ 3;\\ \\ldots\\}", "caption": "The set of integers" },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 70\" font-family=\"sans-serif\" font-size=\"13\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"12\" y1=\"40\" x2=\"408\" y2=\"40\"/><polyline points=\"20,35 12,40 20,45\"/><polyline points=\"400,35 408,40 400,45\"/><line x1=\"30\" y1=\"35\" x2=\"30\" y2=\"45\"/><line x1=\"66\" y1=\"35\" x2=\"66\" y2=\"45\"/><line x1=\"102\" y1=\"35\" x2=\"102\" y2=\"45\"/><line x1=\"138\" y1=\"35\" x2=\"138\" y2=\"45\"/><line x1=\"174\" y1=\"35\" x2=\"174\" y2=\"45\"/><line x1=\"210\" y1=\"33\" x2=\"210\" y2=\"47\"/><line x1=\"246\" y1=\"35\" x2=\"246\" y2=\"45\"/><line x1=\"282\" y1=\"35\" x2=\"282\" y2=\"45\"/><line x1=\"318\" y1=\"35\" x2=\"318\" y2=\"45\"/><line x1=\"354\" y1=\"35\" x2=\"354\" y2=\"45\"/><line x1=\"390\" y1=\"35\" x2=\"390\" y2=\"45\"/><path d=\"M102 32 Q192 0 282 32\"/><polyline points=\"273,24 282,32 271,33\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"30\" y=\"62\">-5</text><text x=\"66\" y=\"62\">-4</text><text x=\"102\" y=\"62\">-3</text><text x=\"138\" y=\"62\">-2</text><text x=\"174\" y=\"62\">-1</text><text x=\"210\" y=\"62\">0</text><text x=\"246\" y=\"62\">1</text><text x=\"282\" y=\"62\">2</text><text x=\"318\" y=\"62\">3</text><text x=\"354\" y=\"62\">4</text><text x=\"390\" y=\"62\">5</text><text x=\"192\" y=\"12\">+5</text></g></svg>", "caption": "A number line from −5 to 5. The arrow shows −3 + 5 = 2: start at −3 and move 5 steps to the right." },
+
+    { "type": "heading", "text": "Comparing and ordering integers" },
+    { "type": "paragraph", "text": "On a number line, numbers get **bigger to the right** and **smaller to the left**. So any positive number is bigger than any negative number, and a negative number with a bigger digit part is actually **smaller**: $-10 < -3$ because $-10$ is further left." },
+    { "type": "callout", "label": "Common mistake", "text": "$-8$ is **not** bigger than $-2$. Think of temperature: $-8\\ ^\\circ\\text{C}$ is colder than $-2\\ ^\\circ\\text{C}$." },
+    { "type": "definition", "term": "Additive inverse", "text": "The **additive inverse** of a number is the number you add to it to get $0$. The additive inverse of $7$ is $-7$, and the additive inverse of $-15$ is $15$, because $-15 + 15 = 0$." },
+
+    { "type": "heading", "text": "Adding and subtracting integers" },
+    { "type": "list", "items": [
+      "**Adding a positive number:** move right on the number line. $-3 + 5 = 2$.",
+      "**Adding a negative number:** move left. It is the same as subtracting. $4 + (-6) = 4 - 6 = -2$.",
+      "**Subtracting a positive number:** move left. $-2 - 5 = -7$.",
+      "**Subtracting a negative number:** this is the same as **adding** its inverse. $3 - (-4) = 3 + 4 = 7$."
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Two signs next to each other can be replaced by one: $+(+)$ and $-(-)$ become $+$; $+(-)$ and $-(+)$ become $-$. So $-8 - (-5) = -8 + 5 = -3$." },
+    { "type": "example", "title": "Worked example 1", "problem": "Calculate: (a) $-7 + 3$  (b) $-4 - 9$  (c) $6 - (-8)$  (d) $-12 + (-5) - (-10)$", "steps": [
+      "(a) Start at $-7$ and move 3 right: $-4$.",
+      "(b) Start at $-4$ and move 9 left: $-13$.",
+      "(c) Subtracting a negative is adding: $6 + 8 = 14$.",
+      "(d) $-12 - 5 + 10 = -17 + 10 = -7$."
+    ], "answer": "(a) $-4$  (b) $-13$  (c) $14$  (d) $-7$" },
+
+    { "type": "heading", "text": "Multiplying and dividing integers" },
+    { "type": "paragraph", "text": "Multiply or divide the numbers as usual, then decide the sign:" },
+    { "type": "table", "caption": "Sign rules for multiplication and division", "headers": ["Signs", "Answer", "Examples"], "rows": [
+      ["positive and positive", "positive", "$4 \\times 3 = 12$;  $20 \\div 5 = 4$"],
+      ["negative and negative", "positive", "$(-4) \\times (-3) = 12$;  $(-20) \\div (-5) = 4$"],
+      ["positive and negative", "negative", "$4 \\times (-3) = -12$;  $20 \\div (-5) = -4$"],
+      ["negative and positive", "negative", "$(-4) \\times 3 = -12$;  $(-20) \\div 5 = -4$"]
+    ] },
+    { "type": "paragraph", "text": "Why is negative × negative positive? Look at the pattern: $3 \\times (-2) = -6$, $2 \\times (-2) = -4$, $1 \\times (-2) = -2$, $0 \\times (-2) = 0$. Each answer goes up by $2$, so the next ones must be $(-1) \\times (-2) = 2$ and $(-2) \\times (-2) = 4$." },
+    { "type": "callout", "label": "Exam tip", "text": "When multiplying several integers, count the negative signs. An **even** number of negatives gives a positive answer; an **odd** number gives a negative answer. $(-2)(-3)(-1) = -6$ (three negatives)." },
+    { "type": "example", "title": "Worked example 2", "problem": "Calculate: (a) $(-6) \\times (-4)$  (b) $-36 \\div 9$  (c) $(-2) \\times 5 \\times (-3)$  (d) $\\dfrac{-48}{-6}$", "steps": [
+      "(a) Two negatives: positive. $24$.",
+      "(b) One negative: negative. $-4$.",
+      "(c) Two negatives: positive. $2 \\times 5 \\times 3 = 30$.",
+      "(d) Two negatives: positive. $8$."
+    ], "answer": "(a) $24$  (b) $-4$  (c) $30$  (d) $8$" },
+
+    { "type": "heading", "text": "Squares, cubes and roots of integers" },
+    { "type": "list", "items": [
+      "The square of a negative number is positive: $(-5)^2 = (-5)(-5) = 25$.",
+      "The cube of a negative number is negative: $(-2)^3 = (-2)(-2)(-2) = -8$.",
+      "Cube roots of negative numbers exist: $\\sqrt[3]{-8} = -2$, because $(-2)^3 = -8$.",
+      "Square roots of negative numbers do **not** exist in the real numbers: $\\sqrt{-16}$ has no answer, because no number multiplied by itself gives a negative."
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "$-5^2$ and $(-5)^2$ are different. In $-5^2$ only the $5$ is squared: $-5^2 = -25$. In $(-5)^2$ the whole $-5$ is squared: $(-5)^2 = 25$." },
+
+    { "type": "heading", "text": "Order of operations with integers" },
+    { "type": "paragraph", "text": "The usual order of operations applies: brackets, then powers and roots, then multiplication and division (left to right), then addition and subtraction (left to right). Be careful with the signs at every step." },
+    { "type": "example", "title": "Worked example 3", "problem": "Calculate: (a) $-3 \\times 4 - 2 \\times (-5)$  (b) $(-2)^3 - (-3)^2 \\times 2$  (c) $\\dfrac{-20 + 8}{-3}$", "steps": [
+      "(a) Multiply first: $-12 - (-10) = -12 + 10 = -2$.",
+      "(b) Powers first: $-8 - 9 \\times 2 = -8 - 18 = -26$.",
+      "(c) Work out the top first: $\\dfrac{-12}{-3} = 4$."
+    ], "answer": "(a) $-2$  (b) $-26$  (c) $4$" },
+
+    { "type": "heading", "text": "Properties of integers" },
+    { "type": "paragraph", "text": "Addition and multiplication of integers are **commutative** and **associative**, and multiplication is **distributive** over addition and subtraction, just like whole numbers. Subtraction and division are not commutative: $3 - (-2) = 5$ but $-2 - 3 = -5$." },
+
+    { "type": "heading", "text": "Problems in context" },
+    { "type": "example", "title": "Worked example 4: temperature", "problem": "At 05:00 the temperature in Sutherland was $-6\\ ^\\circ\\text{C}$. By 14:00 it was $11\\ ^\\circ\\text{C}$. By how many degrees did the temperature rise?", "steps": [
+      "Rise $= \\text{final} - \\text{start} = 11 - (-6) = 11 + 6 = 17$."
+    ], "answer": "It rose by $17\\ ^\\circ\\text{C}$." },
+    { "type": "example", "title": "Worked example 5: money", "problem": "Busi has R250 in her bank account. She withdraws R400 (the bank allows an overdraft), is charged a fee of R25, and then deposits R300. What is her final balance?", "steps": [
+      "$250 - 400 = -150$ (she owes the bank R150).",
+      "$-150 - 25 = -175$.",
+      "$-175 + 300 = 125$."
+    ], "answer": "R125" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Integers: $\\{\\ldots;\\ -2;\\ -1;\\ 0;\\ 1;\\ 2;\\ \\ldots\\}$. Numbers increase to the right on the number line, so $-10 < -3$.",
+      "A number plus its additive inverse is $0$.",
+      "Subtracting a negative is the same as adding: $a - (-b) = a + b$.",
+      "Multiplying or dividing: same signs give positive, different signs give negative.",
+      "$(-a)^2$ is positive; $(-a)^3$ is negative; $\\sqrt[3]{\\text{negative}}$ is negative; $\\sqrt{\\text{negative}}$ does not exist.",
+      "$-5^2 = -25$ but $(-5)^2 = 25$."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "Calculate $-7 + 3$.", "options": ["$-10$", "$-4$", "$4$", "$10$"], "answer": 1, "explanation": "Start at $-7$ and move 3 steps right: $-4$." },
+    { "id": "q2", "type": "numeric", "prompt": "Calculate $-8 - (-5)$.", "answer": -3, "tolerance": 0, "explanation": "Subtracting a negative is adding: $-8 + 5 = -3$." },
+    { "id": "q3", "type": "numeric", "prompt": "Calculate $(-6) \\times (-4)$.", "answer": 24, "tolerance": 0, "explanation": "Negative × negative = positive: $24$." },
+    { "id": "q4", "type": "numeric", "prompt": "Calculate $-36 \\div 9$.", "answer": -4, "tolerance": 0, "explanation": "Different signs give a negative answer: $-4$." },
+    { "id": "q5", "type": "truefalse", "prompt": "$-10 < -3$", "answer": true, "explanation": "$-10$ is further to the left on the number line than $-3$, so it is smaller." },
+    { "id": "q6", "type": "mcq", "prompt": "Which list is in ascending order (smallest to biggest)?", "options": ["$-2;\\ -8;\\ 0;\\ 3;\\ 5$", "$-8;\\ -2;\\ 0;\\ 3;\\ 5$", "$0;\\ -2;\\ 3;\\ 5;\\ -8$", "$5;\\ 3;\\ 0;\\ -2;\\ -8$"], "answer": 1, "explanation": "$-8$ is the smallest because it is furthest left, then $-2$, $0$, $3$, $5$." },
+    { "id": "q7", "type": "numeric", "prompt": "Calculate $(-3)^3$.", "answer": -27, "tolerance": 0, "explanation": "$(-3)(-3)(-3) = 9 \\times (-3) = -27$. An odd power of a negative number is negative." },
+    { "id": "q8", "type": "truefalse", "prompt": "$\\sqrt{-16} = -4$", "answer": false, "explanation": "$(-4)^2 = 16$, not $-16$. No real number squared gives a negative, so $\\sqrt{-16}$ does not exist in the real numbers." },
+    { "id": "q9", "type": "numeric", "prompt": "The temperature is $-6\\ ^\\circ\\text{C}$ and then rises by $9\\ ^\\circ\\text{C}$. What is the new temperature in °C?", "unit": "°C", "answer": 3, "tolerance": 0, "explanation": "$-6 + 9 = 3$." },
+    { "id": "q10", "type": "match", "prompt": "Match each calculation with its answer.", "marks": 5, "pairs": [
+      { "left": "$(-2) \\times (-3) \\times (-1)$", "right": "-6" },
+      { "left": "$-12 \\div (-4)$", "right": "3" },
+      { "left": "$(-5)^2$", "right": "25" },
+      { "left": "$-5^2$", "right": "-25" },
+      { "left": "$\\sqrt[3]{-8}$", "right": "-2" }
+    ], "explanation": "Three negatives give a negative product; two negatives in a division give a positive; $(-5)^2 = 25$ but $-5^2 = -25$; $(-2)^3 = -8$, so $\\sqrt[3]{-8} = -2$." },
+    { "id": "q11", "type": "numeric", "prompt": "Calculate $-3 \\times 4 - 2 \\times (-5)$.", "answer": -2, "tolerance": 0, "explanation": "Multiply first: $-12 - (-10) = -12 + 10 = -2$." },
+    { "id": "q12", "type": "short", "prompt": "What is the additive inverse of $-15$?", "answers": ["15", "+15"], "explanation": "$-15 + 15 = 0$, so the additive inverse is $15$." },
+    { "id": "q13", "type": "numeric", "prompt": "A diver is 35 m below sea level and a seagull is flying 20 m above sea level, directly above the diver. How far apart are they, in metres?", "unit": "m", "answer": 55, "tolerance": 0, "explanation": "Positions: $-35$ and $20$. Distance $= 20 - (-35) = 55$ m." },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "Calculate, showing your steps: $(-2)^3 - (-3)^2 \\times 2$", "memo": "$(-2)^3 = -8$ ✓ (1)\n$(-3)^2 \\times 2 = 9 \\times 2 = 18$ ✓ (1)\n$-8 - 18 = -26$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "Kagiso has R250 in his account. He withdraws R400, pays a bank fee of R25 and then deposits R300. Write a calculation using integers and find his final balance.", "memo": "$250 - 400 - 25 + 300$ ✓ (1)\n$= -150 - 25 + 300 = -175 + 300$ ✓ (1)\n$= \\text{R}125$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "Complete the pattern and use it to explain why a negative number times a negative number is positive:\n$3 \\times (-2) = -6$\n$2 \\times (-2) = -4$\n$1 \\times (-2) = -2$\n$0 \\times (-2) = \\ ?$\n$(-1) \\times (-2) = \\ ?$\n$(-2) \\times (-2) = \\ ?$", "memo": "$0$, $2$, $4$ ✓ (1)\nEach answer increases by $2$ as the first number decreases by $1$ ✓ (1)\nSo continuing the pattern past zero gives positive answers: negative × negative = positive ✓ (1)" }
+  ]
+}

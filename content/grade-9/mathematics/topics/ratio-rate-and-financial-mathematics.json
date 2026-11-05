@@ -1,0 +1,96 @@
+{
+  "id": "ratio-rate-and-financial-mathematics",
+  "title": "Ratio, Rate and Financial Mathematics",
+  "term": 1,
+  "summary": "Solve problems with direct and inverse proportion, and with commission, rentals, loans, hire purchase, exchange rates, inflation, and simple and compound interest.",
+  "notes": [
+    { "type": "heading", "text": "Direct and inverse proportion" },
+    { "type": "paragraph", "text": "Two quantities $x$ and $y$ are in **direct proportion** if $\\frac{y}{x}$ is constant: when $x$ doubles, $y$ doubles. They are in **inverse proportion** if $x \\times y$ is constant: when $x$ doubles, $y$ halves." },
+    { "type": "table", "caption": "Comparing direct and inverse proportion", "headers": ["", "Direct proportion", "Inverse proportion"], "rows": [
+      ["What stays constant", "$\\frac{y}{x} = k$", "$x \\times y = k$"],
+      ["Formula", "$y = kx$", "$y = \\frac{k}{x}$"],
+      ["Graph", "Straight line through the origin", "A curve (hyperbola) that gets closer to both axes"],
+      ["Example", "Cost of petrol and number of litres", "Speed and time for a fixed distance"]
+    ] },
+    { "type": "example", "title": "Worked example 1: inverse proportion", "problem": "(a) A trip takes 3 hours at 80 km/h. How long does it take at 120 km/h?\n(b) $x$ and $y$ are inversely proportional, and $y = 15$ when $x = 4$. Find $y$ when $x = 6$.", "steps": [
+      "(a) Distance $= 80 \\times 3 = 240$ km (constant). Time $= 240 \\div 120 = 2$ hours.",
+      "(b) $k = xy = 4 \\times 15 = 60$. When $x = 6$: $y = 60 \\div 6 = 10$."
+    ], "answer": "(a) 2 hours  (b) $y = 10$" },
+
+    { "type": "heading", "text": "Commission, rentals and budgets" },
+    { "type": "definition", "term": "Commission", "text": "**Commission** is money paid to a salesperson as a percentage of the value of what they sell. An estate agent who earns 6% commission on a R850 000 house earns $0{,}06 \\times 850\\ 000 = \\text{R}51\\ 000$." },
+    { "type": "definition", "term": "Rental", "text": "A **rental** is a fee paid to use something you do not own, such as a flat, a car or a sound system. Rentals often have a fixed part and a part that depends on use." },
+    { "type": "example", "title": "Worked example 2: car hire", "problem": "A car-hire company charges R350 per day plus R3 per kilometre. Thandeka hires a car for 3 days and drives 420 km. What does she pay?", "steps": [
+      "Daily charge: $3 \\times 350 = \\text{R}1\\ 050$.",
+      "Distance charge: $420 \\times 3 = \\text{R}1\\ 260$.",
+      "Total: $1\\ 050 + 1\\ 260 = \\text{R}2\\ 310$."
+    ], "answer": "R2 310" },
+    { "type": "paragraph", "text": "A **budget** is a plan that lists expected income and expenses. Fixed expenses (rent, school fees) stay the same each month; variable expenses (electricity, food) change. A budget helps you avoid spending more than you earn." },
+
+    { "type": "heading", "text": "Simple interest, loans and hire purchase" },
+    { "type": "formula", "latex": "A = P(1 + in)", "caption": "Simple interest: A = final amount, P = principal, i = annual rate as a decimal, n = number of years" },
+    { "type": "example", "title": "Worked example 3: hire purchase", "problem": "A laptop costs R9 000 cash. On hire purchase, a 10% deposit is paid and the balance is charged 15% simple interest per year over 2 years, paid in equal monthly instalments. Calculate the monthly instalment.", "steps": [
+      "Deposit: $0{,}1 \\times 9\\ 000 = \\text{R}900$; balance: $\\text{R}8\\ 100$.",
+      "Interest on the balance: $8\\ 100 \\times 0{,}15 \\times 2 = \\text{R}2\\ 430$.",
+      "Amount to repay: $8\\ 100 + 2\\ 430 = \\text{R}10\\ 530$.",
+      "Monthly instalment: $10\\ 530 \\div 24 = \\text{R}438{,}75$."
+    ], "answer": "R438,75 per month" },
+
+    { "type": "heading", "text": "Compound interest" },
+    { "type": "paragraph", "text": "With **compound interest**, the interest earned each year is added to the investment, and the next year's interest is calculated on this bigger amount. You earn **interest on interest**, so the money grows faster than with simple interest." },
+    { "type": "formula", "latex": "A = P(1 + i)^n", "caption": "Compound interest (compounded annually)" },
+    { "type": "example", "title": "Worked example 4: year by year and by formula", "problem": "R5 000 is invested at 8% per year, compounded annually. Calculate the amount after 3 years.", "steps": [
+      "Year 1: $5\\ 000 \\times 1{,}08 = \\text{R}5\\ 400$.",
+      "Year 2: $5\\ 400 \\times 1{,}08 = \\text{R}5\\ 832$.",
+      "Year 3: $5\\ 832 \\times 1{,}08 = \\text{R}6\\ 298{,}56$.",
+      "Formula: $A = 5\\ 000(1{,}08)^3 = \\text{R}6\\ 298{,}56$ ✓"
+    ], "answer": "R6 298,56" },
+    { "type": "example", "title": "Worked example 5: simple versus compound", "problem": "Compare R10 000 invested for 3 years at 10% per year (a) simple interest and (b) compound interest.", "steps": [
+      "(a) $A = 10\\ 000(1 + 0{,}1 \\times 3) = \\text{R}13\\ 000$.",
+      "(b) $A = 10\\ 000(1{,}1)^3 = \\text{R}13\\ 310$.",
+      "Compound interest earns $\\text{R}310$ more."
+    ], "answer": "Simple R13 000; compound R13 310" },
+    { "type": "callout", "label": "Common mistake", "text": "In $A = P(1 + i)^n$, only the bracket is raised to the power $n$. Calculate $(1{,}08)^3$ first, then multiply by $P$. Typing $5\\ 000 \\times 1{,}08^3$ on a calculator does this correctly; $(5\\ 000 \\times 1{,}08)^3$ does not." },
+
+    { "type": "heading", "text": "Inflation and exchange rates" },
+    { "type": "paragraph", "text": "**Inflation** is the general increase in prices over time. It works like compound interest: if inflation is 6% per year, a loaf of bread costing R18 will cost about $18 \\times 1{,}06^2 = \\text{R}20{,}22$ in two years." },
+    { "type": "example", "title": "Worked example 6: exchange rates", "problem": "The exchange rate is £1 = R23,40. (a) What does a £250 flight cost in rand? (b) How many pounds do you get for R10 000?", "steps": [
+      "(a) $250 \\times 23{,}40 = \\text{R}5\\ 850$.",
+      "(b) $10\\ 000 \\div 23{,}40 = £427{,}35$."
+    ], "answer": "(a) R5 850  (b) £427,35" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Direct proportion: $\\frac{y}{x}$ constant, straight line through the origin. Inverse proportion: $xy$ constant.",
+      "Commission is a percentage of sales; rentals often have a fixed and a usage part.",
+      "Simple interest: $A = P(1 + in)$, interest on the principal only.",
+      "Compound interest: $A = P(1 + i)^n$, interest on interest, so it grows faster.",
+      "Hire purchase: deposit, then interest on the balance, repaid in equal instalments.",
+      "Inflation increases prices like compound interest; convert currencies by multiplying or dividing by the exchange rate."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "An estate agent earns 6% commission on a house sold for R850 000. Calculate the commission.", "unit": "R", "answer": 51000, "tolerance": 0, "explanation": "$0{,}06 \\times 850\\ 000 = \\text{R}51\\ 000$." },
+    { "id": "q2", "type": "numeric", "prompt": "R5 000 is invested at 8% per year compound interest. Calculate the amount after 3 years, to the nearest cent.", "unit": "R", "answer": 6298.56, "tolerance": 0.01, "explanation": "$5\\ 000(1{,}08)^3 = \\text{R}6\\ 298{,}56$." },
+    { "id": "q3", "type": "mcq", "prompt": "The same amount is invested at the same rate for 10 years. Which gives more money?", "options": ["Simple interest", "Compound interest", "They are always equal", "It depends on the principal"], "answer": 1, "explanation": "Compound interest earns interest on previous interest, so after the first year it always gives more." },
+    { "id": "q4", "type": "truefalse", "prompt": "The graph of two quantities in direct proportion is a straight line through the origin.", "answer": true, "explanation": "$y = kx$ is a straight line through $(0;\\ 0)$." },
+    { "id": "q5", "type": "numeric", "prompt": "A packet of sweets is shared equally: 12 learners would get 15 sweets each. How many would each learner get if 20 learners share the same packet?", "answer": 9, "tolerance": 0, "explanation": "Inverse proportion: $12 \\times 15 = 180$ sweets; $180 \\div 20 = 9$." },
+    { "id": "q6", "type": "numeric", "prompt": "A loaf of bread costs R18. If inflation is 6% per year, what will it cost in 2 years? Round to the nearest cent.", "unit": "R", "answer": 20.22, "tolerance": 0.01, "explanation": "$18 \\times 1{,}06^2 = 20{,}2248 \\approx \\text{R}20{,}22$." },
+    { "id": "q7", "type": "numeric", "prompt": "R5 000 is invested at 8% per year simple interest. Calculate the total amount after 3 years.", "unit": "R", "answer": 6200, "tolerance": 0, "explanation": "$5\\ 000(1 + 0{,}08 \\times 3) = \\text{R}6\\ 200$." },
+    { "id": "q8", "type": "mcq", "prompt": "$x$ and $y$ are inversely proportional, and $y = 15$ when $x = 4$. Find $y$ when $x = 6$.", "options": ["$22{,}5$", "$10$", "$17$", "$9$"], "answer": 1, "explanation": "$xy = 60$, so $y = 60 \\div 6 = 10$." },
+    { "id": "q9", "type": "match", "prompt": "Match each term with its meaning.", "marks": 5, "pairs": [
+      { "left": "Commission", "right": "Payment calculated as a percentage of sales" },
+      { "left": "Inflation", "right": "The general increase in prices over time" },
+      { "left": "Compound interest", "right": "Interest on the principal and on earlier interest" },
+      { "left": "Rental", "right": "A fee paid to use something you do not own" },
+      { "left": "Budget", "right": "A plan of expected income and expenses" }
+    ], "explanation": "These are the key terms of Grade 9 financial mathematics." },
+    { "id": "q10", "type": "numeric", "prompt": "The exchange rate is £1 = R23,40. How many rand is £250?", "unit": "R", "answer": 5850, "tolerance": 0, "explanation": "$250 \\times 23{,}40 = \\text{R}5\\ 850$." },
+    { "id": "q11", "type": "numeric", "prompt": "Car hire costs R350 per day plus R3 per kilometre. Calculate the cost of hiring a car for 3 days and driving 420 km.", "unit": "R", "answer": 2310, "tolerance": 0, "explanation": "$3 \\times 350 + 420 \\times 3 = 1\\ 050 + 1\\ 260 = \\text{R}2\\ 310$." },
+    { "id": "q12", "type": "numeric", "prompt": "A loan of R8 000 is taken at 12% per year simple interest for 2 years and repaid in 24 equal monthly instalments. Calculate the monthly instalment, to the nearest cent.", "unit": "R", "answer": 413.33, "tolerance": 0.01, "explanation": "$A = 8\\ 000(1 + 0{,}12 \\times 2) = \\text{R}9\\ 920$; $9\\ 920 \\div 24 = \\text{R}413{,}33$." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "R10 000 is invested for 3 years at 10% per year.\n(a) Calculate the final amount with simple interest.  (1)\n(b) Calculate the final amount with interest compounded annually.  (2)\n(c) How much more does the compound interest investment earn?  (1)", "memo": "(a) $10\\ 000(1 + 0{,}3) = \\text{R}13\\ 000$ ✓ (1)\n(b) $10\\ 000(1{,}1)^3$ ✓ $= \\text{R}13\\ 310$ ✓ (2)\n(c) $\\text{R}310$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "R2 000 is invested at 5% per year, compounded annually. Without using the formula, calculate the amount at the end of each of the first two years, and the interest earned in the second year.", "memo": "Year 1: $2\\ 000 \\times 1{,}05 = \\text{R}2\\ 100$ ✓ (1)\nYear 2: $2\\ 100 \\times 1{,}05 = \\text{R}2\\ 205$ ✓ (1)\nInterest in year 2: $\\text{R}105$ (more than the R100 in year 1) ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "A laptop costs R9 000 cash. On hire purchase, you pay a 10% deposit, and the balance is charged 15% simple interest per year over 2 years. The balance plus interest is paid in 24 equal monthly instalments. Calculate the monthly instalment.", "memo": "Deposit R900; balance R8 100 ✓ (1)\nInterest $= 8\\ 100 \\times 0{,}15 \\times 2 = \\text{R}2\\ 430$ ✓ (1)\nTotal $= \\text{R}10\\ 530$ ✓ (1)\nInstalment $= 10\\ 530 \\div 24 = \\text{R}438{,}75$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "A journey takes 3 hours at an average speed of 80 km/h. How long will the same journey take at 120 km/h? Is this direct or inverse proportion?", "memo": "Inverse proportion (faster speed, less time) ✓ (1)\n$240 \\div 120 = 2$ hours ✓ (1)" }
+  ]
+}

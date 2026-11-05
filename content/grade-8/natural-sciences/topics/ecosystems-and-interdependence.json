@@ -1,0 +1,76 @@
+{
+  "id": "ecosystems-and-interdependence",
+  "title": "Ecosystems and Interdependence",
+  "term": 1,
+  "summary": "Biotic and abiotic factors, food chains and webs, energy pyramids, feeding relationships, adaptations and how humans affect the balance of an ecosystem.",
+  "notes": [
+    { "type": "heading", "text": "What is an ecosystem?" },
+    { "type": "definition", "term": "Ecosystem", "text": "All the living organisms in an area together with the non-living parts of their environment, and the ways they interact." },
+    { "type": "table", "caption": "The two parts of every ecosystem", "headers": ["Biotic factors (living)", "Abiotic factors (non-living)"], "rows": [
+      ["Plants (producers)", "Sunlight"],
+      ["Animals (consumers)", "Water and rainfall"],
+      ["Fungi and bacteria (decomposers)", "Temperature"],
+      ["", "Soil type and nutrients"],
+      ["", "Air (oxygen, carbon dioxide) and wind"]
+    ] },
+    { "type": "list", "items": [
+      "**Habitat**: the place where an organism lives (e.g. a frog in a vlei).",
+      "**Population**: all the organisms of one species living in an area.",
+      "**Community**: all the populations of different species living in an area.",
+      "**Biome**: a large region with a similar climate and vegetation, such as the savanna, fynbos, grassland or Karoo."
+    ] },
+    { "type": "heading", "text": "Feeding relationships" },
+    { "type": "table", "headers": ["Role", "How it gets energy", "South African example"], "rows": [
+      ["Producer", "Makes its own food by photosynthesis", "Grass, acacia tree, algae"],
+      ["Herbivore (primary consumer)", "Eats plants only", "Zebra, impala, grasshopper"],
+      ["Carnivore", "Eats other animals", "Lion, cheetah, eagle"],
+      ["Omnivore", "Eats plants and animals", "Baboon, bushpig, humans"],
+      ["Decomposer", "Breaks down dead material and waste, returning nutrients to the soil", "Mushrooms, bacteria"],
+      ["Scavenger", "Eats animals that are already dead", "Vulture, hyena"]
+    ] },
+    { "type": "heading", "text": "Food chains and food webs" },
+    { "type": "paragraph", "text": "A **food chain** shows how energy passes from one organism to the next. The arrow points in the direction energy flows, meaning *is eaten by*.\n\ngrass → grasshopper → frog → snake → eagle" },
+    { "type": "paragraph", "text": "In a real ecosystem most animals eat more than one kind of food, so food chains link to form a **food web**. If one population changes, the whole web is affected." },
+    { "type": "callout", "label": "Exam tip", "text": "Always draw arrows from the food to the feeder (from what is eaten to what eats it). Arrows show the flow of energy, not who hunts whom." },
+    { "type": "heading", "text": "Energy pyramids" },
+    { "type": "paragraph", "text": "Each step in a food chain is a **trophic level**. Only about **10%** of the energy at one level passes to the next; the rest is used for life processes or lost as heat. This is why there are many producers, fewer herbivores and very few top carnivores." },
+    { "type": "example", "title": "Energy along a food chain", "problem": "The grass in a field stores 10 000 kJ of energy. About how much energy reaches the snake in the chain grass → grasshopper → frog → snake?", "steps": [
+      "Grasshopper: 10% of 10 000 kJ = 1 000 kJ",
+      "Frog: 10% of 1 000 kJ = 100 kJ",
+      "Snake: 10% of 100 kJ = 10 kJ"
+    ], "answer": "About 10 kJ" },
+    { "type": "heading", "text": "Relationships between species" },
+    { "type": "table", "headers": ["Relationship", "Meaning", "Example"], "rows": [
+      ["Predator–prey", "One animal hunts and eats another", "Cheetah and springbok"],
+      ["Competition", "Organisms need the same limited resource", "Lions and hyenas competing for prey"],
+      ["Mutualism", "Both species benefit", "Oxpeckers eat ticks off buffalo"],
+      ["Parasitism", "One benefits, the host is harmed", "Ticks on a dog"],
+      ["Commensalism", "One benefits, the other is not affected", "Birds nesting in a tree"]
+    ] },
+    { "type": "heading", "text": "Adaptations and balance" },
+    { "type": "paragraph", "text": "An **adaptation** is a feature that helps an organism survive in its habitat, for example a camel's hump, a cactus's spines and thick waxy stem, or the long neck of a giraffe. Ecosystems stay in balance when populations are kept in check by food supply, predators and disease." },
+    { "type": "list", "items": [
+      "**Habitat destruction**: farming, mining and building remove homes for plants and animals.",
+      "**Pollution**: litter, sewage and pesticides poison organisms.",
+      "**Alien invasive species**: plants such as Port Jackson willow use large amounts of water and crowd out indigenous plants.",
+      "**Poaching and overfishing**: remove species faster than they can reproduce."
+    ] }
+  ],
+  "questions": [
+    { "id": "abiotic", "type": "mcq", "prompt": "Which of these is an ABIOTIC factor?", "options": ["Grass", "Bacteria", "Temperature", "Earthworms"], "answer": 2 },
+    { "id": "producer", "type": "short", "prompt": "What is the name for an organism that makes its own food?", "answers": ["producer", "a producer", "autotroph"] },
+    { "id": "arrow", "type": "truefalse", "prompt": "In a food chain, the arrow points from the organism that is eaten to the organism that eats it.", "answer": true, "explanation": "Arrows show the direction in which energy flows." },
+    { "id": "roles", "type": "match", "marks": 4, "prompt": "Match each organism to its role.", "pairs": [
+      { "left": "Mushroom", "right": "Decomposer" },
+      { "left": "Impala", "right": "Herbivore" },
+      { "left": "Baboon", "right": "Omnivore" },
+      { "left": "Acacia tree", "right": "Producer" }
+    ] },
+    { "id": "ten-percent", "type": "numeric", "prompt": "Plants in a food chain store 50 000 kJ of energy. Using the 10% rule, how much energy is passed on to the herbivores?", "answer": 5000, "tolerance": 0, "unit": "kJ" },
+    { "id": "mutualism", "type": "mcq", "prompt": "Oxpeckers eat ticks off a buffalo's back. What kind of relationship is this?", "options": ["Parasitism", "Mutualism", "Competition", "Predator–prey"], "answer": 1, "explanation": "The bird gets food and the buffalo loses its ticks, so both benefit." },
+    { "id": "population", "type": "short", "prompt": "What term describes all the organisms of one species living in an area?", "answers": ["population", "a population"] },
+    { "id": "pyramid", "type": "open", "marks": 2, "prompt": "Explain why there are usually fewer lions than zebras in a game reserve.", "memo": "✓ Only about 10% of energy passes from one trophic level to the next (energy is lost as heat and used for life processes) (1)\n✓ So there is much less energy available at the top of the food chain, which can support only a few carnivores (1)" },
+    { "id": "remove", "type": "open", "marks": 3, "prompt": "In the food chain grass → grasshopper → frog → snake, farmers spray pesticide that kills most of the grasshoppers. Describe what will happen to the grass and the frogs, and explain why.", "memo": "✓ The grass will increase because fewer grasshoppers eat it (1)\n✓ The frog population will decrease (1)\n✓ because they have less food (1)" },
+    { "id": "alien", "type": "open", "marks": 2, "prompt": "Explain how alien invasive plants threaten South African ecosystems.", "memo": "✓ They use large amounts of water / spread quickly (1)\n✓ and crowd out indigenous plants, so the animals that depend on those plants lose food and shelter (1)" }
+  ]
+}

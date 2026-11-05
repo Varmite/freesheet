@@ -1,0 +1,41 @@
+{
+  "id": "unseen-poetry",
+  "title": "Unseen Poetry",
+  "term": 3,
+  "summary": "How to approach a poem you have never seen before in Paper 2: a reading routine, finding the central metaphor, tone and theme, and answering contextual questions, with Emily Dickinson's 'Hope is the thing with feathers'.",
+  "notes": [
+    { "type": "heading", "text": "A reading routine" },
+    { "type": "list", "ordered": true, "items": [
+      "Read the title and the whole poem twice, once for overall sense and once slowly.",
+      "Work out the **literal situation**: who is speaking, about what, and where.",
+      "Find the **central image or metaphor** and follow it through the poem.",
+      "Notice **shifts** in tone, time or ideas (often at a new stanza or after 'but' or 'yet').",
+      "Decide on the **theme**: what the poem suggests about life.",
+      "Only then look closely at diction, sound and punctuation, asking what effect each choice has."
+    ] },
+    { "type": "passage", "title": "\"Hope\" is the thing with feathers – Emily Dickinson (published 1891; public domain)", "text": "\"Hope\" is the thing with feathers -\nThat perches in the soul -\nAnd sings the tune without the words -\nAnd never stops - at all -\n\nAnd sweetest - in the Gale - is heard -\nAnd sore must be the storm -\nThat could abash the little Bird\nThat kept so many warm -\n\nI've heard it in the chillest land -\nAnd on the strangest Sea -\nYet - never - in Extremity,\nIt asked a crumb - of me." },
+    { "type": "heading", "text": "Working through the poem" },
+    { "type": "list", "items": [
+      "**Central metaphor**: hope is an **extended metaphor** of a small bird that lives in the soul.",
+      "**Stanza 1**: hope 'sings the tune without the words': it does not need reasons or explanations, and it 'never stops'.",
+      "**Stanza 2**: hope sounds 'sweetest' in the 'Gale'. It is strongest in hard times; only a terrible storm could 'abash' (silence or shame) it.",
+      "**Stanza 3**: the speaker shifts to personal experience ('I've heard it'). 'Yet' introduces the final point: hope gives everything and asks for nothing, not even 'a crumb'.",
+      "**Form and punctuation**: short hymn-like stanzas (quatrains); Dickinson's dashes create pauses, like breaths or the bird's stop-start song.",
+      "**Tone**: gentle, admiring and grateful.",
+      "**Theme**: hope is a constant, selfless inner strength that sustains people through suffering."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "You will not be marked on 'the right answer' as much as on a well-supported one. Always quote briefly and explain the effect. If you are unsure of a word, use the context: 'abash' sits beside 'storm' and 'little Bird', so it must mean something like silence or defeat." }
+  ],
+  "questions": [
+    { "id": "metaphor", "type": "short", "prompt": "To what is hope compared throughout the poem?", "answers": ["a bird", "bird", "a small bird", "a little bird"] },
+    { "id": "extended", "type": "mcq", "prompt": "A metaphor developed over a whole poem is called…", "options": ["a simile", "an extended metaphor", "an apostrophe", "a paradox"], "answer": 1 },
+    { "id": "stanza", "type": "mcq", "prompt": "Each stanza of the poem has four lines. Such a stanza is called a…", "options": ["couplet", "tercet", "quatrain", "sestet"], "answer": 2 },
+    { "id": "gale", "type": "truefalse", "prompt": "The speaker suggests that hope is heard most sweetly during difficult times.", "answer": true },
+    { "id": "words", "type": "open", "marks": 2, "prompt": "What does 'sings the tune without the words' suggest about hope?", "memo": "✓ Hope does not need reasons, logic or explanations (1)\n✓ it is an instinctive feeling that we sense rather than state (1)" },
+    { "id": "storm", "type": "open", "marks": 3, "prompt": "Explain the meaning of stanza 2, referring to 'Gale' and 'storm'.", "memo": "✓ The gale/storm symbolises hardship or suffering (1)\n✓ Hope is strongest ('sweetest') in those times (1)\n✓ Only an extremely severe crisis could silence it, and it has comforted ('kept warm') many people (1)" },
+    { "id": "crumb", "type": "open", "marks": 2, "prompt": "What does the final line, 'It asked a crumb - of me', reveal about hope?", "memo": "✓ Hope is selfless and asks nothing in return (1)\n✓ The image of a crumb continues the bird metaphor (1)" },
+    { "id": "dashes", "type": "open", "marks": 2, "prompt": "Comment on the effect of Dickinson's use of dashes.", "memo": "✓ They create pauses that slow the reading (1)\n✓ suggesting hesitation/breath or the bird's stop-start song; they also emphasise words such as 'never' (1)" },
+    { "id": "shift", "type": "open", "marks": 2, "prompt": "How does the third stanza differ from the first two?", "memo": "✓ The speaker introduces personal experience ('I've heard it') (1)\n✓ 'Yet' signals the final point about hope's selflessness (1)" },
+    { "id": "tone", "type": "open", "marks": 2, "prompt": "Describe the tone of the poem, with a quotation in support.", "memo": "✓ Admiring/grateful/gentle (1)\n✓ e.g. 'sweetest', 'kept so many warm' (1)" }
+  ]
+}

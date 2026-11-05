@@ -1,0 +1,53 @@
+{
+  "id": "electronic-components",
+  "title": "Electronic Components",
+  "term": 3,
+  "summary": "Fixed and variable resistors and the colour code, resistors in series and parallel, LDRs and thermistors, diodes and LEDs, capacitors and transistors.",
+  "notes": [
+    { "type": "heading", "text": "Resistors" },
+    { "type": "paragraph", "text": "A **resistor** limits (reduces) the current in a circuit. Its resistance is measured in **ohms (Ω)**; 1 kΩ = 1 000 Ω." },
+    { "type": "heading", "text": "The resistor colour code" },
+    { "type": "table", "headers": ["Colour", "Value"], "rows": [
+      ["Black", "0"], ["Brown", "1"], ["Red", "2"], ["Orange", "3"], ["Yellow", "4"],
+      ["Green", "5"], ["Blue", "6"], ["Violet", "7"], ["Grey", "8"], ["White", "9"]
+    ] },
+    { "type": "paragraph", "text": "On a four-band resistor: **band 1** = first digit, **band 2** = second digit, **band 3** = multiplier (number of zeros), **band 4** = tolerance (gold ±5%, silver ±10%)." },
+    { "type": "example", "title": "Reading a resistor", "problem": "A resistor has bands yellow, violet, red, gold. What is its value?", "steps": ["Yellow = 4, violet = 7", "Red = 2 zeros", "47 followed by 00 = 4 700 Ω = 4,7 kΩ, ±5%"], "answer": "4,7 kΩ ±5%" },
+    { "type": "callout", "label": "Memory aid", "text": "**B**etter **B**e **R**ight **O**r **Y**our **G**reat **B**ig **V**enture **G**oes **W**rong: black, brown, red, orange, yellow, green, blue, violet, grey, white (0 to 9)." },
+    { "type": "heading", "text": "Resistors in series and parallel" },
+    { "type": "formula", "latex": "R_{\\text{series}} = R_1 + R_2 + R_3 + \\dots" },
+    { "type": "formula", "latex": "\\frac{1}{R_{\\text{parallel}}} = \\frac{1}{R_1} + \\frac{1}{R_2}", "caption": "The total resistance in parallel is always less than the smallest resistor" },
+    { "type": "example", "title": "Combining resistors", "problem": "Two 100 Ω resistors are connected (a) in series and (b) in parallel. Find the total resistance.", "steps": ["(a) 100 + 100 = 200 Ω", "(b) 1/R = 1/100 + 1/100 = 2/100, so R = 50 Ω"], "answer": "200 Ω and 50 Ω" },
+    { "type": "heading", "text": "Variable resistors and sensors" },
+    { "type": "table", "headers": ["Component", "What it does", "Use"], "rows": [
+      ["Variable resistor (potentiometer)", "Resistance changed by turning a knob or sliding", "Volume control, dimmer switch"],
+      ["LDR (light-dependent resistor)", "Resistance **decreases** as light increases (high resistance in the dark)", "Automatic street lights, burglar alarms"],
+      ["Thermistor (NTC)", "Resistance **decreases** as temperature rises", "Fire alarms, thermostats, digital thermometers"]
+    ] },
+    { "type": "heading", "text": "Diodes, LEDs, capacitors and transistors" },
+    { "type": "table", "headers": ["Component", "Function"], "rows": [
+      ["Diode", "Allows current to flow in **one direction only**; protects circuits and converts AC to DC"],
+      ["LED", "A diode that gives off light; uses little energy and lasts long; needs a series resistor"],
+      ["Capacitor", "Stores electrical charge and releases it; used for timing circuits and smoothing current; measured in farads (µF)"],
+      ["Transistor", "An electronic switch or amplifier with three legs (**collector, base, emitter**). A small current into the base switches on a larger current from collector to emitter"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "The LED's longer leg is the **anode** (+) and the shorter leg, next to the flat edge, is the **cathode** (−)." }
+  ],
+  "questions": [
+    { "id": "colour-red", "type": "numeric", "prompt": "What number does the colour red represent in the resistor colour code?", "answer": 2, "tolerance": 0 },
+    { "id": "read", "type": "numeric", "prompt": "A resistor's bands are brown, black, red, gold. What is its resistance in ohms?", "answer": 1000, "tolerance": 0, "unit": "Ω" },
+    { "id": "read2", "type": "numeric", "prompt": "A resistor's bands are red, red, brown, gold. What is its resistance in ohms?", "answer": 220, "tolerance": 0, "unit": "Ω" },
+    { "id": "series", "type": "numeric", "prompt": "Resistors of 220 Ω and 330 Ω are connected in series. What is the total resistance?", "answer": 550, "tolerance": 0, "unit": "Ω" },
+    { "id": "parallel", "type": "numeric", "prompt": "Two 60 Ω resistors are connected in parallel. What is the total resistance?", "answer": 30, "tolerance": 0, "unit": "Ω" },
+    { "id": "ldr", "type": "mcq", "prompt": "The resistance of an LDR…", "options": ["increases in bright light", "decreases in bright light", "stays the same", "depends on temperature"], "answer": 1 },
+    { "id": "diode", "type": "truefalse", "prompt": "A diode allows current to flow in both directions.", "answer": false },
+    { "id": "components", "type": "match", "marks": 4, "prompt": "Match each component to its function.", "pairs": [
+      { "left": "Capacitor", "right": "Stores charge" },
+      { "left": "Thermistor", "right": "Senses temperature" },
+      { "left": "Transistor", "right": "Electronic switch" },
+      { "left": "Potentiometer", "right": "Adjustable resistance" }
+    ] },
+    { "id": "transistor-legs", "type": "open", "marks": 3, "prompt": "Name the three legs of a transistor.", "memo": "✓ Collector (1)\n✓ Base (1)\n✓ Emitter (1)" },
+    { "id": "led-legs", "type": "open", "marks": 2, "prompt": "How can you tell which leg of an LED is positive?", "memo": "✓ The longer leg is the anode (+) (1)\n✓ The shorter leg next to the flat edge is the cathode (−) (1)" }
+  ]
+}

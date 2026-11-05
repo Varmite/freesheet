@@ -1,0 +1,43 @@
+{
+  "id": "data-handling",
+  "title": "Data Handling: Summarising and Interpreting Data",
+  "term": 3,
+  "summary": "Sampling and bias, grouped data, quartiles and interquartile range, box-and-whisker plots, comparing data sets, and identifying misleading statistics.",
+  "notes": [
+    { "type": "heading", "text": "Samples and bias" },
+    { "type": "paragraph", "text": "A **population** is the whole group you want to know about; a **sample** is the part you actually survey. A good sample is **representative** (similar to the population) and large enough." },
+    { "type": "list", "items": [
+      "**Bias** happens when the sample is not representative, e.g. asking only people at a gym how often they exercise.",
+      "**Leading questions** push people to a particular answer, e.g. 'Don't you agree that taxes are too high?'"
+    ] },
+    { "type": "heading", "text": "Quartiles and the five-number summary" },
+    { "type": "list", "items": [
+      "**Minimum** and **maximum**: the smallest and largest values.",
+      "**Median** ($Q_2$): the middle value.",
+      "**Lower quartile** ($Q_1$): the median of the lower half. **Upper quartile** ($Q_3$): the median of the upper half.",
+      "**Interquartile range** (IQR) $= Q_3 - Q_1$: the spread of the middle 50% of the data."
+    ] },
+    { "type": "example", "title": "Worked example 1", "problem": "Test marks: 34; 45; 52; 58; 61; 64; 70; 77; 85; 92. Find the five-number summary and the IQR.", "steps": [
+      "Minimum 34; maximum 92",
+      "Median: (61 + 64) ÷ 2 = 62,5",
+      "Lower half 34; 45; 52; 58; 61 → $Q_1 = 52$. Upper half 64; 70; 77; 85; 92 → $Q_3 = 77$",
+      "IQR = 77 − 52 = 25"
+    ], "answer": "34; 52; 62,5; 77; 92; IQR = 25" },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 110' font-family='sans-serif' font-size='10'><rect width='320' height='110' fill='white'/><line x1='20' y1='85' x2='300' y2='85' stroke='black'/><g text-anchor='middle'><text x='20' y='99'>30</text><text x='60' y='99'>40</text><text x='100' y='99'>50</text><text x='140' y='99'>60</text><text x='180' y='99'>70</text><text x='220' y='99'>80</text><text x='260' y='99'>90</text><text x='300' y='99'>100</text></g><line x1='36' y1='45' x2='108' y2='45' stroke='black'/><rect x='108' y='25' width='100' height='40' fill='#eee' stroke='black'/><line x1='150' y1='25' x2='150' y2='65' stroke='black' stroke-width='2'/><line x1='208' y1='45' x2='268' y2='45' stroke='black'/><line x1='36' y1='35' x2='36' y2='55' stroke='black'/><line x1='268' y1='35' x2='268' y2='55' stroke='black'/><g text-anchor='middle'><text x='36' y='18'>34</text><text x='108' y='18'>Q1 = 52</text><text x='150' y='78'>62,5</text><text x='208' y='18'>Q3 = 77</text><text x='268' y='18'>92</text></g></svg>", "caption": "Box-and-whisker plot of the test marks: minimum 34, Q1 = 52, median 62,5, Q3 = 77, maximum 92" },
+    { "type": "heading", "text": "Comparing data sets" },
+    { "type": "paragraph", "text": "To compare two groups, compare a measure of **centre** (mean or median) and a measure of **spread** (range or IQR). For example: 'Class A had a higher median (68 vs 62), but Class B's marks were more consistent (IQR 12 vs 25).'" },
+    { "type": "callout", "label": "Misleading statistics", "text": "Watch for: graphs whose axes do not start at zero, small or biased samples, averages that hide outliers, percentages without the actual numbers ('sales up 100%' could mean from 1 to 2), and correlation presented as causation." }
+  ],
+  "questions": [
+    { "id": "sample", "type": "mcq", "prompt": "To find out how much Grade 11s sleep, which sample is most representative?", "options": ["10 learners from the soccer team", "Every fifth learner on the Grade 11 class lists", "Learners who arrive first in the morning", "Your friends"], "answer": 1 },
+    { "id": "leading", "type": "truefalse", "prompt": "'Wouldn't you agree that our school needs a longer lunch break?' is a leading question.", "answer": true },
+    { "id": "median", "type": "numeric", "prompt": "Find the median of: 15; 22; 9; 18; 30; 12; 25", "answer": 18, "tolerance": 0 },
+    { "id": "iqr", "type": "numeric", "prompt": "For the data 4; 6; 7; 9; 11; 13; 15; 18, $Q_1 = 6{,}5$ and $Q_3 = 14$. What is the IQR?", "answer": 7.5, "tolerance": 0 },
+    { "id": "quartiles", "type": "open", "marks": 4, "prompt": "Find the five-number summary of: 12; 15; 18; 20; 22; 25; 28; 31; 35", "memo": "✓ Min 12, max 35 (1)\n✓ Median 22 (1)\n✓ $Q_1 = 16{,}5$ (1)\n✓ $Q_3 = 29{,}5$ (1)" },
+    { "id": "compare", "type": "open", "marks": 3, "prompt": "Team A: median 68 runs, IQR 30. Team B: median 61 runs, IQR 12. Compare the teams' batting performance.", "memo": "✓ Team A scores more runs on average (higher median) (1)\n✓ Team B is more consistent (smaller IQR) (1)\n✓ A sensible conclusion (e.g. A is stronger but less predictable) (1)" },
+    { "id": "misleading", "type": "open", "marks": 2, "prompt": "An advert says 'Sales up 200%!' Why might this be misleading?", "memo": "✓ It gives no actual numbers (1)\n✓ e.g. sales could have risen from 5 to 15 items, which is very small (1)" },
+    { "id": "box", "type": "mcq", "prompt": "In a box-and-whisker plot, the box shows…", "options": ["the whole data set", "the middle 50% of the data", "only the outliers", "the mean"], "answer": 1 },
+    { "id": "bias", "type": "open", "marks": 2, "prompt": "A radio station asks listeners to SMS their opinion on a new taxi law. Explain why the results may be biased.", "memo": "✓ Only listeners of that station who choose to SMS take part (self-selected sample) (1)\n✓ People with strong opinions are more likely to respond, so it is not representative (1)" },
+    { "id": "range", "type": "numeric", "prompt": "Daily sales: R1 250; R980; R1 640; R2 100; R1 180. Find the range.", "answer": 1120, "tolerance": 0, "unit": "rand" }
+  ]
+}

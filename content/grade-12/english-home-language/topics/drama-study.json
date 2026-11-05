@@ -1,0 +1,61 @@
+{
+  "id": "drama-study",
+  "title": "Drama Study: Hamlet",
+  "term": 2,
+  "summary": "Plot, characters, themes, imagery and dramatic techniques in Shakespeare's Hamlet, with key soliloquies and quotations, and preparation for contextual questions.",
+  "notes": [
+    { "type": "heading", "text": "Context" },
+    { "type": "paragraph", "text": "*Hamlet* (about 1600) is a **revenge tragedy** by William Shakespeare, set in the royal court of **Denmark**. It explores revenge, madness, mortality and corruption, and is famous for its soliloquies." },
+    { "type": "heading", "text": "Plot summary" },
+    { "type": "list", "ordered": true, "items": [
+      "**Act 1**: King Hamlet has died. His brother **Claudius** has taken the throne and married the queen, **Gertrude**. The **Ghost** of King Hamlet tells Prince **Hamlet** that Claudius murdered him and demands revenge. Hamlet decides to pretend to be mad.",
+      "**Act 2**: **Polonius** believes Hamlet is mad with love for his daughter **Ophelia**. Hamlet arranges for travelling players to perform a play.",
+      "**Act 3**: Hamlet's 'To be, or not to be' soliloquy. 'The Mousetrap' play re-enacts the murder; Claudius reacts with guilt. Hamlet finds Claudius praying but does not kill him. In Gertrude's chamber Hamlet kills Polonius, who is hiding behind a curtain (arras).",
+      "**Act 4**: Claudius sends Hamlet to England to be killed, but Hamlet escapes. Ophelia goes mad and drowns. **Laertes**, Polonius's son, returns seeking revenge and plots with Claudius.",
+      "**Act 5**: In the graveyard, Hamlet reflects on death (Yorick's skull). In the fencing match, Gertrude drinks poisoned wine and dies; Laertes wounds Hamlet with a poisoned sword, is wounded himself and confesses; Hamlet kills Claudius and dies. **Fortinbras** of Norway takes the throne; **Horatio** survives to tell the story."
+    ] },
+    { "type": "heading", "text": "Characters" },
+    { "type": "table", "headers": ["Character", "Key traits"], "rows": [
+      ["Hamlet", "Intelligent, philosophical, grieving, indecisive; his delay drives the tragedy"],
+      ["Claudius", "Ambitious, manipulative murderer and usurper; feels guilt but will not give up his gains"],
+      ["Gertrude", "Hamlet's mother; her hasty remarriage disgusts Hamlet"],
+      ["Polonius", "The king's talkative adviser; spies on others"],
+      ["Ophelia", "Obedient and fragile; driven to madness by her father's death and Hamlet's rejection"],
+      ["Laertes", "Acts quickly on revenge: a foil to Hamlet's hesitation"],
+      ["Horatio", "Hamlet's loyal, rational friend"]
+    ] },
+    { "type": "heading", "text": "Themes and imagery" },
+    { "type": "list", "items": [
+      "**Revenge and justice**: Hamlet, Laertes and Fortinbras all seek revenge for their fathers.",
+      "**Appearance versus reality**: Claudius's friendly face hides murder; Hamlet's 'antic disposition' hides his sanity.",
+      "**Madness**: real (Ophelia) and feigned (Hamlet).",
+      "**Mortality**: the graveyard scene and the soliloquies.",
+      "**Corruption and decay**: disease imagery ('Something is rotten in the state of Denmark')."
+    ] },
+    { "type": "table", "caption": "Key quotations", "headers": ["Quotation", "Speaker / significance"], "rows": [
+      ["'Frailty, thy name is woman!'", "Hamlet (1.2): disgust at Gertrude's remarriage"],
+      ["'Something is rotten in the state of Denmark.'", "Marcellus (1.4): corruption at court"],
+      ["'To be, or not to be: that is the question'", "Hamlet (3.1): life, death and action"],
+      ["'The play's the thing / Wherein I'll catch the conscience of the king.'", "Hamlet (2.2): plan to test Claudius"],
+      ["'Alas, poor Yorick! I knew him, Horatio'", "Hamlet (5.1): death levels everyone"]
+    ] },
+    { "type": "callout", "label": "Dramatic techniques", "text": "**Soliloquy**: a character alone reveals private thoughts. **Aside**: brief remark to the audience. **Dramatic irony**: the audience knows Claudius is guilty before others do. **Play within a play**: 'The Mousetrap'. **Foil**: Laertes and Fortinbras contrast with Hamlet." }
+  ],
+  "questions": [
+    { "id": "setting", "type": "short", "prompt": "In which country is Hamlet set?", "answers": ["denmark"] },
+    { "id": "murderer", "type": "short", "prompt": "Who murdered King Hamlet?", "answers": ["claudius"] },
+    { "id": "mousetrap", "type": "mcq", "prompt": "What is the purpose of 'The Mousetrap' play?", "options": ["To entertain Ophelia", "To test Claudius's guilt", "To celebrate the wedding", "To warn Fortinbras"], "answer": 1 },
+    { "id": "polonius", "type": "mcq", "prompt": "Where is Polonius hiding when Hamlet kills him?", "options": ["In the graveyard", "Behind a curtain (arras)", "On the battlements", "In the chapel"], "answer": 1 },
+    { "id": "foil", "type": "truefalse", "prompt": "Laertes acts as a foil to Hamlet because he acts quickly to avenge his father.", "answer": true },
+    { "id": "quotes", "type": "match", "marks": 4, "prompt": "Match each quotation to its speaker.", "pairs": [
+      { "left": "'Something is rotten in the state of Denmark.'", "right": "Marcellus" },
+      { "left": "'Frailty, thy name is woman!'", "right": "Hamlet (about Gertrude)" },
+      { "left": "Confesses the poisoned sword plot as he dies", "right": "Laertes" },
+      { "left": "Survives to tell Hamlet's story", "right": "Horatio" }
+    ] },
+    { "id": "delay", "type": "open", "marks": 3, "prompt": "Why does Hamlet not kill Claudius when he finds him praying?", "memo": "✓ He believes Claudius is praying and confessing (1)\n✓ so if killed then, Claudius's soul might go to heaven (1)\n✓ Hamlet wants a more complete revenge (shows his tendency to delay/overthink) (1)" },
+    { "id": "appearance", "type": "open", "marks": 3, "prompt": "Discuss the theme of appearance versus reality, with TWO examples.", "memo": "✓ Explanation of the theme (1)\n✓ Example 1, e.g. Claudius seems a good king but is a murderer (1)\n✓ Example 2, e.g. Hamlet pretends to be mad (1)" },
+    { "id": "soliloquy", "type": "open", "marks": 2, "prompt": "What is a soliloquy and why are Hamlet's soliloquies important?", "memo": "✓ A speech in which a character alone on stage reveals private thoughts (1)\n✓ They show Hamlet's inner conflict, doubts and reasoning (1)" },
+    { "id": "tragedy", "type": "open", "marks": 3, "prompt": "Explain why Hamlet is regarded as a tragic hero.", "memo": "✓ He is noble and admirable (a prince, intelligent) (1)\n✓ He has a fatal flaw: indecision/overthinking (1)\n✓ His actions lead to his downfall and death, and the deaths of others (1)" }
+  ]
+}

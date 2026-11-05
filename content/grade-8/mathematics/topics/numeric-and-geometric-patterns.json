@@ -1,0 +1,98 @@
+{
+  "id": "numeric-and-geometric-patterns",
+  "title": "Numeric and Geometric Patterns",
+  "term": 1,
+  "summary": "Investigate number and picture patterns with a constant difference, a constant ratio or neither, describe them in words and with a general rule, and use the rule to find any term.",
+  "notes": [
+    { "type": "heading", "text": "Patterns and terms" },
+    { "type": "paragraph", "text": "A **number pattern** (or sequence) is a list of numbers that follow a rule. Each number is called a **term**. The first term is $T_1$, the second term is $T_2$, and the $n$th term is $T_n$. The number $n$ is the **position** (or term number)." },
+    { "type": "table", "caption": "The pattern 5; 9; 13; 17; ...", "headers": ["Position $n$", "1", "2", "3", "4"], "rows": [
+      ["Term $T_n$", "5", "9", "13", "17"]
+    ] },
+    { "type": "paragraph", "text": "To understand a pattern, look at how you get from one term to the next. There are three main kinds of pattern in Grade 8." },
+
+    { "type": "heading", "text": "1. Patterns with a constant difference" },
+    { "type": "paragraph", "text": "In $5;\\ 9;\\ 13;\\ 17;\\ \\ldots$ you add $4$ each time. The difference between consecutive terms is **constant**. These patterns are also called **linear** patterns." },
+    { "type": "paragraph", "text": "**Finding the general rule.** Because we add $4$ each time, the rule contains $4n$. Compare $4n$ with the actual terms:" },
+    { "type": "table", "caption": "Comparing 4n with the pattern", "headers": ["$n$", "1", "2", "3", "4"], "rows": [
+      ["$4n$", "4", "8", "12", "16"],
+      ["$T_n$", "5", "9", "13", "17"]
+    ] },
+    { "type": "paragraph", "text": "Each term is $1$ more than $4n$, so the general rule is $T_n = 4n + 1$." },
+    { "type": "formula", "latex": "T_n = d \\times n + (T_1 - d)", "caption": "General term of a pattern with constant difference d" },
+    { "type": "example", "title": "Worked example 1", "problem": "For the pattern $5;\\ 9;\\ 13;\\ 17;\\ \\ldots$: (a) find the general rule, (b) find the 20th term, (c) which term is equal to $101$?", "steps": [
+      "(a) $d = 4$ and $T_1 = 5$, so $T_n = 4n + (5 - 4) = 4n + 1$.",
+      "(b) $T_{20} = 4(20) + 1 = 81$.",
+      "(c) Set the rule equal to $101$: $4n + 1 = 101$, so $4n = 100$ and $n = 25$. It is the 25th term."
+    ], "answer": "(a) $T_n = 4n + 1$  (b) $81$  (c) the 25th term" },
+    { "type": "example", "title": "Worked example 2: a decreasing pattern", "problem": "Find the general rule for $20;\\ 17;\\ 14;\\ 11;\\ \\ldots$ and the 10th term.", "steps": [
+      "Each time we subtract $3$, so $d = -3$.",
+      "$T_n = -3n + (20 - (-3)) = -3n + 23$.",
+      "Check: $T_2 = -6 + 23 = 17$ ✓",
+      "$T_{10} = -30 + 23 = -7$."
+    ], "answer": "$T_n = -3n + 23$; $T_{10} = -7$" },
+    { "type": "callout", "label": "Exam tip", "text": "Always check your rule by substituting $n = 1$ and $n = 2$. If it does not give the first two terms, it is wrong." },
+
+    { "type": "heading", "text": "2. Patterns with a constant ratio" },
+    { "type": "paragraph", "text": "In $3;\\ 6;\\ 12;\\ 24;\\ \\ldots$ you **multiply** by $2$ each time. The ratio between consecutive terms is constant: $\\frac{6}{3} = \\frac{12}{6} = \\frac{24}{12} = 2$. The next terms are $48$ and $96$." },
+    { "type": "paragraph", "text": "Patterns can also divide: $100;\\ 50;\\ 25;\\ 12{,}5;\\ \\ldots$ multiplies by $\\frac{1}{2}$ (halves) each time." },
+    { "type": "example", "title": "Worked example 3: growth", "problem": "A culture starts with 50 bacteria. The number doubles every hour. How many bacteria are there after 5 hours?", "steps": [
+      "After 1 hour: $50 \\times 2 = 100$; after 2 hours: $200$; after 3 hours: $400$; after 4 hours: $800$; after 5 hours: $1\\ 600$.",
+      "Using exponents: $50 \\times 2^5 = 50 \\times 32 = 1\\ 600$."
+    ], "answer": "$1\\ 600$ bacteria" },
+
+    { "type": "heading", "text": "3. Patterns with neither" },
+    { "type": "paragraph", "text": "Some patterns have no constant difference and no constant ratio. Look at how the differences change, or recognise special numbers." },
+    { "type": "table", "caption": "Special patterns", "headers": ["Pattern", "Name", "Rule"], "rows": [
+      ["1; 4; 9; 16; 25; ...", "Square numbers", "$T_n = n^2$"],
+      ["1; 8; 27; 64; ...", "Cube numbers", "$T_n = n^3$"],
+      ["1; 3; 6; 10; 15; ...", "Triangular numbers", "Add 2, then 3, then 4, ..."],
+      ["1; 1; 2; 3; 5; 8; ...", "Fibonacci numbers", "Add the two previous terms"]
+    ] },
+
+    { "type": "heading", "text": "Geometric (picture) patterns" },
+    { "type": "paragraph", "text": "A geometric pattern is made of shapes, for example matchsticks or tiles. Count the objects in each picture to get a number pattern, then find the rule." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 80\" font-family=\"sans-serif\" font-size=\"13\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\"><rect x=\"20\" y=\"15\" width=\"30\" height=\"30\"/><rect x=\"80\" y=\"15\" width=\"60\" height=\"30\"/><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"45\"/><rect x=\"170\" y=\"15\" width=\"90\" height=\"30\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"45\"/><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"45\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"35\" y=\"70\">Pattern 1</text><text x=\"110\" y=\"70\">Pattern 2</text><text x=\"215\" y=\"70\">Pattern 3</text></g></svg>", "caption": "Squares made of matchsticks: 4, 7 and 10 matchsticks." },
+    { "type": "example", "title": "Worked example 4: matchsticks", "problem": "In the diagram, the patterns use $4$, $7$ and $10$ matchsticks. (a) Find a rule for the number of matchsticks in pattern $n$. (b) How many matchsticks are in pattern 15? (c) Which pattern uses 61 matchsticks?", "steps": [
+      "(a) Each new square adds $3$ matchsticks, so $d = 3$. $T_n = 3n + (4 - 3) = 3n + 1$.",
+      "Explanation in words: one starting matchstick on the left, then $3$ more for every square.",
+      "(b) $T_{15} = 3(15) + 1 = 46$.",
+      "(c) $3n + 1 = 61$, so $3n = 60$ and $n = 20$."
+    ], "answer": "(a) $T_n = 3n + 1$  (b) $46$  (c) pattern 20" },
+    { "type": "callout", "label": "Common mistake", "text": "Do not just multiply: pattern 15 does not use $15 \\times 4 = 60$ matchsticks, because neighbouring squares **share** a side." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "$T_n$ is the term in position $n$.",
+      "Constant difference $d$: $T_n = dn + (T_1 - d)$. Check with $n = 1$ and $n = 2$.",
+      "To find which term has a given value, set the rule equal to the value and solve for $n$. If $n$ is not a natural number, the value is not in the pattern.",
+      "Constant ratio: multiply by the same number each time.",
+      "Know the square, cube and triangular numbers.",
+      "For picture patterns, count the objects and look for what is added each time."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "What is the next term in $7;\\ 11;\\ 15;\\ 19;\\ \\ldots$?", "options": ["$21$", "$22$", "$23$", "$24$"], "answer": 2, "explanation": "Add $4$ each time: $19 + 4 = 23$." },
+    { "id": "q2", "type": "numeric", "prompt": "The general rule of a pattern is $T_n = 3n + 2$. Calculate $T_{10}$.", "answer": 32, "tolerance": 0, "explanation": "$T_{10} = 3(10) + 2 = 32$." },
+    { "id": "q3", "type": "mcq", "prompt": "Describe the rule for the pattern $2;\\ 6;\\ 18;\\ 54;\\ \\ldots$", "options": ["Add 4", "Multiply by 3", "Add 4, then 12, then 36", "Multiply by 2"], "answer": 1, "explanation": "$6 \\div 2 = 3$, $18 \\div 6 = 3$, $54 \\div 18 = 3$: a constant ratio of $3$." },
+    { "id": "q4", "type": "numeric", "prompt": "What is the next term in $1;\\ 4;\\ 9;\\ 16;\\ 25;\\ \\ldots$?", "answer": 36, "tolerance": 0, "explanation": "These are the square numbers $1^2;\\ 2^2;\\ 3^2;\\ \\ldots$ The next is $6^2 = 36$." },
+    { "id": "q5", "type": "truefalse", "prompt": "The general rule of the pattern $4;\\ 8;\\ 12;\\ 16;\\ \\ldots$ is $T_n = 4n$.", "answer": true, "explanation": "$T_1 = 4$, $T_2 = 8$, $T_3 = 12$ ✓ The terms are the multiples of 4." },
+    { "id": "q6", "type": "numeric", "prompt": "In the pattern $5;\\ 9;\\ 13;\\ 17;\\ \\ldots$, which term (position number) is equal to $101$?", "answer": 25, "tolerance": 0, "explanation": "$T_n = 4n + 1 = 101$, so $4n = 100$ and $n = 25$." },
+    { "id": "q7", "type": "mcq", "prompt": "Which rule gives the pattern $6;\\ 11;\\ 16;\\ 21;\\ \\ldots$?", "options": ["$T_n = 6n$", "$T_n = 5n + 6$", "$T_n = 5n + 1$", "$T_n = n + 5$"], "answer": 2, "explanation": "$d = 5$ and $T_1 = 6$, so $T_n = 5n + (6 - 5) = 5n + 1$. Check: $T_2 = 11$ ✓" },
+    { "id": "q8", "type": "numeric", "prompt": "What is the next term in $1;\\ 3;\\ 6;\\ 10;\\ 15;\\ \\ldots$?", "answer": 21, "tolerance": 0, "explanation": "The differences are $2;\\ 3;\\ 4;\\ 5$, so the next difference is $6$: $15 + 6 = 21$." },
+    { "id": "q9", "type": "match", "prompt": "Match each pattern with its description.", "marks": 5, "pairs": [
+      { "left": "$3;\\ 7;\\ 11;\\ 15;\\ \\ldots$", "right": "Constant difference of 4" },
+      { "left": "$2;\\ 10;\\ 50;\\ 250;\\ \\ldots$", "right": "Constant ratio of 5" },
+      { "left": "$1;\\ 4;\\ 9;\\ 16;\\ \\ldots$", "right": "Square numbers" },
+      { "left": "$1;\\ 8;\\ 27;\\ 64;\\ \\ldots$", "right": "Cube numbers" },
+      { "left": "$20;\\ 17;\\ 14;\\ 11;\\ \\ldots$", "right": "Constant difference of -3" }
+    ], "explanation": "Check the difference first, then the ratio, then look for special numbers." },
+    { "id": "q10", "type": "numeric", "prompt": "The general rule of a pattern is $T_n = 7 - 2n$. Calculate $T_5$.", "answer": -3, "tolerance": 0, "explanation": "$T_5 = 7 - 2(5) = 7 - 10 = -3$." },
+    { "id": "q11", "type": "numeric", "prompt": "A row of squares made of matchsticks uses $3n + 1$ matchsticks for $n$ squares. How many matchsticks are needed for 15 squares?", "answer": 46, "tolerance": 0, "explanation": "$3(15) + 1 = 46$." },
+    { "id": "q12", "type": "mcq", "prompt": "Describe the rule for $100;\\ 50;\\ 25;\\ 12{,}5;\\ \\ldots$", "options": ["Subtract 50", "Subtract 25", "Divide by 2", "Divide by 4"], "answer": 2, "explanation": "Each term is half the previous term: a constant ratio of $\\frac{1}{2}$." },
+    { "id": "q13", "type": "open", "marks": 5, "prompt": "Consider the pattern $4;\\ 10;\\ 16;\\ 22;\\ \\ldots$\n(a) Find the general rule.  (2)\n(b) Calculate the 50th term.  (1)\n(c) Is $100$ a term in this pattern? If so, which term?  (2)", "memo": "(a) $d = 6$ ✓; $T_n = 6n - 2$ ✓ (2)\n(b) $T_{50} = 300 - 2 = 298$ ✓ (1)\n(c) $6n - 2 = 100$, $6n = 102$ ✓; $n = 17$, so yes, it is the 17th term ✓ (2)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Tiles are arranged in patterns. Pattern 1 uses 5 tiles, pattern 2 uses 8 tiles and pattern 3 uses 11 tiles.\n(a) How many tiles does pattern 4 use?  (1)\n(b) Write a rule for the number of tiles in pattern $n$.  (2)\n(c) How many tiles are in pattern 30?  (1)", "memo": "(a) $14$ ✓ (1)\n(b) $d = 3$ ✓; $T_n = 3n + 2$ ✓ (2)\n(c) $3(30) + 2 = 92$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "A rumour spreads at school. On day 1, 3 learners know it. Each day, the number of learners who know it is multiplied by 3. How many learners know the rumour on day 5? Show the pattern.", "memo": "$3;\\ 9;\\ 27;\\ 81;\\ 243$ ✓✓ (constant ratio of 3) (2)\nOn day 5, $243$ learners ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "Find the general rule of the pattern $-3;\\ 1;\\ 5;\\ 9;\\ \\ldots$ and use it to calculate the 100th term.", "memo": "$d = 4$ ✓ (1)\n$T_n = 4n + (-3 - 4) = 4n - 7$ ✓ (1)\n$T_{100} = 400 - 7 = 393$ ✓ (1)" }
+  ]
+}

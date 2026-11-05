@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "grade": 8,
+  "id": "economic-and-management-sciences",
+  "name": "Economic and Management Sciences",
+  "description": "CAPS Grade 8 EMS: the government and the national budget, standard of living, accounting concepts and the accounting equation, source documents, the Cash Receipts and Cash Payments Journals, the General Ledger, factors of production and forms of ownership.",
+  "topics": [
+    { "id": "government-and-the-national-budget", "title": "The Government and the National Budget", "term": 1 },
+    { "id": "standard-of-living", "title": "Standard of Living", "term": 1 },
+    { "id": "accounting-concepts", "title": "Accounting Concepts and the Accounting Equation", "term": 1 },
+    { "id": "source-documents", "title": "Source Documents", "term": 2 },
+    { "id": "cash-receipts-journal", "title": "The Cash Receipts Journal", "term": 2 },
+    { "id": "cash-payments-journal", "title": "The Cash Payments Journal", "term": 3 },
+    { "id": "general-ledger", "title": "The General Ledger", "term": 3 },
+    { "id": "factors-of-production", "title": "Factors of Production", "term": 4 },
+    { "id": "forms-of-ownership", "title": "Forms of Ownership", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 90, "totalMarks": 75 }
+  ]
+}

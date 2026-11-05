@@ -1,0 +1,50 @@
+{
+  "id": "visual-literacy-cartoons",
+  "title": "Visual Literacy: Cartoons and Comic Strips",
+  "term": 2,
+  "summary": "Analysing cartoons and comic strips: visual techniques, captions and speech bubbles, humour and satire, the cartoonist's message and target, and answering Paper 1 visual questions.",
+  "notes": [
+    { "type": "heading", "text": "Types of cartoons" },
+    { "type": "list", "items": [
+      "**Comic strips**: a sequence of frames telling a short story, often with recurring characters (e.g. *Madam & Eve*).",
+      "**Editorial (political) cartoons**: single frames that comment on current events, often using **satire** to criticise people in power."
+    ] },
+    { "type": "heading", "text": "Visual techniques" },
+    { "type": "table", "headers": ["Technique", "Effect"], "rows": [
+      ["Caricature (exaggerated features)", "Makes a person recognisable and often mocks them"],
+      ["Facial expressions and body language", "Show emotions: anger, surprise, fear, smugness"],
+      ["Size and position", "Larger figures seem more powerful; foreground draws attention"],
+      ["Symbols and labels", "Represent ideas (a sinking ship for a failing company; a fat cat for greedy executives)"],
+      ["Font and bubble shape", "Bold or jagged text shows shouting; cloud bubbles show thoughts"],
+      ["Motion lines and sound effects", "Show movement and noise"],
+      ["Frame sequence", "Builds up to the punchline in the final frame"]
+    ] },
+    { "type": "heading", "text": "Humour and satire" },
+    { "type": "paragraph", "text": "Humour is created through **irony** (the opposite of what is expected), **exaggeration**, **puns**, **incongruity** (things that don't fit together) and an unexpected **punchline**. **Satire** uses humour to criticise and encourage change." },
+    { "type": "passage", "title": "Described cartoon (original)", "text": "Frame 1: A man in a suit stands at a podium covered in microphones, labelled 'MINISTER OF ENERGY'. He smiles broadly and says: 'Load-shedding will end very soon. Our plan is working!'\nFrame 2: The lights in the hall go out. Only his teeth and eyes are visible in the dark.\nFrame 3: In the dark, a voice from the audience says: 'Soon, as in… now?'" },
+    { "type": "example", "title": "Analysing the cartoon", "problem": "Explain the humour and the message.", "steps": [
+      "Irony: the minister promises that load-shedding will end, and at that very moment the power fails.",
+      "Visual humour: in frame 2, only his smile shows, mocking his confident promise.",
+      "The audience member's question is sarcastic.",
+      "Message: the cartoonist satirises officials whose promises about electricity are not believable."
+    ], "answer": "Situational irony and sarcasm criticise empty political promises." },
+    { "type": "callout", "label": "Exam tip", "text": "Answer with evidence from the visual: describe what you SEE (expression, size, symbol, text) and then explain what it SUGGESTS. For 'Is the cartoon effective?' give a clear opinion with two reasons." }
+  ],
+  "questions": [
+    { "id": "caricature", "type": "short", "prompt": "What is a drawing that exaggerates a person's features for comic effect called?", "answers": ["caricature", "a caricature"] },
+    { "id": "satire", "type": "mcq", "prompt": "Satire uses humour mainly to…", "options": ["entertain children", "criticise and encourage change", "sell products", "teach grammar"], "answer": 1 },
+    { "id": "thought", "type": "truefalse", "prompt": "Cloud-shaped bubbles in a cartoon usually show a character's thoughts.", "answer": true },
+    { "id": "techniques", "type": "match", "marks": 4, "prompt": "Match each technique to its effect.", "pairs": [
+      { "left": "Large, bold, jagged text", "right": "Shouting or anger" },
+      { "left": "Motion lines", "right": "Movement" },
+      { "left": "A character drawn much larger than others", "right": "Power or importance" },
+      { "left": "A fat cat in a suit", "right": "Symbol of greed" }
+    ] },
+    { "id": "irony", "type": "open", "marks": 3, "prompt": "Explain the irony in the described cartoon.", "memo": "✓ The minister says load-shedding will end soon (1)\n✓ The power fails immediately (1)\n✓ This contradicts his promise and exposes it as empty (1)" },
+    { "id": "frame2", "type": "open", "marks": 2, "prompt": "Why do you think the cartoonist shows only the minister's teeth and eyes in frame 2?", "memo": "✓ It shows the room has lost power (1)\n✓ and mocks his confident smile, which now looks foolish (1)" },
+    { "id": "sarcasm", "type": "open", "marks": 2, "prompt": "Identify the tone of the audience member's question and explain it.", "memo": "✓ Sarcastic/mocking (1)\n✓ He pretends to ask whether 'soon' means now, highlighting the gap between promise and reality (1)" },
+    { "id": "message", "type": "open", "marks": 2, "prompt": "What is the cartoonist's message?", "memo": "✓ Officials make unrealistic promises about electricity (1)\n✓ The public has lost trust in such promises (1)" },
+    { "id": "effective", "type": "open", "marks": 3, "prompt": "Is the cartoon effective? Give a reason based on the visuals and one based on the text.", "memo": "✓ Clear opinion (1)\n✓ Visual reason, e.g. the darkness in frame 2 (1)\n✓ Text reason, e.g. the sarcastic punchline (1)" },
+    { "id": "sequence", "type": "open", "marks": 2, "prompt": "Why is the punchline of a comic strip usually in the final frame?", "memo": "✓ Earlier frames set up a situation or expectation (1)\n✓ The final frame overturns it, creating surprise and humour (1)" }
+  ]
+}

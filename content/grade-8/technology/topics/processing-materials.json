@@ -1,0 +1,57 @@
+{
+  "id": "processing-materials",
+  "title": "Processing Materials",
+  "term": 4,
+  "summary": "Properties and uses of wood, metals and plastics, processing methods (cutting, shaping, joining and finishing), recycling plastics, and protecting materials from deterioration.",
+  "notes": [
+    { "type": "heading", "text": "What is processing?" },
+    { "type": "paragraph", "text": "**Processing** means changing raw materials into useful products by **cutting**, **shaping**, **joining** and **finishing** them. Choosing the right material depends on its **properties**." },
+    { "type": "heading", "text": "Types of materials" },
+    { "type": "table", "headers": ["Material", "Types and examples", "Useful properties"], "rows": [
+      ["Wood (timber)", "**Hardwood** from broad-leaved trees (oak, kiaat, meranti); **softwood** from conifers (pine); **manufactured boards** (plywood, chipboard, MDF)", "Strong, easy to work, renewable, good insulator, attractive"],
+      ["Ferrous metals (contain iron)", "Steel, cast iron, stainless steel", "Very strong and hard; most rust (except stainless steel); magnetic"],
+      ["Non-ferrous metals (no iron)", "Aluminium, copper, brass, zinc, gold", "Do not rust; aluminium is light; copper is an excellent conductor"],
+      ["Thermoplastics", "PET (cooldrink bottles), polythene (plastic bags), PVC (pipes), acrylic (Perspex)", "Can be softened by heating and reshaped many times; can be recycled"],
+      ["Thermosetting plastics", "Melamine (plates, kitchen tops), Bakelite (pot handles, plugs), epoxy resin", "Set permanently when heated once; heat resistant; cannot be remoulded"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "**Thermo**plastics soften with heat again and again (like chocolate). **Thermosetting** plastics are set once and then char or burn if heated again (like baking a cake)." },
+    { "type": "heading", "text": "Processing methods" },
+    { "type": "table", "headers": ["Process", "Methods and tools"], "rows": [
+      ["Measuring and marking", "Steel rule, try square, marking gauge, scriber (for metal), pencil (for wood)"],
+      ["Cutting", "Tenon saw and coping saw (wood), hacksaw (metal), snips (sheet metal), craft knife"],
+      ["Shaping", "Files, sandpaper, chisels, planes; bending acrylic with a strip heater; moulding"],
+      ["Joining", "Nails, screws, glue (wood glue, epoxy), nuts and bolts, rivets, soldering and welding (metal), wood joints such as butt, lap and dowel joints"],
+      ["Finishing", "Sanding, painting, varnishing, oiling, polishing, galvanising, powder-coating"]
+    ] },
+    { "type": "heading", "text": "Deterioration and protection" },
+    { "type": "table", "headers": ["Material", "How it deteriorates", "Protection"], "rows": [
+      ["Wood", "Rot from moisture, termites and borer beetles, warping and cracking in the sun", "Paint, varnish, wood preservative (e.g. creosote), treated timber"],
+      ["Iron and steel", "Rust (needs oxygen and water)", "Paint, oil, galvanising with zinc, plastic coating, using stainless steel"],
+      ["Plastics", "Become brittle and fade in UV sunlight", "UV stabilisers in the plastic, paint, keeping them shaded"]
+    ] },
+    { "type": "heading", "text": "Plastics and the environment" },
+    { "type": "paragraph", "text": "Most plastics are made from **oil** (a non-renewable resource) and take hundreds of years to break down, polluting land and oceans. Plastics are marked with a **recycling code** (a number from 1 to 7 inside a triangle of arrows) so they can be sorted. Recycled PET bottles can be made into fibres for clothing, carpets and new bottles." },
+    { "type": "list", "items": [
+      "**Reduce**: carry a reusable shopping bag; avoid unnecessary packaging.",
+      "**Reuse**: use containers again for storage or projects.",
+      "**Recycle**: sort waste and take it to a recycling depot or buy-back centre."
+    ] }
+  ],
+  "questions": [
+    { "id": "softwood", "type": "mcq", "prompt": "Pine is an example of a…", "options": ["hardwood", "softwood", "manufactured board", "thermoplastic"], "answer": 1 },
+    { "id": "ferrous", "type": "short", "prompt": "What do we call metals that contain iron?", "answers": ["ferrous", "ferrous metals"] },
+    { "id": "thermo", "type": "mcq", "prompt": "Which type of plastic can be softened by heat and reshaped many times?", "options": ["Thermosetting plastic", "Thermoplastic", "Bakelite", "Melamine"], "answer": 1 },
+    { "id": "hacksaw", "type": "short", "prompt": "Which saw is used to cut metal?", "answers": ["hacksaw", "a hacksaw"] },
+    { "id": "galvanise", "type": "truefalse", "prompt": "Galvanising means coating steel with zinc to prevent rusting.", "answer": true },
+    { "id": "processes", "type": "match", "marks": 4, "prompt": "Match each task to the process.", "pairs": [
+      { "left": "Varnishing a table", "right": "Finishing" },
+      { "left": "Riveting two metal strips", "right": "Joining" },
+      { "left": "Filing the edge of acrylic", "right": "Shaping" },
+      { "left": "Using a coping saw on plywood", "right": "Cutting" }
+    ] },
+    { "id": "pot-handle", "type": "open", "marks": 2, "prompt": "Why are pot handles made from a thermosetting plastic such as Bakelite?", "memo": "✓ It is heat resistant and does not soften when hot (1)\n✓ It is a poor conductor of heat, so the handle stays cool / safe to hold (1)" },
+    { "id": "wood-protect", "type": "open", "marks": 2, "prompt": "Give TWO ways to protect an outdoor wooden bench from deterioration.", "memo": "Any two (1 each): paint; varnish; wood preservative; use treated timber; oil" },
+    { "id": "plastics-env", "type": "open", "marks": 3, "prompt": "Explain THREE problems that plastics cause for the environment.", "memo": "Any three (1 each): made from non-renewable oil; take hundreds of years to break down; litter on land; ocean pollution harming marine life; release toxic fumes when burnt" },
+    { "id": "copper", "type": "open", "marks": 2, "prompt": "Why is copper used for electrical wires?", "memo": "✓ It is an excellent conductor of electricity (1)\n✓ It is ductile (can be drawn into wires) and does not rust (1)" }
+  ]
+}

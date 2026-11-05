@@ -1,0 +1,67 @@
+{
+  "id": "speeches-reports-and-formal-letters",
+  "title": "Speeches, Reports and Formal Letters",
+  "term": 2,
+  "summary": "Writing and delivering speeches, the format of formal reports and newspaper reports, and formal letters to the press and of application, with register and structure.",
+  "notes": [
+    { "type": "heading", "text": "Speeches" },
+    { "type": "paragraph", "text": "A **speech** is written to be **heard**, so it must be clear, engaging and easy to follow. It should suit the **audience**, **purpose** and **occasion** (e.g. a farewell, a prize-giving, a campaign speech for the RCL)." },
+    { "type": "list", "ordered": true, "items": [
+      "**Greeting**: acknowledge the audience ('Good morning, Principal, teachers and fellow learners').",
+      "**Introduction**: grab attention with a question, quotation, anecdote or surprising fact, and state your topic.",
+      "**Body**: three main points, each with examples.",
+      "**Conclusion**: summarise and end memorably, e.g. with a call to action.",
+      "**Thank the audience**."
+    ] },
+    { "type": "table", "caption": "Rhetorical devices for speeches", "headers": ["Device", "Example"], "rows": [
+      ["Rule of three (triplets)", "'We must learn, we must lead and we must serve.'"],
+      ["Rhetorical question", "'What kind of school do we want to leave behind?'"],
+      ["Repetition", "'Together we can… Together we will…'"],
+      ["Direct address", "'You, the Grade 9s, are the leaders of tomorrow.'"],
+      ["Inclusive language", "'we', 'us', 'our'"]
+    ] },
+    { "type": "callout", "label": "Delivery tips", "text": "Make eye contact, speak clearly and not too fast, vary your tone, use cue cards rather than reading every word, and stand confidently." },
+    { "type": "heading", "text": "Formal reports" },
+    { "type": "paragraph", "text": "A **formal report** gives factual information about an investigation or event to a specific reader (e.g. a report to the principal on littering at school). It is objective, uses formal language and is often written in the passive voice and the past tense." },
+    { "type": "table", "headers": ["Section", "Content"], "rows": [
+      ["Heading", "To, From, Date, Subject"],
+      ["Terms of reference", "Who asked for the report and why"],
+      ["Procedure", "How the information was gathered (surveys, interviews, observation)"],
+      ["Findings", "The facts discovered, often under numbered sub-headings"],
+      ["Conclusions", "What the findings mean"],
+      ["Recommendations", "Practical suggestions for action"],
+      ["Signature", "Name and position of the writer"]
+    ] },
+    { "type": "heading", "text": "Newspaper reports" },
+    { "type": "list", "items": [
+      "**Headline**: short and catchy, in the present tense ('Learners Plant 500 Trees').",
+      "**By-line** and **dateline**: the reporter's name, the place and date.",
+      "**Lead paragraph**: answers the **5 Ws and H**: who, what, when, where, why and how.",
+      "**Body**: further details in order of importance (the inverted pyramid), with quotations from witnesses or experts.",
+      "Written in the **third person**, objectively, in short paragraphs."
+    ] },
+    { "type": "heading", "text": "Formal letters" },
+    { "type": "list", "items": [
+      "**Letter to the press**: written to a newspaper editor to express an opinion on a public issue. Begin 'Dear Editor' or 'Sir/Madam', state your view and reasons, and end 'Yours faithfully' with your name and town.",
+      "**Letter of application**: applies for a job, a bursary or a position. State the position and where you saw it, describe your relevant skills and experience, say why you are suitable, and mention attachments such as your CV."
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Formal writing avoids slang, contractions (don't, can't) and abbreviations such as 'LOL'. Keep sentences clear and paragraphs focused." }
+  ],
+  "questions": [
+    { "id": "five-ws", "type": "open", "marks": 3, "prompt": "Which SIX questions should the lead paragraph of a newspaper report answer?", "memo": "✓✓✓ Who, what, when, where, why and how (½ each)" },
+    { "id": "headline-tense", "type": "mcq", "prompt": "Newspaper headlines are usually written in the…", "options": ["past perfect tense", "present tense", "future tense", "past continuous tense"], "answer": 1 },
+    { "id": "recommendations", "type": "short", "prompt": "Which section of a formal report gives practical suggestions for action?", "answers": ["recommendations", "the recommendations"] },
+    { "id": "triplet", "type": "mcq", "prompt": "'We came, we saw, we conquered' is an example of…", "options": ["the rule of three", "a rhetorical question", "a pun", "an oxymoron"], "answer": 0 },
+    { "id": "press", "type": "truefalse", "prompt": "A letter to the press is written to the editor of a newspaper.", "answer": true },
+    { "id": "sections", "type": "match", "marks": 4, "prompt": "Match each section of a formal report to its content.", "pairs": [
+      { "left": "Terms of reference", "right": "Who asked for the report and why" },
+      { "left": "Procedure", "right": "How information was gathered" },
+      { "left": "Findings", "right": "Facts discovered" },
+      { "left": "Conclusions", "right": "What the findings mean" }
+    ] },
+    { "id": "speech-opening", "type": "open", "marks": 3, "prompt": "Write the opening (greeting and introduction) of a speech for the RCL elections.", "memo": "✓ Appropriate greeting to audience (1)\n✓ Attention-grabbing opening (question/anecdote/fact) (1)\n✓ States purpose: why the speaker should be elected (1)" },
+    { "id": "delivery", "type": "open", "marks": 2, "prompt": "Give TWO tips for delivering a speech well.", "memo": "Any two (1 each): eye contact; clear and steady pace; vary tone; cue cards; confident posture; practise" },
+    { "id": "application", "type": "open", "marks": 3, "prompt": "Name THREE things that should be included in a letter of application.", "memo": "Any three (1 each): position applied for and where advertised; relevant skills/experience; why suitable; availability; attached CV; contact details; formal close" },
+    { "id": "objective", "type": "open", "marks": 2, "prompt": "Why should a newspaper report be objective?", "memo": "✓ Its purpose is to inform readers of the facts (1)\n✓ so the reporter should not include personal opinions or bias (1)" }
+  ]
+}

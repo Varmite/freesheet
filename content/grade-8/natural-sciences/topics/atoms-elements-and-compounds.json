@@ -1,0 +1,71 @@
+{
+  "id": "atoms-elements-and-compounds",
+  "title": "Atoms, Elements and Compounds",
+  "term": 2,
+  "summary": "The structure of the atom, the first 20 elements of the Periodic Table, chemical symbols and formulae, and the difference between elements, compounds and mixtures.",
+  "notes": [
+    { "type": "heading", "text": "Atoms: the building blocks of matter" },
+    { "type": "paragraph", "text": "All matter is made of tiny particles called **atoms**. Atoms are far too small to see, even with an ordinary microscope. Scientists' ideas about the atom developed over time, from Democritus (about 400 BC), who imagined indivisible particles, to Dalton, Thomson, Rutherford and Bohr, whose models led to today's picture." },
+    { "type": "table", "caption": "The three sub-atomic particles", "headers": ["Particle", "Charge", "Where it is found"], "rows": [
+      ["Proton", "Positive (+)", "In the nucleus"],
+      ["Neutron", "No charge (neutral)", "In the nucleus"],
+      ["Electron", "Negative (−)", "Moving around the nucleus in energy levels (shells)"]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 200\" font-family=\"sans-serif\" font-size=\"11\"><circle cx=\"110\" cy=\"100\" r=\"18\" fill=\"#ddd\" stroke=\"black\"/><text x=\"110\" y=\"104\" text-anchor=\"middle\">3p 4n</text><circle cx=\"110\" cy=\"100\" r=\"45\" fill=\"none\" stroke=\"black\"/><circle cx=\"110\" cy=\"100\" r=\"75\" fill=\"none\" stroke=\"black\"/><circle cx=\"65\" cy=\"100\" r=\"5\"/><circle cx=\"155\" cy=\"100\" r=\"5\"/><circle cx=\"110\" cy=\"25\" r=\"5\"/><text x=\"190\" y=\"30\">electron</text><line x1=\"115\" y1=\"25\" x2=\"186\" y2=\"27\" stroke=\"black\"/><text x=\"180\" y=\"175\">nucleus</text><line x1=\"124\" y1=\"112\" x2=\"178\" y2=\"170\" stroke=\"black\"/></svg>", "caption": "A lithium atom: 3 protons and 4 neutrons in the nucleus, with 2 electrons in the first shell and 1 in the second" },
+    { "type": "callout", "label": "Remember", "text": "An atom is neutral because it has the **same number of protons and electrons**. The number of protons (the **atomic number**) tells you which element it is." },
+    { "type": "heading", "text": "Elements and the Periodic Table" },
+    { "type": "definition", "term": "Element", "text": "A pure substance made of only one kind of atom. It cannot be broken down into simpler substances by chemical means." },
+    { "type": "paragraph", "text": "There are 118 known elements, arranged in the **Periodic Table** in order of atomic number. Each element has a **chemical symbol** of one or two letters: the first is always a capital letter and the second is lower case (Co is cobalt, but CO is carbon monoxide)." },
+    { "type": "table", "caption": "Some of the first 20 elements", "headers": ["Atomic number", "Element", "Symbol", "Metal or non-metal"], "rows": [
+      [1, "Hydrogen", "H", "Non-metal"],
+      [2, "Helium", "He", "Non-metal (noble gas)"],
+      [6, "Carbon", "C", "Non-metal"],
+      [7, "Nitrogen", "N", "Non-metal"],
+      [8, "Oxygen", "O", "Non-metal"],
+      [11, "Sodium", "Na", "Metal"],
+      [12, "Magnesium", "Mg", "Metal"],
+      [13, "Aluminium", "Al", "Metal"],
+      [16, "Sulfur", "S", "Non-metal"],
+      [17, "Chlorine", "Cl", "Non-metal"],
+      [19, "Potassium", "K", "Metal"],
+      [20, "Calcium", "Ca", "Metal"]
+    ] },
+    { "type": "list", "items": [
+      "**Groups** are the vertical columns. Elements in a group have similar properties (Group 1: very reactive metals; Group 18: unreactive noble gases).",
+      "**Periods** are the horizontal rows.",
+      "**Metals** are on the left and centre, **non-metals** on the right, and **semi-metals** (metalloids) such as silicon lie along the staircase line between them."
+    ] },
+    { "type": "heading", "text": "Compounds and mixtures" },
+    { "type": "definition", "term": "Compound", "text": "A pure substance made of two or more different elements chemically joined in a fixed ratio. Its properties are different from those of the elements it is made from." },
+    { "type": "definition", "term": "Molecule", "text": "Two or more atoms bonded together, e.g. O₂ (two oxygen atoms) or H₂O (two hydrogen atoms and one oxygen atom)." },
+    { "type": "example", "title": "Reading a chemical formula", "problem": "How many atoms of each element are in one molecule of glucose, C₆H₁₂O₆?", "steps": [
+      "The small number after a symbol tells how many atoms of that element there are.",
+      "C₆: 6 carbon atoms; H₁₂: 12 hydrogen atoms; O₆: 6 oxygen atoms.",
+      "Total: 6 + 12 + 6 = 24 atoms."
+    ], "answer": "6 C, 12 H and 6 O: 24 atoms in total" },
+    { "type": "table", "caption": "Element, compound or mixture?", "headers": ["", "Element", "Compound", "Mixture"], "rows": [
+      ["Kinds of atoms", "One", "Two or more, chemically bonded", "Two or more substances, not bonded"],
+      ["Fixed composition?", "Yes", "Yes", "No; amounts can vary"],
+      ["Separated by", "Cannot be separated", "Chemical reactions only", "Physical methods (filtering, evaporation, magnets)"],
+      ["Examples", "Iron, oxygen gas", "Water, carbon dioxide, table salt (NaCl)", "Salt water, air, sand and iron filings"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "Iron filings and sulfur powder stirred together form a **mixture** (a magnet can pull the iron out). When heated, they react to form iron sulfide, a new **compound** that is not magnetic." }
+  ],
+  "questions": [
+    { "id": "nucleus", "type": "mcq", "prompt": "Which particles are found in the nucleus of an atom?", "options": ["Protons and electrons", "Protons and neutrons", "Neutrons and electrons", "Electrons only"], "answer": 1 },
+    { "id": "electron-charge", "type": "short", "prompt": "What is the charge on an electron?", "answers": ["negative", "-", "−", "negative charge"] },
+    { "id": "symbol-na", "type": "short", "prompt": "Which element has the symbol Na?", "answers": ["sodium"] },
+    { "id": "atomic-number", "type": "numeric", "prompt": "An oxygen atom has 8 protons. How many electrons does a neutral oxygen atom have?", "answer": 8, "tolerance": 0 },
+    { "id": "compound", "type": "mcq", "prompt": "Which of the following is a compound?", "options": ["Oxygen", "Air", "Water", "Salt water"], "answer": 2, "explanation": "Water is H₂O: hydrogen and oxygen chemically bonded. Air and salt water are mixtures." },
+    { "id": "count-atoms", "type": "numeric", "prompt": "How many atoms in total are in one molecule of sulfuric acid, H₂SO₄?", "answer": 7, "tolerance": 0, "explanation": "2 H + 1 S + 4 O = 7 atoms." },
+    { "id": "noble", "type": "truefalse", "prompt": "Elements in Group 18 (the noble gases) are very reactive.", "answer": false, "explanation": "Noble gases are very unreactive." },
+    { "id": "symbols-match", "type": "match", "marks": 4, "prompt": "Match each element to its symbol.", "pairs": [
+      { "left": "Potassium", "right": "K" },
+      { "left": "Calcium", "right": "Ca" },
+      { "left": "Chlorine", "right": "Cl" },
+      { "left": "Carbon", "right": "C" }
+    ] },
+    { "id": "co-symbols", "type": "open", "marks": 2, "prompt": "Explain the difference between Co and CO.", "memo": "✓ Co (capital C, small o) is the symbol of the element cobalt (1)\n✓ CO (two capitals) is the compound carbon monoxide, made of one carbon atom and one oxygen atom (1)" },
+    { "id": "mixture-compound", "type": "open", "marks": 3, "prompt": "Give THREE differences between a mixture and a compound.", "memo": "Any three (1 each):\n✓ In a compound the elements are chemically bonded; in a mixture they are not\n✓ A compound has a fixed composition; a mixture's composition can vary\n✓ A compound can only be separated by chemical means; a mixture by physical means\n✓ A compound has different properties from its elements; a mixture keeps the properties of its parts" }
+  ]
+}

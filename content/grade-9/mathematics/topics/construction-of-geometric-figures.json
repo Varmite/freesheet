@@ -1,0 +1,99 @@
+{
+  "id": "construction-of-geometric-figures",
+  "title": "Construction of Geometric Figures",
+  "term": 2,
+  "summary": "Construct special angles, parallel and perpendicular lines and triangle bisectors with a compass and ruler, and use constructions to investigate the diagonals of quadrilaterals, the angle sum of polygons and the conditions for congruent triangles.",
+  "notes": [
+    { "type": "heading", "text": "Constructions you should be able to do" },
+    { "type": "list", "items": [
+      "Bisect a line segment (perpendicular bisector) and bisect an angle.",
+      "Construct a perpendicular from a point on a line, and from a point not on a line.",
+      "Construct angles of $60^\\circ$ (equilateral triangle) and $90^\\circ$ (perpendicular), and by bisecting, $30^\\circ$, $45^\\circ$ and $15^\\circ$.",
+      "Combine angles: $75^\\circ = 60^\\circ + 15^\\circ$, $105^\\circ = 90^\\circ + 15^\\circ$, $120^\\circ = 180^\\circ - 60^\\circ$, $135^\\circ = 90^\\circ + 45^\\circ$, $150^\\circ = 180^\\circ - 30^\\circ$.",
+      "Construct triangles (SSS, SAS, ASA, RHS) and quadrilaterals from given information."
+    ] },
+    { "type": "example", "title": "Worked example 1: a 75° angle", "problem": "Describe how to construct an angle of $75^\\circ$ at point $A$ on a line, without a protractor.", "steps": [
+      "Construct a $60^\\circ$ angle at $A$ (arc from $A$ cutting the line at $B$; same width from $B$ gives $C$; draw $AC$).",
+      "Construct a perpendicular at $A$, giving a $90^\\circ$ angle on the same side.",
+      "The angle between the $60^\\circ$ arm and the $90^\\circ$ arm is $30^\\circ$. Bisect it to get two $15^\\circ$ angles.",
+      "The bisector makes $60^\\circ + 15^\\circ = 75^\\circ$ with the line."
+    ], "answer": "Construct 60° and 90°, then bisect the 30° between them." },
+
+    { "type": "heading", "text": "Constructing a parallel line" },
+    { "type": "list", "ordered": true, "items": [
+      "Given line $AB$ and point $P$ not on it, draw any line through $P$ that crosses $AB$ at $Q$.",
+      "At $Q$, the line $PQ$ makes an angle with $AB$. Draw an arc centred at $Q$ cutting both lines.",
+      "With the same compass width, draw an arc centred at $P$.",
+      "Measure the opening of the first arc with the compass and transfer it to the arc at $P$, so that you **copy the angle** in the corresponding position.",
+      "Draw the line through $P$ and the new point. It is parallel to $AB$, because corresponding angles are equal."
+    ] },
+
+    { "type": "heading", "text": "Bisectors in a triangle" },
+    { "type": "paragraph", "text": "If you construct the **perpendicular bisectors** of all three sides of a triangle, they meet at one point, the **circumcentre**. It is the same distance from all three vertices, so a circle centred there passes through $A$, $B$ and $C$ (the circumscribed circle). The **angle bisectors** of a triangle also meet at one point, the **incentre**, which is the centre of the circle that touches all three sides." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 250\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\"><polygon points=\"50,170 250,170 140,30\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"135.4\" r=\"105.8\" stroke-width=\"1.2\"/><g stroke-width=\"1.2\" stroke-dasharray=\"5 4\"><line x1=\"150\" y1=\"190\" x2=\"150\" y2=\"95\"/><line x1=\"67.5\" y1=\"82.3\" x2=\"177.5\" y2=\"153\"/><line x1=\"217.5\" y1=\"82.3\" x2=\"127.5\" y2=\"153\"/></g></g><g fill=\"#000\"><circle cx=\"150\" cy=\"135.4\" r=\"3\"/><text x=\"34\" y=\"184\">A</text><text x=\"254\" y=\"184\">B</text><text x=\"134\" y=\"24\">C</text><text x=\"157\" y=\"130\">O</text></g></svg>", "caption": "The perpendicular bisectors (dashed) of the sides of triangle ABC meet at O, the circumcentre. The circle centred at O passes through A, B and C." },
+    { "type": "callout", "label": "Why does it work?", "text": "Every point on the perpendicular bisector of $AB$ is the same distance from $A$ and $B$. The point $O$ lies on two such bisectors, so $OA = OB$ and $OB = OC$. Therefore it also lies on the third bisector." },
+
+    { "type": "heading", "text": "Investigating the diagonals of quadrilaterals" },
+    { "type": "paragraph", "text": "Construct each quadrilateral accurately, draw both diagonals, and measure. You will find:" },
+    { "type": "table", "caption": "Properties of diagonals", "headers": ["Quadrilateral", "Diagonals bisect each other?", "Equal?", "Perpendicular?"], "rows": [
+      ["Parallelogram", "Yes", "No", "No"],
+      ["Rectangle", "Yes", "Yes", "No"],
+      ["Rhombus", "Yes", "No", "Yes"],
+      ["Square", "Yes", "Yes", "Yes"],
+      ["Kite", "Only the shorter one is bisected", "No", "Yes"]
+    ] },
+
+    { "type": "heading", "text": "The angles of polygons" },
+    { "type": "paragraph", "text": "Choose one vertex of a polygon with $n$ sides and draw all the diagonals from it. They divide the polygon into $n - 2$ triangles, and each triangle has angles adding up to $180^\\circ$." },
+    { "type": "formula", "latex": "\\text{sum of interior angles} = (n - 2) \\times 180^\\circ", "caption": "Interior angle sum of a polygon with n sides" },
+    { "type": "table", "caption": "Angle sums", "headers": ["Polygon", "$n$", "Triangles", "Angle sum", "Each angle (if regular)"], "rows": [
+      ["Triangle", "3", "1", "$180^\\circ$", "$60^\\circ$"],
+      ["Quadrilateral", "4", "2", "$360^\\circ$", "$90^\\circ$"],
+      ["Pentagon", "5", "3", "$540^\\circ$", "$108^\\circ$"],
+      ["Hexagon", "6", "4", "$720^\\circ$", "$120^\\circ$"],
+      ["Octagon", "8", "6", "$1\\ 080^\\circ$", "$135^\\circ$"]
+    ] },
+    { "type": "example", "title": "Worked example 2", "problem": "(a) A polygon has an interior angle sum of $1\\ 440^\\circ$. How many sides does it have?\n(b) Find one exterior angle of a regular hexagon.", "steps": [
+      "(a) $(n - 2) \\times 180 = 1\\ 440$, so $n - 2 = 8$ and $n = 10$.",
+      "(b) Each interior angle is $120^\\circ$, so each exterior angle is $180^\\circ - 120^\\circ = 60^\\circ$. (The exterior angles of any polygon add up to $360^\\circ$, and $360^\\circ \\div 6 = 60^\\circ$.)"
+    ], "answer": "(a) 10 sides  (b) $60^\\circ$" },
+
+    { "type": "heading", "text": "Minimum conditions for congruent triangles" },
+    { "type": "paragraph", "text": "By trying to construct triangles from given information, you find that two triangles are congruent if they have: three sides equal (SSS); two sides and the included angle equal (SAS); two angles and a corresponding side equal (AAS); or a right angle, hypotenuse and one side equal (RHS)." },
+    { "type": "callout", "label": "Common mistake", "text": "SSA (two sides and an angle that is **not** between them) is not enough: two different triangles can often be constructed. AAA is also not enough: it gives similar triangles of any size." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Special angles come from $60^\\circ$ and $90^\\circ$ by bisecting, adding and subtracting.",
+      "Copy an angle to construct a parallel line (equal corresponding angles).",
+      "Perpendicular bisectors of a triangle meet at the circumcentre; angle bisectors meet at the incentre.",
+      "Know the diagonal properties of every special quadrilateral.",
+      "Interior angle sum of an $n$-gon: $(n - 2) \\times 180^\\circ$; exterior angles add to $360^\\circ$.",
+      "Congruence: SSS, SAS, AAS, RHS (not SSA or AAA)."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "What is the sum of the interior angles of a hexagon?", "options": ["$540^\\circ$", "$720^\\circ$", "$900^\\circ$", "$1\\ 080^\\circ$"], "answer": 1, "explanation": "$(6 - 2) \\times 180^\\circ = 720^\\circ$." },
+    { "id": "q2", "type": "numeric", "prompt": "Calculate the size of each interior angle of a regular octagon, in degrees.", "unit": "°", "answer": 135, "tolerance": 0, "explanation": "$(8 - 2) \\times 180 = 1\\ 080$; $1\\ 080 \\div 8 = 135$." },
+    { "id": "q3", "type": "truefalse", "prompt": "The diagonals of a rectangle are equal in length.", "answer": true, "explanation": "Rectangles (and squares) have equal diagonals." },
+    { "id": "q4", "type": "mcq", "prompt": "Which property do the diagonals of every kite have?", "options": ["They are equal", "They bisect each other", "They are perpendicular", "They are parallel"], "answer": 2, "explanation": "A kite's diagonals meet at $90^\\circ$; only the shorter one is bisected." },
+    { "id": "q5", "type": "numeric", "prompt": "Calculate the sum of the interior angles of a pentagon, in degrees.", "unit": "°", "answer": 540, "tolerance": 0, "explanation": "$(5 - 2) \\times 180 = 540$." },
+    { "id": "q6", "type": "mcq", "prompt": "The three angle bisectors of a triangle meet at a point. What is special about this point?", "options": ["It is the midpoint of the longest side", "It is the centre of the circle that touches all three sides", "It is the centre of the circle through the three vertices", "It is always outside the triangle"], "answer": 1, "explanation": "The angle bisectors meet at the incentre, the centre of the inscribed circle. Perpendicular bisectors meet at the circumcentre." },
+    { "id": "q7", "type": "mcq", "prompt": "How can you construct an angle of $15^\\circ$?", "options": ["Bisect $60^\\circ$", "Bisect $30^\\circ$", "Bisect $45^\\circ$", "Bisect $90^\\circ$ twice"], "answer": 1, "explanation": "Construct $60^\\circ$, bisect to $30^\\circ$, and bisect again to get $15^\\circ$." },
+    { "id": "q8", "type": "truefalse", "prompt": "The diagonals of every parallelogram are perpendicular.", "answer": false, "explanation": "A parallelogram's diagonals bisect each other, but they are only perpendicular in special cases (rhombus, square)." },
+    { "id": "q9", "type": "match", "prompt": "Match each quadrilateral with the property of its diagonals.", "marks": 5, "pairs": [
+      { "left": "Parallelogram", "right": "They bisect each other" },
+      { "left": "Rectangle", "right": "Equal, and bisect each other" },
+      { "left": "Rhombus", "right": "Bisect each other at 90°" },
+      { "left": "Kite", "right": "One bisects the other at 90°" },
+      { "left": "Square", "right": "Equal, and bisect each other at 90°" }
+    ], "explanation": "Each special quadrilateral adds properties to the parallelogram's." },
+    { "id": "q10", "type": "numeric", "prompt": "A polygon has an interior angle sum of $1\\ 440^\\circ$. How many sides does it have?", "answer": 10, "tolerance": 0, "explanation": "$(n - 2) \\times 180 = 1\\ 440$, so $n - 2 = 8$ and $n = 10$." },
+    { "id": "q11", "type": "numeric", "prompt": "Calculate one exterior angle of a regular hexagon, in degrees.", "unit": "°", "answer": 60, "tolerance": 0, "explanation": "Exterior angles add to $360^\\circ$: $360 \\div 6 = 60$." },
+    { "id": "q12", "type": "mcq", "prompt": "Which information does NOT guarantee that two triangles are congruent?", "options": ["SSS", "SAS", "SSA (angle not between the sides)", "RHS"], "answer": 2, "explanation": "With SSA, two different triangles can sometimes be constructed." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "Describe how to construct a line through point $P$ parallel to line $AB$, using only a compass and a ruler. Explain why the lines are parallel.", "memo": "Draw a line through $P$ cutting $AB$ at $Q$ ✓ (1)\nArc centred at $Q$ cutting both lines; same arc centred at $P$ ✓ (1)\nCopy the angle at $Q$ to $P$ in the corresponding position and draw the line ✓ (1)\nThe corresponding angles are equal, so the lines are parallel ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "Explain why the sum of the interior angles of a polygon with $n$ sides is $(n - 2) \\times 180^\\circ$.", "memo": "Draw all diagonals from one vertex ✓ (1)\nThis divides the polygon into $n - 2$ triangles ✓ (1)\nEach triangle has an angle sum of $180^\\circ$, so the total is $(n - 2) \\times 180^\\circ$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "Describe how to construct an angle of $75^\\circ$ at a point $A$ on a line, using only a compass and a ruler.", "memo": "Construct a $60^\\circ$ angle at $A$ ✓ (1)\nConstruct a $90^\\circ$ angle (perpendicular) at $A$ on the same side ✓ (1)\nBisect the $30^\\circ$ angle between them: $60^\\circ + 15^\\circ = 75^\\circ$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "The perpendicular bisectors of the sides of $\\triangle ABC$ meet at $O$. Explain why a circle centred at $O$ passes through $A$, $B$ and $C$.", "memo": "Any point on the perpendicular bisector of a segment is equidistant from its endpoints, so $OA = OB$ and $OB = OC$ ✓ (1)\nSo $OA = OB = OC$, and a circle with radius $OA$ passes through all three vertices ✓ (1)" }
+  ]
+}

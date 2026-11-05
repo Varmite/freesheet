@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "grade": 12,
+  "id": "english-home-language",
+  "name": "English Home Language",
+  "description": "Grade 12 English Home Language for the NSC: comprehension, summary, language and critical awareness, visual literacy, poetry, novel and drama, and essay and transactional writing.",
+  "topics": [
+    { "id": "reading-for-comprehension", "title": "Reading for Comprehension", "term": 1 },
+    { "id": "summary-writing", "title": "Summary Writing", "term": 1 },
+    { "id": "grammar-and-sentence-structure", "title": "Grammar and Sentence Structure", "term": 1 },
+    { "id": "poetry-analysis", "title": "Poetry: Analysing a Poem", "term": 1 },
+    { "id": "narrative-and-descriptive-essays", "title": "Narrative and Descriptive Essays", "term": 1 },
+    { "id": "formal-and-friendly-letters", "title": "Formal and Friendly Letters", "term": 1 },
+    { "id": "novel-study", "title": "Novel Study: The Picture of Dorian Gray", "term": 1 },
+    { "id": "vocabulary-and-editing", "title": "Vocabulary, Figures of Speech and Editing", "term": 2 },
+    { "id": "critical-language-awareness", "title": "Critical Language Awareness", "term": 2 },
+    { "id": "visual-literacy-advertisements", "title": "Visual Literacy: Advertisements", "term": 2 },
+    { "id": "visual-literacy-cartoons", "title": "Visual Literacy: Cartoons and Comic Strips", "term": 2 },
+    { "id": "drama-study", "title": "Drama Study: Hamlet", "term": 2 },
+    { "id": "argumentative-and-discursive-essays", "title": "Argumentative and Discursive Essays", "term": 2 },
+    { "id": "speeches-reports-and-reviews", "title": "Speeches, Reports and Reviews", "term": 2 },
+    { "id": "unseen-poetry", "title": "Unseen Poetry", "term": 3 },
+    { "id": "literary-essay-writing", "title": "Writing the Literary Essay", "term": 3 },
+    { "id": "reflective-essays-and-visual-prompts", "title": "Reflective Essays and Visual Prompts", "term": 3 },
+    { "id": "articles-dialogues-interviews-and-minutes", "title": "Articles, Dialogues, Interviews and Minutes", "term": 3 }
+  ],
+  "exams": [
+    { "id": "november-paper-1", "title": "November Examination: Paper 1 (Language in Context)", "durationMinutes": 120, "totalMarks": 70 },
+    { "id": "november-paper-2", "title": "November Examination: Paper 2 (Literature)", "durationMinutes": 150, "totalMarks": 80 },
+    { "id": "november-paper-3", "title": "November Examination: Paper 3 (Writing)", "durationMinutes": 150, "totalMarks": 100 }
+  ]
+}

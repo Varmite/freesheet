@@ -1,0 +1,203 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper consists of THREE questions. Answer ALL the questions.",
+    "Read the case study carefully before answering Question 2.",
+    "Write in full sentences where explanations are required."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "Within how many hours after possible HIV exposure must PEP be started?",
+          "options": [
+            "12 hours",
+            "24 hours",
+            "72 hours",
+            "7 days"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "Which section of the Constitution protects freedom of religion?",
+          "options": [
+            "Section 9",
+            "Section 15",
+            "Section 16",
+            "Section 24"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "Which organisation is an example of civil society?",
+          "options": [
+            "Parliament",
+            "The Constitutional Court",
+            "Equal Education",
+            "The Cabinet"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-4",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Dual protection",
+              "right": "Condom plus another contraceptive"
+            },
+            {
+              "left": "Ideology",
+              "right": "Ideas about how society should be organised"
+            },
+            {
+              "left": "Resilience",
+              "right": "Bouncing back after setbacks"
+            },
+            {
+              "left": "APS",
+              "right": "Score used for university admission"
+            },
+            {
+              "left": "Watchdog",
+              "right": "Media role of exposing wrongdoing"
+            }
+          ]
+        },
+        {
+          "id": "q1-5",
+          "type": "truefalse",
+          "prompt": "People with an undetectable HIV viral load do not transmit HIV sexually.",
+          "answer": true
+        },
+        {
+          "id": "q1-6",
+          "type": "truefalse",
+          "prompt": "Vapes contain no nicotine and are not addictive.",
+          "answer": false
+        },
+        {
+          "id": "q1-7",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Using a scale where 80–100% = 7, 70–79% = 6, 60–69% = 5, 50–59% = 4, 40–49% = 3, calculate the APS for: 74%, 82%, 61%, 55%, 49%, 70%.",
+          "answer": 31,
+          "tolerance": 0
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Case study",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Case study: Zanele's plan",
+          "text": "Zanele (17) wants to study nursing. Her Grade 11 marks are average, and she spends most evenings on social media. Her family cannot afford university fees. Recently she has been feeling anxious and sleeping badly, and her boyfriend is pressuring her to have sex without a condom because she is 'on the injection'."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Write a SMART goal that could help Zanele reach her career goal.",
+          "memo": "✓ Specific and measurable (e.g. raise Life Sciences to 65%) (1)\n✓ Achievable/realistic with a method (1)\n✓ Time-bound (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Identify TWO barriers Zanele faces and suggest how she can overcome each.",
+          "memo": "✓ e.g. lack of money → NSFAS/bursaries (1½)\n✓ e.g. distraction from social media → study timetable/limits (1½)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain why being 'on the injection' does not make unprotected sex safe.",
+          "memo": "✓ The injection prevents pregnancy only (1)\n✓ It does not protect against HIV and other STIs (1)\n✓ Condoms are needed for dual protection (1)"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Suggest THREE strategies Zanele could use to manage her anxiety and sleep problems.",
+          "memo": "Any three (1 each): talk to a counsellor/trusted adult; limit screens before bed; regular sleep routine; exercise; relaxation/breathing; contact SADAG"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What does Zanele's boyfriend's pressure suggest about their relationship?",
+          "memo": "✓ He is not respecting her boundaries or health (1)\n✓ This is a sign of an unhealthy, controlling relationship (1)"
+        },
+        {
+          "id": "q2-6",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Zanele's Grade 11 marks are: English 68%, Mathematical Literacy 72%, Life Sciences 59%, Geography 64%, isiXhosa 78%, Tourism 61%. Using the APS scale in Question 1.7, calculate her APS, and suggest what she should do if the nursing programme she wants requires an APS of 30.",
+          "memo": "✓ Points: 5 + 6 + 4 + 5 + 6 + 5 (1)\n✓ APS = 31 (1)\n✓ She meets the requirement but should keep improving, as places are competitive (1)\n✓ Apply to several institutions / check subject requirements such as Life Sciences (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Society, beliefs and the world of work",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain FOUR roles that civil society organisations play in a democracy.",
+          "memo": "Any four (1 each): hold government accountable; give voice to the marginalised; provide services; take issues to court; educate; mobilise citizens"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Compare TWO belief systems found in South Africa by giving ONE feature of each and ONE value they share.",
+          "memo": "✓ Feature of belief system 1 (1)\n✓ Feature of belief system 2 (1)\n✓✓ A shared value, explained (e.g. compassion, honesty, care for the poor) (2)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE post-school options available to a learner after matric.",
+          "memo": "Any three (1 each): university; university of technology; TVET college; learnership/apprenticeship; employment; entrepreneurship"
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how the media can both strengthen and harm democracy.",
+          "memo": "✓ Strengthens: informs citizens, exposes corruption, allows debate (1½)\n✓ Harms: fake news, bias, hate speech, invasion of privacy (1½)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO healthy lifestyle habits that reduce the risk of lifestyle diseases.",
+          "memo": "Any two (1 each): balanced diet; regular exercise; not smoking/vaping; limiting alcohol; enough sleep; managing stress"
+        },
+        {
+          "id": "q3-6",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain how technology and automation are changing the world of work, and suggest TWO skills young people should develop as a result.",
+          "memo": "✓ Routine jobs may be automated (1)\n✓ New jobs are created in technology and services (1)\n✓✓ Two skills, e.g. digital literacy, adaptability, problem-solving, entrepreneurship (2)"
+        }
+      ]
+    }
+  ]
+}

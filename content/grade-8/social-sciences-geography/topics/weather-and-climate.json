@@ -1,0 +1,57 @@
+{
+  "id": "weather-and-climate",
+  "title": "Weather and Climate",
+  "term": 2,
+  "summary": "The difference between weather and climate, elements of weather and how they are measured, factors that influence climate, and reading climate graphs.",
+  "notes": [
+    { "type": "heading", "text": "Weather and climate" },
+    { "type": "definition", "term": "Weather", "text": "The condition of the atmosphere at a particular place and time, for example 'hot and windy in Bloemfontein today'. Weather changes from day to day." },
+    { "type": "definition", "term": "Climate", "text": "The average weather conditions of a place measured over a long period, usually at least 30 years, for example 'Cape Town has hot, dry summers and cool, wet winters'." },
+    { "type": "heading", "text": "Elements of weather" },
+    { "type": "table", "headers": ["Element", "Instrument", "Unit"], "rows": [
+      ["Temperature", "Thermometer (maximum–minimum thermometer)", "Degrees Celsius (°C)"],
+      ["Rainfall (precipitation)", "Rain gauge", "Millimetres (mm)"],
+      ["Air pressure", "Barometer", "Hectopascals (hPa)"],
+      ["Wind direction", "Wind vane", "Compass direction the wind blows FROM"],
+      ["Wind speed", "Anemometer", "Kilometres per hour (km/h) or knots"],
+      ["Humidity", "Hygrometer", "Percentage (%)"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Winds are named after the direction they blow **from**. A south-easter blows from the south-east." },
+    { "type": "heading", "text": "Factors that affect climate" },
+    { "type": "table", "headers": ["Factor", "Effect", "Example"], "rows": [
+      ["Latitude", "Places near the equator receive direct sunlight and are hot; places near the poles are cold", "Lagos is hotter than Cape Town"],
+      ["Altitude (height)", "Temperature falls about 6,5 °C for every 1 000 m of height", "Johannesburg (1 750 m) is cooler than Durban at the same season"],
+      ["Distance from the sea", "The sea heats and cools slowly, so coastal places have a mild climate; inland places have extreme temperatures (hot days, cold nights)", "Durban versus Kimberley"],
+      ["Ocean currents", "Warm currents bring warm, moist air and rain; cold currents cool the air and cause dry conditions", "Warm Agulhas Current (east coast), cold Benguela Current (west coast)"],
+      ["Mountains and relief", "Moist air rises over mountains, cools and drops rain on the windward side; the leeward side is dry (rain shadow)", "The Drakensberg: wet on the KZN side, drier in Lesotho's interior"],
+      ["Prevailing winds", "Winds from the sea bring moisture; winds from the land are dry", ""]
+    ] },
+    { "type": "heading", "text": "Types of rainfall" },
+    { "type": "list", "items": [
+      "**Convection rain**: the ground heats the air, which rises, cools and forms thunderclouds; common in summer on the Highveld (afternoon thunderstorms).",
+      "**Relief (orographic) rain**: moist air is forced up over mountains and cools.",
+      "**Frontal (cyclonic) rain**: warm and cold air masses meet, the warm air rises; brings winter rain to the Western Cape."
+    ] },
+    { "type": "heading", "text": "Climate graphs" },
+    { "type": "paragraph", "text": "A **climate graph** shows average monthly **temperature** as a line graph and average monthly **rainfall** as a bar graph, on the same set of axes." },
+    { "type": "example", "title": "Calculating from climate data", "problem": "A town's highest monthly average temperature is 26 °C (January) and lowest is 12 °C (July). Calculate the annual temperature range.", "steps": ["Range = highest − lowest", "= 26 − 12"], "answer": "14 °C" },
+    { "type": "callout", "label": "Exam tip", "text": "In the southern hemisphere, summer is December to February and winter is June to August. If most rain falls in June to August, the place has **winter rainfall**." }
+  ],
+  "questions": [
+    { "id": "difference", "type": "open", "marks": 2, "prompt": "What is the difference between weather and climate?", "memo": "✓ Weather is the condition of the atmosphere at a particular time (day to day) (1)\n✓ Climate is the average weather over a long period, usually 30 years (1)" },
+    { "id": "rain-gauge", "type": "short", "prompt": "Which instrument measures rainfall?", "answers": ["rain gauge", "a rain gauge"] },
+    { "id": "anemometer", "type": "mcq", "prompt": "An anemometer measures…", "options": ["wind direction", "wind speed", "air pressure", "humidity"], "answer": 1 },
+    { "id": "south-easter", "type": "truefalse", "prompt": "A south-easter is a wind that blows towards the south-east.", "answer": false, "explanation": "Winds are named after the direction they blow from." },
+    { "id": "altitude", "type": "mcq", "prompt": "Why is Johannesburg cooler than Durban?", "options": ["It is closer to the equator", "It is at a higher altitude", "It is near a cold current", "It gets more rain"], "answer": 1 },
+    { "id": "range", "type": "numeric", "prompt": "The hottest month in a town averages 31 °C and the coldest 9 °C. What is the annual temperature range?", "answer": 22, "tolerance": 0, "unit": "°C" },
+    { "id": "instruments", "type": "match", "marks": 4, "prompt": "Match each instrument to what it measures.", "pairs": [
+      { "left": "Barometer", "right": "Air pressure" },
+      { "left": "Wind vane", "right": "Wind direction" },
+      { "left": "Hygrometer", "right": "Humidity" },
+      { "left": "Thermometer", "right": "Temperature" }
+    ] },
+    { "id": "currents", "type": "open", "marks": 3, "prompt": "Explain why the east coast of South Africa is wetter than the west coast.", "memo": "✓ The warm Agulhas Current flows along the east coast; the cold Benguela Current along the west coast (1)\n✓ Warm water heats the air above it, which holds more moisture and brings rain (1)\n✓ Cold water cools the air, so it holds little moisture and the west is dry (1)" },
+    { "id": "rain-shadow", "type": "open", "marks": 2, "prompt": "What is a rain shadow?", "memo": "✓ The dry area on the leeward side of a mountain (1)\n✓ because the air has already lost its moisture as rain on the windward side and descends dry (1)" },
+    { "id": "convection", "type": "short", "prompt": "Which type of rainfall causes summer afternoon thunderstorms on the Highveld?", "answers": ["convection", "convection rain", "convectional rain", "convectional"] }
+  ]
+}

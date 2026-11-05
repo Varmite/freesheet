@@ -1,0 +1,53 @@
+{
+  "id": "development-and-quality-of-life",
+  "title": "Development and Quality of Life",
+  "term": 3,
+  "summary": "What development means, economic and social indicators such as GDP per capita, HDI, literacy and life expectancy, the development gap, and inequality in South Africa.",
+  "notes": [
+    { "type": "heading", "text": "What is development?" },
+    { "type": "definition", "term": "Development", "text": "The process of improving people's standard of living and quality of life: their income, health, education, housing, freedom and access to services." },
+    { "type": "paragraph", "text": "Countries are often grouped as **more economically developed** (high-income), **less economically developed** (low-income) or **developing** (middle-income). South Africa is a middle-income country with great inequality. Another way of describing this is the **North–South divide**: most rich countries are in the northern hemisphere and most poorer ones in the south (with exceptions such as Australia)." },
+    { "type": "heading", "text": "Measuring development" },
+    { "type": "table", "caption": "Economic and social indicators", "headers": ["Indicator", "What it measures", "More developed countries"], "rows": [
+      ["GDP per capita", "The total value of goods and services produced in a year, divided by the population", "High"],
+      ["Life expectancy", "Average number of years a person can expect to live", "High (about 80 years)"],
+      ["Infant mortality rate", "Number of babies who die before age 1 per 1 000 live births", "Low"],
+      ["Literacy rate", "Percentage of adults who can read and write", "High (close to 100%)"],
+      ["Access to clean water and sanitation", "Percentage of people with safe water and toilets", "High"],
+      ["Doctors per 1 000 people", "Access to healthcare", "High"],
+      ["Birth rate", "Births per 1 000 people per year", "Low"]
+    ] },
+    { "type": "formula", "latex": "\\text{GDP per capita} = \\frac{\\text{GDP}}{\\text{population}}" },
+    { "type": "example", "title": "Calculating GDP per capita", "problem": "A country has a GDP of R6 000 billion and a population of 60 million. Calculate the GDP per capita.", "steps": ["R6 000 000 000 000 ÷ 60 000 000", "= R100 000 per person"], "answer": "R100 000" },
+    { "type": "definition", "term": "Human Development Index (HDI)", "text": "A measure created by the United Nations that combines three things: **life expectancy** (health), **years of schooling** (education) and **income per person** (standard of living). It ranges from 0 to 1; the closer to 1, the more developed." },
+    { "type": "callout", "label": "Remember", "text": "GDP per capita is only an **average**. It does not show how wealth is shared. A country can have a high GDP per capita while many people remain poor." },
+    { "type": "heading", "text": "Inequality in South Africa" },
+    { "type": "paragraph", "text": "South Africa is one of the most **unequal** countries in the world, measured by the **Gini coefficient** (0 = perfect equality, 1 = one person has everything); South Africa's is about 0,63. Inequality exists between rich and poor, between urban and rural areas, between provinces (Gauteng and the Western Cape are wealthier than Limpopo and the Eastern Cape), and still largely along racial lines because of apartheid." },
+    { "type": "heading", "text": "Why are some places less developed?" },
+    { "type": "list", "items": [
+      "**History**: colonialism and apartheid took resources and denied people education and land.",
+      "**Trade**: exporting low-value raw materials and importing expensive manufactured goods.",
+      "**Debt**: poor countries spend money on repaying loans instead of services.",
+      "**Natural factors**: drought, floods, poor soil, disease (malaria, HIV).",
+      "**Governance**: corruption and conflict waste resources and scare away investors.",
+      "**Lack of infrastructure**: roads, electricity and water are needed for businesses to grow."
+    ] }
+  ],
+  "questions": [
+    { "id": "gdp-pc", "type": "short", "prompt": "Which indicator is the total value of goods and services produced divided by the population? (write the abbreviation with 'per capita')", "answers": ["gdp per capita"] },
+    { "id": "infant", "type": "mcq", "prompt": "Which shows a high level of development?", "options": ["High infant mortality", "Low literacy rate", "High life expectancy", "High birth rate"], "answer": 2 },
+    { "id": "hdi", "type": "mcq", "prompt": "Which THREE things does the HDI combine?", "options": ["Life expectancy, education and income", "Population, land area and rainfall", "Exports, imports and debt", "Birth rate, death rate and migration"], "answer": 0 },
+    { "id": "calc", "type": "numeric", "prompt": "A country's GDP is R900 billion and its population is 30 million. Calculate the GDP per capita in rand.", "answer": 30000, "tolerance": 0, "unit": "rand" },
+    { "id": "gini", "type": "truefalse", "prompt": "A Gini coefficient close to 0 means a country is very unequal.", "answer": false, "explanation": "0 means perfect equality; values close to 1 mean great inequality." },
+    { "id": "indicators", "type": "match", "marks": 4, "prompt": "Match each indicator to the type of development it measures.", "pairs": [
+      { "left": "Literacy rate", "right": "Education" },
+      { "left": "Infant mortality rate", "right": "Health" },
+      { "left": "GDP per capita", "right": "Income / economy" },
+      { "left": "Access to piped water", "right": "Services and infrastructure" }
+    ] },
+    { "id": "limitations", "type": "open", "marks": 2, "prompt": "Why is GDP per capita not a complete measure of development?", "memo": "✓ It is an average and does not show how wealth is shared / inequality (1)\n✓ It does not measure health, education or quality of life (1)" },
+    { "id": "causes", "type": "open", "marks": 4, "prompt": "Give FOUR reasons why some countries remain less developed.", "memo": "Any four (1 each): colonial history; unfair trade/raw material exports; debt; natural disasters; disease; corruption/conflict; poor infrastructure; low education levels" },
+    { "id": "sa-inequality", "type": "open", "marks": 2, "prompt": "Give TWO examples of inequality in South Africa.", "memo": "Any two (1 each): rich and poor; urban vs rural; between provinces (e.g. Gauteng vs Limpopo); racial inequality due to apartheid; unequal access to schools and healthcare" },
+    { "id": "north-south", "type": "short", "prompt": "What term describes the division between richer northern and poorer southern countries?", "answers": ["north-south divide", "north–south divide", "north south divide", "the north-south divide"] }
+  ]
+}

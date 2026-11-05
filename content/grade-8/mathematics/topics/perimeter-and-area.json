@@ -1,0 +1,99 @@
+{
+  "id": "perimeter-and-area",
+  "title": "Perimeter and Area of 2D Shapes",
+  "term": 3,
+  "summary": "Calculate the perimeter and area of squares, rectangles, triangles, circles and composite shapes, convert between units of area, and investigate how changing dimensions changes the area.",
+  "notes": [
+    { "type": "heading", "text": "Perimeter" },
+    { "type": "definition", "term": "Perimeter", "text": "The **perimeter** of a shape is the total distance around its outside. It is a length, measured in mm, cm, m or km." },
+    { "type": "table", "caption": "Perimeter formulae", "headers": ["Shape", "Perimeter"], "rows": [
+      ["Square with side $s$", "$P = 4s$"],
+      ["Rectangle with length $l$ and breadth $b$", "$P = 2l + 2b = 2(l + b)$"],
+      ["Triangle with sides $a$, $b$, $c$", "$P = a + b + c$"],
+      ["Any polygon", "Add the lengths of all the sides"]
+    ] },
+
+    { "type": "heading", "text": "Circles" },
+    { "type": "paragraph", "text": "The perimeter of a circle is called its **circumference**. The **radius** $r$ goes from the centre to the circle; the **diameter** $d$ goes right across through the centre, so $d = 2r$. For every circle, circumference $\\div$ diameter is the same number, called **pi** ($\\pi \\approx 3{,}14$)." },
+    { "type": "formula", "latex": "C = \\pi d = 2\\pi r \\qquad\\qquad A = \\pi r^2", "caption": "Circumference and area of a circle" },
+    { "type": "example", "title": "Worked example 1", "problem": "A circle has a radius of 7 cm. Calculate (a) its circumference and (b) its area. Use the $\\pi$ key and round to two decimal places.", "steps": [
+      "(a) $C = 2\\pi r = 2 \\times \\pi \\times 7 = 43{,}98$ cm.",
+      "(b) $A = \\pi r^2 = \\pi \\times 7^2 = \\pi \\times 49 = 153{,}94\\ \\text{cm}^2$."
+    ], "answer": "(a) $43{,}98$ cm  (b) $153{,}94\\ \\text{cm}^2$" },
+    { "type": "callout", "label": "Common mistake", "text": "$\\pi r^2$ means $\\pi \\times r \\times r$, not $(\\pi r)^2$ and not $2\\pi r$. Square the radius first. If you are given the diameter, halve it to get the radius before using $A = \\pi r^2$." },
+
+    { "type": "heading", "text": "Area" },
+    { "type": "definition", "term": "Area", "text": "**Area** is the amount of flat surface a shape covers. It is measured in **square units** such as $\\text{mm}^2$, $\\text{cm}^2$, $\\text{m}^2$ or $\\text{km}^2$." },
+    { "type": "table", "caption": "Area formulae", "headers": ["Shape", "Area"], "rows": [
+      ["Square with side $s$", "$A = s^2$"],
+      ["Rectangle", "$A = l \\times b$"],
+      ["Triangle", "$A = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$"],
+      ["Circle", "$A = \\pi r^2$"]
+    ] },
+    { "type": "paragraph", "text": "The **height** of a triangle is the **perpendicular** distance from the base to the opposite vertex. It is not the length of a sloping side." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 185\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\"><polygon points=\"30,150 190,150 80,40\"/><line x1=\"80\" y1=\"40\" x2=\"80\" y2=\"150\" stroke-dasharray=\"5 4\" stroke-width=\"1.5\"/><polyline points=\"80,138 92,138 92,150\" stroke-width=\"1.5\"/></g><g fill=\"#000\"><text x=\"85\" y=\"172\">base = 8 cm</text><text x=\"86\" y=\"104\">h</text></g></svg>", "caption": "The height h (dashed) is perpendicular to the base. With base 8 cm and h = 5 cm, area = ½ × 8 × 5 = 20 cm²." },
+    { "type": "example", "title": "Worked example 2", "problem": "(a) Find the area of a triangle with base 8 cm and perpendicular height 5 cm.\n(b) A triangle has an area of $24\\ \\text{cm}^2$ and a base of 8 cm. Find its height.", "steps": [
+      "(a) $A = \\frac{1}{2} \\times 8 \\times 5 = 20\\ \\text{cm}^2$.",
+      "(b) $24 = \\frac{1}{2} \\times 8 \\times h = 4h$, so $h = 6$ cm."
+    ], "answer": "(a) $20\\ \\text{cm}^2$  (b) $6$ cm" },
+
+    { "type": "heading", "text": "Converting units of area" },
+    { "type": "paragraph", "text": "Because area has **two** dimensions, area conversions use the **square** of the length conversion. $1\\ \\text{m} = 100\\ \\text{cm}$, so $1\\ \\text{m}^2 = 100\\ \\text{cm} \\times 100\\ \\text{cm} = 10\\ 000\\ \\text{cm}^2$." },
+    { "type": "table", "caption": "Area conversions", "headers": ["Length", "Area"], "rows": [
+      ["1 cm = 10 mm", "$1\\ \\text{cm}^2 = 100\\ \\text{mm}^2$"],
+      ["1 m = 100 cm", "$1\\ \\text{m}^2 = 10\\ 000\\ \\text{cm}^2$"],
+      ["1 km = 1 000 m", "$1\\ \\text{km}^2 = 1\\ 000\\ 000\\ \\text{m}^2$"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "$1\\ \\text{m}^2$ is **not** $100\\ \\text{cm}^2$. Picture a square 1 m by 1 m: it holds 100 rows of 100 small squares of $1\\ \\text{cm}^2$." },
+    { "type": "example", "title": "Worked example 3: tiling", "problem": "A floor is 4,5 m by 3,2 m. How many square tiles of 30 cm by 30 cm are needed to cover it (assume no waste)?", "steps": [
+      "Work in cm: the floor is $450$ cm by $320$ cm, so its area is $144\\ 000\\ \\text{cm}^2$.",
+      "One tile: $30 \\times 30 = 900\\ \\text{cm}^2$.",
+      "Number of tiles $= 144\\ 000 \\div 900 = 160$."
+    ], "answer": "160 tiles" },
+
+    { "type": "heading", "text": "Composite shapes" },
+    { "type": "paragraph", "text": "A **composite** shape is made of simpler shapes. Split it into rectangles, triangles or circles, find each area, then **add** (or subtract a missing piece)." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 205\" font-family=\"sans-serif\" font-size=\"13\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\"><polygon points=\"30,20 230,20 230,80 150,80 150,180 30,180\"/><polyline points=\"150,80 230,80 230,180 150,180\" stroke-dasharray=\"5 4\" stroke-width=\"1\"/></g><g fill=\"#000\"><text x=\"115\" y=\"14\">10 m</text><text x=\"2\" y=\"105\">8 m</text><text x=\"236\" y=\"55\">3 m</text><text x=\"176\" y=\"96\">4 m</text><text x=\"75\" y=\"197\">6 m</text><text x=\"156\" y=\"135\">5 m</text></g></svg>", "caption": "An L-shaped room. The dashed rectangle (4 m by 5 m) is the part cut out of a 10 m by 8 m rectangle." },
+    { "type": "example", "title": "Worked example 4: an L-shape", "problem": "Find the area and the perimeter of the L-shaped room in the diagram.", "steps": [
+      "Area: big rectangle minus the cut-out: $10 \\times 8 - 4 \\times 5 = 80 - 20 = 60\\ \\text{m}^2$.",
+      "Check by splitting: top strip $10 \\times 3 = 30$ plus bottom-left part $6 \\times 5 = 30$, total $60\\ \\text{m}^2$ ✓",
+      "Perimeter: add all six sides: $10 + 3 + 4 + 5 + 6 + 8 = 36$ m."
+    ], "answer": "Area $60\\ \\text{m}^2$; perimeter $36$ m" },
+
+    { "type": "heading", "text": "Changing the dimensions" },
+    { "type": "paragraph", "text": "If you **double** every length of a shape, the perimeter doubles but the area is multiplied by $2^2 = 4$. If you triple every length, the area is multiplied by $3^2 = 9$. For example, a square of side 3 cm has area $9\\ \\text{cm}^2$; a square of side 6 cm has area $36\\ \\text{cm}^2$, which is 4 times as big." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Perimeter: distance around (units: cm, m). Area: surface covered (units: cm², m²).",
+      "Square: $P = 4s$, $A = s^2$. Rectangle: $P = 2(l + b)$, $A = lb$. Triangle: $A = \\frac{1}{2}bh$ with $h$ perpendicular to $b$.",
+      "Circle: $C = 2\\pi r = \\pi d$, $A = \\pi r^2$.",
+      "$1\\ \\text{cm}^2 = 100\\ \\text{mm}^2$; $1\\ \\text{m}^2 = 10\\ 000\\ \\text{cm}^2$.",
+      "Split composite shapes into simple shapes; add or subtract their areas.",
+      "Multiplying all lengths by $k$ multiplies the area by $k^2$."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "Calculate the perimeter of a rectangle that is 12 cm long and 7 cm wide.", "unit": "cm", "answer": 38, "tolerance": 0, "explanation": "$2(12 + 7) = 38$ cm." },
+    { "id": "q2", "type": "numeric", "prompt": "Calculate the area of a triangle with base 8 cm and perpendicular height 5 cm.", "unit": "cm²", "answer": 20, "tolerance": 0, "explanation": "$\\frac{1}{2} \\times 8 \\times 5 = 20\\ \\text{cm}^2$." },
+    { "id": "q3", "type": "mcq", "prompt": "Which formula gives the circumference of a circle with radius $r$?", "options": ["$\\pi r^2$", "$2\\pi r$", "$\\pi r$", "$2\\pi r^2$"], "answer": 1, "explanation": "$C = 2\\pi r$ (or $\\pi d$). $\\pi r^2$ is the area." },
+    { "id": "q4", "type": "numeric", "prompt": "Calculate the circumference of a circle with radius 7 cm. Use the $\\pi$ key and round to two decimal places.", "unit": "cm", "answer": 43.98, "tolerance": 0.01, "explanation": "$2 \\times \\pi \\times 7 = 43{,}98$ cm." },
+    { "id": "q5", "type": "numeric", "prompt": "Calculate the area of a circle with radius 5 cm. Use the $\\pi$ key and round to two decimal places.", "unit": "cm²", "answer": 78.54, "tolerance": 0.01, "explanation": "$\\pi \\times 5^2 = 25\\pi = 78{,}54\\ \\text{cm}^2$." },
+    { "id": "q6", "type": "truefalse", "prompt": "$1\\ \\text{m}^2 = 100\\ \\text{cm}^2$", "answer": false, "explanation": "$1\\ \\text{m}^2 = 100\\ \\text{cm} \\times 100\\ \\text{cm} = 10\\ 000\\ \\text{cm}^2$." },
+    { "id": "q7", "type": "numeric", "prompt": "Convert $3{,}5\\ \\text{m}^2$ to $\\text{cm}^2$.", "unit": "cm²", "answer": 35000, "tolerance": 0, "explanation": "$3{,}5 \\times 10\\ 000 = 35\\ 000\\ \\text{cm}^2$." },
+    { "id": "q8", "type": "numeric", "prompt": "A square has a perimeter of 36 cm. Calculate its area.", "unit": "cm²", "answer": 81, "tolerance": 0, "explanation": "Side $= 36 \\div 4 = 9$ cm, so the area is $9^2 = 81\\ \\text{cm}^2$." },
+    { "id": "q9", "type": "match", "prompt": "Match each shape with its area formula.", "marks": 4, "pairs": [
+      { "left": "Square", "right": "side × side" },
+      { "left": "Rectangle", "right": "length × breadth" },
+      { "left": "Triangle", "right": "½ × base × height" },
+      { "left": "Circle", "right": "π × radius²" }
+    ], "explanation": "These four formulae must be known by heart." },
+    { "id": "q10", "type": "numeric", "prompt": "An L-shaped room is a 10 m by 8 m rectangle with a 4 m by 5 m rectangle cut out of one corner. Calculate its area.", "unit": "m²", "answer": 60, "tolerance": 0, "explanation": "$80 - 20 = 60\\ \\text{m}^2$." },
+    { "id": "q11", "type": "mcq", "prompt": "The side of a square is doubled. What happens to its area?", "options": ["It doubles", "It is multiplied by 4", "It is multiplied by 8", "It stays the same"], "answer": 1, "explanation": "$(2s)^2 = 4s^2$: the area is multiplied by $2^2 = 4$." },
+    { "id": "q12", "type": "numeric", "prompt": "A circle has a circumference of 31,4 cm. Using $\\pi = 3{,}14$, calculate its diameter.", "unit": "cm", "answer": 10, "tolerance": 0.01, "explanation": "$C = \\pi d$, so $d = 31{,}4 \\div 3{,}14 = 10$ cm." },
+    { "id": "q13", "type": "open", "marks": 5, "prompt": "A stage is made of a rectangle 12 m long and 8 m wide, with a semicircle attached to one of the 8 m sides (the 8 m side is the diameter of the semicircle).\n(a) Calculate the area of the stage.  (3)\n(b) Calculate the perimeter of the stage.  (2)\nRound to two decimal places.", "memo": "(a) Rectangle: $12 \\times 8 = 96\\ \\text{m}^2$ ✓ (1)\nSemicircle: $\\frac{1}{2}\\pi (4)^2 = 25{,}13\\ \\text{m}^2$ ✓ (1)\nTotal $= 121{,}13\\ \\text{m}^2$ ✓ (1)\n(b) Straight sides: $12 + 12 + 8 = 32$ m; curved part: $\\frac{1}{2} \\times 2\\pi(4) = 12{,}57$ m ✓ (1)\nPerimeter $= 44{,}57$ m ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "A floor measures 4,5 m by 3,2 m. How many square tiles of 30 cm by 30 cm are needed to cover it? Assume no tiles are wasted.", "memo": "Floor $= 450 \\times 320$ cm ✓ (1)\n$= 144\\ 000\\ \\text{cm}^2$ ✓ (1)\nTile $= 900\\ \\text{cm}^2$ ✓ (1)\n$144\\ 000 \\div 900 = 160$ tiles ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "A circular vegetable garden has a radius of 3,5 m. Fencing costs R45 per metre. Calculate the cost of fencing around the garden. Use the $\\pi$ key.", "memo": "$C = 2\\pi(3{,}5)$ ✓ (1)\n$= 21{,}99$ m ✓ (1)\nCost $= 21{,}99 \\times 45 \\approx \\text{R}989{,}60$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "A triangle has an area of $24\\ \\text{cm}^2$ and a base of 8 cm. Calculate its perpendicular height.", "memo": "$24 = \\frac{1}{2} \\times 8 \\times h$ ✓ (1)\n$h = 6$ cm ✓ (1)" }
+  ]
+}

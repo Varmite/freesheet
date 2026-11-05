@@ -1,0 +1,57 @@
+{
+  "id": "visible-light",
+  "title": "Visible Light",
+  "term": 3,
+  "summary": "Light as radiation, the visible spectrum, how light travels, reflection, refraction, absorption and why objects have colour.",
+  "notes": [
+    { "type": "heading", "text": "What is light?" },
+    { "type": "paragraph", "text": "Light is a form of **radiation**: energy that travels as waves and needs no medium, so it can cross the vacuum of space. Light travels at about **300 000 km per second**, the fastest speed in the universe. Objects that give off their own light are **luminous** (the sun, a candle flame, a light bulb); objects we see because they reflect light are **non-luminous** (the moon, a book, you)." },
+    { "type": "heading", "text": "The visible spectrum" },
+    { "type": "paragraph", "text": "White light is a mixture of colours. When white light passes through a triangular glass **prism**, it splits into a band of colours called the **visible spectrum**. This splitting is called **dispersion**. A rainbow forms in the same way when sunlight passes through raindrops." },
+    { "type": "list", "ordered": true, "items": ["Red (longest wavelength)", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet (shortest wavelength)"] },
+    { "type": "callout", "label": "Memory aid", "text": "**ROY G BIV**: Red, Orange, Yellow, Green, Blue, Indigo, Violet." },
+    { "type": "heading", "text": "How light travels" },
+    { "type": "paragraph", "text": "Light travels in **straight lines**, drawn as rays with arrows. This is why shadows form: an opaque object blocks the light and leaves a dark area behind it." },
+    { "type": "table", "headers": ["Material", "What happens to light", "Example"], "rows": [
+      ["Transparent", "Almost all light passes through; you can see clearly through it", "Clear glass, clean water"],
+      ["Translucent", "Some light passes through but is scattered; you cannot see clearly", "Frosted glass, wax paper"],
+      ["Opaque", "No light passes through; light is absorbed or reflected", "Wood, metal, brick"]
+    ] },
+    { "type": "heading", "text": "Reflection" },
+    { "type": "paragraph", "text": "When light bounces off a surface it is **reflected**. A smooth, shiny surface (a mirror) gives **regular reflection** and a clear image. A rough surface (paper) gives **diffuse reflection**, scattering light in all directions." },
+    { "type": "formula", "latex": "\\text{angle of incidence} = \\text{angle of reflection}", "caption": "The law of reflection (both angles measured from the normal)" },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 140\" font-family=\"sans-serif\" font-size=\"11\"><line x1=\"20\" y1=\"115\" x2=\"220\" y2=\"115\" stroke=\"black\" stroke-width=\"3\"/><line x1=\"120\" y1=\"20\" x2=\"120\" y2=\"115\" stroke=\"black\" stroke-dasharray=\"4 3\"/><line x1=\"50\" y1=\"40\" x2=\"120\" y2=\"115\" stroke=\"black\" stroke-width=\"2\"/><line x1=\"120\" y1=\"115\" x2=\"190\" y2=\"40\" stroke=\"black\" stroke-width=\"2\"/><polygon points=\"88,80 82,70 92,72\" fill=\"black\"/><polygon points=\"158,75 160,64 150,70\" fill=\"black\"/><text x=\"124\" y=\"30\">normal</text><text x=\"30\" y=\"35\">incident ray</text><text x=\"160\" y=\"35\">reflected ray</text><text x=\"95\" y=\"105\">i</text><text x=\"138\" y=\"105\">r</text><text x=\"95\" y=\"132\">mirror</text></svg>", "caption": "The angle of incidence (i) equals the angle of reflection (r)" },
+    { "type": "heading", "text": "Refraction" },
+    { "type": "paragraph", "text": "**Refraction** is the bending of light when it passes from one transparent medium to another, because light changes speed. Light slows down and bends **towards the normal** when it enters a denser medium (air into water or glass) and bends **away from the normal** when it leaves." },
+    { "type": "list", "items": [
+      "A straw in a glass of water looks bent at the surface.",
+      "A swimming pool looks shallower than it really is.",
+      "Lenses in spectacles, cameras and the eye refract light to focus an image."
+    ] },
+    { "type": "heading", "text": "Absorption and colour" },
+    { "type": "paragraph", "text": "When light falls on an opaque object, some colours are **absorbed** and others are **reflected**. The colour we see is the colour that is reflected into our eyes." },
+    { "type": "table", "headers": ["Object in white light", "Reflects", "Absorbs"], "rows": [
+      ["Red apple", "Red", "All other colours"],
+      ["White shirt", "All colours", "None"],
+      ["Black shirt", "None", "All colours (so it heats up most in the sun)"],
+      ["Green leaf", "Green", "Mostly red and blue (used for photosynthesis)"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "A red object seen in green light looks **black**, because there is no red light for it to reflect and it absorbs the green." }
+  ],
+  "questions": [
+    { "id": "luminous", "type": "mcq", "prompt": "Which of these is a luminous object?", "options": ["The moon", "A mirror", "A candle flame", "A white page"], "answer": 2 },
+    { "id": "dispersion", "type": "short", "prompt": "What is the splitting of white light into its colours called?", "answers": ["dispersion"] },
+    { "id": "spectrum-order", "type": "mcq", "prompt": "Which colour of the visible spectrum has the shortest wavelength?", "options": ["Red", "Green", "Yellow", "Violet"], "answer": 3 },
+    { "id": "law", "type": "numeric", "prompt": "A ray of light strikes a mirror at an angle of incidence of 35°. What is the angle of reflection?", "answer": 35, "tolerance": 0, "unit": "°" },
+    { "id": "refraction", "type": "short", "prompt": "What is the bending of light as it passes from air into water called?", "answers": ["refraction"] },
+    { "id": "materials", "type": "match", "marks": 3, "prompt": "Match each material to its description.", "pairs": [
+      { "left": "Frosted glass", "right": "Translucent" },
+      { "left": "Clear window glass", "right": "Transparent" },
+      { "left": "Brick", "right": "Opaque" }
+    ] },
+    { "id": "black-sun", "type": "truefalse", "prompt": "A black T-shirt gets hotter in the sun than a white one because it absorbs all colours of light.", "answer": true },
+    { "id": "shadow", "type": "open", "marks": 2, "prompt": "Explain how a shadow forms.", "memo": "✓ Light travels in straight lines (1)\n✓ An opaque object blocks the light, leaving a dark area behind it where light cannot reach (1)" },
+    { "id": "red-green", "type": "open", "marks": 2, "prompt": "What colour does a red cap appear in green light? Explain.", "memo": "✓ Black (1)\n✓ It absorbs the green light and there is no red light for it to reflect (1)" },
+    { "id": "straw", "type": "open", "marks": 2, "prompt": "Explain why a pencil in a glass of water appears bent.", "memo": "✓ Light from the pencil changes speed when it passes from water into air (1)\n✓ so it bends (refracts) and the pencil appears to be in a different position (1)" }
+  ]
+}

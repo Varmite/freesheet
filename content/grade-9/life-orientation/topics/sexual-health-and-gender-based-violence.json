@@ -1,0 +1,60 @@
+{
+  "id": "sexual-health-and-gender-based-violence",
+  "title": "Sexual Health and Gender-Based Violence",
+  "term": 2,
+  "summary": "Responsible decisions about sexuality, contraception and STI prevention, gender roles and stereotypes, gender-based violence, the law, and where survivors can get help.",
+  "notes": [
+    { "type": "heading", "text": "Responsible decisions" },
+    { "type": "paragraph", "text": "Decisions about relationships and sex affect your health, education and future. **Delaying** sexual activity (abstinence) is the safest choice for young teenagers. Anyone who is sexually active should use **condoms** every time to reduce the risk of HIV and other STIs, and a reliable contraceptive to prevent pregnancy." },
+    { "type": "table", "headers": ["Method", "Prevents pregnancy?", "Protects against STIs and HIV?"], "rows": [
+      ["Abstinence", "Yes (100%)", "Yes (100%)"],
+      ["Male or female condom", "Yes, if used correctly every time", "Yes, greatly reduces risk"],
+      ["Pill, injection, implant", "Yes", "No"],
+      ["Emergency contraception (morning-after pill)", "Can prevent pregnancy if taken soon after unprotected sex", "No"]
+    ] },
+    { "type": "paragraph", "text": "Youth-friendly clinics provide free, **confidential** services: HIV testing, contraception and treatment of STIs. In South Africa, children aged 12 and older can consent to an HIV test themselves." },
+    { "type": "heading", "text": "Gender roles and stereotypes" },
+    { "type": "paragraph", "text": "**Gender roles** are society's expectations of how men and women should behave. Stereotypes such as 'boys don't cry' or 'girls must do the cooking' limit people's choices and can contribute to unequal power and violence." },
+    { "type": "heading", "text": "Gender-based violence (GBV)" },
+    { "type": "definition", "term": "Gender-based violence", "text": "Violence directed at a person because of their gender, or that affects one gender more than others. Most GBV in South Africa is committed by men against women and girls, but anyone can be a victim." },
+    { "type": "table", "headers": ["Type of abuse", "Examples"], "rows": [
+      ["Physical", "Hitting, pushing, choking"],
+      ["Sexual", "Rape, unwanted touching, forcing someone to watch sexual images"],
+      ["Emotional and psychological", "Insults, threats, humiliation, controlling who someone sees"],
+      ["Economic", "Taking someone's money, preventing them from working"],
+      ["Digital", "Sharing private images without consent, tracking someone's phone, online harassment"]
+    ] },
+    { "type": "callout", "label": "The law", "text": "The **Domestic Violence Act** lets victims apply for a **protection order** at a magistrate's court. Sexual offences are crimes under the **Sexual Offences Act**. Sharing intimate images of someone without consent is a crime. Abuse is **never** the victim's fault." },
+    { "type": "heading", "text": "Getting help" },
+    { "type": "list", "items": [
+      "**GBV Command Centre**: 0800 428 428 (free, 24 hours).",
+      "**Childline**: 116.",
+      "Police (SAPS): 10111; Thuthuzela Care Centres at hospitals support rape survivors.",
+      "Tell a trusted adult, teacher or counsellor."
+    ] },
+    { "type": "heading", "text": "Preventing GBV" },
+    { "type": "list", "items": [
+      "Challenge harmful gender stereotypes and jokes.",
+      "Respect consent: no means no.",
+      "Speak out and report abuse.",
+      "Build relationships based on equality and respect."
+    ] }
+  ],
+  "questions": [
+    { "id": "both", "type": "mcq", "prompt": "Which method protects against both pregnancy and STIs?", "options": ["The pill", "The injection", "Condoms", "The implant"], "answer": 2 },
+    { "id": "gbv-line", "type": "short", "prompt": "What is the free number of the GBV Command Centre?", "answers": ["0800 428 428", "0800428428"] },
+    { "id": "protection-order", "type": "short", "prompt": "Under the Domestic Violence Act, what can a victim apply for at a magistrate's court?", "answers": ["protection order", "a protection order"] },
+    { "id": "hiv-age", "type": "numeric", "prompt": "From what age can a child consent to an HIV test in South Africa?", "answer": 12, "tolerance": 0, "unit": "years" },
+    { "id": "fault", "type": "truefalse", "prompt": "A person who is abused is partly to blame for the abuse.", "answer": false },
+    { "id": "abuse-types", "type": "match", "marks": 4, "prompt": "Match each example to the type of abuse.", "pairs": [
+      { "left": "Taking a partner's wages", "right": "Economic" },
+      { "left": "Constant insults and threats", "right": "Emotional" },
+      { "left": "Sharing private images without consent", "right": "Digital" },
+      { "left": "Slapping", "right": "Physical" }
+    ] },
+    { "id": "stereotype", "type": "open", "marks": 2, "prompt": "Give an example of a gender stereotype and explain how it can be harmful.", "memo": "✓ Example, e.g. 'boys don't cry' (1)\n✓ Harm, e.g. boys hide emotions and may turn to anger or violence (1)" },
+    { "id": "prevent", "type": "open", "marks": 3, "prompt": "Suggest THREE ways young people can help to prevent gender-based violence.", "memo": "Any three (1 each): challenge stereotypes; respect consent; report abuse; support survivors; build equal relationships; speak out" },
+    { "id": "clinic", "type": "open", "marks": 2, "prompt": "Name TWO services offered by youth-friendly clinics.", "memo": "Any two (1 each): HIV testing; contraception; STI treatment; counselling; pregnancy tests" },
+    { "id": "help", "type": "open", "marks": 2, "prompt": "Name TWO places where a survivor of GBV can get help.", "memo": "Any two (1 each): GBV Command Centre; police; Childline; Thuthuzela Care Centre; trusted adult; counsellor/social worker" }
+  ]
+}

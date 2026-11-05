@@ -1,0 +1,50 @@
+{
+  "id": "industrialisation-in-southern-africa",
+  "title": "Industrialisation in Southern Africa: Sugar and Indentured Labour",
+  "term": 1,
+  "summary": "How the demand from British industry led to sugar plantations in Natal, why indentured labourers were brought from India, their working conditions, and Gandhi's early resistance in South Africa.",
+  "notes": [
+    { "type": "heading", "text": "Links between Britain and southern Africa" },
+    { "type": "paragraph", "text": "British industry needed raw materials, and growing British cities wanted cheap food and luxuries such as **sugar**. The colony of **Natal** (today KwaZulu-Natal), which Britain took over in 1843, had a warm, wet climate ideal for growing **sugar cane**. From the 1850s, settlers started large sugar **plantations** along the coast." },
+    { "type": "heading", "text": "The labour problem" },
+    { "type": "paragraph", "text": "Plantation owners needed many workers for the hard work of cutting cane. Most Zulu men did not want to work on plantations for low wages: they had their own land, cattle and crops and did not need wage work. Planters therefore looked to another British colony, **India**." },
+    { "type": "definition", "term": "Indentured labour", "text": "A system in which a worker signs a contract (an indenture) to work for a particular employer for a fixed number of years, usually five, in return for passage, food, housing and low wages." },
+    { "type": "heading", "text": "Indentured labourers from India" },
+    { "type": "list", "items": [
+      "The first ship, the **Truro**, arrived in Durban on **16 November 1860**.",
+      "Between 1860 and 1911 about **152 000** Indians came to Natal as indentured labourers.",
+      "Many came from poor areas in south and north India, hoping to escape poverty and famine.",
+      "After five years they could re-indenture, return to India, or stay as free workers; after ten years they were promised free passage home or a piece of land.",
+      "Later, **passenger Indians** came at their own cost as traders and merchants."
+    ] },
+    { "type": "heading", "text": "Working and living conditions" },
+    { "type": "table", "headers": ["Promised", "Reality for many workers"], "rows": [
+      ["Fair wages", "Very low wages (about 10 shillings a month), with deductions for being ill or absent"],
+      ["Decent housing", "Crowded barracks with little privacy or sanitation"],
+      ["Reasonable working hours", "Long hours in the fields and sugar mills, sometimes through the night at harvest"],
+      ["Medical care", "Poor medical care; diseases spread easily"],
+      ["Protection by law", "Workers who left the plantation without a pass could be arrested; some were beaten"]
+    ] },
+    { "type": "passage", "title": "Source B: A summary of historians' views (written for this lesson)", "text": "The indenture system was described by some critics at the time as 'a new system of slavery'. Workers were tied to one employer and could be punished for leaving, yet many also saw it as a chance to escape debt and hunger in India and build a new life." },
+    { "type": "heading", "text": "Mohandas Gandhi and passive resistance" },
+    { "type": "paragraph", "text": "**Mohandas Gandhi**, a young lawyer, arrived in Natal in **1893**. After being thrown off a first-class train compartment at Pietermaritzburg because of his skin colour, he began to fight discrimination. In 1894 he helped found the **Natal Indian Congress**. He developed **satyagraha** (passive resistance): non-violent refusal to obey unjust laws. In 1913 he led a strike and march of thousands of Indian workers against a £3 tax on former indentured labourers, which was later abolished." },
+    { "type": "heading", "text": "Legacy" },
+    { "type": "paragraph", "text": "The sugar industry is still important to KwaZulu-Natal's economy, and Durban has one of the largest communities of Indian descent outside India. Indian South Africans have contributed greatly to the country's culture, business and the struggle for democracy." }
+  ],
+  "questions": [
+    { "id": "crop", "type": "short", "prompt": "Which crop was grown on plantations in Natal?", "answers": ["sugar cane", "sugar", "sugarcane"] },
+    { "id": "truro", "type": "numeric", "prompt": "In which year did the first indentured labourers arrive in Durban on the Truro?", "answer": 1860, "tolerance": 0 },
+    { "id": "why-india", "type": "mcq", "prompt": "Why did Natal planters bring workers from India?", "options": ["Zulu men refused to work on plantations for low wages", "Indians were experts at mining", "India had no sugar industry", "Britain banned local labour"], "answer": 0 },
+    { "id": "indenture", "type": "open", "marks": 2, "prompt": "Explain what indentured labour means.", "memo": "✓ A worker signs a contract to work for a particular employer (1)\n✓ for a fixed number of years (usually five) in return for passage, food, housing and wages (1)" },
+    { "id": "gandhi-year", "type": "short", "prompt": "What was the name of Gandhi's method of non-violent resistance?", "answers": ["satyagraha", "passive resistance"] },
+    { "id": "nic", "type": "truefalse", "prompt": "Gandhi helped to found the Natal Indian Congress in 1894.", "answer": true },
+    { "id": "conditions", "type": "open", "marks": 3, "prompt": "Describe THREE hardships faced by indentured labourers.", "memo": "Any three (1 each): low wages/deductions; long hours; crowded barracks; poor medical care; could be arrested for leaving; physical punishment" },
+    { "id": "source-b", "type": "open", "marks": 3, "prompt": "Read Source B. (a) What did critics call the indenture system? (b) Why might they have said this? (c) Why did workers still choose to come?", "memo": "(a) ✓ A new system of slavery (1)\n(b) ✓ Workers were tied to one employer and punished for leaving (1)\n(c) ✓ To escape poverty, debt and hunger in India / hope of a better life (1)" },
+    { "id": "match-terms", "type": "match", "marks": 3, "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Plantation", "right": "Large farm growing one cash crop" },
+      { "left": "Passenger Indians", "right": "Traders who paid their own passage" },
+      { "left": "Satyagraha", "right": "Non-violent resistance to unjust laws" }
+    ] },
+    { "id": "legacy", "type": "open", "marks": 2, "prompt": "Give TWO ways in which the arrival of indentured labourers still affects South Africa today.", "memo": "Any two (1 each): large Indian South African community in KZN; sugar industry; cultural contributions (food, religion, festivals); role in the struggle for democracy; Gandhi's ideas" }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "id": "reflective-essays-and-visual-prompts",
+  "title": "Reflective Essays and Visual Prompts",
+  "term": 3,
+  "summary": "Write insightful reflective essays, explore quotations and respond to picture prompts in Paper 3 Section A, choosing the best essay type for each topic.",
+  "notes": [
+    { "type": "heading", "text": "Paper 3 Section A: the essay" },
+    { "type": "paragraph", "text": "Paper 3 (Writing) for Home Language is out of **100 marks**. **Section A** is the essay (**50 marks**) and **Section B** consists of two transactional texts (25 marks each). In Section A you choose **ONE** topic from a list. Some topics are written prompts (a title, a statement, a quotation or a single word) and one or more are **visual prompts** (pictures).\n\nThe Home Language essay must be **400–450 words** long. This topic teaches you how to write a **reflective essay**, how to explore a **quotation or statement**, how to respond to a **picture**, and how to choose the essay type that will give you the best mark." },
+    {
+      "type": "table",
+      "caption": "The CAPS essay rubric (Home Language, 50 marks)",
+      "headers": ["Criterion", "Marks", "What the marker looks for"],
+      "rows": [
+        ["Content and planning", "30", "A relevant, original and insightful response to the topic; ideas that are developed in depth; coherent organisation; evidence of planning"],
+        ["Language, style and editing", "15", "Tone, register and style suited to the purpose; precise and varied vocabulary; varied sentences; effective figurative language; correct grammar, spelling and punctuation"],
+        ["Structure", "5", "Features of the chosen essay type; well-developed paragraphs; a logical sequence of ideas; sound sentence construction"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Content and planning is worth **60%** of the essay mark. Spend about 10 minutes planning (a mind map or a paragraph outline) and show your planning as instructed in the paper. Write the **number** of the topic you chose and a **title**, and leave five minutes to edit and proofread." },
+
+    { "type": "heading", "text": "What is a reflective essay?" },
+    { "type": "definition", "term": "Reflective essay", "text": "A personal essay in which the writer thinks deeply about an experience, person, place, idea, feeling or quotation and explores what it means to them, showing honesty, insight and personal growth." },
+    { "type": "paragraph", "text": "A simple way to remember the difference between the personal essay types:\n\n• A **narrative** essay asks: *What happened?*\n• A **descriptive** essay asks: *What was it like?*\n• A **reflective** essay asks: *What did it mean, and how has it changed the way I think?*\n\nIn a reflective essay the experience is a **springboard**, not the destination. The events are told briefly and selectively so that most of the essay can be spent on thought, feeling and understanding." },
+    { "type": "definition", "term": "Insight", "text": "A deeper, often surprising understanding of yourself, other people or life that you reach by thinking about an experience. Insight is the heart of a reflective essay." },
+    {
+      "type": "list",
+      "items": [
+        "**First person** (‘I’), because the thoughts are your own.",
+        "A **thoughtful, introspective tone**: sincere and honest, never melodramatic or preachy.",
+        "A **mix of tenses**: past tense for what happened (‘I was thirteen’) and present tense for what you understand now (‘I realise’, ‘I still wonder’).",
+        "A **balance between description and thought**: enough concrete detail to make the experience real, but far more reflection than retelling.",
+        "**Insight and growth**: the reader should see how your understanding has changed or deepened.",
+        "**Honesty about uncertainty**: it is acceptable, even powerful, to admit what you still do not understand.",
+        "A **conclusion that reaches understanding**, not a summary of events or a moral stuck on at the end."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "Narrative, descriptive and reflective essays compared",
+      "headers": ["Aspect", "Narrative", "Descriptive", "Reflective"],
+      "rows": [
+        ["Main purpose", "To tell a story", "To create a vivid picture of a person, place or moment", "To explore the meaning of an experience or idea"],
+        ["Focus", "Plot, conflict, characters, suspense", "Sensory detail, atmosphere, imagery", "Thoughts, feelings, lessons, changing understanding"],
+        ["Structure", "Exposition, rising action, climax, resolution", "Organised by space, senses or impression", "Experience, then exploration, then insight"],
+        ["Typical tense", "Past tense", "Present or past tense", "Past for events, present for current understanding"],
+        ["Typical ending", "Resolution or twist", "A final, lasting impression", "Insight, growth or an honest open question"]
+      ]
+    },
+    { "type": "callout", "label": "Common mistake", "text": "The most common way to lose marks is to write **a mere narrative**: a story told from beginning to end with one sentence such as ‘That day I learnt never to give up’ added at the end. That is a narrative with a moral, not a reflective essay. Reflection must run through the **whole** essay." },
+
+    { "type": "heading", "text": "Balancing description and thought" },
+    { "type": "paragraph", "text": "Strong reflective paragraphs often follow an **anchor, then, now** pattern:\n\n1. **Anchor**: one concrete moment or vivid detail that makes the experience real.\n2. **Then**: what you felt or believed at the time.\n3. **Now**: what you understand when you look back, and why it matters.\n\nAs a rough guide, no more than about a third of the essay should be spent retelling events. The rest should explore their meaning." },
+    {
+      "type": "example",
+      "title": "Worked example 1: turning narration into reflection",
+      "problem": "Rewrite this narrative paragraph as a reflective one.\n\n‘Last year our class went on a camp in the Drakensberg. On the second day we hiked to a waterfall. It took four hours. My friend Sipho was slow, so I waited for him while the others went ahead. We got lost for an hour but eventually found the group. Then we had supper and went to bed.’",
+      "steps": [
+        "**Diagnose the problem.** Every sentence is an action in time order (‘went’, ‘hiked’, ‘waited’, ‘got lost’, ‘then’). There is no feeling, no thought and no meaning. It is pure narration.",
+        "**Choose the moment that matters.** The only significant moment is waiting for Sipho and being lost together. The supper, the bed and the length of the hike can go.",
+        "**Compress the events into an anchor.** One sentence is enough: the hour we spent lost on the mountain.",
+        "**Add ‘then’: the feeling at the time.** I resented Sipho; I wanted to be with the fast group.",
+        "**Add ‘now’: the insight.** That hour became the most honest conversation I had ever had with a friend.",
+        "**End with a wider thought** that shows growth or an honest question: how many such hours have I rushed past?"
+      ],
+      "answer": "‘I have forgotten most of that Drakensberg camp, but I have not forgotten the hour Sipho and I spent lost on the mountain. I had stayed behind because he was struggling, and at the time I resented him for every minute the others pulled ahead. I wanted to be with the fast group, the ones who would arrive first and take the photographs. It took me a long time to understand that the hour I thought I had wasted was the most honest conversation I had ever had with a friend. I still wonder how many such hours I have rushed past.’"
+    },
+
+    { "type": "heading", "text": "Structuring a reflective essay" },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Introduction**: hook the reader with an image, a moment or a thought; introduce the experience or idea; hint at why it matters without giving away the full insight.",
+        "**Body (three or four paragraphs)**: each paragraph explores one stage, aspect or question. Use the anchor, then, now pattern. Link paragraphs with reflective transitions (‘Looking back…’, ‘It was only later that…’).",
+        "**Conclusion**: arrive at your insight or growth. You may look forward, return to the opening image, or admit honestly what remains unresolved. Do not simply repeat the events."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "Useful structures for reflective essays",
+      "headers": ["Structure", "How it works", "Suits topics such as"],
+      "rows": [
+        ["Then and now", "Contrast what you believed before with what you understand now", "‘Something I used to believe’"],
+        ["Chronological reflection", "Follow a few key moments in order, reflecting on each", "‘The year everything changed’"],
+        ["Thematic", "Each paragraph explores a different side of one idea", "‘Home’, ‘Silence’, a quotation"],
+        ["Circular", "Begin and end with the same image, which has gained new meaning by the end", "Visual prompts, objects, places"]
+      ]
+    },
+
+    { "type": "heading", "text": "Language and style" },
+    {
+      "type": "list",
+      "items": [
+        "**Reflective phrases**: ‘Looking back, I realise…’, ‘At the time I believed…; now I see…’, ‘I have come to understand…’, ‘Perhaps…’, ‘I still wonder whether…’.",
+        "**Precise, vivid detail** in the anchor moments: one exact image is worth more than a paragraph of general description.",
+        "**Varied sentence lengths**: a short sentence after a long one can land an insight powerfully.",
+        "**Imagery and figurative language** used with purpose, for example an object that becomes a symbol of the idea.",
+        "**Register**: personal and sincere, but still standard written English. Avoid slang, SMS language and exaggerated clichés (‘it was the worst day of my entire life’).",
+        "**Rhetorical questions** sparingly: one well-placed question can show genuine thinking; five in a row sounds empty."
+      ]
+    },
+    { "type": "callout", "label": "Remember", "text": "Reflective phrases do not create insight on their own. ‘I learnt a valuable lesson’ says nothing. Name the lesson precisely and show **how** the experience taught it to you." },
+
+    { "type": "heading", "text": "Exploratory writing on quotations and statements" },
+    { "type": "paragraph", "text": "Section A often includes a **quotation, proverb or statement**, sometimes with no essay type specified. Exploratory writing means you **explore** the ideas the quotation raises: what it means, whether it is true in your experience, where it falls short and what it reveals about life. You may respond with a reflective, argumentative, discursive or even narrative essay, provided the quotation stays at the centre." },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Read slowly** and underline the key words.",
+        "**Paraphrase** the quotation in your own words to make sure you understand it.",
+        "**Brainstorm meanings**: the literal meaning, figurative meanings and personal links (people, places, experiences).",
+        "**Decide your angle**: Do you agree completely, partly or not at all? Which experience or idea will you explore?",
+        "**Choose the essay type** that lets you develop that angle in depth.",
+        "**Create a title** (if one is not given) that links clearly to the quotation.",
+        "**Keep returning to the quotation**: refer to its key words in your introduction, at turning points and in your conclusion, but do not simply repeat it."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: exploring a proverb",
+      "problem": "Topic: ‘Umuntu ngumuntu ngabantu.’ (Nguni proverb: A person is a person through other people.)",
+      "steps": [
+        "**Paraphrase**: Who I am is shaped by the people around me; I cannot become fully myself alone.",
+        "**Literal and figurative meanings**: we depend on others to survive; our values, language and identity are learnt from others; we become more human when we care for others (the spirit of ubuntu).",
+        "**Personal links**: the neighbours who fed my family when my mother lost her job; the teacher who noticed I was struggling; the friend I let down and what that showed me about myself.",
+        "**Angle**: I mostly agree, but I want to explore the uncomfortable side too: other people can also shape us in ways we must later unlearn.",
+        "**Essay type**: reflective, because the angle is personal and thoughtful rather than a debate.",
+        "**Title**: ‘The People Who Wrote Me’.",
+        "**Opening sentence**: ‘I used to think I had made myself, until I tried to list everything I knew that nobody had taught me, and the page stayed empty.’"
+      ],
+      "answer": "A reflective essay that keeps the proverb at its centre, explores both its truth and its limits, and ends with a clear personal insight."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 3: exploring a statement",
+      "problem": "Topic: ‘Not every heavy thing can be seen.’",
+      "steps": [
+        "**Key words**: ‘heavy’ (used figuratively: burdens, worries, secrets) and ‘seen’ (other people may not notice).",
+        "**Paraphrase**: People often carry emotional burdens that others cannot see.",
+        "**Possible angles**: (a) reflective: the pressure I hid behind good marks; (b) narrative: a character whose friends discover what she has been carrying; (c) argumentative: schools should treat mental health as seriously as academic results.",
+        "**Choose**: (a), because I can write honestly and in depth from my own experience.",
+        "**Plan**: anchor image of a school bag packed every night; then, the pride I took in hiding stress; now, what I understand about asking for help; conclusion returning to the bag, now lighter."
+      ],
+      "answer": "Any of the three angles is valid. The best choice is the one you can develop most honestly and in the most depth within 400–450 words."
+    },
+
+    { "type": "heading", "text": "Responding to visual prompts" },
+    { "type": "paragraph", "text": "Section A usually includes one or more **pictures**. The paper normally tells you that you may **interpret the picture in any way**, that you may write **any type of essay**, and that you must write the **number** of the topic and give your essay a suitable **title**. The essay must relate clearly to the picture: a good essay that ignores the picture will be penalised for not responding to the topic." },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Observe**: list what you actually see: people, objects, setting, light, colour or tone, facial expressions, body language, any words or captions.",
+        "**Feel the mood**: is the atmosphere lonely, hopeful, tense, peaceful, nostalgic?",
+        "**Interpret literally**: what could be happening in the picture itself?",
+        "**Interpret figuratively**: what could the picture symbolise (change, loss, choice, freedom, pressure, belonging)?",
+        "**Choose** the interpretation that is most original and that you can develop in depth.",
+        "**Choose the essay type** that best suits that interpretation.",
+        "**Create a title** that connects the picture to your idea.",
+        "**Make the link clear** in the introduction and keep returning to the image, especially in the conclusion."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 4: a visual prompt",
+      "problem": "Picture (described): A black-and-white photograph shows the wrinkled hands of an elderly woman holding a small child’s hand. Behind them, out of focus, is a dusty road and a row of small houses.",
+      "steps": [
+        "**Observe**: two hands of very different ages; the old hand is wrapped around the young one; black and white suggests memory or the past; a dusty road suggests a rural town or township and a journey.",
+        "**Mood**: gentle, protective, nostalgic.",
+        "**Literal interpretation**: a grandmother walking her grandchild to school or to church.",
+        "**Figurative interpretations**: the passing of wisdom from one generation to the next; being held up by others; the moment roles reverse when the child grows up and must hold the elder’s hand.",
+        "**Choose**: the role reversal, because it is less obvious and allows real reflection.",
+        "**Essay type**: reflective (‘the day I realised I was now the one holding her hand’). A narrative or descriptive essay would also be valid.",
+        "**Title**: ‘Whose Hand Holds Whose’.",
+        "**Link**: open with the image of my grandmother’s hand around mine on the road to the clinic; return to it in the conclusion, with the grip reversed."
+      ],
+      "answer": "A reflective essay that grows directly out of the picture’s central image and uses it as a symbol throughout."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 5: one picture, several essay types",
+      "problem": "Picture (described): An empty wooden chair stands alone on a theatre stage under a single spotlight. The rest of the theatre is dark.",
+      "steps": [
+        "**Observe and feel**: emptiness, isolation, expectation; the spotlight suggests attention or performance; the darkness suggests the unknown or an audience you cannot see.",
+        "**Reflective**: ‘The Chair Nobody Filled’: reflecting on a parent who never came to watch me perform, and what I learnt about performing for myself.",
+        "**Narrative**: a story about a nervous learner at an eisteddfod who must walk out to that chair and play the piano.",
+        "**Descriptive**: the hushed theatre seconds before a performance begins.",
+        "**Argumentative**: ‘Everyone wants the spotlight’: arguing that social media has made young people feel they must always perform.",
+        "**Choose** the version you can develop with the most depth and originality, and make the chair or spotlight appear at key points."
+      ],
+      "answer": "Any essay type is acceptable for a visual prompt, provided the link to the picture is clear and sustained."
+    },
+    { "type": "callout", "label": "Common mistake", "text": "Three ways learners lose marks on picture topics: (1) they **only describe** the picture without developing an idea; (2) they mention the picture in the first line and then **forget it**; (3) they **forget to give a title** or the topic number. Interpretation means using the picture as a starting point for meaning." },
+
+    { "type": "heading", "text": "Choosing the best essay type for a topic" },
+    {
+      "type": "table",
+      "caption": "Clues in the topic wording",
+      "headers": ["Clue in the topic", "Best essay type", "Example topic"],
+      "rows": [
+        ["‘Describe…’, ‘Picture the scene…’", "Descriptive", "Describe the Durban beachfront on Christmas Day."],
+        ["‘Write a story…’, a given opening or closing line", "Narrative", "Write a story that begins: ‘The phone rang at three in the morning.’"],
+        ["‘Reflect on…’, ‘Looking back…’, ‘What I have learnt…’", "Reflective", "What my first holiday job taught me about myself"],
+        ["‘Do you agree?’, ‘Argue for or against…’, ‘Convince…’", "Argumentative", "Cellphones should be banned at school. Do you agree?"],
+        ["‘Discuss…’, ‘Consider both sides…’, ‘advantages and disadvantages’", "Discursive", "Discuss the advantages and disadvantages of online learning."],
+        ["A single word, a phrase, a quotation or a picture", "Your choice", "‘Bridges’; a picture of a crossroads"]
+      ]
+    },
+    { "type": "paragraph", "text": "When the topic leaves the choice to you, ask three questions:\n\n1. **Which type lets me say something original and meaningful** about this topic?\n2. **Do I have enough material** to write 400–450 focused words in this type?\n3. **Which type do I write best** under exam conditions?" },
+    { "type": "callout", "label": "Exam tip", "text": "If the topic **specifies** an essay type (for example ‘Write a reflective essay on…’), you **must** write that type. Writing a story when a reflective essay is required means you have not responded to the topic, and your Content mark will suffer." },
+
+    { "type": "heading", "text": "A model reflective essay" },
+    { "type": "passage", "title": "What My Grandmother’s Garden Knew (model essay, written for this guide)", "text": "Every December, when we drove the long road from Johannesburg to my grandmother’s house outside Mthatha, I counted the hours until I could escape back to my phone signal. Her house had one bulb in the kitchen, a radio that found only one station, and a garden that seemed to me, at thirteen, like a punishment disguised as a holiday.\n\nShe would wake me before the sun. ‘The soil does not wait for city children,’ she would say, handing me a hoe that was taller than my patience. I remember the blisters more clearly than anything else: small, angry bubbles on my palms that I photographed and complained about to friends who could not see the messages until I walked to the top of the hill.\n\nLooking back, I realise I was not really angry about the work. I was angry about the slowness. At home everything arrived instantly: food, music, answers. In the garden, nothing I did on Monday showed itself by Friday. I planted spinach and stared at bare earth for days, convinced I had done something wrong.\n\nIt was only in my last holiday there, the year before she passed away, that I understood what she had been trying to teach me without ever saying it. She sent me to pick pumpkins she had planted in the very first December I had arrived and sulked. They were enormous and golden, so heavy that I had to carry them one at a time. ‘You see,’ she said, laughing at my surprise, ‘you thought nothing was happening.’\n\nI think about those pumpkins often now, especially in matric, when it feels as if every hour of study disappears into nothing. I have started to suspect that most of the important things in my life work like her garden. Friendships, trust, the slow climb of my Maths mark from forty to sixty-three per cent: none of them changed overnight, and all of them needed someone to keep showing up when there was nothing to see.\n\nI am not sure I would choose the hoe over my phone even today. I am still a city child. But I have stopped measuring my effort by how quickly it rewards me. Perhaps that is what growing up really is: learning to trust the work you cannot yet see.\n\nHer garden is overgrown now. My uncle says he will clear it in the spring. I have asked him to wait until December, when I can do it myself." },
+    {
+      "type": "example",
+      "title": "Worked example 6: why the model essay works",
+      "problem": "Analyse the model essay against the features of a reflective essay and the rubric.",
+      "steps": [
+        "**Introduction**: it opens with a concrete situation and an honest, slightly humorous attitude (‘a punishment disguised as a holiday’), which hooks the reader and sets up the change that will follow.",
+        "**Balance**: events (waking early, blisters, pumpkins) are told briefly; most sentences explore feelings and meaning (‘I was not really angry about the work. I was angry about the slowness.’).",
+        "**Tense**: past tense for the holidays, present tense for current understanding (‘I think about those pumpkins often now’).",
+        "**Insight**: the insight is specific and earned (important things grow slowly and need you to keep showing up), and it is linked to the writer’s present life in matric.",
+        "**Honesty**: the writer admits the change is incomplete (‘I am still a city child’), which makes the growth believable.",
+        "**Symbol and structure**: the garden runs through the whole essay; the conclusion returns to it, now overgrown, and shows growth through an action rather than a moral.",
+        "**Language**: varied sentences, precise images (‘a hoe that was taller than my patience’) and a sincere, standard register."
+      ],
+      "answer": "The essay would score well in all three rubric criteria: original, insightful content; controlled, vivid language; and a clear reflective structure."
+    },
+
+    { "type": "heading", "text": "Checklist before you hand in" },
+    {
+      "type": "list",
+      "items": [
+        "Did I write the **number** of the topic and a **title**?",
+        "Did I respond to the topic (or picture) **throughout**, not just in the first paragraph?",
+        "If it is a reflective essay, is there **more thought than story**, and is the **insight** specific?",
+        "Is my essay **400–450 words**?",
+        "Are my paragraphs **linked** and does my conclusion **arrive somewhere**?",
+        "Have I **proofread** for spelling, punctuation, concord and tense errors?"
+      ]
+    },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "The HL essay is worth 50 marks: Content and planning 30, Language, style and editing 15, Structure 5. Length: 400–450 words.",
+        "A reflective essay explores what an experience or idea **means** and shows **insight and growth**; it is written in the first person with a thoughtful, sincere tone.",
+        "Avoid a mere narrative: tell events briefly and spend most of the essay reflecting (anchor, then, now).",
+        "Use past tense for events and present tense for current understanding; end with insight, not a summary or tacked-on moral.",
+        "For quotations and statements: paraphrase, brainstorm literal, figurative and personal meanings, choose an angle and an essay type, and keep returning to the key words.",
+        "For visual prompts: observe, sense the mood, interpret literally and figuratively, choose an essay type, give a title and keep the link to the picture clear throughout.",
+        "Choose the essay type from the clues in the topic; if a type is specified, you must write that type."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which statement best describes the main purpose of a reflective essay?",
+      "options": [
+        "To tell an exciting story with a clear climax and resolution",
+        "To explore the personal meaning of an experience or idea and show what the writer has come to understand",
+        "To convince the reader to accept one side of a debatable issue",
+        "To create a vivid picture of a place using the five senses"
+      ],
+      "answer": 1,
+      "explanation": "A reflective essay asks ‘What did it mean, and how has it changed my thinking?’ The other options describe narrative, argumentative and descriptive essays."
+    },
+    {
+      "id": "q2",
+      "type": "truefalse",
+      "prompt": "A reflective essay is mainly a retelling of events in time order, with a short lesson added in the final sentence.",
+      "answer": false,
+      "explanation": "That is a mere narrative with a moral. In a reflective essay, events are told briefly and reflection runs through the whole essay."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "prompt": "Which point of view is most suitable for a reflective essay?",
+      "options": [
+        "Third person, objective (‘he’, ‘she’, ‘they’)",
+        "Second person throughout (‘you’)",
+        "First person (‘I’)",
+        "First person plural only (‘we’)"
+      ],
+      "answer": 2,
+      "explanation": "A reflective essay explores the writer’s own thoughts and growth, so it is written in the first person singular."
+    },
+    {
+      "id": "q4",
+      "type": "numeric",
+      "prompt": "In the CAPS Home Language essay rubric (out of 50), how many marks are allocated to **Content and planning**? Give a whole number.",
+      "answer": 30,
+      "explanation": "Content and planning 30, Language, style and editing 15, Structure 5: a total of 50."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "prompt": "What is the recommended length for the Home Language essay in Paper 3 Section A?",
+      "options": ["400–450 words", "250–300 words", "180–200 words", "600–700 words"],
+      "answer": 0,
+      "explanation": "The HL essay is 400–450 words. 180–200 words is the length of an HL transactional text in Section B."
+    },
+    {
+      "id": "q6",
+      "type": "short",
+      "prompt": "Apart from the number of the topic, what must you always give your essay, especially when you respond to a visual prompt?",
+      "answers": ["title", "a title", "a suitable title", "an essay title", "a heading", "heading", "its title"],
+      "explanation": "The paper requires you to give your essay a suitable title. For pictures this is essential, because the title shows how you have interpreted the image."
+    },
+    {
+      "id": "q7",
+      "type": "match",
+      "prompt": "Match each topic with the essay type it most clearly calls for.",
+      "marks": 5,
+      "pairs": [
+        { "left": "‘Social media does more harm than good.’ Do you agree?", "right": "Argumentative" },
+        { "left": "Describe a busy taxi rank at dawn.", "right": "Descriptive" },
+        { "left": "Write a story that ends with: ‘And that was the last time I saw him.’", "right": "Narrative" },
+        { "left": "Discuss the advantages and disadvantages of a four-day school week.", "right": "Discursive" },
+        { "left": "Looking back on the moment I stopped being a child", "right": "Reflective" }
+      ],
+      "explanation": "‘Do you agree?’ asks for a one-sided argument; ‘describe’ asks for description; a given ending line asks for a story; ‘advantages and disadvantages’ asks for a balanced discussion; ‘looking back’ asks for reflection."
+    },
+    {
+      "id": "q8",
+      "type": "truefalse",
+      "prompt": "When you respond to a visual prompt, you may interpret the picture literally or figuratively, provided the link between your essay and the picture is clear.",
+      "answer": true,
+      "explanation": "You may interpret the picture in any way and write any essay type, but the connection to the picture must be clear and sustained."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "Which sentence shows **reflection** rather than narration or description?",
+      "options": [
+        "We left the house at five and caught the first train to Cape Town.",
+        "The station smelt of diesel and fresh vetkoek.",
+        "Suddenly, the train lurched forward and my bag fell onto the platform.",
+        "At the time I thought leaving was the bravest thing I had ever done; now I wonder whether staying would have been braver."
+      ],
+      "answer": 3,
+      "explanation": "The last sentence contrasts what the writer believed then with what they think now, which is the essence of reflection. The others narrate action or describe the senses."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "A visual prompt shows a pair of worn, scuffed school shoes placed neatly beside a brand-new pair. Which plan is the most effective **figurative** interpretation?",
+      "options": [
+        "A reflective essay about leaving school and outgrowing an old version of yourself, using the two pairs of shoes as a symbol of change throughout",
+        "An essay describing the colour, size and condition of each pair of shoes in detail",
+        "An argumentative essay on why school uniforms should be abolished that never refers to the shoes",
+        "A list of the prices of school shoes in different shops"
+      ],
+      "answer": 0,
+      "explanation": "The first plan uses the picture as a symbol and keeps the link throughout. The second only describes the image literally, and the third loses the link to the picture."
+    },
+    {
+      "id": "q11",
+      "type": "numeric",
+      "prompt": "In the CAPS Home Language essay rubric, how many marks are allocated to **Structure**? Give a whole number.",
+      "answer": 5,
+      "explanation": "Structure (features of the essay type, paragraphing and sentence construction) is worth 5 of the 50 marks."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "Which of the following is the most serious weakness in a reflective essay?",
+      "options": [
+        "It uses past tense for events and present tense for current understanding",
+        "It contains one well-placed rhetorical question",
+        "It retells an event in great detail but never explores what it meant to the writer",
+        "It opens with a vivid image"
+      ],
+      "answer": 2,
+      "explanation": "Without exploration of meaning there is no reflection or insight. The other features are strengths of a reflective essay."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "prompt": "A topic reads: ‘The quiet ones are often the ones worth listening to.’ No essay type is specified. Which approach is BEST?",
+      "options": [
+        "Copy the quotation as your first and last sentences and write about something else in between",
+        "Paraphrase the statement, brainstorm what it could mean in your own life, choose the essay type that lets you explore your angle in depth, and keep returning to the idea",
+        "Write a narrative essay, because quotation topics must always be answered with a story",
+        "Write an argumentative essay, because every quotation demands that you argue against it"
+      ],
+      "answer": 1,
+      "explanation": "Exploratory writing means understanding the quotation, choosing an angle and a suitable essay type, and keeping the quotation central. No single essay type is compulsory for an open quotation."
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Rewrite the following narrative paragraph as a **reflective** paragraph of about 80–100 words. Keep the event brief and add feeling, thought and insight.\n\n‘On the day of the inter-schools athletics final, I lined up for the 800 metres. The gun went off and I ran as fast as I could. In the final bend I tripped over another runner’s foot and fell. Everyone stared. I got up and finished last. Then we went home.’",
+      "memo": "Model answer:\n‘I still remember the gravel in my palms more clearly than the race itself. In the final bend of the 800 metres I fell, and for a few seconds the whole stadium seemed to hold its breath. At the time, finishing last felt like the end of the world; I was sure everyone would remember my fall for ever. Looking back, I realise that nobody remembers it but me. What I do remember is choosing to get up. I have come to understand that people rarely judge us for falling; they notice whether we finish.’\n\nMark allocation:\n✓ The event is reduced to a brief, concrete anchor; unnecessary actions such as ‘Then we went home’ are cut (1)\n✓ Feelings or beliefs at the time are expressed (1)\n✓ A clear shift to present understanding, e.g. ‘Looking back, I realise…’ (1)\n✓ A specific, earned insight rather than a cliché such as ‘I learnt never to give up’ (1)\n✓ First person, sincere tone, correct language and roughly 80–100 words (1)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 6,
+      "prompt": "Visual prompt (described): A photograph shows a young person standing where a gravel road in the Karoo splits in two at sunset. One road leads towards distant city lights; the other leads towards a small farmhouse with a single lit window.\n\n(a) Give ONE literal and ONE figurative interpretation of the picture. (2)\n(b) Choose an essay type for your chosen interpretation and justify your choice. (2)\n(c) Suggest a suitable title and write the first two sentences of your essay, making the link to the picture clear. (2)",
+      "memo": "(a) Literal: e.g. a young person walking home from the bus stop must decide whether to go to a party in town or home to the family farm ✓ (1)\nFigurative: e.g. the choice every school-leaver faces between a new life in the city and the security of home and family; the roads symbolise future paths ✓ (1)\n\n(b) e.g. Reflective essay ✓ (1), because the topic of choosing a future after matric is personal and lets me explore my own uncertainty and what I have come to value, rather than simply telling a story ✓ (1). (Accept any essay type with a valid justification linked to the interpretation.)\n\n(c) Title: e.g. ‘Two Roads, One Window’ ✓ (1; the title must link to the picture and the interpretation)\nOpening: e.g. ‘For most of this year I have felt as if I am standing where the road splits, the city glittering on one side and one small lit window on the other. Everyone tells me which way to walk, but nobody tells me how to stop looking back.’ ✓ (1; the picture is clearly referred to and the essay’s idea is introduced)"
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 50,
+      "prompt": "Write a **reflective essay** of 400–450 words in response to these lines by the poet John Donne (1624):\n\n‘No man is an island, entire of itself.’\n\nGive your essay a title and show your planning.",
+      "memo": "Marked with the CAPS essay rubric: Content and planning (30), Language, style and editing (15), Structure (5) = 50.\n\nExpected response:\n• The quotation is understood: no person is completely self-sufficient or separate; we are connected to and depend on others. ✓\n• The essay is genuinely reflective: written in the first person, it uses one or more personal experiences (e.g. a time the writer tried to cope alone, a loss in the community, help from a neighbour or friend) as a springboard for thought. ✓\n• Events are told briefly; most of the essay explores feelings, changing understanding and insight. ✓\n• The writer may agree fully or partly (e.g. also exploring the value of solitude), but the quotation remains central and is returned to. ✓\n• The conclusion reaches a specific insight or growth, not a summary or a tacked-on moral. ✓\n\nModel plan (one possible response): Title ‘The Bridge I Did Not Want’. (1) Intro: the pride I took in never asking for help. (2) Anchor: failing my June Physical Sciences paper and hiding it. (3) Then: shame, the belief that needing help is weakness. (4) Now: a classmate’s study group and what accepting help taught me about strength. (5) Wider reflection: how my community lives the quotation (ubuntu). (6) Conclusion: islands and bridges; I am learning to build bridges.\n\nApproximate mark guide (markers use the full CAPS rubric descriptors):\nContent and planning (30): 25–30 for an original, insightful and coherent reflection with a sustained link to the quotation and evidence of planning; 18–24 for a relevant reflection with some insight but uneven depth; 12–17 for a response that is mostly narrative with limited reflection; below 12 for an off-topic or very weak response.\nLanguage, style and editing (15): 13–15 for a sincere, controlled register, precise vocabulary, varied sentences and virtually no errors; 9–12 for generally appropriate language with some errors; below 9 for frequent errors that interfere with meaning.\nStructure (5): 5 for a clear reflective structure (hook, developed body paragraphs, insightful conclusion), coherent paragraphs and correct length; 3–4 for mostly sound structure; 0–2 for poor paragraphing or a length far outside 400–450 words."
+    }
+  ]
+}

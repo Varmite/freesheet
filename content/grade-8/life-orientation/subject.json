@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "grade": 8,
+  "id": "life-orientation",
+  "name": "Life Orientation",
+  "description": "CAPS Grade 8 Life Orientation: self-concept, relationships and peer pressure, puberty and sexuality, substance abuse, human rights, diversity, study skills, careers and physical well-being.",
+  "topics": [
+    { "id": "self-concept-and-self-esteem", "title": "Self-Concept and Self-Esteem", "term": 1 },
+    { "id": "peer-pressure-and-relationships", "title": "Peer Pressure and Relationships", "term": 1 },
+    { "id": "puberty-and-sexuality", "title": "Puberty and Sexuality", "term": 2 },
+    { "id": "substance-abuse", "title": "Substance Abuse", "term": 2 },
+    { "id": "human-rights-and-responsibilities", "title": "Human Rights and Responsibilities", "term": 3 },
+    { "id": "diversity-and-discrimination", "title": "Diversity, Prejudice and Discrimination", "term": 3 },
+    { "id": "study-skills", "title": "Study Skills", "term": 4 },
+    { "id": "careers-and-the-world-of-work", "title": "Careers and the World of Work", "term": 4 },
+    { "id": "physical-fitness-and-wellbeing", "title": "Physical Fitness and Well-being", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
+  ]
+}

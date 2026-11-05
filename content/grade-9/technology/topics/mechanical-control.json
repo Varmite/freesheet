@@ -1,0 +1,55 @@
+{
+  "id": "mechanical-control",
+  "title": "Mechanical Control: Cams, Cranks and Ratchets",
+  "term": 2,
+  "summary": "Types of motion, cams and followers, cranks and sliders, ratchet and pawl, and combining mechanisms in systems, including pulley systems with mechanical advantage.",
+  "notes": [
+    { "type": "heading", "text": "Types of motion" },
+    { "type": "table", "headers": ["Motion", "Description", "Example"], "rows": [
+      ["Rotary", "Turning in a circle", "A wheel, a fan"],
+      ["Linear", "Moving in a straight line in one direction", "A train on a straight track, a conveyor belt"],
+      ["Reciprocating", "Moving backwards and forwards in a straight line", "A piston in an engine, a saw"],
+      ["Oscillating", "Swinging backwards and forwards in an arc", "A pendulum, a swing, windscreen wipers"]
+    ] },
+    { "type": "paragraph", "text": "Mechanisms are used to **change one type of motion into another** and to **control** movement." },
+    { "type": "heading", "text": "Cams and followers" },
+    { "type": "paragraph", "text": "A **cam** is a specially shaped piece fixed to a rotating shaft. As it turns, a **follower** resting on it moves up and down. The cam changes **rotary** motion into **reciprocating** motion." },
+    { "type": "table", "headers": ["Cam shape", "Follower movement"], "rows": [
+      ["Pear (egg)-shaped cam", "Stays still for most of the turn (dwell), then rises and falls once"],
+      ["Circular cam with an off-centre shaft (eccentric)", "Rises and falls smoothly and continuously"],
+      ["Snail (drop) cam", "Rises slowly, then drops suddenly; turns in one direction only"],
+      ["Heart-shaped cam", "Rises and falls at a steady, uniform speed"]
+    ] },
+    { "type": "paragraph", "text": "Cams are used in car engines (to open and close valves), sewing machines and moving toys (automata)." },
+    { "type": "heading", "text": "Cranks and sliders" },
+    { "type": "paragraph", "text": "A **crank** is an arm attached to a rotating shaft. Joined to a **connecting rod** and a **slider** (piston), it changes **rotary** motion into **reciprocating** motion, or the other way round. In a car engine, the pistons move up and down, and the crankshaft changes this into rotary motion that turns the wheels." },
+    { "type": "heading", "text": "Ratchet and pawl" },
+    { "type": "paragraph", "text": "A **ratchet** is a gear wheel with sloping teeth, and a **pawl** is a small lever that drops into the teeth. The ratchet can turn in **one direction only**; the pawl stops it from slipping back. Uses: winches, fishing reels, cable ties, clock springs, ratchet spanners and the mechanism that holds a car's handbrake." },
+    { "type": "heading", "text": "Pulley systems" },
+    { "type": "table", "headers": ["System", "Mechanical advantage (ideal)", "Effect"], "rows": [
+      ["Single fixed pulley", "1", "Changes direction of effort only"],
+      ["Single movable pulley", "2", "Halves the effort needed"],
+      ["Block and tackle with 4 supporting rope sections", "4", "Effort is a quarter of the load"]
+    ] },
+    { "type": "formula", "latex": "\\text{MA (ideal)} = \\text{number of rope sections supporting the load}" },
+    { "type": "example", "title": "Using a pulley system", "problem": "A block and tackle has 3 rope sections supporting a load of 1 200 N. What effort is needed (ignoring friction)?", "steps": ["MA = 3", "Effort = load ÷ MA = 1 200 ÷ 3 = 400 N"], "answer": "400 N" },
+    { "type": "callout", "label": "Systems thinking", "text": "Many machines combine mechanisms. A bicycle uses levers (pedals and brake levers), a chain and sprockets, a ratchet (freewheel) and a cable-operated brake (bell crank)." }
+  ],
+  "questions": [
+    { "id": "reciprocating", "type": "mcq", "prompt": "A piston moving up and down in an engine shows…", "options": ["rotary motion", "linear motion", "reciprocating motion", "oscillating motion"], "answer": 2 },
+    { "id": "pendulum", "type": "short", "prompt": "What type of motion does a swinging pendulum have?", "answers": ["oscillating", "oscillating motion", "oscillation"] },
+    { "id": "cam-change", "type": "mcq", "prompt": "A cam and follower change…", "options": ["rotary into reciprocating motion", "linear into rotary motion", "oscillating into linear motion", "reciprocating into oscillating motion"], "answer": 0 },
+    { "id": "ratchet", "type": "truefalse", "prompt": "A ratchet and pawl allow a shaft to turn in one direction only.", "answer": true },
+    { "id": "pulley-ma", "type": "numeric", "prompt": "A pulley system has 4 rope sections supporting the load. What is its ideal mechanical advantage?", "answer": 4, "tolerance": 0 },
+    { "id": "effort", "type": "numeric", "prompt": "A single movable pulley lifts a 500 N load. What effort is needed (ideal)?", "answer": 250, "tolerance": 0, "unit": "N" },
+    { "id": "motion-match", "type": "match", "marks": 4, "prompt": "Match each example to its type of motion.", "pairs": [
+      { "left": "Ceiling fan", "right": "Rotary" },
+      { "left": "Windscreen wiper", "right": "Oscillating" },
+      { "left": "Conveyor belt", "right": "Linear" },
+      { "left": "Sewing machine needle", "right": "Reciprocating" }
+    ] },
+    { "id": "snail", "type": "open", "marks": 2, "prompt": "Describe the movement of the follower on a snail (drop) cam.", "memo": "✓ It rises slowly as the cam turns (1)\n✓ then drops suddenly (1)" },
+    { "id": "crank", "type": "open", "marks": 2, "prompt": "Explain how the crankshaft in a car engine changes motion.", "memo": "✓ The pistons move up and down (reciprocating) (1)\n✓ Connecting rods turn the crankshaft, producing rotary motion (1)" },
+    { "id": "ratchet-uses", "type": "open", "marks": 2, "prompt": "Name TWO uses of a ratchet and pawl.", "memo": "Any two (1 each): winch; fishing reel; cable tie; ratchet spanner; clock; handbrake" }
+  ]
+}

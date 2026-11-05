@@ -1,0 +1,42 @@
+{
+  "id": "summary-writing",
+  "title": "Summary Writing",
+  "term": 1,
+  "summary": "Selecting relevant points, writing them in your own words in a fluent paragraph, keeping to the word limit, and how summaries are marked.",
+  "notes": [
+    { "type": "heading", "text": "Steps for a summary" },
+    { "type": "list", "ordered": true, "items": [
+      "Read the instruction carefully: what must you summarise (e.g. only the ADVANTAGES)?",
+      "Read the text and underline the points that answer the instruction.",
+      "Leave out examples, repetition, quotations, statistics and figurative language.",
+      "Write each point in your own words as a short sentence.",
+      "Join the sentences into one fluent paragraph using linking words.",
+      "Count your words and write the number in brackets at the end."
+    ] },
+    { "type": "callout", "label": "Grade 10 format", "text": "A typical Grade 10 summary asks for **seven points** in **no more than 90 words**, in paragraph form. Marks: 7 for points and 3 for language." },
+    { "type": "table", "caption": "What to cut", "headers": ["In the text", "In the summary"], "rows": [
+      ["Examples: 'such as apples, bananas and pears'", "'fruit'"],
+      ["Repetition of the same idea", "Say it once"],
+      ["Statistics and quotations", "Leave out or generalise"],
+      ["Descriptive adjectives", "Keep only if essential"]
+    ] },
+    { "type": "passage", "title": "Practice text: Why walk? (written for FreeSheet)", "text": "Walking is the simplest exercise there is, and it is free. Doctors say that a brisk thirty-minute walk each day strengthens the heart and lowers blood pressure. It also helps people to control their weight. Walkers often say that they sleep better, and research shows that walking outdoors reduces stress and improves mood. Because you need no equipment, almost anyone can do it, from children to grandparents. Walking to school or work instead of driving also saves money on fuel and cuts pollution. Finally, walking with friends or family is a chance to talk and spend time together." },
+    { "type": "example", "title": "Model summary of the benefits of walking", "problem": "Summarise the benefits of walking in no more than 50 words.", "steps": ["Points: free; strengthens heart / lowers blood pressure; controls weight; better sleep; reduces stress, improves mood; anyone can do it; saves money and reduces pollution; social time."], "answer": "Walking is free and suitable for almost everyone. It strengthens the heart, lowers blood pressure and helps with weight control. Walkers sleep better and feel less stressed. Walking instead of driving saves money and reduces pollution, and walking with others allows people to spend time together. (46 words)" }
+  ],
+  "questions": [
+    { "id": "points", "type": "numeric", "prompt": "How many points does a typical Grade 10 Paper 1 summary require?", "answer": 7, "tolerance": 0 },
+    { "id": "limit", "type": "numeric", "prompt": "What is the usual maximum word count for that summary?", "answer": 90, "tolerance": 0 },
+    { "id": "form", "type": "mcq", "prompt": "In what form must the Paper 1 summary be written?", "options": ["Point form", "A fluent paragraph", "A table", "A mind map"], "answer": 1 },
+    { "id": "examples", "type": "truefalse", "prompt": "You should include examples from the text to make your summary interesting.", "answer": false },
+    { "id": "count", "type": "truefalse", "prompt": "You should write the number of words you used in brackets at the end.", "answer": true },
+    { "id": "generalise", "type": "short", "prompt": "Replace the list with one word: 'cars, buses, trains and taxis'.", "answers": ["transport", "vehicles"] },
+    { "id": "cut", "type": "match", "marks": 3, "prompt": "Match each item to what you should do with it in a summary.", "pairs": [
+      { "left": "A main point", "right": "Rewrite in your own words" },
+      { "left": "A quotation", "right": "Leave it out" },
+      { "left": "A list of examples", "right": "Replace with a general word" }
+    ] },
+    { "id": "rewrite", "type": "open", "marks": 2, "prompt": "Rewrite in your own words: 'Walking outdoors reduces stress and improves mood.'", "memo": "✓✓ e.g. 'Being active outside makes people feel calmer and happier.' (meaning kept, own words) (2)" },
+    { "id": "linking", "type": "open", "marks": 2, "prompt": "Give TWO linking words you could use to join points in a summary.", "memo": "Any two, e.g. ✓ also ✓ furthermore ✓ in addition ✓ finally ✓ moreover (2)" },
+    { "id": "summary", "type": "open", "marks": 5, "prompt": "Summarise FIVE benefits of walking from the practice text in no more than 40 words.", "memo": "Any five points (1 each): free; strengthens heart/lowers blood pressure; weight control; better sleep; less stress/better mood; anyone can do it; saves money/less pollution; time with others. Must be in own words and within the word limit." }
+  ]
+}

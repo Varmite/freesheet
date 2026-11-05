@@ -1,0 +1,50 @@
+{
+  "id": "the-world-of-work",
+  "title": "The World of Work: Labour Laws, Unemployment and Entrepreneurship",
+  "term": 4,
+  "summary": "Workers' rights and responsibilities under South African labour laws, employment contracts, causes and effects of unemployment, and entrepreneurship and self-employment as alternatives.",
+  "notes": [
+    { "type": "heading", "text": "Labour laws" },
+    { "type": "table", "headers": ["Law", "Key protections"], "rows": [
+      ["Basic Conditions of Employment Act (BCEA)", "Maximum 45 ordinary hours a week; overtime pay; annual, sick, maternity and family-responsibility leave; written particulars of employment"],
+      ["Labour Relations Act (LRA)", "Right to join a trade union and strike; protection against unfair dismissal; the CCMA resolves disputes"],
+      ["Employment Equity Act", "Prohibits unfair discrimination; affirmative action for designated groups"],
+      ["Occupational Health and Safety Act", "Safe working conditions and equipment"],
+      ["National Minimum Wage Act", "A legal minimum hourly wage for most workers"],
+      ["Unemployment Insurance Act", "UIF benefits for those who lose their jobs or go on maternity leave"]
+    ] },
+    { "type": "heading", "text": "Contracts and responsibilities" },
+    { "type": "paragraph", "text": "An **employment contract** sets out the job, pay, hours, leave and notice period. Employees have **responsibilities** too: arrive on time, work honestly and safely, follow reasonable instructions and respect colleagues." },
+    { "type": "heading", "text": "Unemployment" },
+    { "type": "list", "items": [
+      "**Causes**: slow economic growth, a mismatch between skills and available jobs, low education levels, automation, and rapid population growth.",
+      "**Effects**: poverty, crime, poor mental health, social unrest and lost tax income.",
+      "South Africa's youth unemployment rate is among the highest in the world."
+    ] },
+    { "type": "heading", "text": "Entrepreneurship" },
+    { "type": "paragraph", "text": "An **entrepreneur** identifies an opportunity, takes a risk and starts a business. Small businesses create many jobs in South Africa." },
+    { "type": "list", "items": [
+      "**Qualities**: creativity, persistence, willingness to take calculated risks, good financial management, networking.",
+      "**Support**: the National Youth Development Agency (NYDA), SEDFA (Small Enterprise Development and Finance Agency) and business incubators.",
+      "**Steps**: identify a need, research the market, write a business plan, find funding, register the business (with CIPC and SARS), start small and grow."
+    ] },
+    { "type": "callout", "label": "Volunteering and skills", "text": "Volunteering, internships and short courses build experience and contacts, which improve chances of employment." }
+  ],
+  "questions": [
+    { "id": "bcea", "type": "numeric", "prompt": "According to the BCEA, what is the maximum number of ordinary working hours per week?", "answer": 45, "tolerance": 0, "unit": "hours" },
+    { "id": "ccma", "type": "mcq", "prompt": "Which body resolves labour disputes such as unfair dismissal?", "options": ["SARS", "CCMA", "IEC", "SAHRC"], "answer": 1 },
+    { "id": "nyda", "type": "short", "prompt": "Which agency supports young entrepreneurs? (abbreviation)", "answers": ["nyda", "national youth development agency"] },
+    { "id": "laws", "type": "match", "marks": 4, "prompt": "Match each law to what it protects.", "pairs": [
+      { "left": "Labour Relations Act", "right": "Right to join a trade union" },
+      { "left": "Employment Equity Act", "right": "Protection from unfair discrimination" },
+      { "left": "Occupational Health and Safety Act", "right": "Safe working conditions" },
+      { "left": "Unemployment Insurance Act", "right": "Income after job loss" }
+    ] },
+    { "id": "contract", "type": "open", "marks": 3, "prompt": "Name THREE things that should be included in an employment contract.", "memo": "Any three (1 each): job description; salary; working hours; leave; notice period; start date; benefits" },
+    { "id": "causes", "type": "open", "marks": 3, "prompt": "Explain THREE causes of youth unemployment in South Africa.", "memo": "Any three (1 each): slow economic growth; skills mismatch; low education levels; lack of experience; automation; population growth" },
+    { "id": "qualities", "type": "open", "marks": 3, "prompt": "Name THREE qualities of a successful entrepreneur.", "memo": "Any three (1 each): creativity; persistence; risk-taking; financial management; networking; leadership; problem-solving" },
+    { "id": "responsibility", "type": "open", "marks": 2, "prompt": "Give TWO responsibilities of an employee.", "memo": "Any two (1 each): punctuality; honesty; following reasonable instructions; working safely; respecting colleagues; protecting company property" },
+    { "id": "volunteer", "type": "truefalse", "prompt": "Volunteering can improve your chances of finding a job.", "answer": true },
+    { "id": "steps", "type": "open", "marks": 3, "prompt": "Describe THREE steps in starting a small business.", "memo": "Any three in a logical order (1 each): identify a need; market research; business plan; funding; register with CIPC/SARS; start small" }
+  ]
+}

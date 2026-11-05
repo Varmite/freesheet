@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "grade": 8,
+  "id": "social-sciences-geography",
+  "name": "Social Sciences: Geography",
+  "description": "CAPS Grade 8 Geography: maps and globes, latitude and longitude, scale and direction, weather and climate regions, settlements and urbanisation, and transport and trade.",
+  "topics": [
+    { "id": "maps-and-globes", "title": "Maps and Globes: Latitude, Longitude and Time Zones", "term": 1 },
+    { "id": "map-skills", "title": "Map Skills: Scale, Direction and Topographic Maps", "term": 1 },
+    { "id": "weather-and-climate", "title": "Weather and Climate", "term": 2 },
+    { "id": "climate-regions", "title": "Climate Regions of the World", "term": 2 },
+    { "id": "settlements", "title": "Settlements: Rural and Urban", "term": 3 },
+    { "id": "urbanisation", "title": "Urbanisation and Urban Challenges", "term": 3 },
+    { "id": "transport", "title": "Transport Networks", "term": 4 },
+    { "id": "trade", "title": "Trade", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "world-war-one-and-south-africa",
+  "title": "World War I: Trench Warfare and South Africa",
+  "term": 4,
+  "summary": "Trench warfare and new weapons on the Western Front, South Africa's involvement including the sinking of the SS Mendi, the end of the war and the Treaty of Versailles.",
+  "notes": [
+    { "type": "heading", "text": "Trench warfare on the Western Front" },
+    { "type": "paragraph", "text": "After the German advance was stopped in France in September 1914, both sides dug **trenches**. A line of trenches stretched about 700 km from the Belgian coast to Switzerland: the **Western Front**. The land between opposing trenches was called **no man's land**, full of barbed wire, mud and shell craters." },
+    { "type": "list", "items": [
+      "Soldiers lived in wet, muddy trenches with rats, lice and the smell of death.",
+      "Standing in water caused **trench foot**; diseases spread quickly.",
+      "Attacks meant going 'over the top' into machine-gun fire. Huge numbers died for a few hundred metres of land.",
+      "At the **Battle of the Somme** (1916) Britain lost almost 60 000 casualties on the first day alone."
+    ] },
+    { "type": "table", "caption": "New weapons", "headers": ["Weapon", "Effect"], "rows": [
+      ["Machine gun", "Fired hundreds of bullets a minute; made attacks across open ground deadly"],
+      ["Heavy artillery", "Caused most casualties; constant shelling caused 'shell shock' (trauma)"],
+      ["Poison gas (chlorine, mustard gas)", "Blinded, burned and choked soldiers; gas masks were developed"],
+      ["Tanks (from 1916)", "Could cross trenches and barbed wire; later helped to break the stalemate"],
+      ["Aircraft", "First used for scouting, then for dogfights and bombing"],
+      ["Submarines (U-boats)", "German submarines sank Allied ships to cut off supplies"]
+    ] },
+    { "type": "heading", "text": "South Africa in the war" },
+    { "type": "paragraph", "text": "As part of the British Empire, the **Union of South Africa** was at war when Britain declared war. Prime Minister **Louis Botha** and **Jan Smuts** supported Britain. Some Afrikaners who opposed fighting for Britain staged the **1914 Rebellion**, which was put down." },
+    { "type": "list", "items": [
+      "**German South West Africa** (Namibia): South African forces conquered it in 1915; South Africa later governed it.",
+      "**German East Africa** (Tanzania): Smuts led a long campaign from 1916.",
+      "**Western Front**: the South African Brigade fought at **Delville Wood** (July 1916), where most of the 3 000 soldiers were killed, wounded or captured in six days of fighting.",
+      "Black South Africans were not allowed to carry weapons; about 25 000 served in the **South African Native Labour Contingent** (SANLC) in France, loading ships and building roads and railways. Coloured soldiers served in the Cape Corps."
+    ] },
+    { "type": "heading", "text": "The sinking of the SS Mendi" },
+    { "type": "paragraph", "text": "On **21 February 1917** the troopship **SS Mendi**, carrying members of the SANLC to France, was struck in thick fog off the Isle of Wight by a larger ship, the SS Darro. More than **600 South Africans** died. According to survivors, **Reverend Isaac Wauchope Dyobha** calmed the men on the sinking ship." },
+    { "type": "passage", "title": "Source E: The words attributed to Rev. Isaac Wauchope Dyobha (adapted)", "text": "Be quiet and calm, my countrymen. What is happening now is what you came to do. You are going to die, but that is what you came to do. Brothers, we are drilling the death drill." },
+    { "type": "paragraph", "text": "The black labourers received no war medals from the government, unlike white soldiers. Their sacrifice was largely ignored until after 1994; today South Africa's highest award for bravery is the **Order of Mendi for Bravery**, and the SAS Isaac Dyobha is named after the minister." },
+    { "type": "heading", "text": "The end of the war" },
+    { "type": "list", "items": [
+      "The USA joined the Allies in 1917; Russia left the war after its revolution.",
+      "Germany signed an **armistice** (ceasefire) on **11 November 1918** at 11 a.m.",
+      "The **Treaty of Versailles** (1919) blamed Germany for the war (the 'war guilt' clause), forced it to pay huge **reparations**, limited its army and took away its colonies. Many Germans resented the treaty, which helped lead to World War II.",
+      "The **League of Nations** was set up to keep peace in future."
+    ] }
+  ],
+  "questions": [
+    { "id": "no-mans-land", "type": "short", "prompt": "What was the area between the opposing trenches called?", "answers": ["no man's land", "no mans land", "no-man's-land"] },
+    { "id": "mendi-date", "type": "mcq", "prompt": "When did the SS Mendi sink?", "options": ["4 August 1914", "21 February 1917", "1 July 1916", "11 November 1918"], "answer": 1 },
+    { "id": "delville", "type": "short", "prompt": "Name the 1916 battle in France in which the South African Brigade suffered heavy losses.", "answers": ["delville wood", "battle of delville wood"] },
+    { "id": "sanlc", "type": "truefalse", "prompt": "Black South Africans in the SANLC were given rifles and fought in the front line.", "answer": false, "explanation": "They were not allowed to carry weapons and worked as labourers." },
+    { "id": "armistice", "type": "mcq", "prompt": "What was signed on 11 November 1918?", "options": ["The Treaty of Versailles", "The armistice", "The Treaty of London", "The Berlin Act"], "answer": 1 },
+    { "id": "weapons", "type": "match", "marks": 4, "prompt": "Match each weapon to its description.", "pairs": [
+      { "left": "Machine gun", "right": "Fired hundreds of bullets a minute" },
+      { "left": "Mustard gas", "right": "Burned and blinded soldiers" },
+      { "left": "Tank", "right": "Armoured vehicle that crossed trenches" },
+      { "left": "U-boat", "right": "German submarine" }
+    ] },
+    { "id": "trench-conditions", "type": "open", "marks": 3, "prompt": "Describe THREE conditions in the trenches.", "memo": "Any three (1 each): mud and water; rats and lice; trench foot; disease; constant shelling; dead bodies/smell; cold; shell shock" },
+    { "id": "source-e", "type": "open", "marks": 3, "prompt": "Read Source E. (a) Who spoke these words? (b) What was he trying to do? (c) Why do you think the Mendi was remembered so little before 1994?", "memo": "(a) ✓ Rev. Isaac Wauchope Dyobha (1)\n(b) ✓ Calm the men / give them courage as they faced death (1)\n(c) ✓ Segregation and apartheid governments ignored the contribution of black South Africans (1)" },
+    { "id": "versailles", "type": "open", "marks": 3, "prompt": "Give THREE terms of the Treaty of Versailles that affected Germany.", "memo": "Any three (1 each): war guilt clause; reparations; army limited; lost colonies; lost land in Europe; navy limited / no air force" },
+    { "id": "botha", "type": "mcq", "prompt": "Who was Prime Minister of the Union of South Africa when World War I began?", "options": ["Jan Smuts", "Louis Botha", "Paul Kruger", "J.B.M. Hertzog"], "answer": 1 }
+  ]
+}

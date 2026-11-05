@@ -1,0 +1,618 @@
+{
+  "id": "november-paper-2",
+  "title": "November Examination: Paper 2",
+  "durationMinutes": 120,
+  "totalMarks": 100,
+  "instructions": [
+    "This question paper consists of 9 questions. Answer ALL the questions.",
+    "Clearly show ALL calculations, diagrams, graphs, et cetera that you have used in determining your answers. Answers only will NOT necessarily be awarded full marks.",
+    "You may use an approved scientific calculator (non-programmable and non-graphical), unless stated otherwise.",
+    "If necessary, round off answers to TWO decimal places, unless stated otherwise.",
+    "Diagrams are NOT necessarily drawn to scale.",
+    "In Euclidean geometry, every statement must be supported by a reason.",
+    "An information sheet with formulae is given at the start of QUESTION 1.",
+    "In this app: type a final answer in the answer box where one is given. For written questions, do the full working on paper first, then compare with the memo and award yourself the marks shown by the ticks (✓)."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Statistics",
+      "context": [
+        { "type": "heading", "text": "INFORMATION SHEET (for the whole paper)" },
+        {
+          "type": "table",
+          "caption": "Analytical geometry, trigonometry and statistics",
+          "headers": ["Formula", "Meaning"],
+          "rows": [
+            ["$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$", "Distance between $(x_1; y_1)$ and $(x_2; y_2)$"],
+            ["$M\\left(\\dfrac{x_1 + x_2}{2}; \\dfrac{y_1 + y_2}{2}\\right)$", "Midpoint of a line segment"],
+            ["$m = \\dfrac{y_2 - y_1}{x_2 - x_1}$", "Gradient of a line"],
+            ["$y = mx + c$ or $y - y_1 = m(x - x_1)$", "Equation of a straight line"],
+            ["$m_1 = m_2$ ; $m_1 \\times m_2 = -1$", "Parallel lines ; perpendicular lines"],
+            ["$\\sin\\theta = \\dfrac{y}{r}$, $\\cos\\theta = \\dfrac{x}{r}$, $\\tan\\theta = \\dfrac{y}{x}$, $x^2 + y^2 = r^2$", "Trigonometric ratios for a point $P(x; y)$ on the terminal arm, with $OP = r$"],
+            ["$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}$, $\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}$, $\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}$", "Ratios in a right-angled triangle"],
+            ["$\\bar{x} = \\dfrac{\\sum x}{n}$ ; $\\bar{x} \\approx \\dfrac{\\sum f \\cdot x}{n}$", "Mean of ungrouped data ; estimated mean of grouped data ($x$ = midpoint of the class)"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Measurement ($r$ = radius, $h$ or $H$ = perpendicular height, $s$ = slant height)",
+          "headers": ["Solid", "Total surface area", "Volume"],
+          "rows": [
+            ["Right prism", "$2 \\times \\text{area of base} + \\text{perimeter of base} \\times H$", "$\\text{area of base} \\times H$"],
+            ["Cylinder", "$2\\pi r^2 + 2\\pi r h$", "$\\pi r^2 h$"],
+            ["Right pyramid", "$\\text{area of base} + \\dfrac{1}{2} \\times \\text{perimeter of base} \\times s$", "$\\dfrac{1}{3} \\times \\text{area of base} \\times H$"],
+            ["Right cone", "$\\pi r^2 + \\pi r s$", "$\\dfrac{1}{3}\\pi r^2 H$"],
+            ["Sphere", "$4\\pi r^2$", "$\\dfrac{4}{3}\\pi r^3$"]
+          ]
+        },
+        { "type": "heading", "text": "Data for QUESTION 1.1 to 1.8" },
+        { "type": "paragraph", "text": "The times (in minutes) that 15 Grade 10 learners from a school in Polokwane took to travel to school one morning are given below:\n\n36 ; 24 ; 41 ; 12 ; 35 ; 30 ; 38 ; 27 ; 36 ; 40 ; 20 ; 34 ; 39 ; 32 ; 36" },
+        { "type": "heading", "text": "Data for QUESTION 1.9 to 1.11" },
+        {
+          "type": "table",
+          "caption": "Distance run in one week by the 40 members of a running club in Durban",
+          "headers": ["Distance ($x$ km)", "Number of members (frequency)"],
+          "rows": [
+            ["$0 \\leq x < 10$", "4"],
+            ["$10 \\leq x < 20$", "14"],
+            ["$20 \\leq x < 30$", "11"],
+            ["$30 \\leq x < 40$", "7"],
+            ["$40 \\leq x < 50$", "4"]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1-mean",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the mean travel time of the 15 learners. Give your answer correct to two decimal places where necessary.",
+          "answer": 32,
+          "tolerance": 0.005,
+          "unit": "minutes",
+          "explanation": "The sum of the 15 times is $480$, so the mean is $\\dfrac{480}{15} = 32$ minutes."
+        },
+        {
+          "id": "q1-median",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Determine the median travel time.",
+          "answer": 35,
+          "tolerance": 0.005,
+          "unit": "minutes",
+          "explanation": "In order: 12 ; 20 ; 24 ; 27 ; 30 ; 32 ; 34 ; **35** ; 36 ; 36 ; 36 ; 38 ; 39 ; 40 ; 41. With $n = 15$ the median is the 8th value, which is $35$."
+        },
+        {
+          "id": "q1-mode",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Write down the mode of the travel times.",
+          "answer": 36,
+          "tolerance": 0.005,
+          "unit": "minutes",
+          "explanation": "$36$ occurs three times, more often than any other value."
+        },
+        {
+          "id": "q1-lower-quartile",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Determine the lower quartile ($Q_1$) of the travel times.",
+          "answer": 27,
+          "tolerance": 0.005,
+          "unit": "minutes",
+          "explanation": "$Q_1$ is the median of the 7 values below the median (12 ; 20 ; 24 ; 27 ; 30 ; 32 ; 34), i.e. the 4th value: $27$."
+        },
+        {
+          "id": "q1-upper-quartile",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Determine the upper quartile ($Q_3$) of the travel times.",
+          "answer": 38,
+          "tolerance": 0.005,
+          "unit": "minutes",
+          "explanation": "$Q_3$ is the median of the 7 values above the median (36 ; 36 ; 36 ; 38 ; 39 ; 40 ; 41), i.e. the 12th value overall: $38$."
+        },
+        {
+          "id": "q1-iqr",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Calculate the interquartile range (IQR) of the travel times.",
+          "answer": 11,
+          "tolerance": 0.005,
+          "unit": "minutes",
+          "explanation": "$\\text{IQR} = Q_3 - Q_1 = 38 - 27 = 11$ minutes."
+        },
+        {
+          "id": "q1-box-whisker",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down the five-number summary of the travel times and use it to draw a box-and-whisker diagram on a number line.",
+          "memo": "Five-number summary: minimum $12$ ; $Q_1 = 27$ ; median $35$ ; $Q_3 = 38$ ; maximum $41$\n\n✓ whiskers drawn from 12 to 27 and from 38 to 41 (1)\n✓ box drawn from 27 to 38 with the median line at 35 (1)\n\n(A correct, roughly scaled number line is expected.)"
+        },
+        {
+          "id": "q1-skewness",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Use your box-and-whisker diagram and the mean to describe the skewness of the data. Give a reason for your answer.",
+          "memo": "✓ The data is negatively skewed (skewed to the left), because the mean ($32$) is less than the median ($35$) / the left whisker (12 to 27) is much longer than the right whisker (38 to 41) / the median is closer to $Q_3$ than to $Q_1$. (1)\n\n(The mark is awarded only for the correct skewness WITH a valid reason.)"
+        },
+        {
+          "id": "q1-grouped-mean",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Use the frequency table to calculate the estimated mean distance run by the members of the running club. Give your answer correct to two decimal places.",
+          "answer": 23.25,
+          "tolerance": 0.005,
+          "unit": "km",
+          "explanation": "Midpoints: 5 ; 15 ; 25 ; 35 ; 45. $\\sum f \\cdot x = 4(5) + 14(15) + 11(25) + 7(35) + 4(45) = 20 + 210 + 275 + 245 + 180 = 930$. Estimated mean $= \\dfrac{930}{40} = 23{,}25$ km."
+        },
+        {
+          "id": "q1-modal-class",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "Write down the modal class of the distances run.",
+          "options": ["$0 \\leq x < 10$", "$10 \\leq x < 20$", "$20 \\leq x < 30$", "$30 \\leq x < 40$", "$40 \\leq x < 50$"],
+          "answer": 1,
+          "explanation": "The modal class is the class with the highest frequency: $10 \\leq x < 20$ has 14 members."
+        },
+        {
+          "id": "q1-median-class",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "In which class does the median distance lie?",
+          "options": ["$0 \\leq x < 10$", "$10 \\leq x < 20$", "$20 \\leq x < 30$", "$30 \\leq x < 40$", "$40 \\leq x < 50$"],
+          "answer": 2,
+          "explanation": "With 40 members the median lies between the 20th and 21st values. The cumulative frequencies are 4 ; 18 ; 29 ; 36 ; 40, so the 20th and 21st values both lie in $20 \\leq x < 30$."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Analytical Geometry",
+      "context": [
+        { "type": "paragraph", "text": "In the diagram, $A(-2; 1)$, $B(2; 4)$ and $C(7; 4)$ are three vertices of quadrilateral ABCD. The diagonals AC and BD intersect at M." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 330' font-family='sans-serif' font-size='15'><rect width='520' height='330' fill='white'/><line x1='20' y1='260' x2='500' y2='260' stroke='black'/><line x1='160' y1='315' x2='160' y2='20' stroke='black'/><text x='505' y='265'>x</text><text x='166' y='25'>y</text><text x='144' y='278'>O</text><polygon points='80,220 240,100 440,100 280,220' fill='none' stroke='black' stroke-width='2'/><line x1='80' y1='220' x2='440' y2='100' stroke='black' stroke-dasharray='6 4'/><line x1='240' y1='100' x2='280' y2='220' stroke='black' stroke-dasharray='6 4'/><circle cx='80' cy='220' r='3'/><circle cx='240' cy='100' r='3'/><circle cx='440' cy='100' r='3'/><circle cx='280' cy='220' r='3'/><circle cx='260' cy='160' r='3'/><text x='72' y='240' text-anchor='end'>A(-2; 1)</text><text x='240' y='88' text-anchor='middle'>B(2; 4)</text><text x='445' y='88' text-anchor='middle'>C(7; 4)</text><text x='286' y='240'>D</text><text x='270' y='158'>M</text></svg>",
+          "caption": "Quadrilateral ABCD with diagonals AC and BD intersecting at M"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-length-ab",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the length of AB.",
+          "answer": 5,
+          "tolerance": 0.005,
+          "unit": "units",
+          "explanation": "$AB = \\sqrt{(2 - (-2))^2 + (4 - 1)^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$ units."
+        },
+        {
+          "id": "q2-gradient-ac",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the gradient of AC. Give your answer as a common fraction (e.g. 2/5) or as a decimal correct to two decimal places.",
+          "answer": 0.3333,
+          "tolerance": 0.005,
+          "explanation": "$m_{AC} = \\dfrac{4 - 1}{7 - (-2)} = \\dfrac{3}{9} = \\dfrac{1}{3}$"
+        },
+        {
+          "id": "q2-equation-ac",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Determine the equation of the line AC in the form $y = mx + c$.",
+          "memo": "$m_{AC} = \\dfrac{1}{3}$ ✓ (1)\nSubstitute $A(-2; 1)$: $1 = \\dfrac{1}{3}(-2) + c$ ✓ (1)\n$c = \\dfrac{5}{3}$, so $y = \\dfrac{1}{3}x + \\dfrac{5}{3}$ ✓ (1)\n\n(Alternative: $y - 1 = \\dfrac{1}{3}(x + 2)$ earns the same marks once simplified to $y = \\dfrac{1}{3}x + \\dfrac{5}{3}$.)"
+        },
+        {
+          "id": "q2-midpoint-m",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Determine the coordinates of M, the midpoint of AC.",
+          "memo": "$x_M = \\dfrac{-2 + 7}{2} = \\dfrac{5}{2}$ ✓ (1)\n$y_M = \\dfrac{1 + 4}{2} = \\dfrac{5}{2}$ ✓ (1)\n\n$M\\left(\\dfrac{5}{2}; \\dfrac{5}{2}\\right)$ or $M(2{,}5; 2{,}5)$"
+        },
+        {
+          "id": "q2-coordinates-d",
+          "type": "open",
+          "marks": 2,
+          "prompt": "ABCD is a parallelogram. Use the fact that the diagonals of a parallelogram bisect each other to determine the coordinates of D.",
+          "memo": "M is also the midpoint of BD:\n$\\dfrac{2 + x_D}{2} = \\dfrac{5}{2}$, so $x_D = 3$ ✓ (1)\n$\\dfrac{4 + y_D}{2} = \\dfrac{5}{2}$, so $y_D = 1$ ✓ (1)\n\n$D(3; 1)$\n\n(Alternative: the translation from B to A is (x − 4; y − 3), so D = C(7; 4) moved the same way = (3; 1).)"
+        },
+        {
+          "id": "q2-prove-rhombus",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Prove that parallelogram ABCD is a rhombus.",
+          "memo": "Method 1 (diagonals):\n$m_{BD} = \\dfrac{4 - 1}{2 - 3} = -3$ ✓ (1)\n$m_{AC} \\times m_{BD} = \\dfrac{1}{3} \\times (-3) = -1$ ✓ (1)\n$\\therefore AC \\perp BD$ ✓ (1)\nABCD is a parallelogram with perpendicular diagonals, so ABCD is a rhombus ✓ (1)\n\nMethod 2 (adjacent sides):\n$AB = 5$ (from 2.1) ✓ (1)\n$AD = \\sqrt{(3 - (-2))^2 + (1 - 1)^2} = \\sqrt{25} = 5$ ✓✓ (2)\nABCD is a parallelogram with a pair of adjacent sides equal ($AB = AD$), so ABCD is a rhombus ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Trigonometric Ratios and Equations",
+      "context": [
+        { "type": "paragraph", "text": "Diagram for QUESTION 3.7 and 3.8: In $\\triangle PQR$, $\\hat{Q} = 90^\\circ$, $PQ = 8$ cm and $QR = 15$ cm." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240' font-family='sans-serif' font-size='15'><rect width='420' height='240' fill='white'/><polygon points='60,40 60,200 360,200' fill='none' stroke='black' stroke-width='2'/><path d='M60 186 L74 186 L74 200' fill='none' stroke='black'/><text x='52' y='38' text-anchor='end'>P</text><text x='52' y='216' text-anchor='end'>Q</text><text x='366' y='216'>R</text><text x='52' y='125' text-anchor='end'>8 cm</text><text x='210' y='222' text-anchor='middle'>15 cm</text></svg>",
+          "caption": "Right-angled triangle PQR with the right angle at Q"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-calc-a",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Use a calculator to evaluate, correct to two decimal places: $\\cos 52^\\circ + \\sin 38^\\circ$",
+          "answer": 1.23,
+          "tolerance": 0.005,
+          "explanation": "$\\cos 52^\\circ + \\sin 38^\\circ = 0{,}6157 + 0{,}6157 = 1{,}2313... \\approx 1{,}23$ (make sure the calculator is in degree mode)."
+        },
+        {
+          "id": "q3-calc-b",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Use a calculator to evaluate, correct to two decimal places: $\\dfrac{\\tan 65^\\circ}{2\\sin 25^\\circ}$",
+          "answer": 2.54,
+          "tolerance": 0.005,
+          "explanation": "$\\dfrac{2{,}1445...}{2 \\times 0{,}4226...} = 2{,}5371... \\approx 2{,}54$. Put the whole denominator in brackets on the calculator."
+        },
+        {
+          "id": "q3-calc-c",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Use a calculator to evaluate, correct to two decimal places: $\\sec 40^\\circ$",
+          "answer": 1.31,
+          "tolerance": 0.005,
+          "explanation": "$\\sec 40^\\circ = \\dfrac{1}{\\cos 40^\\circ} = \\dfrac{1}{0{,}7660...} = 1{,}3054... \\approx 1{,}31$"
+        },
+        {
+          "id": "q3-special-angles",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Without using a calculator, determine the value of $\\dfrac{\\sin 60^\\circ \\cdot \\tan 30^\\circ}{\\cos^2 45^\\circ}$.",
+          "memo": "$= \\dfrac{\\dfrac{\\sqrt{3}}{2} \\times \\dfrac{1}{\\sqrt{3}}}{\\left(\\dfrac{1}{\\sqrt{2}}\\right)^2}$\n✓ $\\sin 60^\\circ = \\dfrac{\\sqrt{3}}{2}$ (1)\n✓ $\\tan 30^\\circ = \\dfrac{1}{\\sqrt{3}}$ (1)\n✓ $\\cos^2 45^\\circ = \\left(\\dfrac{1}{\\sqrt{2}}\\right)^2 = \\dfrac{1}{2}$ (1)\n$= \\dfrac{\\frac{1}{2}}{\\frac{1}{2}} = 1$ ✓ (1)"
+        },
+        {
+          "id": "q3-solve-sin",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Solve for $\\theta$, where $0^\\circ \\leq \\theta \\leq 90^\\circ$: $3\\sin\\theta = 2$. Give your answer correct to two decimal places.",
+          "answer": 41.81,
+          "tolerance": 0.005,
+          "unit": "°",
+          "explanation": "$\\sin\\theta = \\dfrac{2}{3}$, so $\\theta = \\sin^{-1}\\left(\\dfrac{2}{3}\\right) = 41{,}81^\\circ$."
+        },
+        {
+          "id": "q3-solve-cos",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Solve for $\\theta$, where $0^\\circ \\leq \\theta \\leq 90^\\circ$: $2\\cos(\\theta + 15^\\circ) = 0{,}8$. Give your answer correct to two decimal places.",
+          "answer": 51.42,
+          "tolerance": 0.005,
+          "unit": "°",
+          "explanation": "$\\cos(\\theta + 15^\\circ) = 0{,}4$, so $\\theta + 15^\\circ = \\cos^{-1}(0{,}4) = 66{,}42^\\circ$. Therefore $\\theta = 66{,}42^\\circ - 15^\\circ = 51{,}42^\\circ$."
+        },
+        {
+          "id": "q3-sin-plus-cos",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to $\\triangle PQR$. Without calculating the size of any angle, determine the value of $\\sin R + \\cos R$.",
+          "memo": "$PR^2 = 8^2 + 15^2 = 289$, so $PR = 17$ cm (Pythagoras) ✓ (1)\n$\\sin R + \\cos R = \\dfrac{8}{17} + \\dfrac{15}{17} = \\dfrac{23}{17}$ ✓ (1)"
+        },
+        {
+          "id": "q3-angle-r",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Refer to $\\triangle PQR$. Calculate the size of $\\hat{R}$, correct to two decimal places.",
+          "answer": 28.07,
+          "tolerance": 0.005,
+          "unit": "°",
+          "explanation": "$\\tan R = \\dfrac{\\text{opp}}{\\text{adj}} = \\dfrac{PQ}{QR} = \\dfrac{8}{15}$, so $\\hat{R} = \\tan^{-1}\\left(\\dfrac{8}{15}\\right) = 28{,}07^\\circ$."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Trigonometry on the Cartesian Plane",
+      "instructions": "Answer this question WITHOUT using a calculator. Draw sketches on the Cartesian plane where needed.",
+      "questions": [
+        {
+          "id": "q4-sin-theta",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Given: $13\\cos\\theta - 5 = 0$ and $\\sin\\theta < 0$. Use a sketch to determine the value of $\\sin\\theta$.",
+          "memo": "$\\cos\\theta = \\dfrac{5}{13}$, so $x = 5$ and $r = 13$, with $\\theta$ in the fourth quadrant ($\\cos\\theta > 0$, $\\sin\\theta < 0$) ✓ (1)\n$y^2 = 13^2 - 5^2 = 144$, so $y = -12$ (negative in the fourth quadrant) ✓ (1)\n$\\sin\\theta = \\dfrac{y}{r} = -\\dfrac{12}{13}$ ✓ (1)"
+        },
+        {
+          "id": "q4-tan-plus-sec",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Hence, determine the value of $\\tan\\theta + \\dfrac{1}{\\cos\\theta}$.",
+          "memo": "$\\tan\\theta = \\dfrac{y}{x} = -\\dfrac{12}{5}$ ✓ (1)\n$\\tan\\theta + \\dfrac{1}{\\cos\\theta} = -\\dfrac{12}{5} + \\dfrac{13}{5} = \\dfrac{1}{5}$ ✓ (1)"
+        },
+        {
+          "id": "q4-point-p",
+          "type": "open",
+          "marks": 3,
+          "prompt": "The point $P(-2; k)$ lies on the terminal arm of angle $\\beta$ in standard position, with $OP = \\sqrt{13}$ and $180^\\circ < \\beta < 270^\\circ$. Determine the value of $k$ and hence the value of $\\cos\\beta$.",
+          "memo": "$(-2)^2 + k^2 = (\\sqrt{13})^2$ ✓ (1)\n$k^2 = 9$, and $k < 0$ because $\\beta$ is in the third quadrant, so $k = -3$ ✓ (1)\n$\\cos\\beta = \\dfrac{x}{r} = -\\dfrac{2}{\\sqrt{13}}$ $\\left(= -\\dfrac{2\\sqrt{13}}{13}\\right)$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Trigonometric Functions",
+      "context": [
+        { "type": "paragraph", "text": "The graphs of $f(x) = a\\sin x + q$ (solid line) and $g(x) = 2\\cos x + 1$ (dashed line) are sketched below for $0^\\circ \\leq x \\leq 360^\\circ$. The maximum point of $f$ is $(90^\\circ; 3)$ and its minimum point is $(270^\\circ; -1)$. The two graphs intersect where $x = 45^\\circ$ and $x = 225^\\circ$." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 250' font-family='sans-serif' font-size='13'><rect width='540' height='250' fill='white'/><line x1='40' y1='170' x2='522' y2='170' stroke='black'/><line x1='60' y1='240' x2='60' y2='15' stroke='black'/><text x='526' y='174'>x</text><text x='66' y='20'>y</text><text x='48' y='185' text-anchor='end'>O</text><path d='M168 166 L168 174 M276 166 L276 174 M384 166 L384 174 M492 166 L492 174 M56 50 L64 50 M56 90 L64 90 M56 130 L64 130 M56 210 L64 210' stroke='black'/><text x='168' y='188' text-anchor='middle'>90°</text><text x='276' y='188' text-anchor='middle'>180°</text><text x='384' y='188' text-anchor='middle'>270°</text><text x='492' y='188' text-anchor='middle'>360°</text><text x='52' y='54' text-anchor='end'>3</text><text x='52' y='94' text-anchor='end'>2</text><text x='52' y='134' text-anchor='end'>1</text><text x='52' y='214' text-anchor='end'>-1</text><path d='M60 130 L72 116 L84 103 L96 90 L108 79 L120 69 L132 61 L144 55 L156 51 L168 50 L180 51 L192 55 L204 61 L216 69 L228 79 L240 90 L252 103 L264 116 L276 130 L288 144 L300 157 L312 170 L324 181 L336 191 L348 199 L360 205 L372 209 L384 210 L396 209 L408 205 L420 199 L432 191 L444 181 L456 170 L468 157 L480 144 L492 130' fill='none' stroke='black' stroke-width='2'/><path d='M60 50 L72 51 L84 55 L96 61 L108 69 L120 79 L132 90 L144 103 L156 116 L168 130 L180 144 L192 157 L204 170 L216 181 L228 191 L240 199 L252 205 L264 209 L276 210 L288 209 L300 205 L312 199 L324 191 L336 181 L348 170 L360 157 L372 144 L384 130 L396 116 L408 103 L420 90 L432 79 L444 69 L456 61 L468 55 L480 51 L492 50' fill='none' stroke='black' stroke-width='2' stroke-dasharray='7 4'/><path d='M114 73 L114 170 M330 170 L330 187' stroke='black' stroke-dasharray='2 3'/><text x='114' y='188' text-anchor='middle'>45°</text><text x='330' y='162' text-anchor='middle'>225°</text><text x='168' y='40' text-anchor='middle'>(90°; 3)</text><text x='384' y='230' text-anchor='middle'>(270°; -1)</text><text x='500' y='134'>f</text><text x='500' y='54'>g</text></svg>",
+          "caption": "f (solid) and g (dashed) for 0° ≤ x ≤ 360°"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q5-value-a",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Write down the value of $a$.",
+          "answer": 2,
+          "tolerance": 0.005,
+          "explanation": "The amplitude of $f$ is $\\dfrac{3 - (-1)}{2} = 2$. The graph has the shape of $y = \\sin x$ (it rises from $x = 0^\\circ$ to a maximum at $90^\\circ$), so $a = 2$."
+        },
+        {
+          "id": "q5-value-q",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Write down the value of $q$.",
+          "answer": 1,
+          "tolerance": 0.005,
+          "explanation": "The graph is shifted up so that its centre line is halfway between 3 and −1: $q = \\dfrac{3 + (-1)}{2} = 1$."
+        },
+        {
+          "id": "q5-amplitude-g",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Write down the amplitude of $g$.",
+          "answer": 2,
+          "tolerance": 0.005,
+          "explanation": "For $y = a\\cos x + q$ the amplitude is $|a|$, so the amplitude of $g$ is $2$."
+        },
+        {
+          "id": "q5-period-g",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Write down the period of $g$.",
+          "answer": 360,
+          "tolerance": 0.005,
+          "unit": "°",
+          "explanation": "The graph of $y = a\\cos x + q$ completes one full cycle every $360^\\circ$."
+        },
+        {
+          "id": "q5-range-g",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write down the range of $g$.",
+          "memo": "$-1 \\leq y \\leq 3$ ✓✓ (2)\n(or $y \\in [-1; 3]$)\n\n✓ for each correct end value with the correct inequality signs; a maximum of 1 mark if strict inequalities ($<$) are used."
+        },
+        {
+          "id": "q5-turning-point-g",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Write down the coordinates of the minimum turning point of $g$.",
+          "memo": "$(180^\\circ; -1)$ ✓ (1)"
+        },
+        {
+          "id": "q5-f-greater-g",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Use the graphs to determine the values of $x$, for $0^\\circ \\leq x \\leq 360^\\circ$, for which $f(x) > g(x)$.",
+          "memo": "$45^\\circ < x < 225^\\circ$ ✓✓ (2)\n\n✓ for the critical values $45^\\circ$ and $225^\\circ$\n✓ for the correct interval with strict inequalities (f lies above g between the two points of intersection)"
+        },
+        {
+          "id": "q5-shift-h",
+          "type": "open",
+          "marks": 1,
+          "prompt": "The graph of $g$ is shifted 1 unit downwards to give the graph of $h$. Write down the equation of $h$.",
+          "memo": "$h(x) = 2\\cos x$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Trigonometry: Problems in Two Dimensions",
+      "context": [
+        { "type": "paragraph", "text": "TB is a vertical cellphone mast standing on level ground. Lerato stands at A, 40 m from B, the foot of the mast, and measures the angle of elevation of the top T as $35^\\circ$. Sipho stands at C, further from the mast, so that B, A and C lie in a straight line. The angle of elevation of T from C is $22^\\circ$." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240' font-family='sans-serif' font-size='14'><rect width='400' height='240' fill='white'/><line x1='30' y1='200' x2='380' y2='200' stroke='black'/><line x1='50' y1='88' x2='50' y2='200' stroke='black' stroke-width='3'/><line x1='50' y1='88' x2='210' y2='200' stroke='black'/><line x1='50' y1='88' x2='327' y2='200' stroke='black'/><path d='M50 188 L62 188 L62 200' fill='none' stroke='black'/><text x='50' y='80' text-anchor='middle'>T</text><text x='50' y='218' text-anchor='middle'>B</text><text x='210' y='218' text-anchor='middle'>A</text><text x='327' y='218' text-anchor='middle'>C</text><text x='130' y='218' text-anchor='middle'>40 m</text><text x='192' y='194' text-anchor='end'>35°</text><text x='303' y='194' text-anchor='end'>22°</text></svg>",
+          "caption": "Mast TB with A and C on level ground in line with B"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q6-height-tb",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the height of the mast, TB, correct to two decimal places.",
+          "answer": 28.01,
+          "tolerance": 0.005,
+          "unit": "m",
+          "explanation": "In right-angled $\\triangle TBA$: $\\tan 35^\\circ = \\dfrac{TB}{40}$, so $TB = 40\\tan 35^\\circ = 28{,}01$ m."
+        },
+        {
+          "id": "q6-distance-ac",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Calculate the distance AC between Lerato and Sipho.",
+          "memo": "In $\\triangle TBC$: $\\tan 22^\\circ = \\dfrac{TB}{BC}$ ✓ (1)\n$BC = \\dfrac{28{,}01}{\\tan 22^\\circ} = 69{,}32$ m ✓ (1)\n$AC = BC - AB = 69{,}32 - 40 = 29{,}32$ m ✓ (1)\n\n(Accept 29,32 m or 29,33 m, depending on rounding of TB.)"
+        },
+        {
+          "id": "q6-distance-ct",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the distance CT from Sipho to the top of the mast, correct to two decimal places.",
+          "answer": 74.77,
+          "tolerance": 0.015,
+          "unit": "m",
+          "explanation": "$\\sin 22^\\circ = \\dfrac{TB}{CT}$, so $CT = \\dfrac{28{,}01}{\\sin 22^\\circ} = 74{,}77$ m. (Pythagoras with $BC = 69{,}32$ m gives the same answer.)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Euclidean Geometry: Quadrilaterals",
+      "context": [
+        { "type": "paragraph", "text": "Diagram for QUESTION 7.3 to 7.5: ABCD is a rhombus. The diagonals AC and BD intersect at E, and $A\\hat{B}D = 28^\\circ$." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' font-family='sans-serif' font-size='15'><rect width='400' height='300' fill='white'/><polygon points='131,150 200,20 269,150 200,280' fill='none' stroke='black' stroke-width='2'/><line x1='131' y1='150' x2='269' y2='150' stroke='black'/><line x1='200' y1='20' x2='200' y2='280' stroke='black'/><text x='123' y='155' text-anchor='end'>A</text><text x='200' y='14' text-anchor='middle'>B</text><text x='277' y='155'>C</text><text x='200' y='296' text-anchor='middle'>D</text><text x='206' y='145'>E</text><text x='195' y='70' text-anchor='end' font-size='13'>28°</text></svg>",
+          "caption": "Rhombus ABCD with diagonals intersecting at E"
+        },
+        { "type": "paragraph", "text": "Diagram for QUESTION 7.6: PQRS is a parallelogram with diagonals PR and QS intersecting at O. K and L are points on QS such that $QK = SL$." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 440 240' font-family='sans-serif' font-size='15'><rect width='440' height='240' fill='white'/><polygon points='60,200 140,60 380,60 300,200' fill='none' stroke='black' stroke-width='2'/><line x1='60' y1='200' x2='380' y2='60' stroke='black'/><line x1='140' y1='60' x2='300' y2='200' stroke='black'/><polygon points='60,200 180,95 380,60 260,165' fill='none' stroke='black' stroke-dasharray='6 4'/><circle cx='180' cy='95' r='3'/><circle cx='260' cy='165' r='3'/><text x='52' y='214' text-anchor='end'>P</text><text x='134' y='52' text-anchor='end'>Q</text><text x='386' y='52'>R</text><text x='306' y='216'>S</text><text x='220' y='122' text-anchor='middle'>O</text><text x='184' y='86'>K</text><text x='262' y='184'>L</text></svg>",
+          "caption": "Parallelogram PQRS with K and L on diagonal QS (PKRL dashed)"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q7-name-kite",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Name the quadrilateral that has exactly one pair of opposite angles equal and diagonals that intersect at right angles.",
+          "answers": ["kite", "a kite"],
+          "explanation": "A kite has two pairs of equal adjacent sides; its diagonals are perpendicular and only the pair of angles between the unequal sides is equal."
+        },
+        {
+          "id": "q7-opposite-angles",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Complete the statement: If both pairs of opposite angles of a quadrilateral are equal, then the quadrilateral is a ...",
+          "answers": ["parallelogram", "a parallelogram"],
+          "explanation": "This is one of the tests for a parallelogram (converse of the property that opposite angles of a parallelogram are equal)."
+        },
+        {
+          "id": "q7-angle-aeb",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Write down the size of $A\\hat{E}B$. Give a reason.",
+          "memo": "$A\\hat{E}B = 90^\\circ$ (diagonals of a rhombus are perpendicular) ✓ S/R (1)"
+        },
+        {
+          "id": "q7-angle-bac",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Calculate, with reasons, the size of $B\\hat{A}C$.",
+          "memo": "In $\\triangle ABE$:\n$B\\hat{A}C = 180^\\circ - (90^\\circ + 28^\\circ) = 62^\\circ$ ✓ S (1)\n(sum of the angles of a triangle) ✓ R (1)"
+        },
+        {
+          "id": "q7-angle-adc",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Calculate, with reasons, the size of $A\\hat{D}C$.",
+          "memo": "$A\\hat{D}B = A\\hat{B}D = 28^\\circ$ (angles opposite equal sides; $AB = AD$, sides of a rhombus) ✓ S/R (1)\n$B\\hat{D}C = A\\hat{B}D = 28^\\circ$ (alternate angles; $AB \\parallel DC$) ✓ S/R (1)\n$A\\hat{D}C = 28^\\circ + 28^\\circ = 56^\\circ$ ✓ (1)\n\nAlternative:\n$A\\hat{B}C = 2 \\times 28^\\circ = 56^\\circ$ (diagonal bisects the angles of a rhombus) ✓✓ S/R (2)\n$A\\hat{D}C = A\\hat{B}C = 56^\\circ$ (opposite angles of a parallelogram) ✓ (1)"
+        },
+        {
+          "id": "q7-prove-pkrl",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Refer to the diagram of parallelogram PQRS. Prove that PKRL is a parallelogram.",
+          "memo": "$PO = OR$ (diagonals of a parallelogram bisect each other) ✓ S/R (1)\n$QO = OS$ (diagonals of a parallelogram bisect each other) ✓ S/R (1)\n$QK = SL$ (given), so $QO - QK = OS - SL$, i.e. $KO = OL$ ✓ S (1)\n$\\therefore$ PKRL is a parallelogram (diagonals bisect each other) ✓ R (1)\n\nAlternative (congruency): In $\\triangle PQK$ and $\\triangle RSL$: $PQ = RS$ (opp sides of parallelogram), $P\\hat{Q}K = R\\hat{S}L$ (alt angles, $PQ \\parallel SR$), $QK = SL$ (given), so $\\triangle PQK \\equiv \\triangle RSL$ (SAS) ✓ and $PK = RL$ ✓. Similarly $\\triangle PSL \\equiv \\triangle RQK$ (SAS), so $PL = RK$ ✓. Both pairs of opposite sides are equal, so PKRL is a parallelogram ✓."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 8: The Midpoint Theorem",
+      "context": [
+        { "type": "paragraph", "text": "In quadrilateral ABCD, P, Q, R and S are the midpoints of AB, BC, CD and DA respectively. The diagonals AC and BD are drawn (dashed)." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 440 280' font-family='sans-serif' font-size='15'><rect width='440' height='280' fill='white'/><polygon points='60,220 160,40 380,80 320,250' fill='none' stroke='black' stroke-width='2'/><line x1='60' y1='220' x2='380' y2='80' stroke='black' stroke-dasharray='6 4'/><line x1='160' y1='40' x2='320' y2='250' stroke='black' stroke-dasharray='6 4'/><polygon points='110,130 270,60 350,165 190,235' fill='none' stroke='black'/><circle cx='110' cy='130' r='3'/><circle cx='270' cy='60' r='3'/><circle cx='350' cy='165' r='3'/><circle cx='190' cy='235' r='3'/><text x='52' y='228' text-anchor='end'>A</text><text x='156' y='32' text-anchor='end'>B</text><text x='388' y='78'>C</text><text x='326' y='266'>D</text><text x='102' y='126' text-anchor='end'>P</text><text x='272' y='50'>Q</text><text x='358' y='170'>R</text><text x='186' y='256' text-anchor='end'>S</text></svg>",
+          "caption": "Quadrilateral ABCD with the midpoints of its sides joined to form PQRS"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q8-state-theorem",
+          "type": "open",
+          "marks": 2,
+          "prompt": "State the midpoint theorem.",
+          "memo": "The line segment joining the midpoints of two sides of a triangle ✓ (1) is parallel to the third side and equal to half the length of the third side ✓ (1)."
+        },
+        {
+          "id": "q8-prove-parallelogram",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Prove that PQRS is a parallelogram.",
+          "memo": "In $\\triangle ABC$: $PQ \\parallel AC$ and $PQ = \\dfrac{1}{2}AC$ (midpoint theorem) ✓ S/R (1)\nIn $\\triangle ADC$: $SR \\parallel AC$ and $SR = \\dfrac{1}{2}AC$ (midpoint theorem) ✓ S/R (1)\n$\\therefore PQ \\parallel SR$ and $PQ = SR$ ✓ S (1)\n$\\therefore$ PQRS is a parallelogram (one pair of opposite sides equal and parallel) ✓ R (1)\n\n(Also accept: using $\\triangle ABD$ and $\\triangle CBD$ to show $PS \\parallel QR$ and $PS = QR$, or showing both pairs of opposite sides parallel.)"
+        },
+        {
+          "id": "q8-perimeter",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "If $AC = 18$ cm and $BD = 12$ cm, calculate the perimeter of PQRS.",
+          "answer": 30,
+          "tolerance": 0.005,
+          "unit": "cm",
+          "explanation": "By the midpoint theorem $PQ = SR = \\dfrac{1}{2}AC = 9$ cm and $PS = QR = \\dfrac{1}{2}BD = 6$ cm. Perimeter $= 2(9 + 6) = 30$ cm."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 9: Measurement",
+      "context": [
+        { "type": "paragraph", "text": "A farmer in the Free State stores maize in a closed silo made up of a right circular cylinder with a right circular cone on top. The cylinder and the cone both have a radius of 3 m. The height of the cylinder is 5 m and the perpendicular height of the cone is 4 m. The silo stands on a concrete slab, so its base is not exposed.\n\nUse the formulae on the information sheet (QUESTION 1) and the $\\pi$ key on your calculator." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 330' font-family='sans-serif' font-size='14'><rect width='300' height='330' fill='white'/><line x1='90' y1='180' x2='150' y2='100' stroke='black' stroke-width='2'/><line x1='210' y1='180' x2='150' y2='100' stroke='black' stroke-width='2'/><path d='M90 180 A60 14 0 0 0 210 180' fill='none' stroke='black' stroke-width='2'/><path d='M90 180 A60 14 0 0 1 210 180' fill='none' stroke='black' stroke-dasharray='5 4'/><line x1='90' y1='180' x2='90' y2='280' stroke='black' stroke-width='2'/><line x1='210' y1='180' x2='210' y2='280' stroke='black' stroke-width='2'/><path d='M90 280 A60 14 0 0 0 210 280' fill='none' stroke='black' stroke-width='2'/><path d='M90 280 A60 14 0 0 1 210 280' fill='none' stroke='black' stroke-dasharray='5 4'/><line x1='150' y1='100' x2='150' y2='180' stroke='black' stroke-dasharray='3 3'/><line x1='150' y1='280' x2='210' y2='280' stroke='black'/><text x='156' y='145'>4 m</text><text x='180' y='274' text-anchor='middle'>3 m</text><text x='218' y='234'>5 m</text></svg>",
+          "caption": "Silo: cylinder (radius 3 m, height 5 m) with a cone (perpendicular height 4 m) on top"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q9-slant-height",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Calculate the slant height of the cone.",
+          "answer": 5,
+          "tolerance": 0.005,
+          "unit": "m",
+          "explanation": "$s^2 = r^2 + H^2 = 3^2 + 4^2 = 25$, so $s = 5$ m."
+        },
+        {
+          "id": "q9-volume",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Calculate the volume of the silo, correct to two decimal places.",
+          "answer": 179.07,
+          "tolerance": 0.005,
+          "unit": "m³",
+          "explanation": "Cylinder: $\\pi r^2 h = \\pi(3)^2(5) = 45\\pi$. Cone: $\\dfrac{1}{3}\\pi r^2 H = \\dfrac{1}{3}\\pi(3)^2(4) = 12\\pi$. Total $= 57\\pi = 179{,}07\\ \\text{m}^3$."
+        },
+        {
+          "id": "q9-surface-area",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "Calculate the exposed outer surface area of the silo (the curved surface of the cylinder and the curved surface of the cone; the base is not included), correct to two decimal places.",
+          "answer": 141.37,
+          "tolerance": 0.005,
+          "unit": "m²",
+          "explanation": "Curved surface of cylinder: $2\\pi r h = 2\\pi(3)(5) = 30\\pi$. Curved surface of cone: $\\pi r s = \\pi(3)(5) = 15\\pi$. Total $= 45\\pi = 141{,}37\\ \\text{m}^2$. (Do not include the circle where the cone meets the cylinder; it is inside the silo.)"
+        },
+        {
+          "id": "q9-volume-factor",
+          "type": "open",
+          "marks": 2,
+          "prompt": "The farmer builds a larger silo of the same shape by multiplying the radius, the height of the cylinder and the perpendicular height of the cone each by 3. Show that the volume of the larger silo is 27 times the volume of the original silo.",
+          "memo": "$V_{\\text{new}} = \\pi(3r)^2(3h) + \\dfrac{1}{3}\\pi(3r)^2(3H)$ ✓ (1)\n$= 27\\pi r^2 h + 27 \\cdot \\dfrac{1}{3}\\pi r^2 H = 27\\left(\\pi r^2 h + \\dfrac{1}{3}\\pi r^2 H\\right) = 27V$ ✓ (1)\n\n(Also accept a numerical check: $V_{\\text{new}} = \\pi(9)^2(15) + \\dfrac{1}{3}\\pi(9)^2(12) = 1\\,215\\pi + 324\\pi = 1\\,539\\pi = 27 \\times 57\\pi$.)"
+        },
+        {
+          "id": "q9-area-factor",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "By what factor is the exposed outer surface area multiplied when all the dimensions are multiplied by 3?",
+          "answer": 9,
+          "tolerance": 0.005,
+          "explanation": "Every area is the product of two lengths, and each length (including the slant height) is multiplied by 3, so the area is multiplied by $3^2 = 9$: $45\\pi \\to 405\\pi$."
+        }
+      ]
+    }
+  ]
+}

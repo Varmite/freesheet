@@ -1,0 +1,56 @@
+{
+  "id": "number-patterns",
+  "title": "Number Patterns",
+  "term": 1,
+  "summary": "Recognise linear number patterns, find the common difference, write the general term $T_n = dn + c$ and use it to find any term or the position of a term.",
+  "notes": [
+    { "type": "heading", "text": "Sequences and terms" },
+    { "type": "paragraph", "text": "A **number pattern** (sequence) is a list of numbers that follows a rule. Each number is a **term**. We write $T_1$ for the first term, $T_2$ for the second, and $T_n$ for the $n$th term, where $n$ is the **position** of the term ($n = 1; 2; 3; \\ldots$). Terms are separated by semicolons: $3; 7; 11; 15; \\ldots$" },
+    { "type": "heading", "text": "Linear patterns" },
+    { "type": "paragraph", "text": "In a **linear** pattern, the difference between consecutive terms is always the same. This is the **common difference** $d$:" },
+    { "type": "formula", "latex": "d = T_2 - T_1 = T_3 - T_2 = \\ldots", "caption": "Common difference of a linear pattern" },
+    { "type": "example", "title": "Worked example 1: is it linear?", "problem": "Determine whether each pattern is linear: (a) $5; 9; 13; 17; \\ldots$ (b) $2; 4; 8; 16; \\ldots$", "steps": [
+      "(a) Differences: $9 - 5 = 4$, $13 - 9 = 4$, $17 - 13 = 4$. Constant, so the pattern is linear with $d = 4$.",
+      "(b) Differences: $2$, $4$, $8$. Not constant, so the pattern is not linear (each term is doubled)."
+    ], "answer": "(a) linear, $d = 4$ (b) not linear" },
+    { "type": "heading", "text": "The general term" },
+    { "type": "paragraph", "text": "A linear pattern increases by $d$ each step, just like a straight line with gradient $d$. Its general term has the form:" },
+    { "type": "formula", "latex": "T_n = dn + c \\qquad \\text{where } c = T_1 - d", "caption": "General term of a linear number pattern" },
+    { "type": "example", "title": "Worked example 2: finding the general term", "problem": "Find the general term of $7; 10; 13; 16; \\ldots$ and then find $T_{50}$.", "steps": [
+      "$d = 10 - 7 = 3$, so $T_n = 3n + c$.",
+      "Substitute $n = 1$, $T_1 = 7$: $7 = 3(1) + c$, so $c = 4$.",
+      "$T_n = 3n + 4$. Check: $T_2 = 3(2) + 4 = 10$ ✓",
+      "$T_{50} = 3(50) + 4 = 154$"
+    ], "answer": "$T_n = 3n + 4$; $T_{50} = 154$" },
+    { "type": "example", "title": "Worked example 3: finding the position of a term", "problem": "Which term of $T_n = 3n + 4$ is equal to $121$?", "steps": [
+      "Set $T_n = 121$: $3n + 4 = 121$.",
+      "$3n = 117$, so $n = 39$.",
+      "Because $n$ is a natural number, $121$ is a term of the pattern: it is the 39th term."
+    ], "answer": "$T_{39} = 121$" },
+    { "type": "callout", "label": "Exam tip", "text": "If solving $T_n = k$ gives a value of $n$ that is not a natural number (e.g. $n = 12{,}5$), then $k$ is **not** a term of the pattern." },
+    { "type": "example", "title": "Worked example 4: decreasing pattern", "problem": "Find the general term of $20; 14; 8; 2; \\ldots$ and the first negative term.", "steps": [
+      "$d = 14 - 20 = -6$, so $T_n = -6n + c$.",
+      "$20 = -6(1) + c$, so $c = 26$ and $T_n = -6n + 26$.",
+      "Negative when $-6n + 26 < 0$: $n > 4{,}33$, so $n = 5$.",
+      "$T_5 = -6(5) + 26 = -4$"
+    ], "answer": "$T_n = -6n + 26$; first negative term is $T_5 = -4$" },
+    { "type": "heading", "text": "Patterns in pictures" },
+    { "type": "paragraph", "text": "Many patterns come from diagrams, for example matchstick shapes. Count the matches in the first few figures, put the counts in a table, then find the general term." },
+    { "type": "table", "caption": "Squares made of matchsticks in a row", "headers": ["Number of squares ($n$)", "1", "2", "3", "4"], "rows": [
+      ["Matchsticks ($T_n$)", "4", "7", "10", "13"]
+    ] },
+    { "type": "paragraph", "text": "The first square uses 4 matches and each new square adds 3, so $T_n = 3n + 1$. A row of 30 squares needs $3(30) + 1 = 91$ matchsticks." }
+  ],
+  "questions": [
+    { "id": "linear-check", "type": "mcq", "prompt": "Which pattern is linear?", "options": ["$1; 4; 9; 16$", "$3; 6; 12; 24$", "$11; 8; 5; 2$", "$1; 1; 2; 3; 5$"], "answer": 2, "explanation": "Constant difference of $-3$." },
+    { "id": "diff", "type": "numeric", "prompt": "Find the common difference of $-4; 1; 6; 11; \\ldots$", "answer": 5, "tolerance": 0 },
+    { "id": "next", "type": "numeric", "prompt": "Write down the next term of $23; 19; 15; 11; \\ldots$", "answer": 7, "tolerance": 0 },
+    { "id": "general", "type": "mcq", "prompt": "The general term of $4; 9; 14; 19; \\ldots$ is…", "options": ["$T_n = 4n + 5$", "$T_n = 5n - 1$", "$T_n = 5n + 4$", "$T_n = n + 5$"], "answer": 1 },
+    { "id": "t20", "type": "numeric", "prompt": "If $T_n = 7n - 3$, calculate $T_{20}$.", "answer": 137, "tolerance": 0 },
+    { "id": "position", "type": "numeric", "prompt": "Which term of $T_n = 4n + 2$ is equal to $150$? Give $n$.", "answer": 37, "tolerance": 0 },
+    { "id": "is-term", "type": "truefalse", "prompt": "$100$ is a term of the pattern $T_n = 3n + 2$.", "answer": false, "explanation": "$3n + 2 = 100$ gives $n = 32{,}67$, not a natural number." },
+    { "id": "find-general", "type": "open", "marks": 3, "prompt": "Determine the general term of $-2; 3; 8; 13; \\ldots$ and use it to find $T_{100}$.", "memo": "✓ $d = 5$ (1)\n✓ $T_n = 5n - 7$ (1)\n✓ $T_{100} = 493$ (1)" },
+    { "id": "matches", "type": "open", "marks": 3, "prompt": "Triangles are made from matchsticks in a row: 1 triangle uses 3 matches, 2 triangles use 5, 3 triangles use 7. (a) Find the general term. (b) How many matches are needed for 25 triangles?", "memo": "(a) ✓ $d = 2$ ✓ $T_n = 2n + 1$ (2)\n(b) ✓ $T_{25} = 51$ matches (1)" },
+    { "id": "first-over", "type": "open", "marks": 3, "prompt": "Find the first term of $T_n = 6n - 5$ that is greater than $200$.", "memo": "✓ $6n - 5 > 200$ (1)\n✓ $n > 34{,}17$, so $n = 35$ (1)\n✓ $T_{35} = 205$ (1)" }
+  ]
+}

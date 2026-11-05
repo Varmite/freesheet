@@ -1,0 +1,44 @@
+{
+  "id": "critical-language-awareness",
+  "title": "Critical Language Awareness",
+  "term": 2,
+  "summary": "How language persuades and manipulates: fact and opinion, bias, stereotyping, emotive language, denotation and connotation, and persuasive techniques in the media.",
+  "notes": [
+    { "type": "heading", "text": "Fact, opinion and bias" },
+    { "type": "list", "items": [
+      "**Fact**: can be proved: 'Cape Town is in the Western Cape.'",
+      "**Opinion**: a belief or judgement: 'Cape Town is the most beautiful city.'",
+      "**Bias**: a one-sided view that favours or opposes something unfairly.",
+      "**Stereotype**: an oversimplified belief about a whole group ('All teenagers are lazy')."
+    ] },
+    { "type": "heading", "text": "Emotive and loaded language" },
+    { "type": "paragraph", "text": "**Emotive language** stirs feelings: 'innocent children' or 'a shocking disaster'. Word choice shows the writer's attitude: protesters can be called 'activists' (positive) or 'a mob' (negative). This is the difference between **denotation** (literal meaning) and **connotation** (associations)." },
+    { "type": "heading", "text": "Persuasive techniques" },
+    { "type": "table", "headers": ["Technique", "Example"], "rows": [
+      ["Rhetorical question", "'Don't you want your family to be safe?'"],
+      ["Inclusive pronouns", "'Together, *we* can make a difference.'"],
+      ["Repetition / rule of three", "'Faster, stronger, better.'"],
+      ["Appeal to authority", "'Nine out of ten dentists recommend…'"],
+      ["Bandwagon", "'Join the millions who have switched!'"],
+      ["Exaggeration", "'The best deal in the universe!'"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "When asked how language manipulates, name the technique, quote it, and explain its effect on the reader." }
+  ],
+  "questions": [
+    { "id": "fact", "type": "mcq", "prompt": "Which statement is a FACT?", "options": ["Soccer is the best sport.", "The FIFA World Cup was held in South Africa in 2010.", "Everyone loves braais.", "Winter is boring."], "answer": 1 },
+    { "id": "stereotype", "type": "short", "prompt": "What is an oversimplified belief about a whole group of people called?", "answers": ["stereotype", "a stereotype", "stereotyping"] },
+    { "id": "bandwagon", "type": "mcq", "prompt": "'Join the millions who have switched!' uses which technique?", "options": ["Bandwagon", "Rhetorical question", "Appeal to authority", "Onomatopoeia"], "answer": 0 },
+    { "id": "inclusive", "type": "truefalse", "prompt": "Using 'we' and 'us' in a speech makes the audience feel included.", "answer": true },
+    { "id": "opinion", "type": "truefalse", "prompt": "'This is the tastiest pizza in Durban' is a fact.", "answer": false },
+    { "id": "techniques", "type": "match", "marks": 4, "prompt": "Match each example to its technique.", "pairs": [
+      { "left": "'Doctors recommend it.'", "right": "Appeal to authority" },
+      { "left": "'Can you afford to miss out?'", "right": "Rhetorical question" },
+      { "left": "'Fresh, fast, friendly.'", "right": "Rule of three" },
+      { "left": "'A heartless attack on helpless pensioners.'", "right": "Emotive language" }
+    ] },
+    { "id": "connotation", "type": "open", "marks": 2, "prompt": "A newspaper calls a group of strikers 'a mob'. Explain the effect of this word.", "memo": "✓ 'Mob' has negative connotations of violence/disorder (1)\n✓ It makes readers see the strikers unfavourably, showing bias (1)" },
+    { "id": "rewrite", "type": "open", "marks": 2, "prompt": "Rewrite neutrally: 'The greedy taxi bosses have once again hiked fares.'", "memo": "✓✓ e.g. 'Taxi associations have increased fares again.' (emotive words removed) (2)" },
+    { "id": "stereo-example", "type": "open", "marks": 2, "prompt": "Explain why 'Girls are bad at maths' is a stereotype and why it is harmful.", "memo": "✓ It generalises about all girls without evidence (1)\n✓ It can discourage girls and limit their opportunities (1)" },
+    { "id": "authority", "type": "open", "marks": 2, "prompt": "Why might a reader be sceptical of 'Nine out of ten dentists recommend Brite toothpaste'?", "memo": "✓ We are not told how many dentists were asked or who paid for the survey (1)\n✓ The claim is designed to persuade, not inform (1)" }
+  ]
+}

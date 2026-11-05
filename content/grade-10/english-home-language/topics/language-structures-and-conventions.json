@@ -1,0 +1,52 @@
+{
+  "id": "language-structures-and-conventions",
+  "title": "Language Structures and Conventions",
+  "term": 1,
+  "summary": "Parts of speech, tenses and concord, active and passive voice, direct and indirect speech, sentence types, and punctuation.",
+  "notes": [
+    { "type": "heading", "text": "Parts of speech" },
+    { "type": "table", "headers": ["Part", "Function", "Example"], "rows": [
+      ["Noun", "Names a person, place, thing or idea", "Thandi, Durban, courage"],
+      ["Pronoun", "Replaces a noun", "she, them, which"],
+      ["Verb", "Action or state", "run, is, seemed"],
+      ["Adjective", "Describes a noun", "a *tall* tree"],
+      ["Adverb", "Describes a verb, adjective or adverb", "ran *quickly*"],
+      ["Preposition", "Shows position or relationship", "under, between, during"],
+      ["Conjunction", "Joins words or clauses", "and, but, because, although"]
+    ] },
+    { "type": "heading", "text": "Concord (subject–verb agreement)" },
+    { "type": "list", "items": [
+      "Singular subject, singular verb: 'The *list* of names **is** long.' (The subject is 'list', not 'names'.)",
+      "'Each', 'every', 'everyone', 'neither' take a singular verb: 'Everyone **has** arrived.'",
+      "With 'either…or' / 'neither…nor', the verb agrees with the nearer subject: 'Neither the teacher nor the learners **were** late.'"
+    ] },
+    { "type": "heading", "text": "Active and passive voice" },
+    { "type": "paragraph", "text": "**Active**: the subject does the action: 'The dog chased the cat.' **Passive**: the subject receives the action: 'The cat was chased by the dog.' Keep the tense the same when changing voice." },
+    { "type": "heading", "text": "Direct and indirect speech" },
+    { "type": "example", "title": "Changing to indirect speech", "problem": "Sipho said, \"I am going to the library today.\"", "steps": ["Remove the quotation marks; add 'that'.", "Change the pronoun: I → he.", "Move the tense back: am going → was going.", "Change time words: today → that day."], "answer": "Sipho said that he was going to the library that day." },
+    { "type": "heading", "text": "Sentence types" },
+    { "type": "list", "items": [
+      "**Simple**: one main clause: 'The bell rang.'",
+      "**Compound**: two main clauses joined by a coordinating conjunction: 'The bell rang, and we left.'",
+      "**Complex**: a main clause and a subordinate clause: 'When the bell rang, we left.'"
+    ] },
+    { "type": "callout", "label": "Punctuation", "text": "**Apostrophe**: possession (the girl's bag, the girls' bags) and contractions (it's = it is; *its* is possessive). **Comma**: after an introductory clause and to separate list items. **Colon**: introduces a list or explanation. **Semicolon**: joins two closely related main clauses." }
+  ],
+  "questions": [
+    { "id": "adverb", "type": "mcq", "prompt": "Identify the adverb: 'The old man walked slowly to the bus stop.'", "options": ["old", "walked", "slowly", "stop"], "answer": 2 },
+    { "id": "concord", "type": "mcq", "prompt": "Choose the correct verb: 'The box of oranges ___ on the table.'", "options": ["are", "is", "were", "have been"], "answer": 1 },
+    { "id": "its", "type": "mcq", "prompt": "Choose the correct word: 'The cat licked ___ paw.'", "options": ["it's", "its", "its'", "it is"], "answer": 1 },
+    { "id": "everyone", "type": "truefalse", "prompt": "'Everyone have finished their work' is grammatically correct.", "answer": false },
+    { "id": "complex", "type": "short", "prompt": "Is this sentence simple, compound or complex? 'Although it rained, the match continued.'", "answers": ["complex"] },
+    { "id": "parts", "type": "match", "marks": 4, "prompt": "Match each word class to an example.", "pairs": [
+      { "left": "Conjunction", "right": "because" },
+      { "left": "Preposition", "right": "beneath" },
+      { "left": "Pronoun", "right": "themselves" },
+      { "left": "Abstract noun", "right": "honesty" }
+    ] },
+    { "id": "passive", "type": "open", "marks": 2, "prompt": "Change to the passive voice: 'The learners painted the classroom.'", "memo": "✓ The classroom was painted (1)\n✓ by the learners. (1)" },
+    { "id": "indirect", "type": "open", "marks": 3, "prompt": "Change to indirect speech: Lerato said, \"I will finish my essay tomorrow.\"", "memo": "✓ Lerato said that she (1)\n✓ would finish her essay (1)\n✓ the next day / the following day. (1)" },
+    { "id": "apostrophe", "type": "open", "marks": 2, "prompt": "Correct the apostrophe errors: 'The boys' bike lost it's chain.' (one boy)", "memo": "✓ boy's (1)\n✓ its (1)" },
+    { "id": "combine", "type": "open", "marks": 2, "prompt": "Join into one complex sentence: 'The road was flooded. We took another route.'", "memo": "✓✓ e.g. 'Because the road was flooded, we took another route.' (subordinating conjunction and correct punctuation) (2)" }
+  ]
+}

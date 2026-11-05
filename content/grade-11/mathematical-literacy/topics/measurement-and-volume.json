@@ -1,0 +1,44 @@
+{
+  "id": "measurement-and-volume",
+  "title": "Measurement: Conversions, Area and Volume",
+  "term": 2,
+  "summary": "Converting between metric and imperial units and between square and cubic units, calculating surface area and volume of prisms and cylinders, and solving practical problems such as filling tanks and packing boxes.",
+  "notes": [
+    { "type": "heading", "text": "Converting area and volume units" },
+    { "type": "table", "headers": ["Length", "Area", "Volume"], "rows": [
+      ["1 m = 100 cm", "1 m² = 100 × 100 = 10 000 cm²", "1 m³ = 100 × 100 × 100 = 1 000 000 cm³"],
+      ["1 cm = 10 mm", "1 cm² = 100 mm²", "1 cm³ = 1 000 mm³"],
+      ["", "1 hectare (ha) = 10 000 m²", "1 m³ = 1 000 ℓ; 1 cm³ = 1 mℓ"]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "1 m² is NOT 100 cm². A square metre is 100 cm by 100 cm, so it contains 10 000 cm²." },
+    { "type": "heading", "text": "Imperial units" },
+    { "type": "table", "caption": "Common conversions (given in exams)", "headers": ["Imperial", "Metric"], "rows": [
+      ["1 inch", "2,54 cm"],
+      ["1 foot (12 inches)", "30,48 cm"],
+      ["1 mile", "1,609 km"],
+      ["1 pound (lb)", "0,454 kg"],
+      ["1 gallon (UK)", "4,546 ℓ"]
+    ] },
+    { "type": "heading", "text": "Surface area and volume" },
+    { "type": "table", "headers": ["Object", "Surface area", "Volume"], "rows": [
+      ["Rectangular prism (box)", "$2(lb + lh + bh)$", "$l \\times b \\times h$"],
+      ["Cylinder", "$2\\pi r^2 + 2\\pi r h$", "$\\pi r^2 h$"],
+      ["Triangular prism", "2 triangles + 3 rectangles", "area of triangle × length"]
+    ] },
+    { "type": "example", "title": "Worked example 1: a water tank", "problem": "A cylindrical JoJo tank has a diameter of 1,8 m and a height of 2,2 m. How many litres can it hold? (Use $\\pi = 3{,}142$.)", "steps": ["$r = 0{,}9$ m", "$V = 3{,}142 \\times 0{,}9^2 \\times 2{,}2 = 5{,}599$ m³", "$5{,}599 \\times 1\\ 000 \\approx 5\\ 599$ ℓ"], "answer": "About 5 600 litres" },
+    { "type": "example", "title": "Worked example 2: packing", "problem": "Juice boxes measure 6 cm × 4 cm × 10 cm. How many fit upright in a carton 36 cm × 24 cm × 20 cm?", "steps": ["Along the length: 36 ÷ 6 = 6", "Along the width: 24 ÷ 4 = 6", "Up the height: 20 ÷ 10 = 2", "Total: 6 × 6 × 2 = 72 boxes"], "answer": "72 boxes" },
+    { "type": "callout", "label": "Exam tip", "text": "For packing, divide each dimension separately and **round down** (you cannot fit part of a box), then multiply. Dividing the volumes can give a wrong answer." }
+  ],
+  "questions": [
+    { "id": "m2-cm2", "type": "numeric", "prompt": "Convert 2,5 m² to cm².", "answer": 25000, "tolerance": 0, "unit": "cm²" },
+    { "id": "m3-l", "type": "numeric", "prompt": "A swimming pool holds 48 m³ of water. How many litres is this?", "answer": 48000, "tolerance": 0, "unit": "ℓ" },
+    { "id": "hectare", "type": "numeric", "prompt": "A farm is 35 ha. What is its area in m²?", "answer": 350000, "tolerance": 0, "unit": "m²" },
+    { "id": "inch", "type": "numeric", "prompt": "A TV screen is 55 inches wide (diagonally). Convert this to cm (1 inch = 2,54 cm).", "answer": 139.7, "tolerance": 0.01, "unit": "cm" },
+    { "id": "box-vol", "type": "numeric", "prompt": "Find the volume of a box 40 cm × 30 cm × 25 cm, in litres.", "answer": 30, "tolerance": 0, "unit": "ℓ" },
+    { "id": "packing", "type": "numeric", "prompt": "Cubes with 5 cm sides are packed into a box 30 cm × 20 cm × 15 cm. How many cubes fit?", "answer": 72, "tolerance": 0 },
+    { "id": "cm2", "type": "truefalse", "prompt": "1 m² = 100 cm²", "answer": false },
+    { "id": "cylinder", "type": "open", "marks": 4, "prompt": "A cylindrical tin of paint has a radius of 9 cm and a height of 20 cm. (a) Calculate its volume in litres. (b) Calculate the area of the label around the side. Use $\\pi = 3{,}142$.", "memo": "(a) ✓ $3{,}142 \\times 81 \\times 20 = 5\\ 090{,}04$ cm³ (1) ✓ ≈ 5,09 ℓ (1)\n(b) ✓ $2 \\times 3{,}142 \\times 9 \\times 20$ (1) ✓ ≈ 1 131,12 cm² (1)" },
+    { "id": "fill-time", "type": "open", "marks": 3, "prompt": "A 5 000 ℓ tank is filled by a hose that delivers 12 ℓ per minute. How long will it take to fill, in hours and minutes?", "memo": "✓ 5 000 ÷ 12 = 416,67 min (1)\n✓ 416,67 ÷ 60 = 6,94 h (1)\n✓ ≈ 6 h 57 min (1)" },
+    { "id": "concrete", "type": "open", "marks": 3, "prompt": "A concrete slab is 4 m long, 3 m wide and 10 cm thick. Ready-mix concrete costs R1 650 per m³. Calculate the cost.", "memo": "✓ Volume 4 × 3 × 0,1 (1)\n✓ = 1,2 m³ (1)\n✓ Cost R1 980 (1)" }
+  ]
+}

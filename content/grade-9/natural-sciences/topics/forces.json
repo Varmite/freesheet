@@ -1,0 +1,62 @@
+{
+  "id": "forces",
+  "title": "Forces",
+  "term": 3,
+  "summary": "Contact and non-contact forces, measuring force in newtons, weight and mass, balanced and unbalanced forces, and friction.",
+  "notes": [
+    { "type": "heading", "text": "What is a force?" },
+    { "type": "paragraph", "text": "A **force** is a push or a pull. Forces can make objects start moving, stop, speed up, slow down, change direction or change shape. Force is measured in **newtons (N)** using a **spring balance** (newton meter). Forces are drawn as arrows: the length shows the size and the arrowhead shows the direction." },
+    { "type": "table", "headers": ["Contact forces (objects must touch)", "Non-contact forces (act at a distance)"], "rows": [
+      ["Friction", "Gravitational force"],
+      ["Applied force (push or pull)", "Magnetic force"],
+      ["Normal force (support from a surface)", "Electrostatic force"],
+      ["Air resistance and water resistance (drag)", ""],
+      ["Tension (in ropes or strings)", ""]
+    ] },
+    { "type": "heading", "text": "Gravity, mass and weight" },
+    { "type": "definition", "term": "Mass", "text": "The amount of matter in an object, measured in kilograms (kg). Mass is the same everywhere in the universe." },
+    { "type": "definition", "term": "Weight", "text": "The gravitational force pulling an object towards the centre of a planet, measured in newtons (N). Weight changes depending on where you are." },
+    { "type": "formula", "latex": "W = m \\times g", "caption": "Weight (N) = mass (kg) × gravitational acceleration (on Earth, g ≈ 10 N/kg; more exactly 9,8 N/kg)" },
+    { "type": "example", "title": "Calculating weight", "problem": "An astronaut has a mass of 70 kg. Find her weight on Earth (g = 10 N/kg) and on the moon (g = 1,6 N/kg).", "steps": [
+      "Earth: W = 70 × 10 = 700 N",
+      "Moon: W = 70 × 1,6 = 112 N",
+      "Her mass is still 70 kg in both places."
+    ], "answer": "700 N on Earth, 112 N on the moon" },
+    { "type": "heading", "text": "Balanced and unbalanced forces" },
+    { "type": "paragraph", "text": "When several forces act on an object, they combine to give a **resultant (net) force**. Forces in the same direction add; forces in opposite directions subtract." },
+    { "type": "list", "items": [
+      "**Balanced forces** (resultant = 0 N): the object stays at rest or keeps moving at the same speed in the same direction.",
+      "**Unbalanced forces** (resultant ≠ 0 N): the object speeds up, slows down or changes direction, in the direction of the resultant force."
+    ] },
+    { "type": "example", "title": "Resultant force", "problem": "Two learners push a box to the right with 30 N and 25 N. Friction of 15 N acts to the left. Find the resultant force.", "steps": [
+      "Forces to the right: 30 + 25 = 55 N",
+      "Resultant = 55 − 15 = 40 N to the right",
+      "The forces are unbalanced, so the box accelerates to the right."
+    ], "answer": "40 N to the right" },
+    { "type": "heading", "text": "Friction" },
+    { "type": "paragraph", "text": "**Friction** is a force that opposes motion between two surfaces in contact. Rough surfaces produce more friction than smooth ones. Friction always converts some kinetic energy into heat." },
+    { "type": "table", "headers": ["Friction is useful", "Friction is a problem"], "rows": [
+      ["Lets us walk without slipping", "Wears out shoes, tyres and machine parts"],
+      ["Car brakes and tyre grip", "Wastes energy as heat in engines"],
+      ["Lets us hold a pen and strike a match", "Slows down moving objects such as cyclists"]
+    ] },
+    { "type": "paragraph", "text": "Friction is **reduced** by lubricating with oil or grease, using wheels or ball bearings, polishing surfaces and streamlining (to reduce air resistance). It is **increased** with treads on tyres and shoes, sand on icy roads and rubber grips." },
+    { "type": "callout", "label": "Common mistake", "text": "A moving object does not need a force to keep it moving. On Earth objects slow down because friction and air resistance act against them. In space, with no friction, a moving object would keep going forever." }
+  ],
+  "questions": [
+    { "id": "unit", "type": "short", "prompt": "What is the SI unit of force?", "answers": ["newton", "newtons", "n"] },
+    { "id": "non-contact", "type": "mcq", "prompt": "Which of these is a non-contact force?", "options": ["Friction", "Tension", "Magnetic force", "Air resistance"], "answer": 2 },
+    { "id": "weight-calc", "type": "numeric", "prompt": "Calculate the weight on Earth of a 45 kg learner. Use g = 10 N/kg.", "answer": 450, "tolerance": 0, "unit": "N" },
+    { "id": "mass-moon", "type": "truefalse", "prompt": "An object's mass is smaller on the moon than on Earth.", "answer": false, "explanation": "Mass stays the same; only weight changes." },
+    { "id": "resultant", "type": "numeric", "prompt": "A trolley is pulled to the left with 80 N, while friction of 20 N acts to the right. What is the size of the resultant force?", "answer": 60, "tolerance": 0, "unit": "N" },
+    { "id": "balanced", "type": "mcq", "prompt": "A car moves at a constant speed in a straight line. The forces on it are…", "options": ["balanced", "unbalanced, forwards", "unbalanced, backwards", "zero because nothing acts on it"], "answer": 0 },
+    { "id": "reduce", "type": "match", "marks": 3, "prompt": "Match each example to whether it increases or reduces friction.", "pairs": [
+      { "left": "Oiling a bicycle chain", "right": "Reduces friction" },
+      { "left": "Deep treads on hiking boots", "right": "Increases friction" },
+      { "left": "Streamlined shape of a racing car", "right": "Reduces air resistance" }
+    ] },
+    { "id": "mass-weight", "type": "open", "marks": 2, "prompt": "Explain the difference between mass and weight.", "memo": "✓ Mass is the amount of matter in an object, in kg, and is the same everywhere (1)\n✓ Weight is the gravitational force on the object, in N, and depends on the planet (1)" },
+    { "id": "friction-good-bad", "type": "open", "marks": 2, "prompt": "Give ONE advantage and ONE disadvantage of friction.", "memo": "✓ Advantage, e.g. lets us walk / brakes work / grip (1)\n✓ Disadvantage, e.g. wears parts / wastes energy as heat / slows movement (1)" },
+    { "id": "space", "type": "open", "marks": 2, "prompt": "A space probe far from any planet has its engines switched off. Describe and explain its motion.", "memo": "✓ It keeps moving at the same speed in the same direction (1)\n✓ because there is no friction or air resistance, so no resultant force acts on it (1)" }
+  ]
+}

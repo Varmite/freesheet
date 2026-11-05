@@ -1,0 +1,58 @@
+{
+  "id": "trade",
+  "title": "Trade",
+  "term": 4,
+  "summary": "Local, national and international trade, imports and exports, the balance of trade, South Africa's main trading products and partners, fair trade and trade barriers.",
+  "notes": [
+    { "type": "heading", "text": "What is trade?" },
+    { "type": "definition", "term": "Trade", "text": "The buying and selling (or exchange) of goods and services." },
+    { "type": "list", "items": [
+      "**Local trade**: within a community, e.g. buying vegetables at a market.",
+      "**National (internal) trade**: between different parts of a country, e.g. fruit from the Western Cape sold in Gauteng.",
+      "**International (foreign) trade**: between countries."
+    ] },
+    { "type": "paragraph", "text": "Countries trade because no country can produce everything it needs efficiently. Differences in climate, natural resources, skills and technology mean that each country is better at producing certain things." },
+    { "type": "heading", "text": "Imports, exports and the balance of trade" },
+    { "type": "definition", "term": "Export", "text": "A good or service sold to another country." },
+    { "type": "definition", "term": "Import", "text": "A good or service bought from another country." },
+    { "type": "formula", "latex": "\\text{balance of trade} = \\text{value of exports} - \\text{value of imports}" },
+    { "type": "list", "items": [
+      "**Trade surplus** (favourable balance): exports are worth more than imports.",
+      "**Trade deficit** (unfavourable balance): imports are worth more than exports."
+    ] },
+    { "type": "example", "title": "Calculating the balance of trade", "problem": "In one month a country exported goods worth R160 billion and imported goods worth R175 billion. Calculate the balance of trade and say whether it is a surplus or a deficit.", "steps": ["Balance = 160 − 175 = −R15 billion", "Imports are greater than exports."], "answer": "A deficit of R15 billion" },
+    { "type": "heading", "text": "South Africa's trade" },
+    { "type": "table", "headers": ["Main exports", "Main imports"], "rows": [
+      ["Platinum group metals, gold, coal, iron ore, chrome and manganese", "Crude oil and petroleum products"],
+      ["Vehicles and vehicle parts", "Machinery and electrical equipment (computers, phones)"],
+      ["Citrus fruit, grapes, wine and wool", "Medicines and chemicals"],
+      ["Steel and other metals", "Clothing and textiles"]
+    ] },
+    { "type": "paragraph", "text": "South Africa's biggest trading partners include **China**, the **European Union** (especially Germany), the **USA**, **India**, **Japan** and other African countries, especially in the **Southern African Development Community (SADC)**. South Africa is also part of **BRICS** (Brazil, Russia, India, China and South Africa, with newer members) and the **African Continental Free Trade Area (AfCFTA)**." },
+    { "type": "callout", "label": "Key idea", "text": "Many developing countries, including South Africa, export **raw materials** (primary products) and import **manufactured goods**. Manufactured goods are worth more, so countries earn more and create more jobs when they **beneficiate** (process) raw materials before exporting them." },
+    { "type": "heading", "text": "Trade barriers and fair trade" },
+    { "type": "list", "items": [
+      "**Tariffs**: taxes on imported goods that make them more expensive, protecting local industries.",
+      "**Quotas**: limits on the amount of a product that may be imported.",
+      "**Subsidies**: government payments to local producers (e.g. farmers in Europe and the USA), which make it hard for poorer countries to compete.",
+      "**Free trade agreements** remove or reduce these barriers between member countries."
+    ] },
+    { "type": "definition", "term": "Fair trade", "text": "A system that guarantees small farmers and workers in developing countries a fair, stable price for products such as coffee, cocoa, tea and rooibos, plus extra money for community projects." }
+  ],
+  "questions": [
+    { "id": "export", "type": "short", "prompt": "What is a good sold to another country called?", "answers": ["export", "an export", "exports"] },
+    { "id": "surplus", "type": "mcq", "prompt": "When a country's exports are worth more than its imports, it has a…", "options": ["trade deficit", "trade surplus", "tariff", "quota"], "answer": 1 },
+    { "id": "balance-calc", "type": "numeric", "prompt": "Exports are worth R95 billion and imports R80 billion. Calculate the balance of trade in billions of rand.", "answer": 15, "tolerance": 0, "unit": "billion rand" },
+    { "id": "oil", "type": "truefalse", "prompt": "Crude oil is one of South Africa's main imports.", "answer": true },
+    { "id": "tariff", "type": "mcq", "prompt": "A tax on imported goods is called a…", "options": ["subsidy", "quota", "tariff", "surplus"], "answer": 2 },
+    { "id": "types", "type": "match", "marks": 3, "prompt": "Match each example to the type of trade.", "pairs": [
+      { "left": "Buying tomatoes from a neighbour", "right": "Local trade" },
+      { "left": "Selling Limpopo mangoes in Cape Town", "right": "National trade" },
+      { "left": "Selling platinum to Japan", "right": "International trade" }
+    ] },
+    { "id": "why-trade", "type": "open", "marks": 2, "prompt": "Why do countries trade with each other?", "memo": "✓ No country can produce everything it needs (1)\n✓ Differences in climate, resources and skills mean countries specialise and exchange goods (1)" },
+    { "id": "beneficiation", "type": "open", "marks": 3, "prompt": "Explain why South Africa should process more of its minerals before exporting them.", "memo": "✓ Manufactured / processed goods are worth more than raw materials (1)\n✓ The country would earn more from exports (1)\n✓ More jobs would be created in factories (1)" },
+    { "id": "fair-trade", "type": "open", "marks": 2, "prompt": "How does fair trade help small farmers?", "memo": "✓ They are guaranteed a fair, stable price for their products (1)\n✓ Extra money is paid for community projects such as schools and clinics (1)" },
+    { "id": "sadc", "type": "short", "prompt": "What do the letters SADC stand for?", "answers": ["southern african development community"] }
+  ]
+}

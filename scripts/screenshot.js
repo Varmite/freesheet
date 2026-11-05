@@ -38,19 +38,38 @@ const click = (sel) => `(() => { const el = document.querySelector(${JSON.string
 async function run(win) {
   win.setSize(1200, 900);
   await sleep(1200);
+  // Let the app's one-off transition warm-up finish first: it holds input while it runs.
+  for (let i = 0; i < 50 && !(await js(win, `document.documentElement.hasAttribute('data-warmed-up')`)); i++) await sleep(100);
   await shot(win, '01-study-home');
+  console.log('streak before:', await js(win, `document.querySelector('#streak-btn').className + ' ' + document.querySelector('#streak-btn').textContent`));
   await js(win, click(`[data-subject="${subjectId}"]`));
   await shot(win, '02-subject');
   await js(win, click('[data-topic]'));
   await sleep(500);
+  await sleep(400);
   await shot(win, '03-notes');
-  await js(win, click('#to-questions'));
+  // read-aloud: if this topic has audio, start it and confirm it is actually playing
+  const hasAudio = await js(win, `!document.querySelector('#reader-bar').hidden`);
+  if (hasAudio) {
+    await js(win, click('#read-btn'));
+    await sleep(2500);
+    const st = await js(win, `[...document.querySelectorAll('audio')].length + ' ' + document.querySelector('#read-status').textContent + ' | ' + document.querySelector('#read-btn').textContent`);
+    console.log('read-aloud:', st);
+    await shot(win, '03a-reading');
+    await js(win, click('#read-stop'));
+  } else console.log('read-aloud: no audio for this topic');
+  // notes are revealed one section at a time
+  await js(win, click('#more-btn'));
+  await sleep(600);
+  await shot(win, '03b-notes-continued');
+  await js(win, click('.seg[data-mode="questions"]'));
   await sleep(300);
   // answer the first questions: pick option B on MCQs, then check
   await js(win, `document.querySelectorAll('.q-card').forEach((c, i) => { const o = c.querySelectorAll('.opt'); if (o.length) o[Math.min(1, o.length - 1)].click(); }); true`);
   await js(win, `document.querySelectorAll('.q-card .text-in').forEach((t) => { t.value = '5'; t.dispatchEvent(new Event('input')); }); true`);
   await js(win, `document.querySelectorAll('.q-card .text-area').forEach((t) => { t.value = 'My working'; t.dispatchEvent(new Event('input')); }); true`);
   await js(win, `document.querySelectorAll('.check-btn').forEach((b) => b.click()); true`);
+  console.log('streak after practice:', await js(win, `document.querySelector('#streak-btn').className + ' ' + document.querySelector('#streak-btn').textContent + ' | toast: ' + !!document.querySelector('.streak-toast')`));
   await shot(win, '04-questions-checked');
   await js(win, `document.querySelectorAll('.mark-btn[data-mark="1"]').forEach((b) => b.click()); true`);
   await js(win, `window.scrollTo(0, document.body.scrollHeight); true`);
@@ -70,7 +89,8 @@ async function run(win) {
   await shot(win, '09-exam-submit-dialog');
   await js(win, click('[data-r="1"]'));
   await sleep(500);
-  await js(win, `document.querySelectorAll('.mark-btn[data-mark="2"]').forEach((b) => b.click()); true`);
+  // award full marks on every written answer (the highest mark button on each card)
+  await js(win, `document.querySelectorAll('.q-card').forEach((c) => { const b = c.querySelectorAll('.mark-btn'); if (b.length) b[b.length - 1].click(); }); true`);
   await shot(win, '10-exam-marking');
   await js(win, `(() => { const f = document.querySelector('#finish'); if (f) f.click(); return true; })()`);
   await sleep(500);
@@ -78,8 +98,12 @@ async function run(win) {
   await js(win, click('#review'));
   await sleep(500);
   await shot(win, '12-exam-review');
+  await js(win, click('#streak-btn'));
+  await shot(win, '12b-streak');
+  await js(win, click('[data-r="1"]'));
   await js(win, click('.tab[data-tab="progress"]'));
   await shot(win, '13-progress');
+  console.log('streak saved:', JSON.stringify(JSON.parse(fs.readFileSync(path.join(profile, 'progress.json'), 'utf8')).streak));
   const saved = fs.readFileSync(path.join(profile, 'progress.json'), 'utf8');
   console.log('progress bytes saved:', saved.length);
   console.log('renderer errors:', errors.length ? errors.join('\n') : 'none');

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "grade": 11,
+  "id": "mathematical-literacy",
+  "name": "Mathematical Literacy",
+  "description": "CAPS Grade 11 Mathematical Literacy: percentages and calculations, interest and banking, income tax and inflation, measurement conversions and volume, maps, plans and models, data handling, and probability and risk.",
+  "topics": [
+    { "id": "calculations-and-percentages", "title": "Calculations, Percentages and Rates", "term": 1 },
+    { "id": "interest-and-banking", "title": "Finance: Interest, Banking and Loans", "term": 1 },
+    { "id": "income-tax-and-inflation", "title": "Finance: Income Tax and Inflation", "term": 2 },
+    { "id": "measurement-and-volume", "title": "Measurement: Conversions, Area and Volume", "term": 2 },
+    { "id": "maps-plans-and-models", "title": "Maps, Plans and Models", "term": 3 },
+    { "id": "data-handling", "title": "Data Handling: Summarising and Interpreting Data", "term": 3 },
+    { "id": "probability-and-risk", "title": "Probability and Risk", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 90, "totalMarks": 75 }
+  ]
+}

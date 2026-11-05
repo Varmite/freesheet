@@ -1,0 +1,57 @@
+{
+  "id": "healthy-lifestyle-choices",
+  "title": "Healthy Lifestyle Choices",
+  "term": 2,
+  "summary": "Factors that influence lifestyle choices, nutrition and physical activity, mental health, the risks of smoking, vaping and alcohol, road safety, and setting a personal wellness plan.",
+  "notes": [
+    { "type": "heading", "text": "What influences our choices?" },
+    { "type": "list", "items": [
+      "**Personal**: knowledge, attitudes, values and self-esteem.",
+      "**Social**: family, friends and culture.",
+      "**Economic**: money, access to healthy food and safe places to exercise.",
+      "**Media and advertising**: fast food, alcohol and beauty ideals.",
+      "**Environment**: safety, transport and available facilities."
+    ] },
+    { "type": "heading", "text": "Healthy eating and activity" },
+    { "type": "list", "items": [
+      "Eat a variety of foods: starches, vegetables and fruit, proteins, dairy, and small amounts of fat.",
+      "Limit sugar, salt, processed foods and sugary drinks.",
+      "Drink plenty of water.",
+      "Be active for at least 60 minutes a day.",
+      "Sleep 8 to 10 hours a night."
+    ] },
+    { "type": "heading", "text": "Mental health" },
+    { "type": "paragraph", "text": "Mental health affects how we think, feel and cope. Warning signs of depression or anxiety include lasting sadness, withdrawal, changes in sleep and appetite, loss of interest, and thoughts of self-harm. **SADAG**: 0800 567 567 (suicide crisis line) offers free support." },
+    { "type": "heading", "text": "Smoking, vaping and alcohol" },
+    { "type": "table", "headers": ["Substance", "Health risks"], "rows": [
+      ["Cigarettes", "Lung cancer, heart disease, stroke, emphysema; second-hand smoke harms others"],
+      ["Vapes (e-cigarettes)", "Highly addictive nicotine; lung irritation; unknown long-term effects; many contain harmful chemicals"],
+      ["Alcohol", "Liver damage, accidents, violence, risky sex, addiction; harms the developing brain"]
+    ] },
+    { "type": "heading", "text": "Road safety" },
+    { "type": "list", "items": [
+      "Always wear a seat belt, in the front and back.",
+      "Never drink and drive, or get in a car with a driver who has been drinking.",
+      "Do not use a phone while driving or crossing the road.",
+      "Learner drivers need a learner's licence (from 17) and supervision."
+    ] },
+    { "type": "callout", "label": "A wellness plan", "text": "Choose one or two areas to improve (e.g. sleep and exercise), set SMART goals, track your progress, and review the plan monthly." }
+  ],
+  "questions": [
+    { "id": "minutes", "type": "numeric", "prompt": "For how many minutes a day should teenagers be physically active?", "answer": 60, "tolerance": 0, "unit": "minutes" },
+    { "id": "influence", "type": "mcq", "prompt": "Which is an economic factor that affects lifestyle choices?", "options": ["Peer pressure", "Cost of healthy food", "Self-esteem", "Television adverts"], "answer": 1 },
+    { "id": "vape", "type": "truefalse", "prompt": "Vapes are harmless because they contain only water vapour.", "answer": false },
+    { "id": "sadag", "type": "short", "prompt": "Which organisation runs a suicide crisis line on 0800 567 567? (abbreviation)", "answers": ["sadag"] },
+    { "id": "learner", "type": "numeric", "prompt": "From what age can a person apply for a learner's licence to drive a car?", "answer": 17, "tolerance": 0, "unit": "years" },
+    { "id": "factors", "type": "match", "marks": 4, "prompt": "Classify each influence on lifestyle choices.", "pairs": [
+      { "left": "Fast-food advertising", "right": "Media" },
+      { "left": "Friends who smoke", "right": "Social" },
+      { "left": "No safe park nearby", "right": "Environmental" },
+      { "left": "Low self-esteem", "right": "Personal" }
+    ] },
+    { "id": "signs", "type": "open", "marks": 3, "prompt": "Name THREE warning signs that a friend may be experiencing depression.", "memo": "Any three (1 each): lasting sadness; withdrawal; sleep changes; appetite changes; loss of interest; hopelessness; talk of self-harm" },
+    { "id": "eating", "type": "open", "marks": 3, "prompt": "Give THREE guidelines for healthy eating.", "memo": "Any three (1 each): variety of food groups; more vegetables and fruit; limit sugar/salt/processed food; drink water; regular meals including breakfast" },
+    { "id": "plan", "type": "open", "marks": 3, "prompt": "Describe how you would set up a personal wellness plan to improve your sleep.", "memo": "✓ Set a SMART goal (e.g. 8 hours a night for a month) (1)\n✓ Actions: screens off an hour before bed, fixed bedtime, limit caffeine (1)\n✓ Track progress and review (1)" },
+    { "id": "second-hand", "type": "open", "marks": 2, "prompt": "Explain why smoking affects people other than the smoker.", "memo": "✓ Second-hand smoke contains harmful chemicals (1)\n✓ Non-smokers, especially children, can develop asthma, infections and other diseases (1)" }
+  ]
+}

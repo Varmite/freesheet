@@ -1,0 +1,61 @@
+{
+  "id": "compounds-and-chemical-reactions",
+  "title": "Compounds and Chemical Reactions",
+  "term": 2,
+  "summary": "Name compounds and write their formulae, represent reactions with word and balanced equations, and understand the conservation of atoms and mass.",
+  "notes": [
+    { "type": "heading", "text": "Elements, compounds and formulae" },
+    { "type": "paragraph", "text": "A **compound** is a substance made of two or more different elements chemically bonded in a fixed ratio. A **chemical formula** shows which elements are present and how many atoms of each are in one unit of the compound." },
+    { "type": "table", "caption": "Common compounds", "headers": ["Name", "Formula", "Atoms in one unit"], "rows": [
+      ["Water", "H₂O", "2 H, 1 O"],
+      ["Carbon dioxide", "CO₂", "1 C, 2 O"],
+      ["Sodium chloride (table salt)", "NaCl", "1 Na, 1 Cl"],
+      ["Methane", "CH₄", "1 C, 4 H"],
+      ["Ammonia", "NH₃", "1 N, 3 H"],
+      ["Calcium carbonate (limestone)", "CaCO₃", "1 Ca, 1 C, 3 O"],
+      ["Magnesium oxide", "MgO", "1 Mg, 1 O"]
+    ] },
+    { "type": "heading", "text": "Naming simple compounds" },
+    { "type": "list", "items": [
+      "For a compound of a metal and a non-metal, name the metal first, then change the ending of the non-metal to **-ide**: sodium + chlorine → sodium chlor**ide**; iron + sulfur → iron sulf**ide**; magnesium + oxygen → magnesium ox**ide**.",
+      "**-ate** endings mean the compound also contains oxygen: calcium carbon**ate** (CaCO₃), copper sulf**ate** (CuSO₄).",
+      "Prefixes show the number of atoms: **mono-** (1), **di-** (2), **tri-** (3): carbon **mon**oxide (CO), carbon **di**oxide (CO₂)."
+    ] },
+    { "type": "heading", "text": "Writing equations" },
+    { "type": "paragraph", "text": "A **word equation** names the reactants and products. A **balanced chemical equation** uses formulae and has the same number of each type of atom on both sides." },
+    { "type": "formula", "latex": "2\\text{Mg} + \\text{O}_2 \\rightarrow 2\\text{MgO}", "caption": "magnesium + oxygen → magnesium oxide" },
+    { "type": "callout", "label": "Remember", "text": "To balance an equation, change only the **big numbers in front** of formulae (coefficients). Never change the small subscript numbers, because that would change the substance." },
+    { "type": "example", "title": "Balancing an equation", "problem": "Balance: H₂ + O₂ → H₂O", "steps": [
+      "Count atoms. Left: 2 H, 2 O. Right: 2 H, 1 O. Oxygen is not balanced.",
+      "Put a 2 in front of H₂O: H₂ + O₂ → 2H₂O. Now right: 4 H, 2 O.",
+      "Hydrogen is now unbalanced, so put a 2 in front of H₂: 2H₂ + O₂ → 2H₂O.",
+      "Check: left 4 H, 2 O; right 4 H, 2 O ✓"
+    ], "answer": "2H₂ + O₂ → 2H₂O" },
+    { "type": "example", "title": "Counting atoms with coefficients", "problem": "How many oxygen atoms are in 3CO₂?", "steps": ["Each CO₂ has 2 oxygen atoms.", "3 × 2 = 6"], "answer": "6 oxygen atoms" },
+    { "type": "heading", "text": "Conservation of mass" },
+    { "type": "paragraph", "text": "Atoms are rearranged during a reaction, but none are created or destroyed. Therefore **the total mass of the reactants equals the total mass of the products**. If a gas is produced in an open container, the container seems to lose mass because the gas escapes." },
+    { "type": "heading", "text": "Types of reactions" },
+    { "type": "table", "headers": ["Type", "Pattern", "Example"], "rows": [
+      ["Synthesis (combination)", "A + B → AB", "Fe + S → FeS"],
+      ["Decomposition", "AB → A + B", "2H₂O₂ → 2H₂O + O₂"],
+      ["Combustion", "Fuel + oxygen → oxides", "CH₄ + 2O₂ → CO₂ + 2H₂O"]
+    ] },
+    { "type": "paragraph", "text": "**Exothermic reactions** give out heat (burning, respiration); **endothermic reactions** take in heat (photosynthesis, thermal decomposition of limestone)." }
+  ],
+  "questions": [
+    { "id": "name-nacl", "type": "short", "prompt": "Name the compound with the formula NaCl.", "answers": ["sodium chloride"] },
+    { "id": "name-mgs", "type": "short", "prompt": "What is the name of the compound formed when magnesium reacts with sulfur?", "answers": ["magnesium sulfide", "magnesium sulphide"] },
+    { "id": "atoms-caco3", "type": "numeric", "prompt": "How many atoms in total are in one unit of CaCO₃?", "answer": 5, "tolerance": 0 },
+    { "id": "coeff", "type": "numeric", "prompt": "How many hydrogen atoms are in 2NH₃?", "answer": 6, "tolerance": 0 },
+    { "id": "balance-rule", "type": "truefalse", "prompt": "When balancing an equation you may change the small subscript numbers in a formula.", "answer": false },
+    { "id": "dioxide", "type": "mcq", "prompt": "The prefix *di-* in carbon dioxide means…", "options": ["one", "two", "three", "four"], "answer": 1 },
+    { "id": "types", "type": "match", "marks": 3, "prompt": "Match each equation to the type of reaction.", "pairs": [
+      { "left": "Fe + S → FeS", "right": "Synthesis" },
+      { "left": "2H₂O₂ → 2H₂O + O₂", "right": "Decomposition" },
+      { "left": "CH₄ + 2O₂ → CO₂ + 2H₂O", "right": "Combustion" }
+    ] },
+    { "id": "balance-mg", "type": "open", "marks": 3, "prompt": "Balance the equation: Mg + O₂ → MgO. Show how you checked it.", "memo": "✓ 2Mg + O₂ → 2MgO (2)\n✓ Check: 2 Mg and 2 O on each side (1)" },
+    { "id": "open-flask", "type": "open", "marks": 2, "prompt": "Marble chips react with acid in an open flask on a balance. The reading on the balance decreases. Does this disprove conservation of mass? Explain.", "memo": "✓ No (1)\n✓ Carbon dioxide gas is produced and escapes into the air; if it were collected, total mass would be unchanged (1)" },
+    { "id": "exo", "type": "mcq", "prompt": "Which reaction is endothermic?", "options": ["Burning wood", "Respiration", "Photosynthesis", "Burning methane"], "answer": 2 }
+  ]
+}

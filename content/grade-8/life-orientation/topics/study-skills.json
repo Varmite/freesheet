@@ -1,0 +1,70 @@
+{
+  "id": "study-skills",
+  "title": "Study Skills",
+  "term": 4,
+  "summary": "Learning styles, time management and study timetables, effective study methods (summaries, mind maps, mnemonics), preparing for exams and managing exam stress.",
+  "notes": [
+    { "type": "heading", "text": "How do you learn best?" },
+    { "type": "table", "headers": ["Learning style", "Learns best by", "Study tips"], "rows": [
+      ["Visual", "Seeing", "Mind maps, diagrams, colour-coding, videos"],
+      ["Auditory", "Hearing", "Reading aloud, discussing, recording and listening to notes"],
+      ["Kinaesthetic (tactile)", "Doing and moving", "Models, experiments, flash cards, walking while revising"]
+    ] },
+    { "type": "paragraph", "text": "Most people use a **mix** of styles. Using several methods helps you remember more." },
+    { "type": "heading", "text": "Time management" },
+    { "type": "list", "items": [
+      "Make a **study timetable** that includes school, homework, study, chores, sport, rest and sleep.",
+      "Study in **short sessions** (about 30 to 45 minutes) with 5 to 10 minute breaks.",
+      "Do the hardest subject when you are most alert.",
+      "**Prioritise**: urgent and important tasks first.",
+      "Avoid **procrastination** (putting things off): start with a small task to get going.",
+      "Remove distractions: put your phone away or on silent."
+    ] },
+    { "type": "heading", "text": "Effective study methods" },
+    { "type": "table", "headers": ["Method", "How to use it"], "rows": [
+      ["Summaries", "Write key points in your own words, using headings and bullet points"],
+      ["Mind maps", "Put the main topic in the centre and branch out with key ideas, keywords, colours and pictures"],
+      ["Mnemonics", "Memory aids such as acronyms (e.g. MAIN for the causes of World War I) or rhymes"],
+      ["Flash cards", "Question or term on one side, answer on the other; test yourself"],
+      ["Past papers and practice questions", "Practise under exam conditions and check with the memo"],
+      ["Teach someone", "Explaining a topic to a friend shows whether you really understand it"]
+    ] },
+    { "type": "callout", "label": "The SQ3R method", "text": "**S**urvey (skim headings and pictures), **Q**uestion (turn headings into questions), **R**ead (read carefully to answer them), **R**ecite (say or write the answers without looking), **R**eview (go over the work regularly)." },
+    { "type": "heading", "text": "Preparing for and writing exams" },
+    { "type": "list", "items": [
+      "Start revising **weeks** before the exam, not the night before.",
+      "Sleep well (8 to 10 hours), eat healthily and drink water.",
+      "Pack your equipment the night before.",
+      "In the exam: read the instructions and all the questions first; plan your time according to the marks; answer easy questions first; check your work at the end.",
+      "Look at **action verbs**: *name/list* (short facts), *describe* (give details), *explain* (give reasons: why/how), *discuss* (give different sides), *compare* (similarities and differences)."
+    ] },
+    { "type": "heading", "text": "Managing exam stress" },
+    { "type": "list", "items": [
+      "A little stress helps you focus; too much makes it hard to think.",
+      "Use deep breathing: breathe in for four counts, hold for four, out for four.",
+      "Exercise and take breaks.",
+      "Talk to someone if you feel overwhelmed. SADAG offers free support (0800 567 567)."
+    ] }
+  ],
+  "questions": [
+    { "id": "visual", "type": "mcq", "prompt": "A visual learner learns best by…", "options": ["listening to recordings", "seeing diagrams and mind maps", "building models", "reading aloud"], "answer": 1 },
+    { "id": "procrastination", "type": "short", "prompt": "What is putting off tasks until later called?", "answers": ["procrastination", "procrastinating"] },
+    { "id": "sq3r", "type": "short", "prompt": "In SQ3R, what does the S stand for?", "answers": ["survey"] },
+    { "id": "session", "type": "truefalse", "prompt": "It is best to study for four hours without a break.", "answer": false },
+    { "id": "verbs", "type": "match", "marks": 4, "prompt": "Match each exam verb to what it asks you to do.", "pairs": [
+      { "left": "List", "right": "Give short facts" },
+      { "left": "Explain", "right": "Give reasons why or how" },
+      { "left": "Compare", "right": "Give similarities and differences" },
+      { "left": "Discuss", "right": "Look at different sides of an issue" }
+    ] },
+    { "id": "styles", "type": "match", "marks": 3, "prompt": "Match each learning style to a study tip.", "pairs": [
+      { "left": "Visual", "right": "Colour-coded mind maps" },
+      { "left": "Auditory", "right": "Recording and listening to notes" },
+      { "left": "Kinaesthetic", "right": "Building models and using flash cards" }
+    ] },
+    { "id": "timetable", "type": "open", "marks": 3, "prompt": "Give THREE tips for drawing up a good study timetable.", "memo": "Any three (1 each): include all activities and rest; short sessions with breaks; hardest subjects when most alert; be realistic; start early before exams; prioritise" },
+    { "id": "mind-map", "type": "open", "marks": 2, "prompt": "Explain how to make a mind map.", "memo": "✓ Write the main topic in the centre (1)\n✓ Draw branches with key ideas and keywords, using colours and pictures (1)" },
+    { "id": "exam-tips", "type": "open", "marks": 3, "prompt": "Give THREE tips for writing an exam.", "memo": "Any three (1 each): read instructions; read all questions first; plan time by marks; answer easy questions first; check answers; write neatly" },
+    { "id": "stress", "type": "open", "marks": 2, "prompt": "Suggest TWO healthy ways to manage exam stress.", "memo": "Any two (1 each): deep breathing; exercise; sleep; healthy food; breaks; talk to someone; prepare early" }
+  ]
+}

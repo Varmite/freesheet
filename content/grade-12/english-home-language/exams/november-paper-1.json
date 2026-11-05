@@ -1,0 +1,396 @@
+{
+  "id": "november-paper-1",
+  "title": "November Examination: Paper 1 (Language in Context)",
+  "durationMinutes": 120,
+  "totalMarks": 70,
+  "instructions": [
+    "This question paper consists of THREE sections: SECTION A: Comprehension (30 marks) – QUESTION 1; SECTION B: Summary (10 marks) – QUESTION 2; SECTION C: Language structures and conventions (30 marks) – QUESTIONS 3, 4 and 5.",
+    "Answer ALL the questions. There is no choice in this paper.",
+    "Read ALL the instructions and texts carefully before you answer.",
+    "Answer in full sentences unless you are instructed to quote or to give a single word. Use your own words unless you are asked to quote.",
+    "For open questions, write your answer in your workbook first, then compare it with the memorandum and award your own marks honestly.",
+    "Pay special attention to spelling, punctuation and sentence construction.",
+    "Use the following time frame as a guideline: SECTION A: 50 minutes; SECTION B: 30 minutes; SECTION C: 40 minutes.",
+    "All texts in this paper were written for this paper. All names of people, schools, products and campaigns are fictional."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Reading for Meaning and Understanding",
+      "instructions": "SECTION A: COMPREHENSION. Read TEXT A and TEXT B below and answer the set questions. The paragraphs of TEXT A are numbered for reference.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT A: Where Has All the Attention Gone? by Masindi Ramabulana (an essay written for this paper; the writer, a woman, is fictional)",
+          "text": "[1] On a Monday morning in Gqeberha, I counted the passengers in a minibus taxi heading into town. There were fourteen of us. Twelve were looking at screens. One elderly man was asleep against the window, his hat tipped over his eyes, and the fourteenth passenger was me, notebook open, pretending to be an anthropologist. Nobody spoke. Nobody looked out at the bay, which that morning was the colour of polished pewter. We were together in the way that strangers in a lift are together: close enough to touch, too absorbed to notice.\n\n[2] I do not tell this story to sneer. I am as guilty as anyone. My own phone sits beside my bed like a needy pet, and I reach for it before I have properly opened my eyes. What troubles me is not the device itself but what it seems to be doing to a capacity that we have always taken for granted: the ability to give our full attention to one thing for a sustained period of time.\n\n[3] Attention, after all, is not an unlimited resource. Psychologists have long described it as a spotlight: whatever falls inside the beam is illuminated, and everything else recedes into shadow. The problem with the modern world is not that there is too little to look at but that there is far too much. Every application on a smartphone is designed by clever, well-paid people whose job is to capture as much of our attention as possible, for as long as possible, because attention can be sold to advertisers. When a service is free, the old saying goes, you are not the customer; you are the product.\n\n[4] The effects are easy to see in a classroom. A teacher friend in Polokwane told me that she now plans her lessons in ‘ten-minute bites’, because after ten minutes she can see the glaze descending over her learners' eyes. ‘They are not stupid,’ she insisted. ‘They are brilliant at switching. They can follow four conversations at once. What they struggle with is staying.’ The word stayed with me. Staying with a difficult poem, a long novel, a maths problem that refuses to yield – staying is precisely where deep learning happens.\n\n[5] There is a popular belief that young people are natural multitaskers, as though growing up with technology has rewired them for efficiency. The evidence suggests otherwise. What we call multitasking is, for most of us, rapid task-switching, and every switch carries a cost. The mind needs time to leave one task and settle into another, and some of our concentration is left behind each time, like luggage on a carousel. A learner who answers messages while writing an essay is not doing two things well; she is doing two things badly, and taking longer to do them.\n\n[6] Of course, it would be dishonest to pretend that the digital world has brought only harm. The same phone that distracts a learner in Soweto can also give her access to a library larger than any her grandparents could have imagined. A farmer in the Eastern Cape can check the weather and market prices before he plants. Activists can organise, families scattered across provinces can stay close, and a shy teenager who has never felt understood may find, online, a community that welcomes her. To condemn the technology outright would be like condemning fire because it sometimes burns down houses.\n\n[7] The question, then, is not whether we should use these tools but who is in control. My grandmother, who lived in a village outside Thohoyandou, could tell a story for an hour without losing her listeners. Children sat at her feet, absolutely still, not because they had been ordered to but because she had earned their attention. She paused in the right places; she lowered her voice when the hyena crept closer to the hut. Attention, in her world, was something that was given freely, in exchange for something of value. In ours, it is too often taken from us without our noticing.\n\n[8] Reclaiming it will not be easy, but it is not impossible. Some schools have begun asking learners to hand in their phones at the start of the day, and teachers report – perhaps unsurprisingly – that break times have become noisier, with more conversation and more games. Individuals can make smaller changes: switching off notifications, leaving the phone in another room while studying, or setting aside one evening a week for reading a printed book. These are modest acts of resistance, but habits are built from modest acts.\n\n[9] Perhaps the most important change is a change in how we think about attention itself. We tend to treat it as something we ‘pay’, as though it were a bill. I prefer to think of it as a gift. When we give our full attention to a friend who is speaking, to a piece of music, to the view of the bay from a taxi window, we are saying: you matter; this moment matters. A life lived in fragments of ten seconds each is not really a life lived at all; it is a life scrolled past.\n\n[10] On my way home that Monday, I put my phone in my bag and looked out of the window. The bay had turned from pewter to a deep, clear blue. The woman beside me, a basket of oranges on her lap, caught my eye and smiled. ‘Beautiful, isn't it?’ she said. It was. I would almost have missed it."
+        },
+        {
+          "type": "passage",
+          "title": "TEXT B: A campaign poster (described in words; created for this paper)",
+          "text": "The poster is divided vertically into two halves.\n\nLEFT HALF: In dull grey tones, five teenagers in school uniform sit in a row on a bench. Each one is bent over a phone, and the cold glow of the screens lights up their faces. No one is smiling, and there is a noticeable gap between each of them.\n\nRIGHT HALF: The same five teenagers are shown in bright, warm colour on a sunny school field. Their phones stick out of their blazer pockets. Two are kicking a ball, one is laughing with her head thrown back, and two are sitting shoulder to shoulder, sharing a packet of chips.\n\nHEADLINE (in large capitals across the top of both halves): SAME FRIENDS. DIFFERENT DAY.\n\nFOOTER (in small print at the bottom centre): Switch off. Switch on. | #LookUp Week at Ridgeview High | 14–18 March"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1-passengers",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "Refer to paragraph 1. Apart from the writer, which passenger was NOT looking at a screen?",
+          "options": [
+            "The taxi driver, who was concentrating on the road",
+            "A woman with a basket of oranges on her lap",
+            "An elderly man who was asleep against the window",
+            "A child who was gazing out at the bay"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 1 states that twelve of the fourteen passengers were looking at screens, one elderly man was asleep against the window and the fourteenth passenger was the writer. The woman with the oranges appears only in paragraph 10, on the journey home."
+        },
+        {
+          "id": "q1-anthropologist",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to paragraph 1. Explain why the writer describes herself as ‘pretending to be an anthropologist’.",
+          "memo": "✓ An anthropologist is someone who studies human societies and behaviour; the writer is closely observing (and taking notes on) the behaviour of her fellow passengers as if she were conducting a study. (1)\n✓ The word ‘pretending’ shows that she is not really an expert but an ordinary passenger; she is gently mocking herself / using humour while she watches people. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q1-lift",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to paragraph 1: ‘We were together in the way that strangers in a lift are together’. What does this comparison suggest about the passengers?",
+          "memo": "✓ The passengers were physically very close to one another (‘close enough to touch’), (1)\n✓ but they were socially/emotionally disconnected: they did not speak, interact or even notice one another, because each person was absorbed in his or her own world/screen (‘too absorbed to notice’). (1)\nTotal: (2)"
+        },
+        {
+          "id": "q1-tone",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "Refer to paragraph 2: ‘I do not tell this story to sneer. I am as guilty as anyone.’ The writer's tone in these lines is best described as ...",
+          "options": [
+            "self-righteous.",
+            "candid and self-critical.",
+            "bitter and resentful.",
+            "indifferent."
+          ],
+          "answer": 1,
+          "explanation": "The writer openly admits that she shares the habit she is describing (her phone sits beside her bed ‘like a needy pet’). She is being honest (candid) and critical of herself, not superior (self-righteous), angry (bitter) or uncaring (indifferent)."
+        },
+        {
+          "id": "q1-pressure",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to paragraph 3. State TWO reasons why, according to the writer, our attention is under pressure in the modern world.",
+          "memo": "Any TWO of the following:\n✓ Attention is limited / not an unlimited resource (only what falls inside the ‘spotlight’ is noticed). (1)\n✓ There is far too much competing for our attention / too much to look at. (1)\n✓ Smartphone applications are deliberately designed by clever, well-paid people to capture as much of our attention as possible, for as long as possible. (1)\n✓ Our attention is valuable to companies because it can be sold to advertisers. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q1-product",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to paragraph 3: ‘When a service is free … you are not the customer; you are the product.’ Explain what this saying means in the context of the paragraph.",
+          "memo": "✓ Users do not pay money for free apps or services, so the companies that make them must earn their money in another way. (1)\n✓ They capture the users' attention (time/data) and sell it to advertisers; therefore the users themselves – their attention – are what is being sold. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q1-staying",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Refer to paragraph 4. Explain why the word ‘staying’ makes such an impression on the writer. Refer to the teacher's words in your answer.",
+          "memo": "✓ The teacher insists that her learners are not lacking in intelligence: they are ‘brilliant at switching’ and can follow several conversations at once. (1)\n✓ What they lack is the ability to remain focused on one task for a sustained period of time – to ‘stay’ with it. (1)\n✓ The writer realises that staying is essential, because deep learning happens only when one persists with something difficult (a poem, a novel, a maths problem); this one word sums up the heart of her concern about the loss of attention. (1)\nTotal: (3)"
+        },
+        {
+          "id": "q1-quote",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Refer to paragraph 5. Quote a phrase of no more than THREE words which shows what most people's ‘multitasking’ actually is.",
+          "answers": [
+            "rapid task-switching",
+            "rapid task switching",
+            "task-switching",
+            "task switching",
+            "‘rapid task-switching’",
+            "'rapid task-switching'",
+            "\"rapid task-switching\""
+          ],
+          "explanation": "The writer says: ‘What we call multitasking is, for most of us, rapid task-switching’. We do not really do two things at once; we switch quickly from one to the other, and each switch has a cost."
+        },
+        {
+          "id": "q1-carousel",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to paragraph 5. Explain the comparison in the simile ‘like luggage on a carousel’.",
+          "memo": "✓ Just as luggage that is not collected is left behind, circling on the airport carousel, (1)\n✓ so part of our concentration is left behind on the previous task every time we switch; we never bring our full attention to the new task, and this costs us time and quality. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q1-credibility",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Refer to paragraph 6. Discuss how the writer's acknowledgement of the benefits of technology affects the credibility of her argument. Refer to the comparison with fire in your answer.",
+          "memo": "✓ By admitting that technology has real benefits (access to a vast ‘library’ of knowledge, weather and market information for farmers, organising, keeping families close, finding a welcoming community), the writer shows that she is fair and balanced, not someone who simply dislikes technology. (1)\n✓ This makes her argument more credible/convincing, because readers are more likely to trust a writer who considers both sides of an issue. (1)\n✓ The fire comparison shows that, like fire, technology is useful but can also cause harm; the sensible response is to control it rather than reject it, which prepares the reader for her point in paragraph 7 about ‘who is in control’. (1)\nTotal: (3)"
+        },
+        {
+          "id": "q1-grandmother",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Refer to paragraph 7. How does the anecdote about the writer's grandmother contribute to the writer's argument?",
+          "memo": "✓ It creates a contrast between the past and the present: her grandmother could hold children's attention for an hour, without any devices or distractions. (1)\n✓ The grandmother earned the children's attention through skilful storytelling (pausing in the right places, lowering her voice); attention was given freely in exchange for something of value. (1)\n✓ Today, by contrast, attention is ‘taken’ from us without our noticing by technology designed to capture it; the personal, emotionally engaging anecdote therefore supports her view that we must take back control of our attention. (1)\nTotal: (3)"
+        },
+        {
+          "id": "q1-conclusion",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Refer to paragraphs 1 and 10. Comment on the effectiveness of paragraph 10 as a conclusion to the essay.",
+          "memo": "✓ The writer returns to the taxi journey and the view of the bay from paragraph 1, giving the essay a circular structure that rounds it off neatly. (1)\n✓ This time she puts her phone away and looks out of the window: she notices the beauty of the bay (it has changed from pewter to ‘a deep, clear blue’) and connects with another person, which contrasts with the silent, disconnected passengers in paragraph 1. (1)\n✓ The final line, ‘I would almost have missed it’, puts her argument into practice: when we give our attention as a ‘gift’, we experience what really matters. The ending is therefore effective. (1)\nTotal: (3)\nNote: Accept a well-substantiated view that the ending is not effective (e.g. that it is too neat or sentimental), provided it is supported by close reference to the text."
+        },
+        {
+          "id": "q1-poster-contrast",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to TEXT B. Explain how the contrast between the two halves of the poster reinforces the headline, ‘SAME FRIENDS. DIFFERENT DAY.’",
+          "memo": "✓ The left half (dull grey tones; teenagers bent over screens, not smiling, sitting apart) shows friends who are isolated by their phones, while the right half (bright, warm colour; the same teenagers playing, laughing and sharing) shows them connecting once their phones are put away. (1)\n✓ The headline stresses that the people have not changed – only their choice about using their phones has – and this choice transforms their day/experience of friendship. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q1-compare",
+          "type": "open",
+          "marks": 3,
+          "prompt": "TEXT A is balanced in its treatment of technology. Critically discuss whether TEXT B presents an equally balanced view. Refer to BOTH texts in your answer.",
+          "memo": "Candidates may argue either way, but the response must be supported by reference to both texts. A possible answer:\n✓ TEXT A acknowledges the benefits of technology (paragraph 6: access to information, help for farmers, families staying close, online communities) and argues only that we must be in control of it. (1)\n✓ TEXT B is largely one-sided: phone use is shown only negatively (grey, isolated, unhappy teenagers) and only time away from screens is shown as joyful; none of the benefits mentioned in TEXT A appear. (1)\n✓ However, the teenagers still have their phones in their pockets, and the footer ‘Switch off. Switch on.’ suggests choosing when to use phones rather than rejecting them – which echoes TEXT A's concern about ‘who is in control’. As a persuasive campaign poster, TEXT B is designed to be simple and one-sided rather than balanced. (1)\nTotal: (3)\nNote: Award a maximum of 1 mark if only one text is discussed."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Summarising in Your Own Words",
+      "instructions": "SECTION B: SUMMARY. Read TEXT C below and answer the question that follows.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT C: Growing More Than Vegetables (an article written for this paper)",
+          "text": "Fifteen years ago, a corner plot in KwaMashu was a place most residents avoided. Broken glass, old tyres and builders' rubble covered the ground, and at night it was a favourite spot for criminals. Today the same piece of land is home to neat rows of spinach, onions, beetroot and maize, tended by a group of twenty residents who call themselves the Sisonke Growers.\n\nThe story of how the garden began is a familiar one. A retired nurse, Mrs Gumede, grew tired of watching the plot fill with rubbish and asked the municipality for permission to use it. Her neighbours laughed at first. ‘They said nothing would grow in that soil,’ she remembers. ‘I said, then we will make new soil.’\n\nFor the families involved, the most obvious benefit is on the dinner table. Members now eat fresh, nutritious vegetables almost every day, something many of them could not afford before. Because they seldom buy vegetables any more, several households say they save hundreds of rands a month on groceries. What the members cannot eat, they sell at a weekly stall outside the local clinic, and this extra income helps to pay for school fees and transport.\n\nThe garden has also transformed the street itself. Where there was once a dumping site, there is now a productive, well-kept space. Residents report that crime on the corner has dropped noticeably since the garden began; there are simply more people around, from early morning until sunset.\n\nPerhaps more surprisingly, the garden has brought people together. Neighbours who once barely greeted each other now work side by side, and grandparents share their knowledge of planting with teenagers who had never held a spade. Several young, unemployed members have learnt practical skills in growing food, keeping records and running a small business, and two have since started gardens of their own.\n\nThe members also speak about the effect on their well-being. ‘When I am in the garden, I forget my worries,’ says one of them. Working outdoors reduces stress, and many members say that the garden has given them a sense of purpose.\n\nThe project is not without problems. Water is expensive, and during one dry winter the group had to carry buckets from a neighbour's tap. Theft of produce was a problem until the group raised enough money for a fence. Still, Mrs Gumede is optimistic. ‘We planted vegetables,’ she says, ‘but what we really grew was a community.’"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-summary",
+          "type": "open",
+          "marks": 10,
+          "prompt": "Summarise, in your own words, the BENEFITS of community food gardens, as described in TEXT C.\n\nNOTE:\n1. Your summary must be written in fluent paragraph form (NOT in point form).\n2. Your summary must include SEVEN points and must NOT exceed 90 words.\n3. You are NOT required to include a title.\n4. Indicate the number of words you have used in brackets at the end of your summary.",
+          "memo": "CONTENT (7 marks): Award 1 mark for each of ANY SEVEN of the following points.\n✓ They provide families with fresh, nutritious food/vegetables. (1)\n✓ They save households money on groceries. (1)\n✓ Surplus produce can be sold to earn extra income. (1)\n✓ They turn a neglected dumping site into a productive, well-kept space. (1)\n✓ They help to reduce crime in the area (because more people are around). (1)\n✓ They bring neighbours and different generations together / build community. (1)\n✓ Young, unemployed people learn practical and business skills (growing food, keeping records, running a business). (1)\n✓ Working in the garden reduces stress / improves well-being and gives members a sense of purpose. (1)\nDo NOT credit: the history of the plot, Mrs Gumede's story, or the problems (water, theft, fencing) – these are not benefits.\n\nLANGUAGE (3 marks):\n3 – a fluent, coherent paragraph, mostly in the candidate's own words, with few or no language errors.\n2 – a paragraph that relies partly on the wording of the text or has several language errors, but is still clear.\n1 – mostly copied phrases strung together, or numerous errors that impede meaning.\n0 – point form, or text copied wholesale.\nWORD LIMIT: If the summary exceeds 90 words, read only up to the end of the sentence in which the 90th word occurs and ignore the rest.\n\nMODEL SUMMARY:\nCommunity food gardens provide families with fresh, nutritious vegetables and save households money on groceries. Surplus produce can be sold to earn extra income. The gardens turn neglected dumping sites into productive spaces and help to reduce crime in the area. They also bring neighbours and different generations together, and teach young, unemployed people practical and business skills. Finally, gardening reduces stress and gives members a sense of purpose. (69 words)\n\nTotal: 7 + 3 = (10)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Analysing an Advertisement",
+      "instructions": "SECTION C: LANGUAGE STRUCTURES AND CONVENTIONS. Study TEXT D, an advertisement, and answer the set questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT D: A magazine advertisement (described in words; the product is fictional)",
+          "text": "IMAGE: A photograph taken at night through a large window. Inside, a family of four – a mother, a father and two young children – sit around a dinner table, laughing. The room glows with warm, golden light. Through the window behind them, the rest of the street is in complete darkness: the neighbouring houses are black shapes, and a single candle flickers in one distant window.\n\nHEADLINE (in large, bold capitals across the top): WHEN THE LIGHTS GO OUT, LIFE STAYS ON.\n\nBODY COPY (in smaller print, bottom left): SunCell Home 5. Silent. Clean. Yours. Store the sun by day and light up your nights. From only R899 a month*\n\nLOGO AND SLOGAN (bottom right): A sun inside the outline of a battery, with the words: SunCell – Power to the people who matter.\n\nSMALL PRINT (in very small letters along the bottom edge): *Subject to credit approval. 60-month contract. Installation fee of R4 500 not included. Terms and conditions apply."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-audience",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "The target audience of TEXT D is most likely ...",
+          "options": [
+            "learners who want to study during power cuts.",
+            "large businesses that run factories.",
+            "tourists visiting South Africa.",
+            "homeowners with families and a steady income."
+          ],
+          "answer": 3,
+          "explanation": "The image shows a family in its own home, the product is called ‘SunCell Home 5’, and buying it requires a 60-month contract and credit approval. This points to homeowners with families who earn a steady income."
+        },
+        {
+          "id": "q3-image",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how the image supports the headline, ‘WHEN THE LIGHTS GO OUT, LIFE STAYS ON.’",
+          "memo": "✓ The dark street, black houses and the single candle show that the neighbourhood is experiencing a power cut/load-shedding (‘the lights go out’). (1)\n✓ Only this family's home is brightly lit, and they carry on enjoying a normal, happy meal together (‘life stays on’), implying that the SunCell product makes this possible. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q3-short-sentences",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to the body copy: ‘Silent. Clean. Yours.’ Comment on the effectiveness of the use of these three short sentences.",
+          "memo": "✓ The one-word (minor) sentences are punchy, rhythmic and easy to remember; they can be read at a glance and each word is emphasised. (1)\n✓ Each word highlights a selling point of the product: ‘Silent’ (unlike noisy generators), ‘Clean’ (no fumes; environmentally friendly solar energy) and ‘Yours’ (ownership and independence from the national power supply). (1)\nTotal: (2)\nNote: Award 1 mark for the stylistic feature and 1 mark for the link to the product's benefits."
+        },
+        {
+          "id": "q3-power",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the double meaning (pun) of the word ‘Power’ in the slogan, ‘Power to the people who matter.’",
+          "memo": "✓ Literal meaning: ‘power’ refers to electricity, which the SunCell battery stores and supplies. (1)\n✓ Figurative meaning: ‘power’ suggests control, strength or independence – the consumer is empowered and no longer at the mercy of power cuts. (The phrase also echoes the well-known political slogan ‘Power to the people’.) (1)\nTotal: (2)"
+        },
+        {
+          "id": "q3-honesty",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Critically discuss whether the advertiser is being completely honest with consumers. Refer to the body copy AND the small print in your answer.",
+          "memo": "✓ The body copy creates the impression that the product is affordable (‘From only R899 a month’) and that it belongs to the buyer immediately (‘Yours’). (1)\n✓ The small print – deliberately tiny and easy to miss – reveals that the buyer must pass a credit check, sign a 60-month (five-year) contract and pay an installation fee of R4 500 on top of the monthly amount. (1)\n✓ Over five years the consumer will pay at least R899 × 60 = R53 940, plus R4 500 = R58 440. The advertiser is therefore not completely honest: the true cost and the long commitment are hidden, and ‘Yours’ is misleading, because for five years the system is tied to a credit contract. (1)\nTotal: (3)\nNote: Accept other well-reasoned critical points, e.g. that ‘From only’ means that R899 is the cheapest option and other models cost more, or that the slogan suggests that people without SunCell (the dark neighbours) do not ‘matter’."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Analysing a Comic Strip",
+      "instructions": "Study TEXT E, a comic strip, and answer the set questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT E: Gogo Knows Best (a comic strip described in words; created for this paper)",
+          "text": "FRAME 1: A kitchen. GOGO, an elderly woman wearing glasses and a headscarf, sits at the table, holding up her phone excitedly. Her grandson SIPHO, who is about seventeen, is doing his homework beside her. He rolls his eyes.\nGOGO: Sipho! The family WhatsApp group says eating raw garlic cures flu AND makes you clever!\nSIPHO: Gogo, who sent that?\n\nFRAME 2: Gogo scrolls through her messages proudly. Sipho rests his chin on his hand; his expression is flat.\nGOGO: Auntie Thandi. She got it from a friend whose cousin is a nurse.\nSIPHO: Oh, a friend's cousin. Very scientific.\n\nFRAME 3: Sipho holds his own phone up in front of Gogo's face. The screen shows a fact-checking website with the words NO EVIDENCE in large letters. Gogo narrows her eyes and folds her arms.\nSIPHO: Look, Gogo – this fact-checking site says there's no proof.\nGOGO: Hmph! And who told YOU to believe everything you read on the internet?\n\nFRAME 4: Gogo is typing happily; her phone screen reads ‘Forwarded to 12 groups’. A pile of garlic bulbs has been placed on top of Sipho's homework. Sipho's forehead rests on the desk, and three small lines above his head show his despair.\nGOGO: Done! Now the whole family will be clever.\nSIPHO (muffled): Everyone except the people forwarding it …"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q4-eyeroll",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "Refer to FRAME 1. Sipho's rolling of his eyes suggests that ...",
+          "options": [
+            "he is sceptical and mildly exasperated.",
+            "he is frightened by the news.",
+            "he is delighted by the news.",
+            "he has not heard what Gogo said."
+          ],
+          "answer": 0,
+          "explanation": "Rolling one's eyes is a gesture of disbelief and mild irritation. His immediate question, ‘who sent that?’, confirms that he doubts the message."
+        },
+        {
+          "id": "q4-sarcasm",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to FRAME 2. Explain the sarcasm in Sipho's words, ‘Very scientific.’",
+          "memo": "✓ Sipho says the opposite of what he means: the source is not scientific at all. (1)\n✓ The information has been passed along by several people (Auntie Thandi, a friend, a friend's cousin) and is mere hearsay rather than proven evidence; his flat expression reinforces the mockery. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q4-irony",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to FRAME 3. Discuss the irony in Gogo's response to Sipho.",
+          "memo": "✓ Gogo warns Sipho not to believe everything he reads on the internet, (1)\n✓ yet she herself has believed, without question, a message forwarded on WhatsApp (which is also on the internet) from an unknown source, while Sipho has checked a fact-checking site. The capitalised ‘YOU’ stresses her indignation and makes the irony more humorous. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q4-frame4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to FRAME 4. Discuss how the visual details contribute to the humour in this frame.",
+          "memo": "Any TWO of the following:\n✓ The pile of garlic placed on Sipho's homework is absurd: Gogo expects the garlic to make him clever, yet it literally covers the work that would actually make him clever. (1)\n✓ Sipho's forehead on the desk and the lines above his head exaggerate his frustration and defeat after his failed attempt to reason with her. (1)\n✓ Gogo's cheerful typing and the screen reading ‘Forwarded to 12 groups’ show that the false message is spreading rapidly despite Sipho's efforts; her happiness contrasts comically with his despair. (1)\nTotal: (2)"
+        },
+        {
+          "id": "q4-stereotype",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Some readers may argue that the comic strip unfairly portrays older people as gullible. Do you agree? Justify your response.",
+          "memo": "Open-ended. Credit a clear stance supported by reference to the comic strip.\nAGREE, e.g.:\n✓ Gogo is the one who believes and spreads the false message, while the young person is shown as sensible and well informed. (1)\n✓ This reinforces the stereotype that older people are easily fooled or are not skilled at judging information online. (1)\n✓ It ignores the fact that people of all ages share misinformation. (1)\nDISAGREE, e.g.:\n✓ Gogo is portrayed affectionately: she shares the message because she cares about her family's health and success. (1)\n✓ Her retort in Frame 3 is sharp and partly valid – one should not believe everything online – so she is not shown as foolish. (1)\n✓ The real target of the satire is the careless forwarding of unverified information, which affects everyone, not old age itself. (1)\nTotal: (3)\nNote: 3 marks – clear stance with well-developed, substantiated reasons; 2 marks – stance with some support; 1 mark – stance with superficial or vague support; 0 marks – no stance or no reference to the comic strip."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Language and Editing Skills",
+      "instructions": "Read TEXT F, a short newspaper report which contains some deliberate errors (numbered 1 to 6), and answer the set questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT F: Learners turn plastic into books (a report written for this paper)",
+          "text": "Learners at Kgalalelo Secondary School in Bloemfontein has (1) launched a recycling project that has collected more than two tonnes of plastic since January.\n\n‘We wanted to do something practical,’ said Lerato Khumalo, the Grade 12 learner who started the project.\n\nEvery Friday afternoon, the volunteers sort the waste and sells (2) it to a local recycling depot. The money is used to buy books for the school library. The principal, Mr Venter, said that he was proud of the learners and that the project had changed the schools (3) culture. Each of the classes are (4) now competing to collect the most bottles.\n\nNext year, the project will be expanded to include glass and paper. Its (5) a small step, but its benefits are enormous, irregardless (6) of the size of the school."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q5-error1",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Correct the error numbered (1) in TEXT F. Write down only the correct word.",
+          "answers": ["have"],
+          "explanation": "Concord: the subject ‘Learners’ is plural, so it needs the plural verb ‘have’: ‘Learners … have launched’."
+        },
+        {
+          "id": "q5-error2",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Correct the error numbered (2) in TEXT F. Write down only the correct word.",
+          "answers": ["sell"],
+          "explanation": "Concord: the plural subject ‘the volunteers’ governs both verbs: they ‘sort the waste and sell it’."
+        },
+        {
+          "id": "q5-error3",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Rewrite the word numbered (3) in TEXT F with the correct punctuation.",
+          "answers": ["school's", "school’s"],
+          "explanation": "The culture belongs to one school, so a possessive apostrophe is needed before the s: ‘the school's culture’."
+        },
+        {
+          "id": "q5-error4",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Correct the error numbered (4) in TEXT F. Write down only the correct word.",
+          "answers": ["is"],
+          "explanation": "The subject is ‘Each’, which is singular; ‘of the classes’ is only a prepositional phrase. Therefore: ‘Each of the classes is …’."
+        },
+        {
+          "id": "q5-error5",
+          "type": "short",
+          "marks": 1,
+          "prompt": "Correct the error numbered (5) in TEXT F. Write down only the corrected word (or words).",
+          "answers": ["it's", "it’s", "it is"],
+          "explanation": "‘It's’ is the contraction of ‘it is’ (‘It is a small step’). ‘Its’ without an apostrophe is the possessive form, as in ‘its benefits’ later in the same sentence."
+        },
+        {
+          "id": "q5-error6",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "Which word should replace ‘irregardless’ (6) in TEXT F?",
+          "options": [
+            "unregardless",
+            "regardless",
+            "disregardless",
+            "regarding"
+          ],
+          "answer": 1,
+          "explanation": "‘Irregardless’ is a non-standard word: the prefix ‘ir-’ and the suffix ‘-less’ both express a negative, so the word contradicts itself. The standard form is ‘regardless of’ (or ‘irrespective of’)."
+        },
+        {
+          "id": "q5-active",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Rewrite the following sentence in the ACTIVE voice. Begin your answer with ‘Next year, the learners …’\n\n‘Next year, the project will be expanded to include glass and paper.’",
+          "memo": "✓ Next year, the learners will expand the project to include glass and paper. (1)\nThe mark is awarded only if the verb is correctly changed to the active future tense (‘will expand’) and ‘the project’ becomes the object."
+        },
+        {
+          "id": "q5-reported",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Rewrite the following sentence in reported (indirect) speech. Begin your answer with ‘Lerato Khumalo said …’\n\n‘We wanted to do something practical,’ said Lerato Khumalo.",
+          "memo": "✓ Lerato Khumalo said (that) they had wanted to do something practical. (1)\nThe mark is awarded only if BOTH changes are correct: the pronoun ‘we’ becomes ‘they’, and the simple past ‘wanted’ moves back to the past perfect ‘had wanted’. No quotation marks or comma should be used."
+        },
+        {
+          "id": "q5-depot",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "In the context of TEXT F, the word ‘depot’ refers to ...",
+          "options": [
+            "a factory where new plastic is manufactured.",
+            "a type of rubbish bin used in schools.",
+            "a shop that sells second-hand library books.",
+            "a place where goods or materials are collected and stored."
+          ],
+          "answer": 3,
+          "explanation": "A depot is a place where goods or materials are collected and stored. The learners sell their sorted waste to a recycling depot, which collects it for recycling."
+        },
+        {
+          "id": "q5-opinion",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "Critical language awareness: Which of the following extracts from TEXT F expresses an OPINION rather than a fact?",
+          "options": [
+            "‘The money is used to buy books for the school library.’",
+            "‘Every Friday afternoon, the volunteers sort the waste …’",
+            "‘… its benefits are enormous …’",
+            "‘… the project will be expanded to include glass and paper.’"
+          ],
+          "answer": 2,
+          "explanation": "‘Enormous’ is an evaluative word: it expresses the writer's judgement, which cannot be measured or proved. The other extracts report events or plans that can be checked."
+        }
+      ]
+    }
+  ]
+}

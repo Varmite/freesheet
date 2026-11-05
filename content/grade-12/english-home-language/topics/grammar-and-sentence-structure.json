@@ -1,0 +1,55 @@
+{
+  "id": "grammar-and-sentence-structure",
+  "title": "Grammar and Sentence Structure",
+  "term": 1,
+  "summary": "Clauses and sentence types, concord, tenses, active and passive voice, direct and reported speech, punctuation for meaning, and common errors tested in Paper 1 Section C.",
+  "notes": [
+    { "type": "heading", "text": "Clauses and sentence types" },
+    { "type": "table", "headers": ["Type", "Structure", "Example"], "rows": [
+      ["Simple", "One main clause", "The committee approved the budget."],
+      ["Compound", "Two main clauses joined by a coordinating conjunction", "The committee met, but no decision was taken."],
+      ["Complex", "Main clause + subordinate clause(s)", "Although the committee met, no decision was taken."],
+      ["Compound-complex", "Two or more main clauses + at least one subordinate clause", "When the results arrived, the learners cheered and the teachers smiled."]
+    ] },
+    { "type": "list", "items": [
+      "**Adjectival (relative) clause**: describes a noun: *The book **that I borrowed** is overdue.*",
+      "**Adverbial clause**: tells when, why, how, under what condition: *We left **because it was raining**.*",
+      "**Noun clause**: acts as subject or object: ***What she said** surprised everyone.*"
+    ] },
+    { "type": "heading", "text": "Concord" },
+    { "type": "list", "items": [
+      "*Neither the principal nor the teachers **were** present.* (verb agrees with the nearer subject)",
+      "*Each of the candidates **has** a number.* (each is singular)",
+      "*The number of complaints **has** risen.* / *A number of learners **have** complained.*",
+      "*The jury **is** out.* (acting as one unit)"
+    ] },
+    { "type": "heading", "text": "Voice and reported speech" },
+    { "type": "table", "headers": ["Active", "Passive"], "rows": [
+      ["The minister has announced new measures.", "New measures have been announced by the minister."],
+      ["Protesters were blocking the road.", "The road was being blocked by protesters."]
+    ] },
+    { "type": "example", "title": "Reported speech", "problem": "'We will publish the results tomorrow,' the official said.", "steps": ["Remove inverted commas; introduce with 'that'.", "we → they; will → would; tomorrow → the next day."], "answer": "The official said that they would publish the results the next day." },
+    { "type": "heading", "text": "Common errors" },
+    { "type": "table", "headers": ["Error", "Correct"], "rows": [
+      ["Me and him went to the match.", "He and I went to the match."],
+      ["Between you and I…", "Between you and me…"],
+      ["Being a rainy day, the match was cancelled. (dangling modifier)", "Because it was a rainy day, the match was cancelled."],
+      ["Less people attended.", "Fewer people attended."],
+      ["The reason is because…", "The reason is that…"],
+      ["Its' / it's (possessive)", "its (possessive); it's = it is"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Paper 1 Section C often asks you to correct an error, change voice or speech, combine sentences, or identify parts of speech in an advert or cartoon. Rewrite the whole sentence correctly; do not only fix one word unless asked." }
+  ],
+  "questions": [
+    { "id": "complex", "type": "mcq", "prompt": "Which sentence is complex?", "options": ["The bus was late.", "The bus was late, so we walked.", "Because the bus was late, we walked.", "Late bus!"], "answer": 2 },
+    { "id": "clause", "type": "mcq", "prompt": "Identify the type of clause in bold: 'The learner **who won the prize** is my cousin.'", "options": ["Adverbial", "Adjectival (relative)", "Noun", "Main"], "answer": 1 },
+    { "id": "neither", "type": "mcq", "prompt": "Choose the correct verb: 'Neither the players nor the coach ___ happy with the result.'", "options": ["were", "was", "are", "have been"], "answer": 1 },
+    { "id": "number", "type": "mcq", "prompt": "Choose the correct verb: 'The number of applicants ___ increased.'", "options": ["have", "has", "are", "were"], "answer": 1 },
+    { "id": "me-i", "type": "truefalse", "prompt": "'Between you and I' is grammatically correct.", "answer": false },
+    { "id": "passive", "type": "open", "marks": 2, "prompt": "Rewrite in the passive voice: 'The municipality will repair the potholes next week.'", "memo": "✓ The potholes will be repaired (1)\n✓ by the municipality next week. (1)" },
+    { "id": "reported", "type": "open", "marks": 3, "prompt": "Rewrite in reported speech: 'I am preparing my speech now,' said Thandi.", "memo": "✓ Thandi said that she (1)\n✓ was preparing her speech (1)\n✓ then. (1)" },
+    { "id": "dangling", "type": "open", "marks": 2, "prompt": "Correct the dangling modifier: 'Walking into the hall, the noise was deafening.'", "memo": "✓✓ e.g. 'As I walked into the hall, I found the noise deafening.' / 'Walking into the hall, we heard a deafening noise.' (2)" },
+    { "id": "combine", "type": "open", "marks": 2, "prompt": "Combine into one complex sentence using a relative pronoun: 'The novel won an award. It was written by a South African author.'", "memo": "✓✓ 'The novel, which was written by a South African author, won an award.' (2)" },
+    { "id": "errors", "type": "open", "marks": 3, "prompt": "Correct the THREE errors: 'Less learners attended the meeting, and the reason is because it's time was changed.'", "memo": "✓ Fewer learners (1)\n✓ the reason is that (1)\n✓ its time (1)" }
+  ]
+}

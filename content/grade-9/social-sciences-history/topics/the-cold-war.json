@@ -1,0 +1,55 @@
+{
+  "id": "the-cold-war",
+  "title": "The Nuclear Age and the Cold War",
+  "term": 4,
+  "summary": "The rivalry between the USA and the USSR after 1945, capitalism versus communism, the arms race, the Berlin Wall, the Cuban Missile Crisis, the Cold War in Africa and its end.",
+  "notes": [
+    { "type": "heading", "text": "What was the Cold War?" },
+    { "type": "paragraph", "text": "After World War II, the two **superpowers**, the **USA** and the **USSR** (Soviet Union), became bitter rivals. From about **1945 to 1991** they competed for power and influence around the world. It was called a **Cold War** because they never fought each other directly; instead they used threats, propaganda, an arms race, spying and **proxy wars** (wars fought by their allies)." },
+    { "type": "table", "caption": "Two opposing systems", "headers": ["", "USA (capitalism and democracy)", "USSR (communism)"], "rows": [
+      ["Economy", "Private ownership of businesses; free market; profits for owners", "The state owns land, factories and businesses; the government plans the economy"],
+      ["Politics", "Several parties; free elections", "One party (the Communist Party); no free elections"],
+      ["Rights", "Freedom of speech, press and religion emphasised", "Strict control and censorship; secret police"],
+      ["Alliance", "NATO (1949)", "Warsaw Pact (1955)"]
+    ] },
+    { "type": "heading", "text": "The nuclear age and the arms race" },
+    { "type": "paragraph", "text": "The USA used atomic bombs in 1945. In **1949** the USSR tested its own. Both sides then built thousands of nuclear weapons, including hydrogen bombs and long-range missiles. This **arms race** led to the idea of **MAD (Mutually Assured Destruction)**: if one side attacked, the other would strike back and both would be destroyed, so neither dared to start a nuclear war." },
+    { "type": "paragraph", "text": "The two powers also competed in the **space race**: the USSR launched **Sputnik**, the first satellite, in 1957 and sent Yuri Gagarin into space in 1961; the USA landed Neil Armstrong on the moon in **1969**." },
+    { "type": "heading", "text": "Major Cold War crises" },
+    { "type": "table", "headers": ["Event", "Date", "What happened"], "rows": [
+      ["Division of Germany", "1945–1949", "Germany and Berlin were split; West Germany allied with the USA, East Germany with the USSR"],
+      ["Berlin Blockade and Airlift", "1948–1949", "The USSR blocked roads into West Berlin; the Western allies flew in supplies for almost a year"],
+      ["Korean War", "1950–1953", "Communist North Korea (supported by the USSR and China) against South Korea (supported by the USA and UN)"],
+      ["Berlin Wall built", "1961", "East Germany built a wall to stop its people escaping to the West"],
+      ["**Cuban Missile Crisis**", "October 1962", "The USSR placed nuclear missiles in Cuba, close to the USA. After 13 tense days, Khrushchev agreed to remove them, and the USA secretly agreed to remove its missiles from Turkey. The world came close to nuclear war"],
+      ["Vietnam War", "1955–1975", "The USA fought to stop communist North Vietnam taking over South Vietnam, but withdrew; Vietnam was united under communism"]
+    ] },
+    { "type": "heading", "text": "The Cold War in Africa" },
+    { "type": "paragraph", "text": "Both superpowers supported governments and movements in newly independent African countries. In **Angola** (from 1975), the MPLA government was supported by the USSR and Cuban troops, while UNITA was supported by the USA and apartheid South Africa. The battle of **Cuito Cuanavale** (1987–1988) led to talks that brought **Namibia's independence** in 1990." },
+    { "type": "callout", "label": "Link to South Africa", "text": "The apartheid government claimed it was protecting South Africa from communism (the *swart gevaar* and *rooi gevaar*: 'black danger' and 'red danger') and used this to win support from Western countries. When the Cold War ended, this argument lost its power, which helped bring about the negotiations of 1990." },
+    { "type": "heading", "text": "The end of the Cold War" },
+    { "type": "list", "items": [
+      "From 1985 the Soviet leader **Mikhail Gorbachev** introduced *glasnost* (openness) and *perestroika* (economic restructuring).",
+      "The USA and USSR signed treaties to reduce nuclear weapons.",
+      "Communist governments in Eastern Europe collapsed in 1989. On **9 November 1989** the **Berlin Wall** was opened, and Germany reunited in 1990.",
+      "In **December 1991** the USSR broke up into 15 independent countries, including Russia and Ukraine."
+    ] }
+  ],
+  "questions": [
+    { "id": "superpowers", "type": "mcq", "prompt": "Which two superpowers were rivals in the Cold War?", "options": ["Britain and Germany", "USA and USSR", "China and Japan", "France and Russia"], "answer": 1 },
+    { "id": "why-cold", "type": "open", "marks": 2, "prompt": "Why was it called a 'Cold' War?", "memo": "✓ The USA and USSR never fought each other directly (1)\n✓ They competed through threats, the arms race, propaganda, spying and proxy wars (1)" },
+    { "id": "mad", "type": "short", "prompt": "What do the letters MAD stand for in the nuclear arms race?", "answers": ["mutually assured destruction", "mutual assured destruction"] },
+    { "id": "wall-built", "type": "numeric", "prompt": "In which year was the Berlin Wall built?", "answer": 1961, "tolerance": 0 },
+    { "id": "cuba", "type": "truefalse", "prompt": "During the Cuban Missile Crisis the USSR placed nuclear missiles in Cuba.", "answer": true },
+    { "id": "systems", "type": "match", "marks": 4, "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Capitalism", "right": "Private ownership and a free market" },
+      { "left": "Communism", "right": "State ownership and a planned economy" },
+      { "left": "Proxy war", "right": "War fought by allies of the superpowers" },
+      { "left": "NATO", "right": "Western military alliance" }
+    ] },
+    { "id": "gorbachev", "type": "short", "prompt": "Which Soviet leader introduced glasnost and perestroika?", "answers": ["mikhail gorbachev", "gorbachev"] },
+    { "id": "angola", "type": "open", "marks": 3, "prompt": "Explain how the Cold War affected southern Africa, using Angola as an example.", "memo": "✓ The MPLA government was supported by the USSR and Cuba (1)\n✓ UNITA was supported by the USA and apartheid South Africa (1)\n✓ The war caused great destruction; the talks after Cuito Cuanavale led to Namibian independence (1)" },
+    { "id": "end-sa", "type": "open", "marks": 2, "prompt": "How did the end of the Cold War help to end apartheid?", "memo": "✓ The government could no longer claim it was defending the West against communism (1)\n✓ Western countries increased pressure / the ANC lost Soviet support, making negotiation more likely on both sides (1)" },
+    { "id": "ussr-end", "type": "mcq", "prompt": "When did the USSR break up?", "options": ["1985", "1989", "1991", "1994"], "answer": 2 }
+  ]
+}

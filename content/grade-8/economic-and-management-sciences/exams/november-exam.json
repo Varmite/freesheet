@@ -1,0 +1,310 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper consists of FOUR questions. Answer ALL the questions.",
+    "Show all workings for calculations.",
+    "Use the information provided for the accounting questions."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "Which arm of government interprets the law?",
+          "options": [
+            "Legislature",
+            "Executive",
+            "Judiciary",
+            "Cabinet"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "Which tax is added to the price of most goods and services?",
+          "options": [
+            "Income tax",
+            "VAT",
+            "Company tax",
+            "Property rates"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "Which source document is used when cash is received from a client?",
+          "options": [
+            "Receipt",
+            "EFT notice",
+            "Cheque counterfoil",
+            "Bank statement"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "The reward for capital is…",
+          "options": [
+            "rent",
+            "wages",
+            "interest",
+            "profit"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-5",
+          "type": "mcq",
+          "prompt": "Which form of ownership has unlimited liability?",
+          "options": [
+            "Public company",
+            "Private company",
+            "Partnership",
+            "Non-profit company"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-6",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Budget deficit",
+              "right": "Expenditure greater than income"
+            },
+            {
+              "left": "Drawings",
+              "right": "Owner takes money for personal use"
+            },
+            {
+              "left": "Liability",
+              "right": "Debt owed to outsiders"
+            },
+            {
+              "left": "Absolute poverty",
+              "right": "Cannot meet basic needs"
+            },
+            {
+              "left": "Entrepreneur",
+              "right": "Combines resources and takes risks"
+            }
+          ]
+        },
+        {
+          "id": "q1-7",
+          "type": "truefalse",
+          "prompt": "Income decreases owner's equity.",
+          "answer": false
+        },
+        {
+          "id": "q1-8",
+          "type": "truefalse",
+          "prompt": "Local government is responsible for supplying water to households.",
+          "answer": true
+        },
+        {
+          "id": "q1-9",
+          "type": "truefalse",
+          "prompt": "Capital is recorded in the Sundry accounts column of the CRJ.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: The economy",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A cellphone costs R2 400 before VAT. Calculate the price including 15% VAT.",
+          "answer": 2760,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name the THREE levels of government and give ONE service provided by each.",
+          "memo": "✓ National: defence / grants / foreign affairs (1)\n✓ Provincial: schools / hospitals (1)\n✓ Local: water / electricity / refuse (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "In a community the labour force is 8 000 and 2 400 people are unemployed. Calculate the unemployment rate.",
+          "answer": 30,
+          "tolerance": 0,
+          "unit": "%"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe TWO causes of poverty and suggest TWO ways in which the government helps to improve the standard of living.",
+          "memo": "Causes (1 each): unemployment; low education; illness; inequality\nGovernment (1 each): social grants; free basic services; RDP houses; no-fee schools; public works jobs"
+        },
+        {
+          "id": "q2-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Identify the factor of production in each: (a) a delivery truck, (b) the cashier, (c) the plot of land, (d) the owner who started the shop.",
+          "memo": "(a) ✓ Capital (1)\n(b) ✓ Labour (1)\n(c) ✓ Natural resources (1)\n(d) ✓ Entrepreneurship (1)"
+        },
+        {
+          "id": "q2-6",
+          "type": "open",
+          "marks": 3,
+          "prompt": "What is the national budget, who presents it, and when?",
+          "memo": "✓ The government’s financial plan of expected income and expenditure for the year (1)\n✓ Presented by the Minister of Finance (1)\n✓ in February each year (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Financial literacy",
+      "context": [
+        {
+          "type": "paragraph",
+          "text": "The following transactions took place at **Lindiwe's Tutoring Services** during June 2025:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "1 June: Lindiwe deposited R25 000 into the business bank account as capital. Receipt 001.",
+            "3 June: Paid R4 500 by EFT for a laptop (equipment). EFT 01.",
+            "10 June: Received R3 200 from learners for tutoring services. Receipt 002.",
+            "15 June: Paid wages of R1 800 to an assistant. EFT 02.",
+            "20 June: Lindiwe withdrew R500 for personal use. EFT 03.",
+            "28 June: Received R2 800 from learners for tutoring services. Receipt 003."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the total of the Bank column in the Cash Receipts Journal for June.",
+          "answer": 31000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the total of the Current income column in the CRJ.",
+          "answer": 6000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the total of the Bank column in the Cash Payments Journal.",
+          "answer": 6800,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-4",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the bank balance on 30 June (the opening balance was R0).",
+          "answer": 24200,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 6,
+          "prompt": "Analyse the transactions of 1, 3 and 15 June using the accounting equation (show the effect on assets, owner's equity and liabilities).",
+          "memo": "1 June: ✓ A +25 000 (bank) ✓ OE +25 000 (capital), L 0 (2)\n3 June: ✓ A +4 500 (equipment) and −4 500 (bank) ✓ OE 0, L 0 (2)\n15 June: ✓ A −1 800 (bank) ✓ OE −1 800 (wages), L 0 (2)"
+        },
+        {
+          "id": "q3-6",
+          "type": "open",
+          "marks": 2,
+          "prompt": "In which column of the CPJ is the transaction of 20 June recorded, and why is it not an expense?",
+          "memo": "✓ Sundry accounts: Drawings (1)\n✓ It is money taken by the owner for personal use, not a cost of running the business (1)"
+        },
+        {
+          "id": "q3-7",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how the totals of the CRJ are posted to the General Ledger.",
+          "memo": "✓ The Bank total is debited to the Bank account (1)\n✓ The Current income total is credited to the Current income account (1)\n✓ Sundry items (Capital) are credited to their accounts (1)"
+        },
+        {
+          "id": "q3-8",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A business has assets of R95 000 and owner's equity of R70 000. Calculate its liabilities in rand.",
+          "answer": 25000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "q3-9",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Classify each account as asset, liability, owner’s equity, income or expense, and state whether its balance is on the debit or credit side of the Trial Balance: (a) Equipment (b) Current income.",
+          "memo": "(a) ✓ Asset (1) ✓ Debit (1)\n(b) ✓ Income (1) ✓ Credit (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Entrepreneurship",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain the difference between limited and unlimited liability, and name ONE form of ownership with each.",
+          "memo": "✓ Unlimited: owners are personally liable for all debts (1) ✓ e.g. sole trader / partnership (1)\n✓ Limited: owners can lose only what they invested (1) ✓ e.g. private / public company (1)"
+        },
+        {
+          "id": "q4-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Thabo and Zanele want to start a car wash together. Recommend a suitable form of ownership and give THREE reasons for your choice.",
+          "memo": "✓ Partnership (or private company, with suitable reasons) (1)\n✓✓✓ Three valid reasons, e.g. easy to start; share capital, workload and skills; share losses; (company) limited liability and continuity (3)"
+        },
+        {
+          "id": "q4-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE qualities of a successful entrepreneur.",
+          "memo": "Any three (1 each): creative; hard-working; risk-taker; confident; good communicator; perseverance; problem-solver"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain FOUR ways the government uses the money it collects from taxes.",
+          "memo": "Any four (1 each): education; healthcare; social grants; police and defence; roads/infrastructure; housing; paying interest on debt"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give TWO advantages and TWO disadvantages of a public company.",
+          "memo": "Advantages (1 each): limited liability; large capital from selling shares; continuity; professional management\nDisadvantages (1 each): expensive/complicated to register; many legal requirements; must publish financial statements; slow decisions; profits shared"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "grade": 11,
+  "id": "life-orientation",
+  "name": "Life Orientation",
+  "description": "CAPS Grade 11 Life Orientation: goal setting and life planning, relationships and sexual health, healthy lifestyle choices, democracy and civil society, belief systems and worldviews, and higher education and careers.",
+  "topics": [
+    { "id": "goal-setting-and-life-planning", "title": "Goal Setting and Life Planning", "term": 1 },
+    { "id": "relationships-and-sexual-health", "title": "Relationships and Sexual Health", "term": 1 },
+    { "id": "healthy-lifestyle-choices", "title": "Healthy Lifestyle Choices", "term": 2 },
+    { "id": "democracy-and-civil-society", "title": "Democracy, Civil Society and the Media", "term": 2 },
+    { "id": "beliefs-and-worldviews", "title": "Belief Systems, Ideologies and Worldviews", "term": 3 },
+    { "id": "higher-education-and-careers", "title": "Higher Education and Career Planning", "term": 4 }
+  ],
+  "exams": [
+    { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
+  ]
+}

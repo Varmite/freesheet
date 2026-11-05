@@ -1,0 +1,69 @@
+{
+  "id": "the-business-plan",
+  "title": "The Business Plan",
+  "term": 4,
+  "summary": "Why a business plan is needed, its main sections, SWOT analysis, calculating costs, income and profit for a small business, and sources of finance.",
+  "notes": [
+    { "type": "heading", "text": "What is a business plan?" },
+    { "type": "definition", "term": "Business plan", "text": "A written document that describes a business idea, its goals, how it will be run and marketed, and its expected costs, income and profit." },
+    { "type": "list", "items": [
+      "It helps the entrepreneur think carefully about whether the idea will work.",
+      "It is needed to obtain **finance** from banks or investors.",
+      "It sets goals and is used to measure progress.",
+      "It identifies problems and risks before they happen."
+    ] },
+    { "type": "heading", "text": "Sections of a business plan" },
+    { "type": "table", "headers": ["Section", "Contents"], "rows": [
+      ["Executive summary", "A short overview of the whole plan"],
+      ["Description of the business", "Name, location, form of ownership, the product or service, vision and mission"],
+      ["Market research and analysis", "Target market, customer needs, competitors, SWOT analysis"],
+      ["Marketing plan", "The 4 Ps: product, price, place and promotion"],
+      ["Production / operations plan", "How the product is made or the service delivered; equipment and suppliers"],
+      ["Management and staffing", "Who runs the business, staff needed and their duties"],
+      ["Financial plan", "Start-up costs, expected income and expenses, break-even point, source of capital"]
+    ] },
+    { "type": "heading", "text": "SWOT analysis" },
+    { "type": "table", "headers": ["Internal factors (inside the business)", "External factors (outside the business)"], "rows": [
+      ["**Strengths**: what the business does well (e.g. skilled owner, good location)", "**Opportunities**: chances in the environment to use (e.g. no competitors nearby, new school opening)"],
+      ["**Weaknesses**: what the business lacks (e.g. little capital, no experience)", "**Threats**: dangers outside the business (e.g. load-shedding, new competitor, rising prices)"]
+    ] },
+    { "type": "heading", "text": "Costs, income and profit" },
+    { "type": "list", "items": [
+      "**Fixed costs** stay the same no matter how much is produced: rent, insurance, salaries.",
+      "**Variable costs** change with the amount produced: ingredients, packaging, electricity used for production."
+    ] },
+    { "type": "formula", "latex": "\\text{profit} = \\text{total income} - \\text{total costs}" },
+    { "type": "formula", "latex": "\\text{break-even quantity} = \\frac{\\text{fixed costs}}{\\text{selling price per unit} - \\text{variable cost per unit}}" },
+    { "type": "example", "title": "A vetkoek business", "problem": "Zodwa sells vetkoek for R8 each. Ingredients cost R3 per vetkoek. Her fixed costs (stall rent and gas bottle) are R1 500 per month. (a) How many must she sell to break even? (b) What is her profit if she sells 600 in a month?", "steps": [
+      "(a) Break-even = 1 500 ÷ (8 − 3) = 1 500 ÷ 5 = 300 vetkoek",
+      "(b) Income = 600 × R8 = R4 800",
+      "Total costs = R1 500 + 600 × R3 = R1 500 + R1 800 = R3 300",
+      "Profit = R4 800 − R3 300 = R1 500"
+    ], "answer": "(a) 300 vetkoek (b) R1 500 profit" },
+    { "type": "heading", "text": "Sources of finance" },
+    { "type": "list", "items": [
+      "**Own savings** (owner's capital).",
+      "**Family and friends**.",
+      "**Bank loans** (interest must be paid).",
+      "**Government agencies** such as the **National Youth Development Agency (NYDA)** and the Small Enterprise Development and Finance Agency (SEDFA), which help young and small entrepreneurs.",
+      "**Investors** or partners."
+    ] }
+  ],
+  "questions": [
+    { "id": "define", "type": "open", "marks": 2, "prompt": "What is a business plan?", "memo": "✓ A written document describing the business idea and goals (1)\n✓ and how it will be run, marketed and financed / expected profit (1)" },
+    { "id": "why", "type": "open", "marks": 2, "prompt": "Give TWO reasons why an entrepreneur needs a business plan.", "memo": "Any two (1 each): to get finance; to test if the idea is viable; to set goals; to identify risks; to guide decisions" },
+    { "id": "swot", "type": "short", "prompt": "What does the T in SWOT stand for?", "answers": ["threats", "threat"] },
+    { "id": "internal", "type": "mcq", "prompt": "Which part of a SWOT analysis is an external factor?", "options": ["Strengths", "Weaknesses", "Opportunities", "None of these"], "answer": 2 },
+    { "id": "fixed", "type": "mcq", "prompt": "Which is a fixed cost?", "options": ["Flour for baking", "Monthly rent", "Packaging", "Ingredients"], "answer": 1 },
+    { "id": "swot-match", "type": "match", "marks": 4, "prompt": "Classify each factor for a new car wash.", "pairs": [
+      { "left": "The owner is friendly and hard-working", "right": "Strength" },
+      { "left": "The owner has very little capital", "right": "Weakness" },
+      { "left": "A taxi rank is opening nearby", "right": "Opportunity" },
+      { "left": "Water restrictions are announced", "right": "Threat" }
+    ] },
+    { "id": "breakeven", "type": "numeric", "prompt": "A business sells T-shirts for R120. Each costs R70 to make. Fixed costs are R2 000 a month. How many T-shirts must be sold to break even?", "answer": 40, "tolerance": 0, "unit": "T-shirts" },
+    { "id": "profit", "type": "numeric", "prompt": "Total income is R9 500 and total costs are R6 200. Calculate the profit.", "answer": 3300, "tolerance": 0, "unit": "rand" },
+    { "id": "nyda", "type": "short", "prompt": "Which government agency helps young entrepreneurs? (abbreviation)", "answers": ["nyda", "national youth development agency"] },
+    { "id": "sections", "type": "open", "marks": 3, "prompt": "Name THREE sections of a business plan.", "memo": "Any three (1 each): executive summary; business description; market research; marketing plan; production plan; management; financial plan" }
+  ]
+}

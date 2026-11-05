@@ -1,0 +1,108 @@
+{
+  "id": "fractions-and-decimals",
+  "title": "Common Fractions and Decimal Fractions",
+  "term": 3,
+  "summary": "Calculate with common fractions, mixed numbers and decimal fractions, convert between fractions, decimals and percentages, and solve problems involving fractions of amounts and percentage increase and decrease.",
+  "notes": [
+    { "type": "heading", "text": "Fractions: the basics" },
+    { "type": "paragraph", "text": "In the fraction $\\frac{3}{4}$, the **numerator** $3$ tells you how many parts you have and the **denominator** $4$ tells you how many equal parts make a whole. A **proper fraction** has a numerator smaller than the denominator ($\\frac{3}{4}$); an **improper fraction** has a bigger numerator ($\\frac{7}{4}$); a **mixed number** has a whole number and a fraction ($1\\frac{3}{4}$)." },
+    { "type": "paragraph", "text": "**Equivalent fractions** have the same value: $\\frac{3}{4} = \\frac{6}{8} = \\frac{9}{12}$. Multiply or divide the numerator and denominator by the same number. To **simplify**, divide both by their HCF: $\\frac{18}{24} = \\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}$." },
+    { "type": "callout", "label": "Remember", "text": "To change a mixed number to an improper fraction: $2\\frac{3}{5} = \\frac{2 \\times 5 + 3}{5} = \\frac{13}{5}$. To change back: $13 \\div 5 = 2$ remainder $3$, so $2\\frac{3}{5}$." },
+
+    { "type": "heading", "text": "Adding and subtracting fractions" },
+    { "type": "paragraph", "text": "Fractions can only be added or subtracted when they have the **same denominator**. Use the lowest common denominator (LCD), which is the LCM of the denominators." },
+    { "type": "example", "title": "Worked example 1", "problem": "Calculate: (a) $\\dfrac{2}{3} + \\dfrac{1}{4}$  (b) $3\\dfrac{1}{2} - 1\\dfrac{3}{4}$", "steps": [
+      "(a) LCD $= 12$: $\\dfrac{8}{12} + \\dfrac{3}{12} = \\dfrac{11}{12}$.",
+      "(b) Change to improper fractions: $\\dfrac{7}{2} - \\dfrac{7}{4}$.",
+      "LCD $= 4$: $\\dfrac{14}{4} - \\dfrac{7}{4} = \\dfrac{7}{4} = 1\\dfrac{3}{4}$."
+    ], "answer": "(a) $\\dfrac{11}{12}$  (b) $1\\dfrac{3}{4}$" },
+    { "type": "callout", "label": "Common mistake", "text": "Never add the denominators: $\\frac{1}{2} + \\frac{1}{3} \\neq \\frac{2}{5}$. Half a pizza plus a third of a pizza is more than half a pizza, but $\\frac{2}{5}$ is less than a half! The correct answer is $\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}$." },
+
+    { "type": "heading", "text": "Multiplying and dividing fractions" },
+    { "type": "list", "items": [
+      "**Multiply:** multiply the numerators and multiply the denominators. Simplify (cancel) first where possible. Change mixed numbers to improper fractions first.",
+      "**Divide:** multiply by the **reciprocal** (flip the second fraction). $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$.",
+      "\"**of**\" means multiply: $\\frac{3}{5}$ of R450 $= \\frac{3}{5} \\times 450 = \\text{R}270$."
+    ] },
+    { "type": "example", "title": "Worked example 2", "problem": "Calculate: (a) $2\\dfrac{1}{2} \\times 1\\dfrac{1}{3}$  (b) $\\dfrac{3}{4} \\div \\dfrac{3}{8}$  (c) $\\dfrac{5}{6} \\div 10$", "steps": [
+      "(a) $\\dfrac{5}{2} \\times \\dfrac{4}{3} = \\dfrac{20}{6} = \\dfrac{10}{3} = 3\\dfrac{1}{3}$.",
+      "(b) $\\dfrac{3}{4} \\times \\dfrac{8}{3} = \\dfrac{24}{12} = 2$.",
+      "(c) $\\dfrac{5}{6} \\times \\dfrac{1}{10} = \\dfrac{5}{60} = \\dfrac{1}{12}$."
+    ], "answer": "(a) $3\\dfrac{1}{3}$  (b) $2$  (c) $\\dfrac{1}{12}$" },
+    { "type": "callout", "label": "Common mistake", "text": "$2\\frac{1}{2} \\times 1\\frac{1}{3}$ is **not** $2 \\times 1 + \\frac{1}{2} \\times \\frac{1}{3}$. Always change mixed numbers to improper fractions before multiplying or dividing." },
+    { "type": "paragraph", "text": "**Squares, cubes and roots of fractions:** apply the power or root to the numerator and the denominator. $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$, $\\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8}$, $\\sqrt{\\frac{9}{25}} = \\frac{3}{5}$." },
+
+    { "type": "heading", "text": "Decimal fractions" },
+    { "type": "paragraph", "text": "In South Africa we write a **decimal comma**: $3{,}475$. The digits after the comma are tenths, hundredths, thousandths, and so on." },
+    { "type": "table", "caption": "Place value in 3,475", "headers": ["Units", "Tenths", "Hundredths", "Thousandths"], "rows": [
+      ["3", "4", "7", "5"],
+      ["$3$", "$\\frac{4}{10}$", "$\\frac{7}{100}$", "$\\frac{5}{1\\ 000}$"]
+    ] },
+    { "type": "paragraph", "text": "**Comparing decimals:** compare digit by digit from the left. $0{,}3 > 0{,}25$ because $0{,}30 > 0{,}25$ (3 tenths is more than 2 tenths). Adding zeros at the end does not change a decimal." },
+    { "type": "paragraph", "text": "**Rounding:** $3{,}4762$ rounded to two decimal places is $3{,}48$ (the third decimal digit is $6$, so round up)." },
+
+    { "type": "heading", "text": "Calculating with decimals" },
+    { "type": "list", "items": [
+      "**Add and subtract:** line up the commas. $12{,}5 + 3{,}75 = 16{,}25$.",
+      "**Multiply:** multiply as whole numbers, then count the total number of decimal places in the question. $0{,}6 \\times 0{,}4$: $6 \\times 4 = 24$ and there are 2 decimal places, so $0{,}24$.",
+      "**Divide:** make the divisor a whole number by multiplying both numbers by the same power of 10. $7{,}2 \\div 0{,}09 = 720 \\div 9 = 80$."
+    ] },
+    { "type": "example", "title": "Worked example 3", "problem": "Calculate without a calculator: (a) $3{,}2 \\times 0{,}15$  (b) $4{,}86 \\div 0{,}3$", "steps": [
+      "(a) $32 \\times 15 = 480$. Decimal places: $1 + 2 = 3$. So $0{,}480 = 0{,}48$.",
+      "(b) Multiply both by 10: $48{,}6 \\div 3 = 16{,}2$."
+    ], "answer": "(a) $0{,}48$  (b) $16{,}2$" },
+
+    { "type": "heading", "text": "Fractions, decimals and percentages" },
+    { "type": "paragraph", "text": "**Fraction to decimal:** divide the numerator by the denominator, or make the denominator a power of 10: $\\frac{3}{4} = \\frac{75}{100} = 0{,}75$. **Decimal to percentage:** multiply by 100: $0{,}75 = 75\\%$. Some fractions give **recurring decimals**: $\\frac{1}{3} = 0{,}333\\ldots = 0{,}\\dot{3}$." },
+    { "type": "table", "caption": "Equivalents to know", "headers": ["Fraction", "Decimal", "Percentage"], "rows": [
+      ["$\\frac{1}{2}$", "0,5", "50%"],
+      ["$\\frac{1}{4}$", "0,25", "25%"],
+      ["$\\frac{3}{4}$", "0,75", "75%"],
+      ["$\\frac{1}{5}$", "0,2", "20%"],
+      ["$\\frac{1}{8}$", "0,125", "12,5%"],
+      ["$\\frac{1}{3}$", "0,333...", "33,3%"],
+      ["$\\frac{1}{10}$", "0,1", "10%"]
+    ] },
+
+    { "type": "heading", "text": "Percentage increase and decrease" },
+    { "type": "example", "title": "Worked example 4", "problem": "A school bag costs R250. Its price increases by 12%. Later the new price decreases by 15%. Find both new prices.", "steps": [
+      "Increase: $12\\%$ of R250 $= 0{,}12 \\times 250 = \\text{R}30$, so the new price is $\\text{R}280$. (Or $1{,}12 \\times 250 = 280$.)",
+      "Decrease: $15\\%$ of R280 $= 0{,}15 \\times 280 = \\text{R}42$, so the price becomes $280 - 42 = \\text{R}238$. (Or $0{,}85 \\times 280 = 238$.)"
+    ], "answer": "R280, then R238" },
+    { "type": "callout", "label": "Exam tip", "text": "A percentage change is always calculated on the **original** amount at that step. That is why a 12% increase followed by a 15% decrease does not give 3% less than R250." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Simplify fractions by dividing by the HCF; find equivalent fractions by multiplying top and bottom by the same number.",
+      "Add or subtract with a common denominator; never add denominators.",
+      "Multiply: top × top and bottom × bottom. Divide: multiply by the reciprocal. Change mixed numbers to improper fractions first.",
+      "Multiplying decimals: count decimal places. Dividing: make the divisor a whole number first.",
+      "Fraction → decimal → percentage: divide, then multiply by 100.",
+      "Percentage increase: multiply by $(1 + \\text{rate})$; decrease: multiply by $(1 - \\text{rate})$."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "Simplify $\\dfrac{18}{24}$.", "options": ["$\\dfrac{9}{12}$", "$\\dfrac{3}{4}$", "$\\dfrac{2}{3}$", "$\\dfrac{6}{8}$"], "answer": 1, "explanation": "Divide by the HCF $6$: $\\frac{3}{4}$. The other options $\\frac{9}{12}$ and $\\frac{6}{8}$ are equivalent but not fully simplified." },
+    { "id": "q2", "type": "numeric", "prompt": "Calculate $\\dfrac{2}{3} + \\dfrac{1}{4}$. You may type a fraction (for example 5/6) or a decimal correct to three decimal places.", "answer": 0.916667, "tolerance": 0.001, "explanation": "LCD 12: $\\frac{8}{12} + \\frac{3}{12} = \\frac{11}{12} \\approx 0{,}917$." },
+    { "id": "q3", "type": "numeric", "prompt": "Calculate $\\dfrac{3}{5}$ of R450.", "unit": "R", "answer": 270, "tolerance": 0, "explanation": "$450 \\div 5 = 90$ and $3 \\times 90 = 270$." },
+    { "id": "q4", "type": "mcq", "prompt": "Calculate $2\\dfrac{1}{2} \\times 1\\dfrac{1}{3}$.", "options": ["$2\\dfrac{1}{6}$", "$3\\dfrac{1}{3}$", "$3\\dfrac{5}{6}$", "$2\\dfrac{2}{3}$"], "answer": 1, "explanation": "$\\frac{5}{2} \\times \\frac{4}{3} = \\frac{20}{6} = \\frac{10}{3} = 3\\frac{1}{3}$." },
+    { "id": "q5", "type": "numeric", "prompt": "Calculate $\\dfrac{3}{4} \\div \\dfrac{3}{8}$.", "answer": 2, "tolerance": 0, "explanation": "$\\frac{3}{4} \\times \\frac{8}{3} = \\frac{24}{12} = 2$." },
+    { "id": "q6", "type": "truefalse", "prompt": "$0{,}3 > 0{,}25$", "answer": true, "explanation": "$0{,}3 = 0{,}30$, and $30$ hundredths is more than $25$ hundredths." },
+    { "id": "q7", "type": "numeric", "prompt": "Calculate $0{,}6 \\times 0{,}4$.", "answer": 0.24, "tolerance": 0.0001, "explanation": "$6 \\times 4 = 24$; two decimal places in total, so $0{,}24$." },
+    { "id": "q8", "type": "numeric", "prompt": "Calculate $7{,}2 \\div 0{,}09$.", "answer": 80, "tolerance": 0, "explanation": "Multiply both by 100: $720 \\div 9 = 80$." },
+    { "id": "q9", "type": "match", "prompt": "Match each fraction with its decimal form.", "marks": 5, "pairs": [
+      { "left": "$\\frac{1}{2}$", "right": "0,5" },
+      { "left": "$\\frac{1}{4}$", "right": "0,25" },
+      { "left": "$\\frac{3}{4}$", "right": "0,75" },
+      { "left": "$\\frac{1}{5}$", "right": "0,2" },
+      { "left": "$\\frac{1}{8}$", "right": "0,125" }
+    ], "explanation": "Divide the numerator by the denominator, e.g. $1 \\div 8 = 0{,}125$." },
+    { "id": "q10", "type": "numeric", "prompt": "Round $3{,}4762$ to two decimal places.", "answer": 3.48, "tolerance": 0.0001, "explanation": "The third decimal digit is $6$ (5 or more), so round the second digit up: $3{,}48$." },
+    { "id": "q11", "type": "mcq", "prompt": "Calculate $\\left(\\dfrac{2}{3}\\right)^2$.", "options": ["$\\dfrac{4}{6}$", "$\\dfrac{4}{9}$", "$\\dfrac{2}{9}$", "$\\dfrac{4}{3}$"], "answer": 1, "explanation": "Square the numerator and the denominator: $\\frac{2^2}{3^2} = \\frac{4}{9}$." },
+    { "id": "q12", "type": "numeric", "prompt": "Calculate $\\sqrt{\\dfrac{9}{25}}$. Give your answer as a fraction or a decimal.", "answer": 0.6, "tolerance": 0.001, "explanation": "$\\sqrt{9} = 3$ and $\\sqrt{25} = 5$, so $\\frac{3}{5} = 0{,}6$." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Calculate, showing all working: $3\\dfrac{1}{2} - 1\\dfrac{3}{4}$", "memo": "$\\dfrac{7}{2} - \\dfrac{7}{4}$ ✓ (improper fractions) (1)\n$\\dfrac{14}{4} - \\dfrac{7}{4}$ ✓ (common denominator) (1)\n$= \\dfrac{7}{4} = 1\\dfrac{3}{4}$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 4, "prompt": "Lindiwe spends $\\frac{1}{3}$ of her money on food and $\\frac{1}{4}$ on transport.\n(a) What fraction of her money is left?  (2)\n(b) If she had R720, how much is left?  (2)", "memo": "(a) $\\frac{1}{3} + \\frac{1}{4} = \\frac{7}{12}$ ✓; left: $1 - \\frac{7}{12} = \\frac{5}{12}$ ✓ (2)\n(b) $\\frac{5}{12} \\times 720$ ✓ $= \\text{R}300$ ✓ (2)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "A pair of jeans costs R250. The price increases by 12%, and then the new price is reduced by 15%. Calculate the final price.", "memo": "$250 \\times 1{,}12 = \\text{R}280$ ✓ (1)\n$15\\%$ of $280 = \\text{R}42$ ✓ (1)\nFinal price $= \\text{R}238$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "Arrange in ascending order (smallest first): $0{,}61$;  $\\frac{5}{8}$;  $0{,}59$;  $\\frac{3}{5}$", "memo": "$\\frac{5}{8} = 0{,}625$ and $\\frac{3}{5} = 0{,}6$ ✓ (1)\nOrder: $0{,}59$; $\\frac{3}{5}$; $0{,}61$; $\\frac{5}{8}$ ✓✓ (2)" }
+  ]
+}

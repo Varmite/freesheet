@@ -1,0 +1,291 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 75,
+  "totalMarks": 60,
+  "instructions": [
+    "This paper consists of FIVE questions. Answer ALL the questions.",
+    "Show all calculations and include units.",
+    "Drawings may be described in words where you cannot draw on screen."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "In the design process, the first step is to…",
+          "options": [
+            "make a model",
+            "investigate the problem",
+            "evaluate the product",
+            "draw an isometric view"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "Which is a shell structure?",
+          "options": [
+            "A roof truss",
+            "A crash helmet",
+            "A dam wall",
+            "A crane"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "A nutcracker is a…",
+          "options": [
+            "first-class lever",
+            "second-class lever",
+            "third-class lever",
+            "pulley"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "Two switches connected in parallel give…",
+          "options": [
+            "AND logic",
+            "OR logic",
+            "no output",
+            "a short circuit"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-5",
+          "type": "mcq",
+          "prompt": "Which plastic CANNOT be reshaped once it has set?",
+          "options": [
+            "PET",
+            "PVC",
+            "Acrylic",
+            "Melamine"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "q1-6",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Constraint",
+              "right": "A limitation on the design"
+            },
+            {
+              "left": "Compression",
+              "right": "Force that squashes a member"
+            },
+            {
+              "left": "Fulcrum",
+              "right": "Turning point of a lever"
+            },
+            {
+              "left": "Idler gear",
+              "right": "Makes driven gear turn the same way as driver"
+            },
+            {
+              "left": "Galvanising",
+              "right": "Coating steel with zinc"
+            }
+          ]
+        },
+        {
+          "id": "q1-7",
+          "type": "truefalse",
+          "prompt": "Ropes and cables can only resist tension.",
+          "answer": true
+        },
+        {
+          "id": "q1-8",
+          "type": "truefalse",
+          "prompt": "In first-angle projection, the top view is drawn above the front view.",
+          "answer": false
+        },
+        {
+          "id": "q1-9",
+          "type": "short",
+          "prompt": "What is the name of the force that twists a material?",
+          "answers": [
+            "torsion"
+          ]
+        },
+        {
+          "id": "q1-10",
+          "type": "short",
+          "prompt": "What is the unit of resistance?",
+          "answers": [
+            "ohm",
+            "ohms",
+            "Ω"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Design and graphics",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Write a design brief for a stand that holds a cellphone upright on a desk.",
+          "memo": "✓ States what will be made (a stand) (1)\n✓ For whom (e.g. learners/office workers) (1)\n✓ Why / purpose (to hold a phone upright for viewing/charging) (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE specifications for the cellphone stand.",
+          "memo": "Any three (1 each): holds phones of different sizes; stable/does not tip; allows charging cable; made of strong, light material; costs less than a set amount; attractive"
+        },
+        {
+          "id": "q2-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A cupboard is 1 800 mm tall. How tall will it be on a drawing at a scale of 1 : 20?",
+          "answer": 90,
+          "tolerance": 0,
+          "unit": "mm"
+        },
+        {
+          "id": "q2-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "State the angles used for (a) isometric and (b) oblique drawings.",
+          "memo": "(a) ✓ 30° to the horizontal (1)\n(b) ✓ 45° for depth lines (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Structures",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how triangulation makes a frame structure rigid. Give an example.",
+          "memo": "✓ A diagonal member divides a rectangle into triangles (1)\n✓ A triangle cannot change shape unless a side breaks (1)\n✓ Example: roof truss / pylon / crane / bridge (1)"
+        },
+        {
+          "id": "q3-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Identify the internal force in each: (a) the rope of a tow truck, (b) the legs of a table, (c) a screwdriver being turned, (d) a shelf bracket that sags in the middle.",
+          "memo": "(a) ✓ Tension (1)\n(b) ✓ Compression (1)\n(c) ✓ Torsion (1)\n(d) ✓ Bending (1)"
+        },
+        {
+          "id": "q3-3",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the difference between a static and a dynamic load, using a bridge as an example.",
+          "memo": "✓ Static: the weight of the bridge itself, which does not change (1)\n✓ Dynamic: moving cars and wind, which change (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Mechanical systems",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "numeric",
+          "marks": 3,
+          "prompt": "A crowbar lifts a 900 N load placed 0,3 m from the fulcrum. The effort is applied 1,5 m from the fulcrum. Calculate the effort.",
+          "answer": 180,
+          "tolerance": 0,
+          "unit": "N"
+        },
+        {
+          "id": "q4-2",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Calculate the mechanical advantage of the crowbar in 4.1.",
+          "answer": 5,
+          "tolerance": 0
+        },
+        {
+          "id": "q4-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A driver gear with 12 teeth meshes with a driven gear with 36 teeth. If the driver turns at 120 r/min, calculate the speed of the driven gear.",
+          "answer": 40,
+          "tolerance": 0,
+          "unit": "r/min"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "In 4.3, will the driven gear turn faster or slower than the driver, and in which direction?",
+          "memo": "✓ Slower (1)\n✓ in the opposite direction (1)"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name a mechanism that changes rotary motion into linear motion and give ONE use.",
+          "memo": "✓ Rack and pinion (1)\n✓ Car steering / sliding gate / camera tripod (1)"
+        },
+        {
+          "id": "q4-6",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why a bicycle uses a chain rather than meshing gears to connect the pedals to the back wheel.",
+          "memo": "✓ The sprockets are far apart, and a chain can connect them (1)\n✓ It keeps both turning in the same direction without slipping (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Electrical systems",
+      "questions": [
+        {
+          "id": "q5-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A 6 V battery is connected to a resistor of 300 Ω. Calculate the current in amperes.",
+          "answer": 0.02,
+          "tolerance": 0.001,
+          "unit": "A"
+        },
+        {
+          "id": "q5-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Draw or describe the truth table for an AND circuit with two switches.",
+          "memo": "✓ 0 0 → 0 (1)\n✓ 0 1 → 0 (1)\n✓ 1 0 → 0 (1)\n✓ 1 1 → 1 (1)"
+        },
+        {
+          "id": "q5-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe the input, process and output of a doorbell system.",
+          "memo": "✓ Input: battery / push-to-make button pressed (1)\n✓ Process: switch closes the circuit, wires carry current (1)\n✓ Output: buzzer/bell sounds (1)"
+        },
+        {
+          "id": "q5-4",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain THREE safety rules when working with electricity at home.",
+          "memo": "Any three (1 each): do not touch with wet hands; do not overload plugs; replace damaged cords; switch off before repairs; keep appliances away from water; never insert objects into plugs"
+        },
+        {
+          "id": "q5-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A car’s interior light must switch on when EITHER front door is opened. Which logic is this, how are the switches connected, and what type of switch is used?",
+          "memo": "✓ OR logic (1)\n✓ Switches connected in parallel (1)\n✓ Push-to-break switches in the door frames (1)"
+        }
+      ]
+    }
+  ]
+}

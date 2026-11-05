@@ -1,0 +1,213 @@
+{
+  "id": "electronic-circuits",
+  "title": "Electronic Circuits and Sensors",
+  "term": 3,
+  "summary": "Electronic systems as input, process and output, voltage dividers with sensors, the transistor as a switch, and designing simple alarm and automatic-light circuits.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "Electronic systems"
+    },
+    {
+      "type": "paragraph",
+      "text": "An **electronic system** senses a change in the environment and responds automatically. It has three parts:"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Part",
+        "Job",
+        "Examples"
+      ],
+      "rows": [
+        [
+          "Input (sensor)",
+          "Detects a change such as light, heat, moisture or movement",
+          "LDR, thermistor, moisture probe, push switch, microphone"
+        ],
+        [
+          "Process (control)",
+          "Decides what to do with the signal",
+          "Transistor, logic gate, microcontroller, resistors"
+        ],
+        [
+          "Output",
+          "Responds",
+          "LED, buzzer, motor, relay, speaker"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The voltage divider"
+    },
+    {
+      "type": "paragraph",
+      "text": "A **voltage divider** is two resistors connected in series across a power supply. The supply voltage is **shared** between them in proportion to their resistances: the bigger resistance gets the bigger share. If one resistor is a sensor (an LDR or thermistor), the voltage at the point between them **changes** when the light or temperature changes. This changing voltage is used to switch a transistor on or off."
+    },
+    {
+      "type": "example",
+      "title": "Sharing voltage",
+      "problem": "A 9 V battery is connected across a 2 kΩ resistor and a 1 kΩ resistor in series. What is the voltage across each?",
+      "steps": [
+        "Total resistance = 3 kΩ",
+        "2 kΩ resistor: 2/3 × 9 = 6 V",
+        "1 kΩ resistor: 1/3 × 9 = 3 V"
+      ],
+      "answer": "6 V and 3 V"
+    },
+    {
+      "type": "heading",
+      "text": "The transistor as a switch"
+    },
+    {
+      "type": "paragraph",
+      "text": "An NPN transistor switches **on** when the voltage at its **base** rises above about **0,7 V**. Then a large current flows from collector to emitter through the output device. When the base voltage is low, the transistor is **off** and the output stops."
+    },
+    {
+      "type": "heading",
+      "text": "Example circuits"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Circuit",
+        "Sensor",
+        "How it works"
+      ],
+      "rows": [
+        [
+          "Automatic night light",
+          "LDR",
+          "In the dark the LDR's resistance rises, the base voltage rises, the transistor switches on and the LED lights up"
+        ],
+        [
+          "Fire / heat alarm",
+          "Thermistor",
+          "As temperature rises the thermistor's resistance falls; arranged in the voltage divider so the base voltage rises and the buzzer sounds"
+        ],
+        [
+          "Rain or flood alarm",
+          "Moisture probe (two bare wires)",
+          "Water connects the probes, allowing current to the base, switching on a buzzer"
+        ],
+        [
+          "Burglar alarm",
+          "Reed switch or pressure pad",
+          "Opening a door breaks or makes contact, triggering the buzzer"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "label": "Exam tip",
+      "text": "In a dark-activated circuit the fixed resistor is connected to the positive supply and the **LDR is between the base and 0 V**: in the dark the LDR's resistance rises, so it takes a larger share of the voltage, the **base** voltage rises and the transistor switches on. **Swapping** the LDR and the fixed resistor reverses the action, making a light-activated circuit. Always explain using the words **resistance**, **voltage** and **base**."
+    },
+    {
+      "type": "heading",
+      "text": "Building circuits safely"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use a **breadboard** for testing before soldering.",
+        "Check the polarity of LEDs, diodes and electrolytic capacitors.",
+        "Use low-voltage batteries (3 to 9 V) in school projects; never use mains electricity.",
+        "When **soldering**, work in a ventilated area, use a soldering-iron stand and wear safety glasses."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "sensor",
+      "type": "mcq",
+      "prompt": "Which component would be the input sensor in an automatic night light?",
+      "options": [
+        "LED",
+        "LDR",
+        "Buzzer",
+        "Motor"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "process",
+      "type": "short",
+      "prompt": "Which component acts as an electronic switch in the process stage of many simple circuits?",
+      "answers": [
+        "transistor",
+        "a transistor"
+      ]
+    },
+    {
+      "id": "base-v",
+      "type": "numeric",
+      "prompt": "Above about what base voltage does a silicon NPN transistor switch on?",
+      "answer": 0.7,
+      "tolerance": 0.05,
+      "unit": "V"
+    },
+    {
+      "id": "share",
+      "type": "numeric",
+      "prompt": "A 12 V supply is across a 3 kΩ and a 1 kΩ resistor in series. What is the voltage across the 3 kΩ resistor?",
+      "answer": 9,
+      "tolerance": 0,
+      "unit": "V"
+    },
+    {
+      "id": "breadboard",
+      "type": "truefalse",
+      "prompt": "A breadboard lets you test a circuit without soldering.",
+      "answer": true
+    },
+    {
+      "id": "ipo",
+      "type": "match",
+      "marks": 3,
+      "prompt": "Classify each part of a fire alarm.",
+      "pairs": [
+        {
+          "left": "Thermistor",
+          "right": "Input"
+        },
+        {
+          "left": "Transistor",
+          "right": "Process"
+        },
+        {
+          "left": "Buzzer",
+          "right": "Output"
+        }
+      ]
+    },
+    {
+      "id": "night-light",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Explain how an automatic night light switches on when it gets dark.",
+      "memo": "✓ In the dark the resistance of the LDR increases (1)\n✓ The voltage across it / at the base increases (1)\n✓ When the base voltage passes about 0,7 V the transistor switches on (1)\n✓ Current flows through the LED, which lights up (1)"
+    },
+    {
+      "id": "flood",
+      "type": "open",
+      "marks": 2,
+      "prompt": "How does a moisture probe detect water in a flood alarm?",
+      "memo": "✓ Water conducts electricity and connects the two bare probes (1)\n✓ This allows current to reach the transistor base, switching on the buzzer (1)"
+    },
+    {
+      "id": "soldering",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Give TWO safety precautions when soldering.",
+      "memo": "Any two (1 each): ventilated area; use the stand; safety glasses; do not touch the tip; keep the cord away from the hot tip; wash hands after handling solder"
+    },
+    {
+      "id": "divider",
+      "type": "open",
+      "marks": 2,
+      "prompt": "What is a voltage divider?",
+      "memo": "✓ Two resistors connected in series across a supply (1)\n✓ that share the supply voltage in proportion to their resistances (1)"
+    }
+  ]
+}

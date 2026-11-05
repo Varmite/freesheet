@@ -1,0 +1,97 @@
+{
+  "id": "geometry-of-3d-objects",
+  "title": "Geometry of 3D Objects",
+  "term": 4,
+  "summary": "Classify 3D objects as polyhedra or not, describe prisms, pyramids and the five Platonic solids by their faces, edges and vertices, use Euler's formula, and recognise nets.",
+  "notes": [
+    { "type": "heading", "text": "Faces, edges and vertices" },
+    { "type": "list", "items": [
+      "A **face** is a flat (or curved) surface of a 3D object.",
+      "An **edge** is a line where two faces meet.",
+      "A **vertex** (plural: vertices) is a corner point where edges meet."
+    ] },
+    { "type": "definition", "term": "Polyhedron", "text": "A **polyhedron** (plural: polyhedra) is a 3D object whose faces are all flat **polygons**. Cubes, prisms and pyramids are polyhedra. Cylinders, cones and spheres have curved surfaces, so they are **not** polyhedra." },
+
+    { "type": "heading", "text": "Prisms and pyramids" },
+    { "type": "paragraph", "text": "A **prism** has two identical parallel bases joined by rectangles. A **pyramid** has one base, and triangular faces that meet at a single point called the **apex**. Both are named after the shape of the **base**." },
+    { "type": "table", "caption": "Faces, vertices and edges of some polyhedra", "headers": ["Object", "Faces (F)", "Vertices (V)", "Edges (E)"], "rows": [
+      ["Triangular prism", "5", "6", "9"],
+      ["Cube / rectangular prism", "6", "8", "12"],
+      ["Pentagonal prism", "7", "10", "15"],
+      ["Hexagonal prism", "8", "12", "18"],
+      ["Triangular pyramid (tetrahedron)", "4", "4", "6"],
+      ["Square-based pyramid", "5", "5", "8"],
+      ["Hexagonal pyramid", "7", "7", "12"]
+    ] },
+    { "type": "paragraph", "text": "**Patterns:** a prism with an $n$-sided base has $n + 2$ faces, $2n$ vertices and $3n$ edges. A pyramid with an $n$-sided base has $n + 1$ faces, $n + 1$ vertices and $2n$ edges." },
+
+    { "type": "heading", "text": "Euler's formula" },
+    { "type": "paragraph", "text": "The Swiss mathematician Leonhard Euler discovered that for every polyhedron without holes, the numbers of faces, vertices and edges are linked:" },
+    { "type": "formula", "latex": "F + V - E = 2", "caption": "Euler's formula" },
+    { "type": "example", "title": "Worked example 1", "problem": "(a) Check Euler's formula for a square-based pyramid. (b) A polyhedron has 7 faces and 10 vertices. How many edges does it have?", "steps": [
+      "(a) $F = 5$, $V = 5$, $E = 8$: $5 + 5 - 8 = 2$ ✓",
+      "(b) $7 + 10 - E = 2$, so $E = 15$. (This is a pentagonal prism.)"
+    ], "answer": "(a) $2$ ✓  (b) 15 edges" },
+
+    { "type": "heading", "text": "The Platonic solids" },
+    { "type": "paragraph", "text": "A **Platonic solid** is a polyhedron whose faces are all the **same regular polygon** (equal sides and equal angles), with the same number of faces meeting at every vertex. There are exactly five of them." },
+    { "type": "table", "caption": "The five Platonic solids", "headers": ["Name", "Faces", "F", "V", "E"], "rows": [
+      ["Tetrahedron", "4 equilateral triangles", "4", "4", "6"],
+      ["Cube (hexahedron)", "6 squares", "6", "8", "12"],
+      ["Octahedron", "8 equilateral triangles", "8", "6", "12"],
+      ["Dodecahedron", "12 regular pentagons", "12", "20", "30"],
+      ["Icosahedron", "20 equilateral triangles", "20", "12", "30"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "The names come from Greek numbers: *tetra* = 4, *hexa* = 6, *octa* = 8, *dodeca* = 12, *icosa* = 20. The name tells you the number of faces." },
+    { "type": "callout", "label": "Common mistake", "text": "A square-based pyramid is **not** a Platonic solid: its faces are not all the same shape (one square and four triangles)." },
+
+    { "type": "heading", "text": "Nets" },
+    { "type": "paragraph", "text": "A **net** is a flat pattern that folds up to make a 3D object. Each face of the object appears once in the net. The same object can have several different nets." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 170\" font-family=\"sans-serif\" font-size=\"13\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.8\"><rect x=\"60\" y=\"10\" width=\"30\" height=\"30\"/><rect x=\"60\" y=\"40\" width=\"30\" height=\"30\"/><rect x=\"60\" y=\"70\" width=\"30\" height=\"30\"/><rect x=\"60\" y=\"100\" width=\"30\" height=\"30\"/><rect x=\"30\" y=\"40\" width=\"30\" height=\"30\"/><rect x=\"90\" y=\"40\" width=\"30\" height=\"30\"/><rect x=\"230\" y=\"45\" width=\"60\" height=\"60\"/><polygon points=\"230,45 290,45 260,5\"/><polygon points=\"230,105 290,105 260,145\"/><polygon points=\"230,45 230,105 190,75\"/><polygon points=\"290,45 290,105 330,75\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"75\" y=\"162\">Net of a cube</text><text x=\"260\" y=\"162\">Net of a square-based pyramid</text></g></svg>", "caption": "A net of a cube (6 squares) and a net of a square-based pyramid (1 square and 4 triangles)." },
+    { "type": "example", "title": "Worked example 2", "problem": "Describe the net of a triangular prism.", "steps": [
+      "The prism has 2 triangular faces (the bases) and 3 rectangular faces.",
+      "A net is three rectangles side by side in a row, with one triangle attached to the top of one rectangle and the other triangle attached to the bottom."
+    ], "answer": "2 triangles and 3 rectangles" },
+
+    { "type": "heading", "text": "Objects with curved surfaces" },
+    { "type": "table", "caption": "Non-polyhedra", "headers": ["Object", "Surfaces", "Everyday example"], "rows": [
+      ["Cylinder", "2 flat circles and 1 curved surface", "A tin of beans"],
+      ["Cone", "1 flat circle and 1 curved surface, with an apex", "An ice-cream cone"],
+      ["Sphere", "1 curved surface", "A soccer ball"]
+    ] },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Faces, edges, vertices: surfaces, lines where faces meet, corners.",
+      "Polyhedra have only flat polygon faces; cylinders, cones and spheres are not polyhedra.",
+      "Prisms and pyramids are named after the shape of their base.",
+      "Euler's formula: $F + V - E = 2$.",
+      "The five Platonic solids: tetrahedron, cube, octahedron, dodecahedron, icosahedron.",
+      "A net is a flat pattern that folds into the object; it shows every face once."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "How many faces does a square-based pyramid have?", "options": ["4", "5", "6", "8"], "answer": 1, "explanation": "One square base and four triangles: 5 faces." },
+    { "id": "q2", "type": "numeric", "prompt": "How many edges does a triangular prism have?", "answer": 9, "tolerance": 0, "explanation": "3 edges on each triangle (6) plus 3 edges joining them: 9." },
+    { "id": "q3", "type": "truefalse", "prompt": "A cylinder is a polyhedron.", "answer": false, "explanation": "A cylinder has a curved surface. Polyhedra have only flat polygon faces." },
+    { "id": "q4", "type": "mcq", "prompt": "Which Platonic solid has 8 equilateral triangles as faces?", "options": ["Tetrahedron", "Octahedron", "Dodecahedron", "Icosahedron"], "answer": 1, "explanation": "*Octa* means 8: the octahedron." },
+    { "id": "q5", "type": "numeric", "prompt": "How many vertices does a cube have?", "answer": 8, "tolerance": 0, "explanation": "4 corners on the top and 4 on the bottom: 8." },
+    { "id": "q6", "type": "numeric", "prompt": "A polyhedron has 7 faces and 10 vertices. Use Euler's formula to find the number of edges.", "answer": 15, "tolerance": 0, "explanation": "$7 + 10 - E = 2$, so $E = 15$." },
+    { "id": "q7", "type": "mcq", "prompt": "A pyramid is named after...", "options": ["the number of its edges", "the shape of its base", "the shape of its side faces", "its height"], "answer": 1, "explanation": "For example, a hexagonal pyramid has a hexagon as its base." },
+    { "id": "q8", "type": "truefalse", "prompt": "All the faces of a Platonic solid are the same regular polygon.", "answer": true, "explanation": "That is part of the definition of a Platonic solid." },
+    { "id": "q9", "type": "match", "prompt": "Match each Platonic solid with its faces.", "marks": 5, "pairs": [
+      { "left": "Tetrahedron", "right": "4 equilateral triangles" },
+      { "left": "Cube", "right": "6 squares" },
+      { "left": "Octahedron", "right": "8 equilateral triangles" },
+      { "left": "Dodecahedron", "right": "12 regular pentagons" },
+      { "left": "Icosahedron", "right": "20 equilateral triangles" }
+    ], "explanation": "The Greek prefix gives the number of faces: tetra 4, hexa 6, octa 8, dodeca 12, icosa 20." },
+    { "id": "q10", "type": "numeric", "prompt": "How many edges does a hexagonal pyramid have?", "answer": 12, "tolerance": 0, "explanation": "6 edges around the base and 6 edges up to the apex: 12." },
+    { "id": "q11", "type": "mcq", "prompt": "Which object has two flat circular faces and one curved surface?", "options": ["Cone", "Sphere", "Cylinder", "Pyramid"], "answer": 2, "explanation": "A cylinder (like a tin) has a circle at each end and a curved side." },
+    { "id": "q12", "type": "short", "prompt": "What is the name for a 3D object whose faces are all flat polygons?", "answers": ["polyhedron", "a polyhedron", "polyhedra"], "explanation": "A polyhedron has only flat polygon faces." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "(a) Write down $F$, $V$ and $E$ for a pentagonal prism and for a hexagonal pyramid.  (2)\n(b) Show that Euler's formula works for both.  (2)", "memo": "(a) Pentagonal prism: $F = 7$, $V = 10$, $E = 15$ ✓ (1)\nHexagonal pyramid: $F = 7$, $V = 7$, $E = 12$ ✓ (1)\n(b) $7 + 10 - 15 = 2$ ✓ (1)\n$7 + 7 - 12 = 2$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 2, "prompt": "Describe the net of a triangular prism: which shapes does it contain, and how many of each?", "memo": "2 triangles ✓ (1)\n3 rectangles (joined in a row, with a triangle on two opposite sides) ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "A prism has a base with $n$ sides. Write expressions in terms of $n$ for its number of faces, vertices and edges.", "memo": "Faces: $n + 2$ ✓ (1)\nVertices: $2n$ ✓ (1)\nEdges: $3n$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 2, "prompt": "Lerato says that a cone is a polyhedron because it has an apex like a pyramid. Is she correct? Explain.", "memo": "No ✓ (1)\nA cone has a curved surface and a circular base; a polyhedron has only flat polygon faces ✓ (1)" }
+  ]
+}

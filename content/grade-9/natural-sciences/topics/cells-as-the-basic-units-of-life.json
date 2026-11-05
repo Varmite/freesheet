@@ -1,0 +1,57 @@
+{
+  "id": "cells-as-the-basic-units-of-life",
+  "title": "Cells as the Basic Units of Life",
+  "term": 1,
+  "summary": "Cell structure and the functions of organelles, plant and animal cells compared, using a microscope, and how cells form tissues, organs and systems.",
+  "notes": [
+    { "type": "heading", "text": "The cell" },
+    { "type": "paragraph", "text": "All living things are made of **cells**, the smallest units that can carry out the processes of life. Some organisms, such as bacteria and amoebas, are **unicellular** (one cell). Plants and animals are **multicellular**, made of millions of specialised cells." },
+    { "type": "table", "caption": "Parts of a cell and their functions", "headers": ["Organelle", "Function", "Plant cell", "Animal cell"], "rows": [
+      ["Cell membrane", "Controls what enters and leaves the cell", "Yes", "Yes"],
+      ["Cytoplasm", "Jelly-like fluid where chemical reactions take place", "Yes", "Yes"],
+      ["Nucleus", "Controls the cell's activities; contains genetic material (DNA)", "Yes", "Yes"],
+      ["Mitochondria", "Release energy by cellular respiration", "Yes", "Yes"],
+      ["Cell wall", "Made of cellulose; gives shape, support and protection", "Yes", "No"],
+      ["Chloroplasts", "Contain chlorophyll; site of photosynthesis", "Yes (in green parts)", "No"],
+      ["Vacuole", "Stores water and dissolved substances; keeps the cell firm", "One large central vacuole", "Small or none"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Three structures are found ONLY in plant cells: the **cell wall**, **chloroplasts** and a **large central vacuole**. Plant cells are usually rectangular; animal cells are usually rounded or irregular." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\" font-family=\"sans-serif\" font-size=\"10\"><rect x=\"10\" y=\"15\" width=\"140\" height=\"110\" fill=\"none\" stroke=\"black\" stroke-width=\"4\"/><rect x=\"16\" y=\"21\" width=\"128\" height=\"98\" fill=\"none\" stroke=\"black\"/><rect x=\"45\" y=\"40\" width=\"70\" height=\"60\" fill=\"#eee\" stroke=\"black\"/><circle cx=\"30\" cy=\"45\" r=\"10\" fill=\"#ccc\" stroke=\"black\"/><ellipse cx=\"130\" cy=\"100\" rx=\"8\" ry=\"5\" fill=\"#999\" stroke=\"black\"/><ellipse cx=\"28\" cy=\"105\" rx=\"8\" ry=\"5\" fill=\"#999\" stroke=\"black\"/><text x=\"60\" y=\"74\">vacuole</text><text x=\"10\" y=\"142\">cell wall + membrane, nucleus,</text><text x=\"10\" y=\"154\">chloroplasts (dark), vacuole</text><ellipse cx=\"255\" cy=\"70\" rx=\"70\" ry=\"50\" fill=\"none\" stroke=\"black\"/><circle cx=\"255\" cy=\"70\" r=\"14\" fill=\"#ccc\" stroke=\"black\"/><text x=\"240\" y=\"98\">nucleus</text><text x=\"215\" y=\"142\">membrane, cytoplasm,</text><text x=\"215\" y=\"154\">nucleus (no wall)</text></svg>", "caption": "A plant cell (left) and an animal cell (right)" },
+    { "type": "heading", "text": "Using a microscope" },
+    { "type": "list", "ordered": true, "items": [
+      "Place the prepared slide on the stage and secure it with the clips.",
+      "Start with the lowest-power objective lens.",
+      "Use the coarse focus knob to bring the specimen into view, then the fine focus knob to sharpen it.",
+      "Change to a higher-power objective only once the image is focused."
+    ] },
+    { "type": "formula", "latex": "\\text{total magnification} = \\text{eyepiece magnification} \\times \\text{objective magnification}" },
+    { "type": "example", "title": "Magnification", "problem": "A microscope has a ×10 eyepiece and a ×40 objective lens. What is the total magnification?", "steps": ["10 × 40 = 400"], "answer": "×400" },
+    { "type": "heading", "text": "Levels of organisation" },
+    { "type": "paragraph", "text": "In multicellular organisms, cells are organised in levels:\n\n**cell → tissue → organ → organ system → organism**" },
+    { "type": "table", "headers": ["Level", "Meaning", "Example"], "rows": [
+      ["Cell", "Basic unit of life", "Muscle cell"],
+      ["Tissue", "A group of similar cells that perform the same function", "Muscle tissue"],
+      ["Organ", "Different tissues working together", "Heart"],
+      ["Organ system", "Organs working together for one major function", "Circulatory system"],
+      ["Organism", "A complete living thing", "A human"]
+    ] },
+    { "type": "paragraph", "text": "Cells are **specialised** for their jobs: red blood cells have no nucleus and a dimpled disc shape to carry more oxygen; nerve cells are long to carry messages; root hair cells have a long extension to absorb water; guard cells open and close stomata." }
+  ],
+  "questions": [
+    { "id": "control", "type": "short", "prompt": "Which organelle controls the activities of the cell?", "answers": ["nucleus", "the nucleus"] },
+    { "id": "energy", "type": "mcq", "prompt": "In which organelle is energy released from glucose?", "options": ["Chloroplast", "Nucleus", "Mitochondrion", "Vacuole"], "answer": 2 },
+    { "id": "plant-only", "type": "mcq", "prompt": "Which structure is found in plant cells but NOT in animal cells?", "options": ["Cell membrane", "Cytoplasm", "Nucleus", "Cell wall"], "answer": 3 },
+    { "id": "magnify", "type": "numeric", "prompt": "Calculate the total magnification of a microscope with a ×15 eyepiece and a ×10 objective lens.", "answer": 150, "tolerance": 0 },
+    { "id": "tissue", "type": "short", "prompt": "What do we call a group of similar cells that perform the same function?", "answers": ["tissue", "a tissue"] },
+    { "id": "cellulose", "type": "truefalse", "prompt": "The cell wall of a plant cell is made of cellulose.", "answer": true },
+    { "id": "organelles", "type": "match", "marks": 4, "prompt": "Match each organelle to its function.", "pairs": [
+      { "left": "Cell membrane", "right": "Controls what enters and leaves" },
+      { "left": "Chloroplast", "right": "Photosynthesis" },
+      { "left": "Vacuole", "right": "Stores water and keeps the cell firm" },
+      { "left": "Cytoplasm", "right": "Where most chemical reactions happen" }
+    ] },
+    { "id": "levels", "type": "open", "marks": 2, "prompt": "Arrange in order from simplest to most complex: organ, cell, organism, tissue, organ system.", "memo": "✓✓ cell → tissue → organ → organ system → organism (2 marks all correct, 1 mark one error)" },
+    { "id": "specialised", "type": "open", "marks": 2, "prompt": "Explain how a red blood cell is adapted to its function.", "memo": "✓ Function: carries oxygen (1)\n✓ Adaptation: no nucleus / biconcave disc shape gives more space and a large surface area for oxygen (1)" },
+    { "id": "focus", "type": "open", "marks": 2, "prompt": "Why should you always start with the lowest-power objective when using a microscope?", "memo": "✓ It has the largest field of view, so it is easier to find the specimen (1)\n✓ There is less risk of the lens hitting and breaking the slide (1)" }
+  ]
+}

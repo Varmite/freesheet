@@ -1,0 +1,50 @@
+{
+  "id": "colonialism-case-studies",
+  "title": "Colonial Rule: Case Studies from the Congo and Ghana",
+  "term": 3,
+  "summary": "Two case studies of colonial rule: King Leopold II's Congo Free State and the rubber trade, and the British conquest of the Asante kingdom in the Gold Coast.",
+  "notes": [
+    { "type": "heading", "text": "Case study 1: The Congo Free State" },
+    { "type": "paragraph", "text": "At the Berlin Conference, King **Leopold II of Belgium** was given the huge **Congo Free State** (about 80 times the size of Belgium) as his **personal property**, not as a Belgian colony. He promised to end the slave trade and bring 'civilisation', but he ran the Congo to make money for himself." },
+    { "type": "heading", "text": "Rubber and terror" },
+    { "type": "paragraph", "text": "In the 1890s the invention of the inflatable bicycle and car tyre created an enormous demand for **rubber**. Wild rubber vines grew in the Congo's rainforests. Leopold's agents and companies forced Congolese people to collect it." },
+    { "type": "list", "items": [
+      "Each village was given a **quota** of rubber to collect. People had to go deep into the forest for weeks.",
+      "Women and children were taken **hostage** until the men returned with enough rubber.",
+      "The **Force Publique**, Leopold's army, punished villages that failed to meet quotas by burning homes, flogging with the *chicotte* (a hippo-hide whip) and killing people.",
+      "Soldiers had to prove they had not wasted bullets by bringing back the **severed hands** of those they had killed; hands were also cut off the living.",
+      "Farming was neglected, causing famine and disease. Historians estimate that the population fell by **millions** between 1885 and 1908."
+    ] },
+    { "type": "passage", "title": "Source C: Congolese testimony (a composite based on accounts collected by missionaries and Roger Casement, about 1903–1904)", "text": "We were always in the forest looking for rubber, going without food. Our wives had to give up working in the gardens and fields. Then we starved. When we failed and our rubber was short, the soldiers came to our towns and killed us." },
+    { "type": "heading", "text": "Exposure and change" },
+    { "type": "paragraph", "text": "Missionaries, the journalist **E. D. Morel** and the British diplomat **Roger Casement** exposed the abuses. Photographs of mutilated children shocked the world. In **1908** the Belgian government took the Congo away from Leopold and it became the **Belgian Congo**. Conditions improved somewhat, but Belgium continued to exploit the colony until independence in **1960**." },
+    { "type": "heading", "text": "Case study 2: The Asante and the Gold Coast" },
+    { "type": "paragraph", "text": "The **Asante** (Ashanti) kingdom in present-day **Ghana** was a powerful, wealthy state, rich in gold and controlling trade routes. Its capital was **Kumasi** and its ruler the **Asantehene**. The **Golden Stool** was the sacred symbol of the unity and soul of the Asante nation." },
+    { "type": "table", "headers": ["Date", "Event"], "rows": [
+      ["1824–1874", "Several Anglo-Asante wars; British forces burned Kumasi in 1874"],
+      ["1896", "Britain occupied Kumasi and exiled the Asantehene, Prempeh I, to the Seychelles"],
+      ["1900", "The British governor demanded to sit on the Golden Stool. **Yaa Asantewaa**, the Queen Mother of Ejisu, led an uprising (the War of the Golden Stool)"],
+      ["1901", "The uprising was defeated; Asante was annexed into the British Gold Coast colony"],
+      ["1957", "The Gold Coast became independent as **Ghana**, the first sub-Saharan African colony to gain independence, led by Kwame Nkrumah"]
+    ] },
+    { "type": "paragraph", "text": "The British never captured the Golden Stool, which had been hidden. Under British rule, the Gold Coast became a major producer of **cocoa**, gold and timber for export, but most of the profits went to Britain." },
+    { "type": "callout", "label": "Exam tip", "text": "When comparing case studies, consider: who ruled, what resources were wanted, how labour was obtained, how people resisted, and the long-term effects." }
+  ],
+  "questions": [
+    { "id": "owner", "type": "mcq", "prompt": "Who personally owned the Congo Free State from 1885 to 1908?", "options": ["Queen Victoria", "King Leopold II", "Otto von Bismarck", "The Belgian parliament"], "answer": 1 },
+    { "id": "rubber", "type": "short", "prompt": "Which product was in great demand from the Congo because of new bicycle and car tyres?", "answers": ["rubber"] },
+    { "id": "force-publique", "type": "short", "prompt": "What was the name of Leopold's army in the Congo?", "answers": ["force publique", "the force publique"] },
+    { "id": "1908", "type": "numeric", "prompt": "In which year did the Belgian government take the Congo from Leopold?", "answer": 1908, "tolerance": 0 },
+    { "id": "golden-stool", "type": "truefalse", "prompt": "The British captured the Golden Stool in 1900.", "answer": false, "explanation": "The Golden Stool was hidden and never captured." },
+    { "id": "yaa", "type": "mcq", "prompt": "Who led the Asante uprising of 1900?", "options": ["Prempeh I", "Kwame Nkrumah", "Yaa Asantewaa", "Menelik II"], "answer": 2 },
+    { "id": "match-people", "type": "match", "marks": 4, "prompt": "Match each person to their role.", "pairs": [
+      { "left": "Roger Casement", "right": "Diplomat who exposed Congo abuses" },
+      { "left": "Prempeh I", "right": "Asantehene exiled by the British" },
+      { "left": "Kwame Nkrumah", "right": "Led Ghana to independence" },
+      { "left": "Leopold II", "right": "Belgian king who owned the Congo" }
+    ] },
+    { "id": "source-c", "type": "open", "marks": 3, "prompt": "Read Source C. (a) Why did the people starve? (b) What happened when rubber quotas were not met? (c) How reliable is this source? Give a reason.", "memo": "(a) ✓ They spent all their time collecting rubber and could not farm (1)\n(b) ✓ Soldiers killed them (1)\n(c) ✓ Fairly reliable: an eyewitness account, supported by other evidence (photographs, Casement report), though it was collected by a missionary who opposed the system (1)" },
+    { "id": "methods", "type": "open", "marks": 3, "prompt": "Describe THREE methods used to force Congolese people to collect rubber.", "memo": "Any three (1 each): quotas; taking women and children hostage; flogging with the chicotte; burning villages; killing; cutting off hands" },
+    { "id": "compare", "type": "open", "marks": 2, "prompt": "Give ONE similarity between colonial rule in the Congo and in the Gold Coast.", "memo": "✓✓ Any valid similarity explained, e.g. both were ruled by Europeans to take resources (rubber / gold, cocoa) and the profits went to Europe; in both, Africans resisted and were defeated by force" }
+  ]
+}

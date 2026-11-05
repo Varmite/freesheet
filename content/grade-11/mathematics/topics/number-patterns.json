@@ -1,0 +1,52 @@
+{
+  "id": "number-patterns",
+  "title": "Number Patterns: Quadratic Sequences",
+  "term": 1,
+  "summary": "Recognise quadratic sequences with a constant second difference, find the general term $T_n = an^2 + bn + c$, and solve problems involving quadratic patterns.",
+  "notes": [
+    { "type": "heading", "text": "First and second differences" },
+    { "type": "paragraph", "text": "In a **linear** sequence the first differences are constant. In a **quadratic** sequence the first differences change, but the **second differences** (the differences between the first differences) are constant." },
+    { "type": "table", "caption": "The sequence $3; 8; 15; 24; 35; \\ldots$", "headers": ["", "$T_1$", "$T_2$", "$T_3$", "$T_4$", "$T_5$"], "rows": [
+      ["Terms", "3", "8", "15", "24", "35"],
+      ["First differences", "", "5", "7", "9", "11"],
+      ["Second differences", "", "", "2", "2", "2"]
+    ] },
+    { "type": "heading", "text": "The general term" },
+    { "type": "formula", "latex": "T_n = an^2 + bn + c", "caption": "General term of a quadratic sequence" },
+    { "type": "paragraph", "text": "Use these three facts to find $a$, $b$ and $c$:" },
+    { "type": "formula", "latex": "2a = \\text{second difference} \\qquad 3a + b = T_2 - T_1 \\qquad a + b + c = T_1" },
+    { "type": "example", "title": "Worked example 1", "problem": "Find the general term of $3; 8; 15; 24; \\ldots$ and calculate $T_{20}$.", "steps": [
+      "Second difference $= 2$, so $2a = 2$ and $a = 1$.",
+      "$3a + b = 8 - 3 = 5$, so $3 + b = 5$ and $b = 2$.",
+      "$a + b + c = 3$, so $1 + 2 + c = 3$ and $c = 0$.",
+      "$T_n = n^2 + 2n$. Check: $T_3 = 9 + 6 = 15$ ✓",
+      "$T_{20} = 400 + 40 = 440$"
+    ], "answer": "$T_n = n^2 + 2n$; $T_{20} = 440$" },
+    { "type": "example", "title": "Worked example 2: which term?", "problem": "Which term of $T_n = n^2 + 2n$ equals $168$?", "steps": [
+      "$n^2 + 2n = 168$, so $n^2 + 2n - 168 = 0$.",
+      "$(n + 14)(n - 12) = 0$",
+      "$n = 12$ ($n$ must be a natural number, so $n \\neq -14$)."
+    ], "answer": "$T_{12} = 168$" },
+    { "type": "callout", "label": "Remember", "text": "If the second difference is positive, the terms eventually increase; if it is negative, the sequence reaches a maximum and then decreases, just like a parabola with $a > 0$ or $a < 0$." },
+    { "type": "example", "title": "Worked example 3: decreasing quadratic sequence", "problem": "Find $T_n$ for $-2; 4; 8; 10; \\ldots$ and the maximum value of the sequence.", "steps": [
+      "First differences: $6; 4; 2$. Second difference: $-2$, so $a = -1$.",
+      "$3a + b = 6$, so $b = 9$. $a + b + c = -2$, so $c = -10$.",
+      "$T_n = -n^2 + 9n - 10$",
+      "Maximum near $n = -\\dfrac{b}{2a} = 4{,}5$: $T_4 = T_5 = 10$."
+    ], "answer": "$T_n = -n^2 + 9n - 10$; maximum value $10$" },
+    { "type": "heading", "text": "Patterns from diagrams" },
+    { "type": "paragraph", "text": "Count the objects in each figure (e.g. dots in a triangular arrangement: $1; 3; 6; 10; \\ldots$), check whether the second differences are constant, and find $T_n$. The triangular numbers have $T_n = \\dfrac{n(n + 1)}{2}$." }
+  ],
+  "questions": [
+    { "id": "second-diff", "type": "numeric", "prompt": "Find the second difference of $2; 7; 16; 29; 46; \\ldots$", "answer": 4, "tolerance": 0 },
+    { "id": "is-quadratic", "type": "mcq", "prompt": "Which sequence is quadratic?", "options": ["$4; 7; 10; 13$", "$1; 2; 4; 8$", "$1; 4; 9; 16$", "$5; 5; 5; 5$"], "answer": 2 },
+    { "id": "a-value", "type": "numeric", "prompt": "For a quadratic sequence with second difference $6$, what is $a$ in $T_n = an^2 + bn + c$?", "answer": 3, "tolerance": 0 },
+    { "id": "next", "type": "numeric", "prompt": "Write down the next term of $1; 3; 7; 13; 21; \\ldots$", "answer": 31, "tolerance": 0 },
+    { "id": "general", "type": "open", "marks": 4, "prompt": "Determine the general term of $4; 9; 16; 25; \\ldots$", "memo": "✓ Second difference $2$, $a = 1$ (1)\n✓ $3a + b = 5$, $b = 2$ (1)\n✓ $a + b + c = 4$, $c = 1$ (1)\n✓ $T_n = n^2 + 2n + 1$ (1)" },
+    { "id": "t15", "type": "numeric", "prompt": "If $T_n = 2n^2 - 3n + 1$, calculate $T_{15}$.", "answer": 406, "tolerance": 0 },
+    { "id": "which-term", "type": "open", "marks": 3, "prompt": "Which term of $T_n = n^2 - n + 5$ is equal to $47$?", "memo": "✓ $n^2 - n + 5 = 47$ (1)\n✓ $(n - 7)(n + 6) = 0$ (1)\n✓ $n = 7$ (1)" },
+    { "id": "triangle", "type": "numeric", "prompt": "Using $T_n = \\dfrac{n(n + 1)}{2}$, how many dots are in the 30th triangular number?", "answer": 465, "tolerance": 0 },
+    { "id": "max", "type": "open", "marks": 3, "prompt": "The general term of a sequence is $T_n = -n^2 + 10n + 2$. Find the largest term.", "memo": "✓ Maximum at $n = -\\frac{10}{2(-1)} = 5$ (1)\n✓ $T_5 = -25 + 50 + 2$ (1)\n✓ $= 27$ (1)" },
+    { "id": "negative-second", "type": "truefalse", "prompt": "A quadratic sequence with a negative second difference eventually decreases.", "answer": true }
+  ]
+}

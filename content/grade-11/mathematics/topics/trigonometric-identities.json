@@ -1,0 +1,60 @@
+{
+  "id": "trigonometric-identities",
+  "title": "Trigonometry: Identities, Reduction Formulae and Equations",
+  "term": 2,
+  "summary": "The quotient and square identities, reduction formulae and co-functions, negative angles, proving identities, and finding the general solution of trigonometric equations.",
+  "notes": [
+    { "type": "heading", "text": "Identities" },
+    { "type": "formula", "latex": "\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} \\qquad \\sin^2\\theta + \\cos^2\\theta = 1", "caption": "The quotient identity and the square identity" },
+    { "type": "paragraph", "text": "The square identity can be rearranged: $\\sin^2\\theta = 1 - \\cos^2\\theta$ and $\\cos^2\\theta = 1 - \\sin^2\\theta$." },
+    { "type": "example", "title": "Worked example 1: proving an identity", "problem": "Prove that $\\dfrac{1 - \\cos^2 x}{\\sin x \\cos x} = \\tan x$", "steps": [
+      "LHS $= \\dfrac{\\sin^2 x}{\\sin x \\cos x}$ (square identity)",
+      "$= \\dfrac{\\sin x}{\\cos x} = \\tan x =$ RHS (quotient identity)"
+    ], "answer": "LHS = RHS" },
+    { "type": "callout", "label": "Exam tip", "text": "Work on one side at a time (usually the more complicated one). Change $\\tan$ into $\\dfrac{\\sin}{\\cos}$, look for $\\sin^2 + \\cos^2$, and find common denominators. Never move terms across the equals sign in a proof." },
+    { "type": "heading", "text": "Reduction formulae" },
+    { "type": "table", "caption": "Use the CAST diagram to choose the sign", "headers": ["Angle", "$\\sin$", "$\\cos$", "$\\tan$"], "rows": [
+      ["$180^\\circ - \\theta$ (Q2)", "$\\sin\\theta$", "$-\\cos\\theta$", "$-\\tan\\theta$"],
+      ["$180^\\circ + \\theta$ (Q3)", "$-\\sin\\theta$", "$-\\cos\\theta$", "$\\tan\\theta$"],
+      ["$360^\\circ - \\theta$ (Q4)", "$-\\sin\\theta$", "$\\cos\\theta$", "$-\\tan\\theta$"],
+      ["$-\\theta$", "$-\\sin\\theta$", "$\\cos\\theta$", "$-\\tan\\theta$"],
+      ["$360^\\circ + \\theta$", "$\\sin\\theta$", "$\\cos\\theta$", "$\\tan\\theta$"]
+    ] },
+    { "type": "formula", "latex": "\\sin(90^\\circ - \\theta) = \\cos\\theta \\qquad \\cos(90^\\circ - \\theta) = \\sin\\theta", "caption": "Co-functions (also $\\sin(90^\\circ + \\theta) = \\cos\\theta$ and $\\cos(90^\\circ + \\theta) = -\\sin\\theta$)" },
+    { "type": "example", "title": "Worked example 2", "problem": "Simplify without a calculator: $\\dfrac{\\sin(180^\\circ + x)\\cos(90^\\circ - x)}{\\sin^2(-x)}$", "steps": [
+      "$\\sin(180^\\circ + x) = -\\sin x$; $\\cos(90^\\circ - x) = \\sin x$; $\\sin^2(-x) = (-\\sin x)^2 = \\sin^2 x$",
+      "$= \\dfrac{-\\sin x \\cdot \\sin x}{\\sin^2 x} = -1$"
+    ], "answer": "$-1$" },
+    { "type": "example", "title": "Worked example 3: special angles", "problem": "Evaluate without a calculator: $\\cos 300^\\circ \\cdot \\tan 225^\\circ$", "steps": ["$\\cos 300^\\circ = \\cos(360^\\circ - 60^\\circ) = \\cos 60^\\circ = \\frac{1}{2}$", "$\\tan 225^\\circ = \\tan(180^\\circ + 45^\\circ) = \\tan 45^\\circ = 1$", "Product $= \\frac{1}{2}$"], "answer": "$\\frac{1}{2}$" },
+    { "type": "heading", "text": "General solutions" },
+    { "type": "paragraph", "text": "Because trigonometric functions repeat, an equation such as $\\sin\\theta = 0{,}5$ has infinitely many solutions. The **general solution** describes all of them, with $k \\in \\mathbb{Z}$." },
+    { "type": "table", "headers": ["Equation", "General solution"], "rows": [
+      ["$\\sin\\theta = x$", "$\\theta = \\text{ref} + k \\cdot 360^\\circ$ or $\\theta = (180^\\circ - \\text{ref}) + k \\cdot 360^\\circ$"],
+      ["$\\cos\\theta = x$", "$\\theta = \\pm\\text{ref} + k \\cdot 360^\\circ$"],
+      ["$\\tan\\theta = x$", "$\\theta = \\text{ref} + k \\cdot 180^\\circ$"]
+    ] },
+    { "type": "example", "title": "Worked example 4", "problem": "Find the general solution of $2\\cos(2x) = -1$, and the solutions in $[0^\\circ; 180^\\circ]$.", "steps": [
+      "$\\cos 2x = -\\frac{1}{2}$, and $\\cos^{-1}(-\\frac{1}{2}) = 120^\\circ$.",
+      "$2x = \\pm 120^\\circ + k \\cdot 360^\\circ$",
+      "$x = \\pm 60^\\circ + k \\cdot 180^\\circ$, $k \\in \\mathbb{Z}$",
+      "In $[0^\\circ; 180^\\circ]$: $x = 60^\\circ$ or $x = 120^\\circ$."
+    ], "answer": "$x = \\pm 60^\\circ + k \\cdot 180^\\circ$; $x = 60^\\circ$ or $120^\\circ$" },
+    { "type": "example", "title": "Worked example 5: a quadratic trig equation", "problem": "Solve $2\\sin^2 x - \\sin x - 1 = 0$ for $x \\in [0^\\circ; 360^\\circ]$.", "steps": [
+      "Factorise: $(2\\sin x + 1)(\\sin x - 1) = 0$",
+      "$\\sin x = -\\frac{1}{2}$: $x = 210^\\circ$ or $x = 330^\\circ$",
+      "$\\sin x = 1$: $x = 90^\\circ$"
+    ], "answer": "$x = 90^\\circ$, $210^\\circ$ or $330^\\circ$" }
+  ],
+  "questions": [
+    { "id": "square", "type": "mcq", "prompt": "$1 - \\sin^2\\theta$ simplifies to…", "options": ["$\\cos\\theta$", "$\\cos^2\\theta$", "$\\tan^2\\theta$", "$-\\cos^2\\theta$"], "answer": 1 },
+    { "id": "reduce1", "type": "mcq", "prompt": "$\\cos(180^\\circ - \\theta)$ equals…", "options": ["$\\cos\\theta$", "$-\\cos\\theta$", "$\\sin\\theta$", "$-\\sin\\theta$"], "answer": 1 },
+    { "id": "cofunction", "type": "mcq", "prompt": "$\\sin(90^\\circ - \\theta)$ equals…", "options": ["$\\sin\\theta$", "$-\\cos\\theta$", "$\\cos\\theta$", "$\\tan\\theta$"], "answer": 2 },
+    { "id": "negative", "type": "mcq", "prompt": "$\\tan(-\\theta)$ equals…", "options": ["$\\tan\\theta$", "$-\\tan\\theta$", "$\\frac{1}{\\tan\\theta}$", "$\\cot\\theta$"], "answer": 1 },
+    { "id": "eval", "type": "numeric", "prompt": "Evaluate without a calculator: $\\sin 150^\\circ$", "answer": 0.5, "tolerance": 0 },
+    { "id": "eval2", "type": "numeric", "prompt": "Evaluate without a calculator: $\\tan 315^\\circ$", "answer": -1, "tolerance": 0 },
+    { "id": "simplify", "type": "open", "marks": 4, "prompt": "Simplify: $\\dfrac{\\cos(360^\\circ - x)\\tan(180^\\circ + x)}{\\sin(180^\\circ - x)}$", "memo": "✓ $\\cos x$ (1)\n✓ $\\tan x$ (1)\n✓ $\\sin x$ (1)\n✓ $\\frac{\\cos x \\cdot \\frac{\\sin x}{\\cos x}}{\\sin x} = 1$ (1)" },
+    { "id": "prove", "type": "open", "marks": 4, "prompt": "Prove that $\\dfrac{1}{\\cos x} - \\cos x = \\sin x \\tan x$", "memo": "✓ LHS $= \\frac{1 - \\cos^2 x}{\\cos x}$ (1)\n✓ $= \\frac{\\sin^2 x}{\\cos x}$ (1)\n✓ $= \\sin x \\cdot \\frac{\\sin x}{\\cos x}$ (1)\n✓ $= \\sin x \\tan x =$ RHS (1)" },
+    { "id": "general", "type": "open", "marks": 4, "prompt": "Determine the general solution of $\\tan(x + 20^\\circ) = 1$.", "memo": "✓ Reference angle $45^\\circ$ (1)\n✓ $x + 20^\\circ = 45^\\circ + k \\cdot 180^\\circ$ (2)\n✓ $x = 25^\\circ + k \\cdot 180^\\circ$, $k \\in \\mathbb{Z}$ (1)" },
+    { "id": "quadratic", "type": "open", "marks": 5, "prompt": "Solve for $x \\in [0^\\circ; 360^\\circ]$: $2\\cos^2 x - 3\\cos x + 1 = 0$", "memo": "✓ $(2\\cos x - 1)(\\cos x - 1) = 0$ (2)\n✓ $\\cos x = \\frac{1}{2}$: $x = 60^\\circ$ or $300^\\circ$ (2)\n✓ $\\cos x = 1$: $x = 0^\\circ$ or $360^\\circ$ (1)" }
+  ]
+}

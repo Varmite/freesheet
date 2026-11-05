@@ -1,0 +1,62 @@
+{
+  "id": "poetry-and-figures-of-speech",
+  "title": "Poetry and Figures of Speech",
+  "term": 2,
+  "summary": "Figures of speech (simile, metaphor, personification, hyperbole, alliteration, onomatopoeia and more), sound devices, poetic structure, tone, mood and theme, applied to an original poem.",
+  "notes": [
+    { "type": "heading", "text": "Figures of speech" },
+    { "type": "table", "headers": ["Figure of speech", "Definition", "Example"], "rows": [
+      ["Simile", "Compares two different things using **like** or **as**", "Her smile was as bright as the sun."],
+      ["Metaphor", "Says one thing **is** another (direct comparison without like/as)", "The classroom was a zoo."],
+      ["Personification", "Gives human qualities to something non-human", "The wind whispered through the trees."],
+      ["Hyperbole", "Deliberate exaggeration for effect", "I've told you a million times!"],
+      ["Alliteration", "Repetition of the same consonant sound at the start of nearby words", "Six slippery snakes slid south."],
+      ["Assonance", "Repetition of vowel sounds in nearby words", "The cold wind blows over the old stone road."],
+      ["Onomatopoeia", "A word that sounds like its meaning", "buzz, crash, sizzle, hiss"],
+      ["Oxymoron", "Two opposite words placed together", "deafening silence, bitter sweet"],
+      ["Pun", "A play on words with two meanings", "I used to be a baker, but I couldn't make enough dough."],
+      ["Irony", "The opposite of what is expected or said", "A fire station burns down."]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "When asked to discuss a figure of speech: (1) **name** it, (2) say **what is compared** or done, and (3) explain the **effect** or meaning in context. A name alone usually earns only one mark." },
+    { "type": "heading", "text": "Poetic structure and sound" },
+    { "type": "list", "items": [
+      "**Stanza**: a group of lines in a poem (like a paragraph).",
+      "**Rhyme scheme**: the pattern of rhyming words at the ends of lines, shown with letters (e.g. ABAB, AABB).",
+      "**Rhythm**: the beat of the poem, created by stressed and unstressed syllables.",
+      "**Repetition**: repeating words or lines for emphasis.",
+      "**Enjambment**: a sentence that runs on from one line to the next without punctuation.",
+      "**Free verse**: poetry without a regular rhyme or rhythm."
+    ] },
+    { "type": "heading", "text": "Tone, mood and theme" },
+    { "type": "list", "items": [
+      "**Tone**: the speaker's attitude towards the subject (e.g. angry, joyful, sad, sarcastic, nostalgic).",
+      "**Mood**: the feeling or atmosphere created for the reader (e.g. peaceful, tense, gloomy).",
+      "**Theme**: the central message or idea about life (e.g. the importance of family; the loss of childhood)."
+    ] },
+    { "type": "passage", "title": "Grandfather's Hands (an original poem written for FreeSheet)", "text": "My grandfather's hands are maps of old roads,\ncracked rivers running from knuckle to wrist.\nThey have carried bricks and babies,\nheld the reins of stubborn donkeys,\nand once, a lifetime ago, a girl's shy hand\nat a wedding in the rain.\n\nNow they rest on the arms of his chair\nlike two tired birds after a long migration.\nBut when the radio plays the old songs,\nthey wake, they tap, they drum, drum, drum\nthe beat of every year he has danced through." },
+    { "type": "example", "title": "Analysing the poem", "problem": "Discuss the metaphor in line 1 and the simile in lines 7 to 8.", "steps": [
+      "Metaphor: the hands **are** 'maps of old roads'. The lines and wrinkles on the hands are compared to roads on a map.",
+      "Effect: it suggests that his hands record the journey of his long life and all the places and work they have known.",
+      "Simile: the hands rest 'like two tired birds after a long migration'.",
+      "Effect: it shows that the hands are now still and weary after a lifetime of work, but birds also fly again, preparing us for the hands 'waking' in stanza 2."
+    ], "answer": "Name the figure, say what is compared, explain the effect." }
+  ],
+  "questions": [
+    { "id": "simile", "type": "mcq", "prompt": "'He ran like the wind.' This is an example of…", "options": ["a metaphor", "a simile", "personification", "hyperbole"], "answer": 1 },
+    { "id": "personification", "type": "mcq", "prompt": "'The old car groaned up the hill.' This is an example of…", "options": ["alliteration", "onomatopoeia", "personification", "oxymoron"], "answer": 2 },
+    { "id": "onomatopoeia", "type": "short", "prompt": "What is a word that sounds like the noise it describes called?", "answers": ["onomatopoeia"] },
+    { "id": "stanza", "type": "short", "prompt": "What is a group of lines in a poem called?", "answers": ["stanza", "a stanza", "verse"] },
+    { "id": "figures", "type": "match", "marks": 5, "prompt": "Identify the figure of speech.", "pairs": [
+      { "left": "I'm so hungry I could eat a horse.", "right": "Hyperbole" },
+      { "left": "Peter picked purple peppers.", "right": "Alliteration" },
+      { "left": "The silence was deafening.", "right": "Oxymoron" },
+      { "left": "Life is a rollercoaster.", "right": "Metaphor" },
+      { "left": "The kettle hissed angrily.", "right": "Personification" }
+    ] },
+    { "id": "drum", "type": "open", "marks": 2, "prompt": "In 'Grandfather's Hands', identify the sound device in 'they drum, drum, drum' and explain its effect.", "memo": "✓ Repetition / onomatopoeia (1)\n✓ It imitates the rhythm of his tapping to the music and shows his joy and energy returning (1)" },
+    { "id": "tone", "type": "open", "marks": 2, "prompt": "Describe the speaker's tone in the poem. Support your answer with evidence.", "memo": "✓ Loving / admiring / affectionate / nostalgic (1)\n✓ Evidence, e.g. the tender memories of his life's work and the wedding, and the joyful final lines (1)" },
+    { "id": "theme", "type": "open", "marks": 2, "prompt": "What is the theme of the poem?", "memo": "✓✓ e.g. Old age does not erase a person's rich life and spirit; the body may tire but memories and joy remain (2)" },
+    { "id": "free-verse", "type": "truefalse", "prompt": "'Grandfather's Hands' follows a regular rhyme scheme.", "answer": false, "explanation": "It is written in free verse." },
+    { "id": "metaphor-analysis", "type": "open", "marks": 3, "prompt": "Discuss the metaphor 'cracked rivers running from knuckle to wrist' (line 2).", "memo": "✓ Name: metaphor (1)\n✓ The veins/lines on his hands are compared to dry, cracked rivers (1)\n✓ Effect: suggests age, hard work and a life lived through dry and difficult times (1)" }
+  ]
+}

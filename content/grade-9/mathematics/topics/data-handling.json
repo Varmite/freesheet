@@ -1,0 +1,87 @@
+{
+  "id": "data-handling",
+  "title": "Data Handling",
+  "term": 4,
+  "summary": "Summarise data with the mean, median, mode, range, quartiles, percentiles and interquartile range, identify outliers, calculate the mean from a frequency table, and draw and interpret scatter plots and broken-line graphs.",
+  "notes": [
+    { "type": "heading", "text": "Measures of central tendency (revision)" },
+    { "type": "paragraph", "text": "The **mean** is the sum of the values divided by the number of values; the **median** is the middle value of the **ordered** data; the **mode** is the value that occurs most often. Each summarises the \"centre\" of the data in a different way." },
+    { "type": "example", "title": "Worked example 1: the mean from a frequency table", "problem": "The number of goals a team scored in 15 matches is shown below. Calculate the mean.\nGoals: 0, 1, 2, 3, 4\nNumber of matches: 3, 5, 4, 2, 1", "steps": [
+      "Multiply each value by its frequency: $0 \\times 3 + 1 \\times 5 + 2 \\times 4 + 3 \\times 2 + 4 \\times 1 = 0 + 5 + 8 + 6 + 4 = 23$ goals.",
+      "Mean $= \\dfrac{23}{15} \\approx 1{,}53$ goals per match."
+    ], "answer": "$\\approx 1{,}53$" },
+    { "type": "callout", "label": "Common mistake", "text": "Do not divide by the number of rows in the table (5). Divide by the total frequency, the number of matches (15)." },
+
+    { "type": "heading", "text": "Measures of dispersion (spread)" },
+    { "type": "paragraph", "text": "Two data sets can have the same mean but very different spreads. **Quartiles** divide the ordered data into four equal parts." },
+    { "type": "table", "caption": "Quartiles and spread", "headers": ["Measure", "Meaning"], "rows": [
+      ["Minimum and maximum", "The smallest and largest values (the extremes)"],
+      ["Lower quartile $Q_1$", "The median of the lower half of the data (25th percentile)"],
+      ["Median $Q_2$", "The middle value (50th percentile)"],
+      ["Upper quartile $Q_3$", "The median of the upper half of the data (75th percentile)"],
+      ["Range", "Maximum − minimum"],
+      ["Interquartile range (IQR)", "$Q_3 - Q_1$: the spread of the middle 50% of the data"]
+    ] },
+    { "type": "example", "title": "Worked example 2: an odd number of values", "problem": "Find the quartiles, range and IQR of: $3;\\ 5;\\ 7;\\ 8;\\ 9;\\ 11;\\ 13;\\ 15;\\ 18$", "steps": [
+      "There are 9 values; the median is the 5th: $Q_2 = 9$.",
+      "Lower half (values below the median): $3;\\ 5;\\ 7;\\ 8$, so $Q_1 = \\dfrac{5 + 7}{2} = 6$.",
+      "Upper half: $11;\\ 13;\\ 15;\\ 18$, so $Q_3 = \\dfrac{13 + 15}{2} = 14$.",
+      "Range $= 18 - 3 = 15$; IQR $= 14 - 6 = 8$."
+    ], "answer": "$Q_1 = 6$, $Q_2 = 9$, $Q_3 = 14$, range 15, IQR 8" },
+    { "type": "example", "title": "Worked example 3: an even number of values", "problem": "Find the quartiles and IQR of: $12;\\ 15;\\ 17;\\ 20;\\ 22;\\ 25;\\ 28;\\ 30$", "steps": [
+      "Median: halfway between the 4th and 5th values: $\\dfrac{20 + 22}{2} = 21$.",
+      "Lower half $12;\\ 15;\\ 17;\\ 20$: $Q_1 = 16$.",
+      "Upper half $22;\\ 25;\\ 28;\\ 30$: $Q_3 = 26{,}5$.",
+      "IQR $= 26{,}5 - 16 = 10{,}5$."
+    ], "answer": "$Q_1 = 16$, median $21$, $Q_3 = 26{,}5$, IQR $10{,}5$" },
+    { "type": "definition", "term": "Percentile", "text": "The $p$th **percentile** is the value below which $p\\%$ of the data lies. If your mark is at the 90th percentile, you did better than 90% of the learners. $Q_1$, the median and $Q_3$ are the 25th, 50th and 75th percentiles." },
+
+    { "type": "heading", "text": "Outliers" },
+    { "type": "paragraph", "text": "An **outlier** is a value that is very far from the rest of the data. It may be a mistake, or a genuinely unusual value. Outliers strongly affect the **mean** and the **range**, but hardly affect the median and the IQR." },
+    { "type": "example", "title": "Worked example 4", "problem": "The ages of learners at a party are $5;\\ 6;\\ 6;\\ 7;\\ 8;\\ 9$, and one adult aged $40$ is also counted. Compare the mean and median with and without the adult.", "steps": [
+      "With the adult: mean $= \\dfrac{81}{7} \\approx 11{,}57$; median $= 7$.",
+      "Without the adult: mean $= \\dfrac{41}{6} \\approx 6{,}83$; median $= 6{,}5$.",
+      "The outlier pulls the mean up by almost 5 years but moves the median by only half a year."
+    ], "answer": "The median is the better summary when there is an outlier." },
+
+    { "type": "heading", "text": "Scatter plots and broken-line graphs" },
+    { "type": "paragraph", "text": "A **scatter plot** shows pairs of numerical data as points, to see whether two variables are related. If the points tend to go up from left to right, there is a **positive correlation**; down from left to right is a **negative correlation**; no pattern means **no correlation**." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 205\" font-family=\"sans-serif\" font-size=\"12\"><g stroke=\"#000\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"40\" y1=\"170\" x2=\"305\" y2=\"170\"/><line x1=\"40\" y1=\"170\" x2=\"40\" y2=\"15\"/><line x1=\"90\" y1=\"170\" x2=\"90\" y2=\"175\"/><line x1=\"140\" y1=\"170\" x2=\"140\" y2=\"175\"/><line x1=\"190\" y1=\"170\" x2=\"190\" y2=\"175\"/><line x1=\"240\" y1=\"170\" x2=\"240\" y2=\"175\"/><line x1=\"290\" y1=\"170\" x2=\"290\" y2=\"175\"/><line x1=\"35\" y1=\"95\" x2=\"40\" y2=\"95\"/><line x1=\"35\" y1=\"20\" x2=\"40\" y2=\"20\"/></g><g fill=\"#000\"><circle cx=\"65\" cy=\"117.5\" r=\"3.5\"/><circle cx=\"90\" cy=\"107\" r=\"3.5\"/><circle cx=\"90\" cy=\"95\" r=\"3.5\"/><circle cx=\"115\" cy=\"98\" r=\"3.5\"/><circle cx=\"140\" cy=\"87.5\" r=\"3.5\"/><circle cx=\"165\" cy=\"80\" r=\"3.5\"/><circle cx=\"165\" cy=\"68\" r=\"3.5\"/><circle cx=\"190\" cy=\"72.5\" r=\"3.5\"/><circle cx=\"215\" cy=\"59\" r=\"3.5\"/><circle cx=\"240\" cy=\"53\" r=\"3.5\"/><circle cx=\"265\" cy=\"42.5\" r=\"3.5\"/><circle cx=\"290\" cy=\"35\" r=\"3.5\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"40\" y=\"187\">0</text><text x=\"90\" y=\"187\">2</text><text x=\"140\" y=\"187\">4</text><text x=\"190\" y=\"187\">6</text><text x=\"240\" y=\"187\">8</text><text x=\"290\" y=\"187\">10</text><text x=\"170\" y=\"202\">Hours studied</text><text x=\"26\" y=\"99\">50</text><text x=\"24\" y=\"24\">100</text><text x=\"12\" y=\"95\" transform=\"rotate(-90 12 95)\">Test mark (%)</text></g></svg>", "caption": "Scatter plot of hours studied against test mark for 12 learners: a positive correlation." },
+    { "type": "callout", "label": "Remember", "text": "Correlation does not prove that one thing **causes** the other. Ice-cream sales and drownings both rise in summer, but ice cream does not cause drowning; hot weather affects both." },
+    { "type": "paragraph", "text": "A **broken-line graph** joins data points in time order with straight lines. It is used to show change over time, such as monthly rainfall or a town's population over several years." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "Mean from a frequency table: $\\frac{\\text{sum of (value} \\times \\text{frequency)}}{\\text{total frequency}}$.",
+      "$Q_1$ and $Q_3$ are the medians of the lower and upper halves; IQR $= Q_3 - Q_1$.",
+      "Percentiles: $Q_1$ = 25th, median = 50th, $Q_3$ = 75th.",
+      "Outliers distort the mean and range; the median and IQR are more resistant.",
+      "Scatter plots show positive, negative or no correlation; correlation is not causation.",
+      "Broken-line graphs show change over time."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "Find the median of $3;\\ 5;\\ 7;\\ 8;\\ 9;\\ 11;\\ 13;\\ 15;\\ 18$.", "answer": 9, "tolerance": 0, "explanation": "9 values: the 5th value is $9$." },
+    { "id": "q2", "type": "numeric", "prompt": "Find the lower quartile $Q_1$ of $3;\\ 5;\\ 7;\\ 8;\\ 9;\\ 11;\\ 13;\\ 15;\\ 18$.", "answer": 6, "tolerance": 0, "explanation": "Lower half $3;\\ 5;\\ 7;\\ 8$: median $= \\frac{5 + 7}{2} = 6$." },
+    { "id": "q3", "type": "numeric", "prompt": "Find the upper quartile $Q_3$ of $3;\\ 5;\\ 7;\\ 8;\\ 9;\\ 11;\\ 13;\\ 15;\\ 18$.", "answer": 14, "tolerance": 0, "explanation": "Upper half $11;\\ 13;\\ 15;\\ 18$: median $= \\frac{13 + 15}{2} = 14$." },
+    { "id": "q4", "type": "numeric", "prompt": "Find the interquartile range of $3;\\ 5;\\ 7;\\ 8;\\ 9;\\ 11;\\ 13;\\ 15;\\ 18$.", "answer": 8, "tolerance": 0, "explanation": "$Q_3 - Q_1 = 14 - 6 = 8$." },
+    { "id": "q5", "type": "mcq", "prompt": "What does the scatter plot of hours studied against test mark in the notes show?", "options": ["A negative correlation", "No correlation", "A positive correlation", "That studying causes high marks for certain"], "answer": 2, "explanation": "The points rise from left to right. (A correlation alone does not prove cause.)" },
+    { "id": "q6", "type": "truefalse", "prompt": "An outlier affects the interquartile range much more than it affects the range.", "answer": false, "explanation": "The range uses the extreme values, so an outlier changes it a lot. The IQR uses only the middle 50%, so it hardly changes." },
+    { "id": "q7", "type": "numeric", "prompt": "Find the median of $12;\\ 15;\\ 17;\\ 20;\\ 22;\\ 25;\\ 28;\\ 30$.", "answer": 21, "tolerance": 0, "explanation": "Halfway between the 4th and 5th values: $\\frac{20 + 22}{2} = 21$." },
+    { "id": "q8", "type": "mcq", "prompt": "Which graph is best for investigating whether two numerical variables are related?", "options": ["Pie chart", "Bar graph", "Scatter plot", "Stem-and-leaf display"], "answer": 2, "explanation": "A scatter plot shows each pair of values as a point." },
+    { "id": "q9", "type": "match", "prompt": "Match each term with its meaning.", "marks": 5, "pairs": [
+      { "left": "Quartiles", "right": "Values that divide ordered data into four equal parts" },
+      { "left": "Interquartile range", "right": "Upper quartile minus lower quartile" },
+      { "left": "Outlier", "right": "A value far away from the rest of the data" },
+      { "left": "Percentile", "right": "Value below which a given percentage of the data lies" },
+      { "left": "Range", "right": "Maximum minus minimum" }
+    ], "explanation": "These are the measures of dispersion in Grade 9." },
+    { "id": "q10", "type": "mcq", "prompt": "The 50th percentile is the same as the...", "options": ["mean", "mode", "median", "upper quartile"], "answer": 2, "explanation": "Half the data lies below the median." },
+    { "id": "q11", "type": "numeric", "prompt": "In 15 matches a team scored 0 goals 3 times, 1 goal 5 times, 2 goals 4 times, 3 goals twice and 4 goals once. Calculate the mean number of goals per match, correct to two decimal places.", "answer": 1.53, "tolerance": 0.006, "explanation": "$\\frac{0 + 5 + 8 + 6 + 4}{15} = \\frac{23}{15} \\approx 1{,}53$." },
+    { "id": "q12", "type": "truefalse", "prompt": "A broken-line graph is a good way to show how a quantity changes over time.", "answer": true, "explanation": "Joining the points in time order shows increases and decreases clearly." },
+    { "id": "q13", "type": "open", "marks": 4, "prompt": "For the data $12;\\ 15;\\ 17;\\ 20;\\ 22;\\ 25;\\ 28;\\ 30$, find the median, the lower and upper quartiles, and the interquartile range.", "memo": "Median $= 21$ ✓ (1)\n$Q_1 = 16$ ✓ (1)\n$Q_3 = 26{,}5$ ✓ (1)\nIQR $= 10{,}5$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "The table shows the number of siblings of 20 learners.\nSiblings: 0, 1, 2, 3, 4\nLearners: 2, 6, 7, 3, 2\nCalculate the mean number of siblings.", "memo": "$0 \\times 2 + 1 \\times 6 + 2 \\times 7 + 3 \\times 3 + 4 \\times 2 = 37$ ✓ (1)\nTotal frequency 20 ✓ (1)\nMean $= 37 \\div 20 = 1{,}85$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 3, "prompt": "Look at the scatter plot of hours studied against test mark in the notes.\n(a) Describe the correlation.  (1)\n(b) Estimate the mark of a learner who studies for 6 hours.  (1)\n(c) Does the graph prove that studying longer causes higher marks? Explain.  (1)", "memo": "(a) Positive correlation ✓ (1)\n(b) About 65% to 70% ✓ (1)\n(c) No: correlation does not prove cause; other factors also affect marks ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 4, "prompt": "The ages of people at a party are $5;\\ 6;\\ 6;\\ 7;\\ 8;\\ 9;\\ 40$.\n(a) Identify the outlier.  (1)\n(b) Calculate the mean with and without the outlier.  (2)\n(c) Which measure, the mean or the median, better describes a typical age? Explain.  (1)", "memo": "(a) $40$ ✓ (1)\n(b) With: $81 \\div 7 \\approx 11{,}57$ ✓; without: $41 \\div 6 \\approx 6{,}83$ ✓ (2)\n(c) The median ($7$), because the outlier pulls the mean up ✓ (1)" }
+  ]
+}

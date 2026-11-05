@@ -1,0 +1,57 @@
+{
+  "id": "apartheid-from-1948",
+  "title": "Turning Points: Apartheid from 1948",
+  "term": 2,
+  "summary": "Why the National Party won the 1948 election, what apartheid meant, the main apartheid laws, and how they affected people's daily lives.",
+  "notes": [
+    { "type": "heading", "text": "From segregation to apartheid" },
+    { "type": "paragraph", "text": "Long before 1948, laws in South Africa separated people by race (**segregation**), for example the **1913 Natives Land Act**, which allowed black South Africans to own land in only about 7% (later 13%) of the country. In **1948** the **National Party** (NP), led by **D. F. Malan**, won the whole-white election and introduced **apartheid** ('apartness'), a much stricter and more complete system of racial separation and white minority rule." },
+    { "type": "heading", "text": "Why did the National Party win in 1948?" },
+    { "type": "list", "items": [
+      "Many white voters feared the growth of the black urban population during and after World War II.",
+      "The NP promised to protect white workers' jobs and Afrikaner interests.",
+      "Afrikaner nationalism had grown strongly in the 1930s and 1940s.",
+      "Only white voters (and a few coloured voters in the Cape) could vote; the NP won more seats even though the United Party won more votes."
+    ] },
+    { "type": "heading", "text": "The main apartheid laws" },
+    { "type": "table", "headers": ["Law", "Year", "What it did"], "rows": [
+      ["Prohibition of Mixed Marriages Act", "1949", "Banned marriages between white people and people of other races"],
+      ["Immorality Amendment Act", "1950", "Made relationships across the colour line a crime"],
+      ["Population Registration Act", "1950", "Classified every person by race: White, Coloured, Indian or 'Native' (Black). Race determined where you could live, work and go to school"],
+      ["Group Areas Act", "1950", "Divided towns and cities into separate areas for each race; people of colour were forcibly removed, e.g. from **Sophiatown** (1955) and later **District Six**"],
+      ["Suppression of Communism Act", "1950", "Banned the Communist Party and allowed the government to ban anyone who opposed it"],
+      ["Bantu Authorities Act", "1951", "Set up tribal authorities in the reserves, later the 'homelands'"],
+      ["Reservation of Separate Amenities Act", "1953", "Separate (and unequal) beaches, buses, toilets, parks and post offices"],
+      ["Bantu Education Act", "1953", "Separate, inferior education for black learners, designed to prepare them for unskilled labour"],
+      ["Natives (Abolition of Passes) Act", "1952", "In fact replaced passes with a single **reference book (dompas)** that all black men, and later women, had to carry"]
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "Apartheid was based on the idea of **'separate development'**. In practice, it gave white South Africans political power and the best land, jobs, schools and services, while black, coloured and Indian South Africans were denied rights and opportunities." },
+    { "type": "passage", "title": "Source G: Dr H. F. Verwoerd, Minister of Native Affairs, 1953 (adapted)", "text": "There is no place for the Bantu in the European community above the level of certain forms of labour. What is the use of teaching a Bantu child mathematics when it cannot use it in practice?" },
+    { "type": "heading", "text": "Effects on daily life" },
+    { "type": "list", "items": [
+      "Families were removed from their homes and moved to townships far from city centres and jobs.",
+      "Black workers were arrested in their hundreds of thousands for not carrying a pass.",
+      "Schools for black learners had far less funding, overcrowded classes and poorly trained teachers.",
+      "People of different races could not legally marry, live together, or use the same facilities.",
+      "Black South Africans could not vote for the national parliament."
+    ] },
+    { "type": "paragraph", "text": "Later, under **grand apartheid**, the government created ten **homelands** (Bantustans) and declared four of them 'independent' (Transkei, Bophuthatswana, Venda and Ciskei), taking away the South African citizenship of millions of people." }
+  ],
+  "questions": [
+    { "id": "1948", "type": "short", "prompt": "Which party won the 1948 election and introduced apartheid?", "answers": ["national party", "the national party", "np"] },
+    { "id": "malan", "type": "mcq", "prompt": "Who became Prime Minister in 1948?", "options": ["H. F. Verwoerd", "D. F. Malan", "J. G. Strijdom", "Jan Smuts"], "answer": 1 },
+    { "id": "group-areas", "type": "mcq", "prompt": "Which law divided towns into separate residential areas for each race?", "options": ["Population Registration Act", "Group Areas Act", "Bantu Education Act", "Separate Amenities Act"], "answer": 1 },
+    { "id": "dompas", "type": "short", "prompt": "What was the nickname of the reference book that black South Africans had to carry?", "answers": ["dompas", "the dompas"] },
+    { "id": "land-act", "type": "truefalse", "prompt": "The Natives Land Act was passed in 1913, before apartheid began.", "answer": true },
+    { "id": "laws-match", "type": "match", "marks": 4, "prompt": "Match each law to what it did.", "pairs": [
+      { "left": "Population Registration Act", "right": "Classified everyone by race" },
+      { "left": "Bantu Education Act", "right": "Inferior education for black learners" },
+      { "left": "Separate Amenities Act", "right": "Separate beaches, buses and toilets" },
+      { "left": "Mixed Marriages Act", "right": "Banned marriages across races" }
+    ] },
+    { "id": "why-won", "type": "open", "marks": 3, "prompt": "Give THREE reasons why the National Party won the 1948 election.", "memo": "Any three (1 each): white fears of black urbanisation; promise to protect white jobs; Afrikaner nationalism; only whites could vote; electoral system gave NP more seats" },
+    { "id": "source-g", "type": "open", "marks": 3, "prompt": "Read Source G. (a) What does Verwoerd believe the purpose of education for black learners should be? (b) How does this source show that apartheid was racist?", "memo": "(a) ✓ To prepare them only for labour / low-level jobs (1)\n(b) ✓ He assumes black people should not rise above certain jobs (1) ✓ and denies them equal opportunities based on race (1)" },
+    { "id": "removals", "type": "open", "marks": 2, "prompt": "Name ONE place from which people were forcibly removed and explain why.", "memo": "✓ Sophiatown / District Six / Cato Manor (1)\n✓ It was declared a white area under the Group Areas Act (1)" },
+    { "id": "separate-dev", "type": "open", "marks": 2, "prompt": "Explain why 'separate development' was not equal development.", "memo": "✓ White people received the best land, jobs, schools and services (1)\n✓ Other groups received far less and had no political rights (1)" }
+  ]
+}

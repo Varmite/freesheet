@@ -1,0 +1,42 @@
+{
+  "id": "numbers-and-calculations",
+  "title": "Numbers and Calculations in Context",
+  "term": 1,
+  "summary": "Number formats, rounding in context, percentages, ratio and proportion, and rates, applied to everyday South African situations.",
+  "notes": [
+    { "type": "heading", "text": "Number formats and rounding" },
+    { "type": "list", "items": [
+      "South Africa uses a **decimal comma** (12,5) and a **space** to separate thousands (25 000).",
+      "Money is written as **R1 250,00**, rounded to two decimal places (cents).",
+      "**Round in context**: if 7,2 buses are needed, you need **8** buses (round up). If you can afford 7,8 bags of cement, you can buy only **7** (round down)."
+    ] },
+    { "type": "heading", "text": "Percentages" },
+    { "type": "table", "headers": ["Calculation", "Method", "Example"], "rows": [
+      ["Percentage of an amount", "$\\frac{\\text{percentage}}{100} \\times \\text{amount}$", "15% of R240 = R36"],
+      ["Increase by a percentage", "amount × (1 + %)", "R240 + 15% = R240 × 1,15 = R276"],
+      ["Decrease by a percentage", "amount × (1 − %)", "R240 − 25% = R240 × 0,75 = R180"],
+      ["Percentage change", "$\\frac{\\text{new} - \\text{old}}{\\text{old}} \\times 100$", "R50 → R60: $\\frac{10}{50} \\times 100 = 20\\%$"]
+    ] },
+    { "type": "example", "title": "Worked example 1: VAT", "problem": "A jacket costs R690 including 15% VAT. What is the price before VAT?", "steps": ["Price including VAT = 115% of the price without VAT.", "Price without VAT = R690 ÷ 1,15 = R600"], "answer": "R600" },
+    { "type": "callout", "label": "Common mistake", "text": "To remove VAT, divide by 1,15. Do NOT subtract 15% of the VAT-inclusive price: R690 − 15% = R586,50 is wrong." },
+    { "type": "heading", "text": "Ratio and proportion" },
+    { "type": "example", "title": "Worked example 2: sharing in a ratio", "problem": "Thabo and Lindi share R1 800 in the ratio 2 : 3. How much does each get?", "steps": ["Total parts: 2 + 3 = 5; one part = R1 800 ÷ 5 = R360", "Thabo: 2 × R360 = R720; Lindi: 3 × R360 = R1 080"], "answer": "R720 and R1 080" },
+    { "type": "example", "title": "Worked example 3: recipe", "problem": "A recipe for 4 people uses 300 g of mince. How much is needed for 10 people?", "steps": ["Mince per person = 300 ÷ 4 = 75 g", "For 10 people: 75 × 10 = 750 g"], "answer": "750 g" },
+    { "type": "heading", "text": "Rates" },
+    { "type": "paragraph", "text": "A **rate** compares two quantities with different units, for example km/h, R/kg or litres per 100 km." },
+    { "type": "example", "title": "Worked example 4: best buy", "problem": "Which is better value: 2 kg of rice for R42,50 or 5 kg for R99,95?", "steps": ["2 kg: R42,50 ÷ 2 = R21,25 per kg", "5 kg: R99,95 ÷ 5 = R19,99 per kg"], "answer": "The 5 kg bag is better value." },
+    { "type": "example", "title": "Worked example 5: fuel consumption", "problem": "A car uses 7,5 litres per 100 km. Petrol costs R23,40 per litre. What does fuel cost for a 420 km trip?", "steps": ["Litres: 420 ÷ 100 × 7,5 = 31,5 ℓ", "Cost: 31,5 × R23,40 = R737,10"], "answer": "R737,10" }
+  ],
+  "questions": [
+    { "id": "round-up", "type": "numeric", "prompt": "A school must transport 230 learners. Each bus holds 65 learners. How many buses are needed?", "answer": 4, "tolerance": 0 },
+    { "id": "percent", "type": "numeric", "prompt": "Calculate 12% of R850.", "answer": 102, "tolerance": 0, "unit": "rand" },
+    { "id": "increase", "type": "numeric", "prompt": "A taxi fare of R18 increases by 10%. What is the new fare?", "answer": 19.8, "tolerance": 0.01, "unit": "rand" },
+    { "id": "vat-remove", "type": "numeric", "prompt": "A phone costs R4 600 including 15% VAT. What is the price before VAT?", "answer": 4000, "tolerance": 0.01, "unit": "rand" },
+    { "id": "change", "type": "numeric", "prompt": "The price of bread rose from R16 to R18. Calculate the percentage increase.", "answer": 12.5, "tolerance": 0.01, "unit": "%" },
+    { "id": "ratio", "type": "numeric", "prompt": "Concrete is mixed in the ratio cement : sand = 1 : 4. How many bags of sand are needed for 3 bags of cement?", "answer": 12, "tolerance": 0, "unit": "bags" },
+    { "id": "rate", "type": "numeric", "prompt": "A car travels 270 km in 3 hours. What is its average speed?", "answer": 90, "tolerance": 0, "unit": "km/h" },
+    { "id": "best-buy", "type": "open", "marks": 3, "prompt": "Which is better value: 750 ml of juice for R18,99 or 2 ℓ for R45,99? Show your working.", "memo": "✓ 750 ml: R18,99 ÷ 0,75 = R25,32 per litre (1)\n✓ 2 ℓ: R45,99 ÷ 2 = R23,00 per litre (1)\n✓ 2 ℓ is better value (1)" },
+    { "id": "share", "type": "open", "marks": 3, "prompt": "Three friends invest R2 000, R3 000 and R5 000 in a business and share a profit of R4 500 in the ratio of their investments. How much does each receive?", "memo": "✓ Ratio 2 : 3 : 5, one part = R450 (1)\n✓ R900 and R1 350 (1)\n✓ R2 250 (1)" },
+    { "id": "fuel", "type": "open", "marks": 3, "prompt": "A bakkie uses 9 ℓ per 100 km. Diesel costs R22,80 per litre. Calculate the fuel cost of a 250 km journey.", "memo": "✓ 250 ÷ 100 × 9 = 22,5 ℓ (1)\n✓ 22,5 × R22,80 (1)\n✓ = R513,00 (1)" }
+  ]
+}

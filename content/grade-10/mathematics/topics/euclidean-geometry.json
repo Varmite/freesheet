@@ -1,0 +1,67 @@
+{
+  "id": "euclidean-geometry",
+  "title": "Euclidean Geometry",
+  "term": 2,
+  "summary": "Properties of special quadrilaterals, proving that a quadrilateral is a parallelogram, and the midpoint theorem and its converse, with reasons in geometry proofs.",
+  "notes": [
+    { "type": "heading", "text": "Revision: lines, angles and triangles" },
+    { "type": "list", "items": [
+      "Angles on a straight line add up to $180^\\circ$ (∠s on a str line).",
+      "Vertically opposite angles are equal (vert opp ∠s).",
+      "Parallel lines: corresponding ∠s are equal; alternate ∠s are equal; co-interior ∠s add up to $180^\\circ$.",
+      "Angles in a triangle add up to $180^\\circ$ (sum of ∠s in △); the exterior ∠ of a △ equals the sum of the interior opposite ∠s.",
+      "Congruent triangles: SSS, SAS, AAS, RHS."
+    ] },
+    { "type": "heading", "text": "Properties of quadrilaterals" },
+    { "type": "table", "headers": ["Quadrilateral", "Properties"], "rows": [
+      ["Parallelogram", "Both pairs of opposite sides parallel and equal; opposite angles equal; diagonals bisect each other"],
+      ["Rectangle", "A parallelogram with four right angles; diagonals equal"],
+      ["Rhombus", "A parallelogram with four equal sides; diagonals bisect each other at right angles and bisect the angles"],
+      ["Square", "A rectangle and a rhombus: all sides equal, all angles $90^\\circ$, diagonals equal and perpendicular"],
+      ["Trapezium", "At least one pair of opposite sides parallel"],
+      ["Kite", "Two pairs of adjacent sides equal; diagonals perpendicular; one diagonal bisects the other"]
+    ] },
+    { "type": "heading", "text": "Proving a quadrilateral is a parallelogram" },
+    { "type": "paragraph", "text": "A quadrilateral is a parallelogram if **any one** of these is true:" },
+    { "type": "list", "ordered": true, "items": [
+      "Both pairs of opposite sides are parallel (definition).",
+      "Both pairs of opposite sides are equal.",
+      "Both pairs of opposite angles are equal.",
+      "The diagonals bisect each other.",
+      "One pair of opposite sides is both equal and parallel."
+    ] },
+    { "type": "heading", "text": "The midpoint theorem" },
+    { "type": "callout", "label": "Midpoint theorem", "text": "The line segment joining the midpoints of two sides of a triangle is **parallel** to the third side and **half** its length. (Reason: midpt theorem)" },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 190' font-family='sans-serif' font-size='13'><rect width='280' height='190' fill='white'/><polygon points='140,20 30,170 250,170' fill='none' stroke='black' stroke-width='2'/><line x1='85' y1='95' x2='195' y2='95' stroke='black' stroke-width='2'/><circle cx='85' cy='95' r='3'/><circle cx='195' cy='95' r='3'/><text x='136' y='15'>A</text><text x='16' y='182'>B</text><text x='254' y='182'>C</text><text x='68' y='94'>D</text><text x='200' y='94'>E</text><text x='53' y='130'>|</text><text x='108' y='58'>|</text><text x='166' y='58'>||</text><text x='220' y='130'>||</text></svg>", "caption": "D and E are the midpoints of AB and AC, so DE ∥ BC and DE = ½BC" },
+    { "type": "callout", "label": "Converse", "text": "A line drawn through the midpoint of one side of a triangle, **parallel** to a second side, bisects the third side. (Reason: line through midpt ∥ to 2nd side)" },
+    { "type": "example", "title": "Worked example 1", "problem": "In △ABC, D and E are the midpoints of AB and AC. If BC = 14 cm and $\\hat{B} = 65^\\circ$, find DE and $\\hat{ADE}$.", "steps": [
+      "DE = ½BC = 7 cm (midpt theorem).",
+      "DE ∥ BC (midpt theorem), so $\\hat{ADE} = \\hat{B} = 65^\\circ$ (corresp ∠s; DE ∥ BC)."
+    ], "answer": "DE = 7 cm; $\\hat{ADE} = 65^\\circ$" },
+    { "type": "example", "title": "Worked example 2: a proof", "problem": "P, Q, R and S are the midpoints of the sides AB, BC, CD and DA of quadrilateral ABCD. Prove that PQRS is a parallelogram.", "steps": [
+      "Draw diagonal AC.",
+      "In △ABC: PQ ∥ AC and PQ = ½AC (midpt theorem).",
+      "In △ADC: SR ∥ AC and SR = ½AC (midpt theorem).",
+      "So PQ ∥ SR and PQ = SR.",
+      "∴ PQRS is a parallelogram (one pair of opp sides = and ∥)."
+    ], "answer": "PQRS is a parallelogram." },
+    { "type": "callout", "label": "Exam tip", "text": "Every statement in a geometry proof needs a **reason** in brackets. Use the accepted abbreviations, e.g. (alt ∠s; AB ∥ CD), (opp sides of ∥m), (midpt theorem)." }
+  ],
+  "questions": [
+    { "id": "rhombus", "type": "mcq", "prompt": "Which quadrilateral has diagonals that bisect each other at right angles but are not necessarily equal?", "options": ["Rectangle", "Rhombus", "Trapezium", "Square"], "answer": 1 },
+    { "id": "co-interior", "type": "numeric", "prompt": "Two co-interior angles between parallel lines are $3x$ and $x + 20^\\circ$. Find $x$.", "answer": 40, "tolerance": 0, "unit": "°" },
+    { "id": "midpoint", "type": "numeric", "prompt": "D and E are the midpoints of AB and AC in △ABC. If DE = 9 cm, how long is BC?", "answer": 18, "tolerance": 0, "unit": "cm" },
+    { "id": "converse", "type": "truefalse", "prompt": "A line through the midpoint of one side of a triangle, parallel to another side, bisects the third side.", "answer": true },
+    { "id": "parallelogram", "type": "mcq", "prompt": "Which condition is NOT enough on its own to prove that a quadrilateral is a parallelogram?", "options": ["Both pairs of opposite sides are equal", "The diagonals bisect each other", "One pair of opposite sides is parallel", "Both pairs of opposite angles are equal"], "answer": 2 },
+    { "id": "properties", "type": "match", "marks": 4, "prompt": "Match each quadrilateral to a property.", "pairs": [
+      { "left": "Rectangle", "right": "Equal diagonals and four right angles" },
+      { "left": "Kite", "right": "Two pairs of adjacent sides equal" },
+      { "left": "Trapezium", "right": "At least one pair of parallel sides" },
+      { "left": "Parallelogram", "right": "Opposite angles equal" }
+    ] },
+    { "id": "angles", "type": "open", "marks": 3, "prompt": "In parallelogram ABCD, $\\hat{A} = 2x + 30^\\circ$ and $\\hat{B} = x$. Find $x$ and $\\hat{C}$, with reasons.", "memo": "✓ $\\hat{A} + \\hat{B} = 180^\\circ$ (co-int ∠s; AD ∥ BC) (1)\n✓ $3x + 30^\\circ = 180^\\circ$, $x = 50^\\circ$ (1)\n✓ $\\hat{C} = \\hat{A} = 130^\\circ$ (opp ∠s of ∥m) (1)" },
+    { "id": "midpt-angles", "type": "open", "marks": 3, "prompt": "In △PQR, M and N are the midpoints of PQ and PR. MN = 6 cm and $\\hat{PMN} = 72^\\circ$. Find QR and $\\hat{Q}$, with reasons.", "memo": "✓ QR = 12 cm (midpt theorem) (1)\n✓ MN ∥ QR (midpt theorem) (1)\n✓ $\\hat{Q} = 72^\\circ$ (corresp ∠s; MN ∥ QR) (1)" },
+    { "id": "proof", "type": "open", "marks": 4, "prompt": "In △ABC, D is the midpoint of AB. A line through D parallel to BC meets AC at E. If AE = 5 cm and DE = 4 cm, find EC and BC, with reasons.", "memo": "✓ E is the midpoint of AC (line through midpt ∥ to 2nd side) (1)\n✓ EC = 5 cm (1)\n✓ DE = ½BC (midpt theorem) (1)\n✓ BC = 8 cm (1)" },
+    { "id": "square", "type": "truefalse", "prompt": "Every square is a rhombus.", "answer": true }
+  ]
+}

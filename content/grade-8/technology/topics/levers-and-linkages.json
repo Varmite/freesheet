@@ -1,0 +1,63 @@
+{
+  "id": "levers-and-linkages",
+  "title": "Mechanical Systems: Levers and Linkages",
+  "term": 2,
+  "summary": "Effort, load and fulcrum, the three classes of levers, mechanical advantage, the law of the lever, and linkages that change the direction of movement.",
+  "notes": [
+    { "type": "heading", "text": "Mechanisms and levers" },
+    { "type": "paragraph", "text": "A **mechanism** is a device that changes one kind of movement or force into another, making work easier. A **lever** is a rigid bar that turns about a fixed point called the **fulcrum** (pivot)." },
+    { "type": "list", "items": [
+      "**Effort**: the force you apply.",
+      "**Load**: the object or resistance being moved.",
+      "**Fulcrum**: the turning point."
+    ] },
+    { "type": "heading", "text": "Three classes of levers" },
+    { "type": "table", "headers": ["Class", "What is in the middle", "Order", "Examples"], "rows": [
+      ["First class", "**Fulcrum** in the middle", "Effort – Fulcrum – Load", "See-saw, crowbar, scissors, pliers, claw hammer pulling a nail"],
+      ["Second class", "**Load** in the middle", "Fulcrum – Load – Effort", "Wheelbarrow, bottle opener, nutcracker"],
+      ["Third class", "**Effort** in the middle", "Fulcrum – Effort – Load", "Tweezers, fishing rod, braai tongs, your forearm"]
+    ] },
+    { "type": "callout", "label": "Memory aid", "text": "**F-L-E** for 1, 2, 3: in a 1st-class lever the **F**ulcrum is in the middle, in a 2nd-class lever the **L**oad is in the middle, in a 3rd-class lever the **E**ffort is in the middle." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 100\" font-family=\"sans-serif\" font-size=\"11\"><line x1=\"20\" y1=\"50\" x2=\"280\" y2=\"50\" stroke=\"black\" stroke-width=\"5\"/><polygon points=\"200,53 188,80 212,80\" fill=\"#999\" stroke=\"black\"/><rect x=\"240\" y=\"22\" width=\"30\" height=\"25\" fill=\"#ccc\" stroke=\"black\"/><line x1=\"40\" y1=\"10\" x2=\"40\" y2=\"44\" stroke=\"black\" stroke-width=\"2\"/><polygon points=\"40,47 34,36 46,36\"/><text x=\"25\" y=\"68\">effort</text><text x=\"180\" y=\"95\">fulcrum</text><text x=\"242\" y=\"17\">load</text></svg>", "caption": "A first-class lever: a long effort arm lifts a heavy load with a small effort" },
+    { "type": "heading", "text": "Mechanical advantage" },
+    { "type": "formula", "latex": "\\text{MA} = \\frac{\\text{load}}{\\text{effort}}", "caption": "Mechanical advantage (no unit)" },
+    { "type": "paragraph", "text": "If **MA > 1**, the lever multiplies force: a small effort moves a large load (crowbar, wheelbarrow). If **MA < 1**, more effort is needed but the load moves further and faster (tweezers, fishing rod: third-class levers)." },
+    { "type": "heading", "text": "The law of the lever (moments)" },
+    { "type": "formula", "latex": "\\text{load} \\times \\text{load arm} = \\text{effort} \\times \\text{effort arm}", "caption": "The arms are the distances from the fulcrum" },
+    { "type": "example", "title": "Calculating effort", "problem": "A crowbar is used to lift a 600 N rock. The rock is 0,2 m from the fulcrum and the effort is applied 1,2 m from the fulcrum. Calculate the effort needed and the mechanical advantage.", "steps": [
+      "600 × 0,2 = effort × 1,2",
+      "120 = effort × 1,2",
+      "Effort = 120 ÷ 1,2 = 100 N",
+      "MA = 600 ÷ 100 = 6"
+    ], "answer": "Effort 100 N; MA = 6" },
+    { "type": "heading", "text": "Linkages" },
+    { "type": "paragraph", "text": "A **linkage** is a set of levers (links) joined together with pivots to transfer and change movement." },
+    { "type": "table", "headers": ["Linkage", "What it does", "Example"], "rows": [
+      ["Reverse-motion linkage", "Makes the output move in the opposite direction to the input", "Pop-up books, some toys"],
+      ["Parallel-motion linkage", "Output moves in the same direction as the input and stays parallel", "Toolbox trays, ironing boards, car windscreen wipers"],
+      ["Bell-crank linkage", "Changes the direction of movement through 90°", "Bicycle brakes, doorbells"],
+      ["Treadle (crank) linkage", "Changes back-and-forth (reciprocating) motion into rotary motion", "Old sewing machines, car engines"]
+    ] }
+  ],
+  "questions": [
+    { "id": "fulcrum", "type": "short", "prompt": "What is the turning point of a lever called?", "answers": ["fulcrum", "pivot"] },
+    { "id": "wheelbarrow", "type": "mcq", "prompt": "A wheelbarrow is which class of lever?", "options": ["First class", "Second class", "Third class"], "answer": 1 },
+    { "id": "tweezers", "type": "mcq", "prompt": "Tweezers are an example of a…", "options": ["first-class lever", "second-class lever", "third-class lever", "linkage"], "answer": 2 },
+    { "id": "ma-calc", "type": "numeric", "prompt": "A lever lifts a 400 N load with an effort of 80 N. Calculate the mechanical advantage.", "answer": 5, "tolerance": 0 },
+    { "id": "effort-calc", "type": "numeric", "prompt": "A load of 300 N is 0,5 m from the fulcrum. The effort is applied 1,5 m from the fulcrum. Calculate the effort.", "answer": 100, "tolerance": 0, "unit": "N" },
+    { "id": "ma-less", "type": "truefalse", "prompt": "Third-class levers have a mechanical advantage of less than 1.", "answer": true },
+    { "id": "classes", "type": "match", "marks": 4, "prompt": "Match each tool to its class of lever.", "pairs": [
+      { "left": "See-saw", "right": "First class" },
+      { "left": "Bottle opener", "right": "Second class" },
+      { "left": "Braai tongs", "right": "Third class" },
+      { "left": "Pliers", "right": "First class (pair)" }
+    ] },
+    { "id": "linkages", "type": "match", "marks": 3, "prompt": "Match each linkage to what it does.", "pairs": [
+      { "left": "Bell crank", "right": "Changes direction through 90°" },
+      { "left": "Reverse motion", "right": "Output moves opposite to input" },
+      { "left": "Parallel motion", "right": "Output stays parallel to input" }
+    ] },
+    { "id": "longer", "type": "open", "marks": 2, "prompt": "Explain why it is easier to lift a heavy rock with a long crowbar than a short one.", "memo": "✓ The effort arm is longer (1)\n✓ so less effort is needed to balance the same load (load × load arm = effort × effort arm) / greater MA (1)" },
+    { "id": "define-ma", "type": "open", "marks": 2, "prompt": "What does a mechanical advantage of 4 mean?", "memo": "✓ The load is four times bigger than the effort (1)\n✓ The mechanism multiplies the effort four times (1)" }
+  ]
+}

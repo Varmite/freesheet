@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "grade": 12,
+  "id": "mathematics",
+  "name": "Mathematics",
+  "description": "CAPS Grade 12 Mathematics: sequences and series, functions and inverses, logarithms, annuities and loans, compound-angle trigonometry, polynomials, differential calculus, circles in analytical geometry, similarity, regression, and counting and probability.",
+  "topics": [
+    { "id": "sequences-and-series", "title": "Number Patterns: Sequences and Series", "term": 1 },
+    { "id": "functions-and-inverses", "title": "Functions and Inverse Functions", "term": 1 },
+    { "id": "exponential-and-logarithmic-functions", "title": "Exponential and Logarithmic Functions", "term": 1 },
+    { "id": "finance-annuities-and-loans", "title": "Finance: Annuities and Loans", "term": 1 },
+    { "id": "compound-angles", "title": "Trigonometry: Compound and Double Angles", "term": 2 },
+    { "id": "trigonometry-2d-and-3d", "title": "Trigonometry: Problems in Two and Three Dimensions", "term": 2 },
+    { "id": "polynomials", "title": "Polynomials: Remainder and Factor Theorems", "term": 2 },
+    { "id": "differential-calculus", "title": "Differential Calculus", "term": 2 },
+    { "id": "analytical-geometry", "title": "Analytical Geometry: Circles and Tangents", "term": 3 },
+    { "id": "euclidean-geometry", "title": "Euclidean Geometry: Proportionality and Similarity", "term": 3 },
+    { "id": "statistics", "title": "Statistics: Regression and Correlation", "term": 3 },
+    { "id": "counting-and-probability", "title": "Counting Principles and Probability", "term": 3 }
+  ],
+  "exams": [
+    { "id": "november-paper-1", "title": "November Examination: Paper 1", "durationMinutes": 120, "totalMarks": 100 },
+    { "id": "november-paper-2", "title": "November Examination: Paper 2", "durationMinutes": 120, "totalMarks": 100 }
+  ]
+}

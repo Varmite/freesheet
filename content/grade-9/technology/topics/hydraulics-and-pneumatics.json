@@ -1,0 +1,55 @@
+{
+  "id": "hydraulics-and-pneumatics",
+  "title": "Hydraulic and Pneumatic Systems",
+  "term": 2,
+  "summary": "How liquids and gases transfer force, Pascal's principle, pressure, mechanical advantage of hydraulic systems, and everyday uses of hydraulics and pneumatics.",
+  "notes": [
+    { "type": "heading", "text": "Fluids and force" },
+    { "type": "list", "items": [
+      "**Hydraulic** systems use a **liquid** (usually oil or water) to transfer force.",
+      "**Pneumatic** systems use a **gas** (usually compressed air) to transfer force."
+    ] },
+    { "type": "table", "headers": ["", "Hydraulic (liquid)", "Pneumatic (air)"], "rows": [
+      ["Compressibility", "Liquids cannot be compressed, so movement is precise and firm", "Gases can be compressed, so movement is springy and cushioned"],
+      ["Force", "Very large forces", "Smaller forces"],
+      ["Speed", "Slower", "Fast"],
+      ["Leaks", "Messy; oil can pollute", "Clean; air escapes harmlessly"],
+      ["Examples", "Car brakes, car jacks, excavators, barber chairs, dump trucks", "Bus doors, dentist's drills, jackhammers, tyre inflation, air brakes on trucks"]
+    ] },
+    { "type": "heading", "text": "Pressure" },
+    { "type": "formula", "latex": "\\text{pressure} = \\frac{\\text{force}}{\\text{area}} \\qquad p = \\frac{F}{A}", "caption": "Pressure is measured in pascals (Pa): 1 Pa = 1 N/m². In syringe calculations we often use N/cm²." },
+    { "type": "heading", "text": "Pascal's principle" },
+    { "type": "callout", "label": "Pascal's principle", "text": "Pressure applied to a liquid in a closed system is transmitted **equally in all directions** throughout the liquid." },
+    { "type": "paragraph", "text": "In a hydraulic system with two cylinders (pistons) of different sizes, the **pressure is the same** in both. A small force on a **small** piston creates a pressure that pushes on a **large** piston with a **larger** force. This is how a hydraulic jack lets one person lift a car." },
+    { "type": "formula", "latex": "\\frac{F_1}{A_1} = \\frac{F_2}{A_2}" },
+    { "type": "example", "title": "A hydraulic jack", "problem": "The small piston of a hydraulic jack has an area of 2 cm² and the large piston an area of 50 cm². A force of 100 N is applied to the small piston. (a) What is the pressure in the liquid? (b) What force does the large piston exert? (c) What is the mechanical advantage?", "steps": [
+      "(a) p = F ÷ A = 100 ÷ 2 = 50 N/cm²",
+      "(b) F₂ = p × A₂ = 50 × 50 = 2 500 N",
+      "(c) MA = load ÷ effort = 2 500 ÷ 100 = 25"
+    ], "answer": "50 N/cm²; 2 500 N; MA = 25" },
+    { "type": "callout", "label": "Remember", "text": "There is a trade-off: the large piston pushes with more force but moves a **shorter distance**. If the small piston moves 25 cm, the large piston in the example moves only 1 cm." },
+    { "type": "heading", "text": "Syringe models" },
+    { "type": "paragraph", "text": "In the classroom, **syringes** connected by plastic tubing model hydraulic systems. Filled with water they act hydraulically (firm, precise); filled with air they act pneumatically (springy). They can be used to operate the arm of a model crane, a robotic hand or a drawbridge." },
+    { "type": "list", "items": [
+      "Remove all air bubbles from a water-filled syringe system so it does not feel spongy.",
+      "Use a smaller input syringe and a larger output syringe to increase force."
+    ] }
+  ],
+  "questions": [
+    { "id": "hydraulic-def", "type": "mcq", "prompt": "A hydraulic system uses…", "options": ["compressed air", "a liquid", "electricity", "gears"], "answer": 1 },
+    { "id": "pascal", "type": "open", "marks": 2, "prompt": "State Pascal's principle.", "memo": "✓ Pressure applied to a liquid in a closed system (1)\n✓ is transmitted equally in all directions (1)" },
+    { "id": "pressure-unit", "type": "short", "prompt": "What is the SI unit of pressure?", "answers": ["pascal", "pa", "pascals"] },
+    { "id": "pressure-calc", "type": "numeric", "prompt": "A force of 60 N acts on a piston with an area of 3 cm². Calculate the pressure in N/cm².", "answer": 20, "tolerance": 0, "unit": "N/cm²" },
+    { "id": "jack", "type": "numeric", "prompt": "A small piston (area 4 cm²) has a force of 80 N applied. The large piston has an area of 40 cm². What force does the large piston exert?", "answer": 800, "tolerance": 0, "unit": "N" },
+    { "id": "compress", "type": "truefalse", "prompt": "Liquids are easily compressed.", "answer": false },
+    { "id": "uses", "type": "match", "marks": 4, "prompt": "Classify each device as hydraulic or pneumatic.", "pairs": [
+      { "left": "Car brakes", "right": "Hydraulic" },
+      { "left": "Jackhammer", "right": "Pneumatic" },
+      { "left": "Excavator arm", "right": "Hydraulic system" },
+      { "left": "Bus door opener", "right": "Pneumatic system" }
+    ] },
+    { "id": "bubbles", "type": "open", "marks": 2, "prompt": "Why should air bubbles be removed from a hydraulic syringe system?", "memo": "✓ Air can be compressed (1)\n✓ so the system becomes spongy and does not transfer force precisely (1)" },
+    { "id": "compare", "type": "open", "marks": 2, "prompt": "Give ONE advantage of hydraulics and ONE advantage of pneumatics.", "memo": "✓ Hydraulics: large force / precise, firm movement (1)\n✓ Pneumatics: clean / fast / cushioned movement / air is free (1)" },
+    { "id": "trade-off", "type": "open", "marks": 2, "prompt": "In a hydraulic jack, the large piston exerts a much bigger force than the effort. What is the disadvantage?", "memo": "✓ The large piston moves a much shorter distance (1)\n✓ so the small piston must be pumped many times / over a long distance (1)" }
+  ]
+}

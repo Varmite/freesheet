@@ -1,0 +1,48 @@
+{
+  "id": "transactional-writing",
+  "title": "Transactional Writing: Applications, Reports and Speeches",
+  "term": 4,
+  "summary": "Format, register and content for letters of application and CVs, formal reports, speeches, reviews and newspaper articles, at 180–200 words.",
+  "notes": [
+    { "type": "heading", "text": "Length and marking" },
+    { "type": "paragraph", "text": "Grade 11 HL transactional texts are usually **180–200 words** (body only). Marks are given for content, planning and format, and for language, style and editing." },
+    { "type": "heading", "text": "Letter of application and CV" },
+    { "type": "list", "items": [
+      "**Letter**: formal layout; refer to the advertisement (where and when it appeared); state the position; highlight relevant skills and experience; say why you are suitable; mention the attached CV; request an interview.",
+      "**CV**: personal details, education, skills, work experience, achievements, interests, references. Keep it clear and in point form."
+    ] },
+    { "type": "heading", "text": "Formal report" },
+    { "type": "table", "headers": ["Section", "Content"], "rows": [
+      ["Title, To, From, Date", "Identifies the report"],
+      ["Terms of reference", "Who asked for the report and why"],
+      ["Procedure", "How information was gathered (survey, interviews, observation)"],
+      ["Findings", "Facts discovered, under subheadings"],
+      ["Conclusions", "What the findings mean"],
+      ["Recommendations", "Actions suggested"]
+    ] },
+    { "type": "heading", "text": "Speeches" },
+    { "type": "paragraph", "text": "Address the audience ('Principal, staff and fellow learners…'); open with a hook; organise points clearly; use **rhetorical devices** (rhetorical questions, repetition, the rule of three, inclusive pronouns); end memorably and thank the audience." },
+    { "type": "heading", "text": "Reviews and articles" },
+    { "type": "list", "items": [
+      "**Review** (film, book, restaurant, music): title of the work, brief overview without spoilers, strengths and weaknesses, a rating or recommendation.",
+      "**Newspaper article**: headline, byline, lead paragraph answering who, what, when, where, why; quotations from witnesses; the most important information first (inverted pyramid)."
+    ] }
+  ],
+  "questions": [
+    { "id": "length", "type": "mcq", "prompt": "What is the usual length of a Grade 11 HL transactional text?", "options": ["80–100 words", "180–200 words", "300–350 words", "500 words"], "answer": 1 },
+    { "id": "procedure", "type": "mcq", "prompt": "Which section of a report explains how information was gathered?", "options": ["Terms of reference", "Procedure", "Findings", "Recommendations"], "answer": 1 },
+    { "id": "byline", "type": "short", "prompt": "What is the line giving the writer's name in a newspaper article called?", "answers": ["byline", "the byline", "by-line"] },
+    { "id": "spoilers", "type": "truefalse", "prompt": "A good review should reveal the ending of a film.", "answer": false },
+    { "id": "cv", "type": "truefalse", "prompt": "A CV should be clear and may be written in point form.", "answer": true },
+    { "id": "report", "type": "match", "marks": 4, "prompt": "Match each report section to its content.", "pairs": [
+      { "left": "Terms of reference", "right": "Who asked for the report and why" },
+      { "left": "Findings", "right": "Facts discovered" },
+      { "left": "Conclusions", "right": "What the facts mean" },
+      { "left": "Recommendations", "right": "Suggested actions" }
+    ] },
+    { "id": "lead", "type": "open", "marks": 3, "prompt": "Write a lead paragraph for a school newspaper article about a learner who won a national science competition.", "memo": "✓ Who and what (1)\n✓ When and where (1)\n✓ Concise, formal, factual style (1)" },
+    { "id": "application", "type": "open", "marks": 3, "prompt": "Name THREE things the body of a letter of application should include.", "memo": "Any three: ✓ reference to the advertisement ✓ the position applied for ✓ relevant skills/experience ✓ why you are suitable ✓ mention of the attached CV ✓ request for an interview (3)" },
+    { "id": "speech", "type": "open", "marks": 2, "prompt": "Write an engaging opening for a speech on bullying to your school assembly.", "memo": "✓ Correct address of the audience (1)\n✓ An effective hook, e.g. a question, statistic or anecdote (1)" },
+    { "id": "pyramid", "type": "open", "marks": 2, "prompt": "Explain the 'inverted pyramid' structure of a news article.", "memo": "✓ The most important information comes first (1)\n✓ followed by less important details, so readers get the key facts quickly (1)" }
+  ]
+}

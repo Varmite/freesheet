@@ -1,0 +1,110 @@
+{
+  "id": "exponents",
+  "title": "Exponents",
+  "term": 1,
+  "summary": "Write numbers in exponential form, work with squares, cubes and their roots, apply the laws of exponents for natural-number exponents, and write large numbers in scientific notation.",
+  "notes": [
+    { "type": "heading", "text": "Exponential form" },
+    { "type": "paragraph", "text": "An **exponent** tells you how many times a number is multiplied by itself. Instead of $2 \\times 2 \\times 2 \\times 2 \\times 2$ we write $2^5$, read as \"2 to the power 5\"." },
+    { "type": "formula", "latex": "a^n = \\underbrace{a \\times a \\times \\cdots \\times a}_{n \\text{ factors}}", "caption": "a is the base and n is the exponent" },
+    { "type": "definition", "term": "Base and exponent", "text": "In $5^3$, $5$ is the **base** and $3$ is the **exponent** (or index). The whole expression is called a **power**. $5^3 = 5 \\times 5 \\times 5 = 125$." },
+    { "type": "callout", "label": "Common mistake", "text": "$5^3$ does **not** mean $5 \\times 3$. $5^3 = 125$, but $5 \\times 3 = 15$." },
+
+    { "type": "heading", "text": "Squares, cubes and roots" },
+    { "type": "paragraph", "text": "A number to the power 2 is a **square** and a number to the power 3 is a **cube**. Finding a root is the opposite (inverse) of squaring or cubing." },
+    { "type": "table", "caption": "Squares and cubes to know", "headers": ["$n$", "$n^2$", "$n^3$", "$n$", "$n^2$"], "rows": [
+      ["1", "1", "1", "7", "49"],
+      ["2", "4", "8", "8", "64"],
+      ["3", "9", "27", "9", "81"],
+      ["4", "16", "64", "10", "100"],
+      ["5", "25", "125", "11", "121"],
+      ["6", "36", "216", "12", "144"]
+    ] },
+    { "type": "definition", "term": "Square root", "text": "$\\sqrt{49} = 7$ because $7^2 = 49$. The square root asks: \"Which number, multiplied by itself, gives this?\"" },
+    { "type": "definition", "term": "Cube root", "text": "$\\sqrt[3]{64} = 4$ because $4^3 = 64$. The cube root of a negative number is negative: $\\sqrt[3]{-27} = -3$." },
+    { "type": "example", "title": "Worked example 1", "problem": "Calculate: (a) $\\sqrt{144} + \\sqrt[3]{27}$  (b) $\\sqrt{9 + 16}$  (c) $\\sqrt{9} + \\sqrt{16}$", "steps": [
+      "(a) $12 + 3 = 15$.",
+      "(b) Work inside the root first: $\\sqrt{25} = 5$.",
+      "(c) $3 + 4 = 7$."
+    ], "answer": "(a) $15$  (b) $5$  (c) $7$" },
+    { "type": "callout", "label": "Remember", "text": "Parts (b) and (c) show that $\\sqrt{9 + 16} \\neq \\sqrt{9} + \\sqrt{16}$. You may not take the root of each term separately when they are added." },
+
+    { "type": "heading", "text": "The laws of exponents" },
+    { "type": "paragraph", "text": "In Grade 8 the exponents are natural numbers. Each law can be explained by writing out the factors. For example, $x^2 \\times x^3 = (x \\times x)(x \\times x \\times x) = x^5$." },
+    { "type": "table", "caption": "Laws of exponents (m and n natural numbers)", "headers": ["Law", "Rule", "Example"], "rows": [
+      ["Multiplying powers with the same base", "$x^m \\times x^n = x^{m+n}$", "$a^3 \\times a^4 = a^7$"],
+      ["Dividing powers with the same base", "$x^m \\div x^n = x^{m-n}$ (if $m > n$)", "$y^8 \\div y^3 = y^5$"],
+      ["Power of a power", "$(x^m)^n = x^{mn}$", "$(2^3)^2 = 2^6 = 64$"],
+      ["Power of a product", "$(x \\times t)^n = x^n \\times t^n$", "$(3a)^2 = 9a^2$"],
+      ["Zero exponent", "$x^0 = 1$ (for $x \\neq 0$)", "$7^0 = 1$;  $(4ab)^0 = 1$"]
+    ] },
+    { "type": "paragraph", "text": "Why is $x^0 = 1$? Use the division law: $\\dfrac{x^3}{x^3} = x^{3-3} = x^0$. But anything divided by itself is $1$, so $x^0 = 1$." },
+    { "type": "example", "title": "Worked example 2: simplifying", "problem": "Simplify: (a) $2a^3 \\times 5a^4$  (b) $\\dfrac{12x^6y^4}{4x^2y}$  (c) $(3a^2b)^2$", "steps": [
+      "(a) Multiply the numbers and add the exponents of $a$: $10a^{3+4} = 10a^7$.",
+      "(b) Divide the numbers and subtract the exponents: $3x^{6-2}y^{4-1} = 3x^4y^3$.",
+      "(c) Square every factor: $3^2 (a^2)^2 b^2 = 9a^4b^2$."
+    ], "answer": "(a) $10a^7$  (b) $3x^4y^3$  (c) $9a^4b^2$" },
+    { "type": "callout", "label": "Common mistakes", "text": "• $3^2 \\times 3^4 = 3^6$, **not** $9^6$. Keep the base.\n• $(2x)^3 = 8x^3$, **not** $2x^3$. The exponent applies to the $2$ as well.\n• $a^2 + a^3 \\neq a^5$. The laws are for multiplying and dividing, not for adding." },
+
+    { "type": "heading", "text": "Comparing and calculating with powers" },
+    { "type": "paragraph", "text": "To compare powers, calculate them or write them with the same base. For example, $2^6$ and $4^3$: $4^3 = (2^2)^3 = 2^6$, so they are equal ($64$)." },
+    { "type": "example", "title": "Worked example 3: order of operations", "problem": "Calculate: $2^3 \\times 5 - \\sqrt{81} + (-1)^5$", "steps": [
+      "Powers and roots first: $2^3 = 8$, $\\sqrt{81} = 9$, $(-1)^5 = -1$.",
+      "$8 \\times 5 - 9 + (-1) = 40 - 9 - 1 = 30$."
+    ], "answer": "$30$" },
+    { "type": "callout", "label": "Remember", "text": "$(-1)$ to an even power is $1$ and to an odd power is $-1$. Any power of $1$ is $1$." },
+
+    { "type": "heading", "text": "Scientific notation for large numbers" },
+    { "type": "paragraph", "text": "Very large numbers, such as distances in space or the population of a country, are written in **scientific notation**: a number between $1$ and $10$ multiplied by a power of $10$." },
+    { "type": "formula", "latex": "a \\times 10^n, \\quad \\text{where } 1 \\le a < 10", "caption": "Scientific notation" },
+    { "type": "table", "caption": "Powers of ten", "headers": ["Power", "Value", "Number of zeros"], "rows": [
+      ["$10^1$", "10", "1"],
+      ["$10^2$", "100", "2"],
+      ["$10^3$", "1 000", "3"],
+      ["$10^6$", "1 000 000 (one million)", "6"],
+      ["$10^9$", "1 000 000 000 (one billion)", "9"]
+    ] },
+    { "type": "example", "title": "Worked example 4", "problem": "(a) Write $4\\ 560\\ 000$ in scientific notation.  (b) Write $3{,}2 \\times 10^5$ as an ordinary number.", "steps": [
+      "(a) Place the decimal comma after the first digit: $4{,}56$. Count how many places it moved: $6$. So $4\\ 560\\ 000 = 4{,}56 \\times 10^6$.",
+      "(b) Multiply by $10^5$: move the comma $5$ places to the right: $320\\ 000$."
+    ], "answer": "(a) $4{,}56 \\times 10^6$  (b) $320\\ 000$" },
+    { "type": "callout", "label": "Common mistake", "text": "$45{,}6 \\times 10^5$ is **not** in scientific notation, because $45{,}6$ is not between $1$ and $10$. Correct it to $4{,}56 \\times 10^6$." },
+    { "type": "example", "title": "Worked example 5: a real-life problem", "problem": "The population of South Africa is about $62\\ 000\\ 000$. Write this in scientific notation.", "steps": [
+      "$62\\ 000\\ 000 = 6{,}2 \\times 10\\ 000\\ 000 = 6{,}2 \\times 10^7$."
+    ], "answer": "$6{,}2 \\times 10^7$" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "$a^n$ means $n$ factors of $a$. $5^3 = 125$, not $15$.",
+      "Know the squares up to $12^2 = 144$ and the cubes up to $6^3 = 216$; roots undo powers.",
+      "$\\sqrt{a + b} \\neq \\sqrt{a} + \\sqrt{b}$.",
+      "Same base: multiply → add exponents; divide → subtract exponents; power of a power → multiply exponents.",
+      "$(xt)^n = x^n t^n$ and $x^0 = 1$.",
+      "Scientific notation: $a \\times 10^n$ with $1 \\le a < 10$."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "What is the value of $2^5$?", "options": ["$10$", "$25$", "$32$", "$64$"], "answer": 2, "explanation": "$2 \\times 2 \\times 2 \\times 2 \\times 2 = 32$." },
+    { "id": "q2", "type": "numeric", "prompt": "Calculate $\\sqrt{144} + \\sqrt[3]{27}$.", "answer": 15, "tolerance": 0, "explanation": "$\\sqrt{144} = 12$ and $\\sqrt[3]{27} = 3$, so $12 + 3 = 15$." },
+    { "id": "q3", "type": "mcq", "prompt": "Simplify $x^3 \\times x^4$.", "options": ["$x^{12}$", "$x^7$", "$2x^7$", "$x^1$"], "answer": 1, "explanation": "Same base, multiplying: add the exponents. $3 + 4 = 7$." },
+    { "id": "q4", "type": "truefalse", "prompt": "$3^2 + 4^2 = 7^2$", "answer": false, "explanation": "$3^2 + 4^2 = 9 + 16 = 25$, but $7^2 = 49$. You cannot add the bases." },
+    { "id": "q5", "type": "numeric", "prompt": "Calculate $5^0 + 2^3$.", "answer": 9, "tolerance": 0, "explanation": "$5^0 = 1$ and $2^3 = 8$, so $1 + 8 = 9$." },
+    { "id": "q6", "type": "mcq", "prompt": "Simplify $(a^4)^3$.", "options": ["$a^7$", "$a^{12}$", "$a^{64}$", "$3a^4$"], "answer": 1, "explanation": "Power of a power: multiply the exponents. $4 \\times 3 = 12$." },
+    { "id": "q7", "type": "numeric", "prompt": "Write $3 \\times 10^5$ as an ordinary number.", "answer": 300000, "tolerance": 0, "explanation": "$10^5 = 100\\ 000$, so $3 \\times 100\\ 000 = 300\\ 000$." },
+    { "id": "q8", "type": "mcq", "prompt": "Write $4\\ 560\\ 000$ in scientific notation.", "options": ["$456 \\times 10^4$", "$45{,}6 \\times 10^5$", "$4{,}56 \\times 10^6$", "$4{,}56 \\times 10^5$"], "answer": 2, "explanation": "The first number must be between $1$ and $10$: $4{,}56$. The comma moves 6 places, so $\\times 10^6$." },
+    { "id": "q9", "type": "match", "prompt": "Match each expression with its value.", "marks": 5, "pairs": [
+      { "left": "$2^3$", "right": "8" },
+      { "left": "$3^2$", "right": "9" },
+      { "left": "$\\sqrt{49}$", "right": "7" },
+      { "left": "$\\sqrt[3]{64}$", "right": "4" },
+      { "left": "$10^0$", "right": "1" }
+    ], "explanation": "$2^3 = 8$; $3^2 = 9$; $7^2 = 49$; $4^3 = 64$; any non-zero number to the power 0 is 1." },
+    { "id": "q10", "type": "truefalse", "prompt": "$(2x)^3 = 2x^3$", "answer": false, "explanation": "The exponent applies to every factor in the bracket: $(2x)^3 = 2^3x^3 = 8x^3$." },
+    { "id": "q11", "type": "numeric", "prompt": "Simplify $y^{10} \\div y^2$ and give only the exponent of $y$ in your answer.", "answer": 8, "tolerance": 0, "explanation": "Same base, dividing: subtract the exponents. $10 - 2 = 8$, so $y^8$." },
+    { "id": "q12", "type": "numeric", "prompt": "Calculate $\\sqrt{9 + 16}$.", "answer": 5, "tolerance": 0, "explanation": "Add first: $\\sqrt{25} = 5$. (Note that $\\sqrt{9} + \\sqrt{16} = 7$ is different.)" },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Simplify: $(3a^2b)^2 \\times 2ab^3$", "memo": "$(3a^2b)^2 = 9a^4b^2$ ✓ (1)\n$9 \\times 2 = 18$ ✓ (1)\n$18a^5b^5$ ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "Calculate without a calculator: $2^3 \\times 5 - \\sqrt{81} + (-1)^5$", "memo": "$2^3 = 8$, $\\sqrt{81} = 9$, $(-1)^5 = -1$ ✓ (1)\n$40 - 9 - 1$ ✓ (1)\n$= 30$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "Simplify:\n(a) $\\dfrac{12x^6y^4}{4x^2y}$  (2)\n(b) $(5m^3)^0 + 2m^0$  (2)", "memo": "(a) $12 \\div 4 = 3$ ✓; $x^4y^3$ ✓, so $3x^4y^3$ (2)\n(b) $(5m^3)^0 = 1$ ✓; $2m^0 = 2 \\times 1 = 2$, total $3$ ✓ (2)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "The distance from the Earth to the Sun is about $149\\ 600\\ 000$ km.\n(a) Write this distance in scientific notation.  (1)\n(b) The Moon is about $3{,}84 \\times 10^5$ km from the Earth. Write this as an ordinary number.  (1)\n(c) Which is further from the Earth, the Sun or the Moon? Explain using the powers of ten.  (1)", "memo": "(a) $1{,}496 \\times 10^8$ km ✓ (1)\n(b) $384\\ 000$ km ✓ (1)\n(c) The Sun: $10^8$ is a bigger power of ten than $10^5$ ✓ (1)" }
+  ]
+}

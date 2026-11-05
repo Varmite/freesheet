@@ -1,0 +1,60 @@
+{
+  "id": "maps-and-globes",
+  "title": "Maps and Globes: Latitude, Longitude and Time Zones",
+  "term": 1,
+  "summary": "Globes and map projections, lines of latitude and longitude, giving the position of a place in degrees and minutes, and how longitude determines time zones.",
+  "notes": [
+    { "type": "heading", "text": "Globes and maps" },
+    { "type": "paragraph", "text": "A **globe** is a model of the Earth. It shows the true shapes, sizes and positions of continents and oceans, but it is not easy to carry and shows little detail. A **map** is a flat drawing of all or part of the Earth's surface." },
+    { "type": "definition", "term": "Map projection", "text": "A method of showing the curved surface of the Earth on a flat map. Every projection distorts something: shape, size, distance or direction." },
+    { "type": "list", "items": [
+      "The **Mercator projection** keeps shapes and directions correct, so it is used for navigation, but areas near the poles look far too big (Greenland looks as big as Africa, though Africa is about 14 times bigger).",
+      "The **Peters (Gall-Peters) projection** shows the correct relative sizes of countries, but shapes are stretched.",
+      "Other projections, such as the Robinson projection, compromise between shape and size."
+    ] },
+    { "type": "heading", "text": "Latitude" },
+    { "type": "paragraph", "text": "Lines of **latitude** (parallels) run east–west around the Earth, parallel to the **equator** (0°). They measure distance **north or south** of the equator, up to 90° N (North Pole) and 90° S (South Pole)." },
+    { "type": "table", "caption": "Important lines of latitude", "headers": ["Line", "Latitude"], "rows": [
+      ["Equator", "0°"],
+      ["Tropic of Cancer", "23½° N"],
+      ["Tropic of Capricorn", "23½° S (passes just north of Johannesburg, near Polokwane)"],
+      ["Arctic Circle", "66½° N"],
+      ["Antarctic Circle", "66½° S"]
+    ] },
+    { "type": "heading", "text": "Longitude" },
+    { "type": "paragraph", "text": "Lines of **longitude** (meridians) run from the North Pole to the South Pole. They measure distance **east or west** of the **Prime (Greenwich) Meridian** (0°), which passes through Greenwich in London. They go up to 180° E and 180° W, which meet at the **International Date Line**." },
+    { "type": "callout", "label": "Memory aid", "text": "**Lat**itude lines are like the rungs of a ladder (you climb up and down north and south): think '**lat** = flat'. **Long**itude lines are all the same **long** length, from pole to pole." },
+    { "type": "heading", "text": "Giving a position" },
+    { "type": "paragraph", "text": "A place's position is given as **latitude first, then longitude**. Each degree is divided into **60 minutes** (′). For example, Cape Town is at about **33°55′ S, 18°25′ E**." },
+    { "type": "example", "title": "Reading a position", "problem": "Durban is at 29°52′ S, 31°01′ E. Explain what this means.", "steps": [
+      "29°52′ S: the city is 29 degrees 52 minutes south of the equator.",
+      "31°01′ E: the city is 31 degrees 1 minute east of the Prime Meridian.",
+      "So Durban is in the southern and eastern hemispheres."
+    ], "answer": "South of the equator and east of Greenwich" },
+    { "type": "heading", "text": "Time zones" },
+    { "type": "paragraph", "text": "The Earth rotates **360° in 24 hours**, so it turns **15° every hour** (360 ÷ 24 = 15). The world is divided into 24 **time zones**, each about 15° wide. Places **east** of Greenwich are **ahead** in time; places **west** are **behind**." },
+    { "type": "example", "title": "Calculating time", "problem": "South Africa uses the time at 30° E (South African Standard Time). When it is 12:00 noon at Greenwich, what time is it in South Africa?", "steps": [
+      "Difference in longitude = 30° − 0° = 30°",
+      "Time difference = 30 ÷ 15 = 2 hours",
+      "South Africa is east, so add: 12:00 + 2 hours"
+    ], "answer": "14:00" },
+    { "type": "callout", "label": "Remember", "text": "Crossing the **International Date Line** (about 180°) changes the date: travelling westwards you move forward a day; travelling eastwards you go back a day." }
+  ],
+  "questions": [
+    { "id": "equator", "type": "numeric", "prompt": "What is the latitude of the equator?", "answer": 0, "tolerance": 0, "unit": "°" },
+    { "id": "prime", "type": "short", "prompt": "What is the name of the line of longitude at 0°?", "answers": ["prime meridian", "greenwich meridian", "the prime meridian", "the greenwich meridian"] },
+    { "id": "capricorn", "type": "mcq", "prompt": "Which line of latitude passes through northern South Africa?", "options": ["Tropic of Cancer", "Equator", "Tropic of Capricorn", "Antarctic Circle"], "answer": 2 },
+    { "id": "mercator", "type": "truefalse", "prompt": "On a Mercator projection, Greenland looks much larger than it really is.", "answer": true },
+    { "id": "minutes", "type": "numeric", "prompt": "How many minutes are in one degree?", "answer": 60, "tolerance": 0 },
+    { "id": "degrees-hour", "type": "numeric", "prompt": "Through how many degrees of longitude does the Earth turn in one hour?", "answer": 15, "tolerance": 0, "unit": "°" },
+    { "id": "time-calc", "type": "mcq", "prompt": "It is 10:00 at Greenwich. What time is it at 45° E?", "options": ["07:00", "10:45", "13:00", "16:00"], "answer": 2, "explanation": "45 ÷ 15 = 3 hours ahead." },
+    { "id": "lines-match", "type": "match", "marks": 4, "prompt": "Match each line to its value.", "pairs": [
+      { "left": "Tropic of Cancer", "right": "23½° N" },
+      { "left": "Antarctic Circle", "right": "66½° S" },
+      { "left": "International Date Line", "right": "180°" },
+      { "left": "North Pole", "right": "90° N" }
+    ] },
+    { "id": "globe-map", "type": "open", "marks": 2, "prompt": "Give ONE advantage of a globe and ONE advantage of a map.", "memo": "✓ Globe: shows true shapes and sizes / correct positions (1)\n✓ Map: easy to carry / can show more detail / can show a small area (1)" },
+    { "id": "west-time", "type": "open", "marks": 3, "prompt": "It is 16:00 in South Africa (30° E). What time is it in a city at 60° W? Show your working.", "memo": "✓ Difference in longitude: 30 + 60 = 90° (1)\n✓ 90 ÷ 15 = 6 hours (1)\n✓ The city is west, so it is behind: 16:00 − 6 h = 10:00 (1)" }
+  ]
+}

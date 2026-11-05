@@ -1,0 +1,54 @@
+{
+  "id": "literary-essay-writing",
+  "title": "Writing the Literary Essay",
+  "term": 3,
+  "summary": "Planning and writing the literary essay for Paper 2: unpacking the topic, building an argument, the PEEL paragraph, using quotations, and the rubric for content, structure and language.",
+  "notes": [
+    { "type": "heading", "text": "What examiners want" },
+    { "type": "paragraph", "text": "A literary essay is an **argument** about a text, not a retelling of the plot. The poetry essay is about **250–300 words**; the novel and drama essays are about **400–450 words**. Marks are given for **content** (interpretation and evidence), **structure** and **language**." },
+    { "type": "heading", "text": "Unpacking the topic" },
+    { "type": "list", "ordered": true, "items": [
+      "Underline the **instruction words**: 'critically discuss', 'to what extent', 'agree or disagree'.",
+      "Identify the **focus**: a character, a theme, a technique, or a combination.",
+      "Decide on your **stance** in one sentence: this becomes your thesis.",
+      "Choose **three or four points** that prove the thesis, each with evidence."
+    ] },
+    { "type": "example", "title": "From topic to thesis", "problem": "'Hamlet's tragedy is caused more by his own indecision than by Claudius's villainy.' Critically discuss.", "steps": [
+      "Focus: causes of the tragedy; Hamlet versus Claudius.",
+      "Stance: largely agree, but Claudius's crime starts everything.",
+      "Points: (1) Claudius's murder sets events in motion; (2) Hamlet delays, e.g. at the prayer scene; (3) his rash killing of Polonius leads to Ophelia's madness and Laertes' revenge; (4) the final deaths follow from that chain."
+    ], "answer": "Thesis: 'Although Claudius's crime sets the tragedy in motion, it is Hamlet's indecision, and his rash actions when he does act, that turn a murder into a catastrophe.'" },
+    { "type": "heading", "text": "The PEEL paragraph" },
+    { "type": "table", "headers": ["Part", "Purpose", "Example"], "rows": [
+      ["Point", "Topic sentence linked to the thesis", "Hamlet's hesitation wastes his clearest chance at revenge."],
+      ["Evidence", "Brief quotation or close reference", "Finding Claudius at prayer, he says 'Now might I do it pat'."],
+      ["Explanation", "Analyse how the evidence proves the point", "He reasons that killing Claudius while praying would send him to heaven, so he overthinks instead of acting."],
+      ["Link", "Connect back to the topic", "This delay allows Claudius to plot against him, leading to further deaths."]
+    ] },
+    { "type": "heading", "text": "Using quotations" },
+    { "type": "list", "items": [
+      "Keep quotations **short** and **embed** them in your own sentences.",
+      "Always explain what the quotation shows; never leave it on its own.",
+      "Write in the **present tense** about events in a text ('Dorian murders Basil').",
+      "Avoid 'I think' and slang; use a formal, analytical register."
+    ] },
+    { "type": "callout", "label": "Structure", "text": "**Introduction**: answer the question directly and state your thesis. **Body**: three or four PEEL paragraphs in a logical order. **Conclusion**: restate the argument in fresh words and show its significance; no new points." }
+  ],
+  "questions": [
+    { "id": "purpose", "type": "mcq", "prompt": "The main purpose of a literary essay is to…", "options": ["retell the plot", "argue an interpretation with evidence", "describe the author's life", "list figures of speech"], "answer": 1 },
+    { "id": "length", "type": "mcq", "prompt": "About how long should the Grade 12 poetry essay be?", "options": ["100–150 words", "250–300 words", "400–450 words", "600–800 words"], "answer": 1 },
+    { "id": "thesis", "type": "short", "prompt": "What is the one-sentence statement of your argument in the introduction called?", "answers": ["thesis", "thesis statement", "a thesis statement", "the thesis"] },
+    { "id": "tense", "type": "truefalse", "prompt": "Events in a literary text are usually discussed in the present tense.", "answer": true },
+    { "id": "conclusion", "type": "truefalse", "prompt": "The conclusion is the best place to introduce a new, important point.", "answer": false },
+    { "id": "peel", "type": "match", "marks": 4, "prompt": "Match each part of a PEEL paragraph to its purpose.", "pairs": [
+      { "left": "Point", "right": "Topic sentence linked to the thesis" },
+      { "left": "Evidence", "right": "Quotation or close reference" },
+      { "left": "Explanation", "right": "Analysis of how the evidence proves the point" },
+      { "left": "Link", "right": "Connection back to the topic" }
+    ] },
+    { "id": "unpack", "type": "open", "marks": 3, "prompt": "Unpack this topic and write a thesis: 'Lord Henry is the true villain of The Picture of Dorian Gray.' Discuss.", "memo": "✓ Identifies the focus: responsibility/villainy (1)\n✓ Takes a clear stance (agree, disagree or partly) (1)\n✓ Thesis is one clear sentence answering the question (1)" },
+    { "id": "paragraph", "type": "open", "marks": 4, "prompt": "Write ONE PEEL paragraph on the theme of power in 'Ozymandias'.", "memo": "✓ Point linked to power (1)\n✓ Embedded quotation, e.g. 'King of Kings' or 'Nothing beside remains' (1)\n✓ Explanation of effect (1)\n✓ Link to the theme of impermanence (1)" },
+    { "id": "retell", "type": "open", "marks": 2, "prompt": "Why does retelling the plot earn few marks?", "memo": "✓ It does not answer the question or argue a position (1)\n✓ Marks are for interpretation and analysis supported by evidence (1)" },
+    { "id": "quote-use", "type": "open", "marks": 2, "prompt": "Give TWO guidelines for using quotations well.", "memo": "Any two:\n✓ Keep them short (1)\n✓ Embed them in your sentences (1)\n✓ Always explain them (1)\n✓ Quote accurately (1)" }
+  ]
+}

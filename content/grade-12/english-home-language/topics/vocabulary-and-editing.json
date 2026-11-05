@@ -1,0 +1,60 @@
+{
+  "id": "vocabulary-and-editing",
+  "title": "Vocabulary, Figures of Speech and Editing",
+  "term": 2,
+  "summary": "Word formation, denotation and connotation, register, figures of speech in non-literary texts, commonly confused words, and proofreading and editing a text.",
+  "notes": [
+    { "type": "heading", "text": "Word formation" },
+    { "type": "table", "headers": ["Process", "Example"], "rows": [
+      ["Prefix", "un + believable → unbelievable; mis + inform → misinform"],
+      ["Suffix", "govern + ment → government; hope + less → hopeless"],
+      ["Compound", "load + shedding → load-shedding; head + line → headline"],
+      ["Acronym", "SARS, NSFAS, CCMA (pronounced as words or letters)"],
+      ["Neologism", "A new word: 'selfie', 'doomscrolling'"]
+    ] },
+    { "type": "heading", "text": "Register and connotation" },
+    { "type": "list", "items": [
+      "**Register**: the level of formality. Formal: 'We regret to inform you…'; informal: 'Sorry, guys…'.",
+      "**Denotation**: dictionary meaning; **connotation**: emotional associations ('home' vs 'house').",
+      "**Euphemism**: a mild expression for something unpleasant ('passed away').",
+      "**Jargon**: specialised language of a group (legal, medical)."
+    ] },
+    { "type": "heading", "text": "Figures of speech in everyday texts" },
+    { "type": "paragraph", "text": "Advertisers and journalists use **puns** ('Fresh ideas are brewing' for a coffee shop), **alliteration** ('Big Bargain Bonanza'), **hyperbole**, **rhetorical questions** and **metaphor** ('a tsunami of complaints')." },
+    { "type": "heading", "text": "Commonly confused words" },
+    { "type": "table", "headers": ["Word", "Meaning", "Word", "Meaning"], "rows": [
+      ["affect", "verb: to influence", "effect", "noun: a result"],
+      ["principal", "head of a school; main", "principle", "a rule or belief"],
+      ["complement", "to complete", "compliment", "praise"],
+      ["stationary", "not moving", "stationery", "paper and pens"],
+      ["practise", "verb (SA/British)", "practice", "noun"],
+      ["their / there / they're", "possession / place / they are", "your / you're", "possession / you are"]
+    ] },
+    { "type": "heading", "text": "Editing a passage" },
+    { "type": "list", "ordered": true, "items": [
+      "Read the whole passage first for meaning.",
+      "Check spelling (especially confused words).",
+      "Check concord and tense consistency.",
+      "Check punctuation, including apostrophes and commas.",
+      "Look for redundancy (e.g. 'return back', 'free gift') and tautology."
+    ] },
+    { "type": "example", "title": "Editing example", "problem": "Correct: 'The principle said that the new rules will effect all learners, and that there phones must be stationery during lessons.'", "steps": ["principle → principal", "will effect → would affect (reported speech and correct word)", "there → their", "stationery → stationary"], "answer": "The principal said that the new rules would affect all learners, and that their phones must be stationary during lessons." }
+  ],
+  "questions": [
+    { "id": "affect", "type": "mcq", "prompt": "Choose the correct word: 'The drought will ___ crop yields.'", "options": ["effect", "affect", "infect", "afect"], "answer": 1 },
+    { "id": "stationery", "type": "mcq", "prompt": "Which word means paper, pens and envelopes?", "options": ["stationary", "stationery", "stationnery", "stationaire"], "answer": 1 },
+    { "id": "prefix", "type": "short", "prompt": "Give the antonym of 'legal' formed by adding a prefix.", "answers": ["illegal"] },
+    { "id": "euphemism", "type": "short", "prompt": "What is a mild expression used in place of an unpleasant one called?", "answers": ["euphemism", "a euphemism"] },
+    { "id": "redundant", "type": "truefalse", "prompt": "'Free gift' is an example of redundancy (tautology).", "answer": true },
+    { "id": "pairs", "type": "match", "marks": 4, "prompt": "Match each word to its meaning.", "pairs": [
+      { "left": "Complement", "right": "To complete or go well with" },
+      { "left": "Compliment", "right": "An expression of praise" },
+      { "left": "Principle", "right": "A rule or belief" },
+      { "left": "Principal", "right": "Head of a school" }
+    ] },
+    { "id": "edit", "type": "open", "marks": 4, "prompt": "Correct the FOUR errors: 'Their going to practice there speeches for the principle tomorrow.'", "memo": "✓ They're (1)\n✓ practise (verb) (1)\n✓ their (1)\n✓ principal (1)" },
+    { "id": "pun", "type": "open", "marks": 2, "prompt": "Explain the pun in a bakery advert: 'We knead you!'", "memo": "✓ 'Knead' means to work dough (1)\n✓ It sounds like 'need', suggesting the bakery needs/values its customers (1)" },
+    { "id": "register", "type": "open", "marks": 2, "prompt": "Rewrite in a formal register: 'Hey guys, the meeting's been moved, so pitch up at 3.'", "memo": "✓✓ e.g. 'Please note that the meeting has been rescheduled to 15:00.' (formal vocabulary and structure) (2)" },
+    { "id": "connotation", "type": "open", "marks": 2, "prompt": "Explain the difference in connotation between 'thrifty' and 'stingy'.", "memo": "✓ 'Thrifty' is positive: careful with money (1)\n✓ 'Stingy' is negative: unwilling to spend or share (1)" }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "id": "november-paper-1",
+  "title": "November Examination: Paper 1",
+  "durationMinutes": 120,
+  "totalMarks": 100,
+  "instructions": [
+    "This question paper consists of 7 questions. Answer ALL the questions.",
+    "Clearly show ALL calculations, diagrams, graphs, et cetera that you have used in determining your answers. Answers only will NOT necessarily be awarded full marks.",
+    "You may use an approved scientific calculator (non-programmable and non-graphical), unless stated otherwise.",
+    "If necessary, round off answers to TWO decimal places, unless stated otherwise.",
+    "Diagrams are NOT necessarily drawn to scale.",
+    "Number the answers correctly according to the numbering system used in this question paper.",
+    "Write neatly and legibly."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Algebraic expressions and exponents",
+      "instructions": "Do NOT use a calculator in this question.",
+      "questions": [
+        {
+          "id": "q1-expand",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Expand and simplify: $(2x - 3)(x^2 + 4x - 5)$",
+          "memo": "$= 2x^3 + 8x^2 - 10x - 3x^2 - 12x + 15$ ✓ (correct expansion) (1)\n$= 2x^3 + 5x^2 - 22x + 15$ ✓ (answer) (1)"
+        },
+        {
+          "id": "q1-factorise-trinomial",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Factorise fully: $2x^2 - 7x - 15$",
+          "memo": "$(2x + 3)(x - 5)$ ✓✓ (one mark per correct factor) (2)\nCheck: $2x^2 - 10x + 3x - 15 = 2x^2 - 7x - 15$"
+        },
+        {
+          "id": "q1-factorise-grouping",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Factorise fully: $ax - 2ay + 3x - 6y$",
+          "memo": "$= a(x - 2y) + 3(x - 2y)$ ✓ (grouping) (1)\n$= (x - 2y)(a + 3)$ ✓ (answer) (1)"
+        },
+        {
+          "id": "q1-factorise-cubes",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Factorise fully: $2x^3 - 16$",
+          "memo": "$= 2(x^3 - 8)$ ✓ (common factor) (1)\n$= 2(x - 2)(x^2 + 2x + 4)$ ✓ (difference of cubes) (1)"
+        },
+        {
+          "id": "q1-algebraic-fraction",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Simplify fully: $\\dfrac{x^2 - 9}{x^2 + x - 6} \\div \\dfrac{x - 3}{2x - 4}$",
+          "memo": "$= \\dfrac{(x - 3)(x + 3)}{(x + 3)(x - 2)} \\times \\dfrac{2x - 4}{x - 3}$ ✓ (factorising numerator and denominator) (1)\n$= \\dfrac{(x - 3)(x + 3)}{(x + 3)(x - 2)} \\times \\dfrac{2(x - 2)}{x - 3}$ ✓ (changing ÷ to × and factorising $2x - 4$) (1)\n$= 2$ ✓ (answer) (1)"
+        },
+        {
+          "id": "q1-exponents",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Simplify fully: $\\dfrac{9^{x} \\cdot 27^{x+1}}{3^{5x+1}}$",
+          "memo": "$= \\dfrac{3^{2x} \\cdot 3^{3x+3}}{3^{5x+1}}$ ✓ (writing in prime base 3) (1)\n$= 3^{5x + 3 - 5x - 1} = 3^{2} = 9$ ✓ (answer) (1)"
+        },
+        {
+          "id": "q1-recurring-decimal",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write $0{,}\\dot{4}\\dot{5}$ as a common fraction in its simplest form. Show ALL your working.",
+          "memo": "Let $x = 0{,}454545...$\n$100x = 45{,}454545...$\n$100x - x = 45$, so $99x = 45$ ✓ (multiplying by 100 and subtracting) (1)\n$x = \\dfrac{45}{99} = \\dfrac{5}{11}$ ✓ (answer in simplest form) (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Equations and inequalities",
+      "questions": [
+        {
+          "id": "q2-linear-fractions",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Solve for $x$: $\\dfrac{x - 1}{3} - \\dfrac{x + 2}{4} = 1$",
+          "memo": "Multiply both sides by the LCD 12:\n$4(x - 1) - 3(x + 2) = 12$ ✓ (multiplying by LCD) (1)\n$4x - 4 - 3x - 6 = 12$ ✓ (removing brackets correctly) (1)\n$x = 22$ ✓ (answer) (1)"
+        },
+        {
+          "id": "q2-quadratic",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Solve for $x$: $x(x - 2) = 15$",
+          "memo": "$x^2 - 2x - 15 = 0$ ✓ (standard form) (1)\n$(x - 5)(x + 3) = 0$ ✓ (factors) (1)\n$x = 5$ or $x = -3$ ✓ (both answers) (1)"
+        },
+        {
+          "id": "q2-exponential",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Solve for $x$ without using a calculator: $3^{x+1} = 27^{x-1}$",
+          "memo": "$3^{x+1} = 3^{3(x - 1)} = 3^{3x - 3}$ ✓ (same base) (1)\n$x + 1 = 3x - 3$, so $-2x = -4$ and $x = 2$ ✓ (answer) (1)"
+        },
+        {
+          "id": "q2-literal",
+          "type": "open",
+          "marks": 2,
+          "prompt": "The simple interest formula is $A = P(1 + in)$. Make $n$ the subject of the formula.",
+          "memo": "$\\dfrac{A}{P} = 1 + in$ or $A = P + Pin$ ✓ (first step: divide by $P$ or expand) (1)\n$n = \\dfrac{A - P}{Pi}$ (or $n = \\dfrac{\\frac{A}{P} - 1}{i}$) ✓ (answer) (1)"
+        },
+        {
+          "id": "q2-inequality",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Solve for $x$ and write your answer in interval notation: $-3 < 2x - 5 \\le 7$",
+          "memo": "$2 < 2x \\le 12$\n$1 < x \\le 6$ ✓ (correct inequality) (1)\n$x \\in (1;\\ 6]$ ✓ (correct interval notation: round bracket at 1, square bracket at 6) (1)"
+        },
+        {
+          "id": "q2-simultaneous",
+          "type": "open",
+          "marks": 3,
+          "prompt": "At a school tuck shop in Mthatha, 2 pies and 1 cooldrink cost R47. One pie and 3 cooldrinks cost R41. Let the price of a pie be $p$ rands and the price of a cooldrink be $c$ rands. Set up two equations and solve them simultaneously to find the price of a pie and the price of a cooldrink.",
+          "memo": "$2p + c = 47$ … (1) and $p + 3c = 41$ … (2) ✓ (both equations) (1)\nFrom (2): $p = 41 - 3c$. Substitute into (1): $2(41 - 3c) + c = 47$, so $82 - 5c = 47$ ✓ (substitution or elimination) (1)\n$c = 7$ and $p = 41 - 21 = 20$: a pie costs R20 and a cooldrink costs R7 ✓ (both values) (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Number patterns",
+      "context": [
+        { "type": "paragraph", "text": "Questions 3.1 to 3.5 refer to the linear number pattern:\n\n**7 ; 11 ; 15 ; 19 ; ...**" },
+        { "type": "paragraph", "text": "Questions 3.6 to 3.8 refer to the floor-tile patterns below. In each pattern a single row of grey tiles is completely surrounded by white tiles. Pattern $n$ has $n$ grey tiles." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 110' font-family='sans-serif' font-size='13'><rect x='10' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='30' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='50' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='10' y='35' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='30' y='35' width='20' height='20' fill='#999999' stroke='#000000'/><rect x='50' y='35' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='10' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='30' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='50' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><text x='40' y='100' text-anchor='middle'>Pattern 1</text><rect x='90' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='110' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='130' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='150' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='90' y='35' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='110' y='35' width='20' height='20' fill='#999999' stroke='#000000'/><rect x='130' y='35' width='20' height='20' fill='#999999' stroke='#000000'/><rect x='150' y='35' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='90' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='110' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='130' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='150' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><text x='130' y='100' text-anchor='middle'>Pattern 2</text><rect x='190' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='210' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='230' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='250' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='270' y='15' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='190' y='35' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='210' y='35' width='20' height='20' fill='#999999' stroke='#000000'/><rect x='230' y='35' width='20' height='20' fill='#999999' stroke='#000000'/><rect x='250' y='35' width='20' height='20' fill='#999999' stroke='#000000'/><rect x='270' y='35' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='190' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='210' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='230' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='250' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><rect x='270' y='55' width='20' height='20' fill='#ffffff' stroke='#000000'/><text x='240' y='100' text-anchor='middle'>Pattern 3</text></svg>",
+          "caption": "Nomsa's tile patterns: Pattern 1 has 8 white tiles, Pattern 2 has 10 white tiles, Pattern 3 has 12 white tiles."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-next-term",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Write down the next term of the pattern $7;\\ 11;\\ 15;\\ 19;\\ ...$",
+          "answer": 23,
+          "tolerance": 0,
+          "explanation": "The constant difference is $4$, so the next term is $19 + 4 = 23$."
+        },
+        {
+          "id": "q3-general-term",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Determine the general term $T_n$ of the pattern.",
+          "memo": "$d = 4$ ✓ (constant difference) (1)\n$T_n = 4n + 3$ ✓ (since $T_1 = 4(1) + c = 7$ gives $c = 3$) (1)"
+        },
+        {
+          "id": "q3-term-50",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Calculate the value of $T_{50}$.",
+          "answer": 203,
+          "tolerance": 0,
+          "explanation": "$T_{50} = 4(50) + 3 = 203$."
+        },
+        {
+          "id": "q3-which-term",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Which term of the pattern is equal to $247$? Give the term number $n$.",
+          "answer": 61,
+          "tolerance": 0,
+          "explanation": "$4n + 3 = 247$, so $4n = 244$ and $n = 61$. The 61st term is 247."
+        },
+        {
+          "id": "q3-not-a-term",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Show that $300$ is NOT a term of this pattern.",
+          "memo": "$4n + 3 = 300$, so $4n = 297$ ✓ (setting up the equation) (1)\n$n = 74{,}25$; $n$ is not a natural number, so 300 is not a term of the pattern ✓ (conclusion with reason) (1)"
+        },
+        {
+          "id": "q3-tiles-pattern-4",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Nomsa lays grey and white floor tiles in the patterns shown in the diagram above. How many WHITE tiles will there be in Pattern 4?",
+          "answer": 14,
+          "tolerance": 0,
+          "explanation": "The white tiles form the pattern $8;\\ 10;\\ 12;\\ ...$ (each new pattern adds 2 white tiles), so Pattern 4 has $14$ white tiles."
+        },
+        {
+          "id": "q3-tiles-general",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to Nomsa's tile patterns. Determine a formula for $T_n$, the number of WHITE tiles in Pattern $n$.",
+          "memo": "White tiles: $8;\\ 10;\\ 12;\\ ...$ with $d = 2$ ✓ (1)\n$T_n = 2n + 6$ ✓ (1)\n(Alternative: the tiles form a $3 \\times (n + 2)$ rectangle, so white tiles $= 3(n + 2) - n = 2n + 6$.)"
+        },
+        {
+          "id": "q3-tiles-total",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to Nomsa's tile patterns. Determine the TOTAL number of tiles (grey and white) that Nomsa will need for Pattern 30.",
+          "memo": "Total tiles in Pattern $n$ $= n + (2n + 6) = 3n + 6$ ✓ (grey tiles $= n$; adding grey and white) (1)\nPattern 30: $3(30) + 6 = 96$ tiles ✓ (answer) (1)"
+        },
+        {
+          "id": "q3-unknown-x",
+          "type": "open",
+          "marks": 2,
+          "prompt": "The first three terms of a different linear pattern are $x + 1;\\ 2x + 1;\\ 4x - 3$. Determine the value of $x$.",
+          "memo": "In a linear pattern $T_2 - T_1 = T_3 - T_2$:\n$(2x + 1) - (x + 1) = (4x - 3) - (2x + 1)$ ✓ (equal differences) (1)\n$x = 2x - 4$, so $x = 4$ ✓ (answer; the terms are $5;\\ 9;\\ 13$) (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Functions: the straight line and the parabola",
+      "context": [
+        { "type": "paragraph", "text": "The sketch shows the graphs of $f(x) = ax^2 + q$ and $g(x) = mx + c$." },
+        { "type": "list", "items": [
+          "$f$ has a turning point at $C(0;\\ 8)$ and cuts the $x$-axis at $A$ and at $B(2;\\ 0)$.",
+          "The straight line $g$ passes through $B$ and cuts the $y$-axis at $E(0;\\ 4)$.",
+          "$f$ and $g$ intersect at $B$ and at $D$."
+        ] },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 330' font-family='sans-serif' font-size='13'><line x1='20' y1='250' x2='320' y2='250' stroke='#000000'/><line x1='160' y1='320' x2='160' y2='15' stroke='#000000'/><text x='324' y='254'>x</text><text x='165' y='18'>y</text><text x='146' y='266'>O</text><polyline fill='none' stroke='#000000' stroke-width='1.8' points='70,303.1 80,250 90,203.1 100,162.5 110,128.1 120,100 130,78.1 140,62.5 150,53.1 160,50 170,53.1 180,62.5 190,78.1 200,100 210,128.1 220,162.5 230,203.1 240,250 250,303.1'/><line x1='90' y1='62.5' x2='280' y2='300' stroke='#000000' stroke-width='1.8'/><circle cx='80' cy='250' r='3' fill='#000000'/><circle cx='240' cy='250' r='3' fill='#000000'/><circle cx='160' cy='50' r='3' fill='#000000'/><circle cx='120' cy='100' r='3' fill='#000000'/><circle cx='160' cy='150' r='3' fill='#000000'/><text x='64' y='244'>A</text><text x='246' y='244'>B(2; 0)</text><text x='166' y='44'>C(0; 8)</text><text x='102' y='116'>D</text><text x='166' y='146'>E(0; 4)</text><text x='54' y='302'>f</text><text x='284' y='312'>g</text></svg>",
+          "caption": "Graphs of f(x) = ax² + q and g(x) = mx + c (not drawn to scale)"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q4-value-q",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Write down the value of $q$.",
+          "answer": 8,
+          "tolerance": 0,
+          "explanation": "For $f(x) = ax^2 + q$ the turning point is $(0;\\ q)$. Since $C(0;\\ 8)$ is the turning point, $q = 8$."
+        },
+        {
+          "id": "q4-show-a",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Show that $a = -2$.",
+          "memo": "Substitute $B(2;\\ 0)$ into $f(x) = ax^2 + 8$:\n$0 = a(2)^2 + 8$ ✓ (substitution) (1)\n$4a = -8$, so $a = -2$ ✓ (1)"
+        },
+        {
+          "id": "q4-equation-g",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Determine the equation of $g$.",
+          "memo": "$m = \\dfrac{4 - 0}{0 - 2} = -2$ ✓ (gradient) (1)\n$c = 4$ (y-intercept $E$), so $g(x) = -2x + 4$ ✓ (equation) (1)"
+        },
+        {
+          "id": "q4-coords-a",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Write down the coordinates of $A$.",
+          "memo": "$A(-2;\\ 0)$ ✓ (by symmetry of $f$ about the $y$-axis, or solving $-2x^2 + 8 = 0$) (1)"
+        },
+        {
+          "id": "q4-coords-d",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the coordinates of $D$, the second point of intersection of $f$ and $g$.",
+          "memo": "$-2x^2 + 8 = -2x + 4$ ✓ (equating $f$ and $g$) (1)\n$-2x^2 + 2x + 4 = 0$, so $x^2 - x - 2 = 0$ ✓ (standard form) (1)\n$(x - 2)(x + 1) = 0$, so $x = 2$ (point $B$) or $x = -1$ ✓ (x-value of D) (1)\n$y = -2(-1) + 4 = 6$, so $D(-1;\\ 6)$ ✓ (y-value) (1)"
+        },
+        {
+          "id": "q4-range-f",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Write down the range of $f$.",
+          "memo": "$y \\le 8$, $y \\in \\mathbb{R}$ (or $y \\in (-\\infty;\\ 8]$) ✓ (1)"
+        },
+        {
+          "id": "q4-length-pq",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "The vertical line $x = 1$ cuts $f$ at $P$ and $g$ at $Q$. Calculate the length of $PQ$ in units.",
+          "answer": 4,
+          "tolerance": 0.01,
+          "unit": "units",
+          "explanation": "$f(1) = -2(1)^2 + 8 = 6$ and $g(1) = -2(1) + 4 = 2$. $PQ = 6 - 2 = 4$ units."
+        },
+        {
+          "id": "q4-f-above-g",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Use the graphs to determine the values of $x$ for which $f(x) \\ge g(x)$.",
+          "memo": "$-1 \\le x \\le 2$ (or $x \\in [-1;\\ 2]$) ✓ (critical values $-1$ and $2$) ✓ (correct inequality signs, including equality) (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Functions: the hyperbola and the exponential graph",
+      "context": [
+        { "type": "paragraph", "text": "**Graph 1:** The sketch shows the graph of the hyperbola $h(x) = \\dfrac{a}{x} + q$. The asymptotes of $h$ are the $y$-axis and the line $y = -1$. The point $P(3;\\ 1)$ lies on $h$." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 310' font-family='sans-serif' font-size='13'><line x1='10' y1='140' x2='350' y2='140' stroke='#000000'/><line x1='180' y1='300' x2='180' y2='5' stroke='#000000'/><text x='344' y='132'>x</text><text x='185' y='14'>y</text><text x='166' y='154'>O</text><line x1='10' y1='160' x2='350' y2='160' stroke='#000000' stroke-dasharray='6,4'/><text x='292' y='178'>y = −1</text><polyline fill='none' stroke='#000000' stroke-width='1.8' points='196,10 200,40 210,80 220,100 240,120 260,130 300,140 340,145'/><polyline fill='none' stroke='#000000' stroke-width='1.8' points='162.9,300 160,280 150,240 140,220 120,200 100,190 60,180 20,175'/><circle cx='240' cy='120' r='3' fill='#000000'/><text x='246' y='112'>P(3; 1)</text><text x='212' y='40'>h</text><text x='126' y='262'>h</text></svg>",
+          "caption": "Graph 1: h(x) = a/x + q (not drawn to scale)"
+        },
+        { "type": "paragraph", "text": "**Graph 2:** The sketch shows the graph of the exponential function $p(x) = a \\cdot b^{x} + q$, with $b > 0$ and $b \\ne 1$. The horizontal asymptote of $p$ is $y = -3$. The graph cuts the $y$-axis at $(0;\\ -1)$ and passes through the point $(2;\\ 5)$." },
+        {
+          "type": "diagram",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 280' font-family='sans-serif' font-size='13'><line x1='20' y1='180' x2='305' y2='180' stroke='#000000'/><line x1='200' y1='270' x2='200' y2='15' stroke='#000000'/><text x='306' y='175'>x</text><text x='205' y='18'>y</text><text x='186' y='175'>O</text><line x1='20' y1='240' x2='305' y2='240' stroke='#000000' stroke-dasharray='6,4'/><text x='24' y='258'>y = −3</text><polyline fill='none' stroke='#000000' stroke-width='1.8' points='50,238.8 80,237.5 110,235 140,230 170,220 200,200 215,183.4 230,160 245,126.9 260,80 269,43'/><circle cx='200' cy='200' r='3' fill='#000000'/><circle cx='260' cy='80' r='3' fill='#000000'/><text x='206' y='216'>(0; −1)</text><text x='266' y='86'>(2; 5)</text><text x='274' y='44'>p</text></svg>",
+          "caption": "Graph 2: p(x) = a·bˣ + q (not drawn to scale)"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q5-hyperbola-q",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Refer to Graph 1. Write down the value of $q$ for $h$.",
+          "answer": -1,
+          "tolerance": 0,
+          "explanation": "The horizontal asymptote of $y = \\dfrac{a}{x} + q$ is $y = q$. The asymptote is $y = -1$, so $q = -1$."
+        },
+        {
+          "id": "q5-hyperbola-a",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to Graph 1. Show that $a = 6$.",
+          "memo": "Substitute $P(3;\\ 1)$ into $h(x) = \\dfrac{a}{x} - 1$:\n$1 = \\dfrac{a}{3} - 1$ ✓ (substitution) (1)\n$\\dfrac{a}{3} = 2$, so $a = 6$ ✓ (1)"
+        },
+        {
+          "id": "q5-hyperbola-x-intercept",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to Graph 1. Calculate the $x$-intercept of $h$.",
+          "memo": "$0 = \\dfrac{6}{x} - 1$ ✓ (setting $h(x) = 0$) (1)\n$\\dfrac{6}{x} = 1$, so $x = 6$; the $x$-intercept is $(6;\\ 0)$ ✓ (1)"
+        },
+        {
+          "id": "q5-hyperbola-domain",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Refer to Graph 1. Write down the domain of $h$.",
+          "memo": "$x \\in \\mathbb{R}$, $x \\ne 0$ ✓ (1)"
+        },
+        {
+          "id": "q5-hyperbola-shift",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to Graph 1. The graph of $h$ is shifted 2 units UPWARDS to form the graph of $k$. Write down the equation of $k$ and the equation of its horizontal asymptote.",
+          "memo": "$k(x) = \\dfrac{6}{x} + 1$ ✓ (1)\nHorizontal asymptote: $y = 1$ ✓ (1)"
+        },
+        {
+          "id": "q5-exponential-q",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Refer to Graph 2. Write down the value of $q$ for $p$.",
+          "answer": -3,
+          "tolerance": 0,
+          "explanation": "The horizontal asymptote of $y = a \\cdot b^{x} + q$ is $y = q$. The asymptote is $y = -3$, so $q = -3$."
+        },
+        {
+          "id": "q5-exponential-a",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to Graph 2. Determine the value of $a$.",
+          "memo": "Substitute $(0;\\ -1)$: $-1 = a \\cdot b^{0} - 3$ ✓ (substitution, using $b^0 = 1$) (1)\n$-1 = a - 3$, so $a = 2$ ✓ (1)"
+        },
+        {
+          "id": "q5-exponential-b",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Refer to Graph 2. Determine the value of $b$.",
+          "memo": "Substitute $(2;\\ 5)$: $5 = 2 \\cdot b^{2} - 3$ ✓ (substitution) (1)\n$2b^2 = 8$, so $b^2 = 4$ and $b = 2$ (since $b > 0$) ✓ (1)"
+        },
+        {
+          "id": "q5-exponential-range",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Refer to Graph 2. Write down the range of $p$.",
+          "memo": "$y > -3$, $y \\in \\mathbb{R}$ (or $y \\in (-3;\\ \\infty)$) ✓ (1)"
+        },
+        {
+          "id": "q5-exponential-reflect",
+          "type": "mcq",
+          "marks": 1,
+          "prompt": "Refer to Graph 2. The graph of $p$ is reflected in the $x$-axis. Which equation describes the new graph?",
+          "options": [
+            "$y = -2 \\cdot 2^{x} - 3$",
+            "$y = 2 \\cdot 2^{-x} - 3$",
+            "$y = -2 \\cdot 2^{x} + 3$",
+            "$y = 2 \\cdot 2^{x} + 3$"
+          ],
+          "answer": 2,
+          "explanation": "A reflection in the $x$-axis changes $y$ to $-y$: $y = -(2 \\cdot 2^{x} - 3) = -2 \\cdot 2^{x} + 3$. Both $a$ and $q$ change sign; the asymptote becomes $y = 3$."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Finance and growth",
+      "context": [
+        { "type": "paragraph", "text": "Questions 6.1 and 6.2 refer to the following information. Lerato has R12 000 to invest for 5 years. Her bank offers her two options:" },
+        { "type": "list", "items": [
+          "**Option A:** 9% per annum simple interest.",
+          "**Option B:** 8% per annum interest, compounded annually."
+        ] }
+      ],
+      "questions": [
+        {
+          "id": "q6-simple-interest",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the amount Lerato will have at the end of 5 years if she chooses Option A. Give your answer in rand, correct to two decimal places.",
+          "answer": 17400,
+          "tolerance": 0.01,
+          "explanation": "$A = P(1 + in) = 12\\,000(1 + 0{,}09 \\times 5) = 12\\,000 \\times 1{,}45 = \\text{R}17\\ 400{,}00$."
+        },
+        {
+          "id": "q6-compound-interest",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the amount Lerato will have at the end of 5 years if she chooses Option B. Give your answer in rand, correct to two decimal places. (Compare this with your answer to the previous question to see which option is better.)",
+          "answer": 17631.94,
+          "tolerance": 0.01,
+          "explanation": "$A = P(1 + i)^n = 12\\,000(1{,}08)^5 = \\text{R}17\\ 631{,}94$. Option B gives R231,94 more than Option A, even though its interest rate is lower, because interest is earned on interest."
+        },
+        {
+          "id": "q6-hire-purchase",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Sipho buys a television that costs R8 500 on hire purchase. He pays a 10% deposit and the balance is financed at 15% per annum simple interest over 2 years. Calculate his monthly instalment.",
+          "memo": "Deposit $= 10\\% \\times 8\\,500 = \\text{R}850$; balance $P = 8\\,500 - 850 = \\text{R}7\\ 650$ ✓ (loan amount) (1)\n$A = 7\\,650(1 + 0{,}15 \\times 2) = 7\\,650 \\times 1{,}3 = \\text{R}9\\ 945$ ✓ (simple interest formula and amount) (1)\nMonthly instalment $= \\dfrac{9\\,945}{24} = \\text{R}414{,}38$ ✓ (dividing by 24 months) (1)"
+        },
+        {
+          "id": "q6-inflation",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A loaf of bread costs R18,50 today. If the average rate of inflation is 5,2% per annum, what will a loaf of bread cost in 6 years' time? Give your answer in rand, correct to two decimal places.",
+          "answer": 25.08,
+          "tolerance": 0.01,
+          "explanation": "Inflation behaves like compound growth: $A = 18{,}50(1{,}052)^6 = \\text{R}25{,}08$."
+        },
+        {
+          "id": "q6-exchange-rate",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "The exchange rate is US\\$1 = R18,20. A laptop costs US\\$650 on an overseas website. Calculate the price of the laptop in rand, correct to two decimal places (ignore shipping and import costs).",
+          "answer": 11830,
+          "tolerance": 0.01,
+          "explanation": "$650 \\times 18{,}20 = \\text{R}11\\ 830{,}00$. To convert dollars to rand, multiply by the number of rand per dollar."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Probability",
+      "context": [
+        { "type": "paragraph", "text": "Questions 7.1 to 7.5 refer to the following survey. A survey was carried out among 120 Grade 10 learners at a school in Polokwane about the sports they play:" },
+        { "type": "list", "items": [
+          "70 learners play soccer ($S$).",
+          "45 learners play netball ($N$).",
+          "20 learners play both soccer and netball."
+        ] },
+        { "type": "paragraph", "text": "A learner is chosen at random from the group surveyed." }
+      ],
+      "questions": [
+        {
+          "id": "q7-venn",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Draw a Venn diagram to represent the information. Show the number of learners in each region, including the learners who play neither sport.",
+          "memo": "Sample space of 120 learners with two overlapping circles $S$ and $N$:\n$S$ and $N$ (intersection): 20 ✓ (1)\n$S$ only: $70 - 20 = 50$ and $N$ only: $45 - 20 = 25$ ✓ (1)\nNeither: $120 - (50 + 20 + 25) = 25$ ✓ (outside both circles) (1)"
+        },
+        {
+          "id": "q7-soccer-only",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Determine the probability that the learner plays soccer ONLY. Give your answer as a fraction in simplest form or as a decimal correct to two decimal places.",
+          "answer": 0.4167,
+          "tolerance": 0.005,
+          "explanation": "Soccer only $= 70 - 20 = 50$ learners. $P(\\text{S only}) = \\dfrac{50}{120} = \\dfrac{5}{12} \\approx 0{,}42$."
+        },
+        {
+          "id": "q7-addition-rule",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Use the addition rule to calculate $P(S \\text{ or } N)$, the probability that the learner plays soccer or netball.",
+          "memo": "$P(S \\text{ or } N) = P(S) + P(N) - P(S \\text{ and } N)$ ✓ (addition rule) (1)\n$= \\dfrac{70}{120} + \\dfrac{45}{120} - \\dfrac{20}{120}$ ✓ (substitution) (1)\n$= \\dfrac{95}{120} = \\dfrac{19}{24} \\approx 0{,}79$ ✓ (answer) (1)"
+        },
+        {
+          "id": "q7-neither",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Determine the probability that the learner plays NEITHER sport. Give your answer as a fraction in simplest form or as a decimal correct to two decimal places.",
+          "answer": 0.2083,
+          "tolerance": 0.005,
+          "explanation": "\"Neither\" is the complement of \"$S$ or $N$\": $P(\\text{neither}) = 1 - \\dfrac{19}{24} = \\dfrac{5}{24} \\approx 0{,}21$ (25 of the 120 learners)."
+        },
+        {
+          "id": "q7-mutually-exclusive",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Are the events \"plays soccer\" and \"plays netball\" mutually exclusive? Give a reason for your answer.",
+          "memo": "No ✓ (1)\n20 learners play both sports, so $P(S \\text{ and } N) = \\dfrac{20}{120} \\ne 0$; the events can happen at the same time ✓ (reason) (1)"
+        },
+        {
+          "id": "q7-p-a-and-b",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "For two different events $A$ and $B$ it is given that $P(A) = 0{,}4$, $P(B) = 0{,}35$ and $P(A \\text{ or } B) = 0{,}6$. Calculate $P(A \\text{ and } B)$.",
+          "answer": 0.15,
+          "tolerance": 0.001,
+          "explanation": "Rearrange the addition rule: $P(A \\text{ and } B) = P(A) + P(B) - P(A \\text{ or } B) = 0{,}4 + 0{,}35 - 0{,}6 = 0{,}15$."
+        },
+        {
+          "id": "q7-relative-frequency",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Kagiso rolls a fair six-sided die 60 times and gets a 6 on 14 of the rolls. Calculate the relative frequency of rolling a 6 and explain why it differs from the theoretical probability of rolling a 6.",
+          "memo": "Relative frequency $= \\dfrac{14}{60} \\approx 0{,}23$ ✓ (1)\nThe theoretical probability is $\\dfrac{1}{6} \\approx 0{,}17$. Relative frequency comes from a limited number of actual trials, so it varies by chance; as the number of rolls increases, the relative frequency gets closer to the theoretical probability ✓ (explanation) (1)"
+        }
+      ]
+    }
+  ]
+}

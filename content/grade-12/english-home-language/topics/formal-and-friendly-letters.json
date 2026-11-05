@@ -1,0 +1,384 @@
+{
+  "id": "formal-and-friendly-letters",
+  "title": "Formal and Friendly Letters",
+  "term": 1,
+  "summary": "Write formal letters (application, complaint, request and letters to the press) and friendly letters with the correct South African format, register and tone for Paper 3.",
+  "notes": [
+    { "type": "heading", "text": "Letters in Paper 3" },
+    { "type": "paragraph", "text": "**Section B** of Paper 3 (Writing) tests **transactional texts**: practical texts written for a real purpose and a real reader. You answer TWO of the transactional questions offered, and each is worth **25 marks**. At Home Language level the **body** of each text must be **180-200 words** (the address, date, salutation and closing are not counted). Letters are among the most common choices, so knowing the format perfectly is an easy way to secure marks." },
+    {
+      "type": "table",
+      "caption": "How a transactional text is assessed (out of 25)",
+      "headers": ["Criterion", "Marks", "What the marker looks for"],
+      "rows": [
+        ["Content, planning and format", "15", "All parts of the task are addressed; ideas are relevant, clear and well organised; the correct format is used accurately; there is evidence of planning"],
+        ["Language, style and editing", "10", "Register and tone suit the audience and purpose; vocabulary is precise; sentences are correct and varied; grammar, spelling and punctuation are accurate"]
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Read the task twice and underline exactly what you must do: who you are, who you are writing to, why, and every point you are asked to include. Missing one part of the instruction costs Content marks no matter how well you write." },
+    { "type": "definition", "term": "Register", "text": "The level of formality of language, chosen to suit the audience and situation. Formal register uses complete sentences, standard vocabulary and no slang or contractions. Informal register is relaxed and conversational, with contractions and everyday expressions." },
+    { "type": "definition", "term": "Tone", "text": "The attitude the writer conveys: for example polite, firm, sympathetic, grateful, persuasive or enthusiastic. A complaint can be firm and still courteous; a condolence letter should be warm and gentle." },
+    {
+      "type": "table",
+      "caption": "Formal and friendly letters compared",
+      "headers": ["Feature", "Formal letter", "Friendly (informal) letter"],
+      "rows": [
+        ["Reader", "An organisation, official, employer or newspaper editor, often someone you do not know personally", "A friend or family member"],
+        ["Addresses", "Sender's address AND recipient's address", "Sender's address only"],
+        ["Salutation", "Dear Sir/Madam; Dear Mr Khumalo; Dear Editor", "Dear Ayanda; Hi Ayanda"],
+        ["Subject line", "Yes", "No"],
+        ["Register", "Formal: no slang, no contractions", "Informal: contractions and a chatty tone are acceptable"],
+        ["Closing", "Yours faithfully / Yours sincerely, signature and full name", "Your friend, Lots of love, Warm wishes, then your first name"]
+      ]
+    },
+
+    { "type": "heading", "text": "The format of a formal letter" },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 520' font-family='sans-serif' font-size='12'><rect x='10' y='10' width='380' height='500' fill='white' stroke='black'/><rect x='235' y='25' width='140' height='60' fill='white' stroke='black'/><text x='305' y='52' text-anchor='middle'>1. Sender's address</text><text x='305' y='68' text-anchor='middle' font-size='10'>(top right)</text><rect x='235' y='92' width='140' height='24' fill='white' stroke='black'/><text x='305' y='108' text-anchor='middle'>2. Date</text><rect x='25' y='128' width='160' height='60' fill='white' stroke='black'/><text x='105' y='155' text-anchor='middle'>3. Recipient's address</text><text x='105' y='171' text-anchor='middle' font-size='10'>(title, organisation, address)</text><text x='25' y='212'>4. Salutation: Dear Sir/Madam</text><rect x='25' y='222' width='350' height='24' fill='white' stroke='black'/><text x='200' y='238' text-anchor='middle'>5. SUBJECT LINE</text><rect x='25' y='256' width='350' height='36' fill='white' stroke='black'/><text x='200' y='278' text-anchor='middle'>6. Body: opening paragraph (purpose)</text><rect x='25' y='300' width='350' height='36' fill='white' stroke='black'/><text x='200' y='322' text-anchor='middle'>Body: middle paragraphs (details)</text><rect x='25' y='344' width='350' height='36' fill='white' stroke='black'/><text x='200' y='366' text-anchor='middle'>Body: closing paragraph (action required)</text><text x='25' y='410'>7. Yours faithfully / Yours sincerely</text><text x='25' y='440'>8. Signature</text><text x='25' y='470'>9. Full name (and position, if relevant)</text></svg>",
+      "caption": "Layout of a formal letter (traditional South African layout)"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Sender's address** in the top right-hand corner: street address, suburb or town, and postal code, each on its own line. Do not write your name above it.",
+        "**Date** directly below the sender's address, written in full: **12 February 2026** (not 12/02/26, which can be misread).",
+        "**Recipient's address** on the left, starting one line below the date: the person's title or position (for example, The Manager or Ms T Naidoo, Principal), the organisation, then the address.",
+        "**Salutation** on the left: 'Dear Sir/Madam' if you do not know the name; 'Dear Ms Naidoo' if you do. Formal salutations normally have no comma after them.",
+        "**Subject line** below the salutation, in capitals or underlined, summarising the purpose in a few words: APPLICATION FOR THE POSITION OF JUNIOR SALES ASSISTANT. Some writers begin it with 'Re:'.",
+        "**Body** in clear paragraphs: an opening paragraph stating why you are writing, middle paragraphs with the details, and a closing paragraph stating what you would like to happen.",
+        "**Closing** on the left: 'Yours faithfully' or 'Yours sincerely' (only the Y is a capital letter; there is no apostrophe in 'Yours').",
+        "**Signature** below the closing.",
+        "**Full name** printed below the signature, with your position if relevant (for example, Chairperson, Representative Council of Learners)."
+      ]
+    },
+    { "type": "callout", "label": "Remember", "text": "Use **open punctuation** in addresses (no commas or full stops at the ends of lines). Many schools also accept a fully blocked layout, with everything starting at the left margin. Either layout is acceptable if it is used consistently; mixing them looks careless." },
+    {
+      "type": "table",
+      "caption": "Matching the salutation and the closing",
+      "headers": ["Salutation", "Closing", "Why"],
+      "rows": [
+        ["Dear Sir/Madam", "Yours faithfully", "The reader's name is not known"],
+        ["Dear Editor (or Sir/Madam) in a letter to the press", "Yours faithfully", "You are writing to the newspaper's editor in an official capacity"],
+        ["Dear Mr Dlamini / Dear Dr Pillay", "Yours sincerely", "The reader is addressed by name"],
+        ["Dear Ayanda (friendly letter)", "Your friend / Lots of love / Warm regards", "Personal relationship"]
+      ]
+    },
+    { "type": "callout", "label": "Memory aid", "text": "'**S**incerely' goes with a **S**urname: if you have used the person's surname in the salutation, close with 'Yours sincerely'. If you have written 'Sir/Madam', close with 'Yours faithfully'. Never pair 'Dear Sir/Madam' with 'Yours sincerely'." },
+    { "type": "callout", "label": "Common mistakes in format", "text": "Writing 'Yours Faithfully' with a capital F or 'Your's' with an apostrophe; leaving out the recipient's address or the subject line; writing the date as numbers; placing the sender's name above the address; and forgetting to print the full name under the signature." },
+
+    { "type": "heading", "text": "Language and style in formal letters" },
+    {
+      "type": "list",
+      "items": [
+        "Be **clear and concise**: state your purpose in the first sentence ('I wish to apply for...', 'I am writing to complain about...').",
+        "Use **formal vocabulary** and full forms: 'I am' not 'I'm'; 'children' not 'kids'; 'received' not 'got'.",
+        "Avoid slang, SMS language and exclamation marks. Be polite even when you are angry; a courteous, firm tone is far more persuasive.",
+        "Use **one main idea per paragraph** and link paragraphs logically ('Furthermore', 'In addition', 'As a result', 'I would therefore appreciate...').",
+        "Give **specific facts**: dates, invoice numbers, amounts (R8 499,00), names of products or events.",
+        "End by stating the **action you want** and, where appropriate, thanking the reader."
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1: changing the register",
+      "problem": "Rewrite this sentence in a formal register suitable for a letter of complaint: **I'm super cross coz the delivery guys pitched up three hours late and just chucked the fridge in the passage!**",
+      "steps": [
+        "**Remove contractions and slang:** I'm, super, cross, coz, guys, pitched up, chucked.",
+        "**Replace them with formal equivalents:** 'I am', 'extremely dissatisfied', 'because', 'delivery staff', 'arrived', 'left'.",
+        "**Add precise facts** to strengthen the complaint: the date and the agreed time.",
+        "**Remove the exclamation mark** and keep the tone firm but polite."
+      ],
+      "answer": "I am extremely dissatisfied because your delivery staff arrived three hours after the agreed time on 14 March 2026 and left the refrigerator in the passage instead of installing it in the kitchen."
+    },
+
+    { "type": "heading", "text": "The letter of application" },
+    { "type": "paragraph", "text": "A letter of application (also called a covering letter) accompanies your **curriculum vitae (CV)** when you apply for a job, a bursary, a learnership or a place on a programme. Its purpose is to persuade the reader to invite you for an interview, so it must be confident, positive and error-free." },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Paragraph 1:** the position you are applying for and where you saw it advertised.",
+        "**Paragraph 2:** your qualifications and education (current grade, relevant subjects, achievements).",
+        "**Paragraph 3:** relevant experience and skills, with concrete examples.",
+        "**Paragraph 4:** why you are suitable: personal qualities linked to the job, and your availability.",
+        "**Paragraph 5:** refer to your attached CV, request an interview, give contact details and thank the reader."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "What a CV (curriculum vitae) contains",
+      "headers": ["Section", "Content"],
+      "rows": [
+        ["Personal details", "Full name, contact number, email address, home address"],
+        ["Education", "School, highest grade passed, subjects, results"],
+        ["Skills", "Computer literacy, languages spoken, driver's licence, other practical skills"],
+        ["Experience", "Part-time jobs, volunteer work, leadership positions, with dates"],
+        ["Achievements and interests", "Awards, sport, cultural activities, community involvement"],
+        ["References", "Two people (for example a teacher and a previous employer) with their contact details, who have agreed to be contacted"]
+      ]
+    },
+    {
+      "type": "passage",
+      "title": "Model letter of application (original)",
+      "text": "14 Protea Street\nWestridge\nMitchells Plain\n7785\n\n12 February 2026\n\nThe Human Resources Manager\nGreenLeaf Nurseries\nPO Box 4410\nClaremont\n7735\n\nDear Sir/Madam\n\nAPPLICATION FOR THE POSITION OF PART-TIME JUNIOR SALES ASSISTANT\n\nI wish to apply for the position of part-time Junior Sales Assistant, which was advertised on your company website on 5 February 2026.\n\nI am currently in Grade 12 at Westridge High School, where my subjects include Life Sciences, Business Studies and Mathematics. In my Grade 11 final examinations I achieved an average of 78%.\n\nFor the past two years I have volunteered in our school's food garden, which supplies vegetables to the feeding scheme. I have learnt how to care for seedlings, control pests without harsh chemicals and explain plant care to visitors. I have also worked on Saturdays at a local hardware store, where I handled cash accurately and assisted customers politely.\n\nI am reliable, hard-working and eager to learn. I believe that my practical knowledge of plants, together with my experience of working with the public, would make me a valuable member of your team. I am available to work on Saturdays and during school holidays.\n\nPlease find my curriculum vitae attached. I would welcome the opportunity to attend an interview and can be contacted on 072 555 0134. Thank you for considering my application.\n\nYours faithfully\n\nA. Petersen (signature)\n\nAaliyah Petersen"
+    },
+    {
+      "type": "example",
+      "title": "Worked example 2: analysing the model application",
+      "problem": "Why is the model letter of application effective?",
+      "steps": [
+        "**Format:** every element is present and in order: sender's address, date in full, recipient's address, 'Dear Sir/Madam' matched with 'Yours faithfully', a clear subject line, signature and full name.",
+        "**Purpose stated at once:** the first sentence names the position and the source of the advertisement.",
+        "**Relevant evidence:** the food-garden and hardware-store experience are directly linked to a job at a plant nursery that involves customers and cash.",
+        "**Persuasive but modest tone:** qualities are claimed ('reliable, hard-working') and then backed up with examples.",
+        "**Clear call to action:** the CV is referred to, an interview is requested and contact details are given.",
+        "**Length:** the body is within the 180-200 word range."
+      ],
+      "answer": "It is correctly formatted, focused on the employer's needs and supported by specific evidence."
+    },
+
+    { "type": "heading", "text": "The letter of complaint" },
+    { "type": "paragraph", "text": "A letter of complaint explains a problem with goods or a service and requests a specific solution. Structure it as: **what happened** (facts, dates, reference numbers), **why it is unacceptable** (the effect on you; your rights), and **what you want done** (repair, replacement, refund, apology) and by when. Stay calm: insults and sarcasm weaken your case." },
+    {
+      "type": "passage",
+      "title": "Model letter of complaint (original)",
+      "text": "22 Jacaranda Crescent\nScottsville\nPietermaritzburg\n3201\n\n24 February 2026\n\nMr S Dlamini\nCustomer Services Manager\nTechTown Electronics\n45 Church Street\nPietermaritzburg\n3201\n\nDear Mr Dlamini\n\nCOMPLAINT ABOUT A FAULTY LAPTOP (INVOICE NO. TT20871)\n\nI am writing to complain about a laptop that I bought from your Church Street branch on 3 January 2026 for R8 499,00, and about the way my complaint has been handled since then.\n\nWithin two weeks of purchase, the laptop began to switch off without warning, and the battery no longer charges beyond 40%. On 20 January I returned it to your store, and a sales assistant promised that it would be repaired within seven working days. It is now five weeks later and, despite four telephone calls, I have received neither the laptop nor any explanation.\n\nAs a Grade 12 learner, I depend on the laptop for my school projects, and the delay has caused me considerable inconvenience. Furthermore, the Consumer Protection Act entitles me to a repair, a replacement or a refund for defective goods returned within six months of purchase.\n\nI therefore request that you replace the laptop with a new one of the same model, or refund the full purchase price, within ten working days. Copies of my invoice and repair slip are attached.\n\nYours sincerely\n\nK. Moodley (signature)\n\nKeshav Moodley"
+    },
+    { "type": "callout", "label": "Notice", "text": "This letter addresses Mr Dlamini by name, so it closes with 'Yours sincerely'. The application letter above was addressed to 'Sir/Madam', so it closed with 'Yours faithfully'." },
+
+    { "type": "heading", "text": "The letter of request" },
+    { "type": "paragraph", "text": "A letter of request asks an organisation or person for something: permission, information, sponsorship, a donation, a venue or a guest speaker. Explain who you are, exactly what you are asking for, why, and what the reader will gain or how the request will benefit others. Make it easy to say yes by giving dates, numbers and a contact person." },
+    {
+      "type": "example",
+      "title": "Worked example 3: planning a letter of request",
+      "problem": "As chairperson of your school's Representative Council of Learners (RCL), write to the manager of a local supermarket requesting a donation of food for a Heritage Day fundraising event. Plan the letter.",
+      "steps": [
+        "**Format decisions:** the manager's name is unknown, so use 'Dear Sir/Madam' and 'Yours faithfully'. Subject line: REQUEST FOR A DONATION FOR HERITAGE DAY FUNDRAISER. Sign as 'Chairperson: Representative Council of Learners'.",
+        "**Paragraph 1 (purpose):** introduce yourself and the school; state that you are requesting a donation.",
+        "**Paragraph 2 (details):** the event (date, place, expected number of guests); the cause (raising money for the school library); exactly what is requested (for example, 20 loaves of bread and 10 kg of boerewors).",
+        "**Paragraph 3 (benefit to the reader):** the supermarket's name will be displayed on banners and thanked in the school newsletter, which builds goodwill in the community.",
+        "**Paragraph 4 (action and thanks):** give a contact person and number, offer to collect the donation, and thank the manager in advance.",
+        "**Tone:** polite, respectful and enthusiastic; never demanding."
+      ],
+      "answer": "A four-paragraph letter in formal register that states a specific request, explains its purpose and offers something in return."
+    },
+
+    { "type": "heading", "text": "Letters to the press (letters to the editor)" },
+    { "type": "paragraph", "text": "A letter to the press expresses an opinion on an issue of public interest, often in response to an article or another letter. It is addressed to **The Editor** of the newspaper or magazine, but it is really written for the publication's readers. It must be persuasive: state your view clearly, support it with reasons and examples, and suggest a solution." },
+    {
+      "type": "list",
+      "items": [
+        "Recipient: The Editor, the name of the newspaper and its address.",
+        "Salutation: 'Dear Editor' or 'Sir/Madam'. Closing: 'Yours faithfully'.",
+        "A subject line is recommended in the exam, for example: PLANNED CLOSURE OF THE LIBRARY ON SATURDAYS.",
+        "Refer to the article or event you are responding to in the first paragraph.",
+        "Below your name you may add your town (for example, 'T Mokoena, Kimberley'), as newspapers usually print it."
+      ]
+    },
+    { "type": "callout", "label": "Exam tip", "text": "Persuasive techniques such as a rhetorical question, an emotive (but not insulting) word or a short anecdote are effective in letters to the press. Keep the register formal: you are writing for publication." },
+
+    { "type": "heading", "text": "Friendly (informal) letters" },
+    { "type": "paragraph", "text": "Friendly letters are written to people you know well. The format is simpler (sender's address and date only, no recipient's address and no subject line), and the register is relaxed, but the letter must still be well organised, correctly spelt and in paragraphs. In the exam the task usually has a clear purpose: to congratulate, to console, to advise, to thank, to apologise or to share news." },
+    {
+      "type": "table",
+      "caption": "Types of friendly letter",
+      "headers": ["Type", "Purpose", "Useful approach"],
+      "rows": [
+        ["Congratulations", "To celebrate a friend's success", "Mention the achievement specifically; say why they deserve it; look ahead to what it means"],
+        ["Condolence", "To comfort someone who has lost a loved one", "Express sympathy simply and sincerely; share a positive memory of the person who died; offer practical help; avoid clichés such as 'I know exactly how you feel'"],
+        ["Advice", "To help a friend with a problem", "Show that you understand the problem; give two or three practical suggestions; encourage and reassure"],
+        ["Thanks or apology", "To thank someone or make amends", "Be specific about what you are grateful or sorry for; be sincere"]
+      ]
+    },
+    {
+      "type": "passage",
+      "title": "Model friendly letter of congratulations (original)",
+      "text": "8 Kingfisher Road\nNahoon\nEast London\n5241\n\n3 March 2026\n\nDear Sizwe\n\nI have just seen the photos on the school's page and I'm still grinning! Selected for the Border under-19 cricket squad: you must be over the moon. Congratulations, my friend. Nobody deserves it more.\n\nI keep thinking back to all those freezing mornings when you were at the nets before the rest of us had even found our socks. While we complained about the cold, you were bowling over after over at that single stump. Now everyone can see what all that work was for.\n\nYour gran must be so proud. Please tell her I said that the family's first provincial cricketer should be allowed extra koeksisters this weekend.\n\nThe trials in April will be tough, I know, but don't let the nerves get to you. Bowl the way you do at practice and they won't be able to ignore you. If you need someone to throw balls at you over the holidays, you know where I live.\n\nWell done again, Siz. Let's celebrate properly when I'm back in town.\n\nYour friend\nAnele"
+    },
+    { "type": "callout", "label": "Notice", "text": "The congratulations letter uses contractions ('I'm', 'don't'), a nickname and a joke, which suit its purpose, yet it is still correctly punctuated, organised in paragraphs and focused on the friend." },
+
+    { "type": "heading", "text": "Planning any letter in the exam" },
+    {
+      "type": "example",
+      "title": "Worked example 4: analysing a task",
+      "problem": "Task: **Your younger brother bought a pair of running shoes online. They arrived damaged, and the company has ignored his emails. Write a letter to the company on his behalf.**",
+      "steps": [
+        "**Text type:** formal letter of complaint.",
+        "**Writer and reader:** you, writing on behalf of your brother, to the company (probably the Customer Services Manager, name unknown).",
+        "**Format:** both addresses, date in full, 'Dear Sir/Madam', a subject line with the order number, 'Yours faithfully', signature and full name.",
+        "**Content to include:** what was bought, when and for how much; the damage; the ignored emails; the solution required (replacement or refund) and a deadline.",
+        "**Register and tone:** formal, firm and courteous.",
+        "**Length:** plan four paragraphs, about 45-50 words each, to land within 180-200 words."
+      ],
+      "answer": "Analysing the text type, writer, reader, format, content and tone before writing ensures that no part of the task is missed."
+    },
+
+    { "type": "heading", "text": "Summary" },
+    {
+      "type": "list",
+      "items": [
+        "Paper 3 Section B: answer TWO transactional texts, 25 marks each; HL body length 180-200 words.",
+        "Rubric: Content, planning and format 15; Language, style and editing 10.",
+        "Formal letter: sender's address and date (top right), recipient's address (left), salutation, subject line, body paragraphs, closing, signature, full name.",
+        "Write the date in full (12 February 2026) and use open punctuation in addresses.",
+        "'Dear Sir/Madam' goes with 'Yours faithfully'; 'Dear Mr/Ms Surname' goes with 'Yours sincerely'.",
+        "Formal register: no slang, contractions or exclamation marks; be clear, specific, polite and firm.",
+        "Application: position and source, qualifications, experience, suitability, reference to the attached CV, request for an interview.",
+        "Complaint: facts, effect, the solution you want and a deadline. Request: what, why, benefit to the reader, contact details.",
+        "Letter to the press: addressed to The Editor; persuasive opinion on a public issue; 'Yours faithfully'.",
+        "Friendly letter: sender's address and date only; relaxed but correct language; clear purpose such as congratulations, condolence or advice."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "A formal letter begins with 'Dear Sir/Madam'. Which closing is correct?",
+      "options": ["Yours sincerely", "Yours faithfully", "Lots of love", "Your's faithfully"],
+      "answer": 1,
+      "explanation": "When the reader's name is not known ('Sir/Madam'), close with 'Yours faithfully'. 'Yours' never has an apostrophe."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "Which of the following is NOT normally included in a friendly letter?",
+      "options": ["The sender's address", "The date", "The recipient's address", "A closing such as 'Your friend'"],
+      "answer": 2,
+      "explanation": "A friendly letter includes the sender's address and the date but not the recipient's address or a subject line."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "Contractions such as 'I'm' and 'don't' are acceptable in a formal letter of application.",
+      "answer": false,
+      "explanation": "Formal register uses full forms ('I am', 'do not'). Contractions belong in informal writing such as friendly letters."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "A letter to the press is addressed to the editor of the newspaper, even though it is written for the newspaper's readers.",
+      "answer": true,
+      "explanation": "Letters to the press are addressed to 'The Editor' and usually close with 'Yours faithfully', but they aim to persuade the public who read them."
+    },
+    {
+      "id": "q5",
+      "type": "short",
+      "prompt": "What is the name of the line, written below the salutation in capitals or underlined, that states the purpose of a formal letter in a few words?",
+      "answers": ["subject line", "the subject line", "subject", "heading", "re line", "reference line"],
+      "explanation": "The subject line (sometimes starting with 'Re:') tells the reader at a glance what the letter is about."
+    },
+    {
+      "id": "q6",
+      "type": "numeric",
+      "prompt": "How many marks is each transactional text in Section B of the HL Paper 3 worth? (Give a whole number.)",
+      "answer": 25,
+      "tolerance": 0,
+      "explanation": "Each transactional text is worth 25 marks: 15 for Content, planning and format and 10 for Language, style and editing."
+    },
+    {
+      "id": "q7",
+      "type": "match",
+      "prompt": "Match each type of letter with its main purpose.",
+      "marks": 5,
+      "pairs": [
+        { "left": "Letter of application", "right": "To persuade an employer to invite you for an interview" },
+        { "left": "Letter of complaint", "right": "To explain a problem with goods or a service and ask for a solution" },
+        { "left": "Letter of request", "right": "To ask for permission, information, a donation or help" },
+        { "left": "Letter to the press", "right": "To express a public opinion on an issue of community interest" },
+        { "left": "Letter of condolence", "right": "To comfort someone who has lost a loved one" }
+      ],
+      "explanation": "Identifying the purpose of the letter tells you what content, register and tone to use."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "Which sentence has the most appropriate register and tone for a letter of complaint to a cellphone company?",
+      "options": [
+        "You guys are useless and I want my money back right now!!",
+        "Hi there, just wondering if maybe you could look at my phone sometime?",
+        "I'm not happy coz my phone's been broken for ages, sort it out.",
+        "I would appreciate it if you could replace the device or refund the full amount within seven working days."
+      ],
+      "answer": 3,
+      "explanation": "The last option is formal, polite and firm, and it states a clear solution and deadline. The others are rude, too casual or vague."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "Which is the correct order of these parts of a formal letter?",
+      "options": [
+        "Sender's address, date, recipient's address, salutation, subject line, body, closing, signature, full name",
+        "Recipient's address, sender's address, subject line, salutation, body, closing, date, full name",
+        "Sender's address, recipient's address, subject line, date, salutation, body, full name, closing",
+        "Date, salutation, sender's address, recipient's address, body, subject line, closing, signature"
+      ],
+      "answer": 0,
+      "explanation": "The sender's address and date come first (top right), then the recipient's address, salutation, subject line, body, closing, signature and full name."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "Which is the best way to write the date in a formal letter?",
+      "options": ["12/2/26", "Feb 12th '26", "12 February 2026", "twelve Feb 2026"],
+      "answer": 2,
+      "explanation": "Write the date in full with the month as a word. Numbers only (12/2/26) can be misread, and abbreviations and informal forms are inappropriate."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "Which sentence is most suitable in a letter of condolence to a friend whose grandmother has died?",
+      "options": [
+        "At least she lived a long life, so you shouldn't be too sad.",
+        "I will always remember how your gogo welcomed us with tea and scones after school. Please let me know if I can help in any way.",
+        "I know exactly how you feel, so cheer up!",
+        "Everything happens for a reason, and time heals all wounds."
+      ],
+      "answer": 1,
+      "explanation": "A good condolence letter is sincere and personal: it shares a specific positive memory and offers help. The other options dismiss the friend's grief or rely on clichés."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "What should the final paragraph of a letter of application do?",
+      "options": [
+        "Describe your hobbies in detail",
+        "Repeat the subject line word for word",
+        "Explain why you left your previous school",
+        "Refer to the attached CV, request an interview and give contact details"
+      ],
+      "answer": 3,
+      "explanation": "The closing paragraph ends with a call to action: it points to the CV, asks for an interview and makes it easy for the employer to contact you."
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Rewrite the following extract in a formal register suitable for a letter of complaint to a bus company:\n\n“Hey guys, I'm super cheesed off coz the bus you sent for our school trip was like two hours late and the driver was totally rude. You've gotta give us our money back ASAP!”",
+      "memo": "Model answer: I wish to express my dissatisfaction with the bus service provided for our school excursion on 14 March 2026. The bus arrived two hours after the agreed time, and the driver was discourteous to both learners and staff. I therefore request a full refund of the amount paid within ten working days.\n\nMarking:\n✓ Informal greeting ('Hey guys') removed (1)\n✓ Slang and colloquialisms replaced ('cheesed off', 'coz', 'like', 'totally', 'gotta', 'ASAP') (1)\n✓ Contractions written in full and exclamation mark removed (1)\n✓ Tone is firm but courteous, with a clear request for a refund (1)\n✓ Specific, precise detail added (date, time, deadline) and the sentences are correct (1)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Identify FIVE errors in the format or register of this formal letter to a hardware store, and correct each one.\n\n14 Acacia Avenue\nPolokwane\n0700\n\n3/4/26\n\nHey Manager\n\nI'm writing to ask if your store would sponsor paint for our school's classroom makeover project...\n\nYours sincerely\n\n(signature)",
+      "memo": "Any FIVE of the following, each identified and corrected (1 mark each):\n✓ The recipient's address is missing: add the title, store name and address (for example, The Manager, BuildRite Hardware, PO Box 220, Polokwane 0700)\n✓ The date is written in numbers only: write it in full (3 April 2026)\n✓ 'Hey Manager' is too informal: use 'Dear Sir/Madam'\n✓ There is no subject line: add one, such as REQUEST FOR SPONSORSHIP OF PAINT FOR CLASSROOM PROJECT\n✓ 'I'm' is a contraction: write 'I am'\n✓ 'Yours sincerely' does not match an unnamed reader: use 'Yours faithfully'\n✓ The writer's full name is missing below the signature: print it (and the position, for example RCL Chairperson)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 25,
+      "prompt": "Your local municipality plans to close the community library on Saturdays in order to save money. Write a letter to the editor of your local newspaper, *The Kleinvallei Courier*, in which you express your views on the decision. The body of your letter should be 180-200 words.",
+      "memo": "Model answer (one possible response):\n\n5 Vygie Street\nKleinvallei\n6500\n\n10 March 2026\n\nThe Editor\nThe Kleinvallei Courier\nPO Box 112\nKleinvallei\n6500\n\nDear Editor\n\nPLANNED CLOSURE OF THE COMMUNITY LIBRARY ON SATURDAYS\n\nI was dismayed to read in last week's edition that the municipality intends to close the Kleinvallei Community Library on Saturdays to save money. This decision would harm the very people the library exists to serve.\n\nFor many learners in our town, Saturday is the only day they can use the library. During the week they travel home by bus straight after school, and few have internet access or a quiet place to study at home. The library's computers and free Wi-Fi are their lifeline for completing assignments and applying for bursaries.\n\nSaturday is also when working parents bring young children to the story-time sessions run by volunteers. Closing the doors would end a programme that has encouraged a love of reading in hundreds of children.\n\nSurely there are other ways to save money? The municipality could shorten weekday hours when the library is quiet, or invite local businesses to sponsor the Saturday shift. I urge our councillors to reconsider before our community loses one of its most valuable resources.\n\nYours faithfully\n\n(signature)\n\nThabo Mokoena\nKleinvallei\n\n**Content, planning and format (15)**\n✓ Correct format: sender's address, date, The Editor and newspaper address, salutation, subject line, 'Yours faithfully', signature, name (and town)\n✓ Refers to the issue or article in the opening paragraph\n✓ A clear opinion supported by at least two well-developed reasons with examples\n✓ A constructive suggestion or solution and a strong concluding appeal\n✓ Logical paragraphs; body 180-200 words\n\n**Language, style and editing (10)**\n✓ Formal, persuasive register (for example, a rhetorical question, emotive but respectful vocabulary)\n✓ Correct grammar, spelling and punctuation; varied sentences\n\nMarkers award marks holistically within each criterion: excellent responses (13-15 and 8-10) meet all the requirements above with no format errors."
+    },
+    {
+      "id": "q16",
+      "type": "open",
+      "marks": 25,
+      "prompt": "Your close friend has written to tell you that she feels overwhelmed by her matric studies and is thinking of dropping out of school. Write a friendly letter in which you encourage her and offer practical advice. The body of your letter should be 180-200 words.",
+      "memo": "Model answer (one possible response):\n\n27 Marula Close\nMahikeng\n2745\n\n6 May 2026\n\nDear Lindiwe\n\nThank you for your letter. I could hear how tired and worried you are, and I'm so glad you told me instead of keeping it all to yourself.\n\nFirst, please don't make any big decisions while you feel like this. Matric is exhausting for everyone, even the learners who look as though they are coasting. Feeling overwhelmed doesn't mean you aren't clever enough; it means you've been carrying too much for too long.\n\nHere's what helped me during the June exams. Break your work into small pieces: two hours of Maths, then a walk, then an hour of History. Make a timetable and tick things off, because seeing progress is a great motivator. Talk to Mrs Naidoo, too. She helped me with a study plan, and I know she'll want to help you.\n\nMost importantly, look after yourself. Sleep, eat properly and get outside, even if it's just to the corner shop and back.\n\nYou're only a few months from the finish line, Lindi. I know you can do this, and I'll be cheering you on all the way. Phone me on Sunday?\n\nLots of love\nThandeka\n\n**Content, planning and format (15)**\n✓ Correct friendly-letter format: sender's address, date, informal salutation, informal closing and first name; no recipient's address or subject line\n✓ Responds to the friend's situation with empathy\n✓ At least two or three practical, specific pieces of advice\n✓ Encouraging, reassuring conclusion\n✓ Logical paragraphs; body 180-200 words\n\n**Language, style and editing (10)**\n✓ Warm, sincere, informal register (contractions acceptable) that remains correct and controlled\n✓ Correct grammar, spelling and punctuation; no SMS language\n\nMarkers award marks holistically within each criterion: excellent responses (13-15 and 8-10) meet all the requirements above."
+    }
+  ]
+}

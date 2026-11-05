@@ -1,0 +1,94 @@
+{
+  "id": "functions-and-relationships",
+  "title": "Functions and Relationships",
+  "term": 1,
+  "summary": "Describe the relationship between input and output values using flow diagrams, tables, formulae and words, and find missing input or output values.",
+  "notes": [
+    { "type": "heading", "text": "Input, output and rules" },
+    { "type": "paragraph", "text": "A **relationship** links two quantities so that the value of one depends on the other. The cost of airtime depends on how many minutes you buy; the taxi fare depends on how far you travel. We put an **input** value into a **rule** and get an **output** value." },
+    { "type": "definition", "term": "Independent and dependent variables", "text": "The **input** is the **independent variable** (usually $x$): you choose it. The **output** is the **dependent variable** (usually $y$): its value depends on the input." },
+    { "type": "definition", "term": "Function", "text": "A relationship is a **function** if every input gives exactly **one** output." },
+
+    { "type": "heading", "text": "Four ways to show a relationship" },
+    { "type": "paragraph", "text": "The same relationship can be shown in words, as a flow diagram, as a table or as a formula. You must be able to move between all of them." },
+    { "type": "paragraph", "text": "**In words:** \"Multiply the input by 3, then add 2.\"" },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 70\" font-family=\"sans-serif\" font-size=\"16\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"40\" y1=\"35\" x2=\"78\" y2=\"35\"/><polyline points=\"70,30 78,35 70,40\"/><rect x=\"80\" y=\"15\" width=\"70\" height=\"40\" rx=\"6\"/><line x1=\"150\" y1=\"35\" x2=\"198\" y2=\"35\"/><polyline points=\"190,30 198,35 190,40\"/><rect x=\"200\" y=\"15\" width=\"70\" height=\"40\" rx=\"6\"/><line x1=\"270\" y1=\"35\" x2=\"318\" y2=\"35\"/><polyline points=\"310,30 318,35 310,40\"/></g><g fill=\"#000\" text-anchor=\"middle\"><text x=\"22\" y=\"41\">x</text><text x=\"115\" y=\"41\">× 3</text><text x=\"235\" y=\"41\">+ 2</text><text x=\"340\" y=\"41\">y</text></g></svg>", "caption": "Flow diagram: input x, multiply by 3, add 2, output y." },
+    { "type": "table", "caption": "As a table", "headers": ["Input $x$", "-1", "0", "1", "2", "3", "4"], "rows": [
+      ["Output $y$", "-1", "2", "5", "8", "11", "14"]
+    ] },
+    { "type": "formula", "latex": "y = 3x + 2", "caption": "As a formula" },
+    { "type": "callout", "label": "Remember", "text": "In a flow diagram the operations happen in order from left to right. \"Multiply by 3, then add 2\" gives $y = 3x + 2$, but \"add 2, then multiply by 3\" gives $y = 3(x + 2) = 3x + 6$, which is a different rule." },
+
+    { "type": "heading", "text": "Finding output values" },
+    { "type": "paragraph", "text": "Substitute the input value into the formula. Use brackets around negative numbers." },
+    { "type": "example", "title": "Worked example 1", "problem": "For $y = x^2 + 1$, find $y$ when (a) $x = 4$ and (b) $x = -3$.", "steps": [
+      "(a) $y = 4^2 + 1 = 16 + 1 = 17$.",
+      "(b) $y = (-3)^2 + 1 = 9 + 1 = 10$."
+    ], "answer": "(a) $17$  (b) $10$" },
+    { "type": "callout", "label": "Common mistake", "text": "Without brackets, $-3^2 = -9$. Always write $(-3)^2 = 9$ when you substitute a negative number into a square." },
+
+    { "type": "heading", "text": "Finding input values" },
+    { "type": "paragraph", "text": "If you know the output, work **backwards**: undo the operations in reverse order using the inverse operations, or solve the equation." },
+    { "type": "example", "title": "Worked example 2: working backwards", "problem": "In the flow diagram \"multiply by 3, then add 2\", the output is $23$. What was the input?", "steps": [
+      "Undo the last step first: subtract 2: $23 - 2 = 21$.",
+      "Then undo multiplying by 3: divide by 3: $21 \\div 3 = 7$.",
+      "Check: $3(7) + 2 = 23$ ✓"
+    ], "answer": "$x = 7$" },
+    { "type": "example", "title": "Worked example 3: using an equation", "problem": "For $y = -2x + 7$, find $x$ when $y = -5$.", "steps": [
+      "$-2x + 7 = -5$",
+      "$-2x = -12$",
+      "$x = 6$"
+    ], "answer": "$x = 6$" },
+
+    { "type": "heading", "text": "Finding the rule from a table" },
+    { "type": "paragraph", "text": "If the $x$-values go up by $1$ and the $y$-values change by a constant amount, the rule has the form $y = (\\text{constant difference}) \\times x + \\text{something}$. This is the same method as for number patterns." },
+    { "type": "example", "title": "Worked example 4", "problem": "Find the rule for the table:\n$x$: $1;\\ 2;\\ 3;\\ 4$\n$y$: $4;\\ 9;\\ 14;\\ 19$", "steps": [
+      "The $y$-values increase by $5$, so the rule contains $5x$.",
+      "When $x = 1$: $5x = 5$, but $y = 4$, so subtract $1$.",
+      "Rule: $y = 5x - 1$. Check: $x = 3$ gives $15 - 1 = 14$ ✓"
+    ], "answer": "$y = 5x - 1$" },
+    { "type": "callout", "label": "Exam tip", "text": "If the $x$-values in a table do **not** go up by 1 (for example $x = 1;\\ 3;\\ 5$), divide the change in $y$ by the change in $x$ to get the number in front of $x$." },
+
+    { "type": "heading", "text": "Relationships in real life" },
+    { "type": "example", "title": "Worked example 5: a taxi fare", "problem": "A metered taxi charges R15 to start the trip plus R8 per kilometre. (a) Write a formula for the cost $C$ (in rand) for a trip of $d$ km. (b) What does a 12 km trip cost? (c) How far can you travel for R95?", "steps": [
+      "(a) $C = 8d + 15$.",
+      "(b) $C = 8(12) + 15 = 96 + 15 = \\text{R}111$.",
+      "(c) $8d + 15 = 95$, so $8d = 80$ and $d = 10$ km."
+    ], "answer": "(a) $C = 8d + 15$  (b) R111  (c) 10 km" },
+    { "type": "paragraph", "text": "Here $d$ is the independent variable (you decide how far to go) and $C$ is the dependent variable (the cost depends on the distance)." },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "A relationship links an input (independent variable) to an output (dependent variable).",
+      "A function gives exactly one output for every input.",
+      "Words, flow diagrams, tables and formulae can all describe the same relationship.",
+      "Find outputs by substitution (use brackets for negative numbers).",
+      "Find inputs by working backwards with inverse operations, or by solving an equation.",
+      "Find a rule from a table using the constant difference, then adjust to fit the first value."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "numeric", "prompt": "For $y = 3x + 2$, find $y$ when $x = 4$.", "answer": 14, "tolerance": 0, "explanation": "$y = 3(4) + 2 = 12 + 2 = 14$." },
+    { "id": "q2", "type": "numeric", "prompt": "A flow diagram multiplies the input by 2 and then subtracts 5. The output is $11$. What is the input?", "answer": 8, "tolerance": 0, "explanation": "Work backwards: $11 + 5 = 16$, then $16 \\div 2 = 8$." },
+    { "id": "q3", "type": "mcq", "prompt": "Which rule fits the table?\n$x$: $1;\\ 2;\\ 3;\\ 4$\n$y$: $5;\\ 8;\\ 11;\\ 14$", "options": ["$y = x + 4$", "$y = 3x + 2$", "$y = 5x$", "$y = 2x + 3$"], "answer": 1, "explanation": "$y$ increases by $3$, so $3x$; when $x = 1$, $3x = 3$ and $y = 5$, so add $2$." },
+    { "id": "q4", "type": "truefalse", "prompt": "In the formula $y = 5x - 1$, $x$ is the dependent variable.", "answer": false, "explanation": "$x$ is the input, which you choose: the **independent** variable. $y$ depends on $x$, so $y$ is the dependent variable." },
+    { "id": "q5", "type": "numeric", "prompt": "For $y = x^2 + 1$, find $y$ when $x = -3$.", "answer": 10, "tolerance": 0, "explanation": "$(-3)^2 + 1 = 9 + 1 = 10$." },
+    { "id": "q6", "type": "mcq", "prompt": "Which formula matches the words \"multiply the input by 4 and then subtract 3\"?", "options": ["$y = 4(x - 3)$", "$y = 4x - 3$", "$y = 3x - 4$", "$y = x - 12$"], "answer": 1, "explanation": "First multiply by 4 ($4x$), then subtract 3: $4x - 3$. The option $4(x - 3)$ subtracts first." },
+    { "id": "q7", "type": "numeric", "prompt": "For $y = -2x + 7$, find $x$ when $y = -5$.", "answer": 6, "tolerance": 0, "explanation": "$-2x + 7 = -5$, so $-2x = -12$ and $x = 6$." },
+    { "id": "q8", "type": "match", "prompt": "Use the rule $y = 2x - 1$. Match each input $x$ with its output $y$.", "marks": 5, "pairs": [
+      { "left": "$x = 0$", "right": "-1" },
+      { "left": "$x = 1$", "right": "1" },
+      { "left": "$x = 3$", "right": "5" },
+      { "left": "$x = -2$", "right": "-5" },
+      { "left": "$x = 5$", "right": "9" }
+    ], "explanation": "Substitute each value: $2(0) - 1 = -1$; $2(1) - 1 = 1$; $2(3) - 1 = 5$; $2(-2) - 1 = -5$; $2(5) - 1 = 9$." },
+    { "id": "q9", "type": "numeric", "prompt": "A taxi charges R15 plus R8 per kilometre. What does a 12 km trip cost?", "unit": "R", "answer": 111, "tolerance": 0, "explanation": "$C = 8(12) + 15 = 96 + 15 = \\text{R}111$." },
+    { "id": "q10", "type": "truefalse", "prompt": "The table $x$: $1;\\ 2;\\ 3$ and $y$: $2;\\ 4;\\ 8$ has a constant difference.", "answer": false, "explanation": "The differences are $2$ and $4$, which are not equal. The $y$-values double each time (a constant ratio)." },
+    { "id": "q11", "type": "numeric", "prompt": "For $y = 10 - x^2$, find $y$ when $x = 4$.", "answer": -6, "tolerance": 0, "explanation": "$10 - 16 = -6$." },
+    { "id": "q12", "type": "mcq", "prompt": "Which input-output pair $(x;\\ y)$ satisfies $y = 4x - 3$?", "options": ["$(0;\\ 3)$", "$(1;\\ 2)$", "$(2;\\ 5)$", "$(3;\\ 8)$"], "answer": 2, "explanation": "$4(2) - 3 = 5$ ✓. The others give $-3$, $1$ and $9$." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "Complete the table for $y = -3x + 1$:\n$x$: $-2;\\ -1;\\ 0;\\ 1;\\ 2$", "memo": "$y$: $7;\\ 4;\\ 1;\\ -2;\\ -5$\n✓ for $x = -2$ and $x = -1$ (1)\n✓ for $x = 0$ and $x = 1$ (1)\n✓ for $x = 2$ (1)" },
+    { "id": "q14", "type": "open", "marks": 5, "prompt": "A household pays a fixed amount of R120 per month plus R2,50 for every kilowatt-hour (kWh) of electricity used.\n(a) Write a formula for the monthly cost $C$ when $k$ kWh are used.  (1)\n(b) Calculate the cost if 300 kWh are used.  (2)\n(c) How many kWh were used if the bill was R620?  (2)", "memo": "(a) $C = 2{,}5k + 120$ ✓ (1)\n(b) $C = 2{,}5(300) + 120$ ✓ $= \\text{R}870$ ✓ (2)\n(c) $2{,}5k + 120 = 620$, $2{,}5k = 500$ ✓; $k = 200$ kWh ✓ (2)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "The table shows a relationship:\n$x$: $1;\\ 2;\\ 3;\\ 4$\n$y$: $4;\\ 9;\\ 14;\\ 19$\n(a) Find the rule.  (2)\n(b) Find $y$ when $x = 10$.  (1)\n(c) Find $x$ when $y = 99$.  (1)", "memo": "(a) Constant difference 5 ✓; $y = 5x - 1$ ✓ (2)\n(b) $5(10) - 1 = 49$ ✓ (1)\n(c) $5x - 1 = 99$, $x = 20$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "A flow diagram multiplies the input by $-2$ and then adds 6.\n(a) Find the outputs for the inputs $-1$, $0$ and $3$.  (2)\n(b) Which input gives the output $-10$?  (1)", "memo": "(a) $-1 \\to 8$; $0 \\to 6$ ✓; $3 \\to 0$ ✓ (2)\n(b) $-10 - 6 = -16$; $-16 \\div (-2) = 8$ ✓ (1)" }
+  ]
+}

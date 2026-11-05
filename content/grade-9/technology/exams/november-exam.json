@@ -1,0 +1,277 @@
+{
+  "id": "november-exam",
+  "title": "November Examination",
+  "durationMinutes": 75,
+  "totalMarks": 60,
+  "instructions": [
+    "This paper consists of FIVE questions. Answer ALL the questions.",
+    "Show all calculations and include units.",
+    "Drawings may be described in words where you cannot draw on screen."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short questions",
+      "questions": [
+        {
+          "id": "q1-1",
+          "type": "mcq",
+          "prompt": "In first-angle projection, the top view is placed…",
+          "options": [
+            "above the front view",
+            "below the front view",
+            "left of the front view",
+            "right of the left view"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-2",
+          "type": "mcq",
+          "prompt": "Which bridge carries its deck on cables running directly from tall pylons?",
+          "options": [
+            "Beam",
+            "Arch",
+            "Cable-stayed",
+            "Truss"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-3",
+          "type": "mcq",
+          "prompt": "A pneumatic system uses…",
+          "options": [
+            "oil",
+            "water",
+            "compressed air",
+            "electricity"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "q1-4",
+          "type": "mcq",
+          "prompt": "Which component's resistance decreases as temperature rises?",
+          "options": [
+            "LDR",
+            "Thermistor",
+            "Diode",
+            "Capacitor"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-5",
+          "type": "mcq",
+          "prompt": "Amasi is preserved by…",
+          "options": [
+            "salting",
+            "fermentation",
+            "canning",
+            "freezing"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "q1-6",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Cantilever",
+              "right": "Beam supported at one end only"
+            },
+            {
+              "left": "Pascal's principle",
+              "right": "Pressure is transmitted equally in a liquid"
+            },
+            {
+              "left": "Ratchet and pawl",
+              "right": "Allows turning in one direction only"
+            },
+            {
+              "left": "Diode",
+              "right": "Current flows one way only"
+            },
+            {
+              "left": "Inclusive design",
+              "right": "Usable by as many people as possible"
+            }
+          ]
+        },
+        {
+          "id": "q1-7",
+          "type": "truefalse",
+          "prompt": "Accurate measurements can be taken from an isometric drawing along its axes.",
+          "answer": true
+        },
+        {
+          "id": "q1-8",
+          "type": "truefalse",
+          "prompt": "Freezing food kills all bacteria.",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Graphics and structures",
+      "questions": [
+        {
+          "id": "q2-1",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain the difference between one-point and two-point perspective.",
+          "memo": "✓ One-point uses one vanishing point (1); the front face is drawn flat ✓ (1)\n✓ Two-point uses two vanishing points, and the object is seen from a corner (1)"
+        },
+        {
+          "id": "q2-2",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Name the forces in (a) the main cables and (b) the towers of a suspension bridge, and in (c) the top and (d) the bottom of a loaded beam bridge.",
+          "memo": "(a) ✓ Tension (1)\n(b) ✓ Compression (1)\n(c) ✓ Compression (1)\n(d) ✓ Tension (1)"
+        },
+        {
+          "id": "q2-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A community needs a footbridge over a 6 m wide stream. Recommend a bridge type and give TWO reasons.",
+          "memo": "✓ Beam or truss bridge (1)\n✓✓ Reasons (1 each): short span; cheap and simple; materials available locally; easy to build"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Mechanical systems",
+      "questions": [
+        {
+          "id": "q3-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A force of 50 N is applied to a hydraulic piston with an area of 5 cm². Calculate the pressure in N/cm².",
+          "answer": 10,
+          "tolerance": 0,
+          "unit": "N/cm²"
+        },
+        {
+          "id": "q3-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "The pressure in 3.1 acts on an output piston with an area of 60 cm². Calculate the output force.",
+          "answer": 600,
+          "tolerance": 0,
+          "unit": "N"
+        },
+        {
+          "id": "q3-3",
+          "type": "numeric",
+          "marks": 1,
+          "prompt": "Calculate the mechanical advantage of this hydraulic system.",
+          "answer": 12,
+          "tolerance": 0
+        },
+        {
+          "id": "q3-4",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is oil rather than air used in a car's braking system?",
+          "memo": "✓ Liquids cannot be compressed (1)\n✓ so force is transferred immediately and precisely; air would make brakes spongy (1)"
+        },
+        {
+          "id": "q3-5",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe how a cam and follower work and give ONE use.",
+          "memo": "✓ The cam is a shaped piece on a rotating shaft (1)\n✓ The follower rests on it and moves up and down as it turns, changing rotary to reciprocating motion (1)\n✓ Use: engine valves / toys / sewing machines (1)"
+        },
+        {
+          "id": "q3-6",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A block and tackle has 4 rope sections supporting a load of 2 000 N. Calculate the effort needed (ideal).",
+          "answer": 500,
+          "tolerance": 0,
+          "unit": "N"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Electronic systems",
+      "questions": [
+        {
+          "id": "q4-1",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "A resistor has the colour bands orange, orange, red, gold. What is its value in ohms?",
+          "answer": 3300,
+          "tolerance": 0,
+          "unit": "Ω"
+        },
+        {
+          "id": "q4-2",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the total resistance of a 470 Ω and a 330 Ω resistor in series.",
+          "answer": 800,
+          "tolerance": 0,
+          "unit": "Ω"
+        },
+        {
+          "id": "q4-3",
+          "type": "numeric",
+          "marks": 2,
+          "prompt": "Calculate the total resistance of two 200 Ω resistors in parallel.",
+          "answer": 100,
+          "tolerance": 0,
+          "unit": "Ω"
+        },
+        {
+          "id": "q4-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain how a heat alarm using a thermistor, a transistor and a buzzer works. Identify the input, process and output.",
+          "memo": "✓ Input: thermistor; process: transistor; output: buzzer (1)\n✓ When the temperature rises, the thermistor's resistance falls (1)\n✓ The base voltage of the transistor rises above about 0,7 V (1)\n✓ The transistor switches on and the buzzer sounds (1)"
+        },
+        {
+          "id": "q4-5",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why must an LED be connected the correct way round, and how do you identify its negative leg?",
+          "memo": "✓ It only allows current in one direction (it is a diode) (1)\n✓ The negative (cathode) leg is shorter / next to the flat edge (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Processing and impact",
+      "questions": [
+        {
+          "id": "q5-1",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Explain how drying and pickling preserve food, with an example of each.",
+          "memo": "✓ Drying removes water so microbes cannot grow (1) ✓ e.g. biltong / dried fruit (1)\n✓ Pickling uses acid (vinegar) to stop microbes growing (1) ✓ e.g. atchar / pickled onions (1)"
+        },
+        {
+          "id": "q5-2",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE functions of the packaging on a box of breakfast cereal.",
+          "memo": "Any three (1 each): protect; preserve/keep fresh; contain; inform (ingredients, expiry); promote; easy to stack and transport"
+        },
+        {
+          "id": "q5-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give an example of bias in technology and suggest how the design could be made more inclusive.",
+          "memo": "✓ Example of bias, e.g. building without a ramp (1)\n✓ Group disadvantaged, e.g. wheelchair users (1)\n✓ Inclusive solution, e.g. ramps and lifts (1)"
+        },
+        {
+          "id": "q5-4",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Discuss TWO positive and TWO negative impacts of motor vehicles on society and the environment.",
+          "memo": "Positive (1 each): fast transport of people/goods; jobs; access to services; trade\nNegative (1 each): air pollution/greenhouse gases; accidents; congestion; use of fossil fuels; noise"
+        }
+      ]
+    }
+  ]
+}

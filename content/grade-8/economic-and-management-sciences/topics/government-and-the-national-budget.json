@@ -1,0 +1,62 @@
+{
+  "id": "government-and-the-national-budget",
+  "title": "The Government and the National Budget",
+  "term": 1,
+  "summary": "The three levels and three arms of government, the role of government in the economy, sources of government income, taxes, and how the national budget is drawn up and spent.",
+  "notes": [
+    { "type": "heading", "text": "The structure of government" },
+    { "type": "table", "caption": "Three spheres (levels) of government", "headers": ["Level", "Led by", "Examples of responsibilities"], "rows": [
+      ["National", "The President and Cabinet", "Defence, foreign affairs, national roads, higher education, social grants"],
+      ["Provincial (9 provinces)", "Premiers and provincial executive councils", "Schools, hospitals, provincial roads, housing"],
+      ["Local (municipalities)", "Mayors and councillors", "Water, electricity, refuse removal, sewerage, local roads, parks"]
+    ] },
+    { "type": "table", "caption": "Three arms of government (separation of powers)", "headers": ["Arm", "Role", "Example"], "rows": [
+      ["Legislature (legislative authority)", "Makes laws", "Parliament: the National Assembly and the National Council of Provinces"],
+      ["Executive", "Carries out (implements) laws and runs the country", "The President, Cabinet ministers and government departments"],
+      ["Judiciary", "Interprets laws and judges whether they are broken", "The courts, with the Constitutional Court as the highest court"]
+    ] },
+    { "type": "heading", "text": "The role of government in the economy" },
+    { "type": "list", "items": [
+      "Provides **public goods and services** that private businesses might not supply: roads, police, schools, hospitals, defence.",
+      "Collects **taxes** to pay for these services.",
+      "Makes **laws** to protect consumers, workers and the environment.",
+      "**Redistributes income** by taxing richer people more and giving **social grants** to the poor.",
+      "Creates conditions for economic growth and jobs."
+    ] },
+    { "type": "heading", "text": "Where does government get its money?" },
+    { "type": "table", "headers": ["Tax", "Who pays it", "Collected by"], "rows": [
+      ["Personal income tax", "Individuals on their salaries (the more you earn, the higher the percentage: a **progressive** tax)", "SARS (South African Revenue Service)"],
+      ["Value-added tax (VAT)", "Consumers, added at **15%** to most goods and services (some basic foods are zero-rated)", "SARS"],
+      ["Company tax", "Businesses on their profits", "SARS"],
+      ["Customs and excise duties", "On imported goods and on products like alcohol, tobacco and fuel ('sin taxes')", "SARS"],
+      ["Property rates", "Owners of property", "Municipalities"]
+    ] },
+    { "type": "paragraph", "text": "Government can also borrow money (which creates **national debt**) and earn money from fees, fines and state-owned enterprises." },
+    { "type": "heading", "text": "The national budget" },
+    { "type": "definition", "term": "National budget", "text": "The government's financial plan for the year, showing its expected **income** (revenue) and planned **expenditure**." },
+    { "type": "paragraph", "text": "The **Minister of Finance** presents the budget to Parliament every **February**. South Africa's financial year runs from **1 April to 31 March**." },
+    { "type": "list", "items": [
+      "**Budget surplus**: income is more than expenditure.",
+      "**Budget deficit**: expenditure is more than income (the usual situation in South Africa); the government borrows to cover the difference.",
+      "**Balanced budget**: income equals expenditure."
+    ] },
+    { "type": "paragraph", "text": "The largest parts of South Africa's budget usually go to **education** (called learning and culture), **social development** (grants), **health**, and **paying interest on debt**." },
+    { "type": "example", "title": "Calculating VAT", "problem": "A pair of shoes costs R400 before VAT. Calculate the VAT and the selling price (VAT = 15%).", "steps": ["VAT = 15% × R400 = R60", "Selling price = R400 + R60 = R460"], "answer": "VAT R60; price R460" }
+  ],
+  "questions": [
+    { "id": "levels", "type": "mcq", "prompt": "Which level of government is responsible for refuse removal?", "options": ["National", "Provincial", "Local", "Judiciary"], "answer": 2 },
+    { "id": "makes-laws", "type": "short", "prompt": "Which arm of government makes laws?", "answers": ["legislature", "the legislature", "parliament", "legislative"] },
+    { "id": "sars", "type": "short", "prompt": "Which organisation collects taxes in South Africa? (abbreviation)", "answers": ["sars", "south african revenue service"] },
+    { "id": "vat-rate", "type": "numeric", "prompt": "What is the VAT rate in South Africa?", "answer": 15, "tolerance": 0, "unit": "%" },
+    { "id": "vat-calc", "type": "numeric", "prompt": "A school bag costs R300 before VAT. What is the price including 15% VAT?", "answer": 345, "tolerance": 0, "unit": "rand" },
+    { "id": "deficit", "type": "truefalse", "prompt": "A budget deficit means that government expenditure is greater than its income.", "answer": true },
+    { "id": "arms", "type": "match", "marks": 3, "prompt": "Match each arm of government to its role.", "pairs": [
+      { "left": "Legislature", "right": "Makes laws" },
+      { "left": "Executive", "right": "Implements laws" },
+      { "left": "Judiciary", "right": "Interprets laws" }
+    ] },
+    { "id": "progressive", "type": "open", "marks": 2, "prompt": "Explain why personal income tax is called a progressive tax.", "memo": "✓ People who earn more pay a higher percentage of their income in tax (1)\n✓ This helps to redistribute income from rich to poor (1)" },
+    { "id": "role", "type": "open", "marks": 3, "prompt": "Give THREE roles of the government in the economy.", "memo": "Any three (1 each): provides public goods/services; collects taxes; makes laws; redistributes income through grants; promotes growth and jobs" },
+    { "id": "budget-time", "type": "mcq", "prompt": "In which month does the Minister of Finance present the national budget?", "options": ["January", "February", "April", "December"], "answer": 1 }
+  ]
+}

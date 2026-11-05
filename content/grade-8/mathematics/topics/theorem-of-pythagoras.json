@@ -1,0 +1,95 @@
+{
+  "id": "theorem-of-pythagoras",
+  "title": "The Theorem of Pythagoras",
+  "term": 3,
+  "summary": "Use the Theorem of Pythagoras to calculate a missing side of a right-angled triangle, use its converse to test whether a triangle is right-angled, and solve practical problems.",
+  "notes": [
+    { "type": "heading", "text": "Right-angled triangles" },
+    { "type": "paragraph", "text": "In a right-angled triangle, the side opposite the right angle is called the **hypotenuse**. It is always the **longest** side. The other two sides are sometimes called the legs." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 200\" font-family=\"sans-serif\" font-size=\"15\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\"><polygon points=\"60,40 60,160 220,160\"/><polyline points=\"60,146 74,146 74,160\" stroke-width=\"1.5\"/></g><g fill=\"#000\"><text x=\"52\" y=\"32\">A</text><text x=\"44\" y=\"176\">B</text><text x=\"224\" y=\"176\">C</text><text x=\"40\" y=\"105\">3</text><text x=\"135\" y=\"182\">4</text><text x=\"150\" y=\"92\" font-size=\"13\">5 (hypotenuse)</text></g></svg>", "caption": "Triangle ABC with a right angle at B. The hypotenuse AC is opposite the right angle. Here AB = 3, BC = 4 and AC = 5." },
+
+    { "type": "heading", "text": "The theorem" },
+    { "type": "paragraph", "text": "The Greek mathematician Pythagoras is credited with discovering that, in **every** right-angled triangle, the square on the hypotenuse equals the sum of the squares on the other two sides." },
+    { "type": "formula", "latex": "AC^2 = AB^2 + BC^2", "caption": "Theorem of Pythagoras for triangle ABC with the right angle at B (often written c² = a² + b², where c is the hypotenuse)" },
+    { "type": "paragraph", "text": "Check it with the triangle above: $3^2 + 4^2 = 9 + 16 = 25 = 5^2$ ✓. If you draw a square on each side, the area of the biggest square ($25$) equals the total area of the other two squares ($9 + 16$)." },
+    { "type": "callout", "label": "Remember", "text": "The theorem only works for **right-angled** triangles. Always identify the hypotenuse first: it is opposite the right angle, and it is the side on its own on one side of the equation." },
+
+    { "type": "heading", "text": "Calculating the hypotenuse" },
+    { "type": "example", "title": "Worked example 1", "problem": "In $\\triangle PQR$, $\\hat{Q} = 90^\\circ$, $PQ = 6$ cm and $QR = 8$ cm. Calculate $PR$.", "steps": [
+      "$PR$ is the hypotenuse (opposite $\\hat{Q}$).",
+      "$PR^2 = PQ^2 + QR^2$ (Pythagoras)",
+      "$PR^2 = 6^2 + 8^2 = 36 + 64 = 100$",
+      "$PR = \\sqrt{100} = 10$ cm"
+    ], "answer": "$PR = 10$ cm" },
+    { "type": "example", "title": "Worked example 2: an answer that is not a whole number", "problem": "The two shorter sides of a right-angled triangle are 5 cm and 7 cm. Calculate the hypotenuse, correct to two decimal places.", "steps": [
+      "$c^2 = 5^2 + 7^2 = 25 + 49 = 74$",
+      "$c = \\sqrt{74} = 8{,}602\\ldots \\approx 8{,}60$ cm"
+    ], "answer": "$8{,}60$ cm" },
+
+    { "type": "heading", "text": "Calculating a shorter side" },
+    { "type": "paragraph", "text": "If you know the hypotenuse and one other side, **subtract**: $(\\text{shorter side})^2 = (\\text{hypotenuse})^2 - (\\text{other side})^2$." },
+    { "type": "example", "title": "Worked example 3", "problem": "In $\\triangle DEF$, $\\hat{E} = 90^\\circ$, $DF = 13$ cm and $DE = 5$ cm. Calculate $EF$.", "steps": [
+      "$DF$ is the hypotenuse.",
+      "$DF^2 = DE^2 + EF^2$, so $13^2 = 5^2 + EF^2$",
+      "$EF^2 = 169 - 25 = 144$",
+      "$EF = 12$ cm"
+    ], "answer": "$EF = 12$ cm" },
+    { "type": "callout", "label": "Common mistake", "text": "Adding when you should subtract. If your \"shorter\" side comes out **longer** than the hypotenuse, you added instead of subtracting. Also, $\\sqrt{169 - 25} \\neq 13 - 5$: work out the squares, subtract, then take the square root." },
+
+    { "type": "heading", "text": "Is the triangle right-angled? (the converse)" },
+    { "type": "paragraph", "text": "The theorem also works backwards: if the square of the longest side equals the sum of the squares of the other two sides, the triangle **is** right-angled, and the right angle is opposite the longest side." },
+    { "type": "example", "title": "Worked example 4", "problem": "Are these triangles right-angled? (a) sides 7, 24, 25  (b) sides 4, 5, 6", "steps": [
+      "(a) Longest side $25$: $25^2 = 625$. Others: $7^2 + 24^2 = 49 + 576 = 625$. Equal, so **yes**.",
+      "(b) Longest side $6$: $6^2 = 36$. Others: $4^2 + 5^2 = 16 + 25 = 41$. Not equal, so **no**."
+    ], "answer": "(a) Yes  (b) No" },
+    { "type": "definition", "term": "Pythagorean triple", "text": "Three whole numbers that fit the theorem are called a **Pythagorean triple**: $(3;\\ 4;\\ 5)$, $(5;\\ 12;\\ 13)$, $(8;\\ 15;\\ 17)$, $(7;\\ 24;\\ 25)$. Multiples also work: $(6;\\ 8;\\ 10)$ and $(9;\\ 12;\\ 15)$ come from $(3;\\ 4;\\ 5)$." },
+
+    { "type": "heading", "text": "Practical problems" },
+    { "type": "paragraph", "text": "Look for the right angle in real situations: a wall and the ground, the corner of a rectangle, the height of a triangle. Draw a sketch and label it." },
+    { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 200\" font-family=\"sans-serif\" font-size=\"14\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\"><line x1=\"40\" y1=\"170\" x2=\"240\" y2=\"170\"/><line x1=\"200\" y1=\"170\" x2=\"200\" y2=\"15\" stroke-width=\"3\"/><line x1=\"158\" y1=\"170\" x2=\"200\" y2=\"26\" stroke-width=\"2.5\"/><polyline points=\"188,170 188,158 200,158\"/></g><g fill=\"#000\"><text x=\"128\" y=\"95\">5 m</text><text x=\"160\" y=\"188\">1,4 m</text><text x=\"208\" y=\"100\">h</text><text x=\"208\" y=\"40\" font-size=\"12\">wall</text></g></svg>", "caption": "A 5 m ladder leans against a vertical wall with its foot 1,4 m from the wall. h is the height the ladder reaches." },
+    { "type": "example", "title": "Worked example 5: a ladder", "problem": "A 5 m ladder leans against a wall. Its foot is 1,4 m from the wall. How high up the wall does it reach?", "steps": [
+      "The wall and ground meet at $90^\\circ$, and the ladder is the hypotenuse.",
+      "$h^2 = 5^2 - 1{,}4^2 = 25 - 1{,}96 = 23{,}04$",
+      "$h = \\sqrt{23{,}04} = 4{,}8$ m"
+    ], "answer": "$4{,}8$ m" },
+    { "type": "example", "title": "Worked example 6: a shortcut", "problem": "A rectangular sports field is 40 m long and 30 m wide. How much shorter is it to walk diagonally across the field than along two edges?", "steps": [
+      "Diagonal: $d^2 = 40^2 + 30^2 = 1\\ 600 + 900 = 2\\ 500$, so $d = 50$ m.",
+      "Along two edges: $40 + 30 = 70$ m.",
+      "Difference: $70 - 50 = 20$ m."
+    ], "answer": "20 m shorter" },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "The hypotenuse is opposite the right angle and is the longest side.",
+      "Pythagoras: $(\\text{hypotenuse})^2 = (\\text{side 1})^2 + (\\text{side 2})^2$, for right-angled triangles only.",
+      "Finding the hypotenuse: add the squares. Finding a shorter side: subtract the squares.",
+      "Square, then add or subtract, then take the square root (not the other way round).",
+      "Converse: if the longest side squared equals the sum of the other two squares, the triangle is right-angled.",
+      "Know the triples $(3;\\ 4;\\ 5)$, $(5;\\ 12;\\ 13)$, $(8;\\ 15;\\ 17)$ and $(7;\\ 24;\\ 25)$."
+    ] }
+  ],
+  "questions": [
+    { "id": "q1", "type": "mcq", "prompt": "In a right-angled triangle, which side is the hypotenuse?", "options": ["The shortest side", "The side next to the right angle", "The side opposite the right angle", "Any side"], "answer": 2, "explanation": "The hypotenuse is opposite the right angle; it is always the longest side." },
+    { "id": "q2", "type": "numeric", "prompt": "The two shorter sides of a right-angled triangle are 6 cm and 8 cm. Calculate the hypotenuse, in cm.", "unit": "cm", "answer": 10, "tolerance": 0, "explanation": "$\\sqrt{36 + 64} = \\sqrt{100} = 10$." },
+    { "id": "q3", "type": "numeric", "prompt": "The hypotenuse of a right-angled triangle is 13 cm and one side is 5 cm. Calculate the third side, in cm.", "unit": "cm", "answer": 12, "tolerance": 0, "explanation": "$\\sqrt{169 - 25} = \\sqrt{144} = 12$." },
+    { "id": "q4", "type": "truefalse", "prompt": "A triangle with sides 7, 24 and 25 is right-angled.", "answer": true, "explanation": "$7^2 + 24^2 = 49 + 576 = 625 = 25^2$ ✓" },
+    { "id": "q5", "type": "truefalse", "prompt": "A triangle with sides 4, 5 and 6 is right-angled.", "answer": false, "explanation": "$4^2 + 5^2 = 41$, but $6^2 = 36$. They are not equal." },
+    { "id": "q6", "type": "numeric", "prompt": "The two shorter sides of a right-angled triangle are 5 cm and 7 cm. Calculate the hypotenuse, correct to two decimal places.", "unit": "cm", "answer": 8.6, "tolerance": 0.006, "explanation": "$\\sqrt{25 + 49} = \\sqrt{74} \\approx 8{,}60$ cm." },
+    { "id": "q7", "type": "numeric", "prompt": "A 5 m ladder leans against a vertical wall with its foot 1,4 m from the wall. How high up the wall does it reach, in metres?", "unit": "m", "answer": 4.8, "tolerance": 0.01, "explanation": "$h = \\sqrt{25 - 1{,}96} = \\sqrt{23{,}04} = 4{,}8$ m." },
+    { "id": "q8", "type": "mcq", "prompt": "Which set of numbers is a Pythagorean triple?", "options": ["$(6;\\ 8;\\ 12)$", "$(8;\\ 15;\\ 17)$", "$(5;\\ 11;\\ 13)$", "$(9;\\ 12;\\ 16)$"], "answer": 1, "explanation": "$8^2 + 15^2 = 64 + 225 = 289 = 17^2$ ✓" },
+    { "id": "q9", "type": "numeric", "prompt": "A rectangle is 9 cm wide and 12 cm long. Calculate the length of its diagonal, in cm.", "unit": "cm", "answer": 15, "tolerance": 0, "explanation": "$\\sqrt{81 + 144} = \\sqrt{225} = 15$ cm." },
+    { "id": "q10", "type": "numeric", "prompt": "A square has sides of 10 cm. Calculate the length of its diagonal, correct to two decimal places.", "unit": "cm", "answer": 14.14, "tolerance": 0.006, "explanation": "$\\sqrt{100 + 100} = \\sqrt{200} \\approx 14{,}14$ cm." },
+    { "id": "q11", "type": "match", "prompt": "Match the two shorter sides of a right-angled triangle with the hypotenuse.", "marks": 5, "pairs": [
+      { "left": "3 and 4", "right": "5" },
+      { "left": "5 and 12", "right": "13" },
+      { "left": "8 and 15", "right": "17" },
+      { "left": "9 and 12", "right": "15" },
+      { "left": "20 and 21", "right": "29" }
+    ], "explanation": "Square, add and take the root: e.g. $\\sqrt{400 + 441} = \\sqrt{841} = 29$." },
+    { "id": "q12", "type": "numeric", "prompt": "The hypotenuse of a right-angled triangle is 10 m and one side is 6 m. Calculate the third side, in metres.", "unit": "m", "answer": 8, "tolerance": 0, "explanation": "$\\sqrt{100 - 36} = \\sqrt{64} = 8$ m." },
+    { "id": "q13", "type": "open", "marks": 3, "prompt": "A rectangular field is 40 m long and 30 m wide. How much shorter is it to walk diagonally across the field than along two edges?", "memo": "$d^2 = 40^2 + 30^2 = 2\\ 500$ ✓ (1)\n$d = 50$ m ✓ (1)\n$70 - 50 = 20$ m shorter ✓ (1)" },
+    { "id": "q14", "type": "open", "marks": 3, "prompt": "$\\triangle KLM$ has $KL = 9$ cm, $LM = 40$ cm and $KM = 41$ cm. Is the triangle right-angled? If so, at which vertex is the right angle?", "memo": "$9^2 + 40^2 = 81 + 1\\ 600 = 1\\ 681$ ✓ (1)\n$41^2 = 1\\ 681$, so yes, it is right-angled ✓ (1)\nThe right angle is opposite $KM$, at $L$ ✓ (1)" },
+    { "id": "q15", "type": "open", "marks": 4, "prompt": "An isosceles triangle has two equal sides of 13 cm and a base of 10 cm. The height is drawn from the top vertex perpendicular to the base, and it bisects the base.\n(a) Calculate the height.  (3)\n(b) Calculate the area of the triangle.  (1)", "memo": "(a) Half the base $= 5$ cm ✓ (1)\n$h^2 = 13^2 - 5^2 = 144$ ✓ (1)\n$h = 12$ cm ✓ (1)\n(b) Area $= \\frac{1}{2} \\times 10 \\times 12 = 60\\ \\text{cm}^2$ ✓ (1)" },
+    { "id": "q16", "type": "open", "marks": 3, "prompt": "A wheelchair ramp rises 1,2 m over a horizontal distance of 5 m. Calculate the length of the ramp, correct to two decimal places.", "memo": "$L^2 = 5^2 + 1{,}2^2$ ✓ (1)\n$= 25 + 1{,}44 = 26{,}44$ ✓ (1)\n$L = \\sqrt{26{,}44} \\approx 5{,}14$ m ✓ (1)" }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "calculations-and-percentages",
+  "title": "Calculations, Percentages and Rates",
+  "term": 1,
+  "summary": "Percentage increase and decrease, reverse percentages, percentage points, compound percentage changes, rates and unit pricing, and estimation and checking.",
+  "notes": [
+    { "type": "heading", "text": "Percentage change" },
+    { "type": "formula", "latex": "\\text{percentage change} = \\frac{\\text{new value} - \\text{original value}}{\\text{original value}} \\times 100\\%" },
+    { "type": "example", "title": "Worked example 1", "problem": "Matric pass rates at a school rose from 72% to 81%. By how many percentage points did they rise, and what is the percentage increase?", "steps": [
+      "Percentage points: 81 − 72 = 9 percentage points.",
+      "Percentage increase: (81 − 72) ÷ 72 × 100 = 12,5%."
+    ], "answer": "9 percentage points; a 12,5% increase" },
+    { "type": "callout", "label": "Percentage points", "text": "A change from 72% to 81% is **9 percentage points**, but it is a **12,5% increase** on the original. Newspapers often confuse the two." },
+    { "type": "heading", "text": "Reverse percentages" },
+    { "type": "example", "title": "Worked example 2", "problem": "After a 20% discount a TV costs R5 600. What was the original price?", "steps": ["R5 600 is 80% of the original price.", "Original = R5 600 ÷ 0,8 = R7 000"], "answer": "R7 000" },
+    { "type": "heading", "text": "Successive percentage changes" },
+    { "type": "example", "title": "Worked example 3", "problem": "A price increases by 10% and then decreases by 10%. Is the final price the same as the original?", "steps": ["Start with R100: +10% → R110", "−10% of R110 = R11, so R99"], "answer": "No: it is 1% lower (R99)." },
+    { "type": "heading", "text": "Rates and unit prices" },
+    { "type": "table", "headers": ["Rate", "Example"], "rows": [
+      ["Speed (km/h)", "A taxi travels 180 km in 2,5 h: 72 km/h"],
+      ["Unit price (R/kg, R/ℓ)", "R89,99 for 5 ℓ of oil: R18,00 per litre"],
+      ["Fuel consumption (ℓ/100 km)", "35 ℓ for 500 km: 7 ℓ/100 km"],
+      ["Exchange rate (rand per US dollar)", "R18,40 per US dollar"]
+    ] },
+    { "type": "heading", "text": "Estimation and checking" },
+    { "type": "paragraph", "text": "Before calculating, estimate: R39,95 × 12 is about R40 × 12 = R480. After calculating, check that the answer makes sense in context." }
+  ],
+  "questions": [
+    { "id": "increase", "type": "numeric", "prompt": "A rent of R4 500 increases by 8%. What is the new rent?", "answer": 4860, "tolerance": 0, "unit": "rand" },
+    { "id": "pct-change", "type": "numeric", "prompt": "Electricity rose from R1,80 to R2,07 per kWh. Calculate the percentage increase.", "answer": 15, "tolerance": 0.01, "unit": "%" },
+    { "id": "points", "type": "numeric", "prompt": "Unemployment rose from 32,1% to 33,9%. By how many percentage points did it rise?", "answer": 1.8, "tolerance": 0.01 },
+    { "id": "reverse", "type": "numeric", "prompt": "After a 15% increase, a bus fare is R46. What was the fare before the increase?", "answer": 40, "tolerance": 0, "unit": "rand" },
+    { "id": "successive", "type": "truefalse", "prompt": "Increasing a price by 20% and then decreasing it by 20% gives the original price.", "answer": false },
+    { "id": "unit-price", "type": "numeric", "prompt": "A 2,5 kg bag of maize meal costs R37,50. What is the price per kilogram?", "answer": 15, "tolerance": 0, "unit": "R/kg" },
+    { "id": "speed", "type": "numeric", "prompt": "A truck travels 360 km in 4 h 30 min. Calculate its average speed.", "answer": 80, "tolerance": 0, "unit": "km/h" },
+    { "id": "discount", "type": "open", "marks": 3, "prompt": "A shop offers 'Buy 3, pay for 2' on shampoo at R54,99 each, or a 30% discount on each bottle elsewhere. Which is better value for 3 bottles?", "memo": "✓ Buy 3 pay for 2: 2 × R54,99 = R109,98 (1)\n✓ 30% off: 3 × R54,99 × 0,7 = R115,48 (1)\n✓ The 'Buy 3, pay for 2' offer is better (1)" },
+    { "id": "fuel", "type": "open", "marks": 3, "prompt": "A car used 42 ℓ of petrol for a 560 km trip. Calculate its fuel consumption in ℓ/100 km, and the cost of the trip at R23,10/ℓ.", "memo": "✓ 42 ÷ 560 × 100 (1)\n✓ = 7,5 ℓ/100 km (1)\n✓ Cost 42 × R23,10 = R970,20 (1)" },
+    { "id": "estimate", "type": "open", "marks": 2, "prompt": "Estimate 498 × R21,95 without a calculator. Show how you estimated.", "memo": "✓ About 500 × R22 (1)\n✓ ≈ R11 000 (1)" }
+  ]
+}

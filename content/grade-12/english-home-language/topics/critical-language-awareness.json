@@ -1,0 +1,371 @@
+{
+  "id": "critical-language-awareness",
+  "title": "Critical Language Awareness",
+  "term": 2,
+  "summary": "Learn how writers and speakers use word choice, bias, propaganda and rhetoric to position and manipulate readers, and how to evaluate texts and sources critically.",
+  "notes": [
+    { "type": "heading", "text": "What is critical language awareness?" },
+    { "type": "paragraph", "text": "**Critical language awareness (CLA)** is the ability to see how language is used to shape what we think, feel and believe. No text is completely neutral. Every newspaper report, advertisement, political speech, school notice and social media post has been written by someone, for a purpose, and with a particular audience in mind. The writer chooses which facts to include, which to leave out, which words to use and whose voices to quote. Those choices **position** the reader: they nudge you towards a certain view.\n\nIn the Grade 12 Paper 1 examination, CLA is tested in the comprehension (Question 1), in the advertisement and cartoon questions (Questions 3 and 4) and in the language question (Question 5). You also use it in essays and transactional writing when you choose words to persuade your own reader." },
+    { "type": "list", "items": [
+      "**Who** produced the text, and what do they stand to gain?",
+      "**Who** is the intended audience, and how does the text speak to them?",
+      "**What** is the purpose: to inform, persuade, entertain, sell or mislead?",
+      "**Which** words carry strong positive or negative feelings?",
+      "**Whose** voices are included, and whose are missing?",
+      "**What** is assumed or implied but never stated directly?",
+      "**Who** benefits if the reader accepts the message?"
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Being critical does not mean being negative. It means asking questions before you accept a message, and backing up your judgement with evidence from the text." },
+
+    { "type": "heading", "text": "Fact and opinion" },
+    { "type": "definition", "term": "Fact", "text": "A statement that can be checked (verified) against evidence, such as records, measurements or reliable sources. A factual claim can turn out to be wrong, but it is still the kind of statement that can be proved true or false." },
+    { "type": "definition", "term": "Opinion", "text": "A statement of personal belief, judgement or feeling. It cannot be proved true or false, although it can be supported by good reasons (an **informed opinion**) or by none at all." },
+    { "type": "table", "caption": "Telling facts and opinions apart", "headers": ["", "Fact", "Opinion"], "rows": [
+      ["Can it be checked?", "Yes, against evidence", "No; people may reasonably disagree"],
+      ["Typical signals", "Dates, numbers, names, places, attributed sources (“according to Stats SA”)", "Evaluative adjectives (best, awful, shocking), modals (should, must), “I think”, “clearly”, superlatives"],
+      ["Example", "The Comrades Marathon is run between Durban and Pietermaritzburg.", "The Comrades Marathon is the greatest race on earth."],
+      ["Example", "The school's matric pass rate was 87% last year.", "Our school's matric results were disappointing."]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Many sentences **mix** fact and opinion. Writers often place an opinion straight after a fact so that the opinion seems just as solid. When asked whether a statement is fact or opinion, identify the exact words that make it an opinion (for example “disgraceful” or “should”)." },
+    { "type": "example", "title": "Worked analysis 1: separating fact from opinion", "problem": "Read the extract from an opinion column and separate fact from opinion:\n\n“According to Stats SA, the official unemployment rate rose in the second quarter. This shocking figure proves that the government has completely failed our youth, and every minister should resign immediately.”", "steps": [
+      "Sentence 1 is a **factual claim**: it is attributed to a named source (Stats SA) and can be checked against published statistics.",
+      "In sentence 2, “shocking” is an evaluative adjective: it tells us how the writer feels about the figure. That is opinion.",
+      "“Proves that ... completely failed” is opinion presented as if it were a logical conclusion. One statistic cannot on its own *prove* total failure; the writer overstates the case.",
+      "“Should resign immediately” uses the modal “should”, which signals a recommendation or judgement, not a fact.",
+      "Effect: by placing a strong opinion directly after a verifiable fact, the writer makes the opinion seem equally reliable and positions the reader to share the writer's anger."
+    ], "answer": "Fact: the unemployment rate rose (attributed to Stats SA). Opinion: “shocking”, “proves ... completely failed” and “should resign immediately”." },
+
+    { "type": "heading", "text": "Bias, prejudice and stereotyping" },
+    { "type": "definition", "term": "Bias", "text": "A one-sided presentation that favours one person, group or point of view over another, so that the reader does not get a fair or balanced picture." },
+    { "type": "list", "items": [
+      "**Selection and omission**: including only the facts that support one side and leaving out the rest.",
+      "**Placement**: putting favourable information in the headline or first paragraph and burying unfavourable information at the end.",
+      "**Word choice**: using positive words for one side (“supporters”, “reforms”) and negative words for the other (“mob”, “schemes”).",
+      "**Choice of sources**: quoting only experts or residents who agree with the writer.",
+      "**Images and captions**: choosing a flattering or unflattering photograph, or a caption that tells the viewer how to read the picture.",
+      "**Statistics**: quoting only the figures that help (cherry-picking), or giving percentages without the numbers behind them."
+    ] },
+    { "type": "definition", "term": "Prejudice", "text": "A pre-judgement: an unfair, usually negative attitude towards a person or group, formed without knowledge or reason, often based on race, gender, religion, nationality, age, class or disability." },
+    { "type": "definition", "term": "Stereotype", "text": "A fixed, oversimplified and generalised idea about a whole group of people, for example “all teenagers are lazy” or “girls are bad at science”. Stereotypes ignore individual differences and often feed prejudice." },
+    { "type": "example", "title": "Worked analysis 2: spotting a stereotype", "problem": "A supermarket's braai-pack advertisement reads: “Leave the fire to the men, ladies. You take care of the salads!” Comment on the language used.", "steps": [
+      "Identify the assumption: men are naturally in charge of the braai fire (the “important” task), while women belong in the kitchen preparing side dishes.",
+      "Name it: this is a **gender stereotype**. It reduces both men and women to fixed roles.",
+      "Consider who is excluded: women who braai, men who cook, and anyone who does not fit these roles are ignored, so the language is **exclusive**.",
+      "Explain the effect: the advertiser may think this sounds playful and familiar, but it reinforces outdated gender roles and could alienate many customers."
+    ], "answer": "The line relies on a gender stereotype (men braai, women make salads); it is exclusive and reinforces outdated roles, which may offend part of the target market." },
+
+    { "type": "heading", "text": "Emotive and loaded language" },
+    { "type": "definition", "term": "Emotive language", "text": "Words chosen to stir up strong feelings (anger, pity, fear, pride, excitement) in the reader rather than to appeal to reason, e.g. “innocent children left to starve”, “heartless bosses”." },
+    { "type": "definition", "term": "Loaded language", "text": "Words that carry strong positive or negative associations beyond their basic meaning, so that they quietly pass judgement. Calling a crowd a “mob” or a payment a “hand-out” is loaded." },
+    { "type": "table", "caption": "The same idea, loaded in different directions", "headers": ["Positive connotation", "Neutral", "Negative connotation"], "rows": [
+      ["invest", "spend", "squander, waste"],
+      ["supporters, marchers", "crowd", "mob, rabble"],
+      ["determined", "firm", "stubborn, pig-headed"],
+      ["thrifty", "careful with money", "stingy, miserly"],
+      ["slender", "thin", "skinny, scrawny"],
+      ["curious", "interested", "nosy"],
+      ["demonstrators", "protesters", "rioters, thugs"],
+      ["experienced", "older", "past it, over the hill"]
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "When a question asks about the **effect** of a word, do three things: (1) quote the word, (2) explain its connotation (the feeling or association it carries), and (3) say how it makes the reader feel or think about the subject." },
+
+    { "type": "heading", "text": "Denotation and connotation, especially in headlines" },
+    { "type": "definition", "term": "Denotation", "text": "The literal, dictionary meaning of a word. The denotation of “home” is a place where someone lives." },
+    { "type": "definition", "term": "Connotation", "text": "The emotional and cultural associations a word carries beyond its literal meaning. “Home” suggests warmth, safety and belonging; “house” is more neutral." },
+    { "type": "paragraph", "text": "Headlines must catch attention in very few words, so every word is chosen for impact. Headline writers use:\n\n• **strong, dramatic verbs**: “slams”, “blasts”, “axes”, “storms”, “plunges”;\n• **short, punchy nouns**: “row” (argument), “probe” (investigation), “bid” (attempt), “chaos”;\n• **the present tense** for past events, to make news feel immediate (“Minister quits”);\n• **omission** of small words such as articles and auxiliary verbs (“Five hurt in N1 crash”);\n• **puns, alliteration and rhyme** to entertain (“Boks to the future”);\n• **question headlines** that suggest something without having to prove it.\n\nThe connotations of the words in a headline often reveal the publication's attitude before you have read a single sentence of the article." },
+    { "type": "example", "title": "Worked analysis 3: comparing two headlines", "problem": "Two newspapers report the same (invented) event, a march by residents demanding a reliable water supply.\n\nHeadline A: **Residents march for clean water**\nHeadline B: **Angry mob brings town to its knees**\n\nExplain how each headline positions the reader.", "steps": [
+      "Look at the noun used for the people. “Residents” denotes people who live in a place and has neutral to positive connotations: ordinary, law-abiding citizens with a right to be heard.",
+      "“Mob” denotes a large crowd, but its connotations are strongly negative: disorderly, violent, irrational. “Angry” adds to this.",
+      "Look at the verb phrase. “March for clean water” focuses on the cause, which most readers will find reasonable. “Brings town to its knees” is a metaphor of defeat and helplessness that focuses on disruption, not the cause.",
+      "Conclusion: Headline A encourages sympathy for the marchers and their demand; Headline B encourages the reader to see them as a threat and to side with those who were inconvenienced. The facts are the same, but the reader is positioned differently."
+    ] },
+
+    { "type": "heading", "text": "Propaganda techniques" },
+    { "type": "definition", "term": "Propaganda", "text": "Information, often biased or misleading, spread in an organised way to promote a political cause, product or point of view. It aims to make people act or believe without thinking critically." },
+    { "type": "table", "caption": "Key propaganda techniques (examples are invented)", "headers": ["Technique", "How it works", "Example"], "rows": [
+      ["Bandwagon", "Suggests that “everyone” is doing it, so you should join in or be left behind.", "“Over a million South Africans have already switched. Don't miss out!”"],
+      ["Glittering generalities", "Uses vague, feel-good words (freedom, hope, dignity, the future) that sound wonderful but say nothing specific.", "“Our party stands for a brighter tomorrow for every South African.”"],
+      ["Name-calling", "Attaches a negative label to a person or idea so that people reject it without looking at the evidence.", "“My opponent is a clueless puppet of big business.”"],
+      ["Testimonial", "A famous, respected or expert person endorses a product or idea, so that their status rubs off on it.", "“Olympic sprinter Kagiso Ndlovu: ‘I only train in StrideFast shoes.’”"],
+      ["Plain folks", "The speaker presents himself or herself as an ordinary person, just like the audience, to win trust.", "“I'm just a taxi driver's son from Mamelodi. I know what you go through every day.”"],
+      ["Fear appeal", "Frightens the audience with what will happen if they do not act or agree.", "“If you don't vote for us, crime will take over your street.”"],
+      ["Transfer", "Links a cause with a respected symbol (the flag, a national hero, a religious image) so that the positive feelings transfer to the cause.", "A campaign poster showing the national flag behind a candidate."],
+      ["Card stacking", "Presents only the facts that support one side and hides the rest.", "An advert lists a car's low price but not its high fuel consumption."]
+    ] },
+    { "type": "callout", "label": "Common mistake", "text": "Do not confuse **testimonial** (a famous or expert person endorses something) with **plain folks** (the speaker claims to be ordinary, like you). Note also that **glittering generalities** and **name-calling** are opposites: one attaches vague good words, the other attaches bad labels." },
+
+    { "type": "heading", "text": "Persuasive and rhetorical devices" },
+    { "type": "paragraph", "text": "The ancient Greek thinker Aristotle described three ways of persuading an audience. These **appeals** are still used in every speech, advertisement and opinion piece:" },
+    { "type": "list", "items": [
+      "**Ethos** (credibility): the speaker shows that he or she can be trusted, e.g. “As a nurse with twenty years' experience ...”.",
+      "**Pathos** (emotion): the speaker stirs feelings, e.g. stories of suffering children or appeals to national pride.",
+      "**Logos** (logic): the speaker uses facts, statistics, examples and reasoning."
+    ] },
+    { "type": "table", "caption": "Rhetorical devices and their effects", "headers": ["Device", "What it is", "Example", "Typical effect"], "rows": [
+      ["Rhetorical question", "A question asked for effect, not for an answer.", "“Do our children not deserve safe schools?”", "Involves the audience; the answer seems obvious, so they agree."],
+      ["Repetition / anaphora", "Repeating a word or phrase, often at the start of successive sentences.", "“We will rebuild. We will recover. We will rise.”", "Emphasis, rhythm, makes the message memorable."],
+      ["Rule of three (triad)", "A list of three words or ideas.", "“Honest, hard-working, home-grown.”", "Sounds complete and balanced; easy to remember."],
+      ["Inclusive pronouns", "Using “we”, “us”, “our”.", "“Together we can fix our city.”", "Creates unity; the audience feels part of a team with the speaker."],
+      ["Direct address", "Speaking to the reader as “you”.", "“You deserve better.”", "Personal, engaging; makes the reader feel singled out."],
+      ["Hyperbole", "Deliberate exaggeration.", "“The worst crisis in the history of humanity.”", "Creates urgency or drama, but may reduce credibility."],
+      ["Antithesis / contrast", "Placing opposite ideas side by side.", "“They gave you excuses; we will give you results.”", "Makes one option look good by contrast with the other."],
+      ["Anecdote", "A short personal story.", "“Last week I met a gogo who walks 5 km for water.”", "Makes an issue human and emotional (pathos)."],
+      ["Statistics", "Numbers and data.", "“Three out of four learners agree.”", "Sounds objective and scientific (logos), but may be selective."],
+      ["Euphemism", "A mild word used to soften something unpleasant.", "“Passed away” for died; “let go” for fired.", "Softens bad news or hides how serious something is."],
+      ["Imperative", "A command.", "“Act now. Vote today.”", "Urgent, direct call to action."]
+    ] },
+    { "type": "example", "title": "Worked analysis 4: an election speech", "problem": "Analyse this extract from a learner's SRC election speech:\n\n“Fellow learners, are you tired of broken taps and empty promises? I am. Last year's council gave you excuses; I will give you results. Ask Mr Pillay, our principal – he'll tell you I keep my word. Vote Thando: the honest choice, the hard-working choice, the only choice.”", "steps": [
+      "“Are you tired of broken taps and empty promises?” is a **rhetorical question** using **direct address**; the speaker expects the audience to answer “yes” silently, which makes them agree before any argument is made.",
+      "“I am.” is a very short sentence that creates a bond with the audience (a touch of **plain folks**: I suffer as you do).",
+      "“They gave you excuses; I will give you results” is **antithesis**: the rival is made to look useless and the speaker effective.",
+      "“Ask Mr Pillay, our principal” is a **testimonial**: a respected figure is used to lend credibility (ethos). Note that we are not told what Mr Pillay actually said.",
+      "“The honest choice, the hard-working choice, the only choice” combines **repetition** and the **rule of three**. “Honest” and “hard-working” are **glittering generalities**: positive but unproved.",
+      "“The only choice” is manipulative: it suggests there is no reasonable alternative, which is clearly not true in an election with other candidates."
+    ], "answer": "The speech relies mostly on emotion and credibility (pathos and ethos) rather than evidence (logos): no actual plan for fixing the taps is offered." },
+
+    { "type": "heading", "text": "Manipulative language in news, politics and social media" },
+    { "type": "list", "items": [
+      "**Clickbait and sensationalism**: exaggerated headlines designed to make you click or share (“You won't BELIEVE what this teacher did!”).",
+      "**Euphemism and doublespeak**: language that hides an unpleasant truth. “Rightsizing” or “restructuring” for retrenching workers; “tariff adjustment” for a price increase; “collateral damage” for civilian deaths.",
+      "**Weasel words and vague sources**: “some say”, “experts believe”, “it is widely reported”, which give the impression of support without naming anyone who can be checked.",
+      "**The passive voice to hide responsibility**: “Mistakes were made” or “Funds were misused” does not say *who* made the mistakes or misused the funds.",
+      "**Selective quotation**: quoting a few words out of context so that a person appears to say something they did not mean.",
+      "**False dilemma (either/or)**: presenting only two choices when there are more (“Either you support this plan or you don't care about the poor”).",
+      "**Sweeping generalisation**: making a claim about a whole group from a few cases (“All politicians are corrupt”).",
+      "**Social media tactics**: hashtags that frame an issue, memes that reduce complex issues to a joke, fake accounts and bots that make a view look more popular than it is, and **echo chambers** where people only see posts that agree with what they already believe."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "If a question asks why a writer used the passive voice, check whether the **doer** of the action has been left out. If so, the effect is often to avoid blame or to make an event seem impersonal: compare “The police shot two protesters” with “Two protesters were shot”." },
+
+    { "type": "heading", "text": "Inclusive and exclusive language" },
+    { "type": "paragraph", "text": "**Inclusive language** treats all people with respect and does not leave anyone out on the basis of gender, race, culture, religion, age, sexual orientation or disability. **Exclusive language** (also called discriminatory or biased language) ignores, belittles or stereotypes certain groups, even if the writer does not intend to. South Africa's Constitution is built on equality and human dignity, so public writing is expected to be inclusive." },
+    { "type": "table", "caption": "Replacing exclusive language", "headers": ["Area", "Exclusive / outdated", "Inclusive alternative", "Why"], "rows": [
+      ["Gender", "chairman, fireman, policeman", "chairperson or chair, firefighter, police officer", "The job is not limited to men."],
+      ["Gender", "mankind, man-made, manpower", "humankind or people, artificial or synthetic, workforce or staff", "Avoids treating “man” as the standard human."],
+      ["Gender", "“Every learner must bring his book.”", "“Every learner must bring his or her book.” or “All learners must bring their books.”", "Includes everyone; “they/their” as a singular is now widely accepted."],
+      ["Disability", "the disabled, the handicapped", "people with disabilities, persons with disabilities", "Puts the person first, not the condition."],
+      ["Disability", "wheelchair-bound, confined to a wheelchair", "wheelchair user, uses a wheelchair", "A wheelchair gives mobility; it does not imprison."],
+      ["Disability", "suffers from epilepsy, a victim of autism", "has epilepsy, is autistic or has autism", "Avoids presenting the person as a helpless victim."],
+      ["Disability", "normal people (as opposed to people with disabilities)", "people without disabilities", "Avoids implying that people with disabilities are abnormal."],
+      ["Race and culture", "Mentioning someone's race when it is irrelevant (“A black doctor saved the patient”)", "“A doctor saved the patient.”", "Irrelevant labels suggest that the person is an exception to a stereotype."]
+    ] },
+
+    { "type": "heading", "text": "Offensive language and hate speech" },
+    { "type": "paragraph", "text": "**Offensive language** is language that insults, humiliates or hurts people: slurs, crude insults, mocking someone's accent, body, religion or background. **Hate speech** is more serious. It is speech that expresses hatred towards people because of who they are and that encourages others to harm them.\n\nSection 16(1) of the South African Constitution protects freedom of expression, but section 16(2) states that this right does not extend to propaganda for war, incitement of imminent violence, or advocacy of hatred that is based on race, ethnicity, gender or religion and that constitutes incitement to cause harm. Hate speech can therefore lead to legal consequences, and many social media users have faced disciplinary action, dismissal or court cases because of their posts." },
+    { "type": "callout", "label": "Remember", "text": "In an exam answer you never need to repeat a slur. Refer to “the offensive term” and explain its effect: it dehumanises, excludes, stereotypes or incites hostility." },
+
+    { "type": "heading", "text": "Register and tone" },
+    { "type": "definition", "term": "Register", "text": "The level of formality of language, chosen to suit the audience, purpose and situation. A letter to a municipal manager needs a formal register; a WhatsApp to a friend uses an informal register." },
+    { "type": "table", "caption": "Types of register", "headers": ["Register", "Features", "Example"], "rows": [
+      ["Formal", "Complete sentences, no contractions, precise vocabulary, impersonal tone", "“We regret to inform you that the meeting has been postponed.”"],
+      ["Informal", "Contractions, everyday words, personal tone", "“Sorry, the meeting's been moved.”"],
+      ["Colloquial", "Conversational expressions typical of a region or group", "“I'll see you just now.” “Shame, that's sad.”"],
+      ["Slang", "Very informal words used by a particular group, often young people; changes quickly", "“That party was lit, bru!”"],
+      ["Jargon", "Technical vocabulary of a profession or field", "“The patient presented with acute myocardial infarction.”"]
+    ] },
+    { "type": "definition", "term": "Tone", "text": "The attitude of the writer or speaker towards the subject or audience, shown through word choice, sentence length and punctuation. Tone is described with adjectives: sarcastic, critical, indignant, sympathetic, nostalgic, condescending, optimistic, urgent, mocking, objective, conciliatory, defensive, bitter, admiring." },
+    { "type": "callout", "label": "Exam tip", "text": "For a tone question, (1) name the tone with a precise adjective (not just “positive” or “negative”), (2) quote the words that create it and (3) explain how they create it. “Happy” and “sad” rarely earn marks at Home Language level." },
+
+    { "type": "heading", "text": "Implicit messages and assumptions" },
+    { "type": "definition", "term": "Implicit message", "text": "A meaning that is suggested or implied rather than stated directly. The reader has to **infer** it from word choice, context, images or what is left out." },
+    { "type": "definition", "term": "Assumption (presupposition)", "text": "An idea that a sentence takes for granted as true. Questions such as “When will the mayor stop wasting our money?” presuppose that the mayor *is* wasting money, without proving it." },
+    { "type": "example", "title": "Worked analysis 5: uncovering assumptions", "problem": "A letter to a newspaper begins: “Why do our taxi drivers think they own the roads?” Identify the assumptions in this sentence and comment on their effect.", "steps": [
+      "The question presupposes that taxi drivers **do** think they own the roads, i.e. that they drive arrogantly and selfishly. This is never proved.",
+      "It generalises about **all** taxi drivers (“our taxi drivers”), which is a stereotype; many drive responsibly.",
+      "“Our” creates an in-group: the writer and readers are the reasonable road users, and taxi drivers are the outsiders.",
+      "Because it is a rhetorical question, the reader is drawn into agreeing before any evidence is presented. The effect is to position the reader to share the writer's irritation."
+    ] },
+
+    { "type": "heading", "text": "The effect of word choice: reporting verbs" },
+    { "type": "paragraph", "text": "Journalists signal their attitude through the verbs they use to report what people said. Compare “The minister said...” with “The minister claimed...” The second suggests the journalist does not quite believe it." },
+    { "type": "table", "caption": "Reporting verbs and what they suggest", "headers": ["Verb", "What it suggests about the speaker or statement"], "rows": [
+      ["said, stated", "Neutral"],
+      ["claimed, alleged", "The statement may not be true; it has not been proved"],
+      ["admitted, conceded", "The speaker reluctantly accepted something unwelcome or damaging to himself or herself"],
+      ["insisted", "The speaker is defensive or determined, perhaps in the face of doubt"],
+      ["revealed, disclosed", "Something hidden or secret has come to light"],
+      ["boasted, bragged", "The speaker is proud or arrogant"],
+      ["warned", "Danger is coming; the speaker is presented as responsible and wise"],
+      ["slammed, blasted", "Strong, angry criticism (sensational, typical of headlines)"]
+    ] },
+
+    { "type": "heading", "text": "Evaluating sources and misinformation" },
+    { "type": "definition", "term": "Misinformation", "text": "False or inaccurate information that is shared by people who believe it is true. There is no intention to deceive." },
+    { "type": "definition", "term": "Disinformation", "text": "False information that is created and spread **deliberately** to deceive, for example to influence an election, damage a reputation or make money from clicks. (Malinformation is true information shared to cause harm, such as leaking someone's private details.)" },
+    { "type": "list", "items": [
+      "**Author**: Is a real, named person or organisation responsible? Do they have expertise?",
+      "**Purpose**: Is the text trying to inform, sell, persuade or provoke outrage?",
+      "**Date**: Is it current, or an old story recycled as new?",
+      "**Evidence**: Are facts, figures and quotations attributed to sources you can check?",
+      "**Corroboration**: Do other reliable sources (established news outlets, official bodies, fact-checking organisations such as Africa Check) report the same thing? Checking what other sites say about a source is called **lateral reading**.",
+      "**Language and design**: Excessive capital letters, exclamation marks, spelling errors and phrases such as “share before they delete this” are warning signs.",
+      "**Images**: Photos can be old, from another country, edited or generated by AI. A reverse image search can reveal where a picture first appeared.",
+      "**Satire**: Some sites publish deliberately false, humorous stories. Check whether the source is a satirical site before treating its stories as news."
+    ] },
+    { "type": "callout", "label": "Remember: SIFT", "text": "A quick method for checking online claims: **S**top (pause before you react or share); **I**nvestigate the source; **F**ind better coverage (what do reliable sources say?); **T**race claims, quotes and images back to their original context." },
+    { "type": "example", "title": "Worked analysis 6: evaluating a forwarded message", "problem": "A message forwarded on a community WhatsApp group reads: “BREAKING!!! Municipal insider confirms ALL taps in the city will be switched off for two weeks from Monday. The mayor is hiding it from you. Fill every bucket NOW and share with everyone!!!” Is this a reliable source? Give reasons.", "steps": [
+      "Author: “a municipal insider” is anonymous, so we cannot check who said it or whether they have any authority.",
+      "Evidence: no official notice, date of announcement or reference number is given.",
+      "Language: capital letters, multiple exclamation marks and “BREAKING” are sensational; “NOW” and “share with everyone” create panic and urgency (fear appeal).",
+      "Name-calling and conspiracy: “The mayor is hiding it from you” tries to make readers distrust official sources, so that they will not check them.",
+      "Verdict: unreliable. A sensible reader would check the municipality's official website or social media accounts and established local news before acting or sharing. If the message is false, sharing it spreads misinformation."
+    ], "answer": "Unreliable: anonymous source, no evidence, sensational language, an appeal to fear and urgency, and an attempt to discredit official sources." },
+
+    { "type": "heading", "text": "Answering CLA questions in the exam" },
+    { "type": "list", "ordered": true, "items": [
+      "Read the whole text first and decide on its **purpose** and **target audience**.",
+      "Underline words with strong connotations, opinion words, rhetorical questions and claims without sources.",
+      "Check the mark allocation: a 2-mark question usually needs a point **plus** an explanation or quotation; a 3-mark question needs a discussion with evidence.",
+      "Name the technique precisely (e.g. “bandwagon”, “euphemism”), quote the evidence, then explain the **effect on the reader**.",
+      "For “Do you agree?” or “Is this effective/fair?” questions, take a clear stand and justify it with reference to the text. There may be more than one acceptable view, but an unsupported opinion earns little."
+    ] },
+
+    { "type": "heading", "text": "Summary" },
+    { "type": "list", "items": [
+      "No text is neutral: writers choose words, facts and voices to position readers.",
+      "A fact can be verified; an opinion expresses a judgement. Watch for opinions placed straight after facts.",
+      "Bias is one-sidedness; prejudice is an unfair pre-judgement; a stereotype is an oversimplified generalisation about a group.",
+      "Emotive and loaded words work through their connotations, not their denotations.",
+      "Headlines use dramatic verbs, the present tense, omission and puns; their word choice reveals attitude.",
+      "Propaganda techniques: bandwagon, glittering generalities, name-calling, testimonial, plain folks, fear appeal, transfer and card stacking.",
+      "Persuasion uses ethos, pathos and logos, together with devices such as rhetorical questions, repetition, the rule of three, inclusive pronouns, hyperbole and antithesis.",
+      "Manipulation includes euphemism, weasel words, the passive voice to hide the doer, selective quotation, false dilemmas and sweeping generalisations.",
+      "Inclusive language respects gender, race and disability (e.g. chairperson, person with a disability, wheelchair user).",
+      "Hate speech that incites harm is not protected by the right to freedom of expression (Constitution, section 16(2)).",
+      "Register is the level of formality; tone is the writer's attitude. Name the tone precisely and support it with a quotation.",
+      "Look for implicit messages and the assumptions a sentence takes for granted.",
+      "Reporting verbs (claimed, admitted, insisted) reveal the reporter's attitude.",
+      "Evaluate sources for author, purpose, date, evidence and corroboration; misinformation is shared innocently, disinformation deliberately."
+    ] }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which ONE of the following statements is a fact?",
+      "options": [
+        "The Kruger National Park is the most beautiful place in South Africa.",
+        "Every family should visit the Kruger National Park at least once.",
+        "The Kruger National Park is located in the north-east of South Africa.",
+        "Visitors will find the Kruger National Park disappointingly expensive."
+      ],
+      "answer": 2,
+      "explanation": "The location of the park can be checked on any map. The other options contain opinion signals: the superlative “most beautiful”, the modal “should” and the evaluative word “disappointingly”."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "“Over two million South Africans have already switched to SunVolt solar geysers. Don't be left behind!”\n\nWhich propaganda technique is used in this advertisement?",
+      "options": ["Bandwagon", "Plain folks", "Name-calling", "Glittering generalities"],
+      "answer": 0,
+      "explanation": "The advertisement suggests that “everyone” is already doing it and that you will be left out if you do not join them. That is the bandwagon technique."
+    },
+    {
+      "id": "q3",
+      "type": "truefalse",
+      "prompt": "The connotation of a word is its literal, dictionary meaning.",
+      "answer": false,
+      "explanation": "The literal dictionary meaning is the denotation. The connotation is the set of emotional and cultural associations the word carries."
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "prompt": "In the sentence “Mistakes were made in the tender process”, the passive voice allows the writer to avoid saying who made the mistakes.",
+      "answer": true,
+      "explanation": "The passive voice leaves out the doer of the action. This is a common way of avoiding blame or responsibility."
+    },
+    {
+      "id": "q5",
+      "type": "short",
+      "prompt": "What term describes a fixed, oversimplified and generalised idea about a whole group of people, for example “All teenagers are lazy”?",
+      "answers": ["stereotype", "a stereotype", "stereotyping", "stereotypes"],
+      "explanation": "A stereotype ignores individual differences and applies one fixed idea to everyone in a group."
+    },
+    {
+      "id": "q6",
+      "type": "short",
+      "prompt": "Give a gender-inclusive word to replace “chairman” in the sentence: “The chairman will open the meeting.”",
+      "answers": ["chairperson", "chair", "the chairperson", "the chair", "convenor", "convener", "presiding officer"],
+      "explanation": "“Chairperson” or “chair” does not assume that the person leading the meeting is a man."
+    },
+    {
+      "id": "q7",
+      "type": "match",
+      "prompt": "Match each (invented) example with the propaganda technique it uses.",
+      "marks": 6,
+      "pairs": [
+        { "left": "“Join the thousands of learners who already study with BrightPath!”", "right": "Bandwagon" },
+        { "left": "“Our party stands for freedom, dignity and a better life for all.”", "right": "Glittering generalities" },
+        { "left": "“My opponent is a clueless clown who couldn't run a spaza shop.”", "right": "Name-calling" },
+        { "left": "“Olympic swimmer Lerato Dube says: ‘I only drink HydraMax.’”", "right": "Testimonial" },
+        { "left": "“I'm just an ordinary gogo from Soweto who wants safe streets, like you.”", "right": "Plain folks" },
+        { "left": "“If you don't vote for us, your children will have no jobs and no future.”", "right": "Fear appeal" }
+      ],
+      "explanation": "Bandwagon: everyone is doing it. Glittering generalities: vague, feel-good words. Name-calling: a negative label. Testimonial: a famous person's endorsement. Plain folks: “I'm ordinary, like you.” Fear appeal: frightening consequences."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "“The mayor ______ that his office had not followed proper procedures when awarding the water tender.”\n\nWhich reporting verb best suggests that the mayor reluctantly accepted something damaging to himself?",
+      "options": ["stated", "claimed", "boasted", "admitted"],
+      "answer": 3,
+      "explanation": "“Admitted” suggests reluctantly accepting an unwelcome truth. “Stated” is neutral, “claimed” suggests doubt, and “boasted” suggests pride, which does not fit."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "“Yoh, bru, that maths test was hectic, hey!”\n\nThe register of this sentence is best described as:",
+      "options": ["formal", "informal, using slang and colloquial expressions", "technical jargon", "archaic"],
+      "answer": 1,
+      "explanation": "“Yoh”, “bru”, “hectic” (meaning very difficult) and the tag “hey” are casual, conversational South African expressions."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "A newspaper headline asks: “When will the Minister finally fix our potholes?”\n\nWhat does this headline assume (take for granted)?",
+      "options": [
+        "The Minister has already fixed most of the potholes.",
+        "Potholes are not a serious problem for motorists.",
+        "The Minister is responsible for the potholes and has failed to fix them so far.",
+        "The newspaper's readers do not drive on public roads."
+      ],
+      "answer": 2,
+      "explanation": "The question presupposes that fixing the potholes is the Minister's job and that it has not yet been done. “Finally” adds the suggestion that the Minister has been slow."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "A learner forwards a WhatsApp message saying that her school will be closed tomorrow. She believes the message is true, but it is false. Her action is best described as spreading:",
+      "options": ["disinformation", "misinformation", "satire", "malinformation"],
+      "answer": 1,
+      "explanation": "Misinformation is false information shared by someone who believes it is true. Disinformation is spread deliberately to deceive; malinformation is true information used to cause harm."
+    },
+    {
+      "id": "q12",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Read the following school notice:\n\n“Every learner must bring his own lunch. The sports day needs manpower, so firemen and policemen from the community are welcome to help. Wheelchair-bound learners and the handicapped will watch from the stands.”\n\n(a) Rewrite the notice using inclusive, respectful language. (2)\n(b) Explain TWO of the changes you made. (2)",
+      "memo": "(a) Model rewrite: “All learners must bring their own lunch. The sports day needs volunteers, so firefighters and police officers from the community are welcome to help. Learners with disabilities are welcome to take part in adapted events or to watch from the accessible seating area.”\n✓ all gender-exclusive terms corrected (his, manpower, firemen, policemen) (1)\n✓ disability terms corrected and learners with disabilities not simply excluded (1)\n\n(b) Any TWO, e.g.:\n✓ “his” and “firemen/policemen” assume that only boys or men are involved; “their”, “firefighters” and “police officers” include everyone. (1)\n✓ “manpower” treats men as the standard; “volunteers” or “helpers” is neutral. (1)\n✓ “wheelchair-bound” suggests the person is trapped; “wheelchair user” or “learners with disabilities” puts the person first. (1)\n✓ “the handicapped” is outdated and reduces people to a condition; the original notice also excluded them from taking part. (1)\n(Maximum 2 for part (b))"
+    },
+    {
+      "id": "q13",
+      "type": "open",
+      "marks": 4,
+      "prompt": "Two newspapers report the same march.\n\nHeadline A: “Residents march peacefully for clean water”\nHeadline B: “Rowdy mob brings town to a standstill”\n\n(a) Contrast the connotations of “residents” in Headline A and “mob” in Headline B. (2)\n(b) Which headline is more likely to win the reader's sympathy for the marchers? Justify your answer by referring to ONE other word or phrase in the headlines. (2)",
+      "memo": "(a) “Residents” has neutral to positive connotations: ordinary, law-abiding people who live in the area and have a right to be heard. ✓ “Mob” has negative connotations: a disorderly, possibly violent and irrational crowd. ✓ (2)\n\n(b) Headline A. ✓ “Peacefully” stresses that the march was orderly, and “for clean water” focuses on a reasonable demand that readers can sympathise with (whereas “rowdy” and “brings town to a standstill” in B focus on noise and disruption). ✓ (2)\n(Award the second mark only if a specific word or phrase is discussed.)"
+    },
+    {
+      "id": "q14",
+      "type": "open",
+      "marks": 6,
+      "prompt": "Read this extract from an (invented) election speech:\n\n“Friends, neighbours, fellow South Africans! For too long we have waited. For too long we have been promised. For too long we have been ignored. Do our children not deserve classrooms with roofs? My opponents – those comfortable fat cats in their air-conditioned offices – will tell you that change takes time. But I grew up in a house without electricity, just like many of you. I know your struggle. The choice is yours: vote for hope, or vote for more of the same.”\n\n(a) Identify the device used in “For too long we have waited. For too long we have been promised. For too long we have been ignored.” and explain its effect. (2)\n(b) Name the propaganda technique used in “those comfortable fat cats in their air-conditioned offices”. (1)\n(c) Name the propaganda technique used in “I grew up in a house without electricity, just like many of you.” (1)\n(d) Is the final sentence a fair way of presenting the voters' choice? Justify your answer. (2)",
+      "memo": "(a) Repetition / anaphora (also accept rule of three or triad). ✓ It creates rhythm and builds up a sense of frustration and urgency, so the audience feels that its patience has run out and change is needed. ✓ (2)\n\n(b) Name-calling. ✓ (1)\n\n(c) Plain folks. ✓ (1)\n\n(d) No, it is not fair. ✓ It is a false dilemma: it presents only two options, “hope” (the speaker) or “more of the same” (everyone else), when voters have several parties and policies to choose from. The phrase “vote for hope” is also a glittering generality that promises nothing specific. ✓ (2)\n(Accept a reasoned “Yes” only if it is convincingly justified, e.g. as acceptable persuasion in a speech; award 1 mark.)"
+    },
+    {
+      "id": "q15",
+      "type": "open",
+      "marks": 5,
+      "prompt": "Read this (invented) social media post:\n\n“URGENT!!! Share before they delete this!!! A nurse friend of my cousin says that drinking hot water with lemon every hour KILLS the flu virus. Doctors don't want you to know this because they make money from medicine. 100% TRUE!!! Forward to everyone you love.”\n\nCritically evaluate the reliability of this post. Refer to at least FOUR features of the post and give a final verdict.",
+      "memo": "Any FOUR points, 1 mark each (✓✓✓✓), plus 1 mark for a clear verdict (✓):\n✓ The source is vague and second-hand (“a nurse friend of my cousin”); the person is not named and cannot be checked, and a nurse is not cited directly.\n✓ No evidence is given: there are no studies, statistics or references to health authorities.\n✓ Sensational language and design: capital letters (“URGENT”, “KILLS”) and multiple exclamation marks aim to provoke emotion rather than reason.\n✓ “Share before they delete this” and “Forward to everyone you love” create urgency and fear (fear appeal) and push readers to spread the post without checking it.\n✓ “Doctors don't want you to know this” is a conspiracy claim that tries to make readers distrust qualified experts, and it is a sweeping generalisation about all doctors.\n✓ “100% TRUE” is an unsupported assertion; reliable sources do not need to shout that they are true.\n✓ The claim is not corroborated by reliable health sources; a reader should check with a doctor, a clinic or an established fact-checking organisation.\nVerdict: The post is unreliable and should not be shared; doing so would spread misinformation. ✓"
+    }
+  ]
+}

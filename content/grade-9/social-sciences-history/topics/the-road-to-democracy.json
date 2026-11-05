@@ -1,0 +1,61 @@
+{
+  "id": "the-road-to-democracy",
+  "title": "1990–1994: The Road to Democracy",
+  "term": 3,
+  "summary": "Pressures on apartheid in the 1980s, F. W. de Klerk's speech and Mandela's release in 1990, negotiations and violence, the 1994 election and the new Constitution.",
+  "notes": [
+    { "type": "heading", "text": "Pressure on apartheid in the 1980s" },
+    { "type": "list", "items": [
+      "**Internal resistance**: the **United Democratic Front (UDF)**, formed in 1983, united hundreds of community, church, student and worker organisations. Townships became 'ungovernable'.",
+      "**Trade unions**: the **Congress of South African Trade Unions (COSATU)** (1985) organised huge strikes.",
+      "**States of Emergency** from 1985 to 1990: thousands were detained, but resistance continued.",
+      "**International pressure**: economic **sanctions**, banks refusing loans, sports and cultural boycotts and the 'Free Mandela' campaign.",
+      "**Economic crisis**: the economy was shrinking and the cost of apartheid and the war in Angola was very high.",
+      "**End of the Cold War** (1989): the government could no longer claim it was fighting communism."
+    ] },
+    { "type": "heading", "text": "1990: A turning point" },
+    { "type": "paragraph", "text": "**F. W. de Klerk** became President in 1989. On **2 February 1990**, in his speech at the opening of Parliament, he announced:" },
+    { "type": "list", "items": [
+      "The **unbanning** of the ANC, PAC, SACP and other organisations.",
+      "The release of political prisoners, including Nelson Mandela.",
+      "The lifting of some restrictions of the State of Emergency.",
+      "A willingness to negotiate a new constitution."
+    ] },
+    { "type": "paragraph", "text": "On **11 February 1990**, after **27 years** in prison, **Nelson Mandela** walked out of Victor Verster Prison near Paarl. That evening he spoke to a huge crowd from the balcony of Cape Town City Hall." },
+    { "type": "heading", "text": "Negotiations and violence" },
+    { "type": "table", "headers": ["Date", "Event"], "rows": [
+      ["1991", "**CODESA** (Convention for a Democratic South Africa) began, with 19 parties"],
+      ["1990–1994", "Political violence between ANC and Inkatha Freedom Party supporters, sometimes encouraged by a 'third force' in the security forces, killed thousands"],
+      ["March 1992", "In a whites-only referendum, 69% voted to continue negotiations"],
+      ["June 1992", "**Boipatong massacre**: 45 people killed; the ANC withdrew from talks"],
+      ["September 1992", "**Bisho massacre**: soldiers of the Ciskei homeland shot 28 marchers"],
+      ["10 April 1993", "**Chris Hani**, leader of the SACP, was assassinated. Mandela appealed on television for calm, and an election date was set"],
+      ["1993", "The **Multi-Party Negotiating Forum** agreed on an interim constitution; Mandela and De Klerk shared the **Nobel Peace Prize**"]
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "Compromise made the transition possible. One example is the **'sunset clauses'** proposed by Joe Slovo, which guaranteed a **Government of National Unity** for five years and protected the jobs of civil servants." },
+    { "type": "heading", "text": "The first democratic election" },
+    { "type": "paragraph", "text": "On **27 April 1994**, for the first time, South Africans of all races voted together. Nearly 20 million people queued for hours, many voting for the first time in their lives. The ANC won about **62,6%** of the vote. On **10 May 1994**, Nelson Mandela was inaugurated as the first democratically elected President, with F. W. de Klerk and Thabo Mbeki as deputy presidents. 27 April is now **Freedom Day**." },
+    { "type": "heading", "text": "The Constitution and the TRC" },
+    { "type": "list", "items": [
+      "The **Constitution of 1996**, with its **Bill of Rights**, is the highest law of the country and protects equality, human dignity and freedom for all.",
+      "The **Truth and Reconciliation Commission (TRC)**, chaired by **Archbishop Desmond Tutu**, heard testimony from victims and perpetrators of human rights abuses from 1960 to 1994. Perpetrators who told the full truth about politically motivated crimes could apply for **amnesty**."
+    ] }
+  ],
+  "questions": [
+    { "id": "release", "type": "short", "prompt": "On which date was Nelson Mandela released from prison? (e.g. 1 May 1990)", "answers": ["11 february 1990", "11th february 1990", "february 11 1990", "february 11, 1990"] },
+    { "id": "de-klerk", "type": "mcq", "prompt": "Who announced the unbanning of the liberation movements on 2 February 1990?", "options": ["P. W. Botha", "F. W. de Klerk", "Nelson Mandela", "Chris Hani"], "answer": 1 },
+    { "id": "years", "type": "numeric", "prompt": "For how many years was Mandela in prison?", "answer": 27, "tolerance": 0, "unit": "years" },
+    { "id": "codesa", "type": "short", "prompt": "What was the name of the negotiating forum that began in 1991? (an acronym)", "answers": ["codesa"] },
+    { "id": "freedom-day", "type": "truefalse", "prompt": "Freedom Day, 27 April, marks the date of the first democratic election.", "answer": true },
+    { "id": "events", "type": "match", "marks": 4, "prompt": "Match each event to its year.", "pairs": [
+      { "left": "UDF formed", "right": "1983" },
+      { "left": "Mandela released", "right": "1990" },
+      { "left": "Chris Hani assassinated", "right": "1993" },
+      { "left": "First democratic election", "right": "1994" }
+    ] },
+    { "id": "pressures", "type": "open", "marks": 4, "prompt": "Explain FOUR pressures that forced the apartheid government to negotiate.", "memo": "Any four (1 each): internal resistance/UDF; strikes/COSATU; sanctions and boycotts; economic crisis; cost of war; end of the Cold War; international isolation" },
+    { "id": "hani", "type": "open", "marks": 2, "prompt": "Why was Mandela's response to Chris Hani's assassination important?", "memo": "✓ He appealed for calm and prevented the country from sliding into civil war (1)\n✓ It showed he was the leader the country looked to, and led to an election date being set (1)" },
+    { "id": "trc", "type": "open", "marks": 2, "prompt": "What was the purpose of the Truth and Reconciliation Commission?", "memo": "✓ To uncover the truth about human rights abuses from 1960 to 1994 (1)\n✓ To help reconciliation / give victims a voice; amnesty for full disclosure (1)" },
+    { "id": "compromise", "type": "open", "marks": 2, "prompt": "Give ONE example of a compromise made during the negotiations.", "memo": "✓✓ e.g. sunset clauses: Government of National Unity for five years / protection of civil servants' jobs; amnesty for full disclosure at the TRC" }
+  ]
+}

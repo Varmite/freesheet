@@ -1,0 +1,208 @@
+{
+  "id": "statistics",
+  "title": "Statistics",
+  "term": 4,
+  "summary": "Histograms and frequency polygons, ogives (cumulative frequency curves), variance and standard deviation, and symmetric and skewed data.",
+  "notes": [
+    {
+      "type": "heading",
+      "text": "Grouped data"
+    },
+    {
+      "type": "paragraph",
+      "text": "Large data sets are grouped into **class intervals**, e.g. $40 \\leq x < 50$. A **histogram** shows the frequency of each interval as touching bars. A **frequency polygon** joins the midpoints of the tops of the bars."
+    },
+    {
+      "type": "heading",
+      "text": "Ogives"
+    },
+    {
+      "type": "paragraph",
+      "text": "An **ogive** (cumulative frequency curve) plots the **cumulative frequency** against the **upper limit** of each class. It starts at frequency 0 at the lower limit of the first class. Use it to estimate the median ($\\frac{n}{2}$th value) and the quartiles ($\\frac{n}{4}$th and $\\frac{3n}{4}$th values)."
+    },
+    {
+      "type": "table",
+      "caption": "Marks of 40 learners",
+      "headers": [
+        "Marks",
+        "Frequency",
+        "Cumulative frequency",
+        "Point to plot"
+      ],
+      "rows": [
+        [
+          "$20 \\leq x < 40$",
+          "4",
+          "4",
+          "$(40; 4)$"
+        ],
+        [
+          "$40 \\leq x < 60$",
+          "12",
+          "16",
+          "$(60; 16)$"
+        ],
+        [
+          "$60 \\leq x < 80$",
+          "18",
+          "34",
+          "$(80; 34)$"
+        ],
+        [
+          "$80 \\leq x < 100$",
+          "6",
+          "40",
+          "$(100; 40)$"
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220' font-family='sans-serif' font-size='10'><rect width='300' height='220' fill='white'/><line x1='40' y1='190' x2='290' y2='190' stroke='black'/><line x1='40' y1='190' x2='40' y2='15' stroke='black'/><polyline points='40,190 90,173 140,122 190,46 240,20' fill='none' stroke='black' stroke-width='2'/><g fill='black'><circle cx='40' cy='190' r='3'/><circle cx='90' cy='173' r='3'/><circle cx='140' cy='122' r='3'/><circle cx='190' cy='46' r='3'/><circle cx='240' cy='20' r='3'/></g><line x1='40' y1='105' x2='151' y2='105' stroke='black' stroke-dasharray='4 3'/><line x1='151' y1='105' x2='151' y2='190' stroke='black' stroke-dasharray='4 3'/><text x='36' y='204'>20</text><text x='86' y='204'>40</text><text x='136' y='204'>60</text><text x='186' y='204'>80</text><text x='232' y='204'>100</text><text x='22' y='193'>0</text><text x='18' y='108'>20</text><text x='18' y='24'>40</text><text x='150' y='185'>median ≈ 64</text><text x='120' y='216'>Marks</text></svg>",
+      "caption": "Ogive of the marks: reading across from 20 (half of 40) gives a median of about 64"
+    },
+    {
+      "type": "heading",
+      "text": "Variance and standard deviation"
+    },
+    {
+      "type": "formula",
+      "latex": "\\sigma^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n} \\qquad \\sigma = \\sqrt{\\frac{\\sum (x_i - \\bar{x})^2}{n}}",
+      "caption": "Variance and (population) standard deviation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The **standard deviation** measures how spread out the data are around the mean. A small standard deviation means the data are clustered closely around the mean."
+    },
+    {
+      "type": "example",
+      "title": "Worked example 1",
+      "problem": "Find the mean and standard deviation of $4; 6; 7; 9; 14$.",
+      "steps": [
+        "$\\bar{x} = \\dfrac{40}{5} = 8$",
+        "Deviations squared: $16; 4; 1; 1; 36$, sum $= 58$",
+        "$\\sigma^2 = \\dfrac{58}{5} = 11{,}6$, so $\\sigma = 3{,}41$"
+      ],
+      "answer": "$\\bar{x} = 8$; $\\sigma \\approx 3{,}41$"
+    },
+    {
+      "type": "callout",
+      "label": "Exam tip",
+      "text": "Use your calculator's STAT mode. Check that you choose the population standard deviation ($\\sigma x$ or $\\sigma_n$), as used in the CAPS syllabus."
+    },
+    {
+      "type": "heading",
+      "text": "Symmetric and skewed data"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Shape",
+        "Relationship",
+        "Box-and-whisker"
+      ],
+      "rows": [
+        [
+          "Symmetric",
+          "mean = median = mode",
+          "Median in the middle of the box"
+        ],
+        [
+          "Positively skewed (tail to the right)",
+          "mean > median",
+          "Median closer to $Q_1$; longer right whisker"
+        ],
+        [
+          "Negatively skewed (tail to the left)",
+          "mean < median",
+          "Median closer to $Q_3$; longer left whisker"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "**Outliers** are values far from the rest. A common rule: a value is an outlier if it is more than $1{,}5 \\times IQR$ below $Q_1$ or above $Q_3$."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ogive-x",
+      "type": "mcq",
+      "prompt": "On an ogive, the cumulative frequency is plotted against…",
+      "options": [
+        "the class midpoint",
+        "the lower class limit",
+        "the upper class limit",
+        "the frequency"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "median-pos",
+      "type": "numeric",
+      "prompt": "For 60 data values on an ogive, at what cumulative frequency do you read off the median?",
+      "answer": 30,
+      "tolerance": 0
+    },
+    {
+      "id": "mean",
+      "type": "numeric",
+      "prompt": "Find the mean of $12; 15; 9; 18; 6$.",
+      "answer": 12,
+      "tolerance": 0
+    },
+    {
+      "id": "sd",
+      "type": "numeric",
+      "prompt": "Find the (population) standard deviation of $2; 4; 4; 4; 5; 5; 7; 9$.",
+      "answer": 2,
+      "tolerance": 0.01
+    },
+    {
+      "id": "skew",
+      "type": "mcq",
+      "prompt": "If the mean is much greater than the median, the data are probably…",
+      "options": [
+        "symmetric",
+        "positively skewed",
+        "negatively skewed",
+        "bimodal"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "spread",
+      "type": "truefalse",
+      "prompt": "A larger standard deviation means the data are more spread out from the mean.",
+      "answer": true
+    },
+    {
+      "id": "outlier",
+      "type": "open",
+      "marks": 3,
+      "prompt": "$Q_1 = 20$ and $Q_3 = 32$. Is a value of 52 an outlier? Show working.",
+      "memo": "✓ $IQR = 12$ (1)\n✓ Upper fence $= 32 + 1{,}5(12) = 50$ (1)\n✓ $52 > 50$, so it is an outlier (1)"
+    },
+    {
+      "id": "cumulative",
+      "type": "open",
+      "marks": 3,
+      "prompt": "Complete the cumulative frequencies for frequencies 5; 9; 14; 7; 5 and state the total number of data values.",
+      "memo": "✓ 5; 14 (1)\n✓ 28; 35 (1)\n✓ 40; total $n = 40$ (1)"
+    },
+    {
+      "id": "sd-calc",
+      "type": "open",
+      "marks": 4,
+      "prompt": "The ages of five learners are 15; 16; 16; 17; 21. Calculate the mean and the standard deviation, correct to two decimal places.",
+      "memo": "✓ $\\bar{x} = 17$ (1)\n✓ Squared deviations: 4; 1; 1; 0; 16, sum 22 (1)\n✓ $\\sigma^2 = 4{,}4$ (1)\n✓ $\\sigma \\approx 2{,}10$ (1)"
+    },
+    {
+      "id": "interpret",
+      "type": "open",
+      "marks": 2,
+      "prompt": "Class A has mean 65% and standard deviation 5%; class B has mean 65% and standard deviation 15%. Compare the classes.",
+      "memo": "✓ Both have the same average performance (1)\n✓ Class A's marks are more consistent / clustered; class B's are more spread out (1)"
+    }
+  ]
+}

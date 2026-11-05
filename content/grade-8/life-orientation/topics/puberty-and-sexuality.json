@@ -1,0 +1,60 @@
+{
+  "id": "puberty-and-sexuality",
+  "title": "Puberty and Sexuality",
+  "term": 2,
+  "summary": "Physical and emotional changes during puberty, personal hygiene, values and decision-making about sexuality, consent, and the risks of teenage pregnancy, HIV and other STIs.",
+  "notes": [
+    { "type": "heading", "text": "Puberty" },
+    { "type": "paragraph", "text": "**Puberty** is the stage of development, usually between about 9 and 16 years, when your body changes from a child's to an adult's and becomes able to reproduce. Everyone develops at their own pace: starting earlier or later than friends is normal." },
+    { "type": "table", "headers": ["Physical changes in girls", "Physical changes in boys", "Changes in both"], "rows": [
+      ["Breasts develop", "Voice deepens ('breaks')", "Growth spurt"],
+      ["Hips widen", "Facial and chest hair grows", "Pubic and underarm hair"],
+      ["Menstruation (periods) begins", "Testes and penis grow; wet dreams may occur", "Oily skin and pimples; more sweat"]
+    ] },
+    { "type": "heading", "text": "Emotional and social changes" },
+    { "type": "list", "items": [
+      "**Mood swings** caused by changing hormones.",
+      "Wanting more **independence** and privacy.",
+      "Friends become more important; **peer pressure** may increase.",
+      "New feelings of **attraction** to others.",
+      "Worries about appearance and fitting in."
+    ] },
+    { "type": "heading", "text": "Personal hygiene" },
+    { "type": "list", "items": [
+      "Shower or wash daily, especially after sport; use deodorant.",
+      "Wash your face to help prevent pimples; do not squeeze them.",
+      "Change underwear and socks daily.",
+      "During menstruation, change pads or tampons regularly (every 4 to 6 hours) and dispose of them properly.",
+      "Brush your teeth twice a day."
+    ] },
+    { "type": "heading", "text": "Sexuality and values" },
+    { "type": "paragraph", "text": "**Sexuality** includes your body, feelings, relationships, gender identity and values, not just sexual activity. Your **values** (what is important to you) guide your decisions. Many teenagers choose **abstinence** (not having sex), which is the only 100% effective way to avoid pregnancy and sexually transmitted infections (STIs)." },
+    { "type": "definition", "term": "Consent", "text": "Freely and clearly agreeing to something. Consent must be given without pressure, can be withdrawn at any time, and cannot be given by someone who is drunk, drugged or asleep. In South Africa, the law sets the age of consent for sexual activity at 16." },
+    { "type": "callout", "label": "Remember", "text": "No one has the right to touch you in a way that makes you uncomfortable. If anyone abuses you, it is **never your fault**. Tell a trusted adult, or call Childline on **116**." },
+    { "type": "heading", "text": "Risks of early sexual activity" },
+    { "type": "table", "headers": ["Risk", "Consequences"], "rows": [
+      ["Teenage pregnancy", "Health risks for mother and baby; leaving school; financial and emotional stress"],
+      ["HIV", "A virus that attacks the immune system; there is no cure, but antiretroviral treatment (ARVs) lets people live long, healthy lives"],
+      ["Other STIs (e.g. syphilis, gonorrhoea, herpes, chlamydia)", "May cause pain, infertility and other health problems; many have no early symptoms"],
+      ["Emotional consequences", "Regret, guilt, damaged relationships, pressure"]
+    ] },
+    { "type": "paragraph", "text": "**HIV is NOT spread** by hugging, sharing cups, toilets, swimming pools or mosquito bites. It is spread through unprotected sex, sharing needles, infected blood, and from mother to baby (which treatment can prevent). Youth-friendly clinics offer free, confidential advice, testing and contraception." }
+  ],
+  "questions": [
+    { "id": "puberty", "type": "open", "marks": 2, "prompt": "What is puberty?", "memo": "✓ The stage when a child's body changes into an adult's (1)\n✓ and becomes able to reproduce (1)" },
+    { "id": "boys", "type": "mcq", "prompt": "Which change happens in boys during puberty?", "options": ["Breasts develop", "Menstruation begins", "The voice deepens", "Hips widen"], "answer": 2 },
+    { "id": "abstinence", "type": "short", "prompt": "What is choosing not to have sex called?", "answers": ["abstinence"] },
+    { "id": "consent-age", "type": "numeric", "prompt": "What is the legal age of consent for sexual activity in South Africa?", "answer": 16, "tolerance": 0, "unit": "years" },
+    { "id": "hiv-hug", "type": "truefalse", "prompt": "HIV can be spread by hugging or sharing a cup.", "answer": false },
+    { "id": "consent", "type": "open", "marks": 3, "prompt": "Explain THREE important things about consent.", "memo": "Any three (1 each): must be freely given without pressure; can be withdrawn at any time; must be clear; cannot be given when drunk, drugged or asleep; age of consent is 16" },
+    { "id": "hygiene", "type": "open", "marks": 3, "prompt": "Give THREE personal hygiene habits that are important during puberty.", "memo": "Any three (1 each): daily shower; deodorant; wash face; clean underwear daily; change sanitary products regularly; brush teeth" },
+    { "id": "changes", "type": "match", "marks": 4, "prompt": "Classify each change during puberty.", "pairs": [
+      { "left": "Growth spurt", "right": "Physical change" },
+      { "left": "Mood swings", "right": "Emotional change" },
+      { "left": "Wanting more independence", "right": "Social change" },
+      { "left": "Pimples", "right": "Physical change (skin)" }
+    ] },
+    { "id": "pregnancy", "type": "open", "marks": 3, "prompt": "Discuss THREE consequences of teenage pregnancy.", "memo": "Any three (1 each): health risks; dropping out of school; financial pressure; emotional stress; limited career opportunities; stigma" },
+    { "id": "hiv-spread", "type": "open", "marks": 2, "prompt": "Name TWO ways in which HIV is spread.", "memo": "Any two (1 each): unprotected sex; sharing needles; infected blood; mother to baby during pregnancy, birth or breastfeeding" }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "the-discovery-of-gold",
+  "title": "The Mineral Revolution: Gold and Migrant Labour",
+  "term": 2,
+  "summary": "The discovery of gold on the Witwatersrand, the growth of Johannesburg, deep-level mining and the Randlords, the migrant labour system, pass laws and the road to the South African War.",
+  "notes": [
+    { "type": "heading", "text": "Gold on the Witwatersrand" },
+    { "type": "paragraph", "text": "In **1886** gold was found on the farm Langlaagte on the **Witwatersrand** in the South African Republic (ZAR, the Transvaal), ruled by President **Paul Kruger**. The Witwatersrand had the largest gold deposits in the world, but the gold was spread thinly through hard rock, deep underground." },
+    { "type": "heading", "text": "The growth of Johannesburg" },
+    { "type": "paragraph", "text": "Within ten years a mining camp grew into **Johannesburg**, a city of about 100 000 people: the largest town in southern Africa. Fortune-seekers came from all over the world. Many foreign (mostly British) miners and businessmen were called **uitlanders** (foreigners) by the Boers." },
+    { "type": "heading", "text": "Deep-level mining and the Randlords" },
+    { "type": "list", "items": [
+      "Gold-bearing reef sloped deep underground, so expensive **deep-level mining** was needed.",
+      "Huge amounts of rock had to be crushed, and cyanide was used from 1890 to extract the gold.",
+      "Only wealthy mining companies could afford this. Their owners, such as Rhodes, Alfred Beit and Julius Wernher, were called **Randlords**.",
+      "In 1889 mine owners formed the **Chamber of Mines**, which agreed to keep black wages low and recruit workers together."
+    ] },
+    { "type": "callout", "label": "Key idea", "text": "The price of gold was fixed internationally, so mine owners could not raise prices to cover their high costs. Instead, they kept **labour costs as low as possible**. This is the main reason for the system of cheap migrant labour." },
+    { "type": "heading", "text": "The migrant labour system" },
+    { "type": "definition", "term": "Migrant labour", "text": "A system in which workers leave their homes to work far away for a contract period, then return home, while their families stay behind." },
+    { "type": "paragraph", "text": "Black men were recruited from rural areas of South Africa and from Mozambique, Lesotho, Botswana and Malawi. They signed contracts of 6 to 18 months, lived in single-sex **compounds** (hostels) and sent money home. Many were forced into this work by **taxes** (such as the hut tax) that had to be paid in cash, and by laws that limited African land ownership." },
+    { "type": "table", "headers": ["Effects on rural communities", "Effects on workers"], "rows": [
+      ["Men away for long periods; women, children and the elderly did all the farm work", "Dangerous, hot, deep underground work; rock falls and explosions"],
+      ["Farming declined, increasing poverty", "Lung diseases such as silicosis and TB, spread when men returned home"],
+      ["Family life was broken up", "Low wages and overcrowded compounds"]
+    ] },
+    { "type": "heading", "text": "Pass laws" },
+    { "type": "paragraph", "text": "**Pass laws** forced black men to carry a document (a **pass**) showing who they worked for and where they could be. Without a valid pass a worker could be arrested. Passes helped mine owners control workers and stopped them from leaving for better-paying jobs. Pass laws were extended over the next century and became one of the most hated parts of segregation and apartheid." },
+    { "type": "heading", "text": "Gold and conflict" },
+    { "type": "list", "items": [
+      "Britain wanted control of the gold-rich Transvaal. Kruger's government taxed the mines and refused the vote to uitlanders.",
+      "In **1895–1896** the **Jameson Raid**, backed by Rhodes, tried and failed to overthrow Kruger's government.",
+      "Tension led to the **South African War (Anglo-Boer War) of 1899–1902**, after which the Boer republics became British colonies.",
+      "In **1910** the colonies were united as the **Union of South Africa**, in which only white men could vote in most of the country."
+    ] }
+  ],
+  "questions": [
+    { "id": "year", "type": "numeric", "prompt": "In which year was gold discovered on the Witwatersrand?", "answer": 1886, "tolerance": 0 },
+    { "id": "kruger", "type": "short", "prompt": "Who was president of the South African Republic (Transvaal) when gold was discovered?", "answers": ["paul kruger", "kruger"] },
+    { "id": "uitlanders", "type": "mcq", "prompt": "What were the foreign miners in the Transvaal called?", "options": ["Randlords", "Uitlanders", "Voortrekkers", "Burghers"], "answer": 1 },
+    { "id": "randlords", "type": "short", "prompt": "What name was given to the wealthy owners of the gold mines?", "answers": ["randlords"] },
+    { "id": "passes", "type": "truefalse", "prompt": "Pass laws allowed black workers to move freely between jobs.", "answer": false },
+    { "id": "war", "type": "mcq", "prompt": "Which war was fought between Britain and the Boer republics from 1899 to 1902?", "options": ["World War I", "The South African War", "The Anglo-Zulu War", "The Frontier War"], "answer": 1 },
+    { "id": "cheap-labour", "type": "open", "marks": 3, "prompt": "Explain why gold mine owners wanted cheap labour.", "memo": "✓ The gold was deep underground and spread thinly, so mining was very expensive (1)\n✓ The price of gold was fixed, so owners could not raise prices (1)\n✓ The only way to increase profits was to keep wages low (1)" },
+    { "id": "migrant-effects", "type": "open", "marks": 4, "prompt": "Discuss the effects of the migrant labour system on families in rural areas.", "memo": "Any four (1 each): men away for long periods; women and children did all the work; family life broken; farming declined; poverty; diseases (TB) brought home; children grew up without fathers" },
+    { "id": "events", "type": "match", "marks": 4, "prompt": "Match each event to its date.", "pairs": [
+      { "left": "Chamber of Mines formed", "right": "1889" },
+      { "left": "Jameson Raid", "right": "1895–1896" },
+      { "left": "South African War begins", "right": "1899" },
+      { "left": "Union of South Africa formed", "right": "1910" }
+    ] },
+    { "id": "taxes", "type": "open", "marks": 2, "prompt": "How did colonial taxes force African men to work on the mines?", "memo": "✓ Taxes such as the hut tax had to be paid in cash (1)\n✓ Many people had no cash income, so men had to work for wages on the mines (1)" }
+  ]
+}
