@@ -9,6 +9,12 @@
 //   options: --x64 / --arm64 only that architecture (CI builds each Mac arch on its own machine)
 //            --no-validate   skip the content check
 //            --keep          do not empty ./build first
+//            --set-version X.Y.Z  set the app version without being asked
+//
+// Version: when run in a terminal, the build first asks for the new version number
+// (press Enter to accept the suggested next patch version, e.g. 1.0.0 -> 1.0.1).
+// The answer is saved to package.json and package-lock.json. With no terminal
+// (GitHub Actions, scripts) it does not ask and uses package.json as it is.
 //
 // What can be built where (electron-builder limits):
 //   Windows host: Windows, Linux .tar.gz (+ .AppImage with Developer Mode on; .deb needs Linux/WSL)
@@ -30,6 +36,13 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'build');
 const argv = process.argv.slice(2);
 const flag = (f) => argv.includes(f);
+
+// --set-version X.Y.Z or --set-version=X.Y.Z
+let setVersion = null;
+for (let i = 0; i < argv.length; i++) {
+  if (argv[i] === '--set-version') { setVersion = argv[i + 1] || ''; argv.splice(i, 2); break; }
+  if (argv[i].startsWith('--set-version=')) { setVersion = argv[i].slice(14); argv.splice(i, 1); break; }
+}
 
 const known = ['--win', '--mac', '--linux', '--x64', '--arm64', '--no-validate', '--keep'];
 const unknown = argv.filter((a) => !known.includes(a));
@@ -143,12 +156,80 @@ function configFor(p) {
   return config;
 }
 
+// ---- Version number ----
+const SEMVER = /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/;
+
+function nextPatch(v) {
+  const m = String(v).match(/^(\d+)\.(\d+)\.(\d+)/);
+  return m ? `${m[1]}.${m[2]}.${Number(m[3]) + 1}` : '1.0.1';
+}
+
+// -1 / 0 / 1, comparing only the X.Y.Z part.
+function compareVersions(a, b) {
+  const pa = a.split('-')[0].split('.').map(Number);
+  const pb = b.split('-')[0].split('.').map(Number);
+  for (let i = 0; i < 3; i++) if (pa[i] !== pb[i]) return pa[i] < pb[i] ? -1 : 1;
+  return 0;
+}
+
+function ask(question) {
+  const readline = require('readline');
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  return new Promise((resolve) => rl.question(question, (a) => { rl.close(); resolve(a.trim()); }));
+}
+
+// Writes the version into package.json and package-lock.json (keeping their formatting).
+function saveVersion(v) {
+  const pkgFile = path.join(ROOT, 'package.json');
+  fs.writeFileSync(pkgFile, fs.readFileSync(pkgFile, 'utf8')
+    .replace(/("version"\s*:\s*")[^"]*(")/, `$1${v}$2`));
+  const lockFile = path.join(ROOT, 'package-lock.json');
+  if (fs.existsSync(lockFile)) {
+    const lock = JSON.parse(fs.readFileSync(lockFile, 'utf8'));
+    lock.version = v;
+    if (lock.packages && lock.packages['']) lock.packages[''].version = v;
+    fs.writeFileSync(lockFile, JSON.stringify(lock, null, 2) + '\n');
+  }
+  pkg.version = v;
+}
+
+async function chooseVersion() {
+  const current = pkg.version;
+  if (setVersion !== null) {
+    if (!SEMVER.test(setVersion)) {
+      console.error(`--set-version "${setVersion}" is not a version like 1.2.3`);
+      process.exit(2);
+    }
+  } else if (process.stdin.isTTY && !process.env.CI) {
+    const suggested = nextPatch(current);
+    console.log(`\nCurrent version: ${current}`);
+    for (;;) {
+      const a = await ask(`New version number [${suggested}] (type ${current} to keep it): `);
+      const v = a.replace(/^v/i, '') || suggested;
+      if (!SEMVER.test(v)) { console.log('  Please enter a version like 1.2.3'); continue; }
+      if (compareVersions(v, current) < 0) {
+        const ok = await ask(`  ${v} is older than ${current}. Use it anyway? [y/N]: `);
+        if (!/^y/i.test(ok)) continue;
+      }
+      setVersion = v;
+      break;
+    }
+  } else {
+    return; // not interactive: keep package.json as it is
+  }
+  if (setVersion !== current) {
+    saveVersion(setVersion);
+    console.log(`Version set to ${setVersion} (saved in package.json). Commit it so GitHub builds use it too.`);
+  }
+}
+
 function run(cmd, args) {
   const res = spawnSync(cmd, args, { cwd: ROOT, stdio: 'inherit' });
   return res.status === 0;
 }
 
 async function main() {
+  await chooseVersion();
   console.log(`\nFreeSheet ${pkg.version}: building on ${host} (${os.arch()}) into ${OUT}\n`);
 
   let builder;
