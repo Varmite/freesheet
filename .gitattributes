@@ -3,3 +3,7 @@
 *.png binary
 *.ico binary
 *.bmp binary
+*.jar binary
+*.jks binary
+# Shell scripts run on Linux/macOS: keep Unix line endings.
+gradlew text eol=lf

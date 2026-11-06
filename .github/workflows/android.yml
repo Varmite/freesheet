@@ -1,0 +1,57 @@
+# Builds FreeSheet Android Edition (an .apk for phones) from "Android Edition/".
+# Run it from the Actions tab ("Run workflow"), or push a tag like android-v1.0.1.
+# Download the APK from the run's "Artifacts" section.
+name: Build Android Edition
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['android-v*']
+
+permissions:
+  contents: read
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            Android Edition/package-lock.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: gradle/actions/setup-gradle@v4
+      # The desktop packages are only needed for KaTeX and the content tests; skip Electron's download.
+      - run: npm ci --ignore-scripts
+      - run: node scripts/validate-content.js && node scripts/test-marking.js && node scripts/test-course.js
+      - run: npm ci
+        working-directory: Android Edition
+      - name: Signing key
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
+        run: |
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/release.jks"
+            echo "FREESHEET_KEYSTORE=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+          else
+            echo "::warning::No ANDROID_KEYSTORE_B64 secret: the APK is signed with a debug key."
+          fi
+      - run: node scripts/build-apk.js
+        working-directory: Android Edition
+        env:
+          FREESHEET_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          FREESHEET_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          FREESHEET_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FreeSheet-android
+          path: build/android/*.apk
+          compression-level: 0
+          if-no-files-found: error

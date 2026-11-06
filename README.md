@@ -1,7 +1,8 @@
 # FreeSheet
 
 A free, fully offline study app for South African learners following the **CAPS** curriculum
-(English medium), Grades 8 to 12. It works on Windows, macOS and Linux.
+(English medium), Grades 8 to 12. It works on Windows, macOS and Linux, and on Android phones
+(the **Android Edition**, in [`Android Edition/`](Android%20Edition/README.md)).
 
 * **Study**: notes for every topic, organised by grade, subject and term, with practice questions on the
   notes you have just read. Multiple-choice, true/false, matching, one-word and calculation answers are

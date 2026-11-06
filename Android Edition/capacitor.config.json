@@ -1,0 +1,13 @@
+{
+  "appId": "za.freesheet.app",
+  "appName": "FreeSheet",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#ffffff",
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "SystemBars": { "insetsHandling": "css" }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "freesheet-android",
+  "version": "1.0.1",
+  "description": "FreeSheet Android Edition: the FreeSheet app for phones.",
+  "scripts": {
+    "prepare-web": "node scripts/prepare-web.js",
+    "sync": "node scripts/prepare-web.js && npx cap sync android",
+    "build": "node scripts/build-apk.js"
+  },
+  "author": "FreeSheet",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0"
+  },
+  "private": true
+}
