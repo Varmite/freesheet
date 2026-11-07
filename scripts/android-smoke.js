@@ -45,7 +45,7 @@ async function connect() {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const run = async (what, expr, test) => {
     const v = await evaluate(expr);
-    const ok = v && !v.error && test(v);
+    const ok = v !== undefined && v !== null && !v.error && test(v);
     check(ok, what, JSON.stringify(v).slice(0, 300));
     return v;
   };
@@ -77,6 +77,8 @@ async function connect() {
     await sleep(2500);
     await run('Listen button (topic audio found)', '[...document.querySelectorAll("#main button")].some((b) => /Listen to these notes/.test(b.textContent))', (v) => v === true);
     await run('maths typeset', 'document.querySelectorAll("#main .katex").length', (v) => v > 0);
+    // The buddy's speech bubble would take the first Back press (it closes first, by design).
+    await evaluate('(() => { const x = document.querySelector(".buddy-bubble:not([hidden]) .buddy-x"); if (x) x.click(); return !!x; })()');
     await run('top bar clear of the status bar', 'document.querySelector(".topbar").getBoundingClientRect().top', (v) => v >= 0);
   } else if (phase === 'back') {
     await sleep(1500);
