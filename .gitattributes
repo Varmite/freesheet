@@ -7,3 +7,4 @@
 *.jks binary
 # Shell scripts run on Linux/macOS: keep Unix line endings.
 gradlew text eol=lf
+scripts/android-smoke.sh text eol=lf
