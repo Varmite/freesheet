@@ -14,6 +14,10 @@
 //      FREESHEET_KEY_PASSWORD), or src-tauri/android/keystore/keystore.properties.
 //      It must stay the same key, or phones cannot install updates over the old version.
 //   5. `tauri android build --apk` for ARM phones (64- and 32-bit) and x86_64.
+// Options: --debug (debuggable APK with WebView DevTools, for testing; see android-smoke.yml)
+//          --target <aarch64|armv7|x86_64> ... (default: all three)
+// FreeSheet's own MainActivity (src-tauri/android/java) replaces the generated one: it keeps
+// the page clear of the status bar, navigation bar and keyboard.
 
 const fs = require('fs');
 const path = require('path');
@@ -26,6 +30,10 @@ const APP = path.join(GEN, 'app');
 const OUT = path.join(ROOT, 'build', 'android');
 const version = require(path.join(ROOT, 'package.json')).version;
 const win = process.platform === 'win32';
+const argv = process.argv.slice(2);
+const debug = argv.includes('--debug');
+const ti = argv.indexOf('--target');
+const targets = ti >= 0 ? argv.slice(ti + 1).filter((a) => !a.startsWith('--')) : ['aarch64', 'armv7', 'x86_64'];
 
 // On Windows commands go through the shell (for .cmd files), so paths with spaces are quoted.
 const q = (a) => (win && /\s/.test(a) && !/^".*"$/.test(a) ? `"${a}"` : a);
@@ -62,8 +70,10 @@ if (!fs.existsSync(tauriBin)) {
 // 1. The Android project.
 if (!fs.existsSync(path.join(APP, 'build.gradle.kts'))) tauri(['android', 'init', '--ci']);
 
-// 2. Icons.
+// 2. Icons, and FreeSheet's MainActivity.
 copyDir(path.join(TAURI, 'android', 'res'), path.join(APP, 'src', 'main', 'res'));
+fs.copyFileSync(path.join(TAURI, 'android', 'java', 'MainActivity.kt'),
+  path.join(APP, 'src', 'main', 'java', 'za', 'freesheet', 'app', 'MainActivity.kt'));
 
 // 3. Audio, fresh each time so deleted files do not linger.
 const assets = path.join(APP, 'src', 'main', 'assets', 'audio');
@@ -108,12 +118,17 @@ if (fs.existsSync(props) && !env.FREESHEET_KEYSTORE) {
 if (!env.FREESHEET_KEYSTORE) console.warn('No release key found: the APK will be signed with the debug key.');
 
 // 5. Build.
-tauri(['android', 'build', '--apk', '--target', 'aarch64', 'armv7', 'x86_64'], { env });
+tauri(['android', 'build', '--apk', ...(debug ? ['--debug'] : []), '--target', ...targets], { env });
 
-const apkDir = path.join(APP, 'build', 'outputs', 'apk', 'universal', 'release');
-const apk = fs.readdirSync(apkDir).find((f) => f.endsWith('.apk'));
-if (!apk) { console.error(`No APK in ${apkDir}`); process.exit(1); }
+const found = [];
+const walk = (d) => { if (fs.existsSync(d)) for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+  const p = path.join(d, e.name);
+  if (e.isDirectory()) walk(p); else if (e.name.endsWith('.apk')) found.push(p);
+} };
+walk(path.join(APP, 'build', 'outputs', 'apk'));
+const apk = found.find((f) => f.includes(debug ? 'debug' : 'release'));
+if (!apk) { console.error(`No APK found: ${found.join(', ') || 'none'}`); process.exit(1); }
 fs.mkdirSync(OUT, { recursive: true });
-const dest = path.join(OUT, `FreeSheet-${version}-android.apk`);
-fs.copyFileSync(path.join(apkDir, apk), dest);
+const dest = path.join(OUT, `FreeSheet-${version}-android${debug ? '-debug' : ''}.apk`);
+fs.copyFileSync(apk, dest);
 console.log(`\nAPK ready: ${dest} (${(fs.statSync(dest).size / 1048576).toFixed(0)} MB)`);

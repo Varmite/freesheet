@@ -1,42 +1,58 @@
-# Tries a built FreeSheet APK on an Android emulator: installs it, taps through the app
-# (grade, subject, topic with read-aloud), presses Back, and saves screenshots + the log.
-#   gh workflow run android-smoke.yml -f run_id=<id of a "Build Android Edition" run>
+# Tries FreeSheet on an Android emulator: builds a debug APK (x86_64, with WebView DevTools on),
+# installs it, drives the app (content, read-aloud audio from the APK, grade, subject, topic),
+# presses Back and Home, and checks progress is saved. Screenshots and the log are uploaded.
+#   gh workflow run android-smoke.yml --ref master
 name: Android smoke test
 
 on:
   workflow_dispatch:
-    inputs:
-      run_id:
-        description: 'Run id of the "Build Android Edition" run whose APK to test'
-        required: true
 
 permissions:
   contents: read
-  actions: read
 
 jobs:
   emulator:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - uses: actions/setup-node@v4
         with:
-          name: FreeSheet-android
-          path: apk
-          run-id: ${{ inputs.run_id }}
-          github-token: ${{ github.token }}
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Android NDK
+        run: |
+          NDK="${ANDROID_NDK_LATEST_HOME:-}"
+          if [ -z "$NDK" ] || [ ! -d "$NDK" ]; then
+            "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install "ndk;27.2.12479018"
+            NDK="$ANDROID_HOME/ndk/27.2.12479018"
+          fi
+          echo "NDK_HOME=$NDK" >> "$GITHUB_ENV"
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-linux-android
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+          key: android-smoke
+      - uses: gradle/actions/setup-gradle@v4
+      - run: npm ci
+      - run: node scripts/build-android.js --debug --target x86_64
       - name: Enable KVM
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
           sudo udevadm control --reload-rules && sudo udevadm trigger --name-match=kvm
       - uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 34
+          api-level: 35
           arch: x86_64
           target: google_apis
           disable-animations: true
-          script: bash scripts/android-smoke.sh apk/*.apk shots
+          script: bash scripts/android-smoke.sh build/android/FreeSheet-*-android-debug.apk shots
       - uses: actions/upload-artifact@v4
         if: always()
         with:
