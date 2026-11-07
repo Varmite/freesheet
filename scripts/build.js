@@ -120,9 +120,12 @@ async function chooseVersion() {
   }
 }
 
+// On Windows commands go through the shell (for .cmd files), so paths with spaces are quoted.
+const q = (a) => (win && /\s/.test(a) && !/^".*"$/.test(a) ? `"${a}"` : a);
+
 function run(cmd, args, opts = {}) {
   console.log(`> ${cmd} ${args.join(' ')}`);
-  const res = spawnSync(cmd, args, { cwd: ROOT, stdio: 'inherit', shell: win, ...opts });
+  const res = spawnSync(q(cmd), args.map(q), { cwd: ROOT, stdio: 'inherit', shell: win, ...opts });
   return res.status === 0;
 }
 
@@ -132,7 +135,7 @@ function tauri(args, opts) {
     console.error('The Tauri CLI is missing. Run "npm install" first.');
     process.exit(1);
   }
-  return run(`"${bin}"`, args, opts);
+  return run(bin, args, opts);
 }
 
 function copyOut(from, name) {
@@ -198,7 +201,7 @@ async function main() {
 
   if (!flag('--no-validate')) {
     console.log('Checking content…');
-    if (!run(`"${process.execPath}"`, [`"${path.join(ROOT, 'scripts', 'validate-content.js')}"`])) {
+    if (!run(process.execPath, [path.join(ROOT, 'scripts', 'validate-content.js')])) {
       console.error('\nContent has errors (see above). Fix them, or rerun with --no-validate.');
       process.exit(1);
     }

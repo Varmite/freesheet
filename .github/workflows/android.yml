@@ -25,11 +25,16 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
-      - uses: android-actions/setup-android@v3
+      # The Android SDK and NDK come with GitHub's Ubuntu runners.
       - name: Android NDK
         run: |
-          sdkmanager --install "ndk;27.2.12479018" "platforms;android-36" "build-tools;36.0.0"
-          echo "NDK_HOME=$ANDROID_HOME/ndk/27.2.12479018" >> "$GITHUB_ENV"
+          NDK="${ANDROID_NDK_LATEST_HOME:-}"
+          if [ -z "$NDK" ] || [ ! -d "$NDK" ]; then
+            "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install "ndk;27.2.12479018"
+            NDK="$ANDROID_HOME/ndk/27.2.12479018"
+          fi
+          echo "NDK_HOME=$NDK" >> "$GITHUB_ENV"
+          echo "Using NDK $NDK"
       - uses: dtolnay/rust-toolchain@stable
         with:
           targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android

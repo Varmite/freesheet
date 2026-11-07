@@ -27,13 +27,16 @@ const OUT = path.join(ROOT, 'build', 'android');
 const version = require(path.join(ROOT, 'package.json')).version;
 const win = process.platform === 'win32';
 
+// On Windows commands go through the shell (for .cmd files), so paths with spaces are quoted.
+const q = (a) => (win && /\s/.test(a) && !/^".*"$/.test(a) ? `"${a}"` : a);
+
 function run(cmd, args, opts = {}) {
   console.log(`> ${cmd} ${args.join(' ')}`);
-  const r = spawnSync(cmd, args, { cwd: ROOT, stdio: 'inherit', shell: win, ...opts });
+  const r = spawnSync(q(cmd), args.map(q), { cwd: ROOT, stdio: 'inherit', shell: win, ...opts });
   if (r.status !== 0) process.exit(r.status || 1);
 }
 const tauriBin = path.join(ROOT, 'node_modules', '.bin', win ? 'tauri.cmd' : 'tauri');
-const tauri = (args, opts) => run(`"${tauriBin}"`, args, opts);
+const tauri = (args, opts) => run(tauriBin, args, opts);
 
 function copyDir(from, to, filter) {
   fs.mkdirSync(to, { recursive: true });
