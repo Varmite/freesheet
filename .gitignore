@@ -20,3 +20,6 @@ Android Edition/
 *.jks
 *.keystore
 keystore.properties
+
+# Rust (native UI) build output
+app/target/
