@@ -36,7 +36,9 @@ function run(cmd, args, opts = {}) {
   if (r.status !== 0) process.exit(r.status || 1);
 }
 const tauriBin = path.join(ROOT, 'node_modules', '.bin', win ? 'tauri.cmd' : 'tauri');
-const tauri = (args, opts) => run(tauriBin, args, opts);
+// Through `npm run tauri`: the Android project made by `tauri android init` calls the CLI
+// back the same way when Gradle builds the Rust code, and only the npm route works there.
+const tauri = (args, opts) => run(win ? 'npm.cmd' : 'npm', ['run', 'tauri', '--', ...args], opts);
 
 function copyDir(from, to, filter) {
   fs.mkdirSync(to, { recursive: true });
