@@ -2,7 +2,14 @@
 
 A free, fully offline study app for South African learners following the **CAPS** curriculum
 (English medium), Grades 8 to 12. It works on Windows, macOS and Linux, and on Android phones
-(the **Android Edition**, in [`Android Edition/`](Android%20Edition/README.md)).
+(the **Android Edition**).
+
+Since version 1.1 FreeSheet is a [Tauri](https://tauri.app) app written in Rust (`src-tauri/`), not an
+Electron one. It draws its screens with the web view already built into the system (WebView2 on
+Windows, WebKit on macOS and Linux, Android's WebView on phones) instead of bundling its own copy of
+Chromium. That makes the program about 10 MB instead of about 360 MB, and uses less memory. On Windows
+it takes roughly 105 MB while open (Electron: about 135 MB) and about 60 MB when minimised. The same
+Rust code is used on Android.
 
 * **Study**: notes for every topic, organised by grade, subject and term, with practice questions on the
   notes you have just read. Multiple-choice, true/false, matching, one-word and calculation answers are
@@ -32,6 +39,10 @@ There are no accounts and nothing is sent over the internet. Progress is saved t
 | Windows | `%APPDATA%\FreeSheet\progress.json` |
 | macOS   | `~/Library/Application Support/FreeSheet/progress.json` |
 | Linux   | `~/.config/FreeSheet/progress.json` |
+| Android | inside the app (export it from Settings to keep a copy) |
+
+These are the same places version 1.0 used, so updating keeps your progress. On Windows the 1.1
+installer also removes the old 1.0 program.
 
 ## Subjects
 
@@ -42,47 +53,54 @@ There are no accounts and nothing is sent over the internet. Progress is saved t
 
 ## Running from source
 
-You need [Node.js](https://nodejs.org) 18 or newer.
+You need [Node.js](https://nodejs.org) 18 or newer and [Rust](https://rustup.rs). On Linux also install
+the WebKitGTK packages (Ubuntu/Debian: `sudo apt install libwebkit2gtk-4.1-dev librsvg2-dev
+libxdo-dev libssl-dev build-essential`).
 
 ```sh
 npm install
-npm start
+npm start          # tauri dev: builds the Rust side and opens the app
 ```
 
 ## Building installers
 
 ```sh
-npm run build          # everything this computer can build
+npm run build          # installers for this computer's system
 npm run build:win      # Windows: FreeSheet-Setup-<version>.exe and FreeSheet-<version>.msi
 npm run build:mac      # macOS: .dmg and .zip for Intel and Apple Silicon (needs a Mac)
-npm run build:linux    # Linux: .AppImage, .deb and .tar.gz
+npm run build:linux    # Linux: .AppImage and .deb (needs Linux)
+npm run build:android  # Android: .apk (needs the Android SDK and NDK)
 ```
 
-Everything is written to the `build/` folder. The script checks all content first (skip with
-`--no-validate`), then prints a summary of what was built and what was skipped.
+Everything is written to the `build/` folder. The script asks for the new version number, checks all
+content (skip with `--no-validate`), then prints a summary. Tauri builds each system's app on that system,
+so to build **all** of them use GitHub Actions:
 
-What each computer can build:
+* **Build installers** (`.github/workflows/build.yml`) builds Windows, both Macs and Linux on real
+  machines: `gh workflow run build.yml --ref master` (add `-f platforms=mac-linux` if Windows was already
+  built on a PC). Download the results with `gh run download <run-id> -D build`.
+* **Build Android Edition** (`.github/workflows/android.yml`) builds the APK:
+  `gh workflow run android.yml --ref master`.
 
-| Building on | Windows                | macOS | Linux |
-|-------------|------------------------|-------|-------|
-| Windows     | .exe, .msi             | no    | .tar.gz; .AppImage if Developer Mode is on; no .deb |
-| macOS       | .exe (no .msi)         | yes   | yes   |
-| Linux       | .exe with Wine (no .msi) | no  | yes   |
+The apps are not code-signed, so Windows SmartScreen and macOS Gatekeeper will warn on first launch (on
+macOS, right-click the app and choose **Open**). Mac builds are ad-hoc signed so they open on Apple Silicon.
+Read-aloud uses Ogg Opus audio. macOS plays it from macOS 15.4 onwards (older Macs show the notes without
+audio). The Linux `.deb` pulls in GStreamer's "good" plugins for playback.
 
-The script runs the same way on every OS (`npm run build`). Platforms or formats a computer can't produce are
-skipped with the reason shown, and don't count as a failure. The Linux `.deb` needs a project homepage: add
-`"homepage"` to `package.json`, or the script takes it from the git remote (or from GitHub Actions).
+### Android Edition
 
-Builds are unsigned unless signing certificates are provided through electron-builder's usual environment
-variables (`CSC_LINK`, `CSC_KEY_PASSWORD`, and for macOS notarisation `APPLE_ID` and related). Unsigned macOS
-builds are ad-hoc signed so they still open on Apple Silicon Macs.
+The phone app is built from the same Rust code and screens. On a phone the layout changes
+(`src/mobile.css`, loaded only on Android): the tabs sit at the bottom, dialogs rise from the bottom
+as sheets, and the back button or gesture steps back through the app. Progress is saved inside the app
+whenever you leave it. **Export** saves the progress file wherever you choose (Drive, Downloads...) and
+**Import** opens the file picker. The files work on the desktop too.
 
-To build **all** of them at once, push the project to GitHub and run the **Build installers** workflow
-(`.github/workflows/build.yml`) from the Actions tab. It builds on real Windows, macOS and Linux machines and
-attaches the installers to the run. The Intel and Apple Silicon Mac apps build on separate machines at
-the same time. If you have already built Windows on a PC, choose **platforms: mac-linux** to skip it:
-`gh workflow run build.yml -f platforms=mac-linux`. The apps are not code-signed, so Windows SmartScreen and macOS Gatekeeper
-will warn on first launch (on macOS, right-click the app and choose **Open**).
+`scripts/build-android.js` makes the Android project (`src-tauri/gen/android`, not committed), copies in
+the launcher icons (`src-tauri/android/res`) and the read-aloud audio, and signs the APK. The release
+signing key is in `src-tauri/android/keystore/` (never committed; **keep a backup**, because without it
+phones cannot install updates). `bash scripts/set-github-secrets.sh` copies it into the GitHub secrets the
+workflow uses. Versions up to 1.0.1 were a Capacitor app. 1.1 uses the same package name and key, so it
+installs over them and keeps their progress.
 
 ## Content
 
@@ -141,17 +159,21 @@ Then run `npm run tts` before building. It converts each section to speech text 
 (maths is read in words, e.g. `x^2` becomes "x squared"), generates Ogg Opus files in `audio/`, skips sections
 that already have audio, and deletes audio for sections that no longer exist. Each file is named by a hash of
 its text, so editing a section automatically gives it new audio the next time you run `npm run tts`. The
-`audio/` folder is not committed to git; the build copies it into the installers. Builds made without it
-(for example on GitHub Actions) simply hide the Listen button.
+`audio/` folder is committed, and the build copies it into the installers (and the APK). Sections without
+audio simply hide their Listen button.
 
 ## Development
 
-* `main.js`: Electron main process (window, content loading, saving progress)
-* `preload.js`: the small API exposed to the page
-* `src/`: the interface (plain HTML/CSS/JS, no build step); maths is rendered with KaTeX
+* `src-tauri/`: the Rust app (Tauri 2)
+  * `src/lib.rs`: the window, the commands the page calls, and saving on close
+  * `src/content.rs`: notes, questions, exams and courses. The `content/` folder is built into the
+    program, and the catalogue and spell-check word list are made from it
+  * `src/progress.rs`: `progress.json` (written safely through a temporary file, with a `.bak` copy)
+  * `src/audio.rs`: read-aloud audio (from the install folder, or from the APK on Android)
+  * `tauri.conf.json`: app and installer settings; `cargo test` runs the Rust tests
+* `src/`: the interface (plain HTML/CSS/JS, no build step); maths is rendered with KaTeX (`src/vendor`)
+  * `src/js/api.js`: the bridge to the Rust side (`window.api`), plus the Android back button
 * `src/js/hints.js`: hints for practice questions; `src/js/buddy.js`: the study buddy (art, animation,
   speech bubble, setup); what the buddy says is decided in `src/js/app.js` ("Study buddy")
 * `scripts/validate-content.js`: content validator; `scripts/test-marking.js`: marking and hint tests
   (including a check that no hint in the content gives its answer away)
-* `scripts/screenshot.js`: clicks through the app and saves screenshots
-  (`npx electron scripts/screenshot.js <outDir> [grade] [subjectId]`)

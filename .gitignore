@@ -7,3 +7,16 @@ build/
 tts/.venv/
 tts/jobs.json
 tts/course-phrases.csv
+
+# Rust/Tauri build output, and the generated Android project (made by scripts/build-android.js).
+src-tauri/target/
+src-tauri/gen/
+
+# The Android release signing key: never commit it. Keep a backup somewhere safe; without
+# it, future versions cannot be installed over the current one.
+src-tauri/android/keystore/
+# Old location (Android Edition 1.0), kept locally as a backup. Signing keys anywhere:
+Android Edition/
+*.jks
+*.keystore
+keystore.properties

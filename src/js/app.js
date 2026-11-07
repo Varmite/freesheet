@@ -6,6 +6,7 @@
   const Q = window.Questions;
   const api = window.api;
   const esc = M.escapeHtml;
+  const DEVICE = api.platform === 'android' ? 'this phone' : 'this computer';
 
   const main = document.getElementById('main');
   const gradeSelect = document.getElementById('grade-select');
@@ -1543,7 +1544,7 @@
     // The font changes at once; ClearType on/off needs a restart.
     const restartNote = main.querySelector('#text-restart');
     const syncRestart = () => api.smoothTextActive().then((on) => {
-      if (api.platform !== 'win32' && api.platform !== 'linux') return;
+      if (api.platform !== 'win32') return; // only Windows has ClearType to switch off
       restartNote.hidden = on === (P().settings.textRendering !== 'system');
     }).catch(() => {});
     syncRestart();
@@ -1595,7 +1596,7 @@
     main.querySelector('#import').addEventListener('click', async () => {
       const r = await api.importProgress();
       if (!r || !r.ok) { if (r && r.error) toast(r.error); return; }
-      if (!(await dialog({ title: 'Replace your progress?', body: '<p>Importing replaces all progress on this computer with the progress in the file.</p>', ok: 'Import', danger: true }))) return;
+      if (!(await dialog({ title: 'Replace your progress?', body: `<p>Importing replaces all progress on ${DEVICE} with the progress in the file.</p>`, ok: 'Import', danger: true }))) return;
       stopExam();
       // Keep this computer's buddy if the file doesn't have one.
       if (P().settings.buddy && !(r.data.settings && r.data.settings.buddy)) {
@@ -1615,7 +1616,7 @@
     });
     api.progressLocation().then((loc) => {
       const el = main.querySelector('#location');
-      if (el) el.textContent = `Progress is saved on this computer only, in ${loc}`;
+      if (el) el.textContent = `Progress is saved on ${DEVICE} only, in ${loc}`;
     });
   }
 
@@ -1957,7 +1958,7 @@
     document.body.classList.add('welcome-mode');
     main.innerHTML = `<div class="page welcome">
       <h1>Welcome to FreeSheet</h1>
-      <p class="lead">Notes, practice questions and full exams for the CAPS curriculum. Everything works offline and your progress is saved on this computer.</p>
+      <p class="lead">Notes, practice questions and full exams for the CAPS curriculum. Everything works offline and your progress is saved on ${DEVICE}.</p>
       <h2>Which grade are you in?</h2>
       <div class="grade-buttons">${state.catalog.grades.map((g) => `<button class="btn big" data-grade="${g.grade}">Grade ${g.grade}</button>`).join('')}</div>
       <p class="muted">You can change the grade at any time from the top bar.</p>

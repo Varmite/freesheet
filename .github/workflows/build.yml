@@ -1,5 +1,6 @@
-# Builds FreeSheet for Windows, macOS and Linux on real machines.
-# Run it from the Actions tab ("Run workflow"), or push a tag like v1.0.0.
+# Builds FreeSheet for Windows, macOS and Linux on real machines (Tauri: the Rust app in
+# src-tauri/ plus the screens in src/).
+# Run it from the Actions tab ("Run workflow"), or push a tag like v1.1.0.
 # Download the installers from the run's "Artifacts" section.
 name: Build installers
 
@@ -34,10 +35,13 @@ jobs:
           - os: ${{ inputs.mac_runner || 'macos-latest' }}
             platform: mac-x64
             args: --mac --x64
+            target: x86_64-apple-darwin
           - os: ${{ inputs.mac_runner || 'macos-latest' }}
             platform: mac-arm64
             args: --mac --arm64
-          - os: ubuntu-latest
+            target: aarch64-apple-darwin
+          # The oldest supported Ubuntu, so the AppImage runs on older Linux systems too.
+          - os: ubuntu-22.04
             platform: linux
             args: --linux
         exclude:
@@ -49,8 +53,19 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+          key: ${{ matrix.platform }}
+      - name: Linux build packages
+        if: matrix.platform == 'linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libxdo-dev
       - run: npm ci
-      - run: node node_modules/electron/install.js
       - run: npm test
       - run: node scripts/build.js ${{ matrix.args }} --no-validate
       - uses: actions/upload-artifact@v4
@@ -63,5 +78,5 @@ jobs:
             build/*.zip
             build/*.AppImage
             build/*.deb
-            build/*.tar.gz
+          compression-level: 0
           if-no-files-found: error

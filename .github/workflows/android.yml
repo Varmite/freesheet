@@ -1,5 +1,6 @@
-# Builds FreeSheet Android Edition (an .apk for phones) from "Android Edition/".
-# Run it from the Actions tab ("Run workflow"), or push a tag like android-v1.0.1.
+# Builds FreeSheet for Android (an .apk for phones) from the same Rust app (src-tauri/)
+# and screens (src/) as the desktop version. See scripts/build-android.js.
+# Run it from the Actions tab ("Run workflow"), or push a tag like android-v1.1.0.
 # Download the APK from the run's "Artifacts" section.
 name: Build Android Edition
 
@@ -20,19 +21,25 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            Android Edition/package-lock.json
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 21
+      - uses: android-actions/setup-android@v3
+      - name: Android NDK
+        run: |
+          sdkmanager --install "ndk;27.2.12479018" "platforms;android-36" "build-tools;36.0.0"
+          echo "NDK_HOME=$ANDROID_HOME/ndk/27.2.12479018" >> "$GITHUB_ENV"
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+          key: android
       - uses: gradle/actions/setup-gradle@v4
-      # The desktop packages are only needed for KaTeX and the content tests; skip Electron's download.
-      - run: npm ci --ignore-scripts
-      - run: node scripts/validate-content.js && node scripts/test-marking.js && node scripts/test-course.js
       - run: npm ci
-        working-directory: Android Edition
+      - run: node scripts/validate-content.js && node scripts/test-marking.js && node scripts/test-course.js
       - name: Signing key
         env:
           KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
@@ -43,8 +50,7 @@ jobs:
           else
             echo "::warning::No ANDROID_KEYSTORE_B64 secret: the APK is signed with a debug key."
           fi
-      - run: node scripts/build-apk.js
-        working-directory: Android Edition
+      - run: node scripts/build-android.js
         env:
           FREESHEET_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           FREESHEET_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}

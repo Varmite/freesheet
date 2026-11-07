@@ -1,6 +1,0 @@
-# Made by scripts/prepare-web.js from ../src, ../content and ../audio
-www/
-
-# The release signing key: never commit it. Keep a backup somewhere safe; without it,
-# future versions cannot be installed over the current one.
-keystore/

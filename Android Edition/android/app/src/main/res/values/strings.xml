@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">FreeSheet</string>
-    <string name="title_activity_main">FreeSheet</string>
-    <string name="package_name">za.freesheet.app</string>
-    <string name="custom_url_scheme">za.freesheet.app</string>
-</resources>

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "FreeSheet",
+  "mainBinaryName": "FreeSheet",
+  "version": "../package.json",
+  "identifier": "za.freesheet.app",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; font-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'none'; form-action 'none'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi", "app", "dmg", "appimage", "deb"],
+    "publisher": "FreeSheet",
+    "copyright": "FreeSheet. MIT licence.",
+    "category": "Education",
+    "shortDescription": "Offline CAPS study notes, practice questions and exams",
+    "longDescription": "Study notes, practice questions and full exam papers for Grades 8 to 12, following the CAPS curriculum. Notes can be read aloud, questions are marked instantly, and everything works offline.",
+    "licenseFile": "../build-resources/license.txt",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "../audio/": "audio/"
+    },
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "installerIcon": "../build-resources/icon.ico",
+        "headerImage": "../build-resources/installerHeader.bmp",
+        "sidebarImage": "../build-resources/installerSidebar.bmp",
+        "installerHooks": "../build-resources/installer-hooks.nsh"
+      },
+      "wix": {
+        "bannerPath": "../build-resources/msiBanner.bmp",
+        "dialogImagePath": "../build-resources/msiDialog.bmp"
+      }
+    },
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    },
+    "linux": {
+      "deb": {
+        "depends": ["gstreamer1.0-plugins-good"]
+      }
+    }
+  }
+}
