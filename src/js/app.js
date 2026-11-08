@@ -6,7 +6,8 @@
   const Q = window.Questions;
   const api = window.api;
   const esc = M.escapeHtml;
-  const DEVICE = api.platform === 'android' ? 'this phone' : 'this computer';
+  // api.web: the website (server/), where this depends on whether the learner has signed in.
+  const device = () => api.deviceName || (api.platform === 'android' ? 'this phone' : 'this computer');
 
   const main = document.getElementById('main');
   const gradeSelect = document.getElementById('grade-select');
@@ -1517,6 +1518,22 @@
     }));
   }
 
+  // The website only: signing in keeps progress with the learner rather than the browser.
+  function accountSection() {
+    const a = api.account;
+    if (!a.signedIn && !a.googleAvailable) return '';
+    return `<h2>Account</h2>
+      <div class="settings">${a.signedIn
+        ? `<div class="setting"><span>Signed in</span><span>${esc(a.email)}</span><button class="btn" id="sign-out">Sign out</button></div>`
+        : `<div class="setting"><span>Google</span><button class="btn" id="sign-in">Sign in with Google</button><span class="muted small">Keep your progress on any phone or computer.</span></div>`}
+      </div>`;
+  }
+  function bindAccount() {
+    const on = (sel, fn) => { const b = main.querySelector(sel); if (b) b.addEventListener('click', async () => { await flush(); fn(); }); };
+    on('#sign-in', () => api.signIn());
+    on('#sign-out', () => api.signOut());
+  }
+
   function viewSettings() {
     const s = P().settings;
     const ts = P().settings.textSize || 'normal';
@@ -1588,12 +1605,13 @@
           <button class="btn danger-outline" id="reset">Reset all progress</button></div></div>
         <p class="muted small" id="location"></p>
       </div>
-      <h2>Updates</h2>
+      ${api.web ? accountSection() : `<h2>Updates</h2>
       <div class="settings">
         ${seg3('Check for updates', 'updates', s.checkUpdates === false ? 'off' : 'on', [['on', 'On'], ['off', 'Off']], 'Look for a new version each time FreeSheet opens.')}
         <div class="update-status" id="update-status"></div>
-      </div>
+      </div>`}
     </div>`;
+    if (api.web) bindAccount();
     renderAccents();
     renderUpdateStatus();
     main.querySelectorAll('[data-theme-id]').forEach((b) => b.addEventListener('click', () => {
@@ -1673,7 +1691,7 @@
     main.querySelector('#import').addEventListener('click', async () => {
       const r = await api.importProgress();
       if (!r || !r.ok) { if (r && r.error) toast(r.error); return; }
-      if (!(await dialog({ title: 'Replace your progress?', body: `<p>Importing replaces all progress on ${DEVICE} with the progress in the file.</p>`, ok: 'Import', danger: true }))) return;
+      if (!(await dialog({ title: 'Replace your progress?', body: `<p>Importing replaces all progress on ${device()} with the progress in the file.</p>`, ok: 'Import', danger: true }))) return;
       stopExam();
       // Keep this computer's buddy if the file doesn't have one.
       if (P().settings.buddy && !(r.data.settings && r.data.settings.buddy)) {
@@ -1693,7 +1711,7 @@
     });
     api.progressLocation().then((loc) => {
       const el = main.querySelector('#location');
-      if (el) el.textContent = `Progress is saved on ${DEVICE} only, in ${loc}`;
+      if (el) el.textContent = api.web ? loc : `Progress is saved on ${device()} only, in ${loc}`;
     });
   }
 
@@ -2094,7 +2112,7 @@
     document.body.classList.add('welcome-mode');
     main.innerHTML = `<div class="page welcome">
       <h1>Welcome to FreeSheet</h1>
-      <p class="lead">Notes, practice questions and full exams for the CAPS curriculum. Everything works offline and your progress is saved on ${DEVICE}.</p>
+      <p class="lead">Notes, practice questions and full exams for the CAPS curriculum.${api.web ? '' : ` Everything works offline and your progress is saved on ${device()}.`}</p>
       <h2>Which grade are you in?</h2>
       <div class="grade-buttons">${state.catalog.grades.map((g) => `<button class="btn big" data-grade="${g.grade}">Grade ${g.grade}</button>`).join('')}</div>
       <p class="muted">You can change the grade at any time from the top bar.</p>
@@ -2180,7 +2198,7 @@
     api.version().then((v) => {
       update.current = v;
       renderUpdateStatus();
-      if (progress.settings.checkUpdates !== false) setTimeout(checkForUpdates, 1200);
+      if (!api.web && progress.settings.checkUpdates !== false) setTimeout(checkForUpdates, 1200);
     }).catch(() => {});
 
     const grades = catalog.grades.map((g) => g.grade);

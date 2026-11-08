@@ -23,3 +23,7 @@ keystore.properties
 
 # Rust (native UI) build output
 app/target/
+
+# The website (server/): its secrets and every learner's progress.
+server/.env
+server/data/

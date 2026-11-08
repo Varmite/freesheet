@@ -9,7 +9,7 @@
     "start": "tauri dev",
     "tauri": "tauri",
     "validate": "node scripts/validate-content.js",
-    "test": "node scripts/validate-content.js && node scripts/test-marking.js && node scripts/test-course.js && node scripts/test-update.js && cargo test --manifest-path src-tauri/Cargo.toml",
+    "test": "node scripts/validate-content.js && node scripts/test-marking.js && node scripts/test-course.js && node scripts/test-update.js && node scripts/test-server.js && cargo test --manifest-path src-tauri/Cargo.toml",
     "build": "node scripts/build.js",
     "build:win": "node scripts/build.js --win",
     "build:mac": "node scripts/build.js --mac",
