@@ -23,6 +23,7 @@
       "**Economic bias**: expensive products that poorer communities cannot afford."
     ] },
     { "type": "callout", "label": "Key idea", "text": "**Inclusive (universal) design** aims to make products usable by as many people as possible: for example ramps, braille on lift buttons, adjustable seats and apps in all official languages." },
+    { "type": "example", "title": "Who was left out?", "problem": "A new phone app only works in English and needs fast internet. Which groups does it disadvantage, and how could it be improved?", "steps": ["Ask who was imagined as the user: English-speakers with good connections.","Those left out include speakers of other languages and people in rural areas with weak signal.","Improve it with more languages and a low-data or offline mode."], "answer": "It shows language and location bias, which translation and offline use would reduce." },
     { "type": "heading", "text": "Ethics and safety" },
     { "type": "list", "items": [
       "Should we build something just because we can? Examples: surveillance cameras and privacy, genetically modified crops, social media data collection.",
@@ -36,6 +37,7 @@
       "Design products to last longer and to be repaired.",
       "Consider the whole **life cycle**: raw materials → manufacture → use → disposal or recycling."
     ] },
+    { "type": "example", "title": "Comparing two lunch boxes", "problem": "Compare a single-use polystyrene box with a reusable steel tin in terms of sustainability.", "steps": ["Materials: both are made from non-renewable resources.","Use: polystyrene is used once and the tin for years.","End of life: polystyrene is rarely recycled, while steel is easy to recycle."], "answer": "The steel tin is more sustainable, despite needing more energy to make." },
     { "type": "heading", "text": "Evaluating a product" },
     { "type": "paragraph", "text": "When evaluating a product, ask: Does it meet the needs of the user? Is it safe? Is it affordable? Is it easy to use for different people? What are its environmental impacts? How could it be improved?" }
   ],

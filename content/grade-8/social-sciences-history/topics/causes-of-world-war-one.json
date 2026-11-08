@@ -12,6 +12,7 @@
       ["**I**mperialism", "Competition for colonies and empire", "Germany wanted 'a place in the sun'; crises over Morocco in 1905 and 1911"],
       ["**N**ationalism", "Strong pride in one's nation, sometimes the belief that it is better than others; also the desire of peoples to have their own country", "Serbian nationalists wanted to free Slavs ruled by Austria-Hungary"]
     ] },
+    { "type": "example", "title": "Sorting long-term causes", "problem": "Match each to militarism, alliances, imperialism or nationalism: (a) Britain and Germany racing to build warships, (b) European powers competing for African colonies, (c) Serbs wanting a united South Slav state.", "steps": ["(a) Building up armed forces is **militarism**.","(b) Competing for overseas territory is **imperialism**.","(c) A people wanting their own nation is **nationalism**."], "answer": "Militarism, imperialism, nationalism." },
     { "type": "heading", "text": "The two alliances" },
     { "type": "table", "headers": ["Triple Alliance (Central Powers)", "Triple Entente (Allies)"], "rows": [
       ["Germany", "Britain"],
@@ -32,7 +33,8 @@
     ] },
     { "type": "callout", "label": "Key idea", "text": "The assassination was the **immediate cause** (the trigger). The alliance system turned a local conflict in the Balkans into a war between all the great powers within about a week." },
     { "type": "passage", "title": "Source D: The 'blank cheque' (a paraphrase of Germany's assurance to Austria-Hungary, July 1914)", "text": "Austria-Hungary must deal with Serbia firmly, and Germany will stand by her side as a faithful ally, whatever the consequences." },
-    { "type": "paragraph", "text": "Because the European powers had empires, the war quickly became a **world war**: soldiers and labourers from India, Africa, Australia, Canada and New Zealand fought for Britain and France, and fighting took place in African colonies as well." }
+    { "type": "paragraph", "text": "Because the European powers had empires, the war quickly became a **world war**: soldiers and labourers from India, Africa, Australia, Canada and New Zealand fought for Britain and France, and fighting took place in African colonies as well." },
+    { "type": "example", "title": "How one murder became a world war", "problem": "Explain the chain of events after the assassination of Archduke Franz Ferdinand on 28 June 1914.", "steps": ["Austria-Hungary blamed Serbia and declared war on 28 July.","Russia mobilised to support Serbia.","Germany, Austria-Hungary's ally, declared war on Russia and then France.","Germany invaded Belgium to reach France, and Britain declared war on 4 August."], "answer": "The alliance system turned a regional crisis into a European war within weeks." }
   ],
   "questions": [
     { "id": "years", "type": "short", "prompt": "In which years was World War I fought? (e.g. 1900–1905)", "answers": ["1914-1918", "1914–1918", "1914 to 1918", "1914 - 1918"] },

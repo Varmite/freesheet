@@ -6,6 +6,7 @@
   "notes": [
     { "type": "heading", "text": "Theme versus subject" },
     { "type": "paragraph", "text": "The **subject** is what the novel is about (a family farm, a war). The **theme** is the message or insight it offers, stated as a full sentence: 'Pride can blind people to the suffering they cause.' Themes develop through character choices, conflicts and the ending." },
+    { "type": "example", "title": "Turning a subject into a theme", "problem": "Subject: 'war'. Write a theme statement.", "steps": ["A subject is one word; a theme is a complete idea.","Say what the text shows about it."], "answer": "'War destroys even those who survive it.'" },
     { "type": "heading", "text": "Narrative techniques" },
     { "type": "table", "headers": ["Technique", "Purpose"], "rows": [
       ["Flashback", "Shows past events that explain the present"],
@@ -18,7 +19,8 @@
     { "type": "heading", "text": "Symbols and motifs" },
     { "type": "paragraph", "text": "A **symbol** is an object, place or event that stands for something larger (a locked gate for exclusion). A **motif** is a recurring image or idea that reinforces a theme (repeated references to fire, mirrors or journeys)." },
     { "type": "passage", "title": "Practice extract (written for FreeSheet)", "text": "The jacaranda had been planted the year my father was born, and for as long as I could remember it had flowered every October, carpeting the driveway in purple. My father used to complain about the mess. 'One day I'll cut that thing down,' he would say, sweeping, though we all knew he never would.\n\nThe October after he died, the tree did not flower. My mother said it was the drought. My brother said it was coincidence. I said nothing, but I stood under its bare branches every afternoon, waiting, as if it owed me something.\n\nIt was only later, much later, that I understood why I had been so angry with a tree." },
-    { "type": "callout", "label": "Exam tip", "text": "In novel essays (400–450 words at Grade 12; similar preparation at Grade 11), trace how a theme or character develops from beginning to end, and refer to specific incidents." }
+    { "type": "callout", "label": "Exam tip", "text": "In novel essays (400–450 words at Grade 12; similar preparation at Grade 11), trace how a theme or character develops from beginning to end, and refer to specific incidents." },
+    { "type": "example", "title": "Interpreting a symbol", "problem": "A character repeatedly tends a dying garden after her son leaves. What might the garden symbolise?", "steps": ["Look for the link between the object and the character's situation.","The garden fades as the family falls apart."], "answer": "Her attempts to hold on to a family that is slipping away." }
   ],
   "questions": [
     { "id": "theme", "type": "mcq", "prompt": "Which is a statement of THEME rather than subject?", "options": ["A family farm", "The Second World War", "Grief can make us look for meaning in ordinary things", "A boy and his dog"], "answer": 2 },

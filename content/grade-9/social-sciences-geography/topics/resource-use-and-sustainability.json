@@ -11,12 +11,14 @@
       ["Sunlight, wind, water, forests, fish, soil (if conserved)", "Coal, oil, natural gas, gold, platinum, iron ore"]
     ] },
     { "type": "definition", "term": "Sustainable development", "text": "Development that meets the needs of people today without harming the ability of future generations to meet their own needs." },
+    { "type": "example", "title": "Renewable or non-renewable?", "problem": "Classify: coal, sunlight, gold, wind, and explain the difference.", "steps": ["Renewable resources are replaced naturally, in a human lifetime or less: sunlight and wind.","Non-renewable resources take millions of years to form or do not re-form: coal and gold."], "answer": "Renewable: sunlight, wind. Non-renewable: coal, gold." },
     { "type": "heading", "text": "Water" },
     { "type": "paragraph", "text": "South Africa is a **water-scarce** country: its average rainfall (about 450 mm a year) is little more than half the world average, and rainfall is uneven, with the west much drier than the east. Most water is used by **agriculture (irrigation)**, followed by towns and industries." },
     { "type": "list", "items": [
       "**Threats**: droughts (e.g. the Cape Town 'Day Zero' crisis of 2017–2018), pollution from sewage, mines and factories, alien plants that use large amounts of water, and leaking pipes.",
       "**Solutions**: fixing leaks, water restrictions, rainwater tanks, grey-water reuse, drip irrigation, removing alien plants (the **Working for Water** programme), desalination and inter-basin transfers such as the **Lesotho Highlands Water Project**."
     ] },
+    { "type": "example", "title": "A household's water use", "problem": "A household of 5 uses 150 litres per person each day. How much is that in a 30-day month?", "steps": ["Per day: 5 × 150 = 750 litres.","Per month: 750 × 30 = 22 500 litres, which is 22,5 kilolitres."], "answer": "22,5 kilolitres." },
     { "type": "heading", "text": "Soil" },
     { "type": "paragraph", "text": "Only about **12%** of South Africa's land is suitable for growing crops. Fertile soil takes hundreds of years to form but can be lost quickly through **soil erosion**, caused by overgrazing, ploughing slopes, removing vegetation and poor farming." },
     { "type": "heading", "text": "Energy" },

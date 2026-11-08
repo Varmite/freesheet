@@ -30,6 +30,7 @@
       ["practise", "verb (SA/British)", "practice", "noun"],
       ["their / there / they're", "possession / place / they are", "your / you're", "possession / you are"]
     ] },
+    { "type": "example", "title": "Choosing the correct word", "problem": "Choose: 'The new rule will (affect/effect) everyone and its (affect/effect) will be serious.'", "steps": ["'Affect' is usually a verb.","'Effect' is usually a noun."], "answer": "'The new rule will affect everyone and its effect will be serious.'" },
     { "type": "heading", "text": "Editing a passage" },
     { "type": "list", "ordered": true, "items": [
       "Read the whole passage first for meaning.",

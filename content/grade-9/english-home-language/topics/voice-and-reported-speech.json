@@ -21,6 +21,7 @@
       ["Modal", "Thabo must write the report.", "The report **must be written** by Thabo."]
     ] },
     { "type": "callout", "label": "When is the passive useful?", "text": "When the doer is unknown or unimportant (*My phone was stolen*), in scientific and formal writing (*The solution was heated*), and in news headlines. Too much passive voice makes writing dull, so prefer the active voice in most writing." },
+    { "type": "example", "title": "Active to passive", "problem": "Change to passive: 'The learners cleaned the classroom.'", "steps": ["The object, 'the classroom', becomes the subject.","Use 'was' + past participle.","Add 'by' + the doer."], "answer": "'The classroom was cleaned by the learners.'" },
     { "type": "heading", "text": "Direct and reported speech" },
     { "type": "paragraph", "text": "**Direct speech** gives the exact words spoken, in inverted commas: *'I am tired,' said Zola.* **Reported (indirect) speech** reports what was said without quoting: *Zola said that she was tired.*" },
     { "type": "table", "caption": "Changes when the reporting verb is in the past tense", "headers": ["Direct", "Reported"], "rows": [

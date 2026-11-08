@@ -15,6 +15,7 @@
       "**Transport**: rivers, canals and later railways moved heavy goods cheaply; Britain had many good ports.",
       "**Stable government** and banks that encouraged business and invention."
     ] },
+    { "type": "example", "title": "Building a multi-cause answer", "problem": "Give three reasons why the Industrial Revolution began in Britain, with one sentence on each.", "steps": ["Resources: Britain had plenty of coal and iron close together.","Money and markets: trade and colonies provided wealth to invest and places to sell goods.","Labour: changes in farming pushed people off the land and into towns."], "answer": "Coal and iron, trade and capital, and a supply of workers." },
     { "type": "heading", "text": "Key inventions" },
     { "type": "table", "headers": ["Year", "Inventor", "Invention", "Importance"], "rows": [
       ["1764", "James Hargreaves", "Spinning jenny", "One worker could spin many threads at once"],
@@ -41,7 +42,8 @@
       "**Factory Acts**: the 1833 Act banned children under 9 from working in textile mills and limited hours for older children; the 1842 Mines Act banned women and children under 10 from working underground.",
       "Public health laws (1848 and 1875) led to sewers, clean water and better housing."
     ] },
-    { "type": "callout", "label": "Exam tip", "text": "When using a source, say who wrote it, when, and why. A worker's testimony to a committee investigating child labour is very useful but may focus on the worst experiences." }
+    { "type": "callout", "label": "Exam tip", "text": "When using a source, say who wrote it, when, and why. A worker's testimony to a committee investigating child labour is very useful but may focus on the worst experiences." },
+    { "type": "example", "title": "What a law actually changed", "problem": "Under the 1833 Factory Act, children under 9 could not work in textile mills, and those aged 9 to 13 could work no more than 9 hours a day. What does this suggest about conditions before?", "steps": ["A law bans what was already happening.","So children under 9 must have been working in mills.","Children older than that must have been working more than 9 hours a day."], "answer": "It suggests very young children were working long hours." }
   ],
   "questions": [
     { "id": "where-start", "type": "short", "prompt": "In which country did the Industrial Revolution begin?", "answers": ["britain", "great britain", "england", "united kingdom", "uk"] },

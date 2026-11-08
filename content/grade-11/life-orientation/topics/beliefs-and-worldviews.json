@@ -10,6 +10,7 @@
       "**Worldview**: a person's overall view of the world, including beliefs about life, humanity and morality. It may be religious or secular (non-religious).",
       "**Ideology**: a set of ideas about how society should be organised (e.g. democracy, capitalism, socialism, ubuntu as a social philosophy)."
     ] },
+    { "type": "example", "title": "Belief, ideology or worldview?", "problem": "Identify: (a) 'I believe in ancestors.' (b) Capitalism. (c) A person's whole way of seeing life.", "steps": ["(a) A single conviction: belief.","(b) A political or economic system of ideas: ideology.","(c) An overall outlook: worldview."], "answer": "Belief, ideology, worldview." },
     { "type": "heading", "text": "Belief systems in South Africa" },
     { "type": "table", "headers": ["Belief system", "Some key features"], "rows": [
       ["Christianity", "Belief in God and Jesus Christ; the Bible; churches; Christmas and Easter"],
@@ -28,7 +29,8 @@
       "Avoid stereotypes and jokes that mock beliefs.",
       "Focus on shared values: kindness, honesty, justice and caring for others.",
       "Respect people's right to hold different beliefs, or none."
-    ] }
+    ] },
+    { "type": "example", "title": "Handling a clash of beliefs", "problem": "A learner needs time off for a religious festival. How should a school respond?", "steps": ["Section 15 of the Constitution protects freedom of religion.","The school should listen and reasonably accommodate the learner."], "answer": "Accommodate the request, respecting religious freedom." }
   ],
   "questions": [
     { "id": "worldview", "type": "open", "marks": 2, "prompt": "What is a worldview?", "memo": "✓ A person's overall view of the world and life (1)\n✓ including beliefs about humanity and morality; may be religious or secular (1)" },

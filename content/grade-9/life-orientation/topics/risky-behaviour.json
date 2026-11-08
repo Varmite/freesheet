@@ -21,6 +21,7 @@
       ["Boredom and lack of supervision", "Clear goals for the future"],
       ["Exposure to violence", "Good decision-making and refusal skills"]
     ] },
+    { "type": "example", "title": "Risk or protective?", "problem": "Classify: friends who drink, a supportive parent, being in a sports team, stress at home.", "steps": ["Risk factors make harm more likely.","Protective factors make it less likely."], "answer": "Risk: friends who drink, stress. Protective: supportive parent, team." },
     { "type": "heading", "text": "How risks are linked" },
     { "type": "paragraph", "text": "One risky behaviour often leads to another. **Alcohol and drugs** affect judgement, so people under the influence are more likely to have unprotected sex, get into fights, become victims of crime or be involved in road accidents. Mixing alcohol with medicines or other drugs is especially dangerous." },
     { "type": "heading", "text": "Road safety" },
@@ -31,6 +32,7 @@
       ["Passenger", "Always wear a seat belt, also in the back seat and in taxis; never get into a car with a driver who has been drinking; do not distract the driver"]
     ] },
     { "type": "callout", "label": "The law", "text": "The legal blood-alcohol limit for ordinary drivers is **0,05 g per 100 ml** of blood (0,02 g for professional drivers). It is illegal to use a hand-held phone while driving, and all occupants must wear seat belts." },
+    { "type": "example", "title": "A dangerous lift", "problem": "Your friend's brother has been drinking and offers you a lift home. What do you do?", "steps": ["Alcohol slows reaction time and impairs judgement.","Refuse the lift.","Call a parent or another safe adult."], "answer": "Don't get in the car; call someone safe." },
     { "type": "heading", "text": "Making safer choices" },
     { "type": "list", "items": [
       "Think about the consequences before acting.",

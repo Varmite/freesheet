@@ -39,7 +39,8 @@
       ["Thandi withdrew R1 000 for personal use", "−1 000 (bank)", "−1 000 (drawings)", "0", "Drawings decrease OE"],
       ["Took a loan of R20 000 from ABC Bank", "+20 000 (bank)", "0", "+20 000 (loan)", "A liability finances the asset"]
     ] },
-    { "type": "callout", "label": "Remember", "text": "**Income increases** owner's equity; **expenses** and **drawings decrease** owner's equity. Capital is NOT income: it is the owner's contribution." }
+    { "type": "callout", "label": "Remember", "text": "**Income increases** owner's equity; **expenses** and **drawings decrease** owner's equity. Capital is NOT income: it is the owner's contribution." },
+    { "type": "example", "title": "Analysing a transaction", "problem": "Thandi's Car Wash pays R800 rent in cash. Show the effect on the accounting equation.", "steps": ["Which accounts change? Bank (an asset) and Rent expense.","Cash leaves the business, so assets decrease by R800.","An expense reduces the owner's profit, so owner's equity decreases by R800.","Liabilities do not change. Both sides fell by R800, so A = O + L still balances."], "answer": "Assets −R800; Owner's equity −R800; Liabilities no effect." }
   ],
   "questions": [
     { "id": "asset", "type": "mcq", "prompt": "Which of the following is an asset?", "options": ["Loan from a bank", "Equipment", "Wages", "Drawings"], "answer": 1 },

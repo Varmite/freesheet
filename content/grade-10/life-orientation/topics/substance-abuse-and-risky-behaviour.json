@@ -20,6 +20,7 @@
       ["Community and country", "Crime, road deaths, pressure on health services, lost productivity, gang activity"]
     ] },
     { "type": "callout", "label": "The link between risks", "text": "Alcohol and drugs lower inhibitions and impair judgement, making unprotected sex, sexual assault, violence and drunk driving much more likely. One risk often leads to others." },
+    { "type": "example", "title": "Sorting effects", "problem": "Sort: liver damage; dropping out of school; fighting with family; loss of income.", "steps": ["Physical: liver damage.","Educational: dropping out.","Social: fighting with family.","Economic: loss of income."], "answer": "One effect each: physical, educational, social and economic." },
     { "type": "heading", "text": "Prevention and protective factors" },
     { "type": "list", "items": [
       "Strong refusal skills and healthy self-esteem.",
@@ -28,6 +29,7 @@
       "Clear goals for the future.",
       "Accurate knowledge about the effects of substances."
     ] },
+    { "type": "example", "title": "Building protection", "problem": "Name three protective factors for a teenager.", "steps": ["Support at home.","Involvement in school or sport.","Friends who make healthy choices."], "answer": "Supportive adults, activities and positive friends." },
     { "type": "heading", "text": "Getting help" },
     { "type": "list", "items": [
       "**Substance Abuse Helpline**: 0800 12 13 14 (toll-free).",

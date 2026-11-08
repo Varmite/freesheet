@@ -7,6 +7,7 @@
     { "type": "heading", "text": "Going deeper than devices" },
     { "type": "paragraph", "text": "At Grade 11, naming a device is not enough. Ask: **what does it suggest, and how does it support the poem's tone and theme?** A strong answer follows the pattern *device + quotation + effect + link to theme*." },
     { "type": "passage", "title": "London – William Blake (1794; public domain)", "text": "I wander thro' each charter'd street,\nNear where the charter'd Thames does flow.\nAnd mark in every face I meet\nMarks of weakness, marks of woe.\n\nIn every cry of every Man,\nIn every Infants cry of fear,\nIn every voice: in every ban,\nThe mind-forg'd manacles I hear\n\nHow the Chimney-sweepers cry\nEvery blackning Church appalls,\nAnd the hapless Soldiers sigh\nRuns in blood down Palace walls\n\nBut most thro' midnight streets I hear\nHow the youthful Harlots curse\nBlasts the new-born Infants tear\nAnd blights with plagues the Marriage hearse" },
+    { "type": "example", "title": "From device to meaning", "problem": "A learner writes: 'The poet uses a simile.' How can this be improved for 'Grief sat like a stone in her chest'?", "steps": ["Name the device.","Explain the comparison: grief is heavy and hard.","Give the effect on the reader."], "answer": "'The simile compares grief to a stone, making us feel its heavy, unmoving weight.'" },
     { "type": "heading", "text": "Analysis" },
     { "type": "list", "items": [
       "**'charter'd'**: repeated to suggest that even the streets and the river are owned and controlled; ordinary people have no freedom.",
@@ -17,7 +18,8 @@
       "**Structure**: four regular quatrains with an ABAB rhyme scheme; the regularity mirrors the rigid, controlled city.",
       "**Tone**: bitter, condemning, despairing. **Theme**: social injustice and the oppression of the poor by powerful institutions."
     ] },
-    { "type": "callout", "label": "The poetry essay", "text": "250–300 words. Introduction with a thesis that answers the topic; two or three body paragraphs, each dealing with an aspect (diction, imagery, tone, structure) with embedded quotations; brief conclusion. Do not paraphrase the poem line by line." }
+    { "type": "callout", "label": "The poetry essay", "text": "250–300 words. Introduction with a thesis that answers the topic; two or three body paragraphs, each dealing with an aspect (diction, imagery, tone, structure) with embedded quotations; brief conclusion. Do not paraphrase the poem line by line." },
+    { "type": "example", "title": "Noticing a shift in tone", "problem": "A poem begins with 'golden fields' and ends with 'ash and silent crows'. What has happened?", "steps": ["Early imagery is warm and alive.","Later imagery is dead and silent.","The tone changes from joy to loss."], "answer": "A shift from celebration to mourning." }
   ],
   "questions": [
     { "id": "stanzas", "type": "numeric", "prompt": "How many stanzas does 'London' have?", "answer": 4, "tolerance": 0 },

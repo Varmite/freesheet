@@ -161,6 +161,7 @@
       "label": "Common mistake",
       "text": "Never use **more** with an **-er** word: say 'taller', not 'more taller'. Use **fewer** with things you can count (fewer learners) and **less** with things you cannot count (less water)."
     },
+    { "type": "example", "title": "Comparing correctly", "problem": "Give the comparative and superlative of tall, beautiful and good.", "steps": ["One-syllable words add -er and -est: taller, tallest.","Longer words use more and most: more beautiful, most beautiful.","Some are irregular: better, best."], "answer": "taller/tallest; more beautiful/most beautiful; better/best." },
     {
       "type": "heading",
       "text": "Identifying parts of speech"

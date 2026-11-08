@@ -20,8 +20,10 @@
       "**Values**: principles that guide your choices, such as honesty, respect, responsibility and compassion."
     ] },
     { "type": "callout", "label": "Johari window", "text": "A model of self-awareness with four 'windows': things known to you and others (open), known to others but not to you (blind spot), known to you but hidden from others (hidden), and unknown to everyone (unknown). Feedback and sharing make the open area bigger." },
+    { "type": "example", "title": "Identifying strengths and weaknesses", "problem": "How can you get an honest view of your strengths?", "steps": ["Reflect on what you do well.","Ask people you trust.","Note patterns in feedback."], "answer": "Combine self-reflection with trusted feedback." },
     { "type": "heading", "text": "Coping with change" },
     { "type": "paragraph", "text": "Grade 10 brings new subjects, higher expectations and a step towards adulthood. Healthy coping includes planning, asking for help, keeping routines, exercising, talking about feelings and focusing on what you can control." },
+    { "type": "example", "title": "Moving to a new school", "problem": "List healthy ways of dealing with a move to a new school.", "steps": ["Accept that it will feel strange.","Join a club.","Stay in touch with old friends and speak to a counsellor if needed."], "answer": "Join in, stay connected and ask for support." },
     { "type": "heading", "text": "Building a positive self-concept" },
     { "type": "list", "items": [
       "Use positive, realistic self-talk.",

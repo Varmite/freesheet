@@ -11,6 +11,7 @@
       "**Letter**: formal layout; refer to the advertisement (where and when it appeared); state the position; highlight relevant skills and experience; say why you are suitable; mention the attached CV; request an interview.",
       "**CV**: personal details, education, skills, work experience, achievements, interests, references. Keep it clear and in point form."
     ] },
+    { "type": "example", "title": "Strengthening a claim", "problem": "Improve: 'I am a hard worker.'", "steps": ["Give evidence for the claim.","Be specific."], "answer": "'I worked every Saturday for two years at a family shop while keeping an 80% average.'" },
     { "type": "heading", "text": "Formal report" },
     { "type": "table", "headers": ["Section", "Content"], "rows": [
       ["Title, To, From, Date", "Identifies the report"],
@@ -20,6 +21,7 @@
       ["Conclusions", "What the findings mean"],
       ["Recommendations", "Actions suggested"]
     ] },
+    { "type": "example", "title": "Choosing formal language", "problem": "Change to report language: 'Heaps of kids skip class on Fridays.'", "steps": ["Replace slang.","Use exact or impersonal wording."], "answer": "'A significant number of learners are absent on Fridays.'" },
     { "type": "heading", "text": "Speeches" },
     { "type": "paragraph", "text": "Address the audience ('Principal, staff and fellow learners…'); open with a hook; organise points clearly; use **rhetorical devices** (rhetorical questions, repetition, the rule of three, inclusive pronouns); end memorably and thank the audience." },
     { "type": "heading", "text": "Reviews and articles" },

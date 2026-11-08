@@ -38,7 +38,8 @@
       ["The reason is because…", "The reason is that…"],
       ["Its' / it's (possessive)", "its (possessive); it's = it is"]
     ] },
-    { "type": "callout", "label": "Exam tip", "text": "Paper 1 Section C often asks you to correct an error, change voice or speech, combine sentences, or identify parts of speech in an advert or cartoon. Rewrite the whole sentence correctly; do not only fix one word unless asked." }
+    { "type": "callout", "label": "Exam tip", "text": "Paper 1 Section C often asks you to correct an error, change voice or speech, combine sentences, or identify parts of speech in an advert or cartoon. Rewrite the whole sentence correctly; do not only fix one word unless asked." },
+    { "type": "example", "title": "Fixing a common error", "problem": "Correct: 'Between you and I, the results was disappointing.'", "steps": ["After a preposition use 'me'.","'Results' is plural, so 'were'."], "answer": "'Between you and me, the results were disappointing.'" }
   ],
   "questions": [
     { "id": "complex", "type": "mcq", "prompt": "Which sentence is complex?", "options": ["The bus was late.", "The bus was late, so we walked.", "Because the bus was late, we walked.", "Late bus!"], "answer": 2 },

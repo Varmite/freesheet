@@ -18,6 +18,7 @@
     ] },
     { "type": "heading", "text": "Pressure" },
     { "type": "formula", "latex": "\\text{pressure} = \\frac{\\text{force}}{\\text{area}} \\qquad p = \\frac{F}{A}", "caption": "Pressure is measured in pascals (Pa): 1 Pa = 1 N/m². In syringe calculations we often use N/cm²." },
+    { "type": "example", "title": "Calculating pressure", "problem": "A force of 100 N acts on a piston with an area of 0,002 m². Calculate the pressure.", "steps": ["Pressure = force ÷ area.","P = 100 ÷ 0,002 = 50 000 Pa.","Convert: 50 000 Pa = 50 kPa."], "answer": "50 kPa." },
     { "type": "heading", "text": "Pascal's principle" },
     { "type": "callout", "label": "Pascal's principle", "text": "Pressure applied to a liquid in a closed system is transmitted **equally in all directions** throughout the liquid." },
     { "type": "paragraph", "text": "In a hydraulic system with two cylinders (pistons) of different sizes, the **pressure is the same** in both. A small force on a **small** piston creates a pressure that pushes on a **large** piston with a **larger** force. This is how a hydraulic jack lets one person lift a car." },

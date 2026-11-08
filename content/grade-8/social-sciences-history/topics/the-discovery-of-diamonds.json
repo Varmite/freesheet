@@ -9,6 +9,7 @@
     { "type": "heading", "text": "Who owned the diamond fields?" },
     { "type": "paragraph", "text": "The area was claimed by the **Griqua** under Nicolaas Waterboer, the **Orange Free State**, the **South African Republic (Transvaal)** and the **Batlhaping** (Tswana). In 1871 a British-appointed judge, Lieutenant-Governor **Keate**, awarded the land to Waterboer, who then asked for British protection. Britain annexed the area as **Griqualand West**, gaining control of the world's richest diamond fields. The Free State was later paid £90 000 in compensation." },
     { "type": "callout", "label": "Key idea", "text": "The **Mineral Revolution** is the name for the huge economic and social changes that followed the discovery of diamonds (1867) and gold (1886). South Africa changed from a farming economy to an industrial, mining economy." },
+    { "type": "example", "title": "Why was ownership disputed?", "problem": "Why did so many groups claim the diamond fields, and who got them?", "steps": ["The Griqua, the Tswana, the Orange Free State and the South African Republic all claimed the land.","Diamonds made it suddenly very valuable.","Britain supported the Griqua leader Waterboer's claim and took control of Griqualand West in 1871."], "answer": "Britain took the land, because the wealth made it worth having." },
     { "type": "heading", "text": "From diggers to companies" },
     { "type": "list", "ordered": true, "items": [
       "At first thousands of individual **diggers** of all races worked small claims with picks and shovels.",
@@ -24,6 +25,7 @@
       ["To keep labour cheap", "Men lived away from their families; wages stayed low"]
     ] },
     { "type": "paragraph", "text": "White workers were not placed in compounds and were given skilled, better-paid jobs. This **racial division of labour** became the pattern for later mining and industry in South Africa." },
+    { "type": "example", "title": "Why compounds?", "problem": "Give two reasons mine owners housed black workers in closed compounds.", "steps": ["Control: workers could be watched and prevented from selling stolen diamonds.","Cost: workers could be fed and housed cheaply and kept apart from outside influences."], "answer": "To stop diamond theft and to control workers cheaply." },
     { "type": "heading", "text": "Effects of the diamond discoveries" },
     { "type": "list", "items": [
       "Kimberley grew into the second-largest town in southern Africa, with the first electric street lights in the southern hemisphere (1882).",

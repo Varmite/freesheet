@@ -28,9 +28,11 @@
       "Ask a question (argumentative): 'Should cellphones be allowed in class?'",
       "Use a vivid image (descriptive): 'The market smelled of cinnamon and diesel.'"
     ] },
+    { "type": "example", "title": "Improving an opening", "problem": "Improve: 'In this essay I will tell you about a storm.'", "steps": ["Do not announce what you will do.","Start in the middle of the action."], "answer": "'The first crack of thunder shook the windows just as the lights went out.'" },
     { "type": "heading", "text": "Paragraphing" },
     { "type": "paragraph", "text": "Each paragraph has one main idea in a **topic sentence**, supported by details. Use **transition words**: 'firstly', 'however', 'as a result', 'meanwhile', 'in conclusion'. In narratives, start a new paragraph for a new speaker, a new time or a new place." },
-    { "type": "callout", "label": "Show, don't tell", "text": "Instead of 'I was nervous', write 'My palms were damp and I read the same line four times.'" }
+    { "type": "callout", "label": "Show, don't tell", "text": "Instead of 'I was nervous', write 'My palms were damp and I read the same line four times.'" },
+    { "type": "example", "title": "When to start a new paragraph", "problem": "When should a writer begin a new paragraph in a narrative?", "steps": ["Begin when the time or place changes.","Begin when a new person speaks.","Begin when the focus shifts to a new idea."], "answer": "At a change of time, place, speaker or idea." }
   ],
   "questions": [
     { "id": "length", "type": "mcq", "prompt": "How long should a Grade 10 HL essay usually be?", "options": ["100–150 words", "250–300 words", "500–600 words", "1 000 words"], "answer": 1 },

@@ -6,6 +6,7 @@
   "notes": [
     { "type": "heading", "text": "Topographic maps" },
     { "type": "paragraph", "text": "A **topographic map** shows natural and human-made features of an area using symbols, colours and contour lines. In South Africa, the standard scale is **1 : 50 000**. Each map sheet has a reference number based on latitude and longitude, e.g. **2628CB JOHANNESBURG**: 26° S, 28° E, block C, sub-block B." },
+    { "type": "example", "title": "Converting map distance", "problem": "On a 1 : 50 000 map, two points are 4,6 cm apart. What is the real distance?", "steps": ["At this scale 1 cm on the map is 50 000 cm in reality, which is 500 m.","4,6 × 500 m = 2 300 m.","Convert: 2 300 m = 2,3 km."], "answer": "2,3 km." },
     { "type": "heading", "text": "Orthophoto maps" },
     { "type": "paragraph", "text": "An **orthophoto map** is an aerial photograph taken vertically from an aircraft, corrected so that distances are accurate, with **contour lines** (brown or orange), names and some symbols added. The standard scale is **1 : 10 000**, so it is a larger scale than a topographic map and shows more detail of a smaller area." },
     { "type": "table", "headers": ["", "Topographic map", "Orthophoto map"], "rows": [
@@ -31,7 +32,8 @@
     { "type": "paragraph", "text": "Position on a topographic map is given in **degrees, minutes and seconds** of latitude and longitude, read from the edges of the map, e.g. **26°12′30″ S, 28°02′45″ E**. Each minute has 60 seconds. The latitude is always given first." },
     { "type": "heading", "text": "Cross-sections and intervisibility" },
     { "type": "paragraph", "text": "A **cross-section** shows the shape of the land along a line between two points, as if the land were cut through. It is drawn from the heights where the line crosses each contour. It can show whether two points are **intervisible** (whether you could see one from the other): if higher ground lies between them, they are not intervisible." },
-    { "type": "formula", "latex": "\\text{vertical exaggeration} = \\frac{\\text{vertical scale}}{\\text{horizontal scale}}", "caption": "How many times the height has been stretched on a cross-section" }
+    { "type": "formula", "latex": "\\text{vertical exaggeration} = \\frac{\\text{vertical scale}}{\\text{horizontal scale}}", "caption": "How many times the height has been stretched on a cross-section" },
+    { "type": "example", "title": "Calculating gradient", "problem": "Point A is 1 400 m above sea level and point B is 1 200 m. They are 4 km apart. Calculate the average gradient.", "steps": ["Vertical interval: 1 400 − 1 200 = 200 m.","Horizontal equivalent: 4 km = 4 000 m.","Gradient = 200 : 4 000 = 1 : 20."], "answer": "1 : 20, a rise of 1 m for every 20 m." }
   ],
   "questions": [
     { "id": "topo-scale", "type": "mcq", "prompt": "The standard scale of a South African topographic map is…", "options": ["1 : 10 000", "1 : 50 000", "1 : 250 000", "1 : 1 000 000"], "answer": 1 },

@@ -8,6 +8,7 @@
     { "type": "paragraph", "text": "Chapter 2 of the Constitution (1996), the **Bill of Rights**, protects the rights of everyone in South Africa. It is based on **human dignity, equality and freedom**." },
     { "type": "heading", "text": "Limiting rights" },
     { "type": "paragraph", "text": "Rights are not absolute. **Section 36** allows rights to be limited by law if the limitation is **reasonable and justifiable** in an open and democratic society. For example, freedom of expression does not protect **hate speech** or incitement to violence, and freedom of movement can be limited by a court order." },
+    { "type": "example", "title": "Are all rights absolute?", "problem": "Does freedom of expression let someone post hate speech?", "steps": ["Section 16 of the Constitution excludes incitement to violence and hate speech.","Rights can also be limited under section 36 when reasonable."], "answer": "No. Hate speech is not protected." },
     { "type": "heading", "text": "Discrimination and violations" },
     { "type": "table", "headers": ["Violation", "Example"], "rows": [
       ["Racism", "Refusing service to someone because of race"],
@@ -27,6 +28,7 @@
       ["Auditor-General", "Checks how public money is spent"]
     ] },
     { "type": "paragraph", "text": "The **Constitutional Court** is the highest court on constitutional matters and can declare laws or government actions invalid." },
+    { "type": "example", "title": "Which institution?", "problem": "Match: government money is misused; a complaint about race discrimination.", "steps": ["The Public Protector investigates improper conduct by government.","The Human Rights Commission deals with human-rights complaints."], "answer": "Public Protector; South African Human Rights Commission." },
     { "type": "heading", "text": "Participating in democracy" },
     { "type": "list", "items": [
       "Vote in elections (from 18; register from 16).",

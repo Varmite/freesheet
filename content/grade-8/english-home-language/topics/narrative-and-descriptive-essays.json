@@ -28,6 +28,7 @@
       "Build **suspense** with short sentences and by delaying information.",
       "End with a **satisfying resolution** or a twist; avoid 'and then I woke up and it was all a dream'."
     ] },
+    { "type": "example", "title": "Show, don't tell", "problem": "Change 'Sipho was scared' so that it shows the feeling.", "steps": ["Think about what fear looks like: shaking, breathing, a racing heart.","Describe those actions instead of naming the emotion."], "answer": "'Sipho's hands shook as he reached for the door, and his breath caught in his throat.'" },
     { "type": "heading", "text": "Descriptive techniques" },
     { "type": "list", "items": [
       "Appeal to all **five senses**: sight, sound, smell, taste and touch.",
@@ -36,6 +37,7 @@
       "Create a clear **mood** (atmosphere): peaceful, tense, joyful, gloomy."
     ] },
     { "type": "passage", "title": "Example paragraph: The market at dawn (original)", "text": "The market wakes before the sun. Gas burners hiss into life beneath dented pots, and the smell of frying vetkoek drifts between the stalls like a lazy cat. A vendor slaps a crate of tomatoes onto her table, each one as red and shiny as a fire engine. Somewhere a radio crackles with morning news, competing with the rattle of a trolley over uneven paving stones. My fingers, still cold, wrap gratefully around a paper cup of sweet, milky tea." },
+    { "type": "example", "title": "Using the senses", "problem": "Expand 'The market was busy' using at least three senses.", "steps": ["Sight: colours and movement.","Sound: voices and music.","Smell: food."], "answer": "'Bright cloth flapped above the stalls, traders shouted their prices and the smell of frying vetkoek drifted through the crowd.'" },
     { "type": "heading", "text": "Length and assessment" },
     { "type": "paragraph", "text": "In Grade 8, an essay is usually **250 to 300 words**. It is assessed on **content and planning** (ideas, creativity, relevance), **language, style and editing** (vocabulary, sentence variety, grammar, spelling) and **structure** (paragraphing, logical flow, introduction and conclusion)." },
     { "type": "callout", "label": "Exam tip", "text": "Always hand in your plan (mind map) with the essay, keep to the topic, and leave five minutes to proofread." }

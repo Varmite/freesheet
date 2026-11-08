@@ -19,9 +19,11 @@
       "It provides **services** (care, food, education) where needed.",
       "It can take issues to **court**, e.g. TAC's case that led to the national programme to prevent mother-to-child transmission of HIV."
     ] },
+    { "type": "example", "title": "Who is part of civil society?", "problem": "Which is civil society: a trade union, the Department of Health, a community policing forum, the army?", "steps": ["Civil society is organised citizens outside government.","Government departments and the army are part of the state."], "answer": "The trade union and the community forum." },
     { "type": "heading", "text": "The media in a democracy" },
     { "type": "paragraph", "text": "Section 16 of the Constitution protects **freedom of expression**, including freedom of the press. The media **inform** the public, **expose** wrongdoing (the watchdog role), and allow **debate**. Freedom of expression is limited: it excludes propaganda for war, incitement of imminent violence and hate speech." },
     { "type": "callout", "label": "Responsible media use", "text": "Check sources before sharing, recognise bias and fake news, respect others' privacy and dignity online, and remember that posts can have legal consequences (defamation, the Cybercrimes Act)." },
+    { "type": "example", "title": "Why a free press matters", "problem": "A newspaper exposes corrupt spending. Why is this important in a democracy?", "steps": ["Citizens need information to hold leaders accountable.","Exposure can lead to investigation."], "answer": "The media acts as a watchdog." },
     { "type": "heading", "text": "Youth participation" },
     { "type": "list", "items": [
       "Register to vote (from 16) and vote (from 18).",

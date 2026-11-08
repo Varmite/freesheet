@@ -15,6 +15,7 @@
     { "type": "paragraph", "text": "Youth-friendly clinics provide free, **confidential** services: HIV testing, contraception and treatment of STIs. In South Africa, children aged 12 and older can consent to an HIV test themselves." },
     { "type": "heading", "text": "Gender roles and stereotypes" },
     { "type": "paragraph", "text": "**Gender roles** are society's expectations of how men and women should behave. Stereotypes such as 'boys don't cry' or 'girls must do the cooking' limit people's choices and can contribute to unequal power and violence." },
+    { "type": "example", "title": "Challenging a stereotype", "problem": "'Boys don't cry.' What harm does this do?", "steps": ["It tells boys to hide emotions.","This can stop them from seeking help."], "answer": "It harms boys' emotional health." },
     { "type": "heading", "text": "Gender-based violence (GBV)" },
     { "type": "definition", "term": "Gender-based violence", "text": "Violence directed at a person because of their gender, or that affects one gender more than others. Most GBV in South Africa is committed by men against women and girls, but anyone can be a victim." },
     { "type": "table", "headers": ["Type of abuse", "Examples"], "rows": [
@@ -32,6 +33,7 @@
       "Police (SAPS): 10111; Thuthuzela Care Centres at hospitals support rape survivors.",
       "Tell a trusted adult, teacher or counsellor."
     ] },
+    { "type": "example", "title": "Helping a friend at risk", "problem": "A friend tells you her boyfriend hits her. How can you help?", "steps": ["Believe her and don't blame her.","Encourage her to speak to a trusted adult, counsellor or the police.","If she is in immediate danger, get help at once."], "answer": "Listen, believe her and get her to a safe adult or service." },
     { "type": "heading", "text": "Preventing GBV" },
     { "type": "list", "items": [
       "Challenge harmful gender stereotypes and jokes.",

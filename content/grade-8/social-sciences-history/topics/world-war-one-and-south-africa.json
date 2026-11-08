@@ -20,6 +20,7 @@
       ["Aircraft", "First used for scouting, then for dogfights and bombing"],
       ["Submarines (U-boats)", "German submarines sank Allied ships to cut off supplies"]
     ] },
+    { "type": "example", "title": "Why did the front barely move?", "problem": "Explain why trench warfare led to stalemate.", "steps": ["Machine guns and artillery made attacks over open ground deadly.","Barbed wire slowed attackers.","Defenders could bring up reinforcements faster than attackers could advance."], "answer": "Weapons favoured defence, so neither side could break through." },
     { "type": "heading", "text": "South Africa in the war" },
     { "type": "paragraph", "text": "As part of the British Empire, the **Union of South Africa** was at war when Britain declared war. Prime Minister **Louis Botha** and **Jan Smuts** supported Britain. Some Afrikaners who opposed fighting for Britain staged the **1914 Rebellion**, which was put down." },
     { "type": "list", "items": [
@@ -32,6 +33,7 @@
     { "type": "paragraph", "text": "On **21 February 1917** the troopship **SS Mendi**, carrying members of the SANLC to France, was struck in thick fog off the Isle of Wight by a larger ship, the SS Darro. More than **600 South Africans** died. According to survivors, **Reverend Isaac Wauchope Dyobha** calmed the men on the sinking ship." },
     { "type": "passage", "title": "Source E: The words attributed to Rev. Isaac Wauchope Dyobha (adapted)", "text": "Be quiet and calm, my countrymen. What is happening now is what you came to do. You are going to die, but that is what you came to do. Brothers, we are drilling the death drill." },
     { "type": "paragraph", "text": "The black labourers received no war medals from the government, unlike white soldiers. Their sacrifice was largely ignored until after 1994; today South Africa's highest award for bravery is the **Order of Mendi for Bravery**, and the SAS Isaac Dyobha is named after the minister." },
+    { "type": "example", "title": "Why it is remembered", "problem": "Why is the sinking of the Mendi on 21 February 1917 important in South African memory?", "steps": ["More than 600 members of the South African Native Labour Corps died when the ship was struck in fog in the English Channel.","Black South Africans served without weapons, and their service received little recognition.","The Mendi has become a symbol of sacrifice and of injustice."], "answer": "It honours men whose sacrifice was long ignored because of racism." },
     { "type": "heading", "text": "The end of the war" },
     { "type": "list", "items": [
       "The USA joined the Allies in 1917; Russia left the war after its revolution.",

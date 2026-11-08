@@ -90,6 +90,7 @@
       "label": "Exam tip",
       "text": "Use your calculator's STAT mode. Check that you choose the population standard deviation ($\\sigma x$ or $\\sigma_n$), as used in the CAPS syllabus."
     },
+    { "type": "example", "title": "Standard deviation by hand", "problem": "Calculate the variance and standard deviation of $2; 4; 6; 8$.", "steps": ["Mean: $\\frac{2+4+6+8}{4} = 5$.","Squared deviations: $9; 1; 1; 9$, with sum $20$.","Variance: $\\frac{20}{4} = 5$.","Standard deviation: $\\sqrt{5} \\approx 2{,}24$."], "answer": "Variance $5$; standard deviation $\\approx 2{,}24$." },
     {
       "type": "heading",
       "text": "Symmetric and skewed data"

@@ -22,6 +22,7 @@
       "A willingness to negotiate a new constitution."
     ] },
     { "type": "paragraph", "text": "On **11 February 1990**, after **27 years** in prison, **Nelson Mandela** walked out of Victor Verster Prison near Paarl. That evening he spoke to a huge crowd from the balcony of Cape Town City Hall." },
+    { "type": "example", "title": "What changed on 2 February 1990?", "problem": "Explain the importance of F. W. de Klerk's speech of 2 February 1990.", "steps": ["He unbanned the ANC, PAC, SACP and other organisations.","He announced that Nelson Mandela would be released, which took place on 11 February.","This opened the way for negotiations."], "answer": "It began the formal end of apartheid." },
     { "type": "heading", "text": "Negotiations and violence" },
     { "type": "table", "headers": ["Date", "Event"], "rows": [
       ["1991", "**CODESA** (Convention for a Democratic South Africa) began, with 19 parties"],
@@ -33,6 +34,7 @@
       ["1993", "The **Multi-Party Negotiating Forum** agreed on an interim constitution; Mandela and De Klerk shared the **Nobel Peace Prize**"]
     ] },
     { "type": "callout", "label": "Key idea", "text": "Compromise made the transition possible. One example is the **'sunset clauses'** proposed by Joe Slovo, which guaranteed a **Government of National Unity** for five years and protected the jobs of civil servants." },
+    { "type": "example", "title": "Why Chris Hani's murder mattered", "problem": "After Chris Hani was assassinated in April 1993, why did negotiations speed up?", "steps": ["There was great anger, and the country was close to serious violence.","Mandela appealed for calm on national television.","Both sides saw the danger of delay and agreed on an election date."], "answer": "The crisis pushed leaders to set the election for 27 April 1994." },
     { "type": "heading", "text": "The first democratic election" },
     { "type": "paragraph", "text": "On **27 April 1994**, for the first time, South Africans of all races voted together. Nearly 20 million people queued for hours, many voting for the first time in their lives. The ANC won about **62,6%** of the vote. On **10 May 1994**, Nelson Mandela was inaugurated as the first democratically elected President, with F. W. de Klerk and Thabo Mbeki as deputy presidents. 27 April is now **Freedom Day**." },
     { "type": "heading", "text": "The Constitution and the TRC" },

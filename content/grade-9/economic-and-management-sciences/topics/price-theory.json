@@ -41,7 +41,8 @@
       "**Shortage** (excess demand): at prices below equilibrium, more is demanded than supplied. Buyers compete and the price rises.",
       "In this way the **price mechanism** moves the market towards equilibrium."
     ] },
-    { "type": "example", "title": "A change in the market", "problem": "A drought destroys much of the maize crop. What happens to the price of maize meal?", "steps": ["Supply decreases (the supply curve shifts left).", "At the old price there is now a shortage.", "The price rises until a new, higher equilibrium is reached."], "answer": "The price rises and less is sold." }
+    { "type": "example", "title": "A change in the market", "problem": "A drought destroys much of the maize crop. What happens to the price of maize meal?", "steps": ["Supply decreases (the supply curve shifts left).", "At the old price there is now a shortage.", "The price rises until a new, higher equilibrium is reached."], "answer": "The price rises and less is sold." },
+    { "type": "example", "title": "Finding equilibrium from a table", "problem": "At R10, buyers want 80 and sellers offer 40. At R15, buyers want 60 and sellers offer 60. At R20, buyers want 40 and sellers offer 80. Find the equilibrium, and describe the market at R20.", "steps": ["Equilibrium is where quantity demanded equals quantity supplied.","This happens at R15, with 60 units.","At R20, sellers offer 80 but buyers want only 40, leaving 40 units unsold.","That surplus pushes the price back down."], "answer": "Equilibrium is R15 and 60 units. At R20 there is a surplus of 40 units." }
   ],
   "questions": [
     { "id": "law-demand", "type": "mcq", "prompt": "According to the law of demand, when the price of a good increases…", "options": ["quantity demanded increases", "quantity demanded decreases", "supply decreases", "nothing changes"], "answer": 1 },

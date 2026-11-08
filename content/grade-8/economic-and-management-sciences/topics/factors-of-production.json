@@ -34,7 +34,8 @@
       "Labour: the three workers (and Sipho's own work).",
       "Capital: the tractor and irrigation system.",
       "Entrepreneurship: Sipho, who organises everything and takes the risk."
-    ], "answer": "All four factors are present." }
+    ], "answer": "All four factors are present." },
+    { "type": "example", "title": "Who earns what?", "problem": "Lerato opens a bakery in a rented shop, employs two bakers and borrows money from the bank. Name the reward paid to each factor of production.", "steps": ["The shop owner supplies a natural resource (land or premises) and receives **rent**.","The bakers supply labour and receive **wages**.","The bank supplies capital and receives **interest**.","Lerato takes the risk as the entrepreneur and receives whatever **profit** is left."], "answer": "Rent, wages, interest and profit." }
   ],
   "questions": [
     { "id": "four", "type": "open", "marks": 4, "prompt": "Name the FOUR factors of production.", "memo": "✓ Natural resources / land (1)\n✓ Labour (1)\n✓ Capital (1)\n✓ Entrepreneurship (1)" },

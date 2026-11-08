@@ -32,7 +32,8 @@
     { "type": "heading", "text": "Belt drives and pulleys" },
     { "type": "paragraph", "text": "A **belt drive** uses a rubber belt around two **pulleys**. It is quiet, cheap and flexible, but the belt can **slip**. Pulleys turn in the same direction unless the belt is crossed." },
     { "type": "formula", "latex": "\\text{velocity ratio} = \\frac{\\text{diameter of driven pulley}}{\\text{diameter of driver pulley}}" },
-    { "type": "paragraph", "text": "**Lifting pulleys** (as on a crane, a flagpole or a well) use a rope over a grooved wheel. A single fixed pulley changes the **direction** of the effort (you pull down to lift up). A system of several pulleys (a block and tackle) gives a **mechanical advantage**, so heavy loads can be lifted with less effort." }
+    { "type": "paragraph", "text": "**Lifting pulleys** (as on a crane, a flagpole or a well) use a rope over a grooved wheel. A single fixed pulley changes the **direction** of the effort (you pull down to lift up). A system of several pulleys (a block and tackle) gives a **mechanical advantage**, so heavy loads can be lifted with less effort." },
+    { "type": "example", "title": "Speed of a driven pulley", "problem": "A driver pulley of diameter 100 mm turns at 60 r/min and drives a pulley of diameter 50 mm. How fast does the driven pulley turn?", "steps": ["The smaller pulley turns faster, so expect more than 60 r/min.","Driven speed = driver speed × driver diameter ÷ driven diameter.","60 × 100 ÷ 50 = 120 r/min."], "answer": "120 r/min." }
   ],
   "questions": [
     { "id": "direction", "type": "mcq", "prompt": "Two meshing gears turn…", "options": ["in the same direction", "in opposite directions", "at the same speed always", "only clockwise"], "answer": 1 },

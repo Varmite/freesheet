@@ -13,6 +13,7 @@
       ["Logo", "The brand's symbol"],
       ["Call to action", "Tells the reader what to do: 'Order now!'"]
     ] },
+    { "type": "example", "title": "Naming the parts", "problem": "An advert has 'Run Further' in large letters, a picture of shoes and small text saying 'Available at all sports shops'. Name the parts.", "steps": ["The largest attention-grabbing words are the headline.","The picture is the main visual.","The small information is body copy."], "answer": "Headline, visual and body copy." },
     { "type": "heading", "text": "Design choices" },
     { "type": "list", "items": [
       "**Colour**: green suggests nature and health; red suggests energy, danger or passion; gold suggests luxury.",
@@ -23,7 +24,8 @@
     { "type": "passage", "title": "Described advertisement (original)", "text": "A smiling teenager in a soccer kit drinks from a bright green bottle. Water droplets sparkle on the bottle. HEADLINE (large white capitals): 'GAME ON!' BODY COPY: 'Fuel up with ZEST Sports Water: zero sugar, all-natural lemon flavour, and the electrolytes your body needs.' SLOGAN (bottom right, beside a lightning-bolt logo): 'ZEST. Feel the charge.'" },
     { "type": "heading", "text": "Cartoons" },
     { "type": "paragraph", "text": "Cartoons use **frames**, **speech bubbles** (words), **thought bubbles** (thoughts), **facial expressions**, **body language** and **exaggeration**. Humour often comes from **irony**, **puns** or a surprising **punchline** in the last frame." },
-    { "type": "callout", "label": "Exam tip", "text": "Describe what you see, then explain its effect: 'The teenager's broad smile suggests the drink makes you feel happy and energetic.'" }
+    { "type": "callout", "label": "Exam tip", "text": "Describe what you see, then explain its effect: 'The teenager's broad smile suggests the drink makes you feel happy and energetic.'" },
+    { "type": "example", "title": "Explaining a cartoon", "problem": "A cartoon shows a politician promising 'Clean water for all' while standing on a dry tap. What is its point?", "steps": ["Identify the contrast between the words and the image.","Explain the irony."], "answer": "It criticises politicians for empty promises." }
   ],
   "questions": [
     { "id": "slogan", "type": "short", "prompt": "Quote the slogan of the ZEST advertisement.", "answers": ["zest. feel the charge.", "zest. feel the charge", "feel the charge"] },

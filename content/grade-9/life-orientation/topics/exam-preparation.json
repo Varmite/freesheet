@@ -22,6 +22,7 @@
       "Include breaks, exercise, meals and 8 or more hours of sleep.",
       "Review your plan weekly and adjust it."
     ] },
+    { "type": "example", "title": "Spacing out study", "problem": "You have 5 days to study three subjects. Should you do one subject a day or mix them?", "steps": ["Spaced study works better than cramming.","Rotate subjects and review earlier work."], "answer": "Mix them, and return to each one more than once." },
     { "type": "heading", "text": "Understanding questions" },
     { "type": "table", "headers": ["Verb", "What to do"], "rows": [
       ["Name / list / state", "Give short facts without explanation"],
@@ -34,6 +35,7 @@
       ["Suggest / recommend", "Give your own practical ideas"]
     ] },
     { "type": "callout", "label": "Exam tip", "text": "Use the **mark allocation** as a guide: a 3-mark 'explain' question usually needs three clear points or a point with explanation and an example." },
+    { "type": "example", "title": "Reading question words", "problem": "What is the difference between 'list', 'explain' and 'evaluate'?", "steps": ["List: name items only.","Explain: say how or why.","Evaluate: judge, giving reasons."], "answer": "Each needs a different depth of answer." },
     { "type": "heading", "text": "In the exam room" },
     { "type": "list", "ordered": true, "items": [
       "Read the instructions and the whole paper first (use the reading time).",

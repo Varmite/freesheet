@@ -62,6 +62,7 @@
       ],
       "answer": "Separate verifiable statements from judgements, and look for signal words and persuasive devices."
     },
+    { "type": "example", "title": "Working out the purpose", "problem": "'Don't let another child go hungry. Your R20 can feed a family tonight.' Identify the purpose, tone and audience.", "steps": ["Purpose: it asks the reader to give money.","Tone: urgent and emotional ('Don't let', 'tonight').","Audience: people who can afford to donate."], "answer": "To persuade readers to donate, in an urgent tone." },
     {
       "type": "heading",
       "text": "Language and its effect"

@@ -21,6 +21,7 @@
       ["Thermosphere", "80 km upwards", "Very thin air; temperature rises very high; auroras; the International Space Station orbits here"]
     ] },
     { "type": "callout", "label": "Memory aid", "text": "From the ground up: **T**ired **S**tudents **M**ake **T**oast: Troposphere, Stratosphere, Mesosphere, Thermosphere." },
+    { "type": "example", "title": "Temperature on a mountain", "problem": "In the troposphere, temperature falls by about 6,5 °C for every kilometre climbed. If it is 25 °C at ground level, what is it 3 km up?", "steps": ["Total drop: 3 × 6,5 = 19,5 °C.","Temperature: 25 − 19,5 = 5,5 °C."], "answer": "About 5,5 °C." },
     { "type": "heading", "text": "The ozone layer" },
     { "type": "paragraph", "text": "**Ozone** (O₃) in the stratosphere absorbs most of the sun's harmful **ultraviolet (UV) radiation**, which causes sunburn, skin cancer and eye damage. Chemicals called **CFCs**, once used in fridges and aerosol sprays, destroyed ozone and created a 'hole' over Antarctica. After CFCs were banned by the **Montreal Protocol** (1987), the ozone layer has slowly begun to recover." },
     { "type": "heading", "text": "The greenhouse effect" },
@@ -43,7 +44,8 @@
       "Walk, cycle or use public transport.",
       "Plant indigenous trees; avoid burning rubbish.",
       "Reduce, reuse and recycle; compost food waste to reduce methane from dumps."
-    ] }
+    ] },
+    { "type": "example", "title": "Why more carbon dioxide warms the Earth", "problem": "Explain, step by step, how extra carbon dioxide raises the Earth's temperature.", "steps": ["Sunlight passes through the atmosphere and warms the surface.","The warm surface gives off infrared radiation.","Greenhouse gases absorb much of it and send some back down.","More carbon dioxide means more heat is held in the atmosphere."], "answer": "Extra greenhouse gas traps more of the outgoing heat." }
   ],
   "questions": [
     { "id": "most-gas", "type": "mcq", "prompt": "Which gas makes up most of the atmosphere?", "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"], "answer": 2 },

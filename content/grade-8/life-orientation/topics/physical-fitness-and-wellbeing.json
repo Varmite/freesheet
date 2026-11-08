@@ -15,6 +15,7 @@
       ["Speed and agility", "Moving quickly and changing direction easily", "Sprints, shuttle runs, ladder drills"],
       ["Balance and coordination", "Controlling body movements", "Balancing exercises, ball skills, gymnastics"]
     ] },
+    { "type": "example", "title": "Naming fitness components", "problem": "Which component is mainly used in: (a) a long-distance run, (b) touching your toes, (c) lifting a heavy box?", "steps": ["(a) Heart and lungs working for a long time: cardiovascular endurance.","(b) Movement at a joint: flexibility.","(c) Force from muscles: strength."], "answer": "Cardiovascular endurance, flexibility, strength." },
     { "type": "heading", "text": "A safe exercise session" },
     { "type": "list", "ordered": true, "items": [
       "**Warm-up** (5 to 10 minutes): light jogging and dynamic stretches raise your heart rate and body temperature and prepare muscles, which helps prevent injury.",
@@ -27,6 +28,7 @@
       "Stop if you feel pain or dizziness, and report injuries."
     ] },
     { "type": "callout", "label": "First aid for sprains: RICE", "text": "**R**est the injured part, apply **I**ce (wrapped in a cloth), **C**ompress with a bandage, and **E**levate the injury above the heart." },
+    { "type": "example", "title": "Planning a session", "problem": "Plan a safe 30-minute exercise session.", "steps": ["Warm-up: 5 minutes of light jogging and stretches.","Main activity: 20 minutes of a game or running.","Cool-down: 5 minutes of walking and stretching."], "answer": "Warm up, exercise, cool down." },
     { "type": "heading", "text": "Healthy eating" },
     { "type": "table", "headers": ["Food group", "Function", "Examples"], "rows": [
       ["Starches (carbohydrates)", "Energy", "Maize meal (pap), bread, rice, potatoes"],

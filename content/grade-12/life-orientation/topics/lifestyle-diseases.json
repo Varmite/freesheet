@@ -21,6 +21,7 @@
       "Checking moles and skin changes.",
       "Knowing your family's medical history."
     ] },
+    { "type": "example", "title": "Why screening helps", "problem": "Why are blood pressure checks useful even if a person feels well?", "steps": ["High blood pressure often has no symptoms.","Early treatment reduces the risk of stroke and heart disease."], "answer": "It finds silent problems in time to treat them." },
     { "type": "heading", "text": "Impact" },
     { "type": "list", "items": [
       "**Individual**: reduced quality of life, disability, early death, medical costs.",

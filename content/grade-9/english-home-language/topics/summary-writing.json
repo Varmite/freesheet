@@ -88,7 +88,8 @@
       "type": "callout",
       "label": "Notice",
       "text": "The model leaves out the 30 litres statistic, the pizza-party prize and who donated the tank, because they are details, not ways of saving water."
-    }
+    },
+    { "type": "example", "title": "Saying it in your own words", "problem": "Paraphrase: 'The majority of adolescents do not obtain sufficient sleep.'", "steps": ["Replace difficult words: majority → most, adolescents → teenagers, obtain → get.","Keep the meaning the same."], "answer": "'Most teenagers do not get enough sleep.'" }
   ],
   "questions": [
     {

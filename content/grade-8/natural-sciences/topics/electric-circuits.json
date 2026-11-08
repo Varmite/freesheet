@@ -22,6 +22,7 @@
       "**Conductors** allow current to flow easily: metals such as copper, aluminium and iron, and graphite (pencil lead).",
       "**Insulators** do not allow current to flow: plastic, rubber, glass, wood and dry air. Wires are coated in plastic for safety."
     ] },
+    { "type": "example", "title": "Testing materials", "problem": "A learner places a steel nail, a plastic ruler, a copper coin and a rubber band in the gap of a circuit with a bulb. Predict which light the bulb.", "steps": ["A material must let charges flow to complete the circuit.","Metals are conductors: steel and copper.","Plastic and rubber are insulators, so no current flows."], "answer": "The bulb lights for the nail and the coin only." },
     { "type": "heading", "text": "Energy transfer in a circuit" },
     { "type": "paragraph", "text": "The cell stores **chemical potential energy**. When the circuit is closed, this is transferred as electrical energy to the components, which convert it into useful forms. Some energy is always wasted, usually as heat." },
     { "type": "table", "headers": ["Component", "Energy conversion"], "rows": [
@@ -40,7 +41,8 @@
     ] },
     { "type": "callout", "label": "Remember", "text": "Adding more **cells in series** makes bulbs brighter (more energy pushes the current). Adding more **bulbs in series** makes them dimmer, because the total resistance increases and less current flows." },
     { "type": "definition", "term": "Resistance", "text": "How much a component opposes the flow of current. Thin, long wires and materials like nichrome have high resistance; resistance causes energy to be converted to heat." },
-    { "type": "callout", "label": "Safety", "text": "A **short circuit** happens when current flows through a path with almost no resistance, for example when the two terminals of a cell are joined directly by a wire. A very large current flows, the wire becomes hot and the cell runs flat quickly. In a house this can cause fires; fuses and circuit breakers cut the current." }
+    { "type": "callout", "label": "Safety", "text": "A **short circuit** happens when current flows through a path with almost no resistance, for example when the two terminals of a cell are joined directly by a wire. A very large current flows, the wire becomes hot and the cell runs flat quickly. In a house this can cause fires; fuses and circuit breakers cut the current." },
+    { "type": "example", "title": "When one bulb blows", "problem": "Two bulbs are connected to a battery, first in series and then in parallel. One bulb blows in each circuit. What happens to the other?", "steps": ["In series there is only one path, so a break stops the current everywhere.","In parallel each bulb has its own path to the battery, so the other path stays complete."], "answer": "In series the other bulb goes out. In parallel it stays lit." }
   ],
   "questions": [
     { "id": "complete", "type": "truefalse", "prompt": "Current can flow in a circuit with a gap in it.", "answer": false, "explanation": "A circuit must be complete (closed) for current to flow." },

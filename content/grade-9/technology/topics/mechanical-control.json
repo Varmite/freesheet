@@ -21,6 +21,7 @@
       ["Heart-shaped cam", "Rises and falls at a steady, uniform speed"]
     ] },
     { "type": "paragraph", "text": "Cams are used in car engines (to open and close valves), sewing machines and moving toys (automata)." },
+    { "type": "example", "title": "How far does the follower rise?", "problem": "A pear-shaped cam has a longest radius of 40 mm and a shortest radius of 25 mm. How far does the follower rise and fall?", "steps": ["The follower is lowest when it rests on the shortest radius.","It is highest at the longest radius.","Rise = 40 − 25 = 15 mm."], "answer": "15 mm." },
     { "type": "heading", "text": "Cranks and sliders" },
     { "type": "paragraph", "text": "A **crank** is an arm attached to a rotating shaft. Joined to a **connecting rod** and a **slider** (piston), it changes **rotary** motion into **reciprocating** motion, or the other way round. In a car engine, the pistons move up and down, and the crankshaft changes this into rotary motion that turns the wheels." },
     { "type": "heading", "text": "Ratchet and pawl" },

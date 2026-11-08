@@ -11,6 +11,7 @@
     { "type": "callout", "label": "Quote", "text": "'The most potent weapon in the hands of the oppressor is the mind of the oppressed.' (Steve Biko)" },
     { "type": "heading", "text": "The Afrikaans Medium Decree" },
     { "type": "paragraph", "text": "In **1974** the government ordered that from Standard 5 (Grade 7) onwards, half of all subjects in black schools, including mathematics and social studies, had to be taught in **Afrikaans**. Learners and many teachers did not speak Afrikaans well, and many saw it as the 'language of the oppressor'." },
+    { "type": "example", "title": "Why this rule caused such anger", "problem": "Why did the Afrikaans Medium Decree of 1974 lead to protest?", "steps": ["It forced certain subjects to be taught in Afrikaans.","Many pupils and teachers did not speak it well, so learning suffered.","Afrikaans was seen as the language of the oppressor."], "answer": "It harmed learning and was linked to apartheid." },
     { "type": "heading", "text": "16 June 1976" },
     { "type": "list", "ordered": true, "items": [
       "Learners formed the **Soweto Students' Representative Council**, led by **Tsietsi Mashinini**, and planned a peaceful protest march.",
@@ -28,7 +29,8 @@
       "In 1977 the government banned Black Consciousness organisations. Steve Biko died in police custody in **September 1977** after being brutally assaulted; the UN imposed a mandatory **arms embargo**.",
       "The uprising showed the power of young people in the struggle. **16 June** is now **Youth Day**."
     ] },
-    { "type": "passage", "title": "Source L: A placard carried on 16 June 1976 (as recorded in photographs)", "text": "IF WE MUST DO AFRIKAANS, VORSTER MUST DO ZULU" }
+    { "type": "passage", "title": "Source L: A placard carried on 16 June 1976 (as recorded in photographs)", "text": "IF WE MUST DO AFRIKAANS, VORSTER MUST DO ZULU" },
+    { "type": "example", "title": "Short-term and long-term effects", "problem": "Give one short-term and one long-term effect of 16 June 1976.", "steps": ["Short-term: unrest spread across the country and hundreds were killed.","Long-term: many young people left to join the ANC and PAC abroad, and the world increased its pressure on South Africa."], "answer": "Nationwide protest, and a stronger liberation movement." }
   ],
   "questions": [
     { "id": "date", "type": "short", "prompt": "On which date did the Soweto Uprising begin? (e.g. 1 May 1990)", "answers": ["16 june 1976", "16th june 1976", "june 16 1976", "june 16, 1976"] },

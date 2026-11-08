@@ -16,6 +16,7 @@
       ["Secular ethics", "Reason, human rights, fairness and the well-being of others"]
     ] },
     { "type": "callout", "label": "Shared values", "text": "Most traditions share core values: **honesty, respect for life, justice, compassion and care for the vulnerable**." },
+    { "type": "example", "title": "Applying Ubuntu", "problem": "A community member is ill and cannot work. How would Ubuntu guide neighbours?", "steps": ["Ubuntu means 'I am because we are'.","A person's well-being is linked to others'."], "answer": "Neighbours share food and care." },
     { "type": "heading", "text": "Religious and customary law and the Constitution" },
     { "type": "paragraph", "text": "South Africa recognises **customary law** and religious marriages, but the **Constitution is supreme**. Any law or practice that conflicts with the Bill of Rights (e.g. one that unfairly discriminates against women) is invalid. For example, the Constitutional Court has ruled that women and girls may inherit under customary law." },
     { "type": "heading", "text": "Ethical dilemmas" },

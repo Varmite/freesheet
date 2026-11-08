@@ -28,7 +28,8 @@
       "The audience member's question is sarcastic.",
       "Message: the cartoonist satirises officials whose promises about electricity are not believable."
     ], "answer": "Situational irony and sarcasm criticise empty political promises." },
-    { "type": "callout", "label": "Exam tip", "text": "Answer with evidence from the visual: describe what you SEE (expression, size, symbol, text) and then explain what it SUGGESTS. For 'Is the cartoon effective?' give a clear opinion with two reasons." }
+    { "type": "callout", "label": "Exam tip", "text": "Answer with evidence from the visual: describe what you SEE (expression, size, symbol, text) and then explain what it SUGGESTS. For 'Is the cartoon effective?' give a clear opinion with two reasons." },
+    { "type": "example", "title": "Humour or satire?", "problem": "A cartoon shows a giant pothole with a sign, 'Municipal swimming pool: opening soon'. What makes it satire?", "steps": ["The joke is exaggeration.","It targets those in power.","It aims to criticise a failure."], "answer": "It mocks poor road maintenance." }
   ],
   "questions": [
     { "id": "caricature", "type": "short", "prompt": "What is a drawing that exaggerates a person's features for comic effect called?", "answers": ["caricature", "a caricature"] },

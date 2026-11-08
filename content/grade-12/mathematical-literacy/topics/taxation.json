@@ -35,7 +35,8 @@
       "**UIF**: 1% of gross pay from the employee, matched by the employer (up to a maximum).",
       "**Fuel levy**, **excise duties** (on alcohol and tobacco) and **property rates** (paid to municipalities)."
     ] },
-    { "type": "paragraph", "text": "An **IRP5** tax certificate from the employer shows the year's income and the tax deducted. Taxpayers use it to complete their annual tax return with SARS." }
+    { "type": "paragraph", "text": "An **IRP5** tax certificate from the employer shows the year's income and the tax deducted. Taxpayers use it to complete their annual tax return with SARS." },
+    { "type": "example", "title": "Taking VAT out of a price", "problem": "An item costs R230 including 15% VAT. What is the VAT?", "steps": ["The price is 115% of the price without VAT.","Without VAT: R230 ÷ 1,15 = R200.","VAT: R230 − R200 = R30."], "answer": "R30." }
   ],
   "questions": [
     { "id": "taxable", "type": "numeric", "prompt": "Annual gross income is R280 000 and pension contributions are R21 000. What is the taxable income?", "answer": 259000, "tolerance": 0, "unit": "rand" },

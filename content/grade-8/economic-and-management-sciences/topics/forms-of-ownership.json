@@ -25,6 +25,7 @@
       ["Owner keeps all the profit", "Owner carries all the risk and workload"],
       ["Close contact with customers", "No continuity: the business may end if the owner dies or retires"]
     ] },
+    { "type": "example", "title": "What unlimited liability means", "problem": "A sole trader's business owes R120 000 but its assets can only be sold for R70 000. What happens to the rest of the debt?", "steps": ["Find the shortfall: R120 000 − R70 000 = R50 000.","A sole trader has unlimited liability: the owner and the business count as one for debts.","The owner must pay the R50 000 from personal savings or by selling personal belongings."], "answer": "The owner personally owes the remaining R50 000." },
     { "type": "heading", "text": "Partnership" },
     { "type": "table", "headers": ["Advantages", "Disadvantages"], "rows": [
       ["More capital from several partners", "Unlimited liability; partners are responsible for each other's business decisions"],
@@ -32,6 +33,7 @@
       ["Easy to set up with a partnership agreement", "Disagreements between partners"],
       ["Losses are shared", "No continuity: a change of partners ends the old partnership"]
     ] },
+    { "type": "example", "title": "Sharing partnership profit", "problem": "Ayanda and Ben share profit in the ratio 3 : 2, as agreed in their partnership agreement. The profit is R60 000. How much does each receive?", "steps": ["Add the parts of the ratio: 3 + 2 = 5 parts.","One part is R60 000 ÷ 5 = R12 000.","Ayanda: 3 × R12 000 = R36 000.","Ben: 2 × R12 000 = R24 000."], "answer": "Ayanda R36 000 and Ben R24 000 (together R60 000)." },
     { "type": "heading", "text": "Companies" },
     { "type": "table", "headers": ["Advantages", "Disadvantages"], "rows": [
       ["Limited liability for shareholders", "Expensive and complicated to register with CIPC (Companies and Intellectual Property Commission)"],

@@ -20,8 +20,10 @@
       "Be active for at least 60 minutes a day.",
       "Sleep 8 to 10 hours a night."
     ] },
+    { "type": "example", "title": "Improving a lunch", "problem": "A learner's lunch is chips and a fizzy drink. Suggest a healthier swap.", "steps": ["Reduce sugar and fat.","Add protein and fibre.","Drink water."], "answer": "A wholewheat sandwich, fruit and water." },
     { "type": "heading", "text": "Mental health" },
     { "type": "paragraph", "text": "Mental health affects how we think, feel and cope. Warning signs of depression or anxiety include lasting sadness, withdrawal, changes in sleep and appetite, loss of interest, and thoughts of self-harm. **SADAG**: 0800 567 567 (suicide crisis line) offers free support." },
+    { "type": "example", "title": "Knowing when to seek help", "problem": "When should a young person seek help for low mood?", "steps": ["If it lasts for more than two weeks.","If it affects sleep, school or relationships.","Immediately if they think of harming themselves."], "answer": "If it persists or interferes with life; urgently if there are thoughts of self-harm." },
     { "type": "heading", "text": "Smoking, vaping and alcohol" },
     { "type": "table", "headers": ["Substance", "Health risks"], "rows": [
       ["Cigarettes", "Lung cancer, heart disease, stroke, emphysema; second-hand smoke harms others"],

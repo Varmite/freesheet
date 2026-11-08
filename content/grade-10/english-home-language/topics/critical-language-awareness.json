@@ -11,8 +11,10 @@
       "**Bias**: a one-sided view that favours or opposes something unfairly.",
       "**Stereotype**: an oversimplified belief about a whole group ('All teenagers are lazy')."
     ] },
+    { "type": "example", "title": "Fact or opinion?", "problem": "(a) 'The school has 900 learners.' (b) 'It is the best school in Gauteng.' Identify each.", "steps": ["A fact can be checked: (a).","'Best' is a judgement: (b)."], "answer": "(a) Fact. (b) Opinion." },
     { "type": "heading", "text": "Emotive and loaded language" },
     { "type": "paragraph", "text": "**Emotive language** stirs feelings: 'innocent children' or 'a shocking disaster'. Word choice shows the writer's attitude: protesters can be called 'activists' (positive) or 'a mob' (negative). This is the difference between **denotation** (literal meaning) and **connotation** (associations)." },
+    { "type": "example", "title": "Spot the loaded word", "problem": "Compare 'The crowd gathered' with 'The mob swarmed'.", "steps": ["Both describe many people coming together.","'Mob' and 'swarmed' suggest danger and animals, so they make readers fear the group."], "answer": "The second sentence is loaded against the crowd." },
     { "type": "heading", "text": "Persuasive techniques" },
     { "type": "table", "headers": ["Technique", "Example"], "rows": [
       ["Rhetorical question", "'Don't you want your family to be safe?'"],

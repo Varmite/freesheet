@@ -13,6 +13,7 @@
       "Usually 2 or 3 entries are written on different days to show how feelings change."
     ] },
     { "type": "passage", "title": "Example diary entry (original)", "text": "Friday, 7 June\n\nDear Diary\n\nI can't believe it. I forgot my lines in the middle of the school play! The whole hall went silent and all I could hear was my heart thumping. Then Kagiso whispered the next line from behind the curtain and somehow I carried on.\n\nAfterwards, Mom hugged me and said nobody even noticed. I'm not sure that's true, but I feel a bit better. Tomorrow I'm going to thank Kagiso properly. Maybe I'll even try out for next year's play." },
+    { "type": "example", "title": "Turning an event into a diary entry", "problem": "Plain fact: 'I failed my maths test and did not tell my mother.' Rewrite it as the start of a diary entry.", "steps": ["Add the date and a personal greeting: 'Monday, 4 March. Dear Diary,'","Use the first person and informal language.","Show feelings, not only facts."], "answer": "'Monday, 4 March. Dear Diary, today was awful. I got 32% for maths and I hid the test in my bag. I just couldn't face Mom.'" },
     { "type": "heading", "text": "Dialogues" },
     { "type": "paragraph", "text": "A **dialogue** is a conversation between two or more people written in **script form** (like a play)." },
     { "type": "list", "items": [
@@ -33,7 +34,8 @@
       ["Evaluation", "Strengths and weaknesses with examples: characters, plot, acting, music, service, value for money"],
       ["Conclusion", "Your overall opinion and a recommendation: who would enjoy it?"]
     ] },
-    { "type": "callout", "label": "Language tip", "text": "Use a variety of descriptive adjectives (gripping, predictable, hilarious, mouth-watering, overpriced) and justify every opinion with a reason or example." }
+    { "type": "callout", "label": "Language tip", "text": "Use a variety of descriptive adjectives (gripping, predictable, hilarious, mouth-watering, overpriced) and justify every opinion with a reason or example." },
+    { "type": "example", "title": "From opinion to review", "problem": "'The film was good.' Improve this sentence so that it works in a review.", "steps": ["Say what exactly was good.","Give a reason or a detail.","Add a recommendation for the reader."], "answer": "'The film's fast-paced story and funny lead actor make it worth watching with friends.'" }
   ],
   "questions": [
     { "id": "diary-person", "type": "mcq", "prompt": "In which person is a diary usually written?", "options": ["First person", "Second person", "Third person"], "answer": 0 },

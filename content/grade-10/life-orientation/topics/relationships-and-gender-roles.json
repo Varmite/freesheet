@@ -19,6 +19,7 @@
       ["'Boys are better at Maths and Science'", "Girls may avoid STEM subjects and careers"],
       ["'Men should be the decision-makers'", "Power imbalance in relationships, which can lead to control or abuse"]
     ] },
+    { "type": "example", "title": "Questioning a role", "problem": "A family expects only the daughter to cook and clean. What is the issue, and what is fairer?", "steps": ["The chores are assigned by gender.","It limits her time for study.","Share chores by ability and fairness."], "answer": "An unfair gender role; share the chores." },
     { "type": "heading", "text": "Power in relationships" },
     { "type": "paragraph", "text": "In a **healthy** relationship, power is shared: both people's opinions, choices and boundaries are respected. **Unhealthy** relationships involve one person controlling the other through money, threats, jealousy, isolation or violence." },
     { "type": "list", "items": [
@@ -26,6 +27,7 @@
       "**Consent** must be freely given, specific and can be withdrawn at any time. Silence or being drunk is not consent."
     ] },
     { "type": "callout", "label": "Get help", "text": "GBV Command Centre: **0800 428 428**. Childline: **116**. A trusted adult, teacher or counsellor can also help. Abuse is never the victim's fault." },
+    { "type": "example", "title": "Spotting unhealthy power", "problem": "One partner checks the other's phone and decides who they can see. What is this?", "steps": ["Control and isolation are warning signs.","Healthy relationships are built on trust and respect."], "answer": "Controlling behaviour, which is a form of abuse." },
     { "type": "heading", "text": "Skills for healthy relationships" },
     { "type": "list", "items": [
       "Assertive communication and I-statements.",

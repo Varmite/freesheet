@@ -17,6 +17,7 @@
       ["Large intestine", "Absorbs water; forms faeces"],
       ["Rectum and anus", "Store and remove faeces (egestion)"]
     ] },
+    { "type": "example", "title": "Following a sandwich", "problem": "Trace a bite of sandwich through the digestive system, saying what happens at each stage.", "steps": ["Mouth: teeth chew it and saliva begins digesting starch.","Oesophagus: muscles push it to the stomach.","Stomach: acid and enzymes break down protein.","Small intestine: digestion finishes and nutrients are absorbed into the blood.","Large intestine: water is absorbed, and waste leaves through the anus."], "answer": "Mouth → oesophagus → stomach → small intestine → large intestine → anus." },
     { "type": "heading", "text": "The respiratory system" },
     { "type": "paragraph", "text": "Air enters through the **nose** (where it is warmed, moistened and filtered), passes down the **trachea** (windpipe), into two **bronchi**, then smaller **bronchioles**, and finally reaches millions of tiny air sacs called **alveoli**. In the alveoli, **gaseous exchange** takes place: oxygen diffuses into the blood and carbon dioxide diffuses out." },
     { "type": "table", "caption": "Breathing", "headers": ["", "Inhaling (breathing in)", "Exhaling (breathing out)"], "rows": [
@@ -38,6 +39,7 @@
       "**Platelets** help blood to clot.",
       "**Plasma** is the liquid part; it carries dissolved food, carbon dioxide, hormones and waste."
     ] },
+    { "type": "example", "title": "One trip around the body", "problem": "Trace the path of blood from the body, through the heart and lungs, and back to the body.", "steps": ["Blood low in oxygen enters the right atrium through the vena cava, then goes to the right ventricle.","The pulmonary artery carries it to the lungs, where it collects oxygen and gives up carbon dioxide.","The pulmonary vein returns it to the left atrium, then the left ventricle.","The aorta carries the oxygen-rich blood to the body."], "answer": "Body → right side of heart → lungs → left side of heart → body." },
     { "type": "heading", "text": "Excretion and the nervous system" },
     { "type": "paragraph", "text": "**Excretion** is the removal of waste made by the body's cells. The **kidneys** filter urea and excess water from the blood to make urine; the **lungs** excrete carbon dioxide; the **skin** removes some water and salts in sweat." },
     { "type": "paragraph", "text": "The **nervous system** (brain, spinal cord and nerves) receives information from the sense organs and coordinates responses. A **reflex action**, such as pulling your hand away from a hot stove, is fast and automatic because the message goes through the spinal cord without waiting for the brain." },

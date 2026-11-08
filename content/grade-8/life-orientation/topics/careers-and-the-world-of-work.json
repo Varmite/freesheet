@@ -13,6 +13,7 @@
       ["Personality", "Am I outgoing or reserved? Do I like routine or variety?"],
       ["Values", "What is important to me? Helping others, money, creativity, security, independence?"]
     ] },
+    { "type": "example", "title": "Matching interests to careers", "problem": "Amahle loves biology, enjoys helping people and is calm under pressure. Suggest suitable career fields.", "steps": ["List her interests: science and helping others.","List her strengths: calmness.","Find fields that use them: health care."], "answer": "Nursing, physiotherapy or paramedic work." },
     { "type": "heading", "text": "Career fields" },
     { "type": "table", "headers": ["Field", "Example careers"], "rows": [
       ["Health and social services", "Nurse, doctor, pharmacist, social worker, physiotherapist"],
@@ -32,6 +33,7 @@
       "**Entrepreneurship**: starting your own business."
     ] },
     { "type": "callout", "label": "Scarce skills", "text": "South Africa needs more people with skills in areas such as engineering, artisans (electricians, plumbers, welders), ICT, health sciences, teaching (especially Maths and Science) and accounting. Careers in scarce-skill areas usually have better job opportunities and bursaries." },
+    { "type": "example", "title": "Finding a route", "problem": "Sipho wants to be an electrician. What routes could he take after school?", "steps": ["He does not need a university degree.","A TVET college offers an electrical course.","He can do an apprenticeship and a trade test."], "answer": "A TVET college course and apprenticeship." },
     { "type": "heading", "text": "Finding career information" },
     { "type": "list", "items": [
       "School career counsellors and Life Orientation teachers.",

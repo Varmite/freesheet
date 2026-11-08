@@ -37,7 +37,8 @@
       "**Subsidies**: government payments to local producers (e.g. farmers in Europe and the USA), which make it hard for poorer countries to compete.",
       "**Free trade agreements** remove or reduce these barriers between member countries."
     ] },
-    { "type": "definition", "term": "Fair trade", "text": "A system that guarantees small farmers and workers in developing countries a fair, stable price for products such as coffee, cocoa, tea and rooibos, plus extra money for community projects." }
+    { "type": "definition", "term": "Fair trade", "text": "A system that guarantees small farmers and workers in developing countries a fair, stable price for products such as coffee, cocoa, tea and rooibos, plus extra money for community projects." },
+    { "type": "example", "title": "The effect of a tariff", "problem": "An imported shirt costs R100. South Africa places a 20% tariff on it. What does it cost now, and who benefits?", "steps": ["Tariff: 20% × R100 = R20.","New price: R100 + R20 = R120.","Local shirts now look cheaper, which protects local factories, but consumers pay more."], "answer": "R120. Local producers benefit and consumers pay more." }
   ],
   "questions": [
     { "id": "export", "type": "short", "prompt": "What is a good sold to another country called?", "answers": ["export", "an export", "exports"] },

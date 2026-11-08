@@ -31,7 +31,8 @@
       "**Scarce skills** in South Africa include engineering, artisans, ICT, health professions and teaching (Maths and Science).",
       "Many people now work in the **gig economy** (short-term or freelance work) and need entrepreneurship skills.",
       "**Soft skills** (communication, teamwork, problem-solving, adaptability) are valued by all employers."
-    ] }
+    ] },
+    { "type": "example", "title": "Future-proof skills", "problem": "Why are problem-solving and digital skills valuable as technology changes?", "steps": ["Routine tasks are increasingly automated.","Skills that can be transferred stay useful across jobs."], "answer": "They help you adapt as jobs change." }
   ],
   "questions": [
     { "id": "aps-mark", "type": "numeric", "prompt": "Using the APS table, how many points does a mark of 68% earn?", "answer": 5, "tolerance": 0 },

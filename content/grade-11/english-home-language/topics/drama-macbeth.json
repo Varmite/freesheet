@@ -22,6 +22,7 @@
       ["Macduff", "Loyal to Scotland; avenges his family"],
       ["The witches", "Agents of chaos and temptation; speak in riddles and paradox"]
     ] },
+    { "type": "example", "title": "Tracing Macbeth's change", "problem": "Compare Macbeth at the start of the play with Macbeth at the end.", "steps": ["At the start he is a brave, honoured soldier.","After the prophecy and Duncan's murder, he is ruled by fear.","By Act 5, he is a tyrant who feels life is empty."], "answer": "Ambition turns a hero into a tyrant." },
     { "type": "heading", "text": "Themes and imagery" },
     { "type": "list", "items": [
       "**Ambition**: unchecked ambition corrupts and destroys.",
@@ -36,7 +37,8 @@
       ["'Will all great Neptune's ocean wash this blood / Clean from my hand?'", "Macbeth (2.2): overwhelming guilt"],
       ["'Out, damned spot! out, I say!'", "Lady Macbeth (5.1): guilt in her sleepwalking"],
       ["'Life's but a walking shadow'", "Macbeth (5.5): despair; life is meaningless"]
-    ] }
+    ] },
+    { "type": "example", "title": "Blood imagery", "problem": "Explain the significance of blood in Lady Macbeth's sleepwalking scene.", "steps": ["She keeps trying to wash imaginary blood from her hands.","Blood represents guilt.","It contrasts with her earlier belief that 'a little water clears us of this deed'."], "answer": "Guilt cannot be washed away." }
   ],
   "questions": [
     { "id": "setting", "type": "short", "prompt": "In which country is Macbeth set?", "answers": ["scotland"] },

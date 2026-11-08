@@ -64,6 +64,7 @@
       "type": "paragraph",
       "text": "An NPN transistor switches **on** when the voltage at its **base** rises above about **0,7 V**. Then a large current flows from collector to emitter through the output device. When the base voltage is low, the transistor is **off** and the output stops."
     },
+    { "type": "example", "title": "A night light", "problem": "A light-dependent resistor (LDR) and a fixed resistor form a voltage divider that controls a transistor and an LED. Explain why the LED comes on when it gets dark.", "steps": ["In the dark, the LDR's resistance rises sharply.","A larger share of the voltage now appears across the LDR.","When that voltage at the transistor's base is high enough, about 0,7 V, the transistor switches on.","Current flows through the LED."], "answer": "Darkness raises the LDR's voltage, which turns on the transistor and the LED." },
     {
       "type": "heading",
       "text": "Example circuits"

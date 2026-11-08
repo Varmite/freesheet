@@ -25,6 +25,7 @@
       ["Explanation", "Analyse how the evidence proves the point", "He reasons that killing Claudius while praying would send him to heaven, so he overthinks instead of acting."],
       ["Link", "Connect back to the topic", "This delay allows Claudius to plot against him, leading to further deaths."]
     ] },
+    { "type": "example", "title": "Building a PEEL paragraph", "problem": "Write a PEEL paragraph on how Lady Macbeth shows ambition.", "steps": ["Point: she pushes Macbeth to murder.","Evidence: she calls on spirits to 'unsex me here'.","Explain: she rejects gentleness to gain power.","Link: ambition destroys humanity."], "answer": "A complete paragraph follows that four-part pattern." },
     { "type": "heading", "text": "Using quotations" },
     { "type": "list", "items": [
       "Keep quotations **short** and **embed** them in your own sentences.",

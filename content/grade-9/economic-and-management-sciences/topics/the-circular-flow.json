@@ -39,7 +39,8 @@
       "R600 tax goes to government: a leakage.",
       "R400 savings go to the bank (financial market): a leakage.",
       "R7 000 is spent in the goods market: consumer spending flows to businesses."
-    ], "answer": "Income R8 000; leakages R1 000; spending R7 000" }
+    ], "answer": "Income R8 000; leakages R1 000; spending R7 000" },
+    { "type": "example", "title": "Leakages and injections", "problem": "Classify each as a leakage from, or an injection into, the circular flow: household savings, government spending on roads, income tax, exports, imports.", "steps": ["A leakage takes money out of the flow: savings, taxes and imports.","An injection puts money in: investment, government spending and exports."], "answer": "Leakages: savings, income tax and imports. Injections: government spending and exports." }
   ],
   "questions": [
     { "id": "owners", "type": "mcq", "prompt": "Who owns the factors of production in the circular flow?", "options": ["Businesses", "Households", "Government", "Foreign sector"], "answer": 1 },

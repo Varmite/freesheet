@@ -31,6 +31,7 @@
       ["If one bulb fails", "All go out", "The others keep working"],
       ["Battery lasts", "Longer (less current)", "Shorter (more current)"]
     ] },
+    { "type": "example", "title": "Cells in series and parallel", "problem": "You have two 1,5 V cells. What voltage do you get with them in series? In parallel?", "steps": ["In series the voltages add: 1,5 + 1,5 = 3 V.","In parallel the voltage stays the same, at 1,5 V, but the cells last longer."], "answer": "3 V in series; 1,5 V in parallel." },
     { "type": "heading", "text": "Current, voltage and resistance" },
     { "type": "table", "headers": ["Quantity", "Symbol", "Unit", "Measured with"], "rows": [
       ["Current", "I", "Ampere (A)", "Ammeter (in series)"],

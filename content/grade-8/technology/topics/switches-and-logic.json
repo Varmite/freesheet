@@ -27,6 +27,7 @@
     { "type": "list", "items": [
       "**Examples**: a washing machine runs only if the door is closed AND the start button is pressed; a guillotine works only when both hands press buttons (for safety); a bank vault opens only if two managers each turn a key."
     ] },
+    { "type": "example", "title": "A safe press machine", "problem": "A machine must run only when a worker presses both buttons A and B, keeping both hands clear. Show the truth table.", "steps": ["Connect the two switches in series, so current needs both to be closed.","A off, B off: machine off. A on, B off: off. A off, B on: off.","A on, B on: on."], "answer": "This is AND logic: the output is on only when both inputs are on." },
     { "type": "heading", "text": "OR logic: switches in parallel" },
     { "type": "paragraph", "text": "When two switches are connected in **parallel**, the output works when switch A **OR** switch B (or both) is closed." },
     { "type": "table", "caption": "OR truth table", "headers": ["Switch A", "Switch B", "Output (bulb)"], "rows": [
@@ -39,6 +40,7 @@
       "**Examples**: a car's interior light comes on when the driver's door OR the passenger's door is opened; a bus bell rings when any one of several buttons is pressed; a burglar alarm sounds if any window OR door is opened."
     ] },
     { "type": "callout", "label": "Exam tip", "text": "**Series = AND** (all must be on). **Parallel = OR** (any one can be on). Always check the truth table against the circuit." },
+    { "type": "example", "title": "One bell, two doors", "problem": "A bell must ring from either the front-door or the back-door button. How should the buttons be connected?", "steps": ["Either button alone must complete the circuit.","Connecting them in parallel gives two separate paths for the current.","The bell rings when A, or B, or both are pressed."], "answer": "In parallel, which is OR logic." },
     { "type": "heading", "text": "Two-way switching" },
     { "type": "paragraph", "text": "Staircase lights use **two-way switches** (SPDT), so the light can be switched on at the bottom of the stairs and off at the top, or the other way round." }
   ],

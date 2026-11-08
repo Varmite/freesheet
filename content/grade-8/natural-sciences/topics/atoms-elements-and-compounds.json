@@ -49,7 +49,8 @@
       ["Separated by", "Cannot be separated", "Chemical reactions only", "Physical methods (filtering, evaporation, magnets)"],
       ["Examples", "Iron, oxygen gas", "Water, carbon dioxide, table salt (NaCl)", "Salt water, air, sand and iron filings"]
     ] },
-    { "type": "callout", "label": "Common mistake", "text": "Iron filings and sulfur powder stirred together form a **mixture** (a magnet can pull the iron out). When heated, they react to form iron sulfide, a new **compound** that is not magnetic." }
+    { "type": "callout", "label": "Common mistake", "text": "Iron filings and sulfur powder stirred together form a **mixture** (a magnet can pull the iron out). When heated, they react to form iron sulfide, a new **compound** that is not magnetic." },
+    { "type": "example", "title": "Classifying substances", "problem": "Classify: oxygen gas (O₂), carbon dioxide (CO₂), salt water, iron (Fe).", "steps": ["Only one kind of atom means an element: oxygen and iron.","Different atoms chemically joined mean a compound: carbon dioxide.","Substances mixed but not chemically joined form a mixture: salt water can be separated by evaporation."], "answer": "Elements: O₂ and Fe. Compound: CO₂. Mixture: salt water." }
   ],
   "questions": [
     { "id": "nucleus", "type": "mcq", "prompt": "Which particles are found in the nucleus of an atom?", "options": ["Protons and electrons", "Protons and neutrons", "Neutrons and electrons", "Electrons only"], "answer": 1 },

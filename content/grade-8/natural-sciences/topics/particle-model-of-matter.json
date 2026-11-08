@@ -32,6 +32,7 @@
     { "type": "heading", "text": "Diffusion" },
     { "type": "definition", "term": "Diffusion", "text": "The spreading out of particles from an area of high concentration to an area of low concentration, caused by their random movement." },
     { "type": "paragraph", "text": "Diffusion explains why you can smell perfume across a room, or why a drop of food colouring spreads through water. It is fastest in gases, slower in liquids, and happens faster at higher temperatures." },
+    { "type": "example", "title": "Diffusion in hot and cold water", "problem": "A drop of food colouring is put into a glass of hot water and a glass of cold water. In which does the colour spread faster, and why?", "steps": ["Diffusion happens because particles move randomly.","Particles in hot water have more energy and move faster.","Faster particles bump the colouring through the water sooner."], "answer": "It spreads faster in the hot water." },
     { "type": "heading", "text": "Expansion and contraction" },
     { "type": "paragraph", "text": "When a substance is heated, its particles move faster and further apart, so the substance **expands** (its volume increases). When it cools it **contracts**. The particles themselves do NOT get bigger." },
     { "type": "list", "items": [

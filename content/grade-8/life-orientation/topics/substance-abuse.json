@@ -26,6 +26,7 @@
       "Low self-esteem.",
       "Advertising and media that make substances look glamorous."
     ] },
+    { "type": "example", "title": "Finding the real reason", "problem": "Lindiwe starts drinking to fit in with friends. What need is behind this, and what is a healthier way to meet it?", "steps": ["The need is to belong.","A healthier way is to join a club or team, or to spend time with friends who respect her choices."], "answer": "The need to belong, which can be met without alcohol." },
     { "type": "heading", "text": "Effects of substance abuse" },
     { "type": "table", "headers": ["On the individual", "On the family", "On the community"], "rows": [
       ["Health problems and addiction", "Conflict, broken trust and stress", "Crime and violence increase"],
@@ -41,7 +42,8 @@
       "The national **Substance Abuse Helpline**: 0800 12 13 14 (free, 24 hours).",
       "Support groups such as Alcoholics Anonymous and Narcotics Anonymous."
     ] },
-    { "type": "paragraph", "text": "**Healthy alternatives** to substance use include sport, music, art, youth groups, volunteering and spending time with supportive friends." }
+    { "type": "paragraph", "text": "**Healthy alternatives** to substance use include sport, music, art, youth groups, volunteering and spending time with supportive friends." },
+    { "type": "example", "title": "Helping a friend", "problem": "You think a friend is using drugs. What should you do?", "steps": ["Talk to them privately and kindly.","Don't promise to keep it a secret if they are in danger.","Encourage them to speak to a trusted adult or counsellor."], "answer": "Show care and involve a trusted adult." }
   ],
   "questions": [
     { "id": "addiction", "type": "open", "marks": 2, "prompt": "What is addiction?", "memo": "✓ A person feels they cannot cope without a substance (1)\n✓ and keeps using it despite the harm (1)" },

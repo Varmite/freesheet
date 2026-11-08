@@ -24,6 +24,7 @@
       ["Laertes", "Acts quickly on revenge: a foil to Hamlet's hesitation"],
       ["Horatio", "Hamlet's loyal, rational friend"]
     ] },
+    { "type": "example", "title": "Explaining Hamlet's delay", "problem": "Why does Hamlet delay killing Claudius in the prayer scene?", "steps": ["Claudius is praying.","Hamlet fears that if he dies praying, he will go to heaven.","His reasoning shows both his thirst for vengeance and his tendency to overthink."], "answer": "He wants damnation for Claudius, and thinking stops him acting." },
     { "type": "heading", "text": "Themes and imagery" },
     { "type": "list", "items": [
       "**Revenge and justice**: Hamlet, Laertes and Fortinbras all seek revenge for their fathers.",
@@ -39,7 +40,8 @@
       ["'The play's the thing / Wherein I'll catch the conscience of the king.'", "Hamlet (2.2): plan to test Claudius"],
       ["'Alas, poor Yorick! I knew him, Horatio'", "Hamlet (5.1): death levels everyone"]
     ] },
-    { "type": "callout", "label": "Dramatic techniques", "text": "**Soliloquy**: a character alone reveals private thoughts. **Aside**: brief remark to the audience. **Dramatic irony**: the audience knows Claudius is guilty before others do. **Play within a play**: 'The Mousetrap'. **Foil**: Laertes and Fortinbras contrast with Hamlet." }
+    { "type": "callout", "label": "Dramatic techniques", "text": "**Soliloquy**: a character alone reveals private thoughts. **Aside**: brief remark to the audience. **Dramatic irony**: the audience knows Claudius is guilty before others do. **Play within a play**: 'The Mousetrap'. **Foil**: Laertes and Fortinbras contrast with Hamlet." },
+    { "type": "example", "title": "Disease imagery", "problem": "'Something is rotten in the state of Denmark.' How does this link to the play's themes?", "steps": ["'Rotten' suggests decay.","A murder has poisoned the court.","Corruption spreads from the king to the whole country."], "answer": "Moral corruption spreads like disease." }
   ],
   "questions": [
     { "id": "setting", "type": "short", "prompt": "In which country is Hamlet set?", "answers": ["denmark"] },

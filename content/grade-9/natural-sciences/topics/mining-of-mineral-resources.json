@@ -23,6 +23,7 @@
       ["Alluvial", "Minerals are sieved from river gravels and beach sands", "Diamonds"],
       ["Strip mining", "Long strips of overburden are removed and replaced after mining", "Coal"]
     ] },
+    { "type": "example", "title": "Choosing a mining method", "problem": "Coal lies in a thick layer 40 m underground. Gold ore lies in a narrow band 3 km down. Which method suits each?", "steps": ["If the deposit is near the surface, removing what lies on top is cheapest: open-cast mining.","At 3 km it is impossible to remove the rock above, so shafts and tunnels are needed."], "answer": "Open-cast for the coal; deep underground mining for the gold." },
     { "type": "heading", "text": "From ore to product" },
     { "type": "list", "ordered": true, "items": [
       "**Extraction**: ore is blasted and removed from the ground.",
@@ -31,6 +32,7 @@
       "**Refining**: the metal is purified, often by heating to very high temperatures (smelting).",
       "The waste rock is dumped as **mine dumps** and **tailings** (fine waste in slime dams)."
     ] },
+    { "type": "example", "title": "How much gold from the ore?", "problem": "A mine's ore contains 5 g of gold per tonne. How much gold comes from 1 000 tonnes of ore?", "steps": ["Multiply: 5 g × 1 000 = 5 000 g.","Convert: 5 000 g ÷ 1 000 = 5 kg.","Nearly all of the 1 000 tonnes is waste rock, which is why mine dumps are so large."], "answer": "5 kg of gold." },
     { "type": "heading", "text": "Effects of mining" },
     { "type": "table", "headers": ["Positive effects", "Negative effects"], "rows": [
       ["Creates jobs for hundreds of thousands of people", "Dangerous work: rock falls, underground fires, lung diseases such as silicosis and TB"],

@@ -25,6 +25,7 @@
       "**Sundry accounts**: receipts that do not have their own column, such as capital, loans or rent income. The account name is written in the details column next to it."
     ] },
     { "type": "callout", "label": "Exam tip", "text": "On 5 March, R1 850 (CRR) + R450 (receipt R02) = R2 300 was deposited together. That is why R2 300 is written in the Bank column on the last line of that day, while R1 850 and R450 appear in the Analysis of receipts column." },
+    { "type": "example", "title": "Entering a receipt", "problem": "On 5 May, Sipho's Plumbing issues receipt 012 to J. Dube for R1 500 cash for repairs done. How is it entered in the CRJ?", "steps": ["Document: receipt number 012. Day: 5.","Details: the name of the person who paid, J. Dube.","Analysis of receipts and Bank: R1 500, because the money is banked.","Current income: R1 500, because the money was earned by doing work."], "answer": "One line in the CRJ, with R1 500 in the Bank column and R1 500 in the Current income column." },
     { "type": "heading", "text": "Totalling and checking" },
     { "type": "paragraph", "text": "At the end of the month all columns are **totalled**. To check: the total of the **Bank** column must equal the totals of all the other money columns added together (except the analysis column)." },
     { "type": "example", "title": "Checking the totals", "problem": "Check that the CRJ above balances.", "steps": ["Current income + Sundry accounts = 2 300 + 56 200", "= 58 500", "Bank column total = 58 500 ✓"], "answer": "The journal balances." },

@@ -11,6 +11,7 @@
       "An object that **loses** electrons becomes **positively** charged.",
       "Charge that builds up and stays on an object is called **static electricity** (static means not moving)."
     ] },
+    { "type": "example", "title": "Finding the charge", "problem": "An atom has 11 protons and 11 electrons, then loses one electron. What is its charge now?", "steps": ["Each proton is +1 and each electron is −1.","At first: +11 and −11 balance, so the atom is neutral.","After losing one electron: +11 and −10.","Adding them gives +1."], "answer": "The atom now has a charge of +1." },
     { "type": "heading", "text": "Charging by friction" },
     { "type": "paragraph", "text": "When two different insulating materials are rubbed together, electrons are transferred from one to the other. Both objects end up with **equal but opposite** charges." },
     { "type": "example", "title": "Rubbing a plastic ruler with a woollen cloth", "problem": "A plastic ruler is rubbed with a woollen cloth and becomes negatively charged. Explain what happened and state the charge on the cloth.", "steps": [

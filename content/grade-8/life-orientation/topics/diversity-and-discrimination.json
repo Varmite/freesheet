@@ -13,6 +13,7 @@
       ["Discrimination", "Unfair **action or treatment** because of a person's group", "Refusing to pick someone for a team because of their nationality"]
     ] },
     { "type": "callout", "label": "Remember", "text": "Stereotypes are **thoughts**, prejudice is a **feeling**, and discrimination is an **action**. Each can lead to the next." },
+    { "type": "example", "title": "Telling them apart", "problem": "Label: (a) 'All girls are bad at maths.' (b) Disliking someone because of that belief. (c) Refusing a girl a place in the maths club.", "steps": ["(a) A generalised belief: stereotype.","(b) A negative attitude: prejudice.","(c) An unfair action: discrimination."], "answer": "Stereotype, prejudice, discrimination." },
     { "type": "heading", "text": "Forms of discrimination" },
     { "type": "table", "headers": ["Form", "Discrimination based on"], "rows": [
       ["Racism", "Race or skin colour"],
@@ -39,7 +40,8 @@
       "Celebrate days such as **Heritage Day** (24 September), **Human Rights Day** (21 March) and **Freedom Day** (27 April).",
       "Practise **ubuntu**: 'I am because we are' (*umuntu ngumuntu ngabantu*), the idea that we are connected and should treat each other with compassion."
     ] },
-    { "type": "callout", "label": "Nation-building", "text": "Nation-building means working together to create a united, fair society that respects diversity. Sport, music and national symbols (the flag, anthem and coat of arms) help bring people together." }
+    { "type": "callout", "label": "Nation-building", "text": "Nation-building means working together to create a united, fair society that respects diversity. Sport, music and national symbols (the flag, anthem and coat of arms) help bring people together." },
+    { "type": "example", "title": "Including a new learner", "problem": "A new learner who uses a wheelchair cannot reach the school tuck shop. What could learners do?", "steps": ["Ask the learner what would help.","Report the access problem to the school.","Include them in break activities."], "answer": "Ask, report the barrier and include them." }
   ],
   "questions": [
     { "id": "languages", "type": "numeric", "prompt": "How many official languages does South Africa have?", "answer": 12, "tolerance": 0 },

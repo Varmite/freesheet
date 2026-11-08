@@ -13,6 +13,7 @@
       ["Symbol", "Something that stands for an idea", "A dove for peace"],
       ["Imagery", "Language that appeals to the senses", "'golden daffodils'"]
     ] },
+    { "type": "example", "title": "Explaining a metaphor", "problem": "'Hope is a candle in a storm.' Explain the metaphor.", "steps": ["Compare: hope is like a candle.","A candle is small and easily blown out; a storm is powerful.","Effect: hope is fragile but gives light in hard times."], "answer": "Hope is fragile, yet precious in difficulty." },
     { "type": "heading", "text": "Sound devices" },
     { "type": "list", "items": [
       "**Alliteration**: repeated initial consonant sounds: 'beside the lake, beneath the trees'.",
@@ -22,6 +23,7 @@
       "**Rhythm**: the beat of the lines; **enjambment** runs a sentence over a line break; a **caesura** is a pause within a line."
     ] },
     { "type": "passage", "title": "I Wandered Lonely as a Cloud – William Wordsworth (1807; public domain)", "text": "I wandered lonely as a cloud\nThat floats on high o'er vales and hills,\nWhen all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.\n\nContinuous as the stars that shine\nAnd twinkle on the milky way,\nThey stretched in never-ending line\nAlong the margin of a bay:\nTen thousand saw I at a glance,\nTossing their heads in sprightly dance.\n\nThe waves beside them danced; but they\nOut-did the sparkling waves in glee:\nA poet could not but be gay,\nIn such a jocund company:\nI gazed—and gazed—but little thought\nWhat wealth the show to me had brought:\n\nFor oft, when on my couch I lie\nIn vacant or in pensive mood,\nThey flash upon that inward eye\nWhich is the bliss of solitude;\nAnd then my heart with pleasure fills,\nAnd dances with the daffodils." },
+    { "type": "example", "title": "Alliteration and its effect", "problem": "Identify the sound device and effect in 'the silent sea slept softly'.", "steps": ["The repeated 's' sound is alliteration.","It also creates a soft, hushed sound, which suits the calm scene."], "answer": "Alliteration that creates a calm mood." },
     { "type": "heading", "text": "Notes on the poem" },
     { "type": "list", "items": [
       "**Form**: four six-line stanzas, rhyme scheme **ABABCC**, regular rhythm like a gentle dance.",

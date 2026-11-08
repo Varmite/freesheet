@@ -15,8 +15,10 @@
       ["Fear appeal", "Creates anxiety", "'Without this policy, crime will soar.'"],
       ["Card-stacking", "Shows only favourable facts", "Leaving out side effects"]
     ] },
+    { "type": "example", "title": "Naming a technique", "problem": "'Everyone is switching to Zapp. Don't be left behind.' Name the technique.", "steps": ["It urges you to join what others are doing.","This is known as the bandwagon technique."], "answer": "Bandwagon." },
     { "type": "heading", "text": "Euphemism and doublespeak" },
     { "type": "paragraph", "text": "**Doublespeak** deliberately hides the truth: 'rightsizing' or 'restructuring' for firing workers, 'collateral damage' for civilian deaths, 'price adjustment' for a price increase." },
+    { "type": "example", "title": "Seeing through a euphemism", "problem": "A company says it is 'rightsizing the workforce'. What does it mean, and why say it this way?", "steps": ["Plain meaning: people are losing their jobs.","A pleasant phrase hides an unpleasant truth."], "answer": "It is a euphemism for retrenching workers." },
     { "type": "heading", "text": "Manipulating with numbers" },
     { "type": "list", "items": [
       "'Crime down 50%!': from 2 cases to 1?",

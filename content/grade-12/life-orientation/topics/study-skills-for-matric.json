@@ -11,6 +11,7 @@
       "Plan revision in cycles: learn, review after a day, a week and a month (**spaced practice**).",
       "Build in rest, exercise and sleep."
     ] },
+    { "type": "example", "title": "Working backwards from finals", "problem": "Trials are in September and finals in late October. How should you plan?", "steps": ["Mark exam dates.","Finish content early and leave time for past papers."], "answer": "Work back from the exams, leaving final weeks for practice." },
     { "type": "heading", "text": "Effective strategies" },
     { "type": "table", "headers": ["Strategy", "How"], "rows": [
       ["Retrieval practice", "Test yourself without notes; use past papers and flash cards"],
@@ -26,6 +27,7 @@
       ["Application", "Apply, calculate, solve, demonstrate", "Use knowledge in a new situation"],
       ["Analysis and evaluation", "Analyse, compare, critically discuss, evaluate, justify", "Break down information, weigh evidence and give a reasoned judgement"]
     ] },
+    { "type": "example", "title": "Matching marks to depth", "problem": "A question says 'Critically discuss (8 marks)'. How much should you write?", "steps": ["The verb requires judgement with evidence.","Eight marks means several developed points."], "answer": "About four developed points with a conclusion." },
     { "type": "heading", "text": "In the exam" },
     { "type": "list", "ordered": true, "items": [
       "Use reading time to plan: note marks and choose questions where there is a choice.",

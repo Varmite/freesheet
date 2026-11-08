@@ -19,6 +19,7 @@
       ["Character vs society", "A girl defies her community's expectations"],
       ["Character vs nature", "Survivors face a flood"]
     ] },
+    { "type": "example", "title": "Internal or external?", "problem": "Classify: (a) a girl struggles to decide whether to report a friend; (b) a family fights floods.", "steps": ["(a) The struggle is within her mind: internal.","(b) The struggle is with an outside force: external."], "answer": "(a) Internal. (b) External (person against nature)." },
     { "type": "heading", "text": "Characterisation" },
     { "type": "paragraph", "text": "Writers reveal character **directly** (the narrator tells us: 'She was generous') and **indirectly** through speech, actions, thoughts, appearance and how others react. A **protagonist** is the main character; the **antagonist** opposes them. **Round** characters are complex and change (**dynamic**); **flat** characters are simple and stay the same (**static**)." },
     { "type": "heading", "text": "Narrative point of view" },
@@ -28,7 +29,8 @@
       "**Third person omniscient**: an all-knowing narrator who can enter any character's mind."
     ] },
     { "type": "passage", "title": "Practice extract (written for FreeSheet)", "text": "Ayanda had promised herself she would not cry at the station. She kept the promise until the train began to move and she saw her grandmother on the platform, small in her blue coat, waving a handkerchief as though she were directing traffic. Then the tears came, hot and embarrassing, and the man opposite pretended to read his newspaper.\n\nShe had never been further than Mthatha. Now she was going to Johannesburg, to a school with a library bigger than her whole village, and she did not know a single person there. She touched the envelope in her pocket: her grandmother's letter, which she had been told not to open until she arrived." },
-    { "type": "callout", "label": "Exam tip", "text": "In contextual questions, refer to the extract AND to the rest of the novel. When asked about character, give the trait (an adjective) and then the evidence." }
+    { "type": "callout", "label": "Exam tip", "text": "In contextual questions, refer to the extract AND to the rest of the novel. When asked about character, give the trait (an adjective) and then the evidence." },
+    { "type": "example", "title": "Effect of an omniscient narrator", "problem": "A narrator tells us what several characters secretly think. What type is this, and what is the effect?", "steps": ["Knowing everyone's thoughts means omniscient.","Readers understand more than any one character does."], "answer": "Omniscient, giving a broad view." }
   ],
   "questions": [
     { "id": "climax", "type": "short", "prompt": "What is the turning point of greatest tension in a plot called?", "answers": ["climax", "the climax"] },

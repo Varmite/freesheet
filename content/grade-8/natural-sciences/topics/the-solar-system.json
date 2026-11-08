@@ -30,9 +30,11 @@
       ["Earth orbits (revolves around) the sun", "About 365¼ days", "One year; together with the tilt of the axis, the seasons"],
       ["Moon orbits the Earth", "About 27,3 days (29,5 days from one full moon to the next)", "Phases of the moon"]
     ] },
+    { "type": "example", "title": "Mass and weight on the moon", "problem": "An astronaut has a mass of 60 kg. Gravity on Earth is about 10 N per kg, and on the moon it is one-sixth of that. Find the astronaut's weight in both places.", "steps": ["Weight = mass × gravity.","On Earth: 60 × 10 = 600 N.","On the moon: 600 ÷ 6 = 100 N.","Mass stays 60 kg, because the amount of matter does not change."], "answer": "600 N on Earth and 100 N on the moon, with the same mass." },
     { "type": "heading", "text": "Phases of the moon" },
     { "type": "paragraph", "text": "The moon does not produce its own light; it reflects light from the sun. Half of the moon is always lit by the sun, but as it orbits the Earth we see different amounts of the lit half. The sequence is: new moon → waxing crescent → first quarter → waxing gibbous → **full moon** → waning gibbous → last quarter → waning crescent → new moon." },
     { "type": "callout", "label": "Remember", "text": "The same side of the moon always faces the Earth, because the moon spins once on its axis in the same time that it takes to orbit the Earth once." },
+    { "type": "example", "title": "Predicting the next full moon", "problem": "There is a full moon on 1 March. About when is the next one?", "steps": ["The moon takes about 29,5 days to go through all its phases.","1 March + 29,5 days takes us to about 30 March."], "answer": "Around 30 or 31 March." },
     { "type": "heading", "text": "Eclipses and tides" },
     { "type": "table", "headers": ["Event", "Order in line", "What we see"], "rows": [
       ["Solar eclipse", "Sun – Moon – Earth", "The moon's shadow falls on Earth and blocks the sun (at new moon). Never look directly at the sun."],

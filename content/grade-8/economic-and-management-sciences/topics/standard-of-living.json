@@ -19,6 +19,7 @@
       ["Health", "Higher life expectancy, lower infant mortality"],
       ["Education", "Higher literacy rates and more years of schooling"]
     ] },
+    { "type": "example", "title": "GDP per person", "problem": "A country's GDP is R7 000 billion and its population is 62 million. Calculate GDP per person.", "steps": ["Write both in full: R7 000 000 000 000 and 62 000 000 people.","Divide GDP by population: R7 000 000 000 000 ÷ 62 000 000 = R112 903.","Remember that this is an average: it does not show how evenly the income is shared."], "answer": "About R112 903 per person." },
     { "type": "heading", "text": "Poverty" },
     { "type": "definition", "term": "Poverty", "text": "A situation in which people do not have enough income or resources to meet their basic needs." },
     { "type": "list", "items": [

@@ -16,6 +16,7 @@
       ["Cable-stayed bridge", "Cables run directly from tall towers (pylons) to the deck in a fan or harp shape", "Long spans; modern (Nelson Mandela Bridge in Johannesburg)"]
     ] },
     { "type": "callout", "label": "Remember", "text": "A **cantilever** is a beam fixed at one end only, like a diving board or a balcony. The top is in tension and the bottom in compression." },
+    { "type": "example", "title": "Choosing a bridge type", "problem": "A wide, deep river with busy shipping needs a long crossing with no piers in the water. Which type is best: beam, arch or suspension?", "steps": ["A beam bridge needs piers at short intervals, which would block ships.","An arch has limited span and needs firm banks.","A suspension bridge spans very long distances, with towers only near the banks."], "answer": "A suspension bridge." },
     { "type": "heading", "text": "Forces in bridges" },
     { "type": "list", "items": [
       "**Compression**: pillars, arches, towers and the top of beams.",

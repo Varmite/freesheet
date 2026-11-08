@@ -7,6 +7,7 @@
     { "type": "heading", "text": "What is urbanisation?" },
     { "type": "definition", "term": "Urbanisation", "text": "The increase in the percentage of a country's population living in towns and cities." },
     { "type": "paragraph", "text": "More than half of the world's people now live in urban areas. In South Africa about **two-thirds** of people live in towns and cities. Gauteng, the smallest province by area, has the largest population." },
+    { "type": "example", "title": "Calculating the level of urbanisation", "problem": "A country has 60 million people, 40 million of whom live in cities. What percentage is urbanised?", "steps": ["Divide urban population by total: 40 ÷ 60 = 0,667.","Multiply by 100: 66,7%."], "answer": "About 66,7%." },
     { "type": "heading", "text": "Push and pull factors" },
     { "type": "table", "headers": ["Push factors (from rural areas)", "Pull factors (to cities)"], "rows": [
       ["Few jobs, low wages", "More jobs and higher wages"],
@@ -16,6 +17,7 @@
       ["Conflict or violence", "Family members already living in the city"]
     ] },
     { "type": "definition", "term": "Rural–urban migration", "text": "The movement of people from the countryside to towns and cities. It is the main cause of urbanisation, together with natural increase (more births than deaths) in cities." },
+    { "type": "example", "title": "Sorting push and pull", "problem": "Classify: drought on the farm, jobs in town, few schools in the village, better hospitals in town.", "steps": ["Push factors drive people away from rural areas: drought and few schools.","Pull factors attract people to cities: jobs and better hospitals."], "answer": "Push: drought, few schools. Pull: jobs, better hospitals." },
     { "type": "heading", "text": "Land use in cities" },
     { "type": "table", "headers": ["Zone", "Description"], "rows": [
       ["Central Business District (CBD)", "The centre: offices, banks, shops, government buildings; tall buildings; very high land values; busy traffic"],

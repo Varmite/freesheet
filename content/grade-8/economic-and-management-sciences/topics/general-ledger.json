@@ -18,6 +18,7 @@
       ["Liabilities (e.g. Loan)", "Credit side", "Debit side", "Credit side"]
     ] },
     { "type": "callout", "label": "Memory aid", "text": "**DEAD CLIC**: **D**ebit increases **E**xpenses, **A**ssets and **D**rawings; **C**redit increases **L**iabilities, **I**ncome and **C**apital." },
+    { "type": "example", "title": "Debit and credit for one transaction", "problem": "A business pays R2 000 rent from its bank account. Which account is debited and which is credited?", "steps": ["Rent is an expense, and expenses increase on the debit side: debit Rent R2 000.","Bank is an asset that is decreasing, and assets decrease on the credit side: credit Bank R2 000.","Check: one debit and one credit of the same amount."], "answer": "Debit Rent R2 000; credit Bank R2 000." },
     { "type": "heading", "text": "Posting from the journals" },
     { "type": "list", "items": [
       "**CRJ**: the Bank total is **debited** to the Bank account (money comes in). Each other column total is **credited** to its account (e.g. Current income Cr). Each sundry item is credited separately (e.g. Capital Cr, Loan Cr).",
@@ -44,7 +45,8 @@
       ["Stationery", "320", ""],
       ["Telephone", "680", ""],
       ["Total", "58 500", "58 500"]
-    ] }
+    ] },
+    { "type": "example", "title": "Drawing up a Trial Balance", "problem": "Balances: Capital R50 000, Bank R30 000, Equipment R25 000, Rent R3 000, Current income R8 000. Show that the Trial Balance balances.", "steps": ["Debit side (assets and expenses): Bank R30 000 + Equipment R25 000 + Rent R3 000 = R58 000.","Credit side (capital and income): Capital R50 000 + Current income R8 000 = R58 000.","The two totals are equal."], "answer": "Both sides total R58 000, so the Trial Balance balances." }
   ],
   "questions": [
     { "id": "left", "type": "short", "prompt": "What is the left-hand side of a ledger account called?", "answers": ["debit", "debit side", "dr"] },

@@ -14,6 +14,7 @@
       ["Centre line", "Thin, long dash and short dash", "Centre of circles and symmetrical shapes"],
       ["Dimension line", "Thin with arrowheads at both ends", "Shows measurements"]
     ] },
+    { "type": "example", "title": "Choosing the right line", "problem": "Which type of line do you use for (a) the visible edge of a box, (b) an edge hidden behind it, (c) the centre of a hole, (d) your first light guide lines?", "steps": ["(a) Visible edges are thick, continuous outlines.","(b) Hidden edges are short dashes.","(c) Centres are long-and-short chain lines.","(d) Construction lines are thin and faint."], "answer": "Outline, hidden detail, centre line and construction line." },
     { "type": "heading", "text": "Pictorial (3D) drawings" },
     { "type": "table", "headers": ["Drawing", "How it is drawn"], "rows": [
       ["**Oblique**", "The front view is drawn flat, true shape and size. Depth lines are drawn at **45°** to the horizontal, often at half their real length (cabinet oblique)."],

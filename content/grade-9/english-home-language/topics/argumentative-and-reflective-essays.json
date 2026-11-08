@@ -18,6 +18,7 @@
       "**Conclusion**: restate your position in new words and end with a strong final thought or call to action."
     ] },
     { "type": "callout", "label": "Remember", "text": "A useful pattern for body paragraphs is **PEEL**: **P**oint, **E**vidence, **E**xplanation, **L**ink (back to your thesis)." },
+    { "type": "example", "title": "A strong argument paragraph", "problem": "Topic: 'School uniforms should be compulsory.' Write one paragraph that argues for the point.", "steps": ["Topic sentence: state one reason.","Evidence or explanation.","Link back to your position."], "answer": "'Uniforms reduce pressure on learners. When everyone dresses alike, nobody is judged by the brands they can afford. Schools should therefore keep them.'" },
     { "type": "heading", "text": "Linking words (discourse markers)" },
     { "type": "table", "headers": ["Purpose", "Linking words"], "rows": [
       ["Adding a point", "furthermore, moreover, in addition, also"],
@@ -27,6 +28,7 @@
       ["Concluding", "in conclusion, to sum up, ultimately"]
     ] },
     { "type": "passage", "title": "Example argumentative paragraph (original)", "text": "Firstly, a longer school day would leave learners exhausted rather than educated. Research on adolescent sleep shows that teenagers already struggle to get the eight to ten hours they need. Adding another hour of lessons would mean less time for homework, chores and rest, so learners would arrive at school even more tired. Therefore, extending the school day is likely to harm, not help, learners' results." },
+    { "type": "example", "title": "Choosing a linking word", "problem": "Join with a suitable word: 'Cellphones help research. They distract learners.'", "steps": ["The second idea contrasts with the first.","Contrast words include however, although and on the other hand."], "answer": "'Cellphones help research; however, they distract learners.'" },
     { "type": "heading", "text": "The reflective essay" },
     { "type": "list", "items": [
       "Written in the **first person**, often in the past tense for events and present tense for reflections.",

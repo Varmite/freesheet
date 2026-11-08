@@ -15,6 +15,7 @@
       ["Thermosetting plastics", "Melamine (plates, kitchen tops), Bakelite (pot handles, plugs), epoxy resin", "Set permanently when heated once; heat resistant; cannot be remoulded"]
     ] },
     { "type": "callout", "label": "Remember", "text": "**Thermo**plastics soften with heat again and again (like chocolate). **Thermosetting** plastics are set once and then char or burn if heated again (like baking a cake)." },
+    { "type": "example", "title": "Choosing a material", "problem": "You are making an outdoor bench that must survive rain and sun and be cheap to fix. Compare untreated pine, recycled plastic planks and cardboard.", "steps": ["List the need: weather resistance, strength and low cost.","Cardboard fails, as it weakens when wet.","Untreated pine is strong but rots outdoors without protection.","Recycled plastic does not rot and uses waste."], "answer": "Recycled plastic planks suit it best. Treated wood would be the alternative." },
     { "type": "heading", "text": "Processing methods" },
     { "type": "table", "headers": ["Process", "Methods and tools"], "rows": [
       ["Measuring and marking", "Steel rule, try square, marking gauge, scriber (for metal), pencil (for wood)"],
@@ -29,6 +30,7 @@
       ["Iron and steel", "Rust (needs oxygen and water)", "Paint, oil, galvanising with zinc, plastic coating, using stainless steel"],
       ["Plastics", "Become brittle and fade in UV sunlight", "UV stabilisers in the plastic, paint, keeping them shaded"]
     ] },
+    { "type": "example", "title": "Why paint a steel gate?", "problem": "Explain how a coat of paint stops a steel gate rusting.", "steps": ["Rust forms when iron reacts with oxygen and water.","Paint forms a barrier that keeps air and moisture away from the metal.","If the paint scratches, rust can start there, so it needs to be repaired."], "answer": "Paint stops air and water from reaching the steel." },
     { "type": "heading", "text": "Plastics and the environment" },
     { "type": "paragraph", "text": "Most plastics are made from **oil** (a non-renewable resource) and take hundreds of years to break down, polluting land and oceans. Plastics are marked with a **recycling code** (a number from 1 to 7 inside a triangle of arrows) so they can be sorted. Recycled PET bottles can be made into fibres for clothing, carpets and new bottles." },
     { "type": "list", "items": [

@@ -24,6 +24,7 @@
       "(b) She thought clean water for her family and neighbours was more important than the machine; she was willing to sacrifice for others.",
       "(c) Her example inspired others: neighbours followed her lead and also installed tanks."
     ], "answer": "Use facts from the text for literal questions; give reasons supported by the text for inferential questions." },
+    { "type": "example", "title": "Literal or inferential?", "problem": "Passage: 'Naledi slammed her bag down and did not greet anyone.' Question 1: What did Naledi slam down? Question 2: How was she feeling?", "steps": ["Question 1 is answered directly from the text: this is literal.","Question 2 must be worked out from clues: this is inferential.","The clues are slamming the bag and not greeting."], "answer": "Q1: her bag. Q2: she was angry or upset." },
     { "type": "heading", "text": "Answering techniques" },
     { "type": "list", "items": [
       "Read the questions **before** you read the passage closely, so you know what to look for.",

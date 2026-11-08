@@ -22,6 +22,7 @@
       ["Mixed economy", "A combination: private businesses produce most goods, but the **government** provides public services, regulates markets and redistributes income", "Combines freedom and choice with protection for the poor", "High taxes; possible government inefficiency or corruption"]
     ] },
     { "type": "callout", "label": "Key idea", "text": "**South Africa has a mixed economy.** Most businesses are privately owned, but the government provides schools, hospitals, social grants and infrastructure, owns state-owned enterprises such as Eskom and Transnet, and makes laws to protect workers and consumers." },
+    { "type": "example", "title": "Identify the system", "problem": "In a country, the government decides what factories make and sets all prices. In another, private businesses decide, and prices come from supply and demand. Which is which?", "steps": ["Who decides what is produced? In the first country, the government.","A system where the state plans production and prices is a **planned (command) economy**.","Private owners and market prices are the features of a **market economy**."], "answer": "The first is a planned economy and the second is a market economy." },
     { "type": "heading", "text": "Features of the market economy" },
     { "type": "list", "items": [
       "**Private ownership** of property and businesses.",

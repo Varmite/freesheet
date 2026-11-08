@@ -36,7 +36,8 @@
       "The reason for payment",
       "Signature of the person receiving the money"
     ] },
-    { "type": "example", "title": "Choosing the correct source document", "problem": "Which source document is used for each transaction? (a) The owner contributes R20 000 cash as capital. (b) The business pays the telephone account by EFT. (c) Cash for services rendered in a day is rung up on the till.", "steps": ["(a) Receipt (duplicate) issued to the owner.", "(b) EFT payment notice / proof of payment.", "(c) Cash register roll."], "answer": "Receipt; EFT notice; CRR" }
+    { "type": "example", "title": "Choosing the correct source document", "problem": "Which source document is used for each transaction? (a) The owner contributes R20 000 cash as capital. (b) The business pays the telephone account by EFT. (c) Cash for services rendered in a day is rung up on the till.", "steps": ["(a) Receipt (duplicate) issued to the owner.", "(b) EFT payment notice / proof of payment.", "(c) Cash register roll."], "answer": "Receipt; EFT notice; CRR" },
+    { "type": "example", "title": "Spot what is missing", "problem": "A receipt reads: 'No. 045. Received from T. Mokoena the sum of R350.' It is signed by the cashier. What important details are missing?", "steps": ["Check it against what a receipt must show: number, date, payer, amount, reason and signature.","There is a number, payer, amount and signature.","There is no date, and no reason for the payment."], "answer": "The date and the reason for the payment are missing." }
   ],
   "questions": [
     { "id": "define", "type": "open", "marks": 2, "prompt": "What is a source document?", "memo": "✓ The original written or electronic proof (1)\n✓ that a transaction has taken place (1)" },

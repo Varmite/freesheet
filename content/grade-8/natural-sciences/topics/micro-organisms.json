@@ -42,7 +42,8 @@
     { "type": "list", "items": [
       "Food is preserved by keeping microbes from growing: refrigeration (cold), freezing, drying, salting, adding sugar or vinegar, canning and pasteurisation (heating milk to kill bacteria).",
       "Personal hygiene, clean water and proper sanitation prevent many diseases."
-    ] }
+    ] },
+    { "type": "example", "title": "Breaking the chain of infection", "problem": "A village's river is contaminated with cholera bacteria. Explain how boiling water protects people.", "steps": ["Cholera is spread when people swallow water containing the bacteria.","Boiling water for a few minutes kills the bacteria.","With no live bacteria in the water, the chain of infection is broken."], "answer": "Boiling kills the bacteria, so the water can no longer spread cholera." }
   ],
   "questions": [
     { "id": "smallest", "type": "mcq", "prompt": "Which group of micro-organisms is the smallest and can only reproduce inside a host cell?", "options": ["Bacteria", "Fungi", "Viruses", "Protists"], "answer": 2 },

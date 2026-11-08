@@ -12,6 +12,7 @@
       ["Water scarcity", "Poor hygiene, dehydration, food insecurity", "Drought, leaks, waste, growing demand"],
       ["Climate change", "Heatwaves, floods, droughts, food shortages", "Greenhouse gases from burning fossil fuels, deforestation"]
     ] },
+    { "type": "example", "title": "Linking the environment and health", "problem": "Rubbish piles up next to a stream. How can this affect people's health?", "steps": ["Waste contaminates the water.","Standing water and waste attract flies and rats.","Diseases such as diarrhoea can spread."], "answer": "Contamination and pests spread disease." },
     { "type": "heading", "text": "Social responsibility" },
     { "type": "paragraph", "text": "**Social responsibility** means acting in ways that benefit your community and society, not just yourself. Examples: volunteering at a soup kitchen, tutoring younger learners, organising a clean-up, caring for the elderly, and respecting public property." },
     { "type": "heading", "text": "Taking action" },
@@ -24,7 +25,8 @@
     ] },
     { "type": "callout", "label": "The law", "text": "Section 24 of the Constitution gives everyone the right to an environment that is not harmful to their health or well-being, and requires the environment to be protected for future generations." },
     { "type": "heading", "text": "Planning a community project" },
-    { "type": "list", "ordered": true, "items": ["Identify a problem (e.g. litter near the school).", "Research its causes and effects.", "Set a SMART goal.", "Plan actions, resources and responsibilities.", "Carry out the project.", "Evaluate the results and share them."] }
+    { "type": "list", "ordered": true, "items": ["Identify a problem (e.g. litter near the school).", "Research its causes and effects.", "Set a SMART goal.", "Plan actions, resources and responsibilities.", "Carry out the project.", "Evaluate the results and share them."] },
+    { "type": "example", "title": "Project plan", "problem": "Plan a clean-up of a local park.", "steps": ["Identify the need and get permission.","Assign tasks and find equipment.","Do the work, then evaluate the results."], "answer": "Need, plan, action, evaluate." }
   ],
   "questions": [
     { "id": "cholera", "type": "mcq", "prompt": "Cholera is mainly spread by…", "options": ["air pollution", "polluted water", "noise", "sunlight"], "answer": 1 },

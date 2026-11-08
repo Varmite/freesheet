@@ -40,6 +40,7 @@
       "Total costs = R1 500 + 600 × R3 = R1 500 + R1 800 = R3 300",
       "Profit = R4 800 − R3 300 = R1 500"
     ], "answer": "(a) 300 vetkoek (b) R1 500 profit" },
+    { "type": "example", "title": "Working out a month's profit", "problem": "A muffin seller sells 200 muffins at R12 each. Ingredients cost R5 per muffin and the stall costs R500 a month. Calculate the profit.", "steps": ["Income: 200 × R12 = R2 400.","Costs that depend on sales: 200 × R5 = R1 000.","Total costs: R1 000 + R500 = R1 500.","Profit: R2 400 − R1 500 = R900."], "answer": "A profit of R900 for the month." },
     { "type": "heading", "text": "Sources of finance" },
     { "type": "list", "items": [
       "**Own savings** (owner's capital).",

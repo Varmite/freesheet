@@ -21,6 +21,7 @@
       ["Inclusive language", "'we', 'us', 'our'"]
     ] },
     { "type": "callout", "label": "Delivery tips", "text": "Make eye contact, speak clearly and not too fast, vary your tone, use cue cards rather than reading every word, and stand confidently." },
+    { "type": "example", "title": "A strong opening", "problem": "Improve: 'Today I will talk about littering.'", "steps": ["Grab attention with a question, fact or image.","Address the audience."], "answer": "'Fellow learners, look at the ground around you. Is this the school we are proud of?'" },
     { "type": "heading", "text": "Formal reports" },
     { "type": "paragraph", "text": "A **formal report** gives factual information about an investigation or event to a specific reader (e.g. a report to the principal on littering at school). It is objective, uses formal language and is often written in the passive voice and the past tense." },
     { "type": "table", "headers": ["Section", "Content"], "rows": [
@@ -40,6 +41,7 @@
       "**Body**: further details in order of importance (the inverted pyramid), with quotations from witnesses or experts.",
       "Written in the **third person**, objectively, in short paragraphs."
     ] },
+    { "type": "example", "title": "Writing a lead paragraph", "problem": "Facts: a fire, Monday night, Khayelitsha, 40 homes, no injuries. Write a lead.", "steps": ["A lead answers who, what, when and where.","Put the most important fact first."], "answer": "'Forty homes were destroyed by a fire in Khayelitsha on Monday night. No injuries were reported.'" },
     { "type": "heading", "text": "Formal letters" },
     { "type": "list", "items": [
       "**Letter to the press**: written to a newspaper editor to express an opinion on a public issue. Begin 'Dear Editor' or 'Sir/Madam', state your view and reasons, and end 'Yours faithfully' with your name and town.",

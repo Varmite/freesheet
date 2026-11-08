@@ -12,6 +12,7 @@
       ["Rights", "Freedom of speech, press and religion emphasised", "Strict control and censorship; secret police"],
       ["Alliance", "NATO (1949)", "Warsaw Pact (1955)"]
     ] },
+    { "type": "example", "title": "Why 'cold'?", "problem": "Explain why this conflict is called a 'cold' war.", "steps": ["The USA and USSR never fought each other directly.","They competed through arms, propaganda and spying.","Fighting took place in other countries, in proxy wars."], "answer": "There was no direct fighting between the two superpowers." },
     { "type": "heading", "text": "The nuclear age and the arms race" },
     { "type": "paragraph", "text": "The USA used atomic bombs in 1945. In **1949** the USSR tested its own. Both sides then built thousands of nuclear weapons, including hydrogen bombs and long-range missiles. This **arms race** led to the idea of **MAD (Mutually Assured Destruction)**: if one side attacked, the other would strike back and both would be destroyed, so neither dared to start a nuclear war." },
     { "type": "paragraph", "text": "The two powers also competed in the **space race**: the USSR launched **Sputnik**, the first satellite, in 1957 and sent Yuri Gagarin into space in 1961; the USA landed Neil Armstrong on the moon in **1969**." },
@@ -24,6 +25,7 @@
       ["**Cuban Missile Crisis**", "October 1962", "The USSR placed nuclear missiles in Cuba, close to the USA. After 13 tense days, Khrushchev agreed to remove them, and the USA secretly agreed to remove its missiles from Turkey. The world came close to nuclear war"],
       ["Vietnam War", "1955–1975", "The USA fought to stop communist North Vietnam taking over South Vietnam, but withdrew; Vietnam was united under communism"]
     ] },
+    { "type": "example", "title": "The Cuban Missile Crisis in steps", "problem": "Explain how the Cuban Missile Crisis of October 1962 unfolded and ended.", "steps": ["The USSR placed nuclear missiles in Cuba, close to the USA.","The USA blockaded Cuba and demanded their removal.","The USSR withdrew them, and the USA promised not to invade Cuba and later removed missiles from Turkey."], "answer": "The superpowers came close to nuclear war, then compromised." },
     { "type": "heading", "text": "The Cold War in Africa" },
     { "type": "paragraph", "text": "Both superpowers supported governments and movements in newly independent African countries. In **Angola** (from 1975), the MPLA government was supported by the USSR and Cuban troops, while UNITA was supported by the USA and apartheid South Africa. The battle of **Cuito Cuanavale** (1987–1988) led to talks that brought **Namibia's independence** in 1990." },
     { "type": "callout", "label": "Link to South Africa", "text": "The apartheid government claimed it was protecting South Africa from communism (the *swart gevaar* and *rooi gevaar*: 'black danger' and 'red danger') and used this to win support from Western countries. When the Cold War ended, this argument lost its power, which helped bring about the negotiations of 1990." },

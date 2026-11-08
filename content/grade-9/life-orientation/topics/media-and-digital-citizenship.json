@@ -24,6 +24,7 @@
       ["Is it designed to make me angry or afraid?", "Shocking headlines (clickbait) are often misleading"],
       ["Could the image be edited or AI-generated?", "Do a reverse image search"]
     ] },
+    { "type": "example", "title": "Checking a viral post", "problem": "A post says, 'Share now! Schools close tomorrow!' with no source. How do you check it?", "steps": ["Look for an official source.","Check the date and whether other reliable sites report it.","Be suspicious of urgent demands to share."], "answer": "Check the Department of Education or your school before believing it." },
     { "type": "heading", "text": "Online safety and privacy" },
     { "type": "list", "items": [
       "Never share passwords, your home address, ID number or bank details.",
@@ -34,6 +35,7 @@
       "Think before sharing images: once something is online you lose control of it."
     ] },
     { "type": "definition", "term": "Digital footprint", "text": "The permanent record of everything you do online: posts, photos, comments, likes and searches. Future employers and universities may look at it." },
+    { "type": "example", "title": "Safe or unsafe?", "problem": "A new online 'friend' asks for your address and a photo. What should you do?", "steps": ["Never share personal details with strangers.","Block and report.","Tell a trusted adult."], "answer": "Do not reply; block, report and tell an adult." },
     { "type": "heading", "text": "Cyberbullying and the law" },
     { "type": "paragraph", "text": "Cyberbullying, threats and sharing intimate images without consent are crimes under the **Cybercrimes Act** (2020). If you are targeted: do not reply, take **screenshots**, **block** and **report** the account, and tell a trusted adult." },
     { "type": "callout", "label": "Digital citizenship", "text": "A good digital citizen is respectful online, thinks before posting, checks facts before sharing, protects their privacy, stands up against cyberbullying and balances screen time with offline activities." }

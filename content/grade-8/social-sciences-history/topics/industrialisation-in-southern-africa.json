@@ -9,6 +9,7 @@
     { "type": "heading", "text": "The labour problem" },
     { "type": "paragraph", "text": "Plantation owners needed many workers for the hard work of cutting cane. Most Zulu men did not want to work on plantations for low wages: they had their own land, cattle and crops and did not need wage work. Planters therefore looked to another British colony, **India**." },
     { "type": "definition", "term": "Indentured labour", "text": "A system in which a worker signs a contract (an indenture) to work for a particular employer for a fixed number of years, usually five, in return for passage, food, housing and low wages." },
+    { "type": "example", "title": "Why indentured labour?", "problem": "Why did Natal's sugar planters bring workers from India from 1860?", "steps": ["Sugar needs a lot of hard work for low pay.","Most Zulu men had land and cattle and did not need to work on plantations.","India was under British rule, and it had poor people willing to sign contracts."], "answer": "Planters could not find enough local workers, so they imported indentured workers." },
     { "type": "heading", "text": "Indentured labourers from India" },
     { "type": "list", "items": [
       "The first ship, the **Truro**, arrived in Durban on **16 November 1860**.",
@@ -28,6 +29,7 @@
     { "type": "passage", "title": "Source B: A summary of historians' views (written for this lesson)", "text": "The indenture system was described by some critics at the time as 'a new system of slavery'. Workers were tied to one employer and could be punished for leaving, yet many also saw it as a chance to escape debt and hunger in India and build a new life." },
     { "type": "heading", "text": "Mohandas Gandhi and passive resistance" },
     { "type": "paragraph", "text": "**Mohandas Gandhi**, a young lawyer, arrived in Natal in **1893**. After being thrown off a first-class train compartment at Pietermaritzburg because of his skin colour, he began to fight discrimination. In 1894 he helped found the **Natal Indian Congress**. He developed **satyagraha** (passive resistance): non-violent refusal to obey unjust laws. In 1913 he led a strike and march of thousands of Indian workers against a £3 tax on former indentured labourers, which was later abolished." },
+    { "type": "example", "title": "What passive resistance looks like", "problem": "Using Gandhi's campaign in the Transvaal, explain what passive resistance is.", "steps": ["Passive resistance means disobeying an unjust law peacefully and accepting the punishment.","A law required Indians to carry registration certificates.","In 1908, protesters publicly burned their certificates and many went to jail."], "answer": "Peaceful law-breaking to show a law is unjust." },
     { "type": "heading", "text": "Legacy" },
     { "type": "paragraph", "text": "The sugar industry is still important to KwaZulu-Natal's economy, and Durban has one of the largest communities of Indian descent outside India. Indian South Africans have contributed greatly to the country's culture, business and the struggle for democracy." }
   ],

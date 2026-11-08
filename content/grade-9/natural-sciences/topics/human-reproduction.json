@@ -29,6 +29,7 @@
     ] },
     { "type": "heading", "text": "The menstrual cycle" },
     { "type": "paragraph", "text": "The **menstrual cycle** lasts about **28 days**. Each month the uterus lining thickens and an egg is released from an ovary (**ovulation**, around day 14). If the egg is not fertilised, the lining breaks down and leaves the body as blood through the vagina; this is **menstruation** (a period), lasting about 3 to 7 days." },
+    { "type": "example", "title": "Timing in a 28-day cycle", "problem": "In a typical 28-day cycle, when does menstruation start, and around when is an egg released?", "steps": ["Day 1 is the first day of bleeding, when the uterus lining is shed.","The lining then rebuilds.","Ovulation, the release of an egg from an ovary, happens around the middle of the cycle.","Cycles vary from person to person, especially during the teenage years."], "answer": "Menstruation starts on day 1 and ovulation occurs at about day 14." },
     { "type": "heading", "text": "Fertilisation and pregnancy" },
     { "type": "list", "ordered": true, "items": [
       "During sexual intercourse, sperm are deposited in the vagina and swim through the uterus to the oviducts.",
@@ -39,6 +40,7 @@
       "After about 8 weeks the embryo is called a **foetus**. Birth takes place after about **40 weeks** (9 months)."
     ] },
     { "type": "callout", "label": "Important", "text": "Alcohol, smoking and drugs cross the placenta and can harm the baby. Drinking alcohol in pregnancy can cause **foetal alcohol syndrome**, which affects the child's brain and growth for life." },
+    { "type": "example", "title": "From fertilisation to implantation", "problem": "Put these in the correct order: the embryo implants in the uterus wall; a sperm joins an egg in the oviduct; the zygote divides as it moves along the oviduct.", "steps": ["Fertilisation comes first and happens in the oviduct, forming a zygote.","The zygote divides into a ball of cells as it travels.","It then attaches to the thick uterus lining."], "answer": "Fertilisation → cell division in the oviduct → implantation in the uterus." },
     { "type": "heading", "text": "Contraception and sexual health" },
     { "type": "table", "headers": ["Method", "How it works", "Protects against STIs?"], "rows": [
       ["Abstinence", "No sexual intercourse", "Yes, completely"],

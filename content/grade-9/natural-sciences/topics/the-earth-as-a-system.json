@@ -37,7 +37,8 @@
     { "type": "heading", "text": "The rock cycle" },
     { "type": "paragraph", "text": "Rocks are constantly changed from one type into another over millions of years:\n\n**weathering and erosion → transport → deposition → compaction and cementation (sedimentary rock) → heat and pressure (metamorphic rock) → melting (magma) → cooling (igneous rock) → uplift and weathering again**" },
     { "type": "definition", "term": "Weathering", "text": "The breaking down of rock in place by the weather, plant roots or chemicals." },
-    { "type": "definition", "term": "Erosion", "text": "The wearing away and carrying away of rock fragments by water, wind or ice." }
+    { "type": "definition", "term": "Erosion", "text": "The wearing away and carrying away of rock fragments by water, wind or ice." },
+    { "type": "example", "title": "A grain of sand's journey", "problem": "Granite in a mountain ends up as quartzite. Describe the steps and name the rock types.", "steps": ["Granite is **igneous**. Weathering breaks it into sand, which rivers carry to the sea.","Layers of sand are compacted and cemented into sandstone, a **sedimentary** rock.","Great heat and pressure deep underground change the sandstone into quartzite, a **metamorphic** rock."], "answer": "Igneous → sediment → sedimentary → metamorphic." }
   ],
   "questions": [
     { "id": "hydro", "type": "short", "prompt": "Which sphere includes all the water on Earth?", "answers": ["hydrosphere", "the hydrosphere"] },

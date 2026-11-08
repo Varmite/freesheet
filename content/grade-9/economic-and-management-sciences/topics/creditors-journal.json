@@ -22,6 +22,7 @@
       ["", "30", "", "", "19 350", "18 500", "350", "500"]
     ] },
     { "type": "paragraph", "text": "Check: Trading stock + Stationery + Sundry = 18 500 + 350 + 500 = 19 350 = Creditors control ✓." },
+    { "type": "example", "title": "Entering a credit purchase", "problem": "On 8 June a shop buys trading stock for R3 000 on credit from Mia Traders, invoice 77. How is it recorded?", "steps": ["The source document is the supplier's invoice, number 77.","Enter the day, the invoice number and the creditor's name, Mia Traders, in the Creditors Journal.","Enter R3 000 in the Creditors Control column and in the Trading stock column.","No cash has moved, so nothing goes in the CPJ yet."], "answer": "One line in the CJ: Creditors Control R3 000 and Trading stock R3 000." },
     { "type": "heading", "text": "Posting the Creditors Journal" },
     { "type": "table", "headers": ["Column total", "Account debited", "Account credited"], "rows": [
       ["Trading stock R18 500", "Trading stock", "Creditors control (R19 350 in total)"],

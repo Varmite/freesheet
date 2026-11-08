@@ -41,6 +41,7 @@
       ["Energy", "Stored (light energy into chemical energy)", "Released (chemical energy for life processes)"]
     ] },
     { "type": "callout", "label": "Common mistake", "text": "Plants do NOT only photosynthesise while animals respire. Plants respire all the time too. In bright light, photosynthesis is faster than respiration, so a plant gives off more oxygen than it uses." },
+    { "type": "example", "title": "Comparing the two processes", "problem": "Compare the word equations for photosynthesis and respiration. What do you notice?", "steps": ["Photosynthesis: carbon dioxide + water → glucose + oxygen (needs light energy).","Respiration: glucose + oxygen → carbon dioxide + water (releases energy).","The substances that go in to one process are what come out of the other."], "answer": "They are opposite processes: photosynthesis stores energy and respiration releases it." },
     { "type": "heading", "text": "Why photosynthesis matters" },
     { "type": "list", "items": [
       "It is the start of almost every food chain: all food energy comes from the sun through plants.",

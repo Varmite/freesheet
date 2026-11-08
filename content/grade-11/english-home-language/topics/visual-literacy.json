@@ -12,6 +12,7 @@
       ["Status appeal", "Owning the product makes you superior or successful"],
       ["Social responsibility", "Buying helps the environment or a cause"]
     ] },
+    { "type": "example", "title": "Ethos, pathos or logos?", "problem": "Identify: (a) 'Nine out of ten dentists recommend it.' (b) A lonely child cuddling a puppy.", "steps": ["(a) Facts and expert authority: logos and ethos.","(b) The image targets feelings: pathos."], "answer": "(a) Logos/ethos. (b) Pathos." },
     { "type": "heading", "text": "Satire in cartoons" },
     { "type": "paragraph", "text": "Editorial cartoons **satirise** people and institutions through **caricature**, **exaggeration**, **irony**, **symbolism** and **labels**. To analyse one, identify the issue, the target, the techniques and the cartoonist's attitude." },
     { "type": "heading", "text": "Film techniques" },
@@ -26,7 +27,8 @@
       ["Non-diegetic sound", "Added sound (soundtrack, narrator) to build mood"]
     ] },
     { "type": "passage", "title": "Described film still (original)", "text": "A low-angle shot shows a factory owner standing on a balcony, silhouetted against a red evening sky. Below him, in a high-angle long shot, workers queue at the factory gates. A slow, heavy drumbeat plays on the soundtrack." },
-    { "type": "callout", "label": "Exam tip", "text": "Always link the technique to its effect on the viewer and to the message: 'The low angle makes the owner appear dominant, which emphasises the power imbalance between him and the workers.'" }
+    { "type": "callout", "label": "Exam tip", "text": "Always link the technique to its effect on the viewer and to the message: 'The low angle makes the owner appear dominant, which emphasises the power imbalance between him and the workers.'" },
+    { "type": "example", "title": "What a camera angle says", "problem": "A film shows a bully from a low angle. What is the effect?", "steps": ["A low angle makes the subject look bigger.","The viewer looks up, as the victim does."], "answer": "He appears powerful and threatening." }
   ],
   "questions": [
     { "id": "lowangle", "type": "mcq", "prompt": "A low-angle shot usually makes a character appear…", "options": ["weak", "powerful", "far away", "happy"], "answer": 1 },

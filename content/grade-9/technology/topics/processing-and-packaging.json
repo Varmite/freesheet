@@ -19,6 +19,7 @@
       ["Fermentation", "Useful microbes produce acid or alcohol that prevents harmful ones", "Amasi, umqombothi, yoghurt, sauerkraut"]
     ] },
     { "type": "callout", "label": "Indigenous knowledge", "text": "Many traditional South African methods, such as drying meat into biltong, sun-drying vegetables (*imifino*) and fermenting milk into amasi, are effective preservation technologies that have been used for centuries." },
+    { "type": "example", "title": "Why does biltong keep?", "problem": "Explain how salting and drying stop biltong going bad.", "steps": ["Bacteria and moulds need water to grow.","Salt draws water out of the meat and of micro-organisms.","Air-drying removes most of the remaining moisture."], "answer": "With so little water, micro-organisms cannot multiply." },
     { "type": "heading", "text": "Functions of packaging" },
     { "type": "list", "items": [
       "**Protect** the product from damage, dirt, moisture and tampering.",
@@ -37,6 +38,7 @@
     ] },
     { "type": "heading", "text": "Nets (developments)" },
     { "type": "paragraph", "text": "A **net** (development) is the flat shape that is cut out and folded to make a 3D container. A net includes **tabs** (flaps) for gluing and **fold lines** (dashed) and **cut lines** (solid). A cube's net has six squares; a cuboid box's net has six rectangles." },
+    { "type": "example", "title": "How much card for a cube box?", "problem": "A cube-shaped box has sides of 5 cm. What is the area of its net, without flaps?", "steps": ["A cube has 6 square faces.","Area of one face: 5 × 5 = 25 cm².","Total: 6 × 25 = 150 cm². Glue flaps need a little more."], "answer": "150 cm², plus flaps." },
     { "type": "heading", "text": "Packaging and the environment" },
     { "type": "paragraph", "text": "Too much packaging wastes resources and fills landfills. Designers can reduce the impact by using **less material**, choosing **recyclable** or **biodegradable** materials, designing for **reuse**, and printing clear recycling information." }
   ],

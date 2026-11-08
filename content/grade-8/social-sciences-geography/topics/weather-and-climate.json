@@ -32,6 +32,7 @@
       "**Relief (orographic) rain**: moist air is forced up over mountains and cools.",
       "**Frontal (cyclonic) rain**: warm and cold air masses meet, the warm air rises; brings winter rain to the Western Cape."
     ] },
+    { "type": "example", "title": "Rain on the Drakensberg", "problem": "Moist air from the Indian Ocean blows towards the Drakensberg. Why is the east side wet and the west side dry?", "steps": ["The air is forced upward when it meets the mountains, and it cools.","Water vapour condenses and rain falls on the east, the windward side.","The air then sinks on the west, the leeward side, where it warms and dries."], "answer": "This is relief rainfall, and the dry side is in a rain shadow." },
     { "type": "heading", "text": "Climate graphs" },
     { "type": "paragraph", "text": "A **climate graph** shows average monthly **temperature** as a line graph and average monthly **rainfall** as a bar graph, on the same set of axes." },
     { "type": "example", "title": "Calculating from climate data", "problem": "A town's highest monthly average temperature is 26 °C (January) and lowest is 12 °C (July). Calculate the annual temperature range.", "steps": ["Range = highest − lowest", "= 26 − 12"], "answer": "14 °C" },

@@ -13,6 +13,7 @@
       ["National Minimum Wage Act", "A legal minimum hourly wage for most workers"],
       ["Unemployment Insurance Act", "UIF benefits for those who lose their jobs or go on maternity leave"]
     ] },
+    { "type": "example", "title": "Which Act applies?", "problem": "Match: maximum hours; unfair discrimination; collective bargaining.", "steps": ["Hours: Basic Conditions of Employment Act.","Discrimination: Employment Equity Act.","Bargaining: Labour Relations Act."], "answer": "BCEA, EEA, LRA." },
     { "type": "heading", "text": "Contracts and responsibilities" },
     { "type": "paragraph", "text": "An **employment contract** sets out the job, pay, hours, leave and notice period. Employees have **responsibilities** too: arrive on time, work honestly and safely, follow reasonable instructions and respect colleagues." },
     { "type": "heading", "text": "Unemployment" },
@@ -28,7 +29,8 @@
       "**Support**: the National Youth Development Agency (NYDA), SEDFA (Small Enterprise Development and Finance Agency) and business incubators.",
       "**Steps**: identify a need, research the market, write a business plan, find funding, register the business (with CIPC and SARS), start small and grow."
     ] },
-    { "type": "callout", "label": "Volunteering and skills", "text": "Volunteering, internships and short courses build experience and contacts, which improve chances of employment." }
+    { "type": "callout", "label": "Volunteering and skills", "text": "Volunteering, internships and short courses build experience and contacts, which improve chances of employment." },
+    { "type": "example", "title": "Testing a business idea", "problem": "How can a school-leaver test a car-wash idea cheaply?", "steps": ["Find out demand.","Calculate costs.","Try it on a small scale for a weekend."], "answer": "Test demand and profit before spending much." }
   ],
   "questions": [
     { "id": "bcea", "type": "numeric", "prompt": "According to the BCEA, what is the maximum number of ordinary working hours per week?", "answer": 45, "tolerance": 0, "unit": "hours" },

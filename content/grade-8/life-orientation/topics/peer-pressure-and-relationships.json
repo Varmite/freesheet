@@ -18,6 +18,7 @@
       ["Aggressive", "Stands up for self but disrespects or attacks others", "'Are you stupid? Get lost!'"],
       ["Assertive", "Expresses own feelings and needs clearly and honestly while respecting others", "'No thanks. I don't smoke. I'll see you at practice.'"]
     ] },
+    { "type": "example", "title": "Passive, aggressive or assertive?", "problem": "A friend borrows your book without asking. Label: (a) saying nothing, (b) 'You're a thief!', (c) 'Please ask me before you take my book.'", "steps": ["(a) Hiding your needs: passive.","(b) Attacking the person: aggressive.","(c) Clear and respectful: assertive."], "answer": "Passive, aggressive, assertive." },
     { "type": "heading", "text": "Refusal skills" },
     { "type": "list", "items": [
       "Say **'No'** clearly and firmly; you do not have to give a long explanation.",
@@ -28,6 +29,7 @@
       "Spend time with friends who share your values."
     ] },
     { "type": "callout", "label": "Exam tip", "text": "Use an **I-statement** to be assertive: 'I feel… when you… because… I would like…'. Example: 'I feel upset when you post photos of me without asking, because it is private. I would like you to take it down.'" },
+    { "type": "example", "title": "Saying no", "problem": "Friends offer you a cigarette and say, 'Don't be scared.' Write a response.", "steps": ["Say no clearly.","Give a reason if you want to.","Change the subject or leave."], "answer": "'No thanks, I don't smoke. Let's go play soccer instead.'" },
     { "type": "heading", "text": "Healthy and unhealthy relationships" },
     { "type": "table", "headers": ["Healthy relationship", "Unhealthy relationship"], "rows": [
       ["Respect, trust and honesty", "Lies, jealousy and controlling behaviour"],

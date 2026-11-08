@@ -27,6 +27,7 @@
     ] },
     { "type": "callout", "label": "Key idea", "text": "Apartheid was based on the idea of **'separate development'**. In practice, it gave white South Africans political power and the best land, jobs, schools and services, while black, coloured and Indian South Africans were denied rights and opportunities." },
     { "type": "passage", "title": "Source G: Dr H. F. Verwoerd, Minister of Native Affairs, 1953 (adapted)", "text": "There is no place for the Bantu in the European community above the level of certain forms of labour. What is the use of teaching a Bantu child mathematics when it cannot use it in practice?" },
+    { "type": "example", "title": "Matching laws to purposes", "problem": "Match: Population Registration Act; Group Areas Act; Bantu Education Act. Purposes: separate residential areas; classify everyone by race; give black learners inferior schooling.", "steps": ["Population Registration Act (1950): classified every person by race.","Group Areas Act (1950): set separate residential areas.","Bantu Education Act (1953): gave black learners an inferior education."], "answer": "Each law controlled a different part of life." },
     { "type": "heading", "text": "Effects on daily life" },
     { "type": "list", "items": [
       "Families were removed from their homes and moved to townships far from city centres and jobs.",
@@ -35,7 +36,8 @@
       "People of different races could not legally marry, live together, or use the same facilities.",
       "Black South Africans could not vote for the national parliament."
     ] },
-    { "type": "paragraph", "text": "Later, under **grand apartheid**, the government created ten **homelands** (Bantustans) and declared four of them 'independent' (Transkei, Bophuthatswana, Venda and Ciskei), taking away the South African citizenship of millions of people." }
+    { "type": "paragraph", "text": "Later, under **grand apartheid**, the government created ten **homelands** (Bantustans) and declared four of them 'independent' (Transkei, Bophuthatswana, Venda and Ciskei), taking away the South African citizenship of millions of people." },
+    { "type": "example", "title": "What forced removals meant", "problem": "District Six in Cape Town was declared a white area in 1966. Explain the effect on its residents.", "steps": ["Around 60 000 people were forced to move.","They were sent to the Cape Flats, far from work and schools.","Homes were bulldozed and a community was destroyed."], "answer": "Families lost homes, community and easy access to work." }
   ],
   "questions": [
     { "id": "1948", "type": "short", "prompt": "Which party won the 1948 election and introduced apartheid?", "answers": ["national party", "the national party", "np"] },

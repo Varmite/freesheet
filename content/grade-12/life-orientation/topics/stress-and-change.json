@@ -28,8 +28,10 @@
       ["Collaborating", "Working together to find a solution that meets both needs", "Win–win"]
     ] },
     { "type": "list", "ordered": true, "items": ["Stay calm and choose a good time to talk.", "Listen actively and let each person explain.", "Use I-statements, not blame.", "Identify the real problem and shared interests.", "Brainstorm solutions and agree on one.", "Follow up."] },
+    { "type": "example", "title": "Resolving a conflict", "problem": "Two siblings argue about shared data. Apply conflict resolution.", "steps": ["Calm down first.","Each states their need.","Find options and agree on one."], "answer": "For example, agree to divide the data or take turns." },
     { "type": "heading", "text": "Change after school" },
-    { "type": "paragraph", "text": "Leaving school brings new independence, responsibilities, places and relationships. Planning ahead, building a support network, managing money and keeping healthy routines make the transition easier." }
+    { "type": "paragraph", "text": "Leaving school brings new independence, responsibilities, places and relationships. Planning ahead, building a support network, managing money and keeping healthy routines make the transition easier." },
+    { "type": "example", "title": "Preparing for change", "problem": "What can help you handle leaving home for study?", "steps": ["Plan a budget.","Identify support.","Build a routine."], "answer": "Planning, support and routine." }
   ],
   "questions": [
     { "id": "eustress", "type": "short", "prompt": "What is positive, short-term stress that improves performance called?", "answers": ["eustress"] },

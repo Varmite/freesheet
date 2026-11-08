@@ -17,6 +17,7 @@
       "**Free media** and freedom of expression.",
       "**Accountability and transparency**: leaders must explain their actions to the people."
     ] },
+    { "type": "example", "title": "Democratic or not?", "problem": "A president cancels an election and closes newspapers that criticise him. Which features of democracy are broken?", "steps": ["Regular free elections are cancelled.","Freedom of the media is removed."], "answer": "Free elections and press freedom." },
     { "type": "heading", "text": "Elections" },
     { "type": "paragraph", "text": "The **Independent Electoral Commission (IEC)** runs national, provincial and local (municipal) elections and makes sure they are free and fair. To vote, you must be a South African citizen aged 18 or older, be **registered** on the voters' roll and have a valid ID. You can register from age **16**, and then you are ready to vote when you turn 18." },
     { "type": "table", "headers": ["Election", "Chooses"], "rows": [
@@ -33,6 +34,7 @@
       ["Volunteering", "Helping at a soup kitchen, cleaning up a park, tutoring younger learners"]
     ] },
     { "type": "callout", "label": "Remember", "text": "Protest is a right, but it must be **peaceful and unarmed** (section 17 of the Constitution). Burning schools, clinics or libraries harms the community and is a crime." },
+    { "type": "example", "title": "Getting involved", "problem": "A road near your school is dangerous. How could you take action?", "steps": ["Gather facts, such as accident records.","Write to your ward councillor.","Collect signatures on a petition."], "answer": "Contact the ward councillor and petition." },
     { "type": "heading", "text": "Responsible citizenship" },
     { "type": "paragraph", "text": "Good citizens obey the law, pay for services, respect others' rights, look after public property and the environment, stay informed and take part in community life. The **Representative Council of Learners (RCL)** gives learners a democratic voice in school governance." }
   ],

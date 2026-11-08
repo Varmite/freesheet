@@ -22,6 +22,7 @@
       "The **Maputo Development Corridor** links Gauteng with the port of Maputo in Mozambique."
     ] },
     { "type": "definition", "term": "Development corridor", "text": "A transport route (road, rail and often pipelines and power lines) along which economic development is encouraged, linking areas of production with ports and markets." },
+    { "type": "example", "title": "Choosing a mode of transport", "problem": "Which transport suits (a) millions of tonnes of coal going from Mpumalanga to Richards Bay and (b) fresh flowers going overseas?", "steps": ["(a) Coal is heavy, bulky and not urgent, so rail is cheapest.","(b) Flowers are light, valuable and spoil quickly, so air is best despite the high cost."], "answer": "(a) Rail. (b) Air." },
     { "type": "heading", "text": "Transport and development" },
     { "type": "paragraph", "text": "Places with good transport links attract industries and grow; isolated rural areas often remain poor because it is expensive to reach markets and services. Many South Africans depend on **minibus taxis**, which carry most commuters, followed by buses and trains." },
     { "type": "table", "headers": ["Problem", "Possible solution"], "rows": [
@@ -31,7 +32,8 @@
       ["Poor rural roads", "Government investment in rural infrastructure"],
       ["Air pollution", "Cleaner fuels, electric vehicles, cycling and walking routes"]
     ] },
-    { "type": "callout", "label": "Exam tip", "text": "When choosing the best type of transport for a product, think about **weight/bulk**, **value**, **how quickly it spoils**, **distance** and **cost**." }
+    { "type": "callout", "label": "Exam tip", "text": "When choosing the best type of transport for a product, think about **weight/bulk**, **value**, **how quickly it spoils**, **distance** and **cost**." },
+    { "type": "example", "title": "A new road to a village", "problem": "A tarred road reaches a remote village. Give one benefit and one possible problem.", "steps": ["Benefit: farmers can sell goods in town, and clinics and schools are easier to reach.","Problem: more traffic and accidents, and local shops may lose customers to the town."], "answer": "Better access to markets and services, along with more traffic and competition." }
   ],
   "questions": [
     { "id": "bulky", "type": "mcq", "prompt": "Which is the cheapest way to move large amounts of coal over land?", "options": ["Air", "Road", "Rail", "Pipeline"], "answer": 2 },

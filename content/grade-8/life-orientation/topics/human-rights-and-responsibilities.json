@@ -19,6 +19,7 @@
       ["Environment (s 24)", "Do not litter or pollute; save water and energy"],
       ["Education (s 29)", "Attend school, work hard and allow others to learn"]
     ] },
+    { "type": "example", "title": "Pairing a right with a responsibility", "problem": "Give the responsibility that goes with the right to education.", "steps": ["A right comes with a duty.","If you have a right to learn, others do too."], "answer": "Attend school, work hard and let others learn." },
     { "type": "heading", "text": "Children's rights (section 28)" },
     { "type": "list", "items": [
       "A name and nationality from birth.",
@@ -38,7 +39,8 @@
       ["Commission for Gender Equality", "Promotes gender equality and investigates gender discrimination"],
       ["SAPS (police) and courts", "Enforce laws and protect people from crime"]
     ] },
-    { "type": "paragraph", "text": "Ordinary citizens also protect rights by speaking out, reporting abuse, voting, joining campaigns and treating others with respect." }
+    { "type": "paragraph", "text": "Ordinary citizens also protect rights by speaking out, reporting abuse, voting, joining campaigns and treating others with respect." },
+    { "type": "example", "title": "Where to go for help", "problem": "A shop refuses to serve a customer because of their race. Which body could help?", "steps": ["The Constitution prohibits this discrimination.","The South African Human Rights Commission deals with such complaints."], "answer": "The South African Human Rights Commission." }
   ],
   "questions": [
     { "id": "highest", "type": "short", "prompt": "What is the highest law in South Africa?", "answers": ["the constitution", "constitution"] },

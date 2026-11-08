@@ -29,7 +29,8 @@
     { "type": "example", "title": "Analysing the scene", "problem": "Explain the purpose of Sipho's aside and the effect of the final stage direction.", "steps": [
       "The aside reveals Sipho's thoughts only to the audience: he applied to university secretly and fears his mother's reaction. This creates **dramatic irony**, because we know what is in the envelope before Mama Nomvula does.",
       "The final stage direction (the lights dim until only his face is lit) focuses all attention on Sipho and creates **suspense**: the audience must wait to discover whether he has been accepted."
-    ], "answer": "The aside creates dramatic irony; the lighting builds suspense and ends the scene on a climax." }
+    ], "answer": "The aside creates dramatic irony; the lighting builds suspense and ends the scene on a climax." },
+    { "type": "example", "title": "Placing an event in the plot", "problem": "In a play, a son discovers that his father has sold the family farm, and the two have a furious fight just before the father collapses. Which part of the structure is this?", "steps": ["Rising action builds the conflict.","The climax is the point of greatest tension.","After it comes the falling action."], "answer": "This is the climax." }
   ],
   "questions": [
     { "id": "soliloquy", "type": "mcq", "prompt": "A speech in which a character alone on stage shares private thoughts is a…", "options": ["monologue", "soliloquy", "dialogue", "stage direction"], "answer": 1 },

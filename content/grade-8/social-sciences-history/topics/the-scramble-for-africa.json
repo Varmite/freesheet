@@ -17,6 +17,7 @@
       ["Technology", "Quinine (against malaria), steamships, railways, the telegraph and the **Maxim gun** made conquest possible"]
     ] },
     { "type": "callout", "label": "Remember", "text": "Europeans often said they were bringing 'civilisation, commerce and Christianity'. Historians point out that the main motive was economic gain, and that these ideas were used to justify taking African land." },
+    { "type": "example", "title": "Sorting the motives", "problem": "Sort these into economic, political or religious motives: raw materials for factories; national prestige; converting people to Christianity.", "steps": ["Raw materials and markets are **economic**.","Prestige and power over rivals are **political**.","Missionary work is **religious**."], "answer": "Economic, political and religious, in that order." },
     { "type": "heading", "text": "The Berlin Conference, 1884–1885" },
     { "type": "paragraph", "text": "To avoid war between themselves, 14 countries met in **Berlin**, hosted by German Chancellor **Otto von Bismarck**. **No Africans were invited.** They agreed on rules for claiming African territory:" },
     { "type": "list", "items": [
@@ -41,7 +42,8 @@
       "**Maji Maji rebellion** (1905–1907) in German East Africa.",
       "**Asante** (Ashanti) wars against the British in the Gold Coast, including Yaa Asantewaa's war (1900).",
       "**Battle of Isandlwana (1879)**: the Zulu army defeated the British, although the Zulu kingdom was conquered later that year."
-    ] }
+    ] },
+    { "type": "example", "title": "Why was Ethiopia able to win at Adwa?", "problem": "Explain how Ethiopia defeated Italy at Adwa in 1896.", "steps": ["Emperor Menelik II had bought modern rifles.","He united a very large army.","Italian forces were outnumbered and poorly co-ordinated in unfamiliar terrain."], "answer": "Modern weapons, unity and numbers let Ethiopia stay independent." }
   ],
   "questions": [
     { "id": "independent", "type": "mcq", "prompt": "Which two African countries were still independent in 1914?", "options": ["Egypt and Kenya", "Ethiopia and Liberia", "Ghana and Nigeria", "Congo and Angola"], "answer": 1 },

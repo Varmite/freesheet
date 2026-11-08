@@ -21,6 +21,7 @@
     { "type": "definition", "term": "Black hole", "text": "A region in space where matter is so tightly packed that its gravity is strong enough to stop even light from escaping." },
     { "type": "definition", "term": "Neutron star", "text": "The extremely dense remaining core of a supernova; a teaspoon of it would weigh billions of tonnes." },
     { "type": "paragraph", "text": "In about 5 billion years the sun will become a **red giant**, swallowing Mercury and Venus and possibly Earth, before ending as a **white dwarf**." },
+    { "type": "example", "title": "What will happen to this star?", "problem": "Describe the end of (a) a star like the sun and (b) a star many times more massive.", "steps": ["(a) A sun-like star swells into a **red giant**, sheds its outer layers and leaves a **white dwarf**.","(b) A very massive star becomes a **supergiant** and explodes in a **supernova**.","What is left is a neutron star or, for the most massive stars, a black hole."], "answer": "(a) White dwarf. (b) Supernova, then a neutron star or black hole." },
     { "type": "heading", "text": "We are made of star stuff" },
     { "type": "paragraph", "text": "The early universe contained mostly hydrogen and helium. Heavier elements such as carbon, oxygen and iron were made by fusion inside stars, and elements heavier than iron (like gold) were made in supernova explosions. When stars die they scatter these elements into space, where they form new stars, planets and eventually living things." },
     { "type": "heading", "text": "Colour and temperature" },
@@ -29,7 +30,8 @@
       ["White", "About 7 500 to 10 000 °C", "Sirius"],
       ["Yellow", "About 5 500 °C", "The sun"],
       ["Red", "Below about 3 500 °C", "Betelgeuse (red supergiant), Antares"]
-    ] }
+    ] },
+    { "type": "example", "title": "Reading a star's colour", "problem": "Rigel looks blue-white and Betelgeuse looks red. Which is hotter? Where would the yellow sun fit?", "steps": ["A star's colour shows its surface temperature: blue is hottest, then white, yellow, orange and red.","Blue-white Rigel is therefore hotter than red Betelgeuse.","The yellow sun is between them."], "answer": "Rigel is hotter. The order, hot to cool, is Rigel, the sun, Betelgeuse." }
   ],
   "questions": [
     { "id": "nebula", "type": "short", "prompt": "What is the name for a cloud of gas and dust in which stars are born?", "answers": ["nebula", "a nebula", "nebulae"] },

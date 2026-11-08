@@ -27,7 +27,8 @@
       "Concede: 'Admittedly, social media allows people to stay in touch with distant family.'",
       "Rebut: 'However, studies of teenage users link heavy use to anxiety and poor sleep.'",
       "Link: 'The benefits of connection are therefore outweighed by the damage to well-being.'"
-    ], "answer": "Concession + rebuttal + link makes the argument stronger and shows mature thinking." }
+    ], "answer": "Concession + rebuttal + link makes the argument stronger and shows mature thinking." },
+    { "type": "example", "title": "Avoiding repetition", "problem": "Improve: 'The town was poor. The town had no clinic. The town needed help.'", "steps": ["Join related ideas.","Replace repeated nouns with pronouns."], "answer": "'The poor town had no clinic and it desperately needed help.'" }
   ],
   "questions": [
     { "id": "length", "type": "mcq", "prompt": "What is the usual length of a Grade 11 HL essay?", "options": ["150–200 words", "300–350 words", "400–450 words", "600 words"], "answer": 1 },

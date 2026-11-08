@@ -16,6 +16,7 @@
       ["T", "T1", "T2", "T3", "T4", "T5", "T6"]
     ] },
     { "type": "example", "title": "Worked example 1", "problem": "A coin is tossed and a die is rolled. Find P(heads and an even number).", "steps": ["12 equally likely outcomes.", "Favourable: H2, H4, H6, so 3 outcomes.", "$P = \\frac{3}{12} = \\frac{1}{4}$"], "answer": "$\\frac{1}{4}$ (25%)" },
+    { "type": "example", "title": "Two coins", "problem": "Two fair coins are tossed. What is the probability of two heads?", "steps": ["List outcomes: HH, HT, TH, TT.","One of four outcomes is HH."], "answer": "1/4, or 25%." },
     { "type": "heading", "text": "Probability in everyday life" },
     { "type": "list", "items": [
       "**Weather**: 'a 70% chance of rain' means that on many days with similar conditions it rained on about 70 of every 100.",

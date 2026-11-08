@@ -46,7 +46,8 @@
       "Use energy-efficient LED bulbs.",
       "Install a solar water heater or geyser blanket; set the geyser lower.",
       "Boil only the water you need."
-    ] }
+    ] },
+    { "type": "example", "title": "Current drawn by a kettle", "problem": "A 2 000 W kettle runs on 230 V mains. What current does it draw?", "steps": ["Power = voltage × current, so current = power ÷ voltage.","Current = 2 000 ÷ 230 ≈ 8,7 A.","This is why a kettle needs a thick cable and a correctly rated plug."], "answer": "About 8,7 A." }
   ],
   "questions": [
     { "id": "fuse", "type": "mcq", "prompt": "How does a fuse protect a circuit?", "options": ["It increases the voltage", "Its wire melts when the current is too high", "It stores extra charge", "It earths the appliance"], "answer": 1 },

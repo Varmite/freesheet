@@ -25,7 +25,8 @@
       "5. It improves concentration.",
       "6. It helps maintain a healthy weight."
     ], "answer": "Notice that the examples (the test, colds, sugary snacks) are left out." },
-    { "type": "callout", "label": "Common mistake", "text": "Do not copy whole sentences from the passage, add your own ideas or opinions, or include examples. Each point should be short and clear." }
+    { "type": "callout", "label": "Common mistake", "text": "Do not copy whole sentences from the passage, add your own ideas or opinions, or include examples. Each point should be short and clear." },
+    { "type": "example", "title": "Cutting a sentence down", "problem": "Shorten: 'Dogs, which are animals that many people keep as pets in their homes, need to be walked and exercised on a regular basis.'", "steps": ["Find the main point: dogs need exercise.","Remove extra descriptions and repetition.","Write it in your own words."], "answer": "'Pet dogs need regular exercise.'" }
   ],
   "questions": [
     { "id": "focus", "type": "open", "marks": 1, "prompt": "What is meant by the 'focus' of a summary?", "memo": "✓ The specific topic or aspect of the passage that you must summarise (1)" },

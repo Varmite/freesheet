@@ -33,6 +33,7 @@
       "**Evaluate** the decision: what did you learn?"
     ] },
     { "type": "callout", "label": "Remember", "text": "Decisions made in a hurry, under peer pressure or under the influence of alcohol or drugs are often poor decisions. Take time, think about the consequences and talk to someone you trust." },
+    { "type": "example", "title": "Using a decision process", "problem": "You are invited to a party the night before an exam. Work through the decision.", "steps": ["Identify the choice.","List options: go, stay home, go briefly.","Weigh consequences.","Choose and review."], "answer": "Stay and study, or go only for an agreed short time." },
     { "type": "heading", "text": "Values" },
     { "type": "paragraph", "text": "**Values** are the beliefs and principles that are important to you, such as honesty, respect, responsibility, family, faith, education and kindness. They act like a compass when you make decisions." }
   ],

@@ -41,7 +41,8 @@
       "**Balanced budget**: income equals expenditure."
     ] },
     { "type": "paragraph", "text": "The largest parts of South Africa's budget usually go to **education** (called learning and culture), **social development** (grants), **health**, and **paying interest on debt**." },
-    { "type": "example", "title": "Calculating VAT", "problem": "A pair of shoes costs R400 before VAT. Calculate the VAT and the selling price (VAT = 15%).", "steps": ["VAT = 15% × R400 = R60", "Selling price = R400 + R60 = R460"], "answer": "VAT R60; price R460" }
+    { "type": "example", "title": "Calculating VAT", "problem": "A pair of shoes costs R400 before VAT. Calculate the VAT and the selling price (VAT = 15%).", "steps": ["VAT = 15% × R400 = R60", "Selling price = R400 + R60 = R460"], "answer": "VAT R60; price R460" },
+    { "type": "example", "title": "A budget deficit", "problem": "A government expects to collect R1 900 billion and plans to spend R2 300 billion. Is this a surplus or a deficit, and how much?", "steps": ["Compare the two: spending is greater than income.","R2 300 billion − R1 900 billion = R400 billion.","When spending is more than income the budget is in deficit, and the government must borrow the difference."], "answer": "A deficit of R400 billion." }
   ],
   "questions": [
     { "id": "levels", "type": "mcq", "prompt": "Which level of government is responsible for refuse removal?", "options": ["National", "Provincial", "Local", "Judiciary"], "answer": 2 },

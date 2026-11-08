@@ -24,6 +24,7 @@
       ["Sibyl Vane", "A young actress who represents art and innocence; destroyed by Dorian's cruelty"],
       ["James Vane", "Sibyl's protective brother; represents justice and revenge"]
     ] },
+    { "type": "example", "title": "Lord Henry's influence", "problem": "How does Lord Henry influence Dorian?", "steps": ["He praises youth and pleasure.","He tells Dorian that 'the only way to get rid of a temptation is to yield to it'.","Dorian adopts this as his way of living."], "answer": "Lord Henry's ideas corrupt Dorian." },
     { "type": "heading", "text": "Themes" },
     { "type": "list", "items": [
       "**The duality of appearance and reality**: Dorian's beauty masks his moral corruption.",
@@ -38,7 +39,8 @@
       ["'Each of us has Heaven and Hell in him, Basil.' (Dorian)", "The duality of human nature"],
       ["'It was his beauty that had ruined him.'", "Dorian's realisation near the end"]
     ] },
-    { "type": "callout", "label": "Symbols", "text": "**The portrait**: Dorian's soul and conscience. **The yellow book**: corrupting influence. **The opium dens**: Dorian's hidden vice and escape. **The knife**: used to kill Basil and finally Dorian himself." }
+    { "type": "callout", "label": "Symbols", "text": "**The portrait**: Dorian's soul and conscience. **The yellow book**: corrupting influence. **The opium dens**: Dorian's hidden vice and escape. **The knife**: used to kill Basil and finally Dorian himself." },
+    { "type": "example", "title": "Beauty and morality", "problem": "Explain how the portrait presents the theme of appearance versus reality.", "steps": ["Dorian stays young and handsome on the outside.","The portrait records each sin.","So outer beauty hides inner decay."], "answer": "Beauty can conceal corruption." }
   ],
   "questions": [
     { "id": "author", "type": "short", "prompt": "Who wrote The Picture of Dorian Gray?", "answers": ["oscar wilde", "wilde"] },

@@ -15,6 +15,7 @@
     ] },
     { "type": "callout", "label": "Safety", "text": "Never look directly at burning magnesium; the bright light can damage your eyes. Hold metals with tongs and wear safety glasses." },
     { "type": "paragraph", "text": "Metals react with oxygen at different rates. Magnesium and sodium are very reactive; iron and copper react more slowly; gold and platinum hardly react at all, which is why gold jewellery stays shiny." },
+    { "type": "example", "title": "Balancing a metal reaction", "problem": "Magnesium burns in oxygen to form magnesium oxide. Show that 2Mg + O₂ → 2MgO is balanced.", "steps": ["Count atoms on the left: 2 magnesium and 2 oxygen.","Count atoms on the right: 2 × MgO gives 2 magnesium and 2 oxygen.","Atoms are neither made nor destroyed in a reaction, so the counts must match."], "answer": "Both sides have 2 Mg and 2 O atoms, so it is balanced." },
     { "type": "heading", "text": "Rusting" },
     { "type": "paragraph", "text": "**Rusting** is the slow oxidation of iron or steel when it is in contact with both **oxygen** and **water**. Rust (hydrated iron oxide) is brown, flaky and weak; it falls off, exposing fresh iron to more rusting. Salt water and acid rain make rusting faster." },
     { "type": "formula", "latex": "\\text{iron} + \\text{oxygen} + \\text{water} \\rightarrow \\text{hydrated iron(III) oxide (rust)}" },

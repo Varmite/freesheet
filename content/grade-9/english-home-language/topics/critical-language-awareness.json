@@ -13,6 +13,7 @@
       "*Home* and *house* have similar denotations, but *home* suggests warmth and belonging.",
       "*Protesters*, *activists* and *mob* can describe the same group; each gives a very different impression."
     ] },
+    { "type": "example", "title": "Same meaning, different feeling", "problem": "Compare 'slim', 'skinny' and 'scrawny'.", "steps": ["Denotation: all three mean thin.","Connotation: slim is positive, skinny is neutral or slightly negative, and scrawny is negative."], "answer": "The choice of word shows the writer's attitude." },
     { "type": "heading", "text": "Techniques of manipulation" },
     { "type": "table", "headers": ["Technique", "Meaning", "Example"], "rows": [
       ["Emotive / loaded language", "Words chosen to stir strong feelings", "'Greedy bosses are destroying our future.'"],

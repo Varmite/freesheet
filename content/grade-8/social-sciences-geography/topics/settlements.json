@@ -19,6 +19,7 @@
       ["Routes", "River crossings (bridging points), passes, natural harbours and crossroads encouraged trade"]
     ] },
     { "type": "paragraph", "text": "Today, other factors are also important: **jobs**, **transport links**, **services** (schools, hospitals) and mineral resources. Johannesburg grew because of gold, not because of water." },
+    { "type": "example", "title": "Picking the best site", "problem": "Site A is on a flat river terrace above flood level. Site B is on the flood plain. Site C is on a steep, dry hilltop. Where would farmers settle?", "steps": ["Good sites have water nearby, flat land and safety from floods.","B has water and flat land but floods.","C is safe but far from water and hard to farm.","A has all three."], "answer": "Site A." },
     { "type": "heading", "text": "Rural and urban settlements" },
     { "type": "table", "headers": ["", "Rural settlements", "Urban settlements"], "rows": [
       ["Size and population", "Small; few people; low population density", "Large; many people; high density"],
@@ -43,7 +44,8 @@
       ["City", "Hundreds of thousands", "Specialised shops, universities, large hospitals"],
       ["Metropolis / conurbation", "Millions", "International airport, head offices, stock exchange"]
     ] },
-    { "type": "paragraph", "text": "Higher-order settlements have more **high-order services** (such as specialist hospitals) and serve a larger area called their **sphere of influence**." }
+    { "type": "paragraph", "text": "Higher-order settlements have more **high-order services** (such as specialist hospitals) and serve a larger area called their **sphere of influence**." },
+    { "type": "example", "title": "Ranking settlements", "problem": "Rank a hamlet, a city, a town and a village from lowest to highest order, and say which has the most specialised services.", "steps": ["Higher-order settlements have more people and more services.","Hamlet → village → town → city.","A city can support services that need many customers, such as specialist hospitals."], "answer": "Hamlet, village, town, city. The city has the most specialised services." }
   ],
   "questions": [
     { "id": "site-def", "type": "short", "prompt": "What word describes the actual land on which a settlement is built?", "answers": ["site", "the site"] },

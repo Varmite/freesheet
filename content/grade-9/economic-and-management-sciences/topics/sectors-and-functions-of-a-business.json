@@ -130,7 +130,8 @@
     {
       "type": "paragraph",
       "text": "In a small business, the owner may perform all these functions. In a large business, each function is usually a separate **department** with its own manager."
-    }
+    },
+    { "type": "example", "title": "Matching tasks to functions", "problem": "A spaza shop owner does these tasks: orders stock, puts up posters, pays the electricity bill and hires a helper. Which function does each belong to?", "steps": ["Ordering stock is the **purchasing** function.","Posters promote the shop, so that is **marketing**.","Paying bills and managing money is the **financial** function.","Hiring a helper is **human resources**."], "answer": "Purchasing, marketing, financial and human resources." }
   ],
   "questions": [
     {

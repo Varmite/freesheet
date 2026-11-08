@@ -21,6 +21,7 @@
     { "type": "paragraph", "text": "When light bounces off a surface it is **reflected**. A smooth, shiny surface (a mirror) gives **regular reflection** and a clear image. A rough surface (paper) gives **diffuse reflection**, scattering light in all directions." },
     { "type": "formula", "latex": "\\text{angle of incidence} = \\text{angle of reflection}", "caption": "The law of reflection (both angles measured from the normal)" },
     { "type": "diagram", "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 140\" font-family=\"sans-serif\" font-size=\"11\"><line x1=\"20\" y1=\"115\" x2=\"220\" y2=\"115\" stroke=\"black\" stroke-width=\"3\"/><line x1=\"120\" y1=\"20\" x2=\"120\" y2=\"115\" stroke=\"black\" stroke-dasharray=\"4 3\"/><line x1=\"50\" y1=\"40\" x2=\"120\" y2=\"115\" stroke=\"black\" stroke-width=\"2\"/><line x1=\"120\" y1=\"115\" x2=\"190\" y2=\"40\" stroke=\"black\" stroke-width=\"2\"/><polygon points=\"88,80 82,70 92,72\" fill=\"black\"/><polygon points=\"158,75 160,64 150,70\" fill=\"black\"/><text x=\"124\" y=\"30\">normal</text><text x=\"30\" y=\"35\">incident ray</text><text x=\"160\" y=\"35\">reflected ray</text><text x=\"95\" y=\"105\">i</text><text x=\"138\" y=\"105\">r</text><text x=\"95\" y=\"132\">mirror</text></svg>", "caption": "The angle of incidence (i) equals the angle of reflection (r)" },
+    { "type": "example", "title": "The law of reflection", "problem": "A ray of light strikes a flat mirror at an angle of incidence of 35°. What is the angle of reflection?", "steps": ["The law of reflection says the angle of incidence equals the angle of reflection.","Both angles are measured from the normal, the line at 90° to the mirror."], "answer": "The angle of reflection is 35°." },
     { "type": "heading", "text": "Refraction" },
     { "type": "paragraph", "text": "**Refraction** is the bending of light when it passes from one transparent medium to another, because light changes speed. Light slows down and bends **towards the normal** when it enters a denser medium (air into water or glass) and bends **away from the normal** when it leaves." },
     { "type": "list", "items": [
@@ -36,7 +37,8 @@
       ["Black shirt", "None", "All colours (so it heats up most in the sun)"],
       ["Green leaf", "Green", "Mostly red and blue (used for photosynthesis)"]
     ] },
-    { "type": "callout", "label": "Exam tip", "text": "A red object seen in green light looks **black**, because there is no red light for it to reflect and it absorbs the green." }
+    { "type": "callout", "label": "Exam tip", "text": "A red object seen in green light looks **black**, because there is no red light for it to reflect and it absorbs the green." },
+    { "type": "example", "title": "A red shirt in green light", "problem": "Why does a red shirt look red in sunlight but almost black under pure green light?", "steps": ["White sunlight contains all colours. The shirt reflects red and absorbs the rest.","Green light contains no red for the shirt to reflect.","The shirt absorbs the green, so almost no light reaches your eyes."], "answer": "It reflects only red, and there is no red in green light." }
   ],
   "questions": [
     { "id": "luminous", "type": "mcq", "prompt": "Which of these is a luminous object?", "options": ["The moon", "A mirror", "A candle flame", "A white page"], "answer": 2 },

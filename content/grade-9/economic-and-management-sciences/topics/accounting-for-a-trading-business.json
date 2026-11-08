@@ -22,6 +22,7 @@
       "Gross profit = 1 800 − 1 200 = R600"
     ], "answer": "Cost of sales R1 200" },
     { "type": "callout", "label": "Remember", "text": "Every time goods are sold, **two things happen**: the business earns **sales** (income at selling price) and loses **trading stock** (an asset, at cost price). That is why the CRJ of a trading business has both a Sales column and a Cost of sales column." },
+    { "type": "example", "title": "From cost price to selling price", "problem": "A shop buys a kettle for R80 and adds a mark-up of 50% on cost. Calculate the selling price and the gross profit.", "steps": ["Mark-up: 50% × R80 = R40.","Selling price: R80 + R40 = R120.","The gross profit on the kettle is the mark-up."], "answer": "Selling price R120; gross profit R40." },
     { "type": "heading", "text": "The CRJ of a trading business" },
     { "type": "table", "caption": "Cash Receipts Journal of Kasi Fashions, February 2025 (mark-up 50% on cost)", "headers": ["Doc", "Day", "Details", "Analysis of receipts", "Bank", "Sales", "Cost of sales", "Sundry accounts"], "rows": [
       ["R10", "1", "B. Zulu (capital)", "", "20 000", "", "", "20 000"],

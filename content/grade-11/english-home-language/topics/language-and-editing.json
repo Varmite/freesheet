@@ -17,6 +17,7 @@
       ["Second", "Unlikely or imaginary present", "If I won the lottery, I would travel."],
       ["Third", "Imaginary past (regret)", "If I had studied, I would have passed."]
     ] },
+    { "type": "example", "title": "Choosing the right conditional", "problem": "Complete: 'If I had studied, I ___ (pass).'", "steps": ["'Had studied' refers to an unreal past.","The result uses 'would have' + past participle."], "answer": "'If I had studied, I would have passed.'" },
     { "type": "heading", "text": "Modals" },
     { "type": "paragraph", "text": "Modal verbs express degrees of certainty, obligation or permission: **must** (obligation or strong certainty), **should** (advice), **may/might** (possibility), **can/could** (ability or permission), **will/would** (future or willingness)." },
     { "type": "heading", "text": "Dangling modifiers and ambiguity" },

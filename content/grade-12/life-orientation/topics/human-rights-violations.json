@@ -14,6 +14,7 @@
       ["Police brutality", "Freedom and security of the person; dignity"],
       ["Unequal access to schooling", "Right to basic education (section 29)"]
     ] },
+    { "type": "example", "title": "Is this a violation?", "problem": "A clinic refuses emergency treatment to someone because they lack documents. Which right is at stake?", "steps": ["Section 27 says no one may be refused emergency medical treatment."], "answer": "The right to emergency medical treatment." },
     { "type": "heading", "text": "Causes and effects" },
     { "type": "list", "items": [
       "**Causes**: poverty and inequality, prejudice, lack of education about rights, weak law enforcement, corruption, abuse of power.",
@@ -29,7 +30,8 @@
     ] },
     { "type": "callout", "label": "Responsible citizenship", "text": "A responsible citizen respects others' rights, obeys the law, votes, reports violations, participates peacefully in campaigns, and challenges discrimination when they see it." },
     { "type": "heading", "text": "Planning a campaign" },
-    { "type": "list", "ordered": true, "items": ["Choose an issue and research it.", "Identify the audience and the change you want.", "Plan activities: posters, social media, petitions, talks, events.", "Work with partners (NGOs, the RCL, community leaders).", "Evaluate the impact."] }
+    { "type": "list", "ordered": true, "items": ["Choose an issue and research it.", "Identify the audience and the change you want.", "Plan activities: posters, social media, petitions, talks, events.", "Work with partners (NGOs, the RCL, community leaders).", "Evaluate the impact."] },
+    { "type": "example", "title": "Campaign steps", "problem": "Plan a campaign against bullying.", "steps": ["Set a clear aim.","Choose an audience and message.","Choose media, such as posters and assemblies.","Evaluate results."], "answer": "Aim, audience, message, action and evaluation." }
   ],
   "questions": [
     { "id": "define", "type": "open", "marks": 2, "prompt": "What is a human rights violation?", "memo": "✓ When a person's rights in the Bill of Rights (1)\n✓ are denied or abused by the state, organisations or individuals (1)" },

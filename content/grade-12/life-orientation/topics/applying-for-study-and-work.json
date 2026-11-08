@@ -21,6 +21,7 @@
       ["References", "Two people (not family) who can vouch for you, with contact details and permission"]
     ] },
     { "type": "callout", "label": "CV tips", "text": "Keep it to one or two pages, use a clear layout, check spelling, tailor it to each job, use a professional email address, and never include false information." },
+    { "type": "example", "title": "Improving a CV line", "problem": "Improve: 'Worked at a shop.'", "steps": ["Name the role and employer.","Add dates and achievement."], "answer": "'Sales assistant, Mokoena Stores (2024–2025): handled the till and helped increase weekend sales.'" },
     { "type": "heading", "text": "Cover letter" },
     { "type": "paragraph", "text": "A **cover letter** (motivational letter) accompanies your CV. It names the position, explains why you are interested and suitable, and asks for an interview. Keep it formal and to one page." },
     { "type": "heading", "text": "Interviews" },
@@ -28,7 +29,8 @@
       ["Research the organisation; prepare answers; plan your route; prepare neat clothes and documents", "Arrive early; greet politely; make eye contact; listen carefully; give examples; ask a question at the end", "Thank the interviewers; send a short thank-you email; reflect on what went well"]
     ] },
     { "type": "paragraph", "text": "Common questions: 'Tell us about yourself', 'Why do you want this position?', 'What are your strengths and weaknesses?', 'Describe a time you solved a problem.' Use the **STAR** method: **S**ituation, **T**ask, **A**ction, **R**esult." },
-    { "type": "callout", "label": "Digital footprint", "text": "Employers and bursary providers may check your social media. Remove inappropriate posts and keep a professional profile." }
+    { "type": "callout", "label": "Digital footprint", "text": "Employers and bursary providers may check your social media. Remove inappropriate posts and keep a professional profile." },
+    { "type": "example", "title": "Answering 'Tell me about yourself'", "problem": "How do you answer this interview question?", "steps": ["Keep it short and relevant to the job.","Cover present, past and why you want the role."], "answer": "A brief summary of studies, experience and fit." }
   ],
   "questions": [
     { "id": "cv", "type": "short", "prompt": "What does CV stand for? (two words)", "answers": ["curriculum vitae"] },

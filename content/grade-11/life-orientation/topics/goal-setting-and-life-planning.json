@@ -35,7 +35,8 @@
       ["Family responsibilities", "Time management, ask for support, community resources"],
       ["Setbacks (failing a test)", "Learn from mistakes, adjust the plan, ask for help"]
     ] },
-    { "type": "callout", "label": "Resilience", "text": "Successful people still face setbacks. **Resilience** (bouncing back), **persistence** and a strong **support network** of family, friends, mentors and teachers make the difference." }
+    { "type": "callout", "label": "Resilience", "text": "Successful people still face setbacks. **Resilience** (bouncing back), **persistence** and a strong **support network** of family, friends, mentors and teachers make the difference." },
+    { "type": "example", "title": "Planning around a barrier", "problem": "A learner wants to go to university but has no money. Suggest a plan.", "steps": ["Name the barrier: funds.","Find support: NSFAS and bursaries.","Set dates for applications."], "answer": "Apply for NSFAS and bursaries before the deadlines." }
   ],
   "questions": [
     { "id": "smart-t", "type": "short", "prompt": "What does the T in SMART stand for?", "answers": ["time-bound", "time bound", "timely"] },

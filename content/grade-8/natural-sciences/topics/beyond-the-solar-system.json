@@ -11,6 +11,7 @@
       "The **Southern Cross** and its two pointer stars help people in the southern hemisphere find south at night.",
       "Many cultures gave names to stars. In isiXhosa, the Pleiades star cluster is *isiLimela*; its appearance marked the start of the planting season."
     ] },
+    { "type": "example", "title": "Why does the sun look so big?", "problem": "The sun looks far bigger and brighter than any star at night. Is it the biggest star?", "steps": ["Compare distance: the sun is about 150 million km away, while the next nearest star is about 40 trillion km away.","Things look smaller and dimmer the further away they are.","Many stars are actually much larger and brighter than the sun."], "answer": "No. The sun is an average star that looks big because it is so close." },
     { "type": "heading", "text": "Galaxies" },
     { "type": "definition", "term": "Galaxy", "text": "A huge system of billions of stars, gas and dust held together by gravity." },
     { "type": "paragraph", "text": "Our solar system is in the **Milky Way**, a **spiral galaxy** about 100 000 light years across. On a dark, clear night it appears as a faint band of light across the sky. The nearest large galaxy is **Andromeda**. From the southern hemisphere you can see two small nearby galaxies, the **Large and Small Magellanic Clouds**. The **universe** contains billions of galaxies." },
@@ -28,6 +29,7 @@
       ["Andromeda galaxy", "About 2,5 million light years"]
     ] },
     { "type": "callout", "label": "Remember", "text": "When we look at a distant star we see light that left it long ago. Light from the sun is about 8 minutes old; light from Andromeda left it 2,5 million years ago. Looking far into space means looking back in time." },
+    { "type": "example", "title": "Using light-years", "problem": "Proxima Centauri is 4,2 light-years away. One light-year is about 9,46 trillion km. How far is that in kilometres, and how old is the light we see?", "steps": ["Distance: 4,2 × 9,46 trillion km ≈ 39,7 trillion km.","A light-year is the distance light travels in one year, so the light took 4,2 years to reach us."], "answer": "About 39,7 trillion km, and we see the star as it was 4,2 years ago." },
     { "type": "heading", "text": "Looking into space" },
     { "type": "list", "items": [
       "**Optical telescopes** use lenses or mirrors to collect visible light. Large ones are built on high mountains or in dry, dark places away from city lights.",

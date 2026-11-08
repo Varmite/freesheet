@@ -11,6 +11,7 @@
       "**Purpose**: to inform, persuade, entertain, criticise or reflect.",
       "**Audience**: who the text is written for, shown by vocabulary, examples and register."
     ] },
+    { "type": "example", "title": "Finding the writer's claim", "problem": "'Although cars are convenient, cities must invest in trains, since they move more people with less pollution.' What is the claim?", "steps": ["A claim is what the writer wants you to believe.","'Although' introduces a concession.","The main point follows."], "answer": "Cities must invest in trains." },
     { "type": "heading", "text": "Tone" },
     { "type": "table", "headers": ["Tone word", "Meaning"], "rows": [
       ["Sardonic", "Mocking and cynical"],
@@ -20,6 +21,7 @@
       ["Didactic", "Intending to teach a lesson"],
       ["Ambivalent", "Having mixed feelings"]
     ] },
+    { "type": "example", "title": "Identifying sarcasm", "problem": "'Another brilliant idea from the council: closing the library to save money on books.' What is the tone?", "steps": ["'Brilliant' clashes with the foolish idea.","Saying the opposite of what is meant is sarcasm."], "answer": "Sarcastic." },
     { "type": "heading", "text": "Style and structure" },
     { "type": "paragraph", "text": "Writers use **anecdotes** to engage readers, **short sentences** for emphasis, **rhetorical questions** to involve readers, **contrast** to make a point, and a **circular structure** (ending where they began) to give a sense of completeness." },
     { "type": "passage", "title": "Practice passage: The Tyranny of the Five-Star Review (written for FreeSheet)", "text": "[1] Last month I ate at a small restaurant in Bloemfontein that served the best lamb curry I have ever tasted. The owner, a cheerful woman called Mrs Pillay, asked me as I left whether I would 'please, please' leave a review. Not a good review, I noticed. A five-star review. Anything less, she explained, and her restaurant would sink beneath the hundreds of others on the app.\n\n[2] We now live in a world where everything is rated: our taxi drivers, our plumbers, our dentists, even the people who deliver our groceries. On the surface this is democratic. Why should a restaurant critic's opinion matter more than mine? But the system has a cruel flaw. When every rating is expected to be perfect, four stars, which once meant 'very good', has come to mean 'something went wrong'.\n\n[3] The result is a strange kind of dishonesty. We give five stars because we feel sorry for the driver, or because we are afraid of seeming mean. The ratings stop telling us anything at all. And the people being rated, who often depend on them for their income, live in constant fear of a single bad day.\n\n[4] I gave Mrs Pillay five stars. She deserved them. But I wonder how many of her neighbours deserved four, and are now out of business." },

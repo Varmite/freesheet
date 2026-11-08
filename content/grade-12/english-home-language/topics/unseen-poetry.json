@@ -14,6 +14,7 @@
       "Only then look closely at diction, sound and punctuation, asking what effect each choice has."
     ] },
     { "type": "passage", "title": "\"Hope\" is the thing with feathers – Emily Dickinson (published 1891; public domain)", "text": "\"Hope\" is the thing with feathers -\nThat perches in the soul -\nAnd sings the tune without the words -\nAnd never stops - at all -\n\nAnd sweetest - in the Gale - is heard -\nAnd sore must be the storm -\nThat could abash the little Bird\nThat kept so many warm -\n\nI've heard it in the chillest land -\nAnd on the strangest Sea -\nYet - never - in Extremity,\nIt asked a crumb - of me." },
+    { "type": "example", "title": "First steps with an unseen poem", "problem": "What should you do in the first three minutes with an unseen poem?", "steps": ["Read the title and predict.","Read twice: once for sense and once for detail.","Mark the speaker, the situation and any change of tone."], "answer": "Find out who is speaking, about what, and where the poem shifts." },
     { "type": "heading", "text": "Working through the poem" },
     { "type": "list", "items": [
       "**Central metaphor**: hope is an **extended metaphor** of a small bird that lives in the soul.",
@@ -24,7 +25,8 @@
       "**Tone**: gentle, admiring and grateful.",
       "**Theme**: hope is a constant, selfless inner strength that sustains people through suffering."
     ] },
-    { "type": "callout", "label": "Exam tip", "text": "You will not be marked on 'the right answer' as much as on a well-supported one. Always quote briefly and explain the effect. If you are unsure of a word, use the context: 'abash' sits beside 'storm' and 'little Bird', so it must mean something like silence or defeat." }
+    { "type": "callout", "label": "Exam tip", "text": "You will not be marked on 'the right answer' as much as on a well-supported one. Always quote briefly and explain the effect. If you are unsure of a word, use the context: 'abash' sits beside 'storm' and 'little Bird', so it must mean something like silence or defeat." },
+    { "type": "example", "title": "Answering a contextual question", "problem": "Question (2 marks): 'Discuss the effect of the word 'crawls' in 'the bus crawls home'.'", "steps": ["Literal meaning: the bus moves slowly.","Suggested meaning: a tired, reluctant journey.","Two marks needs both meaning and effect."], "answer": "'Crawls suggests slow, exhausting movement, emphasising the commuters' weariness.'" }
   ],
   "questions": [
     { "id": "metaphor", "type": "short", "prompt": "To what is hope compared throughout the poem?", "answers": ["a bird", "bird", "a small bird", "a little bird"] },

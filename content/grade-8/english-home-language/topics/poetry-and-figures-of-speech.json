@@ -18,6 +18,7 @@
       ["Irony", "The opposite of what is expected or said", "A fire station burns down."]
     ] },
     { "type": "callout", "label": "Exam tip", "text": "When asked to discuss a figure of speech: (1) **name** it, (2) say **what is compared** or done, and (3) explain the **effect** or meaning in context. A name alone usually earns only one mark." },
+    { "type": "example", "title": "Simile, metaphor or personification?", "problem": "Name the figure of speech: (a) 'The wind whispered through the trees.' (b) 'Her smile was the sun.' (c) 'He ran like a cheetah.'", "steps": ["(a) Wind cannot whisper, so it is given a human action: personification.","(b) One thing is said to be another: metaphor.","(c) A comparison using 'like': simile."], "answer": "Personification, metaphor and simile." },
     { "type": "heading", "text": "Poetic structure and sound" },
     { "type": "list", "items": [
       "**Stanza**: a group of lines in a poem (like a paragraph).",

@@ -13,6 +13,7 @@
       ["Top view (plan)", "Above", "**Below** the front view"]
     ] },
     { "type": "callout", "label": "Remember", "text": "First-angle projection is shown by its symbol: a truncated cone drawn with a front view and a side view. Hidden edges are drawn as thin **dashed** lines, and holes have **centre lines** (long dash, short dash)." },
+    { "type": "example", "title": "Where does each view go?", "problem": "In first-angle projection, where do you draw the top view and the view from the left, relative to the front view?", "steps": ["Imagine rolling the object: the view you see goes on the far side of the object.","The top view goes below the front view.","The left view goes to the right of the front view."], "answer": "Top view below; left view on the right." },
     { "type": "heading", "text": "From orthographic to isometric" },
     { "type": "list", "ordered": true, "items": [
       "Draw an isometric **crate** (box) using the overall length, width and height from the orthographic views: verticals stay vertical; length and width lines are at 30°.",
@@ -35,6 +36,7 @@
       "Do not dimension the same feature twice; place dimensions outside the view where possible.",
       "Circles are dimensioned with Ø (diameter) and arcs with R (radius)."
     ] },
+    { "type": "example", "title": "Find the mistakes", "problem": "A drawing has a dimension written as '50 mm', a vertical dimension that reads from the left, and dimension lines crossing each other. What should change?", "steps": ["Dimensions are in millimetres, and the unit is left out of each number and stated in the title block: write 50.","Vertical dimensions must read from the right-hand side of the page.","Dimension lines should not cross, so place the shorter ones nearest the object."], "answer": "Remove the unit, rotate the text to read from the right, and rearrange the lines." },
     { "type": "heading", "text": "The title block" },
     { "type": "paragraph", "text": "A title block in the bottom right corner shows the **title** of the drawing, the **name** of the person who drew it, the **date**, the **scale**, the **projection symbol** and the **drawing number**." }
   ],

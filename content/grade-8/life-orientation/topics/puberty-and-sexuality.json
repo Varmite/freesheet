@@ -19,6 +19,7 @@
       "New feelings of **attraction** to others.",
       "Worries about appearance and fitting in."
     ] },
+    { "type": "example", "title": "Understanding mood swings", "problem": "Thabo feels irritable for no clear reason and wants more privacy. Is something wrong?", "steps": ["Hormones change during puberty and can affect mood.","Wanting privacy and independence is common.","If sadness lasts or feels overwhelming, he should talk to a trusted adult."], "answer": "These are normal changes, but support is there if needed." },
     { "type": "heading", "text": "Personal hygiene" },
     { "type": "list", "items": [
       "Shower or wash daily, especially after sport; use deodorant.",
@@ -27,6 +28,7 @@
       "During menstruation, change pads or tampons regularly (every 4 to 6 hours) and dispose of them properly.",
       "Brush your teeth twice a day."
     ] },
+    { "type": "example", "title": "A simple routine", "problem": "Suggest a daily hygiene routine for a teenager.", "steps": ["Sweat glands become more active, so wash daily.","Use deodorant and wear clean clothes.","Brush your teeth twice a day."], "answer": "Wash daily, clean clothes and brush teeth." },
     { "type": "heading", "text": "Sexuality and values" },
     { "type": "paragraph", "text": "**Sexuality** includes your body, feelings, relationships, gender identity and values, not just sexual activity. Your **values** (what is important to you) guide your decisions. Many teenagers choose **abstinence** (not having sex), which is the only 100% effective way to avoid pregnancy and sexually transmitted infections (STIs)." },
     { "type": "definition", "term": "Consent", "text": "Freely and clearly agreeing to something. Consent must be given without pressure, can be withdrawn at any time, and cannot be given by someone who is drunk, drugged or asleep. In South Africa, the law sets the age of consent for sexual activity at 16." },

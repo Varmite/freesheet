@@ -16,6 +16,7 @@
       "Farming was neglected, causing famine and disease. Historians estimate that the population fell by **millions** between 1885 and 1908."
     ] },
     { "type": "passage", "title": "Source C: Congolese testimony (a composite based on accounts collected by missionaries and Roger Casement, about 1903–1904)", "text": "We were always in the forest looking for rubber, going without food. Our wives had to give up working in the gardens and fields. Then we starved. When we failed and our rubber was short, the soldiers came to our towns and killed us." },
+    { "type": "example", "title": "Writing a cause-and-effect answer", "problem": "Explain why Leopold II's rule in the Congo was so violent.", "steps": ["Start with the aim: the Congo was his personal property and was run for profit from rubber and ivory.","Give the method: villages were set quotas of rubber to collect.","Give the result: failure to meet quotas was punished with hostage-taking, mutilation and killing."], "answer": "Violence was built in, because profit depended on forcing people to meet quotas." },
     { "type": "heading", "text": "Exposure and change" },
     { "type": "paragraph", "text": "Missionaries, the journalist **E. D. Morel** and the British diplomat **Roger Casement** exposed the abuses. Photographs of mutilated children shocked the world. In **1908** the Belgian government took the Congo away from Leopold and it became the **Belgian Congo**. Conditions improved somewhat, but Belgium continued to exploit the colony until independence in **1960**." },
     { "type": "heading", "text": "Case study 2: The Asante and the Gold Coast" },
@@ -28,7 +29,8 @@
       ["1957", "The Gold Coast became independent as **Ghana**, the first sub-Saharan African colony to gain independence, led by Kwame Nkrumah"]
     ] },
     { "type": "paragraph", "text": "The British never captured the Golden Stool, which had been hidden. Under British rule, the Gold Coast became a major producer of **cocoa**, gold and timber for export, but most of the profits went to Britain." },
-    { "type": "callout", "label": "Exam tip", "text": "When comparing case studies, consider: who ruled, what resources were wanted, how labour was obtained, how people resisted, and the long-term effects." }
+    { "type": "callout", "label": "Exam tip", "text": "When comparing case studies, consider: who ruled, what resources were wanted, how labour was obtained, how people resisted, and the long-term effects." },
+    { "type": "example", "title": "Comparing resistance", "problem": "Name one way the Asante's experience of colonial rule shows that Africans resisted it.", "steps": ["Identify an event: the war of 1900, led by Queen Mother Yaa Asantewaa.","Say why it happened: the British governor demanded the Golden Stool, the sacred symbol of the Asante nation.","Say what it shows: Africans fought to defend their independence and identity."], "answer": "The Asante fought the British in 1900 to protect the Golden Stool." }
   ],
   "questions": [
     { "id": "owner", "type": "mcq", "prompt": "Who personally owned the Congo Free State from 1885 to 1908?", "options": ["Queen Victoria", "King Leopold II", "Otto von Bismarck", "The Belgian parliament"], "answer": 1 },

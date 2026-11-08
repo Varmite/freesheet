@@ -37,7 +37,8 @@
       "Draw up a **plan of action** (a step-by-step sequence) and a list of tools and materials.",
       "Follow **safety rules**: wear safety goggles, use tools correctly, keep the workspace tidy.",
       "Evaluate the final product: does it meet every specification? Ask users for feedback and suggest improvements."
-    ] }
+    ] },
+    { "type": "example", "title": "Evaluating against the specifications", "problem": "A phone stand was designed to hold a 200 g phone, cost under R20 and fold flat. Tests show it holds 300 g, costs R24 and folds flat. Evaluate it.", "steps": ["Compare each result with its specification.","Strength: passes, 300 g is more than 200 g.","Cost: fails, R24 is more than R20.","Folding: passes.","Suggest an improvement: use thinner or recycled material to cut the cost."], "answer": "It meets two of three specifications. Reducing the material cost would fix the third." }
   ],
   "questions": [
     { "id": "idmec", "type": "short", "prompt": "What does the M in IDMEC stand for?", "answers": ["make", "making"] },

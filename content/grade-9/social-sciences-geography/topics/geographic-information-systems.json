@@ -23,9 +23,11 @@
       ["Line", "Something long and narrow", "A road, a river, a power line"],
       ["Polygon (area)", "An area with a boundary", "A dam, a farm, a suburb, a province"]
     ] },
+    { "type": "example", "title": "Spatial or attribute data?", "problem": "A clinic is at a certain latitude and longitude, is called Sizanani Clinic, and sees 120 patients a day. Which details are spatial and which are attribute data?", "steps": ["Spatial data says where something is: the coordinates.","Attribute data describes what it is like: the name and the patient numbers."], "answer": "Spatial: the coordinates. Attribute: the name and patient numbers." },
     { "type": "heading", "text": "Layers" },
     { "type": "paragraph", "text": "In a GIS, different sets of data are stored as separate **layers**, for example roads, rivers, buildings, land use and population. Layers can be switched on and off and placed on top of each other (**overlay**) to show relationships, e.g. which houses lie inside a flood-risk area." },
     { "type": "definition", "term": "Buffering", "text": "Drawing a zone of a set distance around a feature, e.g. a 100 m buffer along a river where no building is allowed." },
+    { "type": "example", "title": "Choosing a site with layers", "problem": "A town needs a new clinic. Which GIS layers would you combine, and how would you use them?", "steps": ["Add layers for roads, population density and existing clinics.","Add a flood-risk layer.","Look for an area with many people, close to a road, far from other clinics and safe from floods."], "answer": "Overlaying the layers shows the areas that meet every need." },
     { "type": "heading", "text": "Remote sensing" },
     { "type": "definition", "term": "Remote sensing", "text": "Collecting information about the Earth from a distance, using satellites, aircraft or drones, without being in contact with the area." },
     { "type": "definition", "term": "Resolution", "text": "The smallest feature that can be seen on an image. High resolution shows small details such as individual cars; low resolution shows only large features." },

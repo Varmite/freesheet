@@ -11,6 +11,7 @@
       "**Read closely**, marking key words and the writer's opinions.",
       "**Scan** for specific details when answering each question."
     ] },
+    { "type": "example", "title": "Using context clues", "problem": "'The desert was arid; not a drop of rain had fallen in years.' What does 'arid' mean?", "steps": ["Look at the words around it.","No rain in years suggests dryness."], "answer": "'Arid' means very dry." },
     { "type": "heading", "text": "Levels of questions" },
     { "type": "table", "headers": ["Level", "What it asks", "Typical wording"], "rows": [
       ["Literal", "Facts stated in the text", "'State', 'Name', 'Quote', 'List'"],
@@ -22,7 +23,8 @@
     { "type": "definition", "term": "Quote", "text": "Copy the exact words from the text inside quotation marks. Do not change spelling or add words." },
     { "type": "definition", "term": "In your own words", "text": "Rephrase the idea; copying the text earns no marks." },
     { "type": "passage", "title": "Practice passage: The Last Bookshop on Long Street (written for FreeSheet)", "text": "[1] When Mr Abrahams opened his bookshop in 1987, there were six others on the same street. Today his is the only one left. The shelves still sag under second-hand paperbacks, and the shop still smells of dust and coffee, but the customers are fewer and greyer.\n\n[2] 'People tell me books are dying,' he says, smiling. 'They have been dying for as long as I have been selling them.' He points to a group of teenagers in the corner, sitting on the floor with a stack of comics. 'Those three come every Saturday. They hardly buy anything, but they read for hours. That is not a dying habit.'\n\n[3] Still, the numbers worry him. Rent has tripled in ten years, and online stores sell new books for less than he pays for them. To survive, he has started a reading club and a book-swap table, and he hosts poetry evenings on the first Friday of every month. 'A bookshop cannot just sell books any more,' he says. 'It has to be a place people want to be.'" },
-    { "type": "callout", "label": "Exam tip", "text": "Let the mark allocation guide you: 2 marks usually needs two points, or one point with an explanation. For a true/false question with a reason, the mark is given only if the reason (often a quotation) is correct." }
+    { "type": "callout", "label": "Exam tip", "text": "Let the mark allocation guide you: 2 marks usually needs two points, or one point with an explanation. For a true/false question with a reason, the mark is given only if the reason (often a quotation) is correct." },
+    { "type": "example", "title": "Answering an evaluative question", "problem": "'Do you agree that teenagers should have part-time jobs?' How do you answer?", "steps": ["State your view clearly.","Give a reason.","Support it with evidence or an example."], "answer": "'Yes, because earning teaches responsibility, as long as it doesn't affect school work.'" }
   ],
   "questions": [
     { "id": "literal", "type": "numeric", "prompt": "How many other bookshops were on the street when Mr Abrahams opened his shop?", "answer": 6, "tolerance": 0 },

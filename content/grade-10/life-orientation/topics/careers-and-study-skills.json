@@ -21,6 +21,7 @@
       "**Learnerships** and **apprenticeships** combine study and work, funded through SETAs.",
       "Check requirements early, so that your subject marks in Grades 10–12 keep your options open."
     ] },
+    { "type": "example", "title": "Checking the requirements", "problem": "A university course needs Mathematics at Level 5. Lindo is getting 55%. Is he on track?", "steps": ["Level 5 is 60% to 69%.","55% is Level 4."], "answer": "No. He needs at least 60%, and to seek extra support." },
     { "type": "heading", "text": "Study skills" },
     { "type": "list", "items": [
       "Use a weekly **timetable** with short study sessions and breaks.",
@@ -29,7 +30,8 @@
       "Practise past papers under exam conditions.",
       "Look after sleep, nutrition and exercise."
     ] },
-    { "type": "callout", "label": "Time management", "text": "Prioritise with the urgent–important matrix: do **urgent and important** tasks now (assignment due tomorrow), **schedule important but not urgent** ones (revision for next month's test), and limit time-wasters (endless scrolling)." }
+    { "type": "callout", "label": "Time management", "text": "Prioritise with the urgent–important matrix: do **urgent and important** tasks now (assignment due tomorrow), **schedule important but not urgent** ones (revision for next month's test), and limit time-wasters (endless scrolling)." },
+    { "type": "example", "title": "Making a mind map", "problem": "How do you make a mind map on a topic such as the water cycle?", "steps": ["Write the topic in the middle.","Draw branches for main ideas.","Add keywords and pictures."], "answer": "One central idea, branches and keywords." }
   ],
   "questions": [
     { "id": "holland", "type": "mcq", "prompt": "A person who enjoys helping and teaching people fits which Holland type?", "options": ["Realistic", "Social", "Conventional", "Investigative"], "answer": 1 },

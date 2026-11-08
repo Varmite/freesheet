@@ -23,6 +23,7 @@
       ["Hobbies, music, art, writing in a journal", "Avoiding problems or staying online for hours"],
       ["Enough sleep and healthy food", "Overeating or not eating"]
     ] },
+    { "type": "example", "title": "Helpful or harmful?", "problem": "Classify: exercising, skipping meals, talking to a friend, avoiding all work.", "steps": ["Helpful strategies deal with the stress or calm the body.","Harmful ones make matters worse later."], "answer": "Helpful: exercising, talking. Harmful: skipping meals, avoiding work." },
     { "type": "heading", "text": "Managing emotions" },
     { "type": "list", "items": [
       "**Anger**: it is normal to feel angry, but how you act matters. Stop, take deep breaths, count to ten, walk away to cool down, and then talk calmly using I-statements.",
@@ -31,7 +32,8 @@
     ] },
     { "type": "callout", "label": "Get help", "text": "If you or a friend feels hopeless or talks about self-harm or suicide, tell a trusted adult immediately. **SADAG** (South African Depression and Anxiety Group) suicide crisis line: **0800 567 567** (free, 24 hours). **Childline**: **116**." },
     { "type": "heading", "text": "Building resilience" },
-    { "type": "paragraph", "text": "**Resilience** is the ability to 'bounce back' after difficult experiences. It grows when you have supportive relationships, healthy habits, problem-solving skills, a sense of purpose and a positive but realistic outlook." }
+    { "type": "paragraph", "text": "**Resilience** is the ability to 'bounce back' after difficult experiences. It grows when you have supportive relationships, healthy habits, problem-solving skills, a sense of purpose and a positive but realistic outlook." },
+    { "type": "example", "title": "Reframing a setback", "problem": "You failed a test. Reframe 'I'm stupid' more usefully.", "steps": ["Avoid judging your whole self by one result.","Focus on what can change."], "answer": "'I didn't prepare well this time, so I'll get help and try a new way.'" }
   ],
   "questions": [
     { "id": "stress-def", "type": "open", "marks": 2, "prompt": "What is stress?", "memo": "✓ The body's and mind's reaction (1)\n✓ to pressure or a challenging situation (1)" },

@@ -14,6 +14,7 @@
       ["Generalise", "Lions, elephants and rhinos", "Large wild animals"],
       ["Nominalise", "Prices rose quickly", "The rapid price increase"]
     ] },
+    { "type": "example", "title": "Changing the structure", "problem": "Paraphrase: 'Because of the increase in fuel prices, commuters are paying more.'", "steps": ["Change the sentence order.","Use a synonym."], "answer": "'Commuters face higher costs since fuel has become more expensive.'" },
     { "type": "heading", "text": "Writing the summary" },
     { "type": "list", "ordered": true, "items": [
       "Underline the focus words in the question (e.g. 'the EFFECTS of drought').",
@@ -23,7 +24,8 @@
       "Count the words (90 maximum) and record the number in brackets."
     ] },
     { "type": "callout", "label": "Common mistakes", "text": "Including the writer's opinions or examples; writing more than 90 words; copying whole phrases; mixing in points about causes when the question asks for effects." },
-    { "type": "passage", "title": "Practice text: Drought in the Karoo (written for FreeSheet)", "text": "The Karoo has always been dry, but the drought that began in 2015 was the worst in living memory. Scientists link it to changing rainfall patterns. For farmers the effects were devastating. Dams dried up, and many were forced to sell their sheep at low prices or watch them die. Farm workers lost their jobs as farms cut costs. Small towns that depend on farmers' spending saw shops close. Some families left the land their grandparents had farmed. The drought also damaged the veld, as overgrazed land turned to dust and blew away. Some farmers have since turned to drought-resistant plants and better water storage, which may help in future." }
+    { "type": "passage", "title": "Practice text: Drought in the Karoo (written for FreeSheet)", "text": "The Karoo has always been dry, but the drought that began in 2015 was the worst in living memory. Scientists link it to changing rainfall patterns. For farmers the effects were devastating. Dams dried up, and many were forced to sell their sheep at low prices or watch them die. Farm workers lost their jobs as farms cut costs. Small towns that depend on farmers' spending saw shops close. Some families left the land their grandparents had farmed. The drought also damaged the veld, as overgrazed land turned to dust and blew away. Some farmers have since turned to drought-resistant plants and better water storage, which may help in future." },
+    { "type": "example", "title": "Staying within the word limit", "problem": "Your summary is 110 words and the limit is 90. What should you do?", "steps": ["Remove examples and repeated ideas.","Combine sentences.","Check that you still include each main point, then write the word count."], "answer": "Cut 20 words without losing any main point." }
   ],
   "questions": [
     { "id": "limit", "type": "numeric", "prompt": "What is the maximum number of words for the Grade 11 Paper 1 summary?", "answer": 90, "tolerance": 0 },

@@ -23,7 +23,8 @@
       "Internal conflict: her fear versus her responsibility to save Tumi.",
       "Suspense: contrasting distances (twelve kilometres vs two hundred metres) show the urgency; short sentences; personification of the river ('talked to itself'); the open ending ('put her foot on the first plank') leaves the reader wondering whether she will make it."
     ], "answer": "Identify each type of conflict and link techniques to their effect on the reader." },
-    { "type": "callout", "label": "Exam tip", "text": "Contextual questions on a novel often ask you to **place the extract** in the story, explain a character's **motive**, discuss **irony** or a **symbol**, or give your **opinion** of a character's actions. Always support your answer with evidence from the text." }
+    { "type": "callout", "label": "Exam tip", "text": "Contextual questions on a novel often ask you to **place the extract** in the story, explain a character's **motive**, discuss **irony** or a **symbol**, or give your **opinion** of a character's actions. Always support your answer with evidence from the text." },
+    { "type": "example", "title": "Identifying the narrator", "problem": "'I had never seen my father cry until that night.' What kind of narrator is this, and what is its effect?", "steps": ["The word 'I' shows a first-person narrator.","We see only what this character knows.","The effect is closeness to the narrator's feelings."], "answer": "First-person, giving an intimate but limited view." }
   ],
   "questions": [
     { "id": "subplot", "type": "short", "prompt": "What is a secondary storyline in a novel called?", "answers": ["subplot", "a subplot", "sub-plot"] },

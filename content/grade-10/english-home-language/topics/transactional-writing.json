@@ -24,7 +24,8 @@
       ["Invitation", "Host, occasion, date, time, venue, dress code, RSVP"],
       ["Agenda", "Name of organisation, date, time, venue; numbered items: welcome, apologies, minutes of previous meeting, matters arising, new business, general, closure"]
     ] },
-    { "type": "example", "title": "Formal letter opening", "problem": "Write the first lines of a letter of complaint about a faulty phone.", "steps": ["Dear Sir/Madam", "RE: COMPLAINT ABOUT A FAULTY CELLPHONE", "I am writing to complain about a Novo X5 cellphone that I bought from your Menlyn store on 2 March, which stopped working after one week."], "answer": "Purpose stated clearly in the first sentence, with facts (product, place, date, problem)." }
+    { "type": "example", "title": "Formal letter opening", "problem": "Write the first lines of a letter of complaint about a faulty phone.", "steps": ["Dear Sir/Madam", "RE: COMPLAINT ABOUT A FAULTY CELLPHONE", "I am writing to complain about a Novo X5 cellphone that I bought from your Menlyn store on 2 March, which stopped working after one week."], "answer": "Purpose stated clearly in the first sentence, with facts (product, place, date, problem)." },
+    { "type": "example", "title": "Writing a notice", "problem": "Write a notice for a school cake sale on Friday at break.", "steps": ["Heading says what it is.","Include what, when, where and who to contact.","Keep it short and clear."], "answer": "'CAKE SALE. Friday, first break, school hall. Cakes from R5. Enquiries: Ms Khumalo.'" }
   ],
   "questions": [
     { "id": "faithfully", "type": "mcq", "prompt": "Which closing goes with 'Dear Sir/Madam'?", "options": ["Yours sincerely", "Yours faithfully", "Love", "Cheers"], "answer": 1 },

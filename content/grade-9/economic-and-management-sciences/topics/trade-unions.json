@@ -31,6 +31,7 @@
       ["Employment Equity Act (1998)", "Prohibits unfair discrimination and promotes equal opportunities"],
       ["National Minimum Wage Act (2018)", "Sets a minimum hourly wage for most workers"]
     ] },
+    { "type": "example", "title": "Is this legal?", "problem": "An employer tells workers they must work 50 ordinary hours a week, and may take leave only one day at a time. Which of their rights does this break?", "steps": ["The Basic Conditions of Employment Act sets ordinary hours at no more than 45 a week.","Work beyond that is overtime, which must be agreed and paid at a higher rate.","The Act also gives 21 consecutive days of annual leave per year."], "answer": "Both demands break the Basic Conditions of Employment Act." },
     { "type": "heading", "text": "Collective bargaining and strikes" },
     { "type": "list", "ordered": true, "items": [
       "The union presents its demands (e.g. a 9% wage increase).",
@@ -45,7 +46,8 @@
       ["Protection against unfair treatment", "Violence during some strikes"],
       ["Workers have a stronger voice", "Very high wage demands may lead businesses to cut jobs or use machines"],
       ["Improved safety", "Membership fees"]
-    ] }
+    ] },
+    { "type": "example", "title": "A wage negotiation", "problem": "A union asks for 10%, the employer offers 4%, and after bargaining they settle on 7%. What is the new monthly wage of a worker earning R12 000?", "steps": ["Increase: 7% × R12 000 = R840.","New wage: R12 000 + R840 = R12 840.","Bargaining usually ends between the two opening positions, which avoids a strike."], "answer": "R12 840 a month." }
   ],
   "questions": [
     { "id": "define", "type": "open", "marks": 2, "prompt": "What is a trade union?", "memo": "✓ An organisation of workers (1)\n✓ formed to protect and improve their wages, working conditions and rights (1)" },

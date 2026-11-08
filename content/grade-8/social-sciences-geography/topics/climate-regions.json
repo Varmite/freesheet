@@ -37,7 +37,8 @@
       ["Karoo and Northern Cape", "Semi-desert; very little rain", "Nama Karoo and Succulent Karoo"],
       ["West coast (Namaqualand)", "Desert; cold Benguela Current, fog", "Succulent Karoo (spring flowers)"]
     ] },
-    { "type": "callout", "label": "Exam tip", "text": "When describing a climate graph, always mention the **temperature** (hot or cold; the range), the **total rainfall**, and **when** the rain falls (summer, winter or all year). Then name the climate region." }
+    { "type": "callout", "label": "Exam tip", "text": "When describing a climate graph, always mention the **temperature** (hot or cold; the range), the **total rainfall**, and **when** the rain falls (summer, winter or all year). Then name the climate region." },
+    { "type": "example", "title": "Cape Town or Durban?", "problem": "One city gets most rain in June to August, and the other in December to February. Which is which?", "steps": ["Winter rainfall in the south-west comes from cold fronts, giving the Mediterranean climate of Cape Town.","Summer rainfall in the east comes from warm, moist air off the Indian Ocean, giving Durban's humid subtropical climate."], "answer": "June to August is Cape Town; December to February is Durban." }
   ],
   "questions": [
     { "id": "rainforest", "type": "mcq", "prompt": "Which climate region is hot and wet all year?", "options": ["Savanna", "Mediterranean", "Tropical rainforest", "Temperate grassland"], "answer": 2 },

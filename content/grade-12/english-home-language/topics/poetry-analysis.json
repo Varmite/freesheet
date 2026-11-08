@@ -14,6 +14,7 @@
       ["Theme", "What does the poem say about life, power, love, time, nature or society?"]
     ] },
     { "type": "passage", "title": "Ozymandias – Percy Bysshe Shelley (1818; public domain)", "text": "I met a traveller from an antique land,\nWho said—\"Two vast and trunkless legs of stone\nStand in the desert. . . . Near them, on the sand,\nHalf sunk a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed;\nAnd on the pedestal, these words appear:\nMy name is Ozymandias, King of Kings;\nLook on my Works, ye Mighty, and despair!\nNothing beside remains. Round the decay\nOf that colossal Wreck, boundless and bare\nThe lone and level sands stretch far away.\"" },
+    { "type": "example", "title": "Applying SIFT to one line", "problem": "'The factory coughs its grey breath over us.' Apply SIFT.", "steps": ["Subject: pollution.","Imagery: personification of a sick factory.","Feeling: disgust and helplessness.","Theme: industry harms communities."], "answer": "The factory is given a sick body to criticise pollution." },
     { "type": "heading", "text": "Applying the method" },
     { "type": "list", "items": [
       "**Form**: a sonnet (14 lines) with an unusual rhyme scheme; the story is told at second hand, through a traveller, which adds distance.",
@@ -23,7 +24,8 @@
       "**Sound**: alliteration in 'boundless and bare' and 'lone and level sands' slows the final line, emphasising the vast emptiness.",
       "**Theme**: the impermanence of human power and pride; time and nature outlast tyrants. Art (the sculptor's work) survives longer than the ruler."
     ] },
-    { "type": "callout", "label": "Exam tip", "text": "In contextual questions, use the mark allocation: a 3-mark question usually needs a point, a quotation and an explanation of its effect. In the poetry essay (about 250–300 words), write an introduction with a clear argument, body paragraphs that each analyse a technique with evidence, and a conclusion." }
+    { "type": "callout", "label": "Exam tip", "text": "In contextual questions, use the mark allocation: a 3-mark question usually needs a point, a quotation and an explanation of its effect. In the poetry essay (about 250–300 words), write an introduction with a clear argument, body paragraphs that each analyse a technique with evidence, and a conclusion." },
+    { "type": "example", "title": "Using structure", "problem": "A poem has long flowing lines until a single short final line: 'He did not come.' What is the effect?", "steps": ["The short line breaks the rhythm.","Its position gives it emphasis."], "answer": "It creates a sudden, painful finality." }
   ],
   "questions": [
     { "id": "form", "type": "mcq", "prompt": "'Ozymandias' is written in the form of a…", "options": ["ballad", "sonnet", "haiku", "free-verse poem"], "answer": 1 },

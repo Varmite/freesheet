@@ -20,6 +20,7 @@
       "'Each', 'every', 'everyone', 'neither' take a singular verb: 'Everyone **has** arrived.'",
       "With 'either…or' / 'neither…nor', the verb agrees with the nearer subject: 'Neither the teacher nor the learners **were** late.'"
     ] },
+    { "type": "example", "title": "Tricky concord", "problem": "Choose: 'Each of the boys (has/have) a book.'", "steps": ["The subject is 'each', which is singular.","'Of the boys' is only a phrase."], "answer": "'Each of the boys has a book.'" },
     { "type": "heading", "text": "Active and passive voice" },
     { "type": "paragraph", "text": "**Active**: the subject does the action: 'The dog chased the cat.' **Passive**: the subject receives the action: 'The cat was chased by the dog.' Keep the tense the same when changing voice." },
     { "type": "heading", "text": "Direct and indirect speech" },

@@ -20,6 +20,7 @@
       "**Pressure release**: when overlying rock is eroded, the rock beneath expands and cracks in layers.",
       "**Salt crystal growth**: salt water evaporates in cracks, and the growing crystals push the rock apart (common on coasts)."
     ] },
+    { "type": "example", "title": "How frost splits a rock", "problem": "Explain why rocks in the Drakensberg crack in winter.", "steps": ["Rain seeps into cracks in the rock.","At night the water freezes and expands by about 9%, forcing the crack wider.","It melts and the cycle repeats until pieces break off."], "answer": "This is frost action, a type of physical weathering." },
     { "type": "heading", "text": "Chemical weathering" },
     { "type": "paragraph", "text": "Minerals in the rock react with water, oxygen or acids and change into new substances, weakening the rock. It is fastest in **hot, wet** climates." },
     { "type": "list", "items": [
@@ -27,6 +28,7 @@
       "**Oxidation**: iron minerals react with oxygen and water to form rust-coloured iron oxide, making rocks red-brown and crumbly.",
       "**Hydrolysis**: water reacts with minerals such as feldspar in granite, changing them into clay."
     ] },
+    { "type": "example", "title": "How limestone caves form", "problem": "Explain how rainwater can hollow out limestone, as at the Sudwala and Cango caves.", "steps": ["Rain absorbs carbon dioxide and becomes a weak carbonic acid.","The acid reacts with limestone and dissolves it.","Over many thousands of years the gaps grow into caves."], "answer": "Chemical weathering dissolves the rock." },
     { "type": "heading", "text": "Biological weathering" },
     { "type": "list", "items": [
       "Plant **roots** grow into cracks and force them open.",

@@ -35,7 +35,8 @@
       ["Organ system", "Organs working together for one major function", "Circulatory system"],
       ["Organism", "A complete living thing", "A human"]
     ] },
-    { "type": "paragraph", "text": "Cells are **specialised** for their jobs: red blood cells have no nucleus and a dimpled disc shape to carry more oxygen; nerve cells are long to carry messages; root hair cells have a long extension to absorb water; guard cells open and close stomata." }
+    { "type": "paragraph", "text": "Cells are **specialised** for their jobs: red blood cells have no nucleus and a dimpled disc shape to carry more oxygen; nerve cells are long to carry messages; root hair cells have a long extension to absorb water; guard cells open and close stomata." },
+    { "type": "example", "title": "Putting the levels in order", "problem": "Arrange these from smallest to largest: heart, muscle cell, human, circulatory system, muscle tissue.", "steps": ["Start with one cell: muscle cell.","Similar cells working together make a tissue: muscle tissue.","Different tissues form an organ: heart.","Organs working together form a system: circulatory system. All the systems make the organism: human."], "answer": "Muscle cell → muscle tissue → heart → circulatory system → human." }
   ],
   "questions": [
     { "id": "control", "type": "short", "prompt": "Which organelle controls the activities of the cell?", "answers": ["nucleus", "the nucleus"] },

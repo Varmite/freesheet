@@ -16,6 +16,7 @@
     ] },
     { "type": "heading", "text": "Format of a friendly letter" },
     { "type": "passage", "title": "Example friendly letter (original)", "text": "14 Jacaranda Street\nPolokwane\n0699\n12 May 2025\n\nDear Lerato,\n\nThank you so much for the book you sent for my birthday! I started reading it on the bus and nearly missed my stop.\n\nGuess what? Our soccer team made it to the district final. Coach says we have a real chance if our goalkeeper stops letting in silly goals (that's me, by the way).\n\nHow is life in Cape Town? Is it true that the wind blows people off the pavement? Write back soon and tell me everything.\n\nLove,\nKarabo" },
+    { "type": "example", "title": "Friendly or formal?", "problem": "Which is suited to a letter to your cousin: 'Dear Sir, I hereby inform you of my visit' or 'Hi Thabo, guess what, I'm coming to visit!'?", "steps": ["A cousin is someone you know well.","Friendly letters use a first-name greeting and a relaxed tone."], "answer": "The second one." },
     { "type": "heading", "text": "Format of a formal letter" },
     { "type": "list", "ordered": true, "items": [
       "Sender's address (top right or top left) and date.",
@@ -29,6 +30,7 @@
     ] },
     { "type": "passage", "title": "Example formal letter of complaint (original)", "text": "PO Box 455\nKwaDukuza\n4450\n3 March 2025\n\nThe Manager\nSunrise Electronics\n22 Main Road\nKwaDukuza\n4450\n\nDear Sir/Madam\n\nRE: FAULTY HEADPHONES PURCHASED ON 20 FEBRUARY 2025\n\nI am writing to complain about a pair of wireless headphones that I bought at your store on 20 February 2025 for R499 (receipt no. 10234).\n\nAfter only five days, the left earpiece stopped working. When I returned to the store, the assistant refused to help me and said that the problem was my fault.\n\nAccording to the Consumer Protection Act, I am entitled to a repair, replacement or refund for faulty goods returned within six months. I would therefore appreciate a replacement or a full refund.\n\nThank you for your attention. I look forward to your reply.\n\nYours faithfully\nS. Mthembu\nSibusiso Mthembu" },
     { "type": "callout", "label": "Remember", "text": "**Dear Sir/Madam** → **Yours faithfully**. **Dear Mrs Pillay** → **Yours sincerely**. Keep formal letters short, polite and to the point." },
+    { "type": "example", "title": "Fixing the ending", "problem": "A letter to a school principal begins 'Dear Mrs Naidu' and ends 'Yours faithfully'. Is that correct?", "steps": ["'Yours faithfully' goes with 'Dear Sir/Madam', when you don't use the name.","'Yours sincerely' goes with a name.","This letter uses her name."], "answer": "No. It should end 'Yours sincerely'." },
     { "type": "heading", "text": "Checklist" },
     { "type": "list", "items": [
       "Correct format and layout.",

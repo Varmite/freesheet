@@ -17,6 +17,7 @@
       "**Perfect**: an action completed before another time. *By the time we arrived, the film **had started**.*",
       "**Perfect continuous**: an action that continued up to a point. *He **has been studying** for three hours.*"
     ] },
+    { "type": "example", "title": "Changing the tense", "problem": "Change 'She walks to school' to (a) the past, (b) the future, (c) the present continuous.", "steps": ["(a) Past: add -ed.","(b) Future: will + verb.","(c) Present continuous: is + verb-ing."], "answer": "(a) She walked. (b) She will walk. (c) She is walking." },
     { "type": "heading", "text": "Irregular verbs" },
     { "type": "table", "headers": ["Base", "Simple past", "Past participle"], "rows": [
       ["go", "went", "gone"],

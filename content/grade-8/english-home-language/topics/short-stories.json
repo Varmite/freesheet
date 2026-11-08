@@ -19,6 +19,7 @@
       "**Round character**: complex, with many traits; **flat character**: simple, with one or two traits.",
       "**Dynamic character**: changes during the story; **static character**: stays the same."
     ] },
+    { "type": "example", "title": "Reading character from action", "problem": "'Every morning, Mr Dlamini left a loaf at the door of the widow next door and never told a soul.' What does this tell us about him?", "steps": ["The action: he gives food regularly.","The detail: he keeps it secret.","Character traits: he is generous and humble."], "answer": "He is kind and modest, shown indirectly through his actions." },
     { "type": "heading", "text": "Literary devices in stories" },
     { "type": "list", "items": [
       "**Foreshadowing**: hints about what will happen later.",

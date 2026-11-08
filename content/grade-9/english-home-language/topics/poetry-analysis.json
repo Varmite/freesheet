@@ -33,7 +33,8 @@
       "Theme: the quiet sacrifice and dignity of working parents, and the child's love, respect and determination to repay that sacrifice.",
       "Shift: the final two lines move from description to the speaker's personal promise: 'how I'll build her palace in this town', extending the royal imagery."
     ], "answer": "Link each device to the theme." },
-    { "type": "callout", "label": "Exam tip", "text": "In a paragraph answer on a poem, write a clear opening statement, refer to at least three relevant devices with **short quotations**, explain the effect of each, and link them to the theme or question." }
+    { "type": "callout", "label": "Exam tip", "text": "In a paragraph answer on a poem, write a clear opening statement, refer to at least three relevant devices with **short quotations**, explain the effect of each, and link them to the theme or question." },
+    { "type": "example", "title": "Tone or mood?", "problem": "A poet writes, 'Again they promise. Again we wait.' Identify the tone.", "steps": ["Tone is the speaker's attitude.","The repetition of 'again' shows frustration with broken promises."], "answer": "A bitter, disillusioned tone." }
   ],
   "questions": [
     { "id": "diction", "type": "short", "prompt": "What is the term for a poet's choice of words?", "answers": ["diction"] },

@@ -12,6 +12,7 @@
       "**Butte**: a smaller hill, higher than it is wide.",
       "**Conical hill**: when the cap rock is removed, the hill is worn into a cone shape."
     ] },
+    { "type": "example", "title": "Plateau, mesa, butte or conical hill?", "problem": "Arrange these from largest to smallest as a flat-topped hill is eroded: butte, plateau, conical hill, mesa.", "steps": ["A plateau is a wide, high, flat area.","Erosion cuts it into mesas, whose tops are still wider than they are high.","Further erosion makes buttes, which are taller than they are wide.","When the hard cap has gone, a conical hill is left."], "answer": "Plateau → mesa → butte → conical hill." },
     { "type": "heading", "text": "The course of a river" },
     { "type": "table", "headers": ["", "Upper course", "Middle course", "Lower course"], "rows": [
       ["Gradient", "Steep", "Moderate", "Gentle, almost flat"],
@@ -41,7 +42,8 @@
     { "type": "list", "items": [
       "**Effects**: loss of fertile soil and lower crop yields; dams and rivers silt up; increased flooding; food insecurity and poverty."
     ] },
-    { "type": "callout", "label": "Exam tip", "text": "On an orthophoto map, look for light-coloured, branching lines without vegetation on slopes: these are often dongas (gullies) caused by soil erosion." }
+    { "type": "callout", "label": "Exam tip", "text": "On an orthophoto map, look for light-coloured, branching lines without vegetation on slopes: these are often dongas (gullies) caused by soil erosion." },
+    { "type": "example", "title": "Saving a sloping field", "problem": "A farmer's sloping field loses soil every time it rains. Suggest two solutions and explain them.", "steps": ["Plough along the contours, so furrows catch water instead of channelling it downhill.","Keep plants or crop residue on the ground, so roots bind the soil and rain does not hit it directly."], "answer": "Contour ploughing and keeping the soil covered." }
   ],
   "questions": [
     { "id": "mesa", "type": "mcq", "prompt": "A flat-topped hill that is wider than it is high is a…", "options": ["butte", "mesa", "conical hill", "spur"], "answer": 1 },

@@ -22,10 +22,12 @@
       "Aid is given by governments (**bilateral** aid), international organisations such as the UN and World Bank (**multilateral** aid), and **NGOs** (non-governmental organisations) such as Gift of the Givers.",
       "**Problems**: aid can create dependency, be tied to conditions (e.g. buying goods from the donor), or be lost to corruption."
     ] },
+    { "type": "example", "title": "Short-term or long-term aid?", "problem": "After a drought, one organisation delivers food parcels and another helps a village build a water tank and teaches irrigation. Compare them.", "steps": ["Food parcels meet an urgent need but end when supplies stop.","The tank and skills keep working after the helpers leave.","Both have a place: relief first, then development."], "answer": "Food parcels are short-term relief; the tank is long-term, sustainable development." },
     { "type": "heading", "text": "2. Trade and investment" },
     { "type": "paragraph", "text": "**Fair trade** guarantees fair prices for small producers. **Beneficiation** (processing raw materials locally) creates jobs and earns more. Foreign investment in factories can create jobs, but profits may leave the country." },
     { "type": "heading", "text": "3. Community-based development" },
     { "type": "paragraph", "text": "**Bottom-up** projects are planned and run by local communities themselves, for example community food gardens, savings clubs (**stokvels**), co-operatives and small businesses. Because people choose and manage the projects, they are often more successful and sustainable than **top-down** projects planned by outsiders." },
+    { "type": "example", "title": "Is this project community-based?", "problem": "Outsiders build a clinic without asking anyone. Elsewhere, residents choose a vegetable project, run it and share the profits. Which is community-based?", "steps": ["Community-based development means local people decide, take part and benefit.","The first was decided from outside.","In the second, the community owns the project, so it is more likely to last."], "answer": "The vegetable project." },
     { "type": "heading", "text": "4. Empowering women" },
     { "type": "list", "items": [
       "Educating girls leads to healthier families, lower birth rates and higher incomes.",

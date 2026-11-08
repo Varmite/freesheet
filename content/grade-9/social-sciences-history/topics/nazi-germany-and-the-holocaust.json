@@ -13,6 +13,7 @@
       "Joseph Goebbels ran **propaganda**: radio, films, posters and rallies glorified Hitler and spread hatred of Jews.",
       "Books by Jewish and anti-Nazi writers were burned; young people joined the **Hitler Youth**."
     ] },
+    { "type": "example", "title": "Why did Germans support the Nazis?", "problem": "Give two conditions that helped Hitler gain support by 1933.", "steps": ["Economic: the Great Depression brought mass unemployment.","Political: many blamed the Weimar government and resented the Treaty of Versailles, and Nazi propaganda promised to restore Germany."], "answer": "Economic crisis and resentment of the Treaty of Versailles." },
     { "type": "heading", "text": "Nazi racial ideology" },
     { "type": "paragraph", "text": "The Nazis believed in a false theory of a 'master race' of so-called **Aryans** (white, northern Europeans) and taught that other groups were inferior. They blamed **Jews** for Germany's problems. This **pseudo-science** (false science) about 'race' was used to justify discrimination and murder." },
     { "type": "definition", "term": "Antisemitism", "text": "Prejudice, hatred or discrimination against Jewish people." },
@@ -25,6 +26,7 @@
       ["1942", "**Wannsee Conference**: Nazi leaders planned the 'Final Solution', the murder of all Jews in Europe"],
       ["1942–1945", "**Extermination camps** such as Auschwitz-Birkenau and Treblinka; most victims were murdered in gas chambers on arrival"]
     ] },
+    { "type": "example", "title": "Ordering the steps", "problem": "Put these in order: Kristallnacht; Nuremberg Laws; boycott of Jewish shops; ghettos in occupied Poland.", "steps": ["1933: boycott of Jewish shops.","1935: Nuremberg Laws took away citizenship.","1938: Kristallnacht attacks.","From 1939–1940: ghettos."], "answer": "Persecution increased step by step, from exclusion to violence." },
     { "type": "heading", "text": "The Holocaust" },
     { "type": "definition", "term": "The Holocaust", "text": "The systematic, state-organised murder of about **six million Jews** by Nazi Germany and its collaborators between 1941 and 1945." },
     { "type": "paragraph", "text": "Other groups were also persecuted and murdered: **Roma and Sinti** people, people with disabilities, Polish and Soviet civilians and prisoners of war, gay men, Jehovah's Witnesses and political opponents." },

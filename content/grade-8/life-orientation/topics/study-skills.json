@@ -20,6 +20,7 @@
       "Avoid **procrastination** (putting things off): start with a small task to get going.",
       "Remove distractions: put your phone away or on silent."
     ] },
+    { "type": "example", "title": "Planning an afternoon", "problem": "You have 3 hours after school and must study maths and history, do chores and rest. Plan it.", "steps": ["Do the hardest work first when you are freshest.","Add short breaks.","Maths 1 hour, break 15 minutes, history 45 minutes, chores 30 minutes, then rest."], "answer": "Hard work first, with breaks in between." },
     { "type": "heading", "text": "Effective study methods" },
     { "type": "table", "headers": ["Method", "How to use it"], "rows": [
       ["Summaries", "Write key points in your own words, using headings and bullet points"],
@@ -30,6 +31,7 @@
       ["Teach someone", "Explaining a topic to a friend shows whether you really understand it"]
     ] },
     { "type": "callout", "label": "The SQ3R method", "text": "**S**urvey (skim headings and pictures), **Q**uestion (turn headings into questions), **R**ead (read carefully to answer them), **R**ecite (say or write the answers without looking), **R**eview (go over the work regularly)." },
+    { "type": "example", "title": "Passive or active?", "problem": "Which works better: re-reading your notes, or closing the book and writing down what you remember?", "steps": ["Re-reading can feel easy without being effective.","Recalling information strengthens memory and shows what you don't know."], "answer": "Testing yourself works better." },
     { "type": "heading", "text": "Preparing for and writing exams" },
     { "type": "list", "items": [
       "Start revising **weeks** before the exam, not the night before.",

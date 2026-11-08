@@ -14,6 +14,7 @@
       "Consider the consequences: pregnancy, STIs, emotional effects.",
       "Remember that **delaying** sex is a valid and healthy choice."
     ] },
+    { "type": "example", "title": "Thinking through consequences", "problem": "A learner feels pressured by a partner into a sexual relationship. What should they consider?", "steps": ["Consent must be freely given and can be withdrawn.","Think about personal values, health and future plans.","Talk to a trusted adult or clinic."], "answer": "No one should be pressured. They have the right to say no." },
     { "type": "heading", "text": "Contraception and protection" },
     { "type": "table", "headers": ["Method", "Prevents pregnancy", "Protects against STIs/HIV"], "rows": [
       ["Male or female condom", "Yes (if used correctly every time)", "Yes"],
@@ -29,6 +30,7 @@
       "Many STIs (chlamydia, gonorrhoea, syphilis) have no early symptoms but are treatable. Regular testing is important."
     ] },
     { "type": "callout", "label": "The law", "text": "The age of consent in South Africa is **16**. Sex with a child under 12 is always rape. The Sexual Offences Act makes sharing intimate images of a child a crime. Young people from age 12 can access contraception and HIV testing confidentially at clinics." },
+    { "type": "example", "title": "Fact or myth?", "problem": "'You can get HIV from sharing a cup.' Fact or myth?", "steps": ["HIV spreads through certain body fluids such as blood.","It is not spread by casual contact."], "answer": "Myth." },
     { "type": "heading", "text": "Teenage pregnancy" },
     { "type": "paragraph", "text": "Teenage pregnancy can affect health, schooling and finances. Pregnant learners have the right to continue their education. Support is available from clinics, social workers and organisations such as loveLife." }
   ],

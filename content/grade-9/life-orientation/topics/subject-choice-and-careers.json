@@ -14,6 +14,7 @@
     ] },
     { "type": "heading", "text": "Mathematics or Mathematical Literacy?" },
     { "type": "paragraph", "text": "**Mathematics** is required for most degrees in engineering, medicine, the natural sciences, actuarial science, accounting and IT. **Mathematical Literacy** focuses on using maths in everyday life (budgets, measurement, maps) and is accepted for many other courses. Choosing Mathematical Literacy may close some doors, so check the requirements of careers you are interested in." },
+    { "type": "example", "title": "Checking a subject choice", "problem": "Zinhle wants to study engineering. Should she choose Mathematics or Mathematical Literacy?", "steps": ["Engineering degrees require Mathematics.","Mathematical Literacy is not accepted for this."], "answer": "Mathematics." },
     { "type": "heading", "text": "National Senior Certificate (NSC) passes" },
     { "type": "table", "headers": ["Pass level", "Opens the door to", "Minimum requirement (summary)"], "rows": [
       ["Bachelor's pass", "Degree studies at a university", "Home Language 40%; 4 subjects from the designated list at 50% or more; 2 further subjects at 30%"],
@@ -29,6 +30,7 @@
       "Advice from teachers, counsellors and family, but the choice must be **yours**.",
       "Do **not** choose a subject just because your friends are taking it or because it seems easy."
     ] },
+    { "type": "example", "title": "Weighing up choices", "problem": "A learner wants to choose subjects because his friends are taking them. Is this wise?", "steps": ["Consider abilities, interests and career requirements.","Friends' choices do not match your goals."], "answer": "No. Choose based on your own abilities and goals." },
     { "type": "heading", "text": "Funding further study" },
     { "type": "list", "items": [
       "**NSFAS** (National Student Financial Aid Scheme): bursaries for students from households with a low income, at public universities and TVET colleges.",

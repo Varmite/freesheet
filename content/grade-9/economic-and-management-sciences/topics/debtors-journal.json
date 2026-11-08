@@ -22,6 +22,7 @@
       ["", "31", "", "", "4 800", "3 200"]
     ] },
     { "type": "paragraph", "text": "No money is received when goods are sold on credit, so there is **no Bank column**." },
+    { "type": "example", "title": "Sales and cost of sales", "problem": "Goods are sold on credit for R1 200. The business adds 50% on cost. What goes in the Sales and Cost of sales columns?", "steps": ["Selling price is cost + 50%, so it is 150% of cost.","Cost = R1 200 ÷ 1,5 = R800.","Sales column: R1 200. Cost of sales column: R800."], "answer": "Sales R1 200 and Cost of sales R800, giving a gross profit of R400." },
     { "type": "heading", "text": "Posting the Debtors Journal" },
     { "type": "table", "headers": ["Column total", "Account debited", "Account credited"], "rows": [
       ["Sales R4 800", "Debtors control", "Sales"],
