@@ -32,6 +32,15 @@ pub fn read_json(file: &Path) -> Result<Value, String> {
     serde_json::from_str(text.trim_start_matches('\u{feff}')).map_err(|e| e.to_string())
 }
 
+pub struct Startup {
+    /// "smooth" (default) or "system".
+    pub text_rendering: String,
+    pub theme: String,
+    pub accent: String,
+    pub line_spacing: String,
+    pub reading_width: String,
+}
+
 pub struct Store {
     pub file: PathBuf,
     /// Older places the progress may be in (the Android Edition 1.0 kept it here).
@@ -81,10 +90,18 @@ impl Store {
         fs::rename(&tmp, &self.file)
     }
 
-    /// "smooth" (default) or "system".
-    pub fn text_rendering(&self) -> String {
+    /// The saved settings that matter before the first page is drawn.
+    pub fn startup(&self) -> Startup {
         let p = self.load();
-        if p["settings"]["textRendering"] == "system" { "system".into() } else { "smooth".into() }
+        let s = &p["settings"];
+        let text = |k: &str, d: &str| s[k].as_str().unwrap_or(d).to_string();
+        Startup {
+            text_rendering: if s["textRendering"] == "system" { "system".into() } else { "smooth".into() },
+            theme: text("theme", "system"),
+            accent: text("accent", "default"),
+            line_spacing: text("lineSpacing", "normal"),
+            reading_width: text("readingWidth", "normal"),
+        }
     }
 }
 
@@ -107,7 +124,8 @@ mod tests {
         // A damaged file falls back to the backup.
         fs::write(&store.file, "{oops").unwrap();
         assert_eq!(store.load()["topics"]["a"], 1);
-        assert_eq!(store.text_rendering(), "system");
+        assert_eq!(store.startup().text_rendering, "system");
+        assert_eq!(store.startup().theme, "system");
         fs::remove_dir_all(&dir).unwrap();
     }
 

@@ -57,6 +57,7 @@ button, .card, .row, .tab, .seg, .opt, .lopt { touch-action: manipulation; -webk
 
   /* Things that sit at the bottom of the screen move above the tab bar. */
   .toast { bottom: calc(var(--tabbar-h) + var(--safe-b) + 0.75rem); max-width: calc(100vw - 2rem); text-align: center; }
+  .update-card { left: 0.75rem; bottom: calc(var(--tabbar-h) + var(--safe-b) + 0.75rem); width: calc(100vw - 1.5rem); }
   .buddy { right: 10px; bottom: calc(var(--tabbar-h) + var(--safe-b) + 8px); }
   .buddy-fig { width: 72px; height: 72px; }
   .buddy.is-min .buddy-fig { width: 44px; height: 44px; }

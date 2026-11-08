@@ -3,6 +3,7 @@
 //!   --goto <steps>     do these steps, separated by ';' (see `step`)
 //!   --shot <file.png>  then save a screenshot there and quit
 //!   --wait <secs>      seconds before the screenshot (default 1.5)
+//!   --perf <file>      write how long each frame took to build (microseconds) there
 
 use super::app::{App, Mode, Tab, View};
 use egui::Context;
@@ -14,6 +15,7 @@ pub struct Script {
     next_at: f64,
     shot_asked: bool,
     saved: std::sync::Arc<std::sync::atomic::AtomicBool>,
+    perf: Option<(String, Vec<u32>)>,
 }
 
 impl Script {
@@ -35,6 +37,7 @@ impl Script {
             next_at: 0.8,
             shot_asked: false,
             saved: Default::default(),
+            perf: get("--perf").map(|f| (f, Vec::new())),
         })
     }
 }
@@ -44,6 +47,10 @@ impl App {
         let Some(s) = &mut self.auto else { return };
         // The screenshot was saved: quit.
         if s.saved.load(std::sync::atomic::Ordering::SeqCst) {
+            if let Some((file, frames)) = &s.perf {
+                let lines: Vec<String> = frames.iter().map(u32::to_string).collect();
+                let _ = std::fs::write(file, lines.join("\n"));
+            }
             self.on_leave();
             ctx.send_viewport_cmd(egui::ViewportCommand::Close);
             return;
@@ -74,6 +81,13 @@ impl App {
             } else {
                 self.auto = None;
             }
+        }
+    }
+
+    /// Testing: remember how long a frame took to build.
+    pub fn note_frame(&mut self, took: std::time::Duration) {
+        if let Some((_, frames)) = self.auto.as_mut().and_then(|s| s.perf.as_mut()) {
+            frames.push(took.as_micros() as u32);
         }
     }
 
@@ -157,6 +171,12 @@ impl App {
             "streak" => self.show_streak(),
             "buddy" => self.buddy_menu(),
             "toast" => self.toast(arg.to_string()),
+            "theme" => self.p.settings.theme = Some(arg.to_string()),
+            "accent" => self.p.settings.accent = Some(arg.to_string()),
+            "spacing" => self.p.settings.line_spacing = Some(arg.to_string()),
+            "width" => self.p.settings.reading_width = Some(arg.to_string()),
+            "updatecheck" => self.check_updates_now(),
+            "updatefake" => self.update.pretend(arg, "https://github.com/Varmite/freesheet/releases/latest"),
             "scroll" => self.scroll_rect = Some((egui::Rect::from_min_size(egui::pos2(0.0, arg.parse().unwrap_or(0.0)), egui::vec2(1.0, 1.0)), egui::Align::TOP)),
             _ => log::warn!("unknown step {step}"),
         }

@@ -30,12 +30,17 @@ Rust code is used on Android.
   updating). It cheers right answers, offers to show where a missed answer is explained, suggests what to
   study next from your progress, reacts to streaks and results, and has a tap-for-help menu. It steps out
   during exams. Change it, switch it off, or make it speak only when tapped, in Settings.
-* **Settings** (cog, top right): text size, text rendering, animations, sound effects and the study buddy.
+* **Settings** (cog, top right, or Ctrl+,): colour themes (Automatic, Light, Dark, Sepia, Midnight, Forest,
+  Black, High contrast) and accent colours, text size, text rendering, line spacing, reading width, the tab
+  to open on, animations, sound effects, the study buddy and updates.
+* **Updates**: each time it opens, FreeSheet quietly checks GitHub for a newer version and shows a small
+  card if there is one (never during an exam). It downloads nothing by itself. Turn it off in Settings.
 * **Smooth text** (default): text is drawn the way macOS draws it: greyscale anti-aliasing instead of
   ClearType's colour fringes and the Inter typeface (SIL Open Font License, `src/fonts`), tightened only
   at heading sizes, with a slightly heavier weight for dark-on-light text on Windows. "System" switches back to Windows' own rendering.
 
-There are no accounts and nothing is sent over the internet. Progress is saved to a single file,
+There are no accounts and none of your data is sent over the internet: the update check is the app's only
+connection, a plain request for the public list of releases, and without internet everything still works. Progress is saved to a single file,
 `progress.json`, in your user-data folder:
 
 | OS      | Location |

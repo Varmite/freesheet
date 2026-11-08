@@ -1,6 +1,7 @@
 //! The screens, drawn with egui (no web view): a native, GPU-drawn interface.
 
 mod ai_marking;
+mod appearance;
 pub mod anim;
 pub mod app;
 mod automation;
@@ -42,7 +43,9 @@ impl eframe::App for FreeSheet {
     }
 
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
+        let started = std::time::Instant::now();
         self.app.ui(ui);
+        self.app.note_frame(started.elapsed());
     }
 
     fn on_exit(&mut self, _gl: Option<&eframe::glow::Context>) {

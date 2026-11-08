@@ -163,6 +163,7 @@ impl App {
                 }
                 ui.add_space(t.px(0.5));
             };
+            self.appearance_settings(ui);
             widgets::h2(ui, &t, "Display");
             let sizes = ["small", "normal", "large", "xlarge"];
             let cur = sizes.iter().position(|s| Some(*s) == self.p.settings.text_size.as_deref()).unwrap_or(1);
@@ -182,6 +183,34 @@ impl App {
                     self.save();
                 }
                 widgets::muted(ui, &t, "Smooth transitions, a lively buddy and moving feedback.", 0.85);
+            });
+            let spacings = ["compact", "normal", "relaxed"];
+            let cur = spacings.iter().position(|s| Some(*s) == self.p.settings.line_spacing.as_deref()).unwrap_or(1);
+            setting(ui, "Line spacing", &mut |ui| {
+                if let Some(i) = widgets::segmented(ui, &t, Id::new("spacing"), &["Compact", "Normal", "Relaxed"], cur, true) {
+                    self.sound.play("select");
+                    self.p.settings.line_spacing = Some(spacings[i].into());
+                    self.save();
+                }
+                widgets::muted(ui, &t, "How much room there is between lines in the notes.", 0.85);
+            });
+            let widths = ["narrow", "normal", "wide"];
+            let cur = widths.iter().position(|s| Some(*s) == self.p.settings.reading_width.as_deref()).unwrap_or(1);
+            setting(ui, "Reading width", &mut |ui| {
+                if let Some(i) = widgets::segmented(ui, &t, Id::new("reading"), &["Narrow", "Normal", "Wide"], cur, true) {
+                    self.sound.play("select");
+                    self.p.settings.reading_width = Some(widths[i].into());
+                    self.save();
+                }
+            });
+            let starts = ["study", "exams", "progress"];
+            let cur = starts.iter().position(|s| Some(*s) == self.p.settings.start_tab.as_deref()).unwrap_or(0);
+            setting(ui, "Open on", &mut |ui| {
+                if let Some(i) = widgets::segmented(ui, &t, Id::new("start"), &["Study", "Exams", "Progress"], cur, true) {
+                    self.sound.play("select");
+                    self.p.settings.start_tab = Some(starts[i].into());
+                    self.save();
+                }
             });
             widgets::h2(ui, &t, "Sound");
             let snd = self.p.settings.sounds != Some(false);
@@ -271,8 +300,7 @@ impl App {
             });
             let loc = if crate::platform::is_android() { "the FreeSheet app's private storage".to_string() } else { self.store.dir().display().to_string() };
             widgets::muted(ui, &t, &format!("Progress is saved on {} only, in {loc}", crate::platform::device()), 0.85);
-            ui.add_space(t.px(1.5));
-            widgets::muted(ui, &t, &format!("FreeSheet {}", env!("CARGO_PKG_VERSION")), 0.85);
+            self.update_settings(ui);
         });
     }
 }

@@ -766,11 +766,22 @@ impl Buddy {
             }
         }
         let _ = sound;
-        if busy || self.bubble.is_some() {
+        if busy {
             ctx.request_repaint();
-        } else if t.motion && vis {
-            // Wake for the next blink or fidget.
-            ctx.request_repaint_after(std::time::Duration::from_secs_f64((self.fig.blink_at - now).clamp(0.05, 6.0).min((self.fidget_at - now).max(0.05))));
+        } else {
+            // Nothing is moving: draw again only for the next blink or fidget, or when the
+            // speech bubble is due to close.
+            let mut wake: Option<f64> = None;
+            if t.motion && vis {
+                wake = Some((self.fig.blink_at - now).clamp(0.05, 6.0).min((self.fidget_at - now).max(0.05)));
+            }
+            if let Some(b) = &self.bubble {
+                let until = (b.hide_at - now).max(0.05);
+                wake = Some(wake.map_or(until, |w| w.min(until)));
+            }
+            if let Some(w) = wake {
+                ctx.request_repaint_after(std::time::Duration::from_secs_f64(w));
+            }
         }
         events
     }

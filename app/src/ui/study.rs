@@ -301,7 +301,7 @@ impl App {
         let idx = s.topics.iter().position(|x| x.id == tid).unwrap_or(0);
         let prev = idx.checked_sub(1).and_then(|i| s.topics.get(i));
         let next = s.topics.get(idx + 1);
-        widgets::page_column(ui, &t, 820.0, |ui| {
+        widgets::page_column(ui, &t, t.reading, |ui| {
             self.crumbs(
                 ui,
                 &[

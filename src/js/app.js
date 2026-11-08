@@ -57,7 +57,11 @@
     if (!streakBtn || !P()) return;
     const st = Streak.status(P());
     streakBtn.classList.toggle('lit', st.todayMet);
-    streakBtn.innerHTML = `${Icons.ui('flame', 'streak-flame')}<span>${st.current}</span>`;
+    // Only touched when the number changes: this runs on every page and every minute.
+    if (streakBtn.dataset.n !== String(st.current)) {
+      streakBtn.dataset.n = st.current;
+      streakBtn.innerHTML = `${Icons.ui('flame', 'streak-flame')}<span>${st.current}</span>`;
+    }
     const left = Math.max(0, st.goalQuestions - st.questionsToday);
     streakBtn.title = st.todayMet
       ? `${st.current}-day streak. Today's goal is done.`
@@ -255,6 +259,14 @@
     Motion.setEnabled(P().settings.animations !== false);
   }
 
+  // Theme, accent and reading comfort. Changing them while the app is open cross-fades.
+  function applyAppearance(animate) {
+    const s = P().settings;
+    const run = () => Theme.apply(s);
+    if (animate && Motion.enabled() && document.startViewTransition) document.startViewTransition(run);
+    else run();
+  }
+
   function applyTextSize() {
     const sizes = { small: '15px', normal: '16.5px', large: '18.5px', xlarge: '20.5px' };
     document.documentElement.style.fontSize = sizes[P().settings.textSize] || sizes.normal;
@@ -362,6 +374,7 @@
     // Freeze the old page on screen so it can animate out once the new one is ready.
     const tr = moved && fromKey ? Motion.capture(main) : null;
     await renderView();
+    syncUpdateCard();
     if (token !== state.renderToken) { Motion.discard(tr); return; }
     Motion.decorate(main);
     if (!moved) { Motion.discard(tr); return; }
@@ -619,7 +632,7 @@
       { label: meta.title },
     ];
     const mode = v.mode === 'questions' ? 'questions' : 'notes';
-    main.innerHTML = `<div class="page page-reading">
+    main.innerHTML = `<div class="page page-reading page-topic">
       ${crumbs(items)}
       <h1>${esc(topic.title)}</h1>
       <p class="lead">${M.inline(topic.summary || '')}</p>
@@ -1471,7 +1484,41 @@
   // ---------------------------------------------------------------- settings
   // Opened from the gear in the top bar; Back returns to the tab you came from.
 
+  // A row with a segmented control; bindSeg3 answers its buttons.
+  function seg3(label, name, value, options, note) {
+    return `<div class="setting"><span>${label}</span><div class="segmented small">${options.map(([v, t]) => `<button class="seg ${value === v ? 'active' : ''}" data-${name}="${v}">${t}</button>`).join('')}</div>${note ? `<span class="muted small">${note}</span>` : ''}</div>`;
+  }
+  function bindSeg3(name, set) {
+    main.querySelectorAll(`[data-${name}]`).forEach((b) => b.addEventListener('click', () => {
+      Sound.play('select');
+      Motion.selectSegment(b);
+      set(b.dataset[name]);
+      save();
+    }));
+  }
+
+  function renderAccents() {
+    const row = main.querySelector('#accent-row');
+    if (!row) return;
+    const s = P().settings;
+    const look = Theme.resolve(s.theme || 'system');
+    const locked = look.id === 'contrast';
+    const cur = s.accent || 'default';
+    const dots = [{ id: 'default', label: 'Theme colour', c: look.p.accent }].concat(Theme.ACCENTS.map((a) => ({ id: a.id, label: a.label, c: look.dark ? a.dark : a.light })));
+    row.innerHTML = dots.map((d) => `<button class="accent-dot ${d.id === 'default' ? 'default' : ''} ${cur === d.id && !locked ? 'on' : ''}" style="--c:${d.c}" data-accent-id="${d.id}" title="${d.label}" aria-label="${d.label}" aria-pressed="${cur === d.id}" ${locked ? 'disabled' : ''}></button>`).join('');
+    main.querySelector('#accent-note').hidden = !locked;
+    row.querySelectorAll('[data-accent-id]').forEach((b) => b.addEventListener('click', () => {
+      if (s.accent === b.dataset.accentId) return;
+      Sound.play('select');
+      s.accent = b.dataset.accentId;
+      applyAppearance(true);
+      renderAccents();
+      save();
+    }));
+  }
+
   function viewSettings() {
+    const s = P().settings;
     const ts = P().settings.textSize || 'normal';
     const anim = P().settings.animations !== false;
     const snd = P().settings.sounds !== false;
@@ -1483,6 +1530,13 @@
     main.innerHTML = `<div class="page page-settings">
       <button class="link back-link" id="settings-back">‹ Back</button>
       <h1>Settings</h1>
+      <h2>Appearance</h2>
+      <div class="settings">
+        <div><span class="set-label">Theme</span><div class="theme-grid">${Theme.THEMES.map((x) => `<button class="theme-tile ${(s.theme || 'system') === x.id ? 'on' : ''}" data-theme-id="${x.id}" aria-pressed="${(s.theme || 'system') === x.id}">
+          <span class="theme-prev ${x.p ? '' : 'auto'}" ${x.p ? `style="--t-bg:${x.p.bg};--t-card:${x.p.card};--t-line:${x.p.line};--t-btn:${x.p.btn}"` : ''}><i class="tp-card"></i><i class="tp-line"></i><i class="tp-btn"></i></span>${x.label}</button>`).join('')}</div></div>
+        <div><span class="set-label">Accent colour</span><div class="accent-row" id="accent-row"></div>
+          <p class="muted small" id="accent-note" hidden>High contrast keeps its own colours so everything stays easy to read.</p></div>
+      </div>
       <h2>Display</h2>
       <div class="settings">
         <div class="setting"><span>Text size</span><div class="segmented small">
@@ -1497,6 +1551,9 @@
           <button class="seg ${anim ? 'active' : ''}" data-anim="1">On</button>
           <button class="seg ${anim ? '' : 'active'}" data-anim="0">Off</button>
         </div><span class="muted small">Smooth transitions at your screen's full refresh rate, with a touch of motion blur.</span></div>
+        ${seg3('Line spacing', 'spacing', s.lineSpacing || 'normal', [['compact', 'Compact'], ['normal', 'Normal'], ['relaxed', 'Relaxed']], 'How much room there is between lines in the notes.')}
+        ${seg3('Reading width', 'width', s.readingWidth || 'normal', [['narrow', 'Narrow'], ['normal', 'Normal'], ['wide', 'Wide']])}
+        ${seg3('Open on', 'start', s.startTab || 'study', [['study', 'Study'], ['exams', 'Exams'], ['progress', 'Progress']])}
       </div>
       <h2>Sound</h2>
       <div class="settings">
@@ -1531,7 +1588,27 @@
           <button class="btn danger-outline" id="reset">Reset all progress</button></div></div>
         <p class="muted small" id="location"></p>
       </div>
+      <h2>Updates</h2>
+      <div class="settings">
+        ${seg3('Check for updates', 'updates', s.checkUpdates === false ? 'off' : 'on', [['on', 'On'], ['off', 'Off']], 'Look for a new version each time FreeSheet opens.')}
+        <div class="update-status" id="update-status"></div>
+      </div>
     </div>`;
+    renderAccents();
+    renderUpdateStatus();
+    main.querySelectorAll('[data-theme-id]').forEach((b) => b.addEventListener('click', () => {
+      if (b.classList.contains('on')) return;
+      Sound.play('select');
+      main.querySelectorAll('[data-theme-id]').forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
+      s.theme = b.dataset.themeId;
+      applyAppearance(true);
+      renderAccents();
+      save();
+    }));
+    bindSeg3('spacing', (v) => { s.lineSpacing = v; applyAppearance(); });
+    bindSeg3('width', (v) => { s.readingWidth = v; applyAppearance(); });
+    bindSeg3('start', (v) => { s.startTab = v; });
+    bindSeg3('updates', (v) => { s.checkUpdates = v === 'on'; });
     main.querySelector('#settings-back').addEventListener('click', leaveSettings);
     main.querySelectorAll('[data-snd]').forEach((b) => b.addEventListener('click', () => {
       const on = b.dataset.snd === '1';
@@ -1604,14 +1681,14 @@
         r.data.settings.buddy = P().settings.buddy;
       }
       state.progress = r.data;
-      applyTextSize(); applyTextRendering(); applyMotion(); applySound(); applyBuddy(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
+      applyAppearance(); applyTextSize(); applyTextRendering(); applyMotion(); applySound(); applyBuddy(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
     });
     main.querySelector('#open-folder').addEventListener('click', () => api.openDataFolder());
     main.querySelector('#reset').addEventListener('click', async () => {
       if (!(await dialog({ title: 'Reset all progress?', body: '<p>This deletes all notes read, practice answers and exam results for every grade. This cannot be undone. Consider exporting first.</p>', ok: 'Reset everything', danger: true }))) return;
       stopExam();
       const settings = P().settings;
-      state.progress = { version: 1, settings: { grade: settings.grade, textSize: settings.textSize, animations: settings.animations, sounds: settings.sounds, buddy: settings.buddy, textRendering: settings.textRendering }, topics: {}, exams: {}, examDrafts: {} };
+      state.progress = { version: 1, settings: { grade: settings.grade, textSize: settings.textSize, animations: settings.animations, sounds: settings.sounds, buddy: settings.buddy, textRendering: settings.textRendering, theme: settings.theme, accent: settings.accent, lineSpacing: settings.lineSpacing, readingWidth: settings.readingWidth, startTab: settings.startTab, checkUpdates: settings.checkUpdates, updateDismissed: settings.updateDismissed }, topics: {}, exams: {}, examDrafts: {} };
       await flush(); toast('Progress reset.'); render();
     });
     api.progressLocation().then((loc) => {
@@ -1628,6 +1705,65 @@
     scrollTop();
   }
   function leaveSettings() { setTab(state.returnTab || 'study'); }
+
+  // ---------------------------------------------------------------- updates
+  // Each time the app opens it asks GitHub, quietly, once the first page is on screen. A
+  // new version shows a small card (never during an exam); offline, nothing happens.
+
+  const update = { status: 'idle', version: null, url: null, current: '' };
+
+  async function checkForUpdates() {
+    if (update.status === 'checking') return;
+    update.status = 'checking';
+    renderUpdateStatus();
+    try {
+      Object.assign(update, { version: null, url: null }, await Updates.check(update.current, api.platform === 'android'));
+    } catch (e) {
+      update.status = 'failed';
+    }
+    renderUpdateStatus();
+    syncUpdateCard();
+  }
+
+  function renderUpdateStatus() {
+    const el = main.querySelector('#update-status');
+    if (!el) return;
+    const v = update.current;
+    const text = {
+      idle: `FreeSheet ${esc(v)} is installed.`,
+      checking: 'Checking for updates…',
+      current: `FreeSheet ${esc(v)} is up to date.`,
+      available: `FreeSheet ${esc(update.version)} is available. You have ${esc(v)}.`,
+      failed: 'Could not check for updates. Are you online?',
+    }[update.status];
+    const available = update.status === 'available';
+    el.innerHTML = `<span>${text}</span><button class="btn small-btn ${available ? 'primary' : ''}" id="update-act" ${update.status === 'checking' ? 'disabled' : ''}>${available ? 'Download' : 'Check now'}</button>`;
+    el.querySelector('#update-act').addEventListener('click', () => (available ? api.openReleasePage(update.url) : checkForUpdates()));
+  }
+
+  let updateCard = null;
+  function syncUpdateCard() {
+    const v = state.views[state.tab];
+    const writing = state.tab === 'exams' && v && (v.name === 'run' || v.name === 'mark');
+    const show = update.status === 'available' && !writing && P() && P().settings.updateDismissed !== update.version
+      && !document.body.classList.contains('welcome-mode') && !document.querySelector('.buddy-setup-back');
+    if (!show) { if (updateCard) { updateCard.remove(); updateCard = null; } return; }
+    if (updateCard) return;
+    updateCard = document.createElement('aside');
+    updateCard.className = 'update-card';
+    updateCard.setAttribute('role', 'status');
+    updateCard.innerHTML = `<strong>FreeSheet ${esc(update.version)} is available</strong><p>You have ${esc(update.current)}. Your progress stays when you update.</p>
+      <div class="btn-row"><button class="btn primary small-btn" data-u="get">${Icons.ui('download')}Download</button><button class="btn small-btn" data-u="later">Later</button></div>`;
+    updateCard.addEventListener('click', (e) => {
+      const b = e.target.closest('[data-u]');
+      if (!b) return;
+      if (b.dataset.u === 'get') api.openReleasePage(update.url);
+      P().settings.updateDismissed = update.version;
+      save();
+      syncUpdateCard();
+    });
+    document.body.appendChild(updateCard);
+  }
 
   // ---------------------------------------------------------------- study buddy
   //
@@ -1990,6 +2126,10 @@
     document.addEventListener('keydown', (e) => {
       if ((e.key === 'Enter' || e.key === ' ') && e.target.closest && e.target.closest('button, summary') && !e.repeat) Sound.play('tap');
     }, true);
+    // Ctrl+, (Cmd+, on a Mac) opens Settings, as in most desktop apps.
+    document.addEventListener('keydown', (e) => {
+      if (e.key === ',' && (e.ctrlKey || e.metaKey) && !e.altKey && !e.shiftKey && api.platform !== 'android') { e.preventDefault(); openSettings(); }
+    });
     document.addEventListener('toggle', (e) => {
       if (e.target instanceof HTMLDetailsElement) Sound.play(e.target.open ? 'reveal' : 'close');
     }, true);
@@ -2003,6 +2143,7 @@
     // Keep the badge right if the app stays open past midnight.
     window.addEventListener('focus', () => updateStreakBadge());
     setInterval(() => updateStreakBadge(), 60 * 1000);
+    applyAppearance();
     applyTextSize();
     applyTextRendering();
     applyMotion();
@@ -2035,6 +2176,13 @@
       scrollTop();
     });
 
+    // Quietly, after the first page is up: the window never waits for the network.
+    api.version().then((v) => {
+      update.current = v;
+      renderUpdateStatus();
+      if (progress.settings.checkUpdates !== false) setTimeout(checkForUpdates, 1200);
+    }).catch(() => {});
+
     const grades = catalog.grades.map((g) => g.grade);
     if (!grades.includes(progress.settings.grade)) {
       progress.settings.grade = undefined;
@@ -2044,6 +2192,7 @@
       }
     }
     syncGradeSelect();
+    if (['exams', 'progress'].includes(progress.settings.startTab)) state.tab = progress.settings.startTab;
     render();
     // New in this version for existing users: meet the study buddy.
     if (!progress.settings.buddy) setTimeout(() => setupBuddy(true, 'New in this update!'), 700);

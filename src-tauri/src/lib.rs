@@ -211,6 +211,16 @@ fn app_version(handle: AppHandle) -> String {
     handle.package_info().version.to_string()
 }
 
+/// Opens a FreeSheet release page in the browser; nothing else may be opened from here.
+#[tauri::command]
+fn open_release_page(handle: AppHandle, url: String) -> Res<()> {
+    if !url.starts_with("https://github.com/Varmite/freesheet/releases/") {
+        return Err("Not a FreeSheet release".into());
+    }
+    use tauri_plugin_opener::OpenerExt;
+    handle.opener().open_url(url, None::<&str>).map_err(err)
+}
+
 #[tauri::command]
 fn smooth_text_active(app: State<'_, App>) -> bool {
     app.smooth_text
@@ -300,7 +310,15 @@ fn allowed(url: &tauri::Url) -> bool {
     }
 }
 
+/// Testing: keep everything in this folder instead of the real data folder.
+fn test_data_dir() -> Option<PathBuf> {
+    std::env::var_os("FREESHEET_DATA").map(PathBuf::from)
+}
+
 fn data_dirs(handle: &AppHandle) -> (PathBuf, Vec<PathBuf>) {
+    if let Some(d) = test_data_dir() {
+        return (d, Vec::new());
+    }
     let path = handle.path();
     if cfg!(target_os = "android") {
         let dir = path.app_data_dir().unwrap_or_else(|_| PathBuf::from("/data/data/za.freesheet.app/files"));
@@ -326,8 +344,27 @@ fn audio_root(handle: &AppHandle) -> PathBuf {
     handle.path().resource_dir().map(|d| d.join("audio")).unwrap_or_else(|_| PathBuf::from("audio"))
 }
 
-fn create_window(handle: &AppHandle, smooth_text: bool) -> tauri::Result<()> {
-    let init = format!("window.__FREESHEET_PLATFORM__ = {};", serde_json::to_string(platform()).unwrap());
+/// The window's colour before the page has drawn, so a dark theme never flashes white.
+#[cfg_attr(not(desktop), allow(dead_code))]
+fn theme_background(theme: &str) -> Option<tauri::window::Color> {
+    use tauri::window::Color;
+    Some(match theme {
+        "light" | "contrast" => Color(255, 255, 255, 255),
+        "dark" => Color(22, 22, 22, 255),
+        "sepia" => Color(248, 241, 227, 255),
+        "midnight" => Color(15, 22, 38, 255),
+        "forest" => Color(18, 26, 21, 255),
+        "black" => Color(0, 0, 0, 255),
+        _ => return None, // Automatic: known once the window can ask the system.
+    })
+}
+
+fn create_window(handle: &AppHandle, prefs: &progress::Startup, smooth_text: bool) -> tauri::Result<()> {
+    let appearance = json!({
+        "theme": prefs.theme, "accent": prefs.accent, "lineSpacing": prefs.line_spacing,
+        "readingWidth": prefs.reading_width, "textRendering": prefs.text_rendering,
+    });
+    let init = format!("window.__FREESHEET_PLATFORM__ = {}; window.__FREESHEET_APPEARANCE__ = {appearance};", serde_json::to_string(platform()).unwrap());
     #[allow(unused_mut)]
     let mut b = WebviewWindowBuilder::new(handle, "main", WebviewUrl::App("index.html".into()))
         .initialization_script(&init)
@@ -335,7 +372,10 @@ fn create_window(handle: &AppHandle, smooth_text: bool) -> tauri::Result<()> {
         .background_color(tauri::window::Color(255, 255, 255, 255));
     #[cfg(desktop)]
     {
-        b = b.title("FreeSheet").inner_size(1200.0, 820.0).min_inner_size(760.0, 560.0).center();
+        b = b.title("FreeSheet").inner_size(1200.0, 820.0).min_inner_size(760.0, 560.0).center().visible(false);
+        if let Some(c) = theme_background(&prefs.theme) {
+            b = b.background_color(c);
+        }
     }
     #[cfg(windows)]
     {
@@ -350,7 +390,18 @@ fn create_window(handle: &AppHandle, smooth_text: bool) -> tauri::Result<()> {
         b = b.additional_browser_args(&args);
     }
     let _ = smooth_text;
-    b.build()?;
+    if let Some(d) = test_data_dir() {
+        b = b.data_directory(d.join("webview"));
+    }
+    let window = b.build()?;
+    #[cfg(desktop)]
+    {
+        if prefs.theme == "system" && matches!(window.theme(), Ok(tauri::Theme::Dark)) {
+            let _ = window.set_background_color(Some(tauri::window::Color(22, 22, 22, 255)));
+        }
+        window.show()?;
+    }
+    let _ = window;
     Ok(())
 }
 
@@ -359,18 +410,20 @@ pub fn run() {
     let mut builder = tauri::Builder::default();
     #[cfg(desktop)]
     {
-        // A second launch brings the open window to the front instead.
-        builder = builder
-            .plugin(tauri_plugin_single_instance::init(|handle, _args, _cwd| {
+        // A second launch brings the open window to the front instead (a test copy with
+        // its own data folder runs alongside).
+        if test_data_dir().is_none() {
+            builder = builder.plugin(tauri_plugin_single_instance::init(|handle, _args, _cwd| {
                 if let Some(w) = handle.get_webview_window("main") {
                     let _ = w.unminimize();
                     let _ = w.show();
                     let _ = w.set_focus();
                 }
-            }))
-            .plugin(tauri_plugin_opener::init());
+            }));
+        }
     }
     builder
+        .plugin(tauri_plugin_opener::init())
         .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_fs::init())
         .invoke_handler(tauri::generate_handler![
@@ -392,6 +445,7 @@ pub fn run() {
             app_version,
             smooth_text_active,
             relaunch,
+            open_release_page,
             close_window,
             minimize_app,
         ])
@@ -399,7 +453,12 @@ pub fn run() {
             let handle = app.handle();
             let (dir, legacy) = data_dirs(handle);
             let store = progress::Store::new(dir, legacy);
-            let smooth_text = cfg!(windows) && store.text_rendering() == "smooth";
+            // Ready by the time the page asks for it.
+            std::thread::spawn(|| {
+                content::catalog();
+            });
+            let prefs = store.startup();
+            let smooth_text = cfg!(windows) && prefs.text_rendering == "smooth";
             app.manage(App {
                 store,
                 audio: audio::Audio::new(audio_root(handle)),
@@ -407,7 +466,7 @@ pub fn run() {
                 closing: AtomicBool::new(false),
                 close_started: AtomicBool::new(false),
             });
-            create_window(handle, smooth_text)?;
+            create_window(handle, &prefs, smooth_text)?;
             Ok(())
         })
         .build(tauri::generate_context!())

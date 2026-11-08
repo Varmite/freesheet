@@ -209,6 +209,12 @@ pub struct App {
     pub ai_failed: HashMap<String, String>,
     /// Testing: press this question's main button (see automation.rs).
     pub auto_check: Option<usize>,
+    pub update: crate::update::Checker,
+    pub update_card_at: Option<f64>,
+    /// Changing theme: when, and the old background, which fades away.
+    theme_fade: Option<(f64, Color32)>,
+    atlas_fill: f32,
+    restyled: bool,
 }
 
 /// Things that happen a moment after something else.
@@ -244,7 +250,12 @@ impl App {
         for t in [Tab::Study, Tab::Exams, Tab::Progress, Tab::Settings] {
             views.insert(t, View::Home);
         }
-        let t = Theme { p: theme::LIGHT, dark: false, rem: 16.5, motion: true, narrow: false };
+        let t = Theme { p: theme::LIGHT, dark: false, rem: 16.5, motion: true, narrow: false, spacing: 1.0, reading: 820.0 };
+        let start = match p.settings.start_tab.as_deref() {
+            Some("exams") if !welcome => Tab::Exams,
+            Some("progress") if !welcome => Tab::Progress,
+            _ => Tab::Study,
+        };
         ctx.set_fonts(theme::fonts());
         let mut app = App {
             t,
@@ -253,7 +264,7 @@ impl App {
             saver,
             save_due: None,
             dirty: false,
-            tab: Tab::Study,
+            tab: start,
             views,
             return_tab: Tab::Study,
             topics: HashMap::new(),
@@ -299,6 +310,11 @@ impl App {
             ai_reviews: HashMap::new(),
             ai_failed: HashMap::new(),
             auto_check: None,
+            update: crate::update::Checker::default(),
+            update_card_at: None,
+            theme_fade: None,
+            atlas_fill: 0.0,
+            restyled: false,
         };
         app.apply_buddy();
         app.sound.enabled = app.p.settings.sounds != Some(false);
@@ -569,6 +585,7 @@ impl App {
             if d.closing.is_none() {
                 d.closing = Some((self.now, ok));
                 self.sound.play("close");
+                self.ctx.request_repaint();
             }
         }
     }
@@ -623,26 +640,48 @@ impl App {
             _ => 16.5,
         };
         let narrow = ctx.content_rect().width() < 720.0;
-        Theme { p: if dark { theme::DARK } else { theme::LIGHT }, dark, rem, motion: self.p.settings.animations != Some(false), narrow }
+        let s = &self.p.settings;
+        let (p, dark) = theme::resolve(s.theme.as_deref().unwrap_or("system"), s.accent.as_deref().unwrap_or("default"), dark);
+        Theme { p, dark, rem, motion: s.animations != Some(false), narrow, spacing: theme::spacing_of(s.line_spacing.as_deref()), reading: theme::reading_of(s.reading_width.as_deref()) }
     }
 
     // ---------------------------------------------------------------- the frame
 
     pub fn frame(&mut self, ctx: &Context) {
         self.now = ctx.input(|i| i.time);
-        let t = self.theme_for(ctx);
-        let changed = t.dark != self.t.dark || t.rem != self.t.rem || t.narrow != self.t.narrow || t.motion != self.t.motion || !self.started;
-        if t.rem != self.t.rem {
+        // egui rebuilds its glyph atlas when it fills up; laid-out text kept from before
+        // then would draw the wrong letters.
+        let atlas = ctx.fonts(|f| f.font_atlas_fill_ratio());
+        if atlas + 0.001 < self.atlas_fill || std::mem::take(&mut self.restyled) {
             rich::clear_cache();
+        }
+        self.atlas_fill = atlas;
+        let t = self.theme_for(ctx);
+        let recolour = t.p != self.t.p;
+        let changed = recolour || t.dark != self.t.dark || t.rem != self.t.rem || t.narrow != self.t.narrow || t.motion != self.t.motion || !self.started;
+        // Laid-out text holds its colours, so a new palette needs fresh layouts.
+        if t.rem != self.t.rem || recolour {
+            rich::clear_cache();
+        }
+        if recolour && self.started && t.motion {
+            self.theme_fade = Some((self.now, self.t.p.bg));
         }
         self.t = t;
         if changed {
             widgets::apply_visuals(ctx, &self.t);
+            // A new style can make egui rebuild the atlas when the next frame begins,
+            // after this frame's text has been laid out against the old one.
+            self.restyled = true;
+            ctx.request_repaint();
         }
         if !self.started {
             self.started = true;
             self.nav_key = self.nav_key_of(self.tab, &self.view());
             self.nav_start = self.now;
+            // Every time the app opens; the answer arrives whenever the network gives it.
+            if self.auto.is_none() && self.p.settings.check_updates != Some(false) {
+                self.update.start(ctx);
+            }
             if !self.welcome && self.p.settings.buddy.is_none() {
                 self.later(0.7, Delayed::Setup(true, "New in this update!".into()));
             } else if !self.welcome {
@@ -692,6 +731,10 @@ impl App {
         // Input wakes the buddy.
         if ctx.input(|i| !i.events.is_empty() || i.pointer.delta() != egui::Vec2::ZERO) {
             self.buddy.activity(self.now);
+        }
+        // Ctrl+, (Cmd+, on a Mac) opens Settings, as in most desktop apps.
+        if !crate::platform::is_android() && ctx.input_mut(|i| i.consume_key(egui::Modifiers::COMMAND, egui::Key::Comma)) {
+            self.open_settings();
         }
         if ctx.input(|i| i.key_pressed(egui::Key::BrowserBack)) || ctx.input_mut(|i| i.consume_key(egui::Modifiers::NONE, egui::Key::Escape)) && self.dialog.is_none() && self.setup.is_none() && crate::platform::is_android() {
             self.back();
@@ -1124,6 +1167,7 @@ impl App {
                 ctx.request_repaint();
             }
         }
+        self.update_card(ctx, gap);
         self.show_dialog(ctx);
         if let Some(mut s) = self.setup.take() {
             match s.show(ctx, &t, self.now, &mut self.sound) {
@@ -1138,6 +1182,21 @@ impl App {
                 }
             }
         }
+        self.paint_theme_fade(ctx);
+    }
+
+    /// The old theme's background melts away over the new one.
+    fn paint_theme_fade(&mut self, ctx: &Context) {
+        let Some((at, color)) = self.theme_fade else { return };
+        let k = ((self.now - at) / 0.24) as f32;
+        if k >= 1.0 {
+            self.theme_fade = None;
+            return;
+        }
+        let e = super::anim::Ease::EaseOut.at(k);
+        let layer = egui::LayerId::new(Order::Tooltip, Id::new("theme-fade"));
+        ctx.layer_painter(layer).rect_filled(ctx.content_rect(), 0.0, color.gamma_multiply(0.9 * (1.0 - e)));
+        ctx.request_repaint();
     }
 
     fn show_dialog(&mut self, ctx: &Context) {
@@ -1160,7 +1219,8 @@ impl App {
             k = 1.0 - 0.06 * ck;
             fade = 1.0 - ck;
         }
-        if t.motion {
+        // Only while it moves: an open dialog otherwise waits for input like any page.
+        if t.motion && (age < 0.32 || d.closing.is_some()) {
             ctx.request_repaint();
         }
         let mut close: Option<bool> = None;
@@ -1348,6 +1408,13 @@ impl App {
                 fresh.settings.buddy = s.buddy;
                 fresh.settings.text_rendering = s.text_rendering;
                 fresh.settings.ai_marking = s.ai_marking;
+                fresh.settings.theme = s.theme;
+                fresh.settings.accent = s.accent;
+                fresh.settings.line_spacing = s.line_spacing;
+                fresh.settings.reading_width = s.reading_width;
+                fresh.settings.start_tab = s.start_tab;
+                fresh.settings.check_updates = s.check_updates;
+                fresh.settings.update_dismissed = s.update_dismissed;
                 self.p = fresh;
                 self.flush();
                 self.toast("Progress reset.");

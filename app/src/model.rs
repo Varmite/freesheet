@@ -384,6 +384,27 @@ pub struct Settings {
     /// The learner allowed AI marking on this computer (see crate::ai).
     #[serde(skip_serializing_if = "Option::is_none")]
     pub ai_marking: Option<bool>,
+    /// A colour theme from ui::theme::THEMES ("system" when unset).
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub theme: Option<String>,
+    /// An accent colour from ui::theme::ACCENTS ("default": the theme's own).
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub accent: Option<String>,
+    /// Notes: "compact", "normal" or "relaxed".
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub line_spacing: Option<String>,
+    /// Notes: "narrow", "normal" or "wide".
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub reading_width: Option<String>,
+    /// The tab FreeSheet opens on: "study", "exams" or "progress".
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub start_tab: Option<String>,
+    /// Look for a new version each time FreeSheet opens (on unless turned off).
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub check_updates: Option<bool>,
+    /// The version whose "update available" card was closed.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub update_dismissed: Option<String>,
     #[serde(flatten)]
     pub extra: Map<String, Value>,
 }

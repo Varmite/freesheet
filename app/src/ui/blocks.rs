@@ -231,7 +231,7 @@ fn diagram(ui: &mut Ui, t: &Theme, svg: &str) {
 /// Draw one block. `first`: the first block of a section (no top margin on headings).
 pub fn block(ui: &mut Ui, t: &Theme, b: &Block, bi: usize, first: bool, col: &mut Collect) {
     let p = &t.p;
-    let text = st(t, 1.02);
+    let text = st(t, 1.02).line(1.6 * t.spacing);
     let o = |s: &Option<String>| s.clone().unwrap_or_default();
     ui.spacing_mut().item_spacing.y = 0.0;
     match b.kind.as_str() {

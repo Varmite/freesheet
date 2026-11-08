@@ -19,6 +19,7 @@ pub mod sections;
 pub mod store;
 pub mod streak;
 pub mod ui;
+pub mod update;
 
 /// Window options shared by the desktop builds.
 #[cfg(not(target_os = "android"))]

@@ -54,14 +54,24 @@
     return h;
   }
 
+  // A formula is drawn once: pages are rebuilt often (back, retry, the transition warm-up).
+  const mathCache = new Map();
+
   function renderMath(tex, displayMode) {
     const k = (typeof katex !== 'undefined') ? katex : (typeof window !== 'undefined' ? window.katex : null);
     if (!k) return `<code>${escapeHtml(tex)}</code>`;
+    const key = (displayMode ? 'D' : 'I') + tex;
+    const hit = mathCache.get(key);
+    if (hit !== undefined) return hit;
+    let html;
     try {
-      return k.renderToString(tex, { displayMode: !!displayMode, throwOnError: false, output: 'html', strict: 'ignore' });
+      html = k.renderToString(tex, { displayMode: !!displayMode, throwOnError: false, output: 'html', strict: 'ignore' });
     } catch (e) {
-      return `<code>${escapeHtml(tex)}</code>`;
+      html = `<code>${escapeHtml(tex)}</code>`;
     }
+    if (mathCache.size >= 4000) mathCache.clear();
+    mathCache.set(key, html);
+    return html;
   }
 
   // Inline markup -> HTML string.

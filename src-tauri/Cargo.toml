@@ -1,6 +1,6 @@
 [package]
 name = "freesheet"
-version = "1.1.0"
+version = "1.2.0"
 description = "Offline CAPS study notes, practice questions and exams for Grades 8-12 (English)."
 authors = ["FreeSheet"]
 license = "MIT"
@@ -19,6 +19,7 @@ tauri-build = { version = "2", features = [] }
 tauri = { version = "2", features = [] }
 tauri-plugin-dialog = "2"
 tauri-plugin-fs = "2"
+tauri-plugin-opener = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 include_dir = "0.7"
@@ -27,7 +28,6 @@ unicode-normalization = "0.1"
 
 [target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
 tauri-plugin-single-instance = "2"
-tauri-plugin-opener = "2"
 
 # Windows: tell WebView2 to free memory while the window is minimised (same versions Tauri uses).
 [target.'cfg(windows)'.dependencies]

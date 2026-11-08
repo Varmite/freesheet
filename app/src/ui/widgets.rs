@@ -207,8 +207,10 @@ pub fn card<R>(ui: &mut Ui, t: &Theme, width: f32, min_h: f32, content: impl FnO
                 ui.spacing_mut().item_spacing.y = t.px(0.35);
                 let top = ui.cursor().top();
                 let out = content(ui);
-                let natural = ui.min_rect().bottom() - top + 2.0 * t.px(1.0);
-                ui.set_min_height((min_h - 2.0 * t.px(1.0)).max(0.0));
+                // Where the content really ended, not the room the card kept for its row.
+                let natural = ui.cursor().top() - ui.spacing().item_spacing.y - top + 2.0 * t.px(1.0);
+                // egui measures this from the end of the content, so only ask for what's left.
+                ui.set_min_height((min_h - natural - ui.spacing().item_spacing.y).max(0.0));
                 (out, natural)
             })
             .inner

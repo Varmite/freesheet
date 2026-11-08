@@ -50,6 +50,7 @@
     version: () => invoke('app_version'),
     smoothTextActive: () => invoke('smooth_text_active'),
     relaunch: () => invoke('relaunch'),
+    openReleasePage: (url) => invoke('open_release_page', { url }),
   };
 
   // ---------- closing ----------
