@@ -5,7 +5,8 @@ use super::app::{pct, App, Delayed, Mode, Tab, View};
 use super::blocks::{self, Collect};
 use super::buddy::{Action, Go, Priority};
 use super::buddy_art::Mood;
-use super::questions::{self, Card, Event};
+use crate::ai::Target;
+use super::questions::{self, Ai, Card, Event};
 use super::rich::{self, Style};
 use super::theme::{self, W};
 use super::widgets::{self, btn, radius};
@@ -704,7 +705,7 @@ impl App {
         ui.painter().hline(r.x_range(), ui.cursor().top(), Stroke::new(1.0, p.border));
     }
 
-    fn record_if_complete(&mut self, topic: &Topic, key: &str) {
+    pub(super) fn record_if_complete(&mut self, topic: &Topic, key: &str) {
         let sc = self.topic_score(topic, key);
         let now = chrono::Utc::now().to_rfc3339_opts(chrono::SecondsFormat::Millis, true);
         let tp = self.topic_prog_mut(key);
@@ -849,6 +850,8 @@ impl App {
             let ck = format!("{key}#{}", q.id);
             let level = tp.hints.get(&q.id).copied().unwrap_or(0);
             let flash = self.flashes.get(&ck).copied();
+            let ai = self.ai_card(&ck, q, tp.responses.get(&q.id));
+            let ai_can_mark = !matches!(ai, Ai::Off);
             let card = Card {
                 key: ck.clone(),
                 number: format!("Question {}", i + 1),
@@ -859,9 +862,14 @@ impl App {
                 allow_check: true,
                 can_self_mark: true,
                 hints: Some((&td.hints[i], level)),
+                ai,
             };
-            let (events, rect) = questions::card(ui, &t, &mut self.inputs, flash, self.now, card);
+            let (mut events, rect) = questions::card(ui, &t, &mut self.inputs, flash, self.now, card);
             self.card_rects.insert(ck.clone(), rect);
+            if self.auto_check == Some(i) {
+                self.auto_check = None;
+                events.push(Event::Check);
+            }
             if checked && first_wrong.is_none() {
                 let r = marking::mark(q, tp.responses.get(&q.id), tp.self_marks.get(&q.id).copied().flatten().map(|n| n.0));
                 if r.correct == Some(false) || (r.correct.is_some() && r.score < r.max && !r.needs_self_mark) {
@@ -894,8 +902,14 @@ impl App {
                         self.buddy_answer(if r.needs_self_mark { None } else { r.correct }, partial, td.related[i]);
                         self.record_if_complete(&td.topic, key);
                         self.save();
+                        if let (true, View::Topic { subject, topic, .. }) = (ai_can_mark, self.view()) {
+                            let target = Target::Topic { subject, topic, key: key.to_string(), question: q.id.clone() };
+                            self.ai_start(&ck, target, q, resp.as_ref());
+                        }
                     }
+                    Event::AiManual => self.ai_forget(&ck),
                     Event::SelfMark(n) => {
+                        self.ai.forget(&ck);
                         if let Some(v) = n {
                             let (_, voices) = crate::audio::sfx::mark(v, marking::marks_of(q));
                             self.sound.play_voices("mark", voices);

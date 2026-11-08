@@ -117,6 +117,35 @@ impl App {
                     }
                 }
             }
+            "press" => self.auto_check = arg.parse().ok(),
+            "showcard" => {
+                // showcard:<question index>
+                if let View::Topic { subject, topic, .. } = self.view() {
+                    if let Some(q) = self.load_topic(&subject, &topic).and_then(|td| td.topic.questions.get(arg.parse::<usize>().unwrap_or(0)).map(|q| q.id.clone())) {
+                        let ck = format!("{}#{q}", self.tkey(&subject, &topic));
+                        self.scroll_rect = self.card_rects.get(&ck).map(|r| (*r, egui::Align::Center));
+                    }
+                }
+            }
+            "aiconsent" => self.ai_ask_consent(),
+            "examstart" => {
+                // examstart:<subject>/<exam>
+                self.start_exam(&a(0), &a(1), None, false);
+            }
+            "examwrite" => {
+                // examwrite:<text>: answers every written question in the running exam
+                if let Some(e) = &mut self.session {
+                    let exam = e.exam.clone();
+                    for q in exam.sections.iter().flat_map(|s| &s.questions).filter(|q| q.kind == "open") {
+                        e.responses.insert(q.id.clone(), serde_json::json!({ "text": arg }));
+                    }
+                }
+            }
+            "examsubmit" => self.submit_exam(false),
+            "aidownload" => {
+                let ctx = self.ctx.clone();
+                self.ai.start_download(&ctx);
+            }
             "hint" => {
                 self.buddy_hint();
             }

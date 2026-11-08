@@ -4,6 +4,7 @@
 //! content, markup, marking, hints, sections, streak, course, quiz. Screens: ui (egui).
 //! Sound: audio. Computers and phones: platform.
 
+pub mod ai;
 pub mod audio;
 pub mod content;
 pub mod course;

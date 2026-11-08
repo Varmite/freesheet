@@ -1,5 +1,6 @@
 //! The screens, drawn with egui (no web view): a native, GPU-drawn interface.
 
+mod ai_marking;
 pub mod anim;
 pub mod app;
 mod automation;

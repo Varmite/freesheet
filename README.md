@@ -17,6 +17,10 @@ Rust code is used on Android.
 * **Exams**: full exam papers in CAPS format with an optional countdown timer, automatic saving (you can
   leave and resume), self-marking with the memo, results with CAPS achievement levels, and a review of
   every answer.
+* **AI marking** (optional, computers only, off until you turn it on in Settings): an AI model that runs
+  on your own computer marks written answers against the memo, point by point, and you can change any
+  mark. It needs a one-time 1.1 GB download and nearly 5 GB of memory while marking, and your answers
+  never leave the computer. Essays marked with a rubric are still marked by you.
 * **Progress**: topics practised, scores per subject, exam history, plus export/import/reset of your data.
 * **Hints** on practice questions (never in exams), getting stronger each time you ask: the sentence in
   the notes that explains it (with the answer blanked out) and a link to that section, ruling out wrong

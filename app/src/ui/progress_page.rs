@@ -244,6 +244,7 @@ impl App {
                     }
                 }
             });
+            self.ai_settings(ui);
             widgets::h2(ui, &t, "Your data");
             setting(ui, "Progress", &mut |ui| {
                 widgets::wrap(ui, vec2(t.px(0.6), t.px(0.6)), |ui| {

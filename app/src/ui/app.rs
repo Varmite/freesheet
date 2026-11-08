@@ -81,6 +81,7 @@ pub enum DialogAction {
     QuitLesson,
     Import(Box<Progress>),
     Reset,
+    AiDownload,
 }
 
 pub enum DialogBody {
@@ -201,6 +202,13 @@ pub struct App {
     pub course_fig: Option<super::buddy::Figure>,
     /// Testing: pages to open and a screenshot to take (see automation.rs).
     pub auto: Option<super::automation::Script>,
+    pub ctx: Context,
+    pub ai: crate::ai::Marker,
+    pub ai_schemes: HashMap<String, Option<Arc<crate::ai::Scheme>>>,
+    pub ai_reviews: HashMap<String, Arc<crate::ai::Review>>,
+    pub ai_failed: HashMap<String, String>,
+    /// Testing: press this question's main button (see automation.rs).
+    pub auto_check: Option<usize>,
 }
 
 /// Things that happen a moment after something else.
@@ -225,6 +233,7 @@ impl App {
         let store = Store::new(dir, legacy);
         let mut p = store.load();
         let saver = Saver::new(store.clone());
+        let ai = crate::ai::Marker::new(store.dir().join("ai-marker"));
         let catalog = content::catalog();
         let grades: Vec<i64> = catalog.grades.iter().map(|g| g.grade).collect();
         let welcome = !p.settings.grade.is_some_and(|g| grades.contains(&g));
@@ -284,6 +293,12 @@ impl App {
             completion_at: None,
             course_fig: None,
             auto,
+            ctx: ctx.clone(),
+            ai,
+            ai_schemes: HashMap::new(),
+            ai_reviews: HashMap::new(),
+            ai_failed: HashMap::new(),
+            auto_check: None,
         };
         app.apply_buddy();
         app.sound.enabled = app.p.settings.sounds != Some(false);
@@ -667,6 +682,7 @@ impl App {
         }
         self.tick_exam(ctx);
         self.tick_reader(ctx);
+        self.tick_ai(ctx);
         self.run_script(ctx);
         self.sound.tick();
         // Phone file dialogs answer later.
@@ -1309,6 +1325,8 @@ impl App {
                 if self.p.settings.buddy.is_some() && data.settings.buddy.is_none() {
                     data.settings.buddy = self.p.settings.buddy.clone();
                 }
+                // Allowing AI marking is a choice made on each computer.
+                data.settings.ai_marking = self.p.settings.ai_marking;
                 self.p = *data;
                 self.apply_buddy();
                 self.sound.enabled = self.p.settings.sounds != Some(false);
@@ -1329,9 +1347,14 @@ impl App {
                 fresh.settings.sounds = s.sounds;
                 fresh.settings.buddy = s.buddy;
                 fresh.settings.text_rendering = s.text_rendering;
+                fresh.settings.ai_marking = s.ai_marking;
                 self.p = fresh;
                 self.flush();
                 self.toast("Progress reset.");
+            }
+            DialogAction::AiDownload => {
+                let ctx = self.ctx.clone();
+                self.ai.start_download(&ctx);
             }
         }
     }

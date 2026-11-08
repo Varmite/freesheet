@@ -6,6 +6,7 @@ use super::questions::{self, Card, Event};
 use super::rich::{self, Style};
 use super::theme::W;
 use super::widgets::{self, btn, radius};
+use crate::ai::Target;
 use crate::markup;
 use crate::marking;
 use crate::model::{Attempt, Draft, Num, SectionScore};
@@ -257,7 +258,7 @@ impl App {
 
     // ---------------------------------------------------------------- the session
 
-    fn start_exam(&mut self, sid: &str, eid: &str, draft: Option<Draft>, timer_on: bool) {
+    pub(super) fn start_exam(&mut self, sid: &str, eid: &str, draft: Option<Draft>, timer_on: bool) {
         self.stop_exam();
         let Some(exam) = self.load_exam(sid, eid) else { return };
         let key = self.tkey(sid, eid);
@@ -443,6 +444,7 @@ impl App {
                         allow_check: false,
                         can_self_mark: false,
                         hints: None,
+                        ai: questions::Ai::Off,
                     };
                     let (events, _) = questions::card(ui, &t, &mut self.inputs, None, self.now, card);
                     for e in events {
@@ -518,10 +520,12 @@ impl App {
         widgets::page_column(ui, &t, 820.0, |ui| {
             self.exam_crumbs(ui, sid, &s.name, &exam.title, Some("Marking"), eid);
             widgets::h1(ui, &t, "Mark your written answers");
-            widgets::lead(ui, &t, "The other questions have been marked automatically. For each written answer below, read the memo and award yourself marks honestly.");
+            let lead = if self.ai_on() { "The other questions have been marked automatically. The AI can mark most written answers for you. Check its marks, and mark any it can't do yourself." } else { "The other questions have been marked automatically. For each written answer below, read the memo and award yourself marks honestly." };
+            widgets::lead(ui, &t, lead);
             let marked = open.iter().filter(|(si, qi, _)| self.session.as_ref().unwrap().self_marks.get(&exam.sections[*si].questions[*qi].id).copied().flatten().is_some()).count();
             ui.add_space(t.px(0.6));
             rich::show(ui, &format!("<strong>{marked}</strong> of {} written answers marked", open.len()), &Style::new(t.px(1.0), p.text, p.muted));
+            self.exam_ai_bar(ui, sid, eid, &exam, &open);
             let mut last_si = usize::MAX;
             for (si, qi, number) in &open {
                 let sec = &exam.sections[*si];
@@ -536,10 +540,16 @@ impl App {
                 let e = self.session.as_ref().unwrap();
                 let resp = e.responses.get(&q.id).cloned();
                 let sm = e.self_marks.get(&q.id).copied().flatten().map(|n| n.0);
-                let card = Card { key: format!("x:{}#{}", self.tkey(sid, eid), q.id), number: number.clone(), q, response: resp.as_ref(), feedback: true, self_mark: sm, allow_check: false, can_self_mark: true, hints: None };
+                let ck = format!("x:{}#{}", self.tkey(sid, eid), q.id);
+                let ai = self.ai_card(&ck, q, resp.as_ref());
+                let card = Card { key: ck.clone(), number: number.clone(), q, response: resp.as_ref(), feedback: true, self_mark: sm, allow_check: false, can_self_mark: true, hints: None, ai };
                 let (events, _) = questions::card(ui, &t, &mut self.inputs, None, self.now, card);
                 for ev in events {
+                    if matches!(ev, Event::AiManual) {
+                        self.ai_forget(&ck);
+                    }
                     if let Event::SelfMark(n) = ev {
+                        self.ai.forget(&ck);
                         if let Some(v) = n {
                             let (_, voices) = crate::audio::sfx::mark(v, marking::marks_of(q));
                             self.sound.play_voices("mark", voices);
@@ -559,6 +569,37 @@ impl App {
                 }
             });
         });
+    }
+
+    /// With AI marking allowed: a button that marks every written answer it can.
+    fn exam_ai_bar(&mut self, ui: &mut Ui, sid: &str, eid: &str, exam: &crate::model::Exam, open: &[(usize, usize, String)]) {
+        if !self.ai_on() {
+            return;
+        }
+        let t = self.t;
+        let tkey = self.tkey(sid, eid);
+        let (mut todo, mut waiting) = (Vec::new(), 0);
+        for (si, qi, _) in open {
+            let q = &exam.sections[*si].questions[*qi];
+            let ck = format!("x:{tkey}#{}", q.id);
+            let e = self.session.as_ref().unwrap();
+            let resp = e.responses.get(&q.id).cloned();
+            let unmarked = e.self_marks.get(&q.id).copied().flatten().is_none();
+            match self.ai_card(&ck, q, resp.as_ref()) {
+                questions::Ai::Marking => waiting += 1,
+                questions::Ai::Ready if unmarked => todo.push((ck, q, resp)),
+                _ => {}
+            }
+        }
+        ui.add_space(t.px(0.6));
+        if waiting > 0 {
+            widgets::muted(ui, &t, &format!("The AI is marking on this computer: {waiting} answer{} to go.", if waiting == 1 { "" } else { "s" }), 0.95);
+        } else if !todo.is_empty() && (btn("Mark my answers with AI").primary().show(ui, &t).clicked() || self.auto_check.take().is_some()) {
+            for (ck, q, resp) in todo {
+                let target = Target::Exam { key: tkey.clone(), question: q.id.clone() };
+                self.ai_start(&ck, target, q, resp.as_ref());
+            }
+        }
     }
 
     fn finish_exam(&mut self) {
@@ -662,6 +703,7 @@ impl App {
                         allow_check: false,
                         can_self_mark: false,
                         hints: None,
+                        ai: questions::Ai::Off,
                     };
                     questions::card(ui, &t, &mut self.inputs, None, self.now, card);
                 }

@@ -4,6 +4,7 @@
 use super::rich::{self, Style};
 use super::theme::{self, Theme, W};
 use super::widgets::{self, btn, radius};
+use crate::ai::Review;
 use crate::hints::Hint;
 use crate::markup;
 use crate::marking;
@@ -24,12 +25,26 @@ pub struct Card<'a> {
     pub allow_check: bool,
     pub can_self_mark: bool,
     pub hints: Option<(&'a [Hint], u32)>,
+    pub ai: Ai,
+}
+
+/// AI marking on this card (written answers only).
+#[derive(Clone)]
+pub enum Ai {
+    Off,
+    /// Can be marked: the "Show memo" button becomes "Mark my answer".
+    Ready,
+    Marking,
+    Done(std::sync::Arc<Review>),
+    Failed(String),
 }
 
 pub enum Event {
     Response(Value),
     Check,
     SelfMark(Option<f64>),
+    /// Stop waiting for the AI and mark this one by hand.
+    AiManual,
     Hint(u32),
     ShowNotes(usize),
 }
@@ -301,7 +316,7 @@ pub fn card(ui: &mut Ui, t: &Theme, inputs: &mut HashMap<String, String>, flash:
             ui.add_space(t.px(0.8));
             ui.horizontal(|ui| {
                 ui.spacing_mut().item_spacing.x = t.px(0.5);
-                if btn(if q.kind == "open" { "Show memo" } else { "Check answer" }).primary().show(ui, t).clicked() {
+                if btn(if q.kind == "open" && !matches!(c.ai, Ai::Off) { "Mark my answer" } else if q.kind == "open" { "Show memo" } else { "Check answer" }).primary().show(ui, t).clicked() {
                     events.push(Event::Check);
                 }
                 if let Some((list, level)) = c.hints {
@@ -351,7 +366,22 @@ fn feedback(ui: &mut Ui, t: &Theme, c: &Card, res: &marking::Mark, events: &mut 
         ui.set_width(ui.available_width());
         ui.spacing_mut().item_spacing.y = t.px(0.3);
         let body = Style::new(t.px(1.0), p.text, p.muted);
-        if q.kind == "open" {
+        if q.kind == "open" && matches!(c.ai, Ai::Marking) {
+            let dots = ".".repeat((ui.input(|i| i.time) * 2.0) as usize % 3 + 1);
+            widgets::plain(ui, t, &format!("Marking your answer on this computer{dots}"), 1.0, W::Medium, p.text);
+            if widgets::link(ui, t, "Mark it myself instead", t.px(0.9), p.accent).clicked() {
+                events.push(Event::AiManual);
+            }
+            return;
+        }
+        let review = if let Ai::Done(r) = &c.ai { Some(r.clone()) } else { None };
+        if let (true, Some(r)) = (q.kind == "open", &review) {
+            widgets::label(ui, t, "Marked by AI");
+            ai_points(ui, t, r, &body);
+        } else if q.kind == "open" {
+            if let Ai::Failed(m) = &c.ai {
+                widgets::muted(ui, t, m, 0.9);
+            }
             widgets::label(ui, t, "Memo");
             for para in markup::paragraph_list(q.memo.as_deref().unwrap_or("")) {
                 rich::show(ui, &para, &body);
@@ -377,7 +407,7 @@ fn feedback(ui: &mut Ui, t: &Theme, c: &Card, res: &marking::Mark, events: &mut 
         }
         if q.kind == "open" {
             if c.can_self_mark {
-                widgets::muted(ui, t, "Compare your answer with the memo and award yourself marks honestly.", 0.85);
+                widgets::muted(ui, t, if review.is_some() { "The AI can get it wrong. Compare each point with your answer and change the mark if you need to." } else { "Compare your answer with the memo and award yourself marks honestly." }, 0.85);
                 ui.horizontal_wrapped(|ui| {
                     ui.spacing_mut().item_spacing = vec2(t.px(0.35), t.px(0.35));
                     widgets::plain(ui, t, "Your mark:", 1.0, W::Regular, p.text);
@@ -405,4 +435,27 @@ fn feedback(ui: &mut Ui, t: &Theme, c: &Card, res: &marking::Mark, events: &mut 
         }
     });
     ui.painter().set(slot, Shape::rect_filled(r.response.rect, radius(13.0), bg));
+}
+
+/// The memo's points, each ticked or crossed by the AI.
+fn ai_points(ui: &mut Ui, t: &Theme, r: &Review, body: &Style) {
+    let p = t.p;
+    if let Some(pre) = &r.scheme.preface {
+        for para in markup::paragraph_list(pre) {
+            rich::show(ui, &para, body);
+        }
+    }
+    if let Some(n) = r.scheme.any {
+        widgets::muted(ui, t, &format!("Any {n} of these earn marks:"), 0.85);
+    }
+    for (point, met) in r.scheme.points.iter().zip(&r.met) {
+        ui.horizontal_top(|ui| {
+            ui.spacing_mut().item_spacing.x = t.px(0.5);
+            let (mark, color) = if *met { ("✓", p.good) } else { ("✗", p.bad) };
+            widgets::plain(ui, t, mark, 1.0, W::Bold, color);
+            ui.vertical(|ui| {
+                rich::show(ui, &format!("{} <span class=\"muted\">({})</span>", markup::inline(&point.text), crate::model::js_num(point.marks)), body);
+            });
+        });
+    }
 }

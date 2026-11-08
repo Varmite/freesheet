@@ -39,6 +39,12 @@ log = "0.4"
 rfd = { version = "0.18", default-features = false, features = ["xdg-portal"] }
 dirs = "7"
 open = "5"
+# AI marking (see src/ai): pure Rust, nothing is downloaded until the learner agrees.
+candle-core = "0.11"
+candle-transformers = "0.11"
+tokenizers = { version = "0.23", default-features = false, features = ["unstable_wasm"] }
+ureq = "3"
+sha2 = "0.11"
 
 [target.'cfg(target_os = "android")'.dependencies]
 eframe = { version = "0.37", default-features = false, features = ["glow", "default_fonts", "android-game-activity"] }

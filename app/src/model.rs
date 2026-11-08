@@ -381,6 +381,9 @@ pub struct Settings {
     pub last_topic: Option<LastTopic>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub buddy: Option<BuddyPrefs>,
+    /// The learner allowed AI marking on this computer (see crate::ai).
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub ai_marking: Option<bool>,
     #[serde(flatten)]
     pub extra: Map<String, Value>,
 }
