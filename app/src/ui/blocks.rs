@@ -220,18 +220,20 @@ fn diagram(ui: &mut Ui, t: &Theme, svg: &str) {
     let (nw, nh) = images::svg_natural_size(svg).unwrap_or((400.0, 300.0));
     let k = ((avail - 2.0 * pad) / nw).min((420.0 - 2.0 * pad) / nh).min(1.6);
     let (w, h) = (nw * k, nh * k);
+    // Pictures sit on white; dimmed in dark themes so they do not glare (not in High contrast).
+    let dim = if t.dark { Color32::from_gray(214) } else { Color32::WHITE };
     let (r, _) = ui.allocate_exact_size(vec2(avail, h + 2.0 * pad), Sense::hover());
     let card = Rect::from_center_size(r.center(), vec2(w + 2.0 * pad, h + 2.0 * pad));
-    ui.painter().rect(card, radius(18.0), Color32::WHITE, Stroke::new(1.0, t.p.border), StrokeKind::Inside);
+    ui.painter().rect(card, radius(18.0), dim, Stroke::new(1.0, t.p.border), StrokeKind::Inside);
     if let Some(tex) = images::svg_texture(ui.ctx(), svg, w, h) {
-        ui.painter().image(tex.id(), Rect::from_center_size(card.center(), vec2(w, h)), Rect::from_min_max(pos2(0.0, 0.0), pos2(1.0, 1.0)), Color32::WHITE);
+        ui.painter().image(tex.id(), Rect::from_center_size(card.center(), vec2(w, h)), Rect::from_min_max(pos2(0.0, 0.0), pos2(1.0, 1.0)), dim);
     }
 }
 
 /// Draw one block. `first`: the first block of a section (no top margin on headings).
 pub fn block(ui: &mut Ui, t: &Theme, b: &Block, bi: usize, first: bool, col: &mut Collect) {
     let p = &t.p;
-    let text = st(t, 1.02).line(1.6 * t.spacing);
+    let text = st(t, 1.02).line(1.7 * t.spacing);
     let o = |s: &Option<String>| s.clone().unwrap_or_default();
     ui.spacing_mut().item_spacing.y = 0.0;
     match b.kind.as_str() {
@@ -241,9 +243,9 @@ pub fn block(ui: &mut Ui, t: &Theme, b: &Block, bi: usize, first: bool, col: &mu
             ui.add_space(t.px(0.5));
         }
         "paragraph" => {
-            ui.add_space(t.px(0.6));
-            paras(ui, t, &o(&b.text), &text, col, bi, t.px(0.6));
-            ui.add_space(t.px(0.6));
+            ui.add_space(t.px(0.8));
+            paras(ui, t, &o(&b.text), &text, col, bi, t.px(0.8));
+            ui.add_space(t.px(0.8));
         }
         "list" => {
             ui.add_space(t.px(0.6));

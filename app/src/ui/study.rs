@@ -685,7 +685,7 @@ impl App {
         let best = self.topic_prog(&key).and_then(|tp| tp.best.zip(tp.best_max)).map(|(b, m)| pct(b.0, m.0));
         let avail = ui.available_width();
         let pad = if t.narrow { t.px(1.0) } else { t.px(1.5) };
-        let w = (avail - 2.0 * pad).min(820.0 - 2.0 * pad);
+        let w = (avail - 2.0 * pad).min(t.reading - 2.0 * pad);
         let left = (avail - w) / 2.0;
         ui.add_space(6.0);
         ui.horizontal(|ui| {

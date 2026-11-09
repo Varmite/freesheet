@@ -55,7 +55,7 @@ class MainActivity : TauriActivity() {
     super.onCreate(savedInstanceState)
     val root = findViewById<View>(android.R.id.content)
     val night = (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
-    root.setBackgroundColor(if (night) 0xFF161616.toInt() else 0xFFFFFFFF.toInt())
+    root.setBackgroundColor(if (night) 0xFF1A1B1E.toInt() else 0xFFFAF8F4.toInt())
     ViewCompat.setOnApplyWindowInsetsListener(root) { v, insets ->
       val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout())
       val ime = insets.getInsets(WindowInsetsCompat.Type.ime())

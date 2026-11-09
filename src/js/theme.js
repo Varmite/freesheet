@@ -8,12 +8,12 @@
   // `dark` undefined: follows the system. `p`: the colours for the little preview tile.
   const THEMES = [
     { id: 'system', label: 'Automatic' },
-    { id: 'light', label: 'Light', dark: false, p: { bg: '#ffffff', card: '#efefed', line: '#1b1b1a', btn: '#1f5fcc', accent: '#1f5fcc' } },
-    { id: 'dark', label: 'Dark', dark: true, p: { bg: '#161616', card: '#262626', line: '#ececea', btn: '#2f68d8', accent: '#5b8ff0' } },
+    { id: 'light', label: 'Light', dark: false, p: { bg: '#faf8f4', card: '#ebe8df', line: '#2c2a26', btn: '#1f5fcc', accent: '#1f5fcc' } },
+    { id: 'dark', label: 'Dark', dark: true, p: { bg: '#1a1b1e', card: '#2a2c30', line: '#dcdcd8', btn: '#3063c6', accent: '#7aa2ee' } },
     { id: 'sepia', label: 'Sepia', dark: false, p: { bg: '#f8f1e3', card: '#e9dfc9', line: '#33291c', btn: '#9a5b13', accent: '#9a5b13' } },
-    { id: 'midnight', label: 'Midnight', dark: true, p: { bg: '#0f1626', card: '#1d2a42', line: '#e6ecf7', btn: '#2f6ad9', accent: '#6ea8fe' } },
-    { id: 'forest', label: 'Forest', dark: true, p: { bg: '#121a15', card: '#1f2c24', line: '#e7efe9', btn: '#237a4d', accent: '#57c489' } },
-    { id: 'black', label: 'Black', dark: true, p: { bg: '#000000', card: '#181818', line: '#f2f2f0', btn: '#2f68d8', accent: '#6b9cf5' } },
+    { id: 'midnight', label: 'Midnight', dark: true, p: { bg: '#0f1626', card: '#1d2a42', line: '#dbe2ef', btn: '#2f6ad9', accent: '#6ea8fe' } },
+    { id: 'forest', label: 'Forest', dark: true, p: { bg: '#121a15', card: '#1f2c24', line: '#dde6df', btn: '#237a4d', accent: '#57c489' } },
+    { id: 'black', label: 'Black', dark: true, p: { bg: '#000000', card: '#181818', line: '#e4e4e0', btn: '#2f68d8', accent: '#6b9cf5' } },
     { id: 'contrast', label: 'High contrast', dark: false, p: { bg: '#ffffff', card: '#e4e4e4', line: '#000000', btn: '#0040b0', accent: '#0040b0' } },
   ];
   const ACCENTS = [
@@ -26,7 +26,7 @@
     { id: 'teal', label: 'Teal', light: '#0b7c86', dark: '#4fc5cf' },
   ];
   const SPACING = { compact: 0.92, normal: 1, relaxed: 1.16 };
-  const WIDTH = { narrow: '680px', normal: '820px', wide: '1000px' };
+  const WIDTH = { narrow: '600px', normal: '680px', wide: '860px' };
 
   const root = document.documentElement;
   const systemDark = window.matchMedia('(prefers-color-scheme: dark)');

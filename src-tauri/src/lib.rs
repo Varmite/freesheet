@@ -391,8 +391,9 @@ fn audio_root(handle: &AppHandle) -> PathBuf {
 fn theme_background(theme: &str) -> Option<tauri::window::Color> {
     use tauri::window::Color;
     Some(match theme {
-        "light" | "contrast" => Color(255, 255, 255, 255),
-        "dark" => Color(22, 22, 22, 255),
+        "light" => Color(250, 248, 244, 255),
+        "contrast" => Color(255, 255, 255, 255),
+        "dark" => Color(26, 27, 30, 255),
         "sepia" => Color(248, 241, 227, 255),
         "midnight" => Color(15, 22, 38, 255),
         "forest" => Color(18, 26, 21, 255),
@@ -411,7 +412,7 @@ fn create_window(handle: &AppHandle, prefs: &progress::Startup, smooth_text: boo
     let mut b = WebviewWindowBuilder::new(handle, "main", WebviewUrl::App("index.html".into()))
         .initialization_script(&init)
         .on_navigation(allowed)
-        .background_color(tauri::window::Color(255, 255, 255, 255));
+        .background_color(tauri::window::Color(250, 248, 244, 255));
     #[cfg(desktop)]
     {
         b = b.title("FreeSheet").inner_size(1200.0, 820.0).min_inner_size(760.0, 560.0).center().visible(false);
