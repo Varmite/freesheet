@@ -113,6 +113,101 @@ impl Checker {
     }
 }
 
+/// A download of a new version in progress, or finished.
+#[derive(Clone, Debug, PartialEq, Default)]
+pub enum Job {
+    #[default]
+    None,
+    Downloading { received: u64, total: u64 },
+    Ready,
+    Failed,
+}
+
+/// Downloads and installs a new version, on a background thread.
+#[derive(Default, Clone)]
+pub struct Installer {
+    job: Arc<Mutex<Job>>,
+    cancel: Arc<std::sync::atomic::AtomicBool>,
+}
+
+#[cfg(not(target_os = "android"))]
+fn update_dir() -> std::path::PathBuf {
+    std::env::temp_dir().join("FreeSheet-update")
+}
+
+impl Installer {
+    pub fn job(&self) -> Job {
+        self.job.lock().map(|j| j.clone()).unwrap_or_default()
+    }
+
+    fn set(job: &Arc<Mutex<Job>>, value: Job) {
+        if let Ok(mut j) = job.lock() {
+            *j = value;
+        }
+    }
+
+    pub fn cancel(&self) {
+        self.cancel.store(true, std::sync::atomic::Ordering::SeqCst);
+    }
+
+    pub fn reset(&self) {
+        Self::set(&self.job, Job::None);
+    }
+
+    #[cfg(target_os = "android")]
+    pub fn start(&self, _ctx: &egui::Context, _version: &str) {
+        Self::set(&self.job, Job::Failed);
+    }
+
+    /// Starts downloading `version` unless a download is already running.
+    #[cfg(not(target_os = "android"))]
+    pub fn start(&self, ctx: &egui::Context, version: &str) {
+        if matches!(self.job(), Job::Downloading { .. }) {
+            return;
+        }
+        Self::set(&self.job, Job::Downloading { received: 0, total: 0 });
+        self.cancel.store(false, std::sync::atomic::Ordering::SeqCst);
+        let (job, cancel, ctx, version) = (self.job.clone(), self.cancel.clone(), ctx.clone(), version.to_string());
+        let spawned = std::thread::Builder::new().name("update-install".into()).spawn(move || {
+            let result = crate::self_update::fetch(&version, CURRENT, &update_dir(), cancel, |received, total| {
+                Self::set(&job, Job::Downloading { received, total });
+                ctx.request_repaint();
+            });
+            Self::set(&job, match result {
+                Ok(()) => Job::Ready,
+                Err(e) if e == crate::self_update::CANCELLED => Job::None,
+                Err(e) => {
+                    log::warn!("update failed: {e}");
+                    Job::Failed
+                }
+            });
+            ctx.request_repaint();
+        });
+        if spawned.is_err() {
+            Self::set(&self.job, Job::Failed);
+        }
+    }
+
+    /// Starts the installer. True: the app must save and exit now.
+    #[cfg(not(target_os = "android"))]
+    pub fn install(&self, version: &str) -> bool {
+        match crate::self_update::apply(version, &update_dir()) {
+            Ok(crate::self_update::Applied::Exiting) => true,
+            Ok(crate::self_update::Applied::Opened) => false,
+            Err(e) => {
+                log::warn!("could not install the update: {e}");
+                Self::set(&self.job, Job::Failed);
+                false
+            }
+        }
+    }
+
+    #[cfg(target_os = "android")]
+    pub fn install(&self, _version: &str) -> bool {
+        false
+    }
+}
+
 /// Opens a release page in the browser.
 pub fn open_page(url: &str) {
     if !url.starts_with(RELEASES) {

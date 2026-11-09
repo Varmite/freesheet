@@ -1728,14 +1728,32 @@
   // Each time the app opens it asks GitHub, quietly, once the first page is on screen. A
   // new version shows a small card (never during an exam); offline, nothing happens.
 
-  const update = { status: 'idle', version: null, url: null, current: '' };
+  // Pressing Update downloads the new version inside the app. When it has been checked, the
+  // learner chooses when to install, because the app has to close for it.
+
+  const update = { status: 'idle', version: null, url: null, current: '', sizeMB: 0, job: null, received: 0, total: 0 };
+
+  api.onUpdateProgress((p) => {
+    if (update.job !== 'downloading') return;
+    update.received = p.received;
+    update.total = p.total;
+    document.querySelectorAll('.update-note').forEach((n) => { n.textContent = updateDownloadText(); });
+    document.querySelectorAll('.update-bar i').forEach((b) => { b.style.width = `${updatePercent()}%`; });
+  });
+
+  const updatePercent = () => (update.total ? Math.min(100, Math.floor((update.received * 100) / update.total)) : 0);
+  function updateDownloadText() {
+    if (!update.total) return 'Downloading the update…';
+    const mb = (n) => Math.round(n / 1048576);
+    return `Downloading the update: ${updatePercent()}% (${mb(update.received)} of ${mb(update.total)} MB)`;
+  }
 
   async function checkForUpdates() {
-    if (update.status === 'checking') return;
+    if (update.status === 'checking' || update.job) return;
     update.status = 'checking';
     renderUpdateStatus();
     try {
-      Object.assign(update, { version: null, url: null }, await Updates.check(update.current, api.platform === 'android'));
+      Object.assign(update, { version: null, url: null, sizeMB: 0 }, await Updates.check(update.current, api.platform === 'android'));
     } catch (e) {
       update.status = 'failed';
     }
@@ -1743,44 +1761,115 @@
     syncUpdateCard();
   }
 
+  function setUpdateJob(job) {
+    update.job = job;
+    renderUpdateStatus();
+    syncUpdateCard();
+  }
+
+  async function downloadUpdate() {
+    if (update.job === 'downloading' || update.job === 'installing') return;
+    Object.assign(update, { received: 0, total: 0 });
+    setUpdateJob('downloading');
+    try {
+      await api.downloadUpdate(update.version);
+      setUpdateJob('ready');
+    } catch (e) {
+      setUpdateJob(String(e) === 'cancelled' ? null : 'error');
+    }
+  }
+
+  async function installUpdate() {
+    setUpdateJob('installing');
+    try {
+      const r = await api.applyUpdate(update.version);
+      if (r === 'permission' || r === 'opened') setUpdateJob(r);
+      else if (r === 'started') setUpdateJob('ready');
+    } catch (e) {
+      setUpdateJob('error');
+    }
+  }
+
+  function updateAction(what) {
+    if (what === 'get') downloadUpdate();
+    else if (what === 'install') installUpdate();
+    else if (what === 'cancel') api.cancelUpdate();
+    else if (what === 'page') api.openReleasePage(update.url);
+    else if (what === 'later') {
+      P().settings.updateDismissed = update.version;
+      save();
+      setUpdateJob(null);
+    }
+  }
+
+  // What to say and offer while an update is under way; null when none is.
+  function updateJobView() {
+    const phone = api.platform === 'android';
+    const install = phone ? 'Install' : 'Restart and update';
+    const later = ['later', 'Later', false];
+    switch (update.job) {
+      case 'downloading': return { text: updateDownloadText(), bar: true, buttons: [['cancel', 'Cancel', false]] };
+      case 'ready': return {
+        text: phone ? `FreeSheet ${esc(update.version)} is ready. Android will ask you to confirm the install. Your progress stays.`
+          : `FreeSheet ${esc(update.version)} is ready. FreeSheet will close and reopen. Your progress stays.`,
+        buttons: [['install', install, true], later],
+      };
+      case 'installing': return { text: 'Starting the installer…', buttons: [] };
+      case 'permission': return { text: 'Allow FreeSheet to install apps on the screen that just opened, then come back and press Install.', buttons: [['install', 'Install', true]] };
+      case 'opened': return { text: 'Your software installer has opened. Follow it to finish updating.', buttons: [later] };
+      case 'error': return { text: 'The update could not be finished. Check your connection and try again.', buttons: [['get', 'Try again', true], ['page', 'Open download page', false], later] };
+      default: return null;
+    }
+  }
+
+  function updateJobHtml(view) {
+    return `<span class="update-note">${view.text}</span>` + (view.bar ? `<div class="update-bar"><i style="width:${updatePercent()}%"></i></div>` : '') +
+      `<div class="btn-row">${view.buttons.map(([id, label, primary]) => `<button class="btn small-btn ${primary ? 'primary' : ''}" data-u="${id}">${label}</button>`).join('')}</div>`;
+  }
+
   function renderUpdateStatus() {
     const el = main.querySelector('#update-status');
     if (!el) return;
-    const v = update.current;
-    const text = {
-      idle: `FreeSheet ${esc(v)} is installed.`,
-      checking: 'Checking for updates…',
-      current: `FreeSheet ${esc(v)} is up to date.`,
-      available: `FreeSheet ${esc(update.version)} is available. You have ${esc(v)}.`,
-      failed: 'Could not check for updates. Are you online?',
-    }[update.status];
-    const available = update.status === 'available';
-    el.innerHTML = `<span>${text}</span><button class="btn small-btn ${available ? 'primary' : ''}" id="update-act" ${update.status === 'checking' ? 'disabled' : ''}>${available ? 'Download' : 'Check now'}</button>`;
-    el.querySelector('#update-act').addEventListener('click', () => (available ? api.openReleasePage(update.url) : checkForUpdates()));
+    const job = updateJobView();
+    if (job) { el.innerHTML = updateJobHtml(job); }
+    else {
+      const v = update.current;
+      const text = {
+        idle: `FreeSheet ${esc(v)} is installed.`,
+        checking: 'Checking for updates…',
+        current: `FreeSheet ${esc(v)} is up to date.`,
+        available: `FreeSheet ${esc(update.version)} is available. You have ${esc(v)}.`,
+        failed: 'Could not check for updates. Are you online?',
+      }[update.status];
+      const available = update.status === 'available';
+      el.innerHTML = `<span>${text}</span><button class="btn small-btn ${available ? 'primary' : ''}" data-u="${available ? 'get' : 'check'}" ${update.status === 'checking' ? 'disabled' : ''}>${available ? 'Update now' : 'Check now'}</button>`;
+    }
+    el.querySelectorAll('[data-u]').forEach((b) => b.addEventListener('click', () => (b.dataset.u === 'check' ? checkForUpdates() : updateAction(b.dataset.u))));
   }
 
   let updateCard = null;
   function syncUpdateCard() {
     const v = state.views[state.tab];
     const writing = state.tab === 'exams' && v && (v.name === 'run' || v.name === 'mark');
-    const show = update.status === 'available' && !writing && P() && P().settings.updateDismissed !== update.version
+    const show = update.status === 'available' && !writing && P() && (update.job || P().settings.updateDismissed !== update.version)
       && !document.body.classList.contains('welcome-mode') && !document.querySelector('.buddy-setup-back');
     if (!show) { if (updateCard) { updateCard.remove(); updateCard = null; } return; }
-    if (updateCard) return;
-    updateCard = document.createElement('aside');
-    updateCard.className = 'update-card';
-    updateCard.setAttribute('role', 'status');
-    updateCard.innerHTML = `<strong>FreeSheet ${esc(update.version)} is available</strong><p>You have ${esc(update.current)}. Your progress stays when you update.</p>
-      <div class="btn-row"><button class="btn primary small-btn" data-u="get">${Icons.ui('download')}Download</button><button class="btn small-btn" data-u="later">Later</button></div>`;
-    updateCard.addEventListener('click', (e) => {
-      const b = e.target.closest('[data-u]');
-      if (!b) return;
-      if (b.dataset.u === 'get') api.openReleasePage(update.url);
-      P().settings.updateDismissed = update.version;
-      save();
-      syncUpdateCard();
-    });
-    document.body.appendChild(updateCard);
+    if (!updateCard) {
+      updateCard = document.createElement('aside');
+      updateCard.className = 'update-card';
+      updateCard.setAttribute('role', 'status');
+      updateCard.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-u]');
+        if (b) updateAction(b.dataset.u);
+      });
+      document.body.appendChild(updateCard);
+    }
+    const job = updateJobView();
+    const size = update.sizeMB ? ` The download is about ${update.sizeMB} MB.` : '';
+    updateCard.innerHTML = `<strong>FreeSheet ${esc(update.version)} is available</strong>` + (job
+      ? `<div class="update-job">${updateJobHtml(job)}</div>`
+      : `<p>You have ${esc(update.current)}. Your progress stays when you update.${size}</p>
+      <div class="btn-row"><button class="btn primary small-btn" data-u="get">${Icons.ui('download')}Update now</button><button class="btn small-btn" data-u="later">Later</button></div>`);
   }
 
   // ---------------------------------------------------------------- study buddy

@@ -51,6 +51,19 @@
     smoothTextActive: () => invoke('smooth_text_active'),
     relaunch: () => invoke('relaunch'),
     openReleasePage: (url) => invoke('open_release_page', { url }),
+    downloadUpdate: (version) => invoke('update_download', { version }),
+    cancelUpdate: () => invoke('update_cancel'),
+    onUpdateProgress: (fn) => T.event.listen('freesheet:update-progress', (e) => fn(e.payload)),
+    // Saves first. 'exiting': the app is closing for the installer; 'opened': the system's
+    // installer has taken over; 'started' or 'permission': Android's installer (MainActivity.kt).
+    applyUpdate: async (version) => {
+      await saveNow();
+      if (!android) return invoke('update_apply', { version });
+      if (!window.FreeSheetAndroid) throw new Error('No installer');
+      const r = window.FreeSheetAndroid.installUpdate(version);
+      if (r === 'failed') throw new Error('Could not start the installer');
+      return r;
+    },
   };
 
   // ---------- closing ----------

@@ -8,11 +8,13 @@
 mod audio;
 mod content;
 mod progress;
+mod self_update;
 
 use serde_json::{json, Value};
 use std::io::{Read, Write};
 use std::path::PathBuf;
 use std::sync::atomic::{AtomicBool, Ordering};
+use std::sync::Arc;
 use std::time::{Duration, SystemTime, UNIX_EPOCH};
 use tauri::ipc::Response;
 use tauri::{AppHandle, Emitter, Manager, RunEvent, State, WebviewUrl, WebviewWindowBuilder, WindowEvent};
@@ -28,6 +30,8 @@ struct App {
     closing: AtomicBool,
     /// A close was asked for and the page is saving.
     close_started: AtomicBool,
+    /// Set to stop a download of a new version.
+    update_cancel: Arc<AtomicBool>,
 }
 
 type Res<T> = Result<T, String>;
@@ -219,6 +223,44 @@ fn open_release_page(handle: AppHandle, url: String) -> Res<()> {
     }
     use tauri_plugin_opener::OpenerExt;
     handle.opener().open_url(url, None::<&str>).map_err(err)
+}
+
+fn update_dir(handle: &AppHandle) -> Res<PathBuf> {
+    Ok(handle.path().app_cache_dir().map_err(err)?.join("updates"))
+}
+
+/// Downloads and checks a newer version, reporting "freesheet:update-progress".
+#[tauri::command(async)]
+fn update_download(handle: AppHandle, app: State<'_, App>, version: String) -> Res<()> {
+    let dir = update_dir(&handle)?;
+    let current = handle.package_info().version.to_string();
+    app.update_cancel.store(false, Ordering::SeqCst);
+    let h = handle.clone();
+    self_update::fetch(&version, &current, &dir, app.update_cancel.clone(), move |received, total| {
+        let _ = h.emit("freesheet:update-progress", json!({ "received": received, "total": total }));
+    })
+}
+
+#[tauri::command]
+fn update_cancel(app: State<'_, App>) {
+    app.update_cancel.store(true, Ordering::SeqCst);
+}
+
+/// Installs what `update_download` fetched. The page has already saved. "opened": the system's
+/// installer took over and the app stays open; otherwise the app exits for the installer.
+#[tauri::command]
+fn update_apply(handle: AppHandle, app: State<'_, App>, version: String) -> Res<&'static str> {
+    if !self_update::acceptable(&version, &handle.package_info().version.to_string()) {
+        return Err("That is not a newer version".into());
+    }
+    match self_update::apply(&version, &update_dir(&handle)?)? {
+        self_update::Applied::Opened => Ok("opened"),
+        self_update::Applied::Exiting => {
+            app.closing.store(true, Ordering::SeqCst);
+            handle.exit(0);
+            Ok("exiting")
+        }
+    }
 }
 
 #[tauri::command]
@@ -446,6 +488,9 @@ pub fn run() {
             smooth_text_active,
             relaunch,
             open_release_page,
+            update_download,
+            update_cancel,
+            update_apply,
             close_window,
             minimize_app,
         ])
@@ -465,6 +510,7 @@ pub fn run() {
                 smooth_text,
                 closing: AtomicBool::new(false),
                 close_started: AtomicBool::new(false),
+                update_cancel: Arc::new(AtomicBool::new(false)),
             });
             create_window(handle, &prefs, smooth_text)?;
             Ok(())

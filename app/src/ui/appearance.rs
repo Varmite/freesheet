@@ -5,7 +5,7 @@ use super::app::{App, Tab, View};
 use super::rich::{self, Style};
 use super::theme::{self, Palette, W};
 use super::widgets::{self, btn, radius};
-use crate::update::{self, State};
+use crate::update::{self, Job, State};
 use egui::{pos2, vec2, Align2, Color32, Id, Order, Rect, Sense, Stroke, StrokeKind, Ui};
 
 /// A small drawing of a theme: a page, a card, a line of text and a button.
@@ -151,14 +151,65 @@ impl App {
                 State::Failed => "Could not check for updates. Are you online?".to_string(),
             };
             widgets::plain(ui, &t, &status, 0.95, W::Regular, p.text);
-            if let State::Available { url, .. } = &state {
-                if btn("Download").primary().small().icon("download").show(ui, &t).clicked() {
-                    update::open_page(url);
+            if let State::Available { version, url } = &state {
+                if !self.update_job(ui, version, url) && btn("Update now").primary().small().icon("download").show(ui, &t).clicked() {
+                    self.installer.start(ui.ctx(), version);
                 }
             } else if btn("Check now").small().enabled(state != State::Checking).show(ui, &t).clicked() {
                 self.check_updates_now();
             }
         });
+    }
+
+    /// Download progress and what can be done next. False when no update is under way.
+    fn update_job(&mut self, ui: &mut Ui, version: &str, url: &str) -> bool {
+        let t = self.t;
+        let p = t.p;
+        match self.installer.job() {
+            Job::None => false,
+            Job::Downloading { received, total } => {
+                let mb = |n: u64| n / 1_048_576;
+                let text = if total > 0 {
+                    format!("Downloading the update: {}% ({} of {} MB)", received * 100 / total, mb(received), mb(total))
+                } else {
+                    "Downloading the update…".to_string()
+                };
+                widgets::muted(ui, &t, &text, 0.85);
+                if btn("Cancel").small().show(ui, &t).clicked() {
+                    self.installer.cancel();
+                }
+                true
+            }
+            Job::Ready => {
+                widgets::plain(ui, &t, &format!("FreeSheet {version} is ready. FreeSheet will close and reopen."), 0.9, W::Regular, p.text);
+                ui.horizontal(|ui| {
+                    if btn("Restart and update").primary().small().show(ui, &t).clicked() {
+                        self.save();
+                        if self.installer.install(version) {
+                            ui.ctx().send_viewport_cmd(egui::ViewportCommand::Close);
+                        }
+                    }
+                    if btn("Later").small().show(ui, &t).clicked() {
+                        self.installer.reset();
+                        self.p.settings.update_dismissed = Some(version.to_string());
+                        self.save();
+                    }
+                });
+                true
+            }
+            Job::Failed => {
+                widgets::plain(ui, &t, "The update could not be finished. Check your connection and try again.", 0.9, W::Regular, p.text);
+                ui.horizontal(|ui| {
+                    if btn("Try again").primary().small().show(ui, &t).clicked() {
+                        self.installer.start(ui.ctx(), version);
+                    }
+                    if btn("Open download page").small().show(ui, &t).clicked() {
+                        update::open_page(url);
+                    }
+                });
+                true
+            }
+        }
     }
 
     /// A quiet card in the corner when a new version is out: never during an exam, and
@@ -169,7 +220,7 @@ impl App {
             return;
         };
         let writing = self.tab == Tab::Exams && matches!(self.view(), View::Run { .. } | View::Mark { .. });
-        if writing || self.welcome || self.setup.is_some() || self.p.settings.update_dismissed.as_deref() == Some(version.as_str()) {
+        if writing || self.welcome || self.setup.is_some() || (self.installer.job() == Job::None && self.p.settings.update_dismissed.as_deref() == Some(version.as_str())) {
             self.update_card_at = None;
             return;
         }
@@ -195,17 +246,18 @@ impl App {
                     ui.set_max_width((screen.width() - 64.0).min(300.0));
                     ui.spacing_mut().item_spacing.y = 2.0;
                     widgets::plain(ui, &t, &format!("FreeSheet {version} is available"), 1.0, W::Semi, p.text);
-                    widgets::muted(ui, &t, &format!("You have {}. Your progress stays when you update.", update::CURRENT), 0.85);
-                    ui.add_space(t.px(0.45));
-                    ui.horizontal(|ui| {
-                        if btn("Download").primary().small().icon("download").show(ui, &t).clicked() {
-                            update::open_page(&url);
-                            later = true;
-                        }
-                        if btn("Later").small().show(ui, &t).clicked() {
-                            later = true;
-                        }
-                    });
+                    if !self.update_job(ui, &version, &url) {
+                        widgets::muted(ui, &t, &format!("You have {}. Your progress stays when you update.", update::CURRENT), 0.85);
+                        ui.add_space(t.px(0.45));
+                        ui.horizontal(|ui| {
+                            if btn("Update now").primary().small().icon("download").show(ui, &t).clicked() {
+                                self.installer.start(ui.ctx(), &version);
+                            }
+                            if btn("Later").small().show(ui, &t).clicked() {
+                                later = true;
+                            }
+                        });
+                    }
                 });
         });
         if later {

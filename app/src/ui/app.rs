@@ -210,6 +210,7 @@ pub struct App {
     /// Testing: press this question's main button (see automation.rs).
     pub auto_check: Option<usize>,
     pub update: crate::update::Checker,
+    pub installer: crate::update::Installer,
     pub update_card_at: Option<f64>,
     /// Changing theme: when, and the old background, which fades away.
     theme_fade: Option<(f64, Color32)>,
@@ -311,6 +312,7 @@ impl App {
             ai_failed: HashMap::new(),
             auto_check: None,
             update: crate::update::Checker::default(),
+            installer: crate::update::Installer::default(),
             update_card_at: None,
             theme_fade: None,
             atlas_fill: 0.0,

@@ -37,7 +37,11 @@
     if (!best) throw new Error('No release found');
     if (!isNewer(best.tag_name, current)) return { status: 'current' };
     const url = typeof best.html_url === 'string' && best.html_url.startsWith(RELEASES) ? best.html_url : LATEST_PAGE;
-    return { status: 'available', version: parts(best.tag_name).join('.'), url };
+    const out = { status: 'available', version: parts(best.tag_name).join('.'), url };
+    // Roughly how much data the update will use, to the nearest 10 MB.
+    const sizes = (Array.isArray(best.assets) ? best.assets : []).filter((a) => a && a.size > 0 && !String(a.name).toLowerCase().endsWith('.txt')).map((a) => a.size);
+    if (sizes.length) out.sizeMB = Math.round(Math.min(...sizes) / 10485760) * 10;
+    return out;
   }
 
   // Never throws for the caller's sake alone: being offline simply rejects, and the app

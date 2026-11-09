@@ -116,6 +116,10 @@
     smoothTextActive: async () => true,
     relaunch: async () => location.reload(),
     openReleasePage: async () => {},
+    downloadUpdate: async () => {},
+    cancelUpdate: async () => {},
+    onUpdateProgress: () => {},
+    applyUpdate: async () => {},
   };
   window.api = api;
 

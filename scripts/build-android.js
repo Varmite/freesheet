@@ -75,6 +75,20 @@ copyDir(path.join(TAURI, 'android', 'res'), path.join(APP, 'src', 'main', 'res')
 fs.copyFileSync(path.join(TAURI, 'android', 'java', 'MainActivity.kt'),
   path.join(APP, 'src', 'main', 'java', 'za', 'freesheet', 'app', 'MainActivity.kt'));
 
+// Updates: the app downloads the new APK and hands it to Android's installer.
+const manifestFile = path.join(APP, 'src', 'main', 'AndroidManifest.xml');
+let manifest = fs.readFileSync(manifestFile, 'utf8');
+if (!manifest.includes('REQUEST_INSTALL_PACKAGES')) {
+  manifest = manifest.replace('<application', '<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />\n    <application');
+}
+if (!manifest.includes('androidx.core.content.FileProvider')) {
+  manifest = manifest.replace('</application>', `    <provider android:name="androidx.core.content.FileProvider" android:authorities="\${applicationId}.fileprovider" android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+    </application>`);
+}
+fs.writeFileSync(manifestFile, manifest);
+
 // 3. Audio, fresh each time so deleted files do not linger.
 const assets = path.join(APP, 'src', 'main', 'assets', 'audio');
 fs.rmSync(assets, { recursive: true, force: true });

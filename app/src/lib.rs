@@ -20,6 +20,9 @@ pub mod store;
 pub mod streak;
 pub mod ui;
 pub mod update;
+#[cfg(not(target_os = "android"))]
+#[path = "../../src-tauri/src/self_update.rs"]
+pub mod self_update;
 
 /// Window options shared by the desktop builds.
 #[cfg(not(target_os = "android"))]

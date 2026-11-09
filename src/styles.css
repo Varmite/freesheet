@@ -973,4 +973,10 @@ html.smooth-text.os-windows:not(.is-dark) body { font-weight: 430; }
 .motion .update-card { animation: update-in var(--bounce-d, 0.4s) var(--bounce, ease) both; }
 @keyframes update-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 .update-status { display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem; }
+.update-status .update-note { flex-basis: 100%; }
+.update-status .btn-row { margin: 0; }
+.update-job .update-note { display: block; margin: 0.1rem 0 0.6rem; color: var(--muted); font-size: 0.85rem; line-height: 1.4; }
+.update-bar { flex-basis: 100%; height: 6px; margin: 0 0 0.6rem; border-radius: 3px; overflow: hidden; background: var(--border); }
+.update-status .update-bar { margin: 0; }
+.update-bar i { display: block; height: 100%; background: var(--accent); transition: width 0.25s linear; }
 @media print { .update-card { display: none !important; } }

@@ -28,4 +28,7 @@ assert.strictEqual(U.interpret(rel('v1.3.0', { html_url: 'https://example.com/ev
 // An answer without a release is an error, not "up to date".
 assert.throws(() => U.interpret({ message: 'rate limited' }, '1.2.0', false));
 
+// The size offered is the smallest installer, ignoring the checksum list.
+assert.strictEqual(U.interpret(rel('v1.3.0', { assets: [{ name: 'SHA256SUMS.txt', size: 900 }, { name: 'a.exe', size: 251658240 }, { name: 'a.AppImage', size: 335544320 }] }), '1.2.0', false).sizeMB, 240);
+
 console.log('Update checks passed.');
