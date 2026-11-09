@@ -87,8 +87,10 @@ or plain `9,8 m·s⁻²`. South African conventions: decimal comma (`3,5`), spac
 | `passage`    | optional `title`, `text` (extract/poem/comprehension text; `\n` kept) |
 | `diagram`    | `svg` (a complete `<svg ...>` string with `viewBox`), `caption`  |
 
-Diagrams are rendered as images on a white background (no scripts run). Keep them simple: black strokes,
-`font-family="sans-serif"`, a `viewBox`, no external references.
+Diagrams are rendered as images on a white background in every theme (no scripts run). Use dark strokes and
+text, `font-family="sans-serif"`, a `viewBox`, no external references. Colour is fine for illustrations, but label
+what it means, so that nothing depends on colour alone. Text in a 420-wide `viewBox` should be at least 11 units
+tall to stay readable on a phone. The caption is read aloud, so changing it means regenerating that section's audio.
 
 ## Questions
 
