@@ -52,6 +52,7 @@ async function connect() {
   const clickText = (sel, re) => evaluate(`(() => { const el = [...document.querySelectorAll(${JSON.stringify(sel)})].find((e) => ${re}.test(e.textContent) && e.offsetParent !== null); if (el) el.click(); return !!el; })()`);
 
   if (phase === 'start') {
+    console.log(`INFO  WebView: ${JSON.stringify(await evaluate('navigator.userAgent'))}`);
     for (let i = 0; i < 20 && !(await evaluate('!!(window.api && document.querySelector("#main .page"))')); i++) await sleep(1000);
     await run('platform', 'api.platform', (v) => v === 'android');
     await run('phone layout', 'document.documentElement.classList.contains("android-edition") && !!document.querySelector("link[href=\\"mobile.css\\"]")', (v) => v === true);

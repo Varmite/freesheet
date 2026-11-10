@@ -1,6 +1,9 @@
-# Tries FreeSheet on an Android emulator: builds a debug APK (x86_64, with WebView DevTools on),
-# installs it, drives the app (content, read-aloud audio from the APK, grade, subject, topic),
+# Tries FreeSheet on Android emulators, from the oldest Android it supports (7.0) to the newest:
+# builds a debug APK (x86_64, with WebView DevTools on), then on each emulator installs it,
+# drives the app (content, read-aloud audio from the APK, grade, subject, topic),
 # presses Back and Home, and checks progress is saved. Screenshots and the log are uploaded.
+# The old emulators also have old WebViews (as on phones that never update), so this shows how
+# the app copes with them.
 #   gh workflow run android-smoke.yml --ref master
 name: Android smoke test
 
@@ -11,9 +14,8 @@ permissions:
   contents: read
 
 jobs:
-  emulator:
+  apk:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -42,13 +44,38 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - run: npm ci
       - run: node scripts/build-android.js --debug --target x86_64
+      - uses: actions/upload-artifact@v4
+        with:
+          name: smoke-apk
+          path: build/android/*.apk
+          compression-level: 0
+          retention-days: 3
+
+  emulator:
+    needs: apk
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        # Android 7.0, 8.0, 9, 10, 11, 13, 15
+        api: [24, 26, 28, 29, 30, 33, 35]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          name: smoke-apk
+          path: build/android
       - name: Enable KVM
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
           sudo udevadm control --reload-rules && sudo udevadm trigger --name-match=kvm
       - uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 35
+          api-level: ${{ matrix.api }}
           arch: x86_64
           target: google_apis
           disable-animations: true
@@ -56,5 +83,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: android-smoke
+          name: android-smoke-api${{ matrix.api }}
           path: shots/
