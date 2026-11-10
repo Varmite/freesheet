@@ -117,6 +117,11 @@ async function connect() {
     // design), and it can pop up at any moment: close it, then press the real Back key.
     await evaluate('(() => { const x = document.querySelector(".buddy-bubble:not([hidden]) .buddy-x"); if (x) x.click(); return !!x; })()');
     await sleep(500);
+    // Touch the page first (its heading, which does nothing), as a person would have: until
+    // now the test has only clicked through DevTools, and on a tablet the taskbar can still
+    // hold the input focus, in which case Android itself answers Back by going home.
+    const at = await evaluate(`(() => { const r = (document.querySelector('#main h1') || document.querySelector('#main')).getBoundingClientRect(); return { x: Math.round((r.left + Math.min(r.width, 200) / 2) * devicePixelRatio), y: Math.round((r.top + 12 + 30) * devicePixelRatio) }; })()`);
+    if (at && at.x > 0) { execSync(`adb shell input tap ${at.x} ${at.y}`); await sleep(1000); }
     execSync('adb shell input keyevent KEYCODE_BACK');
     await sleep(2500);
     await run('back went up to the topic list', `(() => ({
