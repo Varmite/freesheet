@@ -1,0 +1,295 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Numbers and Calculations in Context",
+      "questions": [
+        {
+          "id": "numbers-and-calculations-round-up",
+          "type": "numeric",
+          "prompt": "A school must transport 230 learners. Each bus holds 65 learners. How many buses are needed?",
+          "answer": 4,
+          "tolerance": 0
+        },
+        {
+          "id": "numbers-and-calculations-percent",
+          "type": "numeric",
+          "prompt": "Calculate 12% of R850.",
+          "answer": 102,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "numbers-and-calculations-change",
+          "type": "numeric",
+          "prompt": "The price of bread rose from R16 to R18. Calculate the percentage increase.",
+          "answer": 12.5,
+          "tolerance": 0.01,
+          "unit": "%"
+        },
+        {
+          "id": "numbers-and-calculations-rate",
+          "type": "numeric",
+          "prompt": "A car travels 270 km in 3 hours. What is its average speed?",
+          "answer": 90,
+          "tolerance": 0,
+          "unit": "km/h"
+        },
+        {
+          "id": "numbers-and-calculations-best-buy",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Which is better value: 750 ml of juice for R18,99 or 2 ℓ for R45,99? Show your working.",
+          "memo": "✓ 750 ml: R18,99 ÷ 0,75 = R25,32 per litre (1)\n✓ 2 ℓ: R45,99 ÷ 2 = R23,00 per litre (1)\n✓ 2 ℓ is better value (1)"
+        },
+        {
+          "id": "numbers-and-calculations-share",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Three friends invest R2 000, R3 000 and R5 000 in a business and share a profit of R4 500 in the ratio of their investments. How much does each receive?",
+          "memo": "✓ Ratio 2 : 3 : 5, one part = R450 (1)\n✓ R900 and R1 350 (1)\n✓ R2 250 (1)"
+        },
+        {
+          "id": "numbers-and-calculations-fuel",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A bakkie uses 9 ℓ per 100 km. Diesel costs R22,80 per litre. Calculate the fuel cost of a 250 km journey.",
+          "memo": "✓ 250 ÷ 100 × 9 = 22,5 ℓ (1)\n✓ 22,5 × R22,80 (1)\n✓ = R513,00 (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Patterns, Relationships and Graphs",
+      "questions": [
+        {
+          "id": "patterns-relationships-and-graphs-formula",
+          "type": "numeric",
+          "prompt": "A plumber charges $C = 350 + 200h$ (rand), where $h$ is hours worked. What is the cost of a 3-hour job?",
+          "answer": 950,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "patterns-relationships-and-graphs-hours",
+          "type": "numeric",
+          "prompt": "Using $C = 350 + 200h$, how many hours were worked if the bill was R1 550?",
+          "answer": 6,
+          "tolerance": 0,
+          "unit": "hours"
+        },
+        {
+          "id": "patterns-relationships-and-graphs-direct",
+          "type": "mcq",
+          "prompt": "Which is an example of direct proportion?",
+          "options": [
+            "Speed and travel time for a fixed distance",
+            "Number of tickets bought and total cost",
+            "Number of people sharing a pizza and slices each",
+            "Workers and days to finish a job"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "patterns-relationships-and-graphs-origin",
+          "type": "truefalse",
+          "prompt": "The graph of a direct proportion always passes through the origin.",
+          "answer": true
+        },
+        {
+          "id": "patterns-relationships-and-graphs-break-even",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Option A: R100 per month plus R1,50 per minute. Option B: R2,50 per minute with no monthly fee. Find the number of minutes for which both cost the same, and say which option is cheaper for 150 minutes.",
+          "memo": "✓ $100 + 1{,}5m = 2{,}5m$ (1)\n✓ $m = 100$ minutes (1)\n✓ At 150 min: A = R325, B = R375 (1)\n✓ Option A is cheaper (1)"
+        },
+        {
+          "id": "patterns-relationships-and-graphs-graph-shape",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Describe the shape of the graph of an inverse proportion.",
+          "memo": "✓ A curve, not a straight line (1)\n✓ that gets closer to the axes but never touches them (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Finance: Income, Expenditure and Budgets",
+      "questions": [
+        {
+          "id": "income-expenditure-and-budgets-gross-net",
+          "type": "mcq",
+          "prompt": "Take-home pay after deductions is called…",
+          "options": [
+            "gross income",
+            "net income",
+            "variable income",
+            "fixed income"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "income-expenditure-and-budgets-uif",
+          "type": "numeric",
+          "prompt": "Calculate the employee's UIF contribution on a gross salary of R12 400.",
+          "answer": 124,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "income-expenditure-and-budgets-fixed",
+          "type": "mcq",
+          "prompt": "Which is a fixed expense?",
+          "options": [
+            "Groceries",
+            "Electricity",
+            "Rent",
+            "Entertainment"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "income-expenditure-and-budgets-net",
+          "type": "numeric",
+          "prompt": "Gross pay is R8 600 and total deductions are R1 340. Calculate net pay.",
+          "answer": 7260,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "income-expenditure-and-budgets-deficit",
+          "type": "truefalse",
+          "prompt": "If expenditure is greater than income, the budget has a deficit.",
+          "answer": true
+        },
+        {
+          "id": "income-expenditure-and-budgets-classify",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each item.",
+          "pairs": [
+            {
+              "left": "Monthly salary",
+              "right": "Fixed income"
+            },
+            {
+              "left": "Waiter's tips",
+              "right": "Variable income"
+            },
+            {
+              "left": "Car insurance premium",
+              "right": "Fixed expense"
+            },
+            {
+              "left": "Taxi fares",
+              "right": "Variable expense"
+            }
+          ]
+        },
+        {
+          "id": "income-expenditure-and-budgets-overtime",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A security guard earns R65 per hour for 40 hours a week, and overtime at 1,5 times the normal rate. Calculate his gross pay for a week in which he works 46 hours.",
+          "memo": "✓ Normal: 40 × R65 = R2 600 (1)\n✓ Overtime: 6 × R97,50 = R585 (1)\n✓ Total R3 185 (1)"
+        },
+        {
+          "id": "income-expenditure-and-budgets-profit",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A learner makes 40 cupcakes at a total cost of R180 and sells them at R8 each. Calculate the profit if all are sold, and the minimum number she must sell to break even.",
+          "memo": "✓ Income 40 × R8 = R320, profit R140 (1)\n✓ Break even: R180 ÷ R8 = 22,5 (1)\n✓ She must sell 23 cupcakes (1)"
+        },
+        {
+          "id": "income-expenditure-and-budgets-percent-spend",
+          "type": "numeric",
+          "prompt": "A family spends R3 150 on groceries out of a net income of R18 000. What percentage of income is this?",
+          "answer": 17.5,
+          "tolerance": 0.01,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Finance: Financial Documents and Tariffs",
+      "questions": [
+        {
+          "id": "financial-documents-and-tariffs-vat-rate",
+          "type": "numeric",
+          "prompt": "What is the VAT rate in South Africa?",
+          "answer": 15,
+          "tolerance": 0,
+          "unit": "%"
+        },
+        {
+          "id": "financial-documents-and-tariffs-vat-add",
+          "type": "numeric",
+          "prompt": "A service costs R800 excluding VAT. What is the price including VAT?",
+          "answer": 920,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "financial-documents-and-tariffs-vat-amount",
+          "type": "numeric",
+          "prompt": "A shirt costs R230 including VAT. How much of this is VAT?",
+          "answer": 30,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "financial-documents-and-tariffs-zero",
+          "type": "mcq",
+          "prompt": "Which item is zero-rated for VAT?",
+          "options": [
+            "Cold drink",
+            "Brown bread",
+            "Chocolate",
+            "Soap"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "financial-documents-and-tariffs-debit",
+          "type": "truefalse",
+          "prompt": "On a bank statement, a debit is money paid out of the account.",
+          "answer": true
+        },
+        {
+          "id": "financial-documents-and-tariffs-documents",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each document to its purpose.",
+          "pairs": [
+            {
+              "left": "Invoice",
+              "right": "Requests payment for goods or services"
+            },
+            {
+              "left": "Till slip",
+              "right": "Proof of a shop purchase"
+            },
+            {
+              "left": "Bank statement",
+              "right": "Record of money in and out of an account"
+            }
+          ]
+        },
+        {
+          "id": "financial-documents-and-tariffs-balance",
+          "type": "open",
+          "marks": 3,
+          "prompt": "An account has a balance of R2 340. A salary of R9 500 is paid in, and debit orders of R3 200 and R1 150 go off, plus R65 bank charges. What is the new balance?",
+          "memo": "✓ R2 340 + R9 500 = R11 840 (1)\n✓ Debits R4 415 (1)\n✓ Balance R7 425 (1)"
+        }
+      ]
+    }
+  ]
+}

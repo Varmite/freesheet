@@ -1,0 +1,333 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: The Industrial Revolution in Britain",
+      "questions": [
+        {
+          "id": "industrial-revolution-in-britain-where-start",
+          "type": "short",
+          "prompt": "In which country did the Industrial Revolution begin?",
+          "answers": [
+            "britain",
+            "great britain",
+            "england",
+            "united kingdom",
+            "uk"
+          ]
+        },
+        {
+          "id": "industrial-revolution-in-britain-domestic",
+          "type": "truefalse",
+          "prompt": "Before the Industrial Revolution, most cloth was made at home by hand.",
+          "answer": true
+        },
+        {
+          "id": "industrial-revolution-in-britain-inventions",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each inventor to the invention.",
+          "pairs": [
+            {
+              "left": "James Hargreaves",
+              "right": "Spinning jenny"
+            },
+            {
+              "left": "Edmund Cartwright",
+              "right": "Power loom"
+            },
+            {
+              "left": "George Stephenson",
+              "right": "Steam locomotive"
+            },
+            {
+              "left": "Richard Arkwright",
+              "right": "Water frame"
+            }
+          ]
+        },
+        {
+          "id": "industrial-revolution-in-britain-luddites",
+          "type": "mcq",
+          "prompt": "Who were the Luddites?",
+          "options": [
+            "Factory owners who built mills",
+            "Workers who smashed machines",
+            "Members of parliament who passed Factory Acts",
+            "Inventors of the steam engine"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "industrial-revolution-in-britain-why-britain",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give FOUR reasons why the Industrial Revolution started in Britain.",
+          "memo": "Any four (1 each): coal and iron; capital to invest; colonies for raw materials and markets; available labour after enclosures; good transport/canals/ports; stable government and banks"
+        },
+        {
+          "id": "industrial-revolution-in-britain-unions",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why did workers form trade unions?",
+          "memo": "✓ To act together / bargain collectively with employers (1)\n✓ for higher wages, shorter hours and safer conditions (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Industrialisation in Southern Africa: Sugar and Indentured Labour",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Source B: A summary of historians' views (written for this lesson)",
+          "text": "The indenture system was described by some critics at the time as 'a new system of slavery'. Workers were tied to one employer and could be punished for leaving, yet many also saw it as a chance to escape debt and hunger in India and build a new life."
+        }
+      ],
+      "questions": [
+        {
+          "id": "industrialisation-in-southern-africa-truro",
+          "type": "numeric",
+          "prompt": "In which year did the first indentured labourers arrive in Durban on the Truro?",
+          "answer": 1860,
+          "tolerance": 0
+        },
+        {
+          "id": "industrialisation-in-southern-africa-why-india",
+          "type": "mcq",
+          "prompt": "Why did Natal planters bring workers from India?",
+          "options": [
+            "Zulu men refused to work on plantations for low wages",
+            "Indians were experts at mining",
+            "India had no sugar industry",
+            "Britain banned local labour"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "industrialisation-in-southern-africa-gandhi-year",
+          "type": "short",
+          "prompt": "What was the name of Gandhi's method of non-violent resistance?",
+          "answers": [
+            "satyagraha",
+            "passive resistance"
+          ]
+        },
+        {
+          "id": "industrialisation-in-southern-africa-nic",
+          "type": "truefalse",
+          "prompt": "Gandhi helped to found the Natal Indian Congress in 1894.",
+          "answer": true
+        },
+        {
+          "id": "industrialisation-in-southern-africa-conditions",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE hardships faced by indentured labourers.",
+          "memo": "Any three (1 each): low wages/deductions; long hours; crowded barracks; poor medical care; could be arrested for leaving; physical punishment"
+        },
+        {
+          "id": "industrialisation-in-southern-africa-match-terms",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Plantation",
+              "right": "Large farm growing one cash crop"
+            },
+            {
+              "left": "Passenger Indians",
+              "right": "Traders who paid their own passage"
+            },
+            {
+              "left": "Satyagraha",
+              "right": "Non-violent resistance to unjust laws"
+            }
+          ]
+        },
+        {
+          "id": "industrialisation-in-southern-africa-legacy",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO ways in which the arrival of indentured labourers still affects South Africa today.",
+          "memo": "Any two (1 each): large Indian South African community in KZN; sugar industry; cultural contributions (food, religion, festivals); role in the struggle for democracy; Gandhi's ideas"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: The Mineral Revolution: Diamonds",
+      "questions": [
+        {
+          "id": "the-discovery-of-diamonds-year",
+          "type": "numeric",
+          "prompt": "In which year was the first diamond (the Eureka) found near Hopetown?",
+          "answer": 1867,
+          "tolerance": 0
+        },
+        {
+          "id": "the-discovery-of-diamonds-town",
+          "type": "short",
+          "prompt": "Which town grew up around the Big Hole?",
+          "answers": [
+            "kimberley"
+          ]
+        },
+        {
+          "id": "the-discovery-of-diamonds-griqua",
+          "type": "mcq",
+          "prompt": "Which leader was awarded the diamond fields by the Keate Award?",
+          "options": [
+            "Paul Kruger",
+            "Nicolaas Waterboer",
+            "Moshoeshoe",
+            "Cecil Rhodes"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-discovery-of-diamonds-debeers",
+          "type": "short",
+          "prompt": "Name the company formed by Cecil Rhodes in 1888 to control diamond mining.",
+          "answers": [
+            "de beers",
+            "de beers consolidated mines",
+            "de beers consolidated"
+          ]
+        },
+        {
+          "id": "the-discovery-of-diamonds-compound-white",
+          "type": "truefalse",
+          "prompt": "White mine workers in Kimberley also had to live in closed compounds.",
+          "answer": false
+        },
+        {
+          "id": "the-discovery-of-diamonds-compounds",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give TWO reasons why mine owners introduced compounds and TWO effects of compounds on black workers.",
+          "memo": "Reasons (1 each): prevent diamond theft; control workers / prevent strikes; keep labour cheap\nEffects (1 each): could not leave; strip-searched; separated from families; had to buy from company stores; low wages"
+        },
+        {
+          "id": "the-discovery-of-diamonds-claims",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each person to their role.",
+          "pairs": [
+            {
+              "left": "Cecil Rhodes",
+              "right": "Founder of De Beers"
+            },
+            {
+              "left": "Barney Barnato",
+              "right": "Rival bought out by Rhodes"
+            },
+            {
+              "left": "Nicolaas Waterboer",
+              "right": "Griqua leader"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: The Mineral Revolution: Gold and Migrant Labour",
+      "questions": [
+        {
+          "id": "the-discovery-of-gold-year",
+          "type": "numeric",
+          "prompt": "In which year was gold discovered on the Witwatersrand?",
+          "answer": 1886,
+          "tolerance": 0
+        },
+        {
+          "id": "the-discovery-of-gold-kruger",
+          "type": "short",
+          "prompt": "Who was president of the South African Republic (Transvaal) when gold was discovered?",
+          "answers": [
+            "paul kruger",
+            "kruger"
+          ]
+        },
+        {
+          "id": "the-discovery-of-gold-uitlanders",
+          "type": "mcq",
+          "prompt": "What were the foreign miners in the Transvaal called?",
+          "options": [
+            "Randlords",
+            "Uitlanders",
+            "Voortrekkers",
+            "Burghers"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-discovery-of-gold-randlords",
+          "type": "short",
+          "prompt": "What name was given to the wealthy owners of the gold mines?",
+          "answers": [
+            "randlords"
+          ]
+        },
+        {
+          "id": "the-discovery-of-gold-passes",
+          "type": "truefalse",
+          "prompt": "Pass laws allowed black workers to move freely between jobs.",
+          "answer": false
+        },
+        {
+          "id": "the-discovery-of-gold-war",
+          "type": "mcq",
+          "prompt": "Which war was fought between Britain and the Boer republics from 1899 to 1902?",
+          "options": [
+            "World War I",
+            "The South African War",
+            "The Anglo-Zulu War",
+            "The Frontier War"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-discovery-of-gold-cheap-labour",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain why gold mine owners wanted cheap labour.",
+          "memo": "✓ The gold was deep underground and spread thinly, so mining was very expensive (1)\n✓ The price of gold was fixed, so owners could not raise prices (1)\n✓ The only way to increase profits was to keep wages low (1)"
+        },
+        {
+          "id": "the-discovery-of-gold-events",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each event to its date.",
+          "pairs": [
+            {
+              "left": "Chamber of Mines formed",
+              "right": "1889"
+            },
+            {
+              "left": "Jameson Raid",
+              "right": "1895–1896"
+            },
+            {
+              "left": "South African War begins",
+              "right": "1899"
+            },
+            {
+              "left": "Union of South Africa formed",
+              "right": "1910"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

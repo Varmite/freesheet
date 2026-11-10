@@ -1,0 +1,361 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 65,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Technical Drawing: Orthographic, Isometric and Perspective",
+      "questions": [
+        {
+          "id": "technical-drawing-left-view",
+          "type": "mcq",
+          "prompt": "In first-angle projection, where is the left view placed?",
+          "options": [
+            "To the left of the front view",
+            "To the right of the front view",
+            "Above the front view",
+            "Below the top view"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "technical-drawing-hidden",
+          "type": "short",
+          "prompt": "What type of line shows hidden edges? (one word: … lines)",
+          "answers": [
+            "dashed",
+            "dashed lines",
+            "broken",
+            "hidden"
+          ]
+        },
+        {
+          "id": "technical-drawing-circle-iso",
+          "type": "mcq",
+          "prompt": "In isometric drawing, a circle is drawn as…",
+          "options": [
+            "a circle",
+            "an ellipse",
+            "a square",
+            "a triangle"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "technical-drawing-two-point",
+          "type": "numeric",
+          "prompt": "How many vanishing points are used in two-point perspective?",
+          "answer": 2,
+          "tolerance": 0
+        },
+        {
+          "id": "technical-drawing-diameter",
+          "type": "short",
+          "prompt": "Which symbol is placed before a diameter dimension?",
+          "answers": [
+            "ø",
+            "Ø",
+            "diameter symbol"
+          ]
+        },
+        {
+          "id": "technical-drawing-measure-persp",
+          "type": "truefalse",
+          "prompt": "Accurate measurements can be taken from a perspective drawing.",
+          "answer": false
+        },
+        {
+          "id": "technical-drawing-views",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each view to its position in first-angle projection.",
+          "pairs": [
+            {
+              "left": "Front view",
+              "right": "Top left"
+            },
+            {
+              "left": "Top view",
+              "right": "Below the front view"
+            },
+            {
+              "left": "Left view",
+              "right": "Right of the front view"
+            }
+          ]
+        },
+        {
+          "id": "technical-drawing-title-block",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE items that must appear in a title block.",
+          "memo": "Any three (1 each): title; name; date; scale; projection symbol; drawing number"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Bridges and Structures",
+      "questions": [
+        {
+          "id": "bridges-and-structures-span",
+          "type": "short",
+          "prompt": "What is the distance between the supports of a bridge called?",
+          "answers": [
+            "span",
+            "the span"
+          ]
+        },
+        {
+          "id": "bridges-and-structures-longest",
+          "type": "mcq",
+          "prompt": "Which type of bridge can span the longest distances?",
+          "options": [
+            "Beam",
+            "Arch",
+            "Suspension",
+            "Truss"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "bridges-and-structures-arch-force",
+          "type": "mcq",
+          "prompt": "The curved part of an arch bridge is mainly in…",
+          "options": [
+            "tension",
+            "compression",
+            "torsion",
+            "shear"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "bridges-and-structures-mandela",
+          "type": "short",
+          "prompt": "What type of bridge is the Nelson Mandela Bridge in Johannesburg?",
+          "answers": [
+            "cable-stayed",
+            "cable stayed",
+            "cable-stayed bridge"
+          ]
+        },
+        {
+          "id": "bridges-and-structures-cantilever",
+          "type": "truefalse",
+          "prompt": "A cantilever is a beam supported at one end only.",
+          "answer": true
+        },
+        {
+          "id": "bridges-and-structures-types",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each bridge type to its description.",
+          "pairs": [
+            {
+              "left": "Beam",
+              "right": "Horizontal beam on two supports"
+            },
+            {
+              "left": "Truss",
+              "right": "Strengthened with triangles"
+            },
+            {
+              "left": "Suspension",
+              "right": "Deck hangs from main cables over towers"
+            },
+            {
+              "left": "Cantilever",
+              "right": "Arms project from piers and meet in the middle"
+            }
+          ]
+        },
+        {
+          "id": "bridges-and-structures-beam-forces",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A car drives onto the middle of a beam bridge. Which part of the beam is in compression and which in tension?",
+          "memo": "✓ The top of the beam is in compression (1)\n✓ The bottom of the beam is in tension (1)"
+        },
+        {
+          "id": "bridges-and-structures-suspension-forces",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name the forces in the cables and the towers of a suspension bridge.",
+          "memo": "✓ Cables: tension (1)\n✓ Towers: compression (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Hydraulic and Pneumatic Systems",
+      "questions": [
+        {
+          "id": "hydraulics-and-pneumatics-hydraulic-def",
+          "type": "mcq",
+          "prompt": "A hydraulic system uses…",
+          "options": [
+            "compressed air",
+            "a liquid",
+            "electricity",
+            "gears"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "hydraulics-and-pneumatics-pressure-unit",
+          "type": "short",
+          "prompt": "What is the SI unit of pressure?",
+          "answers": [
+            "pascal",
+            "pa",
+            "pascals"
+          ]
+        },
+        {
+          "id": "hydraulics-and-pneumatics-pressure-calc",
+          "type": "numeric",
+          "prompt": "A force of 60 N acts on a piston with an area of 3 cm². Calculate the pressure in N/cm².",
+          "answer": 20,
+          "tolerance": 0,
+          "unit": "N/cm²"
+        },
+        {
+          "id": "hydraulics-and-pneumatics-jack",
+          "type": "numeric",
+          "prompt": "A small piston (area 4 cm²) has a force of 80 N applied. The large piston has an area of 40 cm². What force does the large piston exert?",
+          "answer": 800,
+          "tolerance": 0,
+          "unit": "N"
+        },
+        {
+          "id": "hydraulics-and-pneumatics-compress",
+          "type": "truefalse",
+          "prompt": "Liquids are easily compressed.",
+          "answer": false
+        },
+        {
+          "id": "hydraulics-and-pneumatics-uses",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each device as hydraulic or pneumatic.",
+          "pairs": [
+            {
+              "left": "Car brakes",
+              "right": "Hydraulic"
+            },
+            {
+              "left": "Jackhammer",
+              "right": "Pneumatic"
+            },
+            {
+              "left": "Excavator arm",
+              "right": "Hydraulic system"
+            },
+            {
+              "left": "Bus door opener",
+              "right": "Pneumatic system"
+            }
+          ]
+        },
+        {
+          "id": "hydraulics-and-pneumatics-compare",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give ONE advantage of hydraulics and ONE advantage of pneumatics.",
+          "memo": "✓ Hydraulics: large force / precise, firm movement (1)\n✓ Pneumatics: clean / fast / cushioned movement / air is free (1)"
+        },
+        {
+          "id": "hydraulics-and-pneumatics-trade-off",
+          "type": "open",
+          "marks": 2,
+          "prompt": "In a hydraulic jack, the large piston exerts a much bigger force than the effort. What is the disadvantage?",
+          "memo": "✓ The large piston moves a much shorter distance (1)\n✓ so the small piston must be pumped many times / over a long distance (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Mechanical Control: Cams, Cranks and Ratchets",
+      "questions": [
+        {
+          "id": "mechanical-control-reciprocating",
+          "type": "mcq",
+          "prompt": "A piston moving up and down in an engine shows…",
+          "options": [
+            "rotary motion",
+            "linear motion",
+            "reciprocating motion",
+            "oscillating motion"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "mechanical-control-pendulum",
+          "type": "short",
+          "prompt": "What type of motion does a swinging pendulum have?",
+          "answers": [
+            "oscillating",
+            "oscillating motion",
+            "oscillation"
+          ]
+        },
+        {
+          "id": "mechanical-control-ratchet",
+          "type": "truefalse",
+          "prompt": "A ratchet and pawl allow a shaft to turn in one direction only.",
+          "answer": true
+        },
+        {
+          "id": "mechanical-control-pulley-ma",
+          "type": "numeric",
+          "prompt": "A pulley system has 4 rope sections supporting the load. What is its ideal mechanical advantage?",
+          "answer": 4,
+          "tolerance": 0
+        },
+        {
+          "id": "mechanical-control-motion-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each example to its type of motion.",
+          "pairs": [
+            {
+              "left": "Ceiling fan",
+              "right": "Rotary"
+            },
+            {
+              "left": "Windscreen wiper",
+              "right": "Oscillating"
+            },
+            {
+              "left": "Conveyor belt",
+              "right": "Linear"
+            },
+            {
+              "left": "Sewing machine needle",
+              "right": "Reciprocating"
+            }
+          ]
+        },
+        {
+          "id": "mechanical-control-crank",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how the crankshaft in a car engine changes motion.",
+          "memo": "✓ The pistons move up and down (reciprocating) (1)\n✓ Connecting rods turn the crankshaft, producing rotary motion (1)"
+        },
+        {
+          "id": "mechanical-control-ratchet-uses",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO uses of a ratchet and pawl.",
+          "memo": "Any two (1 each): winch; fishing reel; cable tie; ratchet spanner; clock; handbrake"
+        }
+      ]
+    }
+  ]
+}

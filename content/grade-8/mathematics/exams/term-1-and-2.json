@@ -1,0 +1,542 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 11 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Whole Numbers",
+      "questions": [
+        {
+          "id": "whole-numbers-q1",
+          "type": "mcq",
+          "prompt": "Which of these numbers is prime?",
+          "options": [
+            "$51$",
+            "$57$",
+            "$59$",
+            "$91$"
+          ],
+          "answer": 2,
+          "explanation": "$51 = 3 \\times 17$, $57 = 3 \\times 19$ and $91 = 7 \\times 13$. Only $59$ has exactly two factors, $1$ and $59$."
+        },
+        {
+          "id": "whole-numbers-q2",
+          "type": "truefalse",
+          "prompt": "$0$ is a natural number.",
+          "answer": false,
+          "explanation": "The natural numbers start at $1$. Zero is a **whole** number ($\\mathbb{N}_0$) but not a natural number."
+        },
+        {
+          "id": "whole-numbers-q4",
+          "type": "numeric",
+          "prompt": "Find the LCM of $12$ and $18$.",
+          "answer": 36,
+          "tolerance": 0,
+          "explanation": "$12 = 2^2 \\times 3$ and $18 = 2 \\times 3^2$. All primes with highest powers: $2^2 \\times 3^2 = 36$."
+        },
+        {
+          "id": "whole-numbers-q11",
+          "type": "numeric",
+          "prompt": "Use the properties of numbers to calculate $125 \\times 37 \\times 8$ mentally.",
+          "answer": 37000,
+          "tolerance": 0,
+          "explanation": "Rearrange (commutative and associative): $(125 \\times 8) \\times 37 = 1\\ 000 \\times 37 = 37\\ 000$."
+        },
+        {
+          "id": "whole-numbers-q13",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Use the distributive property to calculate $99 \\times 23$ without a calculator. Show your method.",
+          "memo": "$99 \\times 23 = (100 - 1) \\times 23$ ✓ (1)\n$= 2\\ 300 - 23 = 2\\ 277$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Ratio, Rate and Financial Mathematics",
+      "questions": [
+        {
+          "id": "ratio-rate-and-financial-mathematics-q2",
+          "type": "numeric",
+          "prompt": "Thabo and Lerato share R720 in the ratio $5 : 4$. How much does Thabo get?",
+          "unit": "R",
+          "answer": 400,
+          "tolerance": 0,
+          "explanation": "$5 + 4 = 9$ parts; one part $= 720 \\div 9 = \\text{R}80$; Thabo gets $5 \\times 80 = \\text{R}400$."
+        },
+        {
+          "id": "ratio-rate-and-financial-mathematics-q4",
+          "type": "mcq",
+          "prompt": "Which packet of mealie meal is the best buy?",
+          "options": [
+            "250 g for R13",
+            "500 g for R24",
+            "750 g for R33",
+            "1 kg for R46"
+          ],
+          "answer": 2,
+          "explanation": "Compare the price per 100 g: R5,20; R4,80; R4,40; R4,60. The 750 g packet is cheapest per 100 g."
+        },
+        {
+          "id": "ratio-rate-and-financial-mathematics-q5",
+          "type": "truefalse",
+          "prompt": "If 5 workers take 12 days to build a wall, then 10 workers working at the same rate will take 24 days.",
+          "answer": false,
+          "explanation": "This is inverse proportion: double the workers means half the time. $5 \\times 12 = 60$ worker-days, so 10 workers take $60 \\div 10 = 6$ days."
+        },
+        {
+          "id": "ratio-rate-and-financial-mathematics-q12",
+          "type": "numeric",
+          "prompt": "A school bag costs R575 including 15% VAT. What is the price excluding VAT?",
+          "unit": "R",
+          "answer": 500,
+          "tolerance": 0.01,
+          "explanation": "Divide by $1{,}15$: $575 \\div 1{,}15 = \\text{R}500$. (Subtracting 15% of R575 would be wrong.)"
+        },
+        {
+          "id": "ratio-rate-and-financial-mathematics-q15",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A recipe for 6 people needs 450 g of mince and 3 onions. Mince costs R95 per kilogram.\n(a) How much mince and how many onions are needed for 10 people?  (2)\n(b) What will the mince for 10 people cost?  (2)",
+          "memo": "(a) Mince: $450 \\div 6 \\times 10 = 750$ g ✓ (1); onions: $3 \\div 6 \\times 10 = 5$ ✓ (1)\n(b) $750\\ \\text{g} = 0{,}75\\ \\text{kg}$ ✓ (1); $0{,}75 \\times 95 = \\text{R}71{,}25$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Integers",
+      "questions": [
+        {
+          "id": "integers-q2",
+          "type": "numeric",
+          "prompt": "Calculate $-8 - (-5)$.",
+          "answer": -3,
+          "tolerance": 0,
+          "explanation": "Subtracting a negative is adding: $-8 + 5 = -3$."
+        },
+        {
+          "id": "integers-q5",
+          "type": "truefalse",
+          "prompt": "$-10 < -3$",
+          "answer": true,
+          "explanation": "$-10$ is further to the left on the number line than $-3$, so it is smaller."
+        },
+        {
+          "id": "integers-q12",
+          "type": "short",
+          "prompt": "What is the additive inverse of $-15$?",
+          "answers": [
+            "15",
+            "+15"
+          ],
+          "explanation": "$-15 + 15 = 0$, so the additive inverse is $15$."
+        },
+        {
+          "id": "integers-q14",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Calculate, showing your steps: $(-2)^3 - (-3)^2 \\times 2$",
+          "memo": "$(-2)^3 = -8$ ✓ (1)\n$(-3)^2 \\times 2 = 9 \\times 2 = 18$ ✓ (1)\n$-8 - 18 = -26$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Exponents",
+      "questions": [
+        {
+          "id": "exponents-q2",
+          "type": "numeric",
+          "prompt": "Calculate $\\sqrt{144} + \\sqrt[3]{27}$.",
+          "answer": 15,
+          "tolerance": 0,
+          "explanation": "$\\sqrt{144} = 12$ and $\\sqrt[3]{27} = 3$, so $12 + 3 = 15$."
+        },
+        {
+          "id": "exponents-q4",
+          "type": "truefalse",
+          "prompt": "$3^2 + 4^2 = 7^2$",
+          "answer": false,
+          "explanation": "$3^2 + 4^2 = 9 + 16 = 25$, but $7^2 = 49$. You cannot add the bases."
+        },
+        {
+          "id": "exponents-q8",
+          "type": "mcq",
+          "prompt": "Write $4\\ 560\\ 000$ in scientific notation.",
+          "options": [
+            "$456 \\times 10^4$",
+            "$45{,}6 \\times 10^5$",
+            "$4{,}56 \\times 10^6$",
+            "$4{,}56 \\times 10^5$"
+          ],
+          "answer": 2,
+          "explanation": "The first number must be between $1$ and $10$: $4{,}56$. The comma moves 6 places, so $\\times 10^6$."
+        },
+        {
+          "id": "exponents-q10",
+          "type": "truefalse",
+          "prompt": "$(2x)^3 = 2x^3$",
+          "answer": false,
+          "explanation": "The exponent applies to every factor in the bracket: $(2x)^3 = 2^3x^3 = 8x^3$."
+        },
+        {
+          "id": "exponents-q13",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Simplify: $(3a^2b)^2 \\times 2ab^3$",
+          "memo": "$(3a^2b)^2 = 9a^4b^2$ ✓ (1)\n$9 \\times 2 = 18$ ✓ (1)\n$18a^5b^5$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Numeric and Geometric Patterns",
+      "questions": [
+        {
+          "id": "numeric-and-geometric-patterns-q1",
+          "type": "mcq",
+          "prompt": "What is the next term in $7;\\ 11;\\ 15;\\ 19;\\ \\ldots$?",
+          "options": [
+            "$21$",
+            "$22$",
+            "$23$",
+            "$24$"
+          ],
+          "answer": 2,
+          "explanation": "Add $4$ each time: $19 + 4 = 23$."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q5",
+          "type": "truefalse",
+          "prompt": "The general rule of the pattern $4;\\ 8;\\ 12;\\ 16;\\ \\ldots$ is $T_n = 4n$.",
+          "answer": true,
+          "explanation": "$T_1 = 4$, $T_2 = 8$, $T_3 = 12$ ✓ The terms are the multiples of 4."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q8",
+          "type": "numeric",
+          "prompt": "What is the next term in $1;\\ 3;\\ 6;\\ 10;\\ 15;\\ \\ldots$?",
+          "answer": 21,
+          "tolerance": 0,
+          "explanation": "The differences are $2;\\ 3;\\ 4;\\ 5$, so the next difference is $6$: $15 + 6 = 21$."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q11",
+          "type": "numeric",
+          "prompt": "A row of squares made of matchsticks uses $3n + 1$ matchsticks for $n$ squares. How many matchsticks are needed for 15 squares?",
+          "answer": 46,
+          "tolerance": 0,
+          "explanation": "$3(15) + 1 = 46$."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q12",
+          "type": "mcq",
+          "prompt": "Describe the rule for $100;\\ 50;\\ 25;\\ 12{,}5;\\ \\ldots$",
+          "options": [
+            "Subtract 50",
+            "Subtract 25",
+            "Divide by 2",
+            "Divide by 4"
+          ],
+          "answer": 2,
+          "explanation": "Each term is half the previous term: a constant ratio of $\\frac{1}{2}$."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q15",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A rumour spreads at school. On day 1, 3 learners know it. Each day, the number of learners who know it is multiplied by 3. How many learners know the rumour on day 5? Show the pattern.",
+          "memo": "$3;\\ 9;\\ 27;\\ 81;\\ 243$ ✓✓ (constant ratio of 3) (2)\nOn day 5, $243$ learners ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Functions and Relationships",
+      "questions": [
+        {
+          "id": "functions-and-relationships-q4",
+          "type": "truefalse",
+          "prompt": "In the formula $y = 5x - 1$, $x$ is the dependent variable.",
+          "answer": false,
+          "explanation": "$x$ is the input, which you choose: the **independent** variable. $y$ depends on $x$, so $y$ is the dependent variable."
+        },
+        {
+          "id": "functions-and-relationships-q6",
+          "type": "mcq",
+          "prompt": "Which formula matches the words \"multiply the input by 4 and then subtract 3\"?",
+          "options": [
+            "$y = 4(x - 3)$",
+            "$y = 4x - 3$",
+            "$y = 3x - 4$",
+            "$y = x - 12$"
+          ],
+          "answer": 1,
+          "explanation": "First multiply by 4 ($4x$), then subtract 3: $4x - 3$. The option $4(x - 3)$ subtracts first."
+        },
+        {
+          "id": "functions-and-relationships-q9",
+          "type": "numeric",
+          "prompt": "A taxi charges R15 plus R8 per kilometre. What does a 12 km trip cost?",
+          "unit": "R",
+          "answer": 111,
+          "tolerance": 0,
+          "explanation": "$C = 8(12) + 15 = 96 + 15 = \\text{R}111$."
+        },
+        {
+          "id": "functions-and-relationships-q16",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A flow diagram multiplies the input by $-2$ and then adds 6.\n(a) Find the outputs for the inputs $-1$, $0$ and $3$.  (2)\n(b) Which input gives the output $-10$?  (1)",
+          "memo": "(a) $-1 \\to 8$; $0 \\to 6$ ✓; $3 \\to 0$ ✓ (2)\n(b) $-10 - 6 = -16$; $-16 \\div (-2) = 8$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Algebraic Expressions",
+      "questions": [
+        {
+          "id": "algebraic-expressions-q2",
+          "type": "numeric",
+          "prompt": "How many terms are in the expression $4a + 3b - 2c + 9$?",
+          "answer": 4,
+          "tolerance": 0,
+          "explanation": "Terms are separated by $+$ and $-$: $4a$, $3b$, $-2c$ and $9$."
+        },
+        {
+          "id": "algebraic-expressions-q5",
+          "type": "mcq",
+          "prompt": "Expand $-3x(2x - 4)$.",
+          "options": [
+            "$-6x^2 - 12x$",
+            "$-6x^2 + 12x$",
+            "$-6x - 4$",
+            "$6x^2 + 12x$"
+          ],
+          "answer": 1,
+          "explanation": "$-3x \\times 2x = -6x^2$ and $-3x \\times (-4) = +12x$."
+        },
+        {
+          "id": "algebraic-expressions-q8",
+          "type": "truefalse",
+          "prompt": "$x^2$ and $x^3$ are like terms.",
+          "answer": false,
+          "explanation": "Like terms need the same exponents. $x^2$ and $x^3$ have different exponents."
+        },
+        {
+          "id": "algebraic-expressions-q12",
+          "type": "short",
+          "prompt": "In the expression $7y + 2$, what is the term $2$ called?",
+          "answers": [
+            "constant",
+            "a constant",
+            "the constant",
+            "constant term"
+          ],
+          "explanation": "A term without a variable is a **constant**; its value never changes."
+        },
+        {
+          "id": "algebraic-expressions-q16",
+          "type": "open",
+          "marks": 3,
+          "prompt": "If $a = 5$ and $b = -3$, calculate $\\dfrac{(a - b)^2}{a + b}$.",
+          "memo": "$a - b = 5 - (-3) = 8$ ✓ (1)\n$a + b = 2$ ✓ (1)\n$\\dfrac{64}{2} = 32$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 8: Algebraic Equations",
+      "questions": [
+        {
+          "id": "algebraic-equations-q4",
+          "type": "mcq",
+          "prompt": "Solve for $x$: $2(x - 3) = 10$",
+          "options": [
+            "$x = 2$",
+            "$x = 6{,}5$",
+            "$x = 8$",
+            "$x = 13$"
+          ],
+          "answer": 2,
+          "explanation": "$2x - 6 = 10$, so $2x = 16$ and $x = 8$."
+        },
+        {
+          "id": "algebraic-equations-q5",
+          "type": "truefalse",
+          "prompt": "$x = 3$ is the solution of $4x - 1 = 2x + 5$.",
+          "answer": true,
+          "explanation": "Left: $4(3) - 1 = 11$. Right: $2(3) + 5 = 11$. Both sides are equal ✓"
+        },
+        {
+          "id": "algebraic-equations-q8",
+          "type": "numeric",
+          "prompt": "Solve for $x$: $2^x = 32$",
+          "answer": 5,
+          "tolerance": 0,
+          "explanation": "$32 = 2^5$, so $x = 5$."
+        },
+        {
+          "id": "algebraic-equations-q12",
+          "type": "truefalse",
+          "prompt": "$2x + 3$ is an equation.",
+          "answer": false,
+          "explanation": "There is no equals sign, so $2x + 3$ is an expression, not an equation."
+        },
+        {
+          "id": "algebraic-equations-q16",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Solve for $x$: $\\dfrac{x + 1}{4} = \\dfrac{x - 2}{3}$",
+          "memo": "Multiply by the LCD 12: $3(x + 1) = 4(x - 2)$ ✓ (1)\n$3x + 3 = 4x - 8$ ✓ (1)\n$x = 11$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 9: Construction of Geometric Figures",
+      "questions": [
+        {
+          "id": "construction-of-geometric-figures-q5",
+          "type": "truefalse",
+          "prompt": "A triangle with sides 3 cm, 4 cm and 8 cm can be constructed.",
+          "answer": false,
+          "explanation": "$3 + 4 = 7$, which is less than $8$. The two shorter sides cannot reach each other."
+        },
+        {
+          "id": "construction-of-geometric-figures-q7",
+          "type": "mcq",
+          "prompt": "Which information is **not** enough to construct one unique triangle?",
+          "options": [
+            "Three sides",
+            "Two sides and the included angle",
+            "Three angles",
+            "Two angles and a side"
+          ],
+          "answer": 2,
+          "explanation": "Three angles fix the shape but not the size: you can draw many different-sized triangles with the same angles."
+        },
+        {
+          "id": "construction-of-geometric-figures-q9",
+          "type": "short",
+          "prompt": "What is the name of the line that cuts a line segment into two equal parts at right angles?",
+          "answers": [
+            "perpendicular bisector",
+            "the perpendicular bisector",
+            "a perpendicular bisector"
+          ],
+          "explanation": "It is perpendicular (at $90^\\circ$) and it bisects (cuts in half)."
+        },
+        {
+          "id": "construction-of-geometric-figures-q10",
+          "type": "numeric",
+          "prompt": "You construct a triangle with all three sides 5 cm. What is the size of each angle, in degrees?",
+          "unit": "°",
+          "answer": 60,
+          "tolerance": 0,
+          "explanation": "It is equilateral, so the three equal angles share $180^\\circ$: $180 \\div 3 = 60$."
+        },
+        {
+          "id": "construction-of-geometric-figures-q14",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe how to construct a $60^\\circ$ angle at point $A$ on a straight line, without a protractor, and explain why the method works.",
+          "memo": "Compass on $A$, draw an arc cutting the line at $B$ ✓ (1)\nSame width, compass on $B$, arc cutting the first arc at $C$; join $AC$ ✓ (1)\n$AB = BC = AC$, so the triangle is equilateral and each angle is $60^\\circ$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 10: Geometry of 2D Shapes",
+      "questions": [
+        {
+          "id": "geometry-of-2d-shapes-q3",
+          "type": "truefalse",
+          "prompt": "Every square is a rectangle.",
+          "answer": true,
+          "explanation": "A rectangle has opposite sides equal and parallel and four right angles. A square has all of these properties (and more), so it is a special rectangle."
+        },
+        {
+          "id": "geometry-of-2d-shapes-q6",
+          "type": "numeric",
+          "prompt": "In an isosceles triangle the angle between the two equal sides is $40^\\circ$. Calculate the size of one base angle, in degrees.",
+          "unit": "°",
+          "answer": 70,
+          "tolerance": 0,
+          "explanation": "The base angles are equal: $(180 - 40) \\div 2 = 70$."
+        },
+        {
+          "id": "geometry-of-2d-shapes-q10",
+          "type": "mcq",
+          "prompt": "$\\triangle ABC\\ |||\\ \\triangle DEF$. $AB = 4$, $DE = 8$ and $BC = 5$. What is $EF$?",
+          "options": [
+            "$9$",
+            "$10$",
+            "$2{,}5$",
+            "$20$"
+          ],
+          "answer": 1,
+          "explanation": "Scale factor $= 8 \\div 4 = 2$, so $EF = 2 \\times 5 = 10$."
+        },
+        {
+          "id": "geometry-of-2d-shapes-q12",
+          "type": "short",
+          "prompt": "What do we call a triangle that has one angle greater than $90^\\circ$?",
+          "answers": [
+            "obtuse",
+            "obtuse-angled",
+            "obtuse angled",
+            "obtuse triangle",
+            "obtuse-angled triangle",
+            "an obtuse-angled triangle"
+          ],
+          "explanation": "An angle greater than $90^\\circ$ (and less than $180^\\circ$) is obtuse, so the triangle is obtuse-angled."
+        },
+        {
+          "id": "geometry-of-2d-shapes-q15",
+          "type": "open",
+          "marks": 3,
+          "prompt": "The angles of a quadrilateral are $x$, $2x$, $x + 30^\\circ$ and $90^\\circ$. Calculate $x$, giving a reason.",
+          "memo": "$x + 2x + x + 30^\\circ + 90^\\circ = 360^\\circ$ (∠ sum of quad) ✓ (1)\n$4x = 240^\\circ$ ✓ (1)\n$x = 60^\\circ$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 11: Geometry of Straight Lines",
+      "questions": [
+        {
+          "id": "geometry-of-straight-lines-q3",
+          "type": "numeric",
+          "prompt": "What is the supplement of $112^\\circ$, in degrees?",
+          "unit": "°",
+          "answer": 68,
+          "tolerance": 0,
+          "explanation": "Supplementary angles add to $180^\\circ$: $180 - 112 = 68$."
+        },
+        {
+          "id": "geometry-of-straight-lines-q4",
+          "type": "truefalse",
+          "prompt": "Vertically opposite angles add up to $180^\\circ$.",
+          "answer": false,
+          "explanation": "Vertically opposite angles are **equal**. It is adjacent angles on a straight line that add up to $180^\\circ$."
+        },
+        {
+          "id": "geometry-of-straight-lines-q12",
+          "type": "short",
+          "prompt": "What word describes two angles that add up to $90^\\circ$?",
+          "answers": [
+            "complementary",
+            "complementary angles"
+          ],
+          "explanation": "Complementary: $90^\\circ$. (Supplementary: $180^\\circ$.)"
+        },
+        {
+          "id": "geometry-of-straight-lines-q13",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Two straight lines intersect. One angle is $3x + 10^\\circ$ and the vertically opposite angle is $5x - 30^\\circ$. Calculate $x$ and the size of the angles.",
+          "memo": "$3x + 10^\\circ = 5x - 30^\\circ$ (vert opp ∠s) ✓ (1)\n$2x = 40^\\circ$, $x = 20^\\circ$ ✓ (1)\nEach angle $= 70^\\circ$ ✓ (1)"
+        }
+      ]
+    }
+  ]
+}

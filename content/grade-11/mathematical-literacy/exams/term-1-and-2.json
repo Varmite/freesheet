@@ -1,0 +1,203 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 45,
+  "totalMarks": 35,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Calculations, Percentages and Rates",
+      "questions": [
+        {
+          "id": "calculations-and-percentages-pct-change",
+          "type": "numeric",
+          "prompt": "Electricity rose from R1,80 to R2,07 per kWh. Calculate the percentage increase.",
+          "answer": 15,
+          "tolerance": 0.01,
+          "unit": "%"
+        },
+        {
+          "id": "calculations-and-percentages-points",
+          "type": "numeric",
+          "prompt": "Unemployment rose from 32,1% to 33,9%. By how many percentage points did it rise?",
+          "answer": 1.8,
+          "tolerance": 0.01
+        },
+        {
+          "id": "calculations-and-percentages-successive",
+          "type": "truefalse",
+          "prompt": "Increasing a price by 20% and then decreasing it by 20% gives the original price.",
+          "answer": false
+        },
+        {
+          "id": "calculations-and-percentages-speed",
+          "type": "numeric",
+          "prompt": "A truck travels 360 km in 4 h 30 min. Calculate its average speed.",
+          "answer": 80,
+          "tolerance": 0,
+          "unit": "km/h"
+        },
+        {
+          "id": "calculations-and-percentages-fuel",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A car used 42 ℓ of petrol for a 560 km trip. Calculate its fuel consumption in ℓ/100 km, and the cost of the trip at R23,10/ℓ.",
+          "memo": "✓ 42 ÷ 560 × 100 (1)\n✓ = 7,5 ℓ/100 km (1)\n✓ Cost 42 × R23,10 = R970,20 (1)"
+        },
+        {
+          "id": "calculations-and-percentages-estimate",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Estimate 498 × R21,95 without a calculator. Show how you estimated.",
+          "memo": "✓ About 500 × R22 (1)\n✓ ≈ R11 000 (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Finance: Interest, Banking and Loans",
+      "questions": [
+        {
+          "id": "interest-and-banking-more",
+          "type": "truefalse",
+          "prompt": "For the same rate and time, compound interest earns more than simple interest.",
+          "answer": true
+        },
+        {
+          "id": "interest-and-banking-fixed-deposit",
+          "type": "mcq",
+          "prompt": "Which account usually earns the highest interest rate?",
+          "options": [
+            "Cheque account",
+            "Savings account",
+            "Fixed deposit",
+            "Credit card account"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "interest-and-banking-hp",
+          "type": "numeric",
+          "prompt": "A TV costs R7 500 cash. On HP: R750 deposit plus 18 payments of R480. How much more than the cash price is paid on HP?",
+          "answer": 1890,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "interest-and-banking-fees",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A pay-as-you-use account charges R4,50 per transaction plus R45 a month. A bundle account costs R99 per month. Which is cheaper for a customer who makes 15 transactions a month?",
+          "memo": "✓ PAYU: R45 + 15 × R4,50 = R112,50 (1)\n✓ Bundle: R99 (1)\n✓ The bundle is cheaper (1)"
+        },
+        {
+          "id": "interest-and-banking-loan-total",
+          "type": "numeric",
+          "prompt": "A loan is repaid with 36 monthly instalments of R1 250. What is the total amount repaid?",
+          "answer": 45000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "interest-and-banking-interest-paid",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A person borrows R20 000 and repays R26 400 in total. How much interest was paid, and what percentage of the loan is this?",
+          "memo": "✓ Interest R6 400 (1)\n✓ 6 400 ÷ 20 000 × 100 = 32% (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Finance: Income Tax and Inflation",
+      "questions": [
+        {
+          "id": "income-tax-and-inflation-progressive",
+          "type": "mcq",
+          "prompt": "A progressive tax system means…",
+          "options": [
+            "everyone pays the same amount",
+            "higher incomes are taxed at a higher rate",
+            "only businesses pay tax",
+            "tax decreases as income increases"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "income-tax-and-inflation-inflation",
+          "type": "numeric",
+          "prompt": "A loaf of bread costs R18. If inflation is 5%, what will it cost next year? (two decimals)",
+          "answer": 18.9,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "income-tax-and-inflation-inflate-3",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A car service costs R2 500 today. Inflation is expected to be 7% per year. Calculate the cost in 2 years.",
+          "memo": "✓ R2 500 × 1,07 = R2 675 (1)\n✓ R2 675 × 1,07 (1)\n✓ = R2 862,25 (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Measurement: Conversions, Area and Volume",
+      "questions": [
+        {
+          "id": "measurement-and-volume-m2-cm2",
+          "type": "numeric",
+          "prompt": "Convert 2,5 m² to cm².",
+          "answer": 25000,
+          "tolerance": 0,
+          "unit": "cm²"
+        },
+        {
+          "id": "measurement-and-volume-m3-l",
+          "type": "numeric",
+          "prompt": "A swimming pool holds 48 m³ of water. How many litres is this?",
+          "answer": 48000,
+          "tolerance": 0,
+          "unit": "ℓ"
+        },
+        {
+          "id": "measurement-and-volume-box-vol",
+          "type": "numeric",
+          "prompt": "Find the volume of a box 40 cm × 30 cm × 25 cm, in litres.",
+          "answer": 30,
+          "tolerance": 0,
+          "unit": "ℓ"
+        },
+        {
+          "id": "measurement-and-volume-packing",
+          "type": "numeric",
+          "prompt": "Cubes with 5 cm sides are packed into a box 30 cm × 20 cm × 15 cm. How many cubes fit?",
+          "answer": 72,
+          "tolerance": 0
+        },
+        {
+          "id": "measurement-and-volume-cm2",
+          "type": "truefalse",
+          "prompt": "1 m² = 100 cm²",
+          "answer": false
+        },
+        {
+          "id": "measurement-and-volume-cylinder",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A cylindrical tin of paint has a radius of 9 cm and a height of 20 cm. (a) Calculate its volume in litres. (b) Calculate the area of the label around the side. Use $\\pi = 3{,}142$.",
+          "memo": "(a) ✓ $3{,}142 \\times 81 \\times 20 = 5\\ 090{,}04$ cm³ (1) ✓ ≈ 5,09 ℓ (1)\n(b) ✓ $2 \\times 3{,}142 \\times 9 \\times 20$ (1) ✓ ≈ 1 131,12 cm² (1)"
+        },
+        {
+          "id": "measurement-and-volume-fill-time",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A 5 000 ℓ tank is filled by a hose that delivers 12 ℓ per minute. How long will it take to fill, in hours and minutes?",
+          "memo": "✓ 5 000 ÷ 12 = 416,67 min (1)\n✓ 416,67 ÷ 60 = 6,94 h (1)\n✓ ≈ 6 h 57 min (1)"
+        }
+      ]
+    }
+  ]
+}

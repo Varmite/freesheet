@@ -1,0 +1,374 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: World War II (1939–1945)",
+      "questions": [
+        {
+          "id": "world-war-two-start",
+          "type": "mcq",
+          "prompt": "Which event started World War II in Europe?",
+          "options": [
+            "The Anschluss",
+            "The invasion of Poland",
+            "The attack on Pearl Harbor",
+            "The Munich Agreement"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "world-war-two-appease",
+          "type": "short",
+          "prompt": "What is the name of the policy of giving in to an aggressive country's demands to avoid war?",
+          "answers": [
+            "appeasement"
+          ]
+        },
+        {
+          "id": "world-war-two-axis",
+          "type": "mcq",
+          "prompt": "Which countries were the main Axis powers?",
+          "options": [
+            "Britain, France, USSR",
+            "Germany, Italy, Japan",
+            "Germany, USSR, Japan",
+            "Italy, France, USA"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "world-war-two-smuts",
+          "type": "short",
+          "prompt": "Who was South Africa's Prime Minister during World War II?",
+          "answers": [
+            "jan smuts",
+            "smuts",
+            "j.c. smuts",
+            "jc smuts"
+          ]
+        },
+        {
+          "id": "world-war-two-events",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each event to its year.",
+          "pairs": [
+            {
+              "left": "Munich Agreement",
+              "right": "1938"
+            },
+            {
+              "left": "Invasion of Poland",
+              "right": "1939"
+            },
+            {
+              "left": "Battle of Britain",
+              "right": "1940"
+            },
+            {
+              "left": "D-Day landings",
+              "right": "1944"
+            }
+          ]
+        },
+        {
+          "id": "world-war-two-blitzkrieg",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What was Blitzkrieg and why was it successful at first?",
+          "memo": "✓ 'Lightning war': fast, surprise attacks using tanks and aircraft together (1)\n✓ Enemies could not organise their defences in time (1)"
+        },
+        {
+          "id": "world-war-two-maseko",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Who was Job Maseko and why is he remembered?",
+          "memo": "✓ A black South African soldier captured at Tobruk (1)\n✓ He sank a German ship using a home-made explosive and was awarded the Military Medal (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Nazi Germany and the Holocaust",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Source F: Words attributed to Pastor Martin Niemöller (adapted)",
+          "text": "First they came for the communists, and I did not speak out, because I was not a communist.\nThen they came for the trade unionists, and I did not speak out, because I was not a trade unionist.\nThen they came for the Jews, and I did not speak out, because I was not a Jew.\nThen they came for me, and there was no one left to speak for me."
+        }
+      ],
+      "questions": [
+        {
+          "id": "nazi-germany-and-the-holocaust-chancellor",
+          "type": "numeric",
+          "prompt": "In which year did Hitler become Chancellor of Germany?",
+          "answer": 1933,
+          "tolerance": 0
+        },
+        {
+          "id": "nazi-germany-and-the-holocaust-antisemitism",
+          "type": "short",
+          "prompt": "What word means prejudice or hatred against Jewish people?",
+          "answers": [
+            "antisemitism",
+            "anti-semitism"
+          ]
+        },
+        {
+          "id": "nazi-germany-and-the-holocaust-nuremberg-laws",
+          "type": "mcq",
+          "prompt": "What did the Nuremberg Laws of 1935 do?",
+          "options": [
+            "Set up extermination camps",
+            "Took away German citizenship from Jews",
+            "Started World War II",
+            "Banned the Hitler Youth"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "nazi-germany-and-the-holocaust-kristallnacht",
+          "type": "short",
+          "prompt": "What name is given to the night in November 1938 when synagogues and Jewish shops were attacked?",
+          "answers": [
+            "kristallnacht",
+            "night of broken glass",
+            "the night of broken glass"
+          ]
+        },
+        {
+          "id": "nazi-germany-and-the-holocaust-six-million",
+          "type": "numeric",
+          "prompt": "About how many million Jews were murdered in the Holocaust?",
+          "answer": 6,
+          "tolerance": 0,
+          "unit": "million"
+        },
+        {
+          "id": "nazi-germany-and-the-holocaust-auschwitz",
+          "type": "truefalse",
+          "prompt": "Auschwitz-Birkenau was an extermination camp.",
+          "answer": true
+        },
+        {
+          "id": "nazi-germany-and-the-holocaust-terms",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Ghetto",
+              "right": "Overcrowded area where Jews were forced to live"
+            },
+            {
+              "left": "Propaganda",
+              "right": "Biased information used to influence people"
+            },
+            {
+              "left": "Genocide",
+              "right": "Intent to destroy a whole group of people"
+            },
+            {
+              "left": "Gestapo",
+              "right": "Nazi secret police"
+            }
+          ]
+        },
+        {
+          "id": "nazi-germany-and-the-holocaust-other-victims",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO groups, other than Jews, who were persecuted by the Nazis.",
+          "memo": "Any two (1 each): Roma and Sinti; people with disabilities; political opponents/communists; gay men; Jehovah's Witnesses; Slavs/Poles/Soviet prisoners"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Turning Points: Apartheid from 1948",
+      "questions": [
+        {
+          "id": "apartheid-from-1948-1948",
+          "type": "short",
+          "prompt": "Which party won the 1948 election and introduced apartheid?",
+          "answers": [
+            "national party",
+            "the national party",
+            "np"
+          ]
+        },
+        {
+          "id": "apartheid-from-1948-malan",
+          "type": "mcq",
+          "prompt": "Who became Prime Minister in 1948?",
+          "options": [
+            "H. F. Verwoerd",
+            "D. F. Malan",
+            "J. G. Strijdom",
+            "Jan Smuts"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "apartheid-from-1948-group-areas",
+          "type": "mcq",
+          "prompt": "Which law divided towns into separate residential areas for each race?",
+          "options": [
+            "Population Registration Act",
+            "Group Areas Act",
+            "Bantu Education Act",
+            "Separate Amenities Act"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "apartheid-from-1948-dompas",
+          "type": "short",
+          "prompt": "What was the nickname of the reference book that black South Africans had to carry?",
+          "answers": [
+            "dompas",
+            "the dompas"
+          ]
+        },
+        {
+          "id": "apartheid-from-1948-land-act",
+          "type": "truefalse",
+          "prompt": "The Natives Land Act was passed in 1913, before apartheid began.",
+          "answer": true
+        },
+        {
+          "id": "apartheid-from-1948-laws-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each law to what it did.",
+          "pairs": [
+            {
+              "left": "Population Registration Act",
+              "right": "Classified everyone by race"
+            },
+            {
+              "left": "Bantu Education Act",
+              "right": "Inferior education for black learners"
+            },
+            {
+              "left": "Separate Amenities Act",
+              "right": "Separate beaches, buses and toilets"
+            },
+            {
+              "left": "Mixed Marriages Act",
+              "right": "Banned marriages across races"
+            }
+          ]
+        },
+        {
+          "id": "apartheid-from-1948-removals",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name ONE place from which people were forcibly removed and explain why.",
+          "memo": "✓ Sophiatown / District Six / Cato Manor (1)\n✓ It was declared a white area under the Group Areas Act (1)"
+        },
+        {
+          "id": "apartheid-from-1948-separate-dev",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why 'separate development' was not equal development.",
+          "memo": "✓ White people received the best land, jobs, schools and services (1)\n✓ Other groups received far less and had no political rights (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Resistance to Apartheid in the 1950s",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Source H: Extract from the Freedom Charter, 1955",
+          "text": "We, the People of South Africa, declare for all our country and the world to know: that South Africa belongs to all who live in it, black and white, and that no government can justly claim authority unless it is based on the will of all the people.\n\nThe People Shall Govern!\nAll National Groups Shall have Equal Rights!\nThe People Shall Share in the Country's Wealth!\nThe Land Shall be Shared Among Those Who Work It!\nAll Shall be Equal Before the Law!\nAll Shall Enjoy Equal Human Rights!\nThere Shall be Work and Security!\nThe Doors of Learning and Culture Shall be Opened!\nThere Shall be Houses, Security and Comfort!\nThere Shall be Peace and Friendship!"
+        }
+      ],
+      "questions": [
+        {
+          "id": "resistance-in-the-1950s-youth-league",
+          "type": "numeric",
+          "prompt": "In which year was the ANC Youth League formed?",
+          "answer": 1944,
+          "tolerance": 0
+        },
+        {
+          "id": "resistance-in-the-1950s-defiance",
+          "type": "mcq",
+          "prompt": "What did volunteers do during the Defiance Campaign?",
+          "options": [
+            "Fought the police with weapons",
+            "Deliberately broke unjust laws and accepted arrest",
+            "Left the country",
+            "Voted in elections"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "resistance-in-the-1950s-women-day",
+          "type": "short",
+          "prompt": "Which date in 1956 is remembered as Women's Day? (e.g. 1 May)",
+          "answers": [
+            "9 august",
+            "9th august",
+            "august 9"
+          ]
+        },
+        {
+          "id": "resistance-in-the-1950s-treason",
+          "type": "truefalse",
+          "prompt": "All the accused in the Treason Trial were found guilty in 1961.",
+          "answer": false
+        },
+        {
+          "id": "resistance-in-the-1950s-people",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each person to their role in the 1950s.",
+          "pairs": [
+            {
+              "left": "Lilian Ngoyi",
+              "right": "Led the 1956 Women's March"
+            },
+            {
+              "left": "Anton Lembede",
+              "right": "First president of the ANC Youth League"
+            },
+            {
+              "left": "Albert Luthuli",
+              "right": "ANC president during the 1950s"
+            },
+            {
+              "left": "J. G. Strijdom",
+              "right": "Prime Minister who received the petitions"
+            }
+          ]
+        },
+        {
+          "id": "resistance-in-the-1950s-source-h",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Read Source H. (a) According to the Charter, to whom does South Africa belong? (b) Choose ONE clause and explain how it challenged apartheid.",
+          "memo": "(a) ✓ All who live in it, black and white (1)\n(b) ✓ Names a clause (1) ✓ explains how it opposed an apartheid law, e.g. 'The Doors of Learning shall be Opened' challenged Bantu Education (1)"
+        },
+        {
+          "id": "resistance-in-the-1950s-programme",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How did the Programme of Action of 1949 change the ANC's methods?",
+          "memo": "✓ Earlier the ANC used petitions and deputations (1)\n✓ Now it used mass action: boycotts, strikes and civil disobedience (1)"
+        }
+      ]
+    }
+  ]
+}

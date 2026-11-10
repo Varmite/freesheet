@@ -1,0 +1,401 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 65,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 6 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Reading for Comprehension",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice passage: The Water Tank (original text written for FreeSheet)",
+          "text": "When the taps in Mamelodi ran dry for the third week, Thando's grandmother did something nobody expected. She sold her old sewing machine.\n\nWith the money, and with help from three neighbours, she bought a second-hand plastic water tank and two lengths of gutter. On Saturday morning half the street gathered to watch the men fix the gutters to the roof. 'You will see,' Gogo said, though there had not been a cloud for a month. 'The rain always comes back to those who are ready for it.'\n\nThe rain came eleven days later, heavy and sudden, drumming on the tin roof. By morning the tank was full. Gogo hung a small sign on the gate: WATER FOR COOKING AND DRINKING. TAKE ONE BUCKET. LEAVE A SMILE.\n\nBy December, four more houses on the street had tanks of their own."
+        }
+      ],
+      "questions": [
+        {
+          "id": "reading-for-comprehension-inferential",
+          "type": "mcq",
+          "prompt": "A question that asks you to read between the lines is…",
+          "options": [
+            "literal",
+            "inferential",
+            "reorganisation",
+            "a spelling question"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "reading-for-comprehension-days",
+          "type": "numeric",
+          "prompt": "How many days later did the rain come, according to the passage?",
+          "answer": 11,
+          "tolerance": 0
+        },
+        {
+          "id": "reading-for-comprehension-drumming",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why the writer uses the word 'drumming' to describe the rain.",
+          "memo": "✓ It suggests the loud, steady, rhythmic sound of heavy rain on the tin roof (1)\n✓ It creates a vivid / joyful mood after the long drought (1)"
+        },
+        {
+          "id": "reading-for-comprehension-truefalse",
+          "type": "truefalse",
+          "prompt": "According to the passage, it was raining on the Saturday the gutters were installed.",
+          "answer": false,
+          "explanation": "'There had not been a cloud for a month.'"
+        },
+        {
+          "id": "reading-for-comprehension-levels",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each question to its level.",
+          "pairs": [
+            {
+              "left": "Where does the story take place?",
+              "right": "Literal"
+            },
+            {
+              "left": "Why do you think the neighbours helped?",
+              "right": "Inferential"
+            },
+            {
+              "left": "Do you agree with Gogo's decision?",
+              "right": "Evaluative"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Parts of Speech",
+      "questions": [
+        {
+          "id": "parts-of-speech-collective",
+          "type": "short",
+          "prompt": "Complete with a collective noun: a ___ of lions.",
+          "answers": [
+            "pride"
+          ]
+        },
+        {
+          "id": "parts-of-speech-superlative",
+          "type": "short",
+          "prompt": "Give the superlative form of 'good'.",
+          "answers": [
+            "best",
+            "the best"
+          ]
+        },
+        {
+          "id": "parts-of-speech-fewer",
+          "type": "mcq",
+          "prompt": "Choose the correct word: 'There are ___ learners in our class this year.'",
+          "options": [
+            "less",
+            "fewer",
+            "lesser",
+            "more less"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "parts-of-speech-same-word",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Write two sentences using the word 'play', first as a verb and then as a noun.",
+          "memo": "✓ Verb, e.g. 'We play soccer after school.' (1)\n✓ Noun, e.g. 'The school play was a success.' (1)"
+        },
+        {
+          "id": "parts-of-speech-proper",
+          "type": "truefalse",
+          "prompt": "Proper nouns always begin with a capital letter.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Narrative and Descriptive Essays",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Example paragraph: The market at dawn (original)",
+          "text": "The market wakes before the sun. Gas burners hiss into life beneath dented pots, and the smell of frying vetkoek drifts between the stalls like a lazy cat. A vendor slaps a crate of tomatoes onto her table, each one as red and shiny as a fire engine. Somewhere a radio crackles with morning news, competing with the rattle of a trolley over uneven paving stones. My fingers, still cold, wrap gratefully around a paper cup of sweet, milky tea."
+        }
+      ],
+      "questions": [
+        {
+          "id": "narrative-and-descriptive-essays-narrative",
+          "type": "mcq",
+          "prompt": "The main purpose of a narrative essay is to…",
+          "options": [
+            "argue a point",
+            "tell a story",
+            "give instructions",
+            "describe a process"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "narrative-and-descriptive-essays-senses",
+          "type": "numeric",
+          "prompt": "How many senses should a good descriptive essay appeal to?",
+          "answer": 5,
+          "tolerance": 0
+        },
+        {
+          "id": "narrative-and-descriptive-essays-dialogue",
+          "type": "truefalse",
+          "prompt": "When writing dialogue, you should start a new paragraph each time a new character speaks.",
+          "answer": true
+        },
+        {
+          "id": "narrative-and-descriptive-essays-process",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each stage of the writing process to what happens.",
+          "pairs": [
+            {
+              "left": "Planning",
+              "right": "Brainstorm ideas with a mind map"
+            },
+            {
+              "left": "Drafting",
+              "right": "Write the first version"
+            },
+            {
+              "left": "Revising",
+              "right": "Improve content and structure"
+            },
+            {
+              "left": "Proofreading",
+              "right": "Correct spelling and punctuation"
+            }
+          ]
+        },
+        {
+          "id": "narrative-and-descriptive-essays-show-tell",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite this sentence to 'show, not tell': 'The boy was very angry.'",
+          "memo": "✓✓ Any sentence showing anger through actions/description, e.g. 'The boy slammed his fist on the desk, his face burning red.' (2)"
+        },
+        {
+          "id": "narrative-and-descriptive-essays-simile",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Identify the simile in 'the smell of frying vetkoek drifts between the stalls like a lazy cat' and explain it.",
+          "memo": "✓ The smell is compared to a lazy cat using 'like' (1)\n✓ It suggests the smell moves slowly and gently around the stalls (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Poetry and Figures of Speech",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Grandfather's Hands (an original poem written for FreeSheet)",
+          "text": "My grandfather's hands are maps of old roads,\ncracked rivers running from knuckle to wrist.\nThey have carried bricks and babies,\nheld the reins of stubborn donkeys,\nand once, a lifetime ago, a girl's shy hand\nat a wedding in the rain.\n\nNow they rest on the arms of his chair\nlike two tired birds after a long migration.\nBut when the radio plays the old songs,\nthey wake, they tap, they drum, drum, drum\nthe beat of every year he has danced through."
+        }
+      ],
+      "questions": [
+        {
+          "id": "poetry-and-figures-of-speech-personification",
+          "type": "mcq",
+          "prompt": "'The old car groaned up the hill.' This is an example of…",
+          "options": [
+            "alliteration",
+            "onomatopoeia",
+            "personification",
+            "oxymoron"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "poetry-and-figures-of-speech-onomatopoeia",
+          "type": "short",
+          "prompt": "What is a word that sounds like the noise it describes called?",
+          "answers": [
+            "onomatopoeia"
+          ]
+        },
+        {
+          "id": "poetry-and-figures-of-speech-stanza",
+          "type": "short",
+          "prompt": "What is a group of lines in a poem called?",
+          "answers": [
+            "stanza",
+            "a stanza",
+            "verse"
+          ]
+        },
+        {
+          "id": "poetry-and-figures-of-speech-drum",
+          "type": "open",
+          "marks": 2,
+          "prompt": "In 'Grandfather's Hands', identify the sound device in 'they drum, drum, drum' and explain its effect.",
+          "memo": "✓ Repetition / onomatopoeia (1)\n✓ It imitates the rhythm of his tapping to the music and shows his joy and energy returning (1)"
+        },
+        {
+          "id": "poetry-and-figures-of-speech-theme",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is the theme of the poem?",
+          "memo": "✓✓ e.g. Old age does not erase a person's rich life and spirit; the body may tire but memories and joy remain (2)"
+        },
+        {
+          "id": "poetry-and-figures-of-speech-free-verse",
+          "type": "truefalse",
+          "prompt": "'Grandfather's Hands' follows a regular rhyme scheme.",
+          "answer": false,
+          "explanation": "It is written in free verse."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Sentence Structure and Punctuation",
+      "questions": [
+        {
+          "id": "sentences-and-punctuation-subject",
+          "type": "short",
+          "prompt": "Identify the subject: 'The hungry learners rushed to the tuck shop.' (give the main noun only)",
+          "answers": [
+            "learners",
+            "the hungry learners",
+            "hungry learners"
+          ]
+        },
+        {
+          "id": "sentences-and-punctuation-compound",
+          "type": "mcq",
+          "prompt": "Which sentence is compound?",
+          "options": [
+            "We ate supper.",
+            "We ate supper and then we washed the dishes.",
+            "After we ate supper, we washed the dishes.",
+            "Eating supper."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "sentences-and-punctuation-complex",
+          "type": "mcq",
+          "prompt": "Which sentence is complex?",
+          "options": [
+            "I like tea.",
+            "I like tea, but she likes coffee.",
+            "Although I like tea, I drank coffee.",
+            "Tea or coffee?"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sentences-and-punctuation-purposes",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each sentence by purpose.",
+          "pairs": [
+            {
+              "left": "Please switch off your phones.",
+              "right": "Command"
+            },
+            {
+              "left": "What a beautiful sunset!",
+              "right": "Exclamation"
+            },
+            {
+              "left": "The library closes at four.",
+              "right": "Statement"
+            },
+            {
+              "left": "Have you finished your homework?",
+              "right": "Question"
+            }
+          ]
+        },
+        {
+          "id": "sentences-and-punctuation-apostrophe",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite with apostrophes: 'The teachers cars were parked near the principals office.' (several teachers; one principal)",
+          "memo": "✓ teachers' cars (1)\n✓ principal's office (1)"
+        },
+        {
+          "id": "sentences-and-punctuation-colon",
+          "type": "truefalse",
+          "prompt": "A colon can be used to introduce a list.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Friendly and Formal Letters",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Example friendly letter (original)",
+          "text": "14 Jacaranda Street\nPolokwane\n0699\n12 May 2025\n\nDear Lerato,\n\nThank you so much for the book you sent for my birthday! I started reading it on the bus and nearly missed my stop.\n\nGuess what? Our soccer team made it to the district final. Coach says we have a real chance if our goalkeeper stops letting in silly goals (that's me, by the way).\n\nHow is life in Cape Town? Is it true that the wind blows people off the pavement? Write back soon and tell me everything.\n\nLove,\nKarabo"
+        }
+      ],
+      "questions": [
+        {
+          "id": "friendly-and-formal-letters-faithfully",
+          "type": "mcq",
+          "prompt": "If you begin with 'Dear Sir/Madam', how should you end a formal letter?",
+          "options": [
+            "Love,",
+            "Yours sincerely",
+            "Yours faithfully",
+            "Cheers,"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "friendly-and-formal-letters-sincerely",
+          "type": "short",
+          "prompt": "If you begin 'Dear Mr Dlamini', which closing should you use? (two words)",
+          "answers": [
+            "yours sincerely"
+          ]
+        },
+        {
+          "id": "friendly-and-formal-letters-subject-line",
+          "type": "truefalse",
+          "prompt": "A friendly letter needs a subject line.",
+          "answer": false
+        },
+        {
+          "id": "friendly-and-formal-letters-addresses",
+          "type": "mcq",
+          "prompt": "Which address is included in a formal letter but NOT in a friendly letter?",
+          "options": [
+            "The sender's address",
+            "The recipient's address",
+            "Both",
+            "Neither"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "friendly-and-formal-letters-informal-features",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE features that show the letter to Lerato is informal.",
+          "memo": "Any three (1 each): only the sender's address; 'Dear Lerato' first name; chatty tone; exclamations; contractions (that's); humour; 'Love,' ending; no subject line"
+        }
+      ]
+    }
+  ]
+}

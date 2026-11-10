@@ -14,6 +14,8 @@
     { "id": "probability-and-risk", "title": "Probability and Risk", "term": 4 }
   ],
   "exams": [
+    { "id": "term-1-and-2", "title": "Term 1 and 2 Examination", "durationMinutes": 45, "totalMarks": 35 },
+    { "id": "term-3-and-4", "title": "Term 3 and 4 Examination", "durationMinutes": 45, "totalMarks": 35 },
     { "id": "november-exam", "title": "November Examination", "durationMinutes": 90, "totalMarks": 75 }
   ]
 }

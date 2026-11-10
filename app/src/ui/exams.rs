@@ -82,7 +82,7 @@ impl App {
         let g = self.grade_data();
         widgets::page_column(ui, &t, 1040.0, |ui| {
             widgets::h1(ui, &t, &format!("Grade {} exams", g.grade));
-            widgets::lead(ui, &t, "Write full exam papers under timed conditions, then mark them with the memo.");
+            widgets::lead(ui, &t, "Write term and November exam papers under timed conditions, then mark them with the memo.");
             self.drafts_list(ui);
             ui.add_space(t.px(1.25));
             let subs: Vec<_> = g.subjects.iter().filter(|s| !s.exams.is_empty()).collect();
@@ -229,7 +229,17 @@ impl App {
             });
             if !hist.is_empty() {
                 widgets::h2(ui, &t, "Previous attempts");
-                let headers: Vec<String> = ["Date", "Mark", "%", "Time", ""].iter().map(|s| s.to_string()).collect();
+                ui.horizontal(|ui| {
+                    let w = (ui.available_width() - 70.0) / 4.0;
+                    for c in ["Date", "Mark", "%", "Time"] {
+                        ui.allocate_ui_with_layout(vec2(w, 0.0), egui::Layout::left_to_right(Align::Center), |ui| {
+                            ui.set_width(w);
+                            widgets::plain(ui, &t, c, 0.95, W::Semi, p.text);
+                        });
+                    }
+                });
+                let (r, _) = ui.allocate_exact_size(vec2(ui.available_width(), 1.0), Sense::hover());
+                ui.painter().hline(r.x_range(), r.center().y, Stroke::new(1.0, p.border));
                 let mut review = None;
                 for (i, a) in hist.iter().enumerate().rev() {
                     ui.horizontal(|ui| {
@@ -248,7 +258,6 @@ impl App {
                     let (r, _) = ui.allocate_exact_size(vec2(ui.available_width(), 1.0), Sense::hover());
                     ui.painter().hline(r.x_range(), r.center().y, Stroke::new(1.0, p.border));
                 }
-                let _ = headers;
                 if let Some(i) = review {
                     self.go(Tab::Exams, View::Review { subject: sid.into(), exam: eid.into(), attempt: i });
                 }

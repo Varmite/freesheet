@@ -1,0 +1,357 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 55,
+  "totalMarks": 45,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Maps and Globes: Latitude, Longitude and Time Zones",
+      "questions": [
+        {
+          "id": "maps-and-globes-equator",
+          "type": "numeric",
+          "prompt": "What is the latitude of the equator?",
+          "answer": 0,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "maps-and-globes-prime",
+          "type": "short",
+          "prompt": "What is the name of the line of longitude at 0°?",
+          "answers": [
+            "prime meridian",
+            "greenwich meridian",
+            "the prime meridian",
+            "the greenwich meridian"
+          ]
+        },
+        {
+          "id": "maps-and-globes-capricorn",
+          "type": "mcq",
+          "prompt": "Which line of latitude passes through northern South Africa?",
+          "options": [
+            "Tropic of Cancer",
+            "Equator",
+            "Tropic of Capricorn",
+            "Antarctic Circle"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "maps-and-globes-mercator",
+          "type": "truefalse",
+          "prompt": "On a Mercator projection, Greenland looks much larger than it really is.",
+          "answer": true
+        },
+        {
+          "id": "maps-and-globes-minutes",
+          "type": "numeric",
+          "prompt": "How many minutes are in one degree?",
+          "answer": 60,
+          "tolerance": 0
+        },
+        {
+          "id": "maps-and-globes-degrees-hour",
+          "type": "numeric",
+          "prompt": "Through how many degrees of longitude does the Earth turn in one hour?",
+          "answer": 15,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "maps-and-globes-lines-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each line to its value.",
+          "pairs": [
+            {
+              "left": "Tropic of Cancer",
+              "right": "23½° N"
+            },
+            {
+              "left": "Antarctic Circle",
+              "right": "66½° S"
+            },
+            {
+              "left": "International Date Line",
+              "right": "180°"
+            },
+            {
+              "left": "North Pole",
+              "right": "90° N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Map Skills: Scale, Direction and Topographic Maps",
+      "questions": [
+        {
+          "id": "map-skills-bearing-west",
+          "type": "numeric",
+          "prompt": "What is the bearing of due west?",
+          "answer": 270,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "map-skills-large-scale",
+          "type": "truefalse",
+          "prompt": "A large-scale map shows a small area in great detail.",
+          "answer": true
+        },
+        {
+          "id": "map-skills-steep",
+          "type": "mcq",
+          "prompt": "Contour lines that are very close together show…",
+          "options": [
+            "a gentle slope",
+            "a steep slope",
+            "flat land",
+            "a river"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "map-skills-height",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each method of showing height to its description.",
+          "pairs": [
+            {
+              "left": "Contour line",
+              "right": "Joins places of equal height"
+            },
+            {
+              "left": "Spot height",
+              "right": "Dot with the exact height"
+            },
+            {
+              "left": "Trigonometrical station",
+              "right": "Triangle marking a surveyed point"
+            }
+          ]
+        },
+        {
+          "id": "map-skills-key",
+          "type": "short",
+          "prompt": "What is the part of a map that explains its symbols called? (one word)",
+          "answers": [
+            "key",
+            "legend"
+          ]
+        },
+        {
+          "id": "map-skills-bearing-def",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Define a bearing.",
+          "memo": "✓ An angle measured clockwise (1)\n✓ from true north to the line joining two points (1)"
+        },
+        {
+          "id": "map-skills-curved",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how you would measure the length of a winding river on a map.",
+          "memo": "✓ Lay a piece of string along the river, following its bends (1)\n✓ Straighten the string, measure it with a ruler and use the scale to convert to real distance (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Weather and Climate",
+      "questions": [
+        {
+          "id": "weather-and-climate-rain-gauge",
+          "type": "short",
+          "prompt": "Which instrument measures rainfall?",
+          "answers": [
+            "rain gauge",
+            "a rain gauge"
+          ]
+        },
+        {
+          "id": "weather-and-climate-anemometer",
+          "type": "mcq",
+          "prompt": "An anemometer measures…",
+          "options": [
+            "wind direction",
+            "wind speed",
+            "air pressure",
+            "humidity"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "weather-and-climate-south-easter",
+          "type": "truefalse",
+          "prompt": "A south-easter is a wind that blows towards the south-east.",
+          "answer": false,
+          "explanation": "Winds are named after the direction they blow from."
+        },
+        {
+          "id": "weather-and-climate-altitude",
+          "type": "mcq",
+          "prompt": "Why is Johannesburg cooler than Durban?",
+          "options": [
+            "It is closer to the equator",
+            "It is at a higher altitude",
+            "It is near a cold current",
+            "It gets more rain"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "weather-and-climate-range",
+          "type": "numeric",
+          "prompt": "The hottest month in a town averages 31 °C and the coldest 9 °C. What is the annual temperature range?",
+          "answer": 22,
+          "tolerance": 0,
+          "unit": "°C"
+        },
+        {
+          "id": "weather-and-climate-instruments",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each instrument to what it measures.",
+          "pairs": [
+            {
+              "left": "Barometer",
+              "right": "Air pressure"
+            },
+            {
+              "left": "Wind vane",
+              "right": "Wind direction"
+            },
+            {
+              "left": "Hygrometer",
+              "right": "Humidity"
+            },
+            {
+              "left": "Thermometer",
+              "right": "Temperature"
+            }
+          ]
+        },
+        {
+          "id": "weather-and-climate-rain-shadow",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a rain shadow?",
+          "memo": "✓ The dry area on the leeward side of a mountain (1)\n✓ because the air has already lost its moisture as rain on the windward side and descends dry (1)"
+        },
+        {
+          "id": "weather-and-climate-convection",
+          "type": "short",
+          "prompt": "Which type of rainfall causes summer afternoon thunderstorms on the Highveld?",
+          "answers": [
+            "convection",
+            "convection rain",
+            "convectional rain",
+            "convectional"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Climate Regions of the World",
+      "questions": [
+        {
+          "id": "climate-regions-rainforest",
+          "type": "mcq",
+          "prompt": "Which climate region is hot and wet all year?",
+          "options": [
+            "Savanna",
+            "Mediterranean",
+            "Tropical rainforest",
+            "Temperate grassland"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "climate-regions-desert-rain",
+          "type": "numeric",
+          "prompt": "Hot deserts receive less than how many millimetres of rain a year?",
+          "answer": 250,
+          "tolerance": 0,
+          "unit": "mm"
+        },
+        {
+          "id": "climate-regions-fynbos",
+          "type": "short",
+          "prompt": "What is the natural vegetation of the Mediterranean climate region in the Western Cape?",
+          "answers": [
+            "fynbos"
+          ]
+        },
+        {
+          "id": "climate-regions-highveld",
+          "type": "mcq",
+          "prompt": "The Highveld has…",
+          "options": [
+            "winter rainfall",
+            "summer rainfall and frosty winters",
+            "rain all year and no frost",
+            "almost no rain"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "climate-regions-savanna-trees",
+          "type": "truefalse",
+          "prompt": "Savanna vegetation is grassland with scattered trees.",
+          "answer": true
+        },
+        {
+          "id": "climate-regions-regions-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each place to its climate region.",
+          "pairs": [
+            {
+              "left": "Congo Basin",
+              "right": "Tropical rainforest"
+            },
+            {
+              "left": "Sahara",
+              "right": "Hot desert"
+            },
+            {
+              "left": "Cape Town",
+              "right": "Mediterranean"
+            },
+            {
+              "left": "Kruger National Park",
+              "right": "Savanna"
+            }
+          ]
+        },
+        {
+          "id": "climate-regions-mediterranean-farm",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is the Western Cape suitable for growing grapes?",
+          "memo": "✓ It has a Mediterranean climate (1)\n✓ Hot, dry summers ripen the grapes, and winter rain provides water (1)"
+        },
+        {
+          "id": "climate-regions-karoo",
+          "type": "short",
+          "prompt": "Name the semi-desert region in the interior of the Western, Eastern and Northern Cape.",
+          "answers": [
+            "karoo",
+            "the karoo",
+            "nama karoo",
+            "great karoo"
+          ]
+        }
+      ]
+    }
+  ]
+}

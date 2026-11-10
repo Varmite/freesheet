@@ -1,0 +1,332 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Human Rights and Responsibilities",
+      "questions": [
+        {
+          "id": "human-rights-and-responsibilities-highest",
+          "type": "short",
+          "prompt": "What is the highest law in South Africa?",
+          "answers": [
+            "the constitution",
+            "constitution"
+          ]
+        },
+        {
+          "id": "human-rights-and-responsibilities-chapter",
+          "type": "mcq",
+          "prompt": "The Bill of Rights is in which chapter of the Constitution?",
+          "options": [
+            "Chapter 1",
+            "Chapter 2",
+            "Chapter 5",
+            "Chapter 9"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "human-rights-and-responsibilities-year",
+          "type": "numeric",
+          "prompt": "In which year was the current Constitution adopted?",
+          "answer": 1996,
+          "tolerance": 0
+        },
+        {
+          "id": "human-rights-and-responsibilities-rights-resp",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each right to its responsibility.",
+          "pairs": [
+            {
+              "left": "Right to education",
+              "right": "Attend school and let others learn"
+            },
+            {
+              "left": "Right to a clean environment",
+              "right": "Do not litter"
+            },
+            {
+              "left": "Right to privacy",
+              "right": "Do not share others' personal information"
+            },
+            {
+              "left": "Right to dignity",
+              "right": "Do not humiliate others"
+            }
+          ]
+        },
+        {
+          "id": "human-rights-and-responsibilities-violation",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE examples of human rights violations in South Africa today.",
+          "memo": "Any three (1 each): gender-based violence; child abuse; xenophobia; racism; bullying; child labour; corruption that denies services"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Diversity, Prejudice and Discrimination",
+      "questions": [
+        {
+          "id": "diversity-and-discrimination-languages",
+          "type": "numeric",
+          "prompt": "How many official languages does South Africa have?",
+          "answer": 12,
+          "tolerance": 0
+        },
+        {
+          "id": "diversity-and-discrimination-stereotype",
+          "type": "mcq",
+          "prompt": "'All teenagers are lazy.' This is an example of a…",
+          "options": [
+            "stereotype",
+            "right",
+            "responsibility",
+            "value"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "diversity-and-discrimination-xenophobia",
+          "type": "short",
+          "prompt": "What is the fear or hatred of people from other countries called?",
+          "answers": [
+            "xenophobia"
+          ]
+        },
+        {
+          "id": "diversity-and-discrimination-forms",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each form of discrimination to its basis.",
+          "pairs": [
+            {
+              "left": "Sexism",
+              "right": "Gender"
+            },
+            {
+              "left": "Ableism",
+              "right": "Disability"
+            },
+            {
+              "left": "Ageism",
+              "right": "Age"
+            },
+            {
+              "left": "Racism",
+              "right": "Race"
+            }
+          ]
+        },
+        {
+          "id": "diversity-and-discrimination-differences",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain the difference between a stereotype, prejudice and discrimination.",
+          "memo": "✓ Stereotype: an oversimplified idea about a group (1)\n✓ Prejudice: a negative attitude/feeling formed without knowing the person (1)\n✓ Discrimination: unfair treatment/action (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Study Skills",
+      "questions": [
+        {
+          "id": "study-skills-visual",
+          "type": "mcq",
+          "prompt": "A visual learner learns best by…",
+          "options": [
+            "listening to recordings",
+            "seeing diagrams and mind maps",
+            "building models",
+            "reading aloud"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "study-skills-procrastination",
+          "type": "short",
+          "prompt": "What is putting off tasks until later called?",
+          "answers": [
+            "procrastination",
+            "procrastinating"
+          ]
+        },
+        {
+          "id": "study-skills-sq3r",
+          "type": "short",
+          "prompt": "In SQ3R, what does the S stand for?",
+          "answers": [
+            "survey"
+          ]
+        },
+        {
+          "id": "study-skills-verbs",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each exam verb to what it asks you to do.",
+          "pairs": [
+            {
+              "left": "List",
+              "right": "Give short facts"
+            },
+            {
+              "left": "Explain",
+              "right": "Give reasons why or how"
+            },
+            {
+              "left": "Compare",
+              "right": "Give similarities and differences"
+            },
+            {
+              "left": "Discuss",
+              "right": "Look at different sides of an issue"
+            }
+          ]
+        },
+        {
+          "id": "study-skills-timetable",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE tips for drawing up a good study timetable.",
+          "memo": "Any three (1 each): include all activities and rest; short sessions with breaks; hardest subjects when most alert; be realistic; start early before exams; prioritise"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Careers and the World of Work",
+      "questions": [
+        {
+          "id": "careers-and-the-world-of-work-tvet",
+          "type": "short",
+          "prompt": "What does the T in TVET college stand for?",
+          "answers": [
+            "technical"
+          ]
+        },
+        {
+          "id": "careers-and-the-world-of-work-learnership",
+          "type": "mcq",
+          "prompt": "A programme where you learn a trade while working and earning is called…",
+          "options": [
+            "a degree",
+            "a learnership or apprenticeship",
+            "job shadowing",
+            "a career expo"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "careers-and-the-world-of-work-subjects",
+          "type": "truefalse",
+          "prompt": "The subjects you choose in Grade 9 can affect which careers are open to you later.",
+          "answer": true
+        },
+        {
+          "id": "careers-and-the-world-of-work-fields",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each career to its field.",
+          "pairs": [
+            {
+              "left": "Physiotherapist",
+              "right": "Health and social services"
+            },
+            {
+              "left": "Civil engineer",
+              "right": "Engineering and technology"
+            },
+            {
+              "left": "Accountant",
+              "right": "Business, finance and economics"
+            },
+            {
+              "left": "Game ranger",
+              "right": "Natural sciences and environment"
+            }
+          ]
+        },
+        {
+          "id": "careers-and-the-world-of-work-sources",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE sources of career information.",
+          "memo": "Any three (1 each): career counsellor/LO teacher; career expos; open days; websites (NCAP, Khetha); job shadowing; talking to workers"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Physical Fitness and Well-being",
+      "questions": [
+        {
+          "id": "physical-fitness-and-wellbeing-rice",
+          "type": "short",
+          "prompt": "In RICE first aid, what does the E stand for?",
+          "answers": [
+            "elevate",
+            "elevation",
+            "elevate the injury"
+          ]
+        },
+        {
+          "id": "physical-fitness-and-wellbeing-protein",
+          "type": "mcq",
+          "prompt": "Which food group is mainly for growth and repair?",
+          "options": [
+            "Starches",
+            "Proteins",
+            "Fats",
+            "Sugars"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "physical-fitness-and-wellbeing-sleep",
+          "type": "truefalse",
+          "prompt": "Teenagers need about 8 to 10 hours of sleep a night.",
+          "answer": true
+        },
+        {
+          "id": "physical-fitness-and-wellbeing-components",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each fitness component to an activity that improves it.",
+          "pairs": [
+            {
+              "left": "Cardiovascular endurance",
+              "right": "Long-distance running"
+            },
+            {
+              "left": "Flexibility",
+              "right": "Stretching and yoga"
+            },
+            {
+              "left": "Muscular strength",
+              "right": "Push-ups and squats"
+            },
+            {
+              "left": "Agility",
+              "right": "Shuttle runs"
+            }
+          ]
+        },
+        {
+          "id": "physical-fitness-and-wellbeing-meal",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Plan a healthy lunch that includes THREE different food groups. Name the group of each food.",
+          "memo": "✓✓✓ Three foods from different groups, correctly named (1 each), e.g. brown bread (starch), egg (protein), apple (fruit)"
+        }
+      ]
+    }
+  ]
+}

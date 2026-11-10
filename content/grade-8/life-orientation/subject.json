@@ -16,6 +16,8 @@
     { "id": "physical-fitness-and-wellbeing", "title": "Physical Fitness and Well-being", "term": 4 }
   ],
   "exams": [
+    { "id": "term-1-and-2", "title": "Term 1 and 2 Examination", "durationMinutes": 60, "totalMarks": 50 },
+    { "id": "term-3-and-4", "title": "Term 3 and 4 Examination", "durationMinutes": 60, "totalMarks": 50 },
     { "id": "november-exam", "title": "November Examination", "durationMinutes": 60, "totalMarks": 50 }
   ]
 }

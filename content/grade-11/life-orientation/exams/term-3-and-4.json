@@ -1,0 +1,173 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 30,
+  "totalMarks": 25,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 2 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Belief Systems, Ideologies and Worldviews",
+      "questions": [
+        {
+          "id": "beliefs-and-worldviews-worldview",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a worldview?",
+          "memo": "✓ A person's overall view of the world and life (1)\n✓ including beliefs about humanity and morality; may be religious or secular (1)"
+        },
+        {
+          "id": "beliefs-and-worldviews-s15",
+          "type": "numeric",
+          "prompt": "Which section of the Constitution protects freedom of religion, belief and opinion?",
+          "answer": 15,
+          "tolerance": 0
+        },
+        {
+          "id": "beliefs-and-worldviews-ramadan",
+          "type": "mcq",
+          "prompt": "Fasting during Ramadan is a practice in…",
+          "options": [
+            "Hinduism",
+            "Islam",
+            "Judaism",
+            "Christianity"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "beliefs-and-worldviews-diwali",
+          "type": "short",
+          "prompt": "Which Hindu festival is known as the Festival of Lights?",
+          "answers": [
+            "diwali",
+            "deepavali"
+          ]
+        },
+        {
+          "id": "beliefs-and-worldviews-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each belief system to a sacred text or feature.",
+          "pairs": [
+            {
+              "left": "Christianity",
+              "right": "The Bible"
+            },
+            {
+              "left": "Islam",
+              "right": "The Qur'an"
+            },
+            {
+              "left": "Judaism",
+              "right": "The Torah"
+            },
+            {
+              "left": "Humanism",
+              "right": "Ethics based on reason and human well-being"
+            }
+          ]
+        },
+        {
+          "id": "beliefs-and-worldviews-ubuntu",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the meaning of ubuntu and how it can promote respect for diversity.",
+          "memo": "✓ 'A person is a person through other people': we are connected and responsible for each other (1)\n✓ It encourages compassion and respect for all people regardless of belief (1)"
+        },
+        {
+          "id": "beliefs-and-worldviews-ideology",
+          "type": "mcq",
+          "prompt": "Which is an example of an ideology rather than a religion?",
+          "options": [
+            "Hinduism",
+            "Socialism",
+            "Islam",
+            "Judaism"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Higher Education and Career Planning",
+      "questions": [
+        {
+          "id": "higher-education-and-careers-aps-calc",
+          "type": "numeric",
+          "prompt": "Calculate the APS for marks of 85%, 72%, 64%, 55%, 48% and 77%.",
+          "answer": 31,
+          "tolerance": 0
+        },
+        {
+          "id": "higher-education-and-careers-nsfas",
+          "type": "short",
+          "prompt": "What does NSFAS stand for?",
+          "answers": [
+            "national student financial aid scheme"
+          ]
+        },
+        {
+          "id": "higher-education-and-careers-uot",
+          "type": "mcq",
+          "prompt": "Which institution focuses on career-oriented diplomas and practical degrees?",
+          "options": [
+            "Traditional university",
+            "University of technology",
+            "Primary school",
+            "SETA"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "higher-education-and-careers-grade11",
+          "type": "truefalse",
+          "prompt": "Grade 11 final results are often used for applications to universities.",
+          "answer": true
+        },
+        {
+          "id": "higher-education-and-careers-options",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each option to its description.",
+          "pairs": [
+            {
+              "left": "TVET college",
+              "right": "Vocational programmes such as N1–N6"
+            },
+            {
+              "left": "Learnership",
+              "right": "Study while working towards a qualification"
+            },
+            {
+              "left": "Traditional university",
+              "right": "Academic degrees such as BSc"
+            },
+            {
+              "left": "Gig economy",
+              "right": "Short-term or freelance work"
+            }
+          ]
+        },
+        {
+          "id": "higher-education-and-careers-soft",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE soft skills employers value and explain why one of them is important.",
+          "memo": "✓✓ Two or three soft skills, e.g. communication, teamwork, problem-solving, adaptability (2)\n✓ Explanation of why one matters (1)"
+        },
+        {
+          "id": "higher-education-and-careers-automation",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How might automation affect future careers? Give ONE threat and ONE opportunity.",
+          "memo": "✓ Threat: routine jobs may be replaced by machines (1)\n✓ Opportunity: new jobs in technology, maintenance, data and design (1)"
+        }
+      ]
+    }
+  ]
+}

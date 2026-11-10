@@ -1,0 +1,494 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 12 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Algebraic Expressions",
+      "questions": [
+        {
+          "id": "algebraic-expressions-q1",
+          "type": "mcq",
+          "prompt": "Which one of the following numbers is **irrational**?",
+          "options": [
+            "$\\sqrt{16}$",
+            "$0{,}\\dot{7}$",
+            "$\\sqrt{7}$",
+            "$\\dfrac{22}{7}$"
+          ],
+          "answer": 2,
+          "explanation": "$\\sqrt{16} = 4$, $0{,}\\dot{7} = \\frac{7}{9}$ and $\\frac{22}{7}$ are all fractions of integers, so they are rational. $7$ is not a perfect square, so $\\sqrt{7} = 2{,}6457\\ldots$ never ends or repeats."
+        },
+        {
+          "id": "algebraic-expressions-q3",
+          "type": "truefalse",
+          "prompt": "$\\sqrt{-9}$ is a non-real number.",
+          "answer": true,
+          "explanation": "No real number squared gives a negative answer: $3^2 = 9$ and $(-3)^2 = 9$. So $\\sqrt{-9}$ is non-real."
+        },
+        {
+          "id": "algebraic-expressions-q4",
+          "type": "truefalse",
+          "prompt": "$0{,}\\dot{1}\\dot{2}$ is irrational because its decimal digits never end.",
+          "answer": false,
+          "explanation": "The digits never end, but they **repeat**, so the number is rational: $0{,}\\dot{1}\\dot{2} = \\frac{12}{99} = \\frac{4}{33}$. Irrational decimals never end **and** never repeat."
+        },
+        {
+          "id": "algebraic-expressions-q6",
+          "type": "numeric",
+          "prompt": "Round off $7{,}4865$ correct to **two** decimal places.",
+          "answer": 7.49,
+          "tolerance": 0.0001,
+          "explanation": "Keep $7{,}48$. The next digit is $6$ ($5$ or more), so round up: $7{,}49$."
+        },
+        {
+          "id": "algebraic-expressions-q8",
+          "type": "mcq",
+          "prompt": "Between which two consecutive integers does $\\sqrt[3]{100}$ lie?",
+          "options": [
+            "$9$ and $10$",
+            "$3$ and $4$",
+            "$4$ and $5$",
+            "$5$ and $6$"
+          ],
+          "answer": 2,
+          "explanation": "Use perfect cubes: $4^3 = 64$ and $5^3 = 125$. Since $64 < 100 < 125$, $4 < \\sqrt[3]{100} < 5$."
+        },
+        {
+          "id": "algebraic-expressions-q10",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Sipho says that $0{,}\\dot{9}$ is slightly less than $1$. Use algebra to show that $0{,}\\dot{9} = 1$.",
+          "memo": "Let $x = 0{,}999\\ldots$ ... (1)\n$10x = 9{,}999\\ldots$ ... (2) ✓ (1)\n(2) − (1): $9x = 9$ ✓ (1)\n$x = 1$, so $0{,}\\dot{9} = 1$ and Sipho is incorrect ✓ (1)"
+        },
+        {
+          "id": "algebraic-expressions-q13",
+          "type": "numeric",
+          "prompt": "The product $(x + 3)(x^2 - 3x + 9)$ simplifies to $x^3 + k$. Find the value of $k$.",
+          "answer": 27,
+          "tolerance": 0,
+          "explanation": "$x^3 - 3x^2 + 9x + 3x^2 - 9x + 27 = x^3 + 27$. This is the sum of cubes $a^3 + b^3$ with $b = 3$, so $k = 3^3 = 27$."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Factorisation and Algebraic Fractions",
+      "questions": [
+        {
+          "id": "factorisation-and-algebraic-fractions-q3",
+          "type": "truefalse",
+          "prompt": "$5 - x = -(x - 5)$",
+          "answer": true,
+          "explanation": "$-(x - 5) = -x + 5 = 5 - x$. Swapping the order of a subtraction changes the sign."
+        },
+        {
+          "id": "factorisation-and-algebraic-fractions-q5",
+          "type": "match",
+          "prompt": "Match each trinomial with its factorised form.",
+          "marks": 4,
+          "pairs": [
+            {
+              "left": "$x^2 - 5x + 6$",
+              "right": "(x − 2)(x − 3)"
+            },
+            {
+              "left": "$x^2 + x - 6$",
+              "right": "(x + 3)(x − 2)"
+            },
+            {
+              "left": "$x^2 - x - 6$",
+              "right": "(x − 3)(x + 2)"
+            },
+            {
+              "left": "$x^2 + 5x + 6$",
+              "right": "(x + 2)(x + 3)"
+            }
+          ],
+          "explanation": "All four use the numbers $2$ and $3$. When the constant is $+6$ both signs are the same as the sign of $b$; when it is $-6$ the signs differ and the bigger number ($3$) takes the sign of $b$."
+        },
+        {
+          "id": "factorisation-and-algebraic-fractions-q8",
+          "type": "numeric",
+          "prompt": "Use factorisation (not a calculator) to calculate the exact value of $1\\,003^2 - 997^2$.",
+          "answer": 12000,
+          "tolerance": 0,
+          "explanation": "Difference of squares: $(1\\,003 - 997)(1\\,003 + 997) = 6 \\times 2\\,000 = 12\\,000$."
+        },
+        {
+          "id": "factorisation-and-algebraic-fractions-q15",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Simplify and state the restrictions: $\\dfrac{x^3 + 27}{2x^2 + 6x} \\div \\dfrac{x^2 - 3x + 9}{4x^2}$",
+          "memo": "$= \\dfrac{x^3 + 27}{2x^2 + 6x} \\times \\dfrac{4x^2}{x^2 - 3x + 9}$ ✓ (1) (reciprocal)\n$x^3 + 27 = (x + 3)(x^2 - 3x + 9)$ ✓ (1)\n$2x^2 + 6x = 2x(x + 3)$ ✓ (1)\n$\\dfrac{(x + 3)(x^2 - 3x + 9)}{2x(x + 3)} \\times \\dfrac{4x^2}{x^2 - 3x + 9} = 2x$ ✓ (1)\nRestrictions: $x \\neq 0$ and $x \\neq -3$ ($x^2 - 3x + 9$ is never zero) ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Exponents",
+      "questions": [
+        {
+          "id": "exponents-q2",
+          "type": "truefalse",
+          "prompt": "$(-3)^2 = -9$",
+          "answer": false,
+          "explanation": "$(-3)^2 = (-3)(-3) = 9$. A negative number raised to an even power is positive. ($-3^2$ without brackets would equal $-9$.)"
+        },
+        {
+          "id": "exponents-q3",
+          "type": "truefalse",
+          "prompt": "$2x^{-1} = \\dfrac{2}{x}$",
+          "answer": true,
+          "explanation": "The exponent $-1$ belongs only to $x$: $2x^{-1} = 2 \\times \\frac{1}{x} = \\frac{2}{x}$."
+        },
+        {
+          "id": "exponents-q7",
+          "type": "mcq",
+          "prompt": "Simplify $\\dfrac{6x^{-2}y^3}{2x^3y^{-1}}$ and write the answer with positive exponents.",
+          "options": [
+            "$3xy^4$",
+            "$\\dfrac{3y^4}{x^5}$",
+            "$\\dfrac{3y^2}{x}$",
+            "$\\dfrac{4y^4}{x^5}$"
+          ],
+          "answer": 1,
+          "explanation": "$6 \\div 2 = 3$; $x^{-2-3} = x^{-5}$; $y^{3-(-1)} = y^4$. So $3x^{-5}y^4 = \\frac{3y^4}{x^5}$."
+        },
+        {
+          "id": "exponents-q10",
+          "type": "numeric",
+          "prompt": "Solve for $x$: $4^x = \\dfrac{1}{64}$",
+          "answer": -3,
+          "tolerance": 0,
+          "explanation": "$64 = 4^3$, so $\\frac{1}{64} = 4^{-3}$. Therefore $x = -3$."
+        },
+        {
+          "id": "exponents-q11",
+          "type": "mcq",
+          "prompt": "Solve for $x$: $9^{x-1} = 3$",
+          "options": [
+            "$x = \\frac{3}{2}$",
+            "$x = \\frac{1}{2}$",
+            "$x = 2$",
+            "$x = \\frac{4}{3}$"
+          ],
+          "answer": 0,
+          "explanation": "$9^{x-1} = (3^2)^{x-1} = 3^{2x-2}$. So $2x - 2 = 1$, giving $x = \\frac{3}{2}$."
+        },
+        {
+          "id": "exponents-q12",
+          "type": "numeric",
+          "prompt": "Solve for $x$: $8^x = 4^{x+1}$",
+          "answer": 2,
+          "tolerance": 0,
+          "explanation": "Write both sides as powers of 2: $2^{3x} = 2^{2x+2}$. So $3x = 2x + 2$ and $x = 2$. Check: $8^2 = 64 = 4^3$ ✓"
+        },
+        {
+          "id": "exponents-q13",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Simplify $\\dfrac{2^{x+2} - 2^x}{3 \\cdot 2^{x+1}}$ without using a calculator.",
+          "memo": "Numerator: $2^x \\cdot 2^2 - 2^x = 2^x(4 - 1)$ ✓ (1)\nDenominator: $3 \\cdot 2^x \\cdot 2$ ✓ (1)\n$\\dfrac{3 \\cdot 2^x}{6 \\cdot 2^x} = \\dfrac{1}{2}$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Number Patterns",
+      "questions": [
+        {
+          "id": "number-patterns-next",
+          "type": "numeric",
+          "prompt": "Write down the next term of $23; 19; 15; 11; \\ldots$",
+          "answer": 7,
+          "tolerance": 0
+        },
+        {
+          "id": "number-patterns-is-term",
+          "type": "truefalse",
+          "prompt": "$100$ is a term of the pattern $T_n = 3n + 2$.",
+          "answer": false,
+          "explanation": "$3n + 2 = 100$ gives $n = 32{,}67$, not a natural number."
+        },
+        {
+          "id": "number-patterns-first-over",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Find the first term of $T_n = 6n - 5$ that is greater than $200$.",
+          "memo": "✓ $6n - 5 > 200$ (1)\n✓ $n > 34{,}17$, so $n = 35$ (1)\n✓ $T_{35} = 205$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Equations and Inequalities",
+      "questions": [
+        {
+          "id": "equations-and-inequalities-q3",
+          "type": "truefalse",
+          "prompt": "If $-2x < 8$, then $x < -4$.",
+          "answer": false,
+          "explanation": "Dividing by $-2$ reverses the sign: $x > -4$. Test $x = 0$: $-2(0) = 0 < 8$ is true, and $0 > -4$."
+        },
+        {
+          "id": "equations-and-inequalities-q6",
+          "type": "short",
+          "prompt": "Complete the name of this rule: if $A \\times B = 0$, then $A = 0$ or $B = 0$. It is called the zero-______ principle.",
+          "answers": [
+            "product",
+            "zero-product",
+            "zero product",
+            "zero-product principle",
+            "zero product principle"
+          ],
+          "explanation": "The **zero-product principle** is the reason a quadratic equation must equal zero before you factorise and solve."
+        },
+        {
+          "id": "equations-and-inequalities-q9",
+          "type": "mcq",
+          "prompt": "Solve simultaneously: $x + y = 10$ and $x - y = 4$.",
+          "options": [
+            "$x = 3$ and $y = 7$",
+            "$x = 7$ and $y = 3$",
+            "$x = 6$ and $y = 4$",
+            "$x = 14$ and $y = -4$"
+          ],
+          "answer": 1,
+          "explanation": "Add the equations: $2x = 14$, so $x = 7$. Then $y = 10 - 7 = 3$. Check: $7 - 3 = 4$ ✓"
+        },
+        {
+          "id": "equations-and-inequalities-q10",
+          "type": "match",
+          "prompt": "Match each inequality with its interval notation.",
+          "marks": 4,
+          "pairs": [
+            {
+              "left": "$x > 3$",
+              "right": "(3; ∞)"
+            },
+            {
+              "left": "$x \\leq 3$",
+              "right": "(−∞; 3]"
+            },
+            {
+              "left": "$-1 \\leq x < 3$",
+              "right": "[−1; 3)"
+            },
+            {
+              "left": "$-1 < x \\leq 3$",
+              "right": "(−1; 3]"
+            }
+          ],
+          "explanation": "Round brackets mean the endpoint is not included; square brackets mean it is included. Infinity always has a round bracket."
+        },
+        {
+          "id": "equations-and-inequalities-q11",
+          "type": "numeric",
+          "prompt": "Mrs Naidoo is 28 years older than her daughter Priya. In 4 years' time Mrs Naidoo will be three times as old as Priya. How old is Priya now?",
+          "answer": 10,
+          "tolerance": 0,
+          "unit": "years",
+          "explanation": "Let Priya be $x$; her mother is $x + 28$. In 4 years: $x + 32 = 3(x + 4)$, so $x + 32 = 3x + 12$, giving $2x = 20$ and $x = 10$. Check: 10 and 38 now; 14 and 42 in 4 years, and $42 = 3 \\times 14$."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Trigonometric Ratios",
+      "questions": [
+        {
+          "id": "trigonometric-ratios-no-calc",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Without a calculator, evaluate $\\sin^2 45^\\circ + \\tan 45^\\circ - \\cos^2 30^\\circ$.",
+          "memo": "✓ $\\left(\\frac{\\sqrt{2}}{2}\\right)^2 = \\frac{1}{2}$ (1)\n✓ $1 - \\frac{3}{4}$ (1)\n✓ $\\frac{1}{2} + 1 - \\frac{3}{4} = \\frac{3}{4}$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Functions: The Straight Line",
+      "questions": [
+        {
+          "id": "functions-straight-line-decreasing",
+          "type": "mcq",
+          "prompt": "Which line slopes downwards from left to right?",
+          "options": [
+            "$y = 2x - 5$",
+            "$y = 5$",
+            "$y = -\\frac{1}{2}x + 1$",
+            "$y = x$"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "functions-straight-line-horizontal",
+          "type": "truefalse",
+          "prompt": "The graph of $y = 4$ is a horizontal line.",
+          "answer": true
+        },
+        {
+          "id": "functions-straight-line-sketch",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Sketch $g(x) = \\frac{1}{2}x - 2$. Show the intercepts with both axes.",
+          "memo": "✓ $y$-intercept $(0; -2)$ (1)\n✓ $x$-intercept $(4; 0)$ (1)\n✓ Straight line with positive gradient through both points (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 8: Functions: The Parabola",
+      "questions": [
+        {
+          "id": "functions-parabola-xint",
+          "type": "numeric",
+          "prompt": "Find the positive $x$-intercept of $y = x^2 - 9$.",
+          "answer": 3,
+          "tolerance": 0
+        },
+        {
+          "id": "functions-parabola-no-xint",
+          "type": "truefalse",
+          "prompt": "The graph of $y = x^2 + 4$ has no $x$-intercepts.",
+          "answer": true
+        },
+        {
+          "id": "functions-parabola-equation",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A parabola $y = ax^2 + q$ has a maximum turning point at $(0; 6)$ and cuts the $x$-axis at $(3; 0)$. Find its equation.",
+          "memo": "✓ $q = 6$ (1)\n✓ $0 = 9a + 6$ (1)\n✓ $a = -\\frac{2}{3}$, so $y = -\\frac{2}{3}x^2 + 6$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 9: Functions: The Hyperbola",
+      "questions": [
+        {
+          "id": "functions-hyperbola-q5",
+          "type": "numeric",
+          "prompt": "Given $f(x) = \\dfrac{8}{x} + 1$, calculate $f(-4)$. Give the exact value.",
+          "answer": -1,
+          "tolerance": 0.001,
+          "explanation": "$f(-4) = \\frac{8}{-4} + 1 = -2 + 1 = -1$."
+        },
+        {
+          "id": "functions-hyperbola-q9",
+          "type": "mcq",
+          "prompt": "Compared with the graph of $y = \\dfrac{2}{x}$, the branches of $y = \\dfrac{8}{x}$ are:",
+          "options": [
+            "closer to the asymptotes",
+            "further from the asymptotes",
+            "in quadrants II and IV",
+            "shifted up by 6 units"
+          ],
+          "answer": 1,
+          "explanation": "A larger $|a|$ moves the branches further from the asymptotes. For example, at $x = 1$ the points are $(1; 2)$ and $(1; 8)$. Both graphs stay in quadrants I and III with asymptote $y = 0$."
+        },
+        {
+          "id": "functions-hyperbola-q14",
+          "type": "open",
+          "marks": 4,
+          "prompt": "The graph of $y = \\dfrac{a}{x} + q$ passes through the points $(1; 4)$ and $(-2; -5)$. Determine the values of $a$ and $q$. Show all your working.",
+          "memo": "Substitute $(1; 4)$: $a + q = 4$ ✓ (1)\nSubstitute $(-2; -5)$: $-\\frac{a}{2} + q = -5$ ✓ (1)\nSubtract: $a + \\frac{a}{2} = 9 \\Rightarrow \\frac{3a}{2} = 9 \\Rightarrow a = 6$ ✓ (1)\n$q = 4 - 6 = -2$, so $y = \\frac{6}{x} - 2$ ✓ (1)\n[Check: $\\frac{6}{-2} - 2 = -5$]"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 10: Functions: The Exponential Graph",
+      "questions": [
+        {
+          "id": "functions-exponential-yint",
+          "type": "numeric",
+          "prompt": "Find the $y$-intercept of $g(x) = 2 \\cdot 3^x + 1$.",
+          "answer": 3,
+          "tolerance": 0
+        },
+        {
+          "id": "functions-exponential-equation",
+          "type": "open",
+          "marks": 3,
+          "prompt": "The graph of $y = b^x + q$ has a horizontal asymptote $y = -1$ and passes through $(2; 15)$. Find the equation.",
+          "memo": "✓ $q = -1$ (1)\n✓ $15 = b^2 - 1$, $b^2 = 16$ (1)\n✓ $b = 4$ (since $b > 0$): $y = 4^x - 1$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 11: Trigonometric Functions",
+      "questions": [
+        {
+          "id": "trigonometric-functions-period-sin",
+          "type": "numeric",
+          "prompt": "What is the period of $y = \\sin\\theta$ (in degrees)?",
+          "answer": 360,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "trigonometric-functions-asym",
+          "type": "mcq",
+          "prompt": "Where are the asymptotes of $y = \\tan\\theta$ for $0^\\circ \\leq \\theta \\leq 360^\\circ$?",
+          "options": [
+            "$0^\\circ$ and $180^\\circ$",
+            "$90^\\circ$ and $270^\\circ$",
+            "$45^\\circ$ and $225^\\circ$",
+            "There are none"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "trigonometric-functions-find-a-q",
+          "type": "open",
+          "marks": 2,
+          "prompt": "The graph of $y = a\\sin\\theta + q$ has a maximum of $4$ and a minimum of $-2$. Find $a$ (positive) and $q$.",
+          "memo": "✓ $q = \\frac{4 + (-2)}{2} = 1$ (1)\n✓ $a = 4 - 1 = 3$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 12: Euclidean Geometry",
+      "questions": [
+        {
+          "id": "euclidean-geometry-co-interior",
+          "type": "numeric",
+          "prompt": "Two co-interior angles between parallel lines are $3x$ and $x + 20^\\circ$. Find $x$.",
+          "answer": 40,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "euclidean-geometry-properties",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each quadrilateral to a property.",
+          "pairs": [
+            {
+              "left": "Rectangle",
+              "right": "Equal diagonals and four right angles"
+            },
+            {
+              "left": "Kite",
+              "right": "Two pairs of adjacent sides equal"
+            },
+            {
+              "left": "Trapezium",
+              "right": "At least one pair of parallel sides"
+            },
+            {
+              "left": "Parallelogram",
+              "right": "Opposite angles equal"
+            }
+          ]
+        },
+        {
+          "id": "euclidean-geometry-square",
+          "type": "truefalse",
+          "prompt": "Every square is a rhombus.",
+          "answer": true
+        }
+      ]
+    }
+  ]
+}

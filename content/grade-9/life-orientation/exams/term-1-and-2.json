@@ -1,0 +1,315 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Goal Setting and Decision-Making",
+      "questions": [
+        {
+          "id": "goal-setting-and-decision-making-smart-m",
+          "type": "short",
+          "prompt": "What does the M in SMART stand for?",
+          "answers": [
+            "measurable"
+          ]
+        },
+        {
+          "id": "goal-setting-and-decision-making-pressure",
+          "type": "truefalse",
+          "prompt": "Decisions made under peer pressure are usually well thought through.",
+          "answer": false
+        },
+        {
+          "id": "goal-setting-and-decision-making-types",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each goal to its type.",
+          "pairs": [
+            {
+              "left": "Finish my essay by tomorrow",
+              "right": "Short-term"
+            },
+            {
+              "left": "Pass Grade 9 this year",
+              "right": "Medium-term"
+            },
+            {
+              "left": "Open my own business one day",
+              "right": "Long-term"
+            }
+          ]
+        },
+        {
+          "id": "goal-setting-and-decision-making-smart-rewrite",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Rewrite the goal 'I want better marks' as a SMART goal.",
+          "memo": "✓ Specific subject and target mark (1)\n✓ How it will be measured / achieved (study plan) (1)\n✓ A time limit (1)"
+        },
+        {
+          "id": "goal-setting-and-decision-making-obstacles",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO obstacles that could prevent a learner from reaching a goal, and how to overcome one of them.",
+          "memo": "✓ Two obstacles, e.g. no money / no time / no support / lack of motivation (1)\n✓ A realistic way to overcome one (1)"
+        },
+        {
+          "id": "goal-setting-and-decision-making-values",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What are values and how do they help in decision-making?",
+          "memo": "✓ Beliefs and principles that are important to you (1)\n✓ They guide you to choose options that match what you believe is right (1)"
+        },
+        {
+          "id": "goal-setting-and-decision-making-consequences",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is it important to consider consequences before making a decision?",
+          "memo": "✓ Decisions have effects on you and others (1)\n✓ Thinking ahead helps you avoid harmful outcomes and choose the best option (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Coping with Stress and Emotions",
+      "questions": [
+        {
+          "id": "coping-with-stress-stress-def",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is stress?",
+          "memo": "✓ The body's and mind's reaction (1)\n✓ to pressure or a challenging situation (1)"
+        },
+        {
+          "id": "coping-with-stress-healthy",
+          "type": "mcq",
+          "prompt": "Which is a HEALTHY way to cope with stress?",
+          "options": [
+            "Drinking alcohol",
+            "Bottling up feelings",
+            "Going for a run",
+            "Shouting at family"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "coping-with-stress-resilience",
+          "type": "short",
+          "prompt": "What is the ability to bounce back after difficult experiences called?",
+          "answers": [
+            "resilience"
+          ]
+        },
+        {
+          "id": "coping-with-stress-sadag",
+          "type": "short",
+          "prompt": "What does SADAG stand for?",
+          "answers": [
+            "south african depression and anxiety group"
+          ]
+        },
+        {
+          "id": "coping-with-stress-depression",
+          "type": "truefalse",
+          "prompt": "Depression is a medical condition that can be treated.",
+          "answer": true
+        },
+        {
+          "id": "coping-with-stress-strategies",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each coping strategy.",
+          "pairs": [
+            {
+              "left": "Writing in a journal",
+              "right": "Healthy"
+            },
+            {
+              "left": "Using drugs to forget problems",
+              "right": "Unhealthy"
+            },
+            {
+              "left": "Talking to a counsellor",
+              "right": "Healthy (support)"
+            },
+            {
+              "left": "Hitting a younger sibling",
+              "right": "Unhealthy (aggression)"
+            }
+          ]
+        },
+        {
+          "id": "coping-with-stress-anger",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE steps to manage anger in a healthy way.",
+          "memo": "Any three (1 each): stop and breathe deeply; count to ten; walk away to cool down; exercise; talk calmly using I-statements later; find solutions"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Sexual Health and Gender-Based Violence",
+      "questions": [
+        {
+          "id": "sexual-health-and-gender-based-violence-both",
+          "type": "mcq",
+          "prompt": "Which method protects against both pregnancy and STIs?",
+          "options": [
+            "The pill",
+            "The injection",
+            "Condoms",
+            "The implant"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sexual-health-and-gender-based-violence-gbv-line",
+          "type": "short",
+          "prompt": "What is the free number of the GBV Command Centre?",
+          "answers": [
+            "0800 428 428",
+            "0800428428"
+          ]
+        },
+        {
+          "id": "sexual-health-and-gender-based-violence-protection-order",
+          "type": "short",
+          "prompt": "Under the Domestic Violence Act, what can a victim apply for at a magistrate's court?",
+          "answers": [
+            "protection order",
+            "a protection order"
+          ]
+        },
+        {
+          "id": "sexual-health-and-gender-based-violence-hiv-age",
+          "type": "numeric",
+          "prompt": "From what age can a child consent to an HIV test in South Africa?",
+          "answer": 12,
+          "tolerance": 0,
+          "unit": "years"
+        },
+        {
+          "id": "sexual-health-and-gender-based-violence-fault",
+          "type": "truefalse",
+          "prompt": "A person who is abused is partly to blame for the abuse.",
+          "answer": false
+        },
+        {
+          "id": "sexual-health-and-gender-based-violence-abuse-types",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each example to the type of abuse.",
+          "pairs": [
+            {
+              "left": "Taking a partner's wages",
+              "right": "Economic"
+            },
+            {
+              "left": "Constant insults and threats",
+              "right": "Emotional"
+            },
+            {
+              "left": "Sharing private images without consent",
+              "right": "Digital"
+            },
+            {
+              "left": "Slapping",
+              "right": "Physical"
+            }
+          ]
+        },
+        {
+          "id": "sexual-health-and-gender-based-violence-stereotype",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give an example of a gender stereotype and explain how it can be harmful.",
+          "memo": "✓ Example, e.g. 'boys don't cry' (1)\n✓ Harm, e.g. boys hide emotions and may turn to anger or violence (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Risky Behaviour: Substances and Road Safety",
+      "questions": [
+        {
+          "id": "risky-behaviour-define",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is risky behaviour?",
+          "memo": "✓ Behaviour that could harm (1)\n✓ your own or other people's health, safety or future (1)"
+        },
+        {
+          "id": "risky-behaviour-protective",
+          "type": "mcq",
+          "prompt": "Which is a PROTECTIVE factor?",
+          "options": [
+            "Boredom",
+            "Easy access to alcohol",
+            "Belonging to a sports club",
+            "Negative peer pressure"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "risky-behaviour-limit",
+          "type": "numeric",
+          "prompt": "What is the legal blood-alcohol limit (in g per 100 ml) for ordinary drivers in South Africa?",
+          "answer": 0.05,
+          "tolerance": 0.001,
+          "unit": "g/100 ml"
+        },
+        {
+          "id": "risky-behaviour-seatbelt",
+          "type": "truefalse",
+          "prompt": "Passengers in the back seat do not need to wear seat belts.",
+          "answer": false
+        },
+        {
+          "id": "risky-behaviour-police",
+          "type": "short",
+          "prompt": "What is the emergency number for the police (SAPS)?",
+          "answers": [
+            "10111"
+          ]
+        },
+        {
+          "id": "risky-behaviour-factors",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each factor.",
+          "pairs": [
+            {
+              "left": "Clear goals for the future",
+              "right": "Protective factor"
+            },
+            {
+              "left": "Friends who use drugs",
+              "right": "Risk factor"
+            },
+            {
+              "left": "Supportive parents",
+              "right": "Protective factor (family)"
+            },
+            {
+              "left": "No adult supervision",
+              "right": "Risk factor (supervision)"
+            }
+          ]
+        },
+        {
+          "id": "risky-behaviour-cyclist",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO safety rules for cyclists.",
+          "memo": "Any two (1 each): helmet; lights and reflectors; ride on the left with traffic; signal; obey road signs"
+        }
+      ]
+    }
+  ]
+}

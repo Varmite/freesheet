@@ -1,0 +1,191 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 45,
+  "totalMarks": 35,
+  "instructions": [
+    "This paper covers the work of Term 3. Term 4 is set aside for revision and the final examinations.",
+    "This question paper consists of 3 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Maps, Plans and Models",
+      "questions": [
+        {
+          "id": "maps-plans-and-models-number-scale",
+          "type": "numeric",
+          "prompt": "On a 1 : 250 000 map, a road is 6,4 cm long. What is its real length in km?",
+          "answer": 16,
+          "tolerance": 0,
+          "unit": "km"
+        },
+        {
+          "id": "maps-plans-and-models-find-scale",
+          "type": "mcq",
+          "prompt": "A 15 m wall is drawn as 10 cm on a plan. What is the scale?",
+          "options": [
+            "1 : 15",
+            "1 : 150",
+            "1 : 1 500",
+            "1 : 15 000"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "maps-plans-and-models-model",
+          "type": "numeric",
+          "prompt": "A 1 : 40 scale model of a 6 m long bus is built. How long is the model, in cm?",
+          "answer": 15,
+          "tolerance": 0,
+          "unit": "cm"
+        },
+        {
+          "id": "maps-plans-and-models-convert-time",
+          "type": "truefalse",
+          "prompt": "3,4 hours is the same as 3 hours 40 minutes.",
+          "answer": false,
+          "explanation": "0,4 h = 24 minutes, so 3,4 h = 3 h 24 min."
+        },
+        {
+          "id": "maps-plans-and-models-fuel",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A taxi owner drives 85 km each way to work, 22 days a month. The taxi uses 11 ℓ/100 km and diesel costs R22,90/ℓ. Calculate the monthly fuel cost.",
+          "memo": "✓ Distance: 85 × 2 × 22 = 3 740 km (1)\n✓ Fuel: 3 740 ÷ 100 × 11 = 411,4 ℓ (1)\n✓ × R22,90 (1)\n✓ = R9 421,06 (1)"
+        },
+        {
+          "id": "maps-plans-and-models-arrival",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A bus leaves Durban at 21:30 and travels 600 km to Johannesburg at an average of 75 km/h, with a 40-minute stop. When does it arrive?",
+          "memo": "✓ 600 ÷ 75 = 8 h (1)\n✓ + 40 min = 8 h 40 min (1)\n✓ Arrives 06:10 the next day (1)"
+        },
+        {
+          "id": "maps-plans-and-models-plan-use",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why are both a floor plan and an elevation plan needed to calculate how much paint is needed for the walls of a room?",
+          "memo": "✓ The floor plan gives the lengths of the walls (1)\n✓ The elevation plan gives the heights, so the wall area can be calculated (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Data Handling: Interpretation and Critical Analysis",
+      "questions": [
+        {
+          "id": "data-interpretation-percentile",
+          "type": "mcq",
+          "prompt": "A learner's mark is at the 90th percentile. This means…",
+          "options": [
+            "she scored 90%",
+            "she did better than about 90% of learners",
+            "90 learners did better than her",
+            "she is in the bottom 10%"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "data-interpretation-q1",
+          "type": "mcq",
+          "prompt": "The lower quartile is the same as the…",
+          "options": [
+            "10th percentile",
+            "25th percentile",
+            "50th percentile",
+            "75th percentile"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "data-interpretation-negative",
+          "type": "truefalse",
+          "prompt": "In a negative relationship, as one variable increases the other tends to decrease.",
+          "answer": true
+        },
+        {
+          "id": "data-interpretation-median",
+          "type": "numeric",
+          "prompt": "Monthly rents in a block of flats: R4 200; R4 500; R4 500; R4 800; R5 100; R12 000. Find the median rent.",
+          "answer": 4650,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "data-interpretation-compare",
+          "type": "open",
+          "marks": 4,
+          "prompt": "School A: median 58%, IQR 24. School B: median 63%, IQR 10. Compare the two schools' results.",
+          "memo": "✓ School B performed better on average (higher median) (2)\n✓ School B's results are more consistent (smaller IQR) (1)\n✓ School A has a wider spread of marks (1)"
+        },
+        {
+          "id": "data-interpretation-extrapolate",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A trend line shows the population of a town growing by 2 000 people per year from 2015 to 2024. Why is it risky to use it to predict the population in 2060?",
+          "memo": "✓ 2060 is far outside the data range (extrapolation) (1)\n✓ Growth rates can change because of economic, social or migration factors (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Probability and Risk",
+      "questions": [
+        {
+          "id": "probability-and-risk-rain",
+          "type": "mcq",
+          "prompt": "A forecast gives a 20% chance of rain. Which is the best interpretation?",
+          "options": [
+            "It will rain for 20% of the day",
+            "It will definitely not rain",
+            "On days like this, it rains about 1 in 5 times",
+            "20% of the area will get rain"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "probability-and-risk-ev",
+          "type": "numeric",
+          "prompt": "A game costs R5. You win R30 with a probability of $\\frac{1}{8}$. What is the expected value per game, in rand? (use a minus sign for a loss)",
+          "answer": -1.25,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "probability-and-risk-at-least",
+          "type": "numeric",
+          "prompt": "The probability that a component fails is 0,1. Two independent components are used. What is P(at least one fails)?",
+          "answer": 0.19,
+          "tolerance": 0
+        },
+        {
+          "id": "probability-and-risk-lotto",
+          "type": "truefalse",
+          "prompt": "Buying more lottery tickets every week is a reliable way to grow your savings.",
+          "answer": false
+        },
+        {
+          "id": "probability-and-risk-relative",
+          "type": "open",
+          "marks": 3,
+          "prompt": "In a study, 6 out of 1 000 smokers and 1 out of 1 000 non-smokers developed a disease. Calculate the relative risk and explain what it means.",
+          "memo": "✓ 0,6% and 0,1% (1)\n✓ Relative risk = 6 (1)\n✓ Smokers were 6 times as likely to develop the disease (1)"
+        },
+        {
+          "id": "probability-and-risk-fair-game",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A spinner has 5 equal sections numbered 1 to 5. It costs R4 to play and you win R15 if it lands on 5. Is the game fair? Show working.",
+          "memo": "✓ P(5) = $\\frac{1}{5}$ (1)\n✓ Expected winnings $\\frac{1}{5} \\times R15 = R3$ (1)\n✓ R3 < R4, so not fair: the player expects to lose R1 per game (1)"
+        },
+        {
+          "id": "probability-and-risk-test",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why might a positive result on a test for a rare disease still be likely to be a false positive?",
+          "memo": "✓ Because the disease is rare, most people tested do not have it (1)\n✓ so even a small error rate produces more false positives than true positives (1)"
+        }
+      ]
+    }
+  ]
+}

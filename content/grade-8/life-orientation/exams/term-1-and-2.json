@@ -1,0 +1,319 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Self-Concept and Self-Esteem",
+      "questions": [
+        {
+          "id": "self-concept-and-self-esteem-self-esteem",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is the difference between self-concept and self-esteem?",
+          "memo": "✓ Self-concept is the picture/beliefs you have about yourself (1)\n✓ Self-esteem is how much you value and like yourself (1)"
+        },
+        {
+          "id": "self-concept-and-self-esteem-influence",
+          "type": "mcq",
+          "prompt": "Which is most likely to LOWER a teenager's self-esteem?",
+          "options": [
+            "Praise for effort",
+            "Supportive friends",
+            "Comparing themselves with edited social media photos",
+            "Achieving a goal"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "self-concept-and-self-esteem-arrogance",
+          "type": "truefalse",
+          "prompt": "Having healthy self-esteem means thinking you are better than everyone else.",
+          "answer": false
+        },
+        {
+          "id": "self-concept-and-self-esteem-smart",
+          "type": "short",
+          "prompt": "In a SMART goal, what does the T stand for?",
+          "answers": [
+            "time-bound",
+            "time bound",
+            "timely",
+            "time"
+          ]
+        },
+        {
+          "id": "self-concept-and-self-esteem-signs",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each behaviour.",
+          "pairs": [
+            {
+              "left": "Tries new things without fear of mistakes",
+              "right": "Healthy self-esteem"
+            },
+            {
+              "left": "Gives in to pressure to be accepted",
+              "right": "Low self-esteem"
+            },
+            {
+              "left": "Accepts compliments politely",
+              "right": "Healthy self-esteem (accepts praise)"
+            },
+            {
+              "left": "Believes they are worthless",
+              "right": "Low self-esteem (feels worthless)"
+            }
+          ]
+        },
+        {
+          "id": "self-concept-and-self-esteem-self-talk",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite this negative self-talk as positive self-talk: 'I'm terrible at sport, so there's no point trying.'",
+          "memo": "✓✓ Any positive, realistic rewrite, e.g. 'I'm still learning; if I practise, I will improve and enjoy it more.' (2)"
+        },
+        {
+          "id": "self-concept-and-self-esteem-build",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Suggest THREE ways a learner can build healthy self-esteem.",
+          "memo": "Any three (1 each): know your strengths; set realistic goals; positive self-talk; accept mistakes; supportive friends; exercise and sleep; limit comparison; help others"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Peer Pressure and Relationships",
+      "questions": [
+        {
+          "id": "peer-pressure-and-relationships-define",
+          "type": "short",
+          "prompt": "What is the influence of people your own age on your behaviour called?",
+          "answers": [
+            "peer pressure"
+          ]
+        },
+        {
+          "id": "peer-pressure-and-relationships-positive",
+          "type": "mcq",
+          "prompt": "Which is an example of POSITIVE peer pressure?",
+          "options": [
+            "Being dared to steal",
+            "Friends encouraging you to join the debating club",
+            "Pressure to vape",
+            "Being pushed to bunk school"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "peer-pressure-and-relationships-assertive",
+          "type": "mcq",
+          "prompt": "Which response is assertive?",
+          "options": [
+            "'Fine, whatever you want.'",
+            "'Shut up, you idiot!'",
+            "'No thanks, I don't want to. Let's do something else.'",
+            "Saying nothing and leaving with them"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "peer-pressure-and-relationships-childline",
+          "type": "numeric",
+          "prompt": "What is the free Childline number in South Africa?",
+          "answer": 116,
+          "tolerance": 0
+        },
+        {
+          "id": "peer-pressure-and-relationships-styles",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each communication style to its description.",
+          "pairs": [
+            {
+              "left": "Passive",
+              "right": "Gives in and ignores own needs"
+            },
+            {
+              "left": "Aggressive",
+              "right": "Attacks or disrespects others"
+            },
+            {
+              "left": "Assertive",
+              "right": "Honest and respectful"
+            }
+          ]
+        },
+        {
+          "id": "peer-pressure-and-relationships-cyber",
+          "type": "truefalse",
+          "prompt": "Sharing a private photo of someone without their permission can be a form of cyberbullying.",
+          "answer": true
+        },
+        {
+          "id": "peer-pressure-and-relationships-bystander",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What can a bystander do when they see someone being bullied?",
+          "memo": "Any two (1 each): don't join in or laugh; support the victim; tell a trusted adult/report it; encourage others to stand up"
+        },
+        {
+          "id": "peer-pressure-and-relationships-unhealthy",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO warning signs of an unhealthy relationship.",
+          "memo": "Any two (1 each): jealousy/control; pressure or threats; name-calling; isolation from friends; dishonesty; violence"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Puberty and Sexuality",
+      "questions": [
+        {
+          "id": "puberty-and-sexuality-boys",
+          "type": "mcq",
+          "prompt": "Which change happens in boys during puberty?",
+          "options": [
+            "Breasts develop",
+            "Menstruation begins",
+            "The voice deepens",
+            "Hips widen"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "puberty-and-sexuality-abstinence",
+          "type": "short",
+          "prompt": "What is choosing not to have sex called?",
+          "answers": [
+            "abstinence"
+          ]
+        },
+        {
+          "id": "puberty-and-sexuality-consent-age",
+          "type": "numeric",
+          "prompt": "What is the legal age of consent for sexual activity in South Africa?",
+          "answer": 16,
+          "tolerance": 0,
+          "unit": "years"
+        },
+        {
+          "id": "puberty-and-sexuality-consent",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain THREE important things about consent.",
+          "memo": "Any three (1 each): must be freely given without pressure; can be withdrawn at any time; must be clear; cannot be given when drunk, drugged or asleep; age of consent is 16"
+        },
+        {
+          "id": "puberty-and-sexuality-changes",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each change during puberty.",
+          "pairs": [
+            {
+              "left": "Growth spurt",
+              "right": "Physical change"
+            },
+            {
+              "left": "Mood swings",
+              "right": "Emotional change"
+            },
+            {
+              "left": "Wanting more independence",
+              "right": "Social change"
+            },
+            {
+              "left": "Pimples",
+              "right": "Physical change (skin)"
+            }
+          ]
+        },
+        {
+          "id": "puberty-and-sexuality-hiv-spread",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO ways in which HIV is spread.",
+          "memo": "Any two (1 each): unprotected sex; sharing needles; infected blood; mother to baby during pregnancy, birth or breastfeeding"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Substance Abuse",
+      "questions": [
+        {
+          "id": "substance-abuse-tolerance",
+          "type": "short",
+          "prompt": "What is it called when a person needs more and more of a substance to get the same effect?",
+          "answers": [
+            "tolerance"
+          ]
+        },
+        {
+          "id": "substance-abuse-nicotine",
+          "type": "mcq",
+          "prompt": "Which addictive substance is found in cigarettes and most vapes?",
+          "options": [
+            "Caffeine",
+            "Nicotine",
+            "Alcohol",
+            "Tik"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "substance-abuse-sanca",
+          "type": "short",
+          "prompt": "Name the South African organisation that helps people with alcohol and drug dependence. (abbreviation)",
+          "answers": [
+            "sanca"
+          ]
+        },
+        {
+          "id": "substance-abuse-substances",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each substance to one effect.",
+          "pairs": [
+            {
+              "left": "Alcohol",
+              "right": "Liver damage and poor judgement"
+            },
+            {
+              "left": "Tik",
+              "right": "Paranoia and rotten teeth"
+            },
+            {
+              "left": "Inhalants",
+              "right": "Sudden death from sniffing"
+            },
+            {
+              "left": "Tobacco",
+              "right": "Lung cancer"
+            }
+          ]
+        },
+        {
+          "id": "substance-abuse-family-effects",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE ways a person's substance abuse can affect their family.",
+          "memo": "Any three (1 each): conflict; broken trust; financial problems; theft; neglect/abuse; emotional stress"
+        },
+        {
+          "id": "substance-abuse-alternatives",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Suggest TWO healthy alternatives to substance use for dealing with stress.",
+          "memo": "Any two (1 each): sport/exercise; talking to someone; hobbies (music, art); youth groups; relaxation; volunteering"
+        }
+      ]
+    }
+  ]
+}

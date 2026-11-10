@@ -1,0 +1,332 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Self-Awareness and Adolescent Change",
+      "questions": [
+        {
+          "id": "self-awareness-and-change-cognitive",
+          "type": "mcq",
+          "prompt": "Questioning rules and thinking about the future are examples of which type of change?",
+          "options": [
+            "Physical",
+            "Social",
+            "Cognitive",
+            "Emotional"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "self-awareness-and-change-johari",
+          "type": "mcq",
+          "prompt": "In the Johari window, things others know about you but you do not know are your…",
+          "options": [
+            "open area",
+            "blind spot",
+            "hidden area",
+            "unknown area"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "self-awareness-and-change-values",
+          "type": "short",
+          "prompt": "What term describes the principles that guide a person's choices and behaviour?",
+          "answers": [
+            "values",
+            "personal values"
+          ]
+        },
+        {
+          "id": "self-awareness-and-change-change-types",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each example to the type of change.",
+          "pairs": [
+            {
+              "left": "Voice deepening",
+              "right": "Physical"
+            },
+            {
+              "left": "Mood swings",
+              "right": "Emotional"
+            },
+            {
+              "left": "Spending more time with peers",
+              "right": "Social"
+            },
+            {
+              "left": "Thinking in abstract ways",
+              "right": "Cognitive"
+            }
+          ]
+        },
+        {
+          "id": "self-awareness-and-change-coping",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Suggest THREE healthy ways to cope with the changes of moving into Grade 10.",
+          "memo": "Any three (1 each): plan and manage time; ask teachers for help; keep routines; exercise; talk to someone; join clubs; focus on what you can control"
+        },
+        {
+          "id": "self-awareness-and-change-feedback",
+          "type": "truefalse",
+          "prompt": "Asking for honest feedback from others can increase your self-awareness.",
+          "answer": true
+        },
+        {
+          "id": "self-awareness-and-change-self-concept",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE strategies to build a positive self-concept.",
+          "memo": "Any three (1 each): positive self-talk; set achievable goals; supportive friends; learn from mistakes; look after health; recognise strengths"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Relationships, Gender Roles and Power",
+      "questions": [
+        {
+          "id": "relationships-and-gender-roles-gender-role",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a gender role?",
+          "memo": "✓ The behaviour, tasks and responsibilities expected of people (1)\n✓ because of their gender, learned from society (1)"
+        },
+        {
+          "id": "relationships-and-gender-roles-learned",
+          "type": "truefalse",
+          "prompt": "Gender roles are learned and can change over time.",
+          "answer": true
+        },
+        {
+          "id": "relationships-and-gender-roles-influence",
+          "type": "mcq",
+          "prompt": "Which is NOT usually an influence on gender roles?",
+          "options": [
+            "Family",
+            "Media",
+            "Blood type",
+            "Culture"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "relationships-and-gender-roles-consent",
+          "type": "mcq",
+          "prompt": "Which statement about consent is correct?",
+          "options": [
+            "Silence means yes",
+            "Consent can be withdrawn at any time",
+            "Being in a relationship means consent is permanent",
+            "A drunk person can give consent"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "relationships-and-gender-roles-gbv-line",
+          "type": "short",
+          "prompt": "What is the toll-free number of the GBV Command Centre?",
+          "answers": [
+            "0800 428 428",
+            "0800428428"
+          ]
+        },
+        {
+          "id": "relationships-and-gender-roles-signs",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE warning signs of an unhealthy, controlling relationship.",
+          "memo": "Any three (1 each): checking phone; controlling friends/movements; jealousy; constant criticism; threats; pressure for sex or images; violence"
+        },
+        {
+          "id": "relationships-and-gender-roles-skills",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each skill to its description.",
+          "pairs": [
+            {
+              "left": "Active listening",
+              "right": "Paying full attention and checking understanding"
+            },
+            {
+              "left": "Setting boundaries",
+              "right": "Making clear what is and is not acceptable to you"
+            },
+            {
+              "left": "Assertiveness",
+              "right": "Expressing needs honestly and respectfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Substance Abuse and Risky Behaviour",
+      "questions": [
+        {
+          "id": "substance-abuse-and-risky-behaviour-brain",
+          "type": "truefalse",
+          "prompt": "The part of the brain that controls planning and impulse control is fully developed by age 13.",
+          "answer": false,
+          "explanation": "It matures in the mid-20s."
+        },
+        {
+          "id": "substance-abuse-and-risky-behaviour-sanca",
+          "type": "short",
+          "prompt": "Name the South African organisation that offers treatment for alcohol and drug dependence (abbreviation).",
+          "answers": [
+            "sanca"
+          ]
+        },
+        {
+          "id": "substance-abuse-and-risky-behaviour-levels",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each effect to the level it mainly affects.",
+          "pairs": [
+            {
+              "left": "Liver damage",
+              "right": "Individual"
+            },
+            {
+              "left": "Money spent on drugs instead of food",
+              "right": "Family"
+            },
+            {
+              "left": "Increase in road deaths",
+              "right": "Community"
+            }
+          ]
+        },
+        {
+          "id": "substance-abuse-and-risky-behaviour-link",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how alcohol use increases the risk of HIV infection.",
+          "memo": "✓ Alcohol lowers inhibitions and impairs judgement (1)\n✓ making unprotected sex more likely (1)\n✓ and increasing the risk of sexual assault (1)"
+        },
+        {
+          "id": "substance-abuse-and-risky-behaviour-protective",
+          "type": "mcq",
+          "prompt": "Which is a protective factor against substance abuse?",
+          "options": [
+            "Friends who use drugs",
+            "Boredom",
+            "Involvement in sport",
+            "Easy access to alcohol"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "substance-abuse-and-risky-behaviour-relapse",
+          "type": "short",
+          "prompt": "What is it called when a person returns to using a substance after a period of not using it?",
+          "answers": [
+            "relapse",
+            "a relapse"
+          ]
+        },
+        {
+          "id": "substance-abuse-and-risky-behaviour-society",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO ways substance abuse affects South African society.",
+          "memo": "Any two (1 each): crime; road accidents; pressure on health services; gang activity; lost productivity; family breakdown"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Human Rights, Democracy and Discrimination",
+      "questions": [
+        {
+          "id": "human-rights-and-democracy-limit",
+          "type": "mcq",
+          "prompt": "Which section of the Constitution allows rights to be limited?",
+          "options": [
+            "Section 9",
+            "Section 16",
+            "Section 29",
+            "Section 36"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "human-rights-and-democracy-hate",
+          "type": "truefalse",
+          "prompt": "Freedom of expression protects hate speech.",
+          "answer": false
+        },
+        {
+          "id": "human-rights-and-democracy-pp",
+          "type": "mcq",
+          "prompt": "Which institution investigates abuse of power by government officials?",
+          "options": [
+            "IEC",
+            "Public Protector",
+            "Auditor-General",
+            "Constitutional Court"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "human-rights-and-democracy-institutions",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each institution to its role.",
+          "pairs": [
+            {
+              "left": "IEC",
+              "right": "Runs elections"
+            },
+            {
+              "left": "Auditor-General",
+              "right": "Audits public spending"
+            },
+            {
+              "left": "Commission for Gender Equality",
+              "right": "Promotes gender equality"
+            },
+            {
+              "left": "Constitutional Court",
+              "right": "Can declare laws unconstitutional"
+            }
+          ]
+        },
+        {
+          "id": "human-rights-and-democracy-fair",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why building ramps for wheelchair users is not unfair discrimination.",
+          "memo": "✓ It treats a group differently in order to give them equal access (1)\n✓ so it advances equality, which the Constitution allows (1)"
+        },
+        {
+          "id": "human-rights-and-democracy-xenophobia",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Which rights are violated during xenophobic attacks? Name TWO.",
+          "memo": "Any two (1 each): right to life; equality; human dignity; freedom and security of the person; property"
+        },
+        {
+          "id": "human-rights-and-democracy-values",
+          "type": "short",
+          "prompt": "Name ONE of the three founding values on which the Bill of Rights is based.",
+          "answers": [
+            "human dignity",
+            "dignity",
+            "equality",
+            "freedom"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Life Skills: Stress, Conflict and Change",
+      "questions": [
+        {
+          "id": "stress-and-change-eustress",
+          "type": "short",
+          "prompt": "What is positive, short-term stress that improves performance called?",
+          "answers": [
+            "eustress"
+          ]
+        },
+        {
+          "id": "stress-and-change-win-win",
+          "type": "mcq",
+          "prompt": "Which conflict style aims for a win–win outcome?",
+          "options": [
+            "Avoiding",
+            "Competing",
+            "Collaborating",
+            "Accommodating"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "stress-and-change-styles",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each conflict style to its outcome.",
+          "pairs": [
+            {
+              "left": "Competing",
+              "right": "Win–lose"
+            },
+            {
+              "left": "Accommodating",
+              "right": "Lose–win"
+            },
+            {
+              "left": "Avoiding",
+              "right": "Lose–lose"
+            },
+            {
+              "left": "Collaborating",
+              "right": "Win–win"
+            }
+          ]
+        },
+        {
+          "id": "stress-and-change-coping",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Contrast TWO healthy and TWO unhealthy ways of coping with exam stress.",
+          "memo": "Healthy (1 each): time management; exercise; sleep; talking; relaxation\nUnhealthy (1 each): procrastination; substances; isolation; aggression"
+        },
+        {
+          "id": "stress-and-change-bottle",
+          "type": "truefalse",
+          "prompt": "Bottling up feelings is a healthy long-term way to deal with stress.",
+          "answer": false
+        },
+        {
+          "id": "stress-and-change-long-term",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO effects of long-term stress on health.",
+          "memo": "Any two (1 each): weakened immune system; high blood pressure; depression/anxiety; sleep problems; heart disease; digestive problems"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Study Skills and Exam Preparation for Matric",
+      "questions": [
+        {
+          "id": "study-skills-for-matric-retrieval",
+          "type": "mcq",
+          "prompt": "Testing yourself without looking at notes is called…",
+          "options": [
+            "re-reading",
+            "retrieval practice",
+            "highlighting",
+            "dual coding"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "study-skills-for-matric-levels",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each verb to its cognitive level.",
+          "pairs": [
+            {
+              "left": "Define",
+              "right": "Knowledge"
+            },
+            {
+              "left": "Explain",
+              "right": "Comprehension"
+            },
+            {
+              "left": "Calculate",
+              "right": "Application"
+            },
+            {
+              "left": "Critically discuss",
+              "right": "Evaluation"
+            }
+          ]
+        },
+        {
+          "id": "study-skills-for-matric-spaced",
+          "type": "truefalse",
+          "prompt": "Spaced practice means revising a topic several times over a period of weeks.",
+          "answer": true
+        },
+        {
+          "id": "study-skills-for-matric-dual",
+          "type": "short",
+          "prompt": "What is the strategy of combining words with diagrams and visuals called? (two words)",
+          "answers": [
+            "dual coding"
+          ]
+        },
+        {
+          "id": "study-skills-for-matric-stuck",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What should you do if you cannot answer a question in an exam?",
+          "memo": "✓ Move on to other questions so you do not lose time (1)\n✓ Return to it later; write what you know for partial marks (1)"
+        },
+        {
+          "id": "study-skills-for-matric-prelims",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why are preliminary examinations important for Grade 12 learners?",
+          "memo": "✓ They give practice under exam conditions (1)\n✓ and show weak areas to focus on before the final exams (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Lifestyle Diseases and Wellness",
+      "questions": [
+        {
+          "id": "lifestyle-diseases-ncd",
+          "type": "short",
+          "prompt": "Lifestyle diseases are also called non-… diseases. (one word)",
+          "answers": [
+            "communicable",
+            "non-communicable"
+          ]
+        },
+        {
+          "id": "lifestyle-diseases-salt",
+          "type": "mcq",
+          "prompt": "Too much salt is a major risk factor for…",
+          "options": [
+            "hypertension",
+            "cervical cancer",
+            "flu",
+            "TB"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "lifestyle-diseases-hpv",
+          "type": "mcq",
+          "prompt": "Which vaccine helps prevent cervical cancer?",
+          "options": [
+            "Measles",
+            "HPV",
+            "BCG",
+            "Polio"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "lifestyle-diseases-bmi",
+          "type": "numeric",
+          "prompt": "Calculate the BMI of a person with mass 64 kg and height 1,60 m.",
+          "answer": 25,
+          "tolerance": 0.05
+        },
+        {
+          "id": "lifestyle-diseases-changeable",
+          "type": "truefalse",
+          "prompt": "Family history is a risk factor that cannot be changed.",
+          "answer": true
+        },
+        {
+          "id": "lifestyle-diseases-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each disease to a major risk factor.",
+          "pairs": [
+            {
+              "left": "Lung cancer",
+              "right": "Smoking"
+            },
+            {
+              "left": "Type 2 diabetes",
+              "right": "Sugary drinks and obesity"
+            },
+            {
+              "left": "Skin cancer",
+              "right": "Excessive sun exposure"
+            },
+            {
+              "left": "Hypertension",
+              "right": "High salt intake"
+            }
+          ]
+        },
+        {
+          "id": "lifestyle-diseases-prevent",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Suggest THREE lifestyle changes that reduce the risk of heart disease.",
+          "memo": "Any three (1 each): stop smoking; exercise; healthy diet; less salt; maintain healthy weight; manage stress; limit alcohol"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Human Rights Violations and Responsible Citizenship",
+      "questions": [
+        {
+          "id": "human-rights-violations-define",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a human rights violation?",
+          "memo": "✓ When a person's rights in the Bill of Rights (1)\n✓ are denied or abused by the state, organisations or individuals (1)"
+        },
+        {
+          "id": "human-rights-violations-s29",
+          "type": "mcq",
+          "prompt": "Which right is violated when learners are taught in collapsing classrooms without textbooks?",
+          "options": [
+            "Right to privacy",
+            "Right to basic education",
+            "Freedom of religion",
+            "Right to vote"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "human-rights-violations-violations",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each violation to a right affected.",
+          "pairs": [
+            {
+              "left": "Child labour on farms",
+              "right": "Children's rights"
+            },
+            {
+              "left": "Attacks on foreign-owned shops",
+              "right": "Right to property"
+            },
+            {
+              "left": "Torture in police custody",
+              "right": "Freedom and security of the person"
+            },
+            {
+              "left": "Hate speech",
+              "right": "Human dignity"
+            }
+          ]
+        },
+        {
+          "id": "human-rights-violations-media",
+          "type": "truefalse",
+          "prompt": "The media can help address human rights violations by exposing them.",
+          "answer": true
+        },
+        {
+          "id": "human-rights-violations-causes",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Discuss THREE causes of human rights violations in South Africa.",
+          "memo": "Any three (1 each): poverty and inequality; prejudice; lack of rights education; weak law enforcement; corruption; abuse of power"
+        },
+        {
+          "id": "human-rights-violations-citizen",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO actions of a responsible citizen when they witness a human rights violation.",
+          "memo": "Any two (1 each): report it to police/SAHRC; support the victim; document evidence safely; speak out; join campaigns"
+        },
+        {
+          "id": "human-rights-violations-pp",
+          "type": "short",
+          "prompt": "Which Chapter 9 institution investigates maladministration and abuse of power in government? (two words)",
+          "answers": [
+            "public protector",
+            "the public protector"
+          ]
+        }
+      ]
+    }
+  ]
+}

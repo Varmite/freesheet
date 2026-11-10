@@ -1,0 +1,357 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Trade Unions",
+      "questions": [
+        {
+          "id": "trade-unions-kadalie",
+          "type": "short",
+          "prompt": "Which union was founded by Clements Kadalie in 1919? (abbreviation)",
+          "answers": [
+            "icu",
+            "industrial and commercial workers' union",
+            "industrial and commercial workers union"
+          ]
+        },
+        {
+          "id": "trade-unions-ccma",
+          "type": "mcq",
+          "prompt": "What does the CCMA do?",
+          "options": [
+            "Collects taxes",
+            "Helps resolve labour disputes",
+            "Sets the price of goods",
+            "Registers companies"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "trade-unions-hours",
+          "type": "numeric",
+          "prompt": "According to the Basic Conditions of Employment Act, what is the maximum number of ordinary working hours per week?",
+          "answer": 45,
+          "tolerance": 0,
+          "unit": "hours"
+        },
+        {
+          "id": "trade-unions-steward",
+          "type": "short",
+          "prompt": "What is the elected union representative at a workplace called?",
+          "answers": [
+            "shop steward",
+            "a shop steward"
+          ]
+        },
+        {
+          "id": "trade-unions-violence",
+          "type": "truefalse",
+          "prompt": "The right to strike includes the right to damage property.",
+          "answer": false
+        },
+        {
+          "id": "trade-unions-laws",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each law to what it does.",
+          "pairs": [
+            {
+              "left": "Labour Relations Act",
+              "right": "Rules for bargaining and strikes; set up the CCMA"
+            },
+            {
+              "left": "Basic Conditions of Employment Act",
+              "right": "Working hours and leave"
+            },
+            {
+              "left": "Employment Equity Act",
+              "right": "Prohibits unfair discrimination"
+            },
+            {
+              "left": "National Minimum Wage Act",
+              "right": "Sets the lowest legal hourly wage"
+            }
+          ]
+        },
+        {
+          "id": "trade-unions-pros-cons",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Discuss TWO advantages and TWO disadvantages of trade unions for the economy.",
+          "memo": "Advantages (1 each): better wages increase spending; safer workplaces; stability through bargaining\nDisadvantages (1 each): strikes reduce production; job losses from high wage demands; violence scares investors"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Credit Transactions: The Creditors Journal",
+      "questions": [
+        {
+          "id": "creditors-journal-creditor",
+          "type": "short",
+          "prompt": "What is a supplier to whom the business owes money called?",
+          "answers": [
+            "creditor",
+            "a creditor"
+          ]
+        },
+        {
+          "id": "creditors-journal-creditor-type",
+          "type": "mcq",
+          "prompt": "Creditors are classified as…",
+          "options": [
+            "assets",
+            "liabilities",
+            "income",
+            "expenses"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "creditors-journal-source",
+          "type": "mcq",
+          "prompt": "Which source document is used to record credit purchases?",
+          "options": [
+            "Duplicate invoice",
+            "Original invoice",
+            "Receipt",
+            "Cash register roll"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "creditors-journal-owed",
+          "type": "numeric",
+          "prompt": "A business bought goods on credit for R7 000 and R5 000, then paid the creditor R8 000. How much is still owed?",
+          "answer": 4000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "creditors-journal-debit-stock",
+          "type": "truefalse",
+          "prompt": "When the Creditors Journal is posted, the Trading stock account is debited.",
+          "answer": true
+        },
+        {
+          "id": "creditors-journal-journals",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each transaction to the journal where it is recorded.",
+          "pairs": [
+            {
+              "left": "Bought stock on credit",
+              "right": "Creditors Journal"
+            },
+            {
+              "left": "Sold goods on credit",
+              "right": "Debtors Journal"
+            },
+            {
+              "left": "Received payment from a debtor",
+              "right": "Cash Receipts Journal"
+            },
+            {
+              "left": "Paid a creditor",
+              "right": "Cash Payments Journal"
+            }
+          ]
+        },
+        {
+          "id": "creditors-journal-adv",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO advantages of buying on credit.",
+          "memo": "Any two (1 each): sell goods before paying; helps cash flow; builds credit record; no need for large cash amounts"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Sectors of the Economy and Functions of a Business",
+      "questions": [
+        {
+          "id": "sectors-and-functions-of-a-business-primary",
+          "type": "mcq",
+          "prompt": "Which activity belongs to the primary sector?",
+          "options": [
+            "Making furniture",
+            "Mining coal",
+            "Selling cellphones",
+            "Teaching"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "sectors-and-functions-of-a-business-secondary",
+          "type": "short",
+          "prompt": "Which sector processes raw materials into finished products?",
+          "answers": [
+            "secondary",
+            "secondary sector",
+            "the secondary sector"
+          ]
+        },
+        {
+          "id": "sectors-and-functions-of-a-business-largest",
+          "type": "mcq",
+          "prompt": "Which sector contributes the most to South Africa's GDP?",
+          "options": [
+            "Primary",
+            "Secondary",
+            "Tertiary"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sectors-and-functions-of-a-business-informal",
+          "type": "truefalse",
+          "prompt": "A spaza shop that is not registered is part of the informal sector.",
+          "answer": true
+        },
+        {
+          "id": "sectors-and-functions-of-a-business-sectors-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each business to its sector.",
+          "pairs": [
+            {
+              "left": "Fishing company",
+              "right": "Primary"
+            },
+            {
+              "left": "Clothing factory",
+              "right": "Secondary"
+            },
+            {
+              "left": "Insurance company",
+              "right": "Tertiary"
+            },
+            {
+              "left": "Building contractor",
+              "right": "Secondary (construction)"
+            }
+          ]
+        },
+        {
+          "id": "sectors-and-functions-of-a-business-functions-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each task to the business function.",
+          "pairs": [
+            {
+              "left": "Advertising on radio",
+              "right": "Marketing"
+            },
+            {
+              "left": "Interviewing new staff",
+              "right": "Human resources"
+            },
+            {
+              "left": "Drawing up a budget",
+              "right": "Financial"
+            },
+            {
+              "left": "Sponsoring a school sports day",
+              "right": "Public relations"
+            }
+          ]
+        },
+        {
+          "id": "sectors-and-functions-of-a-business-four-ps",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name the 4 Ps of marketing.",
+          "memo": "✓✓ Product, price, place, promotion (½ each)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: The Business Plan",
+      "questions": [
+        {
+          "id": "the-business-plan-define",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a business plan?",
+          "memo": "✓ A written document describing the business idea and goals (1)\n✓ and how it will be run, marketed and financed / expected profit (1)"
+        },
+        {
+          "id": "the-business-plan-why",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO reasons why an entrepreneur needs a business plan.",
+          "memo": "Any two (1 each): to get finance; to test if the idea is viable; to set goals; to identify risks; to guide decisions"
+        },
+        {
+          "id": "the-business-plan-internal",
+          "type": "mcq",
+          "prompt": "Which part of a SWOT analysis is an external factor?",
+          "options": [
+            "Strengths",
+            "Weaknesses",
+            "Opportunities",
+            "None of these"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "the-business-plan-swot-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each factor for a new car wash.",
+          "pairs": [
+            {
+              "left": "The owner is friendly and hard-working",
+              "right": "Strength"
+            },
+            {
+              "left": "The owner has very little capital",
+              "right": "Weakness"
+            },
+            {
+              "left": "A taxi rank is opening nearby",
+              "right": "Opportunity"
+            },
+            {
+              "left": "Water restrictions are announced",
+              "right": "Threat"
+            }
+          ]
+        },
+        {
+          "id": "the-business-plan-breakeven",
+          "type": "numeric",
+          "prompt": "A business sells T-shirts for R120. Each costs R70 to make. Fixed costs are R2 000 a month. How many T-shirts must be sold to break even?",
+          "answer": 40,
+          "tolerance": 0,
+          "unit": "T-shirts"
+        },
+        {
+          "id": "the-business-plan-profit",
+          "type": "numeric",
+          "prompt": "Total income is R9 500 and total costs are R6 200. Calculate the profit.",
+          "answer": 3300,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "the-business-plan-nyda",
+          "type": "short",
+          "prompt": "Which government agency helps young entrepreneurs? (abbreviation)",
+          "answers": [
+            "nyda",
+            "national youth development agency"
+          ]
+        }
+      ]
+    }
+  ]
+}

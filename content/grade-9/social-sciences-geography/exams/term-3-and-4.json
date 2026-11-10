@@ -1,0 +1,319 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Development and Quality of Life",
+      "questions": [
+        {
+          "id": "development-and-quality-of-life-gdp-pc",
+          "type": "short",
+          "prompt": "Which indicator is the total value of goods and services produced divided by the population? (write the abbreviation with 'per capita')",
+          "answers": [
+            "gdp per capita"
+          ]
+        },
+        {
+          "id": "development-and-quality-of-life-hdi",
+          "type": "mcq",
+          "prompt": "Which THREE things does the HDI combine?",
+          "options": [
+            "Life expectancy, education and income",
+            "Population, land area and rainfall",
+            "Exports, imports and debt",
+            "Birth rate, death rate and migration"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "development-and-quality-of-life-calc",
+          "type": "numeric",
+          "prompt": "A country's GDP is R900 billion and its population is 30 million. Calculate the GDP per capita in rand.",
+          "answer": 30000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "development-and-quality-of-life-gini",
+          "type": "truefalse",
+          "prompt": "A Gini coefficient close to 0 means a country is very unequal.",
+          "answer": false,
+          "explanation": "0 means perfect equality; values close to 1 mean great inequality."
+        },
+        {
+          "id": "development-and-quality-of-life-indicators",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each indicator to the type of development it measures.",
+          "pairs": [
+            {
+              "left": "Literacy rate",
+              "right": "Education"
+            },
+            {
+              "left": "Infant mortality rate",
+              "right": "Health"
+            },
+            {
+              "left": "GDP per capita",
+              "right": "Income / economy"
+            },
+            {
+              "left": "Access to piped water",
+              "right": "Services and infrastructure"
+            }
+          ]
+        },
+        {
+          "id": "development-and-quality-of-life-causes",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give FOUR reasons why some countries remain less developed.",
+          "memo": "Any four (1 each): colonial history; unfair trade/raw material exports; debt; natural disasters; disease; corruption/conflict; poor infrastructure; low education levels"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Development Issues and Strategies",
+      "questions": [
+        {
+          "id": "development-strategies-ngo",
+          "type": "short",
+          "prompt": "What does NGO stand for?",
+          "answers": [
+            "non-governmental organisation",
+            "non-governmental organization",
+            "non governmental organisation",
+            "non governmental organization"
+          ]
+        },
+        {
+          "id": "development-strategies-emergency",
+          "type": "mcq",
+          "prompt": "Food parcels given to flood victims are an example of…",
+          "options": [
+            "development aid",
+            "emergency aid",
+            "tied aid",
+            "microfinance"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "development-strategies-stokvel",
+          "type": "short",
+          "prompt": "What is the South African name for a community savings club?",
+          "answers": [
+            "stokvel",
+            "a stokvel",
+            "stokvels"
+          ]
+        },
+        {
+          "id": "development-strategies-dependency",
+          "type": "truefalse",
+          "prompt": "One disadvantage of aid is that it can create dependency.",
+          "answer": true
+        },
+        {
+          "id": "development-strategies-programmes",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each programme to what it provides.",
+          "pairs": [
+            {
+              "left": "EPWP",
+              "right": "Temporary jobs building infrastructure"
+            },
+            {
+              "left": "NSFAS",
+              "right": "Funding for tertiary studies"
+            },
+            {
+              "left": "School Nutrition Programme",
+              "right": "Meals for learners"
+            },
+            {
+              "left": "Child support grant",
+              "right": "Money for caregivers of children"
+            }
+          ]
+        },
+        {
+          "id": "development-strategies-women",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how educating girls helps a country to develop.",
+          "memo": "Any three (1 each): women earn higher incomes; healthier families/better child nutrition; lower birth rates; children more likely to attend school; more skilled workforce"
+        },
+        {
+          "id": "development-strategies-microfinance",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is microfinance and how does it help development?",
+          "memo": "✓ Small loans given to poor people without collateral (1)\n✓ They can start or grow small businesses and earn an income (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Surface Forces: Weathering and Erosion",
+      "questions": [
+        {
+          "id": "weathering-and-erosion-weather-def",
+          "type": "short",
+          "prompt": "What is the breaking down of rock in place called?",
+          "answers": [
+            "weathering"
+          ]
+        },
+        {
+          "id": "weathering-and-erosion-frost",
+          "type": "mcq",
+          "prompt": "Frost action is a type of…",
+          "options": [
+            "chemical weathering",
+            "physical weathering",
+            "biological weathering",
+            "deposition"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "weathering-and-erosion-hot-wet",
+          "type": "truefalse",
+          "prompt": "Chemical weathering is fastest in hot, wet climates.",
+          "answer": true
+        },
+        {
+          "id": "weathering-and-erosion-agents",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each landform to the agent that formed it.",
+          "pairs": [
+            {
+              "left": "V-shaped valley",
+              "right": "River"
+            },
+            {
+              "left": "Sand dune",
+              "right": "Wind"
+            },
+            {
+              "left": "Sea arch",
+              "right": "Waves"
+            },
+            {
+              "left": "U-shaped valley",
+              "right": "Glacier"
+            }
+          ]
+        },
+        {
+          "id": "weathering-and-erosion-freeze-thaw",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how freeze–thaw weathering breaks rocks.",
+          "memo": "✓ Water enters cracks in the rock (1)\n✓ At night it freezes and expands, widening the crack (1)\n✓ Repeated freezing and thawing eventually breaks the rock apart (1)"
+        },
+        {
+          "id": "weathering-and-erosion-roots",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain ONE way in which living things weather rocks.",
+          "memo": "✓✓ e.g. plant roots grow in cracks and push them apart / lichens produce acids / animals burrow and expose rock (2 for a clear explanation)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Landforms, Mass Movement and Soil Erosion",
+      "questions": [
+        {
+          "id": "landforms-and-mass-movement-mesa",
+          "type": "mcq",
+          "prompt": "A flat-topped hill that is wider than it is high is a…",
+          "options": [
+            "butte",
+            "mesa",
+            "conical hill",
+            "spur"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "landforms-and-mass-movement-upper",
+          "type": "mcq",
+          "prompt": "Waterfalls and V-shaped valleys are typical of a river's…",
+          "options": [
+            "upper course",
+            "middle course",
+            "lower course",
+            "delta"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "landforms-and-mass-movement-donga",
+          "type": "short",
+          "prompt": "What South African word describes a deep gully caused by soil erosion?",
+          "answers": [
+            "donga",
+            "dongas"
+          ]
+        },
+        {
+          "id": "landforms-and-mass-movement-contour-plough",
+          "type": "truefalse",
+          "prompt": "Ploughing up and down a slope helps prevent soil erosion.",
+          "answer": false,
+          "explanation": "Contour ploughing, along the slope, slows water flow."
+        },
+        {
+          "id": "landforms-and-mass-movement-lower-course",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each landform to its course.",
+          "pairs": [
+            {
+              "left": "Gorge",
+              "right": "Upper course"
+            },
+            {
+              "left": "Meander with river cliff",
+              "right": "Middle course"
+            },
+            {
+              "left": "Oxbow lake",
+              "right": "Lower course"
+            },
+            {
+              "left": "Delta",
+              "right": "River mouth"
+            }
+          ]
+        },
+        {
+          "id": "landforms-and-mass-movement-meander",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how a meander changes shape over time.",
+          "memo": "✓ Water flows fastest on the outside of the bend and erodes a river cliff (1)\n✓ Water is slowest on the inside and deposits sediment (slip-off slope) (1)\n✓ The bend becomes bigger and may be cut off to form an oxbow lake (1)"
+        },
+        {
+          "id": "landforms-and-mass-movement-mass-trigger",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO factors that can trigger a landslide.",
+          "memo": "Any two (1 each): heavy rain; earthquakes; removing vegetation; building/cutting into slopes; mining; undercutting by rivers or waves"
+        }
+      ]
+    }
+  ]
+}

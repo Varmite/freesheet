@@ -1,0 +1,560 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 115,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 14 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Reading for Comprehension",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "TEXT A: Every drop a story",
+          "text": "[1] My grandmother, uMaZulu, never trusted a tap. In her yard in Makhanda stood three green rainwater tanks, a row of plastic drums and, beside the kitchen door, an enamel basin that caught the water from every rinse of every pot. As a child visiting from Johannesburg, I thought her habits were quaint, even a little embarrassing. Why, I wondered, would anyone carry a basin of greasy water to the vegetable garden when there was a perfectly good tap a few metres away? Water, I believed, simply arrived. You turned a handle and the world obliged.\n\n[2] That belief did not survive the summer I turned fifteen. The municipality announced “temporary interruptions”, a phrase that turned out to mean eleven days without a drop from the taps. While neighbours queued at a borehole with buckets and wheelbarrows, my grandmother calmly ladled water from her tanks, boiled it and shared it with anyone who knocked. Old Mr Botha from next door, who had once laughed at her drums, arrived at her gate on the third morning, hat in hand. “Water is not a service,” she told me, handing a full bucket to a woman she had never met. “It is a relationship.”\n\n[3] I have thought about those words often. South Africa is a water-scarce country: our average annual rainfall is roughly half the global average, and much of what falls evaporates before it ever reaches a river or a dam. Yet many of us live as though we were in a rainforest. We hose down driveways, leave taps running while we brush our teeth and fill swimming pools in the middle of a drought. We are, in short, spending an inheritance we did not earn.\n\n[4] Cape Town learnt this lesson the hard way. In early 2018 the city came frighteningly close to “Day Zero”, the day on which the taps in most homes would have been switched off and residents would have queued for a daily ration at collection points. What saved the city was not a miracle but millions of small decisions: shorter showers, buckets catching the water in the shower, toilets flushed only when necessary. Within months, the city had roughly halved its daily water use. The crisis proved something remarkable — ordinary people, acting together, can change the course of a disaster.\n\n[5] Unfortunately, memory is short. Once the dams filled again, many old habits came creeping back, like weeds after rain. Engineers warn that leaking pipes, ageing infrastructure and a growing population mean that the next crisis is not a question of if, but when. A large share of the water that municipalities clean and pump is lost to leaks before it ever reaches a home. Every burst pipe left unrepaired for a week is a small Day Zero of its own. We pour clean water into broken pipes and then wonder why our taps run dry.\n\n[6] Of course, it would be unfair to place the entire burden on individuals. Government must repair crumbling pipes, act against illegal connections and invest in new sources of water, such as desalination plants and the recycling of wastewater. Agriculture, which uses the largest share of the country's water, and industry must account for every litre. But blaming others is easy; it asks nothing of us. My grandmother could not fix the municipal pipes, yet her tanks carried an entire street through eleven dry days.\n\n[7] What would it look like if each of us treated water as a relationship rather than a service? It might mean fixing the dripping tap we have ignored for months; a tap that drips steadily can waste thousands of litres in a year. It might mean installing a rainwater tank, planting an indigenous garden that needs little watering, or using the water from the washing machine on the lawn. It might mean asking our schools to collect the rain that runs off their roofs. It might mean teaching our younger brothers and sisters that a running tap is not a sign of wealth but of carelessness. None of these acts is heroic. All of them matter.\n\n[8] My grandmother passed away last winter. At her funeral, the minister spoke about her faith, her laughter and her famous umphokoqo. But what I remember most is the line of neighbours who arrived early that morning, each carrying a bucket of water from their own homes, to fill the drums she had always kept for others. Nobody had organised it. Nobody needed to. They simply understood, as she had always understood, that water — like kindness — is only ever borrowed, and must be passed on."
+        }
+      ],
+      "questions": [
+        {
+          "id": "reading-for-comprehension-q1",
+          "type": "mcq",
+          "prompt": "You need to find the year in which Cape Town nearly reached “Day Zero” in a long article, and you have very little time. Which reading strategy is most suitable?",
+          "options": [
+            "Intensive reading",
+            "Skimming",
+            "Scanning",
+            "Reading the article aloud"
+          ],
+          "answer": 2,
+          "explanation": "Scanning means moving your eyes quickly over the text looking only for a specific detail, such as a date or a number."
+        },
+        {
+          "id": "reading-for-comprehension-q3",
+          "type": "truefalse",
+          "prompt": "If a question says “in your own words”, a well-chosen quotation from the passage will still earn full marks.",
+          "answer": false,
+          "explanation": "An own-words question tests whether you understand the idea well enough to rephrase it. Copying the key words from the text earns no marks."
+        },
+        {
+          "id": "reading-for-comprehension-q4",
+          "type": "truefalse",
+          "prompt": "Tone refers to the writer's attitude, whereas mood refers to the atmosphere that the reader experiences.",
+          "answer": true,
+          "explanation": "Tone belongs to the writer or speaker (their attitude); mood is the feeling or atmosphere created for the reader."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Summary Writing",
+      "questions": [
+        {
+          "id": "summary-writing-q1",
+          "type": "truefalse",
+          "prompt": "In the Home Language summary question, you must write no more than 90 words.",
+          "answer": true,
+          "explanation": "The upper limit is 90 words. Anything after the last full sentence within the limit is not marked."
+        },
+        {
+          "id": "summary-writing-q7",
+          "type": "short",
+          "prompt": "What term describes restating an idea in your own words while keeping its original meaning?",
+          "answers": [
+            "paraphrase",
+            "paraphrasing",
+            "paraphrased"
+          ],
+          "explanation": "To paraphrase is to express the same meaning in different words. The summary instruction “in your own words” requires you to paraphrase."
+        },
+        {
+          "id": "summary-writing-q8",
+          "type": "numeric",
+          "prompt": "How many words are in this summary sentence? “Indigenous crops tolerate drought, are highly nutritious and cost little to grow.” Give a whole number.",
+          "answer": 12,
+          "tolerance": 0,
+          "explanation": "Indigenous (1) crops (2) tolerate (3) drought (4) are (5) highly (6) nutritious (7) and (8) cost (9) little (10) to (11) grow (12). Every word counts, including short words such as “and” and “to”."
+        },
+        {
+          "id": "summary-writing-q10",
+          "type": "mcq",
+          "prompt": "A learner identifies six correct points, writes in fluent paragraph form and uses his own words throughout. According to the DBE language-mark distribution, how many language marks out of 3 should he receive?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "0"
+          ],
+          "answer": 2,
+          "explanation": "Without verbatim quoting, 6 to 7 correct points earn 3 language marks (4 to 5 points earn 2; 1 to 3 points earn 1). His total would be 6 + 3 = 9 out of 10."
+        },
+        {
+          "id": "summary-writing-q11",
+          "type": "mcq",
+          "prompt": "Nomsa's summary contains 104 words. What happens when it is marked?",
+          "options": [
+            "The marker reads up to the end of the last sentence within the 90-word limit and ignores the rest.",
+            "She automatically receives zero for the whole question.",
+            "She loses exactly 1 mark but every point is still credited.",
+            "Nothing happens, because the word limit is only a guideline."
+          ],
+          "answer": 0,
+          "explanation": "Points that come after the word limit are simply not read, so any points in the extra words are lost."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Grammar and Sentence Structure",
+      "questions": [
+        {
+          "id": "grammar-and-sentence-structure-clause",
+          "type": "mcq",
+          "prompt": "Identify the type of clause in bold: 'The learner **who won the prize** is my cousin.'",
+          "options": [
+            "Adverbial",
+            "Adjectival (relative)",
+            "Noun",
+            "Main"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "grammar-and-sentence-structure-me-i",
+          "type": "truefalse",
+          "prompt": "'Between you and I' is grammatically correct.",
+          "answer": false
+        },
+        {
+          "id": "grammar-and-sentence-structure-dangling",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Correct the dangling modifier: 'Walking into the hall, the noise was deafening.'",
+          "memo": "✓✓ e.g. 'As I walked into the hall, I found the noise deafening.' / 'Walking into the hall, we heard a deafening noise.' (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Poetry: Analysing a Poem",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Ozymandias – Percy Bysshe Shelley (1818; public domain)",
+          "text": "I met a traveller from an antique land,\nWho said—\"Two vast and trunkless legs of stone\nStand in the desert. . . . Near them, on the sand,\nHalf sunk a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed;\nAnd on the pedestal, these words appear:\nMy name is Ozymandias, King of Kings;\nLook on my Works, ye Mighty, and despair!\nNothing beside remains. Round the decay\nOf that colossal Wreck, boundless and bare\nThe lone and level sands stretch far away.\""
+        }
+      ],
+      "questions": [
+        {
+          "id": "poetry-analysis-form",
+          "type": "mcq",
+          "prompt": "'Ozymandias' is written in the form of a…",
+          "options": [
+            "ballad",
+            "sonnet",
+            "haiku",
+            "free-verse poem"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "poetry-analysis-lines",
+          "type": "numeric",
+          "prompt": "How many lines does a sonnet have?",
+          "answer": 14,
+          "tolerance": 0
+        },
+        {
+          "id": "poetry-analysis-volta",
+          "type": "short",
+          "prompt": "What is the turning point in a sonnet called?",
+          "answers": [
+            "volta",
+            "the volta",
+            "turn"
+          ]
+        },
+        {
+          "id": "poetry-analysis-sculptor",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What does the poem suggest about art through the sculptor?",
+          "memo": "✓ The sculptor captured the king's passions so well that they survive (1)\n✓ suggesting art outlasts the powerful people it depicts (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Narrative and Descriptive Essays",
+      "questions": [
+        {
+          "id": "narrative-and-descriptive-essays-q15",
+          "type": "open",
+          "marks": 8,
+          "prompt": "Read this paragraph from a learner's descriptive essay called 'My Gran's House':\n\n“My gran's house is very nice. It is old and it is big. One day I went there and my cousin fell out of the mango tree and we had to take him to hospital. The garden is very beautiful and the flowers are nice. It was as quiet as a mouse. I love it there.”\n\n(a) Identify THREE weaknesses in the paragraph. (3)\n(b) Rewrite it as an effective descriptive paragraph of 80-100 words. (5)",
+          "memo": "(a) Any THREE of the following (1 mark each):\n✓ Vague, empty adjectives ('nice', 'big', 'beautiful') with no specific detail\n✓ It tells rather than shows; there is no sensory detail beyond a little sight\n✓ It drifts into a storyline (the cousin's fall and the hospital trip), which does not belong in a descriptive essay\n✓ It uses a cliché ('as quiet as a mouse')\n✓ There is no clear dominant impression\n✓ Inconsistent tense (present 'is' and past 'was')\n✓ Short, repetitive sentence structures ('It is... it is...')\n\n(b) Model answer: Gran's house leans into the hillside like an old woman resting on a walking stick. Its tin roof ticks in the afternoon heat, and the wooden floors creak a greeting under every step. In the kitchen the air is thick with the smell of Sunlight soap and simmering beans. Outside, the mango tree throws a pool of green shade over the yard, where bees drone lazily among the marigolds. Even the clock in the passage seems to tick more slowly here, as if time itself has decided to rest. (89 words)\n\nMarking for (b):\n✓ Clear dominant impression sustained throughout (for example, peace, age, rest) (1)\n✓ Details appealing to at least three senses (1)\n✓ Original figurative language (no clichés) (1)\n✓ No storyline; consistent tense (1)\n✓ Precise vocabulary, varied and correct sentences, 80-100 words (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Formal and Friendly Letters",
+      "questions": [
+        {
+          "id": "formal-and-friendly-letters-q1",
+          "type": "mcq",
+          "prompt": "A formal letter begins with 'Dear Sir/Madam'. Which closing is correct?",
+          "options": [
+            "Yours sincerely",
+            "Yours faithfully",
+            "Lots of love",
+            "Your's faithfully"
+          ],
+          "answer": 1,
+          "explanation": "When the reader's name is not known ('Sir/Madam'), close with 'Yours faithfully'. 'Yours' never has an apostrophe."
+        },
+        {
+          "id": "formal-and-friendly-letters-q14",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Identify FIVE errors in the format or register of this formal letter to a hardware store, and correct each one.\n\n14 Acacia Avenue\nPolokwane\n0700\n\n3/4/26\n\nHey Manager\n\nI'm writing to ask if your store would sponsor paint for our school's classroom makeover project...\n\nYours sincerely\n\n(signature)",
+          "memo": "Any FIVE of the following, each identified and corrected (1 mark each):\n✓ The recipient's address is missing: add the title, store name and address (for example, The Manager, BuildRite Hardware, PO Box 220, Polokwane 0700)\n✓ The date is written in numbers only: write it in full (3 April 2026)\n✓ 'Hey Manager' is too informal: use 'Dear Sir/Madam'\n✓ There is no subject line: add one, such as REQUEST FOR SPONSORSHIP OF PAINT FOR CLASSROOM PROJECT\n✓ 'I'm' is a contraction: write 'I am'\n✓ 'Yours sincerely' does not match an unnamed reader: use 'Yours faithfully'\n✓ The writer's full name is missing below the signature: print it (and the position, for example RCL Chairperson)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Novel Study: The Picture of Dorian Gray",
+      "questions": [
+        {
+          "id": "novel-study-painter",
+          "type": "short",
+          "prompt": "Name the painter of Dorian's portrait.",
+          "answers": [
+            "basil hallward",
+            "basil"
+          ]
+        },
+        {
+          "id": "novel-study-portrait",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain the symbolism of the portrait.",
+          "memo": "✓ It represents Dorian's soul/conscience (1)\n✓ It shows the moral effect of his sins while his face stays young (1)\n✓ Its hidden location reflects his attempt to hide his corruption (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 8: Vocabulary, Figures of Speech and Editing",
+      "questions": [
+        {
+          "id": "vocabulary-and-editing-stationery",
+          "type": "mcq",
+          "prompt": "Which word means paper, pens and envelopes?",
+          "options": [
+            "stationary",
+            "stationery",
+            "stationnery",
+            "stationaire"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "vocabulary-and-editing-prefix",
+          "type": "short",
+          "prompt": "Give the antonym of 'legal' formed by adding a prefix.",
+          "answers": [
+            "illegal"
+          ]
+        },
+        {
+          "id": "vocabulary-and-editing-redundant",
+          "type": "truefalse",
+          "prompt": "'Free gift' is an example of redundancy (tautology).",
+          "answer": true
+        },
+        {
+          "id": "vocabulary-and-editing-pun",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the pun in a bakery advert: 'We knead you!'",
+          "memo": "✓ 'Knead' means to work dough (1)\n✓ It sounds like 'need', suggesting the bakery needs/values its customers (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 9: Critical Language Awareness",
+      "questions": [
+        {
+          "id": "critical-language-awareness-q2",
+          "type": "mcq",
+          "prompt": "“Over two million South Africans have already switched to SunVolt solar geysers. Don't be left behind!”\n\nWhich propaganda technique is used in this advertisement?",
+          "options": [
+            "Bandwagon",
+            "Plain folks",
+            "Name-calling",
+            "Glittering generalities"
+          ],
+          "answer": 0,
+          "explanation": "The advertisement suggests that “everyone” is already doing it and that you will be left out if you do not join them. That is the bandwagon technique."
+        },
+        {
+          "id": "critical-language-awareness-q3",
+          "type": "truefalse",
+          "prompt": "The connotation of a word is its literal, dictionary meaning.",
+          "answer": false,
+          "explanation": "The literal dictionary meaning is the denotation. The connotation is the set of emotional and cultural associations the word carries."
+        },
+        {
+          "id": "critical-language-awareness-q5",
+          "type": "short",
+          "prompt": "What term describes a fixed, oversimplified and generalised idea about a whole group of people, for example “All teenagers are lazy”?",
+          "answers": [
+            "stereotype",
+            "a stereotype",
+            "stereotyping",
+            "stereotypes"
+          ],
+          "explanation": "A stereotype ignores individual differences and applies one fixed idea to everyone in a group."
+        },
+        {
+          "id": "critical-language-awareness-q6",
+          "type": "short",
+          "prompt": "Give a gender-inclusive word to replace “chairman” in the sentence: “The chairman will open the meeting.”",
+          "answers": [
+            "chairperson",
+            "chair",
+            "the chairperson",
+            "the chair",
+            "convenor",
+            "convener",
+            "presiding officer"
+          ],
+          "explanation": "“Chairperson” or “chair” does not assume that the person leading the meeting is a man."
+        },
+        {
+          "id": "critical-language-awareness-q9",
+          "type": "mcq",
+          "prompt": "“Yoh, bru, that maths test was hectic, hey!”\n\nThe register of this sentence is best described as:",
+          "options": [
+            "formal",
+            "informal, using slang and colloquial expressions",
+            "technical jargon",
+            "archaic"
+          ],
+          "answer": 1,
+          "explanation": "“Yoh”, “bru”, “hectic” (meaning very difficult) and the tag “hey” are casual, conversational South African expressions."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 10: Visual Literacy: Advertisements",
+      "questions": [
+        {
+          "id": "visual-literacy-advertisements-q6",
+          "type": "short",
+          "prompt": "What is the term for the main block of text in an advertisement that gives information about the product and its benefits?",
+          "answers": [
+            "copy",
+            "body copy",
+            "the copy",
+            "the body copy",
+            "body text"
+          ],
+          "explanation": "The copy (body copy) is the smaller text that develops the message introduced by the headline."
+        },
+        {
+          "id": "visual-literacy-advertisements-q9",
+          "type": "mcq",
+          "prompt": "An advertisement for a 4x4 vehicle shows the vehicle photographed from a **low angle**, towering against the sky on top of a mountain. What effect does the low angle create?",
+          "options": [
+            "It makes the vehicle look small and vulnerable.",
+            "It shows the fine detail of the vehicle's interior.",
+            "It makes the vehicle look powerful, dominant and heroic.",
+            "It suggests that the vehicle is cheap and practical."
+          ],
+          "answer": 2,
+          "explanation": "Looking up at a subject makes it seem larger and more powerful. A high angle would make it seem small or vulnerable."
+        },
+        {
+          "id": "visual-literacy-advertisements-q11",
+          "type": "open",
+          "marks": 3,
+          "prompt": "An advertisement for Sizwe Savings Bank (invented) shows a bank consultant smiling warmly as she listens to a young client. The slogan reads: “Sizwe Savings Bank. We take an interest in you.”\n\nExplain the pun in the slogan and comment on why it is effective.",
+          "memo": "✓ First meaning: the bank cares about its clients and pays attention to their needs (it is “interested” in them), which the image of the consultant listening warmly supports. (1)\n✓ Second meaning: the bank pays interest on savings, so your money grows. (1)\n✓ Effectiveness: the pun is clever and memorable and combines an emotional promise (personal care) with a financial benefit (earning interest), building trust in the brand. (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 11: Visual Literacy: Cartoons and Comic Strips",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Described cartoon (original)",
+          "text": "Frame 1: A man in a suit stands at a podium covered in microphones, labelled 'MINISTER OF ENERGY'. He smiles broadly and says: 'Load-shedding will end very soon. Our plan is working!'\nFrame 2: The lights in the hall go out. Only his teeth and eyes are visible in the dark.\nFrame 3: In the dark, a voice from the audience says: 'Soon, as in… now?'"
+        }
+      ],
+      "questions": [
+        {
+          "id": "visual-literacy-cartoons-caricature",
+          "type": "short",
+          "prompt": "What is a drawing that exaggerates a person's features for comic effect called?",
+          "answers": [
+            "caricature",
+            "a caricature"
+          ]
+        },
+        {
+          "id": "visual-literacy-cartoons-satire",
+          "type": "mcq",
+          "prompt": "Satire uses humour mainly to…",
+          "options": [
+            "entertain children",
+            "criticise and encourage change",
+            "sell products",
+            "teach grammar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "visual-literacy-cartoons-thought",
+          "type": "truefalse",
+          "prompt": "Cloud-shaped bubbles in a cartoon usually show a character's thoughts.",
+          "answer": true
+        },
+        {
+          "id": "visual-literacy-cartoons-irony",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain the irony in the described cartoon.",
+          "memo": "✓ The minister says load-shedding will end soon (1)\n✓ The power fails immediately (1)\n✓ This contradicts his promise and exposes it as empty (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 12: Drama Study: Hamlet",
+      "questions": [
+        {
+          "id": "drama-study-setting",
+          "type": "short",
+          "prompt": "In which country is Hamlet set?",
+          "answers": [
+            "denmark"
+          ]
+        },
+        {
+          "id": "drama-study-polonius",
+          "type": "mcq",
+          "prompt": "Where is Polonius hiding when Hamlet kills him?",
+          "options": [
+            "In the graveyard",
+            "Behind a curtain (arras)",
+            "On the battlements",
+            "In the chapel"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "drama-study-appearance",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Discuss the theme of appearance versus reality, with TWO examples.",
+          "memo": "✓ Explanation of the theme (1)\n✓ Example 1, e.g. Claudius seems a good king but is a murderer (1)\n✓ Example 2, e.g. Hamlet pretends to be mad (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 13: Argumentative and Discursive Essays",
+      "questions": [
+        {
+          "id": "argumentative-and-discursive-essays-q4",
+          "type": "truefalse",
+          "prompt": "In an argumentative essay, briefly conceding a reasonable point made by the opposing side and then rebutting it can make your argument more convincing.",
+          "answer": true,
+          "explanation": "Conceding and rebutting shows that you have considered the other side and still have good reasons for your stance. This strengthens your credibility (ethos)."
+        },
+        {
+          "id": "argumentative-and-discursive-essays-q5",
+          "type": "mcq",
+          "prompt": "Identify the device in this sentence: 'Must we wait until another child falls into a pit toilet before we act?'",
+          "options": [
+            "Rhetorical question",
+            "Antithesis",
+            "Hyperbole",
+            "Ad hominem"
+          ],
+          "answer": 0,
+          "explanation": "The question is asked for effect, not to get an answer. It forces the reader to think about the urgency of the problem."
+        },
+        {
+          "id": "argumentative-and-discursive-essays-q6",
+          "type": "mcq",
+          "prompt": "Read the extract and identify the essay type.\n\n'Supporters of a higher sugar tax point out that sugary drinks contribute to diabetes and tooth decay, placing a heavy burden on public clinics. Opponents, on the other hand, argue that the tax hurts poorer households and costs jobs in the beverage industry. Both sides raise concerns that policy-makers cannot ignore.'",
+          "options": [
+            "Argumentative",
+            "Discursive",
+            "Narrative",
+            "Descriptive"
+          ],
+          "answer": 1,
+          "explanation": "The extract presents both sides fairly ('Supporters... Opponents, on the other hand...') and uses neutral, impersonal language without taking a side. These are features of a discursive essay."
+        },
+        {
+          "id": "argumentative-and-discursive-essays-q11",
+          "type": "short",
+          "prompt": "Name the fallacy: 'If we allow learners to wear sneakers on Fridays, soon they will come to school in pyjamas and stop doing homework altogether.'",
+          "answers": [
+            "slippery slope",
+            "slippery-slope",
+            "the slippery slope",
+            "slippery slope fallacy",
+            "slippery slope argument"
+          ],
+          "explanation": "A slippery slope claims that one small step will inevitably lead to a chain of increasingly bad results, without showing how each step follows."
+        },
+        {
+          "id": "argumentative-and-discursive-essays-q12",
+          "type": "numeric",
+          "prompt": "According to the CAPS essay rubric, how many of the 50 marks for a Home Language essay are allocated to **Content and planning**?",
+          "answer": 30,
+          "tolerance": 0,
+          "unit": "marks",
+          "explanation": "Content and planning = 30, Language, style and editing = 15, Structure = 5, giving a total of 50."
+        },
+        {
+          "id": "argumentative-and-discursive-essays-q13",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Rewrite the following sentences in a formal register suitable for an argumentative essay:\n\n'I reckon kids shouldn't have to pay for taxis to school 'cause it's super expensive and loads of parents are battling. The gov must sort it out ASAP!!!'",
+          "memo": "Model answer: 'Learners should not have to pay for their transport to school, because taxi fares are a heavy burden on many families who are already struggling financially. The government should address this problem urgently.'\n\nMark allocation:\n✓ Slang and casual words removed or replaced ('reckon', 'kids', 'super', 'loads', 'battling', 'gov', 'sort it out', 'ASAP') (1)\n✓ Contractions written out in full ('should not', 'because') (1)\n✓ Precise, formal vocabulary used (e.g. 'learners', 'heavy burden', 'struggling financially', 'address') (1)\n✓ Excessive punctuation removed; sentences grammatically correct with the original meaning kept (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 14: Speeches, Reports and Reviews",
+      "questions": [
+        {
+          "id": "speeches-reports-and-reviews-q3",
+          "type": "mcq",
+          "prompt": "Which sentence is best suited to the **Findings** section of a formal report?",
+          "options": [
+            "I was shocked to see how disgusting the toilets were!",
+            "We think the toilets are probably quite dirty.",
+            "The toilets should be cleaned twice a day.",
+            "Four of the six toilets were found to be blocked."
+          ],
+          "answer": 3,
+          "explanation": "Findings are objective, specific facts, often in the passive voice. Option 1 is emotive, option 2 is vague and subjective, and option 3 is a recommendation."
+        },
+        {
+          "id": "speeches-reports-and-reviews-q12",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Rewrite each sentence in the objective style suitable for a formal report. Use the passive voice where possible.\n(a) We interviewed thirty learners at break.\n(b) I think the tuck shop is way too expensive.\n(c) We checked all the fire extinguishers.\n(d) The principal must fix the broken gate now!",
+          "memo": "(a) Thirty learners were interviewed at break. ✓ (1)\n(b) Most learners interviewed considered the tuck-shop prices too high. / The tuck-shop prices were found to be higher than those of nearby shops. ✓ (1) (Award the mark for any objective, non-emotive version without 'I think' and slang.)\n(c) All the fire extinguishers were checked. ✓ (1)\n(d) It is recommended that the broken gate be repaired urgently. / The broken gate should be repaired as a matter of urgency. ✓ (1) (No exclamation mark; a modal such as 'should' or 'It is recommended' is used.)"
+        }
+      ]
+    }
+  ]
+}

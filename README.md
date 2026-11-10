@@ -14,7 +14,8 @@ Rust code is used on Android.
 * **Study**: notes for every topic, organised by grade, subject and term, with practice questions on the
   notes you have just read. Multiple-choice, true/false, matching, one-word and calculation answers are
   marked instantly. For written answers you compare your work with the memo and award your own marks.
-* **Exams**: full exam papers in CAPS format with an optional countdown timer, automatic saving (you can
+* **Exams**: November papers and shorter Term 1 and 2 and Term 3 and 4 papers for every subject, in CAPS
+  format with an optional countdown timer, automatic saving (you can
   leave and resume), self-marking with the memo, results with CAPS achievement levels, and a review of
   every answer.
 * **AI marking** (optional, computers only, off until you turn it on in Settings): an AI model that runs

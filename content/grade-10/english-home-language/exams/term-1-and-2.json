@@ -1,0 +1,410 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 7 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Reading for Comprehension",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice passage: The Last Bookshop on Long Street (written for FreeSheet)",
+          "text": "[1] When Mr Abrahams opened his bookshop in 1987, there were six others on the same street. Today his is the only one left. The shelves still sag under second-hand paperbacks, and the shop still smells of dust and coffee, but the customers are fewer and greyer.\n\n[2] 'People tell me books are dying,' he says, smiling. 'They have been dying for as long as I have been selling them.' He points to a group of teenagers in the corner, sitting on the floor with a stack of comics. 'Those three come every Saturday. They hardly buy anything, but they read for hours. That is not a dying habit.'\n\n[3] Still, the numbers worry him. Rent has tripled in ten years, and online stores sell new books for less than he pays for them. To survive, he has started a reading club and a book-swap table, and he hosts poetry evenings on the first Friday of every month. 'A bookshop cannot just sell books any more,' he says. 'It has to be a place people want to be.'"
+        }
+      ],
+      "questions": [
+        {
+          "id": "reading-for-comprehension-year",
+          "type": "numeric",
+          "prompt": "In which year did the bookshop open?",
+          "answer": 1987,
+          "tolerance": 0
+        },
+        {
+          "id": "reading-for-comprehension-level",
+          "type": "mcq",
+          "prompt": "'Why do you think Mr Abrahams smiles when he says books are dying?' This is a(n)…",
+          "options": [
+            "literal question",
+            "inferential question",
+            "reorganisation question",
+            "spelling question"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "reading-for-comprehension-greyer",
+          "type": "mcq",
+          "prompt": "What does 'the customers are fewer and greyer' suggest?",
+          "options": [
+            "Customers wear grey clothes",
+            "There are fewer customers and most are older",
+            "The shop is badly lit",
+            "Customers are unhappy"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "reading-for-comprehension-rent",
+          "type": "truefalse",
+          "prompt": "According to paragraph 3, the rent has doubled in ten years.",
+          "answer": false
+        },
+        {
+          "id": "reading-for-comprehension-quote",
+          "type": "short",
+          "prompt": "Quote FOUR consecutive words from paragraph 3 that show the shop must offer more than books.",
+          "answers": [
+            "cannot just sell books",
+            "a bookshop cannot just",
+            "a place people want",
+            "place people want to"
+          ]
+        },
+        {
+          "id": "reading-for-comprehension-evaluate",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Do you agree that 'a bookshop cannot just sell books any more'? Give reasons.",
+          "memo": "✓ Clear stance (1)\n✓✓ Two well-reasoned points, e.g. online competition is cheaper; people want experiences and community (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Summary Writing",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice text: Why walk? (written for FreeSheet)",
+          "text": "Walking is the simplest exercise there is, and it is free. Doctors say that a brisk thirty-minute walk each day strengthens the heart and lowers blood pressure. It also helps people to control their weight. Walkers often say that they sleep better, and research shows that walking outdoors reduces stress and improves mood. Because you need no equipment, almost anyone can do it, from children to grandparents. Walking to school or work instead of driving also saves money on fuel and cuts pollution. Finally, walking with friends or family is a chance to talk and spend time together."
+        }
+      ],
+      "questions": [
+        {
+          "id": "summary-writing-count",
+          "type": "truefalse",
+          "prompt": "You should write the number of words you used in brackets at the end.",
+          "answer": true
+        },
+        {
+          "id": "summary-writing-generalise",
+          "type": "short",
+          "prompt": "Replace the list with one word: 'cars, buses, trains and taxis'.",
+          "answers": [
+            "transport",
+            "vehicles"
+          ]
+        },
+        {
+          "id": "summary-writing-cut",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each item to what you should do with it in a summary.",
+          "pairs": [
+            {
+              "left": "A main point",
+              "right": "Rewrite in your own words"
+            },
+            {
+              "left": "A quotation",
+              "right": "Leave it out"
+            },
+            {
+              "left": "A list of examples",
+              "right": "Replace with a general word"
+            }
+          ]
+        },
+        {
+          "id": "summary-writing-rewrite",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite in your own words: 'Walking outdoors reduces stress and improves mood.'",
+          "memo": "✓✓ e.g. 'Being active outside makes people feel calmer and happier.' (meaning kept, own words) (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Language Structures and Conventions",
+      "questions": [
+        {
+          "id": "language-structures-and-conventions-adverb",
+          "type": "mcq",
+          "prompt": "Identify the adverb: 'The old man walked slowly to the bus stop.'",
+          "options": [
+            "old",
+            "walked",
+            "slowly",
+            "stop"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "language-structures-and-conventions-its",
+          "type": "mcq",
+          "prompt": "Choose the correct word: 'The cat licked ___ paw.'",
+          "options": [
+            "it's",
+            "its",
+            "its'",
+            "it is"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "language-structures-and-conventions-everyone",
+          "type": "truefalse",
+          "prompt": "'Everyone have finished their work' is grammatically correct.",
+          "answer": false
+        },
+        {
+          "id": "language-structures-and-conventions-complex",
+          "type": "short",
+          "prompt": "Is this sentence simple, compound or complex? 'Although it rained, the match continued.'",
+          "answers": [
+            "complex"
+          ]
+        },
+        {
+          "id": "language-structures-and-conventions-passive",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Change to the passive voice: 'The learners painted the classroom.'",
+          "memo": "✓ The classroom was painted (1)\n✓ by the learners. (1)"
+        },
+        {
+          "id": "language-structures-and-conventions-combine",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Join into one complex sentence: 'The road was flooded. We took another route.'",
+          "memo": "✓✓ e.g. 'Because the road was flooded, we took another route.' (subordinating conjunction and correct punctuation) (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Poetry: Figurative Language and Sound",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "I Wandered Lonely as a Cloud – William Wordsworth (1807; public domain)",
+          "text": "I wandered lonely as a cloud\nThat floats on high o'er vales and hills,\nWhen all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.\n\nContinuous as the stars that shine\nAnd twinkle on the milky way,\nThey stretched in never-ending line\nAlong the margin of a bay:\nTen thousand saw I at a glance,\nTossing their heads in sprightly dance.\n\nThe waves beside them danced; but they\nOut-did the sparkling waves in glee:\nA poet could not but be gay,\nIn such a jocund company:\nI gazed—and gazed—but little thought\nWhat wealth the show to me had brought:\n\nFor oft, when on my couch I lie\nIn vacant or in pensive mood,\nThey flash upon that inward eye\nWhich is the bliss of solitude;\nAnd then my heart with pleasure fills,\nAnd dances with the daffodils."
+        }
+      ],
+      "questions": [
+        {
+          "id": "poetry-analysis-simile",
+          "type": "mcq",
+          "prompt": "Which line contains a simile?",
+          "options": [
+            "'A host, of golden daffodils'",
+            "'I wandered lonely as a cloud'",
+            "'Fluttering and dancing in the breeze'",
+            "'They flash upon that inward eye'"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "poetry-analysis-scheme",
+          "type": "short",
+          "prompt": "Give the rhyme scheme of each stanza using letters.",
+          "answers": [
+            "ababcc"
+          ]
+        },
+        {
+          "id": "poetry-analysis-stanza-lines",
+          "type": "numeric",
+          "prompt": "How many lines are there in each stanza?",
+          "answer": 6,
+          "tolerance": 0
+        },
+        {
+          "id": "poetry-analysis-personify",
+          "type": "truefalse",
+          "prompt": "The daffodils are personified as dancers.",
+          "answer": true
+        },
+        {
+          "id": "poetry-analysis-crowd",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why does the speaker call the daffodils 'a crowd'?",
+          "memo": "✓ There are very many of them (1)\n✓ and it personifies them as lively company, contrasting with his loneliness (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: The Novel: Plot, Character and Narration",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice extract (written for FreeSheet)",
+          "text": "Ayanda had promised herself she would not cry at the station. She kept the promise until the train began to move and she saw her grandmother on the platform, small in her blue coat, waving a handkerchief as though she were directing traffic. Then the tears came, hot and embarrassing, and the man opposite pretended to read his newspaper.\n\nShe had never been further than Mthatha. Now she was going to Johannesburg, to a school with a library bigger than her whole village, and she did not know a single person there. She touched the envelope in her pocket: her grandmother's letter, which she had been told not to open until she arrived."
+        }
+      ],
+      "questions": [
+        {
+          "id": "the-novel-climax",
+          "type": "short",
+          "prompt": "What is the turning point of greatest tension in a plot called?",
+          "answers": [
+            "climax",
+            "the climax"
+          ]
+        },
+        {
+          "id": "the-novel-pov",
+          "type": "mcq",
+          "prompt": "From which point of view is the practice extract told?",
+          "options": [
+            "First person",
+            "Second person",
+            "Third person",
+            "Omniscient first person"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "the-novel-conflict",
+          "type": "mcq",
+          "prompt": "Ayanda's struggle not to cry is an example of…",
+          "options": [
+            "internal conflict",
+            "character vs nature",
+            "character vs society",
+            "no conflict"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "the-novel-dynamic",
+          "type": "truefalse",
+          "prompt": "A dynamic character changes during the story.",
+          "answer": true
+        },
+        {
+          "id": "the-novel-omniscient",
+          "type": "truefalse",
+          "prompt": "An omniscient narrator can only report one character's thoughts.",
+          "answer": false
+        },
+        {
+          "id": "the-novel-letter",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How does the writer create suspense at the end of the extract?",
+          "memo": "✓ The unopened letter (1)\n✓ makes the reader wonder what the grandmother has written (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Critical Language Awareness",
+      "questions": [
+        {
+          "id": "critical-language-awareness-opinion",
+          "type": "truefalse",
+          "prompt": "'This is the tastiest pizza in Durban' is a fact.",
+          "answer": false
+        },
+        {
+          "id": "critical-language-awareness-techniques",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each example to its technique.",
+          "pairs": [
+            {
+              "left": "'Doctors recommend it.'",
+              "right": "Appeal to authority"
+            },
+            {
+              "left": "'Can you afford to miss out?'",
+              "right": "Rhetorical question"
+            },
+            {
+              "left": "'Fresh, fast, friendly.'",
+              "right": "Rule of three"
+            },
+            {
+              "left": "'A heartless attack on helpless pensioners.'",
+              "right": "Emotive language"
+            }
+          ]
+        },
+        {
+          "id": "critical-language-awareness-authority",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why might a reader be sceptical of 'Nine out of ten dentists recommend Brite toothpaste'?",
+          "memo": "✓ We are not told how many dentists were asked or who paid for the survey (1)\n✓ The claim is designed to persuade, not inform (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Visual Literacy: Advertisements and Cartoons",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Described advertisement (original)",
+          "text": "A smiling teenager in a soccer kit drinks from a bright green bottle. Water droplets sparkle on the bottle. HEADLINE (large white capitals): 'GAME ON!' BODY COPY: 'Fuel up with ZEST Sports Water: zero sugar, all-natural lemon flavour, and the electrolytes your body needs.' SLOGAN (bottom right, beside a lightning-bolt logo): 'ZEST. Feel the charge.'"
+        }
+      ],
+      "questions": [
+        {
+          "id": "visual-literacy-green",
+          "type": "mcq",
+          "prompt": "What does the green colour of the bottle most likely suggest?",
+          "options": [
+            "Danger",
+            "Health and nature",
+            "Luxury",
+            "Sadness"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "visual-literacy-elements",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each ZEST element to its type.",
+          "pairs": [
+            {
+              "left": "'GAME ON!'",
+              "right": "Headline"
+            },
+            {
+              "left": "Lightning bolt",
+              "right": "Logo"
+            },
+            {
+              "left": "'zero sugar, all-natural lemon flavour'",
+              "right": "Body copy"
+            },
+            {
+              "left": "Teenager in soccer kit",
+              "right": "Visual"
+            }
+          ]
+        },
+        {
+          "id": "visual-literacy-droplets",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why does the designer show water droplets on the bottle?",
+          "memo": "✓ They suggest the drink is cold (1)\n✓ and refreshing, making it more appealing (1)"
+        }
+      ]
+    }
+  ]
+}

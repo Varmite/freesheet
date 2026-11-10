@@ -1,0 +1,293 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 70,
+  "totalMarks": 40,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 3 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Essay Writing: Narrative, Descriptive and Argumentative",
+      "questions": [
+        {
+          "id": "essay-writing-length",
+          "type": "mcq",
+          "prompt": "How long should a Grade 10 HL essay usually be?",
+          "options": [
+            "100–150 words",
+            "250–300 words",
+            "500–600 words",
+            "1 000 words"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "essay-writing-argument",
+          "type": "mcq",
+          "prompt": "Which essay type presents BOTH sides of an issue fairly?",
+          "options": [
+            "Narrative",
+            "Argumentative",
+            "Discursive",
+            "Descriptive"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "essay-writing-senses",
+          "type": "short",
+          "prompt": "Which essay type relies most on sensory details?",
+          "answers": [
+            "descriptive",
+            "descriptive essay",
+            "a descriptive essay"
+          ]
+        },
+        {
+          "id": "essay-writing-topic",
+          "type": "short",
+          "prompt": "What is the sentence that states the main idea of a paragraph called?",
+          "answers": [
+            "topic sentence",
+            "the topic sentence",
+            "a topic sentence"
+          ]
+        },
+        {
+          "id": "essay-writing-dialogue",
+          "type": "truefalse",
+          "prompt": "In a narrative, you should start a new paragraph when a new character speaks.",
+          "answer": true
+        },
+        {
+          "id": "essay-writing-process",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each stage of the writing process to its activity.",
+          "pairs": [
+            {
+              "left": "Plan",
+              "right": "Brainstorm ideas"
+            },
+            {
+              "left": "Draft",
+              "right": "Write a first version"
+            },
+            {
+              "left": "Revise",
+              "right": "Improve content and structure"
+            },
+            {
+              "left": "Proofread",
+              "right": "Correct spelling and punctuation"
+            }
+          ]
+        },
+        {
+          "id": "essay-writing-counter",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why should an argumentative essay mention and rebut a counter-argument?",
+          "memo": "✓ It shows the writer has considered other views (1)\n✓ and strengthens the argument by showing why the opposing view is weaker (1)"
+        },
+        {
+          "id": "essay-writing-plan",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Plan an argumentative essay on 'School uniforms should be abolished': state your stance and give TWO reasons.",
+          "memo": "✓ Clear stance (1)\n✓✓ Two relevant, distinct reasons (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Drama: Elements and Techniques",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Extract: Act 2, Scene 2 (the balcony scene; public domain)",
+          "text": "JULIET: O Romeo, Romeo! wherefore art thou Romeo?\nDeny thy father and refuse thy name;\nOr, if thou wilt not, be but sworn my love,\nAnd I'll no longer be a Capulet.\n\nROMEO [Aside]: Shall I hear more, or shall I speak at this?\n\nJULIET: 'Tis but thy name that is my enemy;\nThou art thyself, though not a Montague.\n…\nWhat's in a name? that which we call a rose\nBy any other name would smell as sweet."
+        }
+      ],
+      "questions": [
+        {
+          "id": "drama-setting",
+          "type": "short",
+          "prompt": "In which city is Romeo and Juliet set?",
+          "answers": [
+            "verona"
+          ]
+        },
+        {
+          "id": "drama-wherefore",
+          "type": "mcq",
+          "prompt": "In 'wherefore art thou Romeo?', 'wherefore' means…",
+          "options": [
+            "where",
+            "why",
+            "when",
+            "how"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "drama-family",
+          "type": "mcq",
+          "prompt": "To which family does Juliet belong?",
+          "options": [
+            "Montague",
+            "Capulet",
+            "Verona",
+            "Mercutio"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "drama-aside",
+          "type": "truefalse",
+          "prompt": "An aside is heard by the audience but not by other characters on stage.",
+          "answer": true
+        },
+        {
+          "id": "drama-soliloquy",
+          "type": "short",
+          "prompt": "What is a speech by a character alone on stage revealing private thoughts called?",
+          "answers": [
+            "soliloquy",
+            "a soliloquy"
+          ]
+        },
+        {
+          "id": "drama-terms",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Dramatic irony",
+              "right": "The audience knows more than a character"
+            },
+            {
+              "left": "Foil",
+              "right": "A contrasting character"
+            },
+            {
+              "left": "Stage directions",
+              "right": "Instructions for actors and staging"
+            },
+            {
+              "left": "Comic relief",
+              "right": "Humour that eases tension"
+            }
+          ]
+        },
+        {
+          "id": "drama-irony",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How does the Prologue create dramatic irony throughout the play?",
+          "memo": "✓ It tells the audience the lovers will die (1)\n✓ so the audience watches their hopeful plans knowing they will end in tragedy (1)"
+        },
+        {
+          "id": "drama-romeo-aside",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What does Romeo's aside reveal about his state of mind?",
+          "memo": "✓ He is torn/uncertain whether to reveal himself (1)\n✓ and eager to hear more of Juliet's feelings (1)"
+        },
+        {
+          "id": "drama-flaw",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Suggest a fatal flaw shared by Romeo and Juliet, and explain it.",
+          "memo": "✓ Impulsiveness/haste (1)\n✓ e.g. they marry within a day of meeting, and act rashly at the end (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Transactional Writing: Letters, Emails and Notices",
+      "questions": [
+        {
+          "id": "transactional-writing-faithfully",
+          "type": "mcq",
+          "prompt": "Which closing goes with 'Dear Sir/Madam'?",
+          "options": [
+            "Yours sincerely",
+            "Yours faithfully",
+            "Love",
+            "Cheers"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "transactional-writing-length",
+          "type": "mcq",
+          "prompt": "How long is a Grade 10 HL transactional text usually?",
+          "options": [
+            "50–80 words",
+            "120–150 words",
+            "250–300 words",
+            "400 words"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "transactional-writing-rsvp",
+          "type": "short",
+          "prompt": "What abbreviation on an invitation asks guests to reply?",
+          "answers": [
+            "rsvp",
+            "r.s.v.p.",
+            "r.s.v.p"
+          ]
+        },
+        {
+          "id": "transactional-writing-subject",
+          "type": "truefalse",
+          "prompt": "A formal letter should include a subject line.",
+          "answer": true
+        },
+        {
+          "id": "transactional-writing-contractions",
+          "type": "truefalse",
+          "prompt": "Slang and contractions are appropriate in a letter of application.",
+          "answer": false
+        },
+        {
+          "id": "transactional-writing-formats",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each text to a feature it must have.",
+          "pairs": [
+            {
+              "left": "Email",
+              "right": "Subject line and recipient's address"
+            },
+            {
+              "left": "Invitation",
+              "right": "Venue, time and RSVP"
+            },
+            {
+              "left": "Agenda",
+              "right": "Numbered items for discussion"
+            },
+            {
+              "left": "Notice",
+              "right": "Heading and who, what, when, where"
+            }
+          ]
+        },
+        {
+          "id": "transactional-writing-register",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite formally: 'Your bus driver was super rude to my kid, not cool!'",
+          "memo": "✓✓ e.g. 'I wish to report that one of your bus drivers was discourteous to my son.' (formal vocabulary, no slang) (2)"
+        }
+      ]
+    }
+  ]
+}

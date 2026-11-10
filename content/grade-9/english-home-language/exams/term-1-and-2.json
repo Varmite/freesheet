@@ -1,0 +1,526 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 115,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 6 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Reading for Comprehension and Critical Reading",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice passage: Should Schools Ban Cellphones? (original text; the survey and principal are fictional)",
+          "text": "In 2023, a survey of 2 000 South African teachers found that seven out of ten believed cellphones distract learners during lessons. Some schools have responded by banning phones completely, locking them away in pouches until the final bell.\n\nSupporters of a ban argue that phones fuel cyberbullying and make it almost impossible to concentrate when a notification can interrupt every few minutes. One principal in Pretoria claims that marks at her school rose after the ban, although no independent study has confirmed this.\n\nYet a blanket ban seems an old-fashioned answer to a modern problem. Phones are powerful learning tools: dictionaries, calculators, cameras and libraries in a pocket. Surely the wiser choice is to teach young people to use them responsibly, rather than to pretend that the digital world stops at the school gate?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "critical-reading-fact",
+          "type": "mcq",
+          "prompt": "Which statement is a FACT?",
+          "options": [
+            "Soccer is the most exciting sport.",
+            "Cape Town has the most beautiful beaches.",
+            "The 2010 FIFA World Cup was held in South Africa.",
+            "Everyone should learn to cook."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "critical-reading-survey",
+          "type": "short",
+          "prompt": "According to the passage, how many teachers out of ten believed cellphones distract learners?",
+          "answers": [
+            "seven",
+            "7",
+            "seven out of ten",
+            "7 out of 10"
+          ]
+        },
+        {
+          "id": "critical-reading-view",
+          "type": "mcq",
+          "prompt": "What is the writer's view on banning cellphones?",
+          "options": [
+            "Strongly in favour of a total ban",
+            "Against a total ban; favours teaching responsible use",
+            "Has no opinion",
+            "Thinks phones should be banned at home too"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "critical-reading-rhetorical",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Identify the rhetorical question in the final paragraph and explain its purpose.",
+          "memo": "✓ 'Surely the wiser choice is…school gate?' (1)\n✓ It persuades the reader to agree; the answer is presented as obvious (1)"
+        },
+        {
+          "id": "critical-reading-connotation",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each word for a thin person to its connotation.",
+          "pairs": [
+            {
+              "left": "Slender",
+              "right": "Positive"
+            },
+            {
+              "left": "Scrawny",
+              "right": "Negative"
+            },
+            {
+              "left": "Thin",
+              "right": "Neutral"
+            }
+          ]
+        },
+        {
+          "id": "critical-reading-opinion-words",
+          "type": "truefalse",
+          "prompt": "Words such as 'best', 'should' and 'surely' often signal opinions.",
+          "answer": true
+        },
+        {
+          "id": "critical-reading-own-view",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Do you agree with the writer? Give your own view with TWO reasons.",
+          "memo": "✓ Clear opinion (1)\n✓✓ Two relevant, well-explained reasons (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Tenses and Concord",
+      "questions": [
+        {
+          "id": "tenses-and-concord-tense-name",
+          "type": "mcq",
+          "prompt": "Name the tense: 'They had been waiting for an hour.'",
+          "options": [
+            "Past continuous",
+            "Past perfect",
+            "Past perfect continuous",
+            "Present perfect"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "tenses-and-concord-participle",
+          "type": "short",
+          "prompt": "Give the past participle of 'write'.",
+          "answers": [
+            "written"
+          ]
+        },
+        {
+          "id": "tenses-and-concord-seen",
+          "type": "short",
+          "prompt": "Correct the verb: 'I have saw that movie before.' (one word)",
+          "answers": [
+            "seen"
+          ]
+        },
+        {
+          "id": "tenses-and-concord-box",
+          "type": "mcq",
+          "prompt": "Choose the correct verb: 'The box of books ___ heavy.'",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "be"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "tenses-and-concord-neither",
+          "type": "mcq",
+          "prompt": "Choose the correct verb: 'Neither the coach nor the players ___ happy with the result.'",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "has been"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "tenses-and-concord-everyone",
+          "type": "truefalse",
+          "prompt": "'Everyone are welcome' is grammatically correct.",
+          "answer": false
+        },
+        {
+          "id": "tenses-and-concord-tenses-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Name the tense of each sentence.",
+          "pairs": [
+            {
+              "left": "She sings in the choir.",
+              "right": "Simple present"
+            },
+            {
+              "left": "We were eating supper.",
+              "right": "Past continuous"
+            },
+            {
+              "left": "He has lost his key.",
+              "right": "Present perfect"
+            },
+            {
+              "left": "They will travel tomorrow.",
+              "right": "Simple future"
+            }
+          ]
+        },
+        {
+          "id": "tenses-and-concord-concord-fix",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Correct the concord errors: 'There is many reasons why the team are losing.'",
+          "memo": "✓ There are many reasons (1)\n✓ the team is losing (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Argumentative, Discursive and Reflective Essays",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Example argumentative paragraph (original)",
+          "text": "Firstly, a longer school day would leave learners exhausted rather than educated. Research on adolescent sleep shows that teenagers already struggle to get the eight to ten hours they need. Adding another hour of lessons would mean less time for homework, chores and rest, so learners would arrive at school even more tired. Therefore, extending the school day is likely to harm, not help, learners' results."
+        }
+      ],
+      "questions": [
+        {
+          "id": "argumentative-and-reflective-essays-types",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each essay type to its purpose.",
+          "pairs": [
+            {
+              "left": "Argumentative",
+              "right": "Persuade the reader to accept one side"
+            },
+            {
+              "left": "Discursive",
+              "right": "Present both sides in a balanced way"
+            },
+            {
+              "left": "Reflective",
+              "right": "Explore a personal experience and what you learned"
+            }
+          ]
+        },
+        {
+          "id": "argumentative-and-reflective-essays-thesis",
+          "type": "short",
+          "prompt": "What is the statement of your main position in an argumentative essay called?",
+          "answers": [
+            "thesis",
+            "thesis statement",
+            "the thesis"
+          ]
+        },
+        {
+          "id": "argumentative-and-reflective-essays-peel",
+          "type": "short",
+          "prompt": "In PEEL, what does the first E stand for?",
+          "answers": [
+            "evidence"
+          ]
+        },
+        {
+          "id": "argumentative-and-reflective-essays-contrast",
+          "type": "mcq",
+          "prompt": "Which linking word shows contrast?",
+          "options": [
+            "Furthermore",
+            "Therefore",
+            "However",
+            "For example"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "argumentative-and-reflective-essays-discursive-view",
+          "type": "truefalse",
+          "prompt": "In a discursive essay, your personal opinion should dominate every paragraph.",
+          "answer": false
+        },
+        {
+          "id": "argumentative-and-reflective-essays-evidence",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What evidence is used in the example paragraph and why is it effective?",
+          "memo": "✓ Research on adolescent sleep / teenagers need 8 to 10 hours (1)\n✓ It is factual and supports the point, making it more convincing than opinion alone (1)"
+        },
+        {
+          "id": "argumentative-and-reflective-essays-write-intro",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Write an introduction for an argumentative essay on 'Learners should be allowed to use cellphones in class.'",
+          "memo": "✓ Introduces the topic (1)\n✓ Clear thesis stating one side (1)\n✓ Engaging opening / outline of arguments; formal register (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Poetry Analysis",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "The Last Taxi Home (an original poem written for FreeSheet)",
+          "text": "The city exhales its final breath of day;\nthe robots blink their tired amber eyes.\nAt the rank, the vendors fold their stalls away,\nand pigeons count the crumbs beneath grey skies.\n\nMy mother waits, her handbag on her knee,\nher shoes still dusty from a stranger's floor.\nShe scrubbed their kitchens bright for them to see,\nthen caught the train, and now she waits once more.\n\nThe last taxi swings in, its music loud,\nand she climbs in, a queen without a crown.\nShe does not know I watch her from the crowd,\nor how I'll build her palace in this town."
+        }
+      ],
+      "questions": [
+        {
+          "id": "poetry-analysis-diction",
+          "type": "short",
+          "prompt": "What is the term for a poet's choice of words?",
+          "answers": [
+            "diction"
+          ]
+        },
+        {
+          "id": "poetry-analysis-lines",
+          "type": "numeric",
+          "prompt": "How many lines are there in a sonnet?",
+          "answer": 14,
+          "tolerance": 0
+        },
+        {
+          "id": "poetry-analysis-rhyme",
+          "type": "mcq",
+          "prompt": "What is the rhyme scheme of each stanza of 'The Last Taxi Home'?",
+          "options": [
+            "AABB",
+            "ABAB",
+            "ABBA",
+            "Free verse"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "poetry-analysis-queen",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain the metaphor 'a queen without a crown'.",
+          "memo": "✓ The mother is compared to a queen (1)\n✓ She has dignity, strength and worth (1)\n✓ but no wealth, power or recognition (no crown) (1)"
+        },
+        {
+          "id": "poetry-analysis-tone",
+          "type": "mcq",
+          "prompt": "Which word best describes the speaker's tone in the final stanza?",
+          "options": [
+            "Bitter",
+            "Admiring and determined",
+            "Bored",
+            "Sarcastic"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "poetry-analysis-terms",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Enjambment",
+              "right": "Line runs on without punctuation"
+            },
+            {
+              "left": "Caesura",
+              "right": "Pause in the middle of a line"
+            },
+            {
+              "left": "Refrain",
+              "right": "Repeated line or phrase"
+            },
+            {
+              "left": "Volta",
+              "right": "Turning point in a poem"
+            }
+          ]
+        },
+        {
+          "id": "poetry-analysis-theme",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Write a short paragraph on the theme of the poem, referring to TWO quotations.",
+          "memo": "✓ Clear statement of theme, e.g. dignity and sacrifice of working parents / a child's love and gratitude (1)\n✓ Quotation with explanation (1)\n✓ Second quotation with explanation (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Active and Passive Voice, Direct and Reported Speech",
+      "questions": [
+        {
+          "id": "voice-and-reported-speech-identify",
+          "type": "mcq",
+          "prompt": "Which sentence is in the passive voice?",
+          "options": [
+            "The dog chased the cat.",
+            "The cat was chased by the dog.",
+            "The dog is chasing the cat.",
+            "The cat ran away."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "voice-and-reported-speech-active",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Change to the active voice: 'The match will be won by our team.'",
+          "memo": "✓ Our team (1)\n✓ will win the match. (1)"
+        },
+        {
+          "id": "voice-and-reported-speech-will",
+          "type": "short",
+          "prompt": "In reported speech (after 'said'), what does 'will' usually become?",
+          "answers": [
+            "would"
+          ]
+        },
+        {
+          "id": "voice-and-reported-speech-tomorrow",
+          "type": "mcq",
+          "prompt": "In reported speech, 'tomorrow' becomes…",
+          "options": [
+            "yesterday",
+            "the next day",
+            "today",
+            "the previous day"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "voice-and-reported-speech-changes",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each direct-speech word to its reported-speech form.",
+          "pairs": [
+            {
+              "left": "here",
+              "right": "there"
+            },
+            {
+              "left": "now",
+              "right": "then"
+            },
+            {
+              "left": "can",
+              "right": "could"
+            },
+            {
+              "left": "these",
+              "right": "those"
+            }
+          ]
+        },
+        {
+          "id": "voice-and-reported-speech-reported-question",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Change to reported speech: 'Have you seen my keys?' Mom asked me.",
+          "memo": "✓ Mom asked me if/whether (1)\n✓ I had seen (1)\n✓ her keys. (1)"
+        },
+        {
+          "id": "voice-and-reported-speech-command",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Change to reported speech: 'Hand in your books,' the teacher said to us.",
+          "memo": "✓ The teacher told us (1)\n✓ to hand in our books. (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Speeches, Reports and Formal Letters",
+      "questions": [
+        {
+          "id": "speeches-reports-and-formal-letters-headline-tense",
+          "type": "mcq",
+          "prompt": "Newspaper headlines are usually written in the…",
+          "options": [
+            "past perfect tense",
+            "present tense",
+            "future tense",
+            "past continuous tense"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "speeches-reports-and-formal-letters-recommendations",
+          "type": "short",
+          "prompt": "Which section of a formal report gives practical suggestions for action?",
+          "answers": [
+            "recommendations",
+            "the recommendations"
+          ]
+        },
+        {
+          "id": "speeches-reports-and-formal-letters-triplet",
+          "type": "mcq",
+          "prompt": "'We came, we saw, we conquered' is an example of…",
+          "options": [
+            "the rule of three",
+            "a rhetorical question",
+            "a pun",
+            "an oxymoron"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "speeches-reports-and-formal-letters-press",
+          "type": "truefalse",
+          "prompt": "A letter to the press is written to the editor of a newspaper.",
+          "answer": true
+        },
+        {
+          "id": "speeches-reports-and-formal-letters-sections",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each section of a formal report to its content.",
+          "pairs": [
+            {
+              "left": "Terms of reference",
+              "right": "Who asked for the report and why"
+            },
+            {
+              "left": "Procedure",
+              "right": "How information was gathered"
+            },
+            {
+              "left": "Findings",
+              "right": "Facts discovered"
+            },
+            {
+              "left": "Conclusions",
+              "right": "What the findings mean"
+            }
+          ]
+        },
+        {
+          "id": "speeches-reports-and-formal-letters-speech-opening",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Write the opening (greeting and introduction) of a speech for the RCL elections.",
+          "memo": "✓ Appropriate greeting to audience (1)\n✓ Attention-grabbing opening (question/anecdote/fact) (1)\n✓ States purpose: why the speaker should be elected (1)"
+        }
+      ]
+    }
+  ]
+}

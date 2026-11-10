@@ -135,3 +135,10 @@ explanation, working or an essay; the memo should show how marks are allocated, 
 * `totalMarks` must equal the sum of all question marks.
 * Questions are numbered automatically (1.1, 1.2, ... within section 1).
 * Question `id`s must be unique within the exam.
+
+## Term papers
+
+`exams/term-1-and-2.json` and `exams/term-3-and-4.json` are generated from each subject's practice questions, so
+don't edit them by hand. After changing practice questions run `node scripts/make-term-exams.js`, then
+`npm run validate`. It balances each paper across the term's topics, leaves out questions that need a diagram,
+a table or an earlier question, and prints the passage above any questions that refer to one.

@@ -1,0 +1,420 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 8 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Number Patterns: Sequences and Series",
+      "questions": [
+        {
+          "id": "sequences-and-series-arith-t",
+          "type": "numeric",
+          "prompt": "Find $T_{25}$ of the arithmetic sequence $7; 12; 17; \\ldots$",
+          "answer": 127,
+          "tolerance": 0
+        },
+        {
+          "id": "sequences-and-series-arith-s",
+          "type": "numeric",
+          "prompt": "Find the sum of the first 30 terms of $2; 5; 8; \\ldots$",
+          "answer": 1365,
+          "tolerance": 0
+        },
+        {
+          "id": "sequences-and-series-geo-r",
+          "type": "numeric",
+          "prompt": "Find the common ratio of $81; 27; 9; \\ldots$ (decimal, 4 places if needed, or as a fraction like 1/3)",
+          "answer": 0.3333,
+          "tolerance": 0.001
+        },
+        {
+          "id": "sequences-and-series-converge",
+          "type": "truefalse",
+          "prompt": "The geometric series $1 + 3 + 9 + 27 + \\ldots$ has a sum to infinity.",
+          "answer": false
+        },
+        {
+          "id": "sequences-and-series-which-n",
+          "type": "open",
+          "marks": 4,
+          "prompt": "How many terms of $4; 7; 10; \\ldots$ must be added to give a sum of $650$?",
+          "memo": "✓ $\\frac{n}{2}[8 + 3(n - 1)] = 650$ (1)\n✓ $3n^2 + 5n - 1\\ 300 = 0$ (1)\n✓ $(3n + 65)(n - 20) = 0$ (1)\n✓ $n = 20$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Functions and Inverse Functions",
+      "questions": [
+        {
+          "id": "functions-and-inverses-one-to-one",
+          "type": "mcq",
+          "prompt": "Which function is one-to-one?",
+          "options": [
+            "$y = x^2$",
+            "$y = x^2 + 1$",
+            "$y = 2x - 3$",
+            "$y = \\cos x$"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "functions-and-inverses-reflect",
+          "type": "short",
+          "prompt": "In which line is the graph of $f$ reflected to give the graph of $f^{-1}$? (write it as y = …)",
+          "answers": [
+            "y = x",
+            "y=x"
+          ]
+        },
+        {
+          "id": "functions-and-inverses-evaluate",
+          "type": "numeric",
+          "prompt": "If $f(x) = 5x - 1$, calculate $f^{-1}(14)$.",
+          "answer": 3,
+          "tolerance": 0
+        },
+        {
+          "id": "functions-and-inverses-log-inverse",
+          "type": "mcq",
+          "prompt": "The inverse of $y = 3^x$ is…",
+          "options": [
+            "$y = x^3$",
+            "$y = \\log_3 x$",
+            "$y = \\log_x 3$",
+            "$y = 3^{-x}$"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "functions-and-inverses-not-function",
+          "type": "truefalse",
+          "prompt": "The inverse of $y = x^2$ (with no domain restriction) is a function.",
+          "answer": false
+        },
+        {
+          "id": "functions-and-inverses-quad-inverse",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Given $g(x) = -\\frac{1}{2}x^2$, $x \\leq 0$. Determine $g^{-1}(x)$ and its domain.",
+          "memo": "✓ $x = -\\frac{1}{2}y^2$, $y^2 = -2x$ (1)\n✓ $y = -\\sqrt{-2x}$ (negative root since $y \\leq 0$) (1)\n✓ Domain $x \\leq 0$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Exponential and Logarithmic Functions",
+      "questions": [
+        {
+          "id": "exponential-and-logarithmic-functions-neg",
+          "type": "numeric",
+          "prompt": "Evaluate $\\log_2 \\frac{1}{16}$.",
+          "answer": -4,
+          "tolerance": 0
+        },
+        {
+          "id": "exponential-and-logarithmic-functions-law",
+          "type": "numeric",
+          "prompt": "Simplify $\\log 25 + \\log 4$.",
+          "answer": 2,
+          "tolerance": 0
+        },
+        {
+          "id": "exponential-and-logarithmic-functions-domain",
+          "type": "mcq",
+          "prompt": "The domain of $y = \\log_3 x$ is…",
+          "options": [
+            "$x \\in \\mathbb{R}$",
+            "$x > 0$",
+            "$x \\geq 0$",
+            "$x > 1$"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "exponential-and-logarithmic-functions-wrong-law",
+          "type": "truefalse",
+          "prompt": "$\\log(a + b) = \\log a + \\log b$",
+          "answer": false
+        },
+        {
+          "id": "exponential-and-logarithmic-functions-time",
+          "type": "open",
+          "marks": 3,
+          "prompt": "How many years will it take an investment to double at 7% p.a. compounded annually?",
+          "memo": "✓ $2 = (1{,}07)^n$ (1)\n✓ $n = \\frac{\\log 2}{\\log 1{,}07}$ (1)\n✓ $n \\approx 10{,}24$ years (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Finance: Annuities and Loans",
+      "questions": [
+        {
+          "id": "finance-annuities-and-loans-which-formula",
+          "type": "mcq",
+          "prompt": "To calculate the monthly repayment on a home loan, you use…",
+          "options": [
+            "the future value formula",
+            "the present value formula",
+            "simple interest",
+            "straight-line depreciation"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "finance-annuities-and-loans-n-value",
+          "type": "numeric",
+          "prompt": "Monthly payments for 20 years: what is $n$?",
+          "answer": 240,
+          "tolerance": 0
+        },
+        {
+          "id": "finance-annuities-and-loans-fv",
+          "type": "numeric",
+          "prompt": "R800 is deposited at the end of every month for 3 years at 6% p.a. compounded monthly. Find the future value, to the nearest rand.",
+          "answer": 31469,
+          "tolerance": 1,
+          "unit": "rand"
+        },
+        {
+          "id": "finance-annuities-and-loans-pv",
+          "type": "numeric",
+          "prompt": "Find the present value of 48 monthly payments of R2 500 at 9% p.a. compounded monthly, to the nearest rand.",
+          "answer": 100462,
+          "tolerance": 1,
+          "unit": "rand"
+        },
+        {
+          "id": "finance-annuities-and-loans-sinking",
+          "type": "truefalse",
+          "prompt": "A sinking fund is used to save for the replacement of an asset.",
+          "answer": true
+        },
+        {
+          "id": "finance-annuities-and-loans-how-many",
+          "type": "open",
+          "marks": 4,
+          "prompt": "How many monthly payments of R5 000 are needed to pay off R150 000 at 9% p.a. compounded monthly?",
+          "memo": "✓ $150\\ 000 = \\frac{5\\ 000[1 - (1{,}0075)^{-n}]}{0{,}0075}$ (1)\n✓ $(1{,}0075)^{-n} = 0{,}775$ (1)\n✓ $n = -\\frac{\\log 0{,}775}{\\log 1{,}0075} \\approx 34{,}1$ (1)\n✓ 35 payments (34 full and a smaller final one) (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Trigonometry: Compound and Double Angles",
+      "questions": [
+        {
+          "id": "compound-angles-expand",
+          "type": "mcq",
+          "prompt": "$\\cos(A + B)$ equals…",
+          "options": [
+            "$\\cos A\\cos B + \\sin A\\sin B$",
+            "$\\cos A\\cos B - \\sin A\\sin B$",
+            "$\\sin A\\cos B + \\cos A\\sin B$",
+            "$\\cos A + \\cos B$"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "compound-angles-double",
+          "type": "mcq",
+          "prompt": "$2\\sin 15^\\circ\\cos 15^\\circ$ equals…",
+          "options": [
+            "$\\sin 15^\\circ$",
+            "$\\sin 30^\\circ$",
+            "$\\cos 30^\\circ$",
+            "$2\\sin 30^\\circ$"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "compound-angles-value",
+          "type": "numeric",
+          "prompt": "Simplify: $\\cos 50^\\circ\\cos 10^\\circ - \\sin 50^\\circ\\sin 10^\\circ$ (give a decimal)",
+          "answer": 0.5,
+          "tolerance": 0
+        },
+        {
+          "id": "compound-angles-cos2",
+          "type": "numeric",
+          "prompt": "Evaluate $1 - 2\\sin^2 22{,}5^\\circ$, correct to four decimal places.",
+          "answer": 0.7071,
+          "tolerance": 0.0001
+        },
+        {
+          "id": "compound-angles-not-equal",
+          "type": "truefalse",
+          "prompt": "$\\cos(2 \\times 30^\\circ) = 2\\cos 30^\\circ$",
+          "answer": false
+        },
+        {
+          "id": "compound-angles-prove",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Prove: $\\dfrac{1 - \\cos 2x}{\\sin 2x} = \\tan x$",
+          "memo": "✓ $1 - \\cos 2x = 2\\sin^2 x$ (1)\n✓ $\\sin 2x = 2\\sin x\\cos x$ (1)\n✓ $\\frac{2\\sin^2 x}{2\\sin x\\cos x}$ (1)\n✓ $= \\frac{\\sin x}{\\cos x} = \\tan x$ (1)"
+        },
+        {
+          "id": "compound-angles-simplify",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Simplify: $\\dfrac{\\sin 2x}{\\sin x}$ for $\\sin x \\neq 0$",
+          "memo": "✓ $\\frac{2\\sin x\\cos x}{\\sin x}$ (2)\n✓ $= 2\\cos x$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Trigonometry: Problems in Two and Three Dimensions",
+      "questions": [
+        {
+          "id": "trigonometry-2d-and-3d-perp",
+          "type": "truefalse",
+          "prompt": "A vertical pole is perpendicular to every line on horizontal ground that passes through its foot.",
+          "answer": true
+        },
+        {
+          "id": "trigonometry-2d-and-3d-rule",
+          "type": "mcq",
+          "prompt": "In a horizontal triangle you know two angles and one side. Which rule finds another side?",
+          "options": [
+            "Cosine rule",
+            "Sine rule",
+            "Area rule",
+            "Pythagoras"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "trigonometry-2d-and-3d-height",
+          "type": "numeric",
+          "prompt": "From a point 60 m from the foot of a vertical tower the angle of elevation is $32^\\circ$. Find the height, correct to two decimal places.",
+          "answer": 37.49,
+          "tolerance": 0.01,
+          "unit": "m"
+        },
+        {
+          "id": "trigonometry-2d-and-3d-worked",
+          "type": "open",
+          "marks": 5,
+          "prompt": "P and Q are 120 m apart on level ground. R is the foot of a vertical tower RT. $\\hat{RPQ} = 52^\\circ$ and $\\hat{PQR} = 68^\\circ$. The angle of elevation of T from Q is $20^\\circ$. Calculate the height of the tower.",
+          "memo": "✓ $\\hat{PRQ} = 60^\\circ$ (1)\n✓ $\\frac{QR}{\\sin 52^\\circ} = \\frac{120}{\\sin 60^\\circ}$ (1)\n✓ $QR \\approx 109{,}19$ m (1)\n✓ $RT = QR\\tan 20^\\circ$ (1)\n✓ $\\approx 39{,}74$ m (1)"
+        },
+        {
+          "id": "trigonometry-2d-and-3d-common",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is it important to identify a side common to two triangles in a 3D problem?",
+          "memo": "✓ The common side links the two triangles (1)\n✓ It is found in one triangle and then used to solve the other (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Polynomials: Remainder and Factor Theorems",
+      "questions": [
+        {
+          "id": "polynomials-remainder",
+          "type": "numeric",
+          "prompt": "Find the remainder when $x^3 + 2x - 7$ is divided by $x - 3$.",
+          "answer": 26,
+          "tolerance": 0
+        },
+        {
+          "id": "polynomials-remainder2",
+          "type": "numeric",
+          "prompt": "Find the remainder when $2x^3 - x + 4$ is divided by $x + 1$.",
+          "answer": 3,
+          "tolerance": 0
+        },
+        {
+          "id": "polynomials-factor",
+          "type": "mcq",
+          "prompt": "Which is a factor of $x^3 - 7x + 6$?",
+          "options": [
+            "$x + 1$",
+            "$x - 1$",
+            "$x - 3$",
+            "$x + 2$"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "polynomials-theorem",
+          "type": "truefalse",
+          "prompt": "If $f(4) = 0$, then $(x + 4)$ is a factor of $f(x)$.",
+          "answer": false,
+          "explanation": "$(x - 4)$ is the factor."
+        },
+        {
+          "id": "polynomials-find-k",
+          "type": "numeric",
+          "prompt": "$(x - 2)$ is a factor of $x^3 + kx^2 - x - 2$. Find $k$.",
+          "answer": -1,
+          "tolerance": 0
+        },
+        {
+          "id": "polynomials-factorise",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Factorise fully: $x^3 + 2x^2 - 5x - 6$",
+          "memo": "✓ $f(-1) = 0$, so $(x + 1)$ is a factor (1)\n✓ $(x + 1)(x^2 + x - 6)$ (2)\n✓ $(x + 1)(x + 3)(x - 2)$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 8: Differential Calculus",
+      "questions": [
+        {
+          "id": "differential-calculus-constant",
+          "type": "numeric",
+          "prompt": "Find $\\dfrac{d}{dx}(15)$.",
+          "answer": 0,
+          "tolerance": 0
+        },
+        {
+          "id": "differential-calculus-negative-power",
+          "type": "mcq",
+          "prompt": "If $y = \\dfrac{3}{x}$, then $\\dfrac{dy}{dx} = $",
+          "options": [
+            "$\\frac{3}{x^2}$",
+            "$-\\frac{3}{x^2}$",
+            "$3$",
+            "$-3x$"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "differential-calculus-stationary",
+          "type": "numeric",
+          "prompt": "At what value of $x$ does $f(x) = x^2 - 8x + 3$ have a stationary point?",
+          "answer": 4,
+          "tolerance": 0
+        },
+        {
+          "id": "differential-calculus-inflection",
+          "type": "numeric",
+          "prompt": "Find the $x$-coordinate of the point of inflection of $f(x) = x^3 - 6x^2 + 2$.",
+          "answer": 2,
+          "tolerance": 0
+        },
+        {
+          "id": "differential-calculus-tangent",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the equation of the tangent to $g(x) = 2x^3 - x$ at the point where $x = 1$.",
+          "memo": "✓ $g(1) = 1$ (1)\n✓ $g'(x) = 6x^2 - 1$ (1)\n✓ $m = 5$ (1)\n✓ $y = 5x - 4$ (1)"
+        },
+        {
+          "id": "differential-calculus-turning",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Find the turning points of $f(x) = x^3 - 12x + 1$ and say which is a maximum.",
+          "memo": "✓ $f'(x) = 3x^2 - 12 = 0$ (1)\n✓ $x = \\pm 2$ (1)\n✓ $(-2; 17)$ maximum (1)\n✓ $(2; -15)$ minimum (1)"
+        }
+      ]
+    }
+  ]
+}

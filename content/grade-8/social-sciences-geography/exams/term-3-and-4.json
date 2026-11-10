@@ -1,0 +1,365 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Settlements: Rural and Urban",
+      "questions": [
+        {
+          "id": "settlements-site-def",
+          "type": "short",
+          "prompt": "What word describes the actual land on which a settlement is built?",
+          "answers": [
+            "site",
+            "the site"
+          ]
+        },
+        {
+          "id": "settlements-rural-activity",
+          "type": "mcq",
+          "prompt": "Which economic activity is typical of rural areas?",
+          "options": [
+            "Manufacturing cars",
+            "Banking",
+            "Farming",
+            "Retail shopping malls"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "settlements-dispersed",
+          "type": "truefalse",
+          "prompt": "In a dispersed settlement the buildings are grouped closely together.",
+          "answer": false
+        },
+        {
+          "id": "settlements-hierarchy",
+          "type": "mcq",
+          "prompt": "Which is the correct order from smallest to largest?",
+          "options": [
+            "Village, hamlet, town, city",
+            "Hamlet, village, town, city",
+            "Town, village, city, hamlet",
+            "Hamlet, town, village, city"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "settlements-functions",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each town to its main function.",
+          "pairs": [
+            {
+              "left": "Richards Bay",
+              "right": "Port"
+            },
+            {
+              "left": "Rustenburg",
+              "right": "Mining town"
+            },
+            {
+              "left": "Pretoria",
+              "right": "Administrative centre"
+            },
+            {
+              "left": "Plettenberg Bay",
+              "right": "Holiday resort"
+            }
+          ]
+        },
+        {
+          "id": "settlements-site-factors",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give FOUR factors that early settlers considered when choosing a site.",
+          "memo": "Any four (1 each): water; flat, dry land; fertile soil; defence; building materials/fuel; shelter/aspect; routes"
+        },
+        {
+          "id": "settlements-sphere",
+          "type": "short",
+          "prompt": "What is the area served by a settlement's shops and services called?",
+          "answers": [
+            "sphere of influence",
+            "the sphere of influence",
+            "hinterland",
+            "catchment area"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Urbanisation and Urban Challenges",
+      "questions": [
+        {
+          "id": "urbanisation-def",
+          "type": "short",
+          "prompt": "What is the increase in the percentage of people living in towns and cities called?",
+          "answers": [
+            "urbanisation",
+            "urbanization"
+          ]
+        },
+        {
+          "id": "urbanisation-push-pull",
+          "type": "mcq",
+          "prompt": "Which is a PULL factor?",
+          "options": [
+            "Drought",
+            "Lack of jobs in rural areas",
+            "Better hospitals in the city",
+            "Poor schools in villages"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "urbanisation-cbd",
+          "type": "short",
+          "prompt": "What do the letters CBD stand for?",
+          "answers": [
+            "central business district"
+          ]
+        },
+        {
+          "id": "urbanisation-gauteng",
+          "type": "truefalse",
+          "prompt": "Gauteng is the smallest province by area but has the largest population.",
+          "answer": true
+        },
+        {
+          "id": "urbanisation-classify",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each factor.",
+          "pairs": [
+            {
+              "left": "Crop failure on a farm",
+              "right": "Push factor"
+            },
+            {
+              "left": "Job opportunities in factories",
+              "right": "Pull factor"
+            },
+            {
+              "left": "No electricity in the village",
+              "right": "Push factor (lack of services)"
+            },
+            {
+              "left": "Universities in the city",
+              "right": "Pull factor (education)"
+            }
+          ]
+        },
+        {
+          "id": "urbanisation-informal-sector",
+          "type": "mcq",
+          "prompt": "A woman sells fruit at a taxi rank without a formal shop. She works in the…",
+          "options": [
+            "formal sector",
+            "informal sector",
+            "primary sector",
+            "public sector"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "urbanisation-solutions",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Suggest THREE ways in which a city can manage rapid urbanisation.",
+          "memo": "Any three (1 each): housing programmes; upgrading informal settlements; public transport; rural development; supporting small businesses; densification/planning"
+        },
+        {
+          "id": "urbanisation-apartheid",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how apartheid planning still affects people living in South African cities.",
+          "memo": "✓ Black people were forced to live in townships far from city centres (1)\n✓ Many still travel long distances to work at high cost / cities remain divided (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Transport Networks",
+      "questions": [
+        {
+          "id": "transport-bulky",
+          "type": "mcq",
+          "prompt": "Which is the cheapest way to move large amounts of coal over land?",
+          "options": [
+            "Air",
+            "Road",
+            "Rail",
+            "Pipeline"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "transport-flowers",
+          "type": "mcq",
+          "prompt": "Fresh flowers exported to Europe are usually sent by…",
+          "options": [
+            "sea",
+            "air",
+            "rail",
+            "pipeline"
+          ],
+          "answer": 1,
+          "explanation": "They are light, valuable and perishable."
+        },
+        {
+          "id": "transport-busiest-port",
+          "type": "short",
+          "prompt": "Which South African port is the busiest container port?",
+          "answers": [
+            "durban",
+            "port of durban"
+          ]
+        },
+        {
+          "id": "transport-pipeline",
+          "type": "truefalse",
+          "prompt": "Pipelines can be used to transport petrol and natural gas.",
+          "answer": true
+        },
+        {
+          "id": "transport-match-transport",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each type of transport to an advantage.",
+          "pairs": [
+            {
+              "left": "Road",
+              "right": "Door-to-door delivery"
+            },
+            {
+              "left": "Air",
+              "right": "Fastest over long distances"
+            },
+            {
+              "left": "Sea",
+              "right": "Cheapest for huge international loads"
+            },
+            {
+              "left": "Rail",
+              "right": "Cheap for heavy loads over land"
+            }
+          ]
+        },
+        {
+          "id": "transport-road-disadv",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE disadvantages of moving most freight by road.",
+          "memo": "Any three (1 each): congestion; accidents; pollution; damage to roads; higher cost per tonne for bulky goods; fuel use"
+        },
+        {
+          "id": "transport-commuters",
+          "type": "short",
+          "prompt": "Which form of public transport carries the most commuters in South Africa?",
+          "answers": [
+            "minibus taxis",
+            "minibus taxi",
+            "taxis",
+            "taxi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Trade",
+      "questions": [
+        {
+          "id": "trade-export",
+          "type": "short",
+          "prompt": "What is a good sold to another country called?",
+          "answers": [
+            "export",
+            "an export",
+            "exports"
+          ]
+        },
+        {
+          "id": "trade-surplus",
+          "type": "mcq",
+          "prompt": "When a country's exports are worth more than its imports, it has a…",
+          "options": [
+            "trade deficit",
+            "trade surplus",
+            "tariff",
+            "quota"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "trade-balance-calc",
+          "type": "numeric",
+          "prompt": "Exports are worth R95 billion and imports R80 billion. Calculate the balance of trade in billions of rand.",
+          "answer": 15,
+          "tolerance": 0,
+          "unit": "billion rand"
+        },
+        {
+          "id": "trade-oil",
+          "type": "truefalse",
+          "prompt": "Crude oil is one of South Africa's main imports.",
+          "answer": true
+        },
+        {
+          "id": "trade-tariff",
+          "type": "mcq",
+          "prompt": "A tax on imported goods is called a…",
+          "options": [
+            "subsidy",
+            "quota",
+            "tariff",
+            "surplus"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "trade-types",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each example to the type of trade.",
+          "pairs": [
+            {
+              "left": "Buying tomatoes from a neighbour",
+              "right": "Local trade"
+            },
+            {
+              "left": "Selling Limpopo mangoes in Cape Town",
+              "right": "National trade"
+            },
+            {
+              "left": "Selling platinum to Japan",
+              "right": "International trade"
+            }
+          ]
+        },
+        {
+          "id": "trade-why-trade",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why do countries trade with each other?",
+          "memo": "✓ No country can produce everything it needs (1)\n✓ Differences in climate, resources and skills mean countries specialise and exchange goods (1)"
+        },
+        {
+          "id": "trade-sadc",
+          "type": "short",
+          "prompt": "What do the letters SADC stand for?",
+          "answers": [
+            "southern african development community"
+          ]
+        }
+      ]
+    }
+  ]
+}

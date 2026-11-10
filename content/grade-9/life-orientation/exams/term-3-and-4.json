@@ -1,0 +1,332 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Democracy and Citizenship",
+      "questions": [
+        {
+          "id": "democracy-and-citizenship-demos",
+          "type": "short",
+          "prompt": "The word 'democracy' comes from Greek. What does 'demos' mean?",
+          "answers": [
+            "people",
+            "the people"
+          ]
+        },
+        {
+          "id": "democracy-and-citizenship-register-age",
+          "type": "numeric",
+          "prompt": "From what age can you register as a voter?",
+          "answer": 16,
+          "tolerance": 0,
+          "unit": "years"
+        },
+        {
+          "id": "democracy-and-citizenship-iec",
+          "type": "short",
+          "prompt": "Which organisation runs elections in South Africa? (abbreviation)",
+          "answers": [
+            "iec",
+            "independent electoral commission"
+          ]
+        },
+        {
+          "id": "democracy-and-citizenship-peaceful",
+          "type": "truefalse",
+          "prompt": "The Constitution protects the right to protest peacefully and unarmed.",
+          "answer": true
+        },
+        {
+          "id": "democracy-and-citizenship-rcl",
+          "type": "mcq",
+          "prompt": "The RCL is…",
+          "options": [
+            "a political party",
+            "a learners' representative council at school",
+            "a court",
+            "the police"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "democracy-and-citizenship-participate",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE ways in which a Grade 9 learner can participate in democracy.",
+          "memo": "Any three (1 each): join/vote for the RCL; sign petitions; peaceful protest; contact the ward councillor; volunteer; register at 16 to vote later; stay informed"
+        },
+        {
+          "id": "democracy-and-citizenship-damage",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is it wrong to burn a library during a protest about service delivery?",
+          "memo": "✓ It is a crime and the protest is no longer peaceful (1)\n✓ It destroys a service the community needs, harming the people it was meant to help (1)"
+        },
+        {
+          "id": "democracy-and-citizenship-elections",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each election-related term to its meaning.",
+          "pairs": [
+            {
+              "left": "Voters' roll",
+              "right": "List of registered voters"
+            },
+            {
+              "left": "Ward councillor",
+              "right": "Elected in local government elections"
+            },
+            {
+              "left": "National Assembly",
+              "right": "Elects the President"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Media and Digital Citizenship",
+      "questions": [
+        {
+          "id": "media-and-digital-citizenship-watchdog",
+          "type": "mcq",
+          "prompt": "When the media expose corruption, they are playing which role?",
+          "options": [
+            "Entertainment",
+            "Watchdog",
+            "Advertising",
+            "Fiction"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "media-and-digital-citizenship-footprint",
+          "type": "short",
+          "prompt": "What is the permanent record of your online activity called?",
+          "answers": [
+            "digital footprint",
+            "a digital footprint"
+          ]
+        },
+        {
+          "id": "media-and-digital-citizenship-private",
+          "type": "truefalse",
+          "prompt": "Setting your social media accounts to private helps to protect your safety.",
+          "answer": true
+        },
+        {
+          "id": "media-and-digital-citizenship-law",
+          "type": "mcq",
+          "prompt": "Which South African law makes certain online harms, such as sharing intimate images without consent, a crime?",
+          "options": [
+            "Schools Act",
+            "Cybercrimes Act",
+            "Labour Relations Act",
+            "Water Act"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "media-and-digital-citizenship-terms",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Clickbait",
+              "right": "Shocking headline to get clicks"
+            },
+            {
+              "left": "Grooming",
+              "right": "Adult gaining a child's trust to exploit them"
+            },
+            {
+              "left": "Bias",
+              "right": "One-sided presentation"
+            },
+            {
+              "left": "Scam",
+              "right": "Trick to steal money or information"
+            }
+          ]
+        },
+        {
+          "id": "media-and-digital-citizenship-check",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE ways to check whether a news story you see online is true.",
+          "memo": "Any three (1 each): check the author/publisher; check the date; look for evidence; compare with other reliable sources; be wary of emotional headlines; reverse image search"
+        },
+        {
+          "id": "media-and-digital-citizenship-footprint-why",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why should teenagers think carefully about their digital footprint?",
+          "memo": "✓ Posts are permanent and can be shared widely (1)\n✓ Future employers or universities may see them / they can affect reputation and safety (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Subject Choice and Career Planning",
+      "questions": [
+        {
+          "id": "subject-choice-and-careers-compulsory",
+          "type": "mcq",
+          "prompt": "Which of these is a compulsory subject in Grades 10 to 12?",
+          "options": [
+            "Physical Sciences",
+            "Life Orientation",
+            "Accounting",
+            "Geography"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "subject-choice-and-careers-electives",
+          "type": "numeric",
+          "prompt": "How many elective subjects must a learner choose in the FET phase?",
+          "answer": 3,
+          "tolerance": 0
+        },
+        {
+          "id": "subject-choice-and-careers-nsfas",
+          "type": "short",
+          "prompt": "What does NSFAS stand for?",
+          "answers": [
+            "national student financial aid scheme"
+          ]
+        },
+        {
+          "id": "subject-choice-and-careers-maths",
+          "type": "truefalse",
+          "prompt": "Most engineering degrees accept Mathematical Literacy instead of Mathematics.",
+          "answer": false
+        },
+        {
+          "id": "subject-choice-and-careers-aps",
+          "type": "short",
+          "prompt": "What score do universities calculate from matric marks to decide on admission? (abbreviation)",
+          "answers": [
+            "aps",
+            "admission point score"
+          ]
+        },
+        {
+          "id": "subject-choice-and-careers-passes",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each NSC pass to what it allows you to study.",
+          "pairs": [
+            {
+              "left": "Bachelor's pass",
+              "right": "Degree at a university"
+            },
+            {
+              "left": "Diploma pass",
+              "right": "Diploma studies"
+            },
+            {
+              "left": "Higher Certificate pass",
+              "right": "Higher Certificate courses"
+            }
+          ]
+        },
+        {
+          "id": "subject-choice-and-careers-factors",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give FOUR factors to consider when choosing FET subjects.",
+          "memo": "Any four (1 each): interests; abilities/marks; career requirements; subjects offered at school; advice from counsellors/teachers; long-term goals"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Study Strategies and Exam Preparation",
+      "questions": [
+        {
+          "id": "exam-preparation-active",
+          "type": "mcq",
+          "prompt": "Which is an ACTIVE study strategy?",
+          "options": [
+            "Re-reading notes many times",
+            "Highlighting the textbook",
+            "Testing yourself without looking at notes",
+            "Listening to music while reading"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "exam-preparation-spaced",
+          "type": "short",
+          "prompt": "What is revising a topic several times over days and weeks called? (… practice)",
+          "answers": [
+            "spaced practice",
+            "spaced",
+            "spaced repetition"
+          ]
+        },
+        {
+          "id": "exam-preparation-compare",
+          "type": "truefalse",
+          "prompt": "A 'compare' question asks for both similarities and differences.",
+          "answer": true
+        },
+        {
+          "id": "exam-preparation-time",
+          "type": "numeric",
+          "prompt": "Using the guideline of about one minute per mark, how many minutes should you spend on a 15-mark question?",
+          "answer": 15,
+          "tolerance": 0,
+          "unit": "minutes"
+        },
+        {
+          "id": "exam-preparation-verbs",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each question verb to what it asks.",
+          "pairs": [
+            {
+              "left": "Define",
+              "right": "Give the exact meaning"
+            },
+            {
+              "left": "Evaluate",
+              "right": "Judge the value and give reasons"
+            },
+            {
+              "left": "Suggest",
+              "right": "Give your own practical ideas"
+            },
+            {
+              "left": "Describe",
+              "right": "Give characteristics or details"
+            }
+          ]
+        },
+        {
+          "id": "exam-preparation-results",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How can a learner use exam results to improve?",
+          "memo": "✓ Analyse mistakes to find why marks were lost (1)\n✓ Adjust the study plan / practise weak areas (1)"
+        },
+        {
+          "id": "exam-preparation-marks",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How does the mark allocation help you answer a question?",
+          "memo": "✓ It shows how many points or how much detail is expected (1)\n✓ It helps you plan time and avoid writing too much or too little (1)"
+        }
+      ]
+    }
+  ]
+}

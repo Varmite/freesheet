@@ -1,0 +1,270 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 3 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Ethical Traditions and Religious Laws",
+      "questions": [
+        {
+          "id": "ethical-traditions-ethics",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Define ethics.",
+          "memo": "✓ Principles (1)\n✓ that help us decide what is right and wrong (1)"
+        },
+        {
+          "id": "ethical-traditions-zakat",
+          "type": "mcq",
+          "prompt": "Zakat, giving to the poor, is an obligation in…",
+          "options": [
+            "Hinduism",
+            "Islam",
+            "Judaism",
+            "Christianity"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ethical-traditions-ahimsa",
+          "type": "short",
+          "prompt": "What is the Hindu principle of non-violence called?",
+          "answers": [
+            "ahimsa"
+          ]
+        },
+        {
+          "id": "ethical-traditions-supreme",
+          "type": "truefalse",
+          "prompt": "Customary or religious law overrides the Constitution if they conflict.",
+          "answer": false
+        },
+        {
+          "id": "ethical-traditions-traditions",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each tradition to a guiding idea.",
+          "pairs": [
+            {
+              "left": "Ubuntu",
+              "right": "A person is a person through other people"
+            },
+            {
+              "left": "Halakha",
+              "right": "Jewish law based on the Torah"
+            },
+            {
+              "left": "Dharma",
+              "right": "Duty in Hindu ethics"
+            },
+            {
+              "left": "Secular ethics",
+              "right": "Reason and human rights"
+            }
+          ]
+        },
+        {
+          "id": "ethical-traditions-dilemma",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is an ethical dilemma?",
+          "memo": "✓ A situation where you must choose between options (1)\n✓ each involving a conflict of moral values (1)"
+        },
+        {
+          "id": "ethical-traditions-solve",
+          "type": "open",
+          "marks": 4,
+          "prompt": "You find a wallet with R2 000 and an ID. Describe how you would work through this dilemma using FOUR steps.",
+          "memo": "✓ Identify the conflict (temptation vs honesty) (1)\n✓ Consider consequences for you and the owner (1)\n✓ Consider your values/traditions (1)\n✓ Decide and act: return it via the police or contact the owner (1)"
+        },
+        {
+          "id": "ethical-traditions-inherit",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why did the Constitutional Court allow women to inherit under customary law?",
+          "memo": "✓ Excluding women was unfair discrimination based on gender (1)\n✓ which violates the right to equality in the Bill of Rights (1)"
+        },
+        {
+          "id": "ethical-traditions-ten",
+          "type": "short",
+          "prompt": "Which set of rules from the Bible guides Christian and Jewish ethics? (two words: the Ten …)",
+          "answers": [
+            "ten commandments",
+            "commandments",
+            "the ten commandments"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Applying for Study and Work: CVs and Interviews",
+      "questions": [
+        {
+          "id": "applying-for-study-and-work-cv",
+          "type": "short",
+          "prompt": "What does CV stand for? (two words)",
+          "answers": [
+            "curriculum vitae"
+          ]
+        },
+        {
+          "id": "applying-for-study-and-work-references",
+          "type": "mcq",
+          "prompt": "Who should you list as a reference on a CV?",
+          "options": [
+            "Your mother",
+            "A teacher or employer who knows your work",
+            "A celebrity",
+            "Your best friend"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "applying-for-study-and-work-star",
+          "type": "short",
+          "prompt": "In the STAR method for interviews, what does the A stand for?",
+          "answers": [
+            "action"
+          ]
+        },
+        {
+          "id": "applying-for-study-and-work-sections",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each item to the CV section where it belongs.",
+          "pairs": [
+            {
+              "left": "Volunteering at a soup kitchen",
+              "right": "Experience"
+            },
+            {
+              "left": "Fluent in English and Sesotho",
+              "right": "Skills"
+            },
+            {
+              "left": "Matric subjects and awards",
+              "right": "Education"
+            },
+            {
+              "left": "Former manager's contact details",
+              "right": "References"
+            }
+          ]
+        },
+        {
+          "id": "applying-for-study-and-work-star-use",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Use the STAR method to answer: 'Describe a time you showed leadership.'",
+          "memo": "✓ Situation described (1)\n✓ Task/challenge explained (1)\n✓ Action taken by you (1)\n✓ Result/outcome (1)"
+        },
+        {
+          "id": "applying-for-study-and-work-online",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why should job seekers manage their social media profiles?",
+          "memo": "✓ Employers may check social media before hiring (1)\n✓ Inappropriate posts can cost you an opportunity (1)"
+        },
+        {
+          "id": "applying-for-study-and-work-documents",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO documents you need when applying to a university.",
+          "memo": "Any two (1 each): certified ID copy; Grade 11 results / matric results; proof of income (for funding); application fee proof"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: The World of Work: Labour Laws, Unemployment and Entrepreneurship",
+      "questions": [
+        {
+          "id": "the-world-of-work-bcea",
+          "type": "numeric",
+          "prompt": "According to the BCEA, what is the maximum number of ordinary working hours per week?",
+          "answer": 45,
+          "tolerance": 0,
+          "unit": "hours"
+        },
+        {
+          "id": "the-world-of-work-ccma",
+          "type": "mcq",
+          "prompt": "Which body resolves labour disputes such as unfair dismissal?",
+          "options": [
+            "SARS",
+            "CCMA",
+            "IEC",
+            "SAHRC"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-world-of-work-nyda",
+          "type": "short",
+          "prompt": "Which agency supports young entrepreneurs? (abbreviation)",
+          "answers": [
+            "nyda",
+            "national youth development agency"
+          ]
+        },
+        {
+          "id": "the-world-of-work-laws",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each law to what it protects.",
+          "pairs": [
+            {
+              "left": "Labour Relations Act",
+              "right": "Right to join a trade union"
+            },
+            {
+              "left": "Employment Equity Act",
+              "right": "Protection from unfair discrimination"
+            },
+            {
+              "left": "Occupational Health and Safety Act",
+              "right": "Safe working conditions"
+            },
+            {
+              "left": "Unemployment Insurance Act",
+              "right": "Income after job loss"
+            }
+          ]
+        },
+        {
+          "id": "the-world-of-work-causes",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain THREE causes of youth unemployment in South Africa.",
+          "memo": "Any three (1 each): slow economic growth; skills mismatch; low education levels; lack of experience; automation; population growth"
+        },
+        {
+          "id": "the-world-of-work-qualities",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE qualities of a successful entrepreneur.",
+          "memo": "Any three (1 each): creativity; persistence; risk-taking; financial management; networking; leadership; problem-solving"
+        },
+        {
+          "id": "the-world-of-work-volunteer",
+          "type": "truefalse",
+          "prompt": "Volunteering can improve your chances of finding a job.",
+          "answer": true
+        },
+        {
+          "id": "the-world-of-work-steps",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE steps in starting a small business.",
+          "memo": "Any three in a logical order (1 each): identify a need; market research; business plan; funding; register with CIPC/SARS; start small"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 10 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Number Systems and Calculations",
+      "questions": [
+        {
+          "id": "number-systems-q1",
+          "type": "mcq",
+          "prompt": "Which number is irrational?",
+          "options": [
+            "$\\sqrt{16}$",
+            "$0{,}\\dot{3}$",
+            "$\\sqrt{7}$",
+            "$\\frac{22}{7}$"
+          ],
+          "answer": 2,
+          "explanation": "$7$ is not a perfect square, so $\\sqrt{7}$ is a non-recurring, non-terminating decimal. $\\sqrt{16} = 4$, $0{,}\\dot{3} = \\frac{1}{3}$ and $\\frac{22}{7}$ are rational."
+        },
+        {
+          "id": "number-systems-q2",
+          "type": "truefalse",
+          "prompt": "Every integer is a rational number.",
+          "answer": true,
+          "explanation": "Any integer $n$ can be written as $\\frac{n}{1}$."
+        },
+        {
+          "id": "number-systems-q5",
+          "type": "numeric",
+          "prompt": "Calculate $-\\dfrac{3}{4} + \\dfrac{5}{6}$. Type a fraction (e.g. 1/3) or a decimal correct to three decimal places.",
+          "answer": 0.083333,
+          "tolerance": 0.001,
+          "explanation": "$-\\frac{9}{12} + \\frac{10}{12} = \\frac{1}{12} \\approx 0{,}083$."
+        },
+        {
+          "id": "number-systems-q15",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Without a calculator, find two consecutive integers between which $\\sqrt{90}$ lies, and estimate $\\sqrt{90}$ to one decimal place.",
+          "memo": "$81 < 90 < 100$, so $9 < \\sqrt{90} < 10$ ✓ (1)\nEstimate about $9{,}5$ (calculator: $9{,}49$) ✓ (1)"
+        },
+        {
+          "id": "number-systems-q16",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Sort these numbers into rational and irrational: $-4$;  $\\sqrt{9}$;  $0{,}25$;  $\\sqrt{3}$;  $\\frac{22}{7}$;  $\\pi$",
+          "memo": "Rational: $-4$, $\\sqrt{9}$ ($= 3$), $0{,}25$, $\\frac{22}{7}$ ✓✓ (2)\nIrrational: $\\sqrt{3}$, $\\pi$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Ratio, Rate and Financial Mathematics",
+      "questions": [
+        {
+          "id": "ratio-rate-and-financial-mathematics-q1",
+          "type": "numeric",
+          "prompt": "An estate agent earns 6% commission on a house sold for R850 000. Calculate the commission.",
+          "unit": "R",
+          "answer": 51000,
+          "tolerance": 0,
+          "explanation": "$0{,}06 \\times 850\\ 000 = \\text{R}51\\ 000$."
+        },
+        {
+          "id": "ratio-rate-and-financial-mathematics-q3",
+          "type": "mcq",
+          "prompt": "The same amount is invested at the same rate for 10 years. Which gives more money?",
+          "options": [
+            "Simple interest",
+            "Compound interest",
+            "They are always equal",
+            "It depends on the principal"
+          ],
+          "answer": 1,
+          "explanation": "Compound interest earns interest on previous interest, so after the first year it always gives more."
+        },
+        {
+          "id": "ratio-rate-and-financial-mathematics-q4",
+          "type": "truefalse",
+          "prompt": "The graph of two quantities in direct proportion is a straight line through the origin.",
+          "answer": true,
+          "explanation": "$y = kx$ is a straight line through $(0;\\ 0)$."
+        },
+        {
+          "id": "ratio-rate-and-financial-mathematics-q8",
+          "type": "mcq",
+          "prompt": "$x$ and $y$ are inversely proportional, and $y = 15$ when $x = 4$. Find $y$ when $x = 6$.",
+          "options": [
+            "$22{,}5$",
+            "$10$",
+            "$17$",
+            "$9$"
+          ],
+          "answer": 1,
+          "explanation": "$xy = 60$, so $y = 60 \\div 6 = 10$."
+        },
+        {
+          "id": "ratio-rate-and-financial-mathematics-q13",
+          "type": "open",
+          "marks": 4,
+          "prompt": "R10 000 is invested for 3 years at 10% per year.\n(a) Calculate the final amount with simple interest.  (1)\n(b) Calculate the final amount with interest compounded annually.  (2)\n(c) How much more does the compound interest investment earn?  (1)",
+          "memo": "(a) $10\\ 000(1 + 0{,}3) = \\text{R}13\\ 000$ ✓ (1)\n(b) $10\\ 000(1{,}1)^3$ ✓ $= \\text{R}13\\ 310$ ✓ (2)\n(c) $\\text{R}310$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Exponents",
+      "questions": [
+        {
+          "id": "exponents-q6",
+          "type": "numeric",
+          "prompt": "Write $3{,}2 \\times 10^{-3}$ as an ordinary decimal number.",
+          "answer": 0.0032,
+          "tolerance": 0.000001,
+          "explanation": "Move the comma 3 places to the left: $0{,}0032$."
+        },
+        {
+          "id": "exponents-q7",
+          "type": "mcq",
+          "prompt": "Simplify $(3a^{-2})^2$ and write it with positive exponents.",
+          "options": [
+            "$\\dfrac{9}{a^4}$",
+            "$\\dfrac{6}{a^4}$",
+            "$9a^4$",
+            "$\\dfrac{3}{a^4}$"
+          ],
+          "answer": 0,
+          "explanation": "$3^2 a^{-4} = 9a^{-4} = \\frac{9}{a^4}$."
+        },
+        {
+          "id": "exponents-q9",
+          "type": "match",
+          "prompt": "Match each expression with its value.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "$4^{-1}$",
+              "right": "1/4"
+            },
+            {
+              "left": "$10^{-2}$",
+              "right": "0,01"
+            },
+            {
+              "left": "$\\left(\\frac{1}{2}\\right)^{-3}$",
+              "right": "8"
+            },
+            {
+              "left": "$7^0$",
+              "right": "1"
+            },
+            {
+              "left": "$(-3)^{-2}$",
+              "right": "1/9"
+            }
+          ],
+          "explanation": "$4^{-1} = \\frac{1}{4}$; $10^{-2} = \\frac{1}{100}$; $\\left(\\frac{1}{2}\\right)^{-3} = 2^3$; $7^0 = 1$; $(-3)^{-2} = \\frac{1}{(-3)^2} = \\frac{1}{9}$."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Numeric and Geometric Patterns",
+      "questions": [
+        {
+          "id": "numeric-and-geometric-patterns-q2",
+          "type": "mcq",
+          "prompt": "Which is the general term of $7;\\ 10;\\ 13;\\ 16;\\ \\ldots$?",
+          "options": [
+            "$T_n = 7n$",
+            "$T_n = 3n + 7$",
+            "$T_n = 3n + 4$",
+            "$T_n = n + 6$"
+          ],
+          "answer": 2,
+          "explanation": "$d = 3$ and $T_1 - d = 4$. Check: $T_2 = 10$ ✓"
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q3",
+          "type": "numeric",
+          "prompt": "What is the next term in $2;\\ 5;\\ 10;\\ 17;\\ \\ldots$?",
+          "answer": 26,
+          "tolerance": 0,
+          "explanation": "The differences are $3;\\ 5;\\ 7$, so the next difference is $9$: $17 + 9 = 26$."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q6",
+          "type": "truefalse",
+          "prompt": "$150$ is a term of the pattern with general term $T_n = 4n + 2$.",
+          "answer": true,
+          "explanation": "$4n + 2 = 150$ gives $n = 37$, a natural number."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q7",
+          "type": "truefalse",
+          "prompt": "$100$ is a term of the pattern with general term $T_n = 3n + 2$.",
+          "answer": false,
+          "explanation": "$3n = 98$ gives $n = 32\\frac{2}{3}$, which is not a natural number."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q10",
+          "type": "numeric",
+          "prompt": "The general term of a pattern is $T_n = n^2 - 3n$. Calculate $T_6$.",
+          "answer": 18,
+          "tolerance": 0,
+          "explanation": "$36 - 18 = 18$."
+        },
+        {
+          "id": "numeric-and-geometric-patterns-q16",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A staircase pattern has 1, 3, 6, 10, ... squares.\n(a) Explain why pattern $n$ has $\\frac{n(n + 1)}{2}$ squares.  (2)\n(b) How many squares are in pattern 20?  (1)",
+          "memo": "(a) Two identical staircases fit together to form a rectangle ✓ of $n$ by $n + 1$ squares, so one staircase is half of $n(n + 1)$ ✓ (2)\n(b) $\\frac{20 \\times 21}{2} = 210$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Functions and Relationships",
+      "questions": [
+        {
+          "id": "functions-and-relationships-q4",
+          "type": "numeric",
+          "prompt": "For $y = x^2 - 4$, find the positive value of $x$ when $y = 21$.",
+          "answer": 5,
+          "tolerance": 0,
+          "explanation": "$x^2 = 25$, so $x = 5$ (or $-5$)."
+        },
+        {
+          "id": "functions-and-relationships-q9",
+          "type": "match",
+          "prompt": "Substitute $x = -2$ into each rule and match it with the output.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "$y = x^2$",
+              "right": "4"
+            },
+            {
+              "left": "$y = 2x + 1$",
+              "right": "-3"
+            },
+            {
+              "left": "$y = -x + 5$",
+              "right": "7"
+            },
+            {
+              "left": "$y = x^3$",
+              "right": "-8"
+            },
+            {
+              "left": "$y = \\frac{10}{x}$",
+              "right": "-5"
+            }
+          ],
+          "explanation": "$(-2)^2 = 4$; $-4 + 1 = -3$; $2 + 5 = 7$; $(-2)^3 = -8$; $10 \\div (-2) = -5$."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Algebraic Expressions and Factorisation",
+      "questions": [
+        {
+          "id": "algebraic-expressions-q9",
+          "type": "match",
+          "prompt": "Match each expression with its factorised form.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "$x^2 - 9$",
+              "right": "(x − 3)(x + 3)"
+            },
+            {
+              "left": "$x^2 + 6x + 9$",
+              "right": "(x + 3)²"
+            },
+            {
+              "left": "$x^2 - x - 6$",
+              "right": "(x − 3)(x + 2)"
+            },
+            {
+              "left": "$3x^2 - 12$",
+              "right": "3(x − 2)(x + 2)"
+            },
+            {
+              "left": "$x^2 + 5x + 6$",
+              "right": "(x + 2)(x + 3)"
+            }
+          ],
+          "explanation": "Check each answer by expanding it."
+        },
+        {
+          "id": "algebraic-expressions-q14",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Factorise fully: $2x^2 - 8x - 24$",
+          "memo": "$2(x^2 - 4x - 12)$ ✓ (common factor) (1)\n$2(x - 6)(x + 2)$ ✓✓ (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Algebraic Equations",
+      "questions": [
+        {
+          "id": "algebraic-equations-q1",
+          "type": "numeric",
+          "prompt": "Solve for $x$: $3(x - 4) = 2x + 1$",
+          "answer": 13,
+          "tolerance": 0,
+          "explanation": "$3x - 12 = 2x + 1$, so $x = 13$."
+        },
+        {
+          "id": "algebraic-equations-q6",
+          "type": "truefalse",
+          "prompt": "The only solution of $x^2 = 4x$ is $x = 4$.",
+          "answer": false,
+          "explanation": "$x^2 - 4x = 0$ gives $x(x - 4) = 0$, so $x = 0$ is also a solution."
+        },
+        {
+          "id": "algebraic-equations-q8",
+          "type": "mcq",
+          "prompt": "Make $r$ the subject of $C = 2\\pi r$.",
+          "options": [
+            "$r = C - 2\\pi$",
+            "$r = \\dfrac{C}{2\\pi}$",
+            "$r = 2\\pi C$",
+            "$r = \\dfrac{2\\pi}{C}$"
+          ],
+          "answer": 1,
+          "explanation": "Divide both sides by $2\\pi$."
+        },
+        {
+          "id": "algebraic-equations-q9",
+          "type": "match",
+          "prompt": "Match each equation with its solution.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "$2x + 5 = 1$",
+              "right": "-2"
+            },
+            {
+              "left": "$\\frac{x}{4} - 1 = 2$",
+              "right": "12"
+            },
+            {
+              "left": "$3^x = 81$",
+              "right": "4"
+            },
+            {
+              "left": "$5 - x = 9$",
+              "right": "-4"
+            },
+            {
+              "left": "$2(x + 1) = x + 7$",
+              "right": "5"
+            }
+          ],
+          "explanation": "Solve each and check by substitution."
+        },
+        {
+          "id": "algebraic-equations-q10",
+          "type": "numeric",
+          "prompt": "The length of a rectangle is 3 cm more than twice its breadth, and its perimeter is 36 cm. Find the breadth.",
+          "unit": "cm",
+          "answer": 5,
+          "tolerance": 0,
+          "explanation": "$2b + 2(2b + 3) = 36$, so $6b = 30$ and $b = 5$."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 8: Construction of Geometric Figures",
+      "questions": [
+        {
+          "id": "construction-of-geometric-figures-q1",
+          "type": "mcq",
+          "prompt": "What is the sum of the interior angles of a hexagon?",
+          "options": [
+            "$540^\\circ$",
+            "$720^\\circ$",
+            "$900^\\circ$",
+            "$1\\ 080^\\circ$"
+          ],
+          "answer": 1,
+          "explanation": "$(6 - 2) \\times 180^\\circ = 720^\\circ$."
+        },
+        {
+          "id": "construction-of-geometric-figures-q2",
+          "type": "numeric",
+          "prompt": "Calculate the size of each interior angle of a regular octagon, in degrees.",
+          "unit": "°",
+          "answer": 135,
+          "tolerance": 0,
+          "explanation": "$(8 - 2) \\times 180 = 1\\ 080$; $1\\ 080 \\div 8 = 135$."
+        },
+        {
+          "id": "construction-of-geometric-figures-q3",
+          "type": "truefalse",
+          "prompt": "The diagonals of a rectangle are equal in length.",
+          "answer": true,
+          "explanation": "Rectangles (and squares) have equal diagonals."
+        },
+        {
+          "id": "construction-of-geometric-figures-q10",
+          "type": "numeric",
+          "prompt": "A polygon has an interior angle sum of $1\\ 440^\\circ$. How many sides does it have?",
+          "answer": 10,
+          "tolerance": 0,
+          "explanation": "$(n - 2) \\times 180 = 1\\ 440$, so $n - 2 = 8$ and $n = 10$."
+        },
+        {
+          "id": "construction-of-geometric-figures-q13",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe how to construct a line through point $P$ parallel to line $AB$, using only a compass and a ruler. Explain why the lines are parallel.",
+          "memo": "Draw a line through $P$ cutting $AB$ at $Q$ ✓ (1)\nArc centred at $Q$ cutting both lines; same arc centred at $P$ ✓ (1)\nCopy the angle at $Q$ to $P$ in the corresponding position and draw the line ✓ (1)\nThe corresponding angles are equal, so the lines are parallel ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 9: Geometry of 2D Shapes: Congruence and Similarity",
+      "questions": [
+        {
+          "id": "geometry-of-2d-shapes-q2",
+          "type": "truefalse",
+          "prompt": "If the three angles of one triangle are equal to the three angles of another triangle, the triangles are similar.",
+          "answer": true,
+          "explanation": "Equal angles mean the same shape, so the triangles are similar (but not necessarily congruent)."
+        },
+        {
+          "id": "geometry-of-2d-shapes-q3",
+          "type": "numeric",
+          "prompt": "$\\triangle ABC\\ |||\\ \\triangle DEF$ with $AB = 8$ and $DE = 12$. What is the scale factor from $\\triangle ABC$ to $\\triangle DEF$?",
+          "answer": 1.5,
+          "tolerance": 0.001,
+          "explanation": "$12 \\div 8 = 1{,}5$."
+        },
+        {
+          "id": "geometry-of-2d-shapes-q12",
+          "type": "mcq",
+          "prompt": "Diagonal $AC$ divides parallelogram $ABCD$ into $\\triangle ABC$ and $\\triangle CDA$. Which condition proves that they are congruent?",
+          "options": [
+            "SSS",
+            "RHS",
+            "AAA",
+            "SSA"
+          ],
+          "answer": 0,
+          "explanation": "$AB = CD$, $BC = DA$ (opposite sides of a parallelogram) and $AC$ is common."
+        },
+        {
+          "id": "geometry-of-2d-shapes-q15",
+          "type": "open",
+          "marks": 3,
+          "prompt": "At the same time of day, a learner 1,6 m tall casts a shadow 2,4 m long, and a flagpole casts a shadow 15 m long. Calculate the height of the flagpole.",
+          "memo": "The triangles are similar (equal angles) ✓ (1)\n$\\frac{h}{1{,}6} = \\frac{15}{2{,}4}$ ✓ (1)\n$h = 10$ m ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 10: Geometry of Straight Lines",
+      "questions": [
+        {
+          "id": "geometry-of-straight-lines-q4",
+          "type": "mcq",
+          "prompt": "Which reason correctly justifies that two alternate angles are equal?",
+          "options": [
+            "vert opp ∠s",
+            "alt ∠s; $AB \\parallel CD$",
+            "∠s on a str line",
+            "alt ∠s ="
+          ],
+          "answer": 1,
+          "explanation": "Alternate angles are equal **because** the lines are parallel, so the reason must mention the parallel lines. \"alt ∠s =\" is the reason for proving lines parallel."
+        },
+        {
+          "id": "geometry-of-straight-lines-q9",
+          "type": "match",
+          "prompt": "Match each reason with the fact it stands for.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "corresp ∠s; AB ∥ CD",
+              "right": "Corresponding angles between parallel lines are equal"
+            },
+            {
+              "left": "alt ∠s; AB ∥ CD",
+              "right": "Alternate angles between parallel lines are equal"
+            },
+            {
+              "left": "co-int ∠s; AB ∥ CD",
+              "right": "Co-interior angles between parallel lines add to 180°"
+            },
+            {
+              "left": "vert opp ∠s",
+              "right": "Vertically opposite angles are equal"
+            },
+            {
+              "left": "∠s on a str line",
+              "right": "Angles on a straight line add to 180°"
+            }
+          ],
+          "explanation": "Learn these abbreviations; they are expected in geometry answers."
+        },
+        {
+          "id": "geometry-of-straight-lines-q10",
+          "type": "numeric",
+          "prompt": "Two co-interior angles between parallel lines are $3x$ and $2x$. Calculate $x$, in degrees.",
+          "unit": "°",
+          "answer": 36,
+          "tolerance": 0,
+          "explanation": "$5x = 180$, so $x = 36$."
+        }
+      ]
+    }
+  ]
+}

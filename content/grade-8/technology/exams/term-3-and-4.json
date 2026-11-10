@@ -1,0 +1,269 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 50,
+  "totalMarks": 40,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 3 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Electrical Systems: Circuits and Components",
+      "questions": [
+        {
+          "id": "electrical-circuits-output",
+          "type": "mcq",
+          "prompt": "Which is an OUTPUT device?",
+          "options": [
+            "Battery",
+            "Switch",
+            "Buzzer",
+            "Wire"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "electrical-circuits-ohms-law",
+          "type": "short",
+          "prompt": "Complete Ohm's law: V = I × …",
+          "answers": [
+            "r",
+            "resistance"
+          ]
+        },
+        {
+          "id": "electrical-circuits-current-calc",
+          "type": "numeric",
+          "prompt": "A 12 V supply is connected to a 6 Ω resistor. Calculate the current.",
+          "answer": 2,
+          "tolerance": 0,
+          "unit": "A"
+        },
+        {
+          "id": "electrical-circuits-voltage-calc",
+          "type": "numeric",
+          "prompt": "A current of 0,5 A flows through a 20 Ω resistor. Calculate the voltage across it.",
+          "answer": 10,
+          "tolerance": 0,
+          "unit": "V"
+        },
+        {
+          "id": "electrical-circuits-parallel",
+          "type": "truefalse",
+          "prompt": "In a parallel circuit, if one bulb blows the others go out.",
+          "answer": false
+        },
+        {
+          "id": "electrical-circuits-ips",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each component in a torch.",
+          "pairs": [
+            {
+              "left": "Batteries",
+              "right": "Input (energy source)"
+            },
+            {
+              "left": "Switch",
+              "right": "Process (control)"
+            },
+            {
+              "left": "Bulb",
+              "right": "Output"
+            },
+            {
+              "left": "Metal strip",
+              "right": "Conductor"
+            }
+          ]
+        },
+        {
+          "id": "electrical-circuits-series-adv",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give ONE advantage and ONE disadvantage of a series circuit.",
+          "memo": "✓ Advantage: simple / uses less current, so the battery lasts longer (1)\n✓ Disadvantage: if one component fails all stop / bulbs dimmer (1)"
+        },
+        {
+          "id": "electrical-circuits-short",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a short circuit and why is it dangerous?",
+          "memo": "✓ Current takes a path of very low resistance, bypassing the components (1)\n✓ A very large current flows and overheats the wires, which can cause a fire (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Switches and Logic Circuits",
+      "questions": [
+        {
+          "id": "switches-and-logic-and-series",
+          "type": "mcq",
+          "prompt": "Two switches in series form which logic circuit?",
+          "options": [
+            "AND",
+            "OR",
+            "NOT",
+            "Two-way"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "switches-and-logic-and-output",
+          "type": "numeric",
+          "prompt": "In an AND circuit, switch A = 1 and switch B = 0. What is the output (0 or 1)?",
+          "answer": 0,
+          "tolerance": 0
+        },
+        {
+          "id": "switches-and-logic-reed",
+          "type": "short",
+          "prompt": "Which switch closes when a magnet is brought near it?",
+          "answers": [
+            "reed switch",
+            "reed",
+            "a reed switch"
+          ]
+        },
+        {
+          "id": "switches-and-logic-bus",
+          "type": "truefalse",
+          "prompt": "A bus bell that rings when any one of several buttons is pressed uses OR logic.",
+          "answer": true
+        },
+        {
+          "id": "switches-and-logic-switches",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each switch to a use.",
+          "pairs": [
+            {
+              "left": "Push-to-make",
+              "right": "Doorbell"
+            },
+            {
+              "left": "Push-to-break",
+              "right": "Fridge light"
+            },
+            {
+              "left": "Tilt switch",
+              "right": "Heater that switches off if knocked over"
+            },
+            {
+              "left": "Two-way switch",
+              "right": "Staircase light"
+            }
+          ]
+        },
+        {
+          "id": "switches-and-logic-guillotine",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why does a paper guillotine have two buttons that must be pressed at the same time? Which logic does this use?",
+          "memo": "✓ So that both of the operator's hands are away from the blade (safety) (1)\n✓ AND logic (1)"
+        },
+        {
+          "id": "switches-and-logic-design",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A buzzer must sound if the front door OR the back door of a house is opened. Describe how you would connect the switches and say which type of switch you could use.",
+          "memo": "✓ Connect the two door switches in parallel (1)\n✓ in series with the battery and buzzer (1)\n✓ Use reed switches / push-to-break / micro-switches on the doors (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Processing Materials",
+      "questions": [
+        {
+          "id": "processing-materials-softwood",
+          "type": "mcq",
+          "prompt": "Pine is an example of a…",
+          "options": [
+            "hardwood",
+            "softwood",
+            "manufactured board",
+            "thermoplastic"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "processing-materials-ferrous",
+          "type": "short",
+          "prompt": "What do we call metals that contain iron?",
+          "answers": [
+            "ferrous",
+            "ferrous metals"
+          ]
+        },
+        {
+          "id": "processing-materials-thermo",
+          "type": "mcq",
+          "prompt": "Which type of plastic can be softened by heat and reshaped many times?",
+          "options": [
+            "Thermosetting plastic",
+            "Thermoplastic",
+            "Bakelite",
+            "Melamine"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "processing-materials-hacksaw",
+          "type": "short",
+          "prompt": "Which saw is used to cut metal?",
+          "answers": [
+            "hacksaw",
+            "a hacksaw"
+          ]
+        },
+        {
+          "id": "processing-materials-galvanise",
+          "type": "truefalse",
+          "prompt": "Galvanising means coating steel with zinc to prevent rusting.",
+          "answer": true
+        },
+        {
+          "id": "processing-materials-processes",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each task to the process.",
+          "pairs": [
+            {
+              "left": "Varnishing a table",
+              "right": "Finishing"
+            },
+            {
+              "left": "Riveting two metal strips",
+              "right": "Joining"
+            },
+            {
+              "left": "Filing the edge of acrylic",
+              "right": "Shaping"
+            },
+            {
+              "left": "Using a coping saw on plywood",
+              "right": "Cutting"
+            }
+          ]
+        },
+        {
+          "id": "processing-materials-pot-handle",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why are pot handles made from a thermosetting plastic such as Bakelite?",
+          "memo": "✓ It is heat resistant and does not soften when hot (1)\n✓ It is a poor conductor of heat, so the handle stays cool / safe to hold (1)"
+        },
+        {
+          "id": "processing-materials-plastics-env",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain THREE problems that plastics cause for the environment.",
+          "memo": "Any three (1 each): made from non-renewable oil; take hundreds of years to break down; litter on land; ocean pollution harming marine life; release toxic fumes when burnt"
+        }
+      ]
+    }
+  ]
+}

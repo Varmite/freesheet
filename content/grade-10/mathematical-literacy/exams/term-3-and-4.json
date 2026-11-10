@@ -1,0 +1,303 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 55,
+  "totalMarks": 45,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Measurement: Length, Mass, Volume, Temperature and Time",
+      "questions": [
+        {
+          "id": "measurement-cm-m",
+          "type": "numeric",
+          "prompt": "Convert 385 cm to metres.",
+          "answer": 3.85,
+          "tolerance": 0,
+          "unit": "m"
+        },
+        {
+          "id": "measurement-kg-g",
+          "type": "numeric",
+          "prompt": "Convert 2,4 kg to grams.",
+          "answer": 2400,
+          "tolerance": 0,
+          "unit": "g"
+        },
+        {
+          "id": "measurement-temp",
+          "type": "numeric",
+          "prompt": "Convert 25 °C to °F.",
+          "answer": 77,
+          "tolerance": 0,
+          "unit": "°F"
+        },
+        {
+          "id": "measurement-clock",
+          "type": "short",
+          "prompt": "Write 8:20 p.m. in 24-hour time (e.g. 14:05).",
+          "answers": [
+            "20:20",
+            "20h20",
+            "2020"
+          ]
+        },
+        {
+          "id": "measurement-paint",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A wall is 5 m long and 2,7 m high, with a window of 1,2 m by 1 m. One litre of paint covers 8 m², and paint is sold in 2 ℓ tins. How many tins are needed for two coats?",
+          "memo": "✓ Wall area 13,5 m² − 1,2 m² = 12,3 m² (1)\n✓ Two coats: 24,6 m² (1)\n✓ Paint: 24,6 ÷ 8 = 3,075 ℓ (1)\n✓ 2 tins (4 ℓ) (1)"
+        },
+        {
+          "id": "measurement-round-materials",
+          "type": "truefalse",
+          "prompt": "When calculating the number of tiles to buy, you should round down to save money.",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Maps, Plans and Scale",
+      "questions": [
+        {
+          "id": "maps-plans-and-scale-ratio-scale",
+          "type": "numeric",
+          "prompt": "On a 1 : 25 000 map, a path is 8 cm long. What is its real length in km?",
+          "answer": 2,
+          "tolerance": 0,
+          "unit": "km"
+        },
+        {
+          "id": "maps-plans-and-scale-map-dist",
+          "type": "numeric",
+          "prompt": "Two schools are 4,5 km apart. How far apart are they on a 1 : 50 000 map, in cm?",
+          "answer": 9,
+          "tolerance": 0,
+          "unit": "cm"
+        },
+        {
+          "id": "maps-plans-and-scale-find-scale",
+          "type": "mcq",
+          "prompt": "A 10 m room is drawn as 5 cm on a plan. What is the scale?",
+          "options": [
+            "1 : 2",
+            "1 : 20",
+            "1 : 200",
+            "1 : 2 000"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "maps-plans-and-scale-bar",
+          "type": "truefalse",
+          "prompt": "A bar scale remains correct when a map is enlarged on a photocopier.",
+          "answer": true
+        },
+        {
+          "id": "maps-plans-and-scale-plan-area",
+          "type": "numeric",
+          "prompt": "On a 1 : 50 plan, a kitchen measures 6 cm by 8 cm. Calculate the real area of the kitchen in m².",
+          "answer": 12,
+          "tolerance": 0,
+          "unit": "m²"
+        },
+        {
+          "id": "maps-plans-and-scale-compass",
+          "type": "mcq",
+          "prompt": "If you face north and turn 90° clockwise, which direction do you face?",
+          "options": [
+            "South",
+            "West",
+            "East",
+            "North-east"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "maps-plans-and-scale-symbols",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each floor-plan symbol to its meaning.",
+          "pairs": [
+            {
+              "left": "Thick solid line",
+              "right": "Wall"
+            },
+            {
+              "left": "Arc from a gap in a wall",
+              "right": "Door and the way it opens"
+            },
+            {
+              "left": "Thin double line in a wall",
+              "right": "Window"
+            }
+          ]
+        },
+        {
+          "id": "maps-plans-and-scale-travel",
+          "type": "open",
+          "marks": 3,
+          "prompt": "On a 1 : 100 000 map, the route from home to a stadium is 18 cm. If a taxi travels at an average of 60 km/h, how long will the trip take?",
+          "memo": "✓ Real distance = 18 km (1)\n✓ Time = 18 ÷ 60 = 0,3 h (1)\n✓ = 18 minutes (1)"
+        },
+        {
+          "id": "maps-plans-and-scale-directions",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO things that make written directions easy to follow.",
+          "memo": "Any two (1 each): use landmarks; give turns clearly (left/right); give distances or number of streets; use street names; give compass directions"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Data Handling",
+      "questions": [
+        {
+          "id": "data-handling-discrete",
+          "type": "mcq",
+          "prompt": "Which is continuous data?",
+          "options": [
+            "Number of pets",
+            "Shoe size sold",
+            "Height of learners",
+            "Favourite colour"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "data-handling-mode",
+          "type": "numeric",
+          "prompt": "Find the mode of: 4; 6; 6; 7; 8; 6; 9; 4",
+          "answer": 6,
+          "tolerance": 0
+        },
+        {
+          "id": "data-handling-best-measure",
+          "type": "mcq",
+          "prompt": "Which average is best for describing house prices in an area with a few mansions?",
+          "options": [
+            "Mean",
+            "Median",
+            "Mode",
+            "Range"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "data-handling-pie",
+          "type": "numeric",
+          "prompt": "In a survey of 60 people, 15 prefer rugby. What angle should rugby have in a pie chart?",
+          "answer": 90,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "data-handling-misleading",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A company's bar graph of sales starts its vertical axis at R95 000. Explain why this could be misleading.",
+          "memo": "✓ The axis does not start at zero (1)\n✓ so small differences in sales look much bigger than they are (1)"
+        },
+        {
+          "id": "data-handling-cycle",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A learner wants to know how much time Grade 10s spend on social media. Describe how she could collect, organise and represent the data.",
+          "memo": "✓ Collect: questionnaire/survey of a sample of Grade 10 learners (1)\n✓ Organise: frequency table of time groups (1)\n✓ Represent: histogram or bar graph; calculate averages (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Probability",
+      "questions": [
+        {
+          "id": "probability-scale",
+          "type": "mcq",
+          "prompt": "An event with probability 0 is…",
+          "options": [
+            "certain",
+            "likely",
+            "impossible",
+            "unlikely"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "probability-die",
+          "type": "numeric",
+          "prompt": "A fair die is rolled. What is the probability of a number greater than 4? (decimal, 2 places)",
+          "answer": 0.33,
+          "tolerance": 0.01
+        },
+        {
+          "id": "probability-bag",
+          "type": "numeric",
+          "prompt": "A bag has 5 red, 3 green and 2 yellow sweets. What is P(green) as a percentage?",
+          "answer": 30,
+          "tolerance": 0,
+          "unit": "%"
+        },
+        {
+          "id": "probability-experimental",
+          "type": "numeric",
+          "prompt": "A spinner landed on blue 18 times in 60 spins. What is the experimental probability of blue (decimal)?",
+          "answer": 0.3,
+          "tolerance": 0
+        },
+        {
+          "id": "probability-coins",
+          "type": "numeric",
+          "prompt": "Two coins are tossed. What is the probability of getting two tails? (decimal)",
+          "answer": 0.25,
+          "tolerance": 0
+        },
+        {
+          "id": "probability-independent",
+          "type": "truefalse",
+          "prompt": "After three heads in a row, a fair coin is more likely to land tails next.",
+          "answer": false
+        },
+        {
+          "id": "probability-convert",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each probability to its equivalent.",
+          "pairs": [
+            {
+              "left": "1/2",
+              "right": "50%"
+            },
+            {
+              "left": "0,2",
+              "right": "20%"
+            },
+            {
+              "left": "3/4",
+              "right": "75%"
+            }
+          ]
+        },
+        {
+          "id": "probability-rain",
+          "type": "open",
+          "marks": 2,
+          "prompt": "The forecast says there is a 30% chance of rain. A learner says, 'So it will not rain.' Is she correct? Explain.",
+          "memo": "✓ No (1)\n✓ 30% means rain is less likely than not, but it can still happen (about 3 in 10 similar days) (1)"
+        },
+        {
+          "id": "probability-expected",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A fair die is rolled 300 times. About how many times would you expect a 6? Explain.",
+          "memo": "✓ $\\frac{1}{6} \\times 300$ (1)\n✓ = about 50 times (1)"
+        }
+      ]
+    }
+  ]
+}

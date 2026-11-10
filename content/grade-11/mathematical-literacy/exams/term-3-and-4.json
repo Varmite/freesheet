@@ -1,0 +1,206 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 45,
+  "totalMarks": 35,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 3 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Maps, Plans and Models",
+      "questions": [
+        {
+          "id": "maps-plans-and-models-elevation",
+          "type": "mcq",
+          "prompt": "Which plan shows the outside of a house from the front?",
+          "options": [
+            "Floor plan",
+            "Elevation plan",
+            "Route map",
+            "Assembly plan"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "maps-plans-and-models-model",
+          "type": "numeric",
+          "prompt": "A model train is built to a scale of 1 : 87. The model is 23 cm long. How long is the real train, in metres? (two decimals)",
+          "answer": 20.01,
+          "tolerance": 0.01,
+          "unit": "m"
+        },
+        {
+          "id": "maps-plans-and-models-scale-down",
+          "type": "numeric",
+          "prompt": "A real car is 4,5 m long. How long is a 1 : 18 scale model, in cm?",
+          "answer": 25,
+          "tolerance": 0,
+          "unit": "cm"
+        },
+        {
+          "id": "maps-plans-and-models-area-scale",
+          "type": "truefalse",
+          "prompt": "If a model is built at a scale of 1 : 10, its area is $\\frac{1}{100}$ of the real area.",
+          "answer": true
+        },
+        {
+          "id": "maps-plans-and-models-time",
+          "type": "numeric",
+          "prompt": "A bus travels 240 km at 80 km/h. How long does the trip take, in hours?",
+          "answer": 3,
+          "tolerance": 0,
+          "unit": "hours"
+        },
+        {
+          "id": "maps-plans-and-models-speed",
+          "type": "numeric",
+          "prompt": "A cyclist rides 45 km in 2 h 15 min. Calculate the average speed.",
+          "answer": 20,
+          "tolerance": 0,
+          "unit": "km/h"
+        },
+        {
+          "id": "maps-plans-and-models-arrive",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A taxi leaves Bloemfontein at 06:15 and travels 175 km to Kimberley at an average speed of 70 km/h. At what time does it arrive?",
+          "memo": "✓ 175 ÷ 70 = 2,5 h (1)\n✓ = 2 h 30 min (1)\n✓ Arrives at 08:45 (1)"
+        },
+        {
+          "id": "maps-plans-and-models-volume-scale",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A model of a water tank is built at a scale of 1 : 20. If the model holds 0,5 ℓ, how much does the real tank hold?",
+          "memo": "✓ Volume scale factor $20^3 = 8\\ 000$ (1)\n✓ 0,5 × 8 000 = 4 000 ℓ (1)"
+        },
+        {
+          "id": "maps-plans-and-models-plans-use",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO reasons why builders use scale drawings.",
+          "memo": "Any two (1 each): to plan the layout accurately; to calculate quantities and costs; to get building approval; to communicate the design to workers"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Data Handling: Summarising and Interpreting Data",
+      "questions": [
+        {
+          "id": "data-handling-sample",
+          "type": "mcq",
+          "prompt": "To find out how much Grade 11s sleep, which sample is most representative?",
+          "options": [
+            "10 learners from the soccer team",
+            "Every fifth learner on the Grade 11 class lists",
+            "Learners who arrive first in the morning",
+            "Your friends"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "data-handling-leading",
+          "type": "truefalse",
+          "prompt": "'Wouldn't you agree that our school needs a longer lunch break?' is a leading question.",
+          "answer": true
+        },
+        {
+          "id": "data-handling-iqr",
+          "type": "numeric",
+          "prompt": "For the data 4; 6; 7; 9; 11; 13; 15; 18, $Q_1 = 6{,}5$ and $Q_3 = 14$. What is the IQR?",
+          "answer": 7.5,
+          "tolerance": 0
+        },
+        {
+          "id": "data-handling-quartiles",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Find the five-number summary of: 12; 15; 18; 20; 22; 25; 28; 31; 35",
+          "memo": "✓ Min 12, max 35 (1)\n✓ Median 22 (1)\n✓ $Q_1 = 16{,}5$ (1)\n✓ $Q_3 = 29{,}5$ (1)"
+        },
+        {
+          "id": "data-handling-compare",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Team A: median 68 runs, IQR 30. Team B: median 61 runs, IQR 12. Compare the teams' batting performance.",
+          "memo": "✓ Team A scores more runs on average (higher median) (1)\n✓ Team B is more consistent (smaller IQR) (1)\n✓ A sensible conclusion (e.g. A is stronger but less predictable) (1)"
+        },
+        {
+          "id": "data-handling-box",
+          "type": "mcq",
+          "prompt": "In a box-and-whisker plot, the box shows…",
+          "options": [
+            "the whole data set",
+            "the middle 50% of the data",
+            "only the outliers",
+            "the mean"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "data-handling-range",
+          "type": "numeric",
+          "prompt": "Daily sales: R1 250; R980; R1 640; R2 100; R1 180. Find the range.",
+          "answer": 1120,
+          "tolerance": 0,
+          "unit": "rand"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Probability and Risk",
+      "questions": [
+        {
+          "id": "probability-and-risk-odds",
+          "type": "mcq",
+          "prompt": "The probability of an event is $\\frac{1}{4}$. What are the odds in favour?",
+          "options": [
+            "1 : 4",
+            "1 : 3",
+            "3 : 1",
+            "4 : 1"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "probability-and-risk-percent",
+          "type": "numeric",
+          "prompt": "Express a probability of $\\frac{3}{8}$ as a percentage.",
+          "answer": 37.5,
+          "tolerance": 0.01,
+          "unit": "%"
+        },
+        {
+          "id": "probability-and-risk-expected",
+          "type": "numeric",
+          "prompt": "The probability that a seed germinates is 0,85. How many of 400 seeds would you expect to germinate?",
+          "answer": 340,
+          "tolerance": 0
+        },
+        {
+          "id": "probability-and-risk-fair",
+          "type": "truefalse",
+          "prompt": "In a fair game, the expected winnings equal the cost of playing.",
+          "answer": true
+        },
+        {
+          "id": "probability-and-risk-game",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A raffle sells 500 tickets at R20 each. There is one prize of R5 000. (a) What is the probability of winning with one ticket? (b) Calculate the organiser's profit if all tickets are sold.",
+          "memo": "(a) ✓ $\\frac{1}{500}$ (1) ✓ = 0,2% (1)\n(b) ✓ Income 500 × R20 = R10 000 (1) ✓ Profit R5 000 (1)"
+        },
+        {
+          "id": "probability-and-risk-insurance",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how probability helps an insurance company decide how much to charge.",
+          "memo": "✓ It estimates how likely claims are, and how many it will pay out (1)\n✓ It sets premiums so that the money collected covers expected claims plus costs and profit (1)"
+        }
+      ]
+    }
+  ]
+}

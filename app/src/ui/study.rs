@@ -249,7 +249,7 @@ impl App {
             }
             if !s.exams.is_empty() {
                 ui.add_space(t.px(2.0));
-                if btn(&format!("Practise full {} exams →", s.name)).show(ui, &t).clicked() {
+                if btn(&format!("Practise {} exams →", s.name)).show(ui, &t).clicked() {
                     self.go(Tab::Exams, View::List { subject: s.id.clone() });
                 }
             }

@@ -1,0 +1,333 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: The Scramble for Africa",
+      "questions": [
+        {
+          "id": "the-scramble-for-africa-berlin-host",
+          "type": "short",
+          "prompt": "In which city was the conference held in 1884–1885 to divide Africa?",
+          "answers": [
+            "berlin"
+          ]
+        },
+        {
+          "id": "the-scramble-for-africa-no-africans",
+          "type": "truefalse",
+          "prompt": "African leaders were invited to the Berlin Conference.",
+          "answer": false
+        },
+        {
+          "id": "the-scramble-for-africa-adwa",
+          "type": "mcq",
+          "prompt": "Which army did Menelik II defeat at the Battle of Adwa in 1896?",
+          "options": [
+            "British",
+            "French",
+            "German",
+            "Italian"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "the-scramble-for-africa-maxim",
+          "type": "short",
+          "prompt": "Which early machine gun gave Europeans a huge military advantage in Africa?",
+          "answers": [
+            "maxim gun",
+            "the maxim gun",
+            "maxim"
+          ]
+        },
+        {
+          "id": "the-scramble-for-africa-colonies-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each colony to the power that ruled it.",
+          "pairs": [
+            {
+              "left": "Congo",
+              "right": "Belgium"
+            },
+            {
+              "left": "Mozambique",
+              "right": "Portugal"
+            },
+            {
+              "left": "Namibia",
+              "right": "Germany"
+            },
+            {
+              "left": "Senegal",
+              "right": "France"
+            }
+          ]
+        },
+        {
+          "id": "the-scramble-for-africa-effective",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What did 'effective occupation' mean at the Berlin Conference?",
+          "memo": "✓ A country could only claim land if it had real control on the ground (1)\n✓ such as officials, soldiers or trading posts (1)"
+        },
+        {
+          "id": "the-scramble-for-africa-borders",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how the way borders were drawn at the Berlin Conference still affects Africa today.",
+          "memo": "✓ Borders were drawn on maps without considering the people (1)\n✓ Ethnic groups were split, and rival groups forced together (1)\n✓ This has caused border disputes and civil conflict after independence (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Colonial Rule: Case Studies from the Congo and Ghana",
+      "questions": [
+        {
+          "id": "colonialism-case-studies-rubber",
+          "type": "short",
+          "prompt": "Which product was in great demand from the Congo because of new bicycle and car tyres?",
+          "answers": [
+            "rubber"
+          ]
+        },
+        {
+          "id": "colonialism-case-studies-force-publique",
+          "type": "short",
+          "prompt": "What was the name of Leopold's army in the Congo?",
+          "answers": [
+            "force publique",
+            "the force publique"
+          ]
+        },
+        {
+          "id": "colonialism-case-studies-1908",
+          "type": "numeric",
+          "prompt": "In which year did the Belgian government take the Congo from Leopold?",
+          "answer": 1908,
+          "tolerance": 0
+        },
+        {
+          "id": "colonialism-case-studies-golden-stool",
+          "type": "truefalse",
+          "prompt": "The British captured the Golden Stool in 1900.",
+          "answer": false,
+          "explanation": "The Golden Stool was hidden and never captured."
+        },
+        {
+          "id": "colonialism-case-studies-yaa",
+          "type": "mcq",
+          "prompt": "Who led the Asante uprising of 1900?",
+          "options": [
+            "Prempeh I",
+            "Kwame Nkrumah",
+            "Yaa Asantewaa",
+            "Menelik II"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "colonialism-case-studies-match-people",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each person to their role.",
+          "pairs": [
+            {
+              "left": "Roger Casement",
+              "right": "Diplomat who exposed Congo abuses"
+            },
+            {
+              "left": "Prempeh I",
+              "right": "Asantehene exiled by the British"
+            },
+            {
+              "left": "Kwame Nkrumah",
+              "right": "Led Ghana to independence"
+            },
+            {
+              "left": "Leopold II",
+              "right": "Belgian king who owned the Congo"
+            }
+          ]
+        },
+        {
+          "id": "colonialism-case-studies-methods",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE methods used to force Congolese people to collect rubber.",
+          "memo": "Any three (1 each): quotas; taking women and children hostage; flogging with the chicotte; burning villages; killing; cutting off hands"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: The Causes of World War I",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Source D: The 'blank cheque' (a paraphrase of Germany's assurance to Austria-Hungary, July 1914)",
+          "text": "Austria-Hungary must deal with Serbia firmly, and Germany will stand by her side as a faithful ally, whatever the consequences."
+        }
+      ],
+      "questions": [
+        {
+          "id": "causes-of-world-war-one-years",
+          "type": "short",
+          "prompt": "In which years was World War I fought? (e.g. 1900–1905)",
+          "answers": [
+            "1914-1918",
+            "1914–1918",
+            "1914 to 1918",
+            "1914 - 1918"
+          ]
+        },
+        {
+          "id": "causes-of-world-war-one-assassin",
+          "type": "short",
+          "prompt": "Who assassinated Archduke Franz Ferdinand?",
+          "answers": [
+            "gavrilo princip",
+            "princip"
+          ]
+        },
+        {
+          "id": "causes-of-world-war-one-city",
+          "type": "mcq",
+          "prompt": "In which city was Franz Ferdinand killed?",
+          "options": [
+            "Vienna",
+            "Belgrade",
+            "Sarajevo",
+            "Berlin"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "causes-of-world-war-one-belgium",
+          "type": "truefalse",
+          "prompt": "Britain declared war on Germany after German troops invaded neutral Belgium.",
+          "answer": true
+        },
+        {
+          "id": "causes-of-world-war-one-main",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each cause to an example.",
+          "pairs": [
+            {
+              "left": "Militarism",
+              "right": "Naval race to build Dreadnoughts"
+            },
+            {
+              "left": "Alliances",
+              "right": "Europe divided into two armed camps"
+            },
+            {
+              "left": "Imperialism",
+              "right": "Rivalry over Morocco"
+            },
+            {
+              "left": "Nationalism",
+              "right": "Serbs wanting a united Slav state"
+            }
+          ]
+        },
+        {
+          "id": "causes-of-world-war-one-immediate",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is the difference between a long-term cause and an immediate cause? Use World War I as an example.",
+          "memo": "✓ Long-term causes build tension over many years, e.g. militarism, alliances, imperialism, nationalism (1)\n✓ The immediate cause is the event that triggers the war: the assassination at Sarajevo (1)"
+        },
+        {
+          "id": "causes-of-world-war-one-source-d",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Read Source D. What promise is the Kaiser making, and why was it important?",
+          "memo": "✓ Germany will support Austria-Hungary in whatever action it takes against Serbia (the 'blank cheque') (1)\n✓ It encouraged Austria-Hungary to act aggressively, making war more likely (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: World War I: Trench Warfare and South Africa",
+      "questions": [
+        {
+          "id": "world-war-one-and-south-africa-no-mans-land",
+          "type": "short",
+          "prompt": "What was the area between the opposing trenches called?",
+          "answers": [
+            "no man's land",
+            "no mans land",
+            "no-man's-land"
+          ]
+        },
+        {
+          "id": "world-war-one-and-south-africa-mendi-date",
+          "type": "mcq",
+          "prompt": "When did the SS Mendi sink?",
+          "options": [
+            "4 August 1914",
+            "21 February 1917",
+            "1 July 1916",
+            "11 November 1918"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "world-war-one-and-south-africa-sanlc",
+          "type": "truefalse",
+          "prompt": "Black South Africans in the SANLC were given rifles and fought in the front line.",
+          "answer": false,
+          "explanation": "They were not allowed to carry weapons and worked as labourers."
+        },
+        {
+          "id": "world-war-one-and-south-africa-weapons",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each weapon to its description.",
+          "pairs": [
+            {
+              "left": "Machine gun",
+              "right": "Fired hundreds of bullets a minute"
+            },
+            {
+              "left": "Mustard gas",
+              "right": "Burned and blinded soldiers"
+            },
+            {
+              "left": "Tank",
+              "right": "Armoured vehicle that crossed trenches"
+            },
+            {
+              "left": "U-boat",
+              "right": "German submarine"
+            }
+          ]
+        },
+        {
+          "id": "world-war-one-and-south-africa-trench-conditions",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE conditions in the trenches.",
+          "memo": "Any three (1 each): mud and water; rats and lice; trench foot; disease; constant shelling; dead bodies/smell; cold; shell shock"
+        },
+        {
+          "id": "world-war-one-and-south-africa-versailles",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE terms of the Treaty of Versailles that affected Germany.",
+          "memo": "Any three (1 each): war guilt clause; reparations; army limited; lost colonies; lost land in Europe; navy limited / no air force"
+        }
+      ]
+    }
+  ]
+}

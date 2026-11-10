@@ -1,0 +1,382 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 7 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Reading for Comprehension",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice passage: The Tyranny of the Five-Star Review (written for FreeSheet)",
+          "text": "[1] Last month I ate at a small restaurant in Bloemfontein that served the best lamb curry I have ever tasted. The owner, a cheerful woman called Mrs Pillay, asked me as I left whether I would 'please, please' leave a review. Not a good review, I noticed. A five-star review. Anything less, she explained, and her restaurant would sink beneath the hundreds of others on the app.\n\n[2] We now live in a world where everything is rated: our taxi drivers, our plumbers, our dentists, even the people who deliver our groceries. On the surface this is democratic. Why should a restaurant critic's opinion matter more than mine? But the system has a cruel flaw. When every rating is expected to be perfect, four stars, which once meant 'very good', has come to mean 'something went wrong'.\n\n[3] The result is a strange kind of dishonesty. We give five stars because we feel sorry for the driver, or because we are afraid of seeming mean. The ratings stop telling us anything at all. And the people being rated, who often depend on them for their income, live in constant fear of a single bad day.\n\n[4] I gave Mrs Pillay five stars. She deserved them. But I wonder how many of her neighbours deserved four, and are now out of business."
+        }
+      ],
+      "questions": [
+        {
+          "id": "reading-for-comprehension-city",
+          "type": "short",
+          "prompt": "In which city is the restaurant in the passage?",
+          "answers": [
+            "bloemfontein"
+          ]
+        },
+        {
+          "id": "reading-for-comprehension-tones",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each tone word to its meaning.",
+          "pairs": [
+            {
+              "left": "Indignant",
+              "right": "Angry at unfairness"
+            },
+            {
+              "left": "Ambivalent",
+              "right": "Having mixed feelings"
+            },
+            {
+              "left": "Didactic",
+              "right": "Intending to teach"
+            },
+            {
+              "left": "Conciliatory",
+              "right": "Trying to make peace"
+            }
+          ]
+        },
+        {
+          "id": "reading-for-comprehension-structure",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Comment on the structure of the passage, referring to its beginning and ending.",
+          "memo": "✓ It is circular: it starts and ends with Mrs Pillay (1)\n✓ The ending adds a thought-provoking twist about the neighbours who went out of business (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Summary Writing",
+      "questions": [
+        {
+          "id": "summary-writing-limit",
+          "type": "numeric",
+          "prompt": "What is the maximum number of words for the Grade 11 Paper 1 summary?",
+          "answer": 90,
+          "tolerance": 0
+        },
+        {
+          "id": "summary-writing-relevant",
+          "type": "mcq",
+          "prompt": "If asked for the EFFECTS of the drought, which point should be left out?",
+          "options": [
+            "Farm workers lost their jobs",
+            "Scientists link it to changing rainfall patterns",
+            "Shops in small towns closed",
+            "The veld was damaged"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "summary-writing-generalise",
+          "type": "short",
+          "prompt": "Generalise: 'dams, rivers, boreholes and reservoirs'.",
+          "answers": [
+            "water sources",
+            "sources of water",
+            "water supplies"
+          ]
+        },
+        {
+          "id": "summary-writing-opinion",
+          "type": "truefalse",
+          "prompt": "You may include your own opinion in a summary.",
+          "answer": false
+        },
+        {
+          "id": "summary-writing-linking",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Combine using a suitable linking word: 'Farms cut costs. Farm workers lost their jobs.'",
+          "memo": "✓✓ e.g. 'As farms cut costs, workers lost their jobs.' / 'Farms cut costs; consequently, workers lost their jobs.' (2)"
+        },
+        {
+          "id": "summary-writing-mistake",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO common mistakes in summary writing.",
+          "memo": "Any two: ✓ exceeding the word limit ✓ including examples/opinions ✓ copying from the text ✓ including irrelevant points ✓ point form (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Language Structures and Editing",
+      "questions": [
+        {
+          "id": "language-and-editing-phrase",
+          "type": "truefalse",
+          "prompt": "'After the long holiday' is a clause.",
+          "answer": false
+        },
+        {
+          "id": "language-and-editing-punct",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each punctuation mark to an effect.",
+          "pairs": [
+            {
+              "left": "Ellipsis",
+              "right": "Suspense or a trailing thought"
+            },
+            {
+              "left": "Dash",
+              "right": "Emphasis or an afterthought"
+            },
+            {
+              "left": "Exclamation mark",
+              "right": "Strong emotion"
+            }
+          ]
+        },
+        {
+          "id": "language-and-editing-dangling",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Correct the dangling modifier: 'Having finished the exam, the bell rang.'",
+          "memo": "✓✓ e.g. 'Having finished the exam, I heard the bell ring.' / 'After I had finished the exam, the bell rang.' (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Poetry: Tone, Imagery and Theme",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "London – William Blake (1794; public domain)",
+          "text": "I wander thro' each charter'd street,\nNear where the charter'd Thames does flow.\nAnd mark in every face I meet\nMarks of weakness, marks of woe.\n\nIn every cry of every Man,\nIn every Infants cry of fear,\nIn every voice: in every ban,\nThe mind-forg'd manacles I hear\n\nHow the Chimney-sweepers cry\nEvery blackning Church appalls,\nAnd the hapless Soldiers sigh\nRuns in blood down Palace walls\n\nBut most thro' midnight streets I hear\nHow the youthful Harlots curse\nBlasts the new-born Infants tear\nAnd blights with plagues the Marriage hearse"
+        }
+      ],
+      "questions": [
+        {
+          "id": "poetry-analysis-manacles",
+          "type": "mcq",
+          "prompt": "What are 'mind-forg'd manacles'?",
+          "options": [
+            "Real chains made by blacksmiths",
+            "Mental restrictions people accept",
+            "Jewellery",
+            "Prison walls"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "poetry-analysis-institutions",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each image to the institution Blake criticises.",
+          "pairs": [
+            {
+              "left": "'blackning Church'",
+              "right": "Religion"
+            },
+            {
+              "left": "'Palace walls'",
+              "right": "The monarchy / state"
+            },
+            {
+              "left": "'Marriage hearse'",
+              "right": "Marriage"
+            }
+          ]
+        },
+        {
+          "id": "poetry-analysis-marks",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the play on the word 'mark' in lines 3–4.",
+          "memo": "✓ First 'mark' means to notice (1)\n✓ 'Marks' means visible signs/scars of suffering on people's faces (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: The Novel: Theme, Symbol and Narrative Technique",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice extract (written for FreeSheet)",
+          "text": "The jacaranda had been planted the year my father was born, and for as long as I could remember it had flowered every October, carpeting the driveway in purple. My father used to complain about the mess. 'One day I'll cut that thing down,' he would say, sweeping, though we all knew he never would.\n\nThe October after he died, the tree did not flower. My mother said it was the drought. My brother said it was coincidence. I said nothing, but I stood under its bare branches every afternoon, waiting, as if it owed me something.\n\nIt was only later, much later, that I understood why I had been so angry with a tree."
+        }
+      ],
+      "questions": [
+        {
+          "id": "the-novel-theme",
+          "type": "mcq",
+          "prompt": "Which is a statement of THEME rather than subject?",
+          "options": [
+            "A family farm",
+            "The Second World War",
+            "Grief can make us look for meaning in ordinary things",
+            "A boy and his dog"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "the-novel-foreshadow",
+          "type": "short",
+          "prompt": "What is a hint about future events in a story called?",
+          "answers": [
+            "foreshadowing"
+          ]
+        },
+        {
+          "id": "the-novel-motif",
+          "type": "truefalse",
+          "prompt": "A motif is a recurring image or idea in a text.",
+          "answer": true
+        },
+        {
+          "id": "the-novel-pov",
+          "type": "mcq",
+          "prompt": "The practice extract is narrated in the…",
+          "options": [
+            "first person",
+            "second person",
+            "third person omniscient",
+            "third person limited"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "the-novel-irony",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the irony of the father's words 'One day I'll cut that thing down'.",
+          "memo": "✓ He complained about the tree but never cut it down; he secretly loved it (1)\n✓ After his death, the tree 'dies' in a sense on its own (1)"
+        },
+        {
+          "id": "the-novel-ending",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is the effect of the final sentence?",
+          "memo": "✓ It shows the narrator is looking back with greater understanding (retrospective narration) (1)\n✓ and suggests the anger was really grief for the father, inviting reflection (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Critical Language Awareness",
+      "questions": [
+        {
+          "id": "critical-language-awareness-card",
+          "type": "mcq",
+          "prompt": "Showing only the favourable facts about a product is called…",
+          "options": [
+            "name-calling",
+            "card-stacking",
+            "plain folks",
+            "testimonial"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "critical-language-awareness-rightsizing",
+          "type": "short",
+          "prompt": "What is the term for language like 'rightsizing' that deliberately hides an unpleasant truth?",
+          "answers": [
+            "doublespeak",
+            "euphemism"
+          ]
+        },
+        {
+          "id": "critical-language-awareness-neutral",
+          "type": "mcq",
+          "prompt": "Which is the gender-neutral alternative to 'policeman'?",
+          "options": [
+            "Policewoman",
+            "Police officer",
+            "Copper",
+            "Lawman"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "critical-language-awareness-plainfolks",
+          "type": "truefalse",
+          "prompt": "'Plain folks' propaganda uses celebrity endorsements.",
+          "answer": false
+        },
+        {
+          "id": "critical-language-awareness-questions",
+          "type": "open",
+          "marks": 3,
+          "prompt": "List THREE questions a critical reader should ask about a text.",
+          "memo": "Any three: ✓ Who wrote it? ✓ For whom/what audience? ✓ What is its purpose? ✓ What has been left out? ✓ Who benefits? (3)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Visual Literacy: Advertisements, Cartoons and Film",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Described film still (original)",
+          "text": "A low-angle shot shows a factory owner standing on a balcony, silhouetted against a red evening sky. Below him, in a high-angle long shot, workers queue at the factory gates. A slow, heavy drumbeat plays on the soundtrack."
+        }
+      ],
+      "questions": [
+        {
+          "id": "visual-literacy-lowangle",
+          "type": "mcq",
+          "prompt": "A low-angle shot usually makes a character appear…",
+          "options": [
+            "weak",
+            "powerful",
+            "far away",
+            "happy"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "visual-literacy-closeup",
+          "type": "short",
+          "prompt": "Which type of shot best shows a character's emotion in detail?",
+          "answers": [
+            "close-up",
+            "close up",
+            "closeup",
+            "a close-up"
+          ]
+        },
+        {
+          "id": "visual-literacy-pathos",
+          "type": "truefalse",
+          "prompt": "Pathos is an appeal to the audience's emotions.",
+          "answer": true
+        },
+        {
+          "id": "visual-literacy-still",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Discuss how camera angles in the described film still show the relationship between the owner and the workers.",
+          "memo": "✓ The low angle makes the owner look powerful/dominant (1)\n✓ The high-angle long shot makes the workers look small, powerless and numerous (1)\n✓ The contrast emphasises inequality/a power imbalance (1)"
+        },
+        {
+          "id": "visual-literacy-silhouette",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why might the director show the owner as a silhouette?",
+          "memo": "✓ It hides his face, making him seem mysterious/impersonal (1)\n✓ suggesting he is distant from or uncaring towards the workers (1)"
+        }
+      ]
+    }
+  ]
+}

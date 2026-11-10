@@ -1,0 +1,321 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Economic Systems",
+      "questions": [
+        {
+          "id": "economic-systems-basic-problem",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is the basic economic problem?",
+          "memo": "✓ People's wants are unlimited (1)\n✓ but resources are limited/scarce (1)"
+        },
+        {
+          "id": "economic-systems-opp-cost",
+          "type": "short",
+          "prompt": "What is the value of the next best alternative given up called?",
+          "answers": [
+            "opportunity cost"
+          ]
+        },
+        {
+          "id": "economic-systems-sa-system",
+          "type": "mcq",
+          "prompt": "What type of economic system does South Africa have?",
+          "options": [
+            "Traditional",
+            "Command",
+            "Pure market",
+            "Mixed"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "economic-systems-profit",
+          "type": "truefalse",
+          "prompt": "The profit motive is an important feature of a market economy.",
+          "answer": true
+        },
+        {
+          "id": "economic-systems-systems",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each description to the economic system.",
+          "pairs": [
+            {
+              "left": "Decisions based on custom and elders",
+              "right": "Traditional economy"
+            },
+            {
+              "left": "Government owns and plans everything",
+              "right": "Command economy"
+            },
+            {
+              "left": "Supply and demand set prices",
+              "right": "Market economy"
+            },
+            {
+              "left": "Private business with government services",
+              "right": "Mixed economy"
+            }
+          ]
+        },
+        {
+          "id": "economic-systems-sa-mixed",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO examples that show South Africa has a mixed economy.",
+          "memo": "✓ Most businesses are privately owned (e.g. shops, banks) (1)\n✓ The government provides services / owns Eskom and Transnet / pays grants / regulates (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: The Circular Flow of Income",
+      "questions": [
+        {
+          "id": "the-circular-flow-owners",
+          "type": "mcq",
+          "prompt": "Who owns the factors of production in the circular flow?",
+          "options": [
+            "Businesses",
+            "Households",
+            "Government",
+            "Foreign sector"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-circular-flow-labour-market",
+          "type": "short",
+          "prompt": "In which type of market do people sell their labour?",
+          "answers": [
+            "factor market",
+            "the factor market",
+            "labour market"
+          ]
+        },
+        {
+          "id": "the-circular-flow-injection",
+          "type": "truefalse",
+          "prompt": "Exports are an injection into the circular flow.",
+          "answer": true
+        },
+        {
+          "id": "the-circular-flow-participants",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Name the FOUR participants in the open circular flow.",
+          "memo": "✓ Households (1)\n✓ Businesses (1)\n✓ Government (1)\n✓ Foreign sector (1)"
+        },
+        {
+          "id": "the-circular-flow-spending",
+          "type": "numeric",
+          "prompt": "A worker earns R10 000. She pays R1 200 tax and saves R800. How much can she spend on goods and services?",
+          "answer": 8000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "the-circular-flow-govt-role",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Describe TWO ways the government takes part in the circular flow.",
+          "memo": "Any two (1 each): collects taxes; employs workers; buys goods from businesses; pays grants; provides public goods"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Accounting for a Trading Business: CRJ and CPJ",
+      "questions": [
+        {
+          "id": "accounting-for-a-trading-business-cp",
+          "type": "numeric",
+          "prompt": "Goods were sold for R2 600 with a mark-up of 30% on cost. Calculate the cost of sales.",
+          "answer": 2000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "accounting-for-a-trading-business-cos-total",
+          "type": "truefalse",
+          "prompt": "The Cost of sales column in the CRJ is included when checking that the Bank column balances.",
+          "answer": false
+        },
+        {
+          "id": "accounting-for-a-trading-business-posting",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each posting to the account debited.",
+          "pairs": [
+            {
+              "left": "CRJ Bank total",
+              "right": "Bank"
+            },
+            {
+              "left": "CRJ Cost of sales total",
+              "right": "Cost of sales"
+            },
+            {
+              "left": "CPJ Trading stock total",
+              "right": "Trading stock"
+            },
+            {
+              "left": "CPJ Wages total",
+              "right": "Wages"
+            }
+          ]
+        },
+        {
+          "id": "accounting-for-a-trading-business-record-sale",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Cash sales of R3 900 were made on 10 March (mark-up 30% on cost). Give the amounts entered in the Bank, Sales and Cost of sales columns of the CRJ.",
+          "memo": "✓ Bank R3 900 (1)\n✓ Sales R3 900 (1)\n✓ Cost of sales R3 000 (3 900 × 100/130) (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Price Theory: Demand and Supply",
+      "questions": [
+        {
+          "id": "price-theory-supply-slope",
+          "type": "mcq",
+          "prompt": "The supply curve slopes…",
+          "options": [
+            "downwards from left to right",
+            "upwards from left to right",
+            "horizontally",
+            "vertically"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "price-theory-surplus",
+          "type": "truefalse",
+          "prompt": "A surplus occurs when quantity supplied is greater than quantity demanded.",
+          "answer": true
+        },
+        {
+          "id": "price-theory-shortage-calc",
+          "type": "numeric",
+          "prompt": "At R12, consumers want 800 units and producers supply 350 units. How large is the shortage?",
+          "answer": 450,
+          "tolerance": 0,
+          "unit": "units"
+        },
+        {
+          "id": "price-theory-shifts",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each event to its effect.",
+          "pairs": [
+            {
+              "left": "Incomes rise",
+              "right": "Demand increases"
+            },
+            {
+              "left": "A new machine lowers production costs",
+              "right": "Supply increases"
+            },
+            {
+              "left": "Drought destroys crops",
+              "right": "Supply decreases"
+            },
+            {
+              "left": "A product goes out of fashion",
+              "right": "Demand decreases"
+            }
+          ]
+        },
+        {
+          "id": "price-theory-petrol",
+          "type": "open",
+          "marks": 3,
+          "prompt": "The price of fuel increases. Explain how this could affect the price of bread.",
+          "memo": "✓ Bakers' transport and production costs rise (1)\n✓ so the supply of bread decreases (1)\n✓ and the equilibrium price of bread rises (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Credit Transactions: The Debtors Journal",
+      "questions": [
+        {
+          "id": "debtors-journal-debtor",
+          "type": "short",
+          "prompt": "What is a customer who owes the business money called?",
+          "answers": [
+            "debtor",
+            "a debtor"
+          ]
+        },
+        {
+          "id": "debtors-journal-invoice",
+          "type": "mcq",
+          "prompt": "Which source document is used for a credit sale?",
+          "options": [
+            "Receipt",
+            "Duplicate invoice",
+            "Cash register roll",
+            "EFT notice"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "debtors-journal-no-bank",
+          "type": "truefalse",
+          "prompt": "The Debtors Journal has a Bank column.",
+          "answer": false
+        },
+        {
+          "id": "debtors-journal-balance",
+          "type": "numeric",
+          "prompt": "A debtor bought goods for R2 500 and R1 200 on credit and paid R1 800. How much does the debtor still owe?",
+          "answer": 1900,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "debtors-journal-posting",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Complete the double entry for the DJ totals.",
+          "pairs": [
+            {
+              "left": "Sales total: debit",
+              "right": "Debtors control"
+            },
+            {
+              "left": "Sales total: credit",
+              "right": "Sales"
+            },
+            {
+              "left": "Cost of sales total: debit",
+              "right": "Cost of sales"
+            },
+            {
+              "left": "Cost of sales total: credit",
+              "right": "Trading stock"
+            }
+          ]
+        },
+        {
+          "id": "debtors-journal-pay-crj",
+          "type": "open",
+          "marks": 2,
+          "prompt": "In which journal and columns is a payment from a debtor recorded?",
+          "memo": "✓ Cash Receipts Journal (1)\n✓ Bank column and Debtors control column (1)"
+        }
+      ]
+    }
+  ]
+}

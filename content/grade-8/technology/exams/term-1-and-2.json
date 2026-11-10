@@ -1,0 +1,366 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 65,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 6 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: The Design Process",
+      "questions": [
+        {
+          "id": "the-design-process-idmec",
+          "type": "short",
+          "prompt": "What does the M in IDMEC stand for?",
+          "answers": [
+            "make",
+            "making"
+          ]
+        },
+        {
+          "id": "the-design-process-spec-or-con",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Classify each statement as a specification or a constraint.",
+          "pairs": [
+            {
+              "left": "Must be completed in two weeks",
+              "right": "Constraint (time)"
+            },
+            {
+              "left": "Must hold at least 2 litres of water",
+              "right": "Specification"
+            },
+            {
+              "left": "Only recycled materials may be used",
+              "right": "Constraint (materials)"
+            },
+            {
+              "left": "Must fit inside a school bag",
+              "right": "Specification (size)"
+            }
+          ]
+        },
+        {
+          "id": "the-design-process-product-analysis",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE questions you could ask when analysing an existing product.",
+          "memo": "Any three (1 each): What is its purpose? Who uses it? What materials are used? How is it made? Is it safe? What does it cost? How could it be improved? What is its impact on the environment?"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Graphic Communication",
+      "questions": [
+        {
+          "id": "graphic-communication-hidden",
+          "type": "mcq",
+          "prompt": "Which type of line shows edges that cannot be seen?",
+          "options": [
+            "Thick continuous line",
+            "Thin dashed line",
+            "Long dash–short dash line",
+            "Thin line with arrowheads"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "graphic-communication-iso-angle",
+          "type": "numeric",
+          "prompt": "At what angle to the horizontal are horizontal edges drawn in isometric drawing?",
+          "answer": 30,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "graphic-communication-first-angle",
+          "type": "mcq",
+          "prompt": "In first-angle orthographic projection, the top view is drawn…",
+          "options": [
+            "above the front view",
+            "below the front view",
+            "to the left of the front view",
+            "on a separate page"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "graphic-communication-units",
+          "type": "short",
+          "prompt": "In which unit are dimensions usually given on technical drawings?",
+          "answers": [
+            "millimetres",
+            "mm",
+            "millimeters"
+          ]
+        },
+        {
+          "id": "graphic-communication-enlarge",
+          "type": "truefalse",
+          "prompt": "A scale of 2 : 1 means the drawing is twice as big as the real object.",
+          "answer": true
+        },
+        {
+          "id": "graphic-communication-views",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name the THREE views usually drawn in orthographic projection and say where each is placed in first-angle projection.",
+          "memo": "✓ Front view: drawn first (1)\n✓ Top view: below the front view (1)\n✓ Left view: to the right of the front view (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Structures and Forces",
+      "questions": [
+        {
+          "id": "structures-and-forces-frame",
+          "type": "mcq",
+          "prompt": "An electricity pylon is an example of a…",
+          "options": [
+            "shell structure",
+            "frame structure",
+            "solid structure",
+            "natural structure"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "structures-and-forces-shell",
+          "type": "short",
+          "prompt": "What type of structure is an egg?",
+          "answers": [
+            "shell",
+            "shell structure",
+            "a shell structure"
+          ]
+        },
+        {
+          "id": "structures-and-forces-solid",
+          "type": "mcq",
+          "prompt": "Which is a solid structure?",
+          "options": [
+            "Crash helmet",
+            "Roof truss",
+            "Dam wall",
+            "Bicycle frame"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "structures-and-forces-dynamic",
+          "type": "truefalse",
+          "prompt": "Wind blowing against a building is a dynamic load.",
+          "answer": true
+        },
+        {
+          "id": "structures-and-forces-purposes",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE purposes of structures, with an example of each.",
+          "memo": "Any three (1 each, with example): support; protect; contain; span; shelter"
+        },
+        {
+          "id": "structures-and-forces-combo",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why a car is a combination of structure types.",
+          "memo": "✓ The chassis is a frame structure (1)\n✓ The body is a thin shell structure (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Strengthening Structures",
+      "questions": [
+        {
+          "id": "strengthening-structures-triangle",
+          "type": "short",
+          "prompt": "What is the method of adding diagonal members to make a frame rigid called?",
+          "answers": [
+            "triangulation"
+          ]
+        },
+        {
+          "id": "strengthening-structures-stable",
+          "type": "mcq",
+          "prompt": "Which makes a structure more stable?",
+          "options": [
+            "A high centre of gravity and narrow base",
+            "A low centre of gravity and wide base",
+            "Using thinner materials",
+            "Removing foundations"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "strengthening-structures-concrete",
+          "type": "truefalse",
+          "prompt": "Concrete is strong in tension but weak in compression.",
+          "answer": false
+        },
+        {
+          "id": "strengthening-structures-methods",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each method to an example.",
+          "pairs": [
+            {
+              "left": "Arch",
+              "right": "Stone bridge over a river"
+            },
+            {
+              "left": "Tube",
+              "right": "Bicycle frame"
+            },
+            {
+              "left": "Gusset",
+              "right": "Triangular plate at a roof joint"
+            },
+            {
+              "left": "Tie",
+              "right": "Wire holding up a tent pole"
+            }
+          ]
+        },
+        {
+          "id": "strengthening-structures-reinforced",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why steel rods are placed in concrete beams.",
+          "memo": "✓ Concrete is weak in tension (1)\n✓ Steel is strong in tension, so it resists stretching in the beam (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Mechanical Systems: Levers and Linkages",
+      "questions": [
+        {
+          "id": "levers-and-linkages-fulcrum",
+          "type": "short",
+          "prompt": "What is the turning point of a lever called?",
+          "answers": [
+            "fulcrum",
+            "pivot"
+          ]
+        },
+        {
+          "id": "levers-and-linkages-wheelbarrow",
+          "type": "mcq",
+          "prompt": "A wheelbarrow is which class of lever?",
+          "options": [
+            "First class",
+            "Second class",
+            "Third class"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "levers-and-linkages-tweezers",
+          "type": "mcq",
+          "prompt": "Tweezers are an example of a…",
+          "options": [
+            "first-class lever",
+            "second-class lever",
+            "third-class lever",
+            "linkage"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "levers-and-linkages-ma-calc",
+          "type": "numeric",
+          "prompt": "A lever lifts a 400 N load with an effort of 80 N. Calculate the mechanical advantage.",
+          "answer": 5,
+          "tolerance": 0
+        },
+        {
+          "id": "levers-and-linkages-ma-less",
+          "type": "truefalse",
+          "prompt": "Third-class levers have a mechanical advantage of less than 1.",
+          "answer": true
+        },
+        {
+          "id": "levers-and-linkages-linkages",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each linkage to what it does.",
+          "pairs": [
+            {
+              "left": "Bell crank",
+              "right": "Changes direction through 90°"
+            },
+            {
+              "left": "Reverse motion",
+              "right": "Output moves opposite to input"
+            },
+            {
+              "left": "Parallel motion",
+              "right": "Output stays parallel to input"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Mechanical Systems: Gears and Pulleys",
+      "questions": [
+        {
+          "id": "gears-and-pulleys-direction",
+          "type": "mcq",
+          "prompt": "Two meshing gears turn…",
+          "options": [
+            "in the same direction",
+            "in opposite directions",
+            "at the same speed always",
+            "only clockwise"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "gears-and-pulleys-speed",
+          "type": "numeric",
+          "prompt": "A driver gear with 40 teeth turns at 60 r/min and drives a gear with 10 teeth. Calculate the speed of the driven gear.",
+          "answer": 240,
+          "tolerance": 0,
+          "unit": "r/min"
+        },
+        {
+          "id": "gears-and-pulleys-gear-types",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each mechanism to an example.",
+          "pairs": [
+            {
+              "left": "Bevel gears",
+              "right": "Hand drill"
+            },
+            {
+              "left": "Rack and pinion",
+              "right": "Sliding gate motor"
+            },
+            {
+              "left": "Worm and worm wheel",
+              "right": "Guitar tuning peg"
+            },
+            {
+              "left": "Chain and sprockets",
+              "right": "Bicycle"
+            }
+          ]
+        },
+        {
+          "id": "gears-and-pulleys-belt",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give ONE advantage and ONE disadvantage of a belt drive compared with gears.",
+          "memo": "✓ Advantage: quiet / cheap / can connect shafts far apart / acts as safety if jammed (1)\n✓ Disadvantage: can slip / wears out / stretches (1)"
+        }
+      ]
+    }
+  ]
+}

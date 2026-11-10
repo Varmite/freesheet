@@ -1,0 +1,510 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 6 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Photosynthesis and Respiration",
+      "questions": [
+        {
+          "id": "photosynthesis-and-respiration-pigment",
+          "type": "short",
+          "prompt": "Name the green pigment that traps light energy in leaves.",
+          "answers": [
+            "chlorophyll"
+          ],
+          "explanation": "Chlorophyll is found in the chloroplasts."
+        },
+        {
+          "id": "photosynthesis-and-respiration-gas-in",
+          "type": "mcq",
+          "prompt": "Which gas do plants take in for photosynthesis?",
+          "options": [
+            "Oxygen",
+            "Nitrogen",
+            "Carbon dioxide",
+            "Hydrogen"
+          ],
+          "answer": 2,
+          "explanation": "Carbon dioxide enters through the stomata."
+        },
+        {
+          "id": "photosynthesis-and-respiration-products",
+          "type": "mcq",
+          "prompt": "What are the products of photosynthesis?",
+          "options": [
+            "Carbon dioxide and water",
+            "Glucose and oxygen",
+            "Starch and carbon dioxide",
+            "Water and energy"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "photosynthesis-and-respiration-resp-all",
+          "type": "truefalse",
+          "prompt": "Plants respire only at night.",
+          "answer": false,
+          "explanation": "Plants respire all the time, day and night."
+        },
+        {
+          "id": "photosynthesis-and-respiration-organelles",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each term to its description.",
+          "pairs": [
+            {
+              "left": "Chloroplast",
+              "right": "Where photosynthesis takes place"
+            },
+            {
+              "left": "Mitochondrion",
+              "right": "Where respiration takes place"
+            },
+            {
+              "left": "Stomata",
+              "right": "Pores that let gases in and out of a leaf"
+            }
+          ]
+        },
+        {
+          "id": "photosynthesis-and-respiration-compare",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give TWO differences between photosynthesis and respiration.",
+          "memo": "Any two, 2 marks each (both sides of the difference):\n✓✓ Photosynthesis uses CO₂ and water; respiration uses glucose and oxygen\n✓✓ Photosynthesis happens only in light; respiration happens all the time\n✓✓ Photosynthesis takes place in chloroplasts; respiration in mitochondria\n✓✓ Photosynthesis stores energy; respiration releases energy"
+        },
+        {
+          "id": "photosynthesis-and-respiration-importance",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why photosynthesis is important for animals, even though animals do not photosynthesise.",
+          "memo": "✓ Plants are the start of food chains, so animals get their food energy from plants (directly or indirectly) (1)\n✓ Photosynthesis releases the oxygen animals need for respiration (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Ecosystems and Interdependence",
+      "questions": [
+        {
+          "id": "ecosystems-and-interdependence-producer",
+          "type": "short",
+          "prompt": "What is the name for an organism that makes its own food?",
+          "answers": [
+            "producer",
+            "a producer",
+            "autotroph"
+          ]
+        },
+        {
+          "id": "ecosystems-and-interdependence-arrow",
+          "type": "truefalse",
+          "prompt": "In a food chain, the arrow points from the organism that is eaten to the organism that eats it.",
+          "answer": true,
+          "explanation": "Arrows show the direction in which energy flows."
+        },
+        {
+          "id": "ecosystems-and-interdependence-roles",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each organism to its role.",
+          "pairs": [
+            {
+              "left": "Mushroom",
+              "right": "Decomposer"
+            },
+            {
+              "left": "Impala",
+              "right": "Herbivore"
+            },
+            {
+              "left": "Baboon",
+              "right": "Omnivore"
+            },
+            {
+              "left": "Acacia tree",
+              "right": "Producer"
+            }
+          ]
+        },
+        {
+          "id": "ecosystems-and-interdependence-ten-percent",
+          "type": "numeric",
+          "prompt": "Plants in a food chain store 50 000 kJ of energy. Using the 10% rule, how much energy is passed on to the herbivores?",
+          "answer": 5000,
+          "tolerance": 0,
+          "unit": "kJ"
+        },
+        {
+          "id": "ecosystems-and-interdependence-mutualism",
+          "type": "mcq",
+          "prompt": "Oxpeckers eat ticks off a buffalo's back. What kind of relationship is this?",
+          "options": [
+            "Parasitism",
+            "Mutualism",
+            "Competition",
+            "Predator–prey"
+          ],
+          "answer": 1,
+          "explanation": "The bird gets food and the buffalo loses its ticks, so both benefit."
+        },
+        {
+          "id": "ecosystems-and-interdependence-population",
+          "type": "short",
+          "prompt": "What term describes all the organisms of one species living in an area?",
+          "answers": [
+            "population",
+            "a population"
+          ]
+        },
+        {
+          "id": "ecosystems-and-interdependence-pyramid",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why there are usually fewer lions than zebras in a game reserve.",
+          "memo": "✓ Only about 10% of energy passes from one trophic level to the next (energy is lost as heat and used for life processes) (1)\n✓ So there is much less energy available at the top of the food chain, which can support only a few carnivores (1)"
+        },
+        {
+          "id": "ecosystems-and-interdependence-alien",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how alien invasive plants threaten South African ecosystems.",
+          "memo": "✓ They use large amounts of water / spread quickly (1)\n✓ and crowd out indigenous plants, so the animals that depend on those plants lose food and shelter (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Micro-organisms",
+      "questions": [
+        {
+          "id": "micro-organisms-pathogen",
+          "type": "short",
+          "prompt": "What is the scientific name for a micro-organism that causes disease?",
+          "answers": [
+            "pathogen",
+            "a pathogen",
+            "pathogens"
+          ]
+        },
+        {
+          "id": "micro-organisms-antibiotic-virus",
+          "type": "truefalse",
+          "prompt": "Antibiotics can be used to cure flu, which is caused by a virus.",
+          "answer": false,
+          "explanation": "Antibiotics only work against bacteria."
+        },
+        {
+          "id": "micro-organisms-malaria",
+          "type": "mcq",
+          "prompt": "How is malaria spread?",
+          "options": [
+            "Contaminated water",
+            "Coughing and sneezing",
+            "Mosquito bites",
+            "Shaking hands"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "micro-organisms-match-microbe",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each example to its group.",
+          "pairs": [
+            {
+              "left": "Yeast",
+              "right": "Fungus"
+            },
+            {
+              "left": "HIV",
+              "right": "Virus"
+            },
+            {
+              "left": "Amoeba",
+              "right": "Protist"
+            },
+            {
+              "left": "Microbe that sours milk",
+              "right": "Bacterium"
+            }
+          ]
+        },
+        {
+          "id": "micro-organisms-pasteurise",
+          "type": "mcq",
+          "prompt": "Pasteurisation preserves milk by…",
+          "options": [
+            "adding salt",
+            "heating it to kill bacteria",
+            "adding yeast",
+            "drying it"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "micro-organisms-bread-rise",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain why bread dough rises when yeast is added.",
+          "memo": "✓ Yeast feeds on sugar in the dough / respires (1)\n✓ It produces carbon dioxide gas (1)\n✓ The gas is trapped as bubbles, making the dough expand (1)"
+        },
+        {
+          "id": "micro-organisms-useful",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE ways in which micro-organisms are useful to people.",
+          "memo": "Any three (1 each):\n✓ making food (bread, yoghurt, cheese, amasi)\n✓ decomposing dead material / recycling nutrients\n✓ making medicines (antibiotics, vaccines)\n✓ helping digestion\n✓ treating sewage"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Atoms, Elements and Compounds",
+      "questions": [
+        {
+          "id": "atoms-elements-and-compounds-electron-charge",
+          "type": "short",
+          "prompt": "What is the charge on an electron?",
+          "answers": [
+            "negative",
+            "-",
+            "−",
+            "negative charge"
+          ]
+        },
+        {
+          "id": "atoms-elements-and-compounds-atomic-number",
+          "type": "numeric",
+          "prompt": "An oxygen atom has 8 protons. How many electrons does a neutral oxygen atom have?",
+          "answer": 8,
+          "tolerance": 0
+        },
+        {
+          "id": "atoms-elements-and-compounds-compound",
+          "type": "mcq",
+          "prompt": "Which of the following is a compound?",
+          "options": [
+            "Oxygen",
+            "Air",
+            "Water",
+            "Salt water"
+          ],
+          "answer": 2,
+          "explanation": "Water is H₂O: hydrogen and oxygen chemically bonded. Air and salt water are mixtures."
+        },
+        {
+          "id": "atoms-elements-and-compounds-count-atoms",
+          "type": "numeric",
+          "prompt": "How many atoms in total are in one molecule of sulfuric acid, H₂SO₄?",
+          "answer": 7,
+          "tolerance": 0,
+          "explanation": "2 H + 1 S + 4 O = 7 atoms."
+        },
+        {
+          "id": "atoms-elements-and-compounds-noble",
+          "type": "truefalse",
+          "prompt": "Elements in Group 18 (the noble gases) are very reactive.",
+          "answer": false,
+          "explanation": "Noble gases are very unreactive."
+        },
+        {
+          "id": "atoms-elements-and-compounds-symbols-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each element to its symbol.",
+          "pairs": [
+            {
+              "left": "Potassium",
+              "right": "K"
+            },
+            {
+              "left": "Calcium",
+              "right": "Ca"
+            },
+            {
+              "left": "Chlorine",
+              "right": "Cl"
+            },
+            {
+              "left": "Carbon",
+              "right": "C"
+            }
+          ]
+        },
+        {
+          "id": "atoms-elements-and-compounds-mixture-compound",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE differences between a mixture and a compound.",
+          "memo": "Any three (1 each):\n✓ In a compound the elements are chemically bonded; in a mixture they are not\n✓ A compound has a fixed composition; a mixture's composition can vary\n✓ A compound can only be separated by chemical means; a mixture by physical means\n✓ A compound has different properties from its elements; a mixture keeps the properties of its parts"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: The Particle Model of Matter",
+      "questions": [
+        {
+          "id": "particle-model-of-matter-vibrate",
+          "type": "mcq",
+          "prompt": "In which state do particles only vibrate in fixed positions?",
+          "options": [
+            "Solid",
+            "Liquid",
+            "Gas",
+            "All three"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "particle-model-of-matter-condense",
+          "type": "short",
+          "prompt": "What is the change of state from gas to liquid called?",
+          "answers": [
+            "condensation",
+            "condensing"
+          ]
+        },
+        {
+          "id": "particle-model-of-matter-diffusion",
+          "type": "short",
+          "prompt": "What is the name for the spreading of particles from a high to a low concentration?",
+          "answers": [
+            "diffusion"
+          ]
+        },
+        {
+          "id": "particle-model-of-matter-bigger",
+          "type": "truefalse",
+          "prompt": "When a metal rod expands, its particles become bigger.",
+          "answer": false,
+          "explanation": "The particles move further apart; they do not change size."
+        },
+        {
+          "id": "particle-model-of-matter-density",
+          "type": "numeric",
+          "prompt": "A stone has a mass of 270 g and a volume of 100 cm³. Calculate its density.",
+          "answer": 2.7,
+          "tolerance": 0.01,
+          "unit": "g/cm³"
+        },
+        {
+          "id": "particle-model-of-matter-changes",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each change of state to what happens.",
+          "pairs": [
+            {
+              "left": "Melting",
+              "right": "Solid to liquid"
+            },
+            {
+              "left": "Freezing",
+              "right": "Liquid to solid"
+            },
+            {
+              "left": "Evaporation",
+              "right": "Liquid to gas"
+            },
+            {
+              "left": "Sublimation",
+              "right": "Solid to gas"
+            }
+          ]
+        },
+        {
+          "id": "particle-model-of-matter-rail-gaps",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Use the particle model to explain why gaps are left between sections of a railway line.",
+          "memo": "✓ On hot days the particles in the steel gain energy and move/vibrate faster (1)\n✓ They move further apart, so the steel expands (1)\n✓ Without gaps the rails would push against each other and buckle (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Chemical Reactions",
+      "questions": [
+        {
+          "id": "chemical-reactions-precipitate",
+          "type": "short",
+          "prompt": "What is an insoluble solid that forms when two solutions react called?",
+          "answers": [
+            "precipitate",
+            "a precipitate"
+          ]
+        },
+        {
+          "id": "chemical-reactions-conserve",
+          "type": "truefalse",
+          "prompt": "In a chemical reaction, new atoms are created.",
+          "answer": false,
+          "explanation": "Atoms are only rearranged."
+        },
+        {
+          "id": "chemical-reactions-mass-calc",
+          "type": "numeric",
+          "prompt": "56 g of iron reacts completely with sulfur to form 88 g of iron sulfide. What mass of sulfur reacted?",
+          "answer": 32,
+          "tolerance": 0,
+          "unit": "g"
+        },
+        {
+          "id": "chemical-reactions-count-o",
+          "type": "numeric",
+          "prompt": "In the equation CH₄ + 2O₂ → CO₂ + 2H₂O, how many oxygen atoms are on the product side?",
+          "answer": 4,
+          "tolerance": 0,
+          "explanation": "CO₂ has 2 and 2H₂O has 2, so 4 in total."
+        },
+        {
+          "id": "chemical-reactions-signs",
+          "type": "mcq",
+          "prompt": "Which observation does NOT necessarily show that a chemical reaction has taken place?",
+          "options": [
+            "Bubbles of a new gas form",
+            "The mixture gets very hot",
+            "A solid changes shape when cut",
+            "A permanent colour change"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "chemical-reactions-observations",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each observation to the sign of a chemical reaction it shows.",
+          "pairs": [
+            {
+              "left": "Fizzing when vinegar is added to baking soda",
+              "right": "A gas is produced"
+            },
+            {
+              "left": "A cloudy solid appears when two clear solutions are mixed",
+              "right": "A precipitate forms"
+            },
+            {
+              "left": "The test tube becomes warm",
+              "right": "Energy is released"
+            },
+            {
+              "left": "A copper roof slowly turns green",
+              "right": "A colour change"
+            }
+          ]
+        },
+        {
+          "id": "chemical-reactions-ash",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A learner says that mass is lost when paper burns because the ash is lighter than the paper. Explain why this is incorrect.",
+          "memo": "✓ Gases (carbon dioxide and water vapour) are produced and escape into the air (1)\n✓ The total mass of all products equals the mass of the reactants (paper + oxygen); mass is conserved (1)"
+        }
+      ]
+    }
+  ]
+}

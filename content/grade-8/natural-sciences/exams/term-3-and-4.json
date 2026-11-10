@@ -1,0 +1,400 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Static Electricity",
+      "questions": [
+        {
+          "id": "static-electricity-moves",
+          "type": "mcq",
+          "prompt": "Which particles move from one object to another when objects are charged by friction?",
+          "options": [
+            "Protons",
+            "Neutrons",
+            "Electrons",
+            "Atoms"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "static-electricity-gains",
+          "type": "short",
+          "prompt": "An object gains electrons. What type of charge does it now have?",
+          "answers": [
+            "negative",
+            "negative charge",
+            "negatively charged"
+          ]
+        },
+        {
+          "id": "static-electricity-like",
+          "type": "truefalse",
+          "prompt": "Two negatively charged balloons will attract each other.",
+          "answer": false,
+          "explanation": "Like charges repel."
+        },
+        {
+          "id": "static-electricity-insulator",
+          "type": "mcq",
+          "prompt": "Static electricity builds up most easily on…",
+          "options": [
+            "a copper wire",
+            "a plastic comb",
+            "a steel spoon",
+            "an aluminium can"
+          ],
+          "answer": 1,
+          "explanation": "Charges cannot flow away through an insulator like plastic."
+        },
+        {
+          "id": "static-electricity-thunder",
+          "type": "short",
+          "prompt": "What is the sound caused by the rapid expansion of air heated by lightning?",
+          "answers": [
+            "thunder"
+          ]
+        },
+        {
+          "id": "static-electricity-laws",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each pair of objects to the force between them.",
+          "pairs": [
+            {
+              "left": "Two positively charged rods",
+              "right": "Repel"
+            },
+            {
+              "left": "A positive rod and a negative rod",
+              "right": "Attract"
+            },
+            {
+              "left": "A neutral rod and a neutral rod",
+              "right": "No electrostatic force"
+            }
+          ]
+        },
+        {
+          "id": "static-electricity-petrol",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why are fuel tankers earthed with a wire before petrol is pumped out?",
+          "memo": "✓ Friction of the flowing fuel can build up static charge (1)\n✓ A spark could ignite the petrol vapour; earthing lets the charge flow safely away (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Electric Circuits and Energy Transfer",
+      "questions": [
+        {
+          "id": "electric-circuits-complete",
+          "type": "truefalse",
+          "prompt": "Current can flow in a circuit with a gap in it.",
+          "answer": false,
+          "explanation": "A circuit must be complete (closed) for current to flow."
+        },
+        {
+          "id": "electric-circuits-ammeter",
+          "type": "short",
+          "prompt": "Which instrument measures electric current?",
+          "answers": [
+            "ammeter",
+            "an ammeter"
+          ]
+        },
+        {
+          "id": "electric-circuits-unit",
+          "type": "mcq",
+          "prompt": "In what unit is current measured?",
+          "options": [
+            "Volts",
+            "Amperes",
+            "Ohms",
+            "Watts"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "electric-circuits-motor",
+          "type": "mcq",
+          "prompt": "What is the main useful energy conversion in an electric motor?",
+          "options": [
+            "Electrical to light",
+            "Electrical to kinetic",
+            "Chemical to sound",
+            "Kinetic to electrical"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "electric-circuits-house",
+          "type": "short",
+          "prompt": "Are the lights in a house wired in series or in parallel?",
+          "answers": [
+            "parallel",
+            "in parallel"
+          ]
+        },
+        {
+          "id": "electric-circuits-conversions",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each component to its main energy conversion.",
+          "pairs": [
+            {
+              "left": "Bulb",
+              "right": "Electrical to light and heat"
+            },
+            {
+              "left": "Buzzer",
+              "right": "Electrical to sound"
+            },
+            {
+              "left": "Kettle element",
+              "right": "Electrical to heat"
+            },
+            {
+              "left": "Cell",
+              "right": "Chemical to electrical"
+            }
+          ]
+        },
+        {
+          "id": "electric-circuits-short-circuit",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a short circuit and why is it dangerous?",
+          "memo": "✓ Current flows through a path with very low resistance, bypassing the components (1)\n✓ A very large current flows, which makes wires hot and can cause fires / flattens the battery (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Visible Light",
+      "questions": [
+        {
+          "id": "visible-light-luminous",
+          "type": "mcq",
+          "prompt": "Which of these is a luminous object?",
+          "options": [
+            "The moon",
+            "A mirror",
+            "A candle flame",
+            "A white page"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "visible-light-dispersion",
+          "type": "short",
+          "prompt": "What is the splitting of white light into its colours called?",
+          "answers": [
+            "dispersion"
+          ]
+        },
+        {
+          "id": "visible-light-spectrum-order",
+          "type": "mcq",
+          "prompt": "Which colour of the visible spectrum has the shortest wavelength?",
+          "options": [
+            "Red",
+            "Green",
+            "Yellow",
+            "Violet"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "visible-light-law",
+          "type": "numeric",
+          "prompt": "A ray of light strikes a mirror at an angle of incidence of 35°. What is the angle of reflection?",
+          "answer": 35,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "visible-light-materials",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each material to its description.",
+          "pairs": [
+            {
+              "left": "Frosted glass",
+              "right": "Translucent"
+            },
+            {
+              "left": "Clear window glass",
+              "right": "Transparent"
+            },
+            {
+              "left": "Brick",
+              "right": "Opaque"
+            }
+          ]
+        },
+        {
+          "id": "visible-light-black-sun",
+          "type": "truefalse",
+          "prompt": "A black T-shirt gets hotter in the sun than a white one because it absorbs all colours of light.",
+          "answer": true
+        },
+        {
+          "id": "visible-light-red-green",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What colour does a red cap appear in green light? Explain.",
+          "memo": "✓ Black (1)\n✓ It absorbs the green light and there is no red light for it to reflect (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: The Solar System",
+      "questions": [
+        {
+          "id": "the-solar-system-star",
+          "type": "truefalse",
+          "prompt": "The sun is a star.",
+          "answer": true
+        },
+        {
+          "id": "the-solar-system-largest",
+          "type": "short",
+          "prompt": "Name the largest planet in the solar system.",
+          "answers": [
+            "jupiter"
+          ]
+        },
+        {
+          "id": "the-solar-system-belt",
+          "type": "mcq",
+          "prompt": "Between which two planets is the asteroid belt?",
+          "options": [
+            "Earth and Mars",
+            "Mars and Jupiter",
+            "Jupiter and Saturn",
+            "Venus and Earth"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-solar-system-eclipse-match",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each term to its description.",
+          "pairs": [
+            {
+              "left": "Solar eclipse",
+              "right": "Moon blocks the sun's light from Earth"
+            },
+            {
+              "left": "Lunar eclipse",
+              "right": "Earth's shadow falls on the moon"
+            },
+            {
+              "left": "Spring tide",
+              "right": "Very high and very low tides at full and new moon"
+            }
+          ]
+        },
+        {
+          "id": "the-solar-system-order-planets",
+          "type": "numeric",
+          "prompt": "Counting from the sun, what position (1st, 2nd, 3rd …) is Saturn? Give the number only.",
+          "answer": 6,
+          "tolerance": 0
+        },
+        {
+          "id": "the-solar-system-phases",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why the moon appears to change shape during the month.",
+          "memo": "✓ Half of the moon is always lit by the sun (1)\n✓ As the moon orbits the Earth, we see different amounts of the lit half (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Beyond the Solar System",
+      "questions": [
+        {
+          "id": "beyond-the-solar-system-our-galaxy",
+          "type": "short",
+          "prompt": "What is the name of our galaxy?",
+          "answers": [
+            "milky way",
+            "the milky way"
+          ]
+        },
+        {
+          "id": "beyond-the-solar-system-light-year",
+          "type": "mcq",
+          "prompt": "A light year is a unit of…",
+          "options": [
+            "time",
+            "speed",
+            "distance",
+            "brightness"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "beyond-the-solar-system-salt",
+          "type": "short",
+          "prompt": "Near which Northern Cape town is the Southern African Large Telescope (SALT)?",
+          "answers": [
+            "sutherland"
+          ]
+        },
+        {
+          "id": "beyond-the-solar-system-constellation",
+          "type": "truefalse",
+          "prompt": "A constellation is a group of galaxies held together by gravity.",
+          "answer": false,
+          "explanation": "A constellation is a pattern of stars as seen from Earth."
+        },
+        {
+          "id": "beyond-the-solar-system-galaxy-types",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each galaxy to its type.",
+          "pairs": [
+            {
+              "left": "Milky Way",
+              "right": "Spiral"
+            },
+            {
+              "left": "Large Magellanic Cloud",
+              "right": "Irregular"
+            },
+            {
+              "left": "M87",
+              "right": "Elliptical"
+            }
+          ]
+        },
+        {
+          "id": "beyond-the-solar-system-sun-minutes",
+          "type": "numeric",
+          "prompt": "About how many minutes does light take to travel from the sun to the Earth?",
+          "answer": 8,
+          "tolerance": 0.5,
+          "unit": "minutes"
+        },
+        {
+          "id": "beyond-the-solar-system-back-in-time",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain what astronomers mean when they say that looking at distant galaxies is looking back in time.",
+          "memo": "✓ Light takes a very long time (millions of years) to travel from distant galaxies to Earth (1)\n✓ so we see the galaxy as it was when the light left it, not as it is now (1)"
+        }
+      ]
+    }
+  ]
+}

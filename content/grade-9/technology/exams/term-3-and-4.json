@@ -1,0 +1,327 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 65,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Electronic Components",
+      "questions": [
+        {
+          "id": "electronic-components-read",
+          "type": "numeric",
+          "prompt": "A resistor's bands are brown, black, red, gold. What is its resistance in ohms?",
+          "answer": 1000,
+          "tolerance": 0,
+          "unit": "Ω"
+        },
+        {
+          "id": "electronic-components-series",
+          "type": "numeric",
+          "prompt": "Resistors of 220 Ω and 330 Ω are connected in series. What is the total resistance?",
+          "answer": 550,
+          "tolerance": 0,
+          "unit": "Ω"
+        },
+        {
+          "id": "electronic-components-parallel",
+          "type": "numeric",
+          "prompt": "Two 60 Ω resistors are connected in parallel. What is the total resistance?",
+          "answer": 30,
+          "tolerance": 0,
+          "unit": "Ω"
+        },
+        {
+          "id": "electronic-components-ldr",
+          "type": "mcq",
+          "prompt": "The resistance of an LDR…",
+          "options": [
+            "increases in bright light",
+            "decreases in bright light",
+            "stays the same",
+            "depends on temperature"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "electronic-components-diode",
+          "type": "truefalse",
+          "prompt": "A diode allows current to flow in both directions.",
+          "answer": false
+        },
+        {
+          "id": "electronic-components-components",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each component to its function.",
+          "pairs": [
+            {
+              "left": "Capacitor",
+              "right": "Stores charge"
+            },
+            {
+              "left": "Thermistor",
+              "right": "Senses temperature"
+            },
+            {
+              "left": "Transistor",
+              "right": "Electronic switch"
+            },
+            {
+              "left": "Potentiometer",
+              "right": "Adjustable resistance"
+            }
+          ]
+        },
+        {
+          "id": "electronic-components-transistor-legs",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name the three legs of a transistor.",
+          "memo": "✓ Collector (1)\n✓ Base (1)\n✓ Emitter (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Electronic Circuits and Sensors",
+      "questions": [
+        {
+          "id": "electronic-circuits-sensor",
+          "type": "mcq",
+          "prompt": "Which component would be the input sensor in an automatic night light?",
+          "options": [
+            "LED",
+            "LDR",
+            "Buzzer",
+            "Motor"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "electronic-circuits-process",
+          "type": "short",
+          "prompt": "Which component acts as an electronic switch in the process stage of many simple circuits?",
+          "answers": [
+            "transistor",
+            "a transistor"
+          ]
+        },
+        {
+          "id": "electronic-circuits-share",
+          "type": "numeric",
+          "prompt": "A 12 V supply is across a 3 kΩ and a 1 kΩ resistor in series. What is the voltage across the 3 kΩ resistor?",
+          "answer": 9,
+          "tolerance": 0,
+          "unit": "V"
+        },
+        {
+          "id": "electronic-circuits-breadboard",
+          "type": "truefalse",
+          "prompt": "A breadboard lets you test a circuit without soldering.",
+          "answer": true
+        },
+        {
+          "id": "electronic-circuits-ipo",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Classify each part of a fire alarm.",
+          "pairs": [
+            {
+              "left": "Thermistor",
+              "right": "Input"
+            },
+            {
+              "left": "Transistor",
+              "right": "Process"
+            },
+            {
+              "left": "Buzzer",
+              "right": "Output"
+            }
+          ]
+        },
+        {
+          "id": "electronic-circuits-flood",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How does a moisture probe detect water in a flood alarm?",
+          "memo": "✓ Water conducts electricity and connects the two bare probes (1)\n✓ This allows current to reach the transistor base, switching on the buzzer (1)"
+        },
+        {
+          "id": "electronic-circuits-soldering",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO safety precautions when soldering.",
+          "memo": "Any two (1 each): ventilated area; use the stand; safety glasses; do not touch the tip; keep the cord away from the hot tip; wash hands after handling solder"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Processing: Preservation and Packaging",
+      "questions": [
+        {
+          "id": "processing-and-packaging-biltong",
+          "type": "mcq",
+          "prompt": "Biltong is preserved mainly by…",
+          "options": [
+            "freezing",
+            "drying and salting",
+            "canning",
+            "pickling"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "processing-and-packaging-freezing",
+          "type": "truefalse",
+          "prompt": "Freezing kills all micro-organisms in food.",
+          "answer": false,
+          "explanation": "Freezing stops their growth; they can become active again when the food thaws."
+        },
+        {
+          "id": "processing-and-packaging-amasi",
+          "type": "short",
+          "prompt": "Which preservation method is used to make amasi?",
+          "answers": [
+            "fermentation",
+            "fermenting",
+            "fermented"
+          ]
+        },
+        {
+          "id": "processing-and-packaging-pasteurise",
+          "type": "mcq",
+          "prompt": "Pasteurisation preserves milk by…",
+          "options": [
+            "adding salt",
+            "heating it to kill microbes",
+            "drying it",
+            "adding vinegar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "processing-and-packaging-methods",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each food to its preservation method.",
+          "pairs": [
+            {
+              "left": "Atchar",
+              "right": "Pickling"
+            },
+            {
+              "left": "Jam",
+              "right": "Sugaring"
+            },
+            {
+              "left": "Canned beans",
+              "right": "Canning"
+            },
+            {
+              "left": "Dried mopane worms",
+              "right": "Drying"
+            }
+          ]
+        },
+        {
+          "id": "processing-and-packaging-functions",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Give FOUR functions of packaging.",
+          "memo": "Any four (1 each): protect; preserve; contain; inform; promote/market; ease of transport and display"
+        },
+        {
+          "id": "processing-and-packaging-eco",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Suggest TWO ways to make packaging more environmentally friendly.",
+          "memo": "Any two (1 each): use less material; recyclable materials; biodegradable materials; design for reuse; refill packs"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: The Impact of Technology",
+      "questions": [
+        {
+          "id": "impact-of-technology-bias-def",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is bias in technology?",
+          "memo": "✓ When a product favours some groups of people (1)\n✓ or excludes/disadvantages others (1)"
+        },
+        {
+          "id": "impact-of-technology-sabs",
+          "type": "short",
+          "prompt": "Which South African organisation sets standards for product safety and quality? (abbreviation)",
+          "answers": [
+            "sabs",
+            "south african bureau of standards"
+          ]
+        },
+        {
+          "id": "impact-of-technology-ramp",
+          "type": "mcq",
+          "prompt": "A ramp at the entrance of a building is an example of…",
+          "options": [
+            "gender bias",
+            "inclusive design",
+            "e-waste",
+            "automation"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "impact-of-technology-ewaste",
+          "type": "truefalse",
+          "prompt": "Old cellphones and computers that are thrown away are called e-waste.",
+          "answer": true
+        },
+        {
+          "id": "impact-of-technology-bias-types",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each example to the type of bias.",
+          "pairs": [
+            {
+              "left": "A website without screen-reader support",
+              "right": "Disability bias"
+            },
+            {
+              "left": "A tool only made for large hands",
+              "right": "Gender bias"
+            },
+            {
+              "left": "An app only in English",
+              "right": "Language bias"
+            },
+            {
+              "left": "A very expensive medical device",
+              "right": "Economic bias"
+            }
+          ]
+        },
+        {
+          "id": "impact-of-technology-automation",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give ONE advantage and ONE disadvantage of using robots in factories.",
+          "memo": "✓ Advantage: faster / more accurate / safer for dangerous jobs / works continuously (1)\n✓ Disadvantage: job losses / expensive / maintenance (1)"
+        },
+        {
+          "id": "impact-of-technology-ethics",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why might surveillance cameras in public places raise ethical questions?",
+          "memo": "✓ They can reduce crime and help find criminals (1)\n✓ but they can invade people's privacy / data may be misused (1)"
+        }
+      ]
+    }
+  ]
+}

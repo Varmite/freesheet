@@ -1,0 +1,338 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: The Cash Payments Journal",
+      "questions": [
+        {
+          "id": "cash-payments-journal-source",
+          "type": "mcq",
+          "prompt": "Which source document is used for bank charges?",
+          "options": [
+            "Receipt",
+            "Cash register roll",
+            "Bank statement",
+            "Deposit slip"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "cash-payments-journal-drawings",
+          "type": "truefalse",
+          "prompt": "Drawings is an expense of the business.",
+          "answer": false
+        },
+        {
+          "id": "cash-payments-journal-wages-col",
+          "type": "short",
+          "prompt": "Paying a worker's salary is recorded in the Bank column and which analysis column?",
+          "answers": [
+            "wages",
+            "wages column",
+            "salaries"
+          ]
+        },
+        {
+          "id": "cash-payments-journal-total",
+          "type": "numeric",
+          "prompt": "In a CPJ, Wages total R6 000, Stationery R450 and Sundry accounts R3 550. What is the Bank total?",
+          "answer": 10000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "cash-payments-journal-bank-balance",
+          "type": "numeric",
+          "prompt": "Opening bank balance R5 000; CRJ total R12 000; CPJ total R14 500. Calculate the closing bank balance in rand.",
+          "answer": 2500,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "cash-payments-journal-payments",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each payment to the column (other than Bank) where it is recorded.",
+          "pairs": [
+            {
+              "left": "Bought pens and paper",
+              "right": "Stationery"
+            },
+            {
+              "left": "Paid an assistant",
+              "right": "Wages"
+            },
+            {
+              "left": "Paid the electricity account",
+              "right": "Sundry accounts: Water and electricity"
+            },
+            {
+              "left": "Owner took money for groceries",
+              "right": "Sundry accounts: Drawings"
+            }
+          ]
+        },
+        {
+          "id": "cash-payments-journal-overdraft",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a bank overdraft and how is it classified?",
+          "memo": "✓ When more money has been paid out than was in the account (unfavourable balance) (1)\n✓ It is a liability (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: The General Ledger",
+      "questions": [
+        {
+          "id": "general-ledger-left",
+          "type": "short",
+          "prompt": "What is the left-hand side of a ledger account called?",
+          "answers": [
+            "debit",
+            "debit side",
+            "dr"
+          ]
+        },
+        {
+          "id": "general-ledger-capital-side",
+          "type": "mcq",
+          "prompt": "On which side of the Capital account is an increase recorded?",
+          "options": [
+            "Debit",
+            "Credit",
+            "Either side",
+            "It is not recorded"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "general-ledger-double",
+          "type": "truefalse",
+          "prompt": "In double entry, every transaction is recorded on the debit side of one account and the credit side of another.",
+          "answer": true
+        },
+        {
+          "id": "general-ledger-dead-clic",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each account to the side on which it increases.",
+          "pairs": [
+            {
+              "left": "Wages",
+              "right": "Debit (expense)"
+            },
+            {
+              "left": "Loan: FNB",
+              "right": "Credit (liability)"
+            },
+            {
+              "left": "Equipment",
+              "right": "Debit (asset)"
+            },
+            {
+              "left": "Current income",
+              "right": "Credit (income)"
+            }
+          ]
+        },
+        {
+          "id": "general-ledger-balance",
+          "type": "numeric",
+          "prompt": "The debit side of the Bank account totals R24 000 and the credit side R17 500. What is the balance in rand?",
+          "answer": 6500,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "general-ledger-trial",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a Trial Balance and why is it drawn up?",
+          "memo": "✓ A list of all ledger account balances in debit and credit columns (1)\n✓ to check that total debits equal total credits (double entry correct) (1)"
+        },
+        {
+          "id": "general-ledger-tb-side",
+          "type": "mcq",
+          "prompt": "In which column of the Trial Balance does Drawings appear?",
+          "options": [
+            "Debit",
+            "Credit"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Factors of Production",
+      "questions": [
+        {
+          "id": "factors-of-production-four",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Name the FOUR factors of production.",
+          "memo": "✓ Natural resources / land (1)\n✓ Labour (1)\n✓ Capital (1)\n✓ Entrepreneurship (1)"
+        },
+        {
+          "id": "factors-of-production-reward-labour",
+          "type": "mcq",
+          "prompt": "What is the reward for labour?",
+          "options": [
+            "Rent",
+            "Interest",
+            "Wages and salaries",
+            "Profit"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "factors-of-production-reward-ent",
+          "type": "short",
+          "prompt": "What is the reward earned by an entrepreneur?",
+          "answers": [
+            "profit"
+          ]
+        },
+        {
+          "id": "factors-of-production-capital-example",
+          "type": "mcq",
+          "prompt": "Which is an example of capital as a factor of production?",
+          "options": [
+            "A forest",
+            "A sewing machine",
+            "A teacher",
+            "Rainfall"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "factors-of-production-skilled",
+          "type": "truefalse",
+          "prompt": "A doctor is an example of skilled labour.",
+          "answer": true
+        },
+        {
+          "id": "factors-of-production-rewards",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each factor to its reward.",
+          "pairs": [
+            {
+              "left": "Natural resources",
+              "right": "Rent"
+            },
+            {
+              "left": "Labour",
+              "right": "Wages"
+            },
+            {
+              "left": "Capital",
+              "right": "Interest"
+            },
+            {
+              "left": "Entrepreneurship",
+              "right": "Profit"
+            }
+          ]
+        },
+        {
+          "id": "factors-of-production-bakery",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Identify ONE example of each factor of production in a bakery.",
+          "memo": "✓ Natural resources: water / wheat / the land the building stands on (1)\n✓ Labour: bakers, cashiers (1)\n✓ Capital: ovens, mixers, building (1)\n✓ Entrepreneurship: the owner who started the bakery (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Forms of Ownership",
+      "questions": [
+        {
+          "id": "forms-of-ownership-one-owner",
+          "type": "short",
+          "prompt": "What is a business owned by one person called?",
+          "answers": [
+            "sole trader",
+            "sole proprietor",
+            "sole proprietorship",
+            "a sole trader"
+          ]
+        },
+        {
+          "id": "forms-of-ownership-unlimited",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain unlimited liability.",
+          "memo": "✓ The owners are personally responsible for all the debts of the business (1)\n✓ Their personal possessions may be sold to pay creditors (1)"
+        },
+        {
+          "id": "forms-of-ownership-limited",
+          "type": "mcq",
+          "prompt": "Which form of ownership has limited liability?",
+          "options": [
+            "Sole trader",
+            "Partnership",
+            "Private company",
+            "All of these"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "forms-of-ownership-continuity",
+          "type": "truefalse",
+          "prompt": "A company continues to exist even if its shareholders change.",
+          "answer": true
+        },
+        {
+          "id": "forms-of-ownership-jse",
+          "type": "short",
+          "prompt": "On which stock exchange are the shares of many South African public companies traded? (abbreviation)",
+          "answers": [
+            "jse",
+            "johannesburg stock exchange"
+          ]
+        },
+        {
+          "id": "forms-of-ownership-forms",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each description to the form of ownership.",
+          "pairs": [
+            {
+              "left": "Owned by members with a common need",
+              "right": "Co-operative"
+            },
+            {
+              "left": "Two to many partners share profits",
+              "right": "Partnership"
+            },
+            {
+              "left": "Shares are sold to the public",
+              "right": "Public company"
+            },
+            {
+              "left": "Run for public benefit, not profit",
+              "right": "Non-profit company"
+            }
+          ]
+        },
+        {
+          "id": "forms-of-ownership-partner-disadv",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why can a partnership be risky for its partners?",
+          "memo": "✓ Partners have unlimited liability (1)\n✓ and are responsible for debts caused by the decisions of the other partners / disagreements can arise (1)"
+        }
+      ]
+    }
+  ]
+}

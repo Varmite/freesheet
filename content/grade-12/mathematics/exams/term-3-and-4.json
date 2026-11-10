@@ -1,0 +1,245 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Term 3. Term 4 is set aside for revision and the final examinations.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Analytical Geometry: Circles and Tangents",
+      "questions": [
+        {
+          "id": "analytical-geometry-centre",
+          "type": "mcq",
+          "prompt": "The centre of $(x + 4)^2 + (y - 1)^2 = 9$ is…",
+          "options": [
+            "$(4; -1)$",
+            "$(-4; 1)$",
+            "$(4; 1)$",
+            "$(-4; -1)$"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "analytical-geometry-radius",
+          "type": "numeric",
+          "prompt": "What is the radius of $x^2 + y^2 = 49$?",
+          "answer": 7,
+          "tolerance": 0
+        },
+        {
+          "id": "analytical-geometry-radius2",
+          "type": "numeric",
+          "prompt": "Find the radius of $x^2 + y^2 + 4x - 2y - 4 = 0$.",
+          "answer": 3,
+          "tolerance": 0
+        },
+        {
+          "id": "analytical-geometry-on-circle",
+          "type": "truefalse",
+          "prompt": "The point $(3; 4)$ lies on the circle $x^2 + y^2 = 25$.",
+          "answer": true
+        },
+        {
+          "id": "analytical-geometry-inside",
+          "type": "mcq",
+          "prompt": "Where does the point $(1; 1)$ lie relative to $x^2 + y^2 = 4$?",
+          "options": [
+            "On the circle",
+            "Inside",
+            "Outside",
+            "At the centre"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "analytical-geometry-equation",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Find the equation of the circle with centre $(-1; 2)$ passing through $(2; 6)$.",
+          "memo": "✓ $r^2 = 3^2 + 4^2$ (1)\n✓ $= 25$ (1)\n✓ $(x + 1)^2 + (y - 2)^2 = 25$ (1)"
+        },
+        {
+          "id": "analytical-geometry-tangent",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Find the equation of the tangent to $x^2 + y^2 = 20$ at the point $(2; 4)$.",
+          "memo": "✓ Radius gradient $\\frac{4}{2} = 2$ (1)\n✓ Tangent gradient $-\\frac{1}{2}$ (1)\n✓ $y - 4 = -\\frac{1}{2}(x - 2)$ (1)\n✓ $y = -\\frac{1}{2}x + 5$ (1)"
+        },
+        {
+          "id": "analytical-geometry-diameter",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A(−2; 1) and B(4; 9) are the endpoints of a diameter. Find the equation of the circle.",
+          "memo": "✓ Centre = midpoint $(1; 5)$ (1)\n✓ $r = \\frac{1}{2}AB = \\frac{1}{2}\\sqrt{36 + 64} = 5$ (2)\n✓ $(x - 1)^2 + (y - 5)^2 = 25$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Euclidean Geometry: Proportionality and Similarity",
+      "questions": [
+        {
+          "id": "euclidean-geometry-similar-cond",
+          "type": "mcq",
+          "prompt": "Two triangles are similar if they are…",
+          "options": [
+            "equal in area",
+            "equiangular",
+            "both right-angled",
+            "both isosceles"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "euclidean-geometry-ratio",
+          "type": "numeric",
+          "prompt": "△ABC ||| △DEF with AB = 6, DE = 9 and BC = 8. Find EF.",
+          "answer": 12,
+          "tolerance": 0
+        },
+        {
+          "id": "euclidean-geometry-converse",
+          "type": "truefalse",
+          "prompt": "If a line divides two sides of a triangle in the same ratio, it is parallel to the third side.",
+          "answer": true
+        },
+        {
+          "id": "euclidean-geometry-altitude",
+          "type": "numeric",
+          "prompt": "In right-angled △ABC with $\\hat{A} = 90^\\circ$, AD ⊥ BC, BD = 4 and DC = 9. Find AD.",
+          "answer": 6,
+          "tolerance": 0
+        },
+        {
+          "id": "euclidean-geometry-prop-proof",
+          "type": "open",
+          "marks": 4,
+          "prompt": "In △ABC, D is on AB and E is on AC with AD = 3, DB = 6, AE = 4 and EC = 8. Prove that DE ∥ BC.",
+          "memo": "✓ $\\frac{AD}{DB} = \\frac{3}{6} = \\frac{1}{2}$ (1)\n✓ $\\frac{AE}{EC} = \\frac{4}{8} = \\frac{1}{2}$ (1)\n✓ $\\frac{AD}{DB} = \\frac{AE}{EC}$ (1)\n✓ DE ∥ BC (line divides two sides of △ in prop) (1)"
+        },
+        {
+          "id": "euclidean-geometry-area-ratio",
+          "type": "open",
+          "marks": 3,
+          "prompt": "In △ABC, D lies on BC with BD : DC = 2 : 3. Find the ratio area △ABD : area △ADC and give a reason.",
+          "memo": "✓ The triangles have the same height from A (1)\n✓ so their areas are in the ratio of their bases (1)\n✓ $2 : 3$ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Statistics: Regression and Correlation",
+      "questions": [
+        {
+          "id": "statistics-positive",
+          "type": "mcq",
+          "prompt": "In a scatter plot the points fall from left to right. The correlation is…",
+          "options": [
+            "positive",
+            "negative",
+            "zero",
+            "perfect"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "statistics-range-r",
+          "type": "mcq",
+          "prompt": "Which value cannot be a correlation coefficient?",
+          "options": [
+            "$-0{,}95$",
+            "$0$",
+            "$0{,}6$",
+            "$1{,}2$"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "statistics-predict",
+          "type": "numeric",
+          "prompt": "The regression line is $\\hat{y} = 12 + 3{,}5x$. Predict $y$ when $x = 8$.",
+          "answer": 40,
+          "tolerance": 0
+        },
+        {
+          "id": "statistics-mean-point",
+          "type": "truefalse",
+          "prompt": "The least-squares regression line always passes through $(\\bar{x}; \\bar{y})$.",
+          "answer": true
+        },
+        {
+          "id": "statistics-extrapolate",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is it risky to use a regression line to make predictions far outside the range of the data?",
+          "memo": "✓ The relationship may not continue in the same way beyond the data (1)\n✓ so predictions may be unrealistic or impossible (1)"
+        },
+        {
+          "id": "statistics-causation",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A study finds a strong positive correlation between shoe size and reading ability in primary school children. Does a bigger foot cause better reading? Explain.",
+          "memo": "✓ No (1)\n✓ Both increase with age (a third variable); correlation does not prove causation (1)"
+        },
+        {
+          "id": "statistics-weak",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What does a correlation coefficient of $r = 0{,}2$ tell you about predictions made with the regression line?",
+          "memo": "✓ The linear correlation is weak (1)\n✓ so predictions will not be reliable (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Counting Principles and Probability",
+      "questions": [
+        {
+          "id": "counting-and-probability-outfits",
+          "type": "numeric",
+          "prompt": "A learner has 4 shirts, 3 pairs of trousers and 2 pairs of shoes. How many different outfits are possible?",
+          "answer": 24,
+          "tolerance": 0
+        },
+        {
+          "id": "counting-and-probability-factorial",
+          "type": "numeric",
+          "prompt": "Evaluate $\\dfrac{7!}{5!}$.",
+          "answer": 42,
+          "tolerance": 0
+        },
+        {
+          "id": "counting-and-probability-pins",
+          "type": "numeric",
+          "prompt": "How many 5-digit codes can be made from the digits 0 to 9 if digits may be repeated?",
+          "answer": 100000,
+          "tolerance": 0
+        },
+        {
+          "id": "counting-and-probability-together",
+          "type": "open",
+          "marks": 3,
+          "prompt": "In how many ways can 5 boys and 3 girls sit in a row if the girls must sit together?",
+          "memo": "✓ Treat girls as one unit: $6!$ (1)\n✓ Girls among themselves: $3!$ (1)\n✓ $720 \\times 6 = 4\\ 320$ (1)"
+        },
+        {
+          "id": "counting-and-probability-prob",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A 4-digit code is formed using the digits 1 to 9 without repetition. What is the probability that the code is an even number?",
+          "memo": "✓ Total: $9 \\times 8 \\times 7 \\times 6 = 3\\ 024$ (1)\n✓ Last digit even: 4 choices (2, 4, 6, 8) (1)\n✓ Even codes: $4 \\times 8 \\times 7 \\times 6 = 1\\ 344$ (1)\n✓ $P = \\frac{1\\ 344}{3\\ 024} = \\frac{4}{9}$ (1)"
+        },
+        {
+          "id": "counting-and-probability-not-together",
+          "type": "open",
+          "marks": 3,
+          "prompt": "In how many ways can the letters of the word PENCIL be arranged so that the vowels are NOT next to each other?",
+          "memo": "✓ Total $6! = 720$ (1)\n✓ Vowels together: $5! \\times 2! = 240$ (1)\n✓ Not together: $720 - 240 = 480$ (1)"
+        }
+      ]
+    }
+  ]
+}

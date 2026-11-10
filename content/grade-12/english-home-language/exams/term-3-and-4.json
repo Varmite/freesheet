@@ -1,0 +1,369 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 75,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Term 3. Term 4 is set aside for revision and the final examinations.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Unseen Poetry",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "\"Hope\" is the thing with feathers – Emily Dickinson (published 1891; public domain)",
+          "text": "\"Hope\" is the thing with feathers -\nThat perches in the soul -\nAnd sings the tune without the words -\nAnd never stops - at all -\n\nAnd sweetest - in the Gale - is heard -\nAnd sore must be the storm -\nThat could abash the little Bird\nThat kept so many warm -\n\nI've heard it in the chillest land -\nAnd on the strangest Sea -\nYet - never - in Extremity,\nIt asked a crumb - of me."
+        }
+      ],
+      "questions": [
+        {
+          "id": "unseen-poetry-metaphor",
+          "type": "short",
+          "prompt": "To what is hope compared throughout the poem?",
+          "answers": [
+            "a bird",
+            "bird",
+            "a small bird",
+            "a little bird"
+          ]
+        },
+        {
+          "id": "unseen-poetry-extended",
+          "type": "mcq",
+          "prompt": "A metaphor developed over a whole poem is called…",
+          "options": [
+            "a simile",
+            "an extended metaphor",
+            "an apostrophe",
+            "a paradox"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "unseen-poetry-stanza",
+          "type": "mcq",
+          "prompt": "Each stanza of the poem has four lines. Such a stanza is called a…",
+          "options": [
+            "couplet",
+            "tercet",
+            "quatrain",
+            "sestet"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "unseen-poetry-gale",
+          "type": "truefalse",
+          "prompt": "The speaker suggests that hope is heard most sweetly during difficult times.",
+          "answer": true
+        },
+        {
+          "id": "unseen-poetry-storm",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain the meaning of stanza 2, referring to 'Gale' and 'storm'.",
+          "memo": "✓ The gale/storm symbolises hardship or suffering (1)\n✓ Hope is strongest ('sweetest') in those times (1)\n✓ Only an extremely severe crisis could silence it, and it has comforted ('kept warm') many people (1)"
+        },
+        {
+          "id": "unseen-poetry-crumb",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What does the final line, 'It asked a crumb - of me', reveal about hope?",
+          "memo": "✓ Hope is selfless and asks nothing in return (1)\n✓ The image of a crumb continues the bird metaphor (1)"
+        },
+        {
+          "id": "unseen-poetry-shift",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How does the third stanza differ from the first two?",
+          "memo": "✓ The speaker introduces personal experience ('I've heard it') (1)\n✓ 'Yet' signals the final point about hope's selflessness (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Writing the Literary Essay",
+      "questions": [
+        {
+          "id": "literary-essay-writing-length",
+          "type": "mcq",
+          "prompt": "About how long should the Grade 12 poetry essay be?",
+          "options": [
+            "100–150 words",
+            "250–300 words",
+            "400–450 words",
+            "600–800 words"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "literary-essay-writing-thesis",
+          "type": "short",
+          "prompt": "What is the one-sentence statement of your argument in the introduction called?",
+          "answers": [
+            "thesis",
+            "thesis statement",
+            "a thesis statement",
+            "the thesis"
+          ]
+        },
+        {
+          "id": "literary-essay-writing-tense",
+          "type": "truefalse",
+          "prompt": "Events in a literary text are usually discussed in the present tense.",
+          "answer": true
+        },
+        {
+          "id": "literary-essay-writing-conclusion",
+          "type": "truefalse",
+          "prompt": "The conclusion is the best place to introduce a new, important point.",
+          "answer": false
+        },
+        {
+          "id": "literary-essay-writing-peel",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each part of a PEEL paragraph to its purpose.",
+          "pairs": [
+            {
+              "left": "Point",
+              "right": "Topic sentence linked to the thesis"
+            },
+            {
+              "left": "Evidence",
+              "right": "Quotation or close reference"
+            },
+            {
+              "left": "Explanation",
+              "right": "Analysis of how the evidence proves the point"
+            },
+            {
+              "left": "Link",
+              "right": "Connection back to the topic"
+            }
+          ]
+        },
+        {
+          "id": "literary-essay-writing-paragraph",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Write ONE PEEL paragraph on the theme of power in 'Ozymandias'.",
+          "memo": "✓ Point linked to power (1)\n✓ Embedded quotation, e.g. 'King of Kings' or 'Nothing beside remains' (1)\n✓ Explanation of effect (1)\n✓ Link to the theme of impermanence (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Reflective Essays and Visual Prompts",
+      "questions": [
+        {
+          "id": "reflective-essays-and-visual-prompts-q1",
+          "type": "mcq",
+          "prompt": "Which statement best describes the main purpose of a reflective essay?",
+          "options": [
+            "To tell an exciting story with a clear climax and resolution",
+            "To explore the personal meaning of an experience or idea and show what the writer has come to understand",
+            "To convince the reader to accept one side of a debatable issue",
+            "To create a vivid picture of a place using the five senses"
+          ],
+          "answer": 1,
+          "explanation": "A reflective essay asks ‘What did it mean, and how has it changed my thinking?’ The other options describe narrative, argumentative and descriptive essays."
+        },
+        {
+          "id": "reflective-essays-and-visual-prompts-q2",
+          "type": "truefalse",
+          "prompt": "A reflective essay is mainly a retelling of events in time order, with a short lesson added in the final sentence.",
+          "answer": false,
+          "explanation": "That is a mere narrative with a moral. In a reflective essay, events are told briefly and reflection runs through the whole essay."
+        },
+        {
+          "id": "reflective-essays-and-visual-prompts-q4",
+          "type": "numeric",
+          "prompt": "In the CAPS Home Language essay rubric (out of 50), how many marks are allocated to **Content and planning**? Give a whole number.",
+          "answer": 30,
+          "explanation": "Content and planning 30, Language, style and editing 15, Structure 5: a total of 50."
+        },
+        {
+          "id": "reflective-essays-and-visual-prompts-q5",
+          "type": "mcq",
+          "prompt": "What is the recommended length for the Home Language essay in Paper 3 Section A?",
+          "options": [
+            "400–450 words",
+            "250–300 words",
+            "180–200 words",
+            "600–700 words"
+          ],
+          "answer": 0,
+          "explanation": "The HL essay is 400–450 words. 180–200 words is the length of an HL transactional text in Section B."
+        },
+        {
+          "id": "reflective-essays-and-visual-prompts-q6",
+          "type": "short",
+          "prompt": "Apart from the number of the topic, what must you always give your essay, especially when you respond to a visual prompt?",
+          "answers": [
+            "title",
+            "a title",
+            "a suitable title",
+            "an essay title",
+            "a heading",
+            "heading",
+            "its title"
+          ],
+          "explanation": "The paper requires you to give your essay a suitable title. For pictures this is essential, because the title shows how you have interpreted the image."
+        },
+        {
+          "id": "reflective-essays-and-visual-prompts-q7",
+          "type": "match",
+          "prompt": "Match each topic with the essay type it most clearly calls for.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "‘Social media does more harm than good.’ Do you agree?",
+              "right": "Argumentative"
+            },
+            {
+              "left": "Describe a busy taxi rank at dawn.",
+              "right": "Descriptive"
+            },
+            {
+              "left": "Write a story that ends with: ‘And that was the last time I saw him.’",
+              "right": "Narrative"
+            },
+            {
+              "left": "Discuss the advantages and disadvantages of a four-day school week.",
+              "right": "Discursive"
+            },
+            {
+              "left": "Looking back on the moment I stopped being a child",
+              "right": "Reflective"
+            }
+          ],
+          "explanation": "‘Do you agree?’ asks for a one-sided argument; ‘describe’ asks for description; a given ending line asks for a story; ‘advantages and disadvantages’ asks for a balanced discussion; ‘looking back’ asks for reflection."
+        },
+        {
+          "id": "reflective-essays-and-visual-prompts-q14",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Rewrite the following narrative paragraph as a **reflective** paragraph of about 80–100 words. Keep the event brief and add feeling, thought and insight.\n\n‘On the day of the inter-schools athletics final, I lined up for the 800 metres. The gun went off and I ran as fast as I could. In the final bend I tripped over another runner’s foot and fell. Everyone stared. I got up and finished last. Then we went home.’",
+          "memo": "Model answer:\n‘I still remember the gravel in my palms more clearly than the race itself. In the final bend of the 800 metres I fell, and for a few seconds the whole stadium seemed to hold its breath. At the time, finishing last felt like the end of the world; I was sure everyone would remember my fall for ever. Looking back, I realise that nobody remembers it but me. What I do remember is choosing to get up. I have come to understand that people rarely judge us for falling; they notice whether we finish.’\n\nMark allocation:\n✓ The event is reduced to a brief, concrete anchor; unnecessary actions such as ‘Then we went home’ are cut (1)\n✓ Feelings or beliefs at the time are expressed (1)\n✓ A clear shift to present understanding, e.g. ‘Looking back, I realise…’ (1)\n✓ A specific, earned insight rather than a cliché such as ‘I learnt never to give up’ (1)\n✓ First person, sincere tone, correct language and roughly 80–100 words (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Articles, Dialogues, Interviews and Minutes",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Opening of a model column (written for this guide)",
+          "text": "SIPHO SPEAKS\nThis week: In defence of the humble taxi queue\n\nI have stood in a lot of queues in my life, but none has taught me more about South Africa than the queue at Bree Street taxi rank at half past five on a Friday. Strangers share umbrellas. A gogo keeps your place while you buy a vetkoek. Nobody pushes, because everyone is equally tired. If our politicians want to learn about patience and fairness, I suggest they start here…"
+        }
+      ],
+      "questions": [
+        {
+          "id": "articles-dialogues-interviews-and-minutes-q1",
+          "type": "mcq",
+          "prompt": "Which of the following is the most effective **newspaper headline**?",
+          "options": [
+            "The learners of a school in Durban who cleaned a beach on Saturday morning.",
+            "A beach was cleaned.",
+            "Dear readers, a beach has been cleaned!",
+            "Durban learners clear 500 kg of plastic from beach"
+          ],
+          "answer": 3,
+          "explanation": "A headline is short and specific, uses the present tense and an active verb, leaves out small words and has no full stop."
+        },
+        {
+          "id": "articles-dialogues-interviews-and-minutes-q2",
+          "type": "mcq",
+          "prompt": "What should the lead (first) paragraph of a newspaper article do?",
+          "options": [
+            "Answer the key questions: who, what, when, where, why and how",
+            "Give the journalist’s personal opinion of the event",
+            "Provide the background history before mentioning the event",
+            "Thank readers for buying the newspaper"
+          ],
+          "answer": 0,
+          "explanation": "The lead sums up the story by answering the 5 Ws and H. A news article is objective, and background comes later in the inverted pyramid."
+        },
+        {
+          "id": "articles-dialogues-interviews-and-minutes-q3",
+          "type": "short",
+          "prompt": "What is the name of the news-writing structure in which the most important information comes first and less important details follow?",
+          "answers": [
+            "inverted pyramid",
+            "the inverted pyramid",
+            "inverted-pyramid",
+            "inverted triangle",
+            "the inverted triangle",
+            "inverted pyramid structure"
+          ],
+          "explanation": "The inverted pyramid puts the key facts at the top so that the story still makes sense if the end is cut."
+        },
+        {
+          "id": "articles-dialogues-interviews-and-minutes-q5",
+          "type": "truefalse",
+          "prompt": "In a dialogue, each speaker’s words are placed in inverted commas.",
+          "answer": false,
+          "explanation": "A dialogue is set out like a script: the speaker’s name, a colon and then the words, with no inverted commas."
+        },
+        {
+          "id": "articles-dialogues-interviews-and-minutes-q6",
+          "type": "truefalse",
+          "prompt": "Minutes of a meeting are usually written in the past tense, in the third person, using reported speech.",
+          "answer": true,
+          "explanation": "Minutes are a formal record written after the meeting, e.g. ‘Ms Pillay reported that the principal had approved the date.’"
+        },
+        {
+          "id": "articles-dialogues-interviews-and-minutes-q7",
+          "type": "match",
+          "prompt": "Match each feature with the text type it belongs to.",
+          "marks": 6,
+          "pairs": [
+            {
+              "left": "Apologies, matters arising and resolutions",
+              "right": "Minutes"
+            },
+            {
+              "left": "Lead paragraph and inverted-pyramid structure",
+              "right": "Newspaper article"
+            },
+            {
+              "left": "Catchy title, subheadings and a chatty tone that addresses readers as ‘you’",
+              "right": "Magazine article"
+            },
+            {
+              "left": "Date at the top, first person and private feelings",
+              "right": "Diary entry"
+            },
+            {
+              "left": "Numbered steps beginning with imperative verbs",
+              "right": "Written instructions"
+            },
+            {
+              "left": "Prepared open questions put to a person, with a polite opening and thanks at the end",
+              "right": "Interview"
+            }
+          ],
+          "explanation": "Each text type has signature features: minutes record procedure and decisions; news uses a lead and inverted pyramid; magazine articles are chatty; diaries are private and dated; instructions use imperatives; interviews are built on open questions."
+        },
+        {
+          "id": "articles-dialogues-interviews-and-minutes-q11",
+          "type": "mcq",
+          "prompt": "How does a newspaper **column** differ from a newspaper **article**?",
+          "options": [
+            "A column is a regular feature in which a named columnist gives a personal opinion in a distinctive voice, while an article reports facts objectively.",
+            "A column always uses the inverted pyramid, while an article never does.",
+            "A column is written in the third person and never contains the writer’s opinion.",
+            "A column is the headline printed above an article."
+          ],
+          "answer": 0,
+          "explanation": "Columns are subjective, usually in the first person and appear regularly under the columnist’s name. News articles are objective reports."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 55,
+  "totalMarks": 45,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Map Skills: Calculations",
+      "questions": [
+        {
+          "id": "map-calculations-ortho-dist",
+          "type": "numeric",
+          "prompt": "On a 1 : 10 000 orthophoto map a road is 6 cm long. What is its real length in metres?",
+          "answer": 600,
+          "tolerance": 0,
+          "unit": "m"
+        },
+        {
+          "id": "map-calculations-steeper",
+          "type": "mcq",
+          "prompt": "Which gradient is steepest?",
+          "options": [
+            "1 : 8",
+            "1 : 25",
+            "1 : 60",
+            "1 : 100"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "map-calculations-units",
+          "type": "truefalse",
+          "prompt": "When calculating gradient, VI and HE must be in the same unit.",
+          "answer": true
+        },
+        {
+          "id": "map-calculations-gradient",
+          "type": "open",
+          "marks": 3,
+          "prompt": "On a 1 : 50 000 map, the horizontal distance between two points is 3 cm and the height difference is 75 m. Calculate the average gradient.",
+          "memo": "✓ HE = 3 × 500 = 1 500 m (1)\n✓ Gradient = 75 / 1 500 (1)\n✓ = 1 : 20 (1)"
+        },
+        {
+          "id": "map-calculations-terms",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Vertical interval",
+              "right": "Difference in height between two points"
+            },
+            {
+              "left": "Horizontal equivalent",
+              "right": "Horizontal distance between two points"
+            },
+            {
+              "left": "Magnetic declination",
+              "right": "Angle between true north and magnetic north"
+            }
+          ]
+        },
+        {
+          "id": "map-calculations-area-mistake",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A learner calculated the area of a 4 cm × 2 cm block on a 1 : 50 000 map as 8 × 0,5 = 4 km². Explain the mistake and give the correct answer.",
+          "memo": "✓ Each side must be converted to km before multiplying (1)\n✓ 2 km × 1 km = 2 km² (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Topographic and Orthophoto Maps",
+      "questions": [
+        {
+          "id": "topographic-and-orthophoto-maps-topo-scale",
+          "type": "mcq",
+          "prompt": "The standard scale of a South African topographic map is…",
+          "options": [
+            "1 : 10 000",
+            "1 : 50 000",
+            "1 : 250 000",
+            "1 : 1 000 000"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "topographic-and-orthophoto-maps-ortho-scale",
+          "type": "mcq",
+          "prompt": "The standard scale of an orthophoto map is…",
+          "options": [
+            "1 : 10 000",
+            "1 : 50 000",
+            "1 : 100 000",
+            "1 : 5 000"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "topographic-and-orthophoto-maps-larger",
+          "type": "truefalse",
+          "prompt": "An orthophoto map is a larger scale than a topographic map.",
+          "answer": true
+        },
+        {
+          "id": "topographic-and-orthophoto-maps-valley",
+          "type": "mcq",
+          "prompt": "V-shaped contours pointing towards higher ground show a…",
+          "options": [
+            "spur",
+            "valley",
+            "mesa",
+            "saddle"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "topographic-and-orthophoto-maps-ci",
+          "type": "numeric",
+          "prompt": "What is the contour interval on a South African orthophoto map?",
+          "answer": 5,
+          "tolerance": 0,
+          "unit": "m"
+        },
+        {
+          "id": "topographic-and-orthophoto-maps-landforms",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each landform to its contour pattern.",
+          "pairs": [
+            {
+              "left": "Mesa",
+              "right": "Wide flat top with steep sides"
+            },
+            {
+              "left": "Spur",
+              "right": "V-shaped contours pointing downhill"
+            },
+            {
+              "left": "Plain",
+              "right": "Very few contours"
+            },
+            {
+              "left": "Escarpment",
+              "right": "Long line of contours very close together"
+            }
+          ]
+        },
+        {
+          "id": "topographic-and-orthophoto-maps-seconds",
+          "type": "numeric",
+          "prompt": "How many seconds are in one minute of latitude?",
+          "answer": 60,
+          "tolerance": 0
+        },
+        {
+          "id": "topographic-and-orthophoto-maps-compare",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO differences between a topographic map and an orthophoto map.",
+          "memo": "Any two (1 each): scale; area shown; detail; photograph vs symbols; contour interval 20 m vs 5 m"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Geographic Information Systems (GIS)",
+      "questions": [
+        {
+          "id": "geographic-information-systems-gis",
+          "type": "short",
+          "prompt": "What does GIS stand for?",
+          "answers": [
+            "geographic information system",
+            "geographical information system",
+            "geographic information systems",
+            "geographical information systems"
+          ]
+        },
+        {
+          "id": "geographic-information-systems-attribute",
+          "type": "mcq",
+          "prompt": "The number of beds in a hospital is an example of…",
+          "options": [
+            "spatial data",
+            "attribute data",
+            "a buffer",
+            "remote sensing"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "geographic-information-systems-remote",
+          "type": "short",
+          "prompt": "What is collecting information about the Earth from satellites called?",
+          "answers": [
+            "remote sensing"
+          ]
+        },
+        {
+          "id": "geographic-information-systems-resolution",
+          "type": "truefalse",
+          "prompt": "A high-resolution image shows more detail than a low-resolution image.",
+          "answer": true
+        },
+        {
+          "id": "geographic-information-systems-layers",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What are layers in a GIS and why are they useful?",
+          "memo": "✓ Separate sets of data (e.g. roads, rivers, buildings) stored one above another (1)\n✓ They can be overlaid or switched off to compare and see relationships (1)"
+        },
+        {
+          "id": "geographic-information-systems-buffer",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain what a buffer is, with an example.",
+          "memo": "✓ A zone of a set distance drawn around a feature (1)\n✓ e.g. 100 m along a river where no building is allowed / 1 km around a factory (1)"
+        },
+        {
+          "id": "geographic-information-systems-components",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name FOUR components of a GIS.",
+          "memo": "✓✓ Any four (½ each, round up): hardware, software, data, people, methods"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Resource Use and Sustainability",
+      "questions": [
+        {
+          "id": "resource-use-and-sustainability-renewable",
+          "type": "mcq",
+          "prompt": "Which resource is renewable?",
+          "options": [
+            "Coal",
+            "Gold",
+            "Wind",
+            "Natural gas"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "resource-use-and-sustainability-water-user",
+          "type": "mcq",
+          "prompt": "Which sector uses the most water in South Africa?",
+          "options": [
+            "Mining",
+            "Households",
+            "Agriculture (irrigation)",
+            "Power stations"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "resource-use-and-sustainability-coal-pc",
+          "type": "numeric",
+          "prompt": "About what percentage of South Africa's electricity comes from coal?",
+          "answer": 80,
+          "tolerance": 10,
+          "unit": "%"
+        },
+        {
+          "id": "resource-use-and-sustainability-lesotho",
+          "type": "short",
+          "prompt": "Name the scheme that transfers water from Lesotho to Gauteng.",
+          "answers": [
+            "lesotho highlands water project",
+            "lesotho highlands water scheme",
+            "lhwp"
+          ]
+        },
+        {
+          "id": "resource-use-and-sustainability-three-rs",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each action to one of the three Rs.",
+          "pairs": [
+            {
+              "left": "Taking a shopping bag to the shop again and again",
+              "right": "Reuse"
+            },
+            {
+              "left": "Taking shorter showers",
+              "right": "Reduce"
+            },
+            {
+              "left": "Turning old bottles into new glass",
+              "right": "Recycle"
+            }
+          ]
+        },
+        {
+          "id": "resource-use-and-sustainability-scarce",
+          "type": "truefalse",
+          "prompt": "South Africa's average rainfall is higher than the world average.",
+          "answer": false
+        },
+        {
+          "id": "resource-use-and-sustainability-overgrazing",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how overgrazing leads to soil erosion.",
+          "memo": "✓ Too many animals eat the grass faster than it can regrow, leaving bare ground (1)\n✓ Without plant cover and roots, rain and wind wash or blow the soil away (1)"
+        },
+        {
+          "id": "resource-use-and-sustainability-community",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is it important to involve local communities in conservation?",
+          "memo": "✓ They benefit from jobs and income, e.g. eco-tourism (1)\n✓ so they have a reason to protect the resources instead of over-using them (1)"
+        }
+      ]
+    }
+  ]
+}

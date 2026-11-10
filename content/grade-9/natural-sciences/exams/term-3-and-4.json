@@ -1,0 +1,560 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 7 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Forces",
+      "questions": [
+        {
+          "id": "forces-unit",
+          "type": "short",
+          "prompt": "What is the SI unit of force?",
+          "answers": [
+            "newton",
+            "newtons",
+            "n"
+          ]
+        },
+        {
+          "id": "forces-weight-calc",
+          "type": "numeric",
+          "prompt": "Calculate the weight on Earth of a 45 kg learner. Use g = 10 N/kg.",
+          "answer": 450,
+          "tolerance": 0,
+          "unit": "N"
+        },
+        {
+          "id": "forces-mass-moon",
+          "type": "truefalse",
+          "prompt": "An object's mass is smaller on the moon than on Earth.",
+          "answer": false,
+          "explanation": "Mass stays the same; only weight changes."
+        },
+        {
+          "id": "forces-resultant",
+          "type": "numeric",
+          "prompt": "A trolley is pulled to the left with 80 N, while friction of 20 N acts to the right. What is the size of the resultant force?",
+          "answer": 60,
+          "tolerance": 0,
+          "unit": "N"
+        },
+        {
+          "id": "forces-balanced",
+          "type": "mcq",
+          "prompt": "A car moves at a constant speed in a straight line. The forces on it are…",
+          "options": [
+            "balanced",
+            "unbalanced, forwards",
+            "unbalanced, backwards",
+            "zero because nothing acts on it"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "forces-reduce",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each example to whether it increases or reduces friction.",
+          "pairs": [
+            {
+              "left": "Oiling a bicycle chain",
+              "right": "Reduces friction"
+            },
+            {
+              "left": "Deep treads on hiking boots",
+              "right": "Increases friction"
+            },
+            {
+              "left": "Streamlined shape of a racing car",
+              "right": "Reduces air resistance"
+            }
+          ]
+        },
+        {
+          "id": "forces-space",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A space probe far from any planet has its engines switched off. Describe and explain its motion.",
+          "memo": "✓ It keeps moving at the same speed in the same direction (1)\n✓ because there is no friction or air resistance, so no resultant force acts on it (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Electric Cells, Resistance and Circuits",
+      "questions": [
+        {
+          "id": "electric-cells-and-resistance-cell-energy",
+          "type": "mcq",
+          "prompt": "An electric cell converts…",
+          "options": [
+            "electrical energy into chemical energy",
+            "chemical potential energy into electrical energy",
+            "heat into electrical energy",
+            "light into chemical energy"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "electric-cells-and-resistance-voltmeter",
+          "type": "short",
+          "prompt": "Is a voltmeter connected in series or in parallel with a component?",
+          "answers": [
+            "parallel",
+            "in parallel"
+          ]
+        },
+        {
+          "id": "electric-cells-and-resistance-ohm",
+          "type": "short",
+          "prompt": "What is the unit of resistance?",
+          "answers": [
+            "ohm",
+            "ohms",
+            "Ω"
+          ]
+        },
+        {
+          "id": "electric-cells-and-resistance-thin-wire",
+          "type": "truefalse",
+          "prompt": "A thin wire has a lower resistance than a thick wire of the same material and length.",
+          "answer": false
+        },
+        {
+          "id": "electric-cells-and-resistance-parallel-i",
+          "type": "numeric",
+          "prompt": "In a parallel circuit, branch currents are 0,4 A and 0,8 A. What is the total current from the battery?",
+          "answer": 1.2,
+          "tolerance": 0.01,
+          "unit": "A"
+        },
+        {
+          "id": "electric-cells-and-resistance-factors",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each change to its effect on the resistance of a wire.",
+          "pairs": [
+            {
+              "left": "Make the wire longer",
+              "right": "Resistance increases"
+            },
+            {
+              "left": "Make the wire thicker",
+              "right": "Resistance decreases"
+            },
+            {
+              "left": "Replace a copper wire with a nichrome wire of the same size",
+              "right": "Resistance becomes much higher"
+            }
+          ]
+        },
+        {
+          "id": "electric-cells-and-resistance-nichrome",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is nichrome used for the heating element in a kettle while copper is used for the cable?",
+          "memo": "✓ Nichrome has high resistance, so it converts electrical energy into heat (1)\n✓ Copper has low resistance, so very little energy is wasted in the cable (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Safety, the National Grid and the Cost of Electricity",
+      "questions": [
+        {
+          "id": "electricity-safety-and-the-national-grid-mains",
+          "type": "numeric",
+          "prompt": "What is the mains voltage in South African homes?",
+          "answer": 230,
+          "tolerance": 10,
+          "unit": "V"
+        },
+        {
+          "id": "electricity-safety-and-the-national-grid-koeberg",
+          "type": "short",
+          "prompt": "Name South Africa's nuclear power station.",
+          "answers": [
+            "koeberg"
+          ]
+        },
+        {
+          "id": "electricity-safety-and-the-national-grid-turbine",
+          "type": "mcq",
+          "prompt": "In a coal power station, what turns the turbines?",
+          "options": [
+            "Wind",
+            "Falling water",
+            "Steam",
+            "Burning coal directly"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "electricity-safety-and-the-national-grid-step-up",
+          "type": "truefalse",
+          "prompt": "Electricity is transmitted at very high voltages to reduce energy losses in the power lines.",
+          "answer": true
+        },
+        {
+          "id": "electricity-safety-and-the-national-grid-kwh",
+          "type": "numeric",
+          "prompt": "A 1 500 W heater is switched on for 4 hours. How many kWh of energy does it use?",
+          "answer": 6,
+          "tolerance": 0,
+          "unit": "kWh"
+        },
+        {
+          "id": "electricity-safety-and-the-national-grid-devices",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each safety device to its job.",
+          "pairs": [
+            {
+              "left": "Earth leakage unit",
+              "right": "Trips when current leaks through a person"
+            },
+            {
+              "left": "Circuit breaker",
+              "right": "Resettable switch that trips on overload"
+            },
+            {
+              "left": "Earth wire",
+              "right": "Carries fault current from metal casing to ground"
+            }
+          ]
+        },
+        {
+          "id": "electricity-safety-and-the-national-grid-save",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Suggest TWO ways a family can reduce its electricity bill.",
+          "memo": "Any two (1 each): switch off unused appliances; LED bulbs; solar geyser / geyser blanket; boil only needed water; use appliances efficiently"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: The Earth as a System",
+      "questions": [
+        {
+          "id": "the-earth-as-a-system-hydro",
+          "type": "short",
+          "prompt": "Which sphere includes all the water on Earth?",
+          "answers": [
+            "hydrosphere",
+            "the hydrosphere"
+          ]
+        },
+        {
+          "id": "the-earth-as-a-system-litho",
+          "type": "mcq",
+          "prompt": "Soil and rocks belong to the…",
+          "options": [
+            "atmosphere",
+            "biosphere",
+            "lithosphere",
+            "hydrosphere"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "the-earth-as-a-system-inner-core",
+          "type": "mcq",
+          "prompt": "Why is the inner core solid even though it is extremely hot?",
+          "options": [
+            "It is made of rock",
+            "The pressure is extremely high",
+            "It is cooled by the mantle",
+            "It is made of ice"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-earth-as-a-system-granite",
+          "type": "short",
+          "prompt": "What type of rock is granite?",
+          "answers": [
+            "igneous",
+            "igneous rock"
+          ]
+        },
+        {
+          "id": "the-earth-as-a-system-fossils",
+          "type": "truefalse",
+          "prompt": "Fossils are mainly found in sedimentary rocks.",
+          "answer": true
+        },
+        {
+          "id": "the-earth-as-a-system-rock-match",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each metamorphic rock to the rock it formed from.",
+          "pairs": [
+            {
+              "left": "Marble",
+              "right": "Limestone"
+            },
+            {
+              "left": "Slate",
+              "right": "Shale"
+            },
+            {
+              "left": "Quartzite",
+              "right": "Sandstone"
+            }
+          ]
+        },
+        {
+          "id": "the-earth-as-a-system-crystals",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why granite has large crystals but basalt has small crystals.",
+          "memo": "✓ Granite forms from magma cooling slowly underground, giving crystals time to grow (1)\n✓ Basalt forms from lava cooling quickly at the surface, so crystals stay small (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Mining of Mineral Resources",
+      "questions": [
+        {
+          "id": "mining-of-mineral-resources-renewable",
+          "type": "truefalse",
+          "prompt": "Minerals are renewable resources.",
+          "answer": false
+        },
+        {
+          "id": "mining-of-mineral-resources-platinum",
+          "type": "mcq",
+          "prompt": "Platinum is mainly used in…",
+          "options": [
+            "catalytic converters",
+            "electricity generation",
+            "building bricks",
+            "fertiliser"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "mining-of-mineral-resources-big-hole",
+          "type": "mcq",
+          "prompt": "The Big Hole in Kimberley is an example of…",
+          "options": [
+            "underground mining",
+            "alluvial mining",
+            "open-pit mining",
+            "strip mining"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "mining-of-mineral-resources-coal-where",
+          "type": "short",
+          "prompt": "In which province is most of South Africa's coal mined?",
+          "answers": [
+            "mpumalanga"
+          ]
+        },
+        {
+          "id": "mining-of-mineral-resources-mineral-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each mineral to the place where it is mainly mined.",
+          "pairs": [
+            {
+              "left": "Gold",
+              "right": "Witwatersrand"
+            },
+            {
+              "left": "Iron ore",
+              "right": "Sishen"
+            },
+            {
+              "left": "Diamonds",
+              "right": "Kimberley"
+            },
+            {
+              "left": "Platinum",
+              "right": "Bushveld Complex"
+            }
+          ]
+        },
+        {
+          "id": "mining-of-mineral-resources-rehab",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Describe how mined land can be rehabilitated.",
+          "memo": "Any two (1 each): fill in pits and level the land; replace topsoil; replant indigenous plants; clean up waste dumps and treat polluted water"
+        },
+        {
+          "id": "mining-of-mineral-resources-steps",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name the steps, in order, by which a metal is obtained from its ore.",
+          "memo": "✓ Extraction/mining (1)\n✓ Crushing and separating the mineral from waste rock (1)\n✓ Refining/smelting to purify the metal (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: The Atmosphere",
+      "questions": [
+        {
+          "id": "the-atmosphere-oxygen-pc",
+          "type": "numeric",
+          "prompt": "About what percentage of the air is oxygen?",
+          "answer": 21,
+          "tolerance": 1,
+          "unit": "%"
+        },
+        {
+          "id": "the-atmosphere-weather",
+          "type": "short",
+          "prompt": "In which layer of the atmosphere does weather occur?",
+          "answers": [
+            "troposphere",
+            "the troposphere"
+          ]
+        },
+        {
+          "id": "the-atmosphere-ozone-layer",
+          "type": "mcq",
+          "prompt": "In which layer is the ozone layer found?",
+          "options": [
+            "Troposphere",
+            "Stratosphere",
+            "Mesosphere",
+            "Thermosphere"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-atmosphere-natural",
+          "type": "truefalse",
+          "prompt": "Without any greenhouse effect, the Earth would be too cold for most life.",
+          "answer": true
+        },
+        {
+          "id": "the-atmosphere-layers",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each layer to its feature.",
+          "pairs": [
+            {
+              "left": "Troposphere",
+              "right": "All weather occurs here"
+            },
+            {
+              "left": "Stratosphere",
+              "right": "Contains the ozone layer"
+            },
+            {
+              "left": "Mesosphere",
+              "right": "Meteors burn up here"
+            },
+            {
+              "left": "Thermosphere",
+              "right": "Auroras and the space station"
+            }
+          ]
+        },
+        {
+          "id": "the-atmosphere-greenhouse",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how the greenhouse effect warms the Earth.",
+          "memo": "✓ The sun's energy passes through the atmosphere and heats the surface (1)\n✓ The surface gives off heat (infrared radiation) (1)\n✓ Greenhouse gases absorb this heat and re-radiate it back to Earth (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Birth, Life and Death of Stars",
+      "questions": [
+        {
+          "id": "birth-life-and-death-of-stars-nebula",
+          "type": "short",
+          "prompt": "What is the name for a cloud of gas and dust in which stars are born?",
+          "answers": [
+            "nebula",
+            "a nebula",
+            "nebulae"
+          ]
+        },
+        {
+          "id": "birth-life-and-death-of-stars-fusion",
+          "type": "mcq",
+          "prompt": "In nuclear fusion in a main sequence star…",
+          "options": [
+            "helium splits into hydrogen",
+            "hydrogen nuclei join to form helium",
+            "iron is burnt with oxygen",
+            "carbon reacts with water"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "birth-life-and-death-of-stars-forces",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name the two forces that are balanced in a main sequence star.",
+          "memo": "✓ Gravity pulling inwards (1)\n✓ Outward pressure from the energy released by fusion (1)"
+        },
+        {
+          "id": "birth-life-and-death-of-stars-massive-life",
+          "type": "truefalse",
+          "prompt": "Massive stars live longer than small stars.",
+          "answer": false,
+          "explanation": "Massive stars use their fuel much faster, so they have shorter lives."
+        },
+        {
+          "id": "birth-life-and-death-of-stars-light-escape",
+          "type": "short",
+          "prompt": "What object has gravity so strong that not even light can escape?",
+          "answers": [
+            "black hole",
+            "a black hole"
+          ]
+        },
+        {
+          "id": "birth-life-and-death-of-stars-colour-hot",
+          "type": "mcq",
+          "prompt": "Which colour star is the hottest?",
+          "options": [
+            "Red",
+            "Yellow",
+            "White",
+            "Blue"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "birth-life-and-death-of-stars-order",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each stage in the life of a sun-like star to its number in order.",
+          "pairs": [
+            {
+              "left": "Nebula",
+              "right": "Stage 1"
+            },
+            {
+              "left": "Main sequence star",
+              "right": "Stage 2"
+            },
+            {
+              "left": "Red giant",
+              "right": "Stage 3"
+            },
+            {
+              "left": "White dwarf",
+              "right": "Stage 4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

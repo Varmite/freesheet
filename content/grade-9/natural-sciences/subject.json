@@ -20,6 +20,8 @@
     { "id": "birth-life-and-death-of-stars", "title": "Birth, Life and Death of Stars", "term": 4 }
   ],
   "exams": [
+    { "id": "term-1-and-2", "title": "Term 1 and 2 Examination", "durationMinutes": 90, "totalMarks": 75 },
+    { "id": "term-3-and-4", "title": "Term 3 and 4 Examination", "durationMinutes": 90, "totalMarks": 75 },
     { "id": "november-exam", "title": "November Examination", "durationMinutes": 90, "totalMarks": 75 }
   ]
 }

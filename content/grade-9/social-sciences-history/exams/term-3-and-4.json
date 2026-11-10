@@ -1,0 +1,373 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: 1960: Sharpeville and the Armed Struggle",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Source I: A survivor's account (a composite based on survivors' testimonies)",
+          "text": "We were singing and some were laughing. Nobody had a weapon. Then the shooting started and people began to fall. We ran, but the bullets were following us. I saw a woman fall next to me; she was shot in the back."
+        },
+        {
+          "type": "passage",
+          "title": "Source J: A police commander's view (a composite based on police statements to the press in 1960)",
+          "text": "The native mentality does not allow them to gather for a peaceful demonstration. For them to gather means violence. My men were in danger and had to defend themselves."
+        },
+        {
+          "type": "passage",
+          "title": "Source K: From Nelson Mandela's statement at the Rivonia Trial, 20 April 1964",
+          "text": "I have fought against white domination, and I have fought against black domination. I have cherished the ideal of a democratic and free society in which all persons live together in harmony and with equal opportunities. It is an ideal which I hope to live for and to achieve. But if needs be, it is an ideal for which I am prepared to die."
+        }
+      ],
+      "questions": [
+        {
+          "id": "sharpeville-and-the-armed-struggle-pac-leader",
+          "type": "short",
+          "prompt": "Who led the PAC when it was formed in 1959?",
+          "answers": [
+            "robert sobukwe",
+            "sobukwe"
+          ]
+        },
+        {
+          "id": "sharpeville-and-the-armed-struggle-date",
+          "type": "mcq",
+          "prompt": "On which date did the Sharpeville massacre take place?",
+          "options": [
+            "16 June 1976",
+            "21 March 1960",
+            "9 August 1956",
+            "26 June 1955"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "sharpeville-and-the-armed-struggle-deaths",
+          "type": "numeric",
+          "prompt": "How many people were killed at Sharpeville?",
+          "answer": 69,
+          "tolerance": 0
+        },
+        {
+          "id": "sharpeville-and-the-armed-struggle-mk",
+          "type": "short",
+          "prompt": "What was the name of the ANC's armed wing formed in 1961?",
+          "answers": [
+            "umkhonto we sizwe",
+            "mk"
+          ]
+        },
+        {
+          "id": "sharpeville-and-the-armed-struggle-banned",
+          "type": "truefalse",
+          "prompt": "The ANC and PAC were banned after the Sharpeville massacre.",
+          "answer": true
+        },
+        {
+          "id": "sharpeville-and-the-armed-struggle-human-rights-day",
+          "type": "mcq",
+          "prompt": "21 March is commemorated today as…",
+          "options": [
+            "Freedom Day",
+            "Youth Day",
+            "Human Rights Day",
+            "Heritage Day"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sharpeville-and-the-armed-struggle-sources",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Compare Sources I and J. (a) How do they differ about the crowd? (b) Which source is more reliable? Give TWO reasons.",
+          "memo": "(a) ✓ Source I says the crowd was peaceful and unarmed; Source J claims they were violent and the police were in danger (1)\n(b) ✓ Source I is more reliable (1)\n✓ Evidence that most were shot in the back supports it (1)\n✓ The commander wanted to justify the police and shows racist bias (1)"
+        },
+        {
+          "id": "sharpeville-and-the-armed-struggle-source-k",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Read Source K. What kind of society did Mandela want?",
+          "memo": "✓ A democratic and free society (1)\n✓ where all people live in harmony with equal opportunities, without white or black domination (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: 1976: The Soweto Uprising",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Source L: A placard carried on 16 June 1976 (as recorded in photographs)",
+          "text": "IF WE MUST DO AFRIKAANS, VORSTER MUST DO ZULU"
+        }
+      ],
+      "questions": [
+        {
+          "id": "the-soweto-uprising-date",
+          "type": "short",
+          "prompt": "On which date did the Soweto Uprising begin? (e.g. 1 May 1990)",
+          "answers": [
+            "16 june 1976",
+            "16th june 1976",
+            "june 16 1976",
+            "june 16, 1976"
+          ]
+        },
+        {
+          "id": "the-soweto-uprising-language",
+          "type": "mcq",
+          "prompt": "Learners in Soweto protested against being taught in…",
+          "options": [
+            "English",
+            "isiZulu",
+            "Afrikaans",
+            "Sesotho"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "the-soweto-uprising-hector",
+          "type": "short",
+          "prompt": "Name the boy whose photograph became a symbol of the uprising.",
+          "answers": [
+            "hector pieterson",
+            "hector peterson",
+            "pieterson"
+          ]
+        },
+        {
+          "id": "the-soweto-uprising-biko",
+          "type": "mcq",
+          "prompt": "Steve Biko is best known as a leader of the…",
+          "options": [
+            "Freedom Charter",
+            "Black Consciousness Movement",
+            "Defiance Campaign",
+            "Women's March"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-soweto-uprising-youth-day",
+          "type": "truefalse",
+          "prompt": "16 June is commemorated as Youth Day in South Africa.",
+          "answer": true
+        },
+        {
+          "id": "the-soweto-uprising-people",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each person to their role.",
+          "pairs": [
+            {
+              "left": "Tsietsi Mashinini",
+              "right": "Student leader of the march"
+            },
+            {
+              "left": "Sam Nzima",
+              "right": "Photographer"
+            },
+            {
+              "left": "Mbuyisa Makhubo",
+              "right": "Carried Hector Pieterson"
+            },
+            {
+              "left": "Steve Biko",
+              "right": "Black Consciousness leader"
+            }
+          ]
+        },
+        {
+          "id": "the-soweto-uprising-source-l",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Read Source L. Explain the message of the placard.",
+          "memo": "✓ It was unfair to force black learners to learn in a language that was not theirs (1)\n✓ It uses humour/irony: the Prime Minister would not accept being forced to learn Zulu (1)"
+        },
+        {
+          "id": "the-soweto-uprising-funding",
+          "type": "open",
+          "marks": 2,
+          "prompt": "In 1975 about R644 was spent on each white learner and about R42 on each black learner. What does this show about apartheid education?",
+          "memo": "✓ Education was very unequal (1)\n✓ The government deliberately gave black learners inferior education to keep them in low-paid jobs (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: 1990–1994: The Road to Democracy",
+      "questions": [
+        {
+          "id": "the-road-to-democracy-release",
+          "type": "short",
+          "prompt": "On which date was Nelson Mandela released from prison? (e.g. 1 May 1990)",
+          "answers": [
+            "11 february 1990",
+            "11th february 1990",
+            "february 11 1990",
+            "february 11, 1990"
+          ]
+        },
+        {
+          "id": "the-road-to-democracy-de-klerk",
+          "type": "mcq",
+          "prompt": "Who announced the unbanning of the liberation movements on 2 February 1990?",
+          "options": [
+            "P. W. Botha",
+            "F. W. de Klerk",
+            "Nelson Mandela",
+            "Chris Hani"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-road-to-democracy-years",
+          "type": "numeric",
+          "prompt": "For how many years was Mandela in prison?",
+          "answer": 27,
+          "tolerance": 0,
+          "unit": "years"
+        },
+        {
+          "id": "the-road-to-democracy-codesa",
+          "type": "short",
+          "prompt": "What was the name of the negotiating forum that began in 1991? (an acronym)",
+          "answers": [
+            "codesa"
+          ]
+        },
+        {
+          "id": "the-road-to-democracy-freedom-day",
+          "type": "truefalse",
+          "prompt": "Freedom Day, 27 April, marks the date of the first democratic election.",
+          "answer": true
+        },
+        {
+          "id": "the-road-to-democracy-events",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each event to its year.",
+          "pairs": [
+            {
+              "left": "UDF formed",
+              "right": "1983"
+            },
+            {
+              "left": "Mandela released",
+              "right": "1990"
+            },
+            {
+              "left": "Chris Hani assassinated",
+              "right": "1993"
+            },
+            {
+              "left": "First democratic election",
+              "right": "1994"
+            }
+          ]
+        },
+        {
+          "id": "the-road-to-democracy-hani",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why was Mandela's response to Chris Hani's assassination important?",
+          "memo": "✓ He appealed for calm and prevented the country from sliding into civil war (1)\n✓ It showed he was the leader the country looked to, and led to an election date being set (1)"
+        },
+        {
+          "id": "the-road-to-democracy-trc",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What was the purpose of the Truth and Reconciliation Commission?",
+          "memo": "✓ To uncover the truth about human rights abuses from 1960 to 1994 (1)\n✓ To help reconciliation / give victims a voice; amnesty for full disclosure (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: The Nuclear Age and the Cold War",
+      "questions": [
+        {
+          "id": "the-cold-war-why-cold",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why was it called a 'Cold' War?",
+          "memo": "✓ The USA and USSR never fought each other directly (1)\n✓ They competed through threats, the arms race, propaganda, spying and proxy wars (1)"
+        },
+        {
+          "id": "the-cold-war-wall-built",
+          "type": "numeric",
+          "prompt": "In which year was the Berlin Wall built?",
+          "answer": 1961,
+          "tolerance": 0
+        },
+        {
+          "id": "the-cold-war-cuba",
+          "type": "truefalse",
+          "prompt": "During the Cuban Missile Crisis the USSR placed nuclear missiles in Cuba.",
+          "answer": true
+        },
+        {
+          "id": "the-cold-war-systems",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Capitalism",
+              "right": "Private ownership and a free market"
+            },
+            {
+              "left": "Communism",
+              "right": "State ownership and a planned economy"
+            },
+            {
+              "left": "Proxy war",
+              "right": "War fought by allies of the superpowers"
+            },
+            {
+              "left": "NATO",
+              "right": "Western military alliance"
+            }
+          ]
+        },
+        {
+          "id": "the-cold-war-gorbachev",
+          "type": "short",
+          "prompt": "Which Soviet leader introduced glasnost and perestroika?",
+          "answers": [
+            "mikhail gorbachev",
+            "gorbachev"
+          ]
+        },
+        {
+          "id": "the-cold-war-end-sa",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How did the end of the Cold War help to end apartheid?",
+          "memo": "✓ The government could no longer claim it was defending the West against communism (1)\n✓ Western countries increased pressure / the ANC lost Soviet support, making negotiation more likely on both sides (1)"
+        },
+        {
+          "id": "the-cold-war-ussr-end",
+          "type": "mcq",
+          "prompt": "When did the USSR break up?",
+          "options": [
+            "1985",
+            "1989",
+            "1991",
+            "1994"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

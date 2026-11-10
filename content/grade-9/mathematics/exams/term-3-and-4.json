@@ -1,0 +1,487 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 7 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Graphs: Linear Functions",
+      "questions": [
+        {
+          "id": "graphs-q2",
+          "type": "numeric",
+          "prompt": "What is the $y$-intercept of $y = -2x + 7$?",
+          "answer": 7,
+          "tolerance": 0,
+          "explanation": "$c = 7$: the line cuts the $y$-axis at $(0;\\ 7)$."
+        },
+        {
+          "id": "graphs-q4",
+          "type": "truefalse",
+          "prompt": "The graph of $y = 4$ is a horizontal line.",
+          "answer": true,
+          "explanation": "$y$ is always 4, whatever $x$ is: a horizontal line with gradient 0."
+        },
+        {
+          "id": "graphs-q5",
+          "type": "mcq",
+          "prompt": "Which line is parallel to $y = 2x + 1$?",
+          "options": [
+            "$y = -2x + 1$",
+            "$y = 2x - 3$",
+            "$y = \\frac{1}{2}x + 1$",
+            "$y = x + 2$"
+          ],
+          "answer": 1,
+          "explanation": "Parallel lines have the same gradient, $2$."
+        },
+        {
+          "id": "graphs-q11",
+          "type": "truefalse",
+          "prompt": "A line with a negative gradient goes up from left to right.",
+          "answer": false,
+          "explanation": "A negative gradient means $y$ decreases as $x$ increases: the line goes down from left to right."
+        },
+        {
+          "id": "graphs-q13",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Find the equation of the straight line through $(1;\\ 5)$ and $(3;\\ 9)$.",
+          "memo": "$m = \\frac{9 - 5}{3 - 1} = 2$ ✓ (1)\n$5 = 2(1) + c$, $c = 3$ ✓ (1)\n$y = 2x + 3$ ✓ (1)"
+        },
+        {
+          "id": "graphs-q15",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Find, algebraically, the point of intersection of $y = 2x - 1$ and $y = -x + 2$.",
+          "memo": "$2x - 1 = -x + 2$ ✓ (1)\n$x = 1$ ✓ (1)\n$y = 1$, so $(1;\\ 1)$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Perimeter, Area and the Theorem of Pythagoras",
+      "questions": [
+        {
+          "id": "perimeter-and-area-q5",
+          "type": "mcq",
+          "prompt": "Which formula gives the area of a trapezium with parallel sides $a$ and $b$ and height $h$?",
+          "options": [
+            "$(a + b) \\times h$",
+            "$\\frac{1}{2}(a + b) \\times h$",
+            "$\\frac{1}{2} \\times a \\times b$",
+            "$a \\times b \\times h$"
+          ],
+          "answer": 1,
+          "explanation": "Half the sum of the parallel sides times the height."
+        },
+        {
+          "id": "perimeter-and-area-q6",
+          "type": "numeric",
+          "prompt": "An isosceles trapezium has parallel sides of 14 cm and 8 cm and a height of 4 cm. Calculate the length of each slanting side.",
+          "unit": "cm",
+          "answer": 5,
+          "tolerance": 0,
+          "explanation": "Overhang $= 3$ cm; $\\sqrt{3^2 + 4^2} = 5$ cm."
+        },
+        {
+          "id": "perimeter-and-area-q8",
+          "type": "truefalse",
+          "prompt": "Doubling the radius of a circle doubles its area.",
+          "answer": false,
+          "explanation": "$\\pi(2r)^2 = 4\\pi r^2$: the area is multiplied by 4."
+        },
+        {
+          "id": "perimeter-and-area-q9",
+          "type": "match",
+          "prompt": "Match each shape with its area formula.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "Parallelogram",
+              "right": "base × perpendicular height"
+            },
+            {
+              "left": "Trapezium",
+              "right": "½ × (sum of parallel sides) × height"
+            },
+            {
+              "left": "Rhombus or kite",
+              "right": "½ × product of the diagonals"
+            },
+            {
+              "left": "Circle",
+              "right": "π × radius²"
+            },
+            {
+              "left": "Triangle",
+              "right": "½ × base × height"
+            }
+          ],
+          "explanation": "These formulae come from cutting and rearranging shapes into rectangles."
+        },
+        {
+          "id": "perimeter-and-area-q12",
+          "type": "numeric",
+          "prompt": "A rectangle is 5 cm wide and its diagonal is 13 cm. Calculate its area.",
+          "unit": "cm²",
+          "answer": 60,
+          "tolerance": 0,
+          "explanation": "Length $= \\sqrt{169 - 25} = 12$ cm; area $= 5 \\times 12 = 60\\ \\text{cm}^2$."
+        },
+        {
+          "id": "perimeter-and-area-q15",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A kite has diagonals of 12 cm and 20 cm. The long diagonal bisects the short one, and is divided by it into parts of 8 cm and 12 cm.\n(a) Calculate the area of the kite.  (1)\n(b) Calculate the lengths of its sides, correct to two decimal places where necessary.  (3)",
+          "memo": "(a) $\\frac{1}{2} \\times 12 \\times 20 = 120\\ \\text{cm}^2$ ✓ (1)\n(b) Half of the short diagonal $= 6$ cm ✓ (1)\nShort sides: $\\sqrt{6^2 + 8^2} = 10$ cm ✓ (1)\nLong sides: $\\sqrt{6^2 + 12^2} = \\sqrt{180} \\approx 13{,}42$ cm ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Surface Area and Volume of 3D Objects",
+      "questions": [
+        {
+          "id": "surface-area-and-volume-q2",
+          "type": "mcq",
+          "prompt": "Which expression gives the area of the curved surface of a cylinder?",
+          "options": [
+            "$\\pi r^2$",
+            "$2\\pi r^2$",
+            "$2\\pi rh$",
+            "$\\pi r^2 h$"
+          ],
+          "answer": 2,
+          "explanation": "The curved surface unrolls into a rectangle $2\\pi r$ by $h$."
+        },
+        {
+          "id": "surface-area-and-volume-q4",
+          "type": "numeric",
+          "prompt": "A cylindrical container has radius 10 cm and height 30 cm. How many litres does it hold? Round to two decimal places.",
+          "unit": "litres",
+          "answer": 9.42,
+          "tolerance": 0.01,
+          "explanation": "$V = \\pi(100)(30) = 3\\ 000\\pi \\approx 9\\ 424{,}78\\ \\text{cm}^3 \\approx 9{,}42$ litres."
+        },
+        {
+          "id": "surface-area-and-volume-q5",
+          "type": "truefalse",
+          "prompt": "Doubling the radius of a cylinder (keeping the height the same) doubles its volume.",
+          "answer": false,
+          "explanation": "$\\pi(2r)^2h = 4\\pi r^2h$: the volume is multiplied by 4."
+        },
+        {
+          "id": "surface-area-and-volume-q8",
+          "type": "numeric",
+          "prompt": "A cylinder has a volume of $500\\ \\text{cm}^3$ and a radius of 5 cm. Calculate its height, correct to two decimal places.",
+          "unit": "cm",
+          "answer": 6.37,
+          "tolerance": 0.01,
+          "explanation": "$h = \\frac{500}{\\pi \\times 25} \\approx 6{,}37$ cm."
+        },
+        {
+          "id": "surface-area-and-volume-q9",
+          "type": "match",
+          "prompt": "Match each object with its volume formula.",
+          "marks": 4,
+          "pairs": [
+            {
+              "left": "Cube",
+              "right": "s³"
+            },
+            {
+              "left": "Rectangular prism",
+              "right": "l × b × h"
+            },
+            {
+              "left": "Triangular prism",
+              "right": "½ × base × height × length"
+            },
+            {
+              "left": "Cylinder",
+              "right": "π × r² × h"
+            }
+          ],
+          "explanation": "Each is (area of base) × height."
+        },
+        {
+          "id": "surface-area-and-volume-q11",
+          "type": "mcq",
+          "prompt": "Every dimension of a box is tripled. By what number is its volume multiplied?",
+          "options": [
+            "3",
+            "6",
+            "9",
+            "27"
+          ],
+          "answer": 3,
+          "explanation": "$3^3 = 27$."
+        },
+        {
+          "id": "surface-area-and-volume-q14",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A paper label covers the curved surface of a tin with diameter 8 cm and height 11 cm. Calculate the area of the label, correct to two decimal places.",
+          "memo": "$r = 4$ cm ✓ (1)\n$2\\pi(4)(11) = 88\\pi$ ✓ (1)\n$\\approx 276{,}46\\ \\text{cm}^2$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Transformation Geometry",
+      "questions": [
+        {
+          "id": "transformation-geometry-q1",
+          "type": "mcq",
+          "prompt": "Reflect $(2;\\ -5)$ in the line $y = x$.",
+          "options": [
+            "$(-2;\\ 5)$",
+            "$(5;\\ -2)$",
+            "$(-5;\\ 2)$",
+            "$(2;\\ 5)$"
+          ],
+          "answer": 2,
+          "explanation": "Swap the coordinates: $(x;\\ y) \\to (y;\\ x)$."
+        },
+        {
+          "id": "transformation-geometry-q4",
+          "type": "truefalse",
+          "prompt": "A reflection in the line $y = x$ maps $(a;\\ b)$ to $(b;\\ a)$.",
+          "answer": true,
+          "explanation": "The coordinates are swapped."
+        },
+        {
+          "id": "transformation-geometry-q9",
+          "type": "match",
+          "prompt": "Match each rule with the transformation it describes.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "$(x;\\ y) \\to (y;\\ x)$",
+              "right": "Reflection in the line y = x"
+            },
+            {
+              "left": "$(x;\\ y) \\to (x;\\ -y)$",
+              "right": "Reflection in the x-axis"
+            },
+            {
+              "left": "$(x;\\ y) \\to (-x;\\ -y)$",
+              "right": "Rotation of 180° about the origin"
+            },
+            {
+              "left": "$(x;\\ y) \\to (3x;\\ 3y)$",
+              "right": "Enlargement through the origin, factor 3"
+            },
+            {
+              "left": "$(x;\\ y) \\to (x - 2;\\ y + 5)$",
+              "right": "Translation 2 left and 5 up"
+            }
+          ],
+          "explanation": "Test each rule with a point such as $(1;\\ 2)$ and sketch it."
+        },
+        {
+          "id": "transformation-geometry-q15",
+          "type": "open",
+          "marks": 2,
+          "prompt": "$A(2;\\ 5)$ is mapped to $A'(5;\\ 2)$ and $B(-1;\\ 3)$ is mapped to $B'(3;\\ -1)$ by the same transformation. Describe it fully.",
+          "memo": "The coordinates are swapped: $(x;\\ y) \\to (y;\\ x)$ ✓ (1)\nReflection in the line $y = x$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Geometry of 3D Objects",
+      "questions": [
+        {
+          "id": "geometry-of-3d-objects-q3",
+          "type": "mcq",
+          "prompt": "What does the net of a closed cylinder consist of?",
+          "options": [
+            "Two rectangles and a circle",
+            "Two circles and a rectangle",
+            "One circle and a sector",
+            "Three circles"
+          ],
+          "answer": 1,
+          "explanation": "The two circular ends and the curved surface, which unrolls into a rectangle."
+        },
+        {
+          "id": "geometry-of-3d-objects-q4",
+          "type": "truefalse",
+          "prompt": "A cylinder has 2 curved edges and no vertices.",
+          "answer": true,
+          "explanation": "The two circular rims are edges where the flat faces meet the curved surface; there are no corners."
+        },
+        {
+          "id": "geometry-of-3d-objects-q8",
+          "type": "numeric",
+          "prompt": "How many faces does an octagonal prism have?",
+          "answer": 10,
+          "tolerance": 0,
+          "explanation": "$n + 2 = 8 + 2 = 10$: two octagons and eight rectangles."
+        },
+        {
+          "id": "geometry-of-3d-objects-q9",
+          "type": "match",
+          "prompt": "Match each solid with its description.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "Sphere",
+              "right": "One curved surface, no edges or vertices"
+            },
+            {
+              "left": "Cylinder",
+              "right": "Two flat circles and one curved surface"
+            },
+            {
+              "left": "Cone",
+              "right": "One flat circle, one curved surface and an apex"
+            },
+            {
+              "left": "Cube",
+              "right": "Six square faces"
+            },
+            {
+              "left": "Tetrahedron",
+              "right": "Four triangular faces"
+            }
+          ],
+          "explanation": "Describe solids by their faces (or surfaces), edges and vertices."
+        },
+        {
+          "id": "geometry-of-3d-objects-q11",
+          "type": "truefalse",
+          "prompt": "Euler's formula $F + V - E = 2$ applies to a cylinder.",
+          "answer": false,
+          "explanation": "Euler's formula is for polyhedra; a cylinder has curved surfaces and is not a polyhedron."
+        },
+        {
+          "id": "geometry-of-3d-objects-q16",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A toy rocket is made of a cone fixed on top of a cylinder of the same radius. List the surfaces of the rocket that you can see.",
+          "memo": "One flat circle at the bottom and the curved surface of the cylinder ✓ (1)\nThe curved surface of the cone, ending at the apex (the circle where they join is hidden) ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Data Handling",
+      "questions": [
+        {
+          "id": "data-handling-q2",
+          "type": "numeric",
+          "prompt": "Find the lower quartile $Q_1$ of $3;\\ 5;\\ 7;\\ 8;\\ 9;\\ 11;\\ 13;\\ 15;\\ 18$.",
+          "answer": 6,
+          "tolerance": 0,
+          "explanation": "Lower half $3;\\ 5;\\ 7;\\ 8$: median $= \\frac{5 + 7}{2} = 6$."
+        },
+        {
+          "id": "data-handling-q6",
+          "type": "truefalse",
+          "prompt": "An outlier affects the interquartile range much more than it affects the range.",
+          "answer": false,
+          "explanation": "The range uses the extreme values, so an outlier changes it a lot. The IQR uses only the middle 50%, so it hardly changes."
+        },
+        {
+          "id": "data-handling-q8",
+          "type": "mcq",
+          "prompt": "Which graph is best for investigating whether two numerical variables are related?",
+          "options": [
+            "Pie chart",
+            "Bar graph",
+            "Scatter plot",
+            "Stem-and-leaf display"
+          ],
+          "answer": 2,
+          "explanation": "A scatter plot shows each pair of values as a point."
+        },
+        {
+          "id": "data-handling-q10",
+          "type": "mcq",
+          "prompt": "The 50th percentile is the same as the...",
+          "options": [
+            "mean",
+            "mode",
+            "median",
+            "upper quartile"
+          ],
+          "answer": 2,
+          "explanation": "Half the data lies below the median."
+        },
+        {
+          "id": "data-handling-q11",
+          "type": "numeric",
+          "prompt": "In 15 matches a team scored 0 goals 3 times, 1 goal 5 times, 2 goals 4 times, 3 goals twice and 4 goals once. Calculate the mean number of goals per match, correct to two decimal places.",
+          "answer": 1.53,
+          "tolerance": 0.006,
+          "explanation": "$\\frac{0 + 5 + 8 + 6 + 4}{15} = \\frac{23}{15} \\approx 1{,}53$."
+        },
+        {
+          "id": "data-handling-q16",
+          "type": "open",
+          "marks": 4,
+          "prompt": "The ages of people at a party are $5;\\ 6;\\ 6;\\ 7;\\ 8;\\ 9;\\ 40$.\n(a) Identify the outlier.  (1)\n(b) Calculate the mean with and without the outlier.  (2)\n(c) Which measure, the mean or the median, better describes a typical age? Explain.  (1)",
+          "memo": "(a) $40$ ✓ (1)\n(b) With: $81 \\div 7 \\approx 11{,}57$ ✓; without: $41 \\div 6 \\approx 6{,}83$ ✓ (2)\n(c) The median ($7$), because the outlier pulls the mean up ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 7: Probability",
+      "questions": [
+        {
+          "id": "probability-q2",
+          "type": "numeric",
+          "prompt": "Two dice are rolled. What is the probability that the sum is 8? Type a fraction (e.g. 5/36) or a decimal correct to three decimal places.",
+          "answer": 0.138889,
+          "tolerance": 0.001,
+          "explanation": "5 of the 36 outcomes give 8: $(2;6), (3;5), (4;4), (5;3), (6;2)$."
+        },
+        {
+          "id": "probability-q3",
+          "type": "mcq",
+          "prompt": "For independent events $A$ and $B$, which is true?",
+          "options": [
+            "$P(A \\text{ and } B) = P(A) + P(B)$",
+            "$P(A \\text{ and } B) = P(A) \\times P(B)$",
+            "$P(A \\text{ and } B) = 1 - P(A)$",
+            "$P(A \\text{ and } B) = 0$"
+          ],
+          "answer": 1,
+          "explanation": "Multiply the probabilities of independent events."
+        },
+        {
+          "id": "probability-q4",
+          "type": "truefalse",
+          "prompt": "When one die is rolled, \"rolling a 2\" and \"rolling a 5\" are mutually exclusive events.",
+          "answer": true,
+          "explanation": "One roll cannot show both a 2 and a 5."
+        },
+        {
+          "id": "probability-q11",
+          "type": "truefalse",
+          "prompt": "A fair coin has landed heads three times in a row, so the next toss is more likely to be tails.",
+          "answer": false,
+          "explanation": "Tosses are independent: $P(\\text{tails}) = \\frac{1}{2}$ every time."
+        },
+        {
+          "id": "probability-q13",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A coin is tossed twice.\n(a) Draw a tree diagram or list all the outcomes.  (1)\n(b) Find $P(\\text{exactly one head})$.  (2)",
+          "memo": "(a) HH, HT, TH, TT ✓ (1)\n(b) HT and TH ✓; $\\frac{2}{4} = \\frac{1}{2}$ ✓ (2)"
+        },
+        {
+          "id": "probability-q15",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Two dice are rolled.\n(a) Find $P(\\text{a double})$.  (2)\n(b) Find $P(\\text{sum greater than } 9)$.  (2)",
+          "memo": "(a) 6 doubles out of 36 ✓; $\\frac{1}{6}$ ✓ (2)\n(b) Sums 10, 11, 12: $3 + 2 + 1 = 6$ outcomes ✓; $\\frac{6}{36} = \\frac{1}{6}$ ✓ (2)"
+        }
+      ]
+    }
+  ]
+}

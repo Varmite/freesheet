@@ -1,0 +1,548 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 6 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Cells as the Basic Units of Life",
+      "questions": [
+        {
+          "id": "cells-as-the-basic-units-of-life-control",
+          "type": "short",
+          "prompt": "Which organelle controls the activities of the cell?",
+          "answers": [
+            "nucleus",
+            "the nucleus"
+          ]
+        },
+        {
+          "id": "cells-as-the-basic-units-of-life-energy",
+          "type": "mcq",
+          "prompt": "In which organelle is energy released from glucose?",
+          "options": [
+            "Chloroplast",
+            "Nucleus",
+            "Mitochondrion",
+            "Vacuole"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "cells-as-the-basic-units-of-life-plant-only",
+          "type": "mcq",
+          "prompt": "Which structure is found in plant cells but NOT in animal cells?",
+          "options": [
+            "Cell membrane",
+            "Cytoplasm",
+            "Nucleus",
+            "Cell wall"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "cells-as-the-basic-units-of-life-magnify",
+          "type": "numeric",
+          "prompt": "Calculate the total magnification of a microscope with a ×15 eyepiece and a ×10 objective lens.",
+          "answer": 150,
+          "tolerance": 0
+        },
+        {
+          "id": "cells-as-the-basic-units-of-life-cellulose",
+          "type": "truefalse",
+          "prompt": "The cell wall of a plant cell is made of cellulose.",
+          "answer": true
+        },
+        {
+          "id": "cells-as-the-basic-units-of-life-organelles",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each organelle to its function.",
+          "pairs": [
+            {
+              "left": "Cell membrane",
+              "right": "Controls what enters and leaves"
+            },
+            {
+              "left": "Chloroplast",
+              "right": "Photosynthesis"
+            },
+            {
+              "left": "Vacuole",
+              "right": "Stores water and keeps the cell firm"
+            },
+            {
+              "left": "Cytoplasm",
+              "right": "Where most chemical reactions happen"
+            }
+          ]
+        },
+        {
+          "id": "cells-as-the-basic-units-of-life-specialised",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how a red blood cell is adapted to its function.",
+          "memo": "✓ Function: carries oxygen (1)\n✓ Adaptation: no nucleus / biconcave disc shape gives more space and a large surface area for oxygen (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Systems in the Human Body",
+      "questions": [
+        {
+          "id": "human-body-systems-alveoli",
+          "type": "short",
+          "prompt": "In which tiny air sacs does gaseous exchange take place in the lungs?",
+          "answers": [
+            "alveoli",
+            "alveolus",
+            "the alveoli"
+          ]
+        },
+        {
+          "id": "human-body-systems-absorb",
+          "type": "mcq",
+          "prompt": "Where are most digested nutrients absorbed into the blood?",
+          "options": [
+            "Stomach",
+            "Large intestine",
+            "Small intestine",
+            "Oesophagus"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "human-body-systems-artery",
+          "type": "mcq",
+          "prompt": "Which blood vessels carry blood away from the heart?",
+          "options": [
+            "Veins",
+            "Arteries",
+            "Capillaries",
+            "Valves"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "human-body-systems-diaphragm",
+          "type": "truefalse",
+          "prompt": "When you breathe in, the diaphragm contracts and flattens.",
+          "answer": true
+        },
+        {
+          "id": "human-body-systems-kidney",
+          "type": "short",
+          "prompt": "Which organs filter urea from the blood?",
+          "answers": [
+            "kidneys",
+            "kidney",
+            "the kidneys"
+          ]
+        },
+        {
+          "id": "human-body-systems-blood-parts",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each part of the blood to its function.",
+          "pairs": [
+            {
+              "left": "Red blood cells",
+              "right": "Carry oxygen"
+            },
+            {
+              "left": "White blood cells",
+              "right": "Fight infection"
+            },
+            {
+              "left": "Platelets",
+              "right": "Help blood to clot"
+            },
+            {
+              "left": "Plasma",
+              "right": "Liquid that carries dissolved substances"
+            }
+          ]
+        },
+        {
+          "id": "human-body-systems-peristalsis",
+          "type": "short",
+          "prompt": "What are the waves of muscle contraction that push food along the gut called?",
+          "answers": [
+            "peristalsis"
+          ]
+        },
+        {
+          "id": "human-body-systems-together",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Explain how the digestive, respiratory and circulatory systems work together so that muscle cells can release energy.",
+          "memo": "✓ The digestive system digests food and absorbs glucose into the blood (1)\n✓ The respiratory system takes oxygen into the blood in the lungs (1)\n✓ The circulatory system transports glucose and oxygen to the muscle cells for respiration (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Human Reproduction",
+      "questions": [
+        {
+          "id": "human-reproduction-testosterone",
+          "type": "short",
+          "prompt": "Which hormone causes puberty changes in boys?",
+          "answers": [
+            "testosterone"
+          ]
+        },
+        {
+          "id": "human-reproduction-egg-made",
+          "type": "mcq",
+          "prompt": "Where are eggs produced?",
+          "options": [
+            "Uterus",
+            "Ovaries",
+            "Oviducts",
+            "Cervix"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "human-reproduction-fertilise-where",
+          "type": "mcq",
+          "prompt": "Where does fertilisation normally take place?",
+          "options": [
+            "Vagina",
+            "Uterus",
+            "Oviduct",
+            "Ovary"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "human-reproduction-pill-sti",
+          "type": "truefalse",
+          "prompt": "The contraceptive pill protects against HIV.",
+          "answer": false,
+          "explanation": "Only barrier methods (condoms) and abstinence protect against STIs."
+        },
+        {
+          "id": "human-reproduction-parts-match",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each structure to its function.",
+          "pairs": [
+            {
+              "left": "Placenta",
+              "right": "Exchange of food, oxygen and wastes"
+            },
+            {
+              "left": "Scrotum",
+              "right": "Keeps testes cooler than the body"
+            },
+            {
+              "left": "Uterus",
+              "right": "Where the baby develops"
+            },
+            {
+              "left": "Testes",
+              "right": "Produce sperm"
+            }
+          ]
+        },
+        {
+          "id": "human-reproduction-cycle-days",
+          "type": "numeric",
+          "prompt": "On about which day of a 28-day menstrual cycle does ovulation take place?",
+          "answer": 14,
+          "tolerance": 1
+        },
+        {
+          "id": "human-reproduction-menstruation",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain what menstruation is and why it happens.",
+          "memo": "✓ The thickened lining of the uterus breaks down and leaves the body with blood (1)\n✓ because the egg released that month was not fertilised (1)"
+        },
+        {
+          "id": "human-reproduction-puberty-changes",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE changes that happen to girls during puberty.",
+          "memo": "Any three (1 each): breasts develop; hips widen; menstruation begins; growth spurt; pubic and armpit hair; ovaries release eggs"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Compounds and Chemical Reactions",
+      "questions": [
+        {
+          "id": "compounds-and-chemical-reactions-name-mgs",
+          "type": "short",
+          "prompt": "What is the name of the compound formed when magnesium reacts with sulfur?",
+          "answers": [
+            "magnesium sulfide",
+            "magnesium sulphide"
+          ]
+        },
+        {
+          "id": "compounds-and-chemical-reactions-atoms-caco3",
+          "type": "numeric",
+          "prompt": "How many atoms in total are in one unit of CaCO₃?",
+          "answer": 5,
+          "tolerance": 0
+        },
+        {
+          "id": "compounds-and-chemical-reactions-coeff",
+          "type": "numeric",
+          "prompt": "How many hydrogen atoms are in 2NH₃?",
+          "answer": 6,
+          "tolerance": 0
+        },
+        {
+          "id": "compounds-and-chemical-reactions-balance-rule",
+          "type": "truefalse",
+          "prompt": "When balancing an equation you may change the small subscript numbers in a formula.",
+          "answer": false
+        },
+        {
+          "id": "compounds-and-chemical-reactions-dioxide",
+          "type": "mcq",
+          "prompt": "The prefix *di-* in carbon dioxide means…",
+          "options": [
+            "one",
+            "two",
+            "three",
+            "four"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "compounds-and-chemical-reactions-types",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each equation to the type of reaction.",
+          "pairs": [
+            {
+              "left": "Fe + S → FeS",
+              "right": "Synthesis"
+            },
+            {
+              "left": "2H₂O₂ → 2H₂O + O₂",
+              "right": "Decomposition"
+            },
+            {
+              "left": "CH₄ + 2O₂ → CO₂ + 2H₂O",
+              "right": "Combustion"
+            }
+          ]
+        },
+        {
+          "id": "compounds-and-chemical-reactions-balance-mg",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Balance the equation: Mg + O₂ → MgO. Show how you checked it.",
+          "memo": "✓ 2Mg + O₂ → 2MgO (2)\n✓ Check: 2 Mg and 2 O on each side (1)"
+        },
+        {
+          "id": "compounds-and-chemical-reactions-exo",
+          "type": "mcq",
+          "prompt": "Which reaction is endothermic?",
+          "options": [
+            "Burning wood",
+            "Respiration",
+            "Photosynthesis",
+            "Burning methane"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Reactions of Metals and Non-metals with Oxygen",
+      "questions": [
+        {
+          "id": "reactions-with-oxygen-mg-product",
+          "type": "short",
+          "prompt": "Name the product when magnesium burns in oxygen.",
+          "answers": [
+            "magnesium oxide",
+            "mgo"
+          ]
+        },
+        {
+          "id": "reactions-with-oxygen-rust-needs",
+          "type": "mcq",
+          "prompt": "Which two substances are needed for iron to rust?",
+          "options": [
+            "Oxygen and carbon dioxide",
+            "Oxygen and water",
+            "Water and salt",
+            "Nitrogen and water"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "reactions-with-oxygen-galvanise",
+          "type": "short",
+          "prompt": "Which metal is used to coat iron when it is galvanised?",
+          "answers": [
+            "zinc"
+          ]
+        },
+        {
+          "id": "reactions-with-oxygen-limewater",
+          "type": "mcq",
+          "prompt": "Which gas turns limewater milky?",
+          "options": [
+            "Oxygen",
+            "Hydrogen",
+            "Carbon dioxide",
+            "Sulfur dioxide"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "reactions-with-oxygen-gold",
+          "type": "truefalse",
+          "prompt": "Gold reacts quickly with oxygen in the air.",
+          "answer": false
+        },
+        {
+          "id": "reactions-with-oxygen-flames",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each element to what is seen when it burns in oxygen.",
+          "pairs": [
+            {
+              "left": "Magnesium",
+              "right": "Blinding white flame"
+            },
+            {
+              "left": "Sulfur",
+              "right": "Blue flame"
+            },
+            {
+              "left": "Hydrogen",
+              "right": "Squeaky pop"
+            }
+          ]
+        },
+        {
+          "id": "reactions-with-oxygen-rust-expt",
+          "type": "open",
+          "marks": 2,
+          "prompt": "In a rusting experiment, why is the water boiled and covered with a layer of oil?",
+          "memo": "✓ Boiling removes dissolved oxygen/air (1)\n✓ The oil stops air from dissolving back into the water (1)"
+        },
+        {
+          "id": "reactions-with-oxygen-prevent",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe THREE ways to prevent rusting and explain how each one works.",
+          "memo": "Any three, 1 mark each with reason: painting / oiling / plastic coating (keeps out air and water); galvanising (zinc coating reacts instead of iron); using stainless steel (alloy that does not rust)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Acids, Bases and pH",
+      "questions": [
+        {
+          "id": "acids-bases-and-ph-neutral",
+          "type": "numeric",
+          "prompt": "What is the pH of a neutral solution?",
+          "answer": 7,
+          "tolerance": 0
+        },
+        {
+          "id": "acids-bases-and-ph-litmus",
+          "type": "mcq",
+          "prompt": "An acid turns blue litmus…",
+          "options": [
+            "red",
+            "green",
+            "purple",
+            "it stays blue"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "acids-bases-and-ph-strongest",
+          "type": "mcq",
+          "prompt": "Which pH shows the strongest acid?",
+          "options": [
+            "pH 1",
+            "pH 5",
+            "pH 7",
+            "pH 13"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "acids-bases-and-ph-products",
+          "type": "short",
+          "prompt": "An acid reacts with a base to form a salt and…",
+          "answers": [
+            "water"
+          ]
+        },
+        {
+          "id": "acids-bases-and-ph-salt-name",
+          "type": "short",
+          "prompt": "Name the salt formed when sulfuric acid reacts with magnesium oxide.",
+          "answers": [
+            "magnesium sulfate",
+            "magnesium sulphate"
+          ]
+        },
+        {
+          "id": "acids-bases-and-ph-metal-gas",
+          "type": "mcq",
+          "prompt": "Which gas is produced when zinc reacts with hydrochloric acid?",
+          "options": [
+            "Oxygen",
+            "Carbon dioxide",
+            "Hydrogen",
+            "Chlorine"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "acids-bases-and-ph-uses",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each use to the substance that does the neutralising.",
+          "pairs": [
+            {
+              "left": "Treating acidic soil",
+              "right": "Lime"
+            },
+            {
+              "left": "Curing indigestion",
+              "right": "Antacid tablet"
+            },
+            {
+              "left": "Easing a bee sting",
+              "right": "Baking soda"
+            }
+          ]
+        },
+        {
+          "id": "acids-bases-and-ph-indicator",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Universal indicator is added to a solution and turns purple. What can you say about the solution? Give a likely pH.",
+          "memo": "✓ It is a strong base (1)\n✓ pH about 12 to 14 (1)"
+        },
+        {
+          "id": "acids-bases-and-ph-water-acid",
+          "type": "truefalse",
+          "prompt": "When diluting a concentrated acid, you should add the acid slowly to water.",
+          "answer": true
+        }
+      ]
+    }
+  ]
+}

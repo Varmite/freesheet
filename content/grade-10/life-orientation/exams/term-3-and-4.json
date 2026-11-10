@@ -1,0 +1,182 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 40,
+  "totalMarks": 30,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 2 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Career Fields and Study Skills",
+      "questions": [
+        {
+          "id": "careers-and-study-skills-holland",
+          "type": "mcq",
+          "prompt": "A person who enjoys helping and teaching people fits which Holland type?",
+          "options": [
+            "Realistic",
+            "Social",
+            "Conventional",
+            "Investigative"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "careers-and-study-skills-aps",
+          "type": "short",
+          "prompt": "What does APS stand for?",
+          "answers": [
+            "admission point score"
+          ]
+        },
+        {
+          "id": "careers-and-study-skills-tvet",
+          "type": "mcq",
+          "prompt": "Which institution offers vocational qualifications such as NC(V)?",
+          "options": [
+            "University",
+            "TVET college",
+            "Primary school",
+            "SETA"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "careers-and-study-skills-types",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each career to a Holland type.",
+          "pairs": [
+            {
+              "left": "Accountant",
+              "right": "Conventional"
+            },
+            {
+              "left": "Graphic designer",
+              "right": "Artistic"
+            },
+            {
+              "left": "Electrician",
+              "right": "Realistic"
+            },
+            {
+              "left": "Research scientist",
+              "right": "Investigative"
+            }
+          ]
+        },
+        {
+          "id": "careers-and-study-skills-cram",
+          "type": "truefalse",
+          "prompt": "Cramming the night before is more effective than spaced revision.",
+          "answer": false
+        },
+        {
+          "id": "careers-and-study-skills-matrix",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Using the urgent–important matrix, how should you handle revision for a test in four weeks' time?",
+          "memo": "✓ It is important but not urgent (1)\n✓ so schedule regular revision sessions now (1)"
+        },
+        {
+          "id": "careers-and-study-skills-learnership",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a learnership?",
+          "memo": "✓ A programme that combines theory and practical work experience (1)\n✓ leading to a qualification, often funded by a SETA (1)"
+        },
+        {
+          "id": "careers-and-study-skills-early",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why should Grade 10 learners research career requirements early?",
+          "memo": "✓ To make sure their subjects and marks meet entry requirements (1)\n✓ and to set goals and keep options open (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Social and Environmental Responsibility",
+      "questions": [
+        {
+          "id": "social-and-environmental-responsibility-cholera",
+          "type": "mcq",
+          "prompt": "Cholera is mainly spread by…",
+          "options": [
+            "air pollution",
+            "polluted water",
+            "noise",
+            "sunlight"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "social-and-environmental-responsibility-s24",
+          "type": "numeric",
+          "prompt": "Which section of the Constitution protects the right to a healthy environment?",
+          "answer": 24,
+          "tolerance": 0
+        },
+        {
+          "id": "social-and-environmental-responsibility-three-r",
+          "type": "short",
+          "prompt": "Complete the slogan: Reduce, reuse, …",
+          "answers": [
+            "recycle"
+          ]
+        },
+        {
+          "id": "social-and-environmental-responsibility-problems",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each problem to a health effect.",
+          "pairs": [
+            {
+              "left": "Air pollution",
+              "right": "Asthma"
+            },
+            {
+              "left": "Sewage in rivers",
+              "right": "Diarrhoea"
+            },
+            {
+              "left": "Heatwaves from climate change",
+              "right": "Heatstroke"
+            }
+          ]
+        },
+        {
+          "id": "social-and-environmental-responsibility-social-resp",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is social responsibility? Give an example.",
+          "memo": "✓ Acting in ways that benefit the community and society (1)\n✓ Example, e.g. volunteering, clean-ups, tutoring (1)"
+        },
+        {
+          "id": "social-and-environmental-responsibility-project",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Describe how your class could plan a project to reduce litter around the school.",
+          "memo": "✓ Identify the problem and its causes (1)\n✓ Set a SMART goal (1)\n✓ Plan actions, e.g. bins, clean-up days, posters, recycling (1)\n✓ Evaluate the results (1)"
+        },
+        {
+          "id": "social-and-environmental-responsibility-climate",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO causes of climate change.",
+          "memo": "Any two (1 each): burning fossil fuels; deforestation; methane from livestock and landfills; industry emissions"
+        },
+        {
+          "id": "social-and-environmental-responsibility-water",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why water scarcity is a health problem.",
+          "memo": "✓ People cannot wash or keep sanitation clean, so disease spreads (1)\n✓ Less water for drinking and growing food (1)"
+        }
+      ]
+    }
+  ]
+}

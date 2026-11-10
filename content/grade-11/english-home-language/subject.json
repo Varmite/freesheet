@@ -17,6 +17,8 @@
     { "id": "transactional-writing", "title": "Transactional Writing: Applications, Reports and Speeches", "term": 4 }
   ],
   "exams": [
+    { "id": "term-1-and-2", "title": "Term 1 and 2 Examination", "durationMinutes": 90, "totalMarks": 50 },
+    { "id": "term-3-and-4", "title": "Term 3 and 4 Examination", "durationMinutes": 70, "totalMarks": 40 },
     { "id": "november-exam", "title": "November Examination: Paper 1 (Language in Context)", "durationMinutes": 120, "totalMarks": 70 }
   ]
 }

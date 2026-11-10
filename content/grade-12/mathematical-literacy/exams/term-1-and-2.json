@@ -1,0 +1,271 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Finance: Business Costs, Income and Break-even",
+      "questions": [
+        {
+          "id": "business-finance-and-break-even-fixed",
+          "type": "mcq",
+          "prompt": "Which is a fixed cost for a bakery?",
+          "options": [
+            "Flour",
+            "Rent for the shop",
+            "Packaging",
+            "Gas used in the ovens"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "business-finance-and-break-even-total-cost",
+          "type": "numeric",
+          "prompt": "Fixed costs are R5 000 and each item costs R30 to make. Calculate the total cost of making 200 items.",
+          "answer": 11000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "business-finance-and-break-even-break-even",
+          "type": "numeric",
+          "prompt": "Fixed costs are R4 800; each item costs R20 to make and sells for R50. How many items must be sold to break even?",
+          "answer": 160,
+          "tolerance": 0
+        },
+        {
+          "id": "business-finance-and-break-even-loss",
+          "type": "truefalse",
+          "prompt": "Selling fewer items than the break-even quantity results in a loss.",
+          "answer": true
+        },
+        {
+          "id": "business-finance-and-break-even-profit",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Using the T-shirt example (fixed costs R3 000, R55 per shirt, selling price R120), calculate the profit or loss if 35 T-shirts are sold.",
+          "memo": "✓ Income 35 × R120 = R4 200 (1)\n✓ Cost R3 000 + 35 × R55 = R4 925 (1)\n✓ Loss of R725 (1)"
+        },
+        {
+          "id": "business-finance-and-break-even-statement",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Using the car-wash statement, calculate what percentage of total expenditure is spent on wages.",
+          "memo": "✓ R12 000 ÷ R23 050 (1)\n✓ × 100 (1)\n✓ ≈ 52,06% (1)"
+        },
+        {
+          "id": "business-finance-and-break-even-formula",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A food stall has fixed costs of R1 500 per month and makes a profit of R12 on each meal sold. Write a formula for monthly profit $P$ for $n$ meals.",
+          "memo": "✓ $P = 12n - 1\\ 500$ (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Finance: Taxation",
+      "questions": [
+        {
+          "id": "taxation-taxable",
+          "type": "numeric",
+          "prompt": "Annual gross income is R280 000 and pension contributions are R21 000. What is the taxable income?",
+          "answer": 259000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "taxation-irp5",
+          "type": "mcq",
+          "prompt": "Which document shows an employee's annual income and the tax deducted by the employer?",
+          "options": [
+            "Bank statement",
+            "IRP5",
+            "Invoice",
+            "Till slip"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "taxation-full",
+          "type": "open",
+          "marks": 5,
+          "prompt": "Ms Khumalo (aged 41) has a taxable income of R285 000 and a medical aid covering herself only. Using the illustrative tables, calculate her annual tax payable.",
+          "memo": "✓ R43 200 + 26% × (R285 000 − R240 000) (1)\n✓ = R43 200 + R11 700 = R54 900 (1)\n✓ − R17 500 = R37 400 (1)\n✓ Medical credits R364 × 12 = R4 368 (1)\n✓ Tax payable R33 032 (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Finance: Investments, Loans and Inflation",
+      "questions": [
+        {
+          "id": "investments-loans-and-inflation-simple",
+          "type": "numeric",
+          "prompt": "Calculate the simple interest on R15 000 at 6,5% p.a. for 3 years.",
+          "answer": 2925,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "investments-loans-and-inflation-compound",
+          "type": "numeric",
+          "prompt": "R10 000 is invested at 8% p.a. compounded annually. What is it worth after 3 years (two decimals)?",
+          "answer": 12597.12,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "investments-loans-and-inflation-monthly",
+          "type": "numeric",
+          "prompt": "R5 000 is invested at 9% p.a. compounded monthly for 1 year. Calculate the final amount (two decimals).",
+          "answer": 5469.03,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "investments-loans-and-inflation-buying-power",
+          "type": "truefalse",
+          "prompt": "If inflation is higher than the interest earned, the buying power of savings decreases.",
+          "answer": true
+        },
+        {
+          "id": "investments-loans-and-inflation-compare",
+          "type": "open",
+          "marks": 4,
+          "prompt": "R50 000 is invested for 3 years. Option A: 7% p.a. simple interest. Option B: 6,5% p.a. compounded annually. Which option is better, and by how much?",
+          "memo": "✓ A: R50 000 + 3 × R3 500 = R60 500 (1)\n✓ B: R50 000 × 1,065³ (1)\n✓ = R60 397,48 (1)\n✓ A is better by R102,52 (1)"
+        },
+        {
+          "id": "investments-loans-and-inflation-fees",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO costs, besides interest, that can increase the real cost of a loan.",
+          "memo": "Any two (1 each): initiation fee; monthly service fee; credit life insurance; penalties for late payment"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Finance: Exchange Rates",
+      "questions": [
+        {
+          "id": "exchange-rates-to-rand",
+          "type": "numeric",
+          "prompt": "A game costs US\\$60 online. At R18,50 per US dollar, what is the price in rand?",
+          "answer": 1110,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "exchange-rates-to-foreign",
+          "type": "numeric",
+          "prompt": "How many British pounds can you buy with R5 900 at R23,60 per pound?",
+          "answer": 250,
+          "tolerance": 0,
+          "unit": "£"
+        },
+        {
+          "id": "exchange-rates-pula",
+          "type": "numeric",
+          "prompt": "A hotel in Botswana costs P850 per night. What is this in rand at R1,36 per pula?",
+          "answer": 1156,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "exchange-rates-weak",
+          "type": "mcq",
+          "prompt": "If the rand weakens against the US dollar, imported petrol becomes…",
+          "options": [
+            "cheaper",
+            "more expensive",
+            "the same price",
+            "free of VAT"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "exchange-rates-exporter",
+          "type": "truefalse",
+          "prompt": "A weaker rand helps South African exporters earn more rand for their goods.",
+          "answer": true
+        },
+        {
+          "id": "exchange-rates-reciprocal",
+          "type": "numeric",
+          "prompt": "If R1 = US\\$0,05, how many rand is US\\$1 worth?",
+          "answer": 20,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "exchange-rates-change",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Last year US\\$1 = R17,20. This year US\\$1 = R18,92. Calculate the percentage change, and say whether the rand strengthened or weakened.",
+          "memo": "✓ (18,92 − 17,20) ÷ 17,20 × 100 (1)\n✓ = 10% (1)\n✓ The rand weakened (1)"
+        },
+        {
+          "id": "exchange-rates-tourism",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why a weak rand can be good for tourism in South Africa.",
+          "memo": "✓ Foreign currency buys more rand (1)\n✓ so holidays in South Africa are cheaper for foreign visitors, attracting more tourists (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Measurement: Packaging and Optimisation",
+      "questions": [
+        {
+          "id": "measurement-and-packaging-box-sa",
+          "type": "numeric",
+          "prompt": "Find the surface area of a closed box 10 cm × 6 cm × 4 cm.",
+          "answer": 248,
+          "tolerance": 0,
+          "unit": "cm²"
+        },
+        {
+          "id": "measurement-and-packaging-pack",
+          "type": "numeric",
+          "prompt": "Boxes 12 cm × 8 cm × 5 cm are packed into a carton 48 cm × 32 cm × 30 cm (same orientation). How many fit?",
+          "answer": 96,
+          "tolerance": 0
+        },
+        {
+          "id": "measurement-and-packaging-waste",
+          "type": "truefalse",
+          "prompt": "Cylinders packed in a rectangular box leave empty space between them.",
+          "answer": true
+        },
+        {
+          "id": "measurement-and-packaging-label",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A label wraps around a can of radius 3,5 cm and height 10 cm, with a 1 cm overlap. Calculate the length and area of the label. Use $\\pi = 3{,}142$.",
+          "memo": "✓ Circumference 2 × 3,142 × 3,5 = 21,99 cm (1)\n✓ Length with overlap 22,99 cm (1)\n✓ Area ≈ 229,9 cm² (1)"
+        },
+        {
+          "id": "measurement-and-packaging-convert",
+          "type": "numeric",
+          "prompt": "A container holds 2 500 cm³. How many litres is this?",
+          "answer": 2.5,
+          "tolerance": 0,
+          "unit": "ℓ"
+        },
+        {
+          "id": "measurement-and-packaging-fill",
+          "type": "open",
+          "marks": 3,
+          "prompt": "How many 330 mℓ cans can be filled from a 50 ℓ drum of cool drink? How much is left over?",
+          "memo": "✓ 50 000 mℓ ÷ 330 = 151,5 (1)\n✓ 151 full cans (1)\n✓ 50 000 − 49 830 = 170 mℓ left over (1)"
+        }
+      ]
+    }
+  ]
+}

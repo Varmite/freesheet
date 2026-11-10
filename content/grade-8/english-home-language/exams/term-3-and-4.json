@@ -1,0 +1,342 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 65,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Short Stories",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "The Red Bicycle (an original short story written for FreeSheet)",
+          "text": "Every afternoon Musa walked past Mr Botha's shop and stopped to look at the red bicycle in the window. It had a silver bell and a price tag of R1 800, which might as well have been a million.\n\nMusa began washing cars at the taxi rank on Saturdays. His hands cracked in the winter cold, and twice older boys took his money. Still, the tin under his bed grew heavier. By September he had R1 650.\n\nThen his little sister Zinhle fell ill. The clinic gave her medicine, but she needed proper shoes for the long walk to school, and his mother's purse was empty. Musa sat on his bed for a long time, the tin in his lap. In the morning he bought Zinhle a pair of black school shoes, and a small loaf of bread for the house.\n\nIn December, the red bicycle disappeared from the window. Musa did not look this time; he crossed the road instead. But on Christmas morning there was a knock at the door. Mr Botha stood there, holding the handlebars. 'Your mother told me about the shoes,' he said gruffly. 'A boy who works that hard should not walk everywhere. You can pay me the rest by sweeping my shop.'\n\nZinhle rang the silver bell all the way down the street."
+        }
+      ],
+      "questions": [
+        {
+          "id": "short-stories-protagonist",
+          "type": "short",
+          "prompt": "What is the main character of a story called?",
+          "answers": [
+            "protagonist",
+            "the protagonist"
+          ]
+        },
+        {
+          "id": "short-stories-plot-order",
+          "type": "mcq",
+          "prompt": "Which is the correct order of plot structure?",
+          "options": [
+            "Climax, exposition, resolution, rising action",
+            "Exposition, rising action, climax, falling action, resolution",
+            "Rising action, exposition, resolution, climax",
+            "Resolution, climax, falling action, exposition"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "short-stories-narrator",
+          "type": "mcq",
+          "prompt": "From which point of view is 'The Red Bicycle' told?",
+          "options": [
+            "First person",
+            "Second person",
+            "Third person"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "short-stories-saved",
+          "type": "numeric",
+          "prompt": "How much money had Musa saved by September?",
+          "answer": 1650,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "short-stories-dynamic",
+          "type": "truefalse",
+          "prompt": "A dynamic character changes during the story.",
+          "answer": true
+        },
+        {
+          "id": "short-stories-elements",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each element to an example from 'The Red Bicycle'.",
+          "pairs": [
+            {
+              "left": "Setting",
+              "right": "A township street with a shop and a taxi rank"
+            },
+            {
+              "left": "Internal conflict",
+              "right": "Musa choosing between the bicycle and his sister"
+            },
+            {
+              "left": "Climax",
+              "right": "Musa spends his savings on Zinhle's shoes"
+            },
+            {
+              "left": "Resolution",
+              "right": "Mr Botha brings the bicycle on Christmas morning"
+            }
+          ]
+        },
+        {
+          "id": "short-stories-character",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Describe Musa's character. Give TWO traits with evidence from the story.",
+          "memo": "✓ Trait 1, e.g. hard-working (1) with evidence: washing cars in the cold every Saturday (½+½)\n✓ Trait 2, e.g. selfless/caring: spends savings on his sister's shoes and bread (1)"
+        },
+        {
+          "id": "short-stories-ending",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why do you think the writer ends the story with Zinhle ringing the bell?",
+          "memo": "✓ It shows joy and that the bicycle benefits the whole family, especially the sister he sacrificed for (1)\n✓ It completes the story neatly, linking back to the silver bell at the start / symbolises happiness (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Summary Writing",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice passage: Why Sleep Matters (original)",
+          "text": "Many teenagers think sleep is a waste of time, but scientists disagree. While you sleep, your brain sorts and stores what you learned during the day, which is why a good night's sleep before a test can improve your marks more than staying up late to study. Sleep also allows your body to repair muscles and grow; in fact, most growth hormone is released during deep sleep. People who sleep well are less likely to catch colds, because sleep strengthens the immune system. A tired teenager is often grumpy, anxious or easily upset, since lack of sleep affects the part of the brain that controls emotions. Sleepy learners also struggle to concentrate in class. Finally, a regular bedtime can help you keep a healthy weight, as tiredness increases cravings for sugary snacks."
+        }
+      ],
+      "questions": [
+        {
+          "id": "summary-writing-focus",
+          "type": "open",
+          "marks": 1,
+          "prompt": "What is meant by the 'focus' of a summary?",
+          "memo": "✓ The specific topic or aspect of the passage that you must summarise (1)"
+        },
+        {
+          "id": "summary-writing-omit",
+          "type": "mcq",
+          "prompt": "Which of these should you leave OUT of a summary?",
+          "options": [
+            "Main points",
+            "Examples and statistics",
+            "Points that answer the focus",
+            "Key ideas in your own words"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "summary-writing-own-words",
+          "type": "truefalse",
+          "prompt": "In a summary you should copy the writer's sentences exactly.",
+          "answer": false
+        },
+        {
+          "id": "summary-writing-transition",
+          "type": "mcq",
+          "prompt": "Which word is a transition word that helps to link points in a summary paragraph?",
+          "options": [
+            "Furthermore",
+            "Banana",
+            "Ouch",
+            "Quickly"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "summary-writing-steps",
+          "type": "open",
+          "marks": 4,
+          "prompt": "List FOUR steps you would follow when writing a summary.",
+          "memo": "Any four (1 each): read instructions; skim the passage; underline points on the focus; leave out examples and repetition; rewrite in own words; link points; count words"
+        },
+        {
+          "id": "summary-writing-example-or-point",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Decide whether each sentence from the passage is a main point or an example (detail).",
+          "pairs": [
+            {
+              "left": "Sleep strengthens the immune system.",
+              "right": "Main point"
+            },
+            {
+              "left": "People who sleep well are less likely to catch colds.",
+              "right": "Example / detail"
+            },
+            {
+              "left": "Sleep helps the brain store learning.",
+              "right": "Main point (learning)"
+            },
+            {
+              "left": "A good night's sleep before a test can improve your marks.",
+              "right": "Example (the test)"
+            }
+          ]
+        },
+        {
+          "id": "summary-writing-word-count",
+          "type": "open",
+          "marks": 1,
+          "prompt": "Why must you state the number of words at the end of a summary?",
+          "memo": "✓ To show that you have kept within the word limit (1)"
+        },
+        {
+          "id": "summary-writing-opinion",
+          "type": "truefalse",
+          "prompt": "You may add your own opinion about the topic in a summary.",
+          "answer": false
+        },
+        {
+          "id": "summary-writing-rephrase",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite in your own words, as one short point: 'lack of sleep affects the part of the brain that controls emotions'.",
+          "memo": "✓✓ e.g. 'Tiredness makes it harder to manage feelings.' (own words, accurate, concise) (2)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Visual Texts: Advertisements and Cartoons",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Described advertisement (original)",
+          "text": "The advert shows a smiling teenage girl in a school uniform drinking from a bright green bottle, with sunlight behind her. The headline in large yellow letters reads: STAY FRESH. STAY FOCUSED. Below it: 'ZING Energy Water: packed with vitamins to power you through every test.' In the bottom corner is a small logo of a lightning bolt and the slogan 'ZING. Think fast.' Tiny print at the very bottom says: 'Contains caffeine. Not recommended for children under 16.'"
+        }
+      ],
+      "questions": [
+        {
+          "id": "visual-texts-target",
+          "type": "mcq",
+          "prompt": "Who is the target audience of the ZING advertisement?",
+          "options": [
+            "Pensioners",
+            "Teenage learners",
+            "Babies",
+            "Farmers"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "visual-texts-small-print",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why do you think the caffeine warning in the ZING advert is in tiny print?",
+          "memo": "✓ The advertisers do not want people to notice it (1)\n✓ because it might stop people, especially the young learners shown, from buying the drink (1)"
+        },
+        {
+          "id": "visual-texts-techniques",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each example to the persuasive technique.",
+          "pairs": [
+            {
+              "left": "Tired of pimples?",
+              "right": "Rhetorical question"
+            },
+            {
+              "left": "The best pizza in town!",
+              "right": "Superlative"
+            },
+            {
+              "left": "Buy now and save 50%!",
+              "right": "Special offer"
+            },
+            {
+              "left": "A rugby star holding the drink",
+              "right": "Celebrity endorsement"
+            }
+          ]
+        },
+        {
+          "id": "visual-texts-thought",
+          "type": "truefalse",
+          "prompt": "In cartoons, a thought bubble usually has a cloud shape.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Diaries, Dialogues and Reviews",
+      "questions": [
+        {
+          "id": "diaries-dialogues-and-reviews-diary-person",
+          "type": "mcq",
+          "prompt": "In which person is a diary usually written?",
+          "options": [
+            "First person",
+            "Second person",
+            "Third person"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "diaries-dialogues-and-reviews-no-quotes",
+          "type": "truefalse",
+          "prompt": "Inverted commas are used around each character's words in a dialogue.",
+          "answer": false
+        },
+        {
+          "id": "diaries-dialogues-and-reviews-stage",
+          "type": "short",
+          "prompt": "In a dialogue, in what are stage directions placed?",
+          "answers": [
+            "brackets",
+            "in brackets",
+            "parentheses"
+          ]
+        },
+        {
+          "id": "diaries-dialogues-and-reviews-spoiler",
+          "type": "short",
+          "prompt": "What is it called when a review gives away the ending of a story?",
+          "answers": [
+            "spoiler",
+            "a spoiler",
+            "spoilers"
+          ]
+        },
+        {
+          "id": "diaries-dialogues-and-reviews-review-purpose",
+          "type": "mcq",
+          "prompt": "The main purpose of a review is to…",
+          "options": [
+            "tell a made-up story",
+            "give an informed opinion and recommendation",
+            "give instructions",
+            "record private feelings"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "diaries-dialogues-and-reviews-write-dialogue",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Write a short dialogue (4 to 6 lines) between a learner and a teacher about a late assignment.",
+          "memo": "✓ Context given (1)\n✓ Correct format: names, colons, no inverted commas (1)\n✓ At least one stage direction in brackets (1)\n✓ Natural, suitable register for each speaker (1)"
+        },
+        {
+          "id": "diaries-dialogues-and-reviews-review-sections",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Name THREE things that should be included in a film review.",
+          "memo": "Any three (1 each): title/genre/director/actors; brief summary without spoilers; strengths and weaknesses; rating; recommendation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 6 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Analytical Geometry",
+      "questions": [
+        {
+          "id": "analytical-geometry-q1",
+          "type": "mcq",
+          "prompt": "What is the gradient of the line through $(2; 3)$ and $(6; 11)$?",
+          "options": [
+            "$\\frac{1}{2}$",
+            "$4$",
+            "$2$",
+            "$-2$"
+          ],
+          "answer": 2,
+          "explanation": "$m = \\dfrac{11 - 3}{6 - 2} = \\dfrac{8}{4} = 2$."
+        },
+        {
+          "id": "analytical-geometry-q2",
+          "type": "truefalse",
+          "prompt": "The line through $(3; -1)$ and $(3; 5)$ has a gradient of $0$.",
+          "answer": false,
+          "explanation": "Both points have $x = 3$, so the line is vertical ($x = 3$). The change in $x$ is $0$, so the gradient is undefined, not $0$. A gradient of $0$ belongs to a horizontal line."
+        },
+        {
+          "id": "analytical-geometry-q3",
+          "type": "numeric",
+          "prompt": "Calculate the distance between $A(-3; 2)$ and $B(5; -4)$. Give the exact value.",
+          "answer": 10,
+          "tolerance": 0.001,
+          "unit": "units",
+          "explanation": "$AB = \\sqrt{(5 - (-3))^2 + (-4 - 2)^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$."
+        },
+        {
+          "id": "analytical-geometry-q4",
+          "type": "mcq",
+          "prompt": "What are the coordinates of the midpoint of $P(-4; 6)$ and $Q(2; -2)$?",
+          "options": [
+            "$(-3; 4)$",
+            "$(-1; 2)$",
+            "$(-2; 4)$",
+            "$(3; -4)$"
+          ],
+          "answer": 1,
+          "explanation": "$\\left(\\dfrac{-4 + 2}{2}; \\dfrac{6 + (-2)}{2}\\right) = (-1; 2)$. Remember to add the coordinates and then divide by 2."
+        },
+        {
+          "id": "analytical-geometry-q6",
+          "type": "truefalse",
+          "prompt": "The lines $y = 3x + 2$ and $6x - 2y = 5$ are parallel.",
+          "answer": true,
+          "explanation": "Make $y$ the subject: $-2y = -6x + 5$, so $y = 3x - \\frac{5}{2}$. Both lines have gradient $3$, so they are parallel."
+        },
+        {
+          "id": "analytical-geometry-q7",
+          "type": "match",
+          "prompt": "Match each line with its gradient.",
+          "marks": 4,
+          "pairs": [
+            {
+              "left": "The line through $(1; 1)$ and $(3; 7)$",
+              "right": "3"
+            },
+            {
+              "left": "The line $y = 5$",
+              "right": "0"
+            },
+            {
+              "left": "The line $x = -2$",
+              "right": "undefined"
+            },
+            {
+              "left": "A line perpendicular to $y = 3x - 1$",
+              "right": "−1/3"
+            }
+          ],
+          "explanation": "$\\dfrac{7 - 1}{3 - 1} = 3$; $y = 5$ is horizontal ($m = 0$); $x = -2$ is vertical (undefined); the negative reciprocal of $3$ is $-\\frac{1}{3}$."
+        },
+        {
+          "id": "analytical-geometry-q9",
+          "type": "numeric",
+          "prompt": "$M(3; -2)$ is the midpoint of $AB$, where $A(-1; 4)$. Determine the $y$-coordinate of $B$.",
+          "answer": -8,
+          "tolerance": 0.001,
+          "explanation": "$\\dfrac{4 + y}{2} = -2$, so $4 + y = -4$ and $y = -8$. (The $x$-coordinate is $7$, so $B(7; -8)$.)"
+        },
+        {
+          "id": "analytical-geometry-q10",
+          "type": "mcq",
+          "prompt": "The points $A(1; 2)$, $B(3; 8)$ and $C(5; t)$ are collinear. What is the value of $t$?",
+          "options": [
+            "$14$",
+            "$11$",
+            "$12$",
+            "$16$"
+          ],
+          "answer": 0,
+          "explanation": "$m_{AB} = \\dfrac{8 - 2}{3 - 1} = 3$. For collinear points $m_{BC} = 3$: $\\dfrac{t - 8}{5 - 3} = 3$, so $t - 8 = 6$ and $t = 14$."
+        },
+        {
+          "id": "analytical-geometry-q11",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Determine the equation of the straight line through $P(-2; 9)$ and $Q(4; -3)$ in the form $y = mx + c$.",
+          "memo": "$m_{PQ} = \\dfrac{-3 - 9}{4 - (-2)}$ ✓ (substitution into gradient formula) (1)\n$= \\dfrac{-12}{6} = -2$ ✓ (1)\nSubstitute $P(-2; 9)$: $9 = -2(-2) + c$ ✓ (1)\n$c = 5$, so $y = -2x + 5$ ✓ (1)\n(Check with $Q$: $-2(4) + 5 = -3$.)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Finance and Growth",
+      "questions": [
+        {
+          "id": "finance-and-growth-q3",
+          "type": "truefalse",
+          "prompt": "In hire purchase, interest is usually calculated as compound interest on the full cash price.",
+          "answer": false,
+          "explanation": "Hire purchase uses simple interest, and it is charged on the amount owing after the deposit has been paid, not on the full cash price."
+        },
+        {
+          "id": "finance-and-growth-q4",
+          "type": "numeric",
+          "prompt": "R6 000 is invested at $8\\%$ p.a. simple interest for 5 years. Calculate the accumulated amount in rand.",
+          "answer": 8400,
+          "tolerance": 0.01,
+          "unit": "R",
+          "explanation": "$A = 6\\,000(1 + 0{,}08 \\times 5) = 6\\,000(1{,}4) = \\text{R}8\\,400$."
+        },
+        {
+          "id": "finance-and-growth-q10",
+          "type": "mcq",
+          "prompt": "The rand/dollar exchange rate changes from R18,00 to R19,00 per US dollar. Which statement is correct?",
+          "options": [
+            "The rand has weakened, so imported goods become more expensive.",
+            "The rand has strengthened, so imported goods become cheaper.",
+            "The rand has weakened, so overseas holidays become cheaper for South Africans.",
+            "The rand has strengthened, so exporters earn more rand per sale."
+          ],
+          "answer": 0,
+          "explanation": "More rand are now needed to buy one dollar, so the rand has weakened. Anything priced in dollars (imports, overseas travel) now costs more in rand."
+        },
+        {
+          "id": "finance-and-growth-q13",
+          "type": "open",
+          "marks": 7,
+          "prompt": "Sipho buys a television with a cash price of R14 500 on hire purchase. He pays a $20\\%$ deposit, and the balance is financed over 3 years at $16{,}5\\%$ p.a. simple interest.\n(a) Calculate the deposit. (1)\n(b) Calculate the amount that must be repaid on the loan, including interest. (3)\n(c) Calculate the monthly instalment. (2)\n(d) Calculate the total cost of the television. (1)",
+          "memo": "(a) Deposit $= 0{,}2 \\times 14\\,500 = \\text{R}2\\,900$ ✓ (1)\n(b) Loan $P = 14\\,500 - 2\\,900 = \\text{R}11\\,600$ ✓ (1)\n$A = 11\\,600(1 + 0{,}165 \\times 3)$ ✓ (substitution) (1)\n$A = 11\\,600(1{,}495) = \\text{R}17\\,342$ ✓ (1)\n(c) Instalment $= \\dfrac{17\\,342}{36}$ ✓ (dividing by 36 months) (1)\n$= \\text{R}481{,}72$ ✓ (1)\n(d) Total cost $= 2\\,900 + 17\\,342 = \\text{R}20\\,242$ ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Statistics",
+      "questions": [
+        {
+          "id": "statistics-q6",
+          "type": "match",
+          "prompt": "Match each term with its description.",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "Range",
+              "right": "maximum minus minimum"
+            },
+            {
+              "left": "Interquartile range",
+              "right": "Q₃ minus Q₁"
+            },
+            {
+              "left": "Semi-interquartile range",
+              "right": "half of (Q₃ minus Q₁)"
+            },
+            {
+              "left": "Median",
+              "right": "the middle value of the ordered data"
+            },
+            {
+              "left": "Modal class",
+              "right": "the class with the highest frequency"
+            }
+          ],
+          "explanation": "These are the definitions from the notes. The IQR measures the spread of the middle 50% of the data."
+        },
+        {
+          "id": "statistics-q8",
+          "type": "numeric",
+          "prompt": "Determine the interquartile range of: $14;\\ 9;\\ 22;\\ 5;\\ 18;\\ 11;\\ 25;\\ 12;\\ 8;\\ 20;\\ 15$.",
+          "answer": 11,
+          "tolerance": 0.001,
+          "explanation": "Ordered: $5;\\ 8;\\ 9;\\ 11;\\ 12;\\ 14;\\ 15;\\ 18;\\ 20;\\ 22;\\ 25$. Median $= 14$ (6th value). Lower half $5;\\ 8;\\ 9;\\ 11;\\ 12$ gives $Q_1 = 9$; upper half $15;\\ 18;\\ 20;\\ 22;\\ 25$ gives $Q_3 = 20$. IQR $= 20 - 9 = 11$."
+        },
+        {
+          "id": "statistics-q13",
+          "type": "open",
+          "marks": 8,
+          "prompt": "Fifteen learners recorded how many minutes it takes them to travel to school:\n$25;\\ 12;\\ 5;\\ 45;\\ 18;\\ 30;\\ 10;\\ 22;\\ 60;\\ 12;\\ 8;\\ 35;\\ 20;\\ 15;\\ 25$\n(a) Write down the five-number summary. (5)\n(b) Calculate the interquartile range. (1)\n(c) Describe the skewness of the data. Give a reason. (2)",
+          "memo": "Ordered: $5;\\ 8;\\ 10;\\ 12;\\ 12;\\ 15;\\ 18;\\ 20;\\ 22;\\ 25;\\ 25;\\ 30;\\ 35;\\ 45;\\ 60$\n(a) Minimum $= 5$ ✓ (1)\n$Q_1 = 12$ (median of the lower 7 values) ✓ (1)\nMedian $= 20$ (8th value) ✓ (1)\n$Q_3 = 30$ (median of the upper 7 values) ✓ (1)\nMaximum $= 60$ ✓ (1)\n(b) IQR $= 30 - 12 = 18$ minutes ✓ (1)\n(c) Skewed right (positively skewed) ✓ (1)\nReason: the median is closer to $Q_1$ ($20 - 12 = 8$) than to $Q_3$ ($30 - 20 = 10$), and the right whisker ($60 - 30 = 30$) is much longer than the left whisker ($12 - 5 = 7$) ✓ (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Trigonometry: Problems in Two Dimensions",
+      "questions": [
+        {
+          "id": "trigonometry-two-dimensions-elevation-def",
+          "type": "mcq",
+          "prompt": "The angle of elevation is measured…",
+          "options": [
+            "from the vertical, looking down",
+            "from the horizontal, looking up",
+            "from the horizontal, looking down",
+            "between two vertical lines"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "trigonometry-two-dimensions-equal",
+          "type": "truefalse",
+          "prompt": "The angle of elevation from A to B equals the angle of depression from B to A.",
+          "answer": true
+        },
+        {
+          "id": "trigonometry-two-dimensions-ramp",
+          "type": "numeric",
+          "prompt": "A ramp is 6 m long and rises 1,2 m. Find the angle the ramp makes with the ground, correct to one decimal place.",
+          "answer": 11.5,
+          "tolerance": 0.05,
+          "unit": "°"
+        },
+        {
+          "id": "trigonometry-two-dimensions-steps",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why should you avoid rounding answers in the middle of a multi-step trigonometry problem?",
+          "memo": "✓ Rounding errors accumulate (1)\n✓ so the final answer can be inaccurate (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Measurement",
+      "questions": [
+        {
+          "id": "measurement-q2",
+          "type": "truefalse",
+          "prompt": "$1\\ \\text{m}^2 = 100\\ \\text{cm}^2$",
+          "answer": false,
+          "explanation": "$1\\ \\text{m}^2 = 100\\ \\text{cm} \\times 100\\ \\text{cm} = 10\\ 000\\ \\text{cm}^2$. For area, the length factor is used twice."
+        },
+        {
+          "id": "measurement-q3",
+          "type": "short",
+          "prompt": "In a right cone, what is the distance from the apex to the edge of the base circle, measured along the sloping surface, called?",
+          "answers": [
+            "slant height",
+            "the slant height",
+            "slant-height",
+            "slanted height",
+            "slant height s",
+            "s"
+          ],
+          "explanation": "This is the slant height $s$. It is used for surface area, while the perpendicular height $H$ is used for volume."
+        },
+        {
+          "id": "measurement-q5",
+          "type": "match",
+          "prompt": "Match each object with its volume formula ($H$ or $h$ is the perpendicular height).",
+          "marks": 5,
+          "pairs": [
+            {
+              "left": "Cylinder",
+              "right": "πr²h"
+            },
+            {
+              "left": "Right cone",
+              "right": "(1/3)πr²H"
+            },
+            {
+              "left": "Sphere",
+              "right": "(4/3)πr³"
+            },
+            {
+              "left": "Square-based pyramid",
+              "right": "(1/3)b²H"
+            },
+            {
+              "left": "Rectangular prism",
+              "right": "l × b × h"
+            }
+          ],
+          "explanation": "Prisms and cylinders: base area × height. Pyramids and cones: one third of base area × height. Sphere: $\\frac{4}{3}\\pi r^3$."
+        },
+        {
+          "id": "measurement-q6",
+          "type": "mcq",
+          "prompt": "A right triangular prism has a triangular base with perpendicular sides 6 cm and 8 cm. The prism is 15 cm long. What is its volume?",
+          "options": [
+            "$360\\ \\text{cm}^3$",
+            "$720\\ \\text{cm}^3$",
+            "$180\\ \\text{cm}^3$",
+            "$1\\ 440\\ \\text{cm}^3$"
+          ],
+          "answer": 0,
+          "explanation": "Area of triangle $= \\frac{1}{2}(6)(8) = 24\\ \\text{cm}^2$. $V = 24 \\times 15 = 360\\ \\text{cm}^3$. The answer $720$ forgets the $\\frac{1}{2}$ in the triangle area."
+        },
+        {
+          "id": "measurement-q13",
+          "type": "mcq",
+          "prompt": "The radius of a cylinder is multiplied by 3 while its height stays the same. The volume is multiplied by:",
+          "options": [
+            "$3$",
+            "$6$",
+            "$9$",
+            "$27$"
+          ],
+          "answer": 2,
+          "explanation": "$V = \\pi r^2 h$. Replacing $r$ by $3r$ gives $\\pi(3r)^2h = 9\\pi r^2 h$, so the volume is multiplied by $3^2 = 9$. ($27$ would be correct only if the height were tripled too.)"
+        },
+        {
+          "id": "measurement-q15",
+          "type": "open",
+          "marks": 8,
+          "prompt": "A rondavel in the Eastern Cape has a cylindrical wall with radius 4 m and height 2,5 m. Its cone-shaped roof has a perpendicular height of 3 m and no overhang.\n\nUse: curved surface of a cone $= \\pi r s$; $V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 H$.\n\n(a) Calculate the slant height of the roof. (2)\n(b) Calculate the area of the roof that must be thatched, correct to two decimal places. (2)\n(c) Thatching costs R85 per m². Calculate the cost of thatching the roof. (1)\n(d) Calculate the volume of air inside the rondavel, correct to two decimal places. (3)",
+          "memo": "(a) $s^2 = 3^2 + 4^2 = 25$ ✓ (1)\n$s = 5$ m ✓ (1)\n(b) Roof area $= \\pi r s = \\pi(4)(5)$ ✓ (1)\n$= 20\\pi \\approx 62{,}83\\ \\text{m}^2$ ✓ (1)\n(c) Cost $= 62{,}83 \\times 85 \\approx$ R5 340,55 (or R5 340,71 using the unrounded area) ✓ (1)\n(d) $V_{\\text{cylinder}} = \\pi(4)^2(2{,}5) = 40\\pi$ ✓ (1)\n$V_{\\text{cone}} = \\frac{1}{3}\\pi(4)^2(3) = 16\\pi$ ✓ (1)\n$V = 40\\pi + 16\\pi = 56\\pi \\approx 175{,}93\\ \\text{m}^3$ ✓ (1)\n[8 marks]",
+          "explanation": "Only the curved surface of the cone is thatched (the base circle is the ceiling, not roof). The volume of air is the sum of the cylinder and cone volumes."
+        },
+        {
+          "id": "measurement-q21",
+          "type": "numeric",
+          "prompt": "A tent is a right pyramid with a square base of side 3 m and a perpendicular height of 2 m. Calculate the volume of air inside it using $V = \\frac{1}{3}b^2H$. (The answer is a whole number.)",
+          "answer": 6,
+          "tolerance": 0.01,
+          "unit": "m³",
+          "explanation": "$V = \\frac{1}{3}(3)^2(2) = \\frac{1}{3}(18) = 6\\ \\text{m}^3$. Use the perpendicular height (not the slant height) for volume."
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Probability",
+      "questions": [
+        {
+          "id": "probability-q1",
+          "type": "mcq",
+          "prompt": "A fair die is rolled once. What is the probability of rolling a 5?",
+          "options": [
+            "$\\frac{1}{5}$",
+            "$\\frac{5}{6}$",
+            "$\\frac{1}{6}$",
+            "$\\frac{1}{2}$"
+          ],
+          "answer": 2,
+          "explanation": "There are 6 equally likely outcomes and only one of them is a 5, so $P(5) = \\frac{1}{6}$."
+        },
+        {
+          "id": "probability-q3",
+          "type": "short",
+          "prompt": "What is the name for the set of all possible outcomes of an experiment?",
+          "answers": [
+            "sample space",
+            "the sample space",
+            "sample space S",
+            "S"
+          ],
+          "explanation": "The sample space $S$ lists every possible outcome. For a coin, $S = \\{H; T\\}$."
+        },
+        {
+          "id": "probability-q7",
+          "type": "truefalse",
+          "prompt": "If $P(A) = 0{,}35$, then $P(\\text{not } A) = 0{,}65$.",
+          "answer": true,
+          "explanation": "$P(\\text{not } A) = 1 - P(A) = 1 - 0{,}35 = 0{,}65$."
+        },
+        {
+          "id": "probability-q11",
+          "type": "mcq",
+          "prompt": "A die is rolled. Event A is \"rolling a number less than 3\". Which event is the complement of A?",
+          "options": [
+            "Rolling a number greater than 3",
+            "Rolling a number of 3 or more",
+            "Rolling a 1 or a 2",
+            "Rolling an even number"
+          ],
+          "answer": 1,
+          "explanation": "$A = \\{1; 2\\}$, so not A $= \\{3; 4; 5; 6\\}$, which is \"3 or more\". \"Greater than 3\" leaves out the 3."
+        },
+        {
+          "id": "probability-q15",
+          "type": "open",
+          "marks": 9,
+          "prompt": "A survey of 50 learners at a school in Durban found that 28 watch rugby (R), 20 watch cricket (C) and 9 watch both.\n\n(a) Draw a Venn diagram to show this information, including the number of learners in each region. (3)\n(b) Calculate the probability that a learner chosen at random watches rugby or cricket. (2)\n(c) Calculate the probability that a learner chosen at random watches neither sport. (1)\n(d) Calculate the probability that a learner chosen at random watches exactly one of the two sports. (2)\n(e) Are the events R and C mutually exclusive? Give a reason. (1)",
+          "memo": "(a) Two overlapping circles R and C inside a rectangle S (total 50):\nBoth (overlap) $= 9$ ✓ (1)\nRugby only $= 28 - 9 = 19$ and cricket only $= 20 - 9 = 11$ ✓ (1)\nNeither $= 50 - (19 + 9 + 11) = 11$ ✓ (1)\n(b) $P(R \\text{ or } C) = \\frac{19 + 9 + 11}{50}$ ✓ (1) $= \\frac{39}{50} = 0{,}78$ ✓ (1)\n(OR $\\frac{28}{50} + \\frac{20}{50} - \\frac{9}{50} = \\frac{39}{50}$)\n(c) $P(\\text{neither}) = \\frac{11}{50} = 0{,}22$ ✓ (1)\n(d) Exactly one sport $= 19 + 11 = 30$ ✓ (1); $P = \\frac{30}{50} = \\frac{3}{5}$ ✓ (1)\n(e) No: 9 learners watch both, so $P(R \\text{ and } C) = \\frac{9}{50} \\neq 0$ ✓ (1)\n[9 marks]",
+          "explanation": "Fill in the overlap first, then subtract it from each event's total. Mutually exclusive events have an empty overlap."
+        }
+      ]
+    }
+  ]
+}

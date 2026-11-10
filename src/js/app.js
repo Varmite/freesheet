@@ -589,7 +589,7 @@
             <span class="row-status ${status.cls}">${esc(status.label)}</span></button></li>`;
         }).join('')}</ul></section>`).join('')}</div>
       <p class="muted" id="no-match" hidden>No topics match your search.</p>
-      ${s.exams.length ? `<div class="aside-link"><button class="btn" id="to-exams">Practise full ${esc(s.name)} exams →</button></div>` : ''}
+      ${s.exams.length ? `<div class="aside-link"><button class="btn" id="to-exams">Practise ${esc(s.name)} exams →</button></div>` : ''}
     </div>`;
     wireCrumbs(items);
     main.querySelectorAll('[data-topic]').forEach((b) => b.addEventListener('click', () => {
@@ -1009,7 +1009,7 @@
     const draftHtml = activeDraftsHtml();
     main.innerHTML = `<div class="page">
       <h1>Grade ${g.grade} exams</h1>
-      <p class="lead">Write full exam papers under timed conditions, then mark them with the memo.</p>
+      <p class="lead">Write term and November exam papers under timed conditions, then mark them with the memo.</p>
       ${draftHtml}
       <div class="grid">${subs.map((s) => {
         const st = subjectStats(s);

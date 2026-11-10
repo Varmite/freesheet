@@ -1,0 +1,375 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 75,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: The Novel and the Short Story",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Extract from 'The Bridge at Silver Creek' (an original story written for FreeSheet)",
+          "text": "Nobody in Silver Creek crossed the old rope bridge after dark. Not since the flood, when the river had risen in a single night and taken the Mokoena house with it.\n\nKatlego had heard the story a hundred times. Her grandmother told it slowly, always ending with the same words: 'The river remembers.' Katlego, who was fifteen and believed in science, not ghosts, would roll her eyes and go back to her phone.\n\nBut tonight her phone was dead, the clinic was on the other side of the river, and her little brother's breathing had turned into a terrible whistle. The road bridge was twelve kilometres away. The rope bridge was two hundred metres.\n\nShe stood at the edge with a torch in her teeth and Tumi on her back. The planks swayed. Below, the water talked to itself in the dark, low and endless. 'The river remembers,' she whispered, and for the first time she understood that her grandmother had never been talking about ghosts. She had been talking about fear, and about what people do with it.\n\nKatlego put her foot on the first plank."
+        }
+      ],
+      "questions": [
+        {
+          "id": "the-novel-and-short-story-subplot",
+          "type": "short",
+          "prompt": "What is a secondary storyline in a novel called?",
+          "answers": [
+            "subplot",
+            "a subplot",
+            "sub-plot"
+          ]
+        },
+        {
+          "id": "the-novel-and-short-story-omniscient",
+          "type": "mcq",
+          "prompt": "A narrator who knows the thoughts and feelings of all the characters is…",
+          "options": [
+            "first person",
+            "third person limited",
+            "third person omniscient",
+            "unreliable"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "the-novel-and-short-story-dramatic",
+          "type": "mcq",
+          "prompt": "When the reader knows something that a character does not, this is…",
+          "options": [
+            "verbal irony",
+            "situational irony",
+            "dramatic irony",
+            "a flashback"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "the-novel-and-short-story-distance",
+          "type": "numeric",
+          "prompt": "In the extract, how far away is the road bridge?",
+          "answer": 12,
+          "tolerance": 0,
+          "unit": "km"
+        },
+        {
+          "id": "the-novel-and-short-story-science",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What does Katlego's reaction to her grandmother's story at first reveal about her character?",
+          "memo": "✓ She is sceptical / rational ('believed in science, not ghosts') (1)\n✓ She is a bit dismissive / typical teenager (rolls her eyes, goes back to her phone) (1)"
+        },
+        {
+          "id": "the-novel-and-short-story-conflict",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Classify each conflict from the extract.",
+          "pairs": [
+            {
+              "left": "Katlego's fear against her duty to her brother",
+              "right": "Internal conflict"
+            },
+            {
+              "left": "Katlego against the dark, rushing river",
+              "right": "External: character vs nature"
+            },
+            {
+              "left": "Getting to the clinic before Tumi gets worse",
+              "right": "External: against time"
+            }
+          ]
+        },
+        {
+          "id": "the-novel-and-short-story-ending",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Is the ending of the extract open or closed? Explain its effect.",
+          "memo": "✓ Open (1)\n✓ The reader does not know whether she crosses safely, which creates suspense and makes the reader imagine the outcome (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Summary Writing",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Practice passage: Saving Water at School (original)",
+          "text": "Our school used more water last term than ever before, so the RCL investigated ways to cut waste. The simplest solution was to fix dripping taps, which can waste up to 30 litres a day each. The ground staff agreed to water the gardens early in the morning instead of at midday, so less water evaporates in the heat. Learners suggested putting posters above every basin, reminding everyone to close the taps properly. The tuck shop now sells refillable bottles instead of bottled water. A rainwater tank, donated by a local hardware store, collects runoff from the hall roof for the vegetable garden. The science club has started monthly meter readings to track progress, and the class that saves the most will win a pizza party. Finally, the toilets have been fitted with dual-flush buttons."
+        }
+      ],
+      "questions": [
+        {
+          "id": "summary-writing-points",
+          "type": "numeric",
+          "prompt": "How many points are usually required in a Grade 9 summary?",
+          "answer": 7,
+          "tolerance": 0
+        },
+        {
+          "id": "summary-writing-paraphrase",
+          "type": "short",
+          "prompt": "What is expressing an idea in your own words called?",
+          "answers": [
+            "paraphrasing",
+            "paraphrase"
+          ]
+        },
+        {
+          "id": "summary-writing-general-word",
+          "type": "short",
+          "prompt": "Replace this list with one general word: 'cars, buses, taxis and trucks'.",
+          "answers": [
+            "vehicles",
+            "transport",
+            "motor vehicles"
+          ]
+        },
+        {
+          "id": "summary-writing-leave-out",
+          "type": "mcq",
+          "prompt": "Which should be included in a summary?",
+          "options": [
+            "Examples",
+            "Quotations",
+            "Main points on the focus",
+            "Your personal opinion"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "summary-writing-pizza",
+          "type": "truefalse",
+          "prompt": "The pizza-party prize should be included as a point in the water-saving summary.",
+          "answer": false
+        },
+        {
+          "id": "summary-writing-classify",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Decide whether each item from the passage is a main point or should be left out.",
+          "pairs": [
+            {
+              "left": "Fix dripping taps",
+              "right": "Main point"
+            },
+            {
+              "left": "Taps can waste up to 30 litres a day",
+              "right": "Leave out (statistic)"
+            },
+            {
+              "left": "Dual-flush toilets installed",
+              "right": "Main point (toilets)"
+            },
+            {
+              "left": "Donated by a local hardware store",
+              "right": "Leave out (detail)"
+            }
+          ]
+        },
+        {
+          "id": "summary-writing-linking",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO linking words you could use to join points in a summary paragraph.",
+          "memo": "Any two (1 each): furthermore; in addition; also; moreover; as well as; finally; and"
+        },
+        {
+          "id": "summary-writing-rewrite",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Paraphrase: 'The ground staff agreed to water the gardens early in the morning instead of at midday, so less water evaporates in the heat.'",
+          "memo": "✓✓ e.g. 'Gardens are watered early to reduce evaporation.' (own words, concise, accurate) (2)"
+        },
+        {
+          "id": "summary-writing-word-limit",
+          "type": "open",
+          "marks": 1,
+          "prompt": "What should you do if your summary is over the word limit?",
+          "memo": "✓ Remove unnecessary words/details and combine points more concisely until it fits the limit (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Drama",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Scene from 'The Envelope' (an original one-act play written for FreeSheet)",
+          "text": "[A small kitchen in Mthatha. Evening. MAMA NOMVULA (50s) sits at the table sorting bills. Her son SIPHO (17) enters, hiding an envelope behind his back.]\n\nSIPHO: (too cheerfully) Evening, Ma! You look… wonderful tonight.\nMAMA NOMVULA: (without looking up) What did you break?\nSIPHO: Nothing! Can a son not compliment his mother?\nMAMA NOMVULA: A son can. My son does not. (She looks up.) What is behind your back?\nSIPHO: (aside, to the audience) She has eyes like a hawk. If she sees the university stamp, she'll know I applied without telling her.\n(He hesitates, then places the envelope on the table.)\nSIPHO: It came today. I haven't opened it.\nMAMA NOMVULA: (picking it up slowly) University of Cape Town. (A long pause.) Cape Town is very far, Sipho. And very expensive.\nSIPHO: I know. That's why I didn't tell you. I didn't want you to worry about the money before… before there was anything to worry about.\nMAMA NOMVULA: (her voice softening) So you carried this worry alone. (She holds out the envelope.) Open it. We will worry together.\n(SIPHO tears it open. He reads in silence. The lights dim slowly until only his face is lit.)"
+        }
+      ],
+      "questions": [
+        {
+          "id": "drama-soliloquy",
+          "type": "mcq",
+          "prompt": "A speech in which a character alone on stage shares private thoughts is a…",
+          "options": [
+            "monologue",
+            "soliloquy",
+            "dialogue",
+            "stage direction"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "drama-aside",
+          "type": "short",
+          "prompt": "What is a brief remark to the audience that other characters cannot hear called?",
+          "answers": [
+            "aside",
+            "an aside"
+          ]
+        },
+        {
+          "id": "drama-playwright",
+          "type": "short",
+          "prompt": "What is the writer of a play called?",
+          "answers": [
+            "playwright",
+            "a playwright",
+            "dramatist"
+          ]
+        },
+        {
+          "id": "drama-act-scene",
+          "type": "truefalse",
+          "prompt": "Acts in a play are usually divided into scenes.",
+          "answer": true
+        },
+        {
+          "id": "drama-features",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each feature to its meaning.",
+          "pairs": [
+            {
+              "left": "Stage directions",
+              "right": "Instructions about movement, tone and setting"
+            },
+            {
+              "left": "Props",
+              "right": "Objects used on stage"
+            },
+            {
+              "left": "Cast list",
+              "right": "The characters in the play"
+            },
+            {
+              "left": "Monologue",
+              "right": "Long speech by one character to others"
+            }
+          ]
+        },
+        {
+          "id": "drama-what-break",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why does Mama Nomvula ask 'What did you break?' What does this show about her?",
+          "memo": "✓ Sipho is being unusually cheerful and complimentary, so she suspects he is hiding something (1)\n✓ She knows her son well / is shrewd and has a dry sense of humour (1)"
+        },
+        {
+          "id": "drama-stage-direction",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Why is the stage direction '(her voice softening)' important for an actor?",
+          "memo": "✓ It tells the actor how to deliver the line (1)\n✓ showing the audience that her attitude has changed from worry to tenderness (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Critical Language Awareness",
+      "questions": [
+        {
+          "id": "critical-language-awareness-denotation",
+          "type": "short",
+          "prompt": "What is the dictionary meaning of a word called?",
+          "answers": [
+            "denotation",
+            "the denotation"
+          ]
+        },
+        {
+          "id": "critical-language-awareness-euphemism",
+          "type": "mcq",
+          "prompt": "'He was let go by the company' instead of 'He was fired' is an example of…",
+          "options": [
+            "sarcasm",
+            "euphemism",
+            "jargon",
+            "propaganda"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "critical-language-awareness-inclusive",
+          "type": "mcq",
+          "prompt": "Which is the most inclusive term?",
+          "options": [
+            "Fireman",
+            "Firefighter",
+            "Fire-boy",
+            "Fire lady"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "critical-language-awareness-stereotype",
+          "type": "truefalse",
+          "prompt": "'All boys are good at sport' is a stereotype.",
+          "answer": true
+        },
+        {
+          "id": "critical-language-awareness-techniques",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Identify the technique.",
+          "pairs": [
+            {
+              "left": "'Wow, I just love waiting in queues for three hours.'",
+              "right": "Sarcasm"
+            },
+            {
+              "left": "'Everyone agrees this is the best school.'",
+              "right": "Generalisation"
+            },
+            {
+              "left": "'Ruthless thugs attacked innocent shoppers.'",
+              "right": "Emotive language"
+            },
+            {
+              "left": "'Pursuant to clause 4(b), the party of the first part…'",
+              "right": "Jargon"
+            }
+          ]
+        },
+        {
+          "id": "critical-language-awareness-headlines",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Compare the headlines 'Learners stand up for their rights' and 'Unruly learners disrupt school'. How does word choice influence the reader?",
+          "memo": "✓ The first uses positive connotations ('stand up', 'rights'), encouraging support (1)\n✓ The second uses negative connotations ('unruly', 'disrupt'), encouraging disapproval (1)\n✓ The same event can be presented very differently, revealing the writer's bias (1)"
+        },
+        {
+          "id": "critical-language-awareness-rewrite",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Rewrite in inclusive language: 'Each doctor must update his records, and the chairman will check them.'",
+          "memo": "✓ 'Each doctor must update their records' / 'Doctors must update their records' (1)\n✓ 'and the chairperson will check them' (1)"
+        }
+      ]
+    }
+  ]
+}

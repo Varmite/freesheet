@@ -1,0 +1,367 @@
+{
+  "id": "term-1-and-2",
+  "title": "Term 1 and 2 Examination",
+  "durationMinutes": 60,
+  "totalMarks": 50,
+  "instructions": [
+    "This paper covers the work of Terms 1 and 2.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: The Government and the National Budget",
+      "questions": [
+        {
+          "id": "government-and-the-national-budget-sars",
+          "type": "short",
+          "prompt": "Which organisation collects taxes in South Africa? (abbreviation)",
+          "answers": [
+            "sars",
+            "south african revenue service"
+          ]
+        },
+        {
+          "id": "government-and-the-national-budget-vat-calc",
+          "type": "numeric",
+          "prompt": "A school bag costs R300 before VAT. What is the price including 15% VAT?",
+          "answer": 345,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "government-and-the-national-budget-deficit",
+          "type": "truefalse",
+          "prompt": "A budget deficit means that government expenditure is greater than its income.",
+          "answer": true
+        },
+        {
+          "id": "government-and-the-national-budget-arms",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each arm of government to its role.",
+          "pairs": [
+            {
+              "left": "Legislature",
+              "right": "Makes laws"
+            },
+            {
+              "left": "Executive",
+              "right": "Implements laws"
+            },
+            {
+              "left": "Judiciary",
+              "right": "Interprets laws"
+            }
+          ]
+        },
+        {
+          "id": "government-and-the-national-budget-progressive",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain why personal income tax is called a progressive tax.",
+          "memo": "✓ People who earn more pay a higher percentage of their income in tax (1)\n✓ This helps to redistribute income from rich to poor (1)"
+        },
+        {
+          "id": "government-and-the-national-budget-budget-time",
+          "type": "mcq",
+          "prompt": "In which month does the Minister of Finance present the national budget?",
+          "options": [
+            "January",
+            "February",
+            "April",
+            "December"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Standard of Living",
+      "questions": [
+        {
+          "id": "standard-of-living-need",
+          "type": "mcq",
+          "prompt": "Which is a NEED?",
+          "options": [
+            "A gaming console",
+            "Clean water",
+            "Designer clothes",
+            "A holiday"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "standard-of-living-absolute",
+          "type": "short",
+          "prompt": "What type of poverty describes people who cannot afford even basic needs for survival?",
+          "answers": [
+            "absolute poverty",
+            "absolute"
+          ]
+        },
+        {
+          "id": "standard-of-living-quality",
+          "type": "truefalse",
+          "prompt": "Quality of life includes things like safety, health and freedom, not only income.",
+          "answer": true
+        },
+        {
+          "id": "standard-of-living-unemp-calc",
+          "type": "numeric",
+          "prompt": "A labour force of 20 000 has 5 000 unemployed people. Calculate the unemployment rate.",
+          "answer": 25,
+          "tolerance": 0,
+          "unit": "%"
+        },
+        {
+          "id": "standard-of-living-who-helps",
+          "type": "match",
+          "marks": 3,
+          "prompt": "Match each action to who carries it out.",
+          "pairs": [
+            {
+              "left": "Paying child support grants",
+              "right": "Government"
+            },
+            {
+              "left": "Training new employees",
+              "right": "Businesses"
+            },
+            {
+              "left": "Running a community food garden",
+              "right": "Communities"
+            }
+          ]
+        },
+        {
+          "id": "standard-of-living-causes",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Give THREE causes of poverty in South Africa.",
+          "memo": "Any three (1 each): unemployment; low education/skills; inequality/legacy of apartheid; illness; large families; lack of land/resources"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Accounting Concepts and the Accounting Equation",
+      "questions": [
+        {
+          "id": "accounting-concepts-asset",
+          "type": "mcq",
+          "prompt": "Which of the following is an asset?",
+          "options": [
+            "Loan from a bank",
+            "Equipment",
+            "Wages",
+            "Drawings"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "accounting-concepts-liability",
+          "type": "short",
+          "prompt": "What do we call a debt that the business owes to outsiders?",
+          "answers": [
+            "liability",
+            "a liability",
+            "liabilities"
+          ]
+        },
+        {
+          "id": "accounting-concepts-oe-calc",
+          "type": "numeric",
+          "prompt": "Assets are R240 000 and liabilities are R60 000. Calculate owner's equity in rand.",
+          "answer": 180000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "accounting-concepts-capital-income",
+          "type": "truefalse",
+          "prompt": "Capital contributed by the owner is a type of income.",
+          "answer": false
+        },
+        {
+          "id": "accounting-concepts-classify",
+          "type": "match",
+          "marks": 5,
+          "prompt": "Classify each item.",
+          "pairs": [
+            {
+              "left": "Vehicles",
+              "right": "Asset"
+            },
+            {
+              "left": "Loan: Absa Bank",
+              "right": "Liability"
+            },
+            {
+              "left": "Telephone account paid",
+              "right": "Expense"
+            },
+            {
+              "left": "Fees earned for services",
+              "right": "Income"
+            },
+            {
+              "left": "Cash taken by the owner",
+              "right": "Drawings"
+            }
+          ]
+        },
+        {
+          "id": "accounting-concepts-entity",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain the separate entity concept.",
+          "memo": "✓ The business and the owner are treated as two separate units (1)\n✓ so the owner's personal assets and expenses are not recorded in the business's books (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Source Documents",
+      "questions": [
+        {
+          "id": "source-documents-define",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a source document?",
+          "memo": "✓ The original written or electronic proof (1)\n✓ that a transaction has taken place (1)"
+        },
+        {
+          "id": "source-documents-receipt",
+          "type": "mcq",
+          "prompt": "Which source document is issued when a business receives money from a client?",
+          "options": [
+            "Cheque counterfoil",
+            "Receipt",
+            "EFT payment notice",
+            "Bank statement"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "source-documents-eft",
+          "type": "short",
+          "prompt": "What does EFT stand for?",
+          "answers": [
+            "electronic funds transfer",
+            "electronic fund transfer"
+          ]
+        },
+        {
+          "id": "source-documents-duplicate",
+          "type": "truefalse",
+          "prompt": "When a business issues a receipt, it keeps the original and gives the copy to the payer.",
+          "answer": false,
+          "explanation": "The original goes to the payer; the business keeps the duplicate."
+        },
+        {
+          "id": "source-documents-keep-years",
+          "type": "numeric",
+          "prompt": "For at least how many years must source documents be kept?",
+          "answer": 5,
+          "tolerance": 0,
+          "unit": "years"
+        },
+        {
+          "id": "source-documents-match-docs",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each transaction to its source document.",
+          "pairs": [
+            {
+              "left": "Daily cash services in a shop",
+              "right": "Cash register roll"
+            },
+            {
+              "left": "Paid rent electronically",
+              "right": "EFT payment notice"
+            },
+            {
+              "left": "Bank charges deducted",
+              "right": "Bank statement"
+            },
+            {
+              "left": "Owner deposited capital",
+              "right": "Receipt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: The Cash Receipts Journal",
+      "questions": [
+        {
+          "id": "cash-receipts-journal-doc",
+          "type": "mcq",
+          "prompt": "Which source document is used for daily cash services rung up on the till?",
+          "options": [
+            "Receipt",
+            "Cash register roll",
+            "EFT notice",
+            "Cheque counterfoil"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "cash-receipts-journal-services",
+          "type": "short",
+          "prompt": "In which column is money received for services rendered recorded, besides the Bank column?",
+          "answers": [
+            "current income",
+            "current income column"
+          ]
+        },
+        {
+          "id": "cash-receipts-journal-all-bank",
+          "type": "truefalse",
+          "prompt": "Every amount received is eventually recorded in the Bank column.",
+          "answer": true
+        },
+        {
+          "id": "cash-receipts-journal-analysis",
+          "type": "numeric",
+          "prompt": "On one day a business received R620 (receipt) and R1 380 (CRR), deposited together. What amount is written in the Bank column for that day?",
+          "answer": 2000,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "cash-receipts-journal-columns",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each receipt to the second column it is recorded in.",
+          "pairs": [
+            {
+              "left": "Owner contributes capital",
+              "right": "Sundry accounts: Capital"
+            },
+            {
+              "left": "Client pays for services",
+              "right": "Current income"
+            },
+            {
+              "left": "Tenant pays rent",
+              "right": "Sundry accounts: Rent income"
+            },
+            {
+              "left": "Loan received from bank",
+              "right": "Sundry accounts: Loan"
+            }
+          ]
+        },
+        {
+          "id": "cash-receipts-journal-capital-wrong",
+          "type": "open",
+          "marks": 2,
+          "prompt": "A learner recorded capital of R30 000 in the Current income column. Explain the error.",
+          "memo": "✓ Capital is the owner's contribution, not income earned (1)\n✓ It should be recorded in the Sundry accounts column with 'Capital' in the details (1)"
+        }
+      ]
+    }
+  ]
+}

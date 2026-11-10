@@ -1,0 +1,419 @@
+{
+  "id": "term-3-and-4",
+  "title": "Term 3 and 4 Examination",
+  "durationMinutes": 90,
+  "totalMarks": 75,
+  "instructions": [
+    "This paper covers the work of Terms 3 and 4.",
+    "This question paper consists of 6 questions. Answer ALL the questions.",
+    "Read each question carefully before you answer it.",
+    "Show your working, and round your answers as each question asks."
+  ],
+  "sections": [
+    {
+      "title": "QUESTION 1: Measurement: Surface Area and Volume",
+      "questions": [
+        {
+          "id": "measurement-cyl-vol",
+          "type": "numeric",
+          "prompt": "Calculate the volume of a cylinder with radius 5 cm and height 12 cm, correct to one decimal place.",
+          "answer": 942.5,
+          "tolerance": 0.05,
+          "unit": "cm³"
+        },
+        {
+          "id": "measurement-sphere",
+          "type": "numeric",
+          "prompt": "Calculate the surface area of a sphere with radius 3 cm, correct to two decimal places.",
+          "answer": 113.1,
+          "tolerance": 0.01,
+          "unit": "cm²"
+        },
+        {
+          "id": "measurement-cone-vol",
+          "type": "numeric",
+          "prompt": "A cone has radius 3 cm and perpendicular height 4 cm. Calculate its volume, correct to two decimal places.",
+          "answer": 37.7,
+          "tolerance": 0.01,
+          "unit": "cm³"
+        },
+        {
+          "id": "measurement-slant",
+          "type": "numeric",
+          "prompt": "A cone has radius 5 cm and perpendicular height 12 cm. Find its slant height.",
+          "answer": 13,
+          "tolerance": 0,
+          "unit": "cm"
+        },
+        {
+          "id": "measurement-pyramid",
+          "type": "numeric",
+          "prompt": "Find the volume of a square-based pyramid with base 6 m and perpendicular height 10 m.",
+          "answer": 120,
+          "tolerance": 0,
+          "unit": "m³"
+        },
+        {
+          "id": "measurement-scale-area",
+          "type": "mcq",
+          "prompt": "If all dimensions of a box are tripled, its surface area is multiplied by…",
+          "options": [
+            "$3$",
+            "$6$",
+            "$9$",
+            "$27$"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "measurement-scale-vol",
+          "type": "truefalse",
+          "prompt": "Halving the radius of a sphere makes its volume one-eighth of the original.",
+          "answer": true
+        },
+        {
+          "id": "measurement-cyl-area",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Find the total surface area of a closed cylinder with radius 4 cm and height 10 cm, correct to one decimal place.",
+          "memo": "✓ $2\\pi(16) = 32\\pi$ (1)\n✓ $2\\pi(4)(10) = 80\\pi$ (1)\n✓ $112\\pi \\approx 351{,}9$ cm² (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Euclidean Geometry: Circle Theorems",
+      "questions": [
+        {
+          "id": "euclidean-geometry-centre",
+          "type": "numeric",
+          "prompt": "The angle at the circumference subtended by an arc is $38^\\circ$. Find the angle at the centre subtended by the same arc.",
+          "answer": 76,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "euclidean-geometry-semicircle",
+          "type": "numeric",
+          "prompt": "AB is a diameter and C is on the circle. What is the size of $\\hat{ACB}$?",
+          "answer": 90,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "euclidean-geometry-cyclic",
+          "type": "numeric",
+          "prompt": "In cyclic quadrilateral ABCD, $\\hat{A} = 105^\\circ$. Find $\\hat{C}$.",
+          "answer": 75,
+          "tolerance": 0,
+          "unit": "°"
+        },
+        {
+          "id": "euclidean-geometry-tangent",
+          "type": "mcq",
+          "prompt": "The angle between a tangent and the radius at the point of contact is…",
+          "options": [
+            "$45^\\circ$",
+            "$60^\\circ$",
+            "$90^\\circ$",
+            "$180^\\circ$"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "euclidean-geometry-same-seg",
+          "type": "truefalse",
+          "prompt": "Angles subtended by the same chord in the same segment are equal.",
+          "answer": true
+        },
+        {
+          "id": "euclidean-geometry-chord",
+          "type": "numeric",
+          "prompt": "A circle has radius 13 cm. A chord is 5 cm from the centre. How long is the chord?",
+          "answer": 24,
+          "tolerance": 0,
+          "unit": "cm"
+        },
+        {
+          "id": "euclidean-geometry-reasons",
+          "type": "match",
+          "marks": 4,
+          "prompt": "Match each statement to its reason.",
+          "pairs": [
+            {
+              "left": "PA = PB for tangents from P",
+              "right": "tans from same pt"
+            },
+            {
+              "left": "Angle between tangent and chord equals angle in alternate segment",
+              "right": "tan chord theorem"
+            },
+            {
+              "left": "Exterior angle equals interior opposite angle",
+              "right": "ext ∠ of cyclic quad"
+            },
+            {
+              "left": "OM bisects chord AB when OM ⊥ AB",
+              "right": "line from centre ⊥ to chord"
+            }
+          ]
+        },
+        {
+          "id": "euclidean-geometry-tan-chord",
+          "type": "open",
+          "marks": 3,
+          "prompt": "TA is a tangent to the circle at A. Chord AB makes $\\hat{TAB} = 70^\\circ$, and C is a point on the circle in the alternate segment. Find $\\hat{ACB}$, and $\\hat{AOB}$ if O is the centre. Give reasons.",
+          "memo": "✓ $\\hat{ACB} = 70^\\circ$ (tan chord theorem) (2)\n✓ $\\hat{AOB} = 140^\\circ$ (∠ at centre = 2 × ∠ at circumference) (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Trigonometry: Sine, Cosine and Area Rules",
+      "questions": [
+        {
+          "id": "sine-cosine-and-area-rules-which",
+          "type": "mcq",
+          "prompt": "You know all three sides of a triangle and want an angle. Which rule should you use?",
+          "options": [
+            "Sine rule",
+            "Cosine rule",
+            "Area rule",
+            "SOH CAH TOA"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "sine-cosine-and-area-rules-sine-side",
+          "type": "numeric",
+          "prompt": "In △ABC, $\\hat{A} = 30^\\circ$, $\\hat{B} = 45^\\circ$, $a = 10$. Find $b$, correct to two decimal places.",
+          "answer": 14.14,
+          "tolerance": 0.01
+        },
+        {
+          "id": "sine-cosine-and-area-rules-cos-side",
+          "type": "numeric",
+          "prompt": "In △ABC, $b = 5$, $c = 7$ and $\\hat{A} = 60^\\circ$. Find $a$, correct to two decimal places.",
+          "answer": 6.24,
+          "tolerance": 0.01
+        },
+        {
+          "id": "sine-cosine-and-area-rules-ambiguous",
+          "type": "truefalse",
+          "prompt": "When using the sine rule to find an angle, there may be two possible triangles.",
+          "answer": true
+        },
+        {
+          "id": "sine-cosine-and-area-rules-largest",
+          "type": "mcq",
+          "prompt": "In any triangle, the largest angle is opposite…",
+          "options": [
+            "the shortest side",
+            "the longest side",
+            "the base",
+            "any side"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "sine-cosine-and-area-rules-field",
+          "type": "open",
+          "marks": 4,
+          "prompt": "A triangular field has sides 80 m and 120 m with an included angle of $65^\\circ$. Find the length of the third side and the area of the field.",
+          "memo": "✓ $c^2 = 80^2 + 120^2 - 2(80)(120)\\cos 65^\\circ$ (1)\n✓ $c \\approx 112{,}63$ m (1)\n✓ Area $= \\frac{1}{2}(80)(120)\\sin 65^\\circ$ (1)\n✓ $\\approx 4\\ 350{,}28$ m² (1)"
+        },
+        {
+          "id": "sine-cosine-and-area-rules-ships",
+          "type": "open",
+          "marks": 4,
+          "prompt": "Two ships leave a harbour at the same time. One sails 30 km on a bearing of $040^\\circ$ and the other 45 km on a bearing of $110^\\circ$. How far apart are they?",
+          "memo": "✓ Angle between paths $= 70^\\circ$ (1)\n✓ $d^2 = 30^2 + 45^2 - 2(30)(45)\\cos 70^\\circ$ (1)\n✓ $d^2 \\approx 2\\ 001{,}6$ (1)\n✓ $d \\approx 44{,}7$ km (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Finance, Growth and Decay",
+      "questions": [
+        {
+          "id": "finance-growth-and-decay-straight",
+          "type": "numeric",
+          "prompt": "A laptop costing R12 000 depreciates by 20% p.a. on the straight-line method. What is it worth after 3 years?",
+          "answer": 4800,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "finance-growth-and-decay-reducing",
+          "type": "numeric",
+          "prompt": "A tractor costing R400 000 depreciates at 12% p.a. on the reducing-balance method. Find its value after 6 years, to the nearest rand.",
+          "answer": 185762,
+          "tolerance": 1,
+          "unit": "rand"
+        },
+        {
+          "id": "finance-growth-and-decay-effective",
+          "type": "numeric",
+          "prompt": "Convert 12% p.a. compounded quarterly to an effective annual rate, as a percentage correct to two decimal places.",
+          "answer": 12.55,
+          "tolerance": 0.01,
+          "unit": "%"
+        },
+        {
+          "id": "finance-growth-and-decay-monthly-n",
+          "type": "numeric",
+          "prompt": "For an investment over 4 years with interest compounded monthly, what is $n$?",
+          "answer": 48,
+          "tolerance": 0
+        },
+        {
+          "id": "finance-growth-and-decay-compound",
+          "type": "numeric",
+          "prompt": "R5 000 is invested at 7% p.a. compounded monthly for 3 years. Find the final amount, correct to the nearest cent.",
+          "answer": 6164.63,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "finance-growth-and-decay-compare",
+          "type": "truefalse",
+          "prompt": "For the same nominal rate, interest compounded monthly gives more than interest compounded annually.",
+          "answer": true
+        },
+        {
+          "id": "finance-growth-and-decay-timeline",
+          "type": "open",
+          "marks": 4,
+          "prompt": "R20 000 is invested at 9% p.a. compounded annually. After 3 years, R5 000 is withdrawn. What is the balance after 5 years?",
+          "memo": "✓ After 3 years: $20\\ 000(1{,}09)^3 = 25\\ 900{,}58$ (1)\n✓ After withdrawal: $20\\ 900{,}58$ (1)\n✓ $20\\ 900{,}58(1{,}09)^2$ (1)\n✓ $\\approx R24\\ 831{,}98$ (1)"
+        },
+        {
+          "id": "finance-growth-and-decay-nominal",
+          "type": "open",
+          "marks": 3,
+          "prompt": "An effective rate of 10% p.a. is required. What nominal rate, compounded monthly, gives this?",
+          "memo": "✓ $1{,}10 = (1 + \\frac{i}{12})^{12}$ (1)\n✓ $1 + \\frac{i}{12} = 1{,}10^{\\frac{1}{12}} = 1{,}007974$ (1)\n✓ $i \\approx 9{,}57\\%$ p.a. (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Probability",
+      "questions": [
+        {
+          "id": "probability-mutex",
+          "type": "numeric",
+          "prompt": "A and B are mutually exclusive with $P(A) = 0{,}3$ and $P(B) = 0{,}45$. Find $P(A \\text{ or } B)$.",
+          "answer": 0.75,
+          "tolerance": 0
+        },
+        {
+          "id": "probability-addition",
+          "type": "numeric",
+          "prompt": "$P(A) = 0{,}5$, $P(B) = 0{,}4$, $P(A \\text{ and } B) = 0{,}15$. Find $P(A \\text{ or } B)$.",
+          "answer": 0.75,
+          "tolerance": 0
+        },
+        {
+          "id": "probability-dependent",
+          "type": "mcq",
+          "prompt": "Which situation involves dependent events?",
+          "options": [
+            "Tossing a coin twice",
+            "Rolling two dice",
+            "Drawing two cards without replacement",
+            "Spinning a spinner twice"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "probability-tree",
+          "type": "open",
+          "marks": 4,
+          "prompt": "The probability that a bus is late is 0,2 each day, independently. Find the probability that over two days the bus is (a) late on both days (b) late on exactly one day.",
+          "memo": "(a) ✓ $0{,}2 \\times 0{,}2 = 0{,}04$ (1)\n(b) ✓ $0{,}2 \\times 0{,}8 + 0{,}8 \\times 0{,}2$ (2) ✓ $= 0{,}32$ (1)"
+        },
+        {
+          "id": "probability-no-replace",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A box has 4 green and 6 yellow balls. Two are drawn without replacement. Find $P(\\text{both green})$.",
+          "memo": "✓ $\\frac{4}{10} \\times \\frac{3}{9}$ (2)\n✓ $= \\frac{2}{15}$ (1)"
+        },
+        {
+          "id": "probability-table",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Of 150 people, 90 own a car. Of the car owners, 54 are employed full-time; 60 of the 150 are employed full-time. Is owning a car independent of full-time employment? Show working.",
+          "memo": "✓ $P(\\text{car}) \\times P(\\text{employed}) = 0{,}6 \\times 0{,}4 = 0{,}24$ (1)\n✓ $P(\\text{car and employed}) = \\frac{54}{150} = 0{,}36$ (1)\n✓ Not equal, so the events are dependent (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 6: Statistics",
+      "questions": [
+        {
+          "id": "statistics-ogive-x",
+          "type": "mcq",
+          "prompt": "On an ogive, the cumulative frequency is plotted against…",
+          "options": [
+            "the class midpoint",
+            "the lower class limit",
+            "the upper class limit",
+            "the frequency"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "statistics-mean",
+          "type": "numeric",
+          "prompt": "Find the mean of $12; 15; 9; 18; 6$.",
+          "answer": 12,
+          "tolerance": 0
+        },
+        {
+          "id": "statistics-sd",
+          "type": "numeric",
+          "prompt": "Find the (population) standard deviation of $2; 4; 4; 4; 5; 5; 7; 9$.",
+          "answer": 2,
+          "tolerance": 0.01
+        },
+        {
+          "id": "statistics-skew",
+          "type": "mcq",
+          "prompt": "If the mean is much greater than the median, the data are probably…",
+          "options": [
+            "symmetric",
+            "positively skewed",
+            "negatively skewed",
+            "bimodal"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "statistics-spread",
+          "type": "truefalse",
+          "prompt": "A larger standard deviation means the data are more spread out from the mean.",
+          "answer": true
+        },
+        {
+          "id": "statistics-outlier",
+          "type": "open",
+          "marks": 3,
+          "prompt": "$Q_1 = 20$ and $Q_3 = 32$. Is a value of 52 an outlier? Show working.",
+          "memo": "✓ $IQR = 12$ (1)\n✓ Upper fence $= 32 + 1{,}5(12) = 50$ (1)\n✓ $52 > 50$, so it is an outlier (1)"
+        },
+        {
+          "id": "statistics-cumulative",
+          "type": "open",
+          "marks": 3,
+          "prompt": "Complete the cumulative frequencies for frequencies 5; 9; 14; 7; 5 and state the total number of data values.",
+          "memo": "✓ 5; 14 (1)\n✓ 28; 35 (1)\n✓ 40; total $n = 40$ (1)"
+        },
+        {
+          "id": "statistics-interpret",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Class A has mean 65% and standard deviation 5%; class B has mean 65% and standard deviation 15%. Compare the classes.",
+          "memo": "✓ Both have the same average performance (1)\n✓ Class A's marks are more consistent / clustered; class B's are more spread out (1)"
+        }
+      ]
+    }
+  ]
+}
