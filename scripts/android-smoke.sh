@@ -28,7 +28,6 @@ OLD=0; if [ $ST = 4 ]; then OLD=1; elif [ $ST != 0 ]; then FAIL=1; fi
 shot 02-topic
 
 if [ $OLD = 0 ]; then
-  adb shell input keyevent KEYCODE_BACK
   node scripts/android-smoke.js 9222 back || FAIL=1
   shot 03-after-back
 

@@ -4,7 +4,7 @@
 // Used by scripts/android-smoke.sh:   node scripts/android-smoke.js <port> <phase>
 //   phase "start": (exits 4 if the WebView is too old and the app says so) checks the Rust back-end (content, audio from the APK, word list), picks a
 //                  grade, skips the buddy setup and opens a maths topic with read-aloud audio.
-//   phase "back":  checks that the Android back button went up from the topic to the topic list.
+//   phase "back":  presses the Android back button and checks that it went up from the topic to the topic list.
 //   phase "tour":  visits Settings, Exams, Progress and a language lesson, with a screenshot of
 //                  each (into <out-dir>), checking nothing is wider than the screen; then, where
 //                  the WebView can animate, turns animations on and changes pages with them.
@@ -113,7 +113,12 @@ async function connect() {
     await run('top bar clear of the status bar', 'document.querySelector(".topbar").getBoundingClientRect().top', (v) => v >= 0);
     await fits('notes');
   } else if (phase === 'back') {
-    await sleep(1500);
+    // The buddy's speech bubble takes a Back press when it is open (it closes first, by
+    // design), and it can pop up at any moment: close it, then press the real Back key.
+    await evaluate('(() => { const x = document.querySelector(".buddy-bubble:not([hidden]) .buddy-x"); if (x) x.click(); return !!x; })()');
+    await sleep(500);
+    execSync('adb shell input keyevent KEYCODE_BACK');
+    await sleep(2500);
     await run('back went up to the topic list', `(() => ({
       topic: [...document.querySelectorAll("#main button")].some((b) => /Listen to these notes/.test(b.textContent)),
       list: /Algebraic Expressions/.test(document.querySelector("#main").innerText),
