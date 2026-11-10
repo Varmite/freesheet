@@ -29,6 +29,7 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresApi
 import androidx.core.view.ViewCompat
@@ -42,9 +43,25 @@ class MainActivity : TauriActivity() {
   override fun onWebViewCreate(webView: WebView) {
     webView.addJavascriptInterface(UpdateBridge(), "FreeSheetAndroid")
     // Tauri sets its own WebViewClient straight after this call; once it has, wrap it.
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-      Handler(Looper.getMainLooper()).post { guardRenderer(webView) }
+    Handler(Looper.getMainLooper()).post {
+      ownBackButton(webView)
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) guardRenderer(webView)
     }
+  }
+
+  // The Back button or gesture goes straight to the page (js/api.js steps back through the
+  // app). Tauri's own route, a listener the page registers with a plugin, was sometimes not
+  // in place on slow devices, and Back then left the app from the middle of a topic.
+  private fun ownBackButton(webView: WebView) {
+    onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+      override fun handleOnBackPressed() {
+        val js = "(function(){try{if(window.__freesheetBack){window.__freesheetBack();return true}}catch(e){}return false})()"
+        webView.evaluateJavascript(js) { handled ->
+          // No page to ask (it is still loading, or failed): behave like the home button.
+          if (handled != "true") moveTaskToBack(true)
+        }
+      }
+    })
   }
 
   @RequiresApi(Build.VERSION_CODES.O)

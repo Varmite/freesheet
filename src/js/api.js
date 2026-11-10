@@ -112,5 +112,6 @@
     if (study && !study.classList.contains('active') && !document.body.classList.contains('welcome-mode')) return study.click();
     saveNow().then(() => invoke('minimize_app'));
   }
-  if (T.app && T.app.onBackButtonPress) T.app.onBackButtonPress(back);
+  // Called by MainActivity.kt when Back is pressed.
+  window.__freesheetBack = back;
 })();
