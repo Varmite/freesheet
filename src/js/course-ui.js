@@ -13,6 +13,13 @@
     let session = null;               // the lesson being played
     let keyHandler = null;
 
+    // While a lesson is on screen the body has the class "in-lesson": on phones a lesson
+    // fills the screen (mobile.css hides the tab bar and the buddy). A class rather than
+    // :has(), which older Android WebViews do not know.
+    new MutationObserver(() => {
+      document.body.classList.toggle('in-lesson', !!document.querySelector('.lesson'));
+    }).observe(main, { childList: true });
+
     // ---------------------------------------------------------------- data
 
     async function load(id) {

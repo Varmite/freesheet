@@ -32,7 +32,17 @@
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
   let wanted = true;
 
-  function enabled() { return wanted && !reduce.matches; }
+  // The springs need linear() easings and Element.getAnimations() (Chromium 113+). Phones
+  // whose Android WebView is older than that get the app without motion, exactly as with
+  // the "Animations" setting off, instead of errors part-way through a page change.
+  const supported = !!(window.CSS && CSS.supports && CSS.supports('transition-timing-function', 'linear(0, 1)') &&
+    Element.prototype.animate && Element.prototype.getAnimations && document.getAnimations);
+  // Slow phones (little memory or few processor cores) start with animations off; the
+  // learner can still turn them on in Settings.
+  const lowEnd = window.__FREESHEET_PLATFORM__ === 'android' &&
+    ((navigator.deviceMemory > 0 && navigator.deviceMemory <= 2) || (navigator.hardwareConcurrency > 0 && navigator.hardwareConcurrency <= 4));
+
+  function enabled() { return supported && wanted && !reduce.matches; }
   function sync() { document.documentElement.classList.toggle('motion', enabled()); }
   function setEnabled(v) { wanted = v !== false; sync(); }
   reduce.addEventListener('change', sync);
@@ -607,7 +617,7 @@
 
   window.Motion = {
     cover, setRehearsing, quiet, settle: finishActive, rehearsalStep: ZOOM.duration + 60,
-    enabled, setEnabled, noteOrigin, setHint, capture, discard, navigate, decorate, selectSegment,
+    supported, lowEnd, enabled, setEnabled, noteOrigin, setHint, capture, discard, navigate, decorate, selectSegment,
     reveal, press, pop, verdict, flip, countUp, dialogIn, dialogOut, moveTabPill,
   };
 })();

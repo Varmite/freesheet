@@ -127,9 +127,9 @@ button, .card, .row, .tab, .seg, .opt, .lopt { touch-action: manipulation; -webk
   .buddy-setup-back > * { max-height: 94vh; overflow-y: auto; border-radius: 18px 18px 0 0; }
 
   /* Language-course lessons fill the screen, like a game: no tab bar. */
-  body:has(.lesson) { padding-bottom: 0; }
-  body:has(.lesson) .tabs, body:has(.lesson) .buddy { display: none; }
-  .lesson { min-height: calc(100dvh - 56px); padding: 0 0.9rem; }
+  body.in-lesson { padding-bottom: 0; }
+  body.in-lesson .tabs, body.in-lesson .buddy { display: none; }
+  .lesson { min-height: calc(100vh - 56px); min-height: calc(100dvh - 56px); padding: 0 0.9rem; }
   .lesson-top { gap: 0.6rem; padding-top: 0.7rem; }
   .lesson-stage { padding: 1rem 0 1.5rem; }
   .ex-title { font-size: 1.3rem; }

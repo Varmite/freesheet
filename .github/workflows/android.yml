@@ -60,6 +60,27 @@ jobs:
           FREESHEET_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           FREESHEET_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           FREESHEET_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+      # Every kind of phone processor is in the APK, and the 64-bit libraries are laid out
+      # for phones with 16 KB memory pages (Android 15 and later).
+      - name: Check the APK
+        run: |
+          APK=$(ls build/android/*.apk | head -1)
+          mkdir -p "$RUNNER_TEMP/apk" && unzip -q -o "$APK" 'lib/*' -d "$RUNNER_TEMP/apk"
+          READELF="$NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf"
+          for abi in arm64-v8a armeabi-v7a x86_64; do
+            so="$RUNNER_TEMP/apk/lib/$abi/libfreesheet_lib.so"
+            [ -f "$so" ] || { echo "::error::The APK has no library for $abi"; exit 1; }
+            echo "$abi: $(du -h "$so" | cut -f1)"
+          done
+          for abi in arm64-v8a x86_64; do
+            "$READELF" -lW "$RUNNER_TEMP/apk/lib/$abi/libfreesheet_lib.so" | python3 -c '
+          import sys
+          aligns = [int(l.split()[-1], 16) for l in sys.stdin if l.split()[:1] == ["LOAD"]]
+          print("LOAD alignment:", [hex(a) for a in aligns])
+          sys.exit(0 if aligns and min(aligns) >= 0x4000 else 1)' || { echo "::error::$abi library is not laid out for 16 KB pages"; exit 1; }
+          done
+          ZIPALIGN=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)/zipalign
+          "$ZIPALIGN" -c -P 16 4 "$APK" && echo "APK is 16 KB aligned" || echo "::warning::APK is not zip-aligned for 16 KB pages"
       - uses: actions/upload-artifact@v4
         with:
           name: FreeSheet-android

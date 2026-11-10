@@ -138,8 +138,9 @@
         i++;
       } else {
         const ch = rest[0];
-        out += ({ '=': ' equals ', '+': ' plus ', '-': ' minus ', '<': ' is less than ', '>': ' is greater than ',
-          '(': ' ', ')': ' ', '[': ' ', ']': ' ', '|': ' ', '&': ' ', '/': ' over ', ';': ', ', '!': ' factorial ' })[ch] ?? ch;
+        const said = ({ '=': ' equals ', '+': ' plus ', '-': ' minus ', '<': ' is less than ', '>': ' is greater than ',
+          '(': ' ', ')': ' ', '[': ' ', ']': ' ', '|': ' ', '&': ' ', '/': ' over ', ';': ', ', '!': ' factorial ' })[ch];
+        out += said === undefined ? ch : said;
         i++;
       }
     }

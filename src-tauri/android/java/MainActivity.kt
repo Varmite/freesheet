@@ -5,25 +5,94 @@ package za.freesheet.app
 // on the WebView reporting safe-area insets (older WebViews do not), the page is padded clear
 // of the system bars, display cutout and on-screen keyboard. The padding shows the app's
 // background colour (light or dark, as the page does).
+//
+// Phones short of memory: Android may kill the WebView's separate renderer process (or it can
+// crash). Left alone that takes the whole app down, or leaves a dead white page. Here the app
+// starts again cleanly instead; progress is already saved by then (the page saves as it goes).
 
+import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
+import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.os.SystemClock
 import android.provider.Settings
 import android.view.View
 import android.webkit.JavascriptInterface
+import android.webkit.RenderProcessGoneDetail
+import android.webkit.WebResourceError
+import android.webkit.WebResourceRequest
+import android.webkit.WebResourceResponse
 import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.activity.enableEdgeToEdge
+import androidx.annotation.RequiresApi
 import androidx.core.view.ViewCompat
 import androidx.core.content.FileProvider
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.Lifecycle
+import androidx.webkit.WebViewCompat
 import java.io.File
 
 class MainActivity : TauriActivity() {
   override fun onWebViewCreate(webView: WebView) {
     webView.addJavascriptInterface(UpdateBridge(), "FreeSheetAndroid")
+    // Tauri sets its own WebViewClient straight after this call; once it has, wrap it.
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+      Handler(Looper.getMainLooper()).post { guardRenderer(webView) }
+    }
+  }
+
+  @RequiresApi(Build.VERSION_CODES.O)
+  private fun guardRenderer(webView: WebView) {
+    val inner = webView.webViewClient
+    if (inner !is RendererGuard) webView.webViewClient = RendererGuard(inner)
+  }
+
+  // Passes everything Tauri's client handles straight through, and adds the one thing it
+  // lacks: surviving the loss of the renderer process (Android 8+ reports it here).
+  @RequiresApi(Build.VERSION_CODES.O)
+  inner class RendererGuard(private val inner: WebViewClient) : WebViewClient() {
+    override fun shouldInterceptRequest(view: WebView, request: WebResourceRequest): WebResourceResponse? =
+      inner.shouldInterceptRequest(view, request)
+    override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean =
+      inner.shouldOverrideUrlLoading(view, request)
+    override fun onPageStarted(view: WebView, url: String, favicon: Bitmap?) = inner.onPageStarted(view, url, favicon)
+    override fun onPageFinished(view: WebView, url: String) = inner.onPageFinished(view, url)
+    override fun onReceivedError(view: WebView, request: WebResourceRequest, error: WebResourceError) =
+      inner.onReceivedError(view, request, error)
+    override fun onRenderProcessGone(view: WebView, detail: RenderProcessGoneDetail): Boolean {
+      restartAfterRendererLoss()
+      return true
+    }
+  }
+
+  // The page and the Rust side cannot carry on without the renderer, so the whole app starts
+  // afresh: straight away if the learner is looking at it, otherwise the next time they open
+  // it. Not twice within 15 seconds, so a WebView that dies on every start cannot loop.
+  private fun restartAfterRendererLoss() {
+    try {
+      val prefs = getSharedPreferences("freesheet", Context.MODE_PRIVATE)
+      val now = SystemClock.elapsedRealtime()
+      val last = prefs.getLong("rendererRestart", 0L)
+      val looping = last in 1..now && now - last < 15_000
+      val visible = lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)
+      if (visible && !looping) {
+        prefs.edit().putLong("rendererRestart", now).commit()
+        packageManager.getLaunchIntentForPackage(packageName)?.let {
+          startActivity(it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
+        }
+      } else if (visible) {
+        finishAffinity()
+      }
+    } catch (e: Exception) {
+      // Fall through: closing is still better than a dead page.
+    }
+    Runtime.getRuntime().exit(0)
   }
 
   // Hands an update that the app has already downloaded and checked to Android's installer.
@@ -47,6 +116,26 @@ class MainActivity : TauriActivity() {
       } catch (e: Exception) {
         "failed"
       }
+    }
+
+    // Opens the Play Store page of the app that provides this phone's WebView (Android System
+    // WebView, or Chrome on Android 7 to 9), for the "update needed" notice in js/compat.js.
+    @JavascriptInterface
+    fun openWebViewUpdate(): Boolean {
+      val pkg = try {
+        WebViewCompat.getCurrentWebViewPackage(this@MainActivity)?.packageName
+      } catch (e: Exception) {
+        null
+      } ?: "com.google.android.webview"
+      for (url in listOf("market://details?id=$pkg", "https://play.google.com/store/apps/details?id=$pkg")) {
+        try {
+          startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+          return true
+        } catch (e: Exception) {
+          // No Play Store: try the web page.
+        }
+      }
+      return false
     }
   }
 

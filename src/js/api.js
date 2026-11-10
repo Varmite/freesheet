@@ -71,7 +71,8 @@
   // (as it would on beforeunload), and once the saves are written the window closes.
   async function saveNow() {
     window.dispatchEvent(new Event('beforeunload'));
-    await Promise.allSettled([...pending]);
+    // (not Promise.allSettled: old Android WebViews lack it)
+    await Promise.all([...pending].map((p) => p.catch(() => {})));
   }
   T.event.listen('freesheet:closing', async () => {
     await saveNow();

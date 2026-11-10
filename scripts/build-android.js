@@ -17,7 +17,11 @@
 // Options: --debug (debuggable APK with WebView DevTools, for testing; see android-smoke.yml)
 //          --target <aarch64|armv7|x86_64> ... (default: all three)
 // FreeSheet's own MainActivity (src-tauri/android/java) replaces the generated one: it keeps
-// the page clear of the status bar, navigation bar and keyboard.
+// the page clear of the status bar, navigation bar and keyboard, and restarts the app if
+// Android kills the WebView's renderer.
+// Android 7.0/7.1: Tauri's Android code uses the Jackson JSON library, and the version it
+// asks for (2.15) needs Android 8, so the app died as it opened. Step 4 pins Jackson 2.13,
+// the last line that runs on Android 7. scripts/android-smoke.sh checks it on an emulator.
 
 const fs = require('fs');
 const path = require('path');
@@ -117,6 +121,23 @@ android {
         getByName("release") {
             signingConfig = signingConfigs.getByName(if (fsKeystore != null) "freesheet" else "debug")
         }
+    }
+}
+`);
+}
+const JACKSON = '// FreeSheet Android 7';
+if (!fs.readFileSync(gradle, 'utf8').includes(JACKSON)) {
+  fs.appendFileSync(gradle, `
+${JACKSON}.0 and 7.1 (added by scripts/build-android.js): Jackson 2.14+ needs Android 8.
+configurations.all {
+    resolutionStrategy {
+        force(
+            "com.fasterxml.jackson:jackson-bom:2.13.5",
+            "com.fasterxml.jackson.core:jackson-core:2.13.5",
+            "com.fasterxml.jackson.core:jackson-annotations:2.13.5",
+            "com.fasterxml.jackson.core:jackson-databind:2.13.5",
+            "com.fasterxml.jackson.datatype:jackson-datatype-json-org:2.13.5"
+        )
     }
 }
 `);

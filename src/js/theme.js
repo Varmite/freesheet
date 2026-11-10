@@ -40,11 +40,28 @@
     return t.id === 'system' ? byId(systemDark.matches ? 'dark' : 'light') : t;
   }
 
+  // Older Android WebViews (before Chrome 111) lack color-mix(), which styles.css uses to
+  // derive an accent colour's hover and soft shades: there, the same mixes are done here.
+  const HAS_MIX = !!(window.CSS && CSS.supports && CSS.supports('color', 'color-mix(in srgb, red, blue)'));
+  function mix(a, pct, b) {
+    const ch = (hex, i) => parseInt(hex.slice(1 + i * 2, 3 + i * 2), 16);
+    return '#' + [0, 1, 2].map((i) => Math.round((ch(a, i) * pct + ch(b, i) * (100 - pct)) / 100).toString(16).padStart(2, '0')).join('');
+  }
+  function mixAccent(t) {
+    const a = ACCENTS.find((x) => x.id === root.dataset.accent);
+    const set = (name, v) => (v ? root.style.setProperty(name, v) : root.style.removeProperty(name));
+    const on = a && t.id !== 'contrast';
+    set('--accent-hover', on && (t.dark ? mix(a.dark, 80, '#ffffff') : mix(a.light, 82, '#000000')));
+    set('--accent-soft', on && (t.dark ? mix(a.dark, 16, t.p.bg) : mix(a.light, 11, t.p.bg)));
+    set('--btn-hover', on && (t.dark ? mix(a.light, 88, '#ffffff') : mix(a.light, 82, '#000000')));
+  }
+
   function paint() {
     const t = resolve(chosen);
     root.dataset.theme = t.id;
     root.classList.toggle('is-dark', !!t.dark);
     root.style.colorScheme = t.dark ? 'dark' : 'light';
+    if (!HAS_MIX) mixAccent(t);
   }
 
   function apply(s) {

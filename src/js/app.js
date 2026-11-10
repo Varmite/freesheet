@@ -256,8 +256,14 @@
     root.classList.toggle('os-windows', api.platform === 'win32');
   }
 
+  // Animations are on unless turned off; on a slow phone they start off (Motion.lowEnd)
+  // until the learner chooses.
+  function animationsOn() {
+    const a = P().settings.animations;
+    return a === undefined ? !Motion.lowEnd : a !== false;
+  }
   function applyMotion() {
-    Motion.setEnabled(P().settings.animations !== false);
+    Motion.setEnabled(animationsOn());
   }
 
   // Theme, accent and reading comfort. Changing them while the app is open cross-fades.
@@ -1537,7 +1543,7 @@
   function viewSettings() {
     const s = P().settings;
     const ts = P().settings.textSize || 'normal';
-    const anim = P().settings.animations !== false;
+    const anim = Motion.supported && animationsOn();
     const snd = P().settings.sounds !== false;
     const smooth = P().settings.textRendering !== 'system';
     const bud = P().settings.buddy;
@@ -1565,9 +1571,9 @@
         </div><span class="muted small">Smooth draws text like macOS: greyscale smoothing (no colour fringes), the Inter typeface and fuller strokes.</span>
         <span class="text-restart" id="text-restart" hidden><button class="btn small-btn" id="restart">Restart now</button><span class="muted small">to finish switching</span></span></div>
         <div class="setting"><span>Animations</span><div class="segmented small">
-          <button class="seg ${anim ? 'active' : ''}" data-anim="1">On</button>
+          <button class="seg ${anim ? 'active' : ''}" data-anim="1" ${Motion.supported ? '' : 'disabled'}>On</button>
           <button class="seg ${anim ? '' : 'active'}" data-anim="0">Off</button>
-        </div><span class="muted small">Smooth transitions at your screen's full refresh rate, with a touch of motion blur.</span></div>
+        </div><span class="muted small">${Motion.supported ? `Smooth transitions at your screen's full refresh rate, with a touch of motion blur.${Motion.lowEnd ? ' They start off on this phone to keep it quick.' : ''}` : 'Animations need a newer Android System WebView: update it in the Play Store to turn them on.'}</span></div>
         ${seg3('Line spacing', 'spacing', s.lineSpacing || 'normal', [['compact', 'Compact'], ['normal', 'Normal'], ['relaxed', 'Relaxed']], 'How much room there is between lines in the notes.')}
         ${seg3('Reading width', 'width', s.readingWidth || 'normal', [['narrow', 'Narrow'], ['normal', 'Normal'], ['wide', 'Wide']])}
         ${seg3('Open on', 'start', s.startTab || 'study', [['study', 'Study'], ['exams', 'Exams'], ['progress', 'Progress']])}
