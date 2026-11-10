@@ -72,8 +72,9 @@ class MainActivity : TauriActivity() {
   }
 
   // The page and the Rust side cannot carry on without the renderer, so the whole app starts
-  // afresh: straight away if the learner is looking at it, otherwise the next time they open
-  // it. Not twice within 15 seconds, so a WebView that dies on every start cannot loop.
+  // afresh: straight away if the learner is looking at it (RestartActivity, in a process of
+  // its own, ends this one and opens the app again), otherwise the next time they open it.
+  // Not twice within 15 seconds, so a WebView that dies on every start cannot loop.
   private fun restartAfterRendererLoss() {
     try {
       val prefs = getSharedPreferences("freesheet", Context.MODE_PRIVATE)
@@ -83,9 +84,10 @@ class MainActivity : TauriActivity() {
       val visible = lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)
       if (visible && !looping) {
         prefs.edit().putLong("rendererRestart", now).commit()
-        packageManager.getLaunchIntentForPackage(packageName)?.let {
-          startActivity(it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
-        }
+        startActivity(Intent(this, RestartActivity::class.java)
+          .putExtra(RestartActivity.EXTRA_PID, android.os.Process.myPid())
+          .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+        return
       } else if (visible) {
         finishAffinity()
       }

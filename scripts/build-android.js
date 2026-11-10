@@ -76,8 +76,9 @@ if (!fs.existsSync(path.join(APP, 'build.gradle.kts'))) tauri(['android', 'init'
 
 // 2. Icons, and FreeSheet's MainActivity.
 copyDir(path.join(TAURI, 'android', 'res'), path.join(APP, 'src', 'main', 'res'));
-fs.copyFileSync(path.join(TAURI, 'android', 'java', 'MainActivity.kt'),
-  path.join(APP, 'src', 'main', 'java', 'za', 'freesheet', 'app', 'MainActivity.kt'));
+for (const kt of ['MainActivity.kt', 'RestartActivity.kt']) {
+  fs.copyFileSync(path.join(TAURI, 'android', 'java', kt), path.join(APP, 'src', 'main', 'java', 'za', 'freesheet', 'app', kt));
+}
 
 // Updates: the app downloads the new APK and hands it to Android's installer.
 const manifestFile = path.join(APP, 'src', 'main', 'AndroidManifest.xml');
@@ -89,6 +90,11 @@ if (!manifest.includes('androidx.core.content.FileProvider')) {
   manifest = manifest.replace('</application>', `    <provider android:name="androidx.core.content.FileProvider" android:authorities="\${applicationId}.fileprovider" android:exported="false" android:grantUriPermissions="true">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
         </provider>
+    </application>`);
+}
+// Starts the app again after Android kills the WebView's renderer (RestartActivity.kt).
+if (!manifest.includes('.RestartActivity')) {
+  manifest = manifest.replace('</application>', `    <activity android:name=".RestartActivity" android:process=":restart" android:exported="false" android:excludeFromRecents="true" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     </application>`);
 }
 fs.writeFileSync(manifestFile, manifest);
