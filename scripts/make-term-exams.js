@@ -204,7 +204,8 @@ function buildPaper(gradeDir, sub, topics, paper) {
   const used = groups.filter((g) => g.picked.length);
   const novem = sub.exams[sub.exams.length - 1];
   const taught = paper.terms.filter((n) => inTerm.some((t) => t.term === n));
-  const hasSums = used.some((g) => g.picked.some((q) => q.type === 'numeric'));
+  // Other subjects have the odd question answered with a number, like a year.
+  const hasSums = /^(?:mathemat|natural-sciences|technology|economic)/.test(sub.id) && used.some((g) => g.picked.some((q) => q.type === 'numeric'));
   const covers = taught.length === paper.terms.length
     ? `This paper covers the work of Terms ${paper.terms.join(' and ')}.`
     : `This paper covers the work of Term ${taught[0]}. Term ${paper.terms.find((n) => !taught.includes(n))} is set aside for revision and the final examinations.`;
