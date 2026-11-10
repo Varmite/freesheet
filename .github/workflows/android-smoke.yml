@@ -83,7 +83,8 @@ jobs:
           arch: x86_64
           target: google_apis
           profile: ${{ matrix.profile }}
-          disable-animations: true
+          # Android's own animations stay on for the newest versions, so the app's are tried too.
+          disable-animations: ${{ matrix.api < 34 }}
           script: FONT_SCALE=${{ matrix.font }} bash scripts/android-smoke.sh build/android/FreeSheet-*-android-debug.apk shots
       - uses: actions/upload-artifact@v4
         if: always()

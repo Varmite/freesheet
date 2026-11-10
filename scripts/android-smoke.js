@@ -46,6 +46,9 @@ async function connect() {
     if (waits.has(d.id)) { waits.get(d.id)(d); waits.delete(d.id); }
     if (d.method === 'Runtime.exceptionThrown') {
       const x = d.params.exceptionDetails;
+      // Not the app's own files: Tauri's dialog and fs plugins inject page scripts with newer
+      // syntax than old WebViews know. The app never calls them from the page, so no harm.
+      if (/^https?:\/\/tauri\.localhost\/?$/.test(x.url || '') && /SyntaxError/.test(String((x.exception && x.exception.description) || x.text))) return;
       pageErrors.push(`${(x.exception && x.exception.description) || x.text} (${x.url || ''}:${x.lineNumber})`);
     }
   };
@@ -119,6 +122,12 @@ async function connect() {
     const phone = await evaluate('innerWidth <= 720');
     await fits('topic list');
     shot('04-topic-list');
+    // Old WebViews space rows with margins made by js/compat.js instead of flex gaps.
+    await run('things in the top bar do not touch', `(() => {
+      const a = document.querySelector('#streak-btn').getBoundingClientRect(), b = document.querySelector('.grade-picker').getBoundingClientRect();
+      const fb = document.getElementById('flex-gap-fallback');
+      return { space: Math.round(b.left - a.right), fallbackRules: fb ? fb.sheet.cssRules.length : 'not needed' };
+    })()`, (v) => v.space >= 4);
 
     check(await click('#settings-btn'), 'open Settings');
     await sleep(2000);
@@ -142,6 +151,9 @@ async function connect() {
 
     check(await click('.tab[data-tab="study"]'), 'Study tab');
     await sleep(2000);
+    // The Study tab comes back to where it was (Mathematics): go up to the grade's home page.
+    await click('#main .crumbs [data-crumb]');
+    await sleep(2000);
     await fits('Study');
     shot('09-study');
     if (await click('#main [data-course]')) {
@@ -162,7 +174,8 @@ async function connect() {
     } else check(false, 'open a language course');
 
     // With animations on (where this WebView can run them): page changes must still land.
-    if (motion && motion.supported) {
+    // (Not where the emulator has Android's own animations switched off: the app follows that.)
+    if (motion && motion.supported && !(await evaluate('matchMedia("(prefers-reduced-motion: reduce)").matches'))) {
       await click('#settings-btn');
       await sleep(2000);
       check(await click('#main [data-anim="1"]'), 'turn animations on');
@@ -171,6 +184,8 @@ async function connect() {
       await click('#main #settings-back');
       await sleep(2500);
       await click('.tab[data-tab="study"]');
+      await sleep(2500);
+      await click('#main .crumbs [data-crumb]');
       await sleep(2500);
       check(await clickText('#main .card', /Mathematics(?! Lit)/), 'open Mathematics (animated)');
       await sleep(3000);
