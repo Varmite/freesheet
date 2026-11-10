@@ -63,7 +63,7 @@ jobs:
         include:
           # A small, low-resolution phone with Android's text size turned up; and a tablet.
           - { api: 34, name: small-large-text, profile: Nexus S, font: '1.3' }
-          - { api: 34, name: tablet, profile: Nexus 10 }
+          - { api: 34, name: tablet, profile: Nexus 10, ram: 4096M }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -83,6 +83,7 @@ jobs:
           arch: x86_64
           target: google_apis
           profile: ${{ matrix.profile }}
+          ram-size: ${{ matrix.ram }}
           # Android's own animations stay on for the newest versions, so the app's are tried too.
           disable-animations: ${{ matrix.api < 34 }}
           script: FONT_SCALE=${{ matrix.font }} bash scripts/android-smoke.sh build/android/FreeSheet-*-android-debug.apk shots

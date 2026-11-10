@@ -1,7 +1,7 @@
 {
   "name": "freesheet",
   "productName": "FreeSheet",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Offline CAPS study notes, practice questions and exams for Grades 8-12 (English).",
   "license": "MIT",
   "private": true,
