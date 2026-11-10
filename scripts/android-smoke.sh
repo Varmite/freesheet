@@ -15,6 +15,8 @@ shot() { adb exec-out screencap -p > "$OUT/$1.png"; }
 adb install -r "$APK" || exit 1
 if [ -n "${FONT_SCALE:-}" ]; then adb shell settings put system font_scale "$FONT_SCALE"; sleep 2; fi
 adb logcat -c
+# A slow emulator may have put up "... isn't responding" over everything: clear it away.
+adb shell am broadcast -a android.intent.action.CLOSE_SYSTEM_DIALOGS > /dev/null 2>&1
 adb shell am start -n "$PKG/.MainActivity"
 sleep 15
 PID=$(adb shell pidof "$PKG" | tr -d '\r')

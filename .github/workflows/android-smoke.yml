@@ -63,7 +63,7 @@ jobs:
         include:
           # A small, low-resolution phone with Android's text size turned up; and a tablet.
           - { api: 34, name: small-large-text, profile: Nexus S, font: '1.3' }
-          - { api: 34, name: tablet, profile: Nexus 10, ram: 4096M }
+          - { api: 34, name: tablet, profile: 10.1in WXGA (Tablet), ram: 4096M }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
