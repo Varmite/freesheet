@@ -3,7 +3,7 @@
   "grade": 8,
   "id": "technology",
   "name": "Technology",
-  "description": "CAPS Grade 8 Technology: the design process, graphic communication, structures and forces, levers, gears and pulleys, electrical circuits and logic, and processing and preserving materials.",
+  "description": "CAPS Grade 8 Technology: the design process, graphic communication, structures and forces, levers, gears and pulleys, electrical circuits and logic, and processing materials.",
   "topics": [
     { "id": "the-design-process", "title": "The Design Process", "term": 1 },
     { "id": "graphic-communication", "title": "Graphic Communication", "term": 1 },
@@ -13,12 +13,11 @@
     { "id": "gears-and-pulleys", "title": "Mechanical Systems: Gears and Pulleys", "term": 2 },
     { "id": "electrical-circuits", "title": "Electrical Systems: Circuits and Components", "term": 3 },
     { "id": "switches-and-logic", "title": "Switches and Logic Circuits", "term": 3 },
-    { "id": "processing-materials", "title": "Processing Materials", "term": 4 },
-    { "id": "preservation-of-metals", "title": "Processing: Preservation of Metals", "term": 4 }
+    { "id": "processing-materials", "title": "Processing Materials", "term": 4 }
   ],
   "exams": [
     { "id": "term-1-and-2", "title": "Term 1 and 2 Examination", "durationMinutes": 65, "totalMarks": 50 },
-    { "id": "term-3-and-4", "title": "Term 3 and 4 Examination", "durationMinutes": 65, "totalMarks": 50 },
+    { "id": "term-3-and-4", "title": "Term 3 and 4 Examination", "durationMinutes": 50, "totalMarks": 40 },
     { "id": "november-exam", "title": "November Examination", "durationMinutes": 75, "totalMarks": 60 }
   ]
 }

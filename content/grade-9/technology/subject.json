@@ -3,7 +3,7 @@
   "grade": 9,
   "id": "technology",
   "name": "Technology",
-  "description": "CAPS Grade 9 Technology: technical drawing, bridges and structures, hydraulic and pneumatic systems, mechanical control, electronic components and circuits, processing and packaging, and the impact of technology.",
+  "description": "CAPS Grade 9 Technology: technical drawing, bridges and structures, hydraulic and pneumatic systems, mechanical control, electronic components and circuits, preservation of metals, processing and packaging, and the impact of technology.",
   "topics": [
     { "id": "technical-drawing", "title": "Technical Drawing: Orthographic, Isometric and Perspective", "term": 1 },
     { "id": "bridges-and-structures", "title": "Bridges and Structures", "term": 1 },
@@ -11,6 +11,7 @@
     { "id": "mechanical-control", "title": "Mechanical Control: Cams, Cranks and Ratchets", "term": 2 },
     { "id": "electronic-components", "title": "Electronic Components", "term": 3 },
     { "id": "electronic-circuits", "title": "Electronic Circuits and Sensors", "term": 3 },
+    { "id": "preservation-of-metals", "title": "Processing: Preservation of Metals", "term": 4 },
     { "id": "processing-and-packaging", "title": "Processing: Preservation and Packaging", "term": 4 },
     { "id": "impact-of-technology", "title": "The Impact of Technology", "term": 4 }
   ],

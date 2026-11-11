@@ -5,7 +5,7 @@
   "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 3 and 4.",
-    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it.",
     "Show your working, and round your answers as each question asks."
   ],
@@ -14,20 +14,11 @@
       "title": "QUESTION 1: Electronic Components",
       "questions": [
         {
-          "id": "electronic-components-read",
+          "id": "electronic-components-colour-red",
           "type": "numeric",
-          "prompt": "A resistor's bands are brown, black, red, gold. What is its resistance in ohms?",
-          "answer": 1000,
-          "tolerance": 0,
-          "unit": "Ω"
-        },
-        {
-          "id": "electronic-components-series",
-          "type": "numeric",
-          "prompt": "Resistors of 220 Ω and 330 Ω are connected in series. What is the total resistance?",
-          "answer": 550,
-          "tolerance": 0,
-          "unit": "Ω"
+          "prompt": "What number does the colour red represent in the resistor colour code?",
+          "answer": 2,
+          "tolerance": 0
         },
         {
           "id": "electronic-components-parallel",
@@ -56,35 +47,18 @@
           "answer": false
         },
         {
-          "id": "electronic-components-components",
-          "type": "match",
-          "marks": 4,
-          "prompt": "Match each component to its function.",
-          "pairs": [
-            {
-              "left": "Capacitor",
-              "right": "Stores charge"
-            },
-            {
-              "left": "Thermistor",
-              "right": "Senses temperature"
-            },
-            {
-              "left": "Transistor",
-              "right": "Electronic switch"
-            },
-            {
-              "left": "Potentiometer",
-              "right": "Adjustable resistance"
-            }
-          ]
-        },
-        {
           "id": "electronic-components-transistor-legs",
           "type": "open",
           "marks": 3,
           "prompt": "Name the three legs of a transistor.",
           "memo": "✓ Collector (1)\n✓ Base (1)\n✓ Emitter (1)"
+        },
+        {
+          "id": "electronic-components-led-legs",
+          "type": "open",
+          "marks": 2,
+          "prompt": "How can you tell which leg of an LED is positive?",
+          "memo": "✓ The longer leg is the anode (+) (1)\n✓ The shorter leg next to the flat edge is the cathode (−) (1)"
         }
       ]
     },
@@ -147,13 +121,6 @@
           ]
         },
         {
-          "id": "electronic-circuits-flood",
-          "type": "open",
-          "marks": 2,
-          "prompt": "How does a moisture probe detect water in a flood alarm?",
-          "memo": "✓ Water conducts electricity and connects the two bare probes (1)\n✓ This allows current to reach the transistor base, switching on the buzzer (1)"
-        },
-        {
           "id": "electronic-circuits-soldering",
           "type": "open",
           "marks": 2,
@@ -163,7 +130,94 @@
       ]
     },
     {
-      "title": "QUESTION 3: Processing: Preservation and Packaging",
+      "title": "QUESTION 3: Processing: Preservation of Metals",
+      "questions": [
+        {
+          "id": "preservation-of-metals-rust-needs",
+          "type": "mcq",
+          "prompt": "Iron rusts when it is in contact with:",
+          "options": [
+            "oxygen only",
+            "water only",
+            "oxygen and water",
+            "heat and light"
+          ],
+          "answer": 2,
+          "explanation": "Rusting needs both oxygen and water. Remove either one and it stops."
+        },
+        {
+          "id": "preservation-of-metals-rust-name",
+          "type": "short",
+          "prompt": "What is the chemical name for rust?",
+          "answers": [
+            "iron oxide",
+            "hydrated iron oxide",
+            "iron(III) oxide"
+          ],
+          "explanation": "Rust is hydrated iron oxide, formed when iron reacts with oxygen and water."
+        },
+        {
+          "id": "preservation-of-metals-aluminium",
+          "type": "truefalse",
+          "prompt": "Aluminium window frames rust if they are not painted.",
+          "answer": false,
+          "explanation": "Aluminium is non-ferrous, so it cannot rust. It forms a thin protective oxide layer."
+        },
+        {
+          "id": "preservation-of-metals-match-methods",
+          "type": "match",
+          "prompt": "Match each product with the most suitable preservation method.",
+          "pairs": [
+            {
+              "left": "Bicycle chain",
+              "right": "Oiling"
+            },
+            {
+              "left": "Corrugated iron roof",
+              "right": "Galvanising"
+            },
+            {
+              "left": "Chrome car bumper",
+              "right": "Electroplating"
+            },
+            {
+              "left": "Kitchen sink",
+              "right": "Using stainless steel"
+            }
+          ],
+          "marks": 4
+        },
+        {
+          "id": "preservation-of-metals-heat-treatment",
+          "type": "match",
+          "prompt": "Match each heat treatment with what it does.",
+          "pairs": [
+            {
+              "left": "Hardening",
+              "right": "Heat, then cool quickly; becomes hard but brittle"
+            },
+            {
+              "left": "Tempering",
+              "right": "Reheat hardened steel; becomes tougher and less brittle"
+            },
+            {
+              "left": "Annealing",
+              "right": "Heat, then cool very slowly; becomes soft and workable"
+            }
+          ],
+          "marks": 3
+        },
+        {
+          "id": "preservation-of-metals-environment",
+          "type": "open",
+          "prompt": "Give TWO ways in which preserving metals helps the environment, and ONE way in which a preservation process can harm it.",
+          "marks": 3,
+          "memo": "✓ products last longer, so less metal has to be mined and processed (1)\n✓ saves energy / less waste in landfills / fewer replacements (1)\n✓ harm: e.g. toxic chemicals from electroplating or galvanising pollute water; paint solvents pollute the air (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Processing: Preservation and Packaging",
       "questions": [
         {
           "id": "processing-and-packaging-biltong",
@@ -231,31 +285,17 @@
           ]
         },
         {
-          "id": "processing-and-packaging-functions",
-          "type": "open",
-          "marks": 4,
-          "prompt": "Give FOUR functions of packaging.",
-          "memo": "Any four (1 each): protect; preserve; contain; inform; promote/market; ease of transport and display"
-        },
-        {
-          "id": "processing-and-packaging-eco",
+          "id": "processing-and-packaging-glass-plastic",
           "type": "open",
           "marks": 2,
-          "prompt": "Suggest TWO ways to make packaging more environmentally friendly.",
-          "memo": "Any two (1 each): use less material; recyclable materials; biodegradable materials; design for reuse; refill packs"
+          "prompt": "Give ONE advantage of glass and ONE disadvantage of plastic as packaging.",
+          "memo": "✓ Glass: airtight / reusable / recyclable / see-through (1)\n✓ Plastic: made from non-renewable oil / does not break down / pollutes (1)"
         }
       ]
     },
     {
-      "title": "QUESTION 4: The Impact of Technology",
+      "title": "QUESTION 5: The Impact of Technology",
       "questions": [
-        {
-          "id": "impact-of-technology-bias-def",
-          "type": "open",
-          "marks": 2,
-          "prompt": "What is bias in technology?",
-          "memo": "✓ When a product favours some groups of people (1)\n✓ or excludes/disadvantages others (1)"
-        },
         {
           "id": "impact-of-technology-sabs",
           "type": "short",
@@ -306,13 +346,6 @@
               "right": "Economic bias"
             }
           ]
-        },
-        {
-          "id": "impact-of-technology-automation",
-          "type": "open",
-          "marks": 2,
-          "prompt": "Give ONE advantage and ONE disadvantage of using robots in factories.",
-          "memo": "✓ Advantage: faster / more accurate / safer for dangerous jobs / works continuously (1)\n✓ Disadvantage: job losses / expensive / maintenance (1)"
         },
         {
           "id": "impact-of-technology-ethics",
