@@ -1,0 +1,57 @@
+{
+  "id": "tariffs-costs-and-break-even",
+  "title": "Finance: Tariffs, Costs and Break-even",
+  "term": 1,
+  "summary": "Municipal and cellphone tariff systems with sliding scales, comparing options, fixed and variable costs, cost price and selling price, and finding the break-even point from a table, a graph and an equation.",
+  "notes": [
+    { "type": "heading", "text": "Tariff systems" },
+    { "type": "paragraph", "text": "A **tariff** is the rate a supplier charges for a service. Tariffs often have a **fixed charge** (paid even if you use nothing) and a **usage charge**. Municipal water and electricity use a **sliding scale** (block tariff): the first units are cheap and each further block costs more, so heavy users pay more per unit." },
+    { "type": "table", "caption": "A municipality's monthly water tariff (VAT included)", "headers": ["Block", "Water used", "Cost per kilolitre"], "rows": [
+      ["1", "First 6 kℓ", "Free"],
+      ["2", "More than 6 kℓ up to 15 kℓ", "R22,40"],
+      ["3", "More than 15 kℓ up to 30 kℓ", "R35,80"],
+      ["4", "More than 30 kℓ", "R51,20"],
+      ["Fixed charge", "Per month", "R95,00"]
+    ] },
+    { "type": "example", "title": "Worked example 1: a sliding-scale bill", "problem": "The Mokoena household uses 22 kℓ of water in a month. Calculate their bill.", "steps": ["Block 1: the first 6 kℓ are free: R0", "Block 2: 15 − 6 = 9 kℓ × R22,40 = R201,60", "Block 3: 22 − 15 = 7 kℓ × R35,80 = R250,60", "Fixed charge: R95,00", "Total: R0 + R201,60 + R250,60 + R95,00"], "answer": "R547,20" },
+    { "type": "callout", "label": "Common mistake", "text": "Do **not** multiply all 22 kℓ by the block-3 rate. Only the kilolitres **inside** each block are charged at that block's rate." },
+    { "type": "heading", "text": "Comparing two options" },
+    { "type": "paragraph", "text": "To compare tariff options (e.g. a cellphone contract against prepaid), write a formula for each, draw up a table or draw both graphs on the same axes. The point where the graphs cross is where the options cost the same." },
+    { "type": "example", "title": "Worked example 2: contract or prepaid?", "problem": "Contract: R149 per month including 100 free minutes, then R0,99 per minute. Prepaid: R1,49 per minute. For how many minutes do they cost the same?", "steps": ["Prepaid cost = 1,49 × minutes", "Up to 100 minutes the contract costs R149. Prepaid for 100 minutes is R149: the same!", "Above 100 minutes: contract = 149 + 0,99 × (minutes − 100), which grows more slowly than prepaid."], "answer": "They are equal at 100 minutes. For fewer than 100 minutes prepaid is cheaper, and for more than 100 minutes the contract is cheaper." },
+    { "type": "heading", "text": "Costs, income and profit" },
+    { "type": "table", "headers": ["Term", "Meaning", "Example (a vetkoek stall)"], "rows": [
+      ["Fixed costs", "Stay the same no matter how much is made or sold", "Stall rent R600 per month, permit"],
+      ["Variable costs", "Change with the number of items made", "Flour, oil and mince: R4,50 per vetkoek"],
+      ["Total cost", "Fixed costs + variable costs", "600 + 4,50 × number made"],
+      ["Cost price", "What it costs to make or buy one item", "R4,50 (+ a share of fixed costs)"],
+      ["Selling price", "What the customer pays for one item", "R12,00"],
+      ["Income (revenue)", "Selling price × number sold", "12 × number sold"],
+      ["Profit", "Income − total cost (a loss if negative)", ""]
+    ] },
+    { "type": "formula", "latex": "\\text{Mark-up \\%} = \\frac{\\text{selling price} - \\text{cost price}}{\\text{cost price}} \\times 100\\%", "caption": "The mark-up is the amount added to the cost price to make a profit." },
+    { "type": "heading", "text": "The break-even point" },
+    { "type": "paragraph", "text": "The **break-even point** is the number of items at which **income = total cost**, so there is no profit and no loss. Sell fewer and the business makes a loss; sell more and it makes a profit." },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 260' font-family='sans-serif' font-size='12'><rect width='420' height='260' fill='white'/><line x1='60' y1='220' x2='400' y2='220' stroke='#1f2933' stroke-width='1.5'/><line x1='60' y1='220' x2='60' y2='15' stroke='#1f2933' stroke-width='1.5'/><text x='230' y='252' text-anchor='middle' fill='#1f2933'>Number of vetkoek sold</text><text x='16' y='118' text-anchor='middle' fill='#1f2933' transform='rotate(-90 16 118)'>Rand</text><text x='60' y='236' text-anchor='middle' fill='#1f2933' font-size='11'>0</text><text x='160' y='236' text-anchor='middle' fill='#1f2933' font-size='11'>40</text><text x='260' y='236' text-anchor='middle' fill='#1f2933' font-size='11'>80</text><text x='360' y='236' text-anchor='middle' fill='#1f2933' font-size='11'>120</text><text x='54' y='224' text-anchor='end' fill='#1f2933' font-size='11'>0</text><text x='54' y='149' text-anchor='end' fill='#1f2933' font-size='11'>600</text><text x='54' y='74' text-anchor='end' fill='#1f2933' font-size='11'>1 200</text><line x1='60' y1='145' x2='400' y2='145' stroke='#e6e6e6'/><line x1='60' y1='70' x2='400' y2='70' stroke='#e6e6e6'/><line x1='60' y1='145' x2='400' y2='68.5' stroke='#d9722a' stroke-width='2.5'/><line x1='60' y1='220' x2='400' y2='16' stroke='#2f6db5' stroke-width='2.5'/><circle cx='260' cy='100' r='5' fill='#1f2933'/><line x1='260' y1='100' x2='260' y2='220' stroke='#1f2933' stroke-dasharray='4 3'/><text x='252' y='92' text-anchor='end' fill='#1f2933' font-weight='bold'>Break-even (80; 960)</text><text x='300' y='62' text-anchor='end' fill='#2f6db5' font-weight='bold'>Income</text><text x='300' y='112' fill='#d9722a' font-weight='bold'>Total cost</text><text x='100' y='165' fill='#1f2933' font-size='11'>LOSS</text><text x='352' y='68' fill='#1f2933' font-size='11'>PROFIT</text></svg>", "caption": "Break-even graph for the vetkoek stall. The total cost line starts at R600 (the fixed costs) and the income line starts at zero. They cross at 80 vetkoek and R960. To the left of this point the stall makes a loss; to the right it makes a profit." },
+    { "type": "example", "title": "Worked example 3: finding the break-even point", "problem": "The stall has fixed costs of R600 per month, a variable cost of R4,50 per vetkoek and sells each vetkoek for R12. How many must be sold to break even?", "steps": ["Income = total cost", "12n = 600 + 4,5n", "12n − 4,5n = 600", "7,5n = 600", "n = 80"], "answer": "80 vetkoek (income and costs are both R960)." },
+    { "type": "example", "title": "Worked example 4: profit", "problem": "How much profit does the stall make if it sells 150 vetkoek in a month?", "steps": ["Income: 150 × R12 = R1 800", "Total cost: R600 + 150 × R4,50 = R1 275", "Profit: R1 800 − R1 275"], "answer": "R525 profit" },
+    { "type": "callout", "label": "Exam tip", "text": "A quick check: each item sold above break-even adds (selling price − variable cost) to profit. Here that is R12 − R4,50 = R7,50 per vetkoek, and 70 above break-even × R7,50 = R525." }
+  ],
+  "questions": [
+    { "id": "fixed-cost", "type": "mcq", "prompt": "Which of these is a fixed cost for a small bakery?", "options": ["Flour", "Monthly rent", "Electricity used by the oven per batch", "Packaging for each loaf"], "answer": 1 },
+    { "id": "sliding-scale", "type": "truefalse", "prompt": "With a sliding-scale tariff, every unit used is charged at the same rate.", "answer": false, "explanation": "Each block of units has its own rate, usually rising as you use more." },
+    { "id": "water-15", "type": "numeric", "prompt": "Use the water tariff table in the notes. Calculate the bill for 15 kℓ, including the fixed charge.", "answer": 296.6, "tolerance": 0.005, "unit": "rand", "explanation": "9 × R22,40 = R201,60, plus R95,00 fixed = R296,60." },
+    { "id": "water-35", "type": "numeric", "prompt": "Use the water tariff table in the notes. Calculate the bill for 35 kℓ, including the fixed charge.", "answer": 1089.6, "tolerance": 0.005, "unit": "rand", "explanation": "R201,60 + 15 × R35,80 (R537,00) + 5 × R51,20 (R256,00) + R95,00 = R1 089,60." },
+    { "id": "markup", "type": "numeric", "prompt": "A shop buys a jacket for R320 and sells it for R480. What is the percentage mark-up?", "answer": 50, "tolerance": 0, "unit": "%" },
+    { "id": "break-even", "type": "numeric", "prompt": "A car wash has fixed costs of R2 400 a month. Each wash costs R15 in water and soap, and customers pay R45. How many washes are needed to break even?", "answer": 80, "tolerance": 0 },
+    { "id": "profit", "type": "numeric", "prompt": "The car wash in the previous question does 130 washes in a month. Calculate its profit.", "answer": 1500, "tolerance": 0, "unit": "rand", "explanation": "Income 130 × R45 = R5 850; cost R2 400 + 130 × R15 = R4 350; profit R1 500." },
+    { "id": "graph-meaning", "type": "mcq", "prompt": "On a break-even graph, the region to the right of the break-even point shows that:", "options": ["costs are greater than income", "income is greater than costs", "no items are sold", "fixed costs are zero"], "answer": 1 },
+    { "id": "match-terms", "type": "match", "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Variable cost", "right": "Changes with the number of items made" },
+      { "left": "Income", "right": "Selling price times number sold" },
+      { "left": "Break-even point", "right": "Where income equals total cost" },
+      { "left": "Tariff", "right": "The rate charged for a service" }
+    ], "marks": 4 },
+    { "id": "compare-options", "type": "open", "prompt": "Electricity Option A: R1,90 per kWh with no fixed charge. Option B: a fixed R230 per month plus R1,40 per kWh. (a) Write a formula for the cost of each option. (b) Find the usage at which they cost the same. (c) Advise a household that uses 600 kWh a month.", "marks": 6, "memo": "✓ A: Cost = 1,90 × kWh (1)\n✓ B: Cost = 230 + 1,40 × kWh (1)\n✓ 1,9x = 230 + 1,4x, so 0,5x = 230 (1)\n✓ x = 460 kWh (1)\n✓ at 600 kWh: A = R1 140; B = R1 070 (1)\n✓ Option B is cheaper, by R70 (1)" },
+    { "id": "price-increase", "type": "open", "prompt": "Explain what happens to a small business's break-even point if its rent goes up. Give a reason.", "marks": 2, "memo": "✓ the break-even point increases / more vetkoek must be sold to break even (1)\n✓ because fixed costs rise, so more income is needed to cover them; the cost line starts higher and crosses the income line further to the right (1)" }
+  ]
+}

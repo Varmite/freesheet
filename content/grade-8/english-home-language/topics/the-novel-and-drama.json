@@ -1,0 +1,62 @@
+{
+  "id": "the-novel-and-drama",
+  "title": "The Novel and Drama",
+  "term": 3,
+  "summary": "How a novel is built (chapters, plot, subplots, character, setting, narrator and theme) and how a play works (acts, scenes, dialogue, stage directions, conflict and irony), with an original novel extract and play scene for practice.",
+  "notes": [
+    { "type": "heading", "text": "The novel" },
+    { "type": "paragraph", "text": "A **novel** is a long work of prose fiction, divided into **chapters**. Because it is longer than a short story, it can have many characters, several settings, a **main plot** and one or more **subplots** (smaller stories that run alongside the main one). The setting and characters are developed in much more detail." },
+    { "type": "table", "headers": ["Element", "What to look for"], "rows": [
+      ["Plot", "The sequence of events: exposition, rising action, climax, falling action and resolution."],
+      ["Conflict", "The struggle that drives the plot: character against character, against society, against nature, or against themselves (internal)."],
+      ["Characters", "The **protagonist** (main character), the **antagonist** (who opposes them), and minor characters. **Round** characters are complex; **flat** characters have one or two traits. **Dynamic** characters change; **static** ones do not."],
+      ["Setting", "Where and when the story happens, and the **atmosphere** (mood) it creates."],
+      ["Narrator", "**First person** (\"I\") lets us inside one character's mind. **Third person** (\"she\", \"he\", \"they\") can be limited to one character or **omniscient** (all-knowing)."],
+      ["Theme", "The central message or idea about life, such as friendship, courage, greed or belonging."]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 200' font-family='sans-serif' font-size='12'><rect width='420' height='200' fill='white'/><polyline points='20,170 110,170 210,40 300,140 400,150' fill='none' stroke='#2f6db5' stroke-width='3'/><circle cx='210' cy='40' r='6' fill='#d9722a'/><text x='60' y='190' text-anchor='middle' fill='#1f2933'>Exposition</text><text x='130' y='100' text-anchor='middle' fill='#1f2933'>Rising</text><text x='130' y='115' text-anchor='middle' fill='#1f2933'>action</text><text x='210' y='25' text-anchor='middle' fill='#1f2933' font-weight='bold'>Climax</text><text x='292' y='92' text-anchor='middle' fill='#1f2933'>Falling</text><text x='292' y='107' text-anchor='middle' fill='#1f2933'>action</text><text x='360' y='175' text-anchor='middle' fill='#1f2933'>Resolution</text><text x='60' y='158' text-anchor='middle' fill='#1f2933' font-size='11'>characters, setting</text></svg>", "caption": "The plot of a novel or play: the exposition introduces characters and setting, the rising action builds tension, the climax is the turning point, and the falling action leads to the resolution." },
+    { "type": "callout", "label": "Exam tip", "text": "When you answer a question on a novel, always support your point with **evidence**: a short quotation or a reference to a specific event. A point without evidence earns few marks." },
+    { "type": "passage", "title": "From the novel 'The Lighthouse Keeper's Granddaughter' (an original extract)", "text": "Chapter 3\n\nThe storm arrived before supper, just as Grandpa Elias had said it would. Lerato pressed her nose to the cold window and watched the sea throw itself against the rocks like an angry dog on a chain.\n\n\"The lamp,\" Grandpa said suddenly, struggling to his feet. His knee had been stiff all week. \"The lamp must be lit.\"\n\n\"Let me go,\" said Lerato. \"I know how. I've watched you a hundred times.\"\n\nHe looked at her for a long moment. Three months ago, when her mother had sent her from Johannesburg to this lonely point of rock, she had refused even to climb the tower. Now she knew all one hundred and twelve steps by heart.\n\n\"The ships are counting on you,\" he said at last, and handed her the brass key.\n\nThe wind snatched at her jacket as she crossed the yard. Halfway up the stairs, the lights in the tower flickered and died. Lerato stood in the roaring dark, her heart hammering. Then she began to count the steps aloud." },
+    { "type": "example", "title": "Worked example 1: character and change", "problem": "How has Lerato changed since she arrived at the lighthouse? Use evidence from the extract.", "steps": ["Find what she was like before: 'she had refused even to climb the tower'. She was unhappy and unwilling.", "Find what she is like now: 'Let me go… I know how' and 'she knew all one hundred and twelve steps by heart'.", "Name the change: she has become confident, capable and responsible.", "Link to character type: she is a dynamic character."], "answer": "Lerato has grown from an unwilling newcomer who refused to climb the tower into a confident, responsible girl who offers to light the lamp herself. She is a dynamic character." },
+    { "type": "heading", "text": "Drama" },
+    { "type": "paragraph", "text": "A **drama** (play) is written to be **performed** in front of an audience. The writer is the **playwright**. The story is told almost entirely through what the characters say and do, so there is no narrator to describe their thoughts." },
+    { "type": "table", "headers": ["Feature", "Meaning"], "rows": [
+      ["Acts and scenes", "A play is divided into **acts** (major sections), which are split into **scenes** (a change of time or place)."],
+      ["Cast list", "The list of characters at the start of the play."],
+      ["Dialogue", "The words the characters speak to one another. It reveals character and moves the plot forward."],
+      ["Stage directions", "Instructions in *italics* or brackets that tell actors how to move, speak or feel, and describe the set, lighting and sound."],
+      ["Monologue", "A long speech by one character to others on stage."],
+      ["Soliloquy", "A speech by a character alone on stage, revealing private thoughts to the audience."],
+      ["Aside", "A short remark to the audience that the other characters on stage do not hear."],
+      ["Dramatic irony", "The audience knows something that a character does not."]
+    ] },
+    { "type": "passage", "title": "From the play 'The Missing Trophy' (an original scene)", "text": "SCENE 2. The school hall, after assembly. A glass cabinet stands open and empty. SIPHO and AMY stare at it.\n\nAMY: (whispering) It was here this morning. I saw it.\nSIPHO: (nervously pulling at his collar) Maybe Mr Daniels took it to polish.\nAMY: Mr Daniels never polishes anything. (She looks closely at him.) Why are you sweating?\nSIPHO: (aside) If she finds out I dropped it, I'll never hear the end of it.\n(Footsteps. MR DANIELS enters, carrying a box.)\nMR DANIELS: Has either of you seen the inter-schools trophy? The newspaper photographer is here in ten minutes.\nSIPHO: (too quickly) No, sir! Never seen it. I mean, not today, sir.\n(AMY slowly turns to look at SIPHO. Lights fade.)" },
+    { "type": "example", "title": "Worked example 2: stage directions and irony", "problem": "(a) What does the stage direction '(nervously pulling at his collar)' tell the actor and the audience? (b) Explain the dramatic irony in the scene.", "steps": ["(a) It tells the actor how to show Sipho's feelings with his body. It tells the audience that Sipho is anxious and probably hiding something.", "(b) Sipho's aside reveals to the audience that he dropped the trophy.", "Amy and Mr Daniels do not know this, but the audience does. That is dramatic irony.", "It creates tension and humour, as we wait to see whether he will be caught."], "answer": "(a) Sipho is nervous and guilty. (b) Through his aside, the audience knows Sipho dropped the trophy, but the other characters do not, which builds tension and humour." },
+    { "type": "heading", "text": "Comparing the novel and drama" },
+    { "type": "table", "headers": ["", "Novel", "Drama"], "rows": [
+      ["Form", "Prose, in chapters", "Dialogue and stage directions, in acts and scenes"],
+      ["Who tells the story", "A narrator", "The characters, through what they say and do"],
+      ["Thoughts", "The narrator can describe them directly", "Shown through soliloquies, asides, actions and tone"],
+      ["Audience", "A reader, usually alone", "An audience watching a performance"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "When you write about a play, call the audience the **audience** (not 'the reader') and the writer the **playwright**. Refer to the **stage directions** as well as the dialogue." }
+  ],
+  "questions": [
+    { "id": "subplot", "type": "mcq", "prompt": "A smaller story that runs alongside the main story in a novel is called a:", "options": ["climax", "subplot", "theme", "chapter"], "answer": 1 },
+    { "id": "playwright", "type": "short", "prompt": "What is the writer of a play called?", "answers": ["playwright", "a playwright", "dramatist"] },
+    { "id": "aside", "type": "mcq", "prompt": "In the play scene from 'The Missing Trophy', Sipho's line 'If she finds out I dropped it…' is an example of:", "options": ["a monologue", "an aside", "a stage direction", "a soliloquy"], "answer": 1, "explanation": "It is a short remark to the audience that the other characters do not hear." },
+    { "id": "narrator", "type": "mcq", "prompt": "From which point of view is the novel extract told?", "options": ["First person", "Second person", "Third person", "It has no narrator"], "answer": 2, "explanation": "The narrator uses 'she' and 'he' and is not a character in the story." },
+    { "id": "simile", "type": "short", "prompt": "Which figure of speech is used in 'the sea throw itself against the rocks like an angry dog on a chain'?", "answers": ["simile", "a simile"] },
+    { "id": "dynamic", "type": "truefalse", "prompt": "A static character changes and grows during the story.", "answer": false, "explanation": "A static character stays the same. A dynamic character changes." },
+    { "id": "match-terms", "type": "match", "prompt": "Match each drama term to its meaning.", "pairs": [
+      { "left": "Soliloquy", "right": "A character alone on stage speaks their thoughts" },
+      { "left": "Stage directions", "right": "Instructions for movement, tone, set and lighting" },
+      { "left": "Dialogue", "right": "Conversation between characters" },
+      { "left": "Scene", "right": "A section of an act, usually one time and place" }
+    ], "marks": 4 },
+    { "id": "atmosphere", "type": "open", "prompt": "Describe the atmosphere at the end of the novel extract and explain how the writer creates it.", "marks": 3, "memo": "✓ atmosphere: tense / frightening / suspenseful (1)\n✓ evidence: the lights 'flickered and died'; 'roaring dark'; 'heart hammering' (1)\n✓ explanation: Lerato is alone in the dark during a storm with the lamp unlit, so we fear for her and the ships (1)" },
+    { "id": "key", "type": "open", "prompt": "In the novel extract, Grandpa hands Lerato 'the brass key'. What does this action suggest about how he now sees her?", "marks": 2, "memo": "✓ he trusts her / sees her as responsible or grown-up (1)\n✓ evidence: he hesitates ('looked at her for a long moment') but then gives her the important task, saying 'The ships are counting on you' (1)" },
+    { "id": "too-quickly", "type": "open", "prompt": "In the play scene, why does the playwright include the stage direction '(too quickly)' before Sipho's answer to Mr Daniels? Refer to what the audience already knows.", "marks": 3, "memo": "✓ it shows Sipho is lying / panicking (1)\n✓ the audience already knows from his aside that he dropped the trophy (1)\n✓ creates dramatic irony, humour or tension, and makes Amy suspicious (1)" },
+    { "id": "ending", "type": "open", "prompt": "Choose either the novel extract or the play scene, which both end at a moment of tension. Explain what you think will happen next, with a reason from the text.", "marks": 2, "memo": "✓ a sensible prediction, e.g. Lerato reaches the top and lights the lamp by hand; Amy confronts Sipho (1)\n✓ a reason from the text, e.g. she has learnt every step and is counting them; Amy 'slowly turns to look at SIPHO' (1)" }
+  ]
+}

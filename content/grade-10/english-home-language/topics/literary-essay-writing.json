@@ -1,0 +1,58 @@
+{
+  "id": "literary-essay-writing",
+  "title": "Writing the Literary Essay",
+  "term": 3,
+  "summary": "How to answer an essay question on a novel, drama or poem: unpacking the topic, writing a thesis, planning, building PEEL paragraphs, using quotations, and writing introductions and conclusions, with examples from Romeo and Juliet.",
+  "notes": [
+    { "type": "heading", "text": "What is a literary essay?" },
+    { "type": "paragraph", "text": "In Paper 2 you may choose an **essay question** instead of contextual questions on your novel, drama or poems. A literary essay is an **argument**: you take a position on the topic and prove it with evidence from the text. It is **not** a summary of the story. The examiner already knows the plot; they want to see how well you can **interpret** it." },
+    { "type": "table", "headers": ["Retelling (few marks)", "Arguing (good marks)"], "rows": [
+      ["'Romeo meets Juliet at the party and they fall in love.'", "'Shakespeare shows that Romeo's love is impulsive: within minutes of forgetting Rosaline he declares, \"Did my heart love till now?\"'"],
+      ["Describes what happens", "Explains **why** it happens and **how** the writer shows it"],
+      ["Follows the order of the story", "Follows the order of **your points**"]
+    ] },
+    { "type": "heading", "text": "Step 1: Unpack the topic" },
+    { "type": "list", "ordered": true, "items": [
+      "**Underline the key words** in the topic, including instruction words such as *discuss*, *critically discuss*, *to what extent*, *agree or disagree*.",
+      "**Decide your answer**: do you agree, disagree, or agree only partly? You must take a clear position.",
+      "**Brainstorm evidence**: three or four key moments, quotations or techniques that support your position."
+    ] },
+    { "type": "example", "title": "Worked example 1: from topic to thesis", "problem": "Topic: 'Romeo and Juliet die because of fate, not because of their own choices.' Critically discuss this statement.", "steps": ["Key words: fate; their own choices; critically discuss (weigh both sides, then decide).", "Position: partly agree. Fate plays a role, but the lovers' haste is the main cause.", "Evidence for fate: the Prologue calls them 'star-cross'd lovers'; the letter to Romeo is delayed by the plague.", "Evidence for choices: they marry after one day; Romeo kills Tybalt; Romeo buys poison instead of waiting."], "answer": "Thesis: 'Although Shakespeare frames the lovers as \"star-cross'd\", their deaths are caused mainly by their own impulsive decisions, which give fate the chance to strike.'" },
+    { "type": "definition", "term": "Thesis statement", "text": "One clear sentence, in your introduction, that answers the topic and states the argument that the rest of the essay will prove." },
+    { "type": "heading", "text": "Step 2: Plan the structure" },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 250' font-family='sans-serif' font-size='12'><rect width='420' height='250' fill='white'/><rect x='60' y='8' width='300' height='42' rx='7' fill='#dbe8f6' stroke='#2f6db5' stroke-width='1.4'/><text x='210' y='26' text-anchor='middle' fill='#1f2933' font-weight='bold'>Introduction</text><text x='210' y='42' text-anchor='middle' fill='#1f2933' font-size='11'>answer the topic + thesis statement</text><rect x='60' y='62' width='300' height='36' rx='7' fill='#d8f0e8' stroke='#2c9a7b' stroke-width='1.4'/><text x='210' y='85' text-anchor='middle' fill='#1f2933'>Body paragraph 1 (PEEL): strongest point</text><rect x='60' y='106' width='300' height='36' rx='7' fill='#d8f0e8' stroke='#2c9a7b' stroke-width='1.4'/><text x='210' y='129' text-anchor='middle' fill='#1f2933'>Body paragraph 2 (PEEL)</text><rect x='60' y='150' width='300' height='36' rx='7' fill='#d8f0e8' stroke='#2c9a7b' stroke-width='1.4'/><text x='210' y='173' text-anchor='middle' fill='#1f2933'>Body paragraph 3 (PEEL) or counter-point</text><rect x='60' y='198' width='300' height='42' rx='7' fill='#fbe6d6' stroke='#d9722a' stroke-width='1.4'/><text x='210' y='216' text-anchor='middle' fill='#1f2933' font-weight='bold'>Conclusion</text><text x='210' y='232' text-anchor='middle' fill='#1f2933' font-size='11'>restate thesis in new words + final insight</text></svg>", "caption": "The structure of a literary essay: an introduction with the thesis, three or more PEEL body paragraphs, each making one point, and a conclusion that restates the thesis in new words." },
+    { "type": "heading", "text": "Step 3: Write PEEL paragraphs" },
+    { "type": "table", "headers": ["Part", "What it does", "Example (Romeo and Juliet)"], "rows": [
+      ["**P**oint", "A topic sentence that makes one point linked to the thesis.", "Romeo's rash temper turns a love story into a tragedy."],
+      ["**E**vidence", "A short quotation or a specific reference to an event.", "After Mercutio dies, Romeo cries, 'fire-eyed fury be my conduct now!' and kills Tybalt."],
+      ["**E**xplanation", "How the evidence proves the point: the meaning of words, imagery or the writer's technique.", "The image of 'fire-eyed fury' shows that Romeo lets rage, not reason, guide him; his choice gets him banished."],
+      ["**L**ink", "A sentence that connects back to the topic or leads to the next point.", "Fate does not force him to fight; his own haste does."]
+    ] },
+    { "type": "example", "title": "Worked example 2: improving a weak paragraph", "problem": "Improve this paragraph: 'Juliet takes the potion. Friar Laurence gives it to her. Then she wakes up in the tomb and Romeo is dead and she kills herself.'", "steps": ["Problem: it only retells events and has no point or quotation.", "Add a point: Juliet's courage drives the plot, but her trust in a risky plan is also a choice.", "Add evidence: before drinking, she fears she will wake 'in the vault' and go mad, yet she drinks.", "Explain and link: her fear shows she knows the danger; she chooses the risk, so the tragedy is shaped by choice, not only fate."], "answer": "'Juliet bravely chooses to drink the Friar's potion, even though she imagines waking alone in the vault among the dead. Her fear shows that she understands the risk, yet she accepts it rather than confess her marriage to her parents. Once again, the tragedy grows from a hasty, secret choice rather than from fate alone.'" },
+    { "type": "heading", "text": "Using quotations" },
+    { "type": "list", "items": [
+      "Keep quotations **short** (a few words) and **blend** them into your own sentence.",
+      "Always **explain** a quotation; never leave it standing alone.",
+      "Use the **present tense** for events in a text: 'Romeo kills Tybalt', not 'Romeo killed Tybalt'.",
+      "Underline or italicise titles of whole works (*Romeo and Juliet*) and put titles of poems in inverted commas."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "Spend about **5 minutes planning** before you write. A short plan (thesis + three points with evidence) keeps your argument focused, and examiners mark **structure** and **argument** as well as content." }
+  ],
+  "questions": [
+    { "id": "purpose", "type": "mcq", "prompt": "The main purpose of a literary essay is to:", "options": ["retell the plot in order", "argue a position about the text and prove it with evidence", "describe your favourite character", "list all the figures of speech in the text"], "answer": 1 },
+    { "id": "thesis", "type": "short", "prompt": "What is the one-sentence statement of your argument in the introduction called?", "answers": ["thesis", "thesis statement", "a thesis statement", "the thesis"] },
+    { "id": "tense", "type": "truefalse", "prompt": "Events in a literary text are usually discussed in the past tense.", "answer": false, "explanation": "Use the present tense: 'Romeo kills Tybalt'." },
+    { "id": "conclusion", "type": "truefalse", "prompt": "A conclusion should restate the thesis in new words rather than introduce a new main point.", "answer": true },
+    { "id": "critically", "type": "mcq", "prompt": "A topic says 'Critically discuss'. What does this ask you to do?", "options": ["Only criticise the writer", "Weigh up different views and reach a reasoned conclusion", "Summarise the plot", "Give your personal opinion without evidence"], "answer": 1 },
+    { "id": "match-peel", "type": "match", "prompt": "Match each part of a PEEL paragraph to its purpose.", "pairs": [
+      { "left": "Point", "right": "Makes one clear claim linked to the thesis" },
+      { "left": "Evidence", "right": "A quotation or reference from the text" },
+      { "left": "Explanation", "right": "Shows how the evidence proves the claim" },
+      { "left": "Link", "right": "Connects back to the topic" }
+    ], "marks": 4 },
+    { "id": "unpack", "type": "open", "prompt": "Unpack this topic and write a thesis statement: 'The adults in Romeo and Juliet are more to blame for the tragedy than the young lovers.' Discuss.", "marks": 4, "memo": "✓ identifies key words: adults, more to blame, young lovers, discuss (1)\n✓ takes a clear position (agree / disagree / partly) (1)\n✓ names at least two adults or examples, e.g. the feuding parents, Capulet forcing the marriage to Paris, the Friar's risky plan, the Nurse's advice (1)\n✓ thesis is one clear arguable sentence that answers the topic (1)" },
+    { "id": "peel", "type": "open", "prompt": "Write ONE PEEL paragraph (about 100 words) on the novel, drama or poem you are studying, arguing that one character changes during the text.", "marks": 6, "memo": "✓ point: clear topic sentence naming the character and the change (1)\n✓ evidence: at least one accurate quotation or specific reference from before the change (1)\n✓ evidence: one from after the change (1)\n✓ explanation of what the evidence shows (2)\n✓ link back to the topic (1)" },
+    { "id": "retell", "type": "open", "prompt": "Why does an essay that retells the plot earn few marks? Explain in two or three sentences.", "marks": 2, "memo": "✓ the examiner already knows the plot, so retelling shows no interpretation or insight (1)\n✓ the essay must argue a position and explain how the evidence supports it (1)" },
+    { "id": "quote-tips", "type": "open", "prompt": "Give TWO guidelines for using quotations well in a literary essay.", "marks": 2, "memo": "Any two:\n✓ keep quotations short\n✓ blend them into your own sentences\n✓ always explain the quotation\n✓ quote accurately with inverted commas\n✓ choose quotations that prove your point" }
+  ]
+}

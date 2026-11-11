@@ -3,7 +3,7 @@
   "grade": 10,
   "id": "english-home-language",
   "name": "English Home Language",
-  "description": "Grade 10 English Home Language (CAPS FET): comprehension, summary, language structures, critical language awareness, visual literacy, poetry, the novel, drama, essays and transactional writing.",
+  "description": "Grade 10 English Home Language (CAPS FET): comprehension, summary, language structures, critical language awareness, visual literacy, poetry, the novel, drama, the literary essay, essays and transactional writing.",
   "topics": [
     { "id": "reading-for-comprehension", "title": "Reading for Comprehension", "term": 1 },
     { "id": "summary-writing", "title": "Summary Writing", "term": 1 },
@@ -13,12 +13,13 @@
     { "id": "critical-language-awareness", "title": "Critical Language Awareness", "term": 2 },
     { "id": "visual-literacy", "title": "Visual Literacy: Advertisements and Cartoons", "term": 2 },
     { "id": "essay-writing", "title": "Essay Writing: Narrative, Descriptive and Argumentative", "term": 3 },
+    { "id": "literary-essay-writing", "title": "Writing the Literary Essay", "term": 3 },
     { "id": "drama", "title": "Drama: Elements and Techniques", "term": 3 },
     { "id": "transactional-writing", "title": "Transactional Writing: Letters, Emails and Notices", "term": 4 }
   ],
   "exams": [
     { "id": "term-1-and-2", "title": "Term 1 and 2 Examination", "durationMinutes": 90, "totalMarks": 50 },
-    { "id": "term-3-and-4", "title": "Term 3 and 4 Examination", "durationMinutes": 70, "totalMarks": 40 },
+    { "id": "term-3-and-4", "title": "Term 3 and 4 Examination", "durationMinutes": 90, "totalMarks": 50 },
     { "id": "november-exam", "title": "November Examination: Paper 1 (Language in Context)", "durationMinutes": 120, "totalMarks": 70 }
   ]
 }

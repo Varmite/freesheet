@@ -1,0 +1,73 @@
+{
+  "id": "interest-and-banking",
+  "title": "Finance: Interest and Banking",
+  "term": 2,
+  "summary": "Banking terms, types of bank accounts, bank statements and fees, and calculating simple and compound interest on savings and loans year by year.",
+  "notes": [
+    { "type": "heading", "text": "Banking words you must know" },
+    { "type": "table", "headers": ["Term", "Meaning"], "rows": [
+      ["Deposit", "Money paid **into** an account."],
+      ["Withdrawal", "Money taken **out** of an account, e.g. at an ATM."],
+      ["Balance", "The amount of money in the account at a particular time."],
+      ["Debit order", "An instruction that lets a company take a fixed amount from your account each month (e.g. insurance)."],
+      ["Stop order", "An instruction **you** give the bank to pay a fixed amount to someone each month."],
+      ["EFT", "Electronic funds transfer: moving money from one account to another online or with an app."],
+      ["Overdraft", "An arrangement to spend more than you have; the account goes into a negative (debit) balance and you pay interest."],
+      ["Interest", "The **reward** for saving money, or the **cost** of borrowing money."]
+    ] },
+    { "type": "heading", "text": "Types of bank accounts" },
+    { "type": "list", "items": [
+      "**Savings account**: keeps money safe and earns a little interest; few transactions.",
+      "**Transmission (cheque or current) account**: for everyday spending with a debit card, debit orders and EFTs. Usually has monthly fees and pays little or no interest.",
+      "**Fixed deposit**: you agree not to touch the money for a fixed period (e.g. 12 months) and earn a higher interest rate.",
+      "**Credit card**: lets you borrow up to a limit; high interest is charged on any amount not paid back by the due date."
+    ] },
+    { "type": "heading", "text": "Bank statements and fees" },
+    { "type": "paragraph", "text": "A **bank statement** lists every transaction in a period. Money in is a **credit** and money out is a **debit**. Each line shows the new balance. Banks charge **fees** for transactions such as ATM withdrawals, card swipes and cash deposits, plus a **monthly service fee**." },
+    { "type": "table", "caption": "Part of Thandi's bank statement for March", "headers": ["Date", "Description", "Debit (R)", "Credit (R)", "Balance (R)"], "rows": [
+      ["01 Mar", "Opening balance", "", "", "1 250,00"],
+      ["03 Mar", "Salary", "", "6 800,00", "8 050,00"],
+      ["05 Mar", "Debit order: cellphone", "399,00", "", "7 651,00"],
+      ["10 Mar", "ATM withdrawal", "1 000,00", "", "6 651,00"],
+      ["10 Mar", "ATM fee", "11,50", "", "6 639,50"],
+      ["31 Mar", "Monthly service fee", "69,00", "", "6 570,50"]
+    ] },
+    { "type": "example", "title": "Worked example 1: reading a statement", "problem": "Use Thandi's statement. (a) How much did she pay in bank fees in March? (b) What percentage of her salary did the fees use? Round to two decimal places.", "steps": ["(a) Fees: R11,50 + R69,00 = R80,50", "(b) Percentage: R80,50 ÷ R6 800 × 100%", "= 1,1838…%"], "answer": "(a) R80,50 (b) about 1,18% of her salary" },
+    { "type": "callout", "label": "Saving on fees", "text": "Swiping your card at a till or using an app is usually cheaper than drawing cash at an ATM. Drawing cash at another bank's ATM costs even more." },
+    { "type": "heading", "text": "Simple interest" },
+    { "type": "paragraph", "text": "With **simple interest**, the interest is calculated on the **original amount** (the **principal**) only, so you earn the same amount of interest every year.\n\nInterest per year = principal × interest rate" },
+    { "type": "formula", "latex": "\\text{Simple interest} = \\text{principal} \\times \\text{rate} \\times \\text{number of years}", "caption": "The rate is written as a decimal or fraction: 8% = 0,08." },
+    { "type": "example", "title": "Worked example 2: simple interest", "problem": "Sipho invests R4 000 at 8% simple interest per year for 3 years. How much will he have at the end?", "steps": ["Interest per year: R4 000 × 8% = R320", "Interest for 3 years: 3 × R320 = R960", "Total: R4 000 + R960 = R4 960"], "answer": "R4 960" },
+    { "type": "heading", "text": "Compound interest" },
+    { "type": "paragraph", "text": "With **compound interest**, the interest earned each year is **added** to the balance, and next year's interest is calculated on the **new, bigger balance**. You earn interest on your interest, so the money grows faster. In Grade 10 we work it out year by year in a table." },
+    { "type": "table", "caption": "R4 000 at 8% compound interest per year", "headers": ["Year", "Balance at start (R)", "Interest at 8% (R)", "Balance at end (R)"], "rows": [
+      ["1", "4 000,00", "320,00", "4 320,00"],
+      ["2", "4 320,00", "345,60", "4 665,60"],
+      ["3", "4 665,60", "373,25", "5 038,85"]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240' font-family='sans-serif' font-size='12'><rect width='420' height='240' fill='white'/><line x1='50' y1='200' x2='405' y2='200' stroke='#1f2933' stroke-width='1.5'/><line x1='50' y1='200' x2='50' y2='20' stroke='#1f2933' stroke-width='1.5'/><text x='8' y='14' fill='#1f2933' font-size='11'>Balance (R)</text><text x='45' y='204' text-anchor='end' fill='#1f2933' font-size='11'>4 000</text><text x='45' y='124' text-anchor='end' fill='#1f2933' font-size='11'>4 500</text><text x='45' y='44' text-anchor='end' fill='#1f2933' font-size='11'>5 000</text><line x1='50' y1='120' x2='405' y2='120' stroke='#e6e6e6'/><line x1='50' y1='40' x2='405' y2='40' stroke='#e6e6e6'/><rect x='80' y='149' width='30' height='51' fill='#2f6db5'/><rect x='112' y='149' width='30' height='51' fill='#d9722a'/><rect x='180' y='98' width='30' height='102' fill='#2f6db5'/><rect x='212' y='94' width='30' height='106' fill='#d9722a'/><rect x='280' y='46' width='30' height='154' fill='#2f6db5'/><rect x='312' y='34' width='30' height='166' fill='#d9722a'/><text x='111' y='218' text-anchor='middle' fill='#1f2933'>Year 1</text><text x='211' y='218' text-anchor='middle' fill='#1f2933'>Year 2</text><text x='311' y='218' text-anchor='middle' fill='#1f2933'>Year 3</text><rect x='70' y='226' width='12' height='10' fill='#2f6db5'/><text x='86' y='235' fill='#1f2933' font-size='11'>Simple: R4 960 after 3 years</text><rect x='260' y='226' width='12' height='10' fill='#d9722a'/><text x='276' y='235' fill='#1f2933' font-size='11'>Compound: R5 038,85</text></svg>", "caption": "R4 000 invested at 8% per year. In each pair, the left bar is simple interest and the right bar is compound interest. The compound balance pulls further ahead every year because interest is earned on interest." },
+    { "type": "example", "title": "Worked example 3: comparing the two", "problem": "How much more does Sipho earn after 3 years with compound interest than with simple interest?", "steps": ["Compound total: R5 038,85", "Simple total: R4 960,00", "Difference: R5 038,85 − R4 960,00 = R78,85"], "answer": "R78,85 more with compound interest" },
+    { "type": "heading", "text": "Interest on loans" },
+    { "type": "paragraph", "text": "When you **borrow**, interest works against you. Loans, overdrafts, store accounts and credit cards charge interest, usually **compound** interest at a much **higher** rate than savings earn. The longer you take to pay back, the more you pay altogether." },
+    { "type": "callout", "label": "Common mistake", "text": "Don't forget to **add the principal** back on. The question 'How much will she have?' wants the **total** (principal + interest), not just the interest." }
+  ],
+  "questions": [
+    { "id": "deposit", "type": "short", "prompt": "What do we call money that is paid into a bank account?", "answers": ["a deposit", "deposit", "credit"] },
+    { "id": "debit-order", "type": "mcq", "prompt": "An insurance company takes R250 from your account on the 1st of every month. This is a:", "options": ["stop order", "debit order", "deposit", "overdraft"], "answer": 1 },
+    { "id": "fixed-deposit", "type": "mcq", "prompt": "Which account usually pays the highest interest rate?", "options": ["Transmission account", "Savings account", "Fixed deposit", "Credit card"], "answer": 2 },
+    { "id": "statement-balance", "type": "numeric", "prompt": "An account has a balance of R2 340,00. A debit order of R185,00 and a fee of R7,50 go off, and a deposit of R500,00 comes in. What is the new balance?", "answer": 2647.5, "tolerance": 0.005, "unit": "rand" },
+    { "id": "simple-interest", "type": "numeric", "prompt": "Calculate the simple interest earned on R5 000 at 6% per year for 4 years.", "answer": 1200, "tolerance": 0, "unit": "rand" },
+    { "id": "simple-total", "type": "numeric", "prompt": "Nomsa saves R2 500 at 7% simple interest per year. How much will she have after 2 years?", "answer": 2850, "tolerance": 0, "unit": "rand" },
+    { "id": "compound-2", "type": "numeric", "prompt": "R3 000 is invested at 10% compound interest per year. What is the balance after 2 years?", "answer": 3630, "tolerance": 0, "unit": "rand", "explanation": "Year 1: R3 000 + R300 = R3 300. Year 2: R3 300 + R330 = R3 630." },
+    { "id": "compound-faster", "type": "truefalse", "prompt": "For the same amount, rate and time, compound interest gives a bigger total than simple interest (for more than one year).", "answer": true },
+    { "id": "fee-percent", "type": "numeric", "prompt": "Bank fees for a month total R92,40. The account holder earns R7 700 a month. What percentage of the income is spent on fees? Give your answer correct to one decimal place.", "answer": 1.2, "tolerance": 0.05, "unit": "%" },
+    { "id": "match-terms", "type": "match", "prompt": "Match each banking term to its meaning.", "pairs": [
+      { "left": "Withdrawal", "right": "Money taken out of an account" },
+      { "left": "Balance", "right": "Amount in the account at a given time" },
+      { "left": "Overdraft", "right": "Spending more than you have, at a cost" },
+      { "left": "EFT", "right": "Moving money electronically between accounts" }
+    ], "marks": 4 },
+    { "id": "compound-table", "type": "open", "prompt": "Lindiwe invests R6 000 at 9% compound interest per year. Draw up a table to show the balance at the end of each of the first 3 years. How much more is this than she would have with 9% simple interest?", "marks": 6, "memo": "✓ Year 1: interest R540,00; balance R6 540,00 (1)\n✓ Year 2: interest R588,60; balance R7 128,60 (1)\n✓ Year 3: interest R641,57; balance R7 770,17 (1)\n✓ simple interest: 3 × R540 = R1 620 (1)\n✓ simple total: R7 620,00 (1)\n✓ difference: R7 770,17 − R7 620,00 = R150,17 (1)" },
+    { "id": "atm-advice", "type": "open", "prompt": "Pieter draws R200 cash from an ATM eight times a month and pays R11,50 each time. Calculate his ATM fees and suggest TWO ways he could pay less.", "marks": 4, "memo": "✓ 8 × R11,50 = R92,00 (2)\n✓ e.g. draw cash less often in bigger amounts (1)\n✓ e.g. swipe his card or pay with an app instead of using cash; use his own bank's ATM; get cash back at a till (1)" }
+  ]
+}

@@ -5,7 +5,7 @@
   "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 3 and 4.",
-    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it.",
     "Show your working, and round your answers as each question asks."
   ],
@@ -13,6 +13,13 @@
     {
       "title": "QUESTION 1: Trade Unions",
       "questions": [
+        {
+          "id": "trade-unions-define",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What is a trade union?",
+          "memo": "✓ An organisation of workers (1)\n✓ formed to protect and improve their wages, working conditions and rights (1)"
+        },
         {
           "id": "trade-unions-kadalie",
           "type": "short",
@@ -44,43 +51,10 @@
           "unit": "hours"
         },
         {
-          "id": "trade-unions-steward",
-          "type": "short",
-          "prompt": "What is the elected union representative at a workplace called?",
-          "answers": [
-            "shop steward",
-            "a shop steward"
-          ]
-        },
-        {
           "id": "trade-unions-violence",
           "type": "truefalse",
           "prompt": "The right to strike includes the right to damage property.",
           "answer": false
-        },
-        {
-          "id": "trade-unions-laws",
-          "type": "match",
-          "marks": 4,
-          "prompt": "Match each law to what it does.",
-          "pairs": [
-            {
-              "left": "Labour Relations Act",
-              "right": "Rules for bargaining and strikes; set up the CCMA"
-            },
-            {
-              "left": "Basic Conditions of Employment Act",
-              "right": "Working hours and leave"
-            },
-            {
-              "left": "Employment Equity Act",
-              "right": "Prohibits unfair discrimination"
-            },
-            {
-              "left": "National Minimum Wage Act",
-              "right": "Sets the lowest legal hourly wage"
-            }
-          ]
         },
         {
           "id": "trade-unions-pros-cons",
@@ -116,30 +90,12 @@
           "answer": 1
         },
         {
-          "id": "creditors-journal-source",
-          "type": "mcq",
-          "prompt": "Which source document is used to record credit purchases?",
-          "options": [
-            "Duplicate invoice",
-            "Original invoice",
-            "Receipt",
-            "Cash register roll"
-          ],
-          "answer": 1
-        },
-        {
           "id": "creditors-journal-owed",
           "type": "numeric",
           "prompt": "A business bought goods on credit for R7 000 and R5 000, then paid the creditor R8 000. How much is still owed?",
           "answer": 4000,
           "tolerance": 0,
           "unit": "rand"
-        },
-        {
-          "id": "creditors-journal-debit-stock",
-          "type": "truefalse",
-          "prompt": "When the Creditors Journal is posted, the Trading stock account is debited.",
-          "answer": true
         },
         {
           "id": "creditors-journal-journals",
@@ -175,7 +131,71 @@
       ]
     },
     {
-      "title": "QUESTION 3: Sectors of the Economy and Functions of a Business",
+      "title": "QUESTION 3: The General Ledger and Trial Balance",
+      "questions": [
+        {
+          "id": "general-ledger-and-trial-balance-dj-post",
+          "type": "mcq",
+          "prompt": "The total of the Sales column in the Debtors Journal is posted to:",
+          "options": [
+            "the debit of Sales and credit of Bank",
+            "the debit of Debtors control and credit of Sales",
+            "the debit of Sales and credit of Debtors control",
+            "the debit of Bank and credit of Sales"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "general-ledger-and-trial-balance-bd",
+          "type": "short",
+          "prompt": "What does the abbreviation 'b/d' stand for when balancing an account?",
+          "answers": [
+            "brought down"
+          ]
+        },
+        {
+          "id": "general-ledger-and-trial-balance-sort-balances",
+          "type": "match",
+          "prompt": "Classify each account and show its normal balance.",
+          "marks": 4,
+          "pairs": [
+            {
+              "left": "Rent income",
+              "right": "Income: credit balance"
+            },
+            {
+              "left": "Equipment",
+              "right": "Asset: debit balance"
+            },
+            {
+              "left": "Loan: ABC Bank",
+              "right": "Liability: credit balance"
+            },
+            {
+              "left": "Wages",
+              "right": "Expense: debit balance"
+            }
+          ]
+        },
+        {
+          "id": "general-ledger-and-trial-balance-balance-creditors",
+          "type": "numeric",
+          "prompt": "Creditors control had a credit balance of R7 400 on 1 May. Credit purchases in May were R15 600 and payments to creditors were R13 200. What is the balance on 31 May?",
+          "answer": 9800,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "general-ledger-and-trial-balance-tb-errors",
+          "type": "open",
+          "prompt": "A learner's trial balance shows debit balances of R59 350 and credit balances of R60 250. She finds that Stationery of R450 was placed in the credit column. Explain why correcting this error makes the trial balance balance.",
+          "marks": 3,
+          "memo": "✓ Stationery is an expense, so it has a debit balance (1)\n✓ moving it to the debit column: debits R59 350 + R450 = R59 800 (1)\n✓ credits R60 250 − R450 = R59 800, so the totals now agree (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Sectors of the Economy and Functions of a Business",
       "questions": [
         {
           "id": "sectors-and-functions-of-a-business-primary",
@@ -217,30 +237,6 @@
           "answer": true
         },
         {
-          "id": "sectors-and-functions-of-a-business-sectors-match",
-          "type": "match",
-          "marks": 4,
-          "prompt": "Match each business to its sector.",
-          "pairs": [
-            {
-              "left": "Fishing company",
-              "right": "Primary"
-            },
-            {
-              "left": "Clothing factory",
-              "right": "Secondary"
-            },
-            {
-              "left": "Insurance company",
-              "right": "Tertiary"
-            },
-            {
-              "left": "Building contractor",
-              "right": "Secondary (construction)"
-            }
-          ]
-        },
-        {
           "id": "sectors-and-functions-of-a-business-functions-match",
           "type": "match",
           "marks": 4,
@@ -265,30 +261,39 @@
           ]
         },
         {
-          "id": "sectors-and-functions-of-a-business-four-ps",
+          "id": "sectors-and-functions-of-a-business-formal-informal",
           "type": "open",
           "marks": 2,
-          "prompt": "Name the 4 Ps of marketing.",
-          "memo": "✓✓ Product, price, place, promotion (½ each)"
+          "prompt": "Give TWO differences between the formal and informal sectors.",
+          "memo": "Any two (1 each): registered vs not registered; pay tax vs usually no tax; follow labour laws/contracts vs little security; large vs small"
+        },
+        {
+          "id": "sectors-and-functions-of-a-business-purchasing",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Describe the purchasing function.",
+          "memo": "✓ Buying raw materials, stock and equipment (1)\n✓ of the right quality and quantity, at the right price and time (1)"
         }
       ]
     },
     {
-      "title": "QUESTION 4: The Business Plan",
+      "title": "QUESTION 5: The Business Plan",
       "questions": [
-        {
-          "id": "the-business-plan-define",
-          "type": "open",
-          "marks": 2,
-          "prompt": "What is a business plan?",
-          "memo": "✓ A written document describing the business idea and goals (1)\n✓ and how it will be run, marketed and financed / expected profit (1)"
-        },
         {
           "id": "the-business-plan-why",
           "type": "open",
           "marks": 2,
           "prompt": "Give TWO reasons why an entrepreneur needs a business plan.",
           "memo": "Any two (1 each): to get finance; to test if the idea is viable; to set goals; to identify risks; to guide decisions"
+        },
+        {
+          "id": "the-business-plan-swot",
+          "type": "short",
+          "prompt": "What does the T in SWOT stand for?",
+          "answers": [
+            "threats",
+            "threat"
+          ]
         },
         {
           "id": "the-business-plan-internal",
@@ -327,29 +332,12 @@
           ]
         },
         {
-          "id": "the-business-plan-breakeven",
-          "type": "numeric",
-          "prompt": "A business sells T-shirts for R120. Each costs R70 to make. Fixed costs are R2 000 a month. How many T-shirts must be sold to break even?",
-          "answer": 40,
-          "tolerance": 0,
-          "unit": "T-shirts"
-        },
-        {
           "id": "the-business-plan-profit",
           "type": "numeric",
           "prompt": "Total income is R9 500 and total costs are R6 200. Calculate the profit.",
           "answer": 3300,
           "tolerance": 0,
           "unit": "rand"
-        },
-        {
-          "id": "the-business-plan-nyda",
-          "type": "short",
-          "prompt": "Which government agency helps young entrepreneurs? (abbreviation)",
-          "answers": [
-            "nyda",
-            "national youth development agency"
-          ]
         }
       ]
     }

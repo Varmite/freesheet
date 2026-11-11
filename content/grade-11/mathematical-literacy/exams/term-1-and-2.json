@@ -1,11 +1,11 @@
 {
   "id": "term-1-and-2",
   "title": "Term 1 and 2 Examination",
-  "durationMinutes": 45,
-  "totalMarks": 35,
+  "durationMinutes": 60,
+  "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 1 and 2.",
-    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it.",
     "Show your working, and round your answers as each question asks."
   ],
@@ -59,8 +59,71 @@
       ]
     },
     {
-      "title": "QUESTION 2: Finance: Interest, Banking and Loans",
+      "title": "QUESTION 2: Finance: Tariffs, Costs and Break-even",
       "questions": [
+        {
+          "id": "tariffs-costs-and-break-even-fixed-cost",
+          "type": "mcq",
+          "prompt": "Which of these is a fixed cost for a small bakery?",
+          "options": [
+            "Flour",
+            "Monthly rent",
+            "Electricity used by the oven per batch",
+            "Packaging for each loaf"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "tariffs-costs-and-break-even-break-even",
+          "type": "numeric",
+          "prompt": "A car wash has fixed costs of R2 400 a month. Each wash costs R15 in water and soap, and customers pay R45. How many washes are needed to break even?",
+          "answer": 80,
+          "tolerance": 0
+        },
+        {
+          "id": "tariffs-costs-and-break-even-match-terms",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Variable cost",
+              "right": "Changes with the number of items made"
+            },
+            {
+              "left": "Income",
+              "right": "Selling price times number sold"
+            },
+            {
+              "left": "Break-even point",
+              "right": "Where income equals total cost"
+            },
+            {
+              "left": "Tariff",
+              "right": "The rate charged for a service"
+            }
+          ],
+          "marks": 4
+        },
+        {
+          "id": "tariffs-costs-and-break-even-compare-options",
+          "type": "open",
+          "prompt": "Electricity Option A: R1,90 per kWh with no fixed charge. Option B: a fixed R230 per month plus R1,40 per kWh. (a) Write a formula for the cost of each option. (b) Find the usage at which they cost the same. (c) Advise a household that uses 600 kWh a month.",
+          "marks": 6,
+          "memo": "✓ A: Cost = 1,90 × kWh (1)\n✓ B: Cost = 230 + 1,40 × kWh (1)\n✓ 1,9x = 230 + 1,4x, so 0,5x = 230 (1)\n✓ x = 460 kWh (1)\n✓ at 600 kWh: A = R1 140; B = R1 070 (1)\n✓ Option B is cheaper, by R70 (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Finance: Interest, Banking and Loans",
+      "questions": [
+        {
+          "id": "interest-and-banking-compound",
+          "type": "numeric",
+          "prompt": "R5 000 is invested at 10% p.a. compound interest. What is it worth after 2 years?",
+          "answer": 6050,
+          "tolerance": 0,
+          "unit": "rand"
+        },
         {
           "id": "interest-and-banking-more",
           "type": "truefalse",
@@ -95,24 +158,24 @@
           "memo": "✓ PAYU: R45 + 15 × R4,50 = R112,50 (1)\n✓ Bundle: R99 (1)\n✓ The bundle is cheaper (1)"
         },
         {
+          "id": "interest-and-banking-credit",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Give TWO reasons to be careful when buying on credit.",
+          "memo": "Any two (1 each): you pay more than the cash price; high interest; debt can grow; missed payments damage your credit record; repossession"
+        },
+        {
           "id": "interest-and-banking-loan-total",
           "type": "numeric",
           "prompt": "A loan is repaid with 36 monthly instalments of R1 250. What is the total amount repaid?",
           "answer": 45000,
           "tolerance": 0,
           "unit": "rand"
-        },
-        {
-          "id": "interest-and-banking-interest-paid",
-          "type": "open",
-          "marks": 2,
-          "prompt": "A person borrows R20 000 and repays R26 400 in total. How much interest was paid, and what percentage of the loan is this?",
-          "memo": "✓ Interest R6 400 (1)\n✓ 6 400 ÷ 20 000 × 100 = 32% (1)"
         }
       ]
     },
     {
-      "title": "QUESTION 3: Finance: Income Tax and Inflation",
+      "title": "QUESTION 4: Finance: Income Tax and Inflation",
       "questions": [
         {
           "id": "income-tax-and-inflation-progressive",
@@ -125,6 +188,14 @@
             "tax decreases as income increases"
           ],
           "answer": 1
+        },
+        {
+          "id": "income-tax-and-inflation-annual",
+          "type": "numeric",
+          "prompt": "A monthly taxable salary is R22 500. What is the annual taxable income?",
+          "answer": 270000,
+          "tolerance": 0,
+          "unit": "rand"
         },
         {
           "id": "income-tax-and-inflation-inflation",
@@ -144,7 +215,7 @@
       ]
     },
     {
-      "title": "QUESTION 4: Measurement: Conversions, Area and Volume",
+      "title": "QUESTION 5: Measurement: Conversions, Area and Volume",
       "questions": [
         {
           "id": "measurement-and-volume-m2-cm2",
@@ -155,12 +226,20 @@
           "unit": "cm²"
         },
         {
-          "id": "measurement-and-volume-m3-l",
+          "id": "measurement-and-volume-hectare",
           "type": "numeric",
-          "prompt": "A swimming pool holds 48 m³ of water. How many litres is this?",
-          "answer": 48000,
+          "prompt": "A farm is 35 ha. What is its area in m²?",
+          "answer": 350000,
           "tolerance": 0,
-          "unit": "ℓ"
+          "unit": "m²"
+        },
+        {
+          "id": "measurement-and-volume-inch",
+          "type": "numeric",
+          "prompt": "A TV screen is 55 inches wide (diagonally). Convert this to cm (1 inch = 2,54 cm).",
+          "answer": 139.7,
+          "tolerance": 0.01,
+          "unit": "cm"
         },
         {
           "id": "measurement-and-volume-box-vol",

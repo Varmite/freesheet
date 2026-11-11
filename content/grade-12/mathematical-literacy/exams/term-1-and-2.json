@@ -5,13 +5,72 @@
   "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 1 and 2.",
-    "This question paper consists of 5 questions. Answer ALL the questions.",
+    "This question paper consists of 6 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it.",
     "Show your working, and round your answers as each question asks."
   ],
   "sections": [
     {
-      "title": "QUESTION 1: Finance: Business Costs, Income and Break-even",
+      "title": "QUESTION 1: Finance: Financial Documents, Tariffs and Budgets",
+      "questions": [
+        {
+          "id": "financial-documents-tariffs-and-budgets-budget-vs-statement",
+          "type": "mcq",
+          "prompt": "Which document records what was actually earned and spent last month?",
+          "options": [
+            "A budget",
+            "An income-and-expenditure statement",
+            "A quotation",
+            "A tariff table"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "financial-documents-tariffs-and-budgets-fixed-expense",
+          "type": "mcq",
+          "prompt": "Which of these is usually a fixed monthly expense?",
+          "options": [
+            "Groceries",
+            "Petrol",
+            "Bond repayment",
+            "Electricity"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "financial-documents-tariffs-and-budgets-deficit",
+          "type": "truefalse",
+          "prompt": "A household has a deficit when its expenditure is greater than its income.",
+          "answer": true
+        },
+        {
+          "id": "financial-documents-tariffs-and-budgets-rates-rebate",
+          "type": "numeric",
+          "prompt": "The same municipality first subtracts a rebate of R250 000 from the valuation. Calculate the new monthly rates on the R1 450 000 property (0,0098 per rand per year), correct to the nearest cent.",
+          "answer": 980,
+          "tolerance": 0.01,
+          "unit": "rand"
+        },
+        {
+          "id": "financial-documents-tariffs-and-budgets-inflation",
+          "type": "numeric",
+          "prompt": "A family spends R6 800 a month on groceries. Food inflation is expected to be 6,5%. How much should they budget per month for groceries next year?",
+          "answer": 7242,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "financial-documents-tariffs-and-budgets-petrol-percent",
+          "type": "numeric",
+          "prompt": "A household budgeted R3 600 for petrol but spent R4 110. By what percentage did they overspend? Round to one decimal place.",
+          "answer": 14.2,
+          "tolerance": 0.05,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 2: Finance: Business Costs, Income and Break-even",
       "questions": [
         {
           "id": "business-finance-and-break-even-fixed",
@@ -24,6 +83,14 @@
             "Gas used in the ovens"
           ],
           "answer": 1
+        },
+        {
+          "id": "business-finance-and-break-even-markup",
+          "type": "numeric",
+          "prompt": "A shop buys a kettle for R240 and adds a 45% mark-up. What is the selling price?",
+          "answer": 348,
+          "tolerance": 0,
+          "unit": "rand"
         },
         {
           "id": "business-finance-and-break-even-total-cost",
@@ -54,13 +121,6 @@
           "memo": "✓ Income 35 × R120 = R4 200 (1)\n✓ Cost R3 000 + 35 × R55 = R4 925 (1)\n✓ Loss of R725 (1)"
         },
         {
-          "id": "business-finance-and-break-even-statement",
-          "type": "open",
-          "marks": 3,
-          "prompt": "Using the car-wash statement, calculate what percentage of total expenditure is spent on wages.",
-          "memo": "✓ R12 000 ÷ R23 050 (1)\n✓ × 100 (1)\n✓ ≈ 52,06% (1)"
-        },
-        {
           "id": "business-finance-and-break-even-formula",
           "type": "open",
           "marks": 2,
@@ -70,7 +130,7 @@
       ]
     },
     {
-      "title": "QUESTION 2: Finance: Taxation",
+      "title": "QUESTION 3: Finance: Taxation",
       "questions": [
         {
           "id": "taxation-taxable",
@@ -93,16 +153,23 @@
           "answer": 1
         },
         {
-          "id": "taxation-full",
+          "id": "taxation-uif",
           "type": "open",
-          "marks": 5,
-          "prompt": "Ms Khumalo (aged 41) has a taxable income of R285 000 and a medical aid covering herself only. Using the illustrative tables, calculate her annual tax payable.",
-          "memo": "✓ R43 200 + 26% × (R285 000 − R240 000) (1)\n✓ = R43 200 + R11 700 = R54 900 (1)\n✓ − R17 500 = R37 400 (1)\n✓ Medical credits R364 × 12 = R4 368 (1)\n✓ Tax payable R33 032 (1)"
+          "marks": 2,
+          "prompt": "Calculate the total monthly UIF paid into the fund (employee plus employer) for a worker earning R9 800.",
+          "memo": "✓ Employee 1% = R98 (1)\n✓ Total with employer R196 (1)"
+        },
+        {
+          "id": "taxation-pension-effect",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Explain how contributing to a pension fund can reduce the tax a person pays.",
+          "memo": "✓ Pension contributions are deducted from income (1)\n✓ so the taxable income, and therefore the tax, is lower (1)"
         }
       ]
     },
     {
-      "title": "QUESTION 3: Finance: Investments, Loans and Inflation",
+      "title": "QUESTION 4: Finance: Investments, Loans and Inflation",
       "questions": [
         {
           "id": "investments-loans-and-inflation-simple",
@@ -129,17 +196,18 @@
           "unit": "rand"
         },
         {
+          "id": "investments-loans-and-inflation-cost-credit",
+          "type": "numeric",
+          "prompt": "A R20 000 loan is repaid with 24 instalments of R1 050. What is the cost of credit?",
+          "answer": 5200,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
           "id": "investments-loans-and-inflation-buying-power",
           "type": "truefalse",
           "prompt": "If inflation is higher than the interest earned, the buying power of savings decreases.",
           "answer": true
-        },
-        {
-          "id": "investments-loans-and-inflation-compare",
-          "type": "open",
-          "marks": 4,
-          "prompt": "R50 000 is invested for 3 years. Option A: 7% p.a. simple interest. Option B: 6,5% p.a. compounded annually. Which option is better, and by how much?",
-          "memo": "✓ A: R50 000 + 3 × R3 500 = R60 500 (1)\n✓ B: R50 000 × 1,065³ (1)\n✓ = R60 397,48 (1)\n✓ A is better by R102,52 (1)"
         },
         {
           "id": "investments-loans-and-inflation-fees",
@@ -147,20 +215,19 @@
           "marks": 2,
           "prompt": "Name TWO costs, besides interest, that can increase the real cost of a loan.",
           "memo": "Any two (1 each): initiation fee; monthly service fee; credit life insurance; penalties for late payment"
+        },
+        {
+          "id": "investments-loans-and-inflation-real",
+          "type": "open",
+          "marks": 2,
+          "prompt": "An investment earns 9% p.a. while inflation is 5,5%. Estimate the real rate of growth and explain what it means.",
+          "memo": "✓ About 3,5% (1)\n✓ The buying power of the money grows by about 3,5% per year (1)"
         }
       ]
     },
     {
-      "title": "QUESTION 4: Finance: Exchange Rates",
+      "title": "QUESTION 5: Finance: Exchange Rates",
       "questions": [
-        {
-          "id": "exchange-rates-to-rand",
-          "type": "numeric",
-          "prompt": "A game costs US\\$60 online. At R18,50 per US dollar, what is the price in rand?",
-          "answer": 1110,
-          "tolerance": 0,
-          "unit": "rand"
-        },
         {
           "id": "exchange-rates-to-foreign",
           "type": "numeric",
@@ -168,14 +235,6 @@
           "answer": 250,
           "tolerance": 0,
           "unit": "£"
-        },
-        {
-          "id": "exchange-rates-pula",
-          "type": "numeric",
-          "prompt": "A hotel in Botswana costs P850 per night. What is this in rand at R1,36 per pula?",
-          "answer": 1156,
-          "tolerance": 0,
-          "unit": "rand"
         },
         {
           "id": "exchange-rates-weak",
@@ -204,24 +263,32 @@
           "unit": "rand"
         },
         {
+          "id": "exchange-rates-commission",
+          "type": "open",
+          "marks": 3,
+          "prompt": "A bank sells euros at R20,40 and charges 2% commission. Calculate the cost of buying €300.",
+          "memo": "✓ 300 × R20,40 = R6 120 (1)\n✓ Commission R122,40 (1)\n✓ Total R6 242,40 (1)"
+        },
+        {
           "id": "exchange-rates-change",
           "type": "open",
           "marks": 3,
           "prompt": "Last year US\\$1 = R17,20. This year US\\$1 = R18,92. Calculate the percentage change, and say whether the rand strengthened or weakened.",
           "memo": "✓ (18,92 − 17,20) ÷ 17,20 × 100 (1)\n✓ = 10% (1)\n✓ The rand weakened (1)"
-        },
-        {
-          "id": "exchange-rates-tourism",
-          "type": "open",
-          "marks": 2,
-          "prompt": "Explain why a weak rand can be good for tourism in South Africa.",
-          "memo": "✓ Foreign currency buys more rand (1)\n✓ so holidays in South Africa are cheaper for foreign visitors, attracting more tourists (1)"
         }
       ]
     },
     {
-      "title": "QUESTION 5: Measurement: Packaging and Optimisation",
+      "title": "QUESTION 6: Measurement: Packaging and Optimisation",
       "questions": [
+        {
+          "id": "measurement-and-packaging-box-vol",
+          "type": "numeric",
+          "prompt": "Find the volume of a box 25 cm × 20 cm × 8 cm, in litres.",
+          "answer": 4,
+          "tolerance": 0,
+          "unit": "ℓ"
+        },
         {
           "id": "measurement-and-packaging-box-sa",
           "type": "numeric",
@@ -231,24 +298,17 @@
           "unit": "cm²"
         },
         {
-          "id": "measurement-and-packaging-pack",
-          "type": "numeric",
-          "prompt": "Boxes 12 cm × 8 cm × 5 cm are packed into a carton 48 cm × 32 cm × 30 cm (same orientation). How many fit?",
-          "answer": 96,
-          "tolerance": 0
-        },
-        {
           "id": "measurement-and-packaging-waste",
           "type": "truefalse",
           "prompt": "Cylinders packed in a rectangular box leave empty space between them.",
           "answer": true
         },
         {
-          "id": "measurement-and-packaging-label",
+          "id": "measurement-and-packaging-design",
           "type": "open",
-          "marks": 3,
-          "prompt": "A label wraps around a can of radius 3,5 cm and height 10 cm, with a 1 cm overlap. Calculate the length and area of the label. Use $\\pi = 3{,}142$.",
-          "memo": "✓ Circumference 2 × 3,142 × 3,5 = 21,99 cm (1)\n✓ Length with overlap 22,99 cm (1)\n✓ Area ≈ 229,9 cm² (1)"
+          "marks": 2,
+          "prompt": "Give TWO reasons why a company might choose a rectangular box rather than a cylinder for cereal.",
+          "memo": "Any two (1 each): packs without wasted space; stacks easily on shelves; large flat surfaces for advertising; easy to make from cardboard"
         },
         {
           "id": "measurement-and-packaging-convert",

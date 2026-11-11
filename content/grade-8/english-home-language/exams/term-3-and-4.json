@@ -5,7 +5,7 @@
   "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 3 and 4.",
-    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it."
   ],
   "sections": [
@@ -96,18 +96,52 @@
           "marks": 3,
           "prompt": "Describe Musa's character. Give TWO traits with evidence from the story.",
           "memo": "✓ Trait 1, e.g. hard-working (1) with evidence: washing cars in the cold every Saturday (½+½)\n✓ Trait 2, e.g. selfless/caring: spends savings on his sister's shoes and bread (1)"
-        },
-        {
-          "id": "short-stories-ending",
-          "type": "open",
-          "marks": 2,
-          "prompt": "Why do you think the writer ends the story with Zinhle ringing the bell?",
-          "memo": "✓ It shows joy and that the bicycle benefits the whole family, especially the sister he sacrificed for (1)\n✓ It completes the story neatly, linking back to the silver bell at the start / symbolises happiness (1)"
         }
       ]
     },
     {
-      "title": "QUESTION 2: Summary Writing",
+      "title": "QUESTION 2: The Novel and Drama",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "From the novel 'The Lighthouse Keeper's Granddaughter' (an original extract)",
+          "text": "Chapter 3\n\nThe storm arrived before supper, just as Grandpa Elias had said it would. Lerato pressed her nose to the cold window and watched the sea throw itself against the rocks like an angry dog on a chain.\n\n\"The lamp,\" Grandpa said suddenly, struggling to his feet. His knee had been stiff all week. \"The lamp must be lit.\"\n\n\"Let me go,\" said Lerato. \"I know how. I've watched you a hundred times.\"\n\nHe looked at her for a long moment. Three months ago, when her mother had sent her from Johannesburg to this lonely point of rock, she had refused even to climb the tower. Now she knew all one hundred and twelve steps by heart.\n\n\"The ships are counting on you,\" he said at last, and handed her the brass key.\n\nThe wind snatched at her jacket as she crossed the yard. Halfway up the stairs, the lights in the tower flickered and died. Lerato stood in the roaring dark, her heart hammering. Then she began to count the steps aloud."
+        }
+      ],
+      "questions": [
+        {
+          "id": "the-novel-and-drama-subplot",
+          "type": "mcq",
+          "prompt": "A smaller story that runs alongside the main story in a novel is called a:",
+          "options": [
+            "climax",
+            "subplot",
+            "theme",
+            "chapter"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "the-novel-and-drama-simile",
+          "type": "short",
+          "prompt": "Which figure of speech is used in 'the sea throw itself against the rocks like an angry dog on a chain'?",
+          "answers": [
+            "simile",
+            "a simile"
+          ]
+        },
+        {
+          "id": "the-novel-and-drama-key",
+          "type": "open",
+          "prompt": "In the novel extract, Grandpa hands Lerato 'the brass key'. What does this action suggest about how he now sees her?",
+          "marks": 2,
+          "memo": "✓ he trusts her / sees her as responsible or grown-up (1)\n✓ evidence: he hesitates ('looked at her for a long moment') but then gives her the important task, saying 'The ships are counting on you' (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Summary Writing",
       "instructions": "Read the text below, then answer the questions.",
       "context": [
         {
@@ -117,13 +151,6 @@
         }
       ],
       "questions": [
-        {
-          "id": "summary-writing-focus",
-          "type": "open",
-          "marks": 1,
-          "prompt": "What is meant by the 'focus' of a summary?",
-          "memo": "✓ The specific topic or aspect of the passage that you must summarise (1)"
-        },
         {
           "id": "summary-writing-omit",
           "type": "mcq",
@@ -208,7 +235,7 @@
       ]
     },
     {
-      "title": "QUESTION 3: Visual Texts: Advertisements and Cartoons",
+      "title": "QUESTION 4: Visual Texts: Advertisements and Cartoons",
       "instructions": "Read the text below, then answer the questions.",
       "context": [
         {
@@ -218,6 +245,15 @@
         }
       ],
       "questions": [
+        {
+          "id": "visual-texts-slogan",
+          "type": "short",
+          "prompt": "What is a short, catchy phrase linked to a brand called?",
+          "answers": [
+            "slogan",
+            "a slogan"
+          ]
+        },
         {
           "id": "visual-texts-target",
           "type": "mcq",
@@ -231,35 +267,33 @@
           "answer": 1
         },
         {
+          "id": "visual-texts-bandwagon",
+          "type": "mcq",
+          "prompt": "'Join the thousands of learners who already use our app!' Which technique is used?",
+          "options": [
+            "Celebrity endorsement",
+            "Bandwagon",
+            "Rhetorical question",
+            "Pun"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "visual-texts-imperative",
+          "type": "short",
+          "prompt": "Quote the imperative (command) in the ZING headline. (two words)",
+          "answers": [
+            "stay fresh",
+            "stay focused",
+            "stay fresh. stay focused."
+          ]
+        },
+        {
           "id": "visual-texts-small-print",
           "type": "open",
           "marks": 2,
           "prompt": "Why do you think the caffeine warning in the ZING advert is in tiny print?",
           "memo": "✓ The advertisers do not want people to notice it (1)\n✓ because it might stop people, especially the young learners shown, from buying the drink (1)"
-        },
-        {
-          "id": "visual-texts-techniques",
-          "type": "match",
-          "marks": 4,
-          "prompt": "Match each example to the persuasive technique.",
-          "pairs": [
-            {
-              "left": "Tired of pimples?",
-              "right": "Rhetorical question"
-            },
-            {
-              "left": "The best pizza in town!",
-              "right": "Superlative"
-            },
-            {
-              "left": "Buy now and save 50%!",
-              "right": "Special offer"
-            },
-            {
-              "left": "A rugby star holding the drink",
-              "right": "Celebrity endorsement"
-            }
-          ]
         },
         {
           "id": "visual-texts-thought",
@@ -270,7 +304,20 @@
       ]
     },
     {
-      "title": "QUESTION 4: Diaries, Dialogues and Reviews",
+      "title": "QUESTION 5: Diaries, Dialogues and Reviews",
+      "instructions": "Read the text below, then answer the questions.",
+      "context": [
+        {
+          "type": "passage",
+          "title": "Example diary entry (original)",
+          "text": "Friday, 7 June\n\nDear Diary\n\nI can't believe it. I forgot my lines in the middle of the school play! The whole hall went silent and all I could hear was my heart thumping. Then Kagiso whispered the next line from behind the curtain and somehow I carried on.\n\nAfterwards, Mom hugged me and said nobody even noticed. I'm not sure that's true, but I feel a bit better. Tomorrow I'm going to thank Kagiso properly. Maybe I'll even try out for next year's play."
+        },
+        {
+          "type": "passage",
+          "title": "Example dialogue (original)",
+          "text": "[Context: Neo and his older sister Palesa are in the kitchen. Neo wants to borrow her laptop.]\n\nNEO: (smiling sweetly) Palesa, you know you're my favourite sister?\nPALESA: I'm your only sister. What do you want?\nNEO: Just your laptop. For an hour. It's for a school project, I promise.\nPALESA: (folding her arms) Last time it was 'for a school project', I found a game on my desktop.\nNEO: That was research!\nPALESA: (laughing) Fine. One hour. And you wash the dishes tonight.\nNEO: Deal! (grabs the laptop and runs off)"
+        }
+      ],
       "questions": [
         {
           "id": "diaries-dialogues-and-reviews-diary-person",
@@ -322,11 +369,18 @@
           "answer": 1
         },
         {
-          "id": "diaries-dialogues-and-reviews-write-dialogue",
+          "id": "diaries-dialogues-and-reviews-diary-feelings",
           "type": "open",
-          "marks": 4,
-          "prompt": "Write a short dialogue (4 to 6 lines) between a learner and a teacher about a late assignment.",
-          "memo": "✓ Context given (1)\n✓ Correct format: names, colons, no inverted commas (1)\n✓ At least one stage direction in brackets (1)\n✓ Natural, suitable register for each speaker (1)"
+          "marks": 2,
+          "prompt": "In the example diary entry, how do the writer's feelings change from the beginning to the end?",
+          "memo": "✓ At first embarrassed/panicked about forgetting lines (1)\n✓ At the end relieved, grateful and even hopeful about next year (1)"
+        },
+        {
+          "id": "diaries-dialogues-and-reviews-palesa",
+          "type": "open",
+          "marks": 2,
+          "prompt": "What does the dialogue reveal about Palesa's character?",
+          "memo": "✓ She is suspicious / sensible (reminds Neo of the game) (1)\n✓ but kind and humorous, as she agrees and laughs (1)"
         },
         {
           "id": "diaries-dialogues-and-reviews-review-sections",

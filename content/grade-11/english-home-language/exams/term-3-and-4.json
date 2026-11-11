@@ -1,11 +1,11 @@
 {
   "id": "term-3-and-4",
   "title": "Term 3 and 4 Examination",
-  "durationMinutes": 70,
-  "totalMarks": 40,
+  "durationMinutes": 90,
+  "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 3 and 4.",
-    "This question paper consists of 3 questions. Answer ALL the questions.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it."
   ],
   "sections": [
@@ -130,6 +130,12 @@
           ]
         },
         {
+          "id": "essay-writing-stance",
+          "type": "truefalse",
+          "prompt": "An argumentative essay should state a clear stance in the introduction.",
+          "answer": true
+        },
+        {
           "id": "essay-writing-counter",
           "type": "truefalse",
           "prompt": "Mentioning a counter-argument always weakens an argumentative essay.",
@@ -167,13 +173,6 @@
           "memo": "✓✓ e.g. 'The new legislation is detrimental to low-income households.' (precise, formal vocabulary) (2)"
         },
         {
-          "id": "essay-writing-reflect",
-          "type": "open",
-          "marks": 2,
-          "prompt": "Why should a reflective essay not simply tell a story?",
-          "memo": "✓ The focus is on insight/meaning, not events (1)\n✓ The writer must show what was learnt or how they changed (1)"
-        },
-        {
           "id": "essay-writing-intro",
           "type": "open",
           "marks": 3,
@@ -183,7 +182,89 @@
       ]
     },
     {
-      "title": "QUESTION 3: Transactional Writing: Applications, Reports and Speeches",
+      "title": "QUESTION 3: Writing the Literary Essay",
+      "questions": [
+        {
+          "id": "literary-essay-writing-to-what-extent",
+          "type": "mcq",
+          "prompt": "A topic asks 'To what extent do you agree?' The best answer usually:",
+          "options": [
+            "agrees completely to avoid confusion",
+            "gives a qualified position, weighing evidence on both sides",
+            "retells the key events in order",
+            "lists every quotation you know"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "literary-essay-writing-absolute",
+          "type": "mcq",
+          "prompt": "In the topic 'Lady Macbeth is entirely responsible for Duncan's murder', which word is the key to a nuanced answer?",
+          "options": [
+            "Lady",
+            "entirely",
+            "Duncan's",
+            "murder"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "literary-essay-writing-counter",
+          "type": "short",
+          "prompt": "What do we call an opposing view that you raise and then answer in your essay?",
+          "answers": [
+            "counter-argument",
+            "counterargument",
+            "a counter-argument",
+            "counter argument",
+            "counterpoint",
+            "counter-point"
+          ]
+        },
+        {
+          "id": "literary-essay-writing-metaphor",
+          "type": "short",
+          "prompt": "Which figure of speech is 'O, full of scorpions is my mind'?",
+          "answers": [
+            "metaphor",
+            "a metaphor"
+          ]
+        },
+        {
+          "id": "literary-essay-writing-match-levels",
+          "type": "match",
+          "prompt": "Match each essay feature with the quality it shows.",
+          "pairs": [
+            {
+              "left": "Retelling events in order",
+              "right": "Weak: no argument"
+            },
+            {
+              "left": "Raising and answering the other side",
+              "right": "Strong: balanced thinking"
+            },
+            {
+              "left": "Explaining the effect of an image",
+              "right": "Strong: language analysis"
+            },
+            {
+              "left": "A quotation with no explanation",
+              "right": "Adequate at best: evidence not used"
+            }
+          ],
+          "marks": 4
+        },
+        {
+          "id": "literary-essay-writing-thesis",
+          "type": "open",
+          "prompt": "Write a nuanced thesis statement for this topic: 'Ambition is the only cause of Macbeth's downfall.' To what extent do you agree?",
+          "marks": 3,
+          "memo": "✓ responds to 'only' / takes a qualified position (1)\n✓ names ambition and at least one other cause (e.g. the witches, Lady Macbeth, his imagination, his fear) (1)\n✓ one clear, arguable sentence that could guide the essay (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Transactional Writing: Applications, Reports and Speeches",
       "questions": [
         {
           "id": "transactional-writing-length",
@@ -246,11 +327,11 @@
           ]
         },
         {
-          "id": "transactional-writing-application",
+          "id": "transactional-writing-lead",
           "type": "open",
           "marks": 3,
-          "prompt": "Name THREE things the body of a letter of application should include.",
-          "memo": "Any three: ✓ reference to the advertisement ✓ the position applied for ✓ relevant skills/experience ✓ why you are suitable ✓ mention of the attached CV ✓ request for an interview (3)"
+          "prompt": "Write a lead paragraph for a school newspaper article about a learner who won a national science competition.",
+          "memo": "✓ Who and what (1)\n✓ When and where (1)\n✓ Concise, formal, factual style (1)"
         },
         {
           "id": "transactional-writing-speech",

@@ -1,0 +1,80 @@
+{
+  "id": "preservation-of-metals",
+  "title": "Processing: Preservation of Metals",
+  "term": 4,
+  "summary": "Ferrous and non-ferrous metals and alloys, how and why iron rusts, ways to preserve metals (painting, oiling, plastic and powder coating, galvanising, electroplating, alloying), heat treatment, and the impact on people and the environment.",
+  "notes": [
+    { "type": "heading", "text": "Metals and alloys" },
+    { "type": "paragraph", "text": "Metals are strong, tough and good conductors of heat and electricity, so we use them for bridges, cars, gates, roofs, wires and tools. Engineers sort metals into three groups." },
+    { "type": "table", "headers": ["Group", "Meaning", "Examples and uses"], "rows": [
+      ["Ferrous metals", "Contain **iron**. Most are magnetic and they **rust**.", "Mild steel (gates, burglar bars, car bodies), cast iron (pots, engine blocks), high-carbon steel (tools, springs)"],
+      ["Non-ferrous metals", "Contain **no iron**. They do not rust, although some tarnish or corrode slowly.", "Aluminium (window frames, cans), copper (electrical wire, pipes), zinc (coating steel), tin, lead, gold"],
+      ["Alloys", "A **mixture of a metal with other elements** to improve its properties.", "Stainless steel (iron, chromium and nickel: sinks, cutlery), brass (copper and zinc: taps, locks), bronze (copper and tin: statues, bearings)"]
+    ] },
+    { "type": "definition", "term": "Preservation", "text": "Treating or protecting a material so that it lasts longer and keeps its strength and appearance." },
+    { "type": "heading", "text": "Why iron and steel rust" },
+    { "type": "paragraph", "text": "**Rusting** is a slow chemical reaction (a kind of **corrosion**). Iron reacts with **oxygen** from the air and **water** to form **iron oxide**, the flaky reddish-brown substance we call rust.\n\niron + oxygen + water → hydrated iron oxide (rust)\n\nRust is weak and crumbly. It flakes off, exposing fresh iron underneath, so the metal keeps getting thinner until it breaks." },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 230' font-family='sans-serif' font-size='13'><rect width='420' height='230' fill='white'/><polygon points='210,20 330,200 90,200' fill='#fbe6d6' stroke='#b4541a' stroke-width='2'/><text x='210' y='150' text-anchor='middle' font-weight='bold' fill='#7a3510' font-size='16'>RUST</text><text x='210' y='170' text-anchor='middle' fill='#1f2933' font-size='12'>needs all three</text><circle cx='210' cy='20' r='6' fill='#1f2933'/><text x='222' y='18' fill='#1f2933'>Iron (or steel)</text><circle cx='90' cy='200' r='6' fill='#1f2933'/><text x='20' y='222' fill='#1f2933'>Oxygen (in air)</text><circle cx='330' cy='200' r='6' fill='#1f2933'/><text x='300' y='222' fill='#1f2933'>Water (moisture)</text><text x='12' y='70' fill='#1f2933' font-size='12'>Remove any one</text><text x='12' y='86' fill='#1f2933' font-size='12'>and rusting stops.</text><text x='300' y='70' fill='#1f2933' font-size='12'>Salt and acid</text><text x='300' y='86' fill='#1f2933' font-size='12'>speed it up.</text></svg>", "caption": "The rust triangle: iron rusts only when it has both oxygen and water. Remove either one and rusting stops. Salt water and acid rain make it happen faster." },
+    { "type": "list", "items": [
+      "Rust forms **faster** near the sea (salty air), in humid places, where there is acid rain, and where water collects in scratches and joints.",
+      "Rust forms **slower** in dry places, such as deserts and indoors.",
+      "Non-ferrous metals do not rust. Aluminium forms a thin oxide layer that sticks to it and protects it. Copper slowly turns green (a **patina**), and silver **tarnishes** black."
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Only **ferrous** metals (those containing iron) **rust**. Other metals may **corrode** or **tarnish**, which is usually slower and less damaging." },
+    { "type": "heading", "text": "Ways to preserve metals" },
+    { "type": "paragraph", "text": "Almost every method works the same way: it puts a **barrier** between the iron and the oxygen and water. Some coatings, such as zinc, also **sacrifice** themselves to protect the steel." },
+    { "type": "table", "headers": ["Method", "How it works", "Examples"], "rows": [
+      ["Painting", "A primer (often red oxide) and top coats seal the surface from air and water. Must be repainted when scratched or peeling.", "Gates, bridges, ships, steel roofs"],
+      ["Oiling and greasing", "A thin film of oil keeps water out. Good for moving parts, but it wipes off and attracts dirt.", "Bicycle chains, tools, machine parts, hinges"],
+      ["Plastic coating (dipping)", "The hot metal is dipped in powdered plastic, which melts into a thick, soft layer.", "Dish racks, wire fencing, tool handles"],
+      ["Powder coating", "Dry paint powder is sprayed on with static electricity and then baked in an oven to form a hard, even skin.", "Outdoor furniture, window frames, fridges, bicycle frames"],
+      ["Galvanising", "Steel is dipped in molten **zinc** (about 450 °C). The zinc coats it and, even if scratched, the zinc corrodes **instead of** the steel.", "Corrugated iron roofs, fence posts, palisade fencing, buckets, electricity pylons"],
+      ["Electroplating", "Electricity is used to deposit a thin layer of another metal, such as **chromium**, **nickel**, **tin** or **silver**, onto the object.", "Chrome taps and car parts, tin cans (tin-plated steel), silver-plated cutlery"],
+      ["Enamelling", "A layer of glass-like coating is melted onto the metal.", "Stoves, baths, enamel mugs and signs"],
+      ["Alloying", "Mixing iron with chromium and nickel makes **stainless steel**, which does not rust at all.", "Sinks, cutlery, hospital equipment"]
+    ] },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 250' font-family='sans-serif' font-size='12'><rect width='420' height='250' fill='white'/><rect x='150' y='12' width='120' height='30' rx='4' fill='#f7eecb' stroke='#1f2933' stroke-width='1.5'/><text x='210' y='32' text-anchor='middle' fill='#1f2933' font-size='13'>Battery (cell)</text><text x='138' y='32' fill='#1f2933' font-size='14' font-weight='bold'>+</text><text x='274' y='32' fill='#1f2933' font-size='14' font-weight='bold'>−</text><polyline points='160,42 160,60 110,60 110,95' fill='none' stroke='#1f2933' stroke-width='1.8'/><polyline points='260,42 260,60 300,60 300,95' fill='none' stroke='#1f2933' stroke-width='1.8'/><path d='M60,90 L60,220 L360,220 L360,90' fill='none' stroke='#1f2933' stroke-width='2'/><rect x='62' y='115' width='296' height='103' fill='#dbe8f6'/><rect x='98' y='95' width='24' height='100' fill='#b87333' stroke='#1f2933'/><rect x='282' y='95' width='36' height='80' rx='6' fill='#9aa5b1' stroke='#1f2933'/><text x='110' y='240' text-anchor='middle' fill='#1f2933'>Plating metal (+)</text><text x='300' y='240' text-anchor='middle' fill='#1f2933'>Object to plate (−)</text><text x='210' y='160' text-anchor='middle' fill='#1f2933'>Solution containing</text><text x='210' y='176' text-anchor='middle' fill='#1f2933'>the plating metal</text><line x1='140' y1='140' x2='265' y2='140' stroke='#1f2933' stroke-width='1.3' stroke-dasharray='5 3'/><polygon points='272,140 262,136 262,144' fill='#1f2933'/><text x='205' y='132' text-anchor='middle' fill='#1f2933' font-size='11'>metal moves across</text></svg>", "caption": "Electroplating: the object to be plated is connected to the negative terminal and a bar of the plating metal to the positive terminal. Electricity carries particles of the plating metal through the solution, and they form a thin layer on the object." },
+    { "type": "example", "title": "Worked example 1: galvanising or painting?", "problem": "A farmer needs fence posts that will stand outside for 20 years and will be scratched by animals and wire. Should the steel posts be painted or galvanised? Explain.", "steps": ["The posts will be outside in rain, so they need protection from water and oxygen.", "Paint only works while the layer is unbroken. Scratches let water reach the steel, and the posts would need repainting often.", "A galvanised zinc layer is thicker and tougher, and where it is scratched the zinc corrodes instead of the steel (sacrificial protection)."], "answer": "Galvanise them: the zinc keeps protecting the steel even when it is scratched, and it needs no maintenance for many years." },
+    { "type": "example", "title": "Worked example 2: choosing a method", "problem": "Choose a suitable preservation method for (a) a bicycle chain, (b) a kitchen tap and (c) a steel garden chair.", "steps": ["(a) The chain moves and rubs, so a coating would crack. Oil or grease protects it and lubricates it.", "(b) A tap must look shiny and stay clean, so it is chrome **electroplated**.", "(c) Outdoor furniture should be tough and attractive, so it is **powder coated** (or painted)."], "answer": "(a) oiling (b) electroplating (c) powder coating" },
+    { "type": "heading", "text": "Heat treatment of steel" },
+    { "type": "paragraph", "text": "Heating and cooling steel in a controlled way changes its **properties**. This does not stop rust, but it makes the metal suitable for its job and so makes products last longer." },
+    { "type": "table", "headers": ["Process", "What is done", "Result and use"], "rows": [
+      ["Hardening", "Heat the steel until it glows cherry-red, then cool it **quickly** (quench) in water or oil.", "Very hard but brittle. Used for cutting edges."],
+      ["Tempering", "Reheat hardened steel to a lower temperature, then let it cool.", "Less brittle and tougher, while still fairly hard. Used for chisels, screwdrivers, springs and knives."],
+      ["Annealing", "Heat the metal, then cool it **very slowly** (e.g. in the furnace or in sand).", "Soft and easy to bend, cut or shape. Used before working sheet metal or wire."]
+    ] },
+    { "type": "callout", "label": "Memory aid", "text": "**H**ardening = **h**ot then **h**urried cooling. **A**nnealing = **a**s slow as possible. **T**empering **t**akes away brittleness." },
+    { "type": "heading", "text": "Impact on people and the environment" },
+    { "type": "list", "items": [
+      "**Rust costs money**: rusted cars, bridges, pipes and roofs must be repaired or replaced, and rusted structures can collapse and injure people.",
+      "**Mining and processing metals** uses a lot of energy, damages land and produces pollution, so making metal products last longer is good for the environment.",
+      "Galvanising and electroplating use **toxic chemicals**; factories must treat their waste water and protect workers.",
+      "Many paints contain **solvents** that harm health; work in a ventilated space and wear a mask.",
+      "Metals are easy to **recycle**. Scrap steel and aluminium can be melted and reused many times, which saves energy and resources."
+    ] },
+    { "type": "callout", "label": "Exam tip", "text": "When asked to choose a preservation method, always link it to the **product's use**: Is it outside? Does it move? Will it be scratched? Must it look good or be safe for food?" }
+  ],
+  "questions": [
+    { "id": "ferrous", "type": "mcq", "prompt": "Which of these metals is ferrous?", "options": ["Copper", "Aluminium", "Mild steel", "Brass"], "answer": 2, "explanation": "Ferrous metals contain iron. Steel is mostly iron; copper, aluminium and brass contain no iron." },
+    { "id": "rust-needs", "type": "mcq", "prompt": "Iron rusts when it is in contact with:", "options": ["oxygen only", "water only", "oxygen and water", "heat and light"], "answer": 2, "explanation": "Rusting needs both oxygen and water. Remove either one and it stops." },
+    { "id": "rust-name", "type": "short", "prompt": "What is the chemical name for rust?", "answers": ["iron oxide", "hydrated iron oxide", "iron(III) oxide"], "explanation": "Rust is hydrated iron oxide, formed when iron reacts with oxygen and water." },
+    { "id": "aluminium", "type": "truefalse", "prompt": "Aluminium window frames rust if they are not painted.", "answer": false, "explanation": "Aluminium is non-ferrous, so it cannot rust. It forms a thin protective oxide layer." },
+    { "id": "galvanise-metal", "type": "short", "prompt": "Which metal is used to galvanise steel?", "answers": ["zinc"], "explanation": "Galvanising coats steel with zinc, which protects it even when scratched." },
+    { "id": "match-methods", "type": "match", "prompt": "Match each product with the most suitable preservation method.", "pairs": [
+      { "left": "Bicycle chain", "right": "Oiling" },
+      { "left": "Corrugated iron roof", "right": "Galvanising" },
+      { "left": "Chrome car bumper", "right": "Electroplating" },
+      { "left": "Kitchen sink", "right": "Using stainless steel" }
+    ], "marks": 4 },
+    { "id": "heat-treatment", "type": "match", "prompt": "Match each heat treatment with what it does.", "pairs": [
+      { "left": "Hardening", "right": "Heat, then cool quickly; becomes hard but brittle" },
+      { "left": "Tempering", "right": "Reheat hardened steel; becomes tougher and less brittle" },
+      { "left": "Annealing", "right": "Heat, then cool very slowly; becomes soft and workable" }
+    ], "marks": 3 },
+    { "id": "salt", "type": "mcq", "prompt": "Why do steel gates near the sea rust faster than those inland?", "options": ["The sun is stronger at the coast", "Salt in the moist air speeds up rusting", "There is less oxygen at the coast", "Sea air is colder"], "answer": 1 },
+    { "id": "alloy", "type": "mcq", "prompt": "Stainless steel does not rust because:", "options": ["it is painted at the factory", "it is a non-ferrous metal", "it is an alloy of iron with chromium and nickel", "it is galvanised with zinc"], "answer": 2 },
+    { "id": "gate", "type": "open", "prompt": "A steel security gate at a school has started to rust. Describe the steps you would follow to restore it and protect it, and give one reason why the work is worth doing.", "marks": 5, "memo": "✓ remove loose rust with a wire brush or sandpaper (1)\n✓ clean off dust and grease (1)\n✓ apply a rust-resistant primer such as red oxide (1)\n✓ apply top coats of paint (or have it powder coated/galvanised) (1)\n✓ reason: e.g. rust weakens the gate so it could break or become unsafe; repairing is cheaper than replacing; saves resources (1)" },
+    { "id": "scratch", "type": "open", "prompt": "Explain why a scratch in the paint on a steel car is a problem, but a scratch on a galvanised bucket is not.", "marks": 4, "memo": "✓ paint only works as a barrier (1)\n✓ a scratch lets water and oxygen reach the steel, so it rusts and the rust spreads under the paint (1)\n✓ on galvanised steel the zinc corrodes instead of the steel / sacrificial protection (1)\n✓ so the exposed steel is still protected (1)" },
+    { "id": "environment", "type": "open", "prompt": "Give TWO ways in which preserving metals helps the environment, and ONE way in which a preservation process can harm it.", "marks": 3, "memo": "✓ products last longer, so less metal has to be mined and processed (1)\n✓ saves energy / less waste in landfills / fewer replacements (1)\n✓ harm: e.g. toxic chemicals from electroplating or galvanising pollute water; paint solvents pollute the air (1)" }
+  ]
+}

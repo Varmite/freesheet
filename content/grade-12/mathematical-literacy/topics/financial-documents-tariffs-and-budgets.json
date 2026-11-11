@@ -1,0 +1,69 @@
+{
+  "id": "financial-documents-tariffs-and-budgets",
+  "title": "Finance: Financial Documents, Tariffs and Budgets",
+  "term": 1,
+  "summary": "Reading municipal accounts and statements, checking calculations on financial documents, comparing tariff options, and drawing up and analysing household budgets and income-and-expenditure statements.",
+  "notes": [
+    { "type": "heading", "text": "Financial documents" },
+    { "type": "paragraph", "text": "In the exam you will be given real-looking documents, such as a municipal account, bank statement, payslip, till slip, invoice or cellphone bill, and asked to **read values**, **check calculations** and **make decisions**. Always identify what each column means before you calculate." },
+    { "type": "table", "caption": "Extract from a municipal account for March", "headers": ["Item", "Details", "Amount (R)"], "rows": [
+      ["Balance brought forward", "From February", "1 240,50"],
+      ["Payment received", "Thank you", "−1 240,50"],
+      ["Property rates", "Valuation R960 000 × 0,0105 ÷ 12", "A"],
+      ["Electricity", "450 kWh (see tariff)", "B"],
+      ["Water", "18 kℓ", "512,40"],
+      ["Refuse removal", "Fixed", "235,00"],
+      ["Sewerage", "Fixed", "310,00"],
+      ["Total due", "", "C"]
+    ] },
+    { "type": "table", "caption": "Electricity tariff (VAT included)", "headers": ["Block", "Units", "Cost per kWh"], "rows": [
+      ["1", "0 to 350 kWh", "R2,74"],
+      ["2", "Above 350 kWh", "R3,21"]
+    ] },
+    { "type": "example", "title": "Worked example 1: completing the account", "problem": "Calculate the missing values A, B and C on the municipal account.", "steps": ["A (rates): R960 000 × 0,0105 = R10 080 per year; ÷ 12 = R840,00 per month", "B (electricity): 350 × R2,74 = R959,00; 100 × R3,21 = R321,00; total R1 280,00", "C (total due): the balance and payment cancel out (R0,00)", "C = R840,00 + R1 280,00 + R512,40 + R235,00 + R310,00"], "answer": "A = R840,00; B = R1 280,00; C = R3 177,40" },
+    { "type": "callout", "label": "Exam tip", "text": "Property rates are usually given as a rate **per rand of valuation per year** (e.g. 0,0105 means about one cent per rand). Divide by 12 for the monthly amount. Some municipalities first subtract a **rebate** (e.g. the first R200 000 of the value) before calculating rates." },
+    { "type": "heading", "text": "Comparing tariff options" },
+    { "type": "paragraph", "text": "To decide between options (prepaid vs contract, two banks' fees, two delivery companies), you can:\n• work out the cost of each for a **given usage**;\n• draw up a **table** of costs for different usage values;\n• write each as an **equation** and solve them simultaneously to find where they are equal; or\n• draw both **graphs** and read off the point of intersection." },
+    { "type": "example", "title": "Worked example 2: two cellphone options", "problem": "Option A: R199 per month including 2 GB of data, then R89 per extra GB. Option B: R329 per month for 5 GB, then R59 per extra GB. Which is cheaper for 4 GB, and which for 6 GB?", "steps": ["4 GB, A: R199 + 2 × R89 = R377. B: R329 (within its 5 GB).", "6 GB, A: R199 + 4 × R89 = R555. B: R329 + 1 × R59 = R388."], "answer": "Option B is cheaper for both 4 GB (R329 vs R377) and 6 GB (R388 vs R555). Option A is cheaper only for low usage (under about 3,5 GB)." },
+    { "type": "heading", "text": "Budgets and income-and-expenditure statements" },
+    { "type": "definition", "term": "Budget", "text": "A **plan** of expected income and expenditure for a future period (e.g. next month)." },
+    { "type": "definition", "term": "Income-and-expenditure statement", "text": "A **record** of the actual income and expenditure for a period that has already happened." },
+    { "type": "list", "items": [
+      "**Fixed expenses** stay the same each month: rent or bond, insurance, school fees, car instalment.",
+      "**Variable expenses** change: groceries, electricity, transport, entertainment.",
+      "**Occasional expenses** happen now and then: school uniforms, car service, gifts. Budget for them by saving a little each month.",
+      "**Surplus**: income > expenditure. **Deficit**: expenditure > income."
+    ] },
+    { "type": "table", "caption": "The Dlamini household's budget and actual spending for July", "headers": ["Item", "Budget (R)", "Actual (R)", "Difference (R)"], "rows": [
+      ["Net income", "28 400", "28 400", "0"],
+      ["Bond repayment", "8 950", "8 950", "0"],
+      ["Groceries", "6 200", "7 015", "−815"],
+      ["Municipal account", "3 200", "3 177", "+23"],
+      ["Transport (petrol)", "3 600", "4 110", "−510"],
+      ["Insurance and medical aid", "3 850", "3 850", "0"],
+      ["Cellphones and data", "900", "1 044", "−144"],
+      ["Savings", "1 700", "0", "+1 700"],
+      ["Total expenditure", "28 400", "28 146", "+254"]
+    ] },
+    { "type": "example", "title": "Worked example 3: analysing a budget", "problem": "(a) Did the Dlaminis have a surplus or deficit in July? (b) What percentage over budget were they on groceries? (c) Comment on their savings.", "steps": ["(a) Income R28 400 − actual spending R28 146 = R254, a small surplus.", "(b) R815 ÷ R6 200 × 100% ≈ 13,1% over budget.", "(c) They saved nothing although they planned R1 700. The overspending on groceries, petrol and data used up the savings."], "answer": "(a) Surplus of R254 (b) about 13,1% (c) Overspending on variable expenses meant the planned savings were not made; they should cut back or adjust the budget." },
+    { "type": "callout", "label": "Inflation and budgets", "text": "To plan next year's budget, increase each expense by the expected **inflation rate** (or the item's own rate, e.g. electricity often rises faster). Next year's cost = this year's cost × (1 + inflation rate)." }
+  ],
+  "questions": [
+    { "id": "budget-vs-statement", "type": "mcq", "prompt": "Which document records what was actually earned and spent last month?", "options": ["A budget", "An income-and-expenditure statement", "A quotation", "A tariff table"], "answer": 1 },
+    { "id": "fixed-expense", "type": "mcq", "prompt": "Which of these is usually a fixed monthly expense?", "options": ["Groceries", "Petrol", "Bond repayment", "Electricity"], "answer": 2 },
+    { "id": "deficit", "type": "truefalse", "prompt": "A household has a deficit when its expenditure is greater than its income.", "answer": true },
+    { "id": "rates", "type": "numeric", "prompt": "A property is valued at R1 450 000. Rates are charged at 0,0098 per rand per year. Calculate the monthly rates. Give your answer correct to the nearest cent.", "answer": 1184.17, "tolerance": 0.01, "unit": "rand" },
+    { "id": "rates-rebate", "type": "numeric", "prompt": "The same municipality first subtracts a rebate of R250 000 from the valuation. Calculate the new monthly rates on the R1 450 000 property (0,0098 per rand per year), correct to the nearest cent.", "answer": 980, "tolerance": 0.01, "unit": "rand" },
+    { "id": "electricity", "type": "numeric", "prompt": "Use the electricity tariff in the notes (R2,74 per kWh for the first 350 kWh, then R3,21). Calculate the cost of 520 kWh.", "answer": 1504.7, "tolerance": 0.005, "unit": "rand" },
+    { "id": "inflation", "type": "numeric", "prompt": "A family spends R6 800 a month on groceries. Food inflation is expected to be 6,5%. How much should they budget per month for groceries next year?", "answer": 7242, "tolerance": 0, "unit": "rand" },
+    { "id": "petrol-percent", "type": "numeric", "prompt": "A household budgeted R3 600 for petrol but spent R4 110. By what percentage did they overspend? Round to one decimal place.", "answer": 14.2, "tolerance": 0.05, "unit": "%" },
+    { "id": "match", "type": "match", "prompt": "Match each term to its meaning.", "pairs": [
+      { "left": "Surplus", "right": "Income is more than expenditure" },
+      { "left": "Occasional expense", "right": "A cost that comes up now and then" },
+      { "left": "Sliding-scale tariff", "right": "Each block of units has a different rate" },
+      { "left": "Balance brought forward", "right": "Amount owed from the previous account" }
+    ], "marks": 4 },
+    { "id": "advice", "type": "open", "prompt": "The Dlaminis want to make sure they save R1 700 next month. Use the budget table to suggest THREE realistic changes, and justify each with figures.", "marks": 6, "memo": "Any three, each with a figure (2 marks each):\n✓ groceries: overspent by R815; buy in bulk, compare prices, plan meals to stay within R6 200\n✓ transport: overspent by R510; lift club, combine trips or use public transport\n✓ cellphones: overspent by R144; buy data bundles instead of out-of-bundle data, use Wi-Fi\n✓ pay savings first by debit order on payday so the R1 700 is saved before spending\n✓ adjust the budget to realistic amounts and cut a non-essential item" },
+    { "id": "check-bill", "type": "open", "prompt": "Mr Naidoo's electricity account shows 410 kWh and charges R1 199,60. Use the tariff in the notes to check whether he was charged correctly. Show your working.", "marks": 4, "memo": "✓ 350 × R2,74 = R959,00 (1)\n✓ 60 × R3,21 = R192,60 (1)\n✓ correct total: R1 151,60 (1)\n✓ he was overcharged by R48,00 (1)" }
+  ]
+}

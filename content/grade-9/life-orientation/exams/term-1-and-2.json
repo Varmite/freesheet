@@ -5,13 +5,25 @@
   "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 1 and 2.",
-    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it."
   ],
   "sections": [
     {
       "title": "QUESTION 1: Goal Setting and Decision-Making",
       "questions": [
+        {
+          "id": "goal-setting-and-decision-making-long-term",
+          "type": "mcq",
+          "prompt": "'Become a qualified engineer' is an example of a…",
+          "options": [
+            "short-term goal",
+            "medium-term goal",
+            "long-term goal",
+            "value"
+          ],
+          "answer": 2
+        },
         {
           "id": "goal-setting-and-decision-making-smart-m",
           "type": "short",
@@ -47,13 +59,6 @@
           ]
         },
         {
-          "id": "goal-setting-and-decision-making-smart-rewrite",
-          "type": "open",
-          "marks": 3,
-          "prompt": "Rewrite the goal 'I want better marks' as a SMART goal.",
-          "memo": "✓ Specific subject and target mark (1)\n✓ How it will be measured / achieved (study plan) (1)\n✓ A time limit (1)"
-        },
-        {
           "id": "goal-setting-and-decision-making-obstacles",
           "type": "open",
           "marks": 2,
@@ -66,26 +71,12 @@
           "marks": 2,
           "prompt": "What are values and how do they help in decision-making?",
           "memo": "✓ Beliefs and principles that are important to you (1)\n✓ They guide you to choose options that match what you believe is right (1)"
-        },
-        {
-          "id": "goal-setting-and-decision-making-consequences",
-          "type": "open",
-          "marks": 2,
-          "prompt": "Why is it important to consider consequences before making a decision?",
-          "memo": "✓ Decisions have effects on you and others (1)\n✓ Thinking ahead helps you avoid harmful outcomes and choose the best option (1)"
         }
       ]
     },
     {
       "title": "QUESTION 2: Coping with Stress and Emotions",
       "questions": [
-        {
-          "id": "coping-with-stress-stress-def",
-          "type": "open",
-          "marks": 2,
-          "prompt": "What is stress?",
-          "memo": "✓ The body's and mind's reaction (1)\n✓ to pressure or a challenging situation (1)"
-        },
         {
           "id": "coping-with-stress-healthy",
           "type": "mcq",
@@ -104,14 +95,6 @@
           "prompt": "What is the ability to bounce back after difficult experiences called?",
           "answers": [
             "resilience"
-          ]
-        },
-        {
-          "id": "coping-with-stress-sadag",
-          "type": "short",
-          "prompt": "What does SADAG stand for?",
-          "answers": [
-            "south african depression and anxiety group"
           ]
         },
         {
@@ -201,35 +184,18 @@
           "answer": false
         },
         {
-          "id": "sexual-health-and-gender-based-violence-abuse-types",
-          "type": "match",
-          "marks": 4,
-          "prompt": "Match each example to the type of abuse.",
-          "pairs": [
-            {
-              "left": "Taking a partner's wages",
-              "right": "Economic"
-            },
-            {
-              "left": "Constant insults and threats",
-              "right": "Emotional"
-            },
-            {
-              "left": "Sharing private images without consent",
-              "right": "Digital"
-            },
-            {
-              "left": "Slapping",
-              "right": "Physical"
-            }
-          ]
-        },
-        {
           "id": "sexual-health-and-gender-based-violence-stereotype",
           "type": "open",
           "marks": 2,
           "prompt": "Give an example of a gender stereotype and explain how it can be harmful.",
           "memo": "✓ Example, e.g. 'boys don't cry' (1)\n✓ Harm, e.g. boys hide emotions and may turn to anger or violence (1)"
+        },
+        {
+          "id": "sexual-health-and-gender-based-violence-help",
+          "type": "open",
+          "marks": 2,
+          "prompt": "Name TWO places where a survivor of GBV can get help.",
+          "memo": "Any two (1 each): GBV Command Centre; police; Childline; Thuthuzela Care Centre; trusted adult; counsellor/social worker"
         }
       ]
     },
@@ -300,13 +266,69 @@
               "right": "Risk factor (supervision)"
             }
           ]
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Common Diseases and Healthy Living",
+      "questions": [
+        {
+          "id": "common-diseases-and-healthy-living-communicable",
+          "type": "mcq",
+          "prompt": "Which of these diseases is communicable?",
+          "options": [
+            "Diabetes",
+            "Tuberculosis",
+            "Epilepsy",
+            "Hypertension"
+          ],
+          "answer": 1
         },
         {
-          "id": "risky-behaviour-cyclist",
+          "id": "common-diseases-and-healthy-living-epilepsy-myth",
+          "type": "truefalse",
+          "prompt": "You can catch epilepsy by touching someone during a seizure.",
+          "answer": false,
+          "explanation": "Epilepsy is a brain condition. It is not contagious."
+        },
+        {
+          "id": "common-diseases-and-healthy-living-insulin",
+          "type": "short",
+          "prompt": "Diabetes is linked to the body not using which hormone properly?",
+          "answers": [
+            "insulin"
+          ]
+        },
+        {
+          "id": "common-diseases-and-healthy-living-match-disorders",
+          "type": "match",
+          "prompt": "Match each eating disorder or disease to its description.",
+          "pairs": [
+            {
+              "left": "Anorexia nervosa",
+              "right": "Starving oneself from a fear of gaining weight"
+            },
+            {
+              "left": "Bulimia nervosa",
+              "right": "Binge eating followed by purging"
+            },
+            {
+              "left": "Obesity",
+              "right": "Excess body weight from taking in more energy than is used"
+            },
+            {
+              "left": "Type 2 diabetes",
+              "right": "Blood sugar stays too high"
+            }
+          ],
+          "marks": 4
+        },
+        {
+          "id": "common-diseases-and-healthy-living-friend",
           "type": "open",
-          "marks": 2,
-          "prompt": "Give TWO safety rules for cyclists.",
-          "memo": "Any two (1 each): helmet; lights and reflectors; ride on the left with traffic; signal; obey road signs"
+          "prompt": "You notice that a friend skips lunch every day, has lost a lot of weight and says she is 'too fat'. Explain what this might be and describe how you could help her.",
+          "marks": 4,
+          "memo": "✓ identifies possible anorexia / an eating disorder (1)\n✓ talk to her privately and kindly, without blaming or judging (1)\n✓ encourage her to speak to a trusted adult, school nurse, counsellor or clinic / SADAG (1)\n✓ tell a trusted adult yourself if she will not, because it can be life-threatening; avoid comments about weight (1)"
         }
       ]
     }

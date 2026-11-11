@@ -1,11 +1,11 @@
 {
   "id": "term-3-and-4",
   "title": "Term 3 and 4 Examination",
-  "durationMinutes": 50,
-  "totalMarks": 40,
+  "durationMinutes": 65,
+  "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 3 and 4.",
-    "This question paper consists of 3 questions. Answer ALL the questions.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it.",
     "Show your working, and round your answers as each question asks."
   ],
@@ -33,14 +33,6 @@
             "r",
             "resistance"
           ]
-        },
-        {
-          "id": "electrical-circuits-current-calc",
-          "type": "numeric",
-          "prompt": "A 12 V supply is connected to a 6 Ω resistor. Calculate the current.",
-          "answer": 2,
-          "tolerance": 0,
-          "unit": "A"
         },
         {
           "id": "electrical-circuits-voltage-calc",
@@ -79,13 +71,6 @@
               "right": "Conductor"
             }
           ]
-        },
-        {
-          "id": "electrical-circuits-series-adv",
-          "type": "open",
-          "marks": 2,
-          "prompt": "Give ONE advantage and ONE disadvantage of a series circuit.",
-          "memo": "✓ Advantage: simple / uses less current, so the battery lasts longer (1)\n✓ Disadvantage: if one component fails all stop / bulbs dimmer (1)"
         },
         {
           "id": "electrical-circuits-short",
@@ -159,13 +144,6 @@
           ]
         },
         {
-          "id": "switches-and-logic-guillotine",
-          "type": "open",
-          "marks": 2,
-          "prompt": "Why does a paper guillotine have two buttons that must be pressed at the same time? Which logic does this use?",
-          "memo": "✓ So that both of the operator's hands are away from the blade (safety) (1)\n✓ AND logic (1)"
-        },
-        {
           "id": "switches-and-logic-design",
           "type": "open",
           "marks": 3,
@@ -196,27 +174,6 @@
           "answers": [
             "ferrous",
             "ferrous metals"
-          ]
-        },
-        {
-          "id": "processing-materials-thermo",
-          "type": "mcq",
-          "prompt": "Which type of plastic can be softened by heat and reshaped many times?",
-          "options": [
-            "Thermosetting plastic",
-            "Thermoplastic",
-            "Bakelite",
-            "Melamine"
-          ],
-          "answer": 1
-        },
-        {
-          "id": "processing-materials-hacksaw",
-          "type": "short",
-          "prompt": "Which saw is used to cut metal?",
-          "answers": [
-            "hacksaw",
-            "a hacksaw"
           ]
         },
         {
@@ -262,6 +219,127 @@
           "marks": 3,
           "prompt": "Explain THREE problems that plastics cause for the environment.",
           "memo": "Any three (1 each): made from non-renewable oil; take hundreds of years to break down; litter on land; ocean pollution harming marine life; release toxic fumes when burnt"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 4: Processing: Preservation of Metals",
+      "questions": [
+        {
+          "id": "preservation-of-metals-ferrous",
+          "type": "mcq",
+          "prompt": "Which of these metals is ferrous?",
+          "options": [
+            "Copper",
+            "Aluminium",
+            "Mild steel",
+            "Brass"
+          ],
+          "answer": 2,
+          "explanation": "Ferrous metals contain iron. Steel is mostly iron; copper, aluminium and brass contain no iron."
+        },
+        {
+          "id": "preservation-of-metals-rust-needs",
+          "type": "mcq",
+          "prompt": "Iron rusts when it is in contact with:",
+          "options": [
+            "oxygen only",
+            "water only",
+            "oxygen and water",
+            "heat and light"
+          ],
+          "answer": 2,
+          "explanation": "Rusting needs both oxygen and water. Remove either one and it stops."
+        },
+        {
+          "id": "preservation-of-metals-rust-name",
+          "type": "short",
+          "prompt": "What is the chemical name for rust?",
+          "answers": [
+            "iron oxide",
+            "hydrated iron oxide",
+            "iron(III) oxide"
+          ],
+          "explanation": "Rust is hydrated iron oxide, formed when iron reacts with oxygen and water."
+        },
+        {
+          "id": "preservation-of-metals-aluminium",
+          "type": "truefalse",
+          "prompt": "Aluminium window frames rust if they are not painted.",
+          "answer": false,
+          "explanation": "Aluminium is non-ferrous, so it cannot rust. It forms a thin protective oxide layer."
+        },
+        {
+          "id": "preservation-of-metals-galvanise-metal",
+          "type": "short",
+          "prompt": "Which metal is used to galvanise steel?",
+          "answers": [
+            "zinc"
+          ],
+          "explanation": "Galvanising coats steel with zinc, which protects it even when scratched."
+        },
+        {
+          "id": "preservation-of-metals-match-methods",
+          "type": "match",
+          "prompt": "Match each product with the most suitable preservation method.",
+          "pairs": [
+            {
+              "left": "Bicycle chain",
+              "right": "Oiling"
+            },
+            {
+              "left": "Corrugated iron roof",
+              "right": "Galvanising"
+            },
+            {
+              "left": "Chrome car bumper",
+              "right": "Electroplating"
+            },
+            {
+              "left": "Kitchen sink",
+              "right": "Using stainless steel"
+            }
+          ],
+          "marks": 4
+        },
+        {
+          "id": "preservation-of-metals-heat-treatment",
+          "type": "match",
+          "prompt": "Match each heat treatment with what it does.",
+          "pairs": [
+            {
+              "left": "Hardening",
+              "right": "Heat, then cool quickly; becomes hard but brittle"
+            },
+            {
+              "left": "Tempering",
+              "right": "Reheat hardened steel; becomes tougher and less brittle"
+            },
+            {
+              "left": "Annealing",
+              "right": "Heat, then cool very slowly; becomes soft and workable"
+            }
+          ],
+          "marks": 3
+        },
+        {
+          "id": "preservation-of-metals-salt",
+          "type": "mcq",
+          "prompt": "Why do steel gates near the sea rust faster than those inland?",
+          "options": [
+            "The sun is stronger at the coast",
+            "Salt in the moist air speeds up rusting",
+            "There is less oxygen at the coast",
+            "Sea air is colder"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "preservation-of-metals-scratch",
+          "type": "open",
+          "prompt": "Explain why a scratch in the paint on a steel car is a problem, but a scratch on a galvanised bucket is not.",
+          "marks": 4,
+          "memo": "✓ paint only works as a barrier (1)\n✓ a scratch lets water and oxygen reach the steel, so it rusts and the rust spreads under the paint (1)\n✓ on galvanised steel the zinc corrodes instead of the steel / sacrificial protection (1)\n✓ so the exposed steel is still protected (1)"
         }
       ]
     }

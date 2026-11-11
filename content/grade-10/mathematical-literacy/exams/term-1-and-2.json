@@ -5,7 +5,7 @@
   "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 1 and 2.",
-    "This question paper consists of 4 questions. Answer ALL the questions.",
+    "This question paper consists of 5 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it.",
     "Show your working, and round your answers as each question asks."
   ],
@@ -50,13 +50,6 @@
           "marks": 3,
           "prompt": "Which is better value: 750 ml of juice for R18,99 or 2 ℓ for R45,99? Show your working.",
           "memo": "✓ 750 ml: R18,99 ÷ 0,75 = R25,32 per litre (1)\n✓ 2 ℓ: R45,99 ÷ 2 = R23,00 per litre (1)\n✓ 2 ℓ is better value (1)"
-        },
-        {
-          "id": "numbers-and-calculations-share",
-          "type": "open",
-          "marks": 3,
-          "prompt": "Three friends invest R2 000, R3 000 and R5 000 in a business and share a profit of R4 500 in the ratio of their investments. How much does each receive?",
-          "memo": "✓ Ratio 2 : 3 : 5, one part = R450 (1)\n✓ R900 and R1 350 (1)\n✓ R2 250 (1)"
         },
         {
           "id": "numbers-and-calculations-fuel",
@@ -105,18 +98,18 @@
           "answer": true
         },
         {
-          "id": "patterns-relationships-and-graphs-break-even",
-          "type": "open",
-          "marks": 4,
-          "prompt": "Option A: R100 per month plus R1,50 per minute. Option B: R2,50 per minute with no monthly fee. Find the number of minutes for which both cost the same, and say which option is cheaper for 150 minutes.",
-          "memo": "✓ $100 + 1{,}5m = 2{,}5m$ (1)\n✓ $m = 100$ minutes (1)\n✓ At 150 min: A = R325, B = R375 (1)\n✓ Option A is cheaper (1)"
-        },
-        {
           "id": "patterns-relationships-and-graphs-graph-shape",
           "type": "open",
           "marks": 2,
           "prompt": "Describe the shape of the graph of an inverse proportion.",
           "memo": "✓ A curve, not a straight line (1)\n✓ that gets closer to the axes but never touches them (1)"
+        },
+        {
+          "id": "patterns-relationships-and-graphs-rate-meaning",
+          "type": "open",
+          "marks": 2,
+          "prompt": "In $C = 50 + 12d$, what do the numbers 50 and 12 represent?",
+          "memo": "✓ R50 is the fixed (starting) fee (1)\n✓ R12 is the cost per kilometre (1)"
         }
       ]
     },
@@ -201,13 +194,6 @@
           "memo": "✓ Normal: 40 × R65 = R2 600 (1)\n✓ Overtime: 6 × R97,50 = R585 (1)\n✓ Total R3 185 (1)"
         },
         {
-          "id": "income-expenditure-and-budgets-profit",
-          "type": "open",
-          "marks": 3,
-          "prompt": "A learner makes 40 cupcakes at a total cost of R180 and sells them at R8 each. Calculate the profit if all are sold, and the minimum number she must sell to break even.",
-          "memo": "✓ Income 40 × R8 = R320, profit R140 (1)\n✓ Break even: R180 ÷ R8 = 22,5 (1)\n✓ She must sell 23 cupcakes (1)"
-        },
-        {
           "id": "income-expenditure-and-budgets-percent-spend",
           "type": "numeric",
           "prompt": "A family spends R3 150 on groceries out of a net income of R18 000. What percentage of income is this?",
@@ -227,22 +213,6 @@
           "answer": 15,
           "tolerance": 0,
           "unit": "%"
-        },
-        {
-          "id": "financial-documents-and-tariffs-vat-add",
-          "type": "numeric",
-          "prompt": "A service costs R800 excluding VAT. What is the price including VAT?",
-          "answer": 920,
-          "tolerance": 0,
-          "unit": "rand"
-        },
-        {
-          "id": "financial-documents-and-tariffs-vat-amount",
-          "type": "numeric",
-          "prompt": "A shirt costs R230 including VAT. How much of this is VAT?",
-          "answer": 30,
-          "tolerance": 0,
-          "unit": "rand"
         },
         {
           "id": "financial-documents-and-tariffs-zero",
@@ -288,6 +258,56 @@
           "marks": 3,
           "prompt": "An account has a balance of R2 340. A salary of R9 500 is paid in, and debit orders of R3 200 and R1 150 go off, plus R65 bank charges. What is the new balance?",
           "memo": "✓ R2 340 + R9 500 = R11 840 (1)\n✓ Debits R4 415 (1)\n✓ Balance R7 425 (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 5: Finance: Interest and Banking",
+      "questions": [
+        {
+          "id": "interest-and-banking-simple-total",
+          "type": "numeric",
+          "prompt": "Nomsa saves R2 500 at 7% simple interest per year. How much will she have after 2 years?",
+          "answer": 2850,
+          "tolerance": 0,
+          "unit": "rand"
+        },
+        {
+          "id": "interest-and-banking-compound-faster",
+          "type": "truefalse",
+          "prompt": "For the same amount, rate and time, compound interest gives a bigger total than simple interest (for more than one year).",
+          "answer": true
+        },
+        {
+          "id": "interest-and-banking-match-terms",
+          "type": "match",
+          "prompt": "Match each banking term to its meaning.",
+          "pairs": [
+            {
+              "left": "Withdrawal",
+              "right": "Money taken out of an account"
+            },
+            {
+              "left": "Balance",
+              "right": "Amount in the account at a given time"
+            },
+            {
+              "left": "Overdraft",
+              "right": "Spending more than you have, at a cost"
+            },
+            {
+              "left": "EFT",
+              "right": "Moving money electronically between accounts"
+            }
+          ],
+          "marks": 4
+        },
+        {
+          "id": "interest-and-banking-atm-advice",
+          "type": "open",
+          "prompt": "Pieter draws R200 cash from an ATM eight times a month and pays R11,50 each time. Calculate his ATM fees and suggest TWO ways he could pay less.",
+          "marks": 4,
+          "memo": "✓ 8 × R11,50 = R92,00 (2)\n✓ e.g. draw cash less often in bigger amounts (1)\n✓ e.g. swipe his card or pay with an app instead of using cash; use his own bank's ATM; get cash back at a till (1)"
         }
       ]
     }

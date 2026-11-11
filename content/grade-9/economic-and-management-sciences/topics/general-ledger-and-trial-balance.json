@@ -1,0 +1,77 @@
+{
+  "id": "general-ledger-and-trial-balance",
+  "title": "The General Ledger and Trial Balance",
+  "term": 3,
+  "summary": "Posting the CRJ, CPJ, DJ and CJ of a trading business to the General Ledger, the control accounts, balancing accounts, and drawing up a trial balance and knowing what it can and cannot show.",
+  "notes": [
+    { "type": "heading", "text": "The accounting cycle" },
+    { "type": "diagram", "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 120' font-family='sans-serif' font-size='12'><rect width='420' height='120' fill='white'/><rect x='6' y='30' width='90' height='54' rx='7' fill='#dbe8f6' stroke='#2f6db5' stroke-width='1.4'/><text x='51' y='53' text-anchor='middle' fill='#1f2933'>Source</text><text x='51' y='68' text-anchor='middle' fill='#1f2933'>documents</text><rect x='116' y='30' width='90' height='54' rx='7' fill='#d8f0e8' stroke='#2c9a7b' stroke-width='1.4'/><text x='161' y='53' text-anchor='middle' fill='#1f2933'>Journals</text><text x='161' y='68' text-anchor='middle' fill='#1f2933' font-size='11'>CRJ CPJ DJ CJ</text><rect x='226' y='30' width='90' height='54' rx='7' fill='#f7eecb' stroke='#c9a227' stroke-width='1.4'/><text x='271' y='53' text-anchor='middle' fill='#1f2933'>General</text><text x='271' y='68' text-anchor='middle' fill='#1f2933'>Ledger</text><rect x='336' y='30' width='78' height='54' rx='7' fill='#fbe6d6' stroke='#d9722a' stroke-width='1.4'/><text x='375' y='53' text-anchor='middle' fill='#1f2933'>Trial</text><text x='375' y='68' text-anchor='middle' fill='#1f2933'>balance</text><line x1='97' y1='57' x2='109' y2='57' stroke='#1f2933' stroke-width='1.8'/><polygon points='115,57 108,53 108,61' fill='#1f2933'/><line x1='207' y1='57' x2='219' y2='57' stroke='#1f2933' stroke-width='1.8'/><polygon points='225,57 218,53 218,61' fill='#1f2933'/><line x1='317' y1='57' x2='329' y2='57' stroke='#1f2933' stroke-width='1.8'/><polygon points='335,57 328,53 328,61' fill='#1f2933'/><text x='51' y='104' text-anchor='middle' fill='#1f2933' font-size='11'>receipts, invoices</text><text x='161' y='104' text-anchor='middle' fill='#1f2933' font-size='11'>record</text><text x='271' y='104' text-anchor='middle' fill='#1f2933' font-size='11'>post and balance</text><text x='375' y='104' text-anchor='middle' fill='#1f2933' font-size='11'>check</text></svg>", "caption": "The accounting cycle: transactions on source documents are recorded in the journals, the journal totals are posted to the General Ledger, the accounts are balanced, and a trial balance checks the work." },
+    { "type": "paragraph", "text": "The **General Ledger** contains one account for each item. It is divided into the **Balance Sheet accounts section** (assets, liabilities and owner's equity) and the **Nominal accounts section** (income and expenses). At the end of each month the **column totals** of the journals are posted to the ledger." },
+    { "type": "heading", "text": "Posting the journals of a trading business" },
+    { "type": "table", "headers": ["Journal and column", "Debit account", "Credit account"], "rows": [
+      ["DJ: Sales column", "Debtors control", "Sales"],
+      ["DJ: Cost of sales column", "Cost of sales", "Trading stock"],
+      ["CJ: Creditors control (Trading stock) column", "Trading stock", "Creditors control"],
+      ["CRJ: Bank column", "Bank", "(each analysis column: Sales, Debtors control, Capital, Rent income…)"],
+      ["CRJ: Cost of sales column", "Cost of sales", "Trading stock"],
+      ["CPJ: Bank column", "(each analysis column: Trading stock, Wages, Creditors control…)", "Bank"]
+    ] },
+    { "type": "callout", "label": "Remember", "text": "Every transaction has a **debit** and an equal **credit** (the **double-entry principle**). That is why, if the posting is correct, the total of all debit balances equals the total of all credit balances." },
+    { "type": "heading", "text": "Control accounts" },
+    { "type": "paragraph", "text": "**Debtors control** shows the total owed **to** the business by all its debtors. **Creditors control** shows the total the business owes **to** its creditors. Details for each individual customer or supplier are kept in the subsidiary **Debtors Ledger** and **Creditors Ledger**." },
+    { "type": "heading", "text": "Balancing an account" },
+    { "type": "table", "caption": "Debtors control (B6) of Lwazi Traders, June 2026", "headers": ["Dr: Date", "Details", "Fol", "Amount", "Cr: Date", "Details", "Fol", "Amount"], "rows": [
+      ["Jun 1", "Balance", "b/d", "6 200", "Jun 30", "Bank", "CRJ6", "8 800"],
+      ["30", "Sales", "DJ6", "12 000", "30", "Balance", "c/d", "9 400"],
+      ["", "", "", "18 200", "", "", "", "18 200"],
+      ["Jul 1", "Balance", "b/d", "9 400", "", "", "", ""]
+    ] },
+    { "type": "example", "title": "Worked example 1: balancing Debtors control", "problem": "Explain how the Debtors control account above was balanced.", "steps": ["Add the bigger side (debit): 6 200 + 12 000 = 18 200. Write this total on both sides on the same line.", "Add the smaller side (credit): 8 800.", "The difference, 18 200 − 8 800 = 9 400, is written on the credit side as 'Balance c/d' (carried down).", "Bring the balance down on the opposite (debit) side on the first day of the next month as 'Balance b/d' (brought down)."], "answer": "Debtors owe Lwazi Traders R9 400 on 1 July: a debit balance, because Debtors control is an asset." },
+    { "type": "heading", "text": "The trial balance" },
+    { "type": "paragraph", "text": "A **trial balance** is a list of the **balances** of all the accounts in the General Ledger on a certain date. Debit balances go in the debit column and credit balances in the credit column. If the totals agree, the double entry has been done correctly." },
+    { "type": "table", "caption": "Trial balance of Lwazi Traders on 30 June 2026", "headers": ["Balance Sheet accounts section", "Fol", "Debit (R)", "Credit (R)"], "rows": [
+      ["Capital", "B1", "", "90 000"],
+      ["Drawings", "B2", "6 000", ""],
+      ["Equipment", "B3", "35 000", ""],
+      ["Trading stock", "B4", "42 000", ""],
+      ["Loan: Ubuntu Bank", "B5", "", "15 000"],
+      ["Debtors control", "B6", "9 400", ""],
+      ["Bank", "B7", "18 600", ""],
+      ["Creditors control", "B8", "", "11 500"],
+      ["**Nominal accounts section**", "", "", ""],
+      ["Sales", "N1", "", "46 800"],
+      ["Cost of sales", "N2", "31 200", ""],
+      ["Rent income", "N3", "", "700"],
+      ["Wages", "N4", "12 500", ""],
+      ["Rent expense", "N5", "7 000", ""],
+      ["Water and electricity", "N6", "1 900", ""],
+      ["Stationery", "N7", "400", ""],
+      ["**Totals**", "", "**164 000**", "**164 000**"]
+    ] },
+    { "type": "table", "caption": "Which column does each balance go in?", "headers": ["Debit balances", "Credit balances"], "rows": [
+      ["Assets (Bank, Equipment, Trading stock, Debtors control)", "Owner's equity (Capital)"],
+      ["Drawings", "Liabilities (Loan, Creditors control, Bank overdraft)"],
+      ["Expenses (Cost of sales, Wages, Rent expense)", "Income (Sales, Rent income, Interest income)"]
+    ] },
+    { "type": "example", "title": "Worked example 2: finding a missing figure", "problem": "A trial balance has debit balances of R84 300 and credit balances of R61 300 plus Capital, which is missing. Calculate Capital.", "steps": ["The totals must be equal, so the credit total must also be R84 300.", "Capital = R84 300 − R61 300"], "answer": "Capital = R23 000" },
+    { "type": "callout", "label": "What a trial balance cannot show", "text": "A trial balance can still balance when there are errors, for example if a transaction was **left out completely**, entered **twice**, posted to the **wrong account** on the correct side, or recorded with the **same wrong amount** on both sides." }
+  ],
+  "questions": [
+    {"id":"tb-purpose","type":"mcq","prompt":"The main purpose of a trial balance is to:","options":["calculate the profit for the month","check that total debit balances equal total credit balances","record credit sales","show how much each debtor owes"],"answer":1},
+    {"id":"dj-post","type":"mcq","prompt":"The total of the Sales column in the Debtors Journal is posted to:","options":["the debit of Sales and credit of Bank","the debit of Debtors control and credit of Sales","the debit of Sales and credit of Debtors control","the debit of Bank and credit of Sales"],"answer":1},
+    {"id":"cj-post","type":"mcq","prompt":"Goods bought on credit (CJ) are posted to:","options":["Dr Trading stock, Cr Creditors control","Dr Creditors control, Cr Trading stock","Dr Trading stock, Cr Bank","Dr Cost of sales, Cr Creditors control"],"answer":0},
+    {"id":"drawings-side","type":"truefalse","prompt":"Drawings has a credit balance in the trial balance.","answer":false,"explanation":"Drawings reduces owner's equity, so it has a debit balance."},
+    {"id":"bd","type":"short","prompt":"What does the abbreviation 'b/d' stand for when balancing an account?","answers":["brought down"]},
+    {"id":"sort-balances","type":"match","prompt":"Classify each account and show its normal balance.","marks":4, "pairs": [
+      { "left": "Rent income", "right": "Income: credit balance" },
+      { "left": "Equipment", "right": "Asset: debit balance" },
+      { "left": "Loan: ABC Bank", "right": "Liability: credit balance" },
+      { "left": "Wages", "right": "Expense: debit balance" }
+    ]},
+    {"id":"balance-creditors","type":"numeric","prompt":"Creditors control had a credit balance of R7 400 on 1 May. Credit purchases in May were R15 600 and payments to creditors were R13 200. What is the balance on 31 May?","answer":9800,"tolerance":0,"unit":"rand"},
+    {"id":"missing-bank","type":"numeric","prompt":"In a trial balance, the credit balances total R52 700. The debit balances, excluding Bank, total R41 950. Bank has a debit balance. Calculate the Bank balance.","answer":10750,"tolerance":0,"unit":"rand"},
+    {"id":"undetected","type":"mcq","prompt":"Which error will NOT be shown by a trial balance that does not balance?","options":["Posting R500 to the debit side only","Adding the Bank account incorrectly","Leaving out a whole transaction","Writing R3 400 on the debit side and R4 300 on the credit side"],"answer":2},
+    {"id":"post-cpj","type":"open","prompt":"The CPJ of Lwazi Traders for July shows: Bank column R24 300; Trading stock R9 800; Wages R6 500; Creditors control R7 000; Sundry accounts: Rent expense R1 000. Explain how each total is posted to the General Ledger (name the account and side).","marks":5,"memo":"✓ Bank R24 300 on the credit side of Bank (1)\n✓ Trading stock R9 800 on the debit side of Trading stock (1)\n✓ Wages R6 500 on the debit side of Wages (1)\n✓ Creditors control R7 000 on the debit side of Creditors control (1)\n✓ Rent expense R1 000 on the debit side of Rent expense (1)"},
+    {"id":"tb-errors","type":"open","prompt":"A learner's trial balance shows debit balances of R59 350 and credit balances of R60 250. She finds that Stationery of R450 was placed in the credit column. Explain why correcting this error makes the trial balance balance.","marks":3,"memo":"✓ Stationery is an expense, so it has a debit balance (1)\n✓ moving it to the debit column: debits R59 350 + R450 = R59 800 (1)\n✓ credits R60 250 − R450 = R59 800, so the totals now agree (1)"}
+  ]
+}

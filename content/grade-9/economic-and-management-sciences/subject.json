@@ -3,7 +3,7 @@
   "grade": 9,
   "id": "economic-and-management-sciences",
   "name": "Economic and Management Sciences",
-  "description": "CAPS Grade 9 EMS: economic systems, the circular flow, price theory, trade unions, accounting for a trading business, the Debtors and Creditors Journals, sectors and functions of a business, and the business plan.",
+  "description": "CAPS Grade 9 EMS: economic systems, the circular flow, price theory, trade unions, accounting for a trading business, the Debtors and Creditors Journals, the General Ledger and trial balance, sectors and functions of a business, and the business plan.",
   "topics": [
     { "id": "economic-systems", "title": "Economic Systems", "term": 1 },
     { "id": "the-circular-flow", "title": "The Circular Flow of Income", "term": 1 },
@@ -12,6 +12,7 @@
     { "id": "debtors-journal", "title": "Credit Transactions: The Debtors Journal", "term": 2 },
     { "id": "trade-unions", "title": "Trade Unions", "term": 3 },
     { "id": "creditors-journal", "title": "Credit Transactions: The Creditors Journal", "term": 3 },
+    { "id": "general-ledger-and-trial-balance", "title": "The General Ledger and Trial Balance", "term": 3 },
     { "id": "sectors-and-functions-of-a-business", "title": "Sectors of the Economy and Functions of a Business", "term": 4 },
     { "id": "the-business-plan", "title": "The Business Plan", "term": 4 }
   ],

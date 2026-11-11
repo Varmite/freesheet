@@ -1,11 +1,11 @@
 {
   "id": "term-3-and-4",
   "title": "Term 3 and 4 Examination",
-  "durationMinutes": 70,
-  "totalMarks": 40,
+  "durationMinutes": 90,
+  "totalMarks": 50,
   "instructions": [
     "This paper covers the work of Terms 3 and 4.",
-    "This question paper consists of 3 questions. Answer ALL the questions.",
+    "This question paper consists of 4 questions. Answer ALL the questions.",
     "Read each question carefully before you answer it."
   ],
   "sections": [
@@ -23,18 +23,6 @@
             "1 000 words"
           ],
           "answer": 1
-        },
-        {
-          "id": "essay-writing-argument",
-          "type": "mcq",
-          "prompt": "Which essay type presents BOTH sides of an issue fairly?",
-          "options": [
-            "Narrative",
-            "Argumentative",
-            "Discursive",
-            "Descriptive"
-          ],
-          "answer": 2
         },
         {
           "id": "essay-writing-senses",
@@ -103,7 +91,91 @@
       ]
     },
     {
-      "title": "QUESTION 2: Drama: Elements and Techniques",
+      "title": "QUESTION 2: Writing the Literary Essay",
+      "questions": [
+        {
+          "id": "literary-essay-writing-purpose",
+          "type": "mcq",
+          "prompt": "The main purpose of a literary essay is to:",
+          "options": [
+            "retell the plot in order",
+            "argue a position about the text and prove it with evidence",
+            "describe your favourite character",
+            "list all the figures of speech in the text"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "literary-essay-writing-thesis",
+          "type": "short",
+          "prompt": "What is the one-sentence statement of your argument in the introduction called?",
+          "answers": [
+            "thesis",
+            "thesis statement",
+            "a thesis statement",
+            "the thesis"
+          ]
+        },
+        {
+          "id": "literary-essay-writing-tense",
+          "type": "truefalse",
+          "prompt": "Events in a literary text are usually discussed in the past tense.",
+          "answer": false,
+          "explanation": "Use the present tense: 'Romeo kills Tybalt'."
+        },
+        {
+          "id": "literary-essay-writing-conclusion",
+          "type": "truefalse",
+          "prompt": "A conclusion should restate the thesis in new words rather than introduce a new main point.",
+          "answer": true
+        },
+        {
+          "id": "literary-essay-writing-critically",
+          "type": "mcq",
+          "prompt": "A topic says 'Critically discuss'. What does this ask you to do?",
+          "options": [
+            "Only criticise the writer",
+            "Weigh up different views and reach a reasoned conclusion",
+            "Summarise the plot",
+            "Give your personal opinion without evidence"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "literary-essay-writing-match-peel",
+          "type": "match",
+          "prompt": "Match each part of a PEEL paragraph to its purpose.",
+          "pairs": [
+            {
+              "left": "Point",
+              "right": "Makes one clear claim linked to the thesis"
+            },
+            {
+              "left": "Evidence",
+              "right": "A quotation or reference from the text"
+            },
+            {
+              "left": "Explanation",
+              "right": "Shows how the evidence proves the claim"
+            },
+            {
+              "left": "Link",
+              "right": "Connects back to the topic"
+            }
+          ],
+          "marks": 4
+        },
+        {
+          "id": "literary-essay-writing-unpack",
+          "type": "open",
+          "prompt": "Unpack this topic and write a thesis statement: 'The adults in Romeo and Juliet are more to blame for the tragedy than the young lovers.' Discuss.",
+          "marks": 4,
+          "memo": "✓ identifies key words: adults, more to blame, young lovers, discuss (1)\n✓ takes a clear position (agree / disagree / partly) (1)\n✓ names at least two adults or examples, e.g. the feuding parents, Capulet forcing the marriage to Paris, the Friar's risky plan, the Nurse's advice (1)\n✓ thesis is one clear arguable sentence that answers the topic (1)"
+        }
+      ]
+    },
+    {
+      "title": "QUESTION 3: Drama: Elements and Techniques",
       "instructions": "Read the text below, then answer the questions.",
       "context": [
         {
@@ -192,13 +264,6 @@
           "memo": "✓ It tells the audience the lovers will die (1)\n✓ so the audience watches their hopeful plans knowing they will end in tragedy (1)"
         },
         {
-          "id": "drama-romeo-aside",
-          "type": "open",
-          "marks": 2,
-          "prompt": "What does Romeo's aside reveal about his state of mind?",
-          "memo": "✓ He is torn/uncertain whether to reveal himself (1)\n✓ and eager to hear more of Juliet's feelings (1)"
-        },
-        {
           "id": "drama-flaw",
           "type": "open",
           "marks": 2,
@@ -208,7 +273,7 @@
       ]
     },
     {
-      "title": "QUESTION 3: Transactional Writing: Letters, Emails and Notices",
+      "title": "QUESTION 4: Transactional Writing: Letters, Emails and Notices",
       "questions": [
         {
           "id": "transactional-writing-faithfully",
@@ -251,12 +316,6 @@
           "answer": true
         },
         {
-          "id": "transactional-writing-contractions",
-          "type": "truefalse",
-          "prompt": "Slang and contractions are appropriate in a letter of application.",
-          "answer": false
-        },
-        {
           "id": "transactional-writing-formats",
           "type": "match",
           "marks": 4,
@@ -281,11 +340,11 @@
           ]
         },
         {
-          "id": "transactional-writing-register",
+          "id": "transactional-writing-agenda",
           "type": "open",
-          "marks": 2,
-          "prompt": "Rewrite formally: 'Your bus driver was super rude to my kid, not cool!'",
-          "memo": "✓✓ e.g. 'I wish to report that one of your bus drivers was discourteous to my son.' (formal vocabulary, no slang) (2)"
+          "marks": 3,
+          "prompt": "Give the first THREE items on a standard meeting agenda.",
+          "memo": "✓ Welcome/opening (1)\n✓ Apologies (1)\n✓ Minutes of the previous meeting (1)"
         }
       ]
     }
