@@ -265,6 +265,29 @@ html.is-dark:not([data-theme="contrast"]) .n-diagram img { filter: brightness(0.
 .pager .btn { max-width: 48%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* ---------- questions ---------- */
+/* Notes | Questions after the page's own switch has scrolled away (app.js modeFloat) */
+.mode-float {
+  position: fixed; z-index: 15; display: flex; gap: 3px; padding: 4px;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+  visibility: hidden; opacity: 0; pointer-events: none;
+}
+.mode-float.side { top: 76px; flex-direction: column; transform: translateX(-14px); }
+.mode-float.bottom { left: 50%; bottom: 18px; transform: translate(-50%, 14px); }
+.mode-float.show { visibility: visible; opacity: 1; pointer-events: auto; }
+.mode-float.side.show { transform: translateX(0); }
+.mode-float.bottom.show { transform: translate(-50%, 0); }
+.mf-btn {
+  font: inherit; font-size: 0.9rem; color: var(--muted); background: none; border: 0; border-radius: 9px;
+  padding: 0.45rem 0.85rem; cursor: pointer; text-align: left; white-space: nowrap;
+}
+.mf-btn:hover { color: var(--text); background: var(--surface); }
+.mf-btn.active { color: var(--text); background: var(--bg); font-weight: 600; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14); cursor: default; }
+.motion .mode-float {
+  transition: opacity 0.32s cubic-bezier(0.22, 1, 0.36, 1), transform 0.42s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 0.42s;
+}
+.motion .mode-float.show { transition-delay: 0s; }
+
 .score-bar {
   position: sticky; top: 56px; z-index: 5;
   display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; align-items: center;
@@ -390,7 +413,7 @@ input:disabled, textarea:disabled, select:disabled { background: var(--surface);
 }
 
 @media print {
-  .topbar, .exam-bar, .pager, .segmented, .btn, .score-bar { display: none !important; }
+  .topbar, .exam-bar, .pager, .segmented, .mode-float, .btn, .score-bar { display: none !important; }
 }
 
 /* ---------- icons ---------- */

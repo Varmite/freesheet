@@ -120,6 +120,9 @@ button, .card, .row, .tab, .seg, .opt, .lopt { touch-action: manipulation; -webk
   /* Notes | Questions: a full-width switch, easy to hit with a thumb. */
   .page-topic > .segmented { display: flex; width: 100%; margin: 0.6rem 0 1rem; }
   .page-topic > .segmented .seg { flex: 1 1 0; text-align: center; padding: 0.6rem 0.5rem; }
+  .mode-float.bottom { bottom: calc(var(--tabbar-h) + var(--safe-b) + 12px); }
+  .mf-btn { padding: 0.55rem 0.95rem; }
+  body.in-lesson .mode-float { display: none; }
   .head-stats { gap: 1rem; text-align: left; }
   .facts { gap: 0.5rem; margin: 0.75rem 0; }
   .facts div { flex: 1 1 40%; padding: 0.6rem 0.8rem; }

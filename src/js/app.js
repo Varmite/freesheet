@@ -498,6 +498,7 @@
   async function renderView() {
     const token = ++state.renderToken;
     stopReader();
+    modeFloat.detach();
     updateStreakBadge();
     document.querySelectorAll('.tab').forEach((b) => {
       const on = b.dataset.tab === state.tab;
@@ -644,6 +645,61 @@
 
   // ---------- Study: topic (notes + questions)
 
+  // Notes | Questions stays within reach: once the page's own switch scrolls out of
+  // sight, a copy slides in beside the page (wide windows) or above the bottom edge
+  // (narrow windows and phones). It lives on <body> so page transitions don't move it.
+  const modeFloat = (() => {
+    let el = null, seg = null, pick = null, raf = 0;
+    function make() {
+      el = document.createElement('div');
+      el.className = 'mode-float';
+      el.setAttribute('role', 'tablist');
+      el.setAttribute('aria-label', 'Notes or questions');
+      document.body.appendChild(el);
+      el.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-mode]');
+        if (b && pick && !b.classList.contains('active')) pick(b.dataset.mode);
+      });
+      window.addEventListener('scroll', queue, { passive: true });
+      window.addEventListener('resize', () => { if (seg) place(); queue(); });
+    }
+    function queue() { if (!raf) raf = requestAnimationFrame(update); }
+    // Beside the page if there is room on its left, otherwise at the bottom.
+    function place() {
+      const page = seg.closest('.page');
+      if (!page) return;
+      el.classList.add('side');
+      el.classList.remove('bottom');
+      const left = page.getBoundingClientRect().left + 8 - el.offsetWidth - 20;
+      const side = left >= 12 && window.innerWidth > 720;
+      el.classList.toggle('side', side);
+      el.classList.toggle('bottom', !side);
+      el.style.left = side ? Math.round(left) + 'px' : '';
+    }
+    function update() {
+      raf = 0;
+      if (!el) return;
+      const bar = document.querySelector('.topbar');
+      const limit = bar ? bar.getBoundingClientRect().bottom : 56;
+      const show = !!(seg && seg.isConnected && seg.getBoundingClientRect().bottom < limit + 4);
+      el.classList.toggle('show', show);
+      el.setAttribute('aria-hidden', String(!show));
+      el.querySelectorAll('button').forEach((b) => { b.tabIndex = show ? 0 : -1; });
+    }
+    return {
+      attach(segEl, mode, count, onPick) {
+        if (!segEl) return this.detach();
+        if (!el) make();
+        seg = segEl; pick = onPick;
+        el.innerHTML = [['notes', 'Notes'], ['questions', `Questions (${count})`]].map(([m, label]) =>
+          `<button type="button" role="tab" class="mf-btn ${m === mode ? 'active' : ''}" data-mode="${m}" aria-selected="${m === mode}">${label}</button>`).join('');
+        place();
+        update();
+      },
+      detach() { seg = null; pick = null; if (el) update(); },
+    };
+  })();
+
   async function viewTopic(v, token) {
     const s = subjectMeta(v.subjectId);
     const meta = s && s.topics.find((t) => t.id === v.topicId);
@@ -681,6 +737,9 @@
     main.querySelectorAll('.seg').forEach((b) => b.addEventListener('click', () => {
       v.mode = b.dataset.mode; render(); scrollTop();
     }));
+    modeFloat.attach(main.querySelector('.page-topic > .segmented'), mode, topic.questions.length, (m) => {
+      v.mode = m; render(); scrollTop();
+    });
     main.querySelectorAll('[data-goto]').forEach((b) => b.addEventListener('click', () => {
       Motion.setHint(b.dataset.dir);
       pendingNavSound = b.dataset.dir === 'forward' ? 'push' : 'pop';
