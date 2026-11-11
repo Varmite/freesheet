@@ -1,6 +1,6 @@
 'use strict';
 // Server tests: run with `npm test` in web/. They start the app in this process with a
-// temporary data folder and the TEST_MODE sign-in stand-in (lib/auth.js).
+// temporary data folder and make their own accounts in it.
 
 const { test, before, after } = require('node:test');
 const assert = require('node:assert');
@@ -9,18 +9,15 @@ const os = require('os');
 const path = require('path');
 const http = require('http');
 const { createApp } = require('../lib/app');
-const { signTestToken } = require('../lib/auth');
+const { createAccounts } = require('../lib/auth');
 const { shouldUpdate } = require('../lib/updater');
 
 const ROOT = path.join(__dirname, '..', '..');
-const CLIENT = 'test-client.apps.googleusercontent.com';
-const SECRET = 'unit-test-secret';
 const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'freesheet-web-'));
 
 function makeServer(extra = {}) {
   const cfg = {
-    repoRoot: ROOT, dataDir, googleClientId: CLIENT, allowedEmails: [], sessionSecret: 'session-secret',
-    secureCookies: false, testMode: true, testSecret: SECRET, ...extra,
+    repoRoot: ROOT, dataDir, sessionSecret: 'session-secret', secureCookies: false, ...extra,
   };
   const { app } = createApp(cfg);
   const server = http.createServer(app);
@@ -31,13 +28,14 @@ let srv;
 before(async () => { srv = await makeServer(); });
 after(() => { srv.server.close(); fs.rmSync(dataDir, { recursive: true, force: true }); });
 
-const now = () => Math.floor(Date.now() / 1000);
-const claims = (over = {}) => ({ iss: 'https://accounts.google.com', aud: CLIENT, sub: '1001', email: 'a@example.com', email_verified: true, name: 'A', exp: now() + 600, ...over });
-
-async function signIn(base, over, secret = SECRET) {
-  const r = await fetch(`${base}/auth/google`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ credential: signTestToken(claims(over), secret) }) });
+const accounts = createAccounts(dataDir);
+const PW = 'correct horse';
+// Makes the account if needed, then signs in.
+async function signIn(base, username, password = PW) {
+  if (!accounts.exists(username)) accounts.set(username, PW);
+  const r = await fetch(`${base}/auth/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username, password }) });
   const set = r.headers.get('set-cookie') || '';
-  return { status: r.status, body: await r.json(), cookie: (/fs_session=[^;]*/.exec(set) || [''])[0] };
+  return { status: r.status, body: await r.json(), cookie: (/fs_session=[^;]*/.exec(set) || [''])[0], setCookie: set };
 }
 const get = (base, p, cookie) => fetch(base + p, { headers: cookie ? { cookie } : {}, redirect: 'manual' });
 
@@ -54,49 +52,44 @@ test('signed-out visitors are sent to the login page and kept out of the API', a
 });
 
 test('the session cookie is HttpOnly, SameSite=Lax and lasts about 60 days', async () => {
-  const r = await fetch(`${srv.base}/auth/google`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ credential: signTestToken(claims(), SECRET) }) });
-  const c = r.headers.get('set-cookie');
-  assert.match(c, /HttpOnly/);
-  assert.match(c, /SameSite=Lax/);
-  assert.match(c, /Max-Age=5184000/);
+  const { status, setCookie } = await signIn(srv.base, 'cookie');
+  assert.strictEqual(status, 200);
+  assert.match(setCookie, /HttpOnly/);
+  assert.match(setCookie, /SameSite=Lax/);
+  assert.match(setCookie, /Max-Age=5184000/);
 });
 
-test('forged, expired, wrong-audience and unverified tokens are refused', async () => {
-  assert.strictEqual((await signIn(srv.base, {}, 'not-the-secret')).status, 401, 'forged signature');
-  assert.strictEqual((await signIn(srv.base, { exp: now() - 10 })).status, 401, 'expired');
-  assert.strictEqual((await signIn(srv.base, { aud: 'someone-else' })).status, 401, 'wrong audience');
-  assert.strictEqual((await signIn(srv.base, { iss: 'https://evil.example' })).status, 401, 'wrong issuer');
-  assert.strictEqual((await signIn(srv.base, { email_verified: false })).status, 401, 'unverified email');
-  // A token with its payload swapped for another person's keeps the old signature.
-  const good = signTestToken(claims(), SECRET).split('.');
-  const swapped = [good[0], Buffer.from(JSON.stringify(claims({ sub: '9999' }))).toString('base64url'), good[2]].join('.');
-  const r = await fetch(`${srv.base}/auth/google`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ credential: swapped }) });
-  assert.strictEqual(r.status, 401, 'tampered payload');
-  // A made-up cookie is not a session.
+test('wrong passwords, unknown users and made-up cookies are refused', async () => {
+  accounts.set('thandi', PW);
+  assert.strictEqual((await signIn(srv.base, 'thandi', 'wrong password')).status, 401);
+  assert.strictEqual((await signIn(srv.base, 'THANDI', PW)).status, 200, 'usernames ignore case');
+  const nobody = await fetch(`${srv.base}/auth/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: 'nobody', password: PW }) });
+  assert.strictEqual(nobody.status, 401);
+  const empty = await fetch(`${srv.base}/auth/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+  assert.strictEqual(empty.status, 400);
   assert.strictEqual((await get(srv.base, '/api/progress', 'fs_session=made-up')).status, 401);
+  // The password file holds hashes only.
+  const stored = fs.readFileSync(path.join(dataDir, 'accounts.json'), 'utf8');
+  assert.ok(!stored.includes(PW));
 });
 
-test('without TEST_MODE, Google itself checks the token (a fake one fails)', async () => {
-  const real = await makeServer({ testMode: false });
-  try {
-    const fake = signTestToken(claims(), SECRET);
-    const r = await fetch(`${real.base}/auth/google`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ credential: fake }) });
-    assert.strictEqual(r.status, 401);
-    assert.strictEqual((await get(real.base, '/test/token')).status, 404, 'no test token route outside test mode');
-  } finally { real.server.close(); }
-});
-
-test('ALLOWED_EMAILS keeps everyone else out', async () => {
-  const strict = await makeServer({ allowedEmails: ['me@example.com', 'sister@example.com'] });
-  try {
-    assert.strictEqual((await signIn(strict.base, { email: 'stranger@example.com', sub: '5' })).status, 401);
-    assert.strictEqual((await signIn(strict.base, { email: 'Sister@Example.com', sub: '6' })).status, 200);
-  } finally { strict.server.close(); }
+test('changing a password or removing an account signs that person out', async () => {
+  const a = await signIn(srv.base, 'sipho');
+  assert.strictEqual((await get(srv.base, '/api/progress', a.cookie)).status, 200);
+  await new Promise((r) => setTimeout(r, 5));
+  accounts.set('sipho', 'a new password');
+  assert.strictEqual((await get(srv.base, '/api/progress', a.cookie)).status, 401, 'old session after a password change');
+  const b = await signIn(srv.base, 'sipho', 'a new password');
+  assert.strictEqual((await get(srv.base, '/api/progress', b.cookie)).status, 200);
+  accounts.remove('sipho');
+  assert.strictEqual((await get(srv.base, '/api/progress', b.cookie)).status, 401, 'removed account');
+  assert.throws(() => accounts.set('../evil', PW), /Usernames/);
+  assert.throws(() => accounts.set('ok', '123'), /at least/);
 });
 
 test('two learners have separate progress, and saves survive', async () => {
-  const a = await signIn(srv.base, { sub: '111', email: 'a@example.com' });
-  const b = await signIn(srv.base, { sub: '222', email: 'b@example.com' });
+  const a = await signIn(srv.base, 'learner-a');
+  const b = await signIn(srv.base, 'learner-b');
   const fresh = await (await get(srv.base, '/api/progress', a.cookie)).json();
   assert.deepStrictEqual(fresh.progress, { version: 1, settings: {}, topics: {}, exams: {}, examDrafts: {} });
   const put = (cookie, rev, data) => fetch(`${srv.base}/api/progress`, { method: 'PUT', headers: { 'Content-Type': 'application/json', 'X-Rev': String(rev), cookie }, body: JSON.stringify(data) });
@@ -107,11 +100,10 @@ test('two learners have separate progress, and saves survive', async () => {
   assert.strictEqual(pa.progress.settings.grade, 10);
   assert.strictEqual(pb.progress.settings.grade, 8);
   assert.deepStrictEqual(pb.progress.topics, {});
-  // Stored by Google account id, with a backup of the previous save.
-  assert.ok(fs.existsSync(path.join(dataDir, 'users', '111', 'progress.json')));
-  assert.ok(fs.existsSync(path.join(dataDir, 'users', '111', 'account.json')));
+  // Stored by username, with a backup of the previous save.
+  assert.ok(fs.existsSync(path.join(dataDir, 'users', 'learner-a', 'progress.json')));
   assert.strictEqual((await put(a.cookie, pa.rev, { ...pa.progress, settings: { grade: 11 } })).status, 200);
-  assert.ok(fs.existsSync(path.join(dataDir, 'users', '111', 'progress.json.bak')));
+  assert.ok(fs.existsSync(path.join(dataDir, 'users', 'learner-a', 'progress.json.bak')));
   // An old page (stale rev) can't overwrite a newer save.
   assert.strictEqual((await put(a.cookie, pa.rev, { ...pa.progress, settings: { grade: 9 } })).status, 409);
   // Sessions are kept on disk, so a restarted server still knows the learner.
@@ -127,7 +119,7 @@ test('two learners have separate progress, and saves survive', async () => {
 });
 
 test('progress must be a JSON object and at most 2 MB', async () => {
-  const { cookie } = await signIn(srv.base, { sub: '333' });
+  const { cookie } = await signIn(srv.base, 'user333');
   const put = (body) => fetch(`${srv.base}/api/progress`, { method: 'PUT', headers: { 'Content-Type': 'application/json', cookie }, body });
   assert.strictEqual((await put('[1,2]')).status, 400);
   assert.strictEqual((await put('{oops')).status, 400);
@@ -135,7 +127,7 @@ test('progress must be a JSON object and at most 2 MB', async () => {
 });
 
 test('catalog, every topic and every exam load as JSON', async () => {
-  const { cookie } = await signIn(srv.base, { sub: '444' });
+  const { cookie } = await signIn(srv.base, 'user444');
   const json = async (p) => { const r = await get(srv.base, p, cookie); assert.strictEqual(r.status, 200, p); return r.json(); };
   const cat = await json('/api/catalog');
   assert.ok(cat.grades.length >= 5);
@@ -155,7 +147,7 @@ test('catalog, every topic and every exam load as JSON', async () => {
 });
 
 test('audio is served with range requests', async () => {
-  const { cookie } = await signIn(srv.base, { sub: '555' });
+  const { cookie } = await signIn(srv.base, 'user555');
   const ids = await (await get(srv.base, '/api/audio/9/technology/preservation-of-metals', cookie)).json();
   assert.ok(ids.length > 0);
   const url = `/api/audio/9/technology/preservation-of-metals/${ids[0]}`;
@@ -170,7 +162,7 @@ test('audio is served with range requests', async () => {
 });
 
 test('path traversal is refused, plain and encoded', async () => {
-  const { cookie } = await signIn(srv.base, { sub: '666' });
+  const { cookie } = await signIn(srv.base, 'user666');
   const bad = [
     '/api/topic/10/..%2F..%2F..%2Fweb/package',
     '/api/topic/10/%2e%2e/%2e%2e',
@@ -200,7 +192,7 @@ test('path traversal is refused, plain and encoded', async () => {
 });
 
 test('the app page is the web version: web api.js, boot script, phone layout', async () => {
-  const { cookie } = await signIn(srv.base, { sub: '777', email: 'page@example.com' });
+  const { cookie } = await signIn(srv.base, 'page-user');
   const html = await (await get(srv.base, '/', cookie)).text();
   assert.match(html, /<script src="\/boot.js"><\/script>/);
   assert.match(html, /mobile\.css" media=/);
@@ -210,7 +202,7 @@ test('the app page is the web version: web api.js, boot script, phone layout', a
   assert.ok(!api.includes('__TAURI__'), 'the web api.js must not use Tauri');
   const boot = await (await get(srv.base, '/boot.js', cookie)).text();
   assert.match(boot, /__FREESHEET_PLATFORM__="web"/);
-  assert.match(boot, /page@example\.com/);
+  assert.match(boot, /page-user/);
   assert.strictEqual((await get(srv.base, '/styles.css')).status, 200);
 });
 

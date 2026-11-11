@@ -98,7 +98,8 @@
     web: true,
     platform: 'web',
     deviceName: 'your account',
-    account: { signedIn: true, email: account.email || '', googleAvailable: true },
+    // The app's Settings shows "Signed in <email>" with a Sign out button; here it's the username.
+    account: { signedIn: true, email: account.username || '', googleAvailable: true },
     getCatalog: function () { return json('/api/catalog'); },
     contentWords: function () { return json('/api/words'); },
     getCourse: function (c) { return json('/api/course/' + id(c)); },
@@ -111,7 +112,7 @@
     loadProgress: function () {
       return json('/api/progress').then(function (r) {
         rev = r.rev;
-        if (r.account) api.account.email = r.account.email;
+        if (r.account) api.account.email = r.account.username;
         return r.progress;
       });
     },
@@ -119,7 +120,7 @@
     // Called as the page closes or is hidden: start the save; keepalive carries it.
     saveProgressSync: function (data) { save(data, true).catch(function () {}); return true; },
     progressLocation: function () {
-      return Promise.resolve('Your progress is saved to your Google account (' + (api.account.email || 'signed in') + ') on this FreeSheet server, so it follows you to any phone or computer.');
+      return Promise.resolve('Your progress is saved to your account (' + (api.account.email || 'signed in') + ') on this FreeSheet server, so it follows you to any phone or computer.');
     },
     exportProgress: function (data) {
       download('freesheet-progress-' + new Date().toISOString().slice(0, 10) + '.json', JSON.stringify(data, null, 2));

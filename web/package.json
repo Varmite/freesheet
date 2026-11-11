@@ -2,7 +2,7 @@
   "name": "freesheet-web",
   "version": "1.0.0",
   "private": true,
-  "description": "FreeSheet web edition: the FreeSheet app as a self-hosted website with Google sign-in.",
+  "description": "FreeSheet web edition: the FreeSheet app as a self-hosted website with accounts.",
   "license": "MIT",
   "main": "server.js",
   "engines": {
@@ -14,8 +14,7 @@
     "test:browser": "node test/browser.js"
   },
   "dependencies": {
-    "express": "^5.3.0",
-    "google-auth-library": "^10.9.1"
+    "express": "^5.3.0"
   },
   "devDependencies": {
     "playwright": "^1.49.1"

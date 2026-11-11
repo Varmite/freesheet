@@ -59,21 +59,16 @@ const cfg = {
   port: Number(env.PORT || 5000),
   host: env.HOST || '0.0.0.0',
   dataDir,
-  googleClientId: (env.GOOGLE_CLIENT_ID || '').trim(),
-  allowedEmails: (env.ALLOWED_EMAILS || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean),
   sessionSecret: env.SESSION_SECRET,
   // Secure cookies need https. Behind an https proxy (Cloudflare Tunnel), set COOKIE_SECURE=1.
   secureCookies: httpsOn || env.COOKIE_SECURE === '1',
   trustProxy: env.TRUST_PROXY === '1',
-  testMode: env.TEST_MODE === '1',
-  testSecret: env.TEST_SECRET || 'test-secret',
 };
 
-if (cfg.testMode) console.warn('\n*** TEST_MODE is on: Google sign-in is replaced by a test stand-in. Never use this on the real server. ***\n');
-if (!cfg.googleClientId) console.warn('GOOGLE_CLIENT_ID is not set: nobody can sign in until it is (see SETUP.md).');
-if (!cfg.allowedEmails.length) console.warn('ALLOWED_EMAILS is empty: any Google account can sign in.');
 
-const { app, lastSeen } = createApp(cfg);
+const { app, lastSeen, accounts } = createApp(cfg);
+if (!accounts.list().length) console.warn('No accounts yet: nobody can sign in. Make one with  ./users.sh add <name>');
+if (!httpsOn && env.COOKIE_SECURE !== '1') console.warn('No HTTPS: passwords travel unencrypted. Fine at home for testing; run ./setup-https.sh before using it over the internet.');
 
 // ---- HTTP or HTTPS. Renewed certificates are picked up without a restart: on SIGHUP
 // (the renewal hook in SETUP.md sends it) and by checking the file twice a day.
@@ -117,7 +112,7 @@ server.listen(cfg.port, cfg.host, () => {
 createUpdater({
   repoRoot: cfg.repoRoot,
   webDir: WEB,
-  enabled: env.AUTO_UPDATE !== '0' && !cfg.testMode && !fs.existsSync('/.dockerenv'),
+  enabled: env.AUTO_UPDATE !== '0' && !fs.existsSync('/.dockerenv'),
   checkMs: Number(env.UPDATE_CHECK_MINUTES || 60) * 60e3,
   idleMs: Number(env.UPDATE_IDLE_MINUTES || 15) * 60e3,
   lastSeen,

@@ -1,8 +1,8 @@
 # FreeSheet web edition: setting it up on your laptop
 
 This puts FreeSheet on your old Linux Mint laptop so you (and your sister) can use it from
-your phones' browsers, anywhere, signed in with Google. Your progress is saved on the laptop,
-separately for each Google account.
+your phones' browsers, anywhere, each with your own username and password. Accounts and
+progress are kept on the laptop, separately for each person.
 
 You will need about an hour the first time. Copy each command exactly: click in the
 **Terminal** (Menu > Terminal), paste with **Ctrl+Shift+V**, and press **Enter**.
@@ -38,16 +38,16 @@ cd freesheet/web
 
 - checks for Node.js 18 or newer, and offers to install Node.js 22 if it's missing;
 - installs the two packages FreeSheet needs;
-- asks for your **Google client ID** (from step 1; press Enter to skip it for now) and the
-  **email addresses allowed to sign in** (yours and your sister's, separated by commas);
+- asks you to make the **accounts**: a username and password for you and one for your
+  sister (step 1);
 - creates the `freesheet-web` service, which runs as you, restarts if it crashes, and
   starts when the laptop boots;
 - prints the address.
 
-You can run `./install.sh` again at any time to change those answers.
+You can run `./install.sh` again at any time; it keeps what is already set up.
 
 Check that it works: on the laptop, open <http://localhost:5000>. You should see the
-FreeSheet sign-in page. (Signing in only works after steps 1 to 3.)
+FreeSheet sign-in page; sign in with an account you just made.
 
 > **Port 5000 is busy?** `install.sh` stops and tells you if another program is using
 > port 5000. To find it:
@@ -68,33 +68,27 @@ FreeSheet sign-in page. (Signing in only works after steps 1 to 3.)
 
 ---
 
-## 1. Google sign-in (free)
+## 1. Accounts
 
-1. Go to <https://console.cloud.google.com/> and sign in with your Google account.
-2. At the top, click the project list, then **New project**. Name it `FreeSheet` and click
-   **Create**. Make sure it is selected.
-3. In the search bar type **Google Auth Platform** and open it. Click **Get started**:
-   - App name: `FreeSheet`; User support email: your email. **Next**.
-   - Audience: **External**. **Next**.
-   - Contact information: your email. **Next**, tick the agreement, **Create**.
-4. Open **Audience** (left menu). Under **Test users** click **Add users** and add your Gmail
-   address and your sister's. Leave the app in **Testing**: test users can sign in without
-   Google having to review the app.
-5. Open **Clients** > **Create client**:
-   - Application type: **Web application**; Name: `FreeSheet web`.
-   - **Authorised JavaScript origins** > **Add URI**: `https://<name>.duckdns.org:5000`
-     (the name you choose in step 2; you can come back and add it later).
-   - Leave **Authorised redirect URIs** empty.
-   - Click **Create** and copy the **Client ID** (it ends in `.apps.googleusercontent.com`).
-6. Put it on the laptop:
+Each person signs in with a **username and password** that live only on the laptop (in
+`web/data/accounts.json`; the passwords themselves are never stored, only a scrambled
+"hash" of them). There is no sign-up page, so nobody else can make an account. You manage
+them on the laptop:
 
-   ```sh
-   cd ~/freesheet/web
-   ./install.sh          # paste the client ID when asked; keep the other answers
-   ```
+```sh
+cd ~/freesheet/web
+./users.sh add thandi        # make an account (it asks for the password twice)
+./users.sh list              # who has an account
+./users.sh passwd thandi     # change a password (signs that person out on every device)
+./users.sh remove thandi     # delete an account (their progress stays in data/users/thandi)
+```
 
-Only email addresses in `ALLOWED_EMAILS` (in `web/.env`) can sign in, even if Google lets
-someone else through.
+Usernames are lower-case letters, digits, `-` or `_`. Passwords need at least 6 characters;
+longer is better, because the site is on the internet. Changes work straight away, without
+a restart.
+
+> **Use HTTPS (step 3) before you use FreeSheet away from home.** Without it, passwords
+> travel across the internet unencrypted.
 
 ---
 
@@ -102,7 +96,7 @@ someone else through.
 
 Your home's internet address (IP) can change. DuckDNS gives you a free name that follows it.
 
-1. Go to <https://www.duckdns.org> and sign in (with Google is easiest).
+1. Go to <https://www.duckdns.org> and sign in (with a Google or GitHub account is easiest).
 2. Type a subdomain, e.g. `reevesfamily`, and click **add domain**. Your address is now
    `reevesfamily.duckdns.org`.
 3. Copy the **token** shown at the top of the page. Keep it secret: it controls your name.
@@ -113,7 +107,8 @@ Step 3's script sets up the updater that keeps the name pointing at your home.
 
 ## 3. HTTPS: a free certificate (Let's Encrypt)
 
-Google sign-in refuses plain `http://` addresses, so FreeSheet needs a certificate. This uses
+HTTPS encrypts everything between the phone and the laptop, passwords included, and stops
+browsers warning "Not secure". It needs a certificate. This uses
 the **DNS challenge** through DuckDNS, so you **only forward port 5000**; ports 80 and 443
 are not needed.
 
@@ -140,7 +135,7 @@ without restarting. (FreeSheet also checks the file twice a day, just in case.) 
 ```
 
 Now open `https://<name>.duckdns.org:5000` on your phone **using mobile data** (Wi-Fi off),
-sign in with Google, and you're in. On home Wi-Fi, see step 4 if it doesn't open.
+sign in with your username and password, and you're in. On home Wi-Fi, see step 4 if it doesn't open.
 
 Check the router: it should forward **external port 5000** (TCP) to the laptop's IP, port
 5000. To see the laptop's IP: `hostname -I`. Give the laptop a fixed IP in the router
@@ -235,7 +230,6 @@ Cloudflare (from about R150 a year).
 2. Create a tunnel that sends `https://freesheet.<your-domain>` to `http://localhost:5000`.
 3. In `web/.env`: empty `HTTPS_CERT` and `HTTPS_KEY` (Cloudflare does the HTTPS), and add
    `COOKIE_SECURE=1` and `TRUST_PROXY=1`. Restart FreeSheet.
-4. In Google Cloud, add `https://freesheet.<your-domain>` as an Authorised JavaScript origin.
 
 ## Docker (optional)
 
@@ -243,8 +237,9 @@ If you prefer Docker to `install.sh`:
 
 ```sh
 cd ~/freesheet/web
-cp .env.example .env && nano .env      # fill in GOOGLE_CLIENT_ID and ALLOWED_EMAILS
+cp .env.example .env
 docker compose up -d --build
+docker compose exec freesheet-web node users.js add thandi    # make each account
 ```
 
 Progress is kept in the `freesheet-data` Docker volume. For HTTPS, put `fullchain.pem` and

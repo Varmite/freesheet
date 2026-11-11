@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-// End-to-end check in real browsers (Playwright): signs in with the TEST_MODE stand-in,
+// End-to-end check in real browsers (Playwright): signs in with a test account,
 // loads the catalog, opens a topic, answers a practice question, reloads to check the
 // answer was saved, and fetches audio with a Range request. Runs in Chromium (desktop)
 // and WebKit with an iPhone profile (Safari's engine).
@@ -14,14 +14,17 @@ const os = require('os');
 const path = require('path');
 const assert = require('assert');
 const { chromium, webkit, devices } = require('playwright');
+const { createAccounts } = require('../lib/auth');
 
 const PORT = 5099;
 const BASE = `http://127.0.0.1:${PORT}`;
 const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'freesheet-web-e2e-'));
+const accounts = createAccounts(dataDir);
+const PASSWORD = 'browser-test-pw';
 
 function startServer() {
   const child = spawn(process.execPath, [path.join(__dirname, '..', 'server.js')], {
-    env: { ...process.env, TEST_MODE: '1', GOOGLE_CLIENT_ID: 'e2e-client', SESSION_SECRET: 'e2e', DATA_DIR: dataDir, PORT: String(PORT), HOST: '127.0.0.1', AUTO_UPDATE: '0', HTTPS_CERT: '', HTTPS_KEY: '' },
+    env: { ...process.env, SESSION_SECRET: 'e2e', DATA_DIR: dataDir, PORT: String(PORT), HOST: '127.0.0.1', AUTO_UPDATE: '0', HTTPS_CERT: '', HTTPS_KEY: '' },
     stdio: ['ignore', 'pipe', 'pipe'],
   });
   return new Promise((resolve, reject) => {
@@ -42,9 +45,14 @@ async function run(name, browserType, contextOptions, sub) {
   // Signed out: the app sends us to the login page.
   await page.goto(BASE + '/');
   await page.waitForURL('**/login');
-  await page.fill('#test-sub', sub);
-  await page.fill('#test-email', `${sub}@example.com`);
-  await page.click('#test-login button');
+  // A wrong password is refused, the right one lets us in.
+  accounts.set(sub, PASSWORD);
+  await page.fill('#username', sub);
+  await page.fill('#password', 'not-it');
+  await page.click('#go');
+  await page.waitForSelector('#error:not([hidden])');
+  await page.fill('#password', PASSWORD);
+  await page.click('#go');
   await page.waitForURL(BASE + '/');
   step('signed in');
 
@@ -113,8 +121,8 @@ async function run(name, browserType, contextOptions, sub) {
 (async () => {
   const server = await startServer();
   try {
-    await run('Chromium (desktop)', chromium, { viewport: { width: 1200, height: 800 } }, '2001');
-    await run('WebKit (iPhone 13)', webkit, { ...devices['iPhone 13'] }, '2002');
+    await run('Chromium (desktop)', chromium, { viewport: { width: 1200, height: 800 } }, 'desktop-tester');
+    await run('WebKit (iPhone 13)', webkit, { ...devices['iPhone 13'] }, 'phone-tester');
     console.log('Browser tests passed.');
   } finally {
     server.kill();

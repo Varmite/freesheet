@@ -34,13 +34,15 @@ jobs:
       - name: install.sh (answers piped in), then the service must be up
         working-directory: web
         run: |
-          printf 'test-client.apps.googleusercontent.com\nme@example.com, sister@example.com\n' | ./install.sh
+          printf 'tester\npass1234\npass1234\n' | ./install.sh
           systemctl is-active freesheet-web
           systemctl show -p User --value freesheet-web
-          grep -E '^(GOOGLE_CLIENT_ID|ALLOWED_EMAILS|PORT)=' .env
+          test "$(node users.js list)" = tester
           test -n "$(grep -E '^SESSION_SECRET=.+' .env)"
           curl -fsS -o /dev/null -w 'login page %{http_code}\n' http://localhost:5000/login
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:5000/api/progress)" = 401
+          curl -fsS -c jar -H 'Content-Type: application/json' -d '{"username":"tester","password":"pass1234"}' http://localhost:5000/auth/login
+          curl -fsS -b jar -o /dev/null -w 'signed in: progress %{http_code}\n' http://localhost:5000/api/progress
       - name: Restarts keep the session secret; uninstall.sh removes the service
         working-directory: web
         run: |

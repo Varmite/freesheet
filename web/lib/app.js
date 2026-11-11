@@ -3,7 +3,7 @@
 // directly with their own settings.
 //
 //   /login                  the sign-in page (public/login.html)
-//   POST /auth/google       Google ID token in, session cookie out
+//   POST /auth/login        username and password in, session cookie out
 //   POST /auth/logout       ends the session
 //   /                       the app (src/index.html), signed-in only
 //   /js/api.js              public/api.js instead of the desktop bridge
@@ -16,7 +16,7 @@ const fs = require('fs');
 const path = require('path');
 const { createContent, validAudioId } = require('./content');
 const { createStore, createSessions } = require('./store');
-const { createVerifier, AuthError } = require('./auth');
+const { createAccounts } = require('./auth');
 
 const SESSION_DAYS = 60;
 const COOKIE = 'fs_session';
@@ -30,7 +30,7 @@ function createApp(cfg) {
   const content = createContent(ROOT);
   const store = createStore(cfg.dataDir);
   const sessions = createSessions(cfg.dataDir, cfg.sessionSecret, SESSION_DAYS * 86400e3);
-  const verify = createVerifier(cfg);
+  const accounts = createAccounts(cfg.dataDir);
 
   // When someone last had FreeSheet open (for the updater: update only when idle).
   let lastSeen = 0;
@@ -52,10 +52,13 @@ function createApp(cfg) {
     const secure = cfg.secureCookies ? '; Secure' : '';
     res.append('Set-Cookie', `${COOKIE}=${encodeURIComponent(value)}; Path=/; Max-Age=${maxAgeS}; HttpOnly; SameSite=Lax${secure}`);
   }
-  // req.user = { sub, email, name } when signed in.
+  // req.user = { username } when signed in. A session ends if its account was removed
+  // or its password changed since (./users.sh works while the server runs).
   app.use((req, res, next) => {
     req.token = readCookie(req, COOKIE);
-    req.user = sessions.get(req.token);
+    const s = sessions.get(req.token);
+    const changed = s ? accounts.changedAt(s.username) : null;
+    req.user = s && changed !== null && (s.created || 0) >= changed ? { username: s.username } : null;
     next();
   });
   const signedIn = (req, res, next) => {
@@ -71,35 +74,20 @@ function createApp(cfg) {
     res.set('Cache-Control', 'no-store');
     res.sendFile(path.join(PUBLIC, 'login.html'));
   });
-  // What the login page needs to show the Google button.
-  app.get('/auth/config', (req, res) => {
-    res.json({ clientId: cfg.googleClientId, testMode: !!cfg.testMode, configured: !!cfg.googleClientId });
-  });
-  app.post('/auth/google', express.json({ limit: '20kb' }), async (req, res) => {
-    const token = req.body && req.body.credential;
-    if (typeof token !== 'string' || !token || token.length > 8000) return res.status(400).json({ error: 'No sign-in token.' });
-    let user;
-    try {
-      user = await verify(token);
-    } catch (e) {
-      if (!(e instanceof AuthError)) console.error(e);
-      return res.status(401).json({ error: e instanceof AuthError ? e.message : 'Sign-in failed.' });
+  app.post('/auth/login', express.json({ limit: '10kb' }), async (req, res) => {
+    const { username, password } = req.body || {};
+    if (typeof username !== 'string' || typeof password !== 'string' || !username || !password || password.length > 200) {
+      return res.status(400).json({ error: 'Type your username and password.' });
     }
-    await store.saveAccount(user.sub, { email: user.email, name: user.name });
+    const user = accounts.check(username, password);
+    if (!user) {
+      // A short pause makes guessing passwords slow.
+      await new Promise((r) => setTimeout(r, 800));
+      return res.status(401).json({ error: 'Wrong username or password.' });
+    }
     setCookie(res, await sessions.create(user), SESSION_DAYS * 86400);
     res.json({ ok: true });
   });
-  // Tests only: a signed stand-in token for the test verifier (lib/auth.js).
-  if (cfg.testMode) {
-    const { signTestToken } = require('./auth');
-    app.get('/test/token', (req, res) => {
-      const now = Math.floor(Date.now() / 1000);
-      res.type('text').send(signTestToken({
-        iss: 'https://accounts.google.com', aud: cfg.googleClientId, sub: String(req.query.sub || '1001'),
-        email: String(req.query.email || 'learner@example.com'), email_verified: true, name: 'Test Learner', exp: now + 600,
-      }, cfg.testSecret));
-    });
-  }
 
   app.post('/auth/logout', async (req, res) => {
     await sessions.remove(req.token);
@@ -135,13 +123,13 @@ function createApp(cfg) {
   // Runs before the page is drawn, so the saved theme shows from the first paint.
   app.get('/boot.js', async (req, res) => {
     let s = {};
-    if (req.user) s = (await store.load(req.user.sub)).progress.settings || {};
+    if (req.user) s = (await store.load(req.user.username)).progress.settings || {};
     const pick = (k, d) => (typeof s[k] === 'string' && /^[a-z]+$/.test(s[k]) ? s[k] : d);
     const appearance = { theme: pick('theme', 'system'), accent: pick('accent', 'default'), lineSpacing: pick('lineSpacing', 'normal'), readingWidth: pick('readingWidth', 'normal'), textRendering: pick('textRendering', 'smooth') };
     res.set('Cache-Control', 'no-store').type('js').send(
       `window.__FREESHEET_PLATFORM__="web";window.__FREESHEET_VERSION__=${JSON.stringify(VERSION)};` +
       `window.__FREESHEET_APPEARANCE__=${JSON.stringify(appearance)};` +
-      `window.__FREESHEET_ACCOUNT__=${JSON.stringify(req.user ? { email: req.user.email, name: req.user.name } : null)};`);
+      `window.__FREESHEET_ACCOUNT__=${JSON.stringify(req.user ? { username: req.user.username } : null)};`);
   });
 
   app.get('/js/api.js', (req, res) => res.set('Cache-Control', 'no-cache').sendFile(path.join(PUBLIC, 'api.js')));
@@ -176,14 +164,14 @@ function createApp(cfg) {
   // ---------------------------------------------------------------- progress
 
   api.get('/progress', async (req, res) => {
-    const { progress, rev } = await store.load(req.user.sub);
-    res.set('Cache-Control', 'no-store').json({ progress, rev, account: { email: req.user.email, name: req.user.name } });
+    const { progress, rev } = await store.load(req.user.username);
+    res.set('Cache-Control', 'no-store').json({ progress, rev, account: { username: req.user.username } });
   });
   api.put('/progress', express.json({ limit: '2mb' }), async (req, res) => {
     const data = req.body;
     if (!data || typeof data !== 'object' || Array.isArray(data)) return res.status(400).json({ error: 'Progress must be a JSON object.' });
     const base = req.get('X-Rev');
-    const r = await store.save(req.user.sub, data, base == null || base === '' ? null : Number(base));
+    const r = await store.save(req.user.username, data, base == null || base === '' ? null : Number(base));
     if (!r.ok) return res.status(409).json({ error: 'A newer save exists.', rev: r.rev });
     res.json({ ok: true, rev: r.rev });
   });
@@ -205,7 +193,7 @@ function createApp(cfg) {
     res.status(status).json({ error: status === 413 ? 'Too large.' : status < 500 ? 'Bad request.' : 'Server error.' });
   });
 
-  return { app, lastSeen: () => lastSeen, sessions };
+  return { app, lastSeen: () => lastSeen, sessions, accounts };
 }
 
 module.exports = { createApp };

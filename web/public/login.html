@@ -14,73 +14,45 @@
     <img class="logo" src="/icon-192.png" alt="" width="64" height="64">
     <h1>FreeSheet</h1>
     <p class="lead">Notes, practice questions and exams for the CAPS curriculum, Grades 8 to 12.</p>
-    <div id="google-button"></div>
-    <!-- Only shown when the server runs with TEST_MODE=1 (automated tests). -->
-    <form id="test-login" hidden>
-      <p class="note">Test mode: sign in as a made-up person.</p>
-      <input id="test-sub" value="1001" aria-label="Test account number">
-      <input id="test-email" value="learner@example.com" aria-label="Test email">
-      <button type="submit">Sign in (test)</button>
+    <form id="login">
+      <input id="username" name="username" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="Username" aria-label="Username" required>
+      <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Password" aria-label="Password" required>
+      <button type="submit" id="go">Sign in</button>
     </form>
     <p id="error" class="error" role="alert" hidden></p>
-    <p class="note">Your progress is saved to your Google account on this server, so you can carry on from any phone or computer.</p>
+    <p class="note">Your progress is saved to your account on this server, so you can carry on from any phone or computer.</p>
   </main>
 
   <script>
   (function () {
     'use strict';
+    var form = document.getElementById('login');
     var errorEl = document.getElementById('error');
+    var go = document.getElementById('go');
     function showError(msg) { errorEl.textContent = msg; errorEl.hidden = false; }
 
-    // Send Google's ID token to the server; it checks it and sets the session cookie.
-    function signIn(credential) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
       errorEl.hidden = true;
-      fetch('/auth/google', {
+      go.disabled = true;
+      fetch('/auth/login', {
         method: 'POST',
         credentials: 'same-origin',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ credential: credential }),
+        body: JSON.stringify({ username: document.getElementById('username').value, password: document.getElementById('password').value }),
       }).then(function (r) {
         return r.json().then(function (v) {
-          if (r.ok) location.href = '/';
-          else showError(v.error || 'Sign-in failed.');
+          if (r.ok) { location.href = '/'; return; }
+          go.disabled = false;
+          showError(v.error || 'Sign-in failed.');
+          document.getElementById('password').select();
         });
-      }).catch(function () { showError('Could not reach the server. Check your connection and try again.'); });
-    }
-
-    fetch('/auth/config').then(function (r) { return r.json(); }).then(function (cfg) {
-      if (cfg.testMode) {
-        var form = document.getElementById('test-login');
-        form.hidden = false;
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          // The test server accepts tokens made by /test/token (tests only).
-          fetch('/test/token?sub=' + encodeURIComponent(document.getElementById('test-sub').value) +
-            '&email=' + encodeURIComponent(document.getElementById('test-email').value))
-            .then(function (r) { return r.text(); }).then(signIn);
-        });
-        return;
-      }
-      if (!cfg.configured) return showError('This server has no Google client ID yet. Set GOOGLE_CLIENT_ID in web/.env (see SETUP.md).');
-      // Google Identity Services draws the "Sign in with Google" button.
-      var s = document.createElement('script');
-      s.src = 'https://accounts.google.com/gsi/client';
-      s.async = true;
-      s.onload = function () {
-        google.accounts.id.initialize({
-          client_id: cfg.clientId,
-          callback: function (resp) { signIn(resp.credential); },
-          ux_mode: 'popup',
-          use_fedcm_for_prompt: true,
-        });
-        google.accounts.id.renderButton(document.getElementById('google-button'), {
-          theme: matchMedia('(prefers-color-scheme: dark)').matches ? 'filled_black' : 'outline',
-          size: 'large', shape: 'pill', text: 'signin_with', width: 280,
-        });
-      };
-      s.onerror = function () { showError('Could not load Google sign-in. Check your internet connection.'); };
-      document.head.appendChild(s);
+      }).catch(function () {
+        go.disabled = false;
+        showError('Could not reach the server. Check your connection and try again.');
+      });
     });
+    document.getElementById('username').focus();
   })();
   </script>
 </body>

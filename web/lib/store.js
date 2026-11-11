@@ -1,8 +1,8 @@
 'use strict';
 // Where things are kept on disk (all under DATA_DIR):
-//   users/<google sub>/progress.json   that learner's progress (+ .bak, the previous save)
-//   users/<google sub>/account.json    their email and name, for reference
-//   sessions.json                      who is signed in on which browser
+//   accounts.json                  usernames and password hashes (lib/auth.js)
+//   users/<username>/progress.json that learner's progress (+ .bak, the previous save)
+//   sessions.json                  who is signed in on which browser
 //
 // Progress is written like src-tauri/src/progress.rs: to a temporary file first, the old
 // file kept as .bak, then renamed into place, so a crash or power cut never loses it.
@@ -15,8 +15,9 @@ const crypto = require('crypto');
 // The same empty progress the Rust code returns for a new learner (progress::empty).
 const emptyProgress = () => ({ version: 1, settings: {}, topics: {}, exams: {}, examDrafts: {} });
 
-// Google's "sub" is a number as a string. Anything else could name another folder.
-const validSub = (sub) => typeof sub === 'string' && /^[0-9]{1,64}$/.test(sub);
+// A username is also a folder name: nothing that could point anywhere else.
+const { validUsername } = require('./auth');
+const validUser = (name) => typeof name === 'string' && validUsername(name);
 
 async function writeSafely(file, text) {
   await fsp.mkdir(path.dirname(file), { recursive: true });
@@ -33,24 +34,24 @@ async function readJson(file) {
 function createStore(dataDir) {
   const usersDir = path.join(dataDir, 'users');
   fs.mkdirSync(usersDir, { recursive: true });
-  const userDir = (sub) => {
-    if (!validSub(sub)) throw new Error('bad user id');
-    return path.join(usersDir, sub);
+  const userDir = (user) => {
+    if (!validUser(user)) throw new Error('bad user id');
+    return path.join(usersDir, user);
   };
 
   // One write at a time per learner, in order.
   const queues = new Map();
-  function serial(sub, fn) {
-    const prev = queues.get(sub) || Promise.resolve();
+  function serial(user, fn) {
+    const prev = queues.get(user) || Promise.resolve();
     const next = prev.then(fn, fn);
-    queues.set(sub, next.catch(() => {}));
+    queues.set(user, next.catch(() => {}));
     return next;
   }
 
   // { progress, rev }. rev counts saves, so a browser holding old progress can be told
   // that a newer save exists (another phone) instead of overwriting it.
-  async function load(sub) {
-    const file = path.join(userDir(sub), 'progress.json');
+  async function load(user) {
+    const file = path.join(userDir(user), 'progress.json');
     for (const f of [file, `${file}.bak`]) {
       try {
         const v = await readJson(f);
@@ -66,21 +67,17 @@ function createStore(dataDir) {
   }
 
   // Saves unless baseRev is given and is not the latest; returns { ok, rev }.
-  function save(sub, progress, baseRev) {
-    return serial(sub, async () => {
-      const cur = await load(sub);
+  function save(user, progress, baseRev) {
+    return serial(user, async () => {
+      const cur = await load(user);
       if (baseRev != null && baseRev !== cur.rev) return { ok: false, rev: cur.rev };
       const rev = cur.rev + 1;
-      await writeSafely(path.join(userDir(sub), 'progress.json'), JSON.stringify({ ...progress, _rev: rev }));
+      await writeSafely(path.join(userDir(user), 'progress.json'), JSON.stringify({ ...progress, _rev: rev }));
       return { ok: true, rev };
     });
   }
 
-  async function saveAccount(sub, info) {
-    await writeSafely(path.join(userDir(sub), 'account.json'), JSON.stringify({ ...info, lastSignIn: new Date().toISOString() }, null, 2));
-  }
-
-  return { load, save, saveAccount, userDir };
+  return { load, save, userDir };
 }
 
 // ---------------------------------------------------------------- sessions
@@ -105,7 +102,7 @@ function createSessions(dataDir, secret, maxAgeMs) {
   return {
     async create(user) {
       const token = crypto.randomBytes(32).toString('base64url');
-      sessions[key(token)] = { sub: user.sub, email: user.email, name: user.name || '', expires: Date.now() + maxAgeMs };
+      sessions[key(token)] = { username: user.username, created: Date.now(), expires: Date.now() + maxAgeMs };
       await persist();
       return token;
     },
@@ -117,8 +114,13 @@ function createSessions(dataDir, secret, maxAgeMs) {
     async remove(token) {
       if (token && sessions[key(token)]) { delete sessions[key(token)]; await persist(); }
     },
+    // Signs someone out everywhere (their password was changed or the account removed).
+    async removeUser(username) {
+      for (const [k, s] of Object.entries(sessions)) if (s.username === username) delete sessions[k];
+      await persist();
+    },
     flush: () => writing,
   };
 }
 
-module.exports = { createStore, createSessions, emptyProgress, validSub };
+module.exports = { createStore, createSessions, emptyProgress, validUser };

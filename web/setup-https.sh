@@ -77,7 +77,4 @@ sleep 2
 PORT="$(grep -E '^PORT=' .env | cut -d= -f2)"; PORT="${PORT:-5000}"
 bold "Done. FreeSheet is at  https://$DOMAIN:$PORT"
 echo
-echo "In Google Cloud (SETUP.md step 1), add this under Authorised JavaScript origins:"
-echo "    https://$DOMAIN:$PORT"
-echo
 echo "The certificate renews by itself (acme.sh's daily cron job)."

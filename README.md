@@ -111,8 +111,9 @@ installs over them and keeps their progress.
 ### Web edition
 
 `web/` runs FreeSheet as a self-hosted website (for example on an old Linux laptop) that you use from a
-phone's browser, with **Sign in with Google** and progress kept separately for each Google account. It is
-a small Node.js server (Express and google-auth-library; no Rust, Tauri or WebKitGTK) that serves the same
+phone's browser, with a username and password per person (kept on that computer; `web/users.sh` manages
+them) and progress kept separately for each. It is a small Node.js server (Express; no Rust, Tauri or
+WebKitGTK) that serves the same
 screens from `src/`, with `web/public/api.js` in place of `src/js/api.js`. It reads `content/` and `audio/`
 directly and gives the app the same JSON the Rust code does. It serves HTTPS itself, using a free DuckDNS
 name and Let's Encrypt certificate, and updates itself from GitHub when nobody is using it.
@@ -122,7 +123,7 @@ git clone --branch rust-native-ui https://github.com/Varmite/freesheet.git
 cd freesheet/web && ./install.sh
 ```
 
-Step-by-step setup (Google client ID, DuckDNS, HTTPS, phones, backups) is in
+Step-by-step setup (accounts, DuckDNS, HTTPS, phones, backups) is in
 [`web/SETUP.md`](web/SETUP.md). Tests: `cd web && npm test` (server) and `npm run test:browser`
 (Playwright, Chromium and iPhone WebKit). The older `server/` website (guest cookies, optional sign-in) is
 separate and unchanged.

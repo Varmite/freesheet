@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # FreeSheet web edition: installs it as a service that starts with the laptop.
 # For Linux Mint, Ubuntu and Debian. Run from the web/ folder:  ./install.sh
-# Safe to run again (for example to change the Google client ID).
+# Safe to run again.
 set -euo pipefail
 cd "$(dirname "$0")"
 WEB_DIR="$(pwd)"
 SERVICE=freesheet-web
 
 bold() { printf '\n\033[1m%s\033[0m\n' "$*"; }
-ask() { local a; read -r -p "$1${2:+ [$2]}: " a; echo "${a:-${2:-}}"; }
+ask() { local a=""; read -r -p "$1${2:+ [$2]}: " a || true; echo "${a:-${2:-}}"; }
 confirm() { local a; read -r -p "$1 [y/N] " a; [[ "$a" =~ ^[Yy] ]]; }
 envget() { grep -E "^$1=" .env 2>/dev/null | head -1 | cut -d= -f2- || true; }
 
@@ -41,18 +41,25 @@ npm ci --omit=dev --no-audit --no-fund
 bold "Settings"
 [ -f .env ] || cp .env.example .env
 chmod 600 .env
-echo "Get the client ID from Google Cloud (SETUP.md step 1). You can leave it empty for now."
-CLIENT_ID="$(ask "Google client ID" "$(envget GOOGLE_CLIENT_ID)")"
-node lib/envfile.js .env GOOGLE_CLIENT_ID "$CLIENT_ID"
-echo "Who may sign in? Your and your sister's Gmail addresses, separated by commas (empty = anyone)."
-EMAILS="$(ask "Allowed emails" "$(envget ALLOWED_EMAILS)")"
-node lib/envfile.js .env ALLOWED_EMAILS "$EMAILS"
 if [ -z "$(envget SESSION_SECRET)" ]; then
   node lib/envfile.js .env SESSION_SECRET "$(node -e 'console.log(require("crypto").randomBytes(32).toString("hex"))')"
 fi
 PORT="$(envget PORT)"; PORT="${PORT:-5000}"
 
-# ---- 4. Is the port free?
+# ---- 4. Accounts (usernames and passwords, kept on this laptop)
+bold "Accounts"
+if [ -n "$(node users.js list | grep -v '^No accounts')" ]; then
+  echo "Accounts so far: $(node users.js list | tr '
+' ' ')"
+fi
+while :; do
+  NAME="$(ask "Make an account? Type a username (e.g. thandi), or press Enter to skip")"
+  [ -z "$NAME" ] && break
+  node users.js add "$NAME" || true
+done
+echo "Later: ./users.sh add <name>, ./users.sh passwd <name>, ./users.sh list"
+
+# ---- 5. Is the port free?
 if command -v ss >/dev/null && ss -ltn "sport = :$PORT" | grep -q LISTEN; then
   if ! systemctl is-active --quiet "$SERVICE"; then
     bold "Port $PORT is already used by another program:"
@@ -62,7 +69,7 @@ if command -v ss >/dev/null && ss -ltn "sport = :$PORT" | grep -q LISTEN; then
   fi
 fi
 
-# ---- 5. The service: runs as you, restarts if it stops, starts when the laptop boots.
+# ---- 6. The service: runs as you, restarts if it stops, starts when the laptop boots.
 bold "Setting up the $SERVICE service (needs sudo)"
 NODE_BIN="$(command -v node)"
 sudo tee "/etc/systemd/system/$SERVICE.service" >/dev/null <<EOF
@@ -95,7 +102,7 @@ if ! systemctl is-active --quiet "$SERVICE"; then
   exit 1
 fi
 
-# ---- 6. Done
+# ---- 7. Done
 SCHEME=http; [ -n "$(envget HTTPS_CERT)" ] && SCHEME=https
 IP="$(hostname -I 2>/dev/null | awk '{print $1}')"
 bold "FreeSheet is running."
@@ -103,8 +110,8 @@ echo "  On this laptop:        $SCHEME://localhost:$PORT"
 [ -n "$IP" ] && echo "  On your home Wi-Fi:    $SCHEME://$IP:$PORT"
 if [ "$SCHEME" = http ]; then
   echo
-  echo "Google sign-in only works over https with a real name. Next: SETUP.md steps 2 and 3"
-  echo "(free DuckDNS name and certificate):  ./setup-https.sh"
+  echo "Without HTTPS, passwords travel unencrypted. Before using it over the internet, run"
+  echo "./setup-https.sh (free DuckDNS name and certificate; SETUP.md steps 2 and 3)."
 fi
 echo
 echo "Log:      journalctl -u $SERVICE -f"
