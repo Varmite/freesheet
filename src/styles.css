@@ -302,6 +302,19 @@ html.is-dark:not([data-theme="contrast"]) .n-diagram img { filter: brightness(0.
 .q-num { font-weight: 650; color: var(--text); }
 .q-status { margin-left: auto; font-weight: 600; color: var(--text); }
 .q-prompt p:first-child { margin-top: 0; }
+/* The source a history question refers to, shown above it (questions.js sourcesHtml).
+   A warm "paper" tint so it reads as a document, not as an answer or a hint. */
+.q-sources { margin: 0.35rem 0 0.9rem; }
+.q-source {
+  background: #fbf3dc; border: 1px solid #ecd9a4; border-left: 4px solid #d4a52a; border-radius: 10px;
+  padding: 0.75rem 0.95rem; color: var(--text);
+}
+.q-source + .q-source { margin-top: 0.6rem; }
+.is-dark .q-source { background: rgba(212, 165, 42, 0.11); border-color: rgba(212, 165, 42, 0.32); border-left-color: #c99a2e; }
+.q-source .n-passage, .q-source .n-para, .q-source p { background: none; padding: 0; margin: 0; border-radius: 0; }
+.q-source .n-label { color: #8a6412; font-weight: 650; font-size: 0.88rem; text-transform: none; letter-spacing: 0 !important; margin-bottom: 0.3rem; }
+.is-dark .q-source .n-label { color: #e0b955; }
+.q-source .n-passage-text { font-size: 0.98rem; line-height: 1.6; }
 .q-input { margin-top: 0.6rem; }
 .opts { display: flex; flex-direction: column; gap: 0.45rem; }
 .opts-row { flex-direction: row; }

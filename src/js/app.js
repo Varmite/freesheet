@@ -643,6 +643,11 @@
     if (te) te.addEventListener('click', () => { go('exams', { name: 'list', subjectId: s.id }); scrollTop(); });
   }
 
+  // The sources ("Source A: ...") in an exam's source material, for questions that refer to them.
+  function examSourceIndex(exam) {
+    return Q.sourceIndex(exam.sections.reduce((all, sec) => all.concat(sec.context || []), []));
+  }
+
   // ---------- Study: topic (notes + questions)
 
   // Notes | Questions stays within reach: once the page's own switch scrolls out of
@@ -938,6 +943,7 @@
       <div class="practice-end" id="practice-end"></div>`;
     const list = body.querySelector('#q-list');
     const cards = [];
+    const topicSources = Q.sourceIndex(topic.notes);
 
     function recordIfComplete() {
       const sc = topicScore(topic, tp);
@@ -1045,6 +1051,7 @@
 
     topic.questions.forEach((q, i) => {
       const ctx = {
+        sources: topicSources,
         number: `Question ${i + 1}`,
         response: tp.responses[q.id],
         phase: tp.checked[q.id] ? 'feedback' : 'answer',
@@ -1333,6 +1340,7 @@
       const n = all.filter((x) => K.isAnswered(x.q, e.responses[x.q.id])).length;
       main.querySelector('#answered').textContent = `${n} of ${all.length} answered`;
     };
+    const examSources = examSourceIndex(exam);
     exam.sections.forEach((sec, si) => {
       const sub = sec.questions.reduce((a, q) => a + K.marksOf(q), 0);
       const wrap = document.createElement('section');
@@ -1342,6 +1350,7 @@
         (sec.context ? `<div class="notes">${M.blocks(sec.context)}</div>` : '');
       sec.questions.forEach((q, qi) => {
         const ctx = {
+          sources: examSources,
           number: `${si + 1}.${qi + 1}`,
           response: e.responses[q.id],
           phase: 'answer',
@@ -1395,6 +1404,7 @@
     const s = subjectMeta(e.subjectId);
     const all = allExamQuestions(e.exam);
     const open = all.filter((x) => x.q.type === 'open');
+    const examSources = examSourceIndex(e.exam);
     const items = examCrumbs(s, e.exam, 'Marking');
     main.innerHTML = `<div class="page page-reading">
       ${crumbs(items)}
@@ -1421,6 +1431,7 @@
         list.appendChild(h);
       }
       const ctx = {
+        sources: examSources,
         number: x.number,
         response: e.responses[x.q.id],
         phase: 'feedback',
@@ -1521,12 +1532,14 @@
     </div>`;
     wireCrumbs(items);
     const wrap = main.querySelector('#sections');
+    const examSources = examSourceIndex(exam);
     exam.sections.forEach((sec, si) => {
       const el = document.createElement('section');
       el.className = 'exam-section';
       el.innerHTML = `<h2>${M.inline(sec.title)}</h2>` + (sec.context ? `<details class="ctx"><summary>Show the source material</summary><div class="notes">${M.blocks(sec.context)}</div></details>` : '');
       sec.questions.forEach((q, qi) => {
         el.appendChild(Q.mount(q, {
+          sources: examSources,
           number: `${si + 1}.${qi + 1}`,
           response: a.responses ? a.responses[q.id] : undefined,
           phase: 'feedback',

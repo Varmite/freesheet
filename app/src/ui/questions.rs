@@ -8,7 +8,7 @@ use crate::ai::Review;
 use crate::hints::Hint;
 use crate::markup;
 use crate::marking;
-use crate::model::Question;
+use crate::model::{Block, Exam, Question};
 use crate::quiz::{self, LETTERS};
 use egui::{pos2, vec2, Align, Color32, Id, Rect, Sense, Shape, Stroke, StrokeKind, Ui};
 use serde_json::Value;
@@ -26,6 +26,133 @@ pub struct Card<'a> {
     pub can_self_mark: bool,
     pub hints: Option<(&'a [Hint], u32)>,
     pub ai: Ai,
+    /// The history sources the prompt refers to ("Read Source B"), shown above it.
+    pub sources: Vec<&'a Block>,
+}
+
+// ---------- History sources (as in src/js/questions.js)
+
+/// "Source A: ..." -> 'A' (a passage's title, or a paragraph's text when it has no title).
+fn source_label(s: &str) -> Option<char> {
+    let t = s.trim_start().trim_start_matches('*');
+    let rest = t.strip_prefix("Source")?;
+    let after = rest.trim_start();
+    if after.len() == rest.len() {
+        return None;
+    }
+    let mut ch = after.chars();
+    let c = ch.next().filter(|c| c.is_ascii_uppercase())?;
+    match ch.next() {
+        Some(d) if d.is_alphanumeric() || d == '_' => None,
+        _ => Some(c),
+    }
+}
+
+/// The labelled sources among these blocks, by letter (the first of each wins).
+pub fn source_index<'a>(blocks: impl IntoIterator<Item = &'a Block>) -> HashMap<char, &'a Block> {
+    let mut map = HashMap::new();
+    for b in blocks {
+        let label = match b.title.as_deref().filter(|s| !s.is_empty()) {
+            Some(ti) => source_label(ti),
+            None => b.text.as_deref().and_then(source_label),
+        };
+        if let Some(c) = label {
+            map.entry(c).or_insert(b);
+        }
+    }
+    map
+}
+
+/// The sources of a whole exam (any section's source material).
+pub fn exam_sources(exam: &Exam) -> HashMap<char, &Block> {
+    source_index(exam.sections.iter().flat_map(|s| s.context.iter().flatten()))
+}
+
+/// The letters a prompt refers to: "Source A", "Sources A and B", "Sources I, J and K".
+pub fn source_refs(prompt: &str) -> Vec<char> {
+    let b = prompt.as_bytes();
+    let n = b.len();
+    let word = |i: usize| i < n && (b[i].is_ascii_alphanumeric() || b[i] == b'_');
+    let mut out = Vec::new();
+    let mut i = 0;
+    while let Some(off) = prompt[i..].find("Source") {
+        let start = i + off;
+        i = start + 6;
+        if start > 0 && word(start - 1) {
+            continue;
+        }
+        let mut j = i;
+        if j < n && b[j] == b's' {
+            j += 1;
+        }
+        let ws = j;
+        while j < n && b[j].is_ascii_whitespace() {
+            j += 1;
+        }
+        if j == ws {
+            continue;
+        }
+        while j < n && b[j].is_ascii_uppercase() && !word(j + 1) {
+            let c = b[j] as char;
+            if !out.contains(&c) {
+                out.push(c);
+            }
+            j += 1;
+            let mut k = j;
+            while k < n && b[k].is_ascii_whitespace() {
+                k += 1;
+            }
+            if k < n && (b[k] == b',' || b[k] == b'&') {
+                k += 1;
+            } else if prompt[k..].starts_with("and") {
+                k += 3;
+            } else {
+                break;
+            }
+            while k < n && b[k].is_ascii_whitespace() {
+                k += 1;
+            }
+            j = k;
+        }
+    }
+    out
+}
+
+/// The sources (from `source_index`) that question `q` refers to, in order.
+pub fn sources_for<'a>(q: &Question, index: &HashMap<char, &'a Block>) -> Vec<&'a Block> {
+    source_refs(&q.prompt).into_iter().filter_map(|c| index.get(&c).copied()).collect()
+}
+
+/// One source in a warm "paper" box with a bar down the left.
+fn source_box(ui: &mut Ui, t: &Theme, b: &Block) {
+    let (fill, edge, bar, label) = if t.dark {
+        (Color32::from_rgba_unmultiplied(212, 165, 42, 28), Color32::from_rgba_unmultiplied(212, 165, 42, 82), Color32::from_rgb(0xC9, 0x9A, 0x2E), Color32::from_rgb(0xE0, 0xB9, 0x55))
+    } else {
+        (Color32::from_rgb(0xFB, 0xF3, 0xDC), Color32::from_rgb(0xEC, 0xD9, 0xA4), Color32::from_rgb(0xD4, 0xA5, 0x2A), Color32::from_rgb(0x8A, 0x64, 0x12))
+    };
+    let p = &t.p;
+    let r = egui::Frame::new()
+        .fill(fill)
+        .stroke(Stroke::new(1.0, edge))
+        .corner_radius(radius(10.0))
+        .inner_margin(egui::Margin { left: (t.px(0.95) + 4.0) as i8, right: t.px(0.95) as i8, top: t.px(0.75) as i8, bottom: t.px(0.75) as i8 })
+        .show(ui, |ui| {
+            ui.set_width(ui.available_width());
+            ui.spacing_mut().item_spacing.y = t.px(0.3);
+            let text = b.text.as_deref().unwrap_or("");
+            if b.kind == "passage" {
+                if let Some(ti) = b.title.as_deref().filter(|s| !s.is_empty()) {
+                    rich::show(ui, &markup::inline(ti), &Style::new(t.px(0.88), label, label).weight(W::Semi).line(1.3));
+                }
+                rich::show(ui, &markup::inline(text), &Style::new(t.px(0.98), p.text, p.muted).serif().line(1.6));
+            } else {
+                for para in markup::paragraph_list(text) {
+                    rich::show(ui, &para, &Style::new(t.px(1.0), p.text, p.muted));
+                }
+            }
+        });
+    let rect = r.response.rect;
+    ui.painter().rect_filled(Rect::from_min_size(rect.min, vec2(4.0, rect.height())), egui::CornerRadius { nw: 10, sw: 10, ne: 0, se: 0 }, bar);
 }
 
 /// AI marking on this card (written answers only).
@@ -159,6 +286,11 @@ pub fn card(ui: &mut Ui, t: &Theme, inputs: &mut HashMap<String, String>, flash:
             }
         });
         ui.add_space(t.px(0.35));
+        // The sources the question refers to.
+        for b in &c.sources {
+            source_box(ui, t, b);
+            ui.add_space(t.px(0.55));
+        }
         // Prompt.
         for (i, para) in markup::paragraph_list(&q.prompt).iter().enumerate() {
             if i > 0 {
@@ -457,5 +589,22 @@ fn ai_points(ui: &mut Ui, t: &Theme, r: &Review, body: &Style) {
                 rich::show(ui, &format!("{} <span class=\"muted\">({})</span>", markup::inline(&point.text), crate::model::js_num(point.marks)), body);
             });
         });
+    }
+}
+
+#[cfg(test)]
+mod source_tests {
+    use super::*;
+
+    #[test]
+    fn finds_source_letters_like_the_web_ui() {
+        assert_eq!(source_refs("Read Source D. What promise is the Kaiser making?"), vec!['D']);
+        assert_eq!(source_refs("Compare Sources I and J. (a) How do they differ?"), vec!['I', 'J']);
+        assert_eq!(source_refs("Sources A, B and C"), vec!['A', 'B', 'C']);
+        assert_eq!(source_refs("Why were workers searched (Source A)?"), vec!['A']);
+        assert_eq!(source_refs("Using the sources and your own knowledge, write a paragraph."), Vec::<char>::new());
+        assert_eq!(source_refs("Source Bob said"), Vec::<char>::new());
+        assert_eq!(source_label("Source C: In 1975 the government spent"), Some('C'));
+        assert_eq!(source_label("Sources of energy"), None);
     }
 }

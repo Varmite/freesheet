@@ -45,6 +45,39 @@
   // ctx: { number, response, phase: 'answer'|'feedback', selfMark, allowCheck, showMarks,
   //        onResponse(r), onCheck(), onSelfMark(n), lockedText,
   //        hint: { list, level, onUse(level), onShowNotes(section) } (practice only, never exams) }
+  // ---------- History sources: show the source a question refers to above it.
+  // A source is a block in the notes or an exam's source material whose label starts
+  // "Source X" (a passage titled "Source A: ..." or a paragraph "Source C: ...").
+  const SOURCE_LABEL = /^\s*\**Source\s+([A-Z])\b/;
+  function sourceIndex(blocks) {
+    const map = new Map();
+    (function walk(list) {
+      for (const b of list || []) {
+        if (!b || typeof b !== 'object') continue;
+        const m = SOURCE_LABEL.exec(b.title || '') || (!b.title && SOURCE_LABEL.exec(b.text || ''));
+        if (m && !map.has(m[1])) map.set(m[1], b);
+        if (Array.isArray(b.blocks)) walk(b.blocks);
+      }
+    })(blocks);
+    return map;
+  }
+  // The letters a prompt refers to: "Source A", "Sources A and B", "Sources A, B and C".
+  function sourceRefs(prompt) {
+    const out = [];
+    const re = /\bSources?\s+((?:[A-Z]\b(?:\s*(?:,|&|and)\s*)?)+)/g;
+    let m;
+    while ((m = re.exec(String(prompt || '')))) {
+      for (const l of m[1].match(/\b[A-Z]\b/g) || []) if (out.indexOf(l) < 0) out.push(l);
+    }
+    return out;
+  }
+  function sourcesHtml(q, sources) {
+    if (!sources || !sources.size) return '';
+    const found = sourceRefs(q.prompt).filter((l) => sources.has(l));
+    if (!found.length) return '';
+    return `<div class="q-sources">` + found.map((l) => `<div class="q-source" data-source="${l}">${M.blocks([sources.get(l)])}</div>`).join('') + `</div>`;
+  }
+
   function mount(q, ctx) {
     const el = document.createElement('article');
     el.className = 'q-card';
@@ -194,7 +227,7 @@
         else cls += res.correct ? ' is-correct' : (res.score > 0 ? ' is-partial' : ' is-wrong');
       }
       el.className = cls;
-      el.innerHTML = headHtml() +
+      el.innerHTML = headHtml() + sourcesHtml(q, ctx.sources) +
         `<div class="q-prompt">${M.paragraphs(q.prompt)}</div>` +
         `<div class="q-input">${inputHtml()}</div>` +
         hintsHtml() + actionsHtml() + feedbackHtml();
@@ -277,5 +310,5 @@
     return String(s).replace(/\*\*|\*/g, '').replace(/\\\$/g, '\u0000').replace(/\$/g, '').replace(/\u0000/g, '$');
   }
 
-  root.Questions = { mount, seededShuffle, correctAnswerHtml };
+  root.Questions = { mount, seededShuffle, correctAnswerHtml, sourceIndex, sourceRefs };
 })(typeof self !== 'undefined' ? self : this);

@@ -9,6 +9,25 @@ const fs = require('fs');
 const path = require('path');
 const katex = require('katex');
 const Markup = require('../src/js/markup.js');
+const Marking = require('../src/js/marking.js');
+
+// The app's source lookup (src/js/questions.js), loaded as the browser loads it.
+const Questions = (() => {
+  const root = { Markup, Marking };
+  new Function('self', fs.readFileSync(path.join(__dirname, '..', 'src', 'js', 'questions.js'), 'utf8'))(root);
+  return root.Questions;
+})();
+
+// A question that says "Read Source B" gets Source B shown above it, so the source must
+// exist in the topic's notes (practice) or the exam's source material.
+function checkSources(file, where, questions, blocks) {
+  const sources = Questions.sourceIndex(blocks);
+  questions.forEach((q, i) => {
+    for (const l of Questions.sourceRefs(q && q.prompt)) {
+      if (!sources.has(l)) err(file, `${where}[${i}] (${q.id}) refers to Source ${l}, but no block is labelled "Source ${l}"`);
+    }
+  });
+}
 
 const ROOT = path.join(__dirname, '..', 'content');
 const ID_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -169,6 +188,7 @@ function checkTopic(file, meta) {
   if (t.questions.length < 6) warn(file, `only ${t.questions.length} practice questions`);
   const ids = new Set();
   t.questions.forEach((q, i) => { checkQuestion(file, `questions[${i}]`, q, ids); stats.questions++; });
+  checkSources(file, 'questions', t.questions, t.notes);
 }
 
 function checkExam(file, meta) {
@@ -194,6 +214,8 @@ function checkExam(file, meta) {
     s.questions.forEach((q, j) => { sum += checkQuestion(file, `${w}.questions[${j}]`, q, ids); stats.examQuestions++; });
   });
   if (sum !== x.totalMarks) err(file, `totalMarks is ${x.totalMarks} but questions add up to ${sum}`);
+  const context = x.sections.reduce((all, s) => all.concat(s.context || []), []);
+  x.sections.forEach((s, i) => checkSources(file, `sections[${i}].questions`, s.questions || [], context));
 }
 
 function checkSubject(dir) {

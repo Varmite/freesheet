@@ -844,6 +844,7 @@ impl App {
         }
         let was_complete = self.topic_score(&td.topic, key).complete;
         let mut first_wrong = None;
+        let sources = questions::source_index(&td.topic.notes);
         for (i, q) in td.topic.questions.iter().enumerate() {
             let tp = self.p.topics.get(key).cloned().unwrap_or_default();
             let checked = tp.checked.get(&q.id).copied().unwrap_or(false);
@@ -863,6 +864,7 @@ impl App {
                 can_self_mark: true,
                 hints: Some((&td.hints[i], level)),
                 ai,
+                sources: questions::sources_for(q, &sources),
             };
             let (mut events, rect) = questions::card(ui, &t, &mut self.inputs, flash, self.now, card);
             self.card_rects.insert(ck.clone(), rect);

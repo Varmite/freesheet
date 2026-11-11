@@ -425,6 +425,7 @@ impl App {
         }
         let s = self.subject(sid).unwrap();
         let exam = self.session.as_ref().unwrap().exam.clone();
+        let sources = questions::exam_sources(&exam);
         widgets::page_column(ui, &t, 820.0, |ui| {
             self.exam_crumbs(ui, sid, &s.name, &exam.title, None, eid);
             widgets::h1(ui, &t, &markup::escape_html(&exam.title));
@@ -454,6 +455,7 @@ impl App {
                         can_self_mark: false,
                         hints: None,
                         ai: questions::Ai::Off,
+                        sources: questions::sources_for(q, &sources),
                     };
                     let (events, _) = questions::card(ui, &t, &mut self.inputs, None, self.now, card);
                     for e in events {
@@ -511,6 +513,7 @@ impl App {
         }
         let s = self.subject(sid).unwrap();
         let exam = self.session.as_ref().unwrap().exam.clone();
+        let sources = questions::exam_sources(&exam);
         // Unanswered written questions automatically get 0.
         let mut changed = false;
         if let Some(e) = &mut self.session {
@@ -551,7 +554,7 @@ impl App {
                 let sm = e.self_marks.get(&q.id).copied().flatten().map(|n| n.0);
                 let ck = format!("x:{}#{}", self.tkey(sid, eid), q.id);
                 let ai = self.ai_card(&ck, q, resp.as_ref());
-                let card = Card { key: ck.clone(), number: number.clone(), q, response: resp.as_ref(), feedback: true, self_mark: sm, allow_check: false, can_self_mark: true, hints: None, ai };
+                let card = Card { key: ck.clone(), number: number.clone(), q, response: resp.as_ref(), feedback: true, self_mark: sm, allow_check: false, can_self_mark: true, hints: None, ai, sources: questions::sources_for(q, &sources) };
                 let (events, _) = questions::card(ui, &t, &mut self.inputs, None, self.now, card);
                 for ev in events {
                     if matches!(ev, Event::AiManual) {
@@ -691,6 +694,7 @@ impl App {
         let Some(meta) = s.exams.iter().find(|x| x.id == eid) else { return self.go(Tab::Exams, View::Home) };
         let Some(a) = self.p.exams.get(&self.tkey(sid, eid)).and_then(|h| h.get(attempt)).cloned() else { return self.go(Tab::Exams, View::Home) };
         let Some(exam) = self.load_exam(sid, eid) else { return };
+        let sources = questions::exam_sources(&exam);
         widgets::page_column(ui, &t, 820.0, |ui| {
             self.exam_crumbs(ui, sid, &s.name, &meta.title, Some("Review"), eid);
             widgets::h1(ui, &t, &markup::escape_html(&format!("{}: review", meta.title)));
@@ -713,6 +717,7 @@ impl App {
                         can_self_mark: false,
                         hints: None,
                         ai: questions::Ai::Off,
+                        sources: questions::sources_for(q, &sources),
                     };
                     questions::card(ui, &t, &mut self.inputs, None, self.now, card);
                 }
