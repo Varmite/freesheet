@@ -62,9 +62,18 @@ jobs:
           key: ${{ matrix.platform }}
       - name: Linux build packages
         if: matrix.platform == 'linux'
+        # A stuck package mirror once held this step for over 30 minutes: give up on a
+        # try after 4 minutes and try again, rather than wait for the job's 6-hour limit.
+        timeout-minutes: 12
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libxdo-dev
+          for try in 1 2 3; do
+            if timeout 240 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=30 -o DPkg::Lock::Timeout=120 update &&
+               timeout 360 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=30 -o DPkg::Lock::Timeout=120 install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libxdo-dev; then
+              exit 0
+            fi
+            echo "apt attempt $try failed; trying again"
+          done
+          exit 1
       - run: npm ci
       - run: npm test
       - run: node scripts/build.js ${{ matrix.args }} --no-validate
