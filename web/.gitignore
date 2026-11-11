@@ -1,0 +1,5 @@
+# Secrets, everyone's progress and the certificate: never commit these.
+.env
+data/
+certs/
+node_modules/

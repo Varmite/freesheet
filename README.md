@@ -112,6 +112,25 @@ phones cannot install updates). `bash scripts/set-github-secrets.sh` copies it i
 workflow uses. Versions up to 1.0.1 were a Capacitor app. 1.1 uses the same package name and key, so it
 installs over them and keeps their progress.
 
+### Web edition
+
+`web/` runs FreeSheet as a self-hosted website (for example on an old Linux laptop) that you use from a
+phone's browser, with **Sign in with Google** and progress kept separately for each Google account. It is
+a small Node.js server (Express and google-auth-library; no Rust, Tauri or WebKitGTK) that serves the same
+screens from `src/`, with `web/public/api.js` in place of `src/js/api.js`. It reads `content/` and `audio/`
+directly and gives the app the same JSON the Rust code does. It serves HTTPS itself, using a free DuckDNS
+name and Let's Encrypt certificate, and updates itself from GitHub when nobody is using it.
+
+```sh
+git clone --branch rust-native-ui https://github.com/Varmite/freesheet.git
+cd freesheet/web && ./install.sh
+```
+
+Step-by-step setup (Google client ID, DuckDNS, HTTPS, phones, backups) is in
+[`web/SETUP.md`](web/SETUP.md). Tests: `cd web && npm test` (server) and `npm run test:browser`
+(Playwright, Chromium and iPhone WebKit). The older `server/` website (guest cookies, optional sign-in) is
+separate and unchanged.
+
 ## Content
 
 All notes, questions and exams are JSON files in `content/grade-N/<subject>/`. The format is documented in

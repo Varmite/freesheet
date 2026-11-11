@@ -1,0 +1,26 @@
+/* The sign-in page: one centred card, light or dark like the phone. */
+:root { color-scheme: light dark; --bg: #f6f6f4; --card: #fff; --text: #1f2933; --muted: #5f6b76; --line: #dfe1e3; --bad: #b42318; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1b1c1f; --card: #232428; --text: #e8e8e6; --muted: #a2a6ad; --line: #34363b; --bad: #f97066; }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0; display: flex; align-items: center; justify-content: center;
+  padding: 24px max(16px, env(safe-area-inset-left)) calc(24px + env(safe-area-inset-bottom));
+  background: var(--bg); color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.card {
+  width: 100%; max-width: 400px; padding: 32px 28px; text-align: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+}
+.logo { border-radius: 14px; }
+h1 { margin: 12px 0 4px; font-size: 1.7rem; letter-spacing: -0.01em; }
+.lead { margin: 0 0 24px; color: var(--muted); }
+#google-button { display: flex; justify-content: center; min-height: 44px; }
+.note { color: var(--muted); font-size: 0.85rem; margin: 20px 0 0; }
+.error { color: var(--bad); margin: 16px 0 0; }
+form { display: grid; gap: 8px; }
+input, button { font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--text); }
+button { cursor: pointer; font-weight: 600; }

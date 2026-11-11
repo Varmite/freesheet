@@ -1,0 +1,24 @@
+# FreeSheet web edition with Docker:  cd web && docker compose up -d --build
+# Settings come from web/.env (copy .env.example). Progress is kept in the
+# "freesheet-data" volume. For HTTPS, put fullchain.pem and key.pem in web/certs and set
+#   HTTPS_CERT=/certs/fullchain.pem
+#   HTTPS_KEY=/certs/key.pem
+# in .env. To update: git pull && docker compose up -d --build
+services:
+  freesheet-web:
+    build:
+      context: ..
+      dockerfile: web/Dockerfile
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATA_DIR: /data
+      AUTO_UPDATE: "0"
+    ports:
+      - "5000:5000"
+    volumes:
+      - freesheet-data:/data
+      - ./certs:/certs:ro
+
+volumes:
+  freesheet-data:

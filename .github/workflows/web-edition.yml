@@ -1,0 +1,45 @@
+# FreeSheet web edition (web/): server tests, browser tests, and install.sh on a real
+# Ubuntu machine with systemd (the closest thing to the Linux Mint laptop it runs on).
+name: Web edition
+on:
+  workflow_dispatch:
+  push:
+    paths: ['web/**', 'src/**', 'content/**', '.github/workflows/web-edition.yml']
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 18 }
+      - name: Server tests (Node 18, the oldest supported)
+        working-directory: web
+        run: npm ci && npm test
+      - name: Browser tests (Chromium and iPhone WebKit)
+        working-directory: web
+        run: npx playwright install --with-deps chromium webkit && npm run test:browser
+
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install.sh (answers piped in), then the service must be up
+        working-directory: web
+        run: |
+          printf 'test-client.apps.googleusercontent.com\nme@example.com, sister@example.com\n' | ./install.sh
+          systemctl is-active freesheet-web
+          systemctl show -p User --value freesheet-web
+          grep -E '^(GOOGLE_CLIENT_ID|ALLOWED_EMAILS|PORT)=' .env
+          test -n "$(grep -E '^SESSION_SECRET=.+' .env)"
+          curl -fsS -o /dev/null -w 'login page %{http_code}\n' http://localhost:5000/login
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:5000/api/progress)" = 401
+      - name: Restarts keep the session secret; uninstall.sh removes the service
+        working-directory: web
+        run: |
+          before="$(grep '^SESSION_SECRET=' .env)"
+          sudo systemctl restart freesheet-web && sleep 2
+          test "$before" = "$(grep '^SESSION_SECRET=' .env)"
+          echo n | ./uninstall.sh
+          ! systemctl is-active freesheet-web
+          test -f .env

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sign in · FreeSheet</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <meta name="theme-color" content="#1b1c1f">
+  <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="/icon-192.png" alt="" width="64" height="64">
+    <h1>FreeSheet</h1>
+    <p class="lead">Notes, practice questions and exams for the CAPS curriculum, Grades 8 to 12.</p>
+    <div id="google-button"></div>
+    <!-- Only shown when the server runs with TEST_MODE=1 (automated tests). -->
+    <form id="test-login" hidden>
+      <p class="note">Test mode: sign in as a made-up person.</p>
+      <input id="test-sub" value="1001" aria-label="Test account number">
+      <input id="test-email" value="learner@example.com" aria-label="Test email">
+      <button type="submit">Sign in (test)</button>
+    </form>
+    <p id="error" class="error" role="alert" hidden></p>
+    <p class="note">Your progress is saved to your Google account on this server, so you can carry on from any phone or computer.</p>
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+    var errorEl = document.getElementById('error');
+    function showError(msg) { errorEl.textContent = msg; errorEl.hidden = false; }
+
+    // Send Google's ID token to the server; it checks it and sets the session cookie.
+    function signIn(credential) {
+      errorEl.hidden = true;
+      fetch('/auth/google', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ credential: credential }),
+      }).then(function (r) {
+        return r.json().then(function (v) {
+          if (r.ok) location.href = '/';
+          else showError(v.error || 'Sign-in failed.');
+        });
+      }).catch(function () { showError('Could not reach the server. Check your connection and try again.'); });
+    }
+
+    fetch('/auth/config').then(function (r) { return r.json(); }).then(function (cfg) {
+      if (cfg.testMode) {
+        var form = document.getElementById('test-login');
+        form.hidden = false;
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          // The test server accepts tokens made by /test/token (tests only).
+          fetch('/test/token?sub=' + encodeURIComponent(document.getElementById('test-sub').value) +
+            '&email=' + encodeURIComponent(document.getElementById('test-email').value))
+            .then(function (r) { return r.text(); }).then(signIn);
+        });
+        return;
+      }
+      if (!cfg.configured) return showError('This server has no Google client ID yet. Set GOOGLE_CLIENT_ID in web/.env (see SETUP.md).');
+      // Google Identity Services draws the "Sign in with Google" button.
+      var s = document.createElement('script');
+      s.src = 'https://accounts.google.com/gsi/client';
+      s.async = true;
+      s.onload = function () {
+        google.accounts.id.initialize({
+          client_id: cfg.clientId,
+          callback: function (resp) { signIn(resp.credential); },
+          ux_mode: 'popup',
+          use_fedcm_for_prompt: true,
+        });
+        google.accounts.id.renderButton(document.getElementById('google-button'), {
+          theme: matchMedia('(prefers-color-scheme: dark)').matches ? 'filled_black' : 'outline',
+          size: 'large', shape: 'pill', text: 'signin_with', width: 280,
+        });
+      };
+      s.onerror = function () { showError('Could not load Google sign-in. Check your internet connection.'); };
+      document.head.appendChild(s);
+    });
+  })();
+  </script>
+</body>
+</html>

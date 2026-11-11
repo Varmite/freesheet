@@ -1,0 +1,12 @@
+# Only what the web edition needs goes into the image (paths are from the repo root).
+**
+!package.json
+!src/**
+!content/**
+!audio/**
+!web/**
+web/node_modules
+web/.env
+web/data
+web/certs
+web/test
