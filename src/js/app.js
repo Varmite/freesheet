@@ -2298,6 +2298,11 @@
     document.addEventListener('toggle', (e) => {
       if (e.target instanceof HTMLDetailsElement) Sound.play(e.target.open ? 'reveal' : 'close');
     }, true);
+    // On phones a long introduction shows three lines (mobile.css); a tap shows it all.
+    main.addEventListener('click', (e) => {
+      const lead = e.target.closest('.page-head .lead, .page-topic > .lead');
+      if (lead && !e.target.closest('a, button')) lead.classList.toggle('open');
+    });
     settingsBtn.innerHTML = Icons.ui('settings');
     settingsBtn.addEventListener('click', openSettings);
     // Remember which card or row was tapped, so the page it opens can zoom out of it.

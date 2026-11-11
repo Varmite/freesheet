@@ -12,6 +12,7 @@
 //   everything else         files from src/ (scripts, styles, fonts)
 
 const express = require('express');
+const { execFileSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { createContent, validAudioId } = require('./content');
@@ -26,6 +27,12 @@ function createApp(cfg) {
   const SRC = path.join(ROOT, 'src');
   const PUBLIC = path.join(__dirname, '..', 'public');
   const VERSION = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).version;
+  // Which build of the website this is: the git commit (the updater pulls new commits and
+  // restarts), or the version outside a git checkout. Learners who last saw another
+  // build get a small "FreeSheet was updated" note (public/api.js).
+  const BUILD = cfg.build || (() => {
+    try { return execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'ignore'], timeout: 5000 }).toString().trim(); } catch (e) { return VERSION; }
+  })();
 
   const content = createContent(ROOT);
   const store = createStore(cfg.dataDir);
@@ -123,13 +130,25 @@ function createApp(cfg) {
   // Runs before the page is drawn, so the saved theme shows from the first paint.
   app.get('/boot.js', async (req, res) => {
     let s = {};
-    if (req.user) s = (await store.load(req.user.username)).progress.settings || {};
+    let updated = false;
+    if (req.user) {
+      const loaded = await store.load(req.user.username);
+      s = loaded.progress.settings || {};
+      // Updated since this learner was last here? (Someone with saved progress but no
+      // record yet used the site before this was added, so they count too.)
+      const seen = await store.seenBuild(req.user.username).catch(() => null);
+      if (seen !== BUILD) {
+        updated = seen ? true : loaded.rev > 0;
+        await store.setSeenBuild(req.user.username, BUILD).catch((e) => console.error(`Could not note the build seen: ${e.message}`));
+      }
+    }
     const pick = (k, d) => (typeof s[k] === 'string' && /^[a-z]+$/.test(s[k]) ? s[k] : d);
     const appearance = { theme: pick('theme', 'system'), accent: pick('accent', 'default'), lineSpacing: pick('lineSpacing', 'normal'), readingWidth: pick('readingWidth', 'normal'), textRendering: pick('textRendering', 'smooth') };
     res.set('Cache-Control', 'no-store').type('js').send(
       `window.__FREESHEET_PLATFORM__="web";window.__FREESHEET_VERSION__=${JSON.stringify(VERSION)};` +
       `window.__FREESHEET_APPEARANCE__=${JSON.stringify(appearance)};` +
-      `window.__FREESHEET_ACCOUNT__=${JSON.stringify(req.user ? { username: req.user.username } : null)};`);
+      `window.__FREESHEET_ACCOUNT__=${JSON.stringify(req.user ? { username: req.user.username } : null)};` +
+      `window.__FREESHEET_UPDATED__=${updated};`);
   });
 
   app.get('/js/api.js', (req, res) => res.set('Cache-Control', 'no-cache').sendFile(path.join(PUBLIC, 'api.js')));

@@ -2,6 +2,7 @@
 // Where things are kept on disk (all under DATA_DIR):
 //   accounts.json                  usernames and password hashes (lib/auth.js)
 //   users/<username>/progress.json that learner's progress (+ .bak, the previous save)
+//   users/<username>/seen-build    the website version that learner last opened
 //   sessions.json                  who is signed in on which browser
 //
 // Progress is written like src-tauri/src/progress.rs: to a temporary file first, the old
@@ -77,7 +78,16 @@ function createStore(dataDir) {
     });
   }
 
-  return { load, save, userDir };
+  // The build of the website this learner last opened (see "updated" in lib/app.js).
+  async function seenBuild(user) {
+    try { return (await fsp.readFile(path.join(userDir(user), 'seen-build'), 'utf8')).trim() || null; } catch (e) { return null; }
+  }
+  async function setSeenBuild(user, build) {
+    await fsp.mkdir(userDir(user), { recursive: true });
+    await fsp.writeFile(path.join(userDir(user), 'seen-build'), build);
+  }
+
+  return { load, save, userDir, seenBuild, setSeenBuild };
 }
 
 // ---------------------------------------------------------------- sessions

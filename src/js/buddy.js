@@ -329,6 +329,11 @@
     // Eyes follow the pointer; any activity wakes the buddy.
     window.addEventListener('pointermove', (e) => { state.pointer = { x: e.clientX, y: e.clientY }; queueEyes(); activity(); }, { passive: true });
     for (const t of ['keydown', 'wheel', 'pointerdown']) window.addEventListener(t, activity, { passive: true, capture: true });
+    // On a phone the bubble covers part of the page: a tap anywhere else closes it.
+    const phone = window.matchMedia ? window.matchMedia('(max-width: 720px)') : null;
+    window.addEventListener('pointerdown', (e) => {
+      if (phone && phone.matches && bubble && !bubble.hidden && !root.contains(e.target)) closeBubble();
+    }, { passive: true, capture: true });
     window.addEventListener('resize', () => queueEyes());
   }
 

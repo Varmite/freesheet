@@ -206,6 +206,29 @@ test('the app page is the web version: web api.js, boot script, phone layout', a
   assert.strictEqual((await get(srv.base, '/styles.css')).status, 200);
 });
 
+test('after an update, each learner who used the site before is told once', async () => {
+  const boot = async (base, cookie) => (await (await get(base, '/boot.js', cookie)).text()).match(/__FREESHEET_UPDATED__=(\w+)/)[1];
+  const v1 = await makeServer({ build: 'build-one' });
+  let v2;
+  try {
+    // A brand-new learner is not told about an update.
+    const fresh = (await signIn(v1.base, 'newcomer')).cookie;
+    assert.strictEqual(await boot(v1.base, fresh), 'false');
+    // Someone with saved progress from before builds were noted.
+    const old = (await signIn(v1.base, 'oldtimer')).cookie;
+    const put = await fetch(`${v1.base}/api/progress`, { method: 'PUT', headers: { 'Content-Type': 'application/json', cookie: old }, body: '{"topics":{},"exams":{}}' });
+    assert.strictEqual(put.status, 200);
+    fs.rmSync(path.join(dataDir, 'users', 'oldtimer', 'seen-build'), { force: true });
+    // The server restarts on a new build (it reads the signed-in sessions as it starts).
+    v2 = await makeServer({ build: 'build-two' });
+    // Both are told once, then not again.
+    for (const cookie of [fresh, old]) {
+      assert.strictEqual(await boot(v2.base, cookie), 'true');
+      assert.strictEqual(await boot(v2.base, cookie), 'false');
+    }
+  } finally { v1.server.close(); if (v2) v2.server.close(); }
+});
+
 test('updates wait until nobody has used FreeSheet for a while', () => {
   const idleMs = 15 * 60e3;
   const t = 1_000_000_000;

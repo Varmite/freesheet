@@ -153,6 +153,62 @@
   });
   window.addEventListener('pagehide', function () { window.dispatchEvent(new Event('beforeunload')); });
 
+  // ---------- "FreeSheet was updated"
+  // The server sets __FREESHEET_UPDATED__ (in /boot.js) the first time a learner opens
+  // the site after it updated itself. Show a small note for a few seconds.
+  function showUpdatedNote() {
+    var style = document.createElement('style');
+    style.textContent =
+      '.web-updated{position:fixed;left:50%;top:calc(64px + env(safe-area-inset-top, 0px));z-index:10000;' +
+      'display:flex;align-items:center;-webkit-transform:translate(-50%,-12px);transform:translate(-50%,-12px);opacity:0;' +
+      'max-width:calc(100vw - 1.5rem);padding:0.45rem 0.45rem 0.45rem 0.9rem;border-radius:999px;' +
+      'background:var(--bg);color:var(--text);border:1px solid var(--border-strong);' +
+      'box-shadow:0 8px 24px rgba(0,0,0,0.16);font-size:0.9rem;line-height:1.3;' +
+      'transition:opacity .25s ease,transform .25s ease}' +
+      '.web-updated.show{opacity:1;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}' +
+      '.web-updated b{font-weight:650;margin-right:0.3rem}' +
+      '.web-updated button{font:inherit;font-size:1.05rem;line-height:1;margin-left:0.5rem;width:1.8rem;height:1.8rem;' +
+      'border:0;border-radius:50%;background:none;color:var(--muted);cursor:pointer;flex:none}';
+    document.head.appendChild(style);
+    var note = document.createElement('div');
+    note.className = 'web-updated';
+    note.setAttribute('role', 'status');
+    note.innerHTML = '<span><b>FreeSheet was updated.</b>You’re on the newest version.</span>' +
+      '<button type="button" aria-label="Close">×</button>';
+    document.body.appendChild(note);
+    var timer;
+    var close = function () {
+      clearTimeout(timer);
+      note.classList.remove('show');
+      setTimeout(function () { note.remove(); style.remove(); }, 300);
+    };
+    note.querySelector('button').addEventListener('click', close);
+    setTimeout(function () { note.classList.add('show'); }, 600);
+    timer = setTimeout(close, 7000);
+  }
+  if (window.__FREESHEET_UPDATED__) {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showUpdatedNote);
+    else showUpdatedNote();
+  }
+
+  // ---------- the phone's status bar matches the theme
+  var themeMeta = null;
+  function syncThemeColor() {
+    if (!document.body) return;
+    themeMeta = themeMeta || document.querySelector('meta[name="theme-color"]');
+    var bg = getComputedStyle(document.body).backgroundColor;
+    if (themeMeta && bg && themeMeta.content !== bg) themeMeta.content = bg;
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    syncThemeColor();
+    new MutationObserver(function () { setTimeout(syncThemeColor, 50); })
+      .observe(document.documentElement, { attributes: true, attributeFilter: ['class', 'style', 'data-theme'] });
+    if (window.matchMedia) {
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mq.addEventListener) mq.addEventListener('change', syncThemeColor);
+    }
+  });
+
   // "Someone is using FreeSheet": the server only installs updates when no page has
   // pinged it for a while (web/lib/updater.js).
   setInterval(function () {
