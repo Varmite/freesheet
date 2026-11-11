@@ -16,9 +16,16 @@ jobs:
       - name: Server tests (Node 18, the oldest supported)
         working-directory: web
         run: npm ci && npm test
+      # Playwright itself needs Node 20 or newer.
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
       - name: Browser tests (Chromium and iPhone WebKit)
         working-directory: web
-        run: npx playwright install --with-deps chromium webkit && npm run test:browser
+        timeout-minutes: 25
+        run: |
+          bash ../scripts/ci-apt.sh
+          npx playwright install --with-deps chromium webkit
+          npm run test:browser
 
   install:
     runs-on: ubuntu-latest
