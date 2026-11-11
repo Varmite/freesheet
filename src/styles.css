@@ -75,6 +75,12 @@ html.is-dark[data-accent]:not([data-accent="default"]):not([data-theme="contrast
 ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.24s; }
 ::selection { background: color-mix(in srgb, var(--accent) 28%, transparent); }
 html { scrollbar-color: var(--border-strong) transparent; }
+/* Always keep the scrollbar track (empty on short pages), so moving between a page
+   that scrolls and one that doesn't never shifts the layout sideways. WebView2
+   ignores scrollbar-gutter on the root, so this is done with overflow-y: scroll. */
+html { overflow-y: scroll; }
+/* While a page arrives it moves a few pixels; that must not briefly make it scroll. */
+html.nav-busy body { overflow-y: clip; }
 
 * { box-sizing: border-box; }
 html { font-size: 16.5px; }

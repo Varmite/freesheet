@@ -130,23 +130,37 @@
     return tp;
   }
 
-  async function loadTopic(subjectId, topicId) {
-    const k = `t:${grade()}/${subjectId}/${topicId}`;
-    if (!state.cache.has(k)) {
-      const topic = await api.getTopic(grade(), subjectId, topicId);
-      await forgiveSpelling(subjectId, topic.questions || []);
-      state.cache.set(k, topic);
+  // Recently opened topics and exams stay parsed, so going back is instant. Only the
+  // most recent few are kept: a long session must not hold every topic in memory
+  // (old phones have little to spare).
+  const CACHE_MAX = 40;
+  async function cached(k, load) {
+    if (state.cache.has(k)) {
+      const v = state.cache.get(k);
+      state.cache.delete(k);
+      state.cache.set(k, v); // now the most recent
+      return v;
     }
-    return state.cache.get(k);
+    const v = await load();
+    state.cache.set(k, v);
+    while (state.cache.size > CACHE_MAX) state.cache.delete(state.cache.keys().next().value);
+    return v;
   }
-  async function loadExam(subjectId, examId) {
-    const k = `x:${grade()}/${subjectId}/${examId}`;
-    if (!state.cache.has(k)) {
-      const exam = await api.getExam(grade(), subjectId, examId);
+  function loadTopic(subjectId, topicId) {
+    const g = grade();
+    return cached(`t:${g}/${subjectId}/${topicId}`, async () => {
+      const topic = await api.getTopic(g, subjectId, topicId);
+      await forgiveSpelling(subjectId, topic.questions || []);
+      return topic;
+    });
+  }
+  function loadExam(subjectId, examId) {
+    const g = grade();
+    return cached(`x:${g}/${subjectId}/${examId}`, async () => {
+      const exam = await api.getExam(g, subjectId, examId);
       await forgiveSpelling(subjectId, (exam.sections || []).flatMap((sec) => sec.questions || []));
-      state.cache.set(k, exam);
-    }
-    return state.cache.get(k);
+      return exam;
+    });
   }
 
   // Short typed answers accept small spelling slips, except in language subjects
@@ -183,7 +197,11 @@
     setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 300); }, 2600);
   }
 
+  let closeOpenDialog = null;
   function dialog({ title, body, ok = 'OK', cancel = 'Cancel', danger = false }) {
+    // Only one dialog at a time: one opening over another (time running out while
+    // "Submit exam?" is up) answers the old one with "cancel" first.
+    if (closeOpenDialog) closeOpenDialog(false);
     return new Promise((resolve) => {
       const prevFocus = document.activeElement;
       dialogRoot.innerHTML = `<div class="modal-back"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="dlg-title">
@@ -195,6 +213,7 @@
       const close = (v) => {
         if (closed) return;
         closed = true;
+        if (closeOpenDialog === close) closeOpenDialog = null;
         Sound.play('close');
         Motion.dialogOut(back).then(() => back.remove());
         document.removeEventListener('keydown', onKey, true);
@@ -207,6 +226,7 @@
       document.addEventListener('keydown', onKey, true);
       back.querySelectorAll('[data-r]').forEach((b) => b.addEventListener('click', () => close(b.dataset.r === '1')));
       back.addEventListener('click', (e) => { if (e.target === back && cancel) close(false); });
+      closeOpenDialog = close;
       back.querySelector('[data-r="1"]').focus();
       Motion.dialogIn(back);
       Sound.play('open');
@@ -385,7 +405,10 @@
     if (token !== state.renderToken) { Motion.discard(tr); return; }
     Motion.decorate(main);
     if (!moved) { Motion.discard(tr); return; }
+    // Going back, or to another tab, returns to where that page was left; a tab
+    // seen for the first time starts at the top, not at the old tab's scroll position.
     if (kind === 'pop' && scrollMemory.has(nav.key)) window.scrollTo(0, scrollMemory.get(nav.key));
+    else if (kind === 'tab') window.scrollTo(0, scrollMemory.get(nav.key) || 0);
     Motion.navigate(main, tr, { kind, fromKey, toKey: nav.key });
     const navSound = pendingNavSound || { push: 'push', pop: 'pop', tab: 'tab', swap: 'swap' }[kind];
     pendingNavSound = null;
@@ -432,9 +455,10 @@
     for (const k of kinds) window.addEventListener(k, hold, { capture: true, passive: false });
     const pause = () => Promise.race([new Promise((r) => setTimeout(r, Motion.rehearsalStep)), interrupted]);
     // The rehearsed page may be longer or shorter than this one: keep the scrollbar
-    // exactly as it is, or its appearing would shift the layout visibly.
+    // exactly as it is. Its track is always there (styles.css), so on a page that
+    // doesn't scroll it only has to stay invisible.
     const root = document.documentElement;
-    root.style.overflowY = root.scrollHeight > root.clientHeight ? 'scroll' : 'hidden';
+    if (root.scrollHeight <= root.clientHeight) root.style.scrollbarColor = 'transparent transparent';
     Motion.setRehearsing(true);
     try {
       Motion.noteOrigin(card);
@@ -447,7 +471,7 @@
     } finally {
       Motion.settle();
       window.scrollTo(0, y);
-      root.style.overflowY = '';
+      root.style.scrollbarColor = '';
       Motion.setRehearsing(false);
       cover.layer.remove();
       for (const k of kinds) window.removeEventListener(k, hold, { capture: true });
@@ -781,11 +805,12 @@
       reader.index = i;
       drawControls();
       scrollToSection(i);
+      let audio = null;
       try {
         const data = await api.getAudio(grade(), v.subjectId, topic.id, secs[i].id);
-        if (reader.index !== i || !body.isConnected) return;
+        if (reader.index !== i || reader.audio || !body.isConnected) return;
         reader.url = URL.createObjectURL(new Blob([data], { type: 'audio/ogg' }));
-        const audio = reader.audio = new Audio(reader.url);
+        audio = reader.audio = new Audio(reader.url);
         audio.playbackRate = speed;
         audio.onended = () => { if (i + 1 < total) play(i + 1); else { stopReader(); drawControls(); } };
         // Work out word timings while the audio starts; highlighting joins in when ready.
@@ -795,6 +820,9 @@
         }).catch((err) => console.warn('Read-along timing unavailable:', err));
         await audio.play();
       } catch (err) {
+        // Stopped, or another section started, while this one was loading: its
+        // play() rejects, and that must not stop the reading that replaced it.
+        if (reader.index !== i || (audio && reader.audio !== audio) || !body.isConnected) return;
         console.error('Audio failed:', err);
         stopReader();
         drawControls();
@@ -1099,6 +1127,9 @@
     const draft = P().examDrafts[key];
     const hist = P().exams[key] || [];
     const items = examCrumbs(s, meta);
+    // Time left: from the running session if there is one (the draft is only saved every 15 s).
+    const liveExam = state.exam && state.exam.key === key && state.exam.grade === grade() ? state.exam : null;
+    const left = liveExam ? liveExam.remainingSec : draft && draft.remainingSec;
     main.innerHTML = `<div class="page page-reading">
       ${crumbs(items)}
       <h1>${esc(exam.title)}</h1>
@@ -1109,7 +1140,7 @@
       <h2>Instructions</h2>
       <ol class="n-list">${exam.instructions.map((i) => `<li>${M.inline(i)}</li>`).join('')}</ol>
       <p class="muted">Multiple-choice, one-word and calculation answers are marked automatically. For written answers you will compare your work with the memo and award your own marks after you submit.</p>
-      ${draft ? `<div class="notice">You have an unfinished attempt${draft.timerOn ? ` with ${formatDuration(draft.remainingSec)} left` : ''}.</div>` : ''}
+      ${draft ? `<div class="notice">You have an unfinished attempt${draft.timerOn ? ` with ${formatDuration(left)} left` : ''}.</div>` : ''}
       <label class="check"><input type="checkbox" id="timed" ${draft ? (draft.timerOn ? 'checked' : '') : 'checked'} ${draft ? 'disabled' : ''}> Use a countdown timer</label>
       <div class="btn-row">
         ${draft ? `<button class="btn" id="restart">Start over</button><button class="btn primary" id="resume">Resume exam</button>`
@@ -1122,6 +1153,15 @@
     </div>`;
     wireCrumbs(items);
     const start = (fresh) => {
+      // Still running from earlier in this session (the learner looked at another
+      // page): carry on with it. Restarting from the draft would wind the clock back
+      // to the last autosave.
+      const live = state.exam;
+      if (!fresh && live && live.key === key && live.grade === grade()) {
+        go('exams', { name: live.phase === 'mark' ? 'mark' : 'run', subjectId: s.id, examId: meta.id });
+        scrollTop();
+        return;
+      }
       const timerOn = fresh ? main.querySelector('#timed').checked : !!draft.timerOn;
       startExamSession(s, meta, exam, fresh ? null : draft, timerOn);
     };
@@ -1704,7 +1744,7 @@
         r.data.settings = r.data.settings || {};
         r.data.settings.buddy = P().settings.buddy;
       }
-      state.progress = r.data;
+      state.progress = normaliseProgress(r.data, grade());
       applyAppearance(); applyTextSize(); applyTextRendering(); applyMotion(); applySound(); applyBuddy(); syncGradeSelect(); await flush(); toast('Progress imported.'); render();
     });
     main.querySelector('#open-folder').addEventListener('click', () => api.openDataFolder());
@@ -2225,11 +2265,23 @@
 
   // ---------------------------------------------------------------- boot
 
+  // Saved or imported progress may come from an older version or another device:
+  // make sure every part the app writes to exists and is the right shape.
+  function normaliseProgress(progress, fallbackGrade) {
+    for (const f of ['settings', 'topics', 'exams', 'examDrafts', 'courses']) {
+      if (!progress[f] || typeof progress[f] !== 'object' || Array.isArray(progress[f])) progress[f] = {};
+    }
+    for (const k of Object.keys(progress.exams)) if (!Array.isArray(progress.exams[k])) delete progress.exams[k];
+    for (const k of Object.keys(progress.topics)) if (!progress.topics[k] || typeof progress.topics[k] !== 'object') delete progress.topics[k];
+    if (fallbackGrade != null && !state.catalog.grades.some((g) => g.grade === progress.settings.grade)) progress.settings.grade = fallbackGrade;
+    return progress;
+  }
+
   async function boot() {
     const [catalog, progress] = await Promise.all([api.getCatalog(), api.loadProgress()]);
     state.catalog = catalog;
     state.progress = progress;
-    for (const f of ['settings', 'topics', 'exams', 'examDrafts', 'courses']) if (!progress[f] || typeof progress[f] !== 'object') progress[f] = {};
+    normaliseProgress(progress);
     streakBtn.addEventListener('click', showStreak);
     document.addEventListener('pointerdown', (e) => {
       if (e.button !== 0) return;

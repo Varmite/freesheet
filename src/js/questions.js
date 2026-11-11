@@ -259,7 +259,8 @@
       const mi = el.querySelector('.mark-in');
       if (mi) mi.addEventListener('change', () => {
         const max = K.marksOf(q);
-        const v = Math.max(0, Math.min(max, Math.round(Number(mi.value))));
+        // An emptied box means "not marked yet", not 0.
+        const v = mi.value.trim() === '' ? NaN : Math.max(0, Math.min(max, Math.round(Number(mi.value))));
         ctx.selfMark = Number.isFinite(v) ? v : null;
         if (ctx.onSelfMark) ctx.onSelfMark(ctx.selfMark);
         draw();

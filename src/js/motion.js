@@ -198,6 +198,7 @@
     const h = hint && performance.now() - hint.at < 2000 ? hint.dir : null;
     hint = null;
     if (!enabled()) { discard(tr); return; }
+    lockScrollbar();
     const shift = thumbsFrom(main, tr);
     if (!tr) return run(main, null, fade(main, null, true, 0));
     if (kind === 'push' && o) {
@@ -218,6 +219,13 @@
     return run(main, tr, fade(main, tr, kind !== 'swap', shift));
   }
 
+  // The incoming page moves and scales as it arrives, which can make it a few pixels
+  // taller than the window for a moment. On a page that otherwise fits, a scrollbar
+  // would flash up and back. While a transition runs, the body clips that overflow
+  // (styles.css), so the page scrolls exactly as it will at rest.
+  function lockScrollbar() { document.documentElement.classList.add('nav-busy'); }
+  function unlockScrollbar() { document.documentElement.classList.remove('nav-busy'); }
+
   // When the transition's main animation ends (or the next navigation starts),
   // remove the frozen pages and helpers.
   function run(main, tr, t) {
@@ -230,6 +238,7 @@
       main.style.boxShadow = '';
       if (tr) tr.layer.remove();
       for (const e of extras) e.remove();
+      unlockScrollbar();
     };
     active = cleanup;
     const finish = () => {
