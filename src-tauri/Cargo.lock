@@ -1071,7 +1071,7 @@ dependencies = [
 
 [[package]]
 name = "freesheet"
-version = "1.3.3"
+version = "1.3.4"
 dependencies = [
  "include_dir",
  "jni",
