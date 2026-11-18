@@ -1,6 +1,5 @@
-//! Colours, sizes and fonts: the look of FreeSheet 1.1's stylesheet (src/styles.css), a
-//! calm, mostly monochrome interface where colour is kept for actions (blue) and
-//! right/wrong (green/red). The learner picks a theme and an accent colour in Settings;
+//! Colours, sizes and fonts: the look of src/styles.css. Light and Dark use Apple's system
+//! palette; colour is kept for actions (blue) and right/wrong (green/red). The learner picks a theme and an accent colour in Settings;
 //! src/js/theme.js and src/styles.css define the same ones for the web version.
 
 use egui::{Color32, FontData, FontDefinitions, FontFamily, FontId};
@@ -34,45 +33,45 @@ const fn hex(v: u32) -> Color32 {
 }
 
 pub const LIGHT: Palette = Palette {
-    bg: hex(0xfaf8f4),
-    surface: hex(0xf3f1ea),
-    surface2: hex(0xebe8df),
-    border: hex(0xe1ddd2),
-    border_strong: hex(0xc9c4b6),
-    text: hex(0x2c2a26),
-    muted: hex(0x69665e),
-    accent: hex(0x1f5fcc),
-    accent_hover: hex(0x194fab),
-    accent_soft: hex(0xe7eefa),
-    btn: hex(0x1f5fcc),
-    btn_hover: hex(0x194fab),
-    good: hex(0x17793a),
-    good_soft: hex(0xe7f3e8),
-    bad: hex(0xb42318),
-    bad_soft: hex(0xfaeae6),
-    warn_soft: hex(0xf6efdd),
+    bg: hex(0xf5f5f7),
+    surface: hex(0xededf0),
+    surface2: hex(0xe5e5ea),
+    border: hex(0xe5e5ea),
+    border_strong: hex(0xc7c7cc),
+    text: hex(0x1d1d1f),
+    muted: hex(0x6e6e73),
+    accent: hex(0x0066cc),
+    accent_hover: hex(0x0055b3),
+    accent_soft: hex(0xe8f1fc),
+    btn: hex(0x0071e3),
+    btn_hover: hex(0x0062c4),
+    good: hex(0x248a3d),
+    good_soft: hex(0xe9f6ec),
+    bad: hex(0xd70015),
+    bad_soft: hex(0xfdecec),
+    warn_soft: hex(0xfdf5e0),
     flame: hex(0xff8a1f),
     shadow: Color32::from_black_alpha(20),
 };
 
 pub const DARK: Palette = Palette {
-    bg: hex(0x1a1b1e),
-    surface: hex(0x222327),
-    surface2: hex(0x2a2c30),
-    border: hex(0x33353a),
-    border_strong: hex(0x4a4c52),
-    text: hex(0xdcdcd8),
-    muted: hex(0xa3a39d),
-    accent: hex(0x7aa2ee),
-    accent_hover: hex(0x96b6f2),
-    accent_soft: hex(0x232f45),
-    btn: hex(0x3063c6),
-    btn_hover: hex(0x3b70d6),
-    good: hex(0x5fbd87),
-    good_soft: hex(0x1a2c21),
-    bad: hex(0xe8867d),
-    bad_soft: hex(0x372120),
-    warn_soft: hex(0x2c281e),
+    bg: hex(0x000000),
+    surface: hex(0x2c2c2e),
+    surface2: hex(0x3a3a3c),
+    border: hex(0x38383a),
+    border_strong: hex(0x545458),
+    text: hex(0xf5f5f7),
+    muted: hex(0x98989d),
+    accent: hex(0x2997ff),
+    accent_hover: hex(0x5ab0ff),
+    accent_soft: hex(0x0a2540),
+    btn: hex(0x0071e3),
+    btn_hover: hex(0x0077ed),
+    good: hex(0x30d158),
+    good_soft: hex(0x0f2a17),
+    bad: hex(0xff453a),
+    bad_soft: hex(0x3b1412),
+    warn_soft: hex(0x2e2610),
     flame: hex(0xff8a1f),
     shadow: Color32::from_black_alpha(60),
 };

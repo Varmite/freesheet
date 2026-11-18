@@ -128,7 +128,7 @@
     box.id = 'compat-notice';
     box.setAttribute('role', 'alert');
     box.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;overflow:auto;padding:32px 24px;' +
-      'font:17px/1.5 sans-serif;background:' + (dark ? '#1a1b1e' : '#faf8f4') + ';color:' + (dark ? '#dcdcd8' : '#2c2a26');
+      'font:17px/1.5 sans-serif;background:' + (dark ? '#000000' : '#f5f5f7') + ';color:' + (dark ? '#f5f5f7' : '#1d1d1f');
     var h = document.createElement('h1');
     h.textContent = 'FreeSheet needs one update first';
     h.style.cssText = 'font-size:22px;margin:0 0 12px';

@@ -8,8 +8,8 @@
   // `dark` undefined: follows the system. `p`: the colours for the little preview tile.
   const THEMES = [
     { id: 'system', label: 'Automatic' },
-    { id: 'light', label: 'Light', dark: false, p: { bg: '#faf8f4', card: '#ebe8df', line: '#2c2a26', btn: '#1f5fcc', accent: '#1f5fcc' } },
-    { id: 'dark', label: 'Dark', dark: true, p: { bg: '#1a1b1e', card: '#2a2c30', line: '#dcdcd8', btn: '#3063c6', accent: '#7aa2ee' } },
+    { id: 'light', label: 'Light', dark: false, p: { bg: '#f5f5f7', card: '#ffffff', line: '#1d1d1f', btn: '#0071e3', accent: '#0066cc' } },
+    { id: 'dark', label: 'Dark', dark: true, p: { bg: '#000000', card: '#1c1c1e', line: '#f5f5f7', btn: '#0071e3', accent: '#2997ff' } },
     { id: 'sepia', label: 'Sepia', dark: false, p: { bg: '#f8f1e3', card: '#e9dfc9', line: '#33291c', btn: '#9a5b13', accent: '#9a5b13' } },
     { id: 'midnight', label: 'Midnight', dark: true, p: { bg: '#0f1626', card: '#1d2a42', line: '#dbe2ef', btn: '#2f6ad9', accent: '#6ea8fe' } },
     { id: 'forest', label: 'Forest', dark: true, p: { bg: '#121a15', card: '#1f2c24', line: '#dde6df', btn: '#237a4d', accent: '#57c489' } },
