@@ -61,7 +61,7 @@
     // Only touched when the number changes: this runs on every page and every minute.
     if (streakBtn.dataset.n !== String(st.current)) {
       streakBtn.dataset.n = st.current;
-      streakBtn.innerHTML = `${Icons.ui('flame', 'streak-flame')}<span>${st.current}</span>`;
+      streakBtn.innerHTML = `${Icons.ui('flame', 'streak-flame')}<span>${st.current}</span><span class="side-label">day streak</span>`;
     }
     const left = Math.max(0, st.goalQuestions - st.questionsToday);
     streakBtn.title = st.todayMet
@@ -558,14 +558,24 @@
       const s = subjectMeta(last.subjectId);
       const t = s && s.topics.find((x) => x.id === last.topicId);
       if (t) {
-        cont = `<button class="continue" id="continue"><span class="muted small">Continue where you left off</span>
-          <span class="continue-title">${esc(t.title)}</span><span class="muted">${esc(s.name)}</span></button>`;
+        cont = `<button class="continue" id="continue"><span class="continue-text"><span class="eyebrow">Continue where you left off</span>
+          <span class="continue-title">${esc(t.title)}</span><span class="muted">${esc(s.name)}</span></span>
+          <span class="continue-go" aria-hidden="true">${Icons.ui('arrow')}</span></button>`;
       }
     }
+    // Praise what is done rather than count what isn't: progress you can see makes the
+    // next step feel closer, and a first visit gets one clear way in.
+    const done = g.subjects.reduce((n, s) => n + subjectStats(s).practised, 0);
+    const hour = new Date().getHours();
+    const hello = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+    const lead = done
+      ? `You've practised ${done} topic${done === 1 ? '' : 's'} so far. Keep it going.`
+      : 'Pick a subject to start. Each topic has notes to read, then questions to practise.';
     main.innerHTML = `<div class="page">
-      <h1>Grade ${g.grade} subjects</h1>
-      <p class="lead">Choose a subject to read the notes and practise questions on each topic.</p>
+      <div class="home-head"><p class="eyebrow">Grade ${g.grade}</p><h1>${hello}</h1></div>
+      <p class="lead">${lead}</p>
       ${cont}
+      <h2 class="eyebrow section-label">Your subjects</h2>
       <div class="grid">${g.subjects.map((s) => {
         const st = subjectStats(s);
         const p = st.total ? Math.round((st.practised / st.total) * 100) : 0;
@@ -671,6 +681,8 @@
       window.addEventListener('resize', () => { if (seg) place(); queue(); });
     }
     function queue() { if (!raf) raf = requestAnimationFrame(update); }
+    // the sidebar's right edge on wide windows (0 with a top bar)
+    function sideEdge() { const r = document.querySelector('.topbar').getBoundingClientRect(); return r.height > window.innerHeight / 2 ? r.right : 0; }
     // Beside the page if there is room on its left, otherwise at the bottom.
     function place() {
       const page = seg.closest('.page');
@@ -678,7 +690,7 @@
       el.classList.add('side');
       el.classList.remove('bottom');
       const left = page.getBoundingClientRect().left + 8 - el.offsetWidth - 20;
-      const side = left >= 12 && window.innerWidth > 720;
+      const side = left >= sideEdge() + 12 && window.innerWidth > 720;
       el.classList.toggle('side', side);
       el.classList.toggle('bottom', !side);
       el.style.left = side ? Math.round(left) + 'px' : '';
@@ -686,8 +698,7 @@
     function update() {
       raf = 0;
       if (!el) return;
-      const bar = document.querySelector('.topbar');
-      const limit = bar ? bar.getBoundingClientRect().bottom : 56;
+      const limit = Motion.topEdge();
       const show = !!(seg && seg.isConnected && seg.getBoundingClientRect().bottom < limit + 4);
       el.classList.toggle('show', show);
       el.setAttribute('aria-hidden', String(!show));
@@ -2320,11 +2331,11 @@
   function showWelcome() {
     document.body.classList.add('welcome-mode');
     main.innerHTML = `<div class="page welcome">
-      <h1>Welcome to FreeSheet</h1>
+      <h1>Welcome to <span class="hl">FreeSheet</span></h1>
       <p class="lead">Notes, practice questions and full exams for the CAPS curriculum.${api.web ? '' : ` Everything works offline and your progress is saved on ${device()}.`}</p>
       <h2>Which grade are you in?</h2>
       <div class="grade-buttons">${state.catalog.grades.map((g) => `<button class="btn big" data-grade="${g.grade}">Grade ${g.grade}</button>`).join('')}</div>
-      <p class="muted">You can change the grade at any time from the top bar.</p>
+      <p class="muted">You can change the grade at any time.</p>
     </div>`;
     Motion.navigate(main, null, { kind: 'first' });
     main.querySelectorAll('[data-grade]').forEach((b) => b.addEventListener('click', () => {
@@ -2377,7 +2388,7 @@
       const lead = e.target.closest('.page-head .lead, .page-topic > .lead');
       if (lead && !e.target.closest('a, button')) lead.classList.toggle('open');
     });
-    settingsBtn.innerHTML = Icons.ui('settings');
+    settingsBtn.innerHTML = Icons.ui('settings') + '<span class="side-label">Settings</span>';
     settingsBtn.addEventListener('click', openSettings);
     if (api.onMenu) api.onMenu((id) => {
       if (id === 'settings') return openSettings();

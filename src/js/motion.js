@@ -95,13 +95,18 @@
 
   // ---------------------------------------------------------------- page layers
 
+  // Where pages start: under the top bar, or the very top when wide windows show a sidebar.
   function topEdge() {
     const bar = document.querySelector('.topbar');
-    return bar ? bar.getBoundingClientRect().bottom : 0;
+    if (!bar) return 0;
+    const r = bar.getBoundingClientRect();
+    return r.height > window.innerHeight / 2 ? 0 : r.bottom;
   }
   function visibleBox() {
     const top = topEdge();
-    return { left: 0, top, width: document.documentElement.clientWidth, height: window.innerHeight - top };
+    const bar = document.querySelector('.topbar');
+    const left = bar && !top ? Math.max(0, bar.getBoundingClientRect().right) : 0; // beside a sidebar
+    return { left, top, width: document.documentElement.clientWidth - left, height: window.innerHeight - top };
   }
 
   // Off-screen parts of a frozen copy keep their size but skip layout and paint,
@@ -627,6 +632,6 @@
   window.Motion = {
     cover, setRehearsing, quiet, settle: finishActive, rehearsalStep: ZOOM.duration + 60,
     supported, lowEnd, enabled, setEnabled, noteOrigin, setHint, capture, discard, navigate, decorate, selectSegment,
-    reveal, press, pop, verdict, flip, countUp, dialogIn, dialogOut, moveTabPill,
+    reveal, press, pop, verdict, flip, countUp, dialogIn, dialogOut, moveTabPill, topEdge,
   };
 })();

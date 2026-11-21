@@ -57,7 +57,8 @@ button, .card, .row, .tab, .seg, .opt, .lopt { touch-action: manipulation; -webk
   }
   .tab .tab-icon .icon { width: 24px; height: 24px; }
   .tab, .tab:hover { color: var(--muted); background: none; }
-  .tab.active, .tab.active:hover { background: none; color: var(--accent); font-weight: 650; box-shadow: none; }
+  .tab.active, .tab.active:hover { background: none; color: var(--text); font-weight: 700; box-shadow: none; }
+  .tab.active .tab-icon { background: var(--hl); color: var(--on-hl); } /* the highlighter marks the current tab */
   .tab .tab-icon { padding: 0.1rem 1.1rem; border-radius: 999px; transition: background-color 0.2s; }
   @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) { .tabs { background: var(--bg); -webkit-backdrop-filter: none; backdrop-filter: none; } }
   .tabs .tab-pill { display: none; } /* the desktop's sliding pill: the icon pill marks the tab here */

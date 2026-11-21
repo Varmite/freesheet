@@ -337,7 +337,7 @@ pub fn segmented(ui: &mut Ui, t: &Theme, id: Id, options: &[&str], selected: usi
         if resp.clicked() && i != selected {
             clicked = Some(i);
         }
-        let color = if i == selected || resp.hovered() { p.text } else { theme::muted_on_fill(p) };
+        let color = if i == selected || resp.hovered() { p.text } else { p.muted };
         let st = Style::new(size, color, p.muted).weight(if i == selected { W::Semi } else { W::Regular }).line(1.3);
         let l = &fonts[i];
         rich::paint(ui.painter(), l, pos2(r.center().x - l.size.x / 2.0, r.center().y - l.size.y / 2.0), &st);

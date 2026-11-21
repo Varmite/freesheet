@@ -33,45 +33,46 @@ const fn hex(v: u32) -> Color32 {
 }
 
 pub const LIGHT: Palette = Palette {
-    bg: hex(0xf5f5f7),
-    surface: hex(0xededf0),
-    surface2: hex(0xe5e5ea),
-    border: hex(0xe5e5ea),
-    border_strong: hex(0xc7c7cc),
-    text: hex(0x1d1d1f),
-    muted: hex(0x6e6e73),
-    accent: hex(0x0066cc),
-    accent_hover: hex(0x0055b3),
-    accent_soft: hex(0xe8f1fc),
-    btn: hex(0x0071e3),
-    btn_hover: hex(0x0062c4),
-    good: hex(0x248a3d),
-    good_soft: hex(0xe9f6ec),
-    bad: hex(0xd70015),
-    bad_soft: hex(0xfdecec),
-    warn_soft: hex(0xfdf5e0),
+    bg: hex(0xf3f5f8),
+    surface: hex(0xeaeef3),
+    surface2: hex(0xdfe5ec),
+    border: hex(0xe1e6ec),
+    border_strong: hex(0xc3ccd6),
+    text: hex(0x18202c),
+    muted: hex(0x556172),
+    accent: hex(0x2453c4),
+    accent_hover: hex(0x1d45a6),
+    accent_soft: hex(0xe6edfb),
+    btn: hex(0x2453c4),
+    btn_hover: hex(0x1d45a6),
+    good: hex(0x1b7a43),
+    good_soft: hex(0xe3f3e9),
+    bad: hex(0xc0331c),
+    bad_soft: hex(0xfcebe6),
+    warn_soft: hex(0xfff6d6),
     flame: hex(0xff8a1f),
     shadow: Color32::from_black_alpha(20),
 };
 
+/// Chalkboard slate, not black: the Black theme is the one for OLED screens.
 pub const DARK: Palette = Palette {
-    bg: hex(0x000000),
-    surface: hex(0x2c2c2e),
-    surface2: hex(0x3a3a3c),
-    border: hex(0x38383a),
-    border_strong: hex(0x545458),
-    text: hex(0xf5f5f7),
-    muted: hex(0x98989d),
-    accent: hex(0x2997ff),
-    accent_hover: hex(0x5ab0ff),
-    accent_soft: hex(0x0a2540),
-    btn: hex(0x0071e3),
-    btn_hover: hex(0x0077ed),
-    good: hex(0x30d158),
-    good_soft: hex(0x0f2a17),
-    bad: hex(0xff453a),
-    bad_soft: hex(0x3b1412),
-    warn_soft: hex(0x2e2610),
+    bg: hex(0x1b2227),
+    surface: hex(0x2b343b),
+    surface2: hex(0x343e46),
+    border: hex(0x333d45),
+    border_strong: hex(0x4a5660),
+    text: hex(0xe8edf0),
+    muted: hex(0xa2afb9),
+    accent: hex(0x8ab4ff),
+    accent_hover: hex(0xa9c7ff),
+    accent_soft: hex(0x24344a),
+    btn: hex(0x2f62d0),
+    btn_hover: hex(0x3a6fe0),
+    good: hex(0x5ccf94),
+    good_soft: hex(0x1c3429),
+    bad: hex(0xff8a7a),
+    bad_soft: hex(0x3e2724),
+    warn_soft: hex(0x3a3420),
     flame: hex(0xff8a1f),
     shadow: Color32::from_black_alpha(60),
 };
@@ -224,25 +225,13 @@ pub fn named(theme: &str, system_dark: bool) -> (Palette, bool) {
 }
 
 /// The accent colour shown for `id` on a light or dark theme, if it is one of ACCENTS.
-/// Grey labels on the grey segmented-control fill: Light's and Dark's own greys are only
-/// 4.0:1 there (the web UI's fill is translucent, so Dark passes there as it is).
-pub fn muted_on_fill(p: &Palette) -> Color32 {
-    if p.bg == LIGHT.bg {
-        hex(0x5e5e63)
-    } else if p.bg == DARK.bg && p.surface2 == DARK.surface2 {
-        hex(0xaeaeb2)
-    } else {
-        p.muted
-    }
-}
-
 /// Edges of answer options (styles.css --opt-edge): Light's and Dark's hairline grey is too faint
 /// to show where a tappable option ends.
 pub fn opt_edge(p: &Palette) -> Color32 {
     if p.bg == LIGHT.bg {
-        hex(0x8a8a8e)
-    } else if p.bg == DARK.bg && p.border_strong == DARK.border_strong {
-        hex(0x7c7c80)
+        hex(0x7e8b9a)
+    } else if p.bg == DARK.bg {
+        hex(0x6f7d88)
     } else {
         p.border_strong
     }
@@ -466,7 +455,7 @@ mod tests {
                     assert!(contrast(Color32::WHITE, red) >= 4.5, "{theme}: red button text");
                     let on_green = if dark { Color32::BLACK } else { Color32::WHITE };
                     assert!(contrast(on_green, p.good) >= 3.0, "{theme}: green button text (big)");
-                    assert!(contrast(muted_on_fill(&p), p.surface2) >= 4.5, "{theme}: segmented labels");
+                    assert!(contrast(p.muted, p.surface2) >= 4.5, "{theme}: segmented labels");
                     if theme == "light" || theme == "dark" {
                         assert!(contrast(opt_edge(&p), p.bg) >= 3.0, "{theme}: option edges");
                     }
