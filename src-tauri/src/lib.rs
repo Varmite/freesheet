@@ -448,7 +448,6 @@ fn create_window(handle: &AppHandle, prefs: &progress::Startup, smooth_text: boo
     Ok(())
 }
 
-#[cfg_attr(mobile, tauri::mobile_entry_point)]
 /// The Mac's menu bar: Tauri's standard menus, plus Settings… (⌘,) in the app menu and a Go
 /// menu for the three tabs (⌘1-3). A click is passed to the page as "freesheet:menu".
 /// Built on every desktop so the build checks it; only the Mac shows it.
@@ -473,6 +472,7 @@ fn mac_menu(app: &AppHandle) -> tauri::Result<tauri::menu::Menu<tauri::Wry>> {
     Ok(menu)
 }
 
+#[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     let mut builder = tauri::Builder::default();
     #[cfg(target_os = "macos")]
