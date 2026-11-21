@@ -140,7 +140,9 @@ code { font-size: 0.9em; background: var(--surface-2); padding: 0.1em 0.3em; bor
 /* ---------- top bar (and, on wide screens, the sidebar further down) ---------- */
 .topbar {
   position: sticky; top: 0; z-index: 20;
-  display: flex; align-items: center; gap: 1.5rem;
+  /* flex-direction is spelled out here, on .tabs and on .grade-picker: js/compat.js copies a
+     direction from @media rules (the sidebar's column) onto rules that leave it unset */
+  display: flex; flex-direction: row; align-items: center; gap: 1.5rem;
   height: 56px; padding: 0 1.25rem;
   border-bottom: 1px solid var(--border);
 }
@@ -155,7 +157,7 @@ code { font-size: 0.9em; background: var(--surface-2); padding: 0.1em 0.3em; bor
   .topbar::before, .score-bar, .exam-bar, .reader-bar, .lesson-foot:not(.is-right):not(.is-wrong) { background: var(--bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
 }
 .brand { font-weight: 760; letter-spacing: -0.015em; font-size: 1.08rem; }
-.tabs { display: flex; gap: 2px; margin: 0 auto; padding: 3px; background: var(--fill); border-radius: 12px; }
+.tabs { display: flex; flex-direction: row; gap: 2px; margin: 0 auto; padding: 3px; background: var(--fill); border-radius: 12px; }
 .tab {
   font: inherit; border: 0; background: none; color: var(--muted);
   padding: 0.3rem 0.95rem; border-radius: 9px; cursor: pointer; font-size: 0.95rem; font-weight: 550;
@@ -163,7 +165,7 @@ code { font-size: 0.9em; background: var(--surface-2); padding: 0.1em 0.3em; bor
 .tab:hover { color: var(--text); }
 /* the current tab is marked with the highlighter */
 .tab.active { color: var(--on-hl); background: var(--hl); font-weight: 680; }
-.grade-picker { display: flex; align-items: center; gap: 0.5rem; color: var(--muted); font-size: 0.9rem; }
+.grade-picker { display: flex; flex-direction: row; align-items: center; gap: 0.5rem; color: var(--muted); font-size: 0.9rem; }
 select, input[type="text"], input[type="search"], input[type="number"], textarea {
   font: inherit; color: var(--text); background: var(--card);
   border: 1px solid var(--border-strong); border-radius: 10px;

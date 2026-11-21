@@ -136,7 +136,9 @@ async function connect() {
     await run('things in the top bar do not touch', `(() => {
       const a = document.querySelector('#streak-btn').getBoundingClientRect(), b = document.querySelector('.grade-picker').getBoundingClientRect();
       const fb = document.getElementById('flex-gap-fallback');
-      return { space: Math.round(b.left - a.right), fallbackRules: fb ? fb.sheet.cssRules.length : 'not needed' };
+      // side by side in the top bar, one above the other in a tablet's sidebar
+      const space = Math.max(b.left - a.right, a.left - b.right, b.top - a.bottom, a.top - b.bottom);
+      return { space: Math.round(space), fallbackRules: fb ? fb.sheet.cssRules.length : 'not needed' };
     })()`, (v) => v.space >= 4);
 
     check(await click('#settings-btn'), 'open Settings');
