@@ -449,8 +449,40 @@ fn create_window(handle: &AppHandle, prefs: &progress::Startup, smooth_text: boo
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
+/// The Mac's menu bar: Tauri's standard menus, plus Settings… (⌘,) in the app menu and a Go
+/// menu for the three tabs (⌘1-3). A click is passed to the page as "freesheet:menu".
+/// Built on every desktop so the build checks it; only the Mac shows it.
+#[cfg(desktop)]
+#[cfg_attr(not(target_os = "macos"), allow(dead_code))]
+fn mac_menu(app: &AppHandle) -> tauri::Result<tauri::menu::Menu<tauri::Wry>> {
+    use tauri::menu::{Menu, MenuItem, MenuItemKind, PredefinedMenuItem, Submenu};
+    let menu = Menu::default(app)?;
+    if let Some(MenuItemKind::Submenu(app_menu)) = menu.items()?.into_iter().next() {
+        let settings = MenuItem::with_id(app, "settings", "Settings…", true, Some("CmdOrCtrl+,"))?;
+        app_menu.insert_items(&[&PredefinedMenuItem::separator(app)?, &settings], 1)?;
+    }
+    let tab = |id: &str, label: &str, key: &str| MenuItem::with_id(app, id, label, true, Some(key));
+    let go = Submenu::with_items(app, "Go", true, &[
+        &tab("tab:study", "Study", "CmdOrCtrl+1")?,
+        &tab("tab:exams", "Exams", "CmdOrCtrl+2")?,
+        &tab("tab:progress", "Progress", "CmdOrCtrl+3")?,
+    ])?;
+    // after View, before Window, where the Finder keeps its Go menu
+    let at = menu.items()?.len().saturating_sub(2);
+    menu.insert(&go, at)?;
+    Ok(menu)
+}
+
 pub fn run() {
     let mut builder = tauri::Builder::default();
+    #[cfg(target_os = "macos")]
+    {
+        builder = builder
+            .menu(|h| mac_menu(h))
+            .on_menu_event(|app, e| {
+                let _ = app.emit("freesheet:menu", e.id().as_ref());
+            });
+    }
     #[cfg(desktop)]
     {
         // A second launch brings the open window to the front instead (a test copy with

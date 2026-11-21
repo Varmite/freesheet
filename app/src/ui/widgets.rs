@@ -104,6 +104,8 @@ impl<'a> Btn<'a> {
         let size = if self.big { t.px(1.1) } else if self.small { t.px(0.88) } else { t.px(0.95) };
         let (padx, pady) = if self.big { (t.px(1.5), t.px(0.9)) } else if self.small { (t.px(0.7), t.px(0.25)) } else { (t.px(1.0), t.px(0.5)) };
         let fg = match self.kind {
+            // dark themes' greens are bright: white on them is about 2:1 (styles.css does the same)
+            Kind::Good if t.dark => Color32::BLACK,
             Kind::Primary | Kind::Danger | Kind::Good | Kind::Bad => Color32::WHITE,
             Kind::DangerOutline => p.bad,
             _ => p.text,
@@ -126,11 +128,10 @@ impl<'a> Btn<'a> {
             let (mut fill, mut border) = match self.kind {
                 Kind::Normal => (if hover || self.selected { p.surface } else { p.bg }, p.border_strong),
                 Kind::Primary => (if hover { p.btn_hover } else { p.btn }, if hover { p.btn_hover } else { p.btn }),
-                Kind::Danger => (p.bad, p.bad),
+                Kind::Danger | Kind::Bad => (theme::red_fill(t), theme::red_fill(t)),
                 Kind::DangerOutline => (if hover { p.bad_soft } else { p.bg }, p.bad),
                 Kind::Ghost => (if hover { p.surface } else { Color32::TRANSPARENT }, Color32::TRANSPARENT),
                 Kind::Good => (p.good, p.good),
-                Kind::Bad => (p.bad, p.bad),
             };
             if self.selected && self.kind == Kind::Normal {
                 border = p.accent;
@@ -336,7 +337,7 @@ pub fn segmented(ui: &mut Ui, t: &Theme, id: Id, options: &[&str], selected: usi
         if resp.clicked() && i != selected {
             clicked = Some(i);
         }
-        let color = if i == selected || resp.hovered() { p.text } else { p.muted };
+        let color = if i == selected || resp.hovered() { p.text } else { theme::muted_on_fill(p) };
         let st = Style::new(size, color, p.muted).weight(if i == selected { W::Semi } else { W::Regular }).line(1.3);
         let l = &fonts[i];
         rich::paint(ui.painter(), l, pos2(r.center().x - l.size.x / 2.0, r.center().y - l.size.y / 2.0), &st);

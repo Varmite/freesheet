@@ -224,6 +224,30 @@ pub fn named(theme: &str, system_dark: bool) -> (Palette, bool) {
 }
 
 /// The accent colour shown for `id` on a light or dark theme, if it is one of ACCENTS.
+/// Grey labels on the grey segmented-control fill: Light's own grey is only 4.0:1 there.
+pub fn muted_on_fill(p: &Palette) -> Color32 {
+    if p.bg == LIGHT.bg { hex(0x5e5e63) } else { p.muted }
+}
+
+/// Edges of answer options (styles.css --opt-edge): Light's and Dark's hairline grey is too faint
+/// to show where a tappable option ends.
+pub fn opt_edge(p: &Palette) -> Color32 {
+    if p.bg == LIGHT.bg {
+        hex(0x8a8a8e)
+    } else if p.bg == DARK.bg && p.border_strong == DARK.border_strong {
+        hex(0x7c7c80)
+    } else {
+        p.border_strong
+    }
+}
+
+/// The fill of red buttons. Dark themes' reds are bright (white on them is 2.6-3.4:1), so
+/// those get a deeper red, as in styles.css.
+pub fn red_fill(t: &Theme) -> Color32 {
+    if t.dark { DEEP_RED } else { t.p.bad }
+}
+pub const DEEP_RED: Color32 = hex(0xd70015);
+
 pub fn accent_colour(id: &str, dark: bool) -> Option<Color32> {
     ACCENTS.iter().find(|a| a.0 == id).map(|a| hex(if dark { a.3 } else { a.2 }))
 }
@@ -430,6 +454,15 @@ mod tests {
                     assert!(contrast(p.muted, p.bg) >= 4.5, "{theme}: muted");
                     assert!(contrast(p.accent, p.bg) >= 3.0, "{theme}/{accent}: accent");
                     assert!(contrast(Color32::WHITE, p.btn) >= 4.5, "{theme}/{accent}: button text");
+                    let dark = resolve(theme, accent, system_dark).1;
+                    let red = if dark { DEEP_RED } else { p.bad };
+                    assert!(contrast(Color32::WHITE, red) >= 4.5, "{theme}: red button text");
+                    let on_green = if dark { Color32::BLACK } else { Color32::WHITE };
+                    assert!(contrast(on_green, p.good) >= 3.0, "{theme}: green button text (big)");
+                    assert!(contrast(muted_on_fill(&p), p.surface2) >= 4.5, "{theme}: segmented labels");
+                    if theme == "light" || theme == "dark" {
+                        assert!(contrast(opt_edge(&p), p.bg) >= 3.0, "{theme}: option edges");
+                    }
                 }
             }
         }

@@ -54,6 +54,8 @@
     downloadUpdate: (version) => invoke('update_download', { version }),
     cancelUpdate: () => invoke('update_cancel'),
     onUpdateProgress: (fn) => T.event.listen('freesheet:update-progress', (e) => fn(e.payload)),
+    // The Mac menu bar's Settings… and Go menu (lib.rs mac_menu): 'settings' or 'tab:<name>'.
+    onMenu: (fn) => T.event.listen('freesheet:menu', (e) => fn(e.payload)),
     // Saves first. 'exiting': the app is closing for the installer; 'opened': the system's
     // installer has taken over; 'started' or 'permission': Android's installer (MainActivity.kt).
     applyUpdate: async (version) => {

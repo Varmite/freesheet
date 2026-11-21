@@ -7,6 +7,13 @@
   const esc = M.escapeHtml;
   const LETTERS = 'ABCDEFGH';
 
+  // Right and wrong options also get a tick or cross and words, not only green and red.
+  function mark(cls) {
+    if (cls.indexOf('opt-correct') >= 0) return `<span class="opt-mark">${root.Icons ? root.Icons.ui('check') : '✓'}<span class="sr-only">Correct answer</span></span>`;
+    if (cls.indexOf('opt-wrong') >= 0) return `<span class="opt-mark">${root.Icons ? root.Icons.ui('close') : '✗'}<span class="sr-only">Your answer, wrong</span></span>`;
+    return '';
+  }
+
   function hash(str) {
     let h = 2166136261;
     for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
@@ -109,7 +116,7 @@
             const gone = !fb && out.has(i);
             if (gone) cls += ' opt-out';
             return `<button type="button" class="${cls}" role="radio" aria-checked="${r === i}" data-i="${i}" ${dis || (gone ? 'disabled aria-disabled="true"' : '')}>` +
-              `<span class="opt-letter">${LETTERS[i]}</span><span class="opt-text">${M.inline(o)}</span></button>`;
+              `<span class="opt-letter">${LETTERS[i]}</span><span class="opt-text">${M.inline(o)}</span>${mark(cls)}</button>`;
           }).join('') + `</div>`;
         }
         case 'truefalse':
@@ -119,7 +126,7 @@
             if (fb && v === q.answer) cls += ' opt-correct';
             if (fb && r === v && v !== q.answer) cls += ' opt-wrong';
             return `<button type="button" class="${cls}" role="radio" aria-checked="${r === v}" data-v="${v}" ${dis}>` +
-              `<span class="opt-text">${v ? 'True' : 'False'}</span></button>`;
+              `<span class="opt-text">${v ? 'True' : 'False'}</span>${mark(cls)}</button>`;
           }).join('') + `</div>`;
         case 'short':
           return `<input type="text" class="text-in" spellcheck="false" autocomplete="off" placeholder="Type your answer" value="${esc(r || '')}" ${dis}>`;

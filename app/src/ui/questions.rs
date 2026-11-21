@@ -190,7 +190,7 @@ fn options_out(c: &Card) -> Vec<usize> {
 fn option(ui: &mut Ui, t: &Theme, id: Id, letter: Option<&str>, html: &str, state: OptState, enabled: bool, width: Option<f32>) -> bool {
     let p = &t.p;
     let (border, bg, letter_c, ring) = match state {
-        OptState::Plain => (p.border_strong, p.bg, p.muted, false),
+        OptState::Plain => (theme::opt_edge(p), p.bg, p.muted, false),
         OptState::Selected => (p.accent, p.accent_soft, p.accent, true),
         OptState::Correct => (p.good, p.good_soft, p.good, true),
         OptState::Wrong => (p.bad, p.bad_soft, p.bad, true),
@@ -201,7 +201,14 @@ fn option(ui: &mut Ui, t: &Theme, id: Id, letter: Option<&str>, html: &str, stat
     let full_w = width.unwrap_or(ui.available_width());
     let text_st = Style::new(t.px(1.0), p.text, p.muted).line(1.5);
     let letter_w = if letter.is_some() { t.px(1.1) + t.px(0.7) } else { 0.0 };
-    let tw = full_w - 2.0 * pad.x - letter_w;
+    // Right and wrong options also get a tick or cross, not only green and red.
+    let mark = match state {
+        OptState::Correct => Some(("check", p.good)),
+        OptState::Wrong => Some(("close", p.bad)),
+        _ => None,
+    };
+    let mark_w = if mark.is_some() { t.px(1.15) + t.px(0.6) } else { 0.0 };
+    let tw = full_w - 2.0 * pad.x - letter_w - mark_w;
     let laid = rich::layout(ui.ctx(), html, &if letter.is_none() { text_st.center() } else { text_st }, tw.max(40.0));
     let h = laid.size.y + 2.0 * pad.y;
     let sense = if enabled && !out { Sense::click() } else { Sense::hover() };
@@ -223,6 +230,11 @@ fn option(ui: &mut Ui, t: &Theme, id: Id, letter: Option<&str>, html: &str, stat
     let mut ts = if letter.is_none() { text_st.center() } else { text_st };
     ts.color = p.text.gamma_multiply(alpha);
     rich::paint(ui.painter(), &laid, pos2(x, r.top() + pad.y), &ts);
+    if let Some((icon, colour)) = mark {
+        let s = t.px(1.15);
+        let ir = Rect::from_center_size(pos2(r.right() - pad.x - s / 2.0, r.center().y), vec2(s, s));
+        widgets::paint_icon(ui, icon, ir, colour, 2.6);
+    }
     if out {
         // Struck through.
         for w in &laid.words {

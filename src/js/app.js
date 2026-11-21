@@ -295,7 +295,9 @@
   }
 
   function applyTextSize() {
-    const sizes = { small: '15px', normal: '16.5px', large: '18.5px', xlarge: '20.5px' };
+    // Percentages of the browser's default (16px unless someone changed it), so a larger
+    // default text size in the browser or system still makes FreeSheet's text larger.
+    const sizes = { small: '93.75%', normal: '103.125%', large: '115.625%', xlarge: '128.125%' };
     document.documentElement.style.fontSize = sizes[P().settings.textSize] || sizes.normal;
   }
 
@@ -2377,6 +2379,11 @@
     });
     settingsBtn.innerHTML = Icons.ui('settings');
     settingsBtn.addEventListener('click', openSettings);
+    if (api.onMenu) api.onMenu((id) => {
+      if (id === 'settings') return openSettings();
+      const b = document.querySelector(`.tabs .tab[data-tab="${String(id).slice(4)}"]`);
+      if (b && !document.body.classList.contains('welcome-mode')) b.click();
+    });
     // Remember which card or row was tapped, so the page it opens can zoom out of it.
     main.addEventListener('click', (e) => {
       const el = e.target.closest('.card, .row, .continue');
