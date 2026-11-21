@@ -134,7 +134,7 @@ async function connect() {
     shot('04-topic-list');
     // Old WebViews space rows with margins made by js/compat.js instead of flex gaps.
     await run('things in the top bar do not touch', `(() => {
-      const a = document.querySelector('#streak-btn').getBoundingClientRect(), b = document.querySelector('.grade-picker').getBoundingClientRect();
+      const a = document.querySelector('#streak-btn').getBoundingClientRect(), b = document.querySelector('.grade-picker select').getBoundingClientRect();
       const fb = document.getElementById('flex-gap-fallback');
       // side by side in the top bar, one above the other in a tablet's sidebar
       const space = Math.max(b.left - a.right, a.left - b.right, b.top - a.bottom, a.top - b.bottom);
