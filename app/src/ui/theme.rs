@@ -224,9 +224,16 @@ pub fn named(theme: &str, system_dark: bool) -> (Palette, bool) {
 }
 
 /// The accent colour shown for `id` on a light or dark theme, if it is one of ACCENTS.
-/// Grey labels on the grey segmented-control fill: Light's own grey is only 4.0:1 there.
+/// Grey labels on the grey segmented-control fill: Light's and Dark's own greys are only
+/// 4.0:1 there (the web UI's fill is translucent, so Dark passes there as it is).
 pub fn muted_on_fill(p: &Palette) -> Color32 {
-    if p.bg == LIGHT.bg { hex(0x5e5e63) } else { p.muted }
+    if p.bg == LIGHT.bg {
+        hex(0x5e5e63)
+    } else if p.bg == DARK.bg && p.surface2 == DARK.surface2 {
+        hex(0xaeaeb2)
+    } else {
+        p.muted
+    }
 }
 
 /// Edges of answer options (styles.css --opt-edge): Light's and Dark's hairline grey is too faint
